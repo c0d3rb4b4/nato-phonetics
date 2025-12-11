@@ -10,8 +10,13 @@ export default function SettingsScreen() {
   const { theme, isDarkMode, toggleDarkMode } = useTheme();
   const [selectedVoiceName, setSelectedVoiceName] = useState('Default');
 
+  // Reload voice name when screen gets focus
   useEffect(() => {
+    const unsubscribe = router.subscribe(() => {
+      loadSelectedVoice();
+    });
     loadSelectedVoice();
+    return unsubscribe;
   }, []);
 
   const loadSelectedVoice = async () => {
@@ -26,6 +31,7 @@ export default function SettingsScreen() {
       }
     } catch (e) {
       console.error('Error loading voice:', e);
+      Alert.alert('Error', 'Failed to load voice settings.');
     }
   };
 

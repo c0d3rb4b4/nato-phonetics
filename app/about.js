@@ -58,6 +58,16 @@ export default function AboutScreen() {
         </Text>
       </View>
 
+      <View style={styles.section}>
+        <Text style={[styles.sectionTitle, { color: theme.colors.text }]}>
+          Privacy & Data
+        </Text>
+        <Text style={[styles.paragraph, { color: theme.colors.textSecondary }]}>
+          Your privacy matters. This app processes all data locally on your device and does not 
+          collect, transmit, or store any personal information on external servers.
+        </Text>
+      </View>
+
       <View style={[styles.footer, { borderTopColor: theme.colors.border }]}>
         <Text style={[styles.footerText, { color: theme.colors.textSecondary }]}>
           © 2025 NATO Phonetics App

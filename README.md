@@ -1,50 +1,122 @@
-# Welcome to your Expo app 👋
+# NATO Phonetics
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A comprehensive mobile app for learning and practicing the NATO phonetic alphabet. Features interactive reference materials, audio pronunciation, word conversion, and quiz modes.
 
-## Get started
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![Platform](https://img.shields.io/badge/platform-iOS%20%7C%20Android-lightgrey.svg)
 
-1. Install dependencies
+## Features
 
+- 📚 **NATO Alphabet Reference** - Complete A-Z list with audio pronunciation
+- 🔤 **Word Converter** - Convert any text to NATO phonetics with audio playback
+- 🎯 **Letter Quiz** - Multiple choice quiz with flip card animations
+- 🎨 **Dark Mode** - System-aware theme with manual toggle
+- 🔊 **Voice Selection** - Choose from available device voices
+- 📱 **Offline-First** - All processing happens on-device
+
+## Screenshots
+
+<!-- Add screenshots here when available -->
+
+## Installation
+
+### Prerequisites
+
+- Node.js 18+ and npm
+- Expo CLI: `npm install -g expo-cli`
+- iOS Simulator (Mac only) or Android Emulator
+
+### Setup
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd nato-phonetics
+   ```
+
+2. Install dependencies:
    ```bash
    npm install
    ```
 
-2. Start the app
-
+3. Start the development server:
    ```bash
-   npx expo start
+   npm start
    ```
 
-In the output, you'll find options to open the app in a
+4. Run on your device:
+   - **iOS**: Press `i` or scan QR code with Camera app
+   - **Android**: Press `a` or scan QR code with Expo Go app
+   - **Web**: Press `w`
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Development
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Project Structure
 
-## Get a fresh project
+```
+nato-phonetics/
+├── app/                    # Screen components (file-based routing)
+│   ├── index.js           # Home screen
+│   ├── alphabet.js        # NATO alphabet reference
+│   ├── converter.js       # Word to NATO converter
+│   ├── letter-quiz.js     # Quiz screen
+│   ├── settings.js        # App settings
+│   └── voice-select.js    # Voice selection
+├── src/
+│   ├── context/           # React context providers
+│   ├── data/              # NATO alphabet data
+│   └── lib/               # Utility functions
+├── assets/                # Images and icons
+└── constants/             # App constants
 
-When you're ready, run:
-
-```bash
-npm run reset-project
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Available Scripts
 
-## Learn more
+- `npm start` - Start Expo development server
+- `npm run android` - Run on Android emulator
+- `npm run ios` - Run on iOS simulator
+- `npm run web` - Run in web browser
+- `npm run generate-icons` - Generate app icons from SVG
+- `npm run lint` - Run ESLint
 
-To learn more about developing your project with Expo, look at the following resources:
+### Building Icons
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+To regenerate app icons from the source SVG:
 
-## Join the community
+```bash
+npm run generate-icons
+```
 
-Join our community of developers creating universal apps.
+This creates all required sizes (icon.png, favicon.png, splash-icon.png, Android adaptive icons).
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Technologies
+
+- **Framework**: React Native with Expo (~54.0.27)
+- **Routing**: Expo Router (file-based)
+- **State**: React Context + AsyncStorage
+- **UI**: React Native core components
+- **Audio**: Expo Speech API
+- **Icons**: @expo/vector-icons (Ionicons)
+
+## Privacy
+
+This app processes all data locally on your device. No information is sent to external servers. See [PRIVACY.md](PRIVACY.md) for details.
+
+## License
+
+MIT License - see [LICENSE](LICENSE) for details.
+
+## Contributing
+
+Contributions welcome! Please open an issue or submit a pull request.
+
+## Acknowledgments
+
+- NATO phonetic alphabet is in the public domain
+- Speech synthesis provided by device TTS engines
+- Icons designed for this project
+
+## Support
+
+For issues or questions, please open an issue on GitHub.

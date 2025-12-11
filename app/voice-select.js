@@ -1,7 +1,7 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as Speech from 'expo-speech';
 import { useEffect, useState } from 'react';
-import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Alert, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useTheme } from '../src/context/ThemeContext';
 
 export default function VoiceSelectScreen() {
@@ -15,12 +15,30 @@ export default function VoiceSelectScreen() {
   }, []);
 
   const loadVoices = async () => {
-    const availableVoices = await Speech.getAvailableVoicesAsync();
-    // Filter for local English voices
-    const localEnglishVoices = availableVoices.filter(v => 
-      v.language.startsWith('en') && v.quality === 'Enhanced'
-    ).sort((a, b) => a.name.localeCompare(b.name));
-    setVoices(localEnglishVoices);
+    try {
+      const availableVoices = await Speech.getAvailableVoicesAsync();
+      // Try to get Enhanced quality voices first
+      let englishVoices = availableVoices.filter(v => 
+        v.language.startsWith('en') && v.quality === 'Enhanced'
+      );
+      
+      // Fallback to any English voices if no Enhanced ones
+      if (englishVoices.length === 0) {
+        englishVoices = availableVoices.filter(v => 
+          v.language.startsWith('en')
+        );
+      }
+      
+      englishVoices.sort((a, b) => a.name.localeCompare(b.name));
+      setVoices(englishVoices);
+      
+      if (englishVoices.length === 0) {
+        Alert.alert('No Voices Available', 'No English voices were found on this device.');
+      }
+    } catch (e) {
+      console.error('Error loading voices:', e);
+      Alert.alert('Error', 'Failed to load available voices. Please try again.');
+    }
   };
 
   const loadSelectedVoice = async () => {
@@ -31,6 +49,7 @@ export default function VoiceSelectScreen() {
       }
     } catch (e) {
       console.error('Error loading voice:', e);
+      Alert.alert('Error', 'Failed to load your saved voice preference.');
     }
   };
 
@@ -45,6 +64,7 @@ export default function VoiceSelectScreen() {
       });
     } catch (e) {
       console.error('Error saving voice:', e);
+      Alert.alert('Error', 'Failed to save voice selection. Please try again.');
     }
   };
 
@@ -63,7 +83,7 @@ export default function VoiceSelectScreen() {
         {voices.length === 0 ? (
           <View style={[styles.voiceOption, { backgroundColor: theme.colors.surface }]}>
             <Text style={[styles.settingLabel, { color: theme.colors.textSecondary }]}>
-              Loading voices...
+              No English voices available on this device
             </Text>
           </View>
         ) : (
@@ -87,7 +107,7 @@ export default function VoiceSelectScreen() {
                   {voice.name}
                 </Text>
                 <Text style={[styles.settingDescription, { color: theme.colors.textSecondary }]}>
-                  {voice.language} • Local
+                  {voice.language} • {voice.quality || 'Standard'}
                 </Text>
               </View>
               {selectedVoice === voice.identifier && (

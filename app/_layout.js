@@ -62,13 +62,6 @@ function LayoutContent() {
         }} 
       />
       <Stack.Screen 
-        name="voice-quiz" 
-        options={{ 
-          title: "Voice Quiz",
-          headerRight: () => <MenuButton /> 
-        }} 
-      />
-      <Stack.Screen 
         name="menu" 
         options={{ 
           title: "Menu",

@@ -29,13 +29,6 @@ export default function Home() {
       description: 'Test yourself with quick multiple-choice questions.',
       color: '#22C55E',
     },
-    {
-      title: 'Voice Quiz',
-      icon: 'mic-outline',
-      route: '/voice-quiz',
-      description: 'Placeholder for future speech recognition.',
-      color: '#F97316',
-    },
   ];
 
   return (
@@ -74,7 +67,7 @@ export default function Home() {
         ))}
 
         <View style={styles.footer}>
-          <Text style={[styles.footerText, { color: theme.colors.textSecondary }]}>v0.1.0 • All processing on-device</Text>
+          <Text style={[styles.footerText, { color: theme.colors.textSecondary }]}>v1.0.0 • All processing on-device</Text>
           <Text style={[styles.footerTextMuted, { color: theme.colors.textSecondary }]}>
             NATO phonetic alphabet • British English
           </Text>

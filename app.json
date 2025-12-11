@@ -1,17 +1,21 @@
 {
   "expo": {
-    "name": "nato-phonetics",
+    "name": "NATO Phonetics",
     "slug": "nato-phonetics",
     "version": "1.0.0",
+    "description": "Learn, practice, and master the NATO phonetic alphabet with interactive tools, quizzes, and audio pronunciation guides.",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "natophonetics",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "privacy": "public",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.natophonetics.app"
     },
     "android": {
+      "package": "com.natophonetics.app",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
