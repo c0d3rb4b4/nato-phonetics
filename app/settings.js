@@ -1,9 +1,9 @@
 import { Ionicons } from '@expo/vector-icons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { router } from 'expo-router';
+import { router, useFocusEffect } from 'expo-router';
 import * as Speech from 'expo-speech';
-import { useEffect, useState } from 'react';
-import { Pressable, ScrollView, StyleSheet, Switch, Text, View } from 'react-native';
+import { useCallback, useState } from 'react';
+import { Alert, Pressable, ScrollView, StyleSheet, Switch, Text, View } from 'react-native';
 import { useTheme } from '../src/context/ThemeContext';
 
 export default function SettingsScreen() {
@@ -11,13 +11,11 @@ export default function SettingsScreen() {
   const [selectedVoiceName, setSelectedVoiceName] = useState('Default');
 
   // Reload voice name when screen gets focus
-  useEffect(() => {
-    const unsubscribe = router.subscribe(() => {
+  useFocusEffect(
+    useCallback(() => {
       loadSelectedVoice();
-    });
-    loadSelectedVoice();
-    return unsubscribe;
-  }, []);
+    }, [])
+  );
 
   const loadSelectedVoice = async () => {
     try {

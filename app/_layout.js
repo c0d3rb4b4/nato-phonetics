@@ -1,6 +1,6 @@
 import { Ionicons } from "@expo/vector-icons";
 import { Stack, useRouter } from "expo-router";
-import { Pressable } from "react-native";
+import { Pressable, StyleSheet } from "react-native";
 import { ThemeProvider, useTheme } from "../src/context/ThemeContext";
 
 function MenuButton() {
@@ -10,12 +10,14 @@ function MenuButton() {
   return (
     <Pressable
       onPress={() => router.push("/menu")}
+      hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
       style={({ pressed }) => ({
-        marginRight: 15,
         opacity: pressed ? 0.5 : 1,
+        marginRight: 16,
+        padding: 0,
       })}
     >
-      <Ionicons name="menu" size={28} color={theme.colors.text} />
+      <Ionicons name="menu" size={26} color={theme.colors.text} />
     </Pressable>
   );
 }
@@ -31,6 +33,8 @@ function LayoutContent() {
           backgroundColor: theme.colors.surface,
         },
         headerTintColor: theme.colors.text,
+        headerShadowVisible: false,
+        headerBackTitleVisible: false,
       }}
     >
       <Stack.Screen 
@@ -92,6 +96,10 @@ function LayoutContent() {
     </Stack>
   );
 }
+
+const styles = StyleSheet.create({
+  // header icon is rendered inline; spacing handled on Pressable
+});
 
 export default function RootLayout() {
   return (

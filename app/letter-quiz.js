@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Animated, Pressable, StyleSheet, Text, View } from "react-native";
+import { useRef, useState } from "react";
+import { Animated, Easing, Pressable, StyleSheet, Text, View } from "react-native";
 import { useTheme } from "../src/context/ThemeContext";
 import { NATO_ALPHABET } from "../src/data/natoData";
 import { QUIZ_DISTRACTORS } from "../src/data/quizDistractors";
@@ -42,18 +42,49 @@ export default function LetterQuizScreen() {
   const [question, setQuestion] = useState(() => createQuestion());
   const [result, setResult] = useState(null);
   const [selectedOption, setSelectedOption] = useState(null);
-  const [flipAnim] = useState(new Animated.Value(0));
+  const flipAnim = useRef(new Animated.Value(0)).current;
   const [isFlipped, setIsFlipped] = useState(false);
+
+  const frontOpacity = flipAnim.interpolate({
+    inputRange: [0, 0.48, 0.5, 1],
+    outputRange: [1, 0.7, 0, 0],
+  });
+
+  const backOpacity = flipAnim.interpolate({
+    inputRange: [0, 0.5, 0.52, 1],
+    outputRange: [0, 0, 0.7, 1],
+  });
+
+  const frontScale = flipAnim.interpolate({
+    inputRange: [0, 0.5, 1],
+    outputRange: [1, 0.97, 0.95],
+  });
+
+  const backScale = flipAnim.interpolate({
+    inputRange: [0, 0.5, 1],
+    outputRange: [0.95, 0.97, 1],
+  });
+
+  const frontAnimatedStyle = {
+    opacity: frontOpacity,
+    transform: [{ scale: frontScale }],
+  };
+
+  const backAnimatedStyle = {
+    opacity: backOpacity,
+    transform: [{ scale: backScale }],
+  };
 
   const handleSelect = (word) => {
     const isCorrect = word === question.correct.word;
     setSelectedOption(word);
     setResult(isCorrect ? "correct" : "wrong");
 
-    // Flip card animation for both correct and wrong answers
+    // Flip card animation for both correct and wrong answers (eased)
     Animated.timing(flipAnim, {
       toValue: 1,
-      duration: 600,
+      duration: 700,
+      easing: Easing.inOut(Easing.cubic),
       useNativeDriver: true,
     }).start(() => {
       setIsFlipped(true);
@@ -69,24 +100,6 @@ export default function LetterQuizScreen() {
     }, isCorrect ? 2000 : 2500);
   };
 
-  const frontInterpolate = flipAnim.interpolate({
-    inputRange: [0, 1],
-    outputRange: ['0deg', '180deg'],
-  });
-
-  const backInterpolate = flipAnim.interpolate({
-    inputRange: [0, 1],
-    outputRange: ['180deg', '360deg'],
-  });
-
-  const frontAnimatedStyle = {
-    transform: [{ rotateY: frontInterpolate }],
-  };
-
-  const backAnimatedStyle = {
-    transform: [{ rotateY: backInterpolate }],
-  };
-
   return (
     <View style={[styles.screen, { backgroundColor: theme.colors.background }]}>
       <Text style={[styles.prompt, { color: theme.colors.text }]}>
@@ -95,41 +108,38 @@ export default function LetterQuizScreen() {
 
       {/* Trading Card with Flip Animation */}
       <View style={styles.cardContainer}>
-        <View style={styles.cardWrapper}>
-          {/* Front of card (censored) */}
-          <Animated.View
-            style={[
-              styles.cardFace,
-              styles.cardFront,
-              { backgroundColor: question.correct.color },
-              frontAnimatedStyle,
-              isFlipped && styles.cardHidden,
-            ]}
-          >
-            <View style={styles.cardHeader}>
-              <Text style={styles.letter}>{question.correct.letter}</Text>
-            </View>
-            <View style={styles.cardBody}>
-              <Text style={styles.wordCensored}>******</Text>
-              <Text style={styles.pronunciationCensored}>***</Text>
+        <View style={styles.cardInner}>
+          <Animated.View style={[styles.cardWrapper, frontAnimatedStyle]}>
+            <View
+              style={[
+                styles.cardFace,
+                { backgroundColor: question.correct.color },
+              ]}
+            >
+              <View style={styles.cardHeader}>
+                <Text style={styles.letter}>{question.correct.letter}</Text>
+              </View>
+              <View style={styles.cardBody}>
+                <Text style={styles.wordCensored}>******</Text>
+                <Text style={styles.pronunciationCensored}>***</Text>
+              </View>
             </View>
           </Animated.View>
 
-          {/* Back of card (revealed) */}
-          <Animated.View
-            style={[
-              styles.cardFace,
-              styles.cardBack,
-              { backgroundColor: question.correct.color },
-              backAnimatedStyle,
-            ]}
-          >
-            <View style={styles.cardHeader}>
-              <Text style={styles.letter}>{question.correct.letter}</Text>
-            </View>
-            <View style={styles.cardBody}>
-              <Text style={styles.wordRevealed}>{question.correct.word}</Text>
-              <Text style={styles.pronunciation}>{question.correct.pronunciation}</Text>
+          <Animated.View style={[styles.cardWrapper, styles.cardBack, backAnimatedStyle]}>
+            <View
+              style={[
+                styles.cardFace,
+                { backgroundColor: question.correct.color },
+              ]}
+            >
+              <View style={styles.cardHeader}>
+                <Text style={styles.letter}>{question.correct.letter}</Text>
+              </View>
+              <View style={styles.cardBody}>
+                <Text style={styles.wordRevealed}>{question.correct.word}</Text>
+                <Text style={styles.pronunciation}>{question.correct.pronunciation}</Text>
+              </View>
             </View>
           </Animated.View>
         </View>
@@ -197,11 +207,17 @@ const styles = StyleSheet.create({
   },
   cardContainer: {
     alignItems: "center",
-    marginBottom: 32,
+    marginBottom: 40,
+  },
+  cardInner: {
+    width: 180,
+    height: 240,
+    position: 'relative',
   },
   cardWrapper: {
     width: 180,
     height: 240,
+    position: 'absolute',
   },
   cardFace: {
     width: 180,
@@ -213,16 +229,10 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 4 },
     elevation: 8,
     overflow: "hidden",
-    backfaceVisibility: 'hidden',
   },
   cardFront: {
-    position: 'absolute',
   },
   cardBack: {
-    position: 'absolute',
-  },
-  cardHidden: {
-    opacity: 0,
   },
   cardHeader: {
     height: 100,
