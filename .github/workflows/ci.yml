@@ -135,6 +135,10 @@ jobs:
     # Local hosting qualification is independent of the unresolved audit gate.
     # This job packages artifacts and runs loopback checks; it never deploys.
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        engine: [chromium, firefox, webkit]
     env:
       CI: '1'
     steps:
@@ -160,18 +164,19 @@ jobs:
           tar -xzf "$RUNNER_TEMP/nato-caddy/caddy.tar.gz" -C "$RUNNER_TEMP/nato-caddy" caddy
           echo "CADDY_EXECUTABLE=$RUNNER_TEMP/nato-caddy/caddy" >> "$GITHUB_ENV"
           npm install --prefix "$RUNNER_TEMP/nato-host-browser" --no-save --package-lock=false playwright@1.65.1
-          node "$RUNNER_TEMP/nato-host-browser/node_modules/playwright/cli.js" install --with-deps chromium
+          node "$RUNNER_TEMP/nato-host-browser/node_modules/playwright/cli.js" install --with-deps ${{ matrix.engine }}
           echo "NODE_PATH=$RUNNER_TEMP/nato-host-browser/node_modules" >> "$GITHUB_ENV"
       - name: Qualify packaged host, forward update and rollback
-        run: node scripts/verify-web-host.cjs artifacts/web-distribution/nato-web.tar.gz artifacts/web-distribution/host
+        run: node scripts/verify-web-host.cjs artifacts/web-distribution/nato-web.tar.gz artifacts/web-distribution/host ${{ matrix.engine }}
       - name: Keep candidate, report and screenshots
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: web-distribution-${{ github.sha }}
+          name: web-distribution-${{ matrix.engine }}-${{ github.sha }}
           path: |
             artifacts/web-distribution/nato-web.tar.gz
             artifacts/web-distribution/host/report.json
             artifacts/web-distribution/host/caddy.log
             artifacts/web-distribution/host/screenshots/
+            artifacts/web-distribution/host/diagnostics/
           if-no-files-found: ignore

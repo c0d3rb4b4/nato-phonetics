@@ -58,9 +58,19 @@ Install the isolated pinned Playwright runner as described in [README](../README
 
 ```sh
 NODE_PATH=/tmp/nato-playwright/node_modules CADDY_EXECUTABLE=/absolute/path/to/caddy \
-  node scripts/verify-web-host.cjs artifacts/web-release.tar.gz artifacts/web-host-check
+  node scripts/verify-web-host.cjs artifacts/web-release.tar.gz artifacts/web-host-check chromium tabs
 ```
 
 The runner starts and stops Caddy on a temporary loopback port, reads the extracted candidate inventory, exercises HTTP responses, actual pointer practice/converter/progress, a separately labelled real-JS update fixture, atomic switches, normal worker waiting/activation and saved progress offline after rollback. It writes reports and actual desktop/light/320px/dark screenshots. Browser profiles and complete test release directories stay in ignored artifacts; upload only the report/log/screenshots/candidate. The synthetic update is qualification evidence, not a second shipped product candidate. [Run20 captures](evidence/run20/screenshots/index.md).
 
 Public HTTPS/certificate renewal, actual hosted routing, server hardening/operations, mobile/branded Safari/other engines for this host, legacy deployed clients, native signing, recognition and integrated release acceptance remain unrun. All M11 results are unperformed.
+
+## Additional runtime/transition qualification — Run21
+
+Run21 repairs the host runner's asynchronous polling and qualifies **Edge157, Firefox159 and Playwright WebKit27.2** against the same Caddy/config/archive on macOS loopback. Pass engine `chromium`, `firefox` or `webkit` as the fourth argument; the fifth is `tabs` (default) or `process`. `BROWSER_EXECUTABLE` applies only to Chromium. CI installs each engine and uploads a unique artifact, but hosted Linux execution remains unrun.
+
+The default `tabs` scenario closes all app tabs, leaves the browser's worker process alive with zero app clients for1s, then reopens. Actual active-controller/cache/served-HTML checks determine success; idle time is not a passed gate.18 final groups cover hash-rejected truncated update responses/visible Retry, two-window pinning/draft survival, exact progress/preferences/unrelated-data retention, forward and rollback, font eviction503/visible repair and cold offline relaunch after Caddy stops. [Reports/24 actual images](evidence/run21/README.md).
+
+The `process` scenario quits the browser context while an update waits. Corrected Chromium/Firefox checks pass in Run21; WebKit27.2 fails expected activation/cache assurance with the saved answer visible. This path remains P10 engineering; cause and branded/physical reach are unknown. The passing tab-close comparison does not repair or qualify it. Do not claim a universal quit/restart update guarantee. Preserve the original failure and re-enter at browser/lifecycle changes or pre-release support review.
+
+Run20's artifact/HTTP/resource results are preserved. Its async `waitForFunction` transition checks could pass before their false boolean resolved and are superseded by Run21's explicitly awaited polling, negative control and served-byte assertions. No production worker or app change is made. Public HTTPS/certificate/host, legacy/branded/OS/native/provider/integrated acceptance and all M11 results remain unperformed.

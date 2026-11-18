@@ -1,0 +1,1 @@
+Inspection setup: the first contact-sheet attempt exits1 because host Python lacks PIL. It copies no evidence before the import error. view_image then cannot find the uncreated sheet. Use the existing pinned app sharp dependency; no package installed or product changed. Browser/behavioral verification results are unaffected.
