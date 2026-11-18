@@ -1,0 +1,32 @@
+[
+  {
+    "file": "light-1280-home.png",
+    "state": "Actual production Home; linked favicon fetched and byte-verified separately (browser chrome is outside page screenshot)",
+    "theme": "light",
+    "width": 1280,
+    "height": 900,
+    "dpr": 1,
+    "capturedAt": "2026-11-18T12:43:13.247Z",
+    "browser": "Edg/157.0.4341.60",
+    "command": "Puppeteer page.screenshot",
+    "faviconSha256": "df8f62668e8fe86ec2495876136d75bf358df780d67fad67e97b2712bfa38a2f",
+    "sha256": "0a012b72c7b83f1c786051fd5d5e4c8cfde83a80ec5868f21c4cfc65d19d7782",
+    "candidateManifestSha256": "ab074efd3f8310f64d8cb337c734735118cc94de6864dd22f91f0a6fa6f05142",
+    "evidenceKind": "actual production web"
+  },
+  {
+    "file": "dark-320-home.png",
+    "state": "Actual production Home; linked favicon fetched and byte-verified separately (browser chrome is outside page screenshot)",
+    "theme": "dark",
+    "width": 320,
+    "height": 568,
+    "dpr": 1,
+    "capturedAt": "2026-11-18T12:43:16.838Z",
+    "browser": "Edg/157.0.4341.60",
+    "command": "Puppeteer page.screenshot",
+    "faviconSha256": "df8f62668e8fe86ec2495876136d75bf358df780d67fad67e97b2712bfa38a2f",
+    "sha256": "4bfe47b1e8130ff2afcb2f2727e7e0f33c01f27cd3a3b143418360878275d076",
+    "candidateManifestSha256": "ab074efd3f8310f64d8cb337c734735118cc94de6864dd22f91f0a6fa6f05142",
+    "evidenceKind": "actual production web"
+  }
+]

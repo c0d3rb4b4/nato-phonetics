@@ -1,8 +1,8 @@
 # NATO Phonetics
 
-A shared React Native app with repository-owned Android/iOS projects and an independent React Native Web build. It includes letter/digit reference, conversion with Copy/Share/Replay/pacing/paged cards, guarded practice sessions/results/Retry, appearance and voice selection. **Run 12 adds listening-to-symbol and typed code-word recall**, with text alternatives, normalized responses and mode-preserving score/Retry. [Evidence](docs/evidence/run12/README.md), [actual screenshots](docs/evidence/run12/screenshots/index.md) and [delivery status](docs/DELIVERY_PLAN.md) separate functional implementation from remaining native acceptance.
+A shared React Native app with repository-owned Android/iOS projects and an independent React Native Web build. It includes letter/digit reference, conversion with Copy/Share/Replay/pacing/paged cards, guarded practice sessions/results/Retry, listening and typed recall, local symbol progress/due review, appearance and voice selection. Run 14 delivers reproducible release artwork and the recognition support assessment. [Evidence](docs/evidence/run14/README.md), [actual screenshots](docs/evidence/run14/screenshots/index.md) and [delivery status](docs/DELIVERY_PLAN.md) distinguish delivered engineering from remaining native and human acceptance.
 
-P05/P06/P07/P08 remain active for affected native qualification. Android live font-size changes can keep ordinary text stale. Scoped iOS maximum numeric navigation and direct Stop→Replay with/without keyboard pass, while the original repeated long-drag touch-registry crash remains unclosed. Three strict iPhone ink fringes remain P3 parked; the shared tile design/fonts are retained. P00’s native migration remains agent-done; final accessibility, support, release and human acceptance remain P10/M11. Listening/typed recall (P08.2) is implemented with affected native qualification open. Local progress (P08.3) is the next independent learning slice alongside bounded native reliability work. See [practice rules](docs/NUMERIC_PRACTICE.md).
+P05/P06/P07/P08 remain active for affected native qualification. Android live font-size changes can keep ordinary text stale. Original iOS long-drag/input/runtime and maximum long-page navigation assurance, concurrent-browser progress integrity and three strict P3 ink fringes remain open. P09/P10 are active: recognition assessment and release assets are delivered; recognition implementation, offline web, integrated candidate/security/support and physical M11 acceptance remain unfinished. [Practice rules](docs/NUMERIC_PRACTICE.md), [local progress](docs/LOCAL_PROGRESS.md), [recognition assessment](docs/SPOKEN_PRACTICE.md).
 
 ## Setup and local development
 
@@ -31,7 +31,8 @@ The React Native [0.81 environment guide](https://reactnative.dev/docs/0.81/set-
 | `npm run export:web` | Production web app and route HTML in `dist/` |
 | `npm run lint` | ESLint with hooks and JSX checks, no warnings |
 | `npm run typecheck` | Checked JS/JSDoc and TypeScript over active screens, entries and helpers |
-| `npm test` | Data, preferences, questions, playback, native adapter and audit regression tests |
+| `npm test` | Data, preferences, progress, questions, playback, native adapter, release artwork and audit regression tests |
+| `npm run generate-icons` | Generate/verify all web and native icon/splash resources; rebuild native apps afterward |
 | `npm run check:dependencies` | Installed graph/lockfile and native/web consumer check for Expo removal |
 | `npm run audit:review` | Real npm audit plus dated high/critical dispositions; not a clean-audit claim |
 | `npm run build:android:debug` | Direct Gradle debug APK |
@@ -80,7 +81,7 @@ Converter Play/Replay begins at the start with a current-token label and an inse
 
 Converter cards show 24 input tokens per page with Previous/Next and a current-card-page shortcut during playback. Input and full selectable output scroll within their own areas for long phrases; Copy/Share and phrase playback always use all input. No text is silently truncated. Measurements qualify samples through 2,000 characters, not arbitrarily large inputs or a response-time guarantee. Native affected large-text acceptance remains open; see the current delivery record.
 
-Spoken-answer practice, offline web and final release assets remain in the delivery plan. Progress and other affected native flows retain open accessibility qualification. Do not infer release acceptance from passing automated checks.
+Release artwork is generated from outlined vector sources with separate adaptive foreground/background and a transparent monochrome mask. Generation verifies dimensions, safe bounds, alpha and all 22 shipped consumers; failures exit nonzero without claiming success. See [release assets](docs/RELEASE_ASSETS.md). Spoken-answer implementation and offline web remain in the delivery plan. The [recognition assessment](docs/SPOKEN_PRACTICE.md) does not add microphone access. Progress and other affected native flows retain open qualification; automated checks do not establish release acceptance.
 
 The alphabet reference now includes a Digits 0–9 view using the same portrait cards and audio controller. Letter Quiz offers Letters, Digits, Letters and digits, Postcode symbols (`SW1A 1AA`) and Callsign symbols (`N359AB`). Choose 5, 10 or a complete set (26 letters, 10 digits, 36 mixed symbols, or the example’s distinct symbols). Each symbol appears once before the shuffled deck repeats. Example questions practise distinct symbols in shuffled order; Hear example speaks the complete original sequence, with a word-boundary pause for the postcode. Canonical Three/Five/Nine display with intentional `tree`/`fife`/`niner` provider inputs; human listening/content acceptance remains pending M11.3. Category/set choices stay in memory.
 

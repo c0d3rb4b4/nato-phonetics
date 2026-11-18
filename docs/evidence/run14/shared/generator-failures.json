@@ -1,0 +1,16 @@
+[
+  {
+    "case": "invalid",
+    "command": "node scripts/generate-icons.js --output-dir /var/folders/wp/y315c6t566v1qhs116zrm3tr0000gn/T/nato-icon-cli-7d32cmmp/blocker",
+    "exit": 1,
+    "stdout": "",
+    "stderr": "Icon generation failed: ENOTDIR: not a directory, scandir '/var/folders/wp/y315c6t566v1qhs116zrm3tr0000gn/T/nato-icon-cli-7d32cmmp/blocker'\n"
+  },
+  {
+    "case": "unwritable",
+    "command": "node scripts/generate-icons.js --output-dir /var/folders/wp/y315c6t566v1qhs116zrm3tr0000gn/T/nato-icon-cli-7d32cmmp/blocker/child",
+    "exit": 1,
+    "stdout": "",
+    "stderr": "Icon generation failed: ENOTDIR: not a directory, scandir '/var/folders/wp/y315c6t566v1qhs116zrm3tr0000gn/T/nato-icon-cli-7d32cmmp/blocker/child'\n"
+  }
+]

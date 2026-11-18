@@ -2,7 +2,7 @@
 
 The repository owns `android/` and `ios/`. They originate from the official [`@react-native-community/template@0.81.5`](https://www.npmjs.com/package/@react-native-community/template/v/0.81.5), adapted directly without prebuild. Gradle, CocoaPods and Xcode call React Native's own CLI/scripts. Eclipse Timer's local artifact pattern informed this setup; its hosted-build integrations were not copied.
 
-The app retains `com.natophonetics.app`, version `1.0.0` (native build number `1`), `natophonetics://` links, the existing launcher/splash images and AsyncStorage `2.2.0`. Native registration is `NATOPhonetics`. Configured deployment minimums are Android API 24 and iOS 15.1. Run 05 enables phone/tablet orientation changes and removes the iPad full-screen requirement for responsive tile layouts; configuration is not runtime acceptance on every OS/device/window size. Neither macOS, Windows, watchOS nor Wear OS is a configured target.
+The app retains `com.natophonetics.app`, version `1.0.0` (native build number `1`), `natophonetics://` links, the application branding and AsyncStorage `2.2.0`. Native registration is `NATOPhonetics`. Configured deployment minimums are Android API 24 and iOS 15.1. Run 05 enables phone/tablet orientation changes and removes the iPad full-screen requirement for responsive tile layouts; configuration is not runtime acceptance on every OS/device/window size. Neither macOS, Windows, watchOS nor Wear OS is a configured target.
 
 Tile fonts are bundled from `assets/fonts/` into Android assets and Xcode resources. Startup validates the required native faces before React renders, and Android registers each exact face in React Native's font cache. Changing these files requires rebuilding both native apps, not only refreshing Metro. Font provenance, hashes and geometry are in [TILE_DESIGN.md](TILE_DESIGN.md); browser assets are emitted by the web build's local TTF loader.
 
@@ -73,7 +73,7 @@ Archive: `artifacts/NATOPhonetics.xcarchive`. Exported IPA: `artifacts/ios-expor
 
 ## Validation and actual screenshots
 
-After lint/types/tests and the final production web build, validate the native candidate: install/launch, cold `natophonetics://menu`, back/Home, all screens, saved-theme restart, native voice selection/Stop/navigation cancellation and status/inset layout. Preserve the AsyncStorage version/key migration; an actual upgrade test with prior signed app/data remains M11. Existing asset files are preserved byte-for-byte; native rendering/cropping still needs captures and physical acceptance.
+After lint/types/tests and the final production web build, validate the native candidate: install/launch, cold `natophonetics://menu`, back/Home, all screens, saved-theme restart, native voice selection/Stop/navigation cancellation and status/inset layout. Preserve the AsyncStorage version/key migration; an actual upgrade test with prior signed app/data remains M11. Run 14 regenerates launcher/splash consumers from outlined sources, verifies packaged resources and captures actual native appearance; physical launcher/device acceptance remains M11. See [release asset generation](RELEASE_ASSETS.md).
 
 Capture the running app with the platform tools, not a browser approximation:
 
@@ -141,3 +141,9 @@ The attempted Android ordinary-text cache invalidation adapters were isolated di
 Run 07 clears the historical maximum-size iPad J baseline/raster failure, but the added density-3 iPhone probe retains an `India` word lower-edge observation at +2.041928153 physical pixels against 2 px. Its native baseline is exact; actual font/raster-phase diagnosis remains P05.8 engineering. See [the retained measurement](evidence/run07/ios/phone-india-fringe.json). No tolerance or font asset was changed to hide it.
 
 The final focused Debug phone probe also retains two `Juliett` word lower-edge misses at +2.042446952 px, before and after the verified horizontal scroll. Required coverage passes, but strict raster is 453/456; native origin/baseline checks are 1,773/1,773. These are distinct gates.
+
+## Run 14 release resources, 18 November 2026
+
+`npm run generate-icons` now updates every web/Android/iOS consumer with verified deterministic resources. Android adaptive layers use separate foreground/background and a transparent alpha monochrome outline. iOS AppIcon is opaque RGB, with outlined lettering independent of machine fonts. Regenerate and rebuild/reinstall both native apps after an artwork edit; refreshing Metro is insufficient. [Specification and failure behavior](RELEASE_ASSETS.md).
+
+Direct Android Debug and unsigned iOS Release simulator builds pass; the installed APK matches its build hash and exact PNG layer bytes, and all 25 installed iOS app files match the Release product. [Android evidence](evidence/run14/android/README.md), [iOS evidence](evidence/run14/ios/README.md), [actual launcher/app/browser and separately labelled crop captures](evidence/run14/screenshots/index.md). Android Debug loaded JS is separately archived; iOS Release uses the identified bundled JS. No dependency/framework/font/permission change or final integrated build/support/device acceptance is inferred. The [P09.1 assessment](SPOKEN_PRACTICE.md) specifies future recognition integration; it adds no production native module or microphone permission.

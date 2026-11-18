@@ -1,0 +1,10 @@
+{
+  "removed": [
+    "assets/images/react-logo.png",
+    "assets/images/react-logo@2x.png",
+    "assets/images/react-logo@3x.png",
+    "assets/images/partial-react-logo.png"
+  ],
+  "consumerCheck": "rg across maintained app/src/scripts/web/native/config; zero references; historical evidence excluded",
+  "preserved": "test.svg original source remains linked by historical review; no unused dependency identified"
+}
