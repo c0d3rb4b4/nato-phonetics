@@ -1,0 +1,9 @@
+AssertionError [ERR_ASSERTION]: Frozen page interval must stop
+    at /Users/mac/dev/apps/nato-phonetics/scripts/verify-browser-support.cjs:153:5 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}

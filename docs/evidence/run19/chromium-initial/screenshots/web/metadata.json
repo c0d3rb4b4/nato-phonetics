@@ -1,0 +1,59 @@
+[
+  {
+    "file": "desktop-merged-progress.png",
+    "state": "Both simultaneous pointer answers saved",
+    "capturedAt": "2026-11-18T16:16:59.691Z",
+    "engine": "chromium",
+    "browser": "157.0.4341.60",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "theme": "light",
+    "command": "node scripts/verify-browser-support.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run19/chromium-initial",
+      "chromium"
+    ]
+  },
+  {
+    "file": "narrow-merged-progress.png",
+    "state": "Same saved totals in the second dark narrow window",
+    "capturedAt": "2026-11-18T16:16:59.737Z",
+    "engine": "chromium",
+    "browser": "157.0.4341.60",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "theme": "dark",
+    "command": "node scripts/verify-browser-support.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run19/chromium-initial",
+      "chromium"
+    ]
+  },
+  {
+    "file": "narrow-lock-timeout.png",
+    "state": "Real five-second lock timeout retains one unsaved answer",
+    "capturedAt": "2026-11-18T16:17:05.678Z",
+    "engine": "chromium",
+    "browser": "157.0.4341.60",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "theme": "dark",
+    "command": "node scripts/verify-browser-support.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run19/chromium-initial",
+      "chromium"
+    ]
+  }
+]

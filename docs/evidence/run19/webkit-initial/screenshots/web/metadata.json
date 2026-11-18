@@ -1,0 +1,116 @@
+[
+  {
+    "file": "desktop-merged-progress.png",
+    "state": "Both simultaneous pointer answers saved",
+    "capturedAt": "2026-11-18T16:20:08.529Z",
+    "engine": "webkit",
+    "browser": "27.2",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "theme": "light",
+    "command": "node scripts/verify-browser-support.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run19/webkit-initial",
+      "webkit"
+    ]
+  },
+  {
+    "file": "narrow-merged-progress.png",
+    "state": "Same saved totals in the second dark narrow window",
+    "capturedAt": "2026-11-18T16:20:08.572Z",
+    "engine": "webkit",
+    "browser": "27.2",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "theme": "dark",
+    "command": "node scripts/verify-browser-support.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run19/webkit-initial",
+      "webkit"
+    ]
+  },
+  {
+    "file": "narrow-lock-timeout.png",
+    "state": "Real five-second lock timeout retains one unsaved answer",
+    "capturedAt": "2026-11-18T16:20:14.543Z",
+    "engine": "webkit",
+    "browser": "27.2",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "theme": "dark",
+    "command": "node scripts/verify-browser-support.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run19/webkit-initial",
+      "webkit"
+    ]
+  },
+  {
+    "file": "desktop-offline-progress.png",
+    "state": "Direct offline progress route retains saved aggregates",
+    "capturedAt": "2026-11-18T16:20:16.110Z",
+    "engine": "webkit",
+    "browser": "27.2",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "theme": "light",
+    "command": "node scripts/verify-browser-support.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run19/webkit-initial",
+      "webkit"
+    ]
+  },
+  {
+    "file": "desktop-offline-converter.png",
+    "state": "Production converter works from cached shell offline",
+    "capturedAt": "2026-11-18T16:20:16.344Z",
+    "engine": "webkit",
+    "browser": "27.2",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "theme": "light",
+    "command": "node scripts/verify-browser-support.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run19/webkit-initial",
+      "webkit"
+    ]
+  },
+  {
+    "file": "narrow-cold-offline-progress.png",
+    "state": "New persistent browser session opens saved progress offline",
+    "capturedAt": "2026-11-18T16:20:18.420Z",
+    "engine": "webkit",
+    "browser": "27.2",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "theme": "dark",
+    "command": "node scripts/verify-browser-support.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run19/webkit-initial",
+      "webkit"
+    ]
+  }
+]

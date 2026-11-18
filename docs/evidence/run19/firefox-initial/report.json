@@ -1,0 +1,44 @@
+{
+  "engine": "firefox",
+  "runner": "1.65.1",
+  "checks": [
+    {
+      "scope": "two simultaneous actual pointer answers; exact selected word/feedback and both live summaries",
+      "answers": [
+        {
+          "symbol": "F",
+          "word": "Foxtrot"
+        },
+        {
+          "symbol": "N",
+          "word": "November"
+        }
+      ]
+    },
+    {
+      "scope": "failed-write Retry with withheld storage events cannot resurrect deleted answers",
+      "generation": "d81a9f1a-1977-4d99-a8dc-41208b87a903"
+    },
+    {
+      "scope": "a new submission after unseen deletion saves exactly once"
+    },
+    {
+      "scope": "real exclusive-lock timeout followed by awaited release/actual pointer Retry saves once"
+    }
+  ],
+  "errors": [
+    "deliberate quota failure"
+  ],
+  "browser": "159.0",
+  "capabilities": {
+    "secureContext": true,
+    "locks": true,
+    "serviceWorker": true,
+    "cacheStorage": true,
+    "abortTimeout": true
+  },
+  "freeze": "Not run: CDP lifecycle freeze is Chromium-specific; no cross-engine or OS suspension pass",
+  "status": "failed",
+  "failure": "locator.click: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('[aria-label=\"Open menu\"]:not([aria-hidden=\"true\"] *)')\n\n    at click (/Users/mac/dev/apps/nato-phonetics/scripts/verify-browser-support.cjs:38:69)\n    at /Users/mac/dev/apps/nato-phonetics/scripts/verify-browser-support.cjs:172:9",
+  "at": "2026-11-18T16:18:04.051Z"
+}

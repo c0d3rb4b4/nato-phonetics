@@ -65,10 +65,23 @@ node scripts/verify-numeric-browser.cjs dist
 node scripts/verify-recall-browser.cjs dist
 node scripts/verify-progress-browser.cjs dist
 node scripts/verify-progress-concurrency-browser.cjs dist
+node scripts/verify-progress-lifecycle-browser.cjs dist
 node scripts/verify-offline-browser.cjs dist
 ```
 
 Browser mocks verify speech control flow, not pronunciation or provider privacy. Real captures and platform gaps are linked from the execution record.
+
+For the production persistence/offline runtime matrix, install the separate pinned runner and its browser binaries:
+
+```bash
+npm install --prefix /tmp/nato-playwright --no-save --package-lock=false playwright@1.65.1
+node /tmp/nato-playwright/node_modules/playwright/cli.js install chromium firefox webkit
+NODE_PATH=/tmp/nato-playwright/node_modules BROWSER_EXECUTABLE= node scripts/verify-browser-support.cjs dist artifacts/browser-support/chromium chromium
+NODE_PATH=/tmp/nato-playwright/node_modules node scripts/verify-browser-support.cjs dist artifacts/browser-support/firefox firefox
+NODE_PATH=/tmp/nato-playwright/node_modules node scripts/verify-browser-support.cjs dist artifacts/browser-support/webkit webkit
+```
+
+Run 19 qualifies Edge157, Playwright Firefox159 and WebKit27.2 on macOS for simultaneous progress saves, deletion/Retry, real lock timeout and persistent offline reopening. The separate Puppeteer lifecycle check measures actual Chromium page freeze/resume and deletion safety. WebKit automation does not establish branded Safari/iOS support; an actual page freeze does not establish OS process suspension. The runner requires no app dependency change and CI retains each engine's report/captures independently of the failed security gate. [Evidence and exact diagnostic boundaries](docs/evidence/run19/README.md).
 
 The alphabet, converter and quiz use one portrait tile with the original 11:15 proportions. Bundled, pinned font faces and shared geometry keep the letter, word and pronunciation in fixed positions. Larger text enlarges the whole tile; grids reflow and scroll. The [tile specification](docs/TILE_DESIGN.md) records recovered dimensions, completed typography, font provenance and verification tolerances. Native orientation changes are enabled; the current device matrix and remaining verification are recorded with each delivery run.
 

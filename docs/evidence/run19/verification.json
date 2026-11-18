@@ -1,0 +1,141 @@
+{
+  "clientDate": "2026-11-18",
+  "at": "2026-11-18T16:32:22.641681+00:00",
+  "resumeMatched": {
+    "matched": 228,
+    "total": 228,
+    "mismatches": []
+  },
+  "baselineFiles": 3610,
+  "changedSinceResume": {
+    ".github/workflows/ci.yml": {
+      "before": "c6ea59be2f45479cef5f76a39ba8a5193c8fa0d2e04bdc0dbd2918c0bc0c6d11",
+      "after": "686c8ef88003c395e7b7476a93aeea6b4e91f9090217a1d6af92aa33bd7183ce"
+    },
+    "README.md": {
+      "before": "f681d1b5412b38c56c017f28de4a70312c7454ff3abb17c1c487e8f8b2a1b00e",
+      "after": "7b6260a8e8f59213d4fc57feec5b2923d957610e6eaf425b1899b19192fde219"
+    },
+    "docs/APP_REVIEW.md": {
+      "before": "85c254430ac858e66c8a8e6f9a4ac179eb11a19ab5d84bea1e530eb57fc2e8ae",
+      "after": "e1a1bbf9ea3eea6180c7b56f401b05dbf561c002fbbeb13da4e9ba1aa467ee6e"
+    },
+    "docs/DELIVERY_PLAN.md": {
+      "before": "28481ff6306f41706110b68cdc5c32e0a82aa4977ffb5a98121eaa2c417d7519",
+      "after": "8a8da0d05ad9820228640e17944dbf889d5a15327e9c9a3ea101ce1332ca216a"
+    },
+    "docs/LOCAL_PROGRESS.md": {
+      "before": "d79e4f9c9223876a00c96f20e4ab80f2464f108bf2a2b375b3edd98a96a225df",
+      "after": "fd4228a4fac01e474c8e792002a54572524f98554be018bfc6fe1df5502b51de"
+    },
+    "docs/RELEASE_RUNBOOK.md": {
+      "before": "9839c3e2fdf72ea88cb60e38df1bdd9b8cbfada9ae64d5909ef101efdaeccdad",
+      "after": "12c6c843ab5335c73ca2bf03e41abcca5388a98ebf2721854ab491c60db6b105"
+    },
+    "docs/SECURITY_REVIEW.md": {
+      "before": "e6d0906455e11e40c5ed16112e0291a2e70d39a07d1dccd43653a352fcdd58c6",
+      "after": "22564346e2f28fdf8c7b0fa296c25545f6bade6c15b45763f1a3136c1072e35b"
+    },
+    "docs/WEB_OFFLINE.md": {
+      "before": "34827cff4782d4798621f0e54c1e4ba3f0094e9ebb21936438b11d14c579d5d5",
+      "after": "e6d3f45d2040777a9260d1d08eb90ec392d8ce2dd07d5ef0c313e83eef41abfb"
+    }
+  },
+  "unapprovedBaselineChanges": [],
+  "priorEvidencePreserved": true,
+  "newMaintainedFiles": [
+    "scripts/verify-browser-support.cjs",
+    "scripts/verify-progress-lifecycle-browser.cjs"
+  ],
+  "statusCounts": {
+    "resolved": 5,
+    "implemented-awaiting-M11": 12,
+    "in-progress": 18
+  },
+  "requiredScopeItems": 35,
+  "activePhases": [
+    "P05",
+    "P06",
+    "P07",
+    "P08",
+    "P09",
+    "P10"
+  ],
+  "humanChecks": "all unperformed",
+  "newPassingBrowserChecks": 24,
+  "captures": {
+    "count": 21,
+    "allInspected": true,
+    "webOnly": true,
+    "missingChangedTarget": [],
+    "native": "inapplicable: unchanged product/native inputs, tooling-only delta"
+  },
+  "webManifestExactlyMatchesRun18": true,
+  "linkChecks": {
+    "docs/SECURITY_REVIEW.md": {
+      "currentBroken": [],
+      "baselineBroken": [],
+      "newBroken": []
+    },
+    "docs/LOCAL_PROGRESS.md": {
+      "currentBroken": [],
+      "baselineBroken": [],
+      "newBroken": []
+    },
+    "docs/RELEASE_RUNBOOK.md": {
+      "currentBroken": [],
+      "baselineBroken": [],
+      "newBroken": []
+    },
+    "docs/DELIVERY_PLAN.md": {
+      "currentBroken": [],
+      "baselineBroken": [],
+      "newBroken": []
+    },
+    "README.md": {
+      "currentBroken": [],
+      "baselineBroken": [],
+      "newBroken": []
+    },
+    "docs/WEB_OFFLINE.md": {
+      "currentBroken": [],
+      "baselineBroken": [],
+      "newBroken": []
+    },
+    "docs/APP_REVIEW.md": {
+      "currentBroken": [],
+      "baselineBroken": [],
+      "newBroken": []
+    },
+    "docs/evidence/run19/README.md": {
+      "currentBroken": [],
+      "baselineBroken": [],
+      "newBroken": []
+    },
+    "docs/evidence/run19/manual-handoff.md": {
+      "currentBroken": [],
+      "baselineBroken": [],
+      "newBroken": []
+    },
+    "docs/evidence/run19/screenshots/index.md": {
+      "currentBroken": [],
+      "baselineBroken": [],
+      "newBroken": []
+    }
+  },
+  "rawAudit": {
+    "info": 0,
+    "low": 3,
+    "moderate": 0,
+    "high": 28,
+    "critical": 0,
+    "total": 31
+  },
+  "sourceIdentitySha256": "3047d96e6a94625c5da6e521eb9dd76293dc3cef33714e5cf22f6d7e830c2779",
+  "stop": "Verified browser/lifecycle/source/status/capture handoff before substantial native/provider/security cycle; no phase count limit",
+  "diffChecks": {
+    "run19TrackedDiffExitCode": 0,
+    "preservedStagedDiffExitCode": 2,
+    "reason": "Unchanged Run18 upstream patch/log whitespace; actual command retained, no staging or history rewrite"
+  }
+}

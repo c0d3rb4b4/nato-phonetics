@@ -1,0 +1,49 @@
+{
+  "engine": "chromium",
+  "runner": "1.65.1",
+  "checks": [
+    {
+      "scope": "two simultaneous actual pointer answers; exact selected word/feedback and both live summaries",
+      "answers": [
+        {
+          "symbol": "J",
+          "word": "Juliett"
+        },
+        {
+          "symbol": "O",
+          "word": "Oscar"
+        }
+      ]
+    },
+    {
+      "scope": "failed-write Retry with withheld storage events cannot resurrect deleted answers",
+      "generation": "bbe4928f-a1d5-4678-9f7d-5c858dc4e6ec"
+    },
+    {
+      "scope": "a new submission after unseen deletion saves exactly once"
+    },
+    {
+      "scope": "real exclusive-lock timeout followed by awaited release/actual pointer Retry saves once"
+    }
+  ],
+  "errors": [],
+  "browser": "157.0.4341.60",
+  "capabilities": {
+    "secureContext": true,
+    "locks": true,
+    "serviceWorker": true,
+    "cacheStorage": true,
+    "abortTimeout": true
+  },
+  "freeze": {
+    "before": 1,
+    "after": {
+      "beats": 27,
+      "events": []
+    },
+    "mutationInput": "real a UI handlers with DOM click to avoid changing OS focus"
+  },
+  "status": "failed",
+  "failure": "AssertionError [ERR_ASSERTION]: Frozen page interval must stop\n    at /Users/mac/dev/apps/nato-phonetics/scripts/verify-browser-support.cjs:160:5",
+  "at": "2026-11-18T16:17:38.184Z"
+}
