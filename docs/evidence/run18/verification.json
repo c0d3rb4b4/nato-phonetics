@@ -1,0 +1,221 @@
+{
+  "date": "2026-11-18",
+  "resumeMatched": {
+    "matched": 228,
+    "total": 228,
+    "mismatches": []
+  },
+  "baselineFiles": 3483,
+  "changedSinceResume": {
+    ".github/workflows/ci.yml": {
+      "before": "fca1251d9019a13e58d0e2e5ddd67839093c267319b7ec65328456202381a473",
+      "after": "c6ea59be2f45479cef5f76a39ba8a5193c8fa0d2e04bdc0dbd2918c0bc0c6d11"
+    },
+    "README.md": {
+      "before": "63f986464796548c1af58c3cbe5cf5ed9b3cdf5b3c74df57dce6bf4318300926",
+      "after": "f681d1b5412b38c56c017f28de4a70312c7454ff3abb17c1c487e8f8b2a1b00e"
+    },
+    "docs/APP_REVIEW.md": {
+      "before": "71570c834660e0366d4ee45cb8af45d6b107720a44794e242e21c206ea90edbf",
+      "after": "85c254430ac858e66c8a8e6f9a4ac179eb11a19ab5d84bea1e530eb57fc2e8ae"
+    },
+    "docs/DELIVERY_PLAN.md": {
+      "before": "4d53176617847617fde5df85058f7c3b5f2347e653ff114347c01a55947b1b7a",
+      "after": "28481ff6306f41706110b68cdc5c32e0a82aa4977ffb5a98121eaa2c417d7519"
+    },
+    "docs/NATIVE_BUILDS.md": {
+      "before": "51b7d26a9f73bcad106e416a8121b7d5b30358678041993cb0f699b99d11baaf",
+      "after": "5cdd33ec7a77cf30cbc3d9dc16bc92ac4260167283eb2b43f1df4557bee25bf5"
+    },
+    "docs/RELEASE_RUNBOOK.md": {
+      "before": "b20f042b5e4623326a56e8fcb79afda9d407233f3a86d940a4091bc4ff023fd0",
+      "after": "9839c3e2fdf72ea88cb60e38df1bdd9b8cbfada9ae64d5909ef101efdaeccdad"
+    },
+    "docs/SECURITY_REVIEW.md": {
+      "before": "0824cd42165ba246f4a8918328cef899710123c14c9ba2c9fdce2688599dd8ab",
+      "after": "e6d0906455e11e40c5ed16112e0291a2e70d39a07d1dccd43653a352fcdd58c6"
+    },
+    "package.json": {
+      "before": "411ca40c39c56fcbb14537ff05ba384abe595bc0f439e5449309b532da000ec9",
+      "after": "4bc8d46780cc97cfe51a1191561088abf21197bd717a0afbbe65d42cffb1a0d7"
+    }
+  },
+  "newMaintainedFiles": [
+    "docs/NATIVE_TEXT_PRECISION.md",
+    "scripts/patch-native-yoga.cjs",
+    "scripts/patches/react-native-0.81.5-yoga-pixel-grid.json",
+    "scripts/verify-yoga-rounding.cjs",
+    "tests/native-yoga-patch.test.mjs",
+    "tests/native/yoga-rounding.cpp"
+  ],
+  "unexpectedBaselineChanges": [],
+  "historicalEvidenceFiles": 3261,
+  "allPriorEvidencePreserved": true,
+  "protectedAppPolicyNativeConfigFontsLockStorageWorkerInputsPreserved": true,
+  "originalReviewHistoryPreserved": true,
+  "maintainedFiles": 228,
+  "ledgerCounts": {
+    "resolved": 5,
+    "implemented-awaiting-M11": 12,
+    "in-progress": 18
+  },
+  "allM11Unperformed": true,
+  "allScreenshotHashesPass": true,
+  "screenshotsInspected": 13,
+  "platformCounts": {
+    "web": 2,
+    "ios": 10,
+    "android": 1
+  },
+  "artifactHashesPass": true,
+  "all25IOSInstalledFilesPreviouslyCompared": true,
+  "iosExecutableChangedFromRun17": true,
+  "iosEmbeddedJSMatchesRun17": true,
+  "androidLoadedJSMatchesRun17": true,
+  "productionShellExactlyMatchesRun17": true,
+  "productionResourcesPass": true,
+  "guardedInstalledYogaHashPass": true,
+  "retainedNonzeroCommands": [
+    {
+      "command": [
+        "node",
+        "scripts/verify-yoga-rounding.cjs",
+        "docs/evidence/run18/ios/PixelGrid-original.cpp"
+      ],
+      "exitCode": 1,
+      "log": "shared/yoga-before.log"
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "audit:review"
+      ],
+      "exitCode": 1,
+      "log": "shared/audit-review.log"
+    },
+    {
+      "command": [
+        "node",
+        "docs/evidence/run18/shared/capture-policy-web.cjs"
+      ],
+      "exitCode": 1,
+      "log": "shared/web-policy.log"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/verify-yoga-rounding.cjs",
+        "docs/evidence/run18/ios/PixelGrid-original.cpp"
+      ],
+      "exitCode": 1,
+      "log": "shared/yoga-expanded-before.log"
+    },
+    {
+      "command": [
+        "xcodebuild",
+        "test",
+        "-project",
+        "docs/evidence/run18/ios/harness/Capture.xcodeproj",
+        "-scheme",
+        "Capture",
+        "-configuration",
+        "Debug",
+        "-destination",
+        "platform=iOS Simulator,id=0653F7EC-9237-4AC5-A264-12969E625070",
+        "-derivedDataPath",
+        "artifacts/run18/ios-harness",
+        "-resultBundlePath",
+        "artifacts/run18/final-default.xcresult",
+        "-jobs",
+        "2",
+        "CODE_SIGNING_ALLOWED=NO",
+        "-parallel-testing-enabled",
+        "NO",
+        "-only-testing:CaptureUITests/PolicyUITests/testFinalPolicyDefault",
+        "-only-testing:CaptureUITests/PolicyUITests/testFinalCoreLayouts"
+      ],
+      "exitCode": 65,
+      "log": "ios/final-default-test.log"
+    },
+    {
+      "command": [
+        "xcodebuild",
+        "test",
+        "-project",
+        "docs/evidence/run18/ios/harness/Capture.xcodeproj",
+        "-scheme",
+        "Capture",
+        "-configuration",
+        "Debug",
+        "-destination",
+        "platform=iOS Simulator,id=0653F7EC-9237-4AC5-A264-12969E625070",
+        "-derivedDataPath",
+        "artifacts/run18/ios-harness",
+        "-resultBundlePath",
+        "artifacts/run18/final-maximum.xcresult",
+        "-jobs",
+        "2",
+        "CODE_SIGNING_ALLOWED=NO",
+        "-parallel-testing-enabled",
+        "NO",
+        "-only-testing:CaptureUITests/PolicyUITests/testFinalPolicyMaximum",
+        "-only-testing:CaptureUITests/PolicyUITests/testFinalMaximumTiles"
+      ],
+      "exitCode": 65,
+      "log": "ios/final-maximum-test.log"
+    },
+    {
+      "command": [
+        "/Users/mac/Library/Android/sdk/emulator/emulator",
+        "-avd",
+        "nato-p00-api36",
+        "-port",
+        "5580",
+        "-no-window",
+        "-no-audio",
+        "-no-snapshot",
+        "-memory",
+        "1024",
+        "-cores",
+        "2",
+        "-gpu",
+        "swiftshader_indirect"
+      ],
+      "exitCode": 1,
+      "log": "android/emulator.log"
+    },
+    {
+      "command": [
+        "node",
+        "node_modules/react-native/cli.js",
+        "start",
+        "--port",
+        "8081",
+        "--max-workers",
+        "2"
+      ],
+      "exitCode": -2,
+      "log": "android/metro.log"
+    },
+    {
+      "command": [
+        "python3",
+        "docs/evidence/run18/shared/update-docs-initial.py"
+      ],
+      "exitCode": 1,
+      "log": "shared/docs-update-initial.log"
+    }
+  ],
+  "intentionalStop": "Metro child exit-2 from explicit SIGINT after actual loaded-source capture; emulator retry exits0 after explicit adb shutdown; initial emulator exit1 remains failed",
+  "knownRedGates": [
+    "Current raw audit/disposition exit1,28high/3low",
+    "First default core command stale selector fails; default policy method passes; corrected core command separately passes",
+    "Original full maximum policy heading OCR fails isolated visibly drawn y; separate same-state ending command passes",
+    "First whole web range includes blank trailing-space overflow; precise non-whitespace character follow-up passes",
+    "First emulator start disk minimum fails; cleanup/product-preservation/retry succeeds",
+    "First documentation updater rejects long-bold task anchor before any file write; corrected anchored update succeeds",
+    "All prior native P1/P3, browser/runtime/recognition/signing/hosting/integrated and M11 gates remain as recorded"
+  ],
+  "missingLocalLinks": []
+}

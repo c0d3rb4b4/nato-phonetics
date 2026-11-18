@@ -1,0 +1,462 @@
+[
+  {
+    "file": "desktop-offline-ready.png",
+    "capturedAt": "2026-11-18T14:34:02.728Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "browser": "Edg/157.0.4341.60",
+    "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "serverShellId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "renderedFixture": "production A",
+    "background": "rgb(31, 41, 51)",
+    "rootFontSize": "16px",
+    "online": true,
+    "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16",
+    "platform": "web",
+    "theme": "dark",
+    "textScale": 1,
+    "sha256": "a7ab8b4849f74e79c6722449a5a169a0348230bd027422feca39ec871c44c517"
+  },
+  {
+    "file": "offline-alphabet-fonts.png",
+    "capturedAt": "2026-11-18T14:34:17.761Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "browser": "Edg/157.0.4341.60",
+    "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "serverShellId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "renderedFixture": "production A",
+    "background": "rgb(31, 41, 51)",
+    "rootFontSize": "16px",
+    "online": false,
+    "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16",
+    "platform": "web",
+    "theme": "dark",
+    "textScale": 1,
+    "sha256": "d1c5700621c4e2b58e75827a67522ae40aeca27b0169a0ba1eeb727baa9a9e49"
+  },
+  {
+    "file": "offline-converter.png",
+    "capturedAt": "2026-11-18T14:34:19.829Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "browser": "Edg/157.0.4341.60",
+    "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "serverShellId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "renderedFixture": "production A",
+    "background": "rgb(31, 41, 51)",
+    "rootFontSize": "16px",
+    "online": false,
+    "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16",
+    "platform": "web",
+    "theme": "dark",
+    "textScale": 1,
+    "sha256": "1d437841a14a2ebe44e2bb948468c97f6e90dd9473cec438d03a2d40281f9f31"
+  },
+  {
+    "file": "offline-saved-progress.png",
+    "capturedAt": "2026-11-18T14:34:20.850Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "browser": "Edg/157.0.4341.60",
+    "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "serverShellId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "renderedFixture": "production A",
+    "background": "rgb(31, 41, 51)",
+    "rootFontSize": "16px",
+    "online": false,
+    "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16",
+    "platform": "web",
+    "theme": "dark",
+    "textScale": 1,
+    "sha256": "5996702e8a1b7db95e4b61fc2442945f5b8ef4ab50bea875bc11c3fd3f5bbc7a"
+  },
+  {
+    "file": "desktop-offline-policy.png",
+    "capturedAt": "2026-11-18T14:34:22.907Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "browser": "Edg/157.0.4341.60",
+    "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "serverShellId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "renderedFixture": "production A",
+    "background": "rgb(31, 41, 51)",
+    "rootFontSize": "16px",
+    "online": false,
+    "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16",
+    "platform": "web",
+    "theme": "dark",
+    "textScale": 1,
+    "sha256": "9dfc3152de789713de0be55d33d99c024cc66a4e8efed3116048affd7ef2dd68"
+  },
+  {
+    "file": "desktop-offline-menu.png",
+    "capturedAt": "2026-11-18T14:34:23.648Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "browser": "Edg/157.0.4341.60",
+    "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "serverShellId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "renderedFixture": "production A",
+    "background": "rgb(31, 41, 51)",
+    "rootFontSize": "16px",
+    "online": false,
+    "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16",
+    "platform": "web",
+    "theme": "dark",
+    "textScale": 1,
+    "sha256": "4aaf5c18e8c47825b39e601ab0f39bae4dcd7b6f7252be990cc71955a84d1f79"
+  },
+  {
+    "file": "update-download-failed.png",
+    "capturedAt": "2026-11-18T14:34:24.730Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "browser": "Edg/157.0.4341.60",
+    "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "serverShellId": "79ad86d526c3c8b3e348b39ce81ec22b36ae9390a9260f03e66363e42154529a",
+    "renderedFixture": "production A",
+    "background": "rgb(31, 41, 51)",
+    "rootFontSize": "16px",
+    "online": true,
+    "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16",
+    "platform": "web",
+    "theme": "dark",
+    "textScale": 1,
+    "sha256": "169142d9e23329c59c301362c2c03fc46162fb3f1e26a900436a41c68b07a94a"
+  },
+  {
+    "file": "desktop-update-waiting.png",
+    "capturedAt": "2026-11-18T14:34:24.832Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "browser": "Edg/157.0.4341.60",
+    "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "serverShellId": "79ad86d526c3c8b3e348b39ce81ec22b36ae9390a9260f03e66363e42154529a",
+    "renderedFixture": "production A",
+    "background": "rgb(31, 41, 51)",
+    "rootFontSize": "16px",
+    "online": true,
+    "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16",
+    "platform": "web",
+    "theme": "dark",
+    "textScale": 1,
+    "sha256": "32582d89db516fd533f23ac1861bbeee6575ec6aab597eed40082df0d19d0e47"
+  },
+  {
+    "file": "update-activated.png",
+    "capturedAt": "2026-11-18T14:34:27.748Z",
+    "viewport": {
+      "width": 800,
+      "height": 600
+    },
+    "browser": "Edg/157.0.4341.60",
+    "buildId": "79ad86d526c3c8b3e348b39ce81ec22b36ae9390a9260f03e66363e42154529a",
+    "serverShellId": "79ad86d526c3c8b3e348b39ce81ec22b36ae9390a9260f03e66363e42154529a",
+    "renderedFixture": "b",
+    "background": "rgb(31, 41, 51)",
+    "rootFontSize": "16px",
+    "online": true,
+    "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16",
+    "platform": "web",
+    "theme": "dark",
+    "textScale": 1,
+    "sha256": "358c465f1a177ca2ed091a1e6ecb7762a937cb8e3325328c9c6b96b302de79ab"
+  },
+  {
+    "file": "rollback-ready.png",
+    "capturedAt": "2026-11-18T14:34:31.001Z",
+    "viewport": {
+      "width": 800,
+      "height": 600
+    },
+    "browser": "Edg/157.0.4341.60",
+    "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "serverShellId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "renderedFixture": "production A",
+    "background": "rgb(31, 41, 51)",
+    "rootFontSize": "16px",
+    "online": true,
+    "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16",
+    "platform": "web",
+    "theme": "dark",
+    "textScale": 1,
+    "sha256": "358c465f1a177ca2ed091a1e6ecb7762a937cb8e3325328c9c6b96b302de79ab"
+  },
+  {
+    "file": "narrow-dark-cold-progress.png",
+    "capturedAt": "2026-11-18T14:34:34.159Z",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "browser": "Edg/157.0.4341.60",
+    "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "serverShellId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "renderedFixture": "production A",
+    "background": "rgb(31, 41, 51)",
+    "rootFontSize": "16px",
+    "online": false,
+    "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16",
+    "platform": "web",
+    "theme": "dark",
+    "textScale": 1,
+    "sha256": "5b638b457e64df586dc671671e779c50fa177079dc3cb4432b49c6591b7137e6"
+  },
+  {
+    "file": "narrow-dark-cold-offline.png",
+    "capturedAt": "2026-11-18T14:34:35.197Z",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "browser": "Edg/157.0.4341.60",
+    "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "serverShellId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "renderedFixture": "production A",
+    "background": "rgb(31, 41, 51)",
+    "rootFontSize": "16px",
+    "online": false,
+    "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16",
+    "platform": "web",
+    "theme": "dark",
+    "textScale": 1,
+    "sha256": "6c60057994fefab890032c3b3980c8ae61d2cfd9f94d91bb104b0ce826a7c3b4"
+  },
+  {
+    "file": "narrow-dark-offline-policy-top.png",
+    "capturedAt": "2026-11-18T14:34:36.182Z",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "browser": "Edg/157.0.4341.60",
+    "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "serverShellId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "renderedFixture": "production A",
+    "background": "rgb(31, 41, 51)",
+    "rootFontSize": "16px",
+    "online": false,
+    "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16",
+    "platform": "web",
+    "theme": "dark",
+    "textScale": 1,
+    "sha256": "74792a1c353a9ee80284eb01052b75f6009644dae13dbcd420ca26fe1eb56181"
+  },
+  {
+    "file": "narrow-dark-offline-policy-bottom.png",
+    "capturedAt": "2026-11-18T14:34:36.230Z",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "browser": "Edg/157.0.4341.60",
+    "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "serverShellId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "renderedFixture": "production A",
+    "background": "rgb(31, 41, 51)",
+    "rootFontSize": "16px",
+    "online": false,
+    "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16",
+    "platform": "web",
+    "theme": "dark",
+    "textScale": 1,
+    "sha256": "b1dd8bf1d0f785255185da5b95e08124c9f2e1f1320db5097c48a72103f3b9da"
+  },
+  {
+    "file": "narrow-dark-200-offline-status.png",
+    "capturedAt": "2026-11-18T14:34:38.209Z",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "browser": "Edg/157.0.4341.60",
+    "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "serverShellId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "renderedFixture": "production A",
+    "background": "rgb(31, 41, 51)",
+    "rootFontSize": "32px",
+    "online": false,
+    "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16",
+    "platform": "web",
+    "theme": "dark",
+    "textScale": 2,
+    "sha256": "b4373cfd10d9d2e22a058a3a36a24a39e25d8c077606459b7e76325aac969853"
+  },
+  {
+    "file": "narrow-dark-200-offline-retry.png",
+    "capturedAt": "2026-11-18T14:34:38.255Z",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "browser": "Edg/157.0.4341.60",
+    "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "serverShellId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "renderedFixture": "production A",
+    "background": "rgb(31, 41, 51)",
+    "rootFontSize": "32px",
+    "online": false,
+    "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16",
+    "platform": "web",
+    "theme": "dark",
+    "textScale": 2,
+    "sha256": "9356e067180a6ce6beac893250b07f605ee78d8649bd3223dee54a5c5eb5c8da"
+  },
+  {
+    "file": "narrow-blocked.png",
+    "capturedAt": "2026-11-18T14:34:39.744Z",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "browser": "Edg/157.0.4341.60",
+    "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "serverShellId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "renderedFixture": "production A",
+    "background": "rgb(31, 41, 51)",
+    "rootFontSize": "16px",
+    "online": true,
+    "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16",
+    "platform": "web",
+    "theme": "dark",
+    "textScale": 1,
+    "sha256": "6944dc63449a45e0537783134ef2c44e12c4eac353902d4212dca7ca084493fb"
+  },
+  {
+    "file": "narrow-unavailable.png",
+    "capturedAt": "2026-11-18T14:34:40.942Z",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "browser": "Edg/157.0.4341.60",
+    "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "serverShellId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "renderedFixture": "production A",
+    "background": "rgb(31, 41, 51)",
+    "rootFontSize": "16px",
+    "online": true,
+    "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16",
+    "platform": "web",
+    "theme": "dark",
+    "textScale": 1,
+    "sha256": "22a6049fce210c67005e7fd1a5d3ab4f7c96d9c1ee1eb6d4729d32f7b3e7889c"
+  },
+  {
+    "file": "narrow-corrupt.png",
+    "capturedAt": "2026-11-18T14:34:42.152Z",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "browser": "Edg/157.0.4341.60",
+    "buildId": "79ad86d526c3c8b3e348b39ce81ec22b36ae9390a9260f03e66363e42154529a",
+    "serverShellId": "79ad86d526c3c8b3e348b39ce81ec22b36ae9390a9260f03e66363e42154529a",
+    "renderedFixture": "b",
+    "background": "rgb(31, 41, 51)",
+    "rootFontSize": "16px",
+    "online": true,
+    "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16",
+    "platform": "web",
+    "theme": "dark",
+    "textScale": 1,
+    "sha256": "6944dc63449a45e0537783134ef2c44e12c4eac353902d4212dca7ca084493fb"
+  },
+  {
+    "file": "narrow-first-install-recovered.png",
+    "capturedAt": "2026-11-18T14:34:42.262Z",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "browser": "Edg/157.0.4341.60",
+    "buildId": "79ad86d526c3c8b3e348b39ce81ec22b36ae9390a9260f03e66363e42154529a",
+    "serverShellId": "79ad86d526c3c8b3e348b39ce81ec22b36ae9390a9260f03e66363e42154529a",
+    "renderedFixture": "b",
+    "background": "rgb(31, 41, 51)",
+    "rootFontSize": "16px",
+    "online": true,
+    "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16",
+    "platform": "web",
+    "theme": "dark",
+    "textScale": 1,
+    "sha256": "a0f6d6d4b0902cf7174ee23f2955d1f5be542eab3f6dbe7eda75e51d09c14679"
+  },
+  {
+    "file": "desktop-light-ready.png",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "theme": "light",
+    "browser": "Edg/157.0.4341.60",
+    "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "capturedAt": "2026-11-18T14:23:19.798Z",
+    "command": "node docs/evidence/run16/capture-light.cjs",
+    "platform": "web",
+    "sha256": "20b4df114aa8f1faa139de4ed3d0a92fcd8e5aeb13c125bea023a47cf946719d",
+    "textScale": 1
+  },
+  {
+    "file": "desktop-light-policy.png",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "theme": "light",
+    "browser": "Edg/157.0.4341.60",
+    "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "capturedAt": "2026-11-18T14:23:20.803Z",
+    "command": "node docs/evidence/run16/capture-light.cjs",
+    "platform": "web",
+    "sha256": "07fd671e714c7726915901fb4be1fe111dce564c3688c21d542d5ec2bfa9ecae",
+    "textScale": 1
+  },
+  {
+    "file": "native-offline-policy.png",
+    "state": "Changed native Offline availability policy; obsolete web-unimplemented sentence removed",
+    "theme": "light",
+    "width": 720,
+    "height": 1600,
+    "sha256": "c6879cfcce09ef0d4452a691dd6d834704618778f61c8f2aae381d181f7a668c",
+    "timestamp": "2026-11-18T14:25:50Z",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "androidVersion": "16",
+    "fontScale": "1.0",
+    "displaySize": "Physical size: 1080x2400\nOverride size: 720x1600",
+    "displayDensity": "Physical density: 420\nOverride density: 280",
+    "platform": "android"
+  },
+  {
+    "file": "native-offline-policy.png",
+    "os": "iOS26.2",
+    "device": "iPhone 17 Pro",
+    "width": 1206,
+    "height": 2622,
+    "textScale": "Large/default",
+    "theme": "light",
+    "sha256": "c07c43a6e7a76dd8f10de942445095698204f20c61100916fefff54fe4d485a8",
+    "capturedAt": "2026-11-18T14:28:06.438000+00:00",
+    "command": "final cold terminated Release process; XCUIScreen.main.screenshot; xcresulttool export attachments",
+    "candidate": "final restored renderer; accurate Offline paragraph; artifact.json",
+    "limitation": "Adjacent unchanged Speech paragraph remains clipped; not a whole-policy ink pass",
+    "platform": "ios"
+  }
+]

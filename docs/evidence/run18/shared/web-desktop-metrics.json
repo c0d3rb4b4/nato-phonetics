@@ -1,0 +1,43 @@
+{
+  "metrics": {
+    "text": "Speech and connectivity\nRequested playback passes text through the native operating system speech API or directly to the browser’s speech provider on web. Voices, processing location, connectivity and retention depend on that provider. Some voices may use network services. The app does not enforce on-device speech or verify provider retention. Check your provider’s settings and policy before entering sensitive text. Speech output does not request microphone access.",
+    "box": {
+      "x": 236,
+      "y": 402,
+      "width": 808,
+      "height": 152,
+      "top": 402,
+      "right": 1044,
+      "bottom": 554,
+      "left": 236
+    },
+    "characterOverflow": [
+      {
+        "character": " ",
+        "rect": {
+          "x": 1041.15625,
+          "y": 457,
+          "width": 4.1875,
+          "height": 18,
+          "top": 457,
+          "right": 1045.34375,
+          "bottom": 475,
+          "left": 1041.15625
+        }
+      }
+    ],
+    "overflow": [
+      {
+        "x": 1041.15625,
+        "y": 457,
+        "width": 4.1875,
+        "height": 18,
+        "top": 457,
+        "right": 1045.34375,
+        "bottom": 475,
+        "left": 1041.15625
+      }
+    ]
+  },
+  "errors": []
+}

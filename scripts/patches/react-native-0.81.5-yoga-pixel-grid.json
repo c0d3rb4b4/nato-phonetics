@@ -1,0 +1,24 @@
+{
+  "version": "0.81.5",
+  "sourcePath": "ReactCommon/yoga/yoga/algorithm/PixelGrid.cpp",
+  "originalSha256": "9c1dd2f84de070bb176f6c5eae632c5fba38efd6b3f05e596201e7a476b69cdc",
+  "patchedSha256": "503e97794fcc1ee1d06de60a2fb8554c4348e648745589b1a20af2492d44a1da",
+  "changes": [
+    {
+      "before": "float roundValueToPixelGrid(\n",
+      "after": "namespace {\n\n// Rounds in double precision. A dimension is the difference of two rounded\n// edges, and far from the origin a float has fewer bits than a pixel: taking\n// that difference in float can leave it a step short of the real size (for\n// example 43.9998 instead of 44 for a node spanning y = 2048 on a 3x screen),\n// which makes a text renderer drop the last line. Subtract first, then narrow.\ndouble roundValueToPixelGridDouble(\n"
+    },
+    {
+      "before": "      : (float)(scaledValue / pointScaleFactor);\n",
+      "after": "      : scaledValue / pointScaleFactor;\n}\n\n} // namespace\n\nfloat roundValueToPixelGrid(\n    const double value,\n    const double pointScaleFactor,\n    const bool forceCeil,\n    const bool forceFloor) {\n  return static_cast<float>(roundValueToPixelGridDouble(\n      value, pointScaleFactor, forceCeil, forceFloor));\n"
+    },
+    {
+      "before": "        roundValueToPixelGrid(\n            absoluteNodeRight,\n            pointScaleFactor,\n            (textRounding && hasFractionalWidth),\n            (textRounding && !hasFractionalWidth)) -\n            roundValueToPixelGrid(\n                absoluteNodeLeft, pointScaleFactor, false, textRounding));\n",
+      "after": "        static_cast<float>(\n            roundValueToPixelGridDouble(\n                absoluteNodeRight,\n                pointScaleFactor,\n                (textRounding && hasFractionalWidth),\n                (textRounding && !hasFractionalWidth)) -\n            roundValueToPixelGridDouble(\n                absoluteNodeLeft, pointScaleFactor, false, textRounding)));\n"
+    },
+    {
+      "before": "        roundValueToPixelGrid(\n            absoluteNodeBottom,\n            pointScaleFactor,\n            (textRounding && hasFractionalHeight),\n            (textRounding && !hasFractionalHeight)) -\n            roundValueToPixelGrid(\n                absoluteNodeTop, pointScaleFactor, false, textRounding));\n",
+      "after": "        static_cast<float>(\n            roundValueToPixelGridDouble(\n                absoluteNodeBottom,\n                pointScaleFactor,\n                (textRounding && hasFractionalHeight),\n                (textRounding && !hasFractionalHeight)) -\n            roundValueToPixelGridDouble(\n                absoluteNodeTop, pointScaleFactor, false, textRounding)));\n"
+    }
+  ]
+}

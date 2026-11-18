@@ -1,0 +1,814 @@
+
+> nato-phonetics@1.0.0 test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# (node:22411) ExperimentalWarning: The MockTimers API is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: all 36 canonical entries have intentional provider text; special digits never send ordinary words
+ok 1 - all 36 canonical entries have intentional provider text; special digits never send ordinary words
+  ---
+  duration_ms: 4.574875
+  type: 'test'
+  ...
+# Subtest: a rapid AB replacement cancels old remaining words and ignores late duplicate callbacks
+ok 2 - a rapid AB replacement cancels old remaining words and ignores late duplicate callbacks
+  ---
+  duration_ms: 11.019917
+  type: 'test'
+  ...
+# Subtest: latest request wins even when stop and preparation are still pending
+ok 3 - latest request wins even when stop and preparation are still pending
+  ---
+  duration_ms: 2.556583
+  type: 'test'
+  ...
+# Subtest: Stop during preparation prevents any later speech and resolves before preparation
+ok 4 - Stop during preparation prevents any later speech and resolves before preparation
+  ---
+  duration_ms: 1.843667
+  type: 'test'
+  ...
+# Subtest: Stop cancels a pending inter-word pause and an unrelated owner cannot stop current playback
+ok 5 - Stop cancels a pending inter-word pause and an unrelated owner cannot stop current playback
+  ---
+  duration_ms: 3.760417
+  type: 'test'
+  ...
+# Subtest: provider stopped, error and synchronous throw produce distinct terminal results
+ok 6 - provider stopped, error and synchronous throw produce distinct terminal results
+  ---
+  duration_ms: 2.435416
+  type: 'test'
+  ...
+# Subtest: missing completion times out, settles once and clears provider queue
+ok 7 - missing completion times out, settles once and clears provider queue
+  ---
+  duration_ms: 1.834833
+  type: 'test'
+  ...
+# Subtest: asynchronous stop is awaited before speech starts
+ok 8 - asynchronous stop is awaited before speech starts
+  ---
+  duration_ms: 1.4895
+  type: 'test'
+  ...
+# Subtest: timed-out raw stop remains a barrier; retry cannot start before its late settlement
+ok 9 - timed-out raw stop remains a barrier; retry cannot start before its late settlement
+  ---
+  duration_ms: 1.3595
+  type: 'test'
+  ...
+# Subtest: rejected stop fails safely; later successful stop permits recovery
+ok 10 - rejected stop fails safely; later successful stop permits recovery
+  ---
+  duration_ms: 0.908834
+  type: 'test'
+  ...
+# Subtest: preparation failure/timeout permit default speech with visible warning and rate/progress
+ok 11 - preparation failure/timeout permit default speech with visible warning and rate/progress
+  ---
+  duration_ms: 1.306166
+  type: 'test'
+  ...
+# Subtest: English normalization retains mixed quality, canonicalizes locales, groups and deduplicates
+ok 12 - English normalization retains mixed quality, canonicalizes locales, groups and deduplicates
+  ---
+  duration_ms: 17.65025
+  type: 'test'
+  ...
+# Subtest: voice preparation covers saved, removed, failing storage/listing, explicit default and selected preview
+ok 13 - voice preparation covers saved, removed, failing storage/listing, explicit default and selected preview
+  ---
+  duration_ms: 2.106042
+  type: 'test'
+  ...
+# Subtest: browser voice enumeration supports delayed, empty, rejected and overlapping loads with listener cleanup
+ok 14 - browser voice enumeration supports delayed, empty, rejected and overlapping loads with listener cleanup
+  ---
+  duration_ms: 0.821709
+  type: 'test'
+  ...
+# Subtest: browser selected voice speech starts synchronously; Stop detaches old callbacks and prevents enumeration resurrection
+ok 15 - browser selected voice speech starts synchronously; Stop detaches old callbacks and prevents enumeration resurrection
+  ---
+  duration_ms: 5.0995
+  type: 'test'
+  ...
+# Subtest: browser error and interruption map to failed/cancelled without continuing the sequence
+ok 16 - browser error and interruption map to failed/cancelled without continuing the sequence
+  ---
+  duration_ms: 1.745084
+  type: 'test'
+  ...
+# Subtest: browser default speech works without enumerated voices, including a failing voice-list API
+ok 17 - browser default speech works without enumerated voices, including a failing voice-list API
+  ---
+  duration_ms: 3.50025
+  type: 'test'
+  ...
+# Subtest: a failed explicit Stop reports provider uncertainty without starting further words
+ok 18 - a failed explicit Stop reports provider uncertainty without starting further words
+  ---
+  duration_ms: 1.686709
+  type: 'test'
+  ...
+# Subtest: voice browsing intersects search/locale, preserves provider order and leaves saved selection independent
+ok 19 - voice browsing intersects search/locale, preserves provider order and leaves saved selection independent
+  ---
+  duration_ms: 1.219125
+  type: 'test'
+  ...
+# Subtest: a matching review passes while the raw audit remains a failure with unresolved vulnerabilities
+ok 20 - a matching review passes while the raw audit remains a failure with unresolved vulnerabilities
+  ---
+  duration_ms: 6.600125
+  type: 'test'
+  ...
+# Subtest: new findings, changed advisories, ranges, severity and locked versions require re-review
+ok 21 - new findings, changed advisories, ranges, severity and locked versions require re-review
+  ---
+  duration_ms: 0.78975
+  type: 'test'
+  ...
+# Subtest: review deadlines, future review dates and malformed dispositions cannot authorize findings
+ok 22 - review deadlines, future review dates and malformed dispositions cannot authorize findings
+  ---
+  duration_ms: 0.888375
+  type: 'test'
+  ...
+# Subtest: disappearing findings and missing lock entries require investigation
+ok 23 - disappearing findings and missing lock entries require investigation
+  ---
+  duration_ms: 0.225291
+  type: 'test'
+  ...
+# Subtest: network failures, unexpected exits, truncated JSON and inconsistent reports fail closed
+ok 24 - network failures, unexpected exits, truncated JSON and inconsistent reports fail closed
+  ---
+  duration_ms: 0.962042
+  type: 'test'
+  ...
+# Subtest: malformed advisory chains and incomplete reports cannot bypass review
+ok 25 - malformed advisory chains and incomplete reports cannot bypass review
+  ---
+  duration_ms: 0.355792
+  type: 'test'
+  ...
+# Subtest: a high advisory cannot hide behind a lower package severity and matching lower counts
+ok 26 - a high advisory cannot hide behind a lower package severity and matching lower counts
+  ---
+  duration_ms: 1.883
+  type: 'test'
+  ...
+# Subtest: conversion boundary shares canonical entries and exposes punctuation/Unicode policy
+ok 27 - conversion boundary shares canonical entries and exposes punctuation/Unicode policy
+  ---
+  duration_ms: 8.449875
+  type: 'test'
+  ...
+# Subtest: question boundary makes every canonical letter reachable with injected randomness
+ok 28 - question boundary makes every canonical letter reachable with injected randomness
+  ---
+  duration_ms: 3.540125
+  type: 'test'
+  ...
+# Subtest: all 26 letters have a unique, canonical mapping and matching lookup
+ok 29 - all 26 letters have a unique, canonical mapping and matching lookup
+  ---
+  duration_ms: 2.256083
+  type: 'test'
+  ...
+# Subtest: all ten digits have a unique canonical mapping and radio pronunciation guides
+ok 30 - all ten digits have a unique canonical mapping and radio pronunciation guides
+  ---
+  duration_ms: 0.155667
+  type: 'test'
+  ...
+# Subtest: native copy/share send exact plain text and preserve cancellation and errors
+ok 31 - native copy/share send exact plain text and preserve cancellation and errors
+  ---
+  duration_ms: 205.885041
+  type: 'test'
+  ...
+# Subtest: browser exports handle unavailable, denied, cancelled and successful capabilities
+ok 32 - browser exports handle unavailable, denied, cancelled and successful capabilities
+  ---
+  duration_ms: 7.329208
+  type: 'test'
+  ...
+# Subtest: conversion preserves canonical copy text and intentional speech representation
+ok 33 - conversion preserves canonical copy text and intentional speech representation
+  ---
+  duration_ms: 1.44125
+  type: 'test'
+  ...
+# Subtest: whitespace runs collapse to a single boundary without leading/trailing pauses
+ok 34 - whitespace runs collapse to a single boundary without leading/trailing pauses
+  ---
+  duration_ms: 2.571708
+  type: 'test'
+  ...
+# Subtest: useful punctuation is explicit literal speech, distinct from word boundaries
+ok 35 - useful punctuation is explicit literal speech, distinct from word boundaries
+  ---
+  duration_ms: 0.314042
+  type: 'test'
+  ...
+# Subtest: Unicode never silently expands, strips accents or vanishes from exports
+ok 36 - Unicode never silently expands, strips accents or vanishes from exports
+  ---
+  duration_ms: 0.64275
+  type: 'test'
+  ...
+# Subtest: display/export/speech agree for mixed input without mutating tokens
+ok 37 - display/export/speech agree for mixed input without mutating tokens
+  ---
+  duration_ms: 0.891708
+  type: 'test'
+  ...
+# Subtest: playback indices track displayed tokens across boundaries, Unicode omissions and repeats
+ok 38 - playback indices track displayed tokens across boundaries, Unicode omissions and repeats
+  ---
+  duration_ms: 0.446166
+  type: 'test'
+  ...
+# Subtest: regeneration verifies all shipped resources, native copies and deterministic output
+ok 39 - regeneration verifies all shipped resources, native copies and deterministic output
+  ---
+  duration_ms: 829.726542
+  type: 'test'
+  ...
+# Subtest: mask guard rejects opaque, blank, incorrectly sized, colored and out-of-safe-zone layers
+ok 40 - mask guard rejects opaque, blank, incorrectly sized, colored and out-of-safe-zone layers
+  ---
+  duration_ms: 27.986791
+  type: 'test'
+  ...
+# Subtest: invalid and unwritable outputs fail nonzero without claiming generated resources
+ok 41 - invalid and unwritable outputs fail nonzero without claiming generated resources
+  ---
+  duration_ms: 541.969875
+  type: 'test'
+  ...
+# Subtest: native bundler reads the real release image dimensions and leaves fonts opaque
+ok 42 - native bundler reads the real release image dimensions and leaves fonts opaque
+  ---
+  duration_ms: 11.600125
+  type: 'test'
+  ...
+# Subtest: malformed asset bytes fail within a bounded subprocess instead of hanging bundling
+ok 43 - malformed asset bytes fail within a bounded subprocess instead of hanging bundling
+  ---
+  duration_ms: 99.958417
+  type: 'test'
+  ...
+# Subtest: native completion correlates utterance IDs and removes listeners exactly once
+ok 44 - native completion correlates utterance IDs and removes listeners exactly once
+  ---
+  duration_ms: 1.641333
+  type: 'test'
+  ...
+# Subtest: native terminal event before speak promise resolves is retained
+ok 45 - native terminal event before speak promise resolves is retained
+  ---
+  duration_ms: 0.258916
+  type: 'test'
+  ...
+# Subtest: Stop during native initialization prevents late utterance and serializes provider stop
+ok 46 - Stop during native initialization prevents late utterance and serializes provider stop
+  ---
+  duration_ms: 8.512708
+  type: 'test'
+  ...
+# Subtest: first playback waits for native initialization before its stop barrier and then completes
+ok 47 - first playback waits for native initialization before its stop barrier and then completes
+  ---
+  duration_ms: 2.462042
+  type: 'test'
+  ...
+# Subtest: Android Stop failure rejects while an idle iOS Stop remains safe
+ok 48 - Android Stop failure rejects while an idle iOS Stop remains safe
+  ---
+  duration_ms: 0.467625
+  type: 'test'
+  ...
+# Subtest: Stop removes subscriptions; stale native events cannot finish next utterance
+ok 49 - Stop removes subscriptions; stale native events cannot finish next utterance
+  ---
+  duration_ms: 0.235084
+  type: 'test'
+  ...
+# Subtest: System Default resets chosen voice and rate maps intentionally per platform
+ok 50 - System Default resets chosen voice and rate maps intentionally per platform
+  ---
+  duration_ms: 0.312042
+  type: 'test'
+  ...
+# Subtest: installed Android provider assigns unique IDs even when identical text is replayed
+ok 51 - installed Android provider assigns unique IDs even when identical text is replayed
+  ---
+  duration_ms: 2.659542
+  type: 'test'
+  ...
+# Subtest: installed iOS provider uses scalar Boolean arguments supported by native interop
+ok 52 - installed iOS provider uses scalar Boolean arguments supported by native interop
+  ---
+  duration_ms: 1.759625
+  type: 'test'
+  ...
+# Subtest: native install patch is repeatable and rejects source/version drift before writing either platform
+ok 53 - native install patch is repeatable and rejects source/version drift before writing either platform
+  ---
+  duration_ms: 12.769667
+  type: 'test'
+  ...
+# Subtest: voice enumeration excludes uninstalled voices and preserves unknown connectivity
+ok 54 - voice enumeration excludes uninstalled voices and preserves unknown connectivity
+  ---
+  duration_ms: 0.898542
+  type: 'test'
+  ...
+# Subtest: native failure cleans listeners and a subsequent call can recover
+ok 55 - native failure cleans listeners and a subsequent call can recover
+  ---
+  duration_ms: 0.250833
+  type: 'test'
+  ...
+# Subtest: Yoga patch exactly reproduces merged source and repeated install leaves bytes intact
+ok 56 - Yoga patch exactly reproduces merged source and repeated install leaves bytes intact
+  ---
+  duration_ms: 3.047416
+  type: 'test'
+  ...
+# Subtest: Yoga patch rejects version drift without writing source
+ok 57 - Yoga patch rejects version drift without writing source
+  ---
+  duration_ms: 4.548375
+  type: 'test'
+  ...
+# Subtest: Yoga patch rejects drift anywhere in original or already-patched source
+ok 58 - Yoga patch rejects drift anywhere in original or already-patched source
+  ---
+  duration_ms: 5.803167
+  type: 'test'
+  ...
+# Subtest: installed source-built Yoga includes the reviewed precision correction
+ok 59 - installed source-built Yoga includes the reviewed precision correction
+  ---
+  duration_ms: 0.294
+  type: 'test'
+  ...
+# Subtest: all maintained URLs and static HTML aliases resolve to the same screen
+ok 60 - all maintained URLs and static HTML aliases resolve to the same screen
+  ---
+  duration_ms: 1.03225
+  type: 'test'
+  ...
+# Subtest: native custom scheme supports host and path forms without accepting external schemes
+ok 61 - native custom scheme supports host and path forms without accepting external schemes
+  ---
+  duration_ms: 0.083875
+  type: 'test'
+  ...
+# Subtest: unknown, malformed and encoded paths remain explicit not-found routes
+ok 62 - unknown, malformed and encoded paths remain explicit not-found routes
+  ---
+  duration_ms: 0.078167
+  type: 'test'
+  ...
+# Subtest: numeric and mixed coverage preserves every canonical symbol and unique answer over varied seeds
+ok 63 - numeric and mixed coverage preserves every canonical symbol and unique answer over varied seeds
+  ---
+  duration_ms: 50.459459
+  type: 'test'
+  ...
+# Subtest: all ten digits score correctly and mistakes retry only missed symbols including special pronunciations
+ok 64 - all ten digits score correctly and mistakes retry only missed symbols including special pronunciations
+  ---
+  duration_ms: 0.567791
+  type: 'test'
+  ...
+# Subtest: mixed full round scores all 36 and switching sets rejects outstanding letter and digit actions
+ok 65 - mixed full round scores all 36 and switching sets rejects outstanding letter and digit actions
+  ---
+  duration_ms: 0.410375
+  type: 'test'
+  ...
+# Subtest: postcode and callsign audio retain complete source order and canonical speech rather than shuffled practice order
+ok 66 - postcode and callsign audio retain complete source order and canonical speech rather than shuffled practice order
+  ---
+  duration_ms: 0.254917
+  type: 'test'
+  ...
+# Subtest: round choices offer a full coverage cycle without duplicates for every practice set
+ok 67 - round choices offer a full coverage cycle without duplicates for every practice set
+  ---
+  duration_ms: 0.094291
+  type: 'test'
+  ...
+# Subtest: offline installation caches only a complete integrity-checked shell
+ok 68 - offline installation caches only a complete integrity-checked shell
+  ---
+  duration_ms: 67.338125
+  type: 'test'
+  ...
+# Subtest: offline fetch boundary preserves routes without caching user/provider traffic
+ok 69 - offline fetch boundary preserves routes without caching user/provider traffic
+  ---
+  duration_ms: 5.866375
+  type: 'test'
+  ...
+# Subtest: evicted pinned resource fails honestly instead of mixing server builds
+ok 70 - evicted pinned resource fails honestly instead of mixing server builds
+  ---
+  duration_ms: 8.493459
+  type: 'test'
+  ...
+# Subtest: normal activation removes only prior app-shell caches and never claims clients
+ok 71 - normal activation removes only prior app-shell caches and never claims clients
+  ---
+  duration_ms: 5.966541
+  type: 'test'
+  ...
+# Subtest: readiness detects eviction and explicit repair preserves a remaining offline copy on failure
+ok 72 - readiness detects eviction and explicit repair preserves a remaining offline copy on failure
+  ---
+  duration_ms: 8.579291
+  type: 'test'
+  ...
+# Subtest: first launch uses typed defaults without writing or clearing any data
+ok 73 - first launch uses typed defaults without writing or clearing any data
+  ---
+  duration_ms: 2.493916
+  type: 'test'
+  ...
+# Subtest: legacy light/dark and voice migrate before their keys are removed
+ok 74 - legacy light/dark and voice migrate before their keys are removed
+  ---
+  duration_ms: 0.434042
+  type: 'test'
+  ...
+# Subtest: the versioned record wins over stale legacy values on restart
+ok 75 - the versioned record wins over stale legacy values on restart
+  ---
+  duration_ms: 0.164416
+  type: 'test'
+  ...
+# Subtest: malformed or unsupported saved records surface an error without overwriting storage
+ok 76 - malformed or unsupported saved records surface an error without overwriting storage
+  ---
+  duration_ms: 0.405792
+  type: 'test'
+  ...
+# Subtest: early updates wait for delayed hydration and override restored same-field values
+ok 77 - early updates wait for delayed hydration and override restored same-field values
+  ---
+  duration_ms: 0.332458
+  type: 'test'
+  ...
+# Subtest: failed reads leave usable defaults and can recover with Retry
+ok 78 - failed reads leave usable defaults and can recover with Retry
+  ---
+  duration_ms: 0.179583
+  type: 'test'
+  ...
+# Subtest: a pending write does not display an unsaved selected value
+ok 79 - a pending write does not display an unsaved selected value
+  ---
+  duration_ms: 0.249666
+  type: 'test'
+  ...
+# Subtest: rapid mixed changes run serially and survive a new store instance
+ok 80 - rapid mixed changes run serially and survive a new store instance
+  ---
+  duration_ms: 0.987042
+  type: 'test'
+  ...
+# Subtest: failed writes preserve selected values and do not resurface in later unrelated writes
+ok 81 - failed writes preserve selected values and do not resurface in later unrelated writes
+  ---
+  duration_ms: 1.139
+  type: 'test'
+  ...
+# Subtest: migration write failure retains legacy preferences and retries without data loss
+ok 82 - migration write failure retains legacy preferences and retries without data loss
+  ---
+  duration_ms: 0.69475
+  type: 'test'
+  ...
+# Subtest: cleanup failure is a visible warning after a successful save, and reset retries cleanup
+ok 83 - cleanup failure is a visible warning after a successful save, and reset retries cleanup
+  ---
+  duration_ms: 0.298792
+  type: 'test'
+  ...
+# Subtest: reset is ordered with changes and removes only legacy settings while persisting defaults
+ok 84 - reset is ordered with changes and removes only legacy settings while persisting defaults
+  ---
+  duration_ms: 0.193167
+  type: 'test'
+  ...
+# Subtest: failed reset preserves the saved settings and unrelated data
+ok 85 - failed reset preserves the saved settings and unrelated data
+  ---
+  duration_ms: 0.096417
+  type: 'test'
+  ...
+# Subtest: server snapshot stays deterministic after client preferences have loaded
+ok 86 - server snapshot stays deterministic after client preferences have loaded
+  ---
+  duration_ms: 0.159667
+  type: 'test'
+  ...
+# Subtest: System mode follows live schemes, overrides remain stable, and reset restores System
+ok 87 - System mode follows live schemes, overrides remain stable, and reset restores System
+  ---
+  duration_ms: 0.542541
+  type: 'test'
+  ...
+# Subtest: older v1 records retain defaults without rewriting; deliberate converter pace survives unrelated changes and reset
+ok 88 - older v1 records retain defaults without rewriting; deliberate converter pace survives unrelated changes and reset
+  ---
+  duration_ms: 0.422459
+  type: 'test'
+  ...
+# Subtest: invalid converter pace cannot be loaded or persisted
+ok 89 - invalid converter pace cannot be loaded or persisted
+  ---
+  duration_ms: 0.844334
+  type: 'test'
+  ...
+# Subtest: elapsed review intervals survive midnight, DST, leap-day and timezone boundaries
+ok 90 - elapsed review intervals survive midnight, DST, leap-day and timezone boundaries
+  ---
+  duration_ms: 1.941542
+  type: 'test'
+  ...
+# Subtest: due and focused reviews are scoped; unpractised and recovered symbols stay out
+ok 91 - due and focused reviews are scoped; unpractised and recovered symbols stay out
+  ---
+  duration_ms: 0.17925
+  type: 'test'
+  ...
+# Subtest: first use is read-only; versioned aggregates survive a new store without response text
+ok 92 - first use is read-only; versioned aggregates survive a new store without response text
+  ---
+  duration_ms: 0.969875
+  type: 'test'
+  ...
+# Subtest: delayed hydration and rapid answers merge with saved totals in order
+ok 93 - delayed hydration and rapid answers merge with saved totals in order
+  ---
+  duration_ms: 0.58375
+  type: 'test'
+  ...
+# Subtest: failed writes show saved totals only; Retry saves pending answers exactly once
+ok 94 - failed writes show saved totals only; Retry saves pending answers exactly once
+  ---
+  duration_ms: 1.329541
+  type: 'test'
+  ...
+# Subtest: corrupt/future/extra-field/invalid schema data is preserved until explicit deletion
+ok 95 - corrupt/future/extra-field/invalid schema data is preserved until explicit deletion
+  ---
+  duration_ms: 2.929625
+  type: 'test'
+  ...
+# Subtest: transient read failure recovers saved data plus pending answers without overwriting it
+ok 96 - transient read failure recovers saved data plus pending answers without overwriting it
+  ---
+  duration_ms: 0.636292
+  type: 'test'
+  ...
+# Subtest: Clear orders after an in-flight write and before later answers; old retries cannot resurrect it
+ok 97 - Clear orders after an in-flight write and before later answers; old retries cannot resurrect it
+  ---
+  duration_ms: 0.479083
+  type: 'test'
+  ...
+# Subtest: failed Clear retains saved and pending data and can be retried separately
+ok 98 - failed Clear retains saved and pending data and can be retried separately
+  ---
+  duration_ms: 0.935333
+  type: 'test'
+  ...
+# Subtest: Reset Preferences and Clear Progress have separate storage scopes including legacy keys
+ok 99 - Reset Preferences and Clear Progress have separate storage scopes including legacy keys
+  ---
+  duration_ms: 0.870458
+  type: 'test'
+  ...
+# Subtest: coordinated stores merge interleaved and simultaneous submissions from fresh persisted totals
+ok 100 - coordinated stores merge interleaved and simultaneous submissions from fresh persisted totals
+  ---
+  duration_ms: 0.574
+  type: 'test'
+  ...
+# Subtest: cross-window deletion invalidates a suspended failed Retry; new answers count without an event
+ok 101 - cross-window deletion invalidates a suspended failed Retry; new answers count without an event
+  ---
+  duration_ms: 2.316292
+  type: 'test'
+  ...
+# Subtest: failed atomic deletion preserves saved and pending answers, generation and preferences
+ok 102 - failed atomic deletion preserves saved and pending answers, generation and preferences
+  ---
+  duration_ms: 1.01325
+  type: 'test'
+  ...
+# Subtest: coordination rejection keeps pending answers and supports Retry without a duplicate
+ok 103 - coordination rejection keeps pending answers and supports Retry without a duplicate
+  ---
+  duration_ms: 0.45625
+  type: 'test'
+  ...
+# Subtest: generation extension reads older records without rewriting and rejects malformed tombstones
+ok 104 - generation extension reads older records without rewriting and rejects malformed tombstones
+  ---
+  duration_ms: 0.370375
+  type: 'test'
+  ...
+# Subtest: unreadable generation never silently discards or restores an uncertain pending answer
+ok 105 - unreadable generation never silently discards or restores an uncertain pending answer
+  ---
+  duration_ms: 0.368917
+  type: 'test'
+  ...
+# Subtest: answer keys recognize explicit alternate spellings, accents, case and separators
+ok 106 - answer keys recognize explicit alternate spellings, accents, case and separators
+  ---
+  duration_ms: 2.635334
+  type: 'test'
+  ...
+# Subtest: all canonical letters produce four distinct choices with one correct answer over varied draws
+ok 107 - all canonical letters produce four distinct choices with one correct answer over varied draws
+  ---
+  duration_ms: 81.737167
+  type: 'test'
+  ...
+# Subtest: real duplicate/ambiguous pools cannot repeat a choice or include a correct-answer alias
+ok 108 - real duplicate/ambiguous pools cannot repeat a choice or include a correct-answer alias
+  ---
+  duration_ms: 9.113875
+  type: 'test'
+  ...
+# Subtest: deficient pools recover with deterministic canonical choices without retaining blanks or duplicates
+ok 109 - deficient pools recover with deterministic canonical choices without retaining blanks or duplicates
+  ---
+  duration_ms: 2.164667
+  type: 'test'
+  ...
+# Subtest: Fisher–Yates uses each shrinking range once and preserves the input
+ok 110 - Fisher–Yates uses each shrinking range once and preserves the input
+  ---
+  duration_ms: 0.5705
+  type: 'test'
+  ...
+# Subtest: seeded generation is reproducible, reaches every letter, and leaves content untouched
+ok 111 - seeded generation is reproducible, reaches every letter, and leaves content untouched
+  ---
+  duration_ms: 192.4345
+  type: 'test'
+  ...
+# Subtest: coverage decks visit each symbol once per cycle and avoid boundary repeats over varied seeds
+ok 112 - coverage decks visit each symbol once per cycle and avoid boundary repeats over varied seeds
+  ---
+  duration_ms: 34.750625
+  type: 'test'
+  ...
+# Subtest: short, two-symbol and single-mistake decks have explicit coverage and repeat behavior
+ok 113 - short, two-symbol and single-mistake decks have explicit coverage and repeat behavior
+  ---
+  duration_ms: 0.194292
+  type: 'test'
+  ...
+# Subtest: invalid lengths, unknown or duplicate symbols and invalid randomness fail explicitly
+ok 114 - invalid lengths, unknown or duplicate symbols and invalid randomness fail explicitly
+  ---
+  duration_ms: 0.380916
+  type: 'test'
+  ...
+# Subtest: default and supported short rounds precompute valid canonical immutable questions
+ok 115 - default and supported short rounds precompute valid canonical immutable questions
+  ---
+  duration_ms: 3.82475
+  type: 'test'
+  ...
+# Subtest: only a current offered choice can submit; duplicate and stale actions preserve the same state
+ok 116 - only a current offered choice can submit; duplicate and stale actions preserve the same state
+  ---
+  duration_ms: 1.318375
+  type: 'test'
+  ...
+# Subtest: final feedback waits for explicit Next, then results retain score, accuracy and missed answers
+ok 117 - final feedback waits for explicit Next, then results retain score, accuracy and missed answers
+  ---
+  duration_ms: 0.296708
+  type: 'test'
+  ...
+# Subtest: cancel invalidates pending callbacks while preserving partial score and restart creates a new generation
+ok 118 - cancel invalidates pending callbacks while preserving partial score and restart creates a new generation
+  ---
+  duration_ms: 0.487583
+  type: 'test'
+  ...
+# Subtest: Retry Mistakes covers unique missed symbols once, with reset scoring and independent identities
+ok 119 - Retry Mistakes covers unique missed symbols once, with reset scoring and independent identities
+  ---
+  duration_ms: 0.39
+  type: 'test'
+  ...
+# Subtest: multi-symbol mistake retry and explicit restart lengths are deterministic and do not lose prior results
+ok 120 - multi-symbol mistake retry and explicit restart lengths are deterministic and do not lose prior results
+  ---
+  duration_ms: 0.838625
+  type: 'test'
+  ...
+# Subtest: listening covers every letter/digit with four distinct same-category symbols and correct scoring
+ok 121 - listening covers every letter/digit with four distinct same-category symbols and correct scoring
+  ---
+  duration_ms: 4.425833
+  type: 'test'
+  ...
+# Subtest: typed recall accepts documented equivalences and rejects phonetic guides, blanks and overlong input
+ok 122 - typed recall accepts documented equivalences and rejects phonetic guides, blanks and overlong input
+  ---
+  duration_ms: 4.090583
+  type: 'test'
+  ...
+# Subtest: recall feedback, retry and restart retain mode and reject duplicate/stale/cancelled submissions
+ok 123 - recall feedback, retry and restart retain mode and reject duplicate/stale/cancelled submissions
+  ---
+  duration_ms: 1.410875
+  type: 'test'
+  ...
+# Subtest: native baseline includes the observed outer-box rounding from the iOS J regression
+ok 124 - native baseline includes the observed outer-box rounding from the iOS J regression
+  ---
+  duration_ms: 66.012542
+  type: 'test'
+  ...
+# Subtest: native baseline compensates the measured Android TREE box without altering its font
+ok 125 - native baseline compensates the measured Android TREE box without altering its font
+  ---
+  duration_ms: 6.991292
+  type: 'test'
+  ...
+# Subtest: new quiz text retains independent geometry and target changes reuse the native line
+ok 126 - new quiz text retains independent geometry and target changes reuse the native line
+  ---
+  duration_ms: 6.711667
+  type: 'test'
+  ...
+# Subtest: late events cannot revive a prior size generation after 1→2→1 or unmount
+ok 127 - late events cannot revive a prior size generation after 1→2→1 or unmount
+  ---
+  duration_ms: 6.842
+  type: 'test'
+  ...
+# Subtest: small word and italic guide text reach 4.5:1 on every letter and digit palette color
+ok 128 - small word and italic guide text reach 4.5:1 on every letter and digit palette color
+  ---
+  duration_ms: 1.64875
+  type: 'test'
+  ...
+# Subtest: shipped tile faces have pinned outlines, real weights and a real italic face on Android and iOS
+ok 129 - shipped tile faces have pinned outlines, real weights and a real italic face on Android and iOS
+  ---
+  duration_ms: 6.984917
+  type: 'test'
+  ...
+# Subtest: every canonical symbol, word and guide fits the shared tile at its specified font size
+ok 130 - every canonical symbol, word and guide fits the shared tile at its specified font size
+  ---
+  duration_ms: 2.849167
+  type: 'test'
+  ...
+# Subtest: Android inverse follows current renderer metrics when reported fontScale returns to an old value
+ok 131 - Android inverse follows current renderer metrics when reported fontScale returns to an old value
+  ---
+  duration_ms: 40.2585
+  type: 'test'
+  ...
+# Subtest: Android adapter applies context and accessibility scale to the target once
+ok 132 - Android adapter applies context and accessibility scale to the target once
+  ---
+  duration_ms: 1.433292
+  type: 'test'
+  ...
+# Subtest: Android adapter fails explicitly for missing or invalid native conversion
+ok 133 - Android adapter fails explicitly for missing or invalid native conversion
+  ---
+  duration_ms: 7.724
+  type: 'test'
+  ...
+1..133
+# tests 133
+# suites 0
+# pass 133
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3202.421917

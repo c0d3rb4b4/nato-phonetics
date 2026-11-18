@@ -1,6 +1,7 @@
 // Independent production web build. Native builds use Metro, never this bundle.
 const fs = require('node:fs/promises');
 const path = require('node:path');
+const { writeOfflineManifest } = require('./offline-manifest.cjs');
 const { pathToFileURL } = require('node:url');
 const esbuild = require('esbuild');
 const { startServer } = require('./serve-web.cjs');
@@ -56,7 +57,14 @@ async function main() {
           return fs.writeFile(path.join(output, route === '/' ? 'index.html' : route.slice(1) + '.html'), html);
         }));
         await fs.copyFile(path.join(project, 'assets/images/favicon.png'), path.join(output, 'favicon.png'));
-        await fs.writeFile(path.join(output, '_redirects'), '/* /index.html 200\n');
+        if (!development) {
+          const routes = Object.fromEntries(Object.keys(ROUTE_TITLES).map(route => [route, route === '/' ? '/index.html' : route + '.html']));
+          await writeOfflineManifest(output, routes, [...Object.values(routes), '/favicon.png',
+            ...Object.keys(result.metafile.outputs).map(file => '/' + path.relative(output, path.resolve(project, file)).split(path.sep).join('/'))]);
+        }
+        // No catch-all rewrite: some static hosts turn missing assets into HTML.
+        // Host configuration must explicitly implement the documented routing.
+        await fs.writeFile(path.join(output, '_headers'), '/service-worker.js\n  Cache-Control: no-cache\n/*.html\n  Cache-Control: no-cache\n/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n');
         await fs.writeFile(path.join(output, '.nato-web-output'), 'Generated NATO Phonetics web build; safe to replace.\n');
       });
     } }],

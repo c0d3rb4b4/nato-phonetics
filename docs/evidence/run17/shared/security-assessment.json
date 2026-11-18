@@ -1,0 +1,116 @@
+{
+  "date": "2026-11-18",
+  "lockfileSha256": "60af8f5d1b5d2965f59c9ce89549e9d0e63f089a920eb3b72acabef94a75a671",
+  "before": {
+    "info": 0,
+    "low": 3,
+    "moderate": 0,
+    "high": 29,
+    "critical": 0,
+    "total": 32
+  },
+  "after": {
+    "info": 0,
+    "low": 3,
+    "moderate": 0,
+    "high": 28,
+    "critical": 0,
+    "total": 31
+  },
+  "removedImageSize": true,
+  "metroFamily": [
+    {
+      "path": "node_modules/metro",
+      "version": "0.83.8"
+    },
+    {
+      "path": "node_modules/metro-babel-transformer",
+      "version": "0.83.8"
+    },
+    {
+      "path": "node_modules/metro-cache",
+      "version": "0.83.8"
+    },
+    {
+      "path": "node_modules/metro-cache-key",
+      "version": "0.83.8"
+    },
+    {
+      "path": "node_modules/metro-config",
+      "version": "0.83.8"
+    },
+    {
+      "path": "node_modules/metro-core",
+      "version": "0.83.8"
+    },
+    {
+      "path": "node_modules/metro-file-map",
+      "version": "0.83.8"
+    },
+    {
+      "path": "node_modules/metro-minify-terser",
+      "version": "0.83.8"
+    },
+    {
+      "path": "node_modules/metro-resolver",
+      "version": "0.83.8"
+    },
+    {
+      "path": "node_modules/metro-runtime",
+      "version": "0.83.8"
+    },
+    {
+      "path": "node_modules/metro-source-map",
+      "version": "0.83.8"
+    },
+    {
+      "path": "node_modules/metro-symbolicate",
+      "version": "0.83.8"
+    },
+    {
+      "path": "node_modules/metro-transform-plugins",
+      "version": "0.83.8"
+    },
+    {
+      "path": "node_modules/metro-transform-worker",
+      "version": "0.83.8"
+    }
+  ],
+  "actualWebInputCount": 323,
+  "affectedInWebGraph": [],
+  "matcher": {
+    "version": "2.3.2",
+    "advisory": "https://github.com/advisories/GHSA-fc5q-39xc-vjpf",
+    "registryLatest": "4.0.7",
+    "samples": [
+      {
+        "pattern": "+(*a)",
+        "input": "16 a characters followed by !",
+        "timeoutMs": 1000,
+        "elapsedMs": 43.708375000000004,
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "false"
+      },
+      {
+        "pattern": "+(*a)",
+        "input": "48 a characters followed by !",
+        "timeoutMs": 1000,
+        "elapsedMs": 1002.60775,
+        "exitCode": null,
+        "signal": "SIGTERM",
+        "error": "ETIMEDOUT",
+        "stdout": ""
+      }
+    ],
+    "reach": "Controlled local pattern reproduces excessive backtracking. Installed Metro file-map common.js consumes filesystem globs through micromatch; CLI/Jest/watch paths remain affected. No authored browser converter/practice input route to these tools is established. No matcher patch/disposition/risk acceptance."
+  },
+  "nativeFramework": "0.81.5",
+  "references": [
+    "https://github.com/react/metro/releases/tag/v0.83.8",
+    "https://github.com/react/metro/pull/1860",
+    "https://github.com/micromatch/picomatch/pull/194"
+  ],
+  "decision": "Adopt compatible upstream parser removal subject to native qualification. Retain failed security gate for28 picomatch-derived high entries. Do not backport the open4.x semantics PR into2.3.2 without complete semantics/adversarial/upstream-suite review."
+}

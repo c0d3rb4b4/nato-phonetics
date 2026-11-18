@@ -1,0 +1,21 @@
+{
+  "candidate": "Run17 direct unsigned Release AAB, Metro0.83.8; no private signing configured",
+  "path": "android/app/build/outputs/bundle/release/app-release.aab",
+  "sizeBytes": 33849142,
+  "sha256": "974cefbcc5001dbd81c4b9e74e177d8b61b2b9ad97f05b8cb419c1f511550972",
+  "bundleBytes": 1045092,
+  "bundleSha256": "5cef952342d21de060ed3036c51570e1a7ad987cec3e2f362842ca7a8f671075",
+  "nativeArchitectures": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86",
+    "x86_64"
+  ],
+  "signatureEntries": [],
+  "assets": {
+    "base/assets/fonts/NatoTile-ExtraBold.ttf": "b0150a84d5e000fcd276cf13e1863ca8bbaab0ff2a0dfdcfa958a48781dd7aa6",
+    "base/assets/fonts/NatoTile-Italic.ttf": "50f16c8bec3ed31190d37403b6e15d200274e7a5e43f1a698a86eef7079d862b",
+    "base/assets/fonts/NatoTile-SemiBold.ttf": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f",
+    "base/assets/index.android.bundle": "5cef952342d21de060ed3036c51570e1a7ad987cec3e2f362842ca7a8f671075"
+  }
+}

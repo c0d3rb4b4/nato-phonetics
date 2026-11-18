@@ -1,5 +1,6 @@
 import { useRouter } from '../src/navigation';
 import { Button, Heading, NavigationCard, Screen } from '../src/components/ui';
+import WebOfflineStatus from '../src/components/WebOfflineStatus';
 
 /** @type {import('../src/types').NavigationItem[]} */
 const MENU_ITEMS = [
@@ -18,5 +19,6 @@ export default function MenuScreen() {
     <Button label="Back to App" accessibilityHint="Returns to the previous app screen, or Home on a direct visit"
       onPress={() => router.canGoBack() ? router.back() : router.replace('/')} />
     <Button label="Home" variant="secondary" onPress={() => router.replace('/')} />
+    <WebOfflineStatus />
   </Screen>;
 }

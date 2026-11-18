@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/mac/dev/apps/nato-phonetics/docs/evidence/run18/shared/update-docs-initial.py", line 27, in <module>
+    s,n=re.subn(pattern,lambda m:m[0]+' '+note,s,count=1,flags=re.M);assert n==1,task
+AssertionError: P05.8

@@ -1,0 +1,16 @@
+[
+  {
+    "file": "native-offline-policy.png",
+    "os": "iOS26.2",
+    "device": "iPhone 17 Pro",
+    "width": 1206,
+    "height": 2622,
+    "textScale": "Large/default",
+    "theme": "light",
+    "sha256": "c07c43a6e7a76dd8f10de942445095698204f20c61100916fefff54fe4d485a8",
+    "capturedAt": "2026-11-18T14:28:06.438000+00:00",
+    "command": "final cold terminated Release process; XCUIScreen.main.screenshot; xcresulttool export attachments",
+    "candidate": "final restored renderer; accurate Offline paragraph; artifact.json",
+    "limitation": "Adjacent unchanged Speech paragraph remains clipped; not a whole-policy ink pass"
+  }
+]

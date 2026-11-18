@@ -1,0 +1,359 @@
+{
+  "scenarios": [
+    "PASS evicted resource repaired by explicit Check without replacing app data",
+    "PASS all 13 direct routes + query/.html/unknown fallback offline; cached fonts; converter exact typed input/export; actual submitted progress retained",
+    "PASS failed update keeps complete A; retry installs B; two windows/draft retained; reload keeps A while another open; normal close-all activation B; old shell cleanup; saved progress/preferences/unrelated retained",
+    "PASS rollback to complete A through default waiting lifecycle preserves data",
+    "PASS real process restart offline with saved progress; narrow dark 320px readiness and 200% text/control reachability",
+    "PASS first-ever offline visit fails honestly, no cached availability claimed",
+    "PASS blocked setup guidance without partial cache or app failure",
+    "PASS unavailable setup guidance without partial cache or app failure",
+    "PASS corrupt setup guidance without partial cache or app failure",
+    "PASS first-install integrity failure recovers through Retry without reload"
+  ],
+  "captures": [
+    {
+      "file": "desktop-offline-ready.png",
+      "capturedAt": "2026-11-18T14:10:46.363Z",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "browser": "Edg/157.0.4341.60",
+      "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "renderedFixture": "production A",
+      "online": true,
+      "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16"
+    },
+    {
+      "file": "offline-alphabet-fonts.png",
+      "capturedAt": "2026-11-18T14:11:01.457Z",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "browser": "Edg/157.0.4341.60",
+      "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "renderedFixture": "production A",
+      "online": false,
+      "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16"
+    },
+    {
+      "file": "offline-converter.png",
+      "capturedAt": "2026-11-18T14:11:02.525Z",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "browser": "Edg/157.0.4341.60",
+      "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "renderedFixture": "production A",
+      "online": false,
+      "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16"
+    },
+    {
+      "file": "offline-saved-progress.png",
+      "capturedAt": "2026-11-18T14:11:03.379Z",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "browser": "Edg/157.0.4341.60",
+      "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "renderedFixture": "production A",
+      "online": false,
+      "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16"
+    },
+    {
+      "file": "desktop-offline-policy.png",
+      "capturedAt": "2026-11-18T14:11:05.336Z",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "browser": "Edg/157.0.4341.60",
+      "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "renderedFixture": "production A",
+      "online": false,
+      "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16"
+    },
+    {
+      "file": "desktop-offline-menu.png",
+      "capturedAt": "2026-11-18T14:11:06.441Z",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "browser": "Edg/157.0.4341.60",
+      "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "renderedFixture": "production A",
+      "online": false,
+      "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16"
+    },
+    {
+      "file": "update-download-failed.png",
+      "capturedAt": "2026-11-18T14:11:07.530Z",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "browser": "Edg/157.0.4341.60",
+      "buildId": "79ad86d526c3c8b3e348b39ce81ec22b36ae9390a9260f03e66363e42154529a",
+      "renderedFixture": "production A",
+      "online": true,
+      "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16"
+    },
+    {
+      "file": "desktop-update-waiting.png",
+      "capturedAt": "2026-11-18T14:11:07.668Z",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "browser": "Edg/157.0.4341.60",
+      "buildId": "79ad86d526c3c8b3e348b39ce81ec22b36ae9390a9260f03e66363e42154529a",
+      "renderedFixture": "production A",
+      "online": true,
+      "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16"
+    },
+    {
+      "file": "update-activated.png",
+      "capturedAt": "2026-11-18T14:11:10.665Z",
+      "viewport": {
+        "width": 800,
+        "height": 600
+      },
+      "browser": "Edg/157.0.4341.60",
+      "buildId": "79ad86d526c3c8b3e348b39ce81ec22b36ae9390a9260f03e66363e42154529a",
+      "renderedFixture": "b",
+      "online": true,
+      "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16"
+    },
+    {
+      "file": "rollback-ready.png",
+      "capturedAt": "2026-11-18T14:11:14.024Z",
+      "viewport": {
+        "width": 800,
+        "height": 600
+      },
+      "browser": "Edg/157.0.4341.60",
+      "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "renderedFixture": "production A",
+      "online": true,
+      "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16"
+    },
+    {
+      "file": "narrow-dark-cold-progress.png",
+      "capturedAt": "2026-11-18T14:11:18.492Z",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "browser": "Edg/157.0.4341.60",
+      "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "renderedFixture": "production A",
+      "online": false,
+      "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16"
+    },
+    {
+      "file": "narrow-dark-cold-offline.png",
+      "capturedAt": "2026-11-18T14:11:19.489Z",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "browser": "Edg/157.0.4341.60",
+      "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "renderedFixture": "production A",
+      "online": false,
+      "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16"
+    },
+    {
+      "file": "narrow-dark-offline-policy-top.png",
+      "capturedAt": "2026-11-18T14:11:20.512Z",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "browser": "Edg/157.0.4341.60",
+      "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "renderedFixture": "production A",
+      "online": false,
+      "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16"
+    },
+    {
+      "file": "narrow-dark-offline-policy-bottom.png",
+      "capturedAt": "2026-11-18T14:11:20.559Z",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "browser": "Edg/157.0.4341.60",
+      "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "renderedFixture": "production A",
+      "online": false,
+      "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16"
+    },
+    {
+      "file": "narrow-dark-200-offline-status.png",
+      "capturedAt": "2026-11-18T14:11:21.524Z",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "browser": "Edg/157.0.4341.60",
+      "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "renderedFixture": "production A",
+      "online": false,
+      "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16"
+    },
+    {
+      "file": "narrow-dark-200-offline-retry.png",
+      "capturedAt": "2026-11-18T14:11:21.574Z",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "browser": "Edg/157.0.4341.60",
+      "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "renderedFixture": "production A",
+      "online": false,
+      "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16"
+    },
+    {
+      "file": "narrow-blocked.png",
+      "capturedAt": "2026-11-18T14:11:22.988Z",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "browser": "Edg/157.0.4341.60",
+      "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "renderedFixture": "production A",
+      "online": true,
+      "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16"
+    },
+    {
+      "file": "narrow-unavailable.png",
+      "capturedAt": "2026-11-18T14:11:24.177Z",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "browser": "Edg/157.0.4341.60",
+      "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "renderedFixture": "production A",
+      "online": true,
+      "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16"
+    },
+    {
+      "file": "narrow-corrupt.png",
+      "capturedAt": "2026-11-18T14:11:25.386Z",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "browser": "Edg/157.0.4341.60",
+      "buildId": "79ad86d526c3c8b3e348b39ce81ec22b36ae9390a9260f03e66363e42154529a",
+      "renderedFixture": "b",
+      "online": true,
+      "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16"
+    },
+    {
+      "file": "narrow-first-install-recovered.png",
+      "capturedAt": "2026-11-18T14:11:25.501Z",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "browser": "Edg/157.0.4341.60",
+      "buildId": "79ad86d526c3c8b3e348b39ce81ec22b36ae9390a9260f03e66363e42154529a",
+      "renderedFixture": "b",
+      "online": true,
+      "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16"
+    }
+  ],
+  "candidate": {
+    "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "fixtureB": "79ad86d526c3c8b3e348b39ce81ec22b36ae9390a9260f03e66363e42154529a",
+    "fixtureDescription": "same production JS; HTML root gains data-update-probe=b; manifest hashes regenerated",
+    "resources": [
+      {
+        "url": "/+not-found.html",
+        "sha256": "c84bc43364009ed8be79b3f4e04299670bdf2ec241446974a469f671e30c01d9"
+      },
+      {
+        "url": "/NatoTile-ExtraBold-P5QNDEHJ.ttf",
+        "sha256": "b0150a84d5e000fcd276cf13e1863ca8bbaab0ff2a0dfdcfa958a48781dd7aa6"
+      },
+      {
+        "url": "/NatoTile-Italic-AWOPV6AY.ttf",
+        "sha256": "50f16c8bec3ed31190d37403b6e15d200274e7a5e43f1a698a86eef7079d862b"
+      },
+      {
+        "url": "/NatoTile-SemiBold-REJGIRDE.ttf",
+        "sha256": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f"
+      },
+      {
+        "url": "/_sitemap.html",
+        "sha256": "2ca419e177082fa7a6885a88e68bc3cba40a3b5e57cf376f6428d0d86c33b475"
+      },
+      {
+        "url": "/about.html",
+        "sha256": "55e02bcbe21bfc7566f3b10182cf943b5655d79e2d12b536dc864fe256c69fcd"
+      },
+      {
+        "url": "/alphabet.html",
+        "sha256": "c86311d5e5b5d800660685d27ae229f00f8b775f46df7ebef2893239847df9cf"
+      },
+      {
+        "url": "/assets/app-W3AARF6X.js",
+        "sha256": "5a8083a98106d5d1d27414baff9e4cb40ce4409b5757f156d6850ca33295881e"
+      },
+      {
+        "url": "/audio-help.html",
+        "sha256": "41d7852b615690673d13e3621a32ff226f579376df51615fe0635aff0d9db184"
+      },
+      {
+        "url": "/converter.html",
+        "sha256": "bc1f8dce545a1734b2f0d2ad3f1ca9b2d46fe33b270429489de9a601b231bf53"
+      },
+      {
+        "url": "/favicon.png",
+        "sha256": "df8f62668e8fe86ec2495876136d75bf358df780d67fad67e97b2712bfa38a2f"
+      },
+      {
+        "url": "/index.html",
+        "sha256": "15571e2af2ff2ed485a1e9a55017cac4e35cc3f38b3e4de64c48bf6c3b848e4b"
+      },
+      {
+        "url": "/letter-quiz.html",
+        "sha256": "f6877d503cf227da9c9c50bed7cd040286e175f92018c32746dbce258e69f859"
+      },
+      {
+        "url": "/menu.html",
+        "sha256": "949d99f487434efedbf47ad20656ec3ff948c785516a0542649d6f39c316f393"
+      },
+      {
+        "url": "/privacy.html",
+        "sha256": "bdbdbcbef7196d5f5ff9c48370033fd6ded41d80349c58da8e365e40140ba3a9"
+      },
+      {
+        "url": "/progress.html",
+        "sha256": "415248073f3974a58d64900b7fecac61ec29beb9ca60f6537b5fc84e31d2264a"
+      },
+      {
+        "url": "/settings.html",
+        "sha256": "fe70da57501cea2bc9f8962d581f8fb6e68c28e3edd73de15def003e2490087f"
+      },
+      {
+        "url": "/voice-select.html",
+        "sha256": "30ca7117b026c01d85448f43bf2fb1b298020f6fd8aab6d2208fdf774e652c2f"
+      }
+    ]
+  },
+  "origin": "http://127.0.0.1:63254",
+  "browser": "Edg/157.0.4341.60",
+  "appErrors": [],
+  "workerSha256": "d9c245947513f9f7ff76175e77d47f228fb6094f2b0ab8aac1a5d7c110fa32a4"
+}

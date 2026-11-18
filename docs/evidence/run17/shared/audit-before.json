@@ -1,0 +1,723 @@
+{
+  "auditReportVersion": 2,
+  "vulnerabilities": {
+    "@jest/environment": {
+      "name": "@jest/environment",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "@jest/fake-timers",
+        "jest-mock"
+      ],
+      "effects": [],
+      "range": ">=27.0.0-next.0",
+      "nodes": [
+        "node_modules/@jest/environment"
+      ],
+      "fixAvailable": true
+    },
+    "@jest/fake-timers": {
+      "name": "@jest/fake-timers",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "jest-message-util",
+        "jest-mock",
+        "jest-util"
+      ],
+      "effects": [
+        "@jest/environment"
+      ],
+      "range": ">=25.0.0",
+      "nodes": [
+        "node_modules/@jest/fake-timers"
+      ],
+      "fixAvailable": true
+    },
+    "@jest/transform": {
+      "name": "@jest/transform",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "jest-haste-map",
+        "jest-util",
+        "micromatch"
+      ],
+      "effects": [
+        "babel-jest"
+      ],
+      "range": ">=25.0.0",
+      "nodes": [
+        "node_modules/@jest/transform"
+      ],
+      "fixAvailable": {
+        "name": "react-native",
+        "version": "0.88.1",
+        "isSemVerMajor": true
+      }
+    },
+    "@react-native-community/cli": {
+      "name": "@react-native-community/cli",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@react-native-community/cli-clean",
+        "@react-native-community/cli-config",
+        "@react-native-community/cli-doctor"
+      ],
+      "effects": [],
+      "range": ">=13.2.0",
+      "nodes": [
+        "node_modules/@react-native-community/cli"
+      ],
+      "fixAvailable": {
+        "name": "@react-native-community/cli",
+        "version": "20.2.0",
+        "isSemVerMajor": false
+      }
+    },
+    "@react-native-community/cli-clean": {
+      "name": "@react-native-community/cli-clean",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "fast-glob"
+      ],
+      "effects": [],
+      "range": ">=13.5.2",
+      "nodes": [
+        "node_modules/@react-native-community/cli-clean"
+      ],
+      "fixAvailable": true
+    },
+    "@react-native-community/cli-config": {
+      "name": "@react-native-community/cli-config",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "fast-glob"
+      ],
+      "effects": [
+        "@react-native-community/cli",
+        "@react-native-community/cli-doctor"
+      ],
+      "range": ">=13.5.2",
+      "nodes": [
+        "node_modules/@react-native-community/cli-config"
+      ],
+      "fixAvailable": {
+        "name": "@react-native-community/cli",
+        "version": "20.2.0",
+        "isSemVerMajor": false
+      }
+    },
+    "@react-native-community/cli-config-android": {
+      "name": "@react-native-community/cli-config-android",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "fast-glob",
+        "fast-xml-parser"
+      ],
+      "effects": [
+        "@react-native-community/cli-platform-android"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/@react-native-community/cli-config-android"
+      ],
+      "fixAvailable": {
+        "name": "@react-native-community/cli",
+        "version": "20.2.0",
+        "isSemVerMajor": false
+      }
+    },
+    "@react-native-community/cli-config-apple": {
+      "name": "@react-native-community/cli-config-apple",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "fast-glob"
+      ],
+      "effects": [
+        "@react-native-community/cli-platform-apple"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/@react-native-community/cli-config-apple"
+      ],
+      "fixAvailable": {
+        "name": "@react-native-community/cli",
+        "version": "20.2.0",
+        "isSemVerMajor": false
+      }
+    },
+    "@react-native-community/cli-doctor": {
+      "name": "@react-native-community/cli-doctor",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "@react-native-community/cli-config",
+        "@react-native-community/cli-platform-android",
+        "@react-native-community/cli-platform-apple",
+        "@react-native-community/cli-platform-ios"
+      ],
+      "effects": [
+        "@react-native-community/cli"
+      ],
+      "range": ">=13.2.0",
+      "nodes": [
+        "node_modules/@react-native-community/cli-doctor"
+      ],
+      "fixAvailable": {
+        "name": "@react-native-community/cli",
+        "version": "20.2.0",
+        "isSemVerMajor": false
+      }
+    },
+    "@react-native-community/cli-platform-android": {
+      "name": "@react-native-community/cli-platform-android",
+      "severity": "low",
+      "isDirect": true,
+      "via": [
+        "@react-native-community/cli-config-android"
+      ],
+      "effects": [
+        "@react-native-community/cli-doctor"
+      ],
+      "range": "15.1.1 - 20.1.1",
+      "nodes": [
+        "node_modules/@react-native-community/cli-platform-android"
+      ],
+      "fixAvailable": {
+        "name": "@react-native-community/cli",
+        "version": "20.2.0",
+        "isSemVerMajor": false
+      }
+    },
+    "@react-native-community/cli-platform-apple": {
+      "name": "@react-native-community/cli-platform-apple",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "@react-native-community/cli-config-apple",
+        "fast-xml-parser"
+      ],
+      "effects": [
+        "@react-native-community/cli-doctor",
+        "@react-native-community/cli-platform-ios"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/@react-native-community/cli-platform-apple"
+      ],
+      "fixAvailable": {
+        "name": "@react-native-community/cli",
+        "version": "20.2.0",
+        "isSemVerMajor": false
+      }
+    },
+    "@react-native-community/cli-platform-ios": {
+      "name": "@react-native-community/cli-platform-ios",
+      "severity": "low",
+      "isDirect": true,
+      "via": [
+        "@react-native-community/cli-platform-apple"
+      ],
+      "effects": [],
+      "range": "13.2.0 - 20.1.1",
+      "nodes": [
+        "node_modules/@react-native-community/cli-platform-ios"
+      ],
+      "fixAvailable": {
+        "name": "@react-native-community/cli-platform-ios",
+        "version": "20.2.0",
+        "isSemVerMajor": false
+      }
+    },
+    "@react-native/community-cli-plugin": {
+      "name": "@react-native/community-cli-plugin",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "metro",
+        "metro-config"
+      ],
+      "effects": [
+        "react-native"
+      ],
+      "range": "<=0.87.0-rc.4 || 0.88.0-nightly-20260709-24e4b2cae - 0.88.0-rc.6",
+      "nodes": [
+        "node_modules/@react-native/community-cli-plugin"
+      ],
+      "fixAvailable": {
+        "name": "react-native",
+        "version": "0.88.1",
+        "isSemVerMajor": true
+      }
+    },
+    "@react-native/metro-config": {
+      "name": "@react-native/metro-config",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "metro-config"
+      ],
+      "effects": [],
+      "range": "<=0.87.0-rc.4 || 0.88.0-nightly-20260709-24e4b2cae - 0.88.0-rc.6",
+      "nodes": [
+        "node_modules/@react-native/metro-config"
+      ],
+      "fixAvailable": {
+        "name": "@react-native/metro-config",
+        "version": "0.88.1",
+        "isSemVerMajor": true
+      }
+    },
+    "anymatch": {
+      "name": "anymatch",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "picomatch"
+      ],
+      "effects": [
+        "jest-haste-map"
+      ],
+      "range": ">=3.0.0",
+      "nodes": [
+        "node_modules/anymatch"
+      ],
+      "fixAvailable": true
+    },
+    "babel-jest": {
+      "name": "babel-jest",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "@jest/transform"
+      ],
+      "effects": [
+        "react-native"
+      ],
+      "range": "25.0.0 - 30.2.0",
+      "nodes": [
+        "node_modules/babel-jest"
+      ],
+      "fixAvailable": {
+        "name": "react-native",
+        "version": "0.88.1",
+        "isSemVerMajor": true
+      }
+    },
+    "fast-glob": {
+      "name": "fast-glob",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "micromatch"
+      ],
+      "effects": [
+        "@react-native-community/cli-clean",
+        "@react-native-community/cli-config",
+        "@react-native-community/cli-config-android",
+        "@react-native-community/cli-config-apple"
+      ],
+      "range": ">=3.0.0",
+      "nodes": [
+        "node_modules/fast-glob"
+      ],
+      "fixAvailable": {
+        "name": "@react-native-community/cli",
+        "version": "20.2.0",
+        "isSemVerMajor": false
+      }
+    },
+    "fast-xml-parser": {
+      "name": "fast-xml-parser",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1246029,
+          "name": "fast-xml-parser",
+          "dependency": "fast-xml-parser",
+          "title": "fast-xml-parser: Quadratic CPU consumption scanning unterminated stop-node tags",
+          "url": "https://github.com/advisories/GHSA-474x-hrwr-fgx4",
+          "severity": "low",
+          "cwe": [
+            "CWE-407"
+          ],
+          "cvss": {
+            "score": 3.7,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+          },
+          "range": "<=5.11.2"
+        }
+      ],
+      "effects": [
+        "@react-native-community/cli-config-android",
+        "@react-native-community/cli-platform-apple"
+      ],
+      "range": "<=5.11.2",
+      "nodes": [
+        "node_modules/fast-xml-parser"
+      ],
+      "fixAvailable": {
+        "name": "@react-native-community/cli",
+        "version": "20.2.0",
+        "isSemVerMajor": false
+      }
+    },
+    "image-size": {
+      "name": "image-size",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1239765,
+          "name": "image-size",
+          "dependency": "image-size",
+          "title": "image-size: JXL and HEIF parsers allow denial of service through infinite loops",
+          "url": "https://github.com/advisories/GHSA-5p2g-fcmc-qvqq",
+          "severity": "high",
+          "cwe": [
+            "CWE-835"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": ">=1.2.0 <=2.0.2"
+        },
+        {
+          "source": 1239766,
+          "name": "image-size",
+          "dependency": "image-size",
+          "title": "image-size: ICNS parser allows denial of service through an infinite loop",
+          "url": "https://github.com/advisories/GHSA-w3rx-r6r6-pgpr",
+          "severity": "high",
+          "cwe": [
+            "CWE-835"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": ">=0.6.3 <=2.0.2"
+        }
+      ],
+      "effects": [],
+      "range": "0.6.3 - 2.0.2",
+      "nodes": [
+        "node_modules/image-size"
+      ],
+      "fixAvailable": true
+    },
+    "jest-environment-node": {
+      "name": "jest-environment-node",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "@jest/environment",
+        "@jest/fake-timers",
+        "jest-mock",
+        "jest-util"
+      ],
+      "effects": [
+        "react-native"
+      ],
+      "range": ">=27.0.0-next.0",
+      "nodes": [
+        "node_modules/jest-environment-node"
+      ],
+      "fixAvailable": {
+        "name": "react-native",
+        "version": "0.88.1",
+        "isSemVerMajor": true
+      }
+    },
+    "jest-haste-map": {
+      "name": "jest-haste-map",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "anymatch",
+        "jest-util",
+        "jest-worker",
+        "micromatch"
+      ],
+      "effects": [],
+      "range": ">=25.0.0",
+      "nodes": [
+        "node_modules/jest-haste-map"
+      ],
+      "fixAvailable": true
+    },
+    "jest-message-util": {
+      "name": "jest-message-util",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "micromatch"
+      ],
+      "effects": [
+        "@jest/fake-timers"
+      ],
+      "range": "25.0.0 - 30.2.0",
+      "nodes": [
+        "node_modules/jest-message-util"
+      ],
+      "fixAvailable": true
+    },
+    "jest-mock": {
+      "name": "jest-mock",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "jest-util"
+      ],
+      "effects": [
+        "@jest/environment",
+        "@jest/fake-timers",
+        "jest-environment-node"
+      ],
+      "range": ">=29.1.0",
+      "nodes": [
+        "node_modules/jest-mock"
+      ],
+      "fixAvailable": {
+        "name": "react-native",
+        "version": "0.88.1",
+        "isSemVerMajor": true
+      }
+    },
+    "jest-util": {
+      "name": "jest-util",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "picomatch"
+      ],
+      "effects": [
+        "@jest/fake-timers",
+        "@jest/transform",
+        "jest-environment-node",
+        "jest-haste-map",
+        "jest-mock",
+        "jest-worker"
+      ],
+      "range": ">=27.0.0-next.0",
+      "nodes": [
+        "node_modules/jest-util"
+      ],
+      "fixAvailable": {
+        "name": "react-native",
+        "version": "0.88.1",
+        "isSemVerMajor": true
+      }
+    },
+    "jest-worker": {
+      "name": "jest-worker",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "jest-util"
+      ],
+      "effects": [
+        "jest-haste-map",
+        "metro",
+        "metro-file-map"
+      ],
+      "range": ">=29.1.2",
+      "nodes": [
+        "node_modules/jest-worker"
+      ],
+      "fixAvailable": {
+        "name": "react-native",
+        "version": "0.88.1",
+        "isSemVerMajor": true
+      }
+    },
+    "metro": {
+      "name": "metro",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "jest-worker",
+        "metro-config",
+        "metro-file-map",
+        "metro-transform-worker"
+      ],
+      "effects": [
+        "@react-native/community-cli-plugin",
+        "metro-config",
+        "metro-transform-worker"
+      ],
+      "range": ">=0.71.0",
+      "nodes": [
+        "node_modules/metro"
+      ],
+      "fixAvailable": {
+        "name": "react-native",
+        "version": "0.88.1",
+        "isSemVerMajor": true
+      }
+    },
+    "metro-config": {
+      "name": "metro-config",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "metro"
+      ],
+      "effects": [
+        "@react-native/community-cli-plugin",
+        "@react-native/metro-config"
+      ],
+      "range": "0.71.0 - 0.87.1",
+      "nodes": [
+        "node_modules/metro-config"
+      ],
+      "fixAvailable": {
+        "name": "react-native",
+        "version": "0.88.1",
+        "isSemVerMajor": true
+      }
+    },
+    "metro-file-map": {
+      "name": "metro-file-map",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "jest-worker",
+        "micromatch"
+      ],
+      "effects": [
+        "metro"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/metro-file-map"
+      ],
+      "fixAvailable": {
+        "name": "react-native",
+        "version": "0.88.1",
+        "isSemVerMajor": true
+      }
+    },
+    "metro-transform-worker": {
+      "name": "metro-transform-worker",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "metro"
+      ],
+      "effects": [],
+      "range": "0.71.0 - 0.87.1",
+      "nodes": [
+        "node_modules/metro-transform-worker"
+      ],
+      "fixAvailable": true
+    },
+    "micromatch": {
+      "name": "micromatch",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "picomatch"
+      ],
+      "effects": [
+        "@jest/transform",
+        "fast-glob",
+        "jest-haste-map",
+        "jest-message-util",
+        "metro-file-map"
+      ],
+      "range": ">=4.0.0",
+      "nodes": [
+        "node_modules/micromatch"
+      ],
+      "fixAvailable": {
+        "name": "react-native",
+        "version": "0.88.1",
+        "isSemVerMajor": true
+      }
+    },
+    "picomatch": {
+      "name": "picomatch",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1247710,
+          "name": "picomatch",
+          "dependency": "picomatch",
+          "title": "picomatch vulnerable to ReDoS through single-branch repeated extglobs",
+          "url": "https://github.com/advisories/GHSA-fc5q-39xc-vjpf",
+          "severity": "high",
+          "cwe": [
+            "CWE-1333"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<=4.0.7"
+        }
+      ],
+      "effects": [
+        "anymatch",
+        "jest-util",
+        "micromatch"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/picomatch"
+      ],
+      "fixAvailable": {
+        "name": "react-native",
+        "version": "0.88.1",
+        "isSemVerMajor": true
+      }
+    },
+    "react-native": {
+      "name": "react-native",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@react-native/community-cli-plugin",
+        "babel-jest",
+        "jest-environment-node"
+      ],
+      "effects": [],
+      "range": "<=0.0.0-ffdfbbec0 || 0.71.0-rc.0 - 0.87.0-rc.4 || 0.88.0-nightly-20260709-24e4b2cae - 0.88.0-rc.6 || >=0.89.0-nightly-20260909-b830082cf",
+      "nodes": [
+        "node_modules/react-native"
+      ],
+      "fixAvailable": {
+        "name": "react-native",
+        "version": "0.88.1",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 3,
+      "moderate": 0,
+      "high": 29,
+      "critical": 0,
+      "total": 32
+    },
+    "dependencies": {
+      "prod": 583,
+      "dev": 210,
+      "optional": 55,
+      "peer": 0,
+      "peerOptional": 0,
+      "total": 793
+    }
+  }
+}

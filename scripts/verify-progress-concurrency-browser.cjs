@@ -123,7 +123,15 @@ async function clear(page) { await click(page, id('progress-clear')); await clic
     assert.equal(total(await read(a)), 1);
     await capture(b, 'narrow-lock-timeout.png', 'Bounded lock wait retains one unsaved answer and exposes Retry', named('Retry progress storage'));
     await a.evaluate(() => { window.__releaseProgressLock(); });
-    await click(b, named('Retry progress storage')); await waitTotal(a, 2); await summary(a, 2);
+    await click(b, named('Retry progress storage'));
+    try { await waitTotal(a, 2); }
+    catch (error) {
+      const observations = await Promise.all([a,b].map(p => p.evaluate(async () => ({text:document.body.innerText,progress:localStorage.getItem('nato.progress.v1'),locks:await navigator.locks.query(),visibility:document.visibilityState,worker:navigator.serviceWorker?.controller?.scriptURL}))));
+      fs.writeFileSync(path.join(out,'retry-timeout-diagnostic.json'),JSON.stringify(observations,null,2)+'\n');
+      await b.screenshot({path:path.join(shots,'retry-timeout-diagnostic.png')});
+      throw error;
+    }
+    await summary(a, 2);
     await progress(b); await summary(b, 2);
     const finalData = await read(a);
     await capture(b, 'narrow-retry-merged.png', 'Retry merges new saved totals without restoring deleted answers', id('progress-summary'));

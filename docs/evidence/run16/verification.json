@@ -1,0 +1,195 @@
+{
+  "date": "2026-11-18",
+  "priorInputs": 179,
+  "resumeMatched": 179,
+  "maintainedFiles": 227,
+  "changedPrior": {
+    ".github/workflows/ci.yml": {
+      "before": "99b3cca54e7a774eae6948cd853ffa95261cf79caecdb6ef80a522e5be980d4d",
+      "after": "fca1251d9019a13e58d0e2e5ddd67839093c267319b7ec65328456202381a473"
+    },
+    "PRIVACY.md": {
+      "before": "e4383d0c32f69bc53368bdf0a3d1b91fe2bb6b421a4509cfd25cdd2844140280",
+      "after": "6d4d9eccff5e33674daec630240d52e106a419dc59580db21b98b227649425f1"
+    },
+    "README.md": {
+      "before": "d8bc581c9359d733aa48308911b9fbd94d4d296a101cedabe8364e226ad59cc6",
+      "after": "9c0498d22ea58df24e93a267c0b92aff68d21994939c033c8ec6ae341a7cce5e"
+    },
+    "app/menu.js": {
+      "before": "c4cb8f8b4f86e194479cb8f41e2a48810079f3f07ad6a0130d7e3e9c67d2cdae",
+      "after": "8d251ba98f9dec63e39349427f6f941a54e95b5654d910c693c04a93e190986d"
+    },
+    "app/privacy.js": {
+      "before": "7d2f0d5c5360067d4878a3a86d6607a58ffcbe3bb7b3600d037525e2191b1577",
+      "after": "a0578333352113b890636610c89e9556019c83277cf113aaef6ffe19ab0eda69"
+    },
+    "docs/APP_REVIEW.md": {
+      "before": "6cd179e50242159924e178f70d2a143d4d6a3c15b8ce8367599df11cfe5eb01b",
+      "after": "e2f8ed7593bbcd6c4868e3f73af7030acf6f5d18609b059ee37884756905acdd"
+    },
+    "docs/DELIVERY_PLAN.md": {
+      "before": "a045cb4181023f2966b22fd0a687da6f085f1365e224aa69676e50bc2e854457",
+      "after": "a21344a1cbb55d525393dcf27f9fbad503e80ce04527a766ddf933146215f031"
+    },
+    "docs/LOCAL_PROGRESS.md": {
+      "before": "a5a0d63d4f1a2859213f036d1db384bb032a20f200bb0aa79bd610d645e2e38c",
+      "after": "1faabe2ce634d8fe4373411c5b7a1c1bdc7957d2470006695fe943b8950deb4e"
+    },
+    "docs/RELEASE_RUNBOOK.md": {
+      "before": "e3f2a1d9aec0e16cd24161c1b63116272a622dda2157eb55c4a03c9d35846f89",
+      "after": "5ddf4fa3dc4a75d0aca50da94c0c61bc48af9bcdbb1d7b28742aa134b0998659"
+    },
+    "eslint.config.js": {
+      "before": "6df1a4722e5eedbddd5e5372f29f8ad2325508bf4a1971db62342db26500571b",
+      "after": "48ed795992c878a42cd6061931f6196c857e8b4eeb26ce92aa031d09c8b5ac2a"
+    },
+    "index.web.js": {
+      "before": "684d8b1b6b4179e72603d5d5378cab1f93189e2495b0df69306baddf4fcdb95b",
+      "after": "7a6ac204aacf834e73d931f3e76b565e60d542a457d6a9fcbbe678b3b77a162c"
+    },
+    "scripts/build-web.cjs": {
+      "before": "b21600d7e9c8c22f652cbda8c3ed46fead75c55c8764de20d2aba6984bbf653a",
+      "after": "0669b4fbc3ec7234c59752285dca93baa3b0cb0b5d88c6c1f2e62179e4a8469e"
+    },
+    "scripts/serve-web.cjs": {
+      "before": "669e21df9fbe637e5761e6305d16e63b920d9b4c7516be5d3136454963bfdbb8",
+      "after": "02e0103feff11982f5b7e8ae7105d7dfab33fbd73c573cc3ca83b207bacd70e7"
+    },
+    "scripts/verify-progress-concurrency-browser.cjs": {
+      "before": "68e91d65d5c058209b9e23cc7a142d45dfa0622c213ca826b3dba1ad68cf1ed0",
+      "after": "5db7fadb23d010b35e7a6d7102719e57f0e8f9b194c38d311227338d7382eacb"
+    }
+  },
+  "newMaintainedFiles": [
+    "docs/WEB_OFFLINE.md",
+    "scripts/offline-manifest.cjs",
+    "scripts/verify-offline-browser.cjs",
+    "src/components/WebOfflineStatus.js",
+    "src/components/WebOfflineStatus.web.js",
+    "src/lib/webOffline.js",
+    "tests/offline-worker.test.mjs",
+    "web/service-worker.js"
+  ],
+  "newlyInventoriedPreexistingFiles": [
+    ".gitignore",
+    ".nvmrc",
+    ".ruby-version",
+    ".vscode/extensions.json",
+    ".vscode/settings.json",
+    "Gemfile",
+    "Gemfile.lock",
+    "LICENSE",
+    "android/app/build.gradle",
+    "android/app/debug.keystore",
+    "android/app/proguard-rules.pro",
+    "android/build.gradle",
+    "android/gradle.properties",
+    "android/gradle/wrapper/gradle-wrapper.jar",
+    "android/gradle/wrapper/gradle-wrapper.properties",
+    "android/gradlew",
+    "android/gradlew.bat",
+    "android/settings.gradle",
+    "assets/fonts/NatoTile-ExtraBold.ttf",
+    "assets/fonts/NatoTile-Italic.ttf",
+    "assets/fonts/NatoTile-SemiBold.ttf",
+    "assets/fonts/OFL-Nunito.txt",
+    "assets/fonts/generate-static-fonts.py",
+    "assets/fonts/manifest.json",
+    "assets/images/test.svg",
+    "docs/DELIVERY_PRIORITY_REVIEW.md",
+    "docs/EXECUTION_PROMPT.md",
+    "docs/P00_MIGRATION.md",
+    "docs/SECURITY_REVIEW.md",
+    "docs/TILE_DESIGN.md",
+    "docs/fixtures/tile-reference.html",
+    "docs/security-audit-inventory.json",
+    "ios/.xcode.env",
+    "ios/NATOPhonetics.xcodeproj/project.pbxproj",
+    "ios/NATOPhonetics.xcodeproj/xcshareddata/xcschemes/NATOPhonetics.xcscheme",
+    "ios/NATOPhonetics.xcworkspace/contents.xcworkspacedata",
+    "ios/Podfile",
+    "ios/Podfile.lock",
+    "ios/scripts/patch_fmt.rb",
+    "web/index.html"
+  ],
+  "resourceHashesPass": true,
+  "finalShellMatchesBrowserReport": true,
+  "finalRenderedAndServerShellFieldsSeparate": true,
+  "screenshotHashesPass": true,
+  "finalScreenshots": 24,
+  "protectedNativeDependenciesFontsAndProgressFilesPass": true,
+  "protectedFiles": [
+    "android/app/src/main/AndroidManifest.xml",
+    "android/app/src/main/assets/fonts/NatoTile-ExtraBold.ttf",
+    "android/app/src/main/assets/fonts/NatoTile-Italic.ttf",
+    "android/app/src/main/assets/fonts/NatoTile-SemiBold.ttf",
+    "android/app/src/main/java/com/natophonetics/app/MainActivity.kt",
+    "android/app/src/main/java/com/natophonetics/app/MainApplication.kt",
+    "android/app/src/main/java/com/natophonetics/app/TileTypographyModule.kt",
+    "android/app/src/main/java/com/natophonetics/app/TileTypographyPackage.kt",
+    "android/app/src/main/res/drawable-nodpi/ic_launcher_background.png",
+    "android/app/src/main/res/drawable-nodpi/ic_launcher_foreground.png",
+    "android/app/src/main/res/drawable-nodpi/ic_launcher_monochrome.png",
+    "android/app/src/main/res/drawable-nodpi/splash_icon.png",
+    "android/app/src/main/res/drawable/launch_screen.xml",
+    "android/app/src/main/res/drawable/rn_edit_text_material.xml",
+    "android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+    "android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml",
+    "android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+    "android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png",
+    "android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+    "android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png",
+    "android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+    "android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png",
+    "android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+    "android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png",
+    "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png",
+    "android/app/src/main/res/values-night/colors.xml",
+    "android/app/src/main/res/values-v31/styles.xml",
+    "android/app/src/main/res/values/colors.xml",
+    "android/app/src/main/res/values/strings.xml",
+    "android/app/src/main/res/values/styles.xml",
+    "ios/NATOPhonetics/AppDelegate.swift",
+    "ios/NATOPhonetics/HeaderInsets.swift",
+    "ios/NATOPhonetics/HeaderInsetsBridge.m",
+    "ios/NATOPhonetics/Images.xcassets/AppIcon.appiconset/AppIcon.png",
+    "ios/NATOPhonetics/Images.xcassets/AppIcon.appiconset/Contents.json",
+    "ios/NATOPhonetics/Images.xcassets/Contents.json",
+    "ios/NATOPhonetics/Images.xcassets/Splash.imageset/Contents.json",
+    "ios/NATOPhonetics/Images.xcassets/Splash.imageset/splash-icon.png",
+    "ios/NATOPhonetics/Info.plist",
+    "ios/NATOPhonetics/LaunchScreen.storyboard",
+    "ios/NATOPhonetics/PrivacyInfo.xcprivacy",
+    "package-lock.json",
+    "package.json",
+    "src/lib/progress.js",
+    "src/lib/progressStore.js",
+    "src/lib/progressStore.web.js"
+  ],
+  "originalReviewHistoryPreserved": true,
+  "ledgerCounts": {
+    "resolved": 5,
+    "implemented-awaiting-M11": 12,
+    "in-progress": 18
+  },
+  "allM11Unperformed": true,
+  "missingLocalLinks": [],
+  "knownRedGates": [
+    "raw audit exit1, 29high/3low",
+    "audit disposition exit1, unreviewed new propagated fingerprints",
+    "first injected lock-Retry wait timed out; diagnostic rerun7/7 is not a product repair",
+    "iOS default Speech policy words clipped; cold/split candidate still fails; experiment reverted",
+    "inherited Android live text P1, original iOS long-drag/max navigation, strict P3 ink and other release/runtime gates"
+  ],
+  "notClaimed": [
+    "fresh locked install",
+    "Android rebuild/release distribution",
+    "hosted CI",
+    "actual HTTPS deployment",
+    "other browser engines/frozen/legacy deployed upgrades",
+    "provider/listening/physical AT",
+    "signing/publication/release acceptance"
+  ]
+}

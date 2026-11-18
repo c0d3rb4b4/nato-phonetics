@@ -4,7 +4,7 @@ const react = require('eslint-plugin-react');
 const globals = require('globals');
 
 module.exports = [
-  { ignores: ['node_modules/**', 'dist/**', 'android/**', 'ios/**', 'artifacts/**', 'vendor/**', 'docs/evidence/**'] },
+  { ignores: ['node_modules/**', 'dist/**', 'android/**', 'ios/**', 'artifacts/**', 'vendor/**', 'docs/evidence/**', 'web/service-worker.js'] },
   js.configs.recommended,
   {
     files: ['**/*.js', '**/*.jsx', '**/*.cjs', '**/*.mjs'],

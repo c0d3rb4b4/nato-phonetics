@@ -39,6 +39,9 @@ jobs:
       - name: Regression tests
         run: npm test
 
+      - name: Compile actual Yoga rounding regressions
+        run: npm run check:yoga
+
       - name: Verify independent dependency and build paths
         run: npm run check:dependencies
 
@@ -65,6 +68,7 @@ jobs:
           node scripts/verify-recall-browser.cjs dist artifacts/recall-browser/
           node scripts/verify-progress-browser.cjs dist artifacts/progress-browser/
           node scripts/verify-progress-concurrency-browser.cjs dist artifacts/progress-concurrency-browser/
+          node scripts/verify-offline-browser.cjs dist artifacts/offline-browser/
           node scripts/verify-converter-browser.cjs dist artifacts/converter-browser/
           node scripts/verify-pacing-browser.cjs dist artifacts/pacing-browser/
 
@@ -80,6 +84,7 @@ jobs:
             artifacts/recall-browser/
             artifacts/progress-browser/
             artifacts/progress-concurrency-browser/
+            artifacts/offline-browser/
             artifacts/converter-browser/
             artifacts/pacing-browser/
           if-no-files-found: ignore

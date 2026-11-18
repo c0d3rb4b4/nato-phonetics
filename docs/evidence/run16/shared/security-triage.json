@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-18",
+  "lockfileSha256": "e606348ea9645ee3ffaab656315820c31db17db7e1b1208cbe6bf4ce1b6765c9",
+  "counts": {
+    "info": 0,
+    "low": 3,
+    "moderate": 0,
+    "high": 29,
+    "critical": 0,
+    "total": 32
+  },
+  "newHighCountBeyondExistingImageSize": 28,
+  "parserRoots": [
+    {
+      "package": "fast-xml-parser",
+      "version": "4.5.7",
+      "advisories": [
+        "https://github.com/advisories/GHSA-474x-hrwr-fgx4"
+      ],
+      "nodes": [
+        "node_modules/fast-xml-parser"
+      ]
+    },
+    {
+      "package": "image-size",
+      "version": "1.2.1",
+      "advisories": [
+        "https://github.com/advisories/GHSA-5p2g-fcmc-qvqq",
+        "https://github.com/advisories/GHSA-w3rx-r6r6-pgpr"
+      ],
+      "nodes": [
+        "node_modules/image-size"
+      ]
+    },
+    {
+      "package": "picomatch",
+      "version": "2.3.2",
+      "advisories": [
+        "https://github.com/advisories/GHSA-fc5q-39xc-vjpf"
+      ],
+      "nodes": [
+        "node_modules/picomatch"
+      ]
+    }
+  ],
+  "productionWebInputCount": 323,
+  "affectedPackagesInActualWebGraph": {
+    "picomatch": [],
+    "micromatch": [],
+    "image-size": [],
+    "fast-xml-parser": [],
+    "metro": []
+  },
+  "noAffectedPackageInWebGraph": true,
+  "assessment": "No authored web runtime exposure through these modules is established; CLI/Metro filesystem-glob build/watch paths are affected. No backport/upgrade/risk acceptance performed; disposition gate remains failed.",
+  "picomatchPrimary": "https://github.com/advisories/GHSA-fc5q-39xc-vjpf",
+  "compatibleMetroCandidate": "0.83.8 metadata omits direct image-size dependency; full family/native compatibility and effect on transitive paths unqualified",
+  "nextReview": "Immediate R08 engineering triage; existing image-size disposition expiry stays 2026-12-16"
+}

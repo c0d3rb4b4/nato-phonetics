@@ -1,0 +1,12 @@
+AssertionError [ERR_ASSERTION]: The input did not match the regular expression /Correct/. Input:
+
+'UniformYOU-nee-form'
+
+    at /Users/mac/dev/apps/nato-phonetics/docs/evidence/run17/shared/pointer-check.cjs:44:10 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 'UniformYOU-nee-form',
+  expected: /Correct/,
+  operator: 'match',
+  diff: 'simple'
+}

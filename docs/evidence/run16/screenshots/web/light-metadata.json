@@ -1,0 +1,26 @@
+[
+  {
+    "file": "desktop-light-ready.png",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "theme": "light",
+    "browser": "Edg/157.0.4341.60",
+    "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "capturedAt": "2026-11-18T14:23:19.798Z",
+    "command": "node docs/evidence/run16/capture-light.cjs"
+  },
+  {
+    "file": "desktop-light-policy.png",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "theme": "light",
+    "browser": "Edg/157.0.4341.60",
+    "buildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "capturedAt": "2026-11-18T14:23:20.803Z",
+    "command": "node docs/evidence/run16/capture-light.cjs"
+  }
+]

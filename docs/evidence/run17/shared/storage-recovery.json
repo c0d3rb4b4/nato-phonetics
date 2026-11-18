@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-18T14:46:49.104396+00:00",
+  "reason": "Reserve disk for serialized iOS build and native simulators after successful Android Release packaging. Only this run's disposable Release CMake/unstripped native intermediates are removed. Retain source, all historical evidence, Debug products and unsigned Release AAB.",
+  "removed": [
+    "android/app/build/intermediates/merged_native_libs/release",
+    "android/app/build/intermediates/cxx/RelWithDebInfo",
+    "android/app/.cxx/RelWithDebInfo"
+  ],
+  "aabSha256Preserved": "974cefbcc5001dbd81c4b9e74e177d8b61b2b9ad97f05b8cb419c1f511550972",
+  "dfAfter": "Filesystem      Size    Used   Avail Capacity iused ifree %iused  Mounted on\n/dev/disk3s5   228Gi   192Gi   2.8Gi    99%    2.1M   29M    7%   /System/Volumes/Data\n",
+  "iosAfterSuccessfulBuild": {
+    "reason": "Preserve installed/build products while releasing this run's rebuilt native objects/module cache before Android runtime; disk fell to1.1GiB during UIKit simulator/test-runner use. App/source/evidence and separate live XCTest harness are retained.",
+    "removed": [
+      "artifacts/ios-simulator/Build/Intermediates.noindex",
+      "artifacts/ios-simulator/ModuleCache.noindex"
+    ],
+    "mainBundleSha256Preserved": "1513de5b5f1c8cd5aa3c3e426f6437e4b6f86b621ef00fa715c2297880e0509e",
+    "dfAfter": "Filesystem      Size    Used   Avail Capacity iused ifree %iused  Mounted on\n/dev/disk3s5   228Gi   192Gi   2.0Gi    99%    2.1M   21M    9%   /System/Volumes/Data\n"
+  }
+}

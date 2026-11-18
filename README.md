@@ -1,8 +1,8 @@
 # NATO Phonetics
 
-A shared React Native app with repository-owned Android/iOS projects and an independent React Native Web build. It includes letter/digit reference, conversion with Copy/Share/Replay/pacing/paged cards, guarded practice sessions/results/Retry, listening and typed recall, local symbol progress/due review, appearance and voice selection. Run 15 fixes lost browser progress across updated windows and prepares the release runbook. [Evidence](docs/evidence/run15/README.md), [actual screenshots](docs/evidence/run15/screenshots/index.md) and [delivery status](docs/DELIVERY_PLAN.md) distinguish delivered engineering from remaining native and human acceptance.
+A shared React Native app with repository-owned Android/iOS projects and an independent React Native Web build. It includes letter/digit reference, conversion with Copy/Share/Replay/pacing/paged cards, guarded practice sessions/results/Retry, listening and typed recall, local symbol progress/due review, appearance and voice selection. Run 16 adds a verified web offline shell, readiness/retry guidance and updates that wait for all app windows to close. Run 17 updates the compatible Metro family to remove the vulnerable image-size parser and prepares an unsigned Android Release AAB. Run 18 backports the merged Yoga precision correction for clipped iOS paragraphs, with guarded installation and a native rebuild. [Current evidence](docs/evidence/run18/README.md), [actual screenshots](docs/evidence/run18/screenshots/index.md) and [delivery status](docs/DELIVERY_PLAN.md) distinguish delivered engineering from remaining native and human acceptance.
 
-P05/P06/P07/P08 remain active for affected native qualification. Android live font-size changes can keep ordinary text stale. Original iOS long-drag/input/runtime and maximum long-page navigation assurance, broader browser support/upgrade assurance and three strict P3 ink fringes remain open. Two-window Edge progress integrity is now qualified for the updated client. P09/P10 are active: recognition assessment and release assets are delivered; recognition implementation, offline web, integrated candidate/security/support and physical M11 acceptance remain unfinished. [Practice rules](docs/NUMERIC_PRACTICE.md), [local progress](docs/LOCAL_PROGRESS.md), [recognition assessment](docs/SPOKEN_PRACTICE.md).
+P05/P06/P07/P08 remain active for affected native qualification. Android live font-size changes can keep ordinary text stale. Run 16 also records clipped final words in the default iOS Release speech-policy paragraph; a cold-process/title-body experiment did not repair it. Original iOS long-drag/input/runtime and maximum long-page navigation assurance, broader browser support/upgrade assurance and three strict P3 ink fringes remain open. Two-window Edge progress integrity is now qualified for the updated client. P09/P10 are active: recognition assessment and release assets are delivered; recognition implementation, hosted/broader-browser offline qualification, integrated candidate/security/support and physical M11 acceptance remain unfinished. [Practice rules](docs/NUMERIC_PRACTICE.md), [local progress](docs/LOCAL_PROGRESS.md), [recognition assessment](docs/SPOKEN_PRACTICE.md).
 
 ## Setup and local development
 
@@ -15,7 +15,7 @@ npm ci
 npm run web
 ```
 
-Open the URL printed by the web server. For native development, start Metro with `npm start`, then `npm run android` or `npm run ios` with the platform toolchain installed. Follow [Native builds](docs/NATIVE_BUILDS.md) for SDKs, direct Gradle/Xcode commands, signing, artifacts and installation. No Expo/EAS tooling, accounts or build quota is used. Store signing/distribution access remains an owner input in M11. [Release runbook](docs/RELEASE_RUNBOOK.md) covers candidate identity, build numbering, artifact/signing boundaries, independent HTTPS hosting, update/rollback and current support limits. Offline caching remains unfinished P10.2; publication is not implied.
+Open the URL printed by the web server. For native development, start Metro with `npm start`, then `npm run android` or `npm run ios` with the platform toolchain installed. Follow [Native builds](docs/NATIVE_BUILDS.md) for SDKs, direct Gradle/Xcode commands, signing, artifacts and installation. No Expo/EAS tooling, accounts or build quota is used. Store signing/distribution access remains an owner input in M11. [Release runbook](docs/RELEASE_RUNBOOK.md) covers candidate identity, build numbering, artifact/signing boundaries, independent HTTPS hosting, update/rollback and current support limits. Production shell caching is implemented; [offline/update rules](docs/WEB_OFFLINE.md) distinguish qualified local behavior from remaining hosted/browser/device checks. Publication is not implied.
 
 The React Native [0.81 environment guide](https://reactnative.dev/docs/0.81/set-up-your-environment) describes upstream requirements. This repository retains RN **0.81.5** and React **19.1.0** to isolate the build migration from a framework upgrade. See [migration inventory](docs/P00_MIGRATION.md) for replacement choices and preservation requirements.
 
@@ -31,8 +31,9 @@ The React Native [0.81 environment guide](https://reactnative.dev/docs/0.81/set-
 | `npm run export:web` | Production web app and route HTML in `dist/` |
 | `npm run lint` | ESLint with hooks and JSX checks, no warnings |
 | `npm run typecheck` | Checked JS/JSDoc and TypeScript over active screens, entries and helpers |
-| `npm test` | Data, preferences, progress, questions, playback, native adapter, release artwork and audit regression tests |
+| `npm test` | Data, preferences, progress, questions, playback, native adapter, release artwork, bounded Metro asset parsing and audit regression tests |
 | `npm run generate-icons` | Generate/verify all web and native icon/splash resources; rebuild native apps afterward |
+| `npm run check:yoga` | Compile installed Yoga and check dimensions/rounding; requires a C++20 compiler (Xcode clang or Linux g++) |
 | `npm run check:dependencies` | Installed graph/lockfile and native/web consumer check for Expo removal |
 | `npm run audit:review` | Real npm audit plus dated high/critical dispositions; not a clean-audit claim |
 | `npm run build:android:debug` | Direct Gradle debug APK |
@@ -41,13 +42,13 @@ The React Native [0.81 environment guide](https://reactnative.dev/docs/0.81/set-
 | `npm run build:ios:simulator` | Direct Xcode Release simulator build, no signing |
 | `npm run build:ios:archive` / `npm run build:ios:export` | Credential-dependent distribution preparation |
 
-`npm ci` applies a small version-guarded [native speech patch](scripts/patch-native-tts.cjs): Android utterance IDs become UUIDs rather than hashes of spoken text, so delayed events from one “Alfa” cannot finish the next “Alfa.” Installation fails if the pinned provider source changes. Do not use `--ignore-scripts` for a delivery installation. The adapter tests also verify the installed source patch. Native audible playback remains a device check.
+`npm ci` applies a small version-guarded [native speech patch](scripts/patch-native-tts.cjs): Android utterance IDs become UUIDs rather than hashes of spoken text, so delayed events from one “Alfa” cannot finish the next “Alfa.” Installation fails if the pinned provider source changes. Do not use `--ignore-scripts` for a delivery installation. The adapter tests also verify the installed source patch. Installation also applies the RN0.81.5/source-SHA-256-guarded [Yoga precision backport](scripts/patch-native-yoga.cjs), preserving full paragraph heights in source-built iOS. Rebuild/install iOS after this patch; refreshing Metro does not change the native library. Standard Android builds retain their Maven native binary. [Diagnosis, guards and qualification](docs/NATIVE_TEXT_PRECISION.md). Native audible playback remains a device check.
 
-CI runs the shared gates and production browser tests. A separate manually triggered [native workflow](.github/workflows/native-builds.yml) builds on a prepared self-hosted macOS runner and collects artifacts without publishing. Hosted/self-hosted workflow execution is not implied by local results. [Security review](docs/SECURITY_REVIEW.md) records unresolved findings.
+CI runs the shared gates and production browser tests. A separate manually triggered [native workflow](.github/workflows/native-builds.yml) builds on a prepared self-hosted macOS runner and collects artifacts without publishing. Hosted/self-hosted workflow execution is not implied by local results. [Security review](docs/SECURITY_REVIEW.md) records unresolved findings. Run 17 removes image-size through Metro 0.83.8 within the existing React Native 0.81.5 ranges. The current audit still reports 28 high/3 low affected package entries; picomatch has no selected repair or new disposition, so the security gate remains failed. No framework upgrade or owner risk acceptance is implied.
 
 ## Web routing and browser checks
 
-The web build emits HTML for each supported URL and a root fallback shell. Hosts must serve `/alphabet` from `alphabet.html` (equivalently for other routes) and serve `index.html` for unknown paths; the supplied local server handles this. Deploy `dist/` as a whole at the origin root. This is a client-rendered app with a neutral loading shell, followed by stored-preference restoration. It does not currently provide an offline service worker; P10 owns offline cold launch and update behavior.
+The web build emits HTML for each supported URL and a root fallback shell. Hosts must serve `/alphabet` from `alphabet.html` (equivalently for other routes) and serve `index.html` for unknown paths; the supplied local server handles this. Deploy `dist/` as a whole at the origin root. This is a client-rendered app with a neutral loading shell, followed by stored-preference restoration. Production builds register a versioned service worker; Menu reports offline readiness, setup/retry or waiting updates. After successful setup the complete shell works offline; speech remains provider-dependent. Finish/save or copy drafts, close every app window and reopen to apply an update. Development does not register a worker: use distinct preview/development ports to avoid a cached production shell. [Caching/update/support contract](docs/WEB_OFFLINE.md).
 
 Install Puppeteer outside the app and supply its location and a browser executable:
 
@@ -64,6 +65,7 @@ node scripts/verify-numeric-browser.cjs dist
 node scripts/verify-recall-browser.cjs dist
 node scripts/verify-progress-browser.cjs dist
 node scripts/verify-progress-concurrency-browser.cjs dist
+node scripts/verify-offline-browser.cjs dist
 ```
 
 Browser mocks verify speech control flow, not pronunciation or provider privacy. Real captures and platform gaps are linked from the execution record.
