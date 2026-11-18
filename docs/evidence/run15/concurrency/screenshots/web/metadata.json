@@ -1,0 +1,130 @@
+[
+  {
+    "file": "desktop-merged-summary.png",
+    "state": "Two simultaneous answers retained in both windows",
+    "capturedAt": "2026-11-18T13:42:15.921Z",
+    "browser": "Edg/157.0.4341.60",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "theme": "light",
+    "command": "node scripts/verify-progress-concurrency-browser.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run15/concurrency"
+    ]
+  },
+  {
+    "file": "narrow-merged-summary.png",
+    "state": "Same saved totals update in narrow second window",
+    "capturedAt": "2026-11-18T13:42:16.007Z",
+    "browser": "Edg/157.0.4341.60",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "theme": "dark",
+    "command": "node scripts/verify-progress-concurrency-browser.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run15/concurrency"
+    ]
+  },
+  {
+    "file": "desktop-cleared-summary.png",
+    "state": "Zero saved aggregates after cross-window deletion",
+    "capturedAt": "2026-11-18T13:42:16.299Z",
+    "browser": "Edg/157.0.4341.60",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "theme": "light",
+    "command": "node scripts/verify-progress-concurrency-browser.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run15/concurrency"
+    ]
+  },
+  {
+    "file": "narrow-stale-retry-cleared.png",
+    "state": "Retry cannot resurrect an answer with delayed storage events",
+    "capturedAt": "2026-11-18T13:42:16.337Z",
+    "browser": "Edg/157.0.4341.60",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "theme": "dark",
+    "command": "node scripts/verify-progress-concurrency-browser.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run15/concurrency"
+    ]
+  },
+  {
+    "file": "narrow-lock-timeout.png",
+    "state": "Bounded lock wait retains one unsaved answer and exposes Retry",
+    "capturedAt": "2026-11-18T13:42:21.469Z",
+    "browser": "Edg/157.0.4341.60",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "theme": "dark",
+    "command": "node scripts/verify-progress-concurrency-browser.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run15/concurrency"
+    ]
+  },
+  {
+    "file": "narrow-retry-merged.png",
+    "state": "Retry merges new saved totals without restoring deleted answers",
+    "capturedAt": "2026-11-18T13:42:21.553Z",
+    "browser": "Edg/157.0.4341.60",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "theme": "dark",
+    "command": "node scripts/verify-progress-concurrency-browser.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run15/concurrency"
+    ]
+  },
+  {
+    "file": "narrow-coordination-unavailable.png",
+    "state": "Missing Web Locks leaves practice available and avoids unsafe persistence",
+    "capturedAt": "2026-11-18T13:42:23.596Z",
+    "browser": "Edg/157.0.4341.60",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "theme": "dark",
+    "command": "node scripts/verify-progress-concurrency-browser.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run15/concurrency"
+    ]
+  },
+  {
+    "file": "narrow-uncertain-storage-recovery.png",
+    "state": "Unknown deletion generation preserves pending answer and explains safe recovery",
+    "capturedAt": "2026-11-18T13:42:24.724Z",
+    "browser": "Edg/157.0.4341.60",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "theme": "dark",
+    "command": "node scripts/verify-progress-concurrency-browser.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run15/concurrency"
+    ]
+  }
+]

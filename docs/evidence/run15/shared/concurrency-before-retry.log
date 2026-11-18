@@ -1,0 +1,25 @@
+launched
+visit http://127.0.0.1:60073
+start
+visit http://127.0.0.1:60073
+start
+{
+  expectedAttempts: 2,
+  actualAttempts: 1,
+  stored: { version: 1, symbols: { N: [Object] } },
+  browser: 'Edg/157.0.4341.60',
+  at: '2026-11-18T13:26:28.549Z',
+  baseHead: '51501310ef3f4261ac79e7d56917408c3f3745c4'
+}
+AssertionError [ERR_ASSERTION]: Both accepted answers must survive
+
+1 !== 2
+
+    at /private/tmp/nato-run15-reproduce.cjs:16:29 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 1,
+  expected: 2,
+  operator: 'strictEqual',
+  diff: 'simple'
+}

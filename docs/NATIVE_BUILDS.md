@@ -8,6 +8,8 @@ Tile fonts are bundled from `assets/fonts/` into Android assets and Xcode resour
 
 Run 05 also adds the Android `TileTypography` module. It reverses the OS SP conversion for each desired logical text size so Android 14+'s nonlinear accessibility sizing can preserve one scale for the complete tile; `allowFontScaling` stays enabled. Rebuild/install the APK after this native-module addition. Shared text layout measures each rendered baseline and aligns its inner text to the versioned target without changing the outer boxes. [Run 05 evidence](evidence/run05/README.md) distinguishes original scaling/baseline failures from the corrected candidate and records the actual tested OS/device matrix.
 
+The [release runbook](RELEASE_RUNBOOK.md) maps version/build metadata, distribution artifacts, web hosting and rollback to final P10/M11 acceptance. Run 15 adds browser-only progress coordination; native keeps its existing adapter, key removal and rendered policy. No new native build or runtime pass is inferred.
+
 ## Toolchain and locks
 
 | Tool | Repository choice |

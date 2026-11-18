@@ -64,6 +64,7 @@ jobs:
           node scripts/verify-numeric-browser.cjs dist artifacts/numeric-browser/
           node scripts/verify-recall-browser.cjs dist artifacts/recall-browser/
           node scripts/verify-progress-browser.cjs dist artifacts/progress-browser/
+          node scripts/verify-progress-concurrency-browser.cjs dist artifacts/progress-concurrency-browser/
           node scripts/verify-converter-browser.cjs dist artifacts/converter-browser/
           node scripts/verify-pacing-browser.cjs dist artifacts/pacing-browser/
 
@@ -78,6 +79,7 @@ jobs:
             artifacts/numeric-browser/
             artifacts/recall-browser/
             artifacts/progress-browser/
+            artifacts/progress-concurrency-browser/
             artifacts/converter-browser/
             artifacts/pacing-browser/
           if-no-files-found: ignore

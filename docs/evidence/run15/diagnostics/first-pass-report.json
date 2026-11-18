@@ -1,0 +1,33 @@
+{
+  "browser": "Edg/157.0.4341.60",
+  "at": "2026-11-18T13:30:20.661Z",
+  "checks": [
+    "simultaneous accepted answers merge; both live summaries agree at 2",
+    "external deletion discards failed pending answer; following submission creates only new progress",
+    "persisted generation rejects old Retry without a storage event; deletion leaves no aggregates",
+    "new answer after unseen deletion is retained using generation read at submission",
+    "real lock timeout preserves pending answer; Retry saves once; fresh page restores exact aggregate record",
+    "missing Web Locks fails safely with explicit support guidance and no persisted answers"
+  ],
+  "finalData": {
+    "version": 1,
+    "symbols": {
+      "E": {
+        "attempts": 1,
+        "errors": 0,
+        "streak": 1,
+        "lastReviewedAt": 1795008613493,
+        "dueAt": 1795095013493
+      },
+      "L": {
+        "attempts": 1,
+        "errors": 0,
+        "streak": 1,
+        "lastReviewedAt": 1795008613522,
+        "dueAt": 1795095013522
+      }
+    },
+    "generation": "10b045c3-b4b0-4e2a-b57b-7c0d79c7db31"
+  },
+  "errors": []
+}

@@ -1,0 +1,15 @@
+TimeoutError: Waiting for selector `[aria-label="Menu"]` failed
+    at CSSQueryHandler.waitFor (/Users/mac/.npm/_npx/e5f4bcd55d2c7c9f/node_modules/puppeteer-core/lib/cjs/puppeteer/common/QueryHandler.js:214:46)
+    at async CdpFrame.waitForSelector (/Users/mac/.npm/_npx/e5f4bcd55d2c7c9f/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Frame.js:544:21)
+    ... 3 lines matching cause stack trace ...
+    at async /Users/mac/dev/apps/nato-phonetics/scripts/verify-progress-concurrency-browser.cjs:77:5 {
+  cause: TimeoutError: Waiting failed: 30000ms exceeded
+      at new WaitTask (/Users/mac/.npm/_npx/e5f4bcd55d2c7c9f/node_modules/puppeteer-core/lib/cjs/puppeteer/common/WaitTask.js:49:34)
+      at IsolatedWorld.waitForFunction (/Users/mac/.npm/_npx/e5f4bcd55d2c7c9f/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Realm.js:52:26)
+      at CSSQueryHandler.waitFor (/Users/mac/.npm/_npx/e5f4bcd55d2c7c9f/node_modules/puppeteer-core/lib/cjs/puppeteer/common/QueryHandler.js:179:95)
+      at async CdpFrame.waitForSelector (/Users/mac/.npm/_npx/e5f4bcd55d2c7c9f/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Frame.js:544:21)
+      at async CdpPage.waitForSelector (/Users/mac/.npm/_npx/e5f4bcd55d2c7c9f/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Page.js:1391:20)
+      at async click (/Users/mac/dev/apps/nato-phonetics/scripts/verify-progress-concurrency-browser.cjs:17:3)
+      at async progress (/Users/mac/dev/apps/nato-phonetics/scripts/verify-progress-concurrency-browser.cjs:26:33)
+      at async /Users/mac/dev/apps/nato-phonetics/scripts/verify-progress-concurrency-browser.cjs:77:5
+}

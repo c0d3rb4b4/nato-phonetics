@@ -145,3 +145,97 @@ test('Reset Preferences and Clear Progress have separate storage scopes includin
   assert.equal(storage.values.get(PREFERENCES_KEY), settings); assert.equal(storage.values.get('other'), 'keep');
   assert.equal(storage.values.has(PROGRESS_KEY), false);
 });
+
+function coordinated(storage) {
+  let queue = Promise.resolve();
+  let sequence = 0;
+  return {
+    run(work) { const next = queue.then(work); queue = next.catch(() => {}); return next; },
+    generation: () => decodeProgress(storage.values.get(PROGRESS_KEY) ?? null).generation,
+    async clear() {
+      const data = { ...EMPTY_PROGRESS, generation: `00000000-0000-4000-8000-${String(++sequence).padStart(12, '0')}` };
+      await storage.setItem(PROGRESS_KEY, JSON.stringify(data)); return data;
+    },
+  };
+}
+
+test('coordinated stores merge interleaved and simultaneous submissions from fresh persisted totals', async () => {
+  const storage = memory(), coordination = coordinated(storage);
+  const a = createProgressStore(storage, () => at, coordination), b = createProgressStore(storage, () => at, coordination);
+  await Promise.all([a.hydrate(), b.hydrate()]);
+  await Promise.all([a.record({}, 'A', true), b.record({}, 'A', false), a.record({}, '3', true), b.record({}, 'B', true)]);
+  await Promise.all([a.refresh(), b.refresh()]);
+  assert.deepEqual(a.getSnapshot().data, b.getSnapshot().data);
+  assert.equal(progressSummary(a.getSnapshot().data, at).attempts, 4);
+  assert.equal(a.getSnapshot().data.symbols.A.errors, 1);
+});
+
+test('cross-window deletion invalidates a suspended failed Retry; new answers count without an event', async () => {
+  const storage = memory(), coordination = coordinated(storage), set = storage.setItem;
+  const a = createProgressStore(storage, () => at, coordination), b = createProgressStore(storage, () => at, coordination);
+  await Promise.all([a.hydrate(), b.hydrate()]);
+  await b.record({}, 'A', true);
+  storage.setItem = async () => { throw new Error('full'); };
+  await b.record({}, 'B', false); assert.equal(b.getSnapshot().pendingCount, 1);
+  storage.setItem = set;
+  await a.clear(); // b receives no storage event, focus or refresh.
+  const tombstone = storage.values.get(PROGRESS_KEY);
+  await b.retry(); await b.retry();
+  assert.equal(storage.values.get(PROGRESS_KEY), tombstone);
+  assert.equal(b.getSnapshot().pendingCount, 0);
+  assert.equal(progressSummary(b.getSnapshot().data, at).attempts, 0);
+  await a.clear(); // Again no refresh in b before a newly submitted answer.
+  await b.record({}, '3', true);
+  assert.deepEqual(Object.keys(decodeProgress(storage.values.get(PROGRESS_KEY)).symbols), ['3']);
+});
+
+test('failed atomic deletion preserves saved and pending answers, generation and preferences', async () => {
+  const storage = memory({ other: 'keep' }), coordination = coordinated(storage), set = storage.setItem;
+  const a = createProgressStore(storage, () => at, coordination), b = createProgressStore(storage, () => at, coordination);
+  await a.record({}, 'A', true); await b.hydrate();
+  const saved = storage.values.get(PROGRESS_KEY);
+  storage.setItem = async () => { throw new Error('full'); };
+  await b.record({}, 'B', false); assert.equal(await a.clear(), false);
+  assert.equal(storage.values.get(PROGRESS_KEY), saved);
+  storage.setItem = set; await b.retry();
+  assert.equal(progressSummary(decodeProgress(storage.values.get(PROGRESS_KEY)), at).attempts, 2);
+  assert.equal(storage.values.get('other'), 'keep');
+});
+
+test('coordination rejection keeps pending answers and supports Retry without a duplicate', async () => {
+  const storage = memory(), coordination = coordinated(storage), run = coordination.run;
+  const store = createProgressStore(storage, () => at, coordination);
+  await store.hydrate(); coordination.run = async () => { throw new Error('lock timeout'); };
+  assert.equal(await store.record({}, 'J', true), false);
+  assert.equal(store.getSnapshot().pendingCount, 1); assert.equal(storage.values.size, 0);
+  coordination.run = run; await store.retry(); await store.retry();
+  assert.equal(decodeProgress(storage.values.get(PROGRESS_KEY)).symbols.J.attempts, 1);
+});
+
+test('generation extension reads older records without rewriting and rejects malformed tombstones', () => {
+  const old = JSON.stringify(applyProgressAnswer(EMPTY_PROGRESS, 'A', true, at));
+  assert.equal(decodeProgress(old).generation, undefined);
+  for (const generation of ['', 'garbage', 1, null, '00000000-0000-0000-0000-000000000000']) {
+    assert.throws(() => decodeProgress(JSON.stringify({ ...EMPTY_PROGRESS, generation })));
+  }
+  const data = { ...EMPTY_PROGRESS, generation: '00000000-0000-4000-8000-000000000001' };
+  assert.equal(applyProgressAnswer(decodeProgress(JSON.stringify(data)), 'A', true, at).generation, data.generation);
+});
+
+test('unreadable generation never silently discards or restores an uncertain pending answer', async () => {
+  const storage = memory(), coordination = coordinated(storage), set = storage.setItem;
+  const a = createProgressStore(storage, () => at, coordination);
+  await a.clear(); await a.record({}, 'A', true);
+  const saved = storage.values.get(PROGRESS_KEY), get = storage.getItem, generation = coordination.generation;
+  storage.getItem = async () => { throw new Error('storage blocked'); };
+  coordination.generation = () => { throw new Error('storage blocked'); };
+  const b = createProgressStore(storage, () => at, coordination);
+  assert.equal(await b.record({}, 'B', false), false); assert.equal(b.getSnapshot().pendingCount, 1);
+  storage.getItem = get; coordination.generation = generation;
+  await b.retry(); await b.refresh();
+  assert.equal(b.getSnapshot().pendingCount, 1);
+  assert.equal(storage.values.get(PROGRESS_KEY), saved);
+  assert.match(b.getSnapshot().error.message, /could not be linked/);
+  storage.setItem = set; await b.clear(); await b.record({}, '3', true);
+  assert.deepEqual(Object.keys(decodeProgress(storage.values.get(PROGRESS_KEY)).symbols), ['3']);
+});

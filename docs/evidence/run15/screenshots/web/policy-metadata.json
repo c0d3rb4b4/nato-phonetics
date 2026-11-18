@@ -1,0 +1,42 @@
+[
+  {
+    "file": "1280-clear-progress-policy.png",
+    "width": 1280,
+    "height": 900,
+    "theme": "light",
+    "state": "Clear Progress policy",
+    "browser": "Edg/157.0.4341.60",
+    "at": "2026-11-18T13:42:57.131Z",
+    "command": "node docs/evidence/run15/capture-policy.cjs"
+  },
+  {
+    "file": "1280-browser-progress-policy.png",
+    "width": 1280,
+    "height": 900,
+    "theme": "light",
+    "state": "Browser progress policy",
+    "browser": "Edg/157.0.4341.60",
+    "at": "2026-11-18T13:42:57.192Z",
+    "command": "node docs/evidence/run15/capture-policy.cjs"
+  },
+  {
+    "file": "320-clear-progress-policy.png",
+    "width": 320,
+    "height": 568,
+    "theme": "dark",
+    "state": "Clear Progress policy",
+    "browser": "Edg/157.0.4341.60",
+    "at": "2026-11-18T13:42:58.023Z",
+    "command": "node docs/evidence/run15/capture-policy.cjs"
+  },
+  {
+    "file": "320-browser-progress-policy.png",
+    "width": 320,
+    "height": 568,
+    "theme": "dark",
+    "state": "Browser progress policy",
+    "browser": "Edg/157.0.4341.60",
+    "at": "2026-11-18T13:42:58.067Z",
+    "command": "node docs/evidence/run15/capture-policy.cjs"
+  }
+]
