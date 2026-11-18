@@ -1,0 +1,6 @@
+{
+  "metroPid": 33466,
+  "command": "node node_modules/react-native/cli.js start --port 8081 --config docs/evidence/run20/android/metro.config.cjs --max-workers 2",
+  "signal": "SIGTERM",
+  "purpose": "Restore normal product Metro entry; no root replacement or code write"
+}

@@ -1,0 +1,35 @@
+# Set both variables before validate/run. Serve only the extracted public/ tree.
+{
+	admin off
+}
+
+{$NATO_SITE_ADDRESS} {
+	root * "{$NATO_WEB_ROOT}"
+	header Cache-Control "no-cache"
+	header X-Content-Type-Options "nosniff"
+
+	# These build inputs are not public endpoints.
+	@private path /.* /_headers /Caddyfile /release.json
+	handle @private {
+		respond 404
+	}
+
+	# Keep missing assets out of the navigation fallback, including extensionless
+	# paths beneath /assets. Font names are emitted at the origin root by esbuild.
+	@immutable path /assets/* /NatoTile-*.ttf
+	handle @immutable {
+		header Cache-Control "public, max-age=31536000, immutable"
+		file_server
+	}
+
+	@file path_regexp extension /[^/]*\.[^/]*$
+	handle @file {
+		file_server
+	}
+
+	handle {
+		uri strip_suffix /
+		try_files {path}.html {path}/index.html /index.html
+		file_server
+	}
+}

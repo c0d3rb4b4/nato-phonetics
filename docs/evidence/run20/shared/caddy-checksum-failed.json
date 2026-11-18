@@ -1,0 +1,33 @@
+{
+  "archive": "https://github.com/caddyserver/caddy/releases/download/v2.11.9/caddy_2.11.9_mac_arm64.tar.gz",
+  "expected": "166a8fdd183dc597ebe3a12d71e2e8eb313ab673ae8d3e286cb92bb0078d04233c23347543f7d7e8285b44136416e6718b0d106afe973de8ede4d81b6809c6bb",
+  "actual": "d075afc620376679a77b453399bf7ada264cab3280b2833e4ed1372abc0c1c13",
+  "bytes": 17162425,
+  "responseHeaders": {
+    "Connection": "close",
+    "Content-Length": "17162425",
+    "Last-Modified": "Thu, 05 Nov 2026 01:23:40 GMT",
+    "ETag": "\"0x8DF3ADB6CD289D4\"",
+    "Server": "Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0",
+    "x-ms-request-id": "954d860b-c01e-0057-66c5-6c4f66000000",
+    "x-ms-version": "2018-11-09",
+    "x-ms-creation-time": "Thu, 05 Nov 2026 01:23:40 GMT",
+    "x-ms-lease-status": "unlocked",
+    "x-ms-lease-state": "available",
+    "x-ms-blob-type": "BlockBlob",
+    "x-ms-server-encrypted": "true",
+    "x-ms-access-tier": "Hot",
+    "x-ms-access-tier-inferred": "true",
+    "Via": "1.1 varnish, 1.1 varnish",
+    "Accept-Ranges": "bytes",
+    "Age": "3830",
+    "Date": "Wed, 18 Nov 2026 16:44:33 GMT",
+    "X-Served-By": "cache-iad-kiad7000052-IAD, cache-lhr-egll1980050-LHR",
+    "X-Cache": "HIT, HIT",
+    "X-Cache-Hits": "2433, 0",
+    "X-Timer": "S1795020273.428406,VS0,VE7",
+    "Content-Disposition": "attachment; filename=caddy_2.11.9_mac_arm64.tar.gz",
+    "Content-Type": "application/octet-stream"
+  },
+  "checksumsUrl": "https://github.com/caddyserver/caddy/releases/download/v2.11.9/caddy_2.11.9_checksums.txt"
+}

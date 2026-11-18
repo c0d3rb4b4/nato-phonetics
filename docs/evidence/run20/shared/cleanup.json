@@ -1,0 +1,18 @@
+{
+  "at": "2026-11-18T16:56:21.997487+00:00",
+  "actions": [
+    {
+      "fridaPid": "2527",
+      "command": "/data/local/tmp/nato-run20-frida ",
+      "action": "SIGTERM exact owned trace daemon"
+    },
+    {
+      "action": "Shutdown only repository test emulator; no user app data cleared"
+    },
+    {
+      "metroPid": 35165,
+      "command": "node node_modules/react-native/cli.js start --port 8081 --max-workers 2",
+      "action": "SIGTERM own normal product Metro after restored capture"
+    }
+  ]
+}

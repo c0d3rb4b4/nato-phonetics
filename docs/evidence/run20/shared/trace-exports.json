@@ -1,0 +1,73 @@
+[
+  {
+    "type": "send",
+    "payload": [
+      {
+        "name": "libreactnative.so",
+        "path": "/data/app/~~fKhwNMpmGu3_XUrsDmUIVQ==/com.natophonetics.app-D6QdoW5Ia8uCjJK0G49OVA==/base.apk!/lib/arm64-v8a/libreactnative.so",
+        "exports": [
+          {
+            "name": "_ZN8facebook5react19ParagraphShadowNode19updateStateIfNeededINS0_14ParagraphStateEEEvRKNS1_7ContentERKNS0_22MeasuredPreparedLayoutE",
+            "address": "0x73c8df43c0"
+          },
+          {
+            "name": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+            "address": "0x73c8df3520"
+          },
+          {
+            "name": "_ZNK8facebook5react17TextLayoutManager7measureERKNS0_19AttributedStringBoxERKNS0_19ParagraphAttributesERKNS0_17TextLayoutContextERKNS0_17LayoutConstraintsE",
+            "address": "0x73c8c6adcc"
+          },
+          {
+            "name": "_ZN8facebook5react19ParagraphShadowNode14rawContentSizeEv",
+            "address": "0x73c8df33e8"
+          },
+          {
+            "name": "_ZNSt6__ndk123__optional_storage_baseIN8facebook5react19ParagraphShadowNode7ContentELb0EE11__constructB8ne180000IJS4_EEEvDpOT_",
+            "address": "0x73c8df56a8"
+          },
+          {
+            "name": "_ZNK8facebook5react17TextLayoutManager26measureCachedSpannableByIdElRKNS0_19ParagraphAttributesERKNS0_17TextLayoutContextERKNS0_17LayoutConstraintsE",
+            "address": "0x73c8c6b2c4"
+          },
+          {
+            "name": "_ZN8facebook5react6detail25TextLayoutManagerExtendedINS0_17TextLayoutManagerEE12measureLinesERKNS0_19AttributedStringBoxERKNS0_19ParagraphAttributesERKNS0_4SizeE",
+            "address": "0x73c8df3c18"
+          },
+          {
+            "name": "_ZN8facebook5react19ParagraphShadowNode7ContentaSEOS2_",
+            "address": "0x73c8df564c"
+          },
+          {
+            "name": "_ZNK8facebook5react6detail25TextLayoutManagerExtendedINS0_17TextLayoutManagerEE21measurePreparedLayoutERKNS0_17SafeReleaseJniRefINS_3jni16basic_strong_refINS0_15JPreparedLayoutENS6_24GlobalReferenceAllocatorEEEEERKNS0_17TextLayoutContextERKNS0_17LayoutConstraintsE",
+            "address": "0x73c8df39ec"
+          },
+          {
+            "name": "_ZN8facebook5react19ParagraphShadowNode19updateStateIfNeededERKNS1_7ContentE",
+            "address": "0x73c8df2ed8"
+          },
+          {
+            "name": "_ZNK8facebook5react17TextLayoutManager12measureLinesERKNS0_19AttributedStringBoxERKNS0_19ParagraphAttributesERKNS0_4SizeE",
+            "address": "0x73c8c6b928"
+          },
+          {
+            "name": "_ZNSt6__ndk18optionalIN8facebook5react19ParagraphShadowNode7ContentEEaSB8ne180000IS4_vEERS5_OT_",
+            "address": "0x73c8df2908"
+          },
+          {
+            "name": "_ZNK8facebook5react17TextLayoutManager21measurePreparedLayoutERKNS0_17SafeReleaseJniRefINS_3jni16basic_strong_refINS0_15JPreparedLayoutENS3_24GlobalReferenceAllocatorEEEEERKNS0_17TextLayoutContextERKNS0_17LayoutConstraintsE",
+            "address": "0x73c8c6c4cc"
+          },
+          {
+            "name": "_ZNK8facebook5react19ParagraphShadowNode10getContentERKNS0_13LayoutContextE",
+            "address": "0x73c8df24c0"
+          },
+          {
+            "name": "_ZNK8facebook5react19ParagraphShadowNode33getContentWithMeasuredAttachmentsERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+            "address": "0x73c8df2968"
+          }
+        ]
+      }
+    ]
+  }
+]

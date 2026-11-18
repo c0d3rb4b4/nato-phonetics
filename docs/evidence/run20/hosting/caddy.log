@@ -1,0 +1,18 @@
+{"level":"info","ts":1795021269.349144,"msg":"maxprocs: Leaving GOMAXPROCS=8: CPU quota undefined"}
+{"level":"info","ts":1795021269.349185,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":7730941132,"previous":9223372036854775807}
+{"level":"info","ts":1795021269.349191,"msg":"using config from file","file":"/Users/mac/dev/apps/nato-phonetics/artifacts/run20/host-reviewed/runtime-7q91JV/a/Caddyfile"}
+{"level":"info","ts":1795021269.349195,"msg":"adapted config to JSON","adapter":"caddyfile"}
+{"level":"warn","ts":1795021269.3491998,"logger":"admin","msg":"admin endpoint disabled"}
+{"level":"info","ts":1795021269.349259,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x5e2916efef80"}
+{"level":"warn","ts":1795021269.349898,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":59746"}
+{"level":"warn","ts":1795021269.349906,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":59746"}
+{"level":"info","ts":1795021269.349911,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+{"level":"info","ts":1795021269.351068,"msg":"autosaved config (load with --resume flag)","file":"/Users/mac/dev/apps/nato-phonetics/artifacts/run20/host-reviewed/runtime-7q91JV/config/caddy/autosave.json"}
+{"level":"info","ts":1795021269.3510761,"msg":"serving initial configuration"}
+{"level":"info","ts":1795021269.364297,"logger":"tls","msg":"cleaning storage unit","storage":"FileStorage:/Users/mac/dev/apps/nato-phonetics/artifacts/run20/host-reviewed/runtime-7q91JV/data/caddy"}
+{"level":"info","ts":1795021269.368462,"logger":"tls","msg":"finished cleaning storage units"}
+{"level":"info","ts":1795021279.092659,"msg":"shutting down apps, then terminating","signal":"SIGTERM"}
+{"level":"warn","ts":1795021279.093058,"msg":"exiting; byeee!! 👋","signal":"SIGTERM"}
+{"level":"info","ts":1795021279.093087,"logger":"http","msg":"servers shutting down with eternal grace period"}
+{"level":"info","ts":1795021279.0932748,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0x5e2916efef80"}
+{"level":"info","ts":1795021279.093319,"msg":"shutdown complete","signal":"SIGTERM","exit_code":0}

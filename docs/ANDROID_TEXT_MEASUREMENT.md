@@ -1,0 +1,28 @@
+# Android live text measurement boundary — Run20
+
+P05.2 remains P1 and failed. Run20 narrows the native path using a normal-startup fixture on the **unchanged Run17 debug APK**, React Native0.81.5/Fabric, Android16/API36 arm64. There is no native source build, feature-flag/cache override, shipped workaround, root replacement or accessibility exception. [Exact APK/loaded-source identity](evidence/run20/android/artifact.json), [trace and measured samples](evidence/run20/android/boundary-report.json), [actual screenshots](evidence/run20/screenshots/index.md).
+
+## Discriminating experiment
+
+The earlier Run07 fixture replaced a debug renderer root and established stale heights, but did not trace native measurements. This fixture instead registers `NATOPhonetics` through ordinary AppRegistry startup. A separately selected Metro configuration rewrites only its bundle entry. It includes a stable paragraph, an otherwise similar paragraph whose text changes with scale, stable explicit-line-height feedback and one controlled TextInput. No product source is edited.
+
+On the repository's test emulator, isolated Frida17.27.0 hooks the exported C++ `ParagraphShadowNode::measureContent` and `TextLayoutManager::measure` functions plus the Java `FabricUIManager.measureText` and `TextLayoutManager.createLayoutForMeasurement` methods. Hooks record calls/results and invoke original Java methods unchanged. The ARM64 C++ result is read from the structure return address; cold JNI/layout/mounted sizes provide independent checks. [Hook source](evidence/run20/android/trace.js), [raw events](evidence/run20/android/trace.json), [fixture/driver](evidence/run20/android/run-trace.py). These are instrumented diagnostic results, not uninfluenced production acceptance.
+
+Run cold1→live2→return1 in one process and cold2 in a separate process. All observations retain mount count1 and input `NUWJ359`. Cold/live comparison fails3 of4 sampled heights with a one-physical-pixel tolerance; the collector succeeds, while the explicit equivalence gate exits1. Editable caret/composition, submitted quiz state, nested text, repeated full scale/window/tiles and physical AT remain unqualified.
+
+| Control | Live2 mounted height, dp | Cold2 height, dp | Native observation |
+|---|---:|---:|---|
+| Stable paragraph |40.571|135.429|No live paragraph measurement invocation. Java later builds enlarged237px/4-line layout through the separate line-event path; it does not supply a replacement measurement/frame. |
+| Stable feedback |24|36|No live paragraph measurement invocation; visible feedback clips. Return1 still shows enlarged clipped feedback despite the restored frame height. |
+| Text-revised paragraph |168|168|Live paragraph→C++→JNI→Java measurement occurs;294px/5 lines at scale2 matches cold2. |
+| Input outer frame |47.429|63.429|The remaining live C++ measurement returns the unique input-width365.429dp and cold1 content height24.571dp without a JNI call; cold2 JNI input content is40.571dp. |
+
+The call-width/result correlation identifies the input-shaped cache return; it is not an independent TextInput caller-stack trace. In pinned source, the default C++ measurement cache key has attributed string, paragraph attributes and constraints but no explicit Android SP/environment generation. The current call trace distinguishes that cache boundary from Java creating an undersized layout on a fresh measurement. It does not establish every key/dirty-owner/context cause or prove a complete repair.
+
+## Re-entry and implementation forecast
+
+The next question is **which context/owner invalidation fails before stable paragraph measurement, and how to invalidate the input measurement cache for an Android font-environment change without losing state**. Trace surface/context/`configureYogaTree` owner propagation and the precise cache key/generation with this same fixture. Add an actual failing native regression before choosing a patch. A newly merged upstream change is a candidate only after its exact version/source/semantics and this reproduction agree; another root-dirty call or a flag alone is not a fix.
+
+That native source/regression cycle remains **L/high uncertainty**, with exact0.81.5 source substitution, CMake3.30.5/tool requirements, measured disk/build preflight, guarded reproducible patches, ABI/native-library identity and fresh cold/live/caret/state/tile/resized-window qualification. The host had about5GiB free at initial forecast; that is not established enough for a first full framework build. [Prior reproducible build requirements](evidence/run07/android/next-investigation.md) remain relevant, while Run20 supersedes the absence of native call-boundary evidence. The original failed flag/cap/constraint/root hypotheses are not repeated or shipped.
+
+After tracing, scale1 and the ordinary product Metro entry are restored, the app process is restarted, actual product bundle/APK are identified and the alphabet is captured. The injected process is gone; the owned trace daemon and emulator are shut down. No user data is cleared or native artifact rebuilt. iOS/web/native product source and all earlier failures stay unchanged. Engineering remains in P05.2; human physical acceptance stays in M11.4.

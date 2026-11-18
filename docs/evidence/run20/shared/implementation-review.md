@@ -1,0 +1,10 @@
+# Run20 implementation diff review
+
+Reviewed current package/host scripts, Caddyfile, package command, workflow, six regression tests and documentation against the resume baseline.
+
+- Only ten pre-existing maintained files change: CI, README, current plan/review/progress/native/runbook/security/offline docs and one package script. App/native/layout/font/provider/schema/permissions/dependency/lock files and every prior evidence file match baseline.
+- Packaging validates route/resource/worker identity, regular files and safe paths; fixed tar metadata/gzip is actually extracted and byte-checked. Output uses exclusive creation; no existing output is replaced. The documented public host configuration serves only extracted public files, with private/asset/fallback handlers separated and correct cache/MIME behavior.
+- Review found transitive retained files need their original release inventory, since they are outside the newer worker manifest. The code now verifies that inventory content identity and each retained file's hash/length, rejects uninventoried files, and meaningful corruption/unknown-asset assertions extend the existing retention regression. Six tests pass; the real host/update/rollback runner is rerun after that change and passes4 scoped groups.
+- Equal-length deterministic release validators are checked against pinned upstream Caddy source and actual HTTP requests; epoch files expose no stale timestamp validators. No speculative validator patch is shipped.
+- CI downloads a checksum-pinned Caddy binary, uses isolated pinned Playwright and uploads only candidate/report/log/screenshots, excluding browser profiles/full fixture directories. Hosted Linux execution remains unrun and the independent audit gate is preserved.
+- The candidate reproduced after review is byte-identical to the durable archive. No cloud deployment, signing, approval, M11 result or whole phase completion is inferred. Diagnostic native instrumentation does not ship and its processes are stopped after normal product restoration.

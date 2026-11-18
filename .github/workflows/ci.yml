@@ -130,3 +130,48 @@ jobs:
           name: browser-support-${{ matrix.engine }}-${{ github.sha }}
           path: artifacts/browser-support/${{ matrix.engine }}/
           if-no-files-found: ignore
+
+  web-distribution:
+    # Local hosting qualification is independent of the unresolved audit gate.
+    # This job packages artifacts and runs loopback checks; it never deploys.
+    runs-on: ubuntu-latest
+    env:
+      CI: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - name: Pin npm and install app
+        run: |
+          npm install --global npm@10.9.4
+          npm ci
+      - name: Build and package static candidate
+        run: |
+          node --test tests/web-package.test.mjs
+          npm run export:web
+          npm run package:web -- dist artifacts/web-distribution/nato-web.tar.gz
+      - name: Install checksum-pinned Caddy and isolated browser
+        run: |
+          mkdir -p "$RUNNER_TEMP/nato-caddy"
+          curl --fail --location --output "$RUNNER_TEMP/nato-caddy/caddy.tar.gz" https://github.com/caddyserver/caddy/releases/download/v2.11.9/caddy_2.11.9_linux_amd64.tar.gz
+          echo "0e85544340290a16ce4bfb76fe7d65e9de1bf3a6e67f5ccfff30b30d27ea4c73e078077b7bf3e58ae60b6b12e44327705287059c775bca5782e8ee85ea7edd75  $RUNNER_TEMP/nato-caddy/caddy.tar.gz" | sha512sum --check
+          tar -xzf "$RUNNER_TEMP/nato-caddy/caddy.tar.gz" -C "$RUNNER_TEMP/nato-caddy" caddy
+          echo "CADDY_EXECUTABLE=$RUNNER_TEMP/nato-caddy/caddy" >> "$GITHUB_ENV"
+          npm install --prefix "$RUNNER_TEMP/nato-host-browser" --no-save --package-lock=false playwright@1.65.1
+          node "$RUNNER_TEMP/nato-host-browser/node_modules/playwright/cli.js" install --with-deps chromium
+          echo "NODE_PATH=$RUNNER_TEMP/nato-host-browser/node_modules" >> "$GITHUB_ENV"
+      - name: Qualify packaged host, forward update and rollback
+        run: node scripts/verify-web-host.cjs artifacts/web-distribution/nato-web.tar.gz artifacts/web-distribution/host
+      - name: Keep candidate, report and screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: web-distribution-${{ github.sha }}
+          path: |
+            artifacts/web-distribution/nato-web.tar.gz
+            artifacts/web-distribution/host/report.json
+            artifacts/web-distribution/host/caddy.log
+            artifacts/web-distribution/host/screenshots/
+          if-no-files-found: ignore

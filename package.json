@@ -12,6 +12,7 @@
     "test": "node --test tests/*.test.mjs",
     "typecheck": "tsc --noEmit",
     "export:web": "node scripts/build-web.cjs",
+    "package:web": "node scripts/package-web.cjs",
     "check:dependencies": "node scripts/check-no-expo.cjs",
     "audit:review": "node scripts/check-audit.cjs",
     "build:android": "node scripts/build-native.cjs android-debug",
