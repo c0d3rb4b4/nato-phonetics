@@ -1,0 +1,66 @@
+{
+  "scenario": "Normal application entry, no fixture/root replacement",
+  "comparisons": [
+    {
+      "text": "Letter practice",
+      "live": {
+        "height": 35.428558349609375,
+        "pageX": 16,
+        "pageY": 132,
+        "width": 379.4285583496094,
+        "x": 16,
+        "y": 24
+      },
+      "cold": {
+        "height": 49.71429443359375,
+        "pageX": 16,
+        "pageY": 140.5714111328125,
+        "width": 379.4285583496094,
+        "x": 16,
+        "y": 24
+      },
+      "equal": false
+    },
+    {
+      "text": "Choose a short round. Each letter appears once before the deck repeats.",
+      "live": {
+        "height": 48,
+        "pageX": 16,
+        "pageY": 187.42855834960938,
+        "width": 379.4285583496094,
+        "x": 16,
+        "y": 79.42857360839844
+      },
+      "cold": {
+        "height": 108,
+        "pageX": 16,
+        "pageY": 210.28570556640625,
+        "width": 379.4285583496094,
+        "x": 16,
+        "y": 93.71428680419922
+      },
+      "equal": false
+    },
+    {
+      "text": "Start round",
+      "live": {
+        "height": 21.71429443359375,
+        "pageX": 165.14285278320312,
+        "pageY": 442.2857360839844,
+        "width": 81.14286804199219,
+        "x": 149.14285278320312,
+        "y": 13.714285850524902
+      },
+      "cold": {
+        "height": 37.7142333984375,
+        "pageX": 134.85714721679688,
+        "pageY": 573.1428833007812,
+        "width": 141.14285278320312,
+        "x": 118.85713958740234,
+        "y": 13.714285850524902
+      },
+      "equal": false
+    }
+  ],
+  "readabilityGate": "OPEN; inspect screenshots, equal frames alone do not prove readable text"
+}

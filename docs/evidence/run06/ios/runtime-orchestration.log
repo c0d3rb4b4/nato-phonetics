@@ -1,0 +1,21 @@
+RUN phone-test.log
+RUN phone-export.log
+RUN phone-metadata.log
+RUN dark-test.log
+RUN dark-export.log
+RUN dark-metadata.log
+RUN restored-auto-test.log
+RUN restored-auto-export.log
+RUN restored-auto-metadata.log
+restored-auto-test.log failed
+RUN enlarged-test.log
+RUN enlarged-export.log
+RUN enlarged-metadata.log
+RUN maximum-test.log
+RUN maximum-export.log
+RUN maximum-metadata.log
+maximum-test.log failed
+Traceback (most recent call last):
+  File "/Users/mac/dev/apps/nato-phonetics/docs/evidence/run06/ios/run-next.py", line 41, in <module>
+    if failures:raise RuntimeError(str(failures))
+RuntimeError: ['restored-auto-test.log failed', 'maximum-test.log failed']

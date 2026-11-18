@@ -1,0 +1,14 @@
+DIAGNOSTIC --audio-only: layout/keyboard and all-route theme/title/reload matrix skipped
+PASS mocked speech replacement, Stop (including word pause), edit, navigation and background ownership; stale callbacks cannot resume queues
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+null !== 'true'
+
+    at /Users/mac/dev/apps/nato-phonetics/scripts/verify-app-browser.cjs:490:12 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: null,
+  expected: 'true',
+  operator: 'strictEqual',
+  diff: 'simple'
+}

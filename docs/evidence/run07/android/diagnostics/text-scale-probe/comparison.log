@@ -1,0 +1,220 @@
+{
+  "passed": false,
+  "observations": 35,
+  "failures": [
+    {
+      "name": "live-1-scale2",
+      "example": "body",
+      "frameDelta": {
+        "width": -0.0000152587890625,
+        "height": -109.71430969238281
+      },
+      "eventEquivalent": false,
+      "rasterSame": false
+    },
+    {
+      "name": "live-1-scale2",
+      "example": "heading",
+      "frameDelta": {
+        "width": -0.0000152587890625,
+        "height": -39.42854309082031
+      },
+      "eventEquivalent": false,
+      "rasterSame": false
+    },
+    {
+      "name": "live-1-scale2",
+      "example": "feedback",
+      "frameDelta": {
+        "width": -0.0000152587890625,
+        "height": -48
+      },
+      "eventEquivalent": false,
+      "rasterSame": false
+    },
+    {
+      "name": "live-1-scale2",
+      "example": "nested",
+      "frameDelta": {
+        "width": -0.0000152587890625,
+        "height": -108
+      },
+      "eventEquivalent": false,
+      "rasterSame": false
+    },
+    {
+      "name": "live-1-scale2",
+      "example": "input",
+      "frameDelta": {
+        "width": 0,
+        "height": -16.000030517578125
+      },
+      "eventEquivalent": false
+    },
+    {
+      "name": "live-2-scale1",
+      "example": "input",
+      "frameDelta": {
+        "width": 0,
+        "height": 0
+      },
+      "eventEquivalent": false
+    },
+    {
+      "name": "live-3-scale0.85",
+      "example": "body",
+      "frameDelta": {
+        "width": -0.0000152587890625,
+        "height": 8.5714111328125
+      },
+      "eventEquivalent": false,
+      "rasterSame": true
+    },
+    {
+      "name": "live-3-scale0.85",
+      "example": "heading",
+      "frameDelta": {
+        "width": -0.0000152587890625,
+        "height": 40.57147216796875
+      },
+      "eventEquivalent": false,
+      "rasterSame": true
+    },
+    {
+      "name": "live-3-scale0.85",
+      "example": "feedback",
+      "frameDelta": {
+        "width": -0.0000152587890625,
+        "height": 3.4285430908203125
+      },
+      "eventEquivalent": false,
+      "rasterSame": true
+    },
+    {
+      "name": "live-3-scale0.85",
+      "example": "nested",
+      "frameDelta": {
+        "width": -0.0000152587890625,
+        "height": 30.857162475585938
+      },
+      "eventEquivalent": false,
+      "rasterSame": true
+    },
+    {
+      "name": "live-3-scale0.85",
+      "example": "input",
+      "frameDelta": {
+        "width": 0,
+        "height": 3.428558349609375
+      },
+      "eventEquivalent": false
+    },
+    {
+      "name": "live-4-scale1.3",
+      "example": "body",
+      "frameDelta": {
+        "width": -0.0000152587890625,
+        "height": -39.4285888671875
+      },
+      "eventEquivalent": false,
+      "rasterSame": false
+    },
+    {
+      "name": "live-4-scale1.3",
+      "example": "heading",
+      "frameDelta": {
+        "width": -0.0000152587890625,
+        "height": -5.714263916015625
+      },
+      "eventEquivalent": false,
+      "rasterSame": false
+    },
+    {
+      "name": "live-4-scale1.3",
+      "example": "feedback",
+      "frameDelta": {
+        "width": -0.0000152587890625,
+        "height": -2.857147216796875
+      },
+      "eventEquivalent": false,
+      "rasterSame": true
+    },
+    {
+      "name": "live-4-scale1.3",
+      "example": "nested",
+      "frameDelta": {
+        "width": -0.0000152587890625,
+        "height": -8.5714111328125
+      },
+      "eventEquivalent": false,
+      "rasterSame": false
+    },
+    {
+      "name": "live-4-scale1.3",
+      "example": "input",
+      "frameDelta": {
+        "width": 0,
+        "height": -5.14288330078125
+      },
+      "eventEquivalent": false
+    },
+    {
+      "name": "live-5-scale2",
+      "example": "body",
+      "frameDelta": {
+        "width": -0.0000152587890625,
+        "height": -109.71430969238281
+      },
+      "eventEquivalent": false,
+      "rasterSame": false
+    },
+    {
+      "name": "live-5-scale2",
+      "example": "heading",
+      "frameDelta": {
+        "width": -0.0000152587890625,
+        "height": -39.42854309082031
+      },
+      "eventEquivalent": false,
+      "rasterSame": false
+    },
+    {
+      "name": "live-5-scale2",
+      "example": "feedback",
+      "frameDelta": {
+        "width": -0.0000152587890625,
+        "height": -48
+      },
+      "eventEquivalent": false,
+      "rasterSame": false
+    },
+    {
+      "name": "live-5-scale2",
+      "example": "nested",
+      "frameDelta": {
+        "width": -0.0000152587890625,
+        "height": -108
+      },
+      "eventEquivalent": false,
+      "rasterSame": false
+    },
+    {
+      "name": "live-5-scale2",
+      "example": "input",
+      "frameDelta": {
+        "width": 0,
+        "height": -16.000030517578125
+      },
+      "eventEquivalent": false
+    },
+    {
+      "name": "live-6-scale1",
+      "example": "input",
+      "frameDelta": {
+        "width": 0,
+        "height": 0
+      },
+      "eventEquivalent": false
+    }
+  ]
+}

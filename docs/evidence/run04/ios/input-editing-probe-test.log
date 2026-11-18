@@ -1,0 +1,406 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild test -project /private/tmp/nato-ios-run04/Capture.xcodeproj -scheme Capture -destination "platform=iOS Simulator,id=0653F7EC-9237-4AC5-A264-12969E625070" -derivedDataPath /private/tmp/nato-ios-run04/build -resultBundlePath /private/tmp/nato-ios-run04/InputEditingProbe.xcresult -parallel-testing-enabled NO "-only-testing:CaptureUITests/CaptureUITests/testMinimalControlled" "-only-testing:CaptureUITests/CaptureUITests/testMinimalUncontrolled" -test-iterations 3 CODE_SIGNING_ALLOWED=NO
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+Running tests repeatedly 3 times.
+
+Writing result bundle at path:
+	/private/tmp/nato-ios-run04/InputEditingProbe.xcresult
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (1 target)
+    Target 'CaptureUITests' in project 'Capture' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 6339d15b48ce30e0dcbd58da5fc57579
+Build description path: /tmp/nato-ios-run04/build/Build/Intermediates.noindex/XCBuildData/6339d15b48ce30e0dcbd58da5fc57579.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk /tmp/nato-ios-run04/build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache
+    cd /tmp/nato-ios-run04/Capture.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -o /tmp/nato-ios-run04/build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache
+
+SwiftDriver CaptureUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-run04
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CaptureUITests -Onone @/tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -target arm64-apple-ios16.4-simulator -g -module-cache-path /tmp/nato-ios-run04/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/nato-ios-run04/build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/nato-ios-run04/build/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/nato-ios-run04/build/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk/Developer/Library/Frameworks -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/nato-ios-run04/build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache -output-file-map /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/nato-ios-run04/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/nato-ios-run04/build/ModuleCache.noindex -sdk-module-cache-path /tmp/nato-ios-run04/build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /tmp/nato-ios-run04/build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-generated-files.hmap -Xcc -I/tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-own-target-headers.hmap -Xcc -I/tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-project-headers.hmap -Xcc -I/tmp/nato-ios-run04/build/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/DerivedSources/arm64 -Xcc -I/tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests-Swift.h -working-directory /tmp/nato-ios-run04 -experimental-emit-module-separately -disable-cmo
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-run04/build/SDKExplicitPrecompiledModules/dnssd-27YT0MSEMJHDD48CK28PJ3PVJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-run04/build/SDKExplicitPrecompiledModules/CoreMIDI-N2AGUO9LUW6EQSW9JS4A661P.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-run04/build/SDKExplicitPrecompiledModules/CoreAudioTypes-F2R293WM8IY2ZICW7P4GRLEGB.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-run04/build/SDKExplicitPrecompiledModules/CoreAudio-8O9F1Q7WE8BO376JKJTD4K1TJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-run04/build/SDKExplicitPrecompiledModules/Network-CXBPT0SDHQIL31SONTMG4QU81.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-run04/build/SDKExplicitPrecompiledModules/AudioToolbox-2M27I1ZXTV88KSVLEA9Z6OT48.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-run04/build/SDKExplicitPrecompiledModules/CoreMedia-DEPJD4FUQL2ZUZZQJH8I47ZOF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-run04/build/SDKExplicitPrecompiledModules/AVRouting-6T7JY0YEQ9NMI4U5SYZ5SP70B.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-run04/build/SDKExplicitPrecompiledModules/MediaToolbox-DT7M38YQJQW8UGN0AT20FBSMA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-run04/build/SDKExplicitPrecompiledModules/VideoToolbox-HROYJHIRK6Y0GHP7BYI5D3WT.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-run04/build/SDKExplicitPrecompiledModules/AVFAudio-EMU33SW5AV14U38DTJG65117U.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-run04/build/SDKExplicitPrecompiledModules/AVFoundation-6KSB6S8264F1MJ04HX6SX1A8B.pcm
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ CaptureUITests (in target 'CaptureUITests' from project 'Capture')
+
+SwiftCompile normal arm64 (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-run04
+    
+
+SwiftCompile normal arm64 Compiling\ CaptureUITests.swift /tmp/nato-ios-run04/CaptureUITests.swift (in target 'CaptureUITests' from project 'Capture')
+
+SwiftCompile normal arm64 /tmp/nato-ios-run04/CaptureUITests.swift (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-run04
+    builtin-SwiftPerFileCompile CaptureUITests.swift
+
+SwiftDriverJobDiscovery normal arm64 Compiling CaptureUITests.swift (in target 'CaptureUITests' from project 'Capture')
+
+SwiftDriver\ Compilation CaptureUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-run04
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CaptureUITests -Onone @/tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -target arm64-apple-ios16.4-simulator -g -module-cache-path /tmp/nato-ios-run04/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/nato-ios-run04/build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/nato-ios-run04/build/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/nato-ios-run04/build/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk/Developer/Library/Frameworks -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/nato-ios-run04/build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache -output-file-map /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/nato-ios-run04/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/nato-ios-run04/build/ModuleCache.noindex -sdk-module-cache-path /tmp/nato-ios-run04/build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /tmp/nato-ios-run04/build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-generated-files.hmap -Xcc -I/tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-own-target-headers.hmap -Xcc -I/tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-project-headers.hmap -Xcc -I/tmp/nato-ios-run04/build/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/DerivedSources/arm64 -Xcc -I/tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests-Swift.h -working-directory /tmp/nato-ios-run04 -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for CaptureUITests (in target 'CaptureUITests' from project 'Capture')
+
+SwiftDriver\ Compilation\ Requirements CaptureUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-run04
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CaptureUITests -Onone @/tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -target arm64-apple-ios16.4-simulator -g -module-cache-path /tmp/nato-ios-run04/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/nato-ios-run04/build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/nato-ios-run04/build/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/nato-ios-run04/build/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk/Developer/Library/Frameworks -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/nato-ios-run04/build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache -output-file-map /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/nato-ios-run04/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/nato-ios-run04/build/ModuleCache.noindex -sdk-module-cache-path /tmp/nato-ios-run04/build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /tmp/nato-ios-run04/build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-generated-files.hmap -Xcc -I/tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-own-target-headers.hmap -Xcc -I/tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-project-headers.hmap -Xcc -I/tmp/nato-ios-run04/build/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/DerivedSources/arm64 -Xcc -I/tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests-Swift.h -working-directory /tmp/nato-ios-run04 -experimental-emit-module-separately -disable-cmo
+
+Copy /tmp/nato-ios-run04/build/Build/Products/Debug-iphonesimulator/CaptureUITests.swiftmodule/arm64-apple-ios-simulator.swiftmodule /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.swiftmodule (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-run04
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.swiftmodule /tmp/nato-ios-run04/build/Build/Products/Debug-iphonesimulator/CaptureUITests.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /tmp/nato-ios-run04/build/Build/Products/Debug-iphonesimulator/CaptureUITests.swiftmodule/arm64-apple-ios-simulator.abi.json /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.abi.json (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-run04
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.abi.json /tmp/nato-ios-run04/build/Build/Products/Debug-iphonesimulator/CaptureUITests.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /tmp/nato-ios-run04/build/Build/Products/Debug-iphonesimulator/CaptureUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.swiftsourceinfo (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-run04
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.swiftsourceinfo /tmp/nato-ios-run04/build/Build/Products/Debug-iphonesimulator/CaptureUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+Ld /tmp/nato-ios-run04/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/CaptureUITests normal (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-run04
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios16.4-simulator -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/tmp/nato-ios-run04/build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/tmp/nato-ios-run04/build/Build/Products/Debug-iphonesimulator -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F/tmp/nato-ios-run04/build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/tmp/nato-ios-run04/build/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk/Developer/Library/Frameworks -filelist /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.swiftmodule -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport -framework Foundation -o /tmp/nato-ios-run04/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/CaptureUITests
+/tmp/nato-ios-run04/Capture.xcodeproj: CaptureUITests: ld: warning: building for iOS-simulator-16.4, but linking with dylib '@rpath/XCTest.framework/XCTest' which was built for newer version 17.0
+/tmp/nato-ios-run04/Capture.xcodeproj: CaptureUITests: ld: warning: building for iOS-simulator-16.4, but linking with dylib '@rpath/libXCTestSwiftSupport.dylib' which was built for newer version 17.0
+/tmp/nato-ios-run04/Capture.xcodeproj: CaptureUITests: ld: warning: building for iOS-simulator-16.4, but linking with dylib '@rpath/XCUIAutomation.framework/XCUIAutomation' which was built for newer version 17.0
+
+ExtractAppIntentsMetadata (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-run04
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name CaptureUITests --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk --xcode-version 27B52 --platform-family iOS --deployment-target 16.4 --bundle-identifier com.natophonetics.capture --output /tmp/nato-ios-run04/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest --target-triple arm64-apple-ios16.4-simulator --binary-file /tmp/nato-ios-run04/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/CaptureUITests --dependency-file /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests_dependency_info.dat --stringsdata-file /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.SwiftFileList --metadata-file-list /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests.DependencyMetadataFileList --static-metadata-file-list /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests.DependencyStaticMetadataFileList --swift-const-vals-list /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-11-16 17:54:35.650 appintentsmetadataprocessor[95121:9202603] Starting App Intents metadata extraction
+2026-11-16 17:54:35.669 appintentsmetadataprocessor[95121:9202603] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+ProcessInfoPlistFile /tmp/nato-ios-run04/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/Info.plist /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/empty-CaptureUITests.plist (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-run04
+    builtin-infoPlistUtility /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/empty-CaptureUITests.plist -producttype com.apple.product-type.bundle.ui-testing -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/ProductTypeInfoPlistAdditions.plist -o /tmp/nato-ios-run04/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/Info.plist
+
+CopySwiftLibs /tmp/nato-ios-run04/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-run04
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /tmp/nato-ios-run04/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/CaptureUITests --scan-folder /tmp/nato-ios-run04/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/Frameworks --scan-folder /tmp/nato-ios-run04/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/PlugIns --scan-folder /tmp/nato-ios-run04/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/SystemExtensions --scan-folder /tmp/nato-ios-run04/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/Extensions --scan-folder /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /tmp/nato-ios-run04/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /tmp/nato-ios-run04/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+PruneExplicitPrecompiledModules /tmp/nato-ios-run04/build/SDKExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /tmp/nato-ios-run04/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /tmp/nato-ios-run04/build/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+2026-11-16 17:54:40.860401+0000 CaptureUITests-Runner[95124:9202818] [Default] Running tests...
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-11-16 17:54:43.014.
+Test Suite 'CaptureUITests.xctest' started at 2026-11-16 17:54:43.027.
+Test Suite 'CaptureUITests' started at 2026-11-16 17:54:43.027.
+Test Case '-[CaptureUITests.CaptureUITests testMinimalControlled]' started (Iteration 1 of 3).
+    t =     0.01s Start Test at 2026-11-16 17:54:43.036
+    t =     0.24s Set Up
+    t =     0.24s Open com.natophonetics.app
+    t =     0.24s     Launch com.natophonetics.app
+    t =     1.28s         Setting up automation session
+    t =     4.42s         Wait for com.natophonetics.app to idle
+    t =     6.21s Waiting 10.0s for "controlled-input" Any to exist
+    t =     7.23s     Checking `Expect predicate `existsNoRetry == 1` for object "controlled-input" Any`
+    t =     7.23s         Checking existence of `"controlled-input" Any`
+    t =     7.32s Tap "controlled-input" Any
+    t =     7.32s     Wait for com.natophonetics.app to idle
+    t =     7.32s     Find the "controlled-input" Any
+    t =     7.34s     Check for interrupting elements affecting "controlled-input" TextField
+    t =     7.46s     Synthesize event
+    t =     7.80s     Wait for com.natophonetics.app to idle
+    t =     9.04s Waiting 10.0s for Keyboard (First Match) to exist
+    t =    10.07s     Checking `Expect predicate `existsNoRetry == 1` for object Keyboard (First Match)`
+    t =    10.07s         Checking existence of `Keyboard (First Match)`
+    t =    10.11s Type 'CV34 7AP' into "controlled-input" TextField
+    t =    10.11s     Wait for com.natophonetics.app to idle
+    t =    10.11s     Find the "controlled-input" TextField
+    t =    10.15s     Check for interrupting elements affecting "controlled-input" TextField
+    t =    10.25s     Synthesize event
+    t =    10.59s     Wait for com.natophonetics.app to idle
+    t =    11.78s Added attachment named 'minimal-controlled-input'
+CAPTURE minimal-controlled-input
+    t =    11.78s Find the "controlled-input" TextField
+MINIMAL CONTROLLED VALUE: CV34 7AP
+    t =    11.82s Find the "controlled-input" TextField
+    t =    11.85s Find the "controlled-output" Any
+    t =    11.87s Type '' into "controlled-input" TextField
+    t =    11.87s     Wait for com.natophonetics.app to idle
+    t =    11.87s     Find the "controlled-input" TextField
+    t =    11.89s     Check for interrupting elements affecting "controlled-input" TextField
+    t =    11.95s     Synthesize event
+    t =    12.19s     Wait for com.natophonetics.app to idle
+    t =    12.19s Find the "controlled-input" TextField
+MINIMAL DELETE VALUE: CV34 7
+    t =    12.21s Find the "controlled-input" TextField
+    t =    12.26s Type 'XY' into "controlled-input" TextField
+    t =    12.26s     Wait for com.natophonetics.app to idle
+    t =    12.26s     Find the "controlled-input" TextField
+    t =    12.28s     Check for interrupting elements affecting "controlled-input" TextField
+    t =    12.35s     Synthesize event
+    t =    12.58s     Wait for com.natophonetics.app to idle
+    t =    12.58s Find the "controlled-input" TextField
+    t =    12.63s Tear Down
+Test Case '-[CaptureUITests.CaptureUITests testMinimalControlled]' passed (13.949 seconds).
+Test Case '-[CaptureUITests.CaptureUITests testMinimalControlled]' started (Iteration 2 of 3).
+    t =     0.00s Start Test at 2026-11-16 17:54:56.990
+    t =     0.12s Set Up
+    t =     0.13s Open com.natophonetics.app
+    t =     0.13s     Launch com.natophonetics.app
+    t =     0.13s         Terminate com.natophonetics.app:95161
+    t =     1.93s         Setting up automation session
+    t =     6.00s         Wait for com.natophonetics.app to idle
+    t =     8.76s Waiting 10.0s for "controlled-input" Any to exist
+    t =     9.78s     Checking `Expect predicate `existsNoRetry == 1` for object "controlled-input" Any`
+    t =     9.79s         Checking existence of `"controlled-input" Any`
+    t =    10.33s Tap "controlled-input" Any
+    t =    10.33s     Wait for com.natophonetics.app to idle
+    t =    10.34s     Find the "controlled-input" Any
+    t =    10.35s     Check for interrupting elements affecting "controlled-input" TextField
+    t =    11.00s     Synthesize event
+    t =    11.45s     Wait for com.natophonetics.app to idle
+    t =    27.84s Waiting 10.0s for Keyboard (First Match) to exist
+    t =    28.85s     Checking `Expect predicate `existsNoRetry == 1` for object Keyboard (First Match)`
+    t =    28.90s         Checking existence of `Keyboard (First Match)`
+    t =    29.04s Type 'CV34 7AP' into "controlled-input" TextField
+    t =    29.04s     Wait for com.natophonetics.app to idle
+    t =    29.05s     Find the "controlled-input" TextField
+    t =    29.18s     Check for interrupting elements affecting "controlled-input" TextField
+    t =    29.40s     Synthesize event
+    t =    29.79s     Wait for com.natophonetics.app to idle
+    t =    31.35s Added attachment named 'minimal-controlled-input'
+CAPTURE minimal-controlled-input
+    t =    31.36s Find the "controlled-input" TextField
+MINIMAL CONTROLLED VALUE: C
+    t =    31.52s Find the "controlled-input" TextField
+/tmp/nato-ios-run04/CaptureUITests.swift:214: error: -[CaptureUITests.CaptureUITests testMinimalControlled] : XCTAssertEqual failed: ("Optional("C")") is not equal to ("Optional("CV34 7AP")")
+    t =    32.47s Tear Down
+Test Case '-[CaptureUITests.CaptureUITests testMinimalControlled]' failed (33.168 seconds).
+Test Case '-[CaptureUITests.CaptureUITests testMinimalControlled]' started (Iteration 3 of 3).
+    t =     0.01s Start Test at 2026-11-16 17:55:30.184
+    t =     0.24s Set Up
+    t =     0.24s Open com.natophonetics.app
+    t =     0.24s     Launch com.natophonetics.app
+    t =     0.24s         Terminate com.natophonetics.app:95245
+    t =     3.44s         Setting up automation session
+    t =     6.12s         Wait for com.natophonetics.app to idle
+    t =     7.69s Waiting 10.0s for "controlled-input" Any to exist
+    t =     8.71s     Checking `Expect predicate `existsNoRetry == 1` for object "controlled-input" Any`
+    t =     8.71s         Checking existence of `"controlled-input" Any`
+    t =     8.90s Tap "controlled-input" Any
+    t =     8.90s     Wait for com.natophonetics.app to idle
+    t =     8.90s     Find the "controlled-input" Any
+    t =     8.92s     Check for interrupting elements affecting "controlled-input" TextField
+    t =     9.05s     Synthesize event
+    t =     9.36s     Wait for com.natophonetics.app to idle
+    t =    10.27s Waiting 10.0s for Keyboard (First Match) to exist
+    t =    11.30s     Checking `Expect predicate `existsNoRetry == 1` for object Keyboard (First Match)`
+    t =    11.30s         Checking existence of `Keyboard (First Match)`
+    t =    11.33s Type 'CV34 7AP' into "controlled-input" TextField
+    t =    11.33s     Wait for com.natophonetics.app to idle
+    t =    11.34s     Find the "controlled-input" TextField
+    t =    11.38s     Check for interrupting elements affecting "controlled-input" TextField
+    t =    11.46s     Synthesize event
+    t =    11.79s     Wait for com.natophonetics.app to idle
+    t =    13.07s Added attachment named 'minimal-controlled-input'
+CAPTURE minimal-controlled-input
+    t =    13.07s Find the "controlled-input" TextField
+MINIMAL CONTROLLED VALUE: C
+    t =    13.13s Find the "controlled-input" TextField
+/tmp/nato-ios-run04/CaptureUITests.swift:214: error: -[CaptureUITests.CaptureUITests testMinimalControlled] : XCTAssertEqual failed: ("Optional("C")") is not equal to ("Optional("CV34 7AP")")
+    t =    13.34s Tear Down
+Test Case '-[CaptureUITests.CaptureUITests testMinimalControlled]' failed (13.682 seconds).
+Test Case '-[CaptureUITests.CaptureUITests testMinimalUncontrolled]' started (Iteration 1 of 3).
+    t =     0.00s Start Test at 2026-11-16 17:55:43.859
+    t =     0.09s Set Up
+    t =     0.09s Open com.natophonetics.app
+    t =     0.09s     Launch com.natophonetics.app
+    t =     0.09s         Terminate com.natophonetics.app:95379
+    t =     1.62s         Setting up automation session
+    t =     5.75s         Wait for com.natophonetics.app to idle
+    t =    11.46s Waiting 10.0s for "uncontrolled-input" Any to exist
+    t =    12.48s     Checking `Expect predicate `existsNoRetry == 1` for object "uncontrolled-input" Any`
+    t =    12.54s         Checking existence of `"uncontrolled-input" Any`
+    t =    13.16s Tap "uncontrolled-input" Any
+    t =    13.16s     Wait for com.natophonetics.app to idle
+    t =    13.17s     Find the "uncontrolled-input" Any
+    t =    13.19s     Check for interrupting elements affecting "uncontrolled-input" TextField
+    t =    13.93s     Synthesize event
+    t =    14.47s     Wait for com.natophonetics.app to idle
+    t =    17.99s Waiting 10.0s for Keyboard (First Match) to exist
+    t =    19.03s     Checking `Expect predicate `existsNoRetry == 1` for object Keyboard (First Match)`
+    t =    19.14s         Checking existence of `Keyboard (First Match)`
+    t =    19.52s         Capturing element debug description
+    t =    20.05s     Checking `Expect predicate `existsNoRetry == 1` for object Keyboard (First Match)`
+    t =    20.09s         Checking existence of `Keyboard (First Match)`
+    t =    25.08s         Capturing element debug description
+    t =    26.00s     Checking `Expect predicate `existsNoRetry == 1` for object Keyboard (First Match)`
+    t =    26.04s         Checking existence of `Keyboard (First Match)`
+    t =    26.24s         Capturing element debug description
+    t =    27.06s     Checking `Expect predicate `existsNoRetry == 1` for object Keyboard (First Match)`
+    t =    27.06s         Checking existence of `Keyboard (First Match)`
+    t =    27.10s Type 'CV34 7AP' into "uncontrolled-input" TextField
+    t =    27.10s     Wait for com.natophonetics.app to idle
+    t =    27.11s     Find the "uncontrolled-input" TextField
+    t =    27.18s     Check for interrupting elements affecting "uncontrolled-input" TextField
+    t =    27.30s     Synthesize event
+    t =    27.65s     Wait for com.natophonetics.app to idle
+    t =    29.19s Added attachment named 'minimal-uncontrolled-input'
+CAPTURE minimal-uncontrolled-input
+    t =    29.19s Find the "uncontrolled-input" TextField
+MINIMAL UNCONTROLLED VALUE: C
+    t =    29.24s Find the "uncontrolled-input" TextField
+/tmp/nato-ios-run04/CaptureUITests.swift:233: error: -[CaptureUITests.CaptureUITests testMinimalUncontrolled] : XCTAssertEqual failed: ("Optional("C")") is not equal to ("Optional("CV34 7AP")")
+    t =    29.33s Tear Down
+Test Case '-[CaptureUITests.CaptureUITests testMinimalUncontrolled]' failed (29.718 seconds).
+Test Case '-[CaptureUITests.CaptureUITests testMinimalUncontrolled]' started (Iteration 2 of 3).
+    t =     0.00s Start Test at 2026-11-16 17:56:13.581
+    t =     0.08s Set Up
+    t =     0.08s Open com.natophonetics.app
+    t =     0.08s     Launch com.natophonetics.app
+    t =     0.08s         Terminate com.natophonetics.app:95423
+    t =     1.45s         Setting up automation session
+    t =     3.92s         Wait for com.natophonetics.app to idle
+    t =     5.74s Waiting 10.0s for "uncontrolled-input" Any to exist
+    t =     6.78s     Checking `Expect predicate `existsNoRetry == 1` for object "uncontrolled-input" Any`
+    t =     6.79s         Checking existence of `"uncontrolled-input" Any`
+    t =     6.92s Tap "uncontrolled-input" Any
+    t =     6.92s     Wait for com.natophonetics.app to idle
+    t =     6.92s     Find the "uncontrolled-input" Any
+    t =     6.94s     Check for interrupting elements affecting "uncontrolled-input" TextField
+    t =     7.12s     Synthesize event
+    t =     7.46s     Wait for com.natophonetics.app to idle
+    t =     8.89s Waiting 10.0s for Keyboard (First Match) to exist
+    t =     9.93s     Checking `Expect predicate `existsNoRetry == 1` for object Keyboard (First Match)`
+    t =     9.94s         Checking existence of `Keyboard (First Match)`
+    t =     9.97s Type 'CV34 7AP' into "uncontrolled-input" TextField
+    t =     9.98s     Wait for com.natophonetics.app to idle
+    t =     9.98s     Find the "uncontrolled-input" TextField
+    t =    10.02s     Check for interrupting elements affecting "uncontrolled-input" TextField
+    t =    10.11s     Synthesize event
+    t =    10.45s     Wait for com.natophonetics.app to idle
+    t =    11.69s Added attachment named 'minimal-uncontrolled-input'
+CAPTURE minimal-uncontrolled-input
+    t =    11.69s Find the "uncontrolled-input" TextField
+MINIMAL UNCONTROLLED VALUE: CV34 7AP
+    t =    11.75s Find the "uncontrolled-input" TextField
+    t =    11.78s Find the "uncontrolled-output" Any
+    t =    11.82s Type '' into "uncontrolled-input" TextField
+    t =    11.82s     Wait for com.natophonetics.app to idle
+    t =    11.82s     Find the "uncontrolled-input" TextField
+    t =    11.85s     Check for interrupting elements affecting "uncontrolled-input" TextField
+    t =    11.88s     Synthesize event
+    t =    12.12s     Wait for com.natophonetics.app to idle
+    t =    12.12s Find the "uncontrolled-input" TextField
+MINIMAL DELETE VALUE: CV34 7
+    t =    12.14s Find the "uncontrolled-input" TextField
+    t =    12.18s Type 'XY' into "uncontrolled-input" TextField
+    t =    12.18s     Wait for com.natophonetics.app to idle
+    t =    12.18s     Find the "uncontrolled-input" TextField
+    t =    12.21s     Check for interrupting elements affecting "uncontrolled-input" TextField
+    t =    12.26s     Synthesize event
+    t =    12.49s     Wait for com.natophonetics.app to idle
+    t =    12.50s Find the "uncontrolled-input" TextField
+    t =    12.53s Tear Down
+Test Case '-[CaptureUITests.CaptureUITests testMinimalUncontrolled]' passed (12.869 seconds).
+Test Case '-[CaptureUITests.CaptureUITests testMinimalUncontrolled]' started (Iteration 3 of 3).
+    t =     0.00s Start Test at 2026-11-16 17:56:26.453
+    t =     0.07s Set Up
+    t =     0.07s Open com.natophonetics.app
+    t =     0.07s     Launch com.natophonetics.app
+    t =     0.07s         Terminate com.natophonetics.app:95559
+    t =     1.50s         Setting up automation session
+    t =     3.84s         Wait for com.natophonetics.app to idle
+    t =     5.51s Waiting 10.0s for "uncontrolled-input" Any to exist
+    t =     6.54s     Checking `Expect predicate `existsNoRetry == 1` for object "uncontrolled-input" Any`
+    t =     6.60s         Checking existence of `"uncontrolled-input" Any`
+    t =     6.74s Tap "uncontrolled-input" Any
+    t =     6.74s     Wait for com.natophonetics.app to idle
+    t =     6.74s     Find the "uncontrolled-input" Any
+    t =     6.76s     Check for interrupting elements affecting "uncontrolled-input" TextField
+    t =     7.00s     Synthesize event
+    t =     7.36s     Wait for com.natophonetics.app to idle
+    t =     8.66s Waiting 10.0s for Keyboard (First Match) to exist
+    t =     9.68s     Checking `Expect predicate `existsNoRetry == 1` for object Keyboard (First Match)`
+    t =     9.69s         Checking existence of `Keyboard (First Match)`
+    t =     9.72s Type 'CV34 7AP' into "uncontrolled-input" TextField
+    t =     9.72s     Wait for com.natophonetics.app to idle
+    t =     9.72s     Find the "uncontrolled-input" TextField
+    t =     9.76s     Check for interrupting elements affecting "uncontrolled-input" TextField
+    t =     9.83s     Synthesize event
+    t =    10.17s     Wait for com.natophonetics.app to idle
+    t =    11.43s Added attachment named 'minimal-uncontrolled-input'
+CAPTURE minimal-uncontrolled-input
+    t =    11.44s Find the "uncontrolled-input" TextField
+MINIMAL UNCONTROLLED VALUE: C
+    t =    11.52s Find the "uncontrolled-input" TextField
+/tmp/nato-ios-run04/CaptureUITests.swift:233: error: -[CaptureUITests.CaptureUITests testMinimalUncontrolled] : XCTAssertEqual failed: ("Optional("C")") is not equal to ("Optional("CV34 7AP")")
+    t =    11.59s Tear Down
+Test Case '-[CaptureUITests.CaptureUITests testMinimalUncontrolled]' failed (12.560 seconds).
+Test Suite 'CaptureUITests' failed at 2026-11-16 17:56:39.021.
+	 Executed 6 tests, with 4 failures (0 unexpected) in 115.946 (115.994) seconds
+Test Suite 'CaptureUITests.xctest' failed at 2026-11-16 17:56:39.028.
+	 Executed 6 tests, with 4 failures (0 unexpected) in 115.946 (116.002) seconds
+Test Suite 'Selected tests' failed at 2026-11-16 17:56:39.030.
+	 Executed 6 tests, with 4 failures (0 unexpected) in 115.946 (116.016) seconds
+2026-11-16 17:56:40.793 xcodebuild[95003:9205598]  IDETestOperationsObserverDebug: Failure collecting diagnostics from simulator: Process exited with error 72:
+ xcrun: error: unable to find utility "simctl", not a developer tool or in PATH
+
+2026-11-16 17:56:41.011 xcodebuild[95003:9201903] [MT] IDETestOperationsObserverDebug: 124.848 elapsed -- Testing started completed.
+2026-11-16 17:56:41.011 xcodebuild[95003:9201903] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-11-16 17:56:41.011 xcodebuild[95003:9201903] [MT] IDETestOperationsObserverDebug: 124.848 sec, +124.848 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/nato-ios-run04/InputEditingProbe.xcresult
+
+Failing tests:
+	CaptureUITests.testMinimalControlled()
+	CaptureUITests.testMinimalUncontrolled()
+
+** TEST FAILED **
+
+Testing started

@@ -1,0 +1,285 @@
+Command: ['xcodebuild', 'test-without-building', '-project', '/tmp/nato-ios-run06-capture/Capture.xcodeproj', '-scheme', 'Capture', '-configuration', 'Debug', '-destination', 'platform=iOS Simulator,id=0653F7EC-9237-4AC5-A264-12969E625070', '-derivedDataPath', '/tmp/nato-ios-run06-capture/DerivedData', 'CODE_SIGNING_ALLOWED=NO', '-parallel-testing-enabled', 'NO', '-resultBundlePath', '/tmp/nato-ios-run06-capture/dark.xcresult', '-only-testing:CaptureUITests/CaptureUITests/testDarkContexts']
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild test-without-building -project /tmp/nato-ios-run06-capture/Capture.xcodeproj -scheme Capture -configuration Debug -destination "platform=iOS Simulator,id=0653F7EC-9237-4AC5-A264-12969E625070" -derivedDataPath /tmp/nato-ios-run06-capture/DerivedData CODE_SIGNING_ALLOWED=NO -parallel-testing-enabled NO -resultBundlePath /tmp/nato-ios-run06-capture/dark.xcresult "-only-testing:CaptureUITests/CaptureUITests/testDarkContexts"
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+Writing result bundle at path:
+	/tmp/nato-ios-run06-capture/dark.xcresult
+
+2026-11-17 15:25:17.089778+0000 CaptureUITests-Runner[53121:9727817] [Default] Running tests...
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-11-17 15:25:18.490.
+Test Suite 'CaptureUITests.xctest' started at 2026-11-17 15:25:18.495.
+Test Suite 'CaptureUITests' started at 2026-11-17 15:25:18.495.
+Test Case '-[CaptureUITests.CaptureUITests testDarkContexts]' started.
+    t =     0.00s Start Test at 2026-11-17 15:25:18.496
+    t =     0.16s Set Up
+    t =     0.17s Setting device orientation to Portrait
+    t =     0.27s     Wait for com.natophonetics.app to idle
+    t =     0.31s Open com.natophonetics.app
+    t =     0.31s     Launch com.natophonetics.app
+    t =     0.31s         Terminate com.natophonetics.app:52873
+    t =     2.33s         Wait for accessibility to load
+    t =     2.33s         Setting up automation session
+    t =     4.54s         Wait for com.natophonetics.app to idle
+    t =     5.89s Open com.natophonetics.app with URL natophonetics://settings
+    t =     5.89s     Launch com.natophonetics.app
+    t =     5.99s         Setting up automation session
+    t =     5.99s         Wait for com.natophonetics.app to idle
+    t =     7.01s Wait for com.natophonetics.app to become Running Foreground
+    t =     7.02s Tap "Dark" Any
+    t =     7.02s     Wait for com.natophonetics.app to idle
+    t =     7.02s     Find the "Dark" Any
+    t =     7.13s     Check for interrupting elements affecting "Dark" Other
+    t =     7.21s     Synthesize event
+    t =     7.54s     Wait for com.natophonetics.app to idle
+    t =     7.54s Open com.natophonetics.app with URL natophonetics://converter
+    t =     7.54s     Launch com.natophonetics.app
+    t =     7.57s         Setting up automation session
+    t =     7.57s         Wait for com.natophonetics.app to idle
+    t =     8.64s Wait for com.natophonetics.app to become Running Foreground
+    t =     8.64s Waiting 10.0s for "converter-input" Any to exist
+    t =     9.71s     Checking `Expect predicate `existsNoRetry == 1` for object "converter-input" Any`
+    t =     9.73s         Checking existence of `"converter-input" Any`
+    t =     9.83s Tap "converter-input" Any
+    t =     9.83s     Wait for com.natophonetics.app to idle
+    t =     9.83s     Find the "converter-input" Any
+    t =     9.85s     Check for interrupting elements affecting "converter-input" TextField
+    t =     9.97s     Synthesize event
+    t =    10.28s     Wait for com.natophonetics.app to idle
+    t =    12.91s Type 'N' into "converter-input" TextField
+    t =    12.91s     Wait for com.natophonetics.app to idle
+    t =    13.27s     Find the "converter-input" TextField
+    t =    13.34s     Check for interrupting elements affecting "converter-input" TextField
+    t =    13.43s     Synthesize event
+    t =    13.66s     Wait for com.natophonetics.app to idle
+    t =    13.66s Type 'U' into "converter-input" TextField
+    t =    13.66s     Wait for com.natophonetics.app to idle
+    t =    13.66s     Find the "converter-input" TextField
+    t =    13.72s     Check for interrupting elements affecting "converter-input" TextField
+    t =    13.76s     Synthesize event
+    t =    13.99s     Wait for com.natophonetics.app to idle
+    t =    13.99s Type 'W' into "converter-input" TextField
+    t =    13.99s     Wait for com.natophonetics.app to idle
+    t =    14.00s     Find the "converter-input" TextField
+    t =    14.07s     Check for interrupting elements affecting "converter-input" TextField
+    t =    14.10s     Synthesize event
+    t =    14.32s     Wait for com.natophonetics.app to idle
+    t =    14.33s Type 'J' into "converter-input" TextField
+    t =    14.33s     Wait for com.natophonetics.app to idle
+    t =    14.33s     Find the "converter-input" TextField
+    t =    14.40s     Check for interrupting elements affecting "converter-input" TextField
+    t =    14.44s     Synthesize event
+    t =    14.66s     Wait for com.natophonetics.app to idle
+    t =    14.66s Type '3' into "converter-input" TextField
+    t =    14.66s     Wait for com.natophonetics.app to idle
+    t =    14.67s     Find the "converter-input" TextField
+    t =    14.74s     Check for interrupting elements affecting "converter-input" TextField
+    t =    14.78s     Synthesize event
+    t =    15.00s     Wait for com.natophonetics.app to idle
+    t =    15.00s Type '5' into "converter-input" TextField
+    t =    15.00s     Wait for com.natophonetics.app to idle
+    t =    15.00s     Find the "converter-input" TextField
+    t =    15.06s     Check for interrupting elements affecting "converter-input" TextField
+    t =    15.11s     Synthesize event
+    t =    15.32s     Wait for com.natophonetics.app to idle
+    t =    15.33s Type '9' into "converter-input" TextField
+    t =    15.33s     Wait for com.natophonetics.app to idle
+    t =    15.33s     Find the "converter-input" TextField
+    t =    15.39s     Check for interrupting elements affecting "converter-input" TextField
+    t =    15.43s     Synthesize event
+    t =    15.65s     Wait for com.natophonetics.app to idle
+    t =    15.65s Type '
+' into "converter-input" TextField
+    t =    15.65s     Wait for com.natophonetics.app to idle
+    t =    15.66s     Find the "converter-input" TextField
+    t =    15.71s     Check for interrupting elements affecting "converter-input" TextField
+    t =    15.76s     Synthesize event
+    t =    15.98s     Wait for com.natophonetics.app to idle
+    t =    16.30s Find the "converter-input" TextField
+    t =    16.33s Checking existence of `"alphabet-A" Any`
+    t =    16.40s Checking existence of `"alphabet-B" Any`
+    t =    16.47s Checking existence of `"alphabet-C" Any`
+    t =    16.53s Checking existence of `"alphabet-D" Any`
+    t =    16.60s Checking existence of `"alphabet-E" Any`
+    t =    16.66s Checking existence of `"alphabet-F" Any`
+    t =    16.75s Checking existence of `"alphabet-G" Any`
+    t =    16.82s Checking existence of `"alphabet-H" Any`
+    t =    16.88s Checking existence of `"alphabet-I" Any`
+    t =    16.94s Checking existence of `"alphabet-J" Any`
+    t =    17.00s Checking existence of `"alphabet-K" Any`
+    t =    17.06s Checking existence of `"alphabet-L" Any`
+    t =    17.12s Checking existence of `"alphabet-M" Any`
+    t =    17.18s Checking existence of `"alphabet-N" Any`
+    t =    17.24s Checking existence of `"alphabet-O" Any`
+    t =    17.30s Checking existence of `"alphabet-P" Any`
+    t =    17.36s Checking existence of `"alphabet-Q" Any`
+    t =    17.46s Checking existence of `"alphabet-R" Any`
+    t =    17.57s Checking existence of `"alphabet-S" Any`
+    t =    17.65s Checking existence of `"alphabet-T" Any`
+    t =    17.71s Checking existence of `"alphabet-U" Any`
+    t =    17.78s Checking existence of `"alphabet-V" Any`
+    t =    17.84s Checking existence of `"alphabet-W" Any`
+    t =    17.90s Checking existence of `"alphabet-X" Any`
+    t =    17.95s Checking existence of `"alphabet-Y" Any`
+    t =    18.01s Checking existence of `"alphabet-Z" Any`
+    t =    18.07s Checking existence of `"converter-0" Any`
+    t =    18.09s Find the "converter-0" Any
+    t =    18.13s Find the "converter-0" Button
+    t =    18.16s Checking existence of `"converter-1" Any`
+    t =    18.19s Find the "converter-1" Any
+    t =    18.22s Find the "converter-1" Button
+    t =    18.25s Checking existence of `"converter-2" Any`
+    t =    18.27s Find the "converter-2" Any
+    t =    18.31s Find the "converter-2" Button
+    t =    18.34s Checking existence of `"converter-3" Any`
+    t =    18.36s Find the "converter-3" Any
+    t =    18.40s Find the "converter-3" Button
+    t =    18.43s Checking existence of `"converter-4" Any`
+    t =    18.45s Find the "converter-4" Any
+    t =    18.49s Find the "converter-4" Button
+    t =    18.52s Checking existence of `"converter-5" Any`
+    t =    18.54s Find the "converter-5" Any
+    t =    18.58s Find the "converter-5" Button
+    t =    18.61s Checking existence of `"converter-6" Any`
+    t =    18.64s Find the "converter-6" Any
+    t =    18.67s Find the "converter-6" Button
+    t =    18.70s Checking existence of `"quiz-card" Any`
+    t =    18.76s Checking existence of `"screen-scroll" Any`
+    t =    18.77s Find the "screen-scroll" Any
+    t =    18.79s Find the "screen-scroll" Other
+CAPTUREFRAMES converter-default-dark {"converter-0":{"height":150.00003051757812,"width":110,"x":24,"y":388.66665649414062},"converter-1":{"height":150.00003051757812,"width":110,"x":146,"y":388.66665649414062},"converter-2":{"height":150.00003051757812,"width":110,"x":268,"y":388.66665649414062},"converter-3":{"height":150,"width":110,"x":24,"y":550.66665649414062},"converter-4":{"height":150,"width":110,"x":146,"y":550.66665649414062},"converter-5":{"height":150,"width":110,"x":268,"y":550.66665649414062},"converter-6":{"height":150,"width":110,"x":146,"y":712.66665649414062},"screen-scroll":{"height":722,"width":402,"x":0,"y":118}}
+    t =    18.97s Added attachment named 'converter-default-dark'
+    t =    18.98s Open com.natophonetics.app with URL natophonetics://letter-quiz
+    t =    18.98s     Launch com.natophonetics.app
+    t =    19.11s         Setting up automation session
+    t =    19.11s         Wait for com.natophonetics.app to idle
+    t =    20.13s Wait for com.natophonetics.app to become Running Foreground
+    t =    20.13s Waiting 10.0s for "quiz-card" Any to exist
+    t =    21.20s     Checking `Expect predicate `existsNoRetry == 1` for object "quiz-card" Any`
+    t =    21.22s         Checking existence of `"quiz-card" Any`
+    t =    21.27s Checking existence of `"quiz-card-word" Any`
+    t =    21.30s Checking existence of `"alphabet-A" Any`
+    t =    21.33s Checking existence of `"alphabet-B" Any`
+    t =    21.36s Checking existence of `"alphabet-C" Any`
+    t =    21.39s Checking existence of `"alphabet-D" Any`
+    t =    21.42s Checking existence of `"alphabet-E" Any`
+    t =    21.46s Checking existence of `"alphabet-F" Any`
+    t =    21.49s Checking existence of `"alphabet-G" Any`
+    t =    21.52s Checking existence of `"alphabet-H" Any`
+    t =    21.55s Checking existence of `"alphabet-I" Any`
+    t =    21.58s Checking existence of `"alphabet-J" Any`
+    t =    21.62s Checking existence of `"alphabet-K" Any`
+    t =    21.65s Checking existence of `"alphabet-L" Any`
+    t =    21.68s Checking existence of `"alphabet-M" Any`
+    t =    21.72s Checking existence of `"alphabet-N" Any`
+    t =    21.75s Checking existence of `"alphabet-O" Any`
+    t =    21.79s Checking existence of `"alphabet-P" Any`
+    t =    21.83s Checking existence of `"alphabet-Q" Any`
+    t =    21.87s Checking existence of `"alphabet-R" Any`
+    t =    21.92s Checking existence of `"alphabet-S" Any`
+    t =    21.97s Checking existence of `"alphabet-T" Any`
+    t =    22.00s Checking existence of `"alphabet-U" Any`
+    t =    22.04s Checking existence of `"alphabet-V" Any`
+    t =    22.07s Checking existence of `"alphabet-W" Any`
+    t =    22.10s Checking existence of `"alphabet-X" Any`
+    t =    22.13s Checking existence of `"alphabet-Y" Any`
+    t =    22.16s Checking existence of `"alphabet-Z" Any`
+    t =    22.19s Checking existence of `"converter-0" Any`
+    t =    22.23s Checking existence of `"converter-1" Any`
+    t =    22.26s Checking existence of `"converter-2" Any`
+    t =    22.30s Checking existence of `"converter-3" Any`
+    t =    22.34s Checking existence of `"converter-4" Any`
+    t =    22.37s Checking existence of `"converter-5" Any`
+    t =    22.40s Checking existence of `"converter-6" Any`
+    t =    22.44s Checking existence of `"quiz-card" Any`
+    t =    22.47s Find the "quiz-card" Any
+    t =    22.61s Find the "quiz-card" Other
+    t =    22.71s Checking existence of `"screen-scroll" Any`
+    t =    22.72s Find the "screen-scroll" Any
+    t =    22.74s Find the "screen-scroll" Other
+CAPTUREFRAMES quiz-default-question-dark {"quiz-card":{"height":150.00001525878906,"width":110,"x":146,"y":224.33333587646484},"screen-scroll":{"height":722,"width":402,"x":0,"y":118}}
+    t =    22.93s Added attachment named 'quiz-default-question-dark'
+    t =    22.93s Tap "quiz-choice-0" Any
+    t =    22.93s     Wait for com.natophonetics.app to idle
+    t =    22.94s     Find the "quiz-choice-0" Any
+    t =    22.96s     Check for interrupting elements affecting "quiz-choice-0" Button
+    t =    23.14s     Synthesize event
+    t =    23.47s     Wait for com.natophonetics.app to idle
+    t =    23.47s Waiting 10.0s for "Next question" Any to exist
+    t =    24.55s     Checking `Expect predicate `existsNoRetry == 1` for object "Next question" Any`
+    t =    24.56s         Checking existence of `"Next question" Any`
+    t =    24.60s Checking existence of `"alphabet-A" Any`
+    t =    24.65s Checking existence of `"alphabet-B" Any`
+    t =    24.72s Checking existence of `"alphabet-C" Any`
+    t =    24.80s Checking existence of `"alphabet-D" Any`
+    t =    24.86s Checking existence of `"alphabet-E" Any`
+    t =    24.91s Checking existence of `"alphabet-F" Any`
+    t =    24.96s Checking existence of `"alphabet-G" Any`
+    t =    25.00s Checking existence of `"alphabet-H" Any`
+    t =    25.05s Checking existence of `"alphabet-I" Any`
+    t =    25.09s Checking existence of `"alphabet-J" Any`
+    t =    25.14s Checking existence of `"alphabet-K" Any`
+    t =    25.19s Checking existence of `"alphabet-L" Any`
+    t =    25.24s Checking existence of `"alphabet-M" Any`
+    t =    25.28s Checking existence of `"alphabet-N" Any`
+    t =    25.33s Checking existence of `"alphabet-O" Any`
+    t =    25.40s Checking existence of `"alphabet-P" Any`
+    t =    25.45s Checking existence of `"alphabet-Q" Any`
+    t =    25.50s Checking existence of `"alphabet-R" Any`
+    t =    25.55s Checking existence of `"alphabet-S" Any`
+    t =    25.61s Checking existence of `"alphabet-T" Any`
+    t =    25.66s Checking existence of `"alphabet-U" Any`
+    t =    25.71s Checking existence of `"alphabet-V" Any`
+    t =    25.76s Checking existence of `"alphabet-W" Any`
+    t =    25.81s Checking existence of `"alphabet-X" Any`
+    t =    25.85s Checking existence of `"alphabet-Y" Any`
+    t =    25.90s Checking existence of `"alphabet-Z" Any`
+    t =    25.97s Checking existence of `"converter-0" Any`
+    t =    26.06s Checking existence of `"converter-1" Any`
+    t =    26.13s Checking existence of `"converter-2" Any`
+    t =    26.22s Checking existence of `"converter-3" Any`
+    t =    26.31s Checking existence of `"converter-4" Any`
+    t =    26.37s Checking existence of `"converter-5" Any`
+    t =    26.43s Checking existence of `"converter-6" Any`
+    t =    26.47s Checking existence of `"quiz-card" Any`
+    t =    26.52s Find the "quiz-card" Any
+    t =    26.63s Find the "quiz-card" Other
+    t =    26.67s Checking existence of `"screen-scroll" Any`
+    t =    26.68s Find the "screen-scroll" Any
+    t =    26.70s Find the "screen-scroll" Other
+CAPTUREFRAMES quiz-default-feedback-dark {"quiz-card":{"height":150.00001525878906,"width":110,"x":146,"y":224.33333587646484},"screen-scroll":{"height":722,"width":402,"x":0,"y":118}}
+    t =    27.14s Added attachment named 'quiz-default-feedback-dark'
+    t =    27.15s Open com.natophonetics.app with URL natophonetics://settings
+    t =    27.15s     Launch com.natophonetics.app
+    t =    27.39s         Setting up automation session
+    t =    27.39s         Wait for com.natophonetics.app to idle
+    t =    28.41s Wait for com.natophonetics.app to become Running Foreground
+    t =    28.42s Tap "System" Any
+    t =    28.42s     Wait for com.natophonetics.app to idle
+    t =    28.43s     Find the "System" Any
+    t =    28.59s     Check for interrupting elements affecting "System" Other
+    t =    28.80s     Synthesize event
+    t =    29.13s     Wait for com.natophonetics.app to idle
+    t =    29.23s Tear Down
+Test Case '-[CaptureUITests.CaptureUITests testDarkContexts]' passed (29.756 seconds).
+Test Suite 'CaptureUITests' passed at 2026-11-17 15:25:48.254.
+	 Executed 1 test, with 0 failures (0 unexpected) in 29.756 (29.759) seconds
+Test Suite 'CaptureUITests.xctest' passed at 2026-11-17 15:25:48.256.
+	 Executed 1 test, with 0 failures (0 unexpected) in 29.756 (29.761) seconds
+Test Suite 'Selected tests' passed at 2026-11-17 15:25:48.258.
+	 Executed 1 test, with 0 failures (0 unexpected) in 29.756 (29.767) seconds
+2026-11-17 15:25:48.820 xcodebuild[53045:9727184] [MT] IDETestOperationsObserverDebug: 38.997 elapsed -- Testing started completed.
+2026-11-17 15:25:48.820 xcodebuild[53045:9727184] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-11-17 15:25:48.820 xcodebuild[53045:9727184] [MT] IDETestOperationsObserverDebug: 38.997 sec, +38.997 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/nato-ios-run06-capture/dark.xcresult
+
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+
+EXIT 0

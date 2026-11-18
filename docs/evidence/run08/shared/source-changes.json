@@ -1,0 +1,38 @@
+{
+  "scope": "All app/src/scripts/tests/native app sources plus root files captured at resume. Docs and .github were not in that initial hash scope; workflow changed only by adding the session check/upload path, preserved inherited workflow edits.",
+  "unchangedCount": 129,
+  "changed": [
+    {
+      "file": "app/letter-quiz.js",
+      "beforeSha256": "566b2a68b5fabc1986812768f595e38f0593524489a141bbbac607b86491d35e",
+      "afterSha256": "177fcf4cfc63f923264321fbb47b342e2f5ed65be9751180b84e404edaf18e37"
+    },
+    {
+      "file": "scripts/verify-app-browser.cjs",
+      "beforeSha256": "6478ff4a1ab6cddf25134e85ea52084297d52e005b2b5a1ff6475530466752fa",
+      "afterSha256": "862bf8678ae03a7a4c2c5626c7eb0d8b1bc7d920c8a3ef43f752276a83c61828"
+    },
+    {
+      "file": "scripts/verify-tiles-browser.cjs",
+      "beforeSha256": "d2e9e34cf87b8ff3543ad95d83ad4fc6ecd128370db704dc5579180c6a91ff42",
+      "afterSha256": "01ab975bec0d977877f83c1661707f4465c7f11c790fc4dcc6fe5238e79700cd"
+    },
+    {
+      "file": "PRIVACY.md",
+      "beforeSha256": "4d148d30b10e4eccc3dd348e3025bc80d4d9adb5ab81150e3415d3b1279c82ef",
+      "afterSha256": "9e4c8a83f394af256b36889a4d54f2564f3d96b0443fd1fb9a4f49bc9bd31144"
+    },
+    {
+      "file": "README.md",
+      "beforeSha256": "f9f279a8ba6004c474255f3987a411555b80fed8df20810738f5b8f05f10bb0f",
+      "afterSha256": "3207ad528d3304278cbb8c370b73ddbf45c3379d18c979938ae2cb289c483462"
+    }
+  ],
+  "new": [
+    {
+      "file": "scripts/verify-sessions-browser.cjs",
+      "sha256": "6b8da62de05ebb64ba9ee7b8a803493fbe4fd01bc23fdc01174d29c58a742c76"
+    }
+  ],
+  "removed": []
+}

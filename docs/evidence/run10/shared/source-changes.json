@@ -1,0 +1,100 @@
+{
+  "comparedTo": "Run09 source-identity.json",
+  "inheritedFilesMatchedAtResume": 137,
+  "confirmedHashChanges": [
+    {
+      "file": ".github/workflows/ci.yml",
+      "before": "98ef0c6fa84ee7b4ea5eeca4fe56fa0518f0c4a9b79b983b224565018d8c9469",
+      "after": "ed9cdfe68e62ed5d8e0764090d8b433f4308a2cea6af4d45aebb00fcf6e5929e"
+    },
+    {
+      "file": "PRIVACY.md",
+      "before": "344051e009b5758b8227bb77dda6c76e52c38f0397b6e4778aa7475f936c9370",
+      "after": "f869e1508acf9080e912d9f793d19e3f0c3daf89641b72f9ba6406b33829cc54"
+    },
+    {
+      "file": "README.md",
+      "before": "587b2453782ebbc9200f174a44baf7b39953dde76e30e1c98a878eba1c3aea3c",
+      "after": "58c2ff460960a9afe973608955b70ff0625ddbc106e7e5ee96d8261f20d99c73"
+    },
+    {
+      "file": "app/converter.js",
+      "before": "88a0635061d39f008075253a0f24f8cd3ae707b0f798fe5cbb568c046639034c",
+      "after": "74c8dde14274a4f87039e9879687c03d8ed53e4b586b9c3e89f53c68878edab4"
+    },
+    {
+      "file": "app/privacy.js",
+      "before": "8182a12403338168ac8f1118a70b860097fe91a79c95206deaef1212ddd03b8b",
+      "after": "cd3f832c039f167ae0d1aa51b4ab3a1fd31b4c1138e23abda6a4022eedb4287e"
+    },
+    {
+      "file": "app/settings.js",
+      "before": "78718c36440786d6f1561b16019e003cf6fee81a65066484188fdcc752aabe1d",
+      "after": "c9d7c4f19936570da6736f0f4020f29a115d79ca1d901801b4c7ab5f7dc1dcd2"
+    },
+    {
+      "file": "scripts/verify-converter-browser.cjs",
+      "before": "b7dee445e996e7588eaa6f00a19677c407351c4cbf93285674213d2a7066a4c8",
+      "after": "cc576f5bfa6ac5485253eb6c63961f9244f2e751cdbc6ab3a28a6f8fcc160e1f"
+    },
+    {
+      "file": "scripts/verify-tiles-browser.cjs",
+      "before": "01ab975bec0d977877f83c1661707f4465c7f11c790fc4dcc6fe5238e79700cd",
+      "after": "c33af172edd8804d07abedcb691de0f90732386b85a58ac94b8b2ef682fb50b7"
+    },
+    {
+      "file": "src/components/NatoTile.js",
+      "before": "e7e8487abbe637fdce29e0808bf33f6bc930810182f8acb76800c102ef371766",
+      "after": "b9bf3daa31cc82417944662112e276bc2d6979a9bf3dbe7b883533f4e807ecd6"
+    },
+    {
+      "file": "src/context/ThemeContext.js",
+      "before": "9f66492dbf96ca63ee0894af1fcbc45d7df951427662f5bcec4db5d020115a03",
+      "after": "33bc09f0aac275fdd1d7effbc51a53259f2fecb5684d4c1c874a1aab5e19e5ff"
+    },
+    {
+      "file": "src/lib/appMetadata.js",
+      "before": "b27c145e991c72b730a3d92aedfbb74a1f7ceb86c7cb32ff9224710b3a12fafd",
+      "after": "385adbff428aa6c627d8e8d77bf24654d305ae6496d25afa135ea206e7ea6ad7"
+    },
+    {
+      "file": "src/lib/conversion.js",
+      "before": "451dfa462b64d0e86b89cde33860146c21f6a695ccd2fe1c277948d858c0dfd9",
+      "after": "ebdf50de825f7486363d09ca681aa94b1a7c3ccb267a82d873f926b4e10de70c"
+    },
+    {
+      "file": "src/lib/preferences.js",
+      "before": "c12d6a769117dc41f09f0911b0579225a0e21a9e3e7461027295fddcab627143",
+      "after": "929601cda78e58266aa9653a65e740bd5fe3739c4b77b62005d74821ee3d1e0f"
+    },
+    {
+      "file": "src/types.ts",
+      "before": "0a6e0e126d411a803473cda21f450843b2d5cd5920013b78aa2d6e79f4038ed8",
+      "after": "07a9809ac3dabcebe08418200cab3918c62293df53cdbcd171b91331e7a90b5f"
+    },
+    {
+      "file": "tests/conversion.test.mjs",
+      "before": "2045a3177b2b5ef7dae67f8d32975eaecbfc079a0cddbd1e803494f535eb78b6",
+      "after": "ac597d75fccf1d1edd1ebce3903cba7729f4003c52922282e1e6098d5bc0a08a"
+    },
+    {
+      "file": "tests/preferences.test.mjs",
+      "before": "8eb432331f896d609cb8fdde882baf7376069955f136920b4bbc0a944891ed10",
+      "after": "f84ea4c7fe90b87baedb995b3418a9e93b205addc695d7bb58b3fe1380ea5c10"
+    }
+  ],
+  "addedThisRun": [
+    {
+      "file": "scripts/verify-pacing-browser.cjs",
+      "sha256": "6c497cbddb15053ef2cb1612b7e51f561920c522a50ca4c178dd6a46571de91c"
+    }
+  ],
+  "newlyInventoriedPreexisting": [
+    {
+      "file": "docs/CONVERTER_POLICY.md",
+      "modifiedThisRun": true,
+      "priorHash": "not inventoried in Run09; no new-file claim"
+    }
+  ],
+  "missingInheritedInputs": []
+}

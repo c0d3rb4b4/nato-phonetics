@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/mac/dev/apps/nato-phonetics/docs/evidence/run06/android/state-retention.py", line 11, in <module>
+    state=quiz_state();assert any(r.get('selected') for r in state),state
+  File "/Users/mac/dev/apps/nato-phonetics/docs/evidence/run06/android/state-retention.py", line 7, in quiz_state
+    return runtime("""(()=>{const h=globalThis.__REACT_DEVTOOLS_GLOBAL_HOOK__,seen=new Set(),r=[];function visit(n){if(!n||seen.has(n))return;seen.add(n);const p=n.memoizedProps;if(n.tag===5&&(p?.testID==='quiz-letter'||/^quiz-choice-/.test(p?.testID??'')))r.push({id:p.testID,text:p.children,selected:p.accessibilityState?.selected,disabled:p.accessibilityState?.disabled,label:p.accessibilityLabel});visit(n.child);visit(n.sibling)}for(const id of h.renderers.keys())for(const r of h.getFiberRoots(id))visit(r.current);return r.map(x=>({...x,text:typeof x.text==='string'?x.text:undefined}));})()""")
+  File "/Users/mac/dev/apps/nato-phonetics/docs/evidence/run06/android/verify_native.py", line 144, in runtime
+    result = subprocess.run(command, capture_output=True, text=True, timeout=15, check=True)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/tmp/nato-phonetics-toolchain/node_modules/.bin/node', '/Users/mac/dev/apps/nato-phonetics/docs/evidence/run06/android/read-runtime.cjs', "(()=>{const h=globalThis.__REACT_DEVTOOLS_GLOBAL_HOOK__,seen=new Set(),r=[];function visit(n){if(!n||seen.has(n))return;seen.add(n);const p=n.memoizedProps;if(n.tag===5&&(p?.testID==='quiz-letter'||/^quiz-choice-/.test(p?.testID??'')))r.push({id:p.testID,text:p.children,selected:p.accessibilityState?.selected,disabled:p.accessibilityState?.disabled,label:p.accessibilityLabel});visit(n.child);visit(n.sibling)}for(const id of h.renderers.keys())for(const r of h.getFiberRoots(id))visit(r.current);return r.map(x=>({...x,text:typeof x.text==='string'?x.text:undefined}));})()"]' returned non-zero exit status 1.

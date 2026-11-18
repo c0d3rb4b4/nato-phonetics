@@ -1,0 +1,289 @@
+{
+  "dimensions": {
+    "fontScale": 2,
+    "height": 914.2857142857143,
+    "scale": 1.75,
+    "width": 411.42857142857144
+  },
+  "values": [
+    {
+      "frame": {
+        "height": 64.57144165039062,
+        "pageX": 56,
+        "pageY": 52,
+        "width": 299.4285583496094,
+        "x": 56,
+        "y": 0
+      },
+      "style": {
+        "color": "#F5F7FA",
+        "flex": 1,
+        "fontSize": 18,
+        "fontWeight": "600",
+        "paddingHorizontal": 4,
+        "paddingVertical": 12,
+        "textAlign": "center"
+      },
+      "text": "Letter Quiz"
+    },
+    {
+      "frame": {
+        "height": 93.142822265625,
+        "pageX": 16,
+        "pageY": -237.14279174804688,
+        "width": 379.4285583496094,
+        "x": 16,
+        "y": 24
+      },
+      "style": {
+        "color": "#F5F7FA",
+        "fontSize": 26,
+        "fontWeight": "700",
+        "marginVertical": 8
+      },
+      "text": "What is the NATO word for this letter?"
+    },
+    {
+      "frame": {
+        "height": 99.99990844726562,
+        "pageX": 96,
+        "pageY": -68.02621459960938,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.026286804199216363
+          }
+        ],
+        "width": 220
+      },
+      "testID": "quiz-letter",
+      "text": "J"
+    },
+    {
+      "frame": {
+        "height": 44,
+        "pageX": 112,
+        "pageY": 89.95654296875,
+        "width": 188,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.3291434020996178
+          }
+        ],
+        "width": 188
+      },
+      "testID": "quiz-card-word-run",
+      "text": "Juliett"
+    },
+    {
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 145.80938720703125,
+        "width": 188,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.4762848968505864
+          }
+        ],
+        "width": 188
+      },
+      "testID": "quiz-card-pronunciation-run",
+      "text": "JEW-lee-ett"
+    },
+    {
+      "frame": {
+        "height": 37.71429443359375,
+        "pageX": 77.71429443359375,
+        "pageY": 253.7142333984375,
+        "width": 256,
+        "x": 61.71428680419922,
+        "y": 13.714285850524902
+      },
+      "style": {
+        "color": "#F5F7FA",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Jester \u00b7 Your answer"
+    },
+    {
+      "frame": {
+        "height": 37.71429443359375,
+        "pageX": 166.2857208251953,
+        "pageY": 329.7142333984375,
+        "width": 78.85713195800781,
+        "x": 150.2857208251953,
+        "y": 13.714285850524902
+      },
+      "style": {
+        "color": "#F5F7FA",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Juliett"
+    },
+    {
+      "frame": {
+        "height": 37.71429443359375,
+        "pageX": 116,
+        "pageY": 405.142822265625,
+        "width": 179.42855834960938,
+        "x": 100,
+        "y": 13.714285850524902
+      },
+      "style": {
+        "color": "#F5F7FA",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Johannesburg"
+    },
+    {
+      "frame": {
+        "height": 37.71429443359375,
+        "pageX": 160.57142639160156,
+        "pageY": 481.142822265625,
+        "width": 89.71429443359375,
+        "x": 144.57142639160156,
+        "y": 13.714285850524902
+      },
+      "style": {
+        "color": "#F5F7FA",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Javelin"
+    },
+    {
+      "frame": {
+        "height": 36,
+        "pageX": 16,
+        "pageY": 552.5714111328125,
+        "width": 379.4285583496094,
+        "x": 16,
+        "y": 813.7142944335938
+      },
+      "style": {
+        "color": "#F5F7FA",
+        "fontSize": 16,
+        "lineHeight": 24,
+        "marginVertical": 8
+      },
+      "text": "Not quite. J is Juliett."
+    },
+    {
+      "frame": {
+        "height": 37.71435546875,
+        "pageX": 118.85713958740234,
+        "pageY": 622.8571166992188,
+        "width": 173.71429443359375,
+        "x": 102.85713958740234,
+        "y": 13.714285850524902
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Next question"
+    },
+    {
+      "frame": {
+        "height": 37.7142333984375,
+        "pageX": 114.85713958740234,
+        "pageY": 700.5714721679688,
+        "width": 181.71429443359375,
+        "x": 98.85713958740234,
+        "y": 13.714285850524902
+      },
+      "style": {
+        "color": "#F5F7FA",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Replay answer"
+    },
+    {
+      "frame": {
+        "height": 37.71435546875,
+        "pageX": 70.85714721679688,
+        "pageY": 778.2855834960938,
+        "width": 269.1428527832031,
+        "x": 54.85714340209961,
+        "y": 13.714285850524902
+      },
+      "style": {
+        "color": "#F5F7FA",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "End round and review"
+    }
+  ]
+}

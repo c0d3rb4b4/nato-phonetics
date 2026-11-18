@@ -1,0 +1,122 @@
+[
+  {
+    "file": ".github/workflows/ci.yml",
+    "before": "297b0619b2390c446a784a6efcfdd65dddccc75898bb4f69d61b143825785b20",
+    "after": "99ad34f655bc67a9a6cce5eac5d58f334f823c40c86478a5d586791a1504d12d"
+  },
+  {
+    "file": "PRIVACY.md",
+    "before": "440e18a2d5ae6acbcc42413fd30339f09df3dc26998eaba1395ded2db28e7d43",
+    "after": "a78156de2ad463b12a711aa1500a3a67a1d11f62d235d6fe7313dd709953967b"
+  },
+  {
+    "file": "README.md",
+    "before": "9c28a10d3a54edc07cf28d7e6e2a0263abb11a832f725e65fbc956c1383e6c19",
+    "after": "187c8af26d25d4fd4342d374168f08af817707b49bb70d029280e43dfeb70b51"
+  },
+  {
+    "file": "app/_layout.js",
+    "before": "00be02166d197db96a505281def979c77d609652862ae9590dd7d3791990a3ac",
+    "after": "f779a736c7de56e276d9c7ef7d4a4655c1a62de8b5db3547953505d2a0a53c37"
+  },
+  {
+    "file": "app/about.js",
+    "before": "60c97d4501cb873d605d9fba7ffb02db8e70b9ac9b3d6222e4abec3bb09f6c50",
+    "after": "25652deb4c78490c73c33bf969b84f833168bc08937e95c999b31036e6323727"
+  },
+  {
+    "file": "app/audio-help.js",
+    "before": "d89db58d0fbde16b8351932d17dd63ef572853c53db8285995dc77ad1707272d",
+    "after": "7487469c7edc2d4b1eff6681e9d7e91cb6f9a1c68d41ac8e6f4f94adcff7357e"
+  },
+  {
+    "file": "app/index.js",
+    "before": "8caf39fd2b9066d8a8482c0d9cd15c74b90dcc62bd8005238c071d98a51444d9",
+    "after": "f0b1b74b62614bf4da376944787664a88e72b1f0aadb6d8778db0cfc5da3984c"
+  },
+  {
+    "file": "app/letter-quiz.js",
+    "before": "64ed9eef8a9cc88453bd80099c4635910701363a4825501bfd247225914eaa09",
+    "after": "2b49d2b1aad5ceb84821178d4ed4e08ab100aa6e49db1f03a2f6a52a40269559"
+  },
+  {
+    "file": "app/menu.js",
+    "before": "6275884032ba83d92fe880c443c8e5bba5bf330d240f8773b8b5646da32cfc46",
+    "after": "c4cb8f8b4f86e194479cb8f41e2a48810079f3f07ad6a0130d7e3e9c67d2cdae"
+  },
+  {
+    "file": "app/privacy.js",
+    "before": "a5e554aef0b0a6f15fd6f4d3c200f80c3e23fdf09c82637f4a56964cb26758bc",
+    "after": "7b9c9f7f7e870351c03d74e3563aafe5a12fde1a1bc1210aaa167f23d4c7eb4d"
+  },
+  {
+    "file": "app/progress.js",
+    "before": null,
+    "after": "d817fa3821c664cfcb0aad326b2fa16353514853604de7d197bb1f2e6b630659"
+  },
+  {
+    "file": "app/settings.js",
+    "before": "c9d7c4f19936570da6736f0f4020f29a115d79ca1d901801b4c7ab5f7dc1dcd2",
+    "after": "b5ad215383120a7f653428d8c2b837e95140aa1436800098ee6b132fb99b55a9"
+  },
+  {
+    "file": "docs/AUDIO_VALIDATION.md",
+    "before": "e7cb3f3dddc768b75a57a6a31ed4e0b3b691ea0fa46b16e942c1e2384d2becf1",
+    "after": "a6747165795b8a2e7836cd6997dbe1b0a96b4334bd3bae9da654765706f9539f"
+  },
+  {
+    "file": "docs/LOCAL_PROGRESS.md",
+    "before": null,
+    "after": "2a6c1e59eee59dee312b7f58db2c3415443efa04b90fbae14072a82881ffda89"
+  },
+  {
+    "file": "docs/NUMERIC_PRACTICE.md",
+    "before": "4219ed7f621d968087ba3b80f42a0ed0f152fe5d8761a17768ab434816a7d76b",
+    "after": "8b10d47897a3f83cb79f58ac25c211c8bcbe68303c5b4d918b4dd2a2725479f6"
+  },
+  {
+    "file": "scripts/verify-progress-browser.cjs",
+    "before": null,
+    "after": "4ba2c2aacb85ec1989feb9b8e211e907cf2dadb41286db5bc2f523434f7eaca8"
+  },
+  {
+    "file": "scripts/verify-recall-browser.cjs",
+    "before": "0ceeb8ebe54b5e9124cca3fc24d7df41c6f8e852701ff2f2e93e9fe47cc4026d",
+    "after": "d1333f6329740e6ab88d3042b418e031a2bc30413ddeb76c8460ed576d62454c"
+  },
+  {
+    "file": "src/components/ProgressStatus.js",
+    "before": null,
+    "after": "7c1c84526dee3c165e3868c7e99ff05a3dba11ab725fc52f15f69a55f8981d92"
+  },
+  {
+    "file": "src/hooks/useProgress.js",
+    "before": null,
+    "after": "41f682e57ef0f02e4182ac241c7ea572089267cf96628ec8cef63197d212dadc"
+  },
+  {
+    "file": "src/lib/progress.js",
+    "before": null,
+    "after": "4b5679dfca63cd29359872da6a35392b6c25aeac0cfd944d85af581eb71398e5"
+  },
+  {
+    "file": "src/lib/progressStore.js",
+    "before": null,
+    "after": "24a0366c0e5541fbbd59292eff16fc89891d1955292e972f77ac3b38dac7e21b"
+  },
+  {
+    "file": "src/navigation/routes.js",
+    "before": "a42a861110c6f98e766501911cd69bddfaaf0df40c65387f24cabbe62cb5cac6",
+    "after": "693f2194762aadda61fd3f5199bcd9a01bf03b41c2f8920c1c919f57e6fe82a7"
+  },
+  {
+    "file": "tests/navigation.test.mjs",
+    "before": "bda45615aca9a3fc4f55bd0cfb24b3cf3249775007bd34a033ac9432a987a50f",
+    "after": "fdd778fd6c55b64fd1f4ca33a20c0e81a758ad92d865f444db5ba3d02848389b"
+  },
+  {
+    "file": "tests/progress.test.mjs",
+    "before": null,
+    "after": "a1c149cbf51d4464af8123ca5e0b719dd9636a502b992c3ebfb2811f6fc94ff8"
+  }
+]

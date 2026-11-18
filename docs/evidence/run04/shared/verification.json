@@ -1,0 +1,72 @@
+{
+  "checks": [
+    {
+      "command": "npm ci (isolated installation)",
+      "exit": 0,
+      "log": "locked-install.log"
+    },
+    {
+      "command": "npm run lint",
+      "exit": 0,
+      "log": "lint.log"
+    },
+    {
+      "command": "npm run typecheck",
+      "exit": 0,
+      "log": "types.log"
+    },
+    {
+      "command": "npm test",
+      "exit": 0,
+      "log": "tests.log"
+    },
+    {
+      "command": "npm run check:dependencies",
+      "exit": 0,
+      "log": "no-expo.log"
+    },
+    {
+      "command": "npm run export:web",
+      "exit": 0,
+      "log": "web-build.log"
+    },
+    {
+      "command": "node scripts/verify-preferences-browser.cjs dist",
+      "exit": 0,
+      "log": "browser-preferences.log"
+    },
+    {
+      "command": "node scripts/verify-app-browser.cjs dist",
+      "exit": 0,
+      "log": "browser-app.log"
+    },
+    {
+      "command": "npm run audit:review",
+      "exit": 0,
+      "log": "audit-review.log"
+    }
+  ],
+  "unitTests": {
+    "passed": 65,
+    "failed": 0
+  },
+  "rawAudit": {
+    "exit": 1,
+    "counts": {
+      "info": 0,
+      "low": 3,
+      "moderate": 6,
+      "high": 1,
+      "critical": 0,
+      "total": 10
+    },
+    "interpretation": "Unchanged reviewed findings; not a clean audit or release acceptance."
+  },
+  "webCapture": {
+    "exit": 0,
+    "log": "capture-web.log",
+    "count": 9
+  },
+  "nativePatch": "Guarded Android UUID/iOS scalar-Boolean ABI fixes plus native Stop readiness and Android failure handling; final lint/types/tests/graph checks pass.",
+  "webCandidate": "Final production bundle SHA-256 equals the bundle exercised by full browser suites and all nine screenshots; native-only adapter changes do not affect web output."
+}

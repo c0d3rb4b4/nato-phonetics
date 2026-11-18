@@ -1,0 +1,13 @@
+# Run 13 human-only supplement
+
+All results **unperformed**. This supplements the single M11 integrated pass; it does not create a new approval gate or assert human acceptance. Candidate/source/native/JS identities and actual automation/captures are linked from [Run 13](README.md). Native live text-size/gesture/runtime and driver issues remain engineering, outside this queue.
+
+| Manual task | Scenario / expected behavior | Result fields |
+|---|---|---|
+| M11.4 | VoiceOver/TalkBack: submit one correct and one incorrect answer; feedback, saved/unsaved status and Retry announce coherently. Open Learning progress from Menu/Settings; read totals, due counts and symbol rows; select Due/Focus, reach confirmation/Keep/Delete at large text with focus retained. Hidden quiz answers remain concealed until submission. | Device/OS, AT/version/text size, candidate, tester/date, actual result/evidence, retest owner |
+| M11.5 | Restart after partial and complete rounds: only aggregate symbol totals/time survive; draft/recap clears. Reset Preferences keeps exact progress. Clear Progress → Keep retains data; confirm removes only progress and pending unsaved events; later answers create new totals while earlier retained recap does not re-import itself. Background/interruption must not duplicate a submitted answer. | Device/OS, mode/set, before/after counters/settings, candidate, tester/date, evidence |
+| M11.5 | Assess learning usability of combined choice/listening/typed/text-alternative totals and simple 1/3/7/14/30 elapsed-day intervals. A miss becomes due immediately; later correct answer removes Focus status. This is not a validated mastery score. | Scenario, timing/device clock, expected/actual due status, reviewer/date |
+| M11.6 | Review stored-data inventory, explicit deletion and backup wording. App has no account/cloud sync; OS/browser backup behavior has separate controls. Verify provider behavior through the existing worksheet; aggregate storage does not establish provider locality. | Platform/backup/provider, candidate, reviewer/date, findings |
+| M11.7 | Integrated signed-upgrade/fresh-install candidate: existing preference migration survives; progress version starts only on submitted answers; support/privacy/help links describe new local data. Store/release/policy disposition remains explicit. | Artifact/install path, version/build, upgrade origin, tester/date, acceptance disposition |
+
+No private credential or new owner input is required for these local implementation checks. Physical-device/AT/provider/policy/signing/distribution/release results remain pending until performed against the integrated candidate. No publication is authorized by this supplement.

@@ -1,0 +1,178 @@
+
+Welcome to React Native v0.81
+Starting dev server on http://localhost:8081
+
+
+                        ▒▒▓▓▓▓▒▒
+                     ▒▓▓▓▒▒░░▒▒▓▓▓▒
+                  ▒▓▓▓▓░░░▒▒▒▒░░░▓▓▓▓▒
+                 ▓▓▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▓▓
+                 ▓▓░░░░░▒▓▓▓▓▓▓▒░░░░░▓▓
+                 ▓▓░░▓▓▒░░░▒▒░░░▒▓▒░░▓▓
+                 ▓▓░░▓▓▓▓▓▒▒▒▒▓▓▓▓▒░░▓▓
+                 ▓▓░░▓▓▓▓▓▓▓▓▓▓▓▓▓▒░░▓▓
+                 ▓▓▒░░▒▒▓▓▓▓▓▓▓▓▒░░░▒▓▓
+                  ▒▓▓▓▒░░░▒▓▓▒░░░▒▓▓▓▒
+                     ▒▓▓▓▒░░░░▒▓▓▓▒
+                        ▒▒▓▓▓▓▒▒
+
+
+                Welcome to Metro v0.83.3
+              Fast - Scalable - Integrated
+
+
+ INFO  Dev server ready. Press Ctrl+C to exit.
+ INFO  Interactive mode is not supported in this environment
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+transform[stderr]: (node:63484) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+transform[stderr]: (Use `node --trace-warnings ...` to show where the warning was created)
+transform[stderr]: (node:63486) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+transform[stderr]: (Use `node --trace-warnings ...` to show where the warning was created)
+transform[stderr]: (node:63488) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+transform[stderr]: (Use `node --trace-warnings ...` to show where the warning was created)
+transform[stderr]: (node:63487) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+transform[stderr]: (Use `node --trace-warnings ...` to show where the warning was created)
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.natophonetics.app' on device='iPhone 17 Pro'.
+ INFO  [1m[7m💡 JavaScript logs have moved![22m They can now be viewed in React Native DevTools. Tip: Type [1mj[22m in the terminal to open (requires Google Chrome or Microsoft Edge).[27m
+ INFO  Connection closed to device='iPhone 17 Pro' for app='com.natophonetics.app' with code='1006' and reason=''.
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.natophonetics.app' on device='iPhone 17 Pro'.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='iPhone 17 Pro'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='iPhone 17 Pro' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='iPhone 17 Pro'.
+ BUNDLE  ./index.js 
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='iPhone 17 Pro' with code='1005' and reason=''.
+ INFO  Connection closed to device='iPhone 17 Pro' for app='com.natophonetics.app' with code='1006' and reason=''.
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.natophonetics.app' on device='iPhone 17 Pro'.
+ INFO  Connection closed to device='iPhone 17 Pro' for app='com.natophonetics.app' with code='1006' and reason=''.
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.natophonetics.app' on device='iPhone 17 Pro'.
+ INFO  Connection closed to device='iPhone 17 Pro' for app='com.natophonetics.app' with code='1006' and reason=''.
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.natophonetics.app' on device='iPhone 17 Pro'.
+ INFO  Connection closed to device='iPhone 17 Pro' for app='com.natophonetics.app' with code='1006' and reason=''.
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.natophonetics.app' on device='iPhone 17 Pro'.
+ INFO  Connection closed to device='iPhone 17 Pro' for app='com.natophonetics.app' with code='1006' and reason=''.
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.natophonetics.app' on device='iPhone 17 Pro'.
+ INFO  Connection closed to device='iPhone 17 Pro' for app='com.natophonetics.app' with code='1006' and reason=''.
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.natophonetics.app' on device='iPhone 17 Pro'.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='iPhone 17 Pro'.
+ BUNDLE  ./index.js 
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='iPhone 17 Pro' with code='1005' and reason=''.
+ INFO  Connection closed to device='iPhone 17 Pro' for app='com.natophonetics.app' with code='1006' and reason=''.
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.natophonetics.app' on device='iPhone 17 Pro'.
+ INFO  Connection closed to device='iPhone 17 Pro' for app='com.natophonetics.app' with code='1006' and reason=''.
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.natophonetics.app' on device='iPhone 17 Pro'.
+ INFO  Connection closed to device='iPhone 17 Pro' for app='com.natophonetics.app' with code='1006' and reason=''.
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ BUNDLE  ./index.js 
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection closed to device='sdk_gphone64_arm64 - 16 - API 36' for app='com.natophonetics.app' with code='1006' and reason=''.
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to device='sdk_gphone64_arm64 - 16 - API 36' for app='com.natophonetics.app' with code='1006' and reason=''.
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to device='sdk_gphone64_arm64 - 16 - API 36' for app='com.natophonetics.app' with code='1006' and reason=''.
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection closed to device='sdk_gphone64_arm64 - 16 - API 36' for app='com.natophonetics.app' with code='1006' and reason=''.
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection established to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36'.
+ INFO  Connection closed to DevTools for app='com.natophonetics.app' on device='sdk_gphone64_arm64 - 16 - API 36' with code='1005' and reason=''.
+ INFO  Connection closed to device='sdk_gphone64_arm64 - 16 - API 36' for app='com.natophonetics.app' with code='1006' and reason=''.

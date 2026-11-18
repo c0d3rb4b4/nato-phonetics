@@ -1,0 +1,31 @@
+{
+  "browser": "Edg/157.0.4341.60",
+  "viewport": "320x568",
+  "method": "production DOM input event then two animation frames; one sample each; not a benchmark threshold",
+  "samples": [
+    {
+      "characters": 100,
+      "pasteToTwoFramesMs": 70.30000001192093,
+      "nextEditToTwoFramesMs": 27.19999998807907,
+      "domElements": 738,
+      "tiles": 68,
+      "outputCharacters": 514
+    },
+    {
+      "characters": 500,
+      "pasteToTwoFramesMs": 210.19999998807907,
+      "nextEditToTwoFramesMs": 60.700000047683716,
+      "domElements": 3401,
+      "tiles": 334,
+      "outputCharacters": 2533
+    },
+    {
+      "characters": 2000,
+      "pasteToTwoFramesMs": 2391.100000023842,
+      "nextEditToTwoFramesMs": 363.19999998807907,
+      "domElements": 13407,
+      "tiles": 1335,
+      "outputCharacters": 10123
+    }
+  ]
+}

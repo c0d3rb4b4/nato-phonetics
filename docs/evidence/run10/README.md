@@ -1,0 +1,25 @@
+# Run 10 — converter pacing and bounded rendering
+
+18 November 2026. Continuing the inherited uncommitted `main` tree over `784bb93c5cfb6edfd318d0dcec2d54d5bb222483`; no commit/publication/release claimed. Applicable instructions, current plan/review/dependencies and evidence read; all 137 inherited maintained-source hashes match at resume. User changes and historical evidence preserved.
+
+The batch first bounds **P05.2/P06.2** iOS ordinary keyboard gestures, inventories the unanswered Android native boundary, then implements **P06.3** and continues into **P06.4** after measuring long-render cost. Both product tasks are functionally integrated but remain unchecked for affected native qualification; **P06/P05/P07 remain active**. No fixed phase count or owner prerequisite was invented. [Forecast/reforecasts](shared/forecast.md).
+
+Delivered behavior:
+
+- Play/Replay starts at token 0 with an inset current-card ring and canonical token label, mapping through repeats, whitespace and omissions. Stop/edit/Clear/pace change/blur/background remove active progress. Card selection replaces phrase playback; page changes do not interrupt it.
+- Explicit rate 0.75×/1×/1.25× and boundary gap 0/300/700 ms persist as optional converterPacing in the existing v1 preference record. Other tokens retain 120 ms gaps. Old records load without rewriting; failed saves retain confirmed choices; Reset restores defaults without deleting unrelated data. Input/cursor/page remain memory-only. Privacy/reset/help documentation updated.
+- Card pages mount at most 24 source tokens, with Previous/Next and a current-card-page shortcut. Complete input/plain text scroll separately; full Copy/Share and speech remain independent of the card page. No text truncation/input bound introduced. Baseline 2,000-character sample creates 13,407 elements; current sample creates 240. Timings are observations, not a benchmark guarantee.
+
+| Evidence | Actual result / limit |
+|---|---|
+| [Shared](shared/README.md) | 94/94 tests, types, lint, Expo-free graph and 12-route production build pass; explicit old-record/save/reset/mapping cases |
+| [Web](web/README.md) | Desktop/narrow/200% pacing/mapping/pause/rate/Replay/individual-card/pagination/clipboard/lifecycle pass; qualified export and scoped tile checks pass; actual policy captures |
+| [Android](android/README.md) | Actual Play/Stop/Replay checkpoint passes; first whole driver later fails Menu return. Corrected independent continuation exits 0: exact retained input, saved pace/relaunch, actual 2,000-character Paste + key, 10,123-character clipboard equality, page 2/84. Cold 2× readable; live 1→2 retains input but **fails sizing/clips prose** |
+| [iOS](ios/README.md) | Five scoped tests pass: default/max short-swipes/Copy with retained input, observed Replay events, real 2,000-character Paste + key/output/Copy action/page/Clear, and clean serial paging/Menu/saved-pace relaunch. Original long-drag assertion unclosed; combined Replay/focus/interrupted/contaminated attempts retained. Exact large clipboard equality and some max states remain unverified |
+| [Screenshots](screenshots/index.md) | **53 inspected original PNGs: 31 web, 10 Android, 12 iOS**, identity/hashes/settings, overlays and missing states labelled |
+
+[Source identity](source-identity.json), [source changes](shared/source-changes.json), [native APK](android/artifact.json), [iOS executable/dylib](ios/artifact.json), actual loaded JS manifests and [web assets](web/artifact.json) distinguish reused native binaries from the current JS. Only XCTest drivers compiled. No dependency/native/font/design/tolerance/permission/provider change; v1 storage extension is explicit. No new Release build, fresh install/audit, hosted CI, full native raster/runtime matrix or physical acceptance claimed. Metadata-only capture-helper corrections preserve original metadata and PNG bytes.
+
+Unresolved engineering: Android P1 first divergent measurement boundary and affected live readability; original iOS long-drag P1 (ordinary short scope now passes, no causal repair); serial native direct Stop→Replay/keyboard assurance; exact long iOS clipboard and missing max/plain-text/Share/pace/ring/local-data captures; broader runtime/caret/AT and integrated P10 qualification. The three strict iPhone ink fringes remain failed/P3 parked. Metro/image-size remains dispositioned, not remediated or accepted. See the plan queue and [native-boundary forecast](android/boundary-forecast.md).
+
+**M11 is entirely unperformed.** [Prepared physical listening/AT/clipboard/storage steps](manual-handoff.md) complement existing worksheets. No new owner input blocks independent engineering. Next: finish affected native qualification and the P1 boundary work; **P08.1** digit reference/numeric/mixed drills is the next independent product slice (M, shared model/session plus platform captures). Stop after integrated converter checks, capture inspection, identity and status/source/link reconciliation; a further product/renderer cycle would consume the reserved verification/handoff capacity. This is partial implementation delivery, not release acceptance.

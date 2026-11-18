@@ -1,0 +1,18 @@
+# Run 08 — bounded practice sessions and normal-entry text comparison
+
+17 November 2026. Letter Quiz now offers **5/10/26-question rounds, coverage, progress, score/accuracy, missed recap, Retry Mistakes and explicit early review**. Menu/Back retains rounds/feedback; replay and navigation retain P04 audio ownership. Starting a new round explicitly replaces the recap. Results stay in memory only; README/PRIVACY and the screen disclose that lifetime. CI includes the real-browser session suite and its evidence upload.
+
+**P07.2 is delivered. P07.4/P07 remain active for affected enlarged-text acceptance.** Functional checks pass, but normal-entry Android live 1×→2× retains stale labels and clips submitted feedback. Cold configured 2× setup/question/feedback/partial review is readable in the measured sample; newly opened results are enlarged/readable and preserve one submitted answer. No framework repair, remount workaround, disabled text scaling, tolerance change or phase completion over this P1 failure is claimed. P05.8's historical three iPhone ink fringes stay P3 parked. F01 remains in-progress and ledger counts stay 7 open / 12 in-progress / 12 implemented-awaiting-M11 / 4 resolved / zero blocked or scope changes.
+
+- [Forecast and reforecast checkpoints](shared/forecast.md).
+- [84 shared tests, types/lint/Expo-free scan/build](shared/README.md).
+- [Production-browser session, existing flow/audio and scoped tile checks](web/README.md).
+- [Actual installed Android round/Retry/scale/state evidence](android/README.md), including [normal-entry native frames](android/text-comparison.json).
+- [Two passing actual iOS XCTest cases](ios/README.md), default round/Retry and maximum-text setup/question/early review. A separate real-provider Stop probe reproduces a late native `tts-finish` warning while the controller settles cancelled/idle; P3 Debug follow-up stays engineering.
+- [44 inspected actual changed-flow captures](screenshots/index.md): 20 web, 15 Android, 9 iOS. Supplementary driver URL-confirmation diagnostic is separate. All three supported targets are captured; P10.7's full integrated release set remains open.
+- [Source/candidate identity](source-identity.json), [scoped resume comparison](shared/source-changes.json), native artifact and actual loaded-JavaScript manifests linked by platform. Unchanged native builds are hash-verified against installed binaries; no new native app/Release build is asserted.
+- [Prepared physical session/Retry checklist](manual-handoff.md). All M11 acceptance remains unperformed; no new owner/SDK prerequisite blocks engineering.
+
+Dependency/lock/native/font/tile/storage/permission sources are unchanged. Earlier locked-install/audit/full tile-window-raster results retain historical scope, including the unresolved Metro/image-size advisory and strict iPhone failures. This batch does not claim fresh install/audit/Release/full matrices, hosted CI, physical AT/listening/provider/offline, iOS 27/older-runtime support, signing or release acceptance.
+
+Next independent product priority is **P06.1/.2 unified converter tokens/Clear/Copy/Share**. P05.2 remains P1: use this normal-entry reproduction to locate the first divergent native measurement boundary under a separately forecast investigation. P07.4 affected-flow acceptance waits for that repair/recheck; P3 residuals follow their recorded triggers. Stop after the implemented slice, bounded diagnostic, actual platform checks/captures and evidence/status reconciliation to preserve a reliable handoff before a new feature/build cycle. This is not a preset phase count or an overall delivery/release claim.

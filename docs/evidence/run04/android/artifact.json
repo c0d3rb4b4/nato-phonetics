@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-16",
+  "applicationId": "com.natophonetics.app",
+  "versionName": "1.0.0",
+  "versionCode": 1,
+  "buildType": "debug",
+  "signing": "Repository public development key; not a distribution artifact",
+  "apk": {
+    "file": "artifacts/run04/android/NATOPhonetics-1.0.0-debug.apk",
+    "bytes": 102514574,
+    "sha256": "06b3564a96807caec920799c7632e9f73c08f9066de637261544ca711976ff45",
+    "buildLog": "build-debug.log"
+  },
+  "javascript": {
+    "capturedAt": "2026-11-16T18:24:15.216Z",
+    "method": "Hermes CDP Debugger.getScriptSource",
+    "scripts": [
+      {
+        "file": "artifacts/run04/android/loaded-javascript/script-2.js",
+        "url": "http://127.0.0.1:8081/index.bundle//&platform=android&dev=true&lazy=true&minify=false&app=com.natophonetics.app&modulesOnly=false&runModule=true&excludeSource=true&sourcePaths=url-server",
+        "bytes": 5137251,
+        "sha256": "a28aac70a8a8760c012e178d764fbcab4cefacded23e65d97ea79b7c093fa38c"
+      }
+    ]
+  },
+  "sourceManifest": "../source-sha256.txt",
+  "emulator": {
+    "avd": "nato-p00-api36",
+    "serial": "emulator-5580",
+    "version": "37.2.13",
+    "systemImage": "system-images;android-36;google_apis;arm64-v8a",
+    "revision": 7,
+    "android": "16",
+    "fingerprint": "google/sdk_gphone64_arm64/emu64a:16/BE2A.250530.026.F3/13894323:userdebug/dev-keys",
+    "deviceProfile": "Pixel 7",
+    "physicalDisplay": "1080x2400 @ 420dpi",
+    "captureDisplayOverride": "720x1600 @ 280dpi",
+    "logicalDisplay": "411.43x914.29 dp",
+    "gpu": "host",
+    "memoryMiB": 2560
+  },
+  "speechEngine": {
+    "package": "com.google.android.tts",
+    "versionCode": 210526444,
+    "versionName": "googletts.google-speech-apk_20241125.02_p2.702443970",
+    "providerSubstitution": false,
+    "listeningAcceptance": false
+  },
+  "sdkRoot": "/Users/mac/Library/Android/sdk",
+  "screenshots": 12,
+  "checkpoints": 32,
+  "note": "Debug APK loads JS from Metro. Loaded-source hashes come from Hermes Debugger.getScriptSource after final runtime checks; APK hash alone does not identify JS."
+}

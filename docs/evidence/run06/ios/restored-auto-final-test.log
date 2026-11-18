@@ -1,0 +1,618 @@
+Command: ['xcodebuild', 'test-without-building', '-project', '/tmp/nato-ios-run06-resize/WindowResize.xcodeproj', '-scheme', 'WindowResize', '-configuration', 'Debug', '-destination', 'platform=iOS Simulator,id=D6F0ADFF-A6FB-4B1C-B48F-2A77E35D29BB', '-derivedDataPath', '/tmp/nato-ios-run06-resize/DerivedData', 'CODE_SIGNING_ALLOWED=NO', '-parallel-testing-enabled', 'NO', '-resultBundlePath', '/tmp/nato-ios-run06-resize/restored-auto-final.xcresult', '-only-testing:WindowResizeUITests/WindowResizeUITests/testRestoredAutomaticHeader']
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild test-without-building -project /tmp/nato-ios-run06-resize/WindowResize.xcodeproj -scheme WindowResize -configuration Debug -destination "platform=iOS Simulator,id=D6F0ADFF-A6FB-4B1C-B48F-2A77E35D29BB" -derivedDataPath /tmp/nato-ios-run06-resize/DerivedData CODE_SIGNING_ALLOWED=NO -parallel-testing-enabled NO -resultBundlePath /tmp/nato-ios-run06-resize/restored-auto-final.xcresult "-only-testing:WindowResizeUITests/WindowResizeUITests/testRestoredAutomaticHeader"
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+Writing result bundle at path:
+	/tmp/nato-ios-run06-resize/restored-auto-final.xcresult
+
+2026-11-17 15:32:33.403488+0000 WindowResizeUITests-Runner[54962:9748486] [Default] Running tests...
+2026-11-17 15:32:33.581987+0000 WindowResizeUITests-Runner[54962:9748486] [UIKit App Config] Update the Info.plist: Launch screens will soon be required.
+2026-11-17 15:32:33.596137+0000 WindowResizeUITests-Runner[54962:9748911] [General] Failed to send CA Event for app launch measurements for ca_event_type: 0 event_name: com.apple.app_launch_measurement.FirstFramePresentationMetric
+2026-11-17 15:32:33.640786+0000 WindowResizeUITests-Runner[54962:9748910] [General] Failed to send CA Event for app launch measurements for ca_event_type: 1 event_name: com.apple.app_launch_measurement.ExtendedLaunchMetrics
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-11-17 15:32:39.925.
+Test Suite 'WindowResizeUITests.xctest' started at 2026-11-17 15:32:39.944.
+Test Suite 'WindowResizeUITests' started at 2026-11-17 15:32:39.945.
+Test Case '-[WindowResizeUITests.WindowResizeUITests testRestoredAutomaticHeader]' started.
+    t =     0.00s Start Test at 2026-11-17 15:32:39.946
+    t =     1.04s Set Up
+    t =     1.04s Setting device orientation to Portrait
+    t =     1.07s     Device orientation changed to Portrait
+    t =     1.27s     Wait for com.apple.DocumentManager.DockFolderViewService to idle
+    t =     1.41s     Wait for com.apple.springboard to idle
+    t =     1.51s Open com.natophonetics.app
+    t =     1.51s     Launch com.natophonetics.app
+    t =     2.30s         Setting up automation session
+    t =     3.69s         Wait for com.natophonetics.app to idle
+    t =     5.30s Open com.natophonetics.app with URL natophonetics://alphabet
+    t =     5.31s     Launch com.natophonetics.app
+    t =     5.46s         Setting up automation session
+    t =     5.46s         Wait for com.natophonetics.app to idle
+    t =     6.48s Wait for com.natophonetics.app to become Running Foreground
+    t =     6.48s Waiting 15.0s for "alphabet-A" Any to exist
+    t =     7.56s     Checking `Expect predicate `existsNoRetry == 1` for object "alphabet-A" Any`
+    t =     7.58s         Checking existence of `"alphabet-A" Any`
+    t =     7.80s Find the Application 'com.apple.springboard'
+    t =     7.94s Find the Window (First Match)
+SCREENBOUNDS (0.0, 0.0, 834.0, 1210.0) WINDOWBEFORE (0.0, 0.0, 834.0, 1210.0)
+    t =     7.96s Find the Window (First Match)
+    t =     7.97s Find the Window (First Match)
+    t =     7.97s Find the Window (First Match)
+    t =     7.99s Press Window at {{0.0, 0.0}, {834.0, 1210.0}}[0.00, 0.00] -> (822.0, 1198.0) for 0.1 seconds, then drag to Window at {{0.0, 0.0}, {834.0, 1210.0}}[0.00, 0.00] -> (500.4, 786.5) with velocity of 250.00 pixels per second, and then hold for 0.3 seconds 
+    t =     7.99s     Wait for com.natophonetics.app to idle
+    t =     7.99s     Find the Window at {{0.0, 0.0}, {834.0, 1210.0}}
+    t =     8.00s     Check for interrupting elements affecting Window
+    t =     8.10s         Wait for com.apple.springboard to idle
+    t =     8.12s     Synthesize event
+    t =     8.12s         Find the Window at {{0.0, 0.0}, {834.0, 1210.0}}
+    t =     8.13s         Find the Window at {{0.0, 0.0}, {834.0, 1210.0}}
+    t =     8.14s         Find the Window at {{0.0, 0.0}, {834.0, 1210.0}}
+    t =     8.15s         Find the Window at {{0.0, 0.0}, {834.0, 1210.0}}
+    t =     8.16s         Find the Window at {{0.0, 0.0}, {834.0, 1210.0}}
+    t =    11.08s     Wait for com.natophonetics.app to idle
+    t =    13.11s Setting device orientation to Landscape Left
+    t =    13.13s     Device orientation changed to Landscape Left
+    t =    13.39s     Interface orientation changed to Landscape Right
+    t =    13.50s     Wait for com.apple.DocumentManager.DockFolderViewService to idle
+    t =    13.50s     Wait for com.natophonetics.app to idle
+    t =    13.51s     Wait for com.apple.springboard to idle
+    t =    15.52s Setting device orientation to Portrait
+    t =    15.53s     Device orientation changed to Portrait
+    t =    15.79s     Interface orientation changed to Portrait
+    t =    15.87s     Wait for com.apple.DocumentManager.DockFolderViewService to idle
+    t =    16.28s     Wait for com.natophonetics.app to idle
+    t =    16.28s     Wait for com.apple.springboard to idle
+    t =    18.33s Find the Window (First Match)
+    t =    18.39s Press Window at {{230.0, 287.0}, {375.0, 521.0}}[0.00, 0.00] -> (363.0, 509.0) for 0.1 seconds, then drag to Window at {{230.0, 287.0}, {375.0, 521.0}}[0.00, 0.00] -> (592.0, 911.0) with velocity of 250.00 pixels per second, and then hold for 0.3 seconds 
+    t =    18.39s     Wait for com.natophonetics.app to idle
+    t =    18.40s     Find the Window at {{230.0, 287.0}, {375.0, 521.0}}
+    t =    18.40s     Check for interrupting elements affecting Window
+    t =    18.48s         Wait for com.apple.DocumentManager.DockFolderViewService to idle
+    t =    18.66s         Wait for com.apple.springboard to idle
+    t =    18.79s     Synthesize event
+    t =    18.79s         Find the Window at {{230.0, 287.0}, {375.0, 521.0}}
+    t =    18.80s         Find the Window at {{230.0, 287.0}, {375.0, 521.0}}
+    t =    18.81s         Find the Window at {{230.0, 287.0}, {375.0, 521.0}}
+    t =    18.82s         Find the Window at {{230.0, 287.0}, {375.0, 521.0}}
+    t =    18.83s         Find the Window at {{230.0, 287.0}, {375.0, 521.0}}
+    t =    21.43s     Wait for com.natophonetics.app to idle
+    t =    23.70s Find the Window (First Match)
+    t =    23.75s Checking existence of `"Home" Any`
+    t =    23.79s Find the "Home" Any
+    t =    23.84s Find the "Home" Button
+    t =    23.85s Checking existence of `"Open menu" Any`
+    t =    23.86s Find the "Open menu" Any
+    t =    23.88s Find the "Open menu" Button
+    t =    23.89s Checking existence of `"app-header" Any`
+    t =    23.90s Find the "app-header" Any
+    t =    23.91s Find the "app-header" Other
+    t =    23.93s Checking existence of `"header-insets" Any`
+    t =    23.93s Find the "header-insets" Any
+    t =    23.95s Checking existence of `"screen-scroll" Any`
+    t =    23.97s Find the "screen-scroll" Any
+    t =    24.00s Find the "screen-scroll" Other
+    t =    24.02s Checking existence of `"alphabet-A" Any`
+    t =    24.07s Find the "alphabet-A" Any
+    t =    24.11s Find the "alphabet-A" Button
+    t =    24.14s Checking existence of `"alphabet-B" Any`
+    t =    24.17s Find the "alphabet-B" Any
+    t =    24.20s Find the "alphabet-B" Button
+    t =    24.25s Checking existence of `"alphabet-C" Any`
+    t =    24.28s Find the "alphabet-C" Any
+    t =    24.32s Find the "alphabet-C" Button
+    t =    24.35s Checking existence of `"alphabet-D" Any`
+    t =    24.38s Find the "alphabet-D" Any
+    t =    24.42s Find the "alphabet-D" Button
+    t =    24.46s Checking existence of `"alphabet-E" Any`
+    t =    24.49s Find the "alphabet-E" Any
+    t =    24.52s Find the "alphabet-E" Button
+    t =    24.56s Checking existence of `"alphabet-F" Any`
+    t =    24.59s Find the "alphabet-F" Any
+    t =    24.62s Find the "alphabet-F" Button
+    t =    24.66s Checking existence of `"alphabet-G" Any`
+    t =    24.69s Find the "alphabet-G" Any
+    t =    24.74s Find the "alphabet-G" Button
+    t =    24.77s Checking existence of `"alphabet-H" Any`
+    t =    24.80s Find the "alphabet-H" Any
+    t =    24.84s Find the "alphabet-H" Button
+    t =    24.88s Checking existence of `"alphabet-I" Any`
+    t =    24.91s Find the "alphabet-I" Any
+    t =    24.94s Find the "alphabet-I" Button
+    t =    24.98s Checking existence of `"alphabet-J" Any`
+    t =    25.01s Find the "alphabet-J" Any
+    t =    25.05s Find the "alphabet-J" Button
+    t =    25.08s Checking existence of `"alphabet-K" Any`
+    t =    25.11s Find the "alphabet-K" Any
+    t =    25.15s Find the "alphabet-K" Button
+    t =    25.20s Checking existence of `"alphabet-L" Any`
+    t =    25.24s Find the "alphabet-L" Any
+    t =    25.30s Find the "alphabet-L" Button
+    t =    25.34s Checking existence of `"alphabet-M" Any`
+    t =    25.38s Find the "alphabet-M" Any
+    t =    25.43s Find the "alphabet-M" Button
+    t =    25.47s Checking existence of `"alphabet-N" Any`
+    t =    25.51s Find the "alphabet-N" Any
+    t =    25.57s Find the "alphabet-N" Button
+    t =    25.61s Checking existence of `"alphabet-O" Any`
+    t =    25.65s Find the "alphabet-O" Any
+    t =    25.71s Find the "alphabet-O" Button
+    t =    25.76s Checking existence of `"alphabet-P" Any`
+    t =    25.80s Find the "alphabet-P" Any
+    t =    25.85s Find the "alphabet-P" Button
+    t =    25.94s Checking existence of `"alphabet-Q" Any`
+    t =    25.98s Find the "alphabet-Q" Any
+    t =    26.04s Find the "alphabet-Q" Button
+    t =    26.08s Checking existence of `"alphabet-R" Any`
+    t =    26.12s Find the "alphabet-R" Any
+    t =    26.17s Find the "alphabet-R" Button
+    t =    26.21s Checking existence of `"alphabet-S" Any`
+    t =    26.25s Find the "alphabet-S" Any
+    t =    26.30s Find the "alphabet-S" Button
+    t =    26.34s Checking existence of `"alphabet-T" Any`
+    t =    26.37s Find the "alphabet-T" Any
+    t =    26.41s Find the "alphabet-T" Button
+    t =    26.46s Checking existence of `"alphabet-U" Any`
+    t =    26.50s Find the "alphabet-U" Any
+    t =    26.55s Find the "alphabet-U" Button
+    t =    26.59s Checking existence of `"alphabet-V" Any`
+    t =    26.64s Find the "alphabet-V" Any
+    t =    26.69s Find the "alphabet-V" Button
+    t =    26.76s Checking existence of `"alphabet-W" Any`
+    t =    26.82s Find the "alphabet-W" Any
+    t =    26.87s Find the "alphabet-W" Button
+    t =    26.91s Checking existence of `"alphabet-X" Any`
+    t =    26.95s Find the "alphabet-X" Any
+    t =    27.00s Find the "alphabet-X" Button
+    t =    27.05s Checking existence of `"alphabet-Y" Any`
+    t =    27.09s Find the "alphabet-Y" Any
+    t =    27.14s Find the "alphabet-Y" Button
+    t =    27.17s Checking existence of `"alphabet-Z" Any`
+    t =    27.21s Find the "alphabet-Z" Any
+    t =    27.25s Find the "alphabet-Z" Button
+    t =    27.29s Find the Window (First Match)
+CAPTUREFRAMES header-auto-restored-before {"alphabet-A":{"height":150,"width":110,"x":57,"y":174},"alphabet-B":{"height":150,"width":110,"x":179,"y":174},"alphabet-C":{"height":150,"width":110,"x":301,"y":174},"alphabet-D":{"height":150,"width":110,"x":423,"y":174},"alphabet-E":{"height":150,"width":110,"x":545,"y":174},"alphabet-F":{"height":150,"width":110,"x":667,"y":174},"alphabet-G":{"height":150,"width":110,"x":57,"y":336},"alphabet-H":{"height":150,"width":110,"x":179,"y":336},"alphabet-I":{"height":150,"width":110,"x":301,"y":336},"alphabet-J":{"height":150,"width":110,"x":423,"y":336},"alphabet-K":{"height":150,"width":110,"x":545,"y":336},"alphabet-L":{"height":150,"width":110,"x":667,"y":336},"alphabet-M":{"height":150,"width":110,"x":57,"y":498},"alphabet-N":{"height":150,"width":110,"x":179,"y":498},"alphabet-O":{"height":150,"width":110,"x":301,"y":498},"alphabet-P":{"height":150,"width":110,"x":423,"y":498},"alphabet-Q":{"height":150,"width":110,"x":545,"y":498},"alphabet-R":{"height":150,"width":110,"x":667,"y":498},"alphabet-S":{"height":150,"width":110,"x":57,"y":660},"alphabet-T":{"height":150,"width":110,"x":179,"y":660},"alphabet-U":{"height":150,"width":110,"x":301,"y":660},"alphabet-V":{"height":150,"width":110,"x":423,"y":660},"alphabet-W":{"height":150,"width":110,"x":545,"y":660},"alphabet-X":{"height":150,"width":110,"x":667,"y":660},"alphabet-Y":{"height":150,"width":110,"x":301,"y":822},"alphabet-Z":{"height":150,"width":110,"x":423,"y":822},"app-header":{"height":56,"width":834,"x":0,"y":32},"Home":{"height":48,"width":48,"x":8,"y":36},"Open menu":{"height":48,"width":48,"x":778,"y":36},"screen-scroll":{"height":1102,"width":834,"x":0,"y":88},"window":{"height":1210,"width":834,"x":0,"y":0}}
+    t =    27.71s Added attachment named 'header-auto-restored-before'
+    t =    27.72s Find the "Open menu" Button
+    t =    27.84s Find the "Open menu" Button
+    t =    27.90s Find the "Open menu" Button
+    t =    27.96s Find the "Open menu" Button
+    t =    28.27s Requesting snapshot of accessibility hierarchy for app with pid 55014
+    t =    28.41s Find: Descendants matching type Button
+    t =    28.41s Find: Elements matching predicate '"Open menu" IN identifiers'
+    t =    28.45s Requesting snapshot of accessibility hierarchy for app with pid 55014
+    t =    28.56s Find: Descendants matching type Button
+    t =    28.56s Find: Elements matching predicate '"Open menu" IN identifiers'
+    t =    28.56s Requesting snapshot of accessibility hierarchy for app with pid 55014
+    t =    28.66s Find: Descendants matching type Button
+    t =    28.67s Requesting snapshot of accessibility hierarchy for app with pid 55014
+AUTOTAP cycle=0 frame=(778.0, 36.0, 48.0, 48.0) center=(802.0, 60.0) description=Attributes: Button, 0x1058c2c10, {{778.0, 36.0}, {48.0, 48.0}}, label: 'Open menu'
+Element subtree:
+ →Button, 0x1058c2c10, {{778.0, 36.0}, {48.0, 48.0}}, label: 'Open menu'
+Path to element:
+ →Application, 0x1054dd930, pid: 55014, label: 'NATO Phonetics'
+  ↳Window (Main), 0x1058b7ac0, {{0.0, 0.0}, {834.0, 1210.0}}
+   ↳Other, 0x10585cc60, {{0.0, 0.0}, {834.0, 1210.0}}
+    ↳Other, 0x10586ec30, {{0.0, 0.0}, {834.0, 1210.0}}
+     ↳Other, 0x1058ba1f0, {{0.0, 0.0}, {834.0, 1210.0}}
+      ↳Other, 0x105874ee0, {{0.0, 0.0}, {834.0, 1210.0}}
+       ↳Other, 0x10589ce00, {{0.0, 0.0}, {834.0, 1210.0}}
+        ↳Other, 0x1058a3e30, {{0.0, 0.0}, {834.0, 1210.0}}
+         ↳Other, 0x1058b26f0, {{0.0, 0.0}, {834.0, 1210.0}}
+          ↳Other, 0x1058555d0, {{0.0, 0.0}, {834.0, 88.0}}
+           ↳Button, 0x1058c2c10, {{778.0, 36.0}, {48.0, 48.0}}, label: 'Open menu'
+Query chain:
+ →Find: Application 'com.natophonetics.app'
+  Output: {
+    Application, 0x1054ee0a0, pid: 55014, label: 'NATO Phonetics'
+  }
+  ↪︎Find: Descendants matching type Button
+    Output: {
+      Button, 0x1197117e0, {{8.0, 36.0}, {48.0, 48.0}}, label: 'Home'
+      Button, 0x119711b70, {{778.0, 36.0}, {48.0, 48.0}}, label: 'Open menu'
+      Button, 0x119712c10, {{57.0, 174.0}, {110.0, 150.0}}, identifier: 'alphabet-A', label: 'Play A, Alfa'
+      Button, 0x119713af0, {{179.0, 174.0}, {110.0, 150.0}}, identifier: 'alphabet-B', label: 'Play B, Bravo'
+      Button, 0x119714930, {{301.0, 174.0}, {110.0, 150.0}}, identifier: 'alphabet-C', label: 'Play C, Charlie'
+      Button, 0x119715770, {{423.0, 174.0}, {110.0, 150.0}}, identifier: 'alphabet-D', label: 'Play D, Delta'
+      Button, 0x1197165b0, {{545.0, 174.0}, {110.0, 150.0}}, identifier: 'alphabet-E', label: 'Play E, Echo'
+      Button, 0x1197173f0, {{667.0, 174.0}, {110.0, 150.0}}, identifier: 'alphabet-F', label: 'Play F, Foxtrot'
+      Button, 0x119718230, {{57.0, 336.0}, {110.0, 150.0}}, identifier: 'alphabet-G', label: 'Play G, Golf'
+      Button, 0x119719070, {{179.0, 336.0}, {110.0, 150.0}}, identifier: 'alphabet-H', label: 'Play H, Hotel'
+      Button, 0x119719eb0, {{301.0, 336.0}, {110.0, 150.0}}, identifier: 'alphabet-I', label: 'Play I, India'
+      Button, 0x11971acf0, {{423.0, 336.0}, {110.0, 150.0}}, identifier: 'alphabet-J', label: 'Play J, Juliett'
+      Button, 0x11971bb30, {{545.0, 336.0}, {110.0, 150.0}}, identifier: 'alphabet-K', label: 'Play K, Kilo'
+      Button, 0x11971c970, {{667.0, 336.0}, {110.0, 150.0}}, identifier: 'alphabet-L', label: 'Play L, Lima'
+      Button, 0x11971d7b0, {{57.0, 498.0}, {110.0, 150.0}}, identifier: 'alphabet-M', label: 'Play M, Mike'
+      Button, 0x11971e5f0, {{179.0, 498.0}, {110.0, 150.0}}, identifier: 'alphabet-N', label: 'Play N, November'
+      Button, 0x11971f430, {{301.0, 498.0}, {110.0, 150.0}}, identifier: 'alphabet-O', label: 'Play O, Oscar'
+      Button, 0x119720270, {{423.0, 498.0}, {110.0, 150.0}}, identifier: 'alphabet-P', label: 'Play P, Papa'
+      Button, 0x1197210b0, {{545.0, 498.0}, {110.0, 150.0}}, identifier: 'alphabet-Q', label: 'Play Q, Quebec'
+      Button, 0x119721ef0, {{667.0, 498.0}, {110.0, 150.0}}, identifier: 'alphabet-R', label: 'Play R, Romeo'
+      Button, 0x119722d30, {{57.0, 660.0}, {110.0, 150.0}}, identifier: 'alphabet-S', label: 'Play S, Sierra'
+      Button, 0x119723b70, {{179.0, 660.0}, {110.0, 150.0}}, identifier: 'alphabet-T', label: 'Play T, Tango'
+      Button, 0x1197249b0, {{301.0, 660.0}, {110.0, 150.0}}, identifier: 'alphabet-U', label: 'Play U, Uniform'
+      Button, 0x1197257f0, {{423.0, 660.0}, {110.0, 150.0}}, identifier: 'alphabet-V', label: 'Play V, Victor'
+      Button, 0x119726630, {{545.0, 660.0}, {110.0, 150.0}}, identifier: 'alphabet-W', label: 'Play W, Whiskey'
+      Button, 0x119727470, {{667.0, 660.0}, {110.0, 150.0}}, identifier: 'alphabet-X', label: 'Play X, X-ray'
+      Button, 0x1197282b0, {{301.0, 822.0}, {110.0, 150.0}}, identifier: 'alphabet-Y', label: 'Play Y, Yankee'
+      Button, 0x1197290f0, {{423.0, 822.0}, {110.0, 150.0}}, identifier: 'alphabet-Z', label: 'Play Z, Zulu'
+    }
+    ↪︎Find: Elements matching predicate '"Open menu" IN identifiers'
+      Output: {
+        Button, 0x1057f2f10, {{778.0, 36.0}, {48.0, 48.0}}, label: 'Open menu'
+      }
+
+    t =    28.85s Tap "Open menu" Button
+    t =    28.85s     Wait for com.natophonetics.app to idle
+    t =    28.86s     Find the "Open menu" Button
+    t =    28.92s     Check for interrupting elements affecting "Open menu" Button
+    t =    29.11s         Wait for com.apple.springboard to idle
+    t =    29.22s     Synthesize event
+    t =    29.53s     Wait for com.natophonetics.app to idle
+    t =    29.54s Waiting 10.0s for "Back to App" Any to exist
+    t =    30.60s     Checking `Expect predicate `existsNoRetry == 1` for object "Back to App" Any`
+    t =    30.61s         Checking existence of `"Back to App" Any`
+    t =    30.68s Tap "Back to App" Any
+    t =    30.68s     Wait for com.natophonetics.app to idle
+    t =    30.68s     Find the "Back to App" Any
+    t =    30.70s     Check for interrupting elements affecting "Back to App" Button
+    t =    30.74s         Wait for com.apple.springboard to idle
+    t =    30.77s     Synthesize event
+    t =    31.08s     Wait for com.natophonetics.app to idle
+    t =    31.08s Waiting 10.0s for "alphabet-A" Any to exist
+    t =    32.16s     Checking `Expect predicate `existsNoRetry == 1` for object "alphabet-A" Any`
+    t =    32.16s         Checking existence of `"alphabet-A" Any`
+    t =    32.22s Tap "Home" Button
+    t =    32.22s     Wait for com.natophonetics.app to idle
+    t =    32.22s     Find the "Home" Button
+    t =    32.30s     Check for interrupting elements affecting "Home" Button
+    t =    32.36s         Wait for com.apple.springboard to idle
+    t =    32.38s     Synthesize event
+    t =    32.70s     Wait for com.natophonetics.app to idle
+    t =    32.71s Waiting 10.0s for "Learn, convert, and quiz yourself on the NATO alphabet." Any to exist
+    t =    33.78s     Checking `Expect predicate `existsNoRetry == 1` for object "Learn, convert, and quiz yourself on the NATO alphabet." Any`
+    t =    33.78s         Checking existence of `"Learn, convert, and quiz yourself on the NATO alphabet." Any`
+    t =    33.85s Open com.natophonetics.app with URL natophonetics://alphabet
+    t =    33.85s     Launch com.natophonetics.app
+    t =    34.43s         Setting up automation session
+    t =    34.43s         Wait for com.natophonetics.app to idle
+    t =    35.44s Wait for com.natophonetics.app to become Running Foreground
+    t =    35.45s Waiting 10.0s for "alphabet-A" Any to exist
+    t =    36.52s     Checking `Expect predicate `existsNoRetry == 1` for object "alphabet-A" Any`
+    t =    36.52s         Checking existence of `"alphabet-A" Any`
+    t =    36.56s Find the "Open menu" Button
+    t =    36.64s Find the "Open menu" Button
+    t =    36.71s Find the "Open menu" Button
+    t =    36.77s Find the "Open menu" Button
+    t =    36.84s Requesting snapshot of accessibility hierarchy for app with pid 55014
+    t =    36.94s Find: Descendants matching type Button
+    t =    36.94s Find: Elements matching predicate '"Open menu" IN identifiers'
+    t =    36.98s Requesting snapshot of accessibility hierarchy for app with pid 55014
+    t =    37.08s Find: Descendants matching type Button
+    t =    37.08s Find: Elements matching predicate '"Open menu" IN identifiers'
+    t =    37.08s Requesting snapshot of accessibility hierarchy for app with pid 55014
+    t =    37.18s Find: Descendants matching type Button
+    t =    37.18s Requesting snapshot of accessibility hierarchy for app with pid 55014
+AUTOTAP cycle=1 frame=(778.0, 36.0, 48.0, 48.0) center=(802.0, 60.0) description=Attributes: Button, 0x119937210, {{778.0, 36.0}, {48.0, 48.0}}, label: 'Open menu'
+Element subtree:
+ →Button, 0x119937210, {{778.0, 36.0}, {48.0, 48.0}}, label: 'Open menu'
+Path to element:
+ →Application, 0x119935d40, pid: 55014, label: 'NATO Phonetics'
+  ↳Window (Main), 0x119935e70, {{0.0, 0.0}, {834.0, 1210.0}}
+   ↳Other, 0x119936240, {{0.0, 0.0}, {834.0, 1210.0}}
+    ↳Other, 0x119936370, {{0.0, 0.0}, {834.0, 1210.0}}
+     ↳Other, 0x119935fa0, {{0.0, 0.0}, {834.0, 1210.0}}
+      ↳Other, 0x1199360d0, {{0.0, 0.0}, {834.0, 1210.0}}
+       ↳Other, 0x1199369c0, {{0.0, 0.0}, {834.0, 1210.0}}
+        ↳Other, 0x1199364a0, {{0.0, 0.0}, {834.0, 1210.0}}
+         ↳Other, 0x1199365d0, {{0.0, 0.0}, {834.0, 1210.0}}
+          ↳Other, 0x119936700, {{0.0, 0.0}, {834.0, 88.0}}
+           ↳Button, 0x119937210, {{778.0, 36.0}, {48.0, 48.0}}, label: 'Open menu'
+Query chain:
+ →Find: Application 'com.natophonetics.app'
+  Output: {
+    Application, 0x119726d00, pid: 55014, label: 'NATO Phonetics'
+  }
+  ↪︎Find: Descendants matching type Button
+    Output: {
+      Button, 0x11995fab0, {{8.0, 36.0}, {48.0, 48.0}}, label: 'Home'
+      Button, 0x11995fe40, {{778.0, 36.0}, {48.0, 48.0}}, label: 'Open menu'
+      Button, 0x119960ee0, {{57.0, 174.0}, {110.0, 150.0}}, identifier: 'alphabet-A', label: 'Play A, Alfa'
+      Button, 0x119961d20, {{179.0, 174.0}, {110.0, 150.0}}, identifier: 'alphabet-B', label: 'Play B, Bravo'
+      Button, 0x119962b60, {{301.0, 174.0}, {110.0, 150.0}}, identifier: 'alphabet-C', label: 'Play C, Charlie'
+      Button, 0x1199639a0, {{423.0, 174.0}, {110.0, 150.0}}, identifier: 'alphabet-D', label: 'Play D, Delta'
+      Button, 0x1199647e0, {{545.0, 174.0}, {110.0, 150.0}}, identifier: 'alphabet-E', label: 'Play E, Echo'
+      Button, 0x119965620, {{667.0, 174.0}, {110.0, 150.0}}, identifier: 'alphabet-F', label: 'Play F, Foxtrot'
+      Button, 0x119966460, {{57.0, 336.0}, {110.0, 150.0}}, identifier: 'alphabet-G', label: 'Play G, Golf'
+      Button, 0x1199672a0, {{179.0, 336.0}, {110.0, 150.0}}, identifier: 'alphabet-H', label: 'Play H, Hotel'
+      Button, 0x1199680e0, {{301.0, 336.0}, {110.0, 150.0}}, identifier: 'alphabet-I', label: 'Play I, India'
+      Button, 0x119968f20, {{423.0, 336.0}, {110.0, 150.0}}, identifier: 'alphabet-J', label: 'Play J, Juliett'
+      Button, 0x119969d60, {{545.0, 336.0}, {110.0, 150.0}}, identifier: 'alphabet-K', label: 'Play K, Kilo'
+      Button, 0x11996aba0, {{667.0, 336.0}, {110.0, 150.0}}, identifier: 'alphabet-L', label: 'Play L, Lima'
+      Button, 0x11996b9e0, {{57.0, 498.0}, {110.0, 150.0}}, identifier: 'alphabet-M', label: 'Play M, Mike'
+      Button, 0x11996c820, {{179.0, 498.0}, {110.0, 150.0}}, identifier: 'alphabet-N', label: 'Play N, November'
+      Button, 0x11996d660, {{301.0, 498.0}, {110.0, 150.0}}, identifier: 'alphabet-O', label: 'Play O, Oscar'
+      Button, 0x11996e4a0, {{423.0, 498.0}, {110.0, 150.0}}, identifier: 'alphabet-P', label: 'Play P, Papa'
+      Button, 0x11996f2e0, {{545.0, 498.0}, {110.0, 150.0}}, identifier: 'alphabet-Q', label: 'Play Q, Quebec'
+      Button, 0x119970120, {{667.0, 498.0}, {110.0, 150.0}}, identifier: 'alphabet-R', label: 'Play R, Romeo'
+      Button, 0x119970f60, {{57.0, 660.0}, {110.0, 150.0}}, identifier: 'alphabet-S', label: 'Play S, Sierra'
+      Button, 0x119971da0, {{179.0, 660.0}, {110.0, 150.0}}, identifier: 'alphabet-T', label: 'Play T, Tango'
+      Button, 0x119972be0, {{301.0, 660.0}, {110.0, 150.0}}, identifier: 'alphabet-U', label: 'Play U, Uniform'
+      Button, 0x119973a20, {{423.0, 660.0}, {110.0, 150.0}}, identifier: 'alphabet-V', label: 'Play V, Victor'
+      Button, 0x119974860, {{545.0, 660.0}, {110.0, 150.0}}, identifier: 'alphabet-W', label: 'Play W, Whiskey'
+      Button, 0x1199756a0, {{667.0, 660.0}, {110.0, 150.0}}, identifier: 'alphabet-X', label: 'Play X, X-ray'
+      Button, 0x1199764e0, {{301.0, 822.0}, {110.0, 150.0}}, identifier: 'alphabet-Y', label: 'Play Y, Yankee'
+      Button, 0x119977320, {{423.0, 822.0}, {110.0, 150.0}}, identifier: 'alphabet-Z', label: 'Play Z, Zulu'
+    }
+    ↪︎Find: Elements matching predicate '"Open menu" IN identifiers'
+      Output: {
+        Button, 0x119952ca0, {{778.0, 36.0}, {48.0, 48.0}}, label: 'Open menu'
+      }
+
+    t =    37.38s Tap "Open menu" Button
+    t =    37.38s     Wait for com.natophonetics.app to idle
+    t =    37.38s     Find the "Open menu" Button
+    t =    37.44s     Check for interrupting elements affecting "Open menu" Button
+    t =    37.68s         Wait for com.apple.springboard to idle
+    t =    37.90s     Synthesize event
+    t =    38.20s     Wait for com.natophonetics.app to idle
+    t =    38.20s Waiting 10.0s for "Back to App" Any to exist
+    t =    39.26s     Checking `Expect predicate `existsNoRetry == 1` for object "Back to App" Any`
+    t =    39.26s         Checking existence of `"Back to App" Any`
+    t =    39.30s Tap "Back to App" Any
+    t =    39.30s     Wait for com.natophonetics.app to idle
+    t =    39.30s     Find the "Back to App" Any
+    t =    39.32s     Check for interrupting elements affecting "Back to App" Button
+    t =    39.35s         Wait for com.apple.springboard to idle
+    t =    39.45s     Synthesize event
+    t =    39.76s     Wait for com.natophonetics.app to idle
+    t =    39.76s Waiting 10.0s for "alphabet-A" Any to exist
+    t =    40.83s     Checking `Expect predicate `existsNoRetry == 1` for object "alphabet-A" Any`
+    t =    40.83s         Checking existence of `"alphabet-A" Any`
+    t =    40.92s Tap "Home" Button
+    t =    40.92s     Wait for com.natophonetics.app to idle
+    t =    40.92s     Find the "Home" Button
+    t =    41.00s     Check for interrupting elements affecting "Home" Button
+    t =    41.08s         Wait for com.apple.springboard to idle
+    t =    41.10s     Synthesize event
+    t =    41.39s     Wait for com.natophonetics.app to idle
+    t =    41.39s Waiting 10.0s for "Learn, convert, and quiz yourself on the NATO alphabet." Any to exist
+    t =    42.46s     Checking `Expect predicate `existsNoRetry == 1` for object "Learn, convert, and quiz yourself on the NATO alphabet." Any`
+    t =    42.47s         Checking existence of `"Learn, convert, and quiz yourself on the NATO alphabet." Any`
+    t =    42.53s Open com.natophonetics.app with URL natophonetics://alphabet
+    t =    42.53s     Launch com.natophonetics.app
+    t =    42.67s         Setting up automation session
+    t =    42.67s         Wait for com.natophonetics.app to idle
+    t =    43.68s Wait for com.natophonetics.app to become Running Foreground
+    t =    43.68s Waiting 10.0s for "alphabet-A" Any to exist
+    t =    44.76s     Checking `Expect predicate `existsNoRetry == 1` for object "alphabet-A" Any`
+    t =    44.76s         Checking existence of `"alphabet-A" Any`
+    t =    44.80s Find the "Open menu" Button
+    t =    44.89s Find the "Open menu" Button
+    t =    44.96s Find the "Open menu" Button
+    t =    45.02s Find the "Open menu" Button
+    t =    45.09s Requesting snapshot of accessibility hierarchy for app with pid 55014
+    t =    45.20s Find: Descendants matching type Button
+    t =    45.20s Find: Elements matching predicate '"Open menu" IN identifiers'
+    t =    45.24s Requesting snapshot of accessibility hierarchy for app with pid 55014
+    t =    45.34s Find: Descendants matching type Button
+    t =    45.35s Find: Elements matching predicate '"Open menu" IN identifiers'
+    t =    45.35s Requesting snapshot of accessibility hierarchy for app with pid 55014
+    t =    45.45s Find: Descendants matching type Button
+    t =    45.46s Requesting snapshot of accessibility hierarchy for app with pid 55014
+AUTOTAP cycle=2 frame=(778.0, 36.0, 48.0, 48.0) center=(802.0, 60.0) description=Attributes: Button, 0x119699a40, {{778.0, 36.0}, {48.0, 48.0}}, label: 'Open menu'
+Element subtree:
+ →Button, 0x119699a40, {{778.0, 36.0}, {48.0, 48.0}}, label: 'Open menu'
+    Other, 0x119699b70, {{790.0, 48.0}, {24.0, 24.0}}
+      Other, 0x119699ca0, {{790.0, 48.0}, {24.0, 24.0}}
+        Other, 0x119699dd0, {{793.0, 53.0}, {18.0, 2.0}}
+        Other, 0x119699f00, {{793.0, 59.0}, {18.0, 2.0}}
+        Other, 0x11969a030, {{793.0, 65.0}, {18.0, 2.0}}
+Path to element:
+ →Application, 0x119697760, pid: 55014, label: 'NATO Phonetics'
+  ↳Window (Main), 0x119697120, {{0.0, 0.0}, {834.0, 1210.0}}
+   ↳Other, 0x1196983f0, {{0.0, 0.0}, {834.0, 1210.0}}
+    ↳Other, 0x119698520, {{0.0, 0.0}, {834.0, 1210.0}}
+     ↳Other, 0x119694cc0, {{0.0, 0.0}, {834.0, 1210.0}}
+      ↳Other, 0x119698190, {{0.0, 0.0}, {834.0, 1210.0}}
+       ↳Other, 0x1196982c0, {{0.0, 0.0}, {834.0, 1210.0}}
+        ↳Other, 0x119698650, {{0.0, 0.0}, {834.0, 1210.0}}
+         ↳Other, 0x119698780, {{0.0, 0.0}, {834.0, 1210.0}}
+          ↳Other, 0x1196988b0, {{0.0, 0.0}, {834.0, 88.0}}
+           ↳Button, 0x119699a40, {{778.0, 36.0}, {48.0, 48.0}}, label: 'Open menu'
+Query chain:
+ →Find: Application 'com.natophonetics.app'
+  Output: {
+    Application, 0x119954970, pid: 55014, label: 'NATO Phonetics'
+  }
+  ↪︎Find: Descendants matching type Button
+    Output: {
+      Button, 0x119956e00, {{8.0, 36.0}, {48.0, 48.0}}, label: 'Home'
+      Button, 0x1199578b0, {{778.0, 36.0}, {48.0, 48.0}}, label: 'Open menu'
+      Button, 0x119958f40, {{57.0, 174.0}, {110.0, 150.0}}, identifier: 'alphabet-A', label: 'Play A, Alfa'
+      Button, 0x119959d80, {{179.0, 174.0}, {110.0, 150.0}}, identifier: 'alphabet-B', label: 'Play B, Bravo'
+      Button, 0x11995abc0, {{301.0, 174.0}, {110.0, 150.0}}, identifier: 'alphabet-C', label: 'Play C, Charlie'
+      Button, 0x11995ba00, {{423.0, 174.0}, {110.0, 150.0}}, identifier: 'alphabet-D', label: 'Play D, Delta'
+      Button, 0x11995c840, {{545.0, 174.0}, {110.0, 150.0}}, identifier: 'alphabet-E', label: 'Play E, Echo'
+      Button, 0x11995d680, {{667.0, 174.0}, {110.0, 150.0}}, identifier: 'alphabet-F', label: 'Play F, Foxtrot'
+      Button, 0x119935e70, {{57.0, 336.0}, {110.0, 150.0}}, identifier: 'alphabet-G', label: 'Play G, Golf'
+      Button, 0x119936cb0, {{179.0, 336.0}, {110.0, 150.0}}, identifier: 'alphabet-H', label: 'Play H, Hotel'
+      Button, 0x119937af0, {{301.0, 336.0}, {110.0, 150.0}}, identifier: 'alphabet-I', label: 'Play I, India'
+      Button, 0x119938930, {{423.0, 336.0}, {110.0, 150.0}}, identifier: 'alphabet-J', label: 'Play J, Juliett'
+      Button, 0x119939770, {{545.0, 336.0}, {110.0, 150.0}}, identifier: 'alphabet-K', label: 'Play K, Kilo'
+      Button, 0x11993a5b0, {{667.0, 336.0}, {110.0, 150.0}}, identifier: 'alphabet-L', label: 'Play L, Lima'
+      Button, 0x11993b3f0, {{57.0, 498.0}, {110.0, 150.0}}, identifier: 'alphabet-M', label: 'Play M, Mike'
+      Button, 0x11993c230, {{179.0, 498.0}, {110.0, 150.0}}, identifier: 'alphabet-N', label: 'Play N, November'
+      Button, 0x11993d070, {{301.0, 498.0}, {110.0, 150.0}}, identifier: 'alphabet-O', label: 'Play O, Oscar'
+      Button, 0x11993deb0, {{423.0, 498.0}, {110.0, 150.0}}, identifier: 'alphabet-P', label: 'Play P, Papa'
+      Button, 0x11993ecf0, {{545.0, 498.0}, {110.0, 150.0}}, identifier: 'alphabet-Q', label: 'Play Q, Quebec'
+      Button, 0x11993fb30, {{667.0, 498.0}, {110.0, 150.0}}, identifier: 'alphabet-R', label: 'Play R, Romeo'
+      Button, 0x119940970, {{57.0, 660.0}, {110.0, 150.0}}, identifier: 'alphabet-S', label: 'Play S, Sierra'
+      Button, 0x1199417b0, {{179.0, 660.0}, {110.0, 150.0}}, identifier: 'alphabet-T', label: 'Play T, Tango'
+      Button, 0x1199425f0, {{301.0, 660.0}, {110.0, 150.0}}, identifier: 'alphabet-U', label: 'Play U, Uniform'
+      Button, 0x119943430, {{423.0, 660.0}, {110.0, 150.0}}, identifier: 'alphabet-V', label: 'Play V, Victor'
+      Button, 0x119944270, {{545.0, 660.0}, {110.0, 150.0}}, identifier: 'alphabet-W', label: 'Play W, Whiskey'
+      Button, 0x1199450b0, {{667.0, 660.0}, {110.0, 150.0}}, identifier: 'alphabet-X', label: 'Play X, X-ray'
+      Button, 0x119945ef0, {{301.0, 822.0}, {110.0, 150.0}}, identifier: 'alphabet-Y', label: 'Play Y, Yankee'
+      Button, 0x1199b6460, {{423.0, 822.0}, {110.0, 150.0}}, identifier: 'alphabet-Z', label: 'Play Z, Zulu'
+    }
+    ↪︎Find: Elements matching predicate '"Open menu" IN identifiers'
+      Output: {
+        Button, 0x1196c9350, {{778.0, 36.0}, {48.0, 48.0}}, label: 'Open menu'
+      }
+
+    t =    45.65s Tap "Open menu" Button
+    t =    45.65s     Wait for com.natophonetics.app to idle
+    t =    45.65s     Find the "Open menu" Button
+    t =    45.71s     Check for interrupting elements affecting "Open menu" Button
+    t =    45.78s         Wait for com.apple.springboard to idle
+    t =    45.81s     Synthesize event
+    t =    46.10s     Wait for com.natophonetics.app to idle
+    t =    46.10s Waiting 10.0s for "Back to App" Any to exist
+    t =    47.17s     Checking `Expect predicate `existsNoRetry == 1` for object "Back to App" Any`
+    t =    47.18s         Checking existence of `"Back to App" Any`
+    t =    47.23s Tap "Back to App" Any
+    t =    47.23s     Wait for com.natophonetics.app to idle
+    t =    47.24s     Find the "Back to App" Any
+    t =    47.27s     Check for interrupting elements affecting "Back to App" Button
+    t =    47.30s         Wait for com.apple.springboard to idle
+    t =    47.35s     Synthesize event
+    t =    47.64s     Wait for com.natophonetics.app to idle
+    t =    47.64s Waiting 10.0s for "alphabet-A" Any to exist
+    t =    48.70s     Checking `Expect predicate `existsNoRetry == 1` for object "alphabet-A" Any`
+    t =    48.70s         Checking existence of `"alphabet-A" Any`
+    t =    48.77s Tap "Home" Button
+    t =    48.77s     Wait for com.natophonetics.app to idle
+    t =    48.78s     Find the "Home" Button
+    t =    48.85s     Check for interrupting elements affecting "Home" Button
+    t =    48.91s         Wait for com.apple.springboard to idle
+    t =    48.93s     Synthesize event
+    t =    49.23s     Wait for com.natophonetics.app to idle
+    t =    49.23s Waiting 10.0s for "Learn, convert, and quiz yourself on the NATO alphabet." Any to exist
+    t =    50.30s     Checking `Expect predicate `existsNoRetry == 1` for object "Learn, convert, and quiz yourself on the NATO alphabet." Any`
+    t =    50.30s         Checking existence of `"Learn, convert, and quiz yourself on the NATO alphabet." Any`
+    t =    50.34s Open com.natophonetics.app with URL natophonetics://alphabet
+    t =    50.34s     Launch com.natophonetics.app
+    t =    50.46s         Setting up automation session
+    t =    50.46s         Wait for com.natophonetics.app to idle
+    t =    51.48s Wait for com.natophonetics.app to become Running Foreground
+    t =    51.49s Waiting 10.0s for "alphabet-A" Any to exist
+    t =    52.56s     Checking `Expect predicate `existsNoRetry == 1` for object "alphabet-A" Any`
+    t =    52.56s         Checking existence of `"alphabet-A" Any`
+    t =    52.63s Checking existence of `"Home" Any`
+    t =    52.64s Find the "Home" Any
+    t =    52.65s Find the "Home" Button
+    t =    52.66s Checking existence of `"Open menu" Any`
+    t =    52.67s Find the "Open menu" Any
+    t =    52.69s Find the "Open menu" Button
+    t =    52.70s Checking existence of `"app-header" Any`
+    t =    52.70s Find the "app-header" Any
+    t =    52.72s Find the "app-header" Other
+    t =    52.73s Checking existence of `"header-insets" Any`
+    t =    52.74s Find the "header-insets" Any
+    t =    52.75s Checking existence of `"screen-scroll" Any`
+    t =    52.76s Find the "screen-scroll" Any
+    t =    52.78s Find the "screen-scroll" Other
+    t =    52.79s Checking existence of `"alphabet-A" Any`
+    t =    52.82s Find the "alphabet-A" Any
+    t =    52.85s Find the "alphabet-A" Button
+    t =    52.88s Checking existence of `"alphabet-B" Any`
+    t =    52.91s Find the "alphabet-B" Any
+    t =    52.95s Find the "alphabet-B" Button
+    t =    52.98s Checking existence of `"alphabet-C" Any`
+    t =    53.01s Find the "alphabet-C" Any
+    t =    53.05s Find the "alphabet-C" Button
+    t =    53.08s Checking existence of `"alphabet-D" Any`
+    t =    53.11s Find the "alphabet-D" Any
+    t =    53.15s Find the "alphabet-D" Button
+    t =    53.18s Checking existence of `"alphabet-E" Any`
+    t =    53.21s Find the "alphabet-E" Any
+    t =    53.25s Find the "alphabet-E" Button
+    t =    53.28s Checking existence of `"alphabet-F" Any`
+    t =    53.31s Find the "alphabet-F" Any
+    t =    53.35s Find the "alphabet-F" Button
+    t =    53.38s Checking existence of `"alphabet-G" Any`
+    t =    53.41s Find the "alphabet-G" Any
+    t =    53.45s Find the "alphabet-G" Button
+    t =    53.49s Checking existence of `"alphabet-H" Any`
+    t =    53.52s Find the "alphabet-H" Any
+    t =    53.56s Find the "alphabet-H" Button
+    t =    53.59s Checking existence of `"alphabet-I" Any`
+    t =    53.62s Find the "alphabet-I" Any
+    t =    53.66s Find the "alphabet-I" Button
+    t =    53.70s Checking existence of `"alphabet-J" Any`
+    t =    53.73s Find the "alphabet-J" Any
+    t =    53.77s Find the "alphabet-J" Button
+    t =    53.81s Checking existence of `"alphabet-K" Any`
+    t =    53.85s Find the "alphabet-K" Any
+    t =    53.88s Find the "alphabet-K" Button
+    t =    53.92s Checking existence of `"alphabet-L" Any`
+    t =    53.95s Find the "alphabet-L" Any
+    t =    53.99s Find the "alphabet-L" Button
+    t =    54.03s Checking existence of `"alphabet-M" Any`
+    t =    54.06s Find the "alphabet-M" Any
+    t =    54.10s Find the "alphabet-M" Button
+    t =    54.14s Checking existence of `"alphabet-N" Any`
+    t =    54.17s Find the "alphabet-N" Any
+    t =    54.21s Find the "alphabet-N" Button
+    t =    54.25s Checking existence of `"alphabet-O" Any`
+    t =    54.29s Find the "alphabet-O" Any
+    t =    54.33s Find the "alphabet-O" Button
+    t =    54.36s Checking existence of `"alphabet-P" Any`
+    t =    54.40s Find the "alphabet-P" Any
+    t =    54.44s Find the "alphabet-P" Button
+    t =    54.48s Checking existence of `"alphabet-Q" Any`
+    t =    54.51s Find the "alphabet-Q" Any
+    t =    54.55s Find the "alphabet-Q" Button
+    t =    54.59s Checking existence of `"alphabet-R" Any`
+    t =    54.63s Find the "alphabet-R" Any
+    t =    54.67s Find the "alphabet-R" Button
+    t =    54.71s Checking existence of `"alphabet-S" Any`
+    t =    54.74s Find the "alphabet-S" Any
+    t =    54.79s Find the "alphabet-S" Button
+    t =    54.82s Checking existence of `"alphabet-T" Any`
+    t =    54.86s Find the "alphabet-T" Any
+    t =    54.90s Find the "alphabet-T" Button
+    t =    54.94s Checking existence of `"alphabet-U" Any`
+    t =    54.97s Find the "alphabet-U" Any
+    t =    55.02s Find the "alphabet-U" Button
+    t =    55.05s Checking existence of `"alphabet-V" Any`
+    t =    55.09s Find the "alphabet-V" Any
+    t =    55.13s Find the "alphabet-V" Button
+    t =    55.17s Checking existence of `"alphabet-W" Any`
+    t =    55.21s Find the "alphabet-W" Any
+    t =    55.25s Find the "alphabet-W" Button
+    t =    55.29s Checking existence of `"alphabet-X" Any`
+    t =    55.33s Find the "alphabet-X" Any
+    t =    55.37s Find the "alphabet-X" Button
+    t =    55.41s Checking existence of `"alphabet-Y" Any`
+    t =    55.45s Find the "alphabet-Y" Any
+    t =    55.49s Find the "alphabet-Y" Button
+    t =    55.53s Checking existence of `"alphabet-Z" Any`
+    t =    55.56s Find the "alphabet-Z" Any
+    t =    55.61s Find the "alphabet-Z" Button
+    t =    55.65s Find the Window (First Match)
+CAPTUREFRAMES header-auto-restored-after {"alphabet-A":{"height":150,"width":110,"x":57,"y":174},"alphabet-B":{"height":150,"width":110,"x":179,"y":174},"alphabet-C":{"height":150,"width":110,"x":301,"y":174},"alphabet-D":{"height":150,"width":110,"x":423,"y":174},"alphabet-E":{"height":150,"width":110,"x":545,"y":174},"alphabet-F":{"height":150,"width":110,"x":667,"y":174},"alphabet-G":{"height":150,"width":110,"x":57,"y":336},"alphabet-H":{"height":150,"width":110,"x":179,"y":336},"alphabet-I":{"height":150,"width":110,"x":301,"y":336},"alphabet-J":{"height":150,"width":110,"x":423,"y":336},"alphabet-K":{"height":150,"width":110,"x":545,"y":336},"alphabet-L":{"height":150,"width":110,"x":667,"y":336},"alphabet-M":{"height":150,"width":110,"x":57,"y":498},"alphabet-N":{"height":150,"width":110,"x":179,"y":498},"alphabet-O":{"height":150,"width":110,"x":301,"y":498},"alphabet-P":{"height":150,"width":110,"x":423,"y":498},"alphabet-Q":{"height":150,"width":110,"x":545,"y":498},"alphabet-R":{"height":150,"width":110,"x":667,"y":498},"alphabet-S":{"height":150,"width":110,"x":57,"y":660},"alphabet-T":{"height":150,"width":110,"x":179,"y":660},"alphabet-U":{"height":150,"width":110,"x":301,"y":660},"alphabet-V":{"height":150,"width":110,"x":423,"y":660},"alphabet-W":{"height":150,"width":110,"x":545,"y":660},"alphabet-X":{"height":150,"width":110,"x":667,"y":660},"alphabet-Y":{"height":150,"width":110,"x":301,"y":822},"alphabet-Z":{"height":150,"width":110,"x":423,"y":822},"app-header":{"height":56,"width":834,"x":0,"y":32},"Home":{"height":48,"width":48,"x":8,"y":36},"Open menu":{"height":48,"width":48,"x":778,"y":36},"screen-scroll":{"height":1102,"width":834,"x":0,"y":88},"window":{"height":1210,"width":834,"x":0,"y":0}}
+    t =    55.86s Added attachment named 'header-auto-restored-after'
+    t =    55.88s Tear Down
+Test Case '-[WindowResizeUITests.WindowResizeUITests testRestoredAutomaticHeader]' passed (56.730 seconds).
+Test Suite 'WindowResizeUITests' passed at 2026-11-17 15:33:36.677.
+	 Executed 1 test, with 0 failures (0 unexpected) in 56.730 (56.733) seconds
+Test Suite 'WindowResizeUITests.xctest' passed at 2026-11-17 15:33:36.678.
+	 Executed 1 test, with 0 failures (0 unexpected) in 56.730 (56.734) seconds
+Test Suite 'Selected tests' passed at 2026-11-17 15:33:36.679.
+	 Executed 1 test, with 0 failures (0 unexpected) in 56.730 (56.753) seconds
+2026-11-17 15:33:37.246 xcodebuild[54912:9747443] [MT] IDETestOperationsObserverDebug: 83.436 elapsed -- Testing started completed.
+2026-11-17 15:33:37.246 xcodebuild[54912:9747443] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-11-17 15:33:37.246 xcodebuild[54912:9747443] [MT] IDETestOperationsObserverDebug: 83.436 sec, +83.436 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/nato-ios-run06-resize/restored-auto-final.xcresult
+
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+
+EXIT 0

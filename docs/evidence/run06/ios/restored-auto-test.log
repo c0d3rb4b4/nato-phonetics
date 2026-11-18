@@ -1,0 +1,102 @@
+Command: ['xcodebuild', 'test-without-building', '-project', '/tmp/nato-ios-run06-resize/WindowResize.xcodeproj', '-scheme', 'WindowResize', '-configuration', 'Debug', '-destination', 'platform=iOS Simulator,id=D6F0ADFF-A6FB-4B1C-B48F-2A77E35D29BB', '-derivedDataPath', '/tmp/nato-ios-run06-resize/DerivedData', 'CODE_SIGNING_ALLOWED=NO', '-parallel-testing-enabled', 'NO', '-resultBundlePath', '/tmp/nato-ios-run06-resize/restored-auto.xcresult', '-only-testing:WindowResizeUITests/WindowResizeUITests/testRestoredAutomaticHeader']
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild test-without-building -project /tmp/nato-ios-run06-resize/WindowResize.xcodeproj -scheme WindowResize -configuration Debug -destination "platform=iOS Simulator,id=D6F0ADFF-A6FB-4B1C-B48F-2A77E35D29BB" -derivedDataPath /tmp/nato-ios-run06-resize/DerivedData CODE_SIGNING_ALLOWED=NO -parallel-testing-enabled NO -resultBundlePath /tmp/nato-ios-run06-resize/restored-auto.xcresult "-only-testing:WindowResizeUITests/WindowResizeUITests/testRestoredAutomaticHeader"
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+Writing result bundle at path:
+	/tmp/nato-ios-run06-resize/restored-auto.xcresult
+
+2026-11-17 15:27:13.980373+0000 WindowResizeUITests-Runner[53798:9735113] [Default] Running tests...
+2026-11-17 15:27:14.276947+0000 WindowResizeUITests-Runner[53798:9735113] [UIKit App Config] Update the Info.plist: Launch screens will soon be required.
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-11-17 15:27:27.227.
+Test Suite 'WindowResizeUITests.xctest' started at 2026-11-17 15:27:27.319.
+Test Suite 'WindowResizeUITests' started at 2026-11-17 15:27:27.320.
+Test Case '-[WindowResizeUITests.WindowResizeUITests testRestoredAutomaticHeader]' started.
+    t =     0.00s Start Test at 2026-11-17 15:27:27.323
+    t =     1.14s Set Up
+    t =     1.14s Setting device orientation to Portrait
+    t =     1.17s     Device orientation changed to Portrait
+    t =     1.56s     Wait for com.apple.DocumentManager.DockFolderViewService to idle
+    t =     1.73s     Wait for com.apple.springboard to idle
+    t =     1.87s Open com.natophonetics.app
+    t =     1.87s     Launch com.natophonetics.app
+    t =     5.18s         Setting up automation session
+    t =     9.68s         Wait for com.natophonetics.app to idle
+    t =    12.89s Open com.natophonetics.app with URL natophonetics://alphabet
+    t =    12.90s     Launch com.natophonetics.app
+    t =    13.11s         Setting up automation session
+    t =    13.12s         Wait for com.natophonetics.app to idle
+    t =    14.15s Wait for com.natophonetics.app to become Running Foreground
+    t =    14.19s Waiting 15.0s for "alphabet-A" Any to exist
+    t =    15.26s     Checking `Expect predicate `existsNoRetry == 1` for object "alphabet-A" Any`
+    t =    15.27s         Checking existence of `"alphabet-A" Any`
+    t =    15.46s Find the Window (First Match)
+    t =    15.49s Find the Window (First Match)
+    t =    15.51s Press Window at {{0.0, 0.0}, {834.0, 1210.0}}[0.00, 0.00] -> (822.0, 1198.0) for 0.1 seconds, then drag to Window at {{0.0, 0.0}, {834.0, 1210.0}}[0.00, 0.00] -> (500.4, 786.5) with velocity of 250.00 pixels per second, and then hold for 0.3 seconds 
+    t =    15.51s     Wait for com.natophonetics.app to idle
+    t =    15.51s     Find the Window at {{0.0, 0.0}, {834.0, 1210.0}}
+    t =    15.51s     Check for interrupting elements affecting Window
+    t =    15.66s         Wait for com.apple.springboard to idle
+    t =    15.93s     Synthesize event
+    t =    15.93s         Find the Window at {{0.0, 0.0}, {834.0, 1210.0}}
+    t =    15.94s         Find the Window at {{0.0, 0.0}, {834.0, 1210.0}}
+    t =    15.95s         Find the Window at {{0.0, 0.0}, {834.0, 1210.0}}
+    t =    15.96s         Find the Window at {{0.0, 0.0}, {834.0, 1210.0}}
+    t =    15.98s         Find the Window at {{0.0, 0.0}, {834.0, 1210.0}}
+    t =    18.93s     Wait for com.natophonetics.app to idle
+    t =    20.99s Setting device orientation to Landscape Left
+    t =    21.01s     Device orientation changed to Landscape Left
+    t =    21.49s     Interface orientation changed to Landscape Right
+    t =    22.43s     Wait for com.apple.DocumentManager.DockFolderViewService to idle
+    t =    22.44s     Wait for com.natophonetics.app to idle
+    t =    22.44s     Wait for com.apple.springboard to idle
+    t =    25.27s Setting device orientation to Portrait
+    t =    25.34s     Device orientation changed to Portrait
+    t =    25.93s     Interface orientation changed to Portrait
+    t =    29.21s     Wait for com.natophonetics.app to idle
+    t =    29.28s     Wait for com.apple.springboard to idle
+    t =    33.14s Find the Window (First Match)
+    t =    33.46s Press Window at {{230.0, 198.0}, {375.0, 700.0}}[0.00, 0.00] -> (363.0, 688.0) for 0.1 seconds, then drag to Window at {{230.0, 198.0}, {375.0, 700.0}}[0.00, 0.00] -> (592.0, 1000.0) with velocity of 250.00 pixels per second, and then hold for 0.3 seconds 
+    t =    33.46s     Wait for com.natophonetics.app to idle
+    t =    33.47s     Find the Window at {{230.0, 198.0}, {375.0, 700.0}}
+    t =    33.48s     Check for interrupting elements affecting Window
+    t =    33.88s         Wait for com.apple.DocumentManager.DockFolderViewService to idle
+    t =    35.02s         Wait for com.apple.springboard to idle
+    t =    37.84s     Synthesize event
+    t =    37.84s         Find the Window at {{230.0, 198.0}, {375.0, 700.0}}
+    t =    37.89s         Find the Window at {{230.0, 198.0}, {375.0, 700.0}}
+    t =    37.89s         Find the Window at {{230.0, 198.0}, {375.0, 700.0}}
+    t =    37.92s         Find the Window at {{230.0, 198.0}, {375.0, 700.0}}
+    t =    38.01s         Find the Window at {{230.0, 198.0}, {375.0, 700.0}}
+    t =    40.70s     Wait for com.natophonetics.app to idle
+    t =    42.73s Find the Window (First Match)
+/tmp/nato-ios-run06-resize/WindowResizeUITests.swift:69: error: -[WindowResizeUITests.WindowResizeUITests testRestoredAutomaticHeader] : XCTAssertGreaterThan failed: ("375.0") is not greater than ("700.0")
+    t =    43.90s Tear Down
+Test Case '-[WindowResizeUITests.WindowResizeUITests testRestoredAutomaticHeader]' failed (45.881 seconds).
+Test Suite 'WindowResizeUITests' failed at 2026-11-17 15:28:13.208.
+	 Executed 1 test, with 1 failure (0 unexpected) in 45.881 (45.888) seconds
+Test Suite 'WindowResizeUITests.xctest' failed at 2026-11-17 15:28:13.210.
+	 Executed 1 test, with 1 failure (0 unexpected) in 45.881 (45.891) seconds
+Test Suite 'Selected tests' failed at 2026-11-17 15:28:13.211.
+	 Executed 1 test, with 1 failure (0 unexpected) in 45.881 (45.984) seconds
+2026-11-17 15:28:14.342 xcodebuild[53712:9736152]  IDETestOperationsObserverDebug: Failure collecting diagnostics from simulator: Process exited with error 72:
+ xcrun: error: unable to find utility "simctl", not a developer tool or in PATH
+
+2026-11-17 15:28:14.428 xcodebuild[53712:9733668] [MT] IDETestOperationsObserverDebug: 90.148 elapsed -- Testing started completed.
+2026-11-17 15:28:14.428 xcodebuild[53712:9733668] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-11-17 15:28:14.428 xcodebuild[53712:9733668] [MT] IDETestOperationsObserverDebug: 90.148 sec, +90.148 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/nato-ios-run06-resize/restored-auto.xcresult
+
+Failing tests:
+	WindowResizeUITests.testRestoredAutomaticHeader()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+
+EXIT 65

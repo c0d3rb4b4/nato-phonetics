@@ -1,0 +1,876 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild test -project /private/tmp/nato-ios-capture/Capture.xcodeproj -scheme Capture -destination "platform=iOS Simulator,id=0653F7EC-9237-4AC5-A264-12969E625070" -derivedDataPath /private/tmp/nato-ios-capture/build -resultBundlePath /private/tmp/nato-ios-capture/Capture.xcresult -parallel-testing-enabled NO CODE_SIGNING_ALLOWED=NO
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+Writing result bundle at path:
+	/private/tmp/nato-ios-capture/Capture.xcresult
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (1 target)
+    Target 'CaptureUITests' in project 'Capture' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: bedda5fc28b2d7348e9fbb4f778e5584
+Build description path: /tmp/nato-ios-capture/build/Build/Intermediates.noindex/XCBuildData/bedda5fc28b2d7348e9fbb4f778e5584.xcbuilddata
+CreateBuildDirectory /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules
+    cd /tmp/nato-ios-capture/Capture.xcodeproj
+    builtin-create-build-directory /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules
+
+CreateBuildDirectory /tmp/nato-ios-capture/build/ModuleCache.noindex
+    cd /tmp/nato-ios-capture/Capture.xcodeproj
+    builtin-create-build-directory /tmp/nato-ios-capture/build/ModuleCache.noindex
+
+CreateBuildDirectory /tmp/nato-ios-capture/build/CompilationCache.noindex
+    cd /tmp/nato-ios-capture/Capture.xcodeproj
+    builtin-create-build-directory /tmp/nato-ios-capture/build/CompilationCache.noindex
+
+CreateBuildDirectory /tmp/nato-ios-capture/build/Build/Intermediates.noindex
+    cd /tmp/nato-ios-capture/Capture.xcodeproj
+    builtin-create-build-directory /tmp/nato-ios-capture/build/Build/Intermediates.noindex
+
+CreateBuildDirectory /tmp/nato-ios-capture/build/Build/Products
+    cd /tmp/nato-ios-capture/Capture.xcodeproj
+    builtin-create-build-directory /tmp/nato-ios-capture/build/Build/Products
+
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk /tmp/nato-ios-capture/build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache
+    cd /tmp/nato-ios-capture/Capture.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -o /tmp/nato-ios-capture/build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache
+
+CreateBuildDirectory /tmp/nato-ios-capture/build/Build/Intermediates.noindex/PrecompiledHeaders
+    cd /tmp/nato-ios-capture/Capture.xcodeproj
+    builtin-create-build-directory /tmp/nato-ios-capture/build/Build/Intermediates.noindex/PrecompiledHeaders
+
+CreateBuildDirectory /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator
+    cd /tmp/nato-ios-capture/Capture.xcodeproj
+    builtin-create-build-directory /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator
+
+CreateBuildDirectory /tmp/nato-ios-capture/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+    cd /tmp/nato-ios-capture/Capture.xcodeproj
+    builtin-create-build-directory /tmp/nato-ios-capture/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+CreateBuildDirectory /tmp/nato-ios-capture/build/Build/Intermediates.noindex/ExplicitPrecompiledModules
+    cd /tmp/nato-ios-capture/Capture.xcodeproj
+    builtin-create-build-directory /tmp/nato-ios-capture/build/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+CreateBuildDirectory /tmp/nato-ios-capture/build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator
+    cd /tmp/nato-ios-capture/Capture.xcodeproj
+    builtin-create-build-directory /tmp/nato-ios-capture/build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator
+
+WriteAuxiliaryFile /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/Capture-6823e0650b8cd379eea61a2df523ee81-VFS-iphonesimulator/all-product-headers.yaml
+    cd /tmp/nato-ios-capture/Capture.xcodeproj
+    write-file /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/Capture-6823e0650b8cd379eea61a2df523ee81-VFS-iphonesimulator/all-product-headers.yaml
+
+WriteAuxiliaryFile /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/ProductTypeInfoPlistAdditions.plist (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    write-file /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/ProductTypeInfoPlistAdditions.plist
+
+WriteAuxiliaryFile /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/empty-CaptureUITests.plist (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    write-file /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/empty-CaptureUITests.plist
+
+WriteAuxiliaryFile /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.SwiftConstValuesFileList (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    write-file /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.SwiftFileList (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    write-file /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.SwiftFileList
+
+WriteAuxiliaryFile /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests_const_extract_protocols.json (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    write-file /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests_const_extract_protocols.json
+
+WriteAuxiliaryFile /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.LinkFileList (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    write-file /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.LinkFileList
+
+WriteAuxiliaryFile /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests-OutputFileMap.json (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    write-file /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests-OutputFileMap.json
+
+WriteAuxiliaryFile /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests.hmap (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    write-file /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests.hmap
+
+WriteAuxiliaryFile /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests.DependencyMetadataFileList (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    write-file /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests.DependencyMetadataFileList
+
+WriteAuxiliaryFile /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests.DependencyStaticMetadataFileList (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    write-file /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-project-headers.hmap (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    write-file /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-project-headers.hmap
+
+WriteAuxiliaryFile /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-own-target-headers.hmap (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    write-file /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-own-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-generated-files.hmap (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    write-file /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-generated-files.hmap
+
+WriteAuxiliaryFile /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-all-target-headers.hmap (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    write-file /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-all-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-all-non-framework-target-headers.hmap (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    write-file /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-all-non-framework-target-headers.hmap
+
+MkDir /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    /bin/mkdir -p /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest
+
+ProcessInfoPlistFile /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/Info.plist /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/empty-CaptureUITests.plist (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    builtin-infoPlistUtility /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/empty-CaptureUITests.plist -producttype com.apple.product-type.bundle.ui-testing -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/ProductTypeInfoPlistAdditions.plist -o /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/Info.plist
+
+SwiftDriver CaptureUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CaptureUITests -Onone @/tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -target arm64-apple-ios16.4-simulator -g -module-cache-path /tmp/nato-ios-capture/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/nato-ios-capture/build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk/Developer/Library/Frameworks -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/nato-ios-capture/build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache -output-file-map /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/nato-ios-capture/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/nato-ios-capture/build/ModuleCache.noindex -sdk-module-cache-path /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /tmp/nato-ios-capture/build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-generated-files.hmap -Xcc -I/tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-own-target-headers.hmap -Xcc -I/tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-project-headers.hmap -Xcc -I/tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/DerivedSources/arm64 -Xcc -I/tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests-Swift.h -working-directory /tmp/nato-ios-capture -experimental-emit-module-separately -disable-cmo
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/_SwiftConcurrencyShims-9YYITM0U7GAEH59VQKXE0RH7G.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/ptrcheck-8ZZWQEZENKYNQY1KZXOT83GR5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/_Builtin_stddef-2NEGF9V6SWS231U2RCZC3WC8S.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/_Builtin_float-MJX0JDYD4CEAH1ZRR17DZ0CO.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/DeveloperToolsSupport-D69NE1A5PJR6RKVVW7W9TGQ9D.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/_AvailabilityInternal-EMT5IKSAEPFZ3WXOC19QZHZJX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/_Builtin_stdarg-62K3KG88PTP2SJXXPBKJKOAQM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/_Builtin_stdbool-2S1KO98SHONE25B9I9R5ATJ8H.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/SwiftShims-ZXJZ0FBQ7SMGCYTXR3ZROIOK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/ptrauth-DFQ3912R2HOMDRXOH723IPGYW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/_DarwinFoundation1-DCUXF9X4T2RM2WDYXXRAQTSVU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/_DarwinFoundation2-7VHAF9IM0GUPYWFEH7RDXPU2C.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/_Builtin_limits-E28WQMWHMGQOKCYEUZ049D0YA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/_Builtin_stdint-B04NIEB2RESSCVV6JAA2RJ7KN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/string_h-ABRMTLHUUG3SRIUZ7A3AVE70N.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/sys_types-3FHPJRLKHFF58BH13O4D98BFZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/_Builtin_tgmath-1JSM3O2O2SV9DJTSH7YCOX8KF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/_Builtin_intrinsics-BVL1RR4T64C53ZBVX7IX66PC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/_DarwinFoundation3-4UO4Y8ZQCVWGGIUTLZP5MI6VN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/_Builtin_stdatomic-DMGBG3TVJ861SAFL5IVUKBXF7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/_Builtin_inttypes-AMM8P27KONPM3466KOMLL40U3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/Darwin-3DME9D5RL54BRZUVCSKV7BUN7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/simd-97SI3GXDZV8N2RWCPYJJTS6KZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/MachO-38ZL3XLCDJZCQES5HQE59TLOA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/ObjectiveC-6NG8HZQA6AI2L94BEJ0RKJ8HZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/os_object-AXQ8LVWAS1IRF3SKIKUQM5XYX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/Spatial-2DJ5W1WS5EV253MUJZWQTGIVL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/os_workgroup-F54U2E29PRSQMXGAWA1TG4MR9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/Dispatch-42X7U2HHVVKVUTX4RTHB63EX0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/XPC-8AR3BNR8FJ74DTALP2YHN942N.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/CoreFoundation-ECAMQP0IKAKD7SNMV1G1WTKQN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/os-4301FJ5I38M3HA5B8AKXVJF2I.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/CoreGraphics-50N2JH46U9PA8W1MIL0AM3OQG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/CFNetwork-BGCP7XCVA9CNGABXPVAFHIGQU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/Security-5I5EMF1IE6GYM9Z4WU30UYUKZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/Foundation-1HCGF8BUPCSQTRUMXJBACZJ83.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/ImageIO-8QADQTAFNW8HCS4IVM606GCSD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/CoreText-A52OTTF6I3KJ00TRBL3H9HG5C.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/DataDetection-31XYI2GNWV0P1MOP7668I9IFF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/_LocationEssentials-5SIDITLEBL7P7PAA14Y39BN7Z.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/UIUtilities-3LS5DEHP34P5BGWA0OJBNR4CV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/UserNotifications-5NO0586HH1GWHBB5JZL6REJ22.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/UniformTypeIdentifiers-842PTHCV7RC6NCB3PGKH4FV29.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/Symbols-BTZIIGEF2RWDHCQLC6GIC9H0V.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/FileProvider-ENNLV15TDZYZMP41VU4BE5B68.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/OpenGLES-42AFDDFLBT5DK6142CWQ433SO.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/Accessibility-4T7J5T8EMIZ8RXIOZ9UDDHHC7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/OSLog-DF0XW5VQ2SE8K7WL345H0RB9I.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/IOSurface-E5IT5QZN3MW96WI9D8AZGMGOQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/CoreLocation-EMZPH5TIZQOF1P7QVZSVURZAD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/CoreTransferable-4S6BTL11M2HLZKZSZEA1GZ3XV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/Metal-E7SJAO7QPSNSSBN1SJQEN44UW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/CoreMotion-4DPE59QTHQ5QSL2LGSY0M4BXK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/CoreVideo-5F2HNQZ1DPTXODAO5KGKYPTRY.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/CoreImage-5JYHH1HNBYV3TAJDVERBRUFL1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/QuartzCore-C9NWDYLQOOO53GFYGOE8H32ZK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/SwiftUICore-7P0Z3XW2UW34JZWO57N6YKOSI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules/UIKit-BUICOX0XUZ0HVSSQMN1P9PKG9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/XCUIAutomation-6FA7CEYYCRGY6G061HVD6B8M3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/nato-ios-capture/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/XCTest-CH3QB01AVVUJ96AJIQVGIXG1V.pcm
+
+SwiftExplicitDependencyCompileModuleFromInterface arm64 /tmp/nato-ios-capture/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/XCUIAutomation-OYOJTJ47UPVC.swiftmodule
+
+SwiftExplicitDependencyCompileModuleFromInterface arm64 /tmp/nato-ios-capture/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/XCTest-I2BH2NY55F3D.swiftmodule
+
+SwiftCompile normal arm64 Compiling\ CaptureUITests.swift /tmp/nato-ios-capture/CaptureUITests.swift (in target 'CaptureUITests' from project 'Capture')
+
+SwiftCompile normal arm64 /tmp/nato-ios-capture/CaptureUITests.swift (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    builtin-SwiftPerFileCompile CaptureUITests.swift
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ CaptureUITests (in target 'CaptureUITests' from project 'Capture')
+
+SwiftCompile normal arm64 (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for CaptureUITests (in target 'CaptureUITests' from project 'Capture')
+
+SwiftDriver\ Compilation\ Requirements CaptureUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CaptureUITests -Onone @/tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -target arm64-apple-ios16.4-simulator -g -module-cache-path /tmp/nato-ios-capture/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/nato-ios-capture/build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk/Developer/Library/Frameworks -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/nato-ios-capture/build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache -output-file-map /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/nato-ios-capture/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/nato-ios-capture/build/ModuleCache.noindex -sdk-module-cache-path /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /tmp/nato-ios-capture/build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-generated-files.hmap -Xcc -I/tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-own-target-headers.hmap -Xcc -I/tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-project-headers.hmap -Xcc -I/tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/DerivedSources/arm64 -Xcc -I/tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests-Swift.h -working-directory /tmp/nato-ios-capture -experimental-emit-module-separately -disable-cmo
+
+SwiftMergeGeneratedHeaders /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/DerivedSources/CaptureUITests-Swift.h /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests-Swift.h (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    builtin-swiftHeaderTool -arch arm64 /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests-Swift.h -o /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/DerivedSources/CaptureUITests-Swift.h
+
+Copy /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests.swiftmodule/arm64-apple-ios-simulator.abi.json /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.abi.json (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.abi.json /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests.swiftmodule/arm64-apple-ios-simulator.swiftdoc /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.swiftdoc (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.swiftdoc /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests.swiftmodule/arm64-apple-ios-simulator.swiftdoc
+
+Copy /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests.swiftmodule/arm64-apple-ios-simulator.swiftmodule /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.swiftmodule (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.swiftmodule /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.swiftsourceinfo (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.swiftsourceinfo /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+SwiftDriverJobDiscovery normal arm64 Compiling CaptureUITests.swift (in target 'CaptureUITests' from project 'Capture')
+
+SwiftDriver\ Compilation CaptureUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CaptureUITests -Onone @/tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -target arm64-apple-ios16.4-simulator -g -module-cache-path /tmp/nato-ios-capture/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/nato-ios-capture/build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk/Developer/Library/Frameworks -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/nato-ios-capture/build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache -output-file-map /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/nato-ios-capture/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/nato-ios-capture/build/ModuleCache.noindex -sdk-module-cache-path /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /tmp/nato-ios-capture/build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-generated-files.hmap -Xcc -I/tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-own-target-headers.hmap -Xcc -I/tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-project-headers.hmap -Xcc -I/tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/DerivedSources/arm64 -Xcc -I/tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests-Swift.h -working-directory /tmp/nato-ios-capture -experimental-emit-module-separately -disable-cmo
+
+Ld /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/CaptureUITests normal (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios16.4-simulator -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/tmp/nato-ios-capture/build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F/tmp/nato-ios-capture/build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk/Developer/Library/Frameworks -filelist /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.swiftmodule -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport -framework Foundation -o /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/CaptureUITests
+/tmp/nato-ios-capture/Capture.xcodeproj: CaptureUITests: ld: warning: building for iOS-simulator-16.4, but linking with dylib '@rpath/XCTest.framework/XCTest' which was built for newer version 17.0
+/tmp/nato-ios-capture/Capture.xcodeproj: CaptureUITests: ld: warning: building for iOS-simulator-16.4, but linking with dylib '@rpath/libXCTestSwiftSupport.dylib' which was built for newer version 17.0
+/tmp/nato-ios-capture/Capture.xcodeproj: CaptureUITests: ld: warning: building for iOS-simulator-16.4, but linking with dylib '@rpath/XCUIAutomation.framework/XCUIAutomation' which was built for newer version 17.0
+
+ExtractAppIntentsMetadata (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name CaptureUITests --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk --xcode-version 27B52 --platform-family iOS --deployment-target 16.4 --bundle-identifier com.natophonetics.capture --output /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest --target-triple arm64-apple-ios16.4-simulator --binary-file /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/CaptureUITests --dependency-file /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests_dependency_info.dat --stringsdata-file /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.SwiftFileList --metadata-file-list /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests.DependencyMetadataFileList --static-metadata-file-list /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests.DependencyStaticMetadataFileList --swift-const-vals-list /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-11-16 16:30:56.701 appintentsmetadataprocessor[75680:9044692] Starting App Intents metadata extraction
+2026-11-16 16:30:56.718 appintentsmetadataprocessor[75680:9044692] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+CopySwiftLibs /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/CaptureUITests --scan-folder /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/Frameworks --scan-folder /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/PlugIns --scan-folder /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/SystemExtensions --scan-folder /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/Extensions --scan-folder /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+AppIntentsSSUTraining (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsnltrainingprocessor --infoplist-path /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/Info.plist --temp-dir-path /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/ssu --bundle-id com.natophonetics.capture --product-path /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest --extracted-metadata-path /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/Metadata.appintents --metadata-file-list /tmp/nato-ios-capture/build/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests.DependencyMetadataFileList --source-file /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/Info.plist --archive-ssu-assets
+2026-11-16 16:30:56.761 appintentsnltrainingprocessor[75681:9044695] Parsing options for appintentsnltrainingprocessor
+2026-11-16 16:30:56.762 appintentsnltrainingprocessor[75681:9044695] Starting AppIntents SSU YAML Generation
+2026-11-16 16:30:56.765 appintentsnltrainingprocessor[75681:9044695] No AppShortcuts found - Skipping.
+
+CopyPlistFile /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/Info.plist /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Xcode/Agents/XCTRunner.app/Info.plist (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    builtin-copyPlist --validate --convert xml1 --macro-expansion WRAPPEDPRODUCTNAME CaptureUITests-Runner --macro-expansion WRAPPEDPRODUCTBUNDLEIDENTIFIER com.natophonetics.capture.xctrunner --macro-expansion TESTPRODUCTNAME CaptureUITests --macro-expansion TESTPRODUCTBUNDLEIDENTIFIER com.natophonetics.capture --copy-value UIDeviceFamily /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/Info.plist --outdir /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app -- /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Xcode/Agents/XCTRunner.app/Info.plist
+
+CopyAndPreserveArchs /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/CaptureUITests-Runner (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Xcode/Agents/XCTRunner.app/XCTRunner -output /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/CaptureUITests-Runner -extract arm64
+
+MkDir /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    /bin/mkdir -p /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app
+
+Copy /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PkgInfo /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Xcode/Agents/XCTRunner.app/PkgInfo (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Xcode/Agents/XCTRunner.app/PkgInfo /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app
+
+RegisterExecutionPolicyException /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    builtin-RegisterExecutionPolicyException /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest
+
+Touch /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-capture
+    /usr/bin/touch -c /tmp/nato-ios-capture/build/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest
+
+PruneExplicitPrecompiledModules /tmp/nato-ios-capture/build/SDKExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /tmp/nato-ios-capture/build/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /tmp/nato-ios-capture/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+2026-11-16 16:31:11.914923+0000 CaptureUITests-Runner[75743:9045268] [Default] Running tests...
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'All tests' started at 2026-11-16 16:31:25.701.
+Test Suite 'CaptureUITests.xctest' started at 2026-11-16 16:31:25.722.
+Test Suite 'CaptureUITests' started at 2026-11-16 16:31:25.723.
+Test Case '-[CaptureUITests.CaptureUITests testCaptureNativeStates]' started.
+    t =     0.00s Start Test at 2026-11-16 16:31:25.725
+    t =     0.84s Set Up
+    t =     0.84s Open com.natophonetics.app
+    t =     0.84s     Launch com.natophonetics.app
+    t =     0.84s         Terminate com.natophonetics.app:68066
+    t =     6.29s         Setting up automation session
+    t =     9.87s         Wait for com.natophonetics.app to idle
+    t =    11.28s Open com.natophonetics.app with URL natophonetics://settings
+    t =    11.28s     Launch com.natophonetics.app
+    t =    11.35s         Setting up automation session
+    t =    11.36s         Wait for com.natophonetics.app to idle
+    t =    12.37s Wait for com.natophonetics.app to become Running Foreground
+    t =    12.39s Requesting snapshot of accessibility hierarchy for app with pid 75915
+    t =    12.61s Requesting snapshot of accessibility hierarchy for app with pid 75915
+Attributes: Application, 0x101d22c80, pid: 75915, label: 'NATO Phonetics'
+Element subtree:
+ →Application, 0x101d22c80, pid: 75915, label: 'NATO Phonetics'
+    Window (Main), 0x101d24c00, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x10233cef0, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x10233d020, {{0.0, 0.0}, {402.0, 874.0}}
+          Other, 0x10233cda0, {{0.0, 0.0}, {402.0, 874.0}}
+            Other, 0x10233c3f0, {{0.0, 0.0}, {402.0, 874.0}}
+              Other, 0x10233d5d0, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x10233d700, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x10233d150, {{0.0, 0.0}, {402.0, 118.0}}
+                    Button, 0x10233d280, {{8.0, 66.0}, {48.0, 48.0}}, label: 'Home'
+                    StaticText, 0x10233d3b0, {{56.0, 67.0}, {290.0, 45.7}}, label: 'Settings'
+                      StaticText, 0x10233d880, {{56.0, 67.0}, {290.0, 45.7}}, label: 'Settings'
+                  Other, 0x10233d9b0, {{0.0, 0.0}, {402.0, 874.0}}, identifier: 'app-theme'
+                  Other, 0x10233dae0, {{0.0, 118.0}, {402.0, 756.0}}
+                    Other, 0x10233dc10, {{0.0, 118.0}, {402.0, 722.0}}, identifier: 'screen-scroll'
+                      ScrollView, 0x10233dd40, {{0.0, 118.0}, {402.0, 722.0}}
+                        Other, 0x10233de70, {{0.0, 118.0}, {402.0, 822.0}}
+                          Other, 0x10233dfa0, {{0.0, 118.0}, {402.0, 822.0}}
+                            StaticText, 0x10233e0d0, {{16.0, 142.0}, {370.0, 31.3}}, label: 'Appearance'
+                              StaticText, 0x10233e200, {{16.0, 142.0}, {370.0, 31.3}}, label: 'Appearance'
+                            StaticText, 0x10233e330, {{16.0, 193.3}, {370.0, 48.0}}, label: 'System follows your device’s current light or dark appearance.'
+                              StaticText, 0x10233e460, {{16.0, 193.3}, {370.0, 48.0}}, label: 'System follows your device’s current light or dark appearance.'
+                            Other, 0x10233e590, {{16.0, 253.3}, {370.0, 48.0}}, label: 'System', value: radio button, chec...
+                            Other, 0x10233e6c0, {{16.0, 309.3}, {370.0, 48.0}}, label: 'Light', value: radio button, unch...
+                            Other, 0x10233e7f0, {{16.0, 365.3}, {370.0, 48.0}}, label: 'Dark', value: radio button, unch...
+                            StaticText, 0x10233e920, {{16.0, 433.3}, {370.0, 31.3}}, label: 'Voice'
+                              StaticText, 0x10233ea50, {{16.0, 433.3}, {370.0, 31.3}}, label: 'Voice'
+                            Button, 0x10233eb80, {{16.0, 484.7}, {370.0, 48.0}}, label: 'Change Voice'
+                            StaticText, 0x10233ecb0, {{16.0, 544.7}, {370.0, 24.0}}, label: 'System Default'
+                              StaticText, 0x10233ede0, {{16.0, 544.7}, {370.0, 24.0}}, label: 'System Default'
+                            Button, 0x10233ef10, {{16.0, 580.7}, {370.0, 48.0}}, label: 'Audio help and sound test'
+                            StaticText, 0x10233f040, {{16.0, 648.7}, {370.0, 31.3}}, label: 'Preferences'
+                              StaticText, 0x10233f170, {{16.0, 648.7}, {370.0, 31.3}}, label: 'Preferences'
+                            StaticText, 0x10233f2a0, {{16.0, 708.0}, {370.0, 48.0}}, label: 'Choices are selected after they have been saved on this device.'
+                              StaticText, 0x10233f3d0, {{16.0, 708.0}, {370.0, 48.0}}, label: 'Choices are selected after they have been saved on this device.'
+                            Button, 0x10233f500, {{16.0, 776.0}, {370.0, 48.0}}, label: 'Reset Preferences'
+                            StaticText, 0x10233f630, {{16.0, 836.0}, {370.0, 72.0}}, label: 'Reset restores System appearance and System Default voice. It does not delete progress or other app data.'
+                              StaticText, 0x10233f760, {{16.0, 836.0}, {370.0, 72.0}}, label: 'Reset restores System appearance and System Default voice. It does not delete progress or other app data.'
+                        Other, 0x10233f890, {{369.0, 118.0}, {30.0, 694.0}}, label: 'Vertical scroll bar, 2 pages', value: 0%
+                          Other, 0x10233f9c0, {{396.0, 121.0}, {3.0, 574.3}}
+                        Other, 0x10233faf0, {{28.0, 807.0}, {346.0, 30.0}}, label: 'Horizontal scroll bar, 1 page', value: 0%
+                          Other, 0x10233fc20, {{65.0, 834.0}, {272.0, 3.0}}
+                        Other, 0x10233fd50, {{369.0, 118.0}, {30.0, 694.0}}, label: 'Vertical scroll bar, 2 pages', value: 0%
+                          Other, 0x10233fe80, {{396.0, 121.0}, {3.0, 574.3}}
+                        Other, 0x10233ffb0, {{28.0, 807.0}, {346.0, 30.0}}, label: 'Horizontal scroll bar, 1 page', value: 0%
+                          Other, 0x1023400e0, {{65.0, 834.0}, {272.0, 3.0}}
+Path to element:
+ →Application, 0x101d22c80, pid: 75915, label: 'NATO Phonetics'
+Query chain:
+ →Find: Application 'com.natophonetics.app'
+  Output: {
+    Application, 0x102340430, pid: 75915, label: 'NATO Phonetics'
+  }
+
+    t =    12.63s Waiting 10.0s for "Light" Any to exist
+    t =    13.66s     Checking `Expect predicate `existsNoRetry == 1` for object "Light" Any`
+    t =    13.67s         Checking existence of `"Light" Any`
+    t =    13.70s Tap "Light" Any
+    t =    13.70s     Wait for com.natophonetics.app to idle
+    t =    13.70s     Find the "Light" Any
+    t =    13.72s     Check for interrupting elements affecting "Light" Other
+    t =    13.79s         Wait for com.apple.springboard to idle
+    t =    14.05s     Found 1 interrupting element:
+    t =    14.06s         Find the "Open in “NATO Phonetics”?" Alert
+    t =    14.08s "Open in “NATO Phonetics”?" Alert from Application 'com.apple.springboard'
+    t =    14.08s     Invoking UI interruption monitors for "Open in “NATO Phonetics”?" Alert from Application 'com.apple.springboard'
+    t =    14.08s         Find the "Open in “NATO Phonetics”?" Alert
+    t =    14.10s         Checking existence of `Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"')`
+    t =    14.13s         Checking existence of `Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"')`
+    t =    14.16s Default interruption handler attempting to dismiss alert by tapping Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"').
+    t =    14.16s         Tap Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"')
+    t =    14.16s             Wait for com.apple.springboard to idle
+    t =    14.16s             Find the Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"')
+    t =    14.19s             Check for interrupting elements affecting "Cancel" Button
+    t =    14.23s             Synthesize event
+    t =    15.15s             Wait for com.apple.springboard to idle
+    t =    16.03s         Waiting 1.0s for "Open in “NATO Phonetics”?" Alert to not exist
+    t =    17.04s             Checking `Expect predicate `existsNoRetry == 0` for object "Open in “NATO Phonetics”?" Alert`
+    t =    17.06s                 Checking existence of `"Open in “NATO Phonetics”?" Alert`
+    t =    17.24s                 Capturing element debug description
+    t =    17.25s                     Requesting snapshot of accessibility hierarchy for app with pid 61535
+    t =    17.34s                     Requesting snapshot of accessibility hierarchy for app with pid 61535
+    t =    17.34s                     Requesting snapshot of accessibility hierarchy for app with pid 61535
+    t =    17.35s             Checking existence of `"Open in “NATO Phonetics”?" Alert`
+    t =    17.40s         Collecting debug information to assist test failure triage
+    t =    17.40s             Requesting snapshot of accessibility hierarchy for app with pid 61535
+    t =    17.54s         Checking existence of `Button (Elements matching predicate 'label CONTAINS[d] "Don’t" OR label CONTAINS "Cancel"')`
+    t =    17.57s         Requesting snapshot of accessibility hierarchy for app with pid 61535
+    t =    17.62s         Find: Descendants matching type Alert
+    t =    17.62s         Find: Identity Binding
+    t =    17.62s         Find: Descendants matching type Button
+    t =    17.62s         Find: Elements matching predicate 'label CONTAINS[d] "Don’t" OR label CONTAINS "Cancel"'
+    t =    17.66s         Requesting snapshot of accessibility hierarchy for app with pid 61535
+    t =    17.70s         Find: Descendants matching type Alert
+    t =    17.70s         Find: Identity Binding
+    t =    17.70s         Find: Descendants matching type Button
+    t =    17.71s         Find: Elements matching predicate 'label CONTAINS[d] "Don’t" OR label CONTAINS "Cancel"'
+    t =    17.71s         Requesting snapshot of accessibility hierarchy for app with pid 61535
+    t =    17.75s         Find: Descendants matching type Alert
+    t =    17.75s         Find: Identity Binding
+    t =    17.75s         Find: Descendants matching type Button
+    t =    17.76s         Requesting snapshot of accessibility hierarchy for app with pid 61535
+    t =    17.80s         Find: Descendants matching type Alert
+    t =    17.80s         Find: Identity Binding
+    t =    17.80s         Requesting snapshot of accessibility hierarchy for app with pid 61535
+    t =    17.84s         Find: Descendants matching type Alert
+    t =    17.85s         Requesting snapshot of accessibility hierarchy for app with pid 61535
+    t =    17.94s Default interruption handler attempting to dismiss alert by tapping 'Attributes: Button, 0x10235db90, {{57.0, 450.0}, {140.0, 48.0}}, label: 'Cancel'
+Element subtree:
+ →Button, 0x10235db90, {{57.0, 450.0}, {140.0, 48.0}}, label: 'Cancel'
+Path to element:
+ →Application, 0x102346310, pid: 61535, label: ' '
+  ↳Window (Main), 0x10235bbf0, {{0.0, 0.0}, {402.0, 874.0}}
+   ↳Other, 0x10235bf80, {{0.0, 0.0}, {402.0, 874.0}}
+    ↳Alert, 0x10235c310, {{41.0, 388.0}, {320.0, 126.0}}, label: 'Open in “NATO Phonetics”?'
+     ↳Other, 0x10235c440, {{41.0, 388.0}, {320.0, 126.0}}
+      ↳Other, 0x10235c570, {{41.0, 388.0}, {320.0, 126.0}}
+       ↳Other, 0x10235c7d0, {{41.0, 388.0}, {320.0, 126.0}}
+        ↳ScrollView, 0x10235d800, {{41.0, 434.0}, {320.0, 80.0}}
+         ↳Other, 0x10235d930, {{41.0, 434.0}, {320.0, 80.0}}
+          ↳Other, 0x10235da60, {{57.0, 450.0}, {288.0, 48.0}}
+           ↳Button, 0x10235db90, {{57.0, 450.0}, {140.0, 48.0}}, label: 'Cancel'
+Query chain:
+ →Find: Application 'com.apple.springboard'
+  Output: {
+    Application, 0x102381f30, pid: 61535, label: ' '
+  }
+  ↪︎Find: Descendants matching type Alert
+    Output: {
+      Alert, 0x101d5d020, {{41.0, 388.0}, {320.0, 126.0}}, label: 'Open in “NATO Phonetics”?'
+    }
+    ↪︎Find: Identity Binding
+      Output: {
+        Alert, 0x10237eff0, {{41.0, 388.0}, {320.0, 126.0}}, label: 'Open in “NATO Phonetics”?'
+      }
+      ↪︎Find: Descendants matching type Button
+        Output: {
+          Button, 0x101d4fc70, {{57.0, 450.0}, {140.0, 48.0}}, label: 'Cancel'
+          Button, 0x101d4fda0, {{205.0, 450.0}, {140.0, 48.0}}, label: 'Open'
+        }
+        ↪︎Find: Elements matching predicate 'label CONTAINS[d] "Don’t" OR label CONTAINS "Cancel"'
+          Output: {
+            Button, 0x101d43ae0, {{57.0, 450.0}, {140.0, 48.0}}, label: 'Cancel'
+          }
+' button
+    t =    17.94s         Tap "Cancel" Button
+    t =    17.95s             Wait for com.apple.springboard to idle
+    t =    17.95s             Find the "Cancel" Button
+    t =    17.98s             Check for interrupting elements affecting "Cancel" Button
+    t =    18.06s             Synthesize event
+    t =    18.38s             Wait for com.apple.springboard to idle
+    t =    19.17s         Waiting 1.0s for "Open in “NATO Phonetics”?" Alert to not exist
+    t =    20.17s             Checking `Expect predicate `existsNoRetry == 0` for object "Open in “NATO Phonetics”?" Alert`
+    t =    20.18s                 Checking existence of `"Open in “NATO Phonetics”?" Alert`
+    t =    20.21s             Checking existence of `"Open in “NATO Phonetics”?" Alert`
+    t =    20.25s         Verifying handling...
+    t =    20.25s             Wait for com.apple.springboard to idle
+    t =    20.29s Confirmed successful handling of interrupting element
+    t =    20.29s     Find the "Open in “NATO Phonetics”?" Alert
+    t =    20.31s     Invoking UI interruption monitors for "Open in “NATO Phonetics”?" Alert from Application 'com.apple.springboard'
+    t =    20.31s         Find the "Open in “NATO Phonetics”?" Alert
+    t =    20.34s         Checking existence of `Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"')`
+    t =    20.36s         Checking existence of `Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"')`
+    t =    20.39s Default interruption handler attempting to dismiss alert by tapping Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"').
+    t =    20.39s         Tap Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"')
+    t =    20.39s             Wait for com.apple.springboard to idle
+    t =    20.39s             Find the Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"')
+    t =    20.41s             Check for interrupting elements affecting "Cancel" Button
+    t =    20.45s             Synthesize event
+    t =    20.74s             Wait for com.apple.springboard to idle
+    t =    21.02s         Waiting 1.0s for Alert to not exist
+    t =    22.02s             Checking `Expect predicate `existsNoRetry == 0` for object Alert`
+    t =    22.02s                 Checking existence of `Alert`
+    t =    22.05s             Checking existence of `Alert`
+    t =    22.07s         Verifying handling...
+    t =    22.07s             Wait for com.apple.springboard to idle
+    t =    22.11s Confirmed successful handling of interrupting element
+    t =    22.11s     Find the "Open in “NATO Phonetics”?" Alert
+    t =    22.14s     Invoking UI interruption monitors for "Open in “NATO Phonetics”?" Alert from Application 'com.apple.springboard'
+    t =    22.14s         Find the "Open in “NATO Phonetics”?" Alert
+    t =    22.16s         Checking existence of `Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"')`
+    t =    22.20s         Checking existence of `Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"')`
+    t =    22.24s Default interruption handler attempting to dismiss alert by tapping Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"').
+    t =    22.25s         Tap Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"')
+    t =    22.25s             Wait for com.apple.springboard to idle
+    t =    22.27s             Find the Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"')
+    t =    22.30s             Check for interrupting elements affecting "Cancel" Button
+    t =    22.45s             Synthesize event
+    t =    22.74s             Wait for com.apple.springboard to idle
+    t =    23.12s         Waiting 1.0s for Alert to not exist
+    t =    24.13s             Checking `Expect predicate `existsNoRetry == 0` for object Alert`
+    t =    24.13s                 Checking existence of `Alert`
+    t =    24.15s             Checking existence of `Alert`
+    t =    24.18s         Verifying handling...
+    t =    24.18s             Wait for com.apple.springboard to idle
+    t =    24.21s Confirmed successful handling of interrupting element
+    t =    24.21s     Find the "Open in “NATO Phonetics”?" Alert
+    t =    24.24s     Invoking UI interruption monitors for "Open in “NATO Phonetics”?" Alert from Application 'com.apple.springboard'
+    t =    24.24s         Find the "Open in “NATO Phonetics”?" Alert
+    t =    24.26s         Checking existence of `Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"')`
+    t =    24.29s         Checking existence of `Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"')`
+    t =    24.32s Default interruption handler attempting to dismiss alert by tapping Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"').
+    t =    24.32s         Tap Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"')
+    t =    24.32s             Wait for com.apple.springboard to idle
+    t =    24.33s             Find the Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"')
+    t =    24.36s             Check for interrupting elements affecting "Cancel" Button
+    t =    24.39s             Synthesize event
+    t =    24.68s             Wait for com.apple.springboard to idle
+    t =    24.93s         Waiting 1.0s for Alert to not exist
+    t =    25.94s             Checking `Expect predicate `existsNoRetry == 0` for object Alert`
+    t =    25.95s                 Checking existence of `Alert`
+    t =    26.00s             Checking existence of `Alert`
+    t =    26.03s         Verifying handling...
+    t =    26.03s             Wait for com.apple.springboard to idle
+    t =    26.07s Confirmed successful handling of interrupting element
+    t =    26.08s     Find the "Open in “NATO Phonetics”?" Alert
+    t =    26.11s     Invoking UI interruption monitors for "Open in “NATO Phonetics”?" Alert from Application 'com.apple.springboard'
+    t =    26.11s         Find the "Open in “NATO Phonetics”?" Alert
+    t =    26.14s         Checking existence of `Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"')`
+    t =    26.16s         Checking existence of `Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"')`
+    t =    26.19s Default interruption handler attempting to dismiss alert by tapping Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"').
+    t =    26.19s         Tap Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"')
+    t =    26.19s             Wait for com.apple.springboard to idle
+    t =    26.19s             Find the Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"')
+    t =    26.22s             Check for interrupting elements affecting "Cancel" Button
+    t =    26.25s             Synthesize event
+    t =    26.55s             Wait for com.apple.springboard to idle
+    t =    26.82s         Waiting 1.0s for Alert to not exist
+    t =    27.82s             Checking `Expect predicate `existsNoRetry == 0` for object Alert`
+    t =    27.82s                 Checking existence of `Alert`
+    t =    27.84s             Checking existence of `Alert`
+    t =    27.87s         Verifying handling...
+    t =    27.87s             Wait for com.apple.springboard to idle
+    t =    27.91s Confirmed successful handling of interrupting element
+    t =    27.91s     Find the "Open in “NATO Phonetics”?" Alert
+    t =    27.93s     Invoking UI interruption monitors for "Open in “NATO Phonetics”?" Alert from Application 'com.apple.springboard'
+    t =    27.93s         Find the "Open in “NATO Phonetics”?" Alert
+    t =    27.96s         Checking existence of `Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"')`
+    t =    27.98s         Checking existence of `Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"')`
+    t =    28.01s Default interruption handler attempting to dismiss alert by tapping Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"').
+    t =    28.01s         Tap Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"')
+    t =    28.01s             Wait for com.apple.springboard to idle
+    t =    28.01s             Find the Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"')
+    t =    28.14s             Check for interrupting elements affecting "Cancel" Button
+    t =    28.18s             Synthesize event
+    t =    28.49s             Wait for com.apple.springboard to idle
+    t =    28.78s         Waiting 1.0s for Alert to not exist
+    t =    29.78s             Checking `Expect predicate `existsNoRetry == 0` for object Alert`
+    t =    29.79s                 Checking existence of `Alert`
+    t =    29.82s             Checking existence of `Alert`
+    t =    29.84s         Verifying handling...
+    t =    29.87s             Wait for com.apple.springboard to idle
+    t =    29.91s Confirmed successful handling of interrupting element
+    t =    29.91s     Find the "Open in “NATO Phonetics”?" Alert
+    t =    29.93s     Invoking UI interruption monitors for "Open in “NATO Phonetics”?" Alert from Application 'com.apple.springboard'
+    t =    29.93s         Find the "Open in “NATO Phonetics”?" Alert
+    t =    29.95s         Checking existence of `Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"')`
+    t =    29.98s         Checking existence of `Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"')`
+    t =    30.01s Default interruption handler attempting to dismiss alert by tapping Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"').
+    t =    30.01s         Tap Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"')
+    t =    30.01s             Wait for com.apple.springboard to idle
+    t =    30.01s             Find the Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"')
+    t =    30.06s             Check for interrupting elements affecting "Cancel" Button
+    t =    30.13s             Synthesize event
+    t =    30.44s             Wait for com.apple.springboard to idle
+    t =    31.66s         Waiting 1.0s for Alert to not exist
+    t =    32.70s             Checking `Expect predicate `existsNoRetry == 0` for object Alert`
+    t =    32.70s                 Checking existence of `Alert`
+    t =    32.74s             Checking existence of `Alert`
+    t =    32.76s         Verifying handling...
+    t =    32.85s Confirmed successful handling of interrupting element
+    t =    32.85s     Synthesize event
+    t =    33.19s     Wait for com.natophonetics.app to idle
+    t =    33.29s Waiting 10.0s for "Home" Any to exist
+    t =    34.34s     Checking `Expect predicate `existsNoRetry == 1` for object "Home" Any`
+    t =    34.35s         Checking existence of `"Home" Any`
+    t =    34.37s Tap "Home" Any
+    t =    34.37s     Wait for com.natophonetics.app to idle
+    t =    34.37s     Find the "Home" Any
+    t =    34.38s     Check for interrupting elements affecting "Home" Button
+    t =    34.41s     Synthesize event
+    t =    34.72s     Wait for com.natophonetics.app to idle
+    t =    34.73s Waiting 10.0s for "NATO Phonetics" Any to exist
+    t =    35.76s     Checking `Expect predicate `existsNoRetry == 1` for object "NATO Phonetics" Any`
+    t =    35.78s         Checking existence of `"NATO Phonetics" Any`
+    t =    37.13s Added attachment named 'home-light'
+CAPTURE home-light
+    t =    37.13s Open com.natophonetics.app with URL natophonetics://alphabet
+    t =    37.13s     Launch com.natophonetics.app
+    t =    37.44s         Setting up automation session
+    t =    37.44s         Wait for com.natophonetics.app to idle
+    t =    38.46s Wait for com.natophonetics.app to become Running Foreground
+    t =    38.46s Waiting 10.0s for "Play A, Alfa" Any to exist
+    t =    39.49s     Checking `Expect predicate `existsNoRetry == 1` for object "Play A, Alfa" Any`
+    t =    39.51s         Checking existence of `"Play A, Alfa" Any`
+    t =    40.79s Added attachment named 'alphabet-light'
+CAPTURE alphabet-light
+    t =    40.80s Open com.natophonetics.app with URL natophonetics://converter
+    t =    40.80s     Launch com.natophonetics.app
+    t =    41.06s         Setting up automation session
+    t =    41.06s         Wait for com.natophonetics.app to idle
+    t =    42.08s Wait for com.natophonetics.app to become Running Foreground
+    t =    42.08s Waiting 10.0s for "converter-input" Any to exist
+    t =    43.11s     Checking `Expect predicate `existsNoRetry == 1` for object "converter-input" Any`
+    t =    43.12s         Checking existence of `"converter-input" Any`
+    t =    45.21s Added attachment named 'converter-empty-light'
+CAPTURE converter-empty-light
+    t =    45.22s Tap "converter-input" Any
+    t =    45.22s     Wait for com.natophonetics.app to idle
+    t =    45.24s     Find the "converter-input" Any
+    t =    45.27s     Check for interrupting elements affecting "converter-input" TextField
+    t =    46.19s     Synthesize event
+    t =    46.52s     Wait for com.natophonetics.app to idle
+    t =    51.17s Type 'CV34 7AP
+' into "converter-input" TextField
+    t =    51.18s     Wait for com.natophonetics.app to idle
+    t =    51.41s     Find the "converter-input" TextField
+    t =    51.54s     Check for interrupting elements affecting "converter-input" TextField
+    t =    51.70s     Synthesize event
+    t =    52.10s     Wait for com.natophonetics.app to idle
+    t =    52.40s Waiting 10.0s for "Play Charlie" Any to exist
+    t =    53.41s     Checking `Expect predicate `existsNoRetry == 1` for object "Play Charlie" Any`
+    t =    53.42s         Checking existence of `"Play Charlie" Any`
+    t =    54.61s Added attachment named 'converter-populated-light'
+CAPTURE converter-populated-light
+    t =    54.61s Open com.natophonetics.app with URL natophonetics://letter-quiz
+    t =    54.61s     Launch com.natophonetics.app
+    t =    54.72s         Setting up automation session
+    t =    54.72s         Wait for com.natophonetics.app to idle
+    t =    55.75s Wait for com.natophonetics.app to become Running Foreground
+    t =    55.75s Waiting 10.0s for "quiz-choice-0" Any to exist
+    t =    56.77s     Checking `Expect predicate `existsNoRetry == 1` for object "quiz-choice-0" Any`
+    t =    56.77s         Checking existence of `"quiz-choice-0" Any`
+    t =    57.93s Added attachment named 'quiz-light'
+CAPTURE quiz-light
+    t =    57.94s Waiting 10.0s for "quiz-choice-0" Any to exist
+    t =    58.95s     Checking `Expect predicate `existsNoRetry == 1` for object "quiz-choice-0" Any`
+    t =    58.95s         Checking existence of `"quiz-choice-0" Any`
+    t =    58.99s Tap "quiz-choice-0" Any
+    t =    58.99s     Wait for com.natophonetics.app to idle
+    t =    58.99s     Find the "quiz-choice-0" Any
+    t =    59.01s     Check for interrupting elements affecting "quiz-choice-0" Button
+    t =    59.13s     Synthesize event
+    t =    59.44s     Wait for com.natophonetics.app to idle
+    t =    59.44s Waiting 10.0s for "Next question" Any to exist
+    t =    60.46s     Checking `Expect predicate `existsNoRetry == 1` for object "Next question" Any`
+    t =    60.48s         Checking existence of `"Next question" Any`
+    t =    61.78s Added attachment named 'quiz-feedback-light'
+CAPTURE quiz-feedback-light
+    t =    61.78s Open com.natophonetics.app with URL natophonetics://settings
+    t =    61.78s     Launch com.natophonetics.app
+    t =    62.03s         Setting up automation session
+    t =    62.03s         Wait for com.natophonetics.app to idle
+    t =    63.04s Wait for com.natophonetics.app to become Running Foreground
+    t =    63.05s Waiting 10.0s for "Dark" Any to exist
+    t =    64.07s     Checking `Expect predicate `existsNoRetry == 1` for object "Dark" Any`
+    t =    64.08s         Checking existence of `"Dark" Any`
+    t =    64.12s Tap "Dark" Any
+    t =    64.12s     Wait for com.natophonetics.app to idle
+    t =    64.12s     Find the "Dark" Any
+    t =    64.14s     Check for interrupting elements affecting "Dark" Other
+    t =    64.49s     Synthesize event
+    t =    65.06s     Wait for com.natophonetics.app to idle
+    t =    66.19s Added attachment named 'settings-dark'
+CAPTURE settings-dark
+    t =    66.20s Waiting 10.0s for "Home" Any to exist
+    t =    67.23s     Checking `Expect predicate `existsNoRetry == 1` for object "Home" Any`
+    t =    67.23s         Checking existence of `"Home" Any`
+    t =    67.24s Tap "Home" Any
+    t =    67.24s     Wait for com.natophonetics.app to idle
+    t =    67.24s     Find the "Home" Any
+    t =    67.26s     Check for interrupting elements affecting "Home" Button
+    t =    67.28s     Synthesize event
+    t =    67.59s     Wait for com.natophonetics.app to idle
+    t =    67.59s Terminate com.natophonetics.app:75915
+    t =    68.69s Open com.natophonetics.app
+    t =    68.69s     Launch com.natophonetics.app
+    t =    71.53s         Wait for accessibility to load
+    t =    71.53s         Setting up automation session
+    t =    73.54s         Wait for com.natophonetics.app to idle
+    t =    74.89s Waiting 10.0s for "NATO Phonetics" Any to exist
+    t =    75.91s     Checking `Expect predicate `existsNoRetry == 1` for object "NATO Phonetics" Any`
+    t =    75.92s         Checking existence of `"NATO Phonetics" Any`
+    t =    77.27s Added attachment named 'home-dark-restarted'
+CAPTURE home-dark-restarted
+    t =    77.27s Open com.natophonetics.app with URL natophonetics://voice-select
+    t =    77.28s     Launch com.natophonetics.app
+    t =    77.56s         Setting up automation session
+    t =    77.57s         Wait for com.natophonetics.app to idle
+    t =    78.58s Wait for com.natophonetics.app to become Running Foreground
+    t =    78.59s Waiting 10.0s for "System Default" Any to exist
+    t =    79.60s     Checking `Expect predicate `existsNoRetry == 1` for object "System Default" Any`
+    t =    79.60s         Checking existence of `"System Default" Any`
+    t =    83.81s Added attachment named 'voice-dark'
+CAPTURE voice-dark
+    t =    83.82s Open com.natophonetics.app with URL natophonetics://settings
+    t =    83.82s     Launch com.natophonetics.app
+    t =    84.00s         Setting up automation session
+    t =    84.00s         Wait for com.natophonetics.app to idle
+    t =    85.01s Wait for com.natophonetics.app to become Running Foreground
+    t =    85.02s Waiting 10.0s for "Light" Any to exist
+    t =    86.04s     Checking `Expect predicate `existsNoRetry == 1` for object "Light" Any`
+    t =    86.05s         Checking existence of `"Light" Any`
+    t =    86.10s Tap "Light" Any
+    t =    86.10s     Wait for com.natophonetics.app to idle
+    t =    86.10s     Find the "Light" Any
+    t =    86.12s     Check for interrupting elements affecting "Light" Other
+    t =    86.22s     Synthesize event
+    t =    86.58s     Wait for com.natophonetics.app to idle
+    t =    86.58s Open com.natophonetics.app with URL natophonetics://audio-help
+    t =    86.58s     Launch com.natophonetics.app
+    t =    86.61s         Setting up automation session
+    t =    86.61s         Wait for com.natophonetics.app to idle
+    t =    87.62s Wait for com.natophonetics.app to become Running Foreground
+    t =    87.62s Waiting 10.0s for "Play audio test" Any to exist
+    t =    88.64s     Checking `Expect predicate `existsNoRetry == 1` for object "Play audio test" Any`
+    t =    88.64s         Checking existence of `"Play audio test" Any`
+    t =    89.88s Added attachment named 'audio-help-light'
+CAPTURE audio-help-light
+    t =    89.88s Terminate com.natophonetics.app:76242
+    t =    90.89s Open com.natophonetics.app with URL natophonetics://menu
+    t =    90.90s     Launch com.natophonetics.app
+    t =    91.37s         Setting up automation session
+    t =    93.10s         Wait for com.natophonetics.app to idle
+    t =    94.42s Wait for com.natophonetics.app to become Running Foreground
+    t =    94.43s Waiting 10.0s for "Back to App" Any to exist
+    t =    95.43s     Checking `Expect predicate `existsNoRetry == 1` for object "Back to App" Any`
+    t =    95.43s         Checking existence of `"Back to App" Any`
+    t =    96.67s Added attachment named 'menu-cold-light'
+CAPTURE menu-cold-light
+    t =    96.68s Waiting 10.0s for "Back to App" Any to exist
+    t =    97.70s     Checking `Expect predicate `existsNoRetry == 1` for object "Back to App" Any`
+    t =    97.71s         Checking existence of `"Back to App" Any`
+    t =    97.73s Tap "Back to App" Any
+    t =    97.73s     Wait for com.natophonetics.app to idle
+    t =    97.73s     Find the "Back to App" Any
+    t =    97.75s     Check for interrupting elements affecting "Back to App" Button
+    t =    97.82s     Synthesize event
+    t =    98.14s     Wait for com.natophonetics.app to idle
+    t =    98.15s Waiting 10.0s for "NATO Phonetics" Any to exist
+    t =    99.18s     Checking `Expect predicate `existsNoRetry == 1` for object "NATO Phonetics" Any`
+    t =    99.18s         Checking existence of `"NATO Phonetics" Any`
+PASS cold Menu Back to App returns Home
+    t =    99.20s Open com.natophonetics.app with URL natophonetics://settings
+    t =    99.20s     Launch com.natophonetics.app
+    t =    99.26s         Setting up automation session
+    t =    99.27s         Wait for com.natophonetics.app to idle
+    t =   100.27s Wait for com.natophonetics.app to become Running Foreground
+    t =   100.27s Waiting 10.0s for "System" Any to exist
+    t =   101.30s     Checking `Expect predicate `existsNoRetry == 1` for object "System" Any`
+    t =   101.30s         Checking existence of `"System" Any`
+    t =   101.33s Tap "System" Any
+    t =   101.33s     Wait for com.natophonetics.app to idle
+    t =   101.33s     Find the "System" Any
+    t =   101.35s     Check for interrupting elements affecting "System" Other
+    t =   101.38s     Synthesize event
+    t =   101.68s     Wait for com.natophonetics.app to idle
+    t =   101.68s Tear Down
+Test Case '-[CaptureUITests.CaptureUITests testCaptureNativeStates]' passed (102.382 seconds).
+Test Suite 'CaptureUITests' passed at 2026-11-16 16:33:08.107.
+	 Executed 1 test, with 0 failures (0 unexpected) in 102.382 (102.384) seconds
+Test Suite 'CaptureUITests.xctest' passed at 2026-11-16 16:33:08.109.
+	 Executed 1 test, with 0 failures (0 unexpected) in 102.382 (102.387) seconds
+Test Suite 'All tests' passed at 2026-11-16 16:33:08.109.
+	 Executed 1 test, with 0 failures (0 unexpected) in 102.382 (102.408) seconds
+2026-11-16 16:33:08.713 xcodebuild[75510:9043947] [MT] IDETestOperationsObserverDebug: 131.561 elapsed -- Testing started completed.
+2026-11-16 16:33:08.713 xcodebuild[75510:9043947] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-11-16 16:33:08.713 xcodebuild[75510:9043947] [MT] IDETestOperationsObserverDebug: 131.561 sec, +131.561 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/nato-ios-capture/Capture.xcresult
+
+** TEST SUCCEEDED **
+
+Testing started

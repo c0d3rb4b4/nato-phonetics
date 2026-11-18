@@ -1,0 +1,2 @@
+Command: rg -n -i \bexpo(?:[/-]|\b)|@expo|\beas\b android ios/Podfile ios/Podfile.lock ios/NATOPhonetics ios/NATOPhonetics.xcodeproj ios/NATOPhonetics.xcworkspace metro.config.js babel.config.js react-native.config.js scripts/build-native.cjs -g !**/build/** -g !**/.gradle/**
+Exit: 1 (rg exit1 means zero matches)

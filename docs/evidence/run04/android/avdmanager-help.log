@@ -1,0 +1,17 @@
+
+Usage:
+      avdmanager [global options] [action] [action options]
+      Global options:
+  -s --silent     : Silent mode, shows errors only.
+  -v --verbose    : Verbose mode, shows errors, warnings and all messages.
+     --clear-cache: Clear the SDK Manager repository manifest cache.
+  -h --help       : Help on a specific command.
+
+Valid actions are composed of a verb and an optional direct object:
+-   list              : Lists existing targets or virtual devices.
+-   list avd          : Lists existing Android Virtual Devices.
+-   list target       : Lists existing targets.
+-   list device       : Lists existing devices.
+- create avd          : Creates a new Android Virtual Device.
+-   move avd          : Moves or renames an Android Virtual Device.
+- delete avd          : Deletes an Android Virtual Device.

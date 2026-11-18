@@ -1,0 +1,58 @@
+[
+  {
+    "command": [
+      "/tmp/nato-android-sdk/platform-tools/adb",
+      "-s",
+      "emulator-5580",
+      "shell",
+      "am",
+      "supports-multiwindow"
+    ],
+    "exitCode": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/tmp/nato-android-sdk/platform-tools/adb",
+      "-s",
+      "emulator-5580",
+      "shell",
+      "am",
+      "supports-split-screen-multi-window"
+    ],
+    "exitCode": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/tmp/nato-android-sdk/platform-tools/adb",
+      "-s",
+      "emulator-5580",
+      "shell",
+      "settings",
+      "get",
+      "global",
+      "enable_freeform_support"
+    ],
+    "exitCode": 0,
+    "stdout": "null\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/tmp/nato-android-sdk/platform-tools/adb",
+      "-s",
+      "emulator-5580",
+      "shell",
+      "settings",
+      "get",
+      "global",
+      "force_resizable_activities"
+    ],
+    "exitCode": 0,
+    "stdout": "null\n",
+    "stderr": ""
+  }
+]

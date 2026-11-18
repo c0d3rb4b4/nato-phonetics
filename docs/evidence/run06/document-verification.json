@@ -1,0 +1,1931 @@
+{
+  "date": "2026-11-17",
+  "checkedAt": "2026-11-17T15:49:19.419000+00:00",
+  "mode": "verify",
+  "passed": true,
+  "scope": "Evidence integrity only; not application, phase, physical-device or release acceptance",
+  "auditScriptSha256": "27f761a7de2b2aae7f15b023698990cda186a5e0bfe52439109a2de08ca29fff",
+  "source": {
+    "date": "2026-11-17",
+    "baseCommit": "784bb93c5cfb6edfd318d0dcec2d54d5bb222483",
+    "branch": "main",
+    "candidate": "uncommitted maintained source over base commit",
+    "sourceFiles": 183,
+    "sourceManifestSha256": "5673dc734e80cd745a7fc66370653e931025b16346cf98daef9a1f796a208936",
+    "sourceInventorySha256": "d54de5603c5c399f9de431cc858a7ec3cf92e8a43eb07a037e3fa1d4c83ec548",
+    "deletedTrackedPaths": [
+      "app/voice-quiz.js",
+      "components/external-link.tsx",
+      "components/haptic-tab.tsx",
+      "components/hello-wave.tsx",
+      "components/parallax-scroll-view.tsx",
+      "components/themed-text.tsx",
+      "components/themed-view.tsx",
+      "components/ui/collapsible.tsx",
+      "components/ui/icon-symbol.ios.tsx",
+      "components/ui/icon-symbol.tsx",
+      "constants/theme.ts",
+      "hooks/use-color-scheme.ts",
+      "hooks/use-color-scheme.web.ts",
+      "hooks/use-theme-color.ts",
+      "scripts/reset-project.js"
+    ],
+    "trackedWorkingDiffSha256": "e48df2ade749e0d1c0a9969fd10c2f11adb91ac542e31f92c61f158e701cdb6e",
+    "indexDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exclusions": [
+      "docs/evidence/",
+      "artifacts/",
+      "dist/",
+      "web-build/",
+      "ios/build/",
+      "vendor/",
+      ".bundle/",
+      ".cxx",
+      ".git",
+      ".gradle",
+      ".kotlin",
+      "Pods",
+      "node_modules",
+      "xcuserdata",
+      "android/**/build/"
+    ]
+  },
+  "screenshots": {
+    "web": {
+      "counts": {
+        "total": 12,
+        "final": 12,
+        "diagnostic": 0
+      },
+      "checks": [
+        {
+          "file": "docs/evidence/run06/screenshots/web/alphabet-desktop-light-first.png",
+          "bytes": 90760,
+          "sha256": "352ec370def053f3e294a5cccdadd841f59d45531fa9c84ead9dfa66a67f8b10",
+          "expectedSha256": "352ec370def053f3e294a5cccdadd841f59d45531fa9c84ead9dfa66a67f8b10",
+          "matchesManifest": true,
+          "label": "web final",
+          "encodedPixels": {
+            "width": 1280,
+            "height": 1100
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1280,
+            "height": 1100
+          },
+          "inspection": "pass; scroll-boundary crop is expected where present; font-error state intentional",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/web/alphabet-desktop-light-last.png",
+          "bytes": 90760,
+          "sha256": "352ec370def053f3e294a5cccdadd841f59d45531fa9c84ead9dfa66a67f8b10",
+          "expectedSha256": "352ec370def053f3e294a5cccdadd841f59d45531fa9c84ead9dfa66a67f8b10",
+          "matchesManifest": true,
+          "label": "web final",
+          "encodedPixels": {
+            "width": 1280,
+            "height": 1100
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1280,
+            "height": 1100
+          },
+          "inspection": "pass; scroll-boundary crop is expected where present; font-error state intentional",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/web/alphabet-live-window-resize-last.png",
+          "bytes": 19021,
+          "sha256": "3d4d9d6b8e9de55f68501420544d699f007735c1059904da1a199c2eccb91904",
+          "expectedSha256": "3d4d9d6b8e9de55f68501420544d699f007735c1059904da1a199c2eccb91904",
+          "matchesManifest": true,
+          "label": "web final",
+          "encodedPixels": {
+            "width": 568,
+            "height": 320
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 568,
+            "height": 320
+          },
+          "inspection": "pass; scroll-boundary crop is expected where present; font-error state intentional",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/web/alphabet-desktop-light-pressed.png",
+          "bytes": 91151,
+          "sha256": "bbfb385ddd50c68d93fc3e1013ef55aeff8e4d05c3ebafd4b8efa69945d27624",
+          "expectedSha256": "bbfb385ddd50c68d93fc3e1013ef55aeff8e4d05c3ebafd4b8efa69945d27624",
+          "matchesManifest": true,
+          "label": "web final",
+          "encodedPixels": {
+            "width": 1280,
+            "height": 1100
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1280,
+            "height": 1100
+          },
+          "inspection": "pass; scroll-boundary crop is expected where present; font-error state intentional",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/web/alphabet-narrow-200-dark-first.png",
+          "bytes": 56875,
+          "sha256": "dd2f2c01a198ac57e560d6bebeb61daea6a7d22a0a56c976c0780dccf25d413e",
+          "expectedSha256": "dd2f2c01a198ac57e560d6bebeb61daea6a7d22a0a56c976c0780dccf25d413e",
+          "matchesManifest": true,
+          "label": "web final",
+          "encodedPixels": {
+            "width": 640,
+            "height": 1136
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 640,
+            "height": 1136
+          },
+          "inspection": "pass; scroll-boundary crop is expected where present; font-error state intentional",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/web/alphabet-narrow-200-dark-last.png",
+          "bytes": 33983,
+          "sha256": "00a1ad7113574eb75a7d40c28f2a17a1cc56dd47617195c6600d9caa36e776f1",
+          "expectedSha256": "00a1ad7113574eb75a7d40c28f2a17a1cc56dd47617195c6600d9caa36e776f1",
+          "matchesManifest": true,
+          "label": "web final",
+          "encodedPixels": {
+            "width": 640,
+            "height": 1136
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 640,
+            "height": 1136
+          },
+          "inspection": "pass; scroll-boundary crop is expected where present; font-error state intentional",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/web/converter-narrow-dark-first.png",
+          "bytes": 52211,
+          "sha256": "25cc5ec51d27833ca296582347a1c74d89f07be0ef19a3dac7dc9c046603435a",
+          "expectedSha256": "25cc5ec51d27833ca296582347a1c74d89f07be0ef19a3dac7dc9c046603435a",
+          "matchesManifest": true,
+          "label": "web final",
+          "encodedPixels": {
+            "width": 640,
+            "height": 1136
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 640,
+            "height": 1136
+          },
+          "inspection": "pass; scroll-boundary crop is expected where present; font-error state intentional",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/web/converter-narrow-dark-last.png",
+          "bytes": 37636,
+          "sha256": "078f9b611ba28d03ac6bf980835baa2e1f9664d5342f0f0cd9fe6a778821babc",
+          "expectedSha256": "078f9b611ba28d03ac6bf980835baa2e1f9664d5342f0f0cd9fe6a778821babc",
+          "matchesManifest": true,
+          "label": "web final",
+          "encodedPixels": {
+            "width": 640,
+            "height": 1136
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 640,
+            "height": 1136
+          },
+          "inspection": "pass; scroll-boundary crop is expected where present; font-error state intentional",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/web/quiz-narrow-light-first.png",
+          "bytes": 47477,
+          "sha256": "abdb2e0778ae1ed838a0eeeb24d6b75bbedf16e7e1df97004102b0e687fe4622",
+          "expectedSha256": "abdb2e0778ae1ed838a0eeeb24d6b75bbedf16e7e1df97004102b0e687fe4622",
+          "matchesManifest": true,
+          "label": "web final",
+          "encodedPixels": {
+            "width": 640,
+            "height": 1136
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 640,
+            "height": 1136
+          },
+          "inspection": "pass; scroll-boundary crop is expected where present; font-error state intentional",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/web/quiz-narrow-light-revealed.png",
+          "bytes": 47350,
+          "sha256": "7e7d597be66e02dd6703cc94f6b0a19c8c5b7cb1429ddd0b864e6c5e24d26283",
+          "expectedSha256": "7e7d597be66e02dd6703cc94f6b0a19c8c5b7cb1429ddd0b864e6c5e24d26283",
+          "matchesManifest": true,
+          "label": "web final",
+          "encodedPixels": {
+            "width": 640,
+            "height": 1136
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 640,
+            "height": 1136
+          },
+          "inspection": "pass; scroll-boundary crop is expected where present; font-error state intentional",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/web/quiz-narrow-light-feedback.png",
+          "bytes": 43508,
+          "sha256": "e8d3697295e43aaec4fe7f2e0fc897eab394fa1f9a6ab7e2de211550f813dbb4",
+          "expectedSha256": "e8d3697295e43aaec4fe7f2e0fc897eab394fa1f9a6ab7e2de211550f813dbb4",
+          "matchesManifest": true,
+          "label": "web final",
+          "encodedPixels": {
+            "width": 640,
+            "height": 1136
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 640,
+            "height": 1136
+          },
+          "inspection": "pass; scroll-boundary crop is expected where present; font-error state intentional",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/web/alphabet-font-load-error.png",
+          "bytes": 39559,
+          "sha256": "ba4ce14a95a8d3a738cfa4579218c4bc53f1e8f4faa2f09277a6ba144eb1f790",
+          "expectedSha256": "ba4ce14a95a8d3a738cfa4579218c4bc53f1e8f4faa2f09277a6ba144eb1f790",
+          "matchesManifest": true,
+          "label": "web final",
+          "encodedPixels": {
+            "width": 780,
+            "height": 1688
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 780,
+            "height": 1688
+          },
+          "inspection": "pass; scroll-boundary crop is expected where present; font-error state intentional",
+          "classification": "final"
+        }
+      ],
+      "metadata": "docs/evidence/run06/screenshots/web/metadata.json"
+    },
+    "android": {
+      "counts": {
+        "total": 13,
+        "final": 13,
+        "diagnostic": 0
+      },
+      "checks": [
+        {
+          "file": "docs/evidence/run06/screenshots/android/ordinary-transition-0-scale1.png",
+          "bytes": 97322,
+          "sha256": "c321cd0580f118d8f7c67a0ce4f9528cf891dbd910872026798da53cc9c420b1",
+          "expectedSha256": "c321cd0580f118d8f7c67a0ce4f9528cf891dbd910872026798da53cc9c420b1",
+          "matchesManifest": true,
+          "label": "android final",
+          "encodedPixels": {
+            "width": 720,
+            "height": 1600
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 720,
+            "height": 1600
+          },
+          "inspection": "Default/restored100% actual app content is visible; no blank/loading/error screen. Fully visible tiles have complete text; partial next rows at viewport edge are scrollable content.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/android/ordinary-transition-1-scale2.png",
+          "bytes": 60323,
+          "sha256": "98b9aa8945fdafad7addeebeb217cf4e78b906707ea1e1df9c6ee097a49f3342",
+          "expectedSha256": "98b9aa8945fdafad7addeebeb217cf4e78b906707ea1e1df9c6ee097a49f3342",
+          "matchesManifest": true,
+          "label": "android final",
+          "encodedPixels": {
+            "width": 720,
+            "height": 1600
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 720,
+            "height": 1600
+          },
+          "inspection": "Tiles enlarge proportionally and retained content is visible. FAIL: ordinary title/instruction/input sizing remains at prior100% size after live200% setting. Lower partial tile is scroll boundary, not internal tile clipping.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/android/ordinary-transition-2-scale1.png",
+          "bytes": 97414,
+          "sha256": "ffe07af46b58ff65a8e4f856d9dbe0d4fcfd34eec22ac6830ee1383492a9f2cc",
+          "expectedSha256": "ffe07af46b58ff65a8e4f856d9dbe0d4fcfd34eec22ac6830ee1383492a9f2cc",
+          "matchesManifest": true,
+          "label": "android final",
+          "encodedPixels": {
+            "width": 720,
+            "height": 1600
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 720,
+            "height": 1600
+          },
+          "inspection": "Default/restored100% actual app content is visible; no blank/loading/error screen. Fully visible tiles have complete text; partial next rows at viewport edge are scrollable content.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/android/ordinary-transition-3-scale2.png",
+          "bytes": 60316,
+          "sha256": "b5bad32df055c009856d15ad2a0a8cd6f17e722a072b14649524b3bcceb09ae0",
+          "expectedSha256": "b5bad32df055c009856d15ad2a0a8cd6f17e722a072b14649524b3bcceb09ae0",
+          "matchesManifest": true,
+          "label": "android final",
+          "encodedPixels": {
+            "width": 720,
+            "height": 1600
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 720,
+            "height": 1600
+          },
+          "inspection": "Tiles enlarge proportionally and retained content is visible. FAIL: ordinary title/instruction/input sizing remains at prior100% size after live200% setting. Lower partial tile is scroll boundary, not internal tile clipping.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/android/ordinary-transition-4-scale1.png",
+          "bytes": 97433,
+          "sha256": "b709bda1b262fa786a68ce77560de0f1a5d0e59a0c5ebae8cd6b83c9c5108993",
+          "expectedSha256": "b709bda1b262fa786a68ce77560de0f1a5d0e59a0c5ebae8cd6b83c9c5108993",
+          "matchesManifest": true,
+          "label": "android final",
+          "encodedPixels": {
+            "width": 720,
+            "height": 1600
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 720,
+            "height": 1600
+          },
+          "inspection": "Default/restored100% actual app content is visible; no blank/loading/error screen. Fully visible tiles have complete text; partial next rows at viewport edge are scrollable content.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/android/converter-retained-scale2.png",
+          "bytes": 66096,
+          "sha256": "abf48d34efc27ff71981211f1e544980e06121e0d8d866d0ac1d8edec1f8815a",
+          "expectedSha256": "abf48d34efc27ff71981211f1e544980e06121e0d8d866d0ac1d8edec1f8815a",
+          "matchesManifest": true,
+          "label": "android final",
+          "encodedPixels": {
+            "width": 720,
+            "height": 1600
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 720,
+            "height": 1600
+          },
+          "inspection": "Tiles enlarge proportionally and retained content is visible. FAIL: ordinary title/instruction/input sizing remains at prior100% size after live200% setting. Lower partial tile is scroll boundary, not internal tile clipping.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/android/converter-retained-scale1.png",
+          "bytes": 83706,
+          "sha256": "5ffb12f3fdbf521b8149c2519b1e4ae7a408f3cae5a893d72b9aebf13f51d94f",
+          "expectedSha256": "5ffb12f3fdbf521b8149c2519b1e4ae7a408f3cae5a893d72b9aebf13f51d94f",
+          "matchesManifest": true,
+          "label": "android final",
+          "encodedPixels": {
+            "width": 720,
+            "height": 1600
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 720,
+            "height": 1600
+          },
+          "inspection": "Default/restored100% actual app content is visible; no blank/loading/error screen. Fully visible tiles have complete text; partial next rows at viewport edge are scrollable content.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/android/quiz-retained-scale2.png",
+          "bytes": 77027,
+          "sha256": "4fecfd540b8fd8b6607b364b7ebeaa471a5e87d2c95661abec16548b5a28cb37",
+          "expectedSha256": "4fecfd540b8fd8b6607b364b7ebeaa471a5e87d2c95661abec16548b5a28cb37",
+          "matchesManifest": true,
+          "label": "android final",
+          "encodedPixels": {
+            "width": 720,
+            "height": 1600
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 720,
+            "height": 1600
+          },
+          "inspection": "Actual submitted answer and Next remain visible. FAIL: feedback line is internally clipped along its lower half above Next; ordinary title/options retain stale sizing. Partial tile visibility is separate from this feedback defect.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/android/quiz-feedback-controls-scale2.png",
+          "bytes": 77024,
+          "sha256": "0939bcde84ef4e1b317047c5e329e4e659d31d9f24ea704eef72d58186c8b3fa",
+          "expectedSha256": "0939bcde84ef4e1b317047c5e329e4e659d31d9f24ea704eef72d58186c8b3fa",
+          "matchesManifest": true,
+          "label": "android final",
+          "encodedPixels": {
+            "width": 720,
+            "height": 1600
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 720,
+            "height": 1600
+          },
+          "inspection": "Actual submitted answer and Next remain visible. FAIL: feedback line is internally clipped along its lower half above Next; ordinary title/options retain stale sizing. Partial tile visibility is separate from this feedback defect.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/android/quiz-retained-scale1.png",
+          "bytes": 71714,
+          "sha256": "ac18eea10435ecfd3813c74600203ede5cabedf6a0a46a9a0bc578701fb8b8dc",
+          "expectedSha256": "ac18eea10435ecfd3813c74600203ede5cabedf6a0a46a9a0bc578701fb8b8dc",
+          "matchesManifest": true,
+          "label": "android final",
+          "encodedPixels": {
+            "width": 720,
+            "height": 1600
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 720,
+            "height": 1600
+          },
+          "inspection": "Default/restored100% actual app content is visible; no blank/loading/error screen. Fully visible tiles have complete text; partial next rows at viewport edge are scrollable content.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/android/alphabet-final-default.png",
+          "bytes": 97073,
+          "sha256": "e06c2144c8c2e3285a3fb13f11fb453de9416051f0c337489493810185ddad46",
+          "expectedSha256": "e06c2144c8c2e3285a3fb13f11fb453de9416051f0c337489493810185ddad46",
+          "matchesManifest": true,
+          "label": "android final",
+          "encodedPixels": {
+            "width": 720,
+            "height": 1600
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 720,
+            "height": 1600
+          },
+          "inspection": "Default/restored100% actual app content is visible; no blank/loading/error screen. Fully visible tiles have complete text; partial next rows at viewport edge are scrollable content.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/android/converter-final-default.png",
+          "bytes": 83653,
+          "sha256": "38e3f35e86f5a14f0292855f718d16a9dc9583fa899f9dd95e82ff1ce48ec602",
+          "expectedSha256": "38e3f35e86f5a14f0292855f718d16a9dc9583fa899f9dd95e82ff1ce48ec602",
+          "matchesManifest": true,
+          "label": "android final",
+          "encodedPixels": {
+            "width": 720,
+            "height": 1600
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 720,
+            "height": 1600
+          },
+          "inspection": "Default/restored100% actual app content is visible; no blank/loading/error screen. Fully visible tiles have complete text; partial next rows at viewport edge are scrollable content.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/android/alphabet-cold-scale2.png",
+          "bytes": 69410,
+          "sha256": "a27469422e89626c94a6ccd2efe68a28a3ac2af6f09289702ef5c4fdd5cfd42d",
+          "expectedSha256": "a27469422e89626c94a6ccd2efe68a28a3ac2af6f09289702ef5c4fdd5cfd42d",
+          "matchesManifest": true,
+          "label": "android final",
+          "encodedPixels": {
+            "width": 720,
+            "height": 1600
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 720,
+            "height": 1600
+          },
+          "inspection": "Cold200% launch: full enlarged three-line instruction and enlarged title/tile visible. Bottom partial tile is ordinary scroll boundary.",
+          "classification": "final"
+        }
+      ],
+      "metadata": "docs/evidence/run06/screenshots/android/metadata.json"
+    },
+    "ios": {
+      "counts": {
+        "total": 52,
+        "final": 43,
+        "diagnostic": 9
+      },
+      "checks": [
+        {
+          "file": "docs/evidence/run06/screenshots/ios/ipad-first-header-restored.png",
+          "bytes": 264778,
+          "sha256": "5948beb033b30597c08cea2ae76b1484dbe59bd136fe694deb76101394b1d2c4",
+          "expectedSha256": "5948beb033b30597c08cea2ae76b1484dbe59bd136fe694deb76101394b1d2c4",
+          "matchesManifest": true,
+          "label": "ios diagnostic",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Direct original PNG inspection by independent reconcile agent: no visible Home/Menu/OS-control overlap. Header and instruction text complete; full/restored Alphabet shows all26 tiles. Small Home lower quiz is naturally below scroll edge; landscape Alphabet partial row is expected viewport clipping. Does not explain or clear first-run automatic restored Menu activation failure.",
+          "classification": "diagnostic"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/ipad-first-header-landscape-home.png",
+          "bytes": 2927198,
+          "sha256": "e9ff8b6c08f890652a2fc5d7561fda8dba7c4e10d9fc46a66ec17059be868f2a",
+          "expectedSha256": "e9ff8b6c08f890652a2fc5d7561fda8dba7c4e10d9fc46a66ec17059be868f2a",
+          "matchesManifest": true,
+          "label": "ios diagnostic",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 8,
+          "displayPixels": {
+            "width": 2420,
+            "height": 1668
+          },
+          "inspection": "Direct original PNG inspection by independent reconcile agent: no visible Home/Menu/OS-control overlap. Header and instruction text complete; full/restored Alphabet shows all26 tiles. Small Home lower quiz is naturally below scroll edge; landscape Alphabet partial row is expected viewport clipping. Does not explain or clear first-run automatic restored Menu activation failure.",
+          "classification": "diagnostic"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/ipad-first-header-landscape.png",
+          "bytes": 2907474,
+          "sha256": "a6b57c20d94191b9b5f835fc12372c8b35b4562d65cdd94f7bd6aa08a9048b62",
+          "expectedSha256": "a6b57c20d94191b9b5f835fc12372c8b35b4562d65cdd94f7bd6aa08a9048b62",
+          "matchesManifest": true,
+          "label": "ios diagnostic",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 8,
+          "displayPixels": {
+            "width": 2420,
+            "height": 1668
+          },
+          "inspection": "Direct original PNG inspection by independent reconcile agent: no visible Home/Menu/OS-control overlap. Header and instruction text complete; full/restored Alphabet shows all26 tiles. Small Home lower quiz is naturally below scroll edge; landscape Alphabet partial row is expected viewport clipping. Does not explain or clear first-run automatic restored Menu activation failure.",
+          "classification": "diagnostic"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/ipad-first-header-medium-home.png",
+          "bytes": 2688510,
+          "sha256": "14f14b24b177ddfbdbe2b8437ba1edc15a62f52526ca5786f541125b51725e3c",
+          "expectedSha256": "14f14b24b177ddfbdbe2b8437ba1edc15a62f52526ca5786f541125b51725e3c",
+          "matchesManifest": true,
+          "label": "ios diagnostic",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Direct original PNG inspection by independent reconcile agent: no visible Home/Menu/OS-control overlap. Header and instruction text complete; full/restored Alphabet shows all26 tiles. Small Home lower quiz is naturally below scroll edge; landscape Alphabet partial row is expected viewport clipping. Does not explain or clear first-run automatic restored Menu activation failure.",
+          "classification": "diagnostic"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/ipad-first-header-medium.png",
+          "bytes": 2698256,
+          "sha256": "1f6d0182c77814351b4399892576d75736594ea1d44fcd6a56cd21e0dae8957d",
+          "expectedSha256": "1f6d0182c77814351b4399892576d75736594ea1d44fcd6a56cd21e0dae8957d",
+          "matchesManifest": true,
+          "label": "ios diagnostic",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Direct original PNG inspection by iOS agent: OS traffic controls separated from Home; title/Menu and full instruction readable; visible complete tiles intact; bottom scroll-edge fragments expected. Diagnostic first run, not full behavioral pass.",
+          "classification": "diagnostic"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/ipad-first-header-small-home.png",
+          "bytes": 3275044,
+          "sha256": "82ae1ca0a6ee1f1298c3bb5646b72c11bed8d20db528e8b5834388434490701f",
+          "expectedSha256": "82ae1ca0a6ee1f1298c3bb5646b72c11bed8d20db528e8b5834388434490701f",
+          "matchesManifest": true,
+          "label": "ios diagnostic",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Direct original PNG inspection by independent reconcile agent: no visible Home/Menu/OS-control overlap. Header and instruction text complete; full/restored Alphabet shows all26 tiles. Small Home lower quiz is naturally below scroll edge; landscape Alphabet partial row is expected viewport clipping. Does not explain or clear first-run automatic restored Menu activation failure.",
+          "classification": "diagnostic"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/ipad-first-header-small.png",
+          "bytes": 3248934,
+          "sha256": "9681580fca1c69aa1c8acc70d914e2566576e82f2873d82d6071a0c4854f8ae6",
+          "expectedSha256": "9681580fca1c69aa1c8acc70d914e2566576e82f2873d82d6071a0c4854f8ae6",
+          "matchesManifest": true,
+          "label": "ios diagnostic",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Direct original PNG inspection by iOS agent: OS traffic controls separated from Home; title/Menu and full instruction readable; visible complete tiles intact; bottom scroll-edge fragments expected. Diagnostic first run, not full behavioral pass.",
+          "classification": "diagnostic"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/ipad-first-header-fullscreen-home.png",
+          "bytes": 163430,
+          "sha256": "3964f7d7648ec2ebc451617cf87fd738bab83ceeb2f66c8ed97c15e45fcdb067",
+          "expectedSha256": "3964f7d7648ec2ebc451617cf87fd738bab83ceeb2f66c8ed97c15e45fcdb067",
+          "matchesManifest": true,
+          "label": "ios diagnostic",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Direct original PNG inspection by independent reconcile agent: no visible Home/Menu/OS-control overlap. Header and instruction text complete; full/restored Alphabet shows all26 tiles. Small Home lower quiz is naturally below scroll edge; landscape Alphabet partial row is expected viewport clipping. Does not explain or clear first-run automatic restored Menu activation failure.",
+          "classification": "diagnostic"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/ipad-first-header-fullscreen.png",
+          "bytes": 264774,
+          "sha256": "b7c0761b2d6a230f6b0c8f1a83b09ddb51144c05f4309cadf3698c0acab86588",
+          "expectedSha256": "b7c0761b2d6a230f6b0c8f1a83b09ddb51144c05f4309cadf3698c0acab86588",
+          "matchesManifest": true,
+          "label": "ios diagnostic",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Direct original PNG inspection by independent reconcile agent: no visible Home/Menu/OS-control overlap. Header and instruction text complete; full/restored Alphabet shows all26 tiles. Small Home lower quiz is naturally below scroll edge; landscape Alphabet partial row is expected viewport clipping. Does not explain or clear first-run automatic restored Menu activation failure.",
+          "classification": "diagnostic"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/ipad-header-restored-home.png",
+          "bytes": 163234,
+          "sha256": "924bc2467e6010cc06fbc3d96405923c191cf67f186da8d83fbe54e96decde41",
+          "expectedSha256": "924bc2467e6010cc06fbc3d96405923c191cf67f186da8d83fbe54e96decde41",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Direct original PNG inspection by independent reconcile agent: header controls/title remain unobscured and separated from OS traffic lights, instruction text complete; complete visible tile glyphs; scroll-edge fragments are expected viewport clipping. Fullscreen/restored show all26. No visible regression; not physical-device or tap acceptance.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/ipad-header-restored.png",
+          "bytes": 264563,
+          "sha256": "47e89d55d3639adfc98f07da0501dd4854410600042466a620c3affb4a0403b9",
+          "expectedSha256": "47e89d55d3639adfc98f07da0501dd4854410600042466a620c3affb4a0403b9",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Direct original PNG inspection by independent reconcile agent: header controls/title remain unobscured and separated from OS traffic lights, instruction text complete; complete visible tile glyphs; scroll-edge fragments are expected viewport clipping. Fullscreen/restored show all26. No visible regression; not physical-device or tap acceptance.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/ipad-header-landscape-home.png",
+          "bytes": 2925961,
+          "sha256": "7d44361cd0edbf9709efdff5878feb7a2d494ba602267682d90cb969a2614e0b",
+          "expectedSha256": "7d44361cd0edbf9709efdff5878feb7a2d494ba602267682d90cb969a2614e0b",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 8,
+          "displayPixels": {
+            "width": 2420,
+            "height": 1668
+          },
+          "inspection": "Direct original PNG inspection by independent reconcile agent: header controls/title remain unobscured and separated from OS traffic lights, instruction text complete; complete visible tile glyphs; scroll-edge fragments are expected viewport clipping. Fullscreen/restored show all26. No visible regression; not physical-device or tap acceptance.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/ipad-header-landscape.png",
+          "bytes": 2906508,
+          "sha256": "aabb6c44ffbb1921ea90e1e43909c01ce76c5abb0f8c636467696cfa834c1d4f",
+          "expectedSha256": "aabb6c44ffbb1921ea90e1e43909c01ce76c5abb0f8c636467696cfa834c1d4f",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 8,
+          "displayPixels": {
+            "width": 2420,
+            "height": 1668
+          },
+          "inspection": "Direct original PNG inspection by independent reconcile agent: header controls/title remain unobscured and separated from OS traffic lights, instruction text complete; complete visible tile glyphs; scroll-edge fragments are expected viewport clipping. Fullscreen/restored show all26. No visible regression; not physical-device or tap acceptance.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/ipad-header-medium-home.png",
+          "bytes": 2520370,
+          "sha256": "95c17345ceaf7df6e6d508765e5e43ec9e515e4a443bc12448f6d5432d65b495",
+          "expectedSha256": "95c17345ceaf7df6e6d508765e5e43ec9e515e4a443bc12448f6d5432d65b495",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Direct original PNG inspection by independent reconcile agent: header controls/title remain unobscured and separated from OS traffic lights, instruction text complete; complete visible tile glyphs; scroll-edge fragments are expected viewport clipping. Fullscreen/restored show all26. No visible regression; not physical-device or tap acceptance.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/ipad-header-medium.png",
+          "bytes": 2530899,
+          "sha256": "36ecca7f910b88411912021a4901af95ca7e5dc9d8cf792f635858182e4bc3a5",
+          "expectedSha256": "36ecca7f910b88411912021a4901af95ca7e5dc9d8cf792f635858182e4bc3a5",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Direct original PNG inspection by independent reconcile agent: header controls/title remain unobscured and separated from OS traffic lights, instruction text complete; complete visible tile glyphs; scroll-edge fragments are expected viewport clipping. Fullscreen/restored show all26. No visible regression; not physical-device or tap acceptance.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/ipad-header-small-home.png",
+          "bytes": 3274760,
+          "sha256": "ca31fdf5b440c1b14d32308a466109c6094d256aa1c9b39dd5bd3f041da62fff",
+          "expectedSha256": "ca31fdf5b440c1b14d32308a466109c6094d256aa1c9b39dd5bd3f041da62fff",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Direct original PNG inspection by independent reconcile agent: header controls/title remain unobscured and separated from OS traffic lights, instruction text complete; complete visible tile glyphs; scroll-edge fragments are expected viewport clipping. Fullscreen/restored show all26. No visible regression; not physical-device or tap acceptance.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/ipad-header-small.png",
+          "bytes": 3248626,
+          "sha256": "90329d29ca0a6fa1a291ad20330466a6d674206080c3e06d513773d0f645e161",
+          "expectedSha256": "90329d29ca0a6fa1a291ad20330466a6d674206080c3e06d513773d0f645e161",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Direct original PNG inspection by independent reconcile agent: header controls/title remain unobscured and separated from OS traffic lights, instruction text complete; complete visible tile glyphs; scroll-edge fragments are expected viewport clipping. Fullscreen/restored show all26. No visible regression; not physical-device or tap acceptance.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/ipad-header-fullscreen-home.png",
+          "bytes": 163652,
+          "sha256": "8f7b7371d7259f83e07b2765c4fb345db225a5d7107d62751309b02882e20c54",
+          "expectedSha256": "8f7b7371d7259f83e07b2765c4fb345db225a5d7107d62751309b02882e20c54",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Direct original PNG inspection by independent reconcile agent: header controls/title remain unobscured and separated from OS traffic lights, instruction text complete; complete visible tile glyphs; scroll-edge fragments are expected viewport clipping. Fullscreen/restored show all26. No visible regression; not physical-device or tap acceptance.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/ipad-header-fullscreen.png",
+          "bytes": 264872,
+          "sha256": "37abdd5dadd770c7a9b09ca448179be7bec0c0a399368910251d93df3d433d46",
+          "expectedSha256": "37abdd5dadd770c7a9b09ca448179be7bec0c0a399368910251d93df3d433d46",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Direct original PNG inspection by independent reconcile agent: header controls/title remain unobscured and separated from OS traffic lights, instruction text complete; complete visible tile glyphs; scroll-edge fragments are expected viewport clipping. Fullscreen/restored show all26. No visible regression; not physical-device or tap acceptance.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/phone-header-phone-landscape-home.png",
+          "bytes": 171572,
+          "sha256": "5a390fc18ed5c8b25c1f320dab8b4e5f477b22d678926437730e78b98aeaccdb",
+          "expectedSha256": "5a390fc18ed5c8b25c1f320dab8b4e5f477b22d678926437730e78b98aeaccdb",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1206,
+            "height": 2622
+          },
+          "orientation": 8,
+          "displayPixels": {
+            "width": 2622,
+            "height": 1206
+          },
+          "inspection": "Direct original PNG inspection by root agent: clear native Home/Menu header, complete visible instruction/Home text; expected scroll-boundary partial rows/cards only. Both restored automatic-test images show all 26 tiles intact in dark theme. No blank/loading screen, unexpected error, or internal clipping.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/phone-header-phone-landscape.png",
+          "bytes": 166356,
+          "sha256": "f8a59c831dd28a2e3a6775fcbf42fa3b0dac1f2cbc3616d5ef1b30f89b1f5037",
+          "expectedSha256": "f8a59c831dd28a2e3a6775fcbf42fa3b0dac1f2cbc3616d5ef1b30f89b1f5037",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1206,
+            "height": 2622
+          },
+          "orientation": 8,
+          "displayPixels": {
+            "width": 2622,
+            "height": 1206
+          },
+          "inspection": "Direct original PNG inspection by root agent: clear native Home/Menu header, complete visible instruction/Home text; expected scroll-boundary partial rows/cards only. Both restored automatic-test images show all 26 tiles intact in dark theme. No blank/loading screen, unexpected error, or internal clipping.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/phone-header-phone-home.png",
+          "bytes": 198152,
+          "sha256": "dffc7d3d68de6174ff47ae901dd304e90757d2ac70dd3c270800317806fecb8f",
+          "expectedSha256": "dffc7d3d68de6174ff47ae901dd304e90757d2ac70dd3c270800317806fecb8f",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1206,
+            "height": 2622
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1206,
+            "height": 2622
+          },
+          "inspection": "Direct original PNG inspection by root agent: clear native Home/Menu header, complete visible instruction/Home text; expected scroll-boundary partial rows/cards only. Both restored automatic-test images show all 26 tiles intact in dark theme. No blank/loading screen, unexpected error, or internal clipping.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/phone-header-phone.png",
+          "bytes": 197890,
+          "sha256": "9dc8f6e3f98b2fd3739dd3deba3f25121c3c5bd816327b214e3c26dde3ac542b",
+          "expectedSha256": "9dc8f6e3f98b2fd3739dd3deba3f25121c3c5bd816327b214e3c26dde3ac542b",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1206,
+            "height": 2622
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1206,
+            "height": 2622
+          },
+          "inspection": "Direct original PNG inspection by root agent: clear native Home/Menu header, complete visible instruction/Home text; expected scroll-boundary partial rows/cards only. Both restored automatic-test images show all 26 tiles intact in dark theme. No blank/loading screen, unexpected error, or internal clipping.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/dark-quiz-default-feedback-dark.png",
+          "bytes": 156650,
+          "sha256": "59a4c6b86ac103d3a837a53774b86fbe080ffa62341332bc3d2a358395763fe5",
+          "expectedSha256": "59a4c6b86ac103d3a837a53774b86fbe080ffa62341332bc3d2a358395763fe5",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1206,
+            "height": 2622
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1206,
+            "height": 2622
+          },
+          "inspection": "Direct original PNG inspection by iOS agent: dark header Home/Menu and complete body text visible, converter N/U/W/J/3/5 complete with 9 at expected scroll boundary; quiz concealed B body empty before answer and Bravo revealed after, all four choices visible. Feedback and Next/Replay readable. No clipped glyphs within eligible full tile ROIs.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/dark-quiz-default-question-dark.png",
+          "bytes": 125945,
+          "sha256": "6255626d7a0d7818bf72ef3c5b21600813bf5b409cd2721415bfdac5eff5c42d",
+          "expectedSha256": "6255626d7a0d7818bf72ef3c5b21600813bf5b409cd2721415bfdac5eff5c42d",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1206,
+            "height": 2622
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1206,
+            "height": 2622
+          },
+          "inspection": "Direct original PNG inspection by iOS agent: dark header Home/Menu and complete body text visible, converter N/U/W/J/3/5 complete with 9 at expected scroll boundary; quiz concealed B body empty before answer and Bravo revealed after, all four choices visible. Feedback and Next/Replay readable. No clipped glyphs within eligible full tile ROIs.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/dark-converter-default-dark.png",
+          "bytes": 178295,
+          "sha256": "882776a87459cb9a4913b869da0f65f6e2db4bec09bcb5f8287b512d9239c46a",
+          "expectedSha256": "882776a87459cb9a4913b869da0f65f6e2db4bec09bcb5f8287b512d9239c46a",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1206,
+            "height": 2622
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1206,
+            "height": 2622
+          },
+          "inspection": "Direct original PNG inspection by iOS agent: dark header Home/Menu and complete body text visible, converter N/U/W/J/3/5 complete with 9 at expected scroll boundary; quiz concealed B body empty before answer and Bravo revealed after, all four choices visible. Feedback and Next/Replay readable. No clipped glyphs within eligible full tile ROIs.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/enlarged-header-enlarged-small-home.png",
+          "bytes": 3295418,
+          "sha256": "1c641b71dd950be1e6f176909374c12ac8968efd72a0610b006116955c32c334",
+          "expectedSha256": "1c641b71dd950be1e6f176909374c12ac8968efd72a0610b006116955c32c334",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Direct original PNG inspection by iOS agent: enlarged header title/Home/Menu remain separated from OS window controls; complete instruction spans two lines; A/B enlarged tiles fully readable, C/D at expected scroll boundary. Enlarged Home title/description/reference card readable, converter continues naturally below scroll edge.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/enlarged-header-enlarged-small.png",
+          "bytes": 3267066,
+          "sha256": "92f11d3b234b63fc68e241d0c60a4ee24fd6f875020b1e72d8775abc4c08a7c2",
+          "expectedSha256": "92f11d3b234b63fc68e241d0c60a4ee24fd6f875020b1e72d8775abc4c08a7c2",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Direct original PNG inspection by iOS agent: enlarged header title/Home/Menu remain separated from OS window controls; complete instruction spans two lines; A/B enlarged tiles fully readable, C/D at expected scroll boundary. Enlarged Home title/description/reference card readable, converter continues naturally below scroll edge.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/restored-auto-final-header-auto-restored-after.png",
+          "bytes": 269060,
+          "sha256": "833508d5850e5a2afb751000e2c9091e1170ebce855413c39ce1b02994763a8f",
+          "expectedSha256": "833508d5850e5a2afb751000e2c9091e1170ebce855413c39ce1b02994763a8f",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Direct original PNG inspection by root agent: clear native Home/Menu header, complete visible instruction/Home text; expected scroll-boundary partial rows/cards only. Both restored automatic-test images show all 26 tiles intact in dark theme. No blank/loading screen, unexpected error, or internal clipping.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/restored-auto-final-header-auto-restored-before.png",
+          "bytes": 269060,
+          "sha256": "833508d5850e5a2afb751000e2c9091e1170ebce855413c39ce1b02994763a8f",
+          "expectedSha256": "833508d5850e5a2afb751000e2c9091e1170ebce855413c39ce1b02994763a8f",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Direct original PNG inspection by root agent: clear native Home/Menu header, complete visible instruction/Home text; expected scroll-boundary partial rows/cards only. Both restored automatic-test images show all 26 tiles intact in dark theme. No blank/loading screen, unexpected error, or internal clipping.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/maximum-final-quiz-maximum-feedback-dark.png",
+          "bytes": 188230,
+          "sha256": "47ce3909e2e2decd219d74c0379bb313dc575d937f340b5220c4a7c1ee5e6707",
+          "expectedSha256": "47ce3909e2e2decd219d74c0379bb313dc575d937f340b5220c4a7c1ee5e6707",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Direct original PNG inspection by iOS agent: maximum-size G tile fully visible, body empty before answer and Golf/GOLF revealed afterward; title and prompt readable, chosen Guitar label below card after answer. Other controls continue below scroll viewport. No internal tile glyph clipping; not a physical accessibility pass.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/maximum-final-quiz-maximum-question-dark.png",
+          "bytes": 170724,
+          "sha256": "cde16070011ff96d2b47053870282f08f4d769bc0489c4915289487c08b62f6e",
+          "expectedSha256": "cde16070011ff96d2b47053870282f08f4d769bc0489c4915289487c08b62f6e",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Direct original PNG inspection by iOS agent: maximum-size G tile fully visible, body empty before answer and Golf/GOLF revealed afterward; title and prompt readable, chosen Guitar label below card after answer. Other controls continue below scroll viewport. No internal tile glyph clipping; not a physical accessibility pass.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/maximum-final-converter-maximum-6-dark.png",
+          "bytes": 145731,
+          "sha256": "b2b52eebb94042233f2e0e2a0101150083dc34002f3f4b4bf8e15ba524e0b4cc",
+          "expectedSha256": "b2b52eebb94042233f2e0e2a0101150083dc34002f3f4b4bf8e15ba524e0b4cc",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Direct original PNG inspection by iOS agent: maximum-size target converter pair/symbol fully visible with complete letter/word/guide; all NUWJ359 reached across original captures. Adjacent rows above/below the scroll viewport are naturally clipped. J visually legible, but strict raster bottom-edge miss is retained separately (not a visual fidelity pass).",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/maximum-final-converter-maximum-5-dark.png",
+          "bytes": 154150,
+          "sha256": "fc1f55bcb22e9094ae697dbdce008465d74201cfe9cf51f90ae5e2165e898a4f",
+          "expectedSha256": "fc1f55bcb22e9094ae697dbdce008465d74201cfe9cf51f90ae5e2165e898a4f",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Direct original PNG inspection by iOS agent: maximum-size target converter pair/symbol fully visible with complete letter/word/guide; all NUWJ359 reached across original captures. Adjacent rows above/below the scroll viewport are naturally clipped. J visually legible, but strict raster bottom-edge miss is retained separately (not a visual fidelity pass).",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/maximum-final-converter-maximum-4-dark.png",
+          "bytes": 154150,
+          "sha256": "fc1f55bcb22e9094ae697dbdce008465d74201cfe9cf51f90ae5e2165e898a4f",
+          "expectedSha256": "fc1f55bcb22e9094ae697dbdce008465d74201cfe9cf51f90ae5e2165e898a4f",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Direct original PNG inspection by iOS agent: maximum-size target converter pair/symbol fully visible with complete letter/word/guide; all NUWJ359 reached across original captures. Adjacent rows above/below the scroll viewport are naturally clipped. J visually legible, but strict raster bottom-edge miss is retained separately (not a visual fidelity pass).",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/maximum-final-converter-maximum-3-dark.png",
+          "bytes": 213694,
+          "sha256": "d0f185b91781d6b46cda77eb61e4fcd379968ee40a4a6980a1a55518aa218aa1",
+          "expectedSha256": "d0f185b91781d6b46cda77eb61e4fcd379968ee40a4a6980a1a55518aa218aa1",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Direct original PNG inspection by iOS agent: maximum-size target converter pair/symbol fully visible with complete letter/word/guide; all NUWJ359 reached across original captures. Adjacent rows above/below the scroll viewport are naturally clipped. J visually legible, but strict raster bottom-edge miss is retained separately (not a visual fidelity pass).",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/maximum-final-converter-maximum-2-dark.png",
+          "bytes": 213694,
+          "sha256": "d0f185b91781d6b46cda77eb61e4fcd379968ee40a4a6980a1a55518aa218aa1",
+          "expectedSha256": "d0f185b91781d6b46cda77eb61e4fcd379968ee40a4a6980a1a55518aa218aa1",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Direct original PNG inspection by iOS agent: maximum-size target converter pair/symbol fully visible with complete letter/word/guide; all NUWJ359 reached across original captures. Adjacent rows above/below the scroll viewport are naturally clipped. J visually legible, but strict raster bottom-edge miss is retained separately (not a visual fidelity pass).",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/maximum-final-converter-maximum-1-dark.png",
+          "bytes": 225430,
+          "sha256": "57807b5eb72159ab555235afe5008400ba9e08c25f985e4e6f661a3997ecadc9",
+          "expectedSha256": "57807b5eb72159ab555235afe5008400ba9e08c25f985e4e6f661a3997ecadc9",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Direct original PNG inspection by iOS agent: maximum-size target converter pair/symbol fully visible with complete letter/word/guide; all NUWJ359 reached across original captures. Adjacent rows above/below the scroll viewport are naturally clipped. J visually legible, but strict raster bottom-edge miss is retained separately (not a visual fidelity pass).",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/maximum-final-converter-maximum-0-dark.png",
+          "bytes": 225430,
+          "sha256": "57807b5eb72159ab555235afe5008400ba9e08c25f985e4e6f661a3997ecadc9",
+          "expectedSha256": "57807b5eb72159ab555235afe5008400ba9e08c25f985e4e6f661a3997ecadc9",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Direct original PNG inspection by iOS agent: maximum-size target converter pair/symbol fully visible with complete letter/word/guide; all NUWJ359 reached across original captures. Adjacent rows above/below the scroll viewport are naturally clipped. J visually legible, but strict raster bottom-edge miss is retained separately (not a visual fidelity pass).",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/maximum-final-alphabet-maximum-Y-dark.png",
+          "bytes": 201108,
+          "sha256": "6e8850cbcadd0c7948cc510f60ba8e4b80adee4dececcd6976b93002f5456ff6",
+          "expectedSha256": "6e8850cbcadd0c7948cc510f60ba8e4b80adee4dececcd6976b93002f5456ff6",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Directly inspected original PNG by independent reconcile reviewer: Y/Z main letters, names and pronunciations are fully visible with no visible glyph clipping; large title and Home/Menu controls remain clear. Y/Z cards are fully visible through their rounded lower corners with bottom padding. Prior W/X letters are partially behind the fixed header because that row has scrolled past the viewport. Visual inspection does not establish the numerical raster or native baseline-event gate; retain the separate strict J raster failures.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/maximum-final-alphabet-maximum-W-dark.png",
+          "bytes": 205044,
+          "sha256": "678a778e4e670f4f7bc76a8c1c3969c03d0025df30e5a51176bc5e5d6f26172a",
+          "expectedSha256": "678a778e4e670f4f7bc76a8c1c3969c03d0025df30e5a51176bc5e5d6f26172a",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Directly inspected original PNG by independent reconcile reviewer: W/X main letters, names and pronunciations are fully visible with no visible glyph clipping; large title and Home/Menu controls remain clear. The intended pair is fully visible; partial preceding/next rows are normal scroll viewport boundaries. Visual inspection does not establish the numerical raster or native baseline-event gate; retain the separate strict J raster failures.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/maximum-final-alphabet-maximum-U-dark.png",
+          "bytes": 213502,
+          "sha256": "ebb265a33760acb34c52f3ecba545d988585f13fb8fda8dc886798c70dcfe8ab",
+          "expectedSha256": "ebb265a33760acb34c52f3ecba545d988585f13fb8fda8dc886798c70dcfe8ab",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Directly inspected original PNG by independent reconcile reviewer: U/V main letters, names and pronunciations are fully visible with no visible glyph clipping; large title and Home/Menu controls remain clear. The intended pair is fully visible; partial preceding/next rows are normal scroll viewport boundaries. Visual inspection does not establish the numerical raster or native baseline-event gate; retain the separate strict J raster failures.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/maximum-final-alphabet-maximum-S-dark.png",
+          "bytes": 199504,
+          "sha256": "105aa155662754e731ae9a367e4d0d4e76266e747c8b277fa8f33f4e11dfd415",
+          "expectedSha256": "105aa155662754e731ae9a367e4d0d4e76266e747c8b277fa8f33f4e11dfd415",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Directly inspected original PNG by independent reconcile reviewer: S/T main letters, names and pronunciations are fully visible with no visible glyph clipping; large title and Home/Menu controls remain clear. The intended pair is fully visible; partial preceding/next rows are normal scroll viewport boundaries. Visual inspection does not establish the numerical raster or native baseline-event gate; retain the separate strict J raster failures.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/maximum-final-alphabet-maximum-Q-dark.png",
+          "bytes": 206493,
+          "sha256": "1a9012816d2233047583b22c70b1cfdd64e7bc3c0a979948f3e464341848ddd0",
+          "expectedSha256": "1a9012816d2233047583b22c70b1cfdd64e7bc3c0a979948f3e464341848ddd0",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Directly inspected original PNG by independent reconcile reviewer: Q/R main letters, names and pronunciations are fully visible with no visible glyph clipping; large title and Home/Menu controls remain clear. The intended pair is fully visible; partial preceding/next rows are normal scroll viewport boundaries. Visual inspection does not establish the numerical raster or native baseline-event gate; retain the separate strict J raster failures.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/maximum-final-alphabet-maximum-O-dark.png",
+          "bytes": 204282,
+          "sha256": "cdba487e0d6eae28a822e3798ec1a980c15f8602c87e3a704f19279e87b0a7e7",
+          "expectedSha256": "cdba487e0d6eae28a822e3798ec1a980c15f8602c87e3a704f19279e87b0a7e7",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Directly inspected original PNG by independent reconcile reviewer: O/P main letters, names and pronunciations are fully visible with no visible glyph clipping; large title and Home/Menu controls remain clear. The intended pair is fully visible; partial preceding/next rows are normal scroll viewport boundaries. Visual inspection does not establish the numerical raster or native baseline-event gate; retain the separate strict J raster failures.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/maximum-final-alphabet-maximum-M-dark.png",
+          "bytes": 195887,
+          "sha256": "1d5184ea59e30dc41e9a436a5a5a152d76408daeafe07271a8fd161174bad5ab",
+          "expectedSha256": "1d5184ea59e30dc41e9a436a5a5a152d76408daeafe07271a8fd161174bad5ab",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Directly inspected original PNG by independent reconcile reviewer: M/N main letters, names and pronunciations are fully visible with no visible glyph clipping; large title and Home/Menu controls remain clear. The intended pair is fully visible; partial preceding/next rows are normal scroll viewport boundaries. Visual inspection does not establish the numerical raster or native baseline-event gate; retain the separate strict J raster failures.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/maximum-final-alphabet-maximum-K-dark.png",
+          "bytes": 186126,
+          "sha256": "4b44d806fa6ccf0ab8b2f15b512b5818795930642aab67f46cabc58ae409f084",
+          "expectedSha256": "4b44d806fa6ccf0ab8b2f15b512b5818795930642aab67f46cabc58ae409f084",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Directly inspected original PNG by independent reconcile reviewer: K/L main letters, names and pronunciations are fully visible with no visible glyph clipping; large title and Home/Menu controls remain clear. The intended pair is fully visible; partial preceding/next rows are normal scroll viewport boundaries. Visual inspection does not establish the numerical raster or native baseline-event gate; retain the separate strict J raster failures.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/maximum-final-alphabet-maximum-I-dark.png",
+          "bytes": 172671,
+          "sha256": "d6229a5b4803018399a27b4aa13704fc20336329443dc9b8051fb6b42c4ebce4",
+          "expectedSha256": "d6229a5b4803018399a27b4aa13704fc20336329443dc9b8051fb6b42c4ebce4",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Directly inspected original PNG by independent reconcile reviewer: I/J main letters, names and pronunciations are fully visible with no visible glyph clipping; large title and Home/Menu controls remain clear. The intended pair is fully visible; partial preceding/next rows are normal scroll viewport boundaries. Visual inspection does not establish the numerical raster or native baseline-event gate; retain the separate strict J raster failures.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/maximum-final-alphabet-maximum-G-dark.png",
+          "bytes": 171763,
+          "sha256": "0b783aa9d712134859f967337ad7a9960dc3b75b5ccad241f7f52eeb4c1cc928",
+          "expectedSha256": "0b783aa9d712134859f967337ad7a9960dc3b75b5ccad241f7f52eeb4c1cc928",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Directly inspected original PNG by independent reconcile reviewer: G/H main letters, names and pronunciations are fully visible with no visible glyph clipping; large title and Home/Menu controls remain clear. The intended pair is fully visible; partial preceding/next rows are normal scroll viewport boundaries. Visual inspection does not establish the numerical raster or native baseline-event gate; retain the separate strict J raster failures.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/maximum-final-alphabet-maximum-E-dark.png",
+          "bytes": 173425,
+          "sha256": "ec350e5e17a93acd622248117e713e51b2a463d27fba39ef14de8abc390b7af4",
+          "expectedSha256": "ec350e5e17a93acd622248117e713e51b2a463d27fba39ef14de8abc390b7af4",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Directly inspected original PNG by independent reconcile reviewer: E/F main letters, names and pronunciations are fully visible with no visible glyph clipping; large title and Home/Menu controls remain clear. The intended pair is fully visible; partial preceding/next rows are normal scroll viewport boundaries. Visual inspection does not establish the numerical raster or native baseline-event gate; retain the separate strict J raster failures.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/maximum-final-alphabet-maximum-C-dark.png",
+          "bytes": 183632,
+          "sha256": "44c0997891b05fb763d41acd6b065878b6b0e998be8c3988071c9a96a89b808f",
+          "expectedSha256": "44c0997891b05fb763d41acd6b065878b6b0e998be8c3988071c9a96a89b808f",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Directly inspected original PNG by independent reconcile reviewer: C/D main letters, names and pronunciations are fully visible with no visible glyph clipping; large title and Home/Menu controls remain clear. The intended pair is fully visible; partial preceding/next rows are normal scroll viewport boundaries. Visual inspection does not establish the numerical raster or native baseline-event gate; retain the separate strict J raster failures.",
+          "classification": "final"
+        },
+        {
+          "file": "docs/evidence/run06/screenshots/ios/maximum-final-alphabet-maximum-A-dark.png",
+          "bytes": 196068,
+          "sha256": "ed9d7fe5777392a76f3632040ae61a55c76bc9e9ff3a32e61c8e24d1626b1df2",
+          "expectedSha256": "ed9d7fe5777392a76f3632040ae61a55c76bc9e9ff3a32e61c8e24d1626b1df2",
+          "matchesManifest": true,
+          "label": "ios final",
+          "encodedPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "orientation": 1,
+          "displayPixels": {
+            "width": 1668,
+            "height": 2420
+          },
+          "inspection": "Directly inspected original PNG by independent reconcile reviewer: A/B main letters, names and pronunciations are fully visible with no visible glyph clipping; large title and Home/Menu controls remain clear. The full instruction wraps to two lines. The next C/D row is partially below the scroll viewport. Visual inspection does not establish the numerical raster or native baseline-event gate; retain the separate strict J raster failures.",
+          "classification": "final"
+        }
+      ],
+      "metadata": "docs/evidence/run06/screenshots/ios/metadata.json"
+    }
+  },
+  "artifacts": [
+    {
+      "file": "assets/fonts/NatoTile-ExtraBold.ttf",
+      "bytes": 132184,
+      "sha256": "b0150a84d5e000fcd276cf13e1863ca8bbaab0ff2a0dfdcfa958a48781dd7aa6",
+      "expectedSha256": "b0150a84d5e000fcd276cf13e1863ca8bbaab0ff2a0dfdcfa958a48781dd7aa6",
+      "matchesManifest": true,
+      "label": "source font"
+    },
+    {
+      "file": "assets/fonts/NatoTile-SemiBold.ttf",
+      "bytes": 132264,
+      "sha256": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f",
+      "expectedSha256": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f",
+      "matchesManifest": true,
+      "label": "source font"
+    },
+    {
+      "file": "assets/fonts/NatoTile-Italic.ttf",
+      "bytes": 135236,
+      "sha256": "50f16c8bec3ed31190d37403b6e15d200274e7a5e43f1a698a86eef7079d862b",
+      "expectedSha256": "50f16c8bec3ed31190d37403b6e15d200274e7a5e43f1a698a86eef7079d862b",
+      "matchesManifest": true,
+      "label": "source font"
+    },
+    {
+      "file": "dist/assets/app-4VJ4YJA7.js",
+      "bytes": 361118,
+      "sha256": "ac7a0bae59aa498d0433c49ad7b90aba374faf8f0c38dad8b90cee0717f878b5",
+      "expectedSha256": "ac7a0bae59aa498d0433c49ad7b90aba374faf8f0c38dad8b90cee0717f878b5",
+      "matchesManifest": true,
+      "label": "captured web build"
+    },
+    {
+      "file": "dist/NatoTile-ExtraBold-P5QNDEHJ.ttf",
+      "bytes": 132184,
+      "sha256": "b0150a84d5e000fcd276cf13e1863ca8bbaab0ff2a0dfdcfa958a48781dd7aa6",
+      "expectedSha256": "b0150a84d5e000fcd276cf13e1863ca8bbaab0ff2a0dfdcfa958a48781dd7aa6",
+      "matchesManifest": true,
+      "label": "captured web build"
+    },
+    {
+      "file": "dist/NatoTile-Italic-AWOPV6AY.ttf",
+      "bytes": 135236,
+      "sha256": "50f16c8bec3ed31190d37403b6e15d200274e7a5e43f1a698a86eef7079d862b",
+      "expectedSha256": "50f16c8bec3ed31190d37403b6e15d200274e7a5e43f1a698a86eef7079d862b",
+      "matchesManifest": true,
+      "label": "captured web build"
+    },
+    {
+      "file": "dist/NatoTile-SemiBold-REJGIRDE.ttf",
+      "bytes": 132264,
+      "sha256": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f",
+      "expectedSha256": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f",
+      "matchesManifest": true,
+      "label": "captured web build"
+    },
+    {
+      "file": "app/_layout.js",
+      "bytes": 5265,
+      "sha256": "00be02166d197db96a505281def979c77d609652862ae9590dd7d3791990a3ac",
+      "expectedSha256": "00be02166d197db96a505281def979c77d609652862ae9590dd7d3791990a3ac",
+      "matchesManifest": true,
+      "label": "ios candidate source"
+    },
+    {
+      "file": "src/components/HeaderInsets.ios.js",
+      "bytes": 1089,
+      "sha256": "2d40773194f5252836f05fbf6543c3f5a474d926190757e186995560a6ea3ab2",
+      "expectedSha256": "2d40773194f5252836f05fbf6543c3f5a474d926190757e186995560a6ea3ab2",
+      "matchesManifest": true,
+      "label": "ios candidate source"
+    },
+    {
+      "file": "src/components/HeaderInsets.js",
+      "bytes": 262,
+      "sha256": "3ec9c11d6db54ce5ad7d8c42052380999457b01294045f34be5573bf9e7a1f65",
+      "expectedSha256": "3ec9c11d6db54ce5ad7d8c42052380999457b01294045f34be5573bf9e7a1f65",
+      "matchesManifest": true,
+      "label": "ios candidate source"
+    },
+    {
+      "file": "ios/NATOPhonetics/HeaderInsets.swift",
+      "bytes": 1639,
+      "sha256": "65481015627b4d2f6436e280da588a523652d0a330ff4fc61a080cb2355bf1e0",
+      "expectedSha256": "65481015627b4d2f6436e280da588a523652d0a330ff4fc61a080cb2355bf1e0",
+      "matchesManifest": true,
+      "label": "ios candidate source"
+    },
+    {
+      "file": "ios/NATOPhonetics/HeaderInsetsBridge.m",
+      "bytes": 171,
+      "sha256": "43b9247d33e10de48f6e05124404e09b84789aab0c431014b23565042b97495c",
+      "expectedSha256": "43b9247d33e10de48f6e05124404e09b84789aab0c431014b23565042b97495c",
+      "matchesManifest": true,
+      "label": "ios candidate source"
+    },
+    {
+      "file": "artifacts/ios-simulator/Build/Products/Release-iphonesimulator/NATOPhonetics.app/NATOPhonetics",
+      "bytes": 9834064,
+      "sha256": "571a7e1df890aa783dc9ed1834c86643c0b7fd2fca8b135ecfff07bed73fdd21",
+      "expectedSha256": "571a7e1df890aa783dc9ed1834c86643c0b7fd2fca8b135ecfff07bed73fdd21",
+      "matchesManifest": true,
+      "label": "iOS bundled candidate"
+    },
+    {
+      "file": "artifacts/ios-simulator/Build/Products/Release-iphonesimulator/NATOPhonetics.app/main.jsbundle",
+      "bytes": 1647070,
+      "sha256": "f20645dfbe6ad805d9d250ea501af259a94fdfdf49f6f133ee8075dfe9f13aeb",
+      "expectedSha256": "f20645dfbe6ad805d9d250ea501af259a94fdfdf49f6f133ee8075dfe9f13aeb",
+      "matchesManifest": true,
+      "label": "iOS bundled candidate"
+    },
+    {
+      "file": "artifacts/ios-simulator/Build/Products/Release-iphonesimulator/NATOPhonetics.app/NatoTile-ExtraBold.ttf",
+      "bytes": 132184,
+      "sha256": "b0150a84d5e000fcd276cf13e1863ca8bbaab0ff2a0dfdcfa958a48781dd7aa6",
+      "expectedSha256": "b0150a84d5e000fcd276cf13e1863ca8bbaab0ff2a0dfdcfa958a48781dd7aa6",
+      "matchesManifest": true,
+      "label": "iOS bundled candidate"
+    },
+    {
+      "file": "artifacts/ios-simulator/Build/Products/Release-iphonesimulator/NATOPhonetics.app/NatoTile-SemiBold.ttf",
+      "bytes": 132264,
+      "sha256": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f",
+      "expectedSha256": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f",
+      "matchesManifest": true,
+      "label": "iOS bundled candidate"
+    },
+    {
+      "file": "artifacts/ios-simulator/Build/Products/Release-iphonesimulator/NATOPhonetics.app/NatoTile-Italic.ttf",
+      "bytes": 135236,
+      "sha256": "50f16c8bec3ed31190d37403b6e15d200274e7a5e43f1a698a86eef7079d862b",
+      "expectedSha256": "50f16c8bec3ed31190d37403b6e15d200274e7a5e43f1a698a86eef7079d862b",
+      "matchesManifest": true,
+      "label": "iOS bundled candidate"
+    },
+    {
+      "file": "artifacts/run06/ios/NATOPhonetics-1.0.0-simulator.zip",
+      "bytes": 4817702,
+      "sha256": "1966a2475bb066af31bb785aecd77dcae4e7d4dec3451e58ac8e5bf955f99250",
+      "expectedSha256": "1966a2475bb066af31bb785aecd77dcae4e7d4dec3451e58ac8e5bf955f99250",
+      "matchesManifest": true,
+      "label": "iOS simulator archive"
+    },
+    {
+      "file": "artifacts/run06/ios/NATOPhonetics-1.0.0-simulator.zip!NATOPhonetics.app/NATOPhonetics",
+      "sha256": "571a7e1df890aa783dc9ed1834c86643c0b7fd2fca8b135ecfff07bed73fdd21",
+      "expectedSha256": "571a7e1df890aa783dc9ed1834c86643c0b7fd2fca8b135ecfff07bed73fdd21",
+      "matchesManifest": true,
+      "label": "iOS archive"
+    },
+    {
+      "file": "artifacts/run06/ios/NATOPhonetics-1.0.0-simulator.zip!NATOPhonetics.app/main.jsbundle",
+      "sha256": "f20645dfbe6ad805d9d250ea501af259a94fdfdf49f6f133ee8075dfe9f13aeb",
+      "expectedSha256": "f20645dfbe6ad805d9d250ea501af259a94fdfdf49f6f133ee8075dfe9f13aeb",
+      "matchesManifest": true,
+      "label": "iOS archive"
+    },
+    {
+      "file": "artifacts/run06/ios/NATOPhonetics-1.0.0-simulator.zip!NATOPhonetics.app/NatoTile-ExtraBold.ttf",
+      "sha256": "b0150a84d5e000fcd276cf13e1863ca8bbaab0ff2a0dfdcfa958a48781dd7aa6",
+      "expectedSha256": "b0150a84d5e000fcd276cf13e1863ca8bbaab0ff2a0dfdcfa958a48781dd7aa6",
+      "matchesManifest": true,
+      "label": "iOS archive"
+    },
+    {
+      "file": "artifacts/run06/ios/NATOPhonetics-1.0.0-simulator.zip!NATOPhonetics.app/NatoTile-SemiBold.ttf",
+      "sha256": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f",
+      "expectedSha256": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f",
+      "matchesManifest": true,
+      "label": "iOS archive"
+    },
+    {
+      "file": "artifacts/run06/ios/NATOPhonetics-1.0.0-simulator.zip!NATOPhonetics.app/NatoTile-Italic.ttf",
+      "sha256": "50f16c8bec3ed31190d37403b6e15d200274e7a5e43f1a698a86eef7079d862b",
+      "expectedSha256": "50f16c8bec3ed31190d37403b6e15d200274e7a5e43f1a698a86eef7079d862b",
+      "matchesManifest": true,
+      "label": "iOS archive"
+    },
+    {
+      "file": "android/app/src/main/AndroidManifest.xml",
+      "bytes": 1542,
+      "sha256": "cce8bb32ebacf15d517e04ffdd9b644ea8bec46209e9eaaa132048fe37c22b94",
+      "expectedSha256": "cce8bb32ebacf15d517e04ffdd9b644ea8bec46209e9eaaa132048fe37c22b94",
+      "matchesManifest": true,
+      "label": "android candidate source"
+    },
+    {
+      "file": "android/app/src/main/java/com/natophonetics/app/MainActivity.kt",
+      "bytes": 2255,
+      "sha256": "b12e4cf04fd6176f2f0219ef692d2b4dc7da890adf956be0cb432cc6f54bfa7d",
+      "expectedSha256": "b12e4cf04fd6176f2f0219ef692d2b4dc7da890adf956be0cb432cc6f54bfa7d",
+      "matchesManifest": true,
+      "label": "android candidate source"
+    },
+    {
+      "file": "android/app/src/main/java/com/natophonetics/app/MainApplication.kt",
+      "bytes": 1997,
+      "sha256": "6939ab991af72a7fd8690a8b0d0c31061268b75cba33465823844a834a73d56b",
+      "expectedSha256": "6939ab991af72a7fd8690a8b0d0c31061268b75cba33465823844a834a73d56b",
+      "matchesManifest": true,
+      "label": "android candidate source"
+    },
+    {
+      "file": "artifacts/run06/android/NATOPhonetics-1.0.0-debug.apk",
+      "bytes": 102722273,
+      "sha256": "0ecf22d08d00d964d61d77cfc8c14607607627020733c5397e839e70db9cadda",
+      "expectedSha256": "0ecf22d08d00d964d61d77cfc8c14607607627020733c5397e839e70db9cadda",
+      "matchesManifest": true,
+      "label": "Android APK"
+    },
+    {
+      "file": "artifacts/run06/android/NATOPhonetics-1.0.0-debug.apk!assets/fonts/NatoTile-ExtraBold.ttf",
+      "sha256": "b0150a84d5e000fcd276cf13e1863ca8bbaab0ff2a0dfdcfa958a48781dd7aa6",
+      "expectedSha256": "b0150a84d5e000fcd276cf13e1863ca8bbaab0ff2a0dfdcfa958a48781dd7aa6",
+      "matchesManifest": true,
+      "label": "Android bundled font"
+    },
+    {
+      "file": "artifacts/run06/android/NATOPhonetics-1.0.0-debug.apk!assets/fonts/NatoTile-SemiBold.ttf",
+      "sha256": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f",
+      "expectedSha256": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f",
+      "matchesManifest": true,
+      "label": "Android bundled font"
+    },
+    {
+      "file": "artifacts/run06/android/NATOPhonetics-1.0.0-debug.apk!assets/fonts/NatoTile-Italic.ttf",
+      "sha256": "50f16c8bec3ed31190d37403b6e15d200274e7a5e43f1a698a86eef7079d862b",
+      "expectedSha256": "50f16c8bec3ed31190d37403b6e15d200274e7a5e43f1a698a86eef7079d862b",
+      "matchesManifest": true,
+      "label": "Android bundled font"
+    },
+    {
+      "file": "artifacts/run06/android/loaded-javascript/script-2.js",
+      "bytes": 5152183,
+      "sha256": "2aa49196ef22a62e77f4188b974d51e38939119c11eac456032d4e7bc5b7614b",
+      "expectedSha256": "2aa49196ef22a62e77f4188b974d51e38939119c11eac456032d4e7bc5b7614b",
+      "matchesManifest": true,
+      "label": "Android loaded JavaScript"
+    }
+  ],
+  "artifactFindings": [],
+  "ledgerCounts": {
+    "open": 7,
+    "in-progress": 12,
+    "implemented-awaiting-M11": 12,
+    "resolved": 4,
+    "blocked": 0,
+    "scope-change-approved": 0
+  },
+  "ledger": {
+    "R01": "resolved",
+    "R02": "implemented-awaiting-M11",
+    "R03": "implemented-awaiting-M11",
+    "R04": "implemented-awaiting-M11",
+    "R05": "in-progress",
+    "R06": "in-progress",
+    "R07": "in-progress",
+    "R08": "implemented-awaiting-M11",
+    "R09": "implemented-awaiting-M11",
+    "R10": "implemented-awaiting-M11",
+    "R11": "resolved",
+    "R12": "implemented-awaiting-M11",
+    "R13": "implemented-awaiting-M11",
+    "R14": "in-progress",
+    "R15": "resolved",
+    "R16": "resolved",
+    "R17": "in-progress",
+    "R18": "implemented-awaiting-M11",
+    "R19": "open",
+    "R20": "in-progress",
+    "R21": "in-progress",
+    "R22": "implemented-awaiting-M11",
+    "R23": "in-progress",
+    "R24": "implemented-awaiting-M11",
+    "R25": "in-progress",
+    "F01": "in-progress",
+    "F02": "open",
+    "F03": "in-progress",
+    "F04": "implemented-awaiting-M11",
+    "F05": "open",
+    "F06": "open",
+    "F07": "open",
+    "F08": "open",
+    "F09": "open",
+    "F10": "in-progress"
+  },
+  "phases": {
+    "P00": "agent-done",
+    "P01": "agent-done",
+    "P02": "agent-done",
+    "P03": "agent-done",
+    "P04": "agent-done",
+    "P05": "active",
+    "P06": "todo",
+    "P07": "active",
+    "P08": "todo",
+    "P09": "todo",
+    "P10": "todo",
+    "M11": "todo"
+  },
+  "tasks": {
+    "P00.1": true,
+    "P00.2": true,
+    "P00.3": true,
+    "P00.4": true,
+    "P00.5": true,
+    "P00.6": true,
+    "P01.1": true,
+    "P01.2": true,
+    "P01.3": true,
+    "P01.4": true,
+    "P01.5": true,
+    "P02.1": true,
+    "P02.2": true,
+    "P02.3": true,
+    "P02.4": true,
+    "P02.5": true,
+    "P03.1": true,
+    "P03.2": true,
+    "P03.3": true,
+    "P03.4": true,
+    "P04.1": true,
+    "P04.2": true,
+    "P04.3": true,
+    "P04.4": true,
+    "P04.5": true,
+    "P05.1": true,
+    "P05.2": false,
+    "P05.3": true,
+    "P05.4": true,
+    "P05.5": true,
+    "P05.6": true,
+    "P05.7": true,
+    "P05.8": false,
+    "P06.1": false,
+    "P06.2": false,
+    "P06.3": false,
+    "P06.4": false,
+    "P07.1": true,
+    "P07.2": false,
+    "P07.3": true,
+    "P07.4": false,
+    "P08.1": false,
+    "P08.2": false,
+    "P08.3": false,
+    "P08.4": false,
+    "P08.5": false,
+    "P09.1": false,
+    "P09.2": false,
+    "P09.3": false,
+    "P09.4": false,
+    "P10.1": false,
+    "P10.2": false,
+    "P10.3": false,
+    "P10.4": false,
+    "P10.5": false,
+    "P10.6": false,
+    "P10.7": false,
+    "M11.1": false,
+    "M11.2": false,
+    "M11.3": false,
+    "M11.4": false,
+    "M11.5": false,
+    "M11.6": false,
+    "M11.7": false
+  },
+  "reviewUpdated": "**Updated:** 17 November 2026 — Run 06 native configuration/header repairs and expanded fidelity verification. Original findings and earlier snapshots remain historical; [the delivery ledger](DELIVERY_PLAN.md#complete-scope-and-resolution-ledger) owns current status.",
+  "planCurrentState": "**Current state:** Run 06 repairs the iPad small-window header overlap and preserves Android route/input/quiz state through live font-size changes. **P05 remains active**: ordinary Android text retains stale sizing and quiz feedback clips, the historical Android digit-3 guide and newly measured maximum-size iOS J fail the strict raster envelope, and specific native coverage remains unrun. P05.6/.7 retain their verified delivery; P05.2/.8 remain partial. Expanded iOS maximum-text alphabet/converter/quiz coverage is now captured and measured, with its failures retained. Shared checks pass 80 tests, types/lint, the Expo-free scan and scoped production-web regression. P00–P04 retain agent-done status; P07.2's tested pure model still needs screen/audio integration; P06/P07.4/P08–P10 and M11 remain unfinished. [Run 06 evidence](evidence/run06/README.md), [source identity](evidence/run06/source-identity.json). This is not release approval.",
+  "captureTotals": {
+    "total": 77,
+    "final": 68,
+    "diagnostic": 9
+  },
+  "documentsChecked": 19,
+  "relativeLinksChecked": 386,
+  "missingLinks": [],
+  "pendingGeneratedTargets": [],
+  "errors": [],
+  "warnings": [
+    "Screenshot counts distinguish 68 final from 9 diagnostic captures; check prose qualification."
+  ]
+}

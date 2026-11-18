@@ -1,0 +1,321 @@
+Command: ['xcodebuild', 'test-without-building', '-project', '/tmp/nato-ios-run07-capture/Capture.xcodeproj', '-scheme', 'Capture', '-configuration', 'Debug', '-destination', 'platform=iOS Simulator,id=0653F7EC-9237-4AC5-A264-12969E625070', '-derivedDataPath', '/tmp/nato-ios-run07-capture/DerivedData', 'CODE_SIGNING_ALLOWED=NO', '-parallel-testing-enabled', 'NO', '-resultBundlePath', '/tmp/nato-ios-run07-capture/final-phone-maximum.xcresult', '-only-testing:CaptureUITests/CaptureUITests/testPhoneMaximumNativeBaselines']
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild test-without-building -project /tmp/nato-ios-run07-capture/Capture.xcodeproj -scheme Capture -configuration Debug -destination "platform=iOS Simulator,id=0653F7EC-9237-4AC5-A264-12969E625070" -derivedDataPath /tmp/nato-ios-run07-capture/DerivedData CODE_SIGNING_ALLOWED=NO -parallel-testing-enabled NO -resultBundlePath /tmp/nato-ios-run07-capture/final-phone-maximum.xcresult "-only-testing:CaptureUITests/CaptureUITests/testPhoneMaximumNativeBaselines"
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+Writing result bundle at path:
+	/tmp/nato-ios-run07-capture/final-phone-maximum.xcresult
+
+2026-11-17 16:48:59.909922+0000 CaptureUITests-Runner[76267:9889926] [Default] Running tests...
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-11-17 16:49:02.056.
+Test Suite 'CaptureUITests.xctest' started at 2026-11-17 16:49:02.071.
+Test Suite 'CaptureUITests' started at 2026-11-17 16:49:02.072.
+Test Case '-[CaptureUITests.CaptureUITests testPhoneMaximumNativeBaselines]' started.
+    t =     0.00s Start Test at 2026-11-17 16:49:02.075
+    t =     0.24s Set Up
+    t =     0.24s Setting device orientation to Portrait
+    t =     0.60s     Wait for com.natophonetics.app to idle
+    t =     0.62s Open com.natophonetics.app
+    t =     0.62s     Launch com.natophonetics.app
+    t =     0.62s         Terminate com.natophonetics.app:76117
+    t =     3.76s         Wait for accessibility to load
+    t =     3.76s         Setting up automation session
+    t =     5.67s         Wait for com.natophonetics.app to idle
+    t =     7.06s Waiting 30.0s for "app-theme" Any to exist
+    t =     8.09s     Checking `Expect predicate `existsNoRetry == 1` for object "app-theme" Any`
+    t =     8.09s         Checking existence of `"app-theme" Any`
+    t =     8.13s Open com.natophonetics.app with URL natophonetics://settings
+    t =     8.13s     Launch com.natophonetics.app
+    t =     8.31s         Setting up automation session
+    t =     8.31s         Wait for com.natophonetics.app to idle
+    t =     9.32s Wait for com.natophonetics.app to become Running Foreground
+    t =     9.33s Tap "Dark" Any
+    t =     9.33s     Wait for com.natophonetics.app to idle
+    t =     9.33s     Find the "Dark" Any
+    t =     9.43s     Check for interrupting elements affecting "Dark" Other
+    t =     9.53s     Synthesize event
+    t =     9.55s         Scroll element to visible
+    t =     9.56s         Find the "Dark" Other
+    t =     9.59s         Computed hit point {201, 671.83331298828125} after scrolling to visible
+    t =     9.89s     Wait for com.natophonetics.app to idle
+    t =     9.89s Open com.natophonetics.app with URL natophonetics://alphabet
+    t =     9.89s     Launch com.natophonetics.app
+    t =     9.95s         Setting up automation session
+    t =     9.95s         Wait for com.natophonetics.app to idle
+    t =    10.96s Wait for com.natophonetics.app to become Running Foreground
+    t =    10.96s Waiting 15.0s for "alphabet-A" Any to exist
+    t =    12.01s     Checking `Expect predicate `existsNoRetry == 1` for object "alphabet-A" Any`
+    t =    12.02s         Checking existence of `"alphabet-A" Any`
+    t =    12.10s Find the "alphabet-J" Any
+    t =    12.15s Find the "screen-scroll" Any
+    t =    12.16s Find the "screen-scroll" Any
+    t =    12.18s Press "screen-scroll" Other[0.50, 0.85] for 0.1 seconds, then drag to "screen-scroll" Other[0.50, 0.85] -> (0.0, -420.2) with velocity of 250.00 pixels per second, and then hold for 0.3 seconds 
+    t =    12.18s     Wait for com.natophonetics.app to idle
+    t =    12.18s     Find the "screen-scroll" Other
+    t =    12.19s     Check for interrupting elements affecting "screen-scroll" Other
+    t =    12.28s     Synthesize event
+    t =    12.28s         Find the "screen-scroll" Other
+    t =    12.29s         Find the "screen-scroll" Other
+    t =    12.31s         Find the "screen-scroll" Other
+    t =    12.32s         Find the "screen-scroll" Other
+    t =    12.34s         Find the "screen-scroll" Other
+    t =    14.69s     Wait for com.natophonetics.app to idle
+    t =    14.70s Find the "alphabet-J" Any
+    t =    14.76s Find the "screen-scroll" Any
+    t =    14.77s Find the "screen-scroll" Any
+    t =    14.78s Press "screen-scroll" Other[0.50, 0.85] for 0.1 seconds, then drag to "screen-scroll" Other[0.50, 0.85] -> (0.0, -420.2) with velocity of 250.00 pixels per second, and then hold for 0.3 seconds 
+    t =    14.79s     Wait for com.natophonetics.app to idle
+    t =    14.79s     Find the "screen-scroll" Other
+    t =    14.80s     Check for interrupting elements affecting "screen-scroll" Other
+    t =    14.87s     Synthesize event
+    t =    14.87s         Find the "screen-scroll" Other
+    t =    14.88s         Find the "screen-scroll" Other
+    t =    14.90s         Find the "screen-scroll" Other
+    t =    14.91s         Find the "screen-scroll" Other
+    t =    15.03s         Find the "screen-scroll" Other
+    t =    17.37s     Wait for com.natophonetics.app to idle
+    t =    17.38s Find the "alphabet-J" Any
+    t =    17.43s Find the "screen-scroll" Any
+    t =    17.44s Find the "screen-scroll" Any
+    t =    17.46s Press "screen-scroll" Other[0.50, 0.85] for 0.1 seconds, then drag to "screen-scroll" Other[0.50, 0.85] -> (0.0, -420.2) with velocity of 250.00 pixels per second, and then hold for 0.3 seconds 
+    t =    17.46s     Wait for com.natophonetics.app to idle
+    t =    17.46s     Find the "screen-scroll" Other
+    t =    17.47s     Check for interrupting elements affecting "screen-scroll" Other
+    t =    17.54s     Synthesize event
+    t =    17.54s         Find the "screen-scroll" Other
+    t =    17.55s         Find the "screen-scroll" Other
+    t =    17.57s         Find the "screen-scroll" Other
+    t =    17.58s         Find the "screen-scroll" Other
+    t =    17.60s         Find the "screen-scroll" Other
+    t =    19.96s     Wait for com.natophonetics.app to idle
+    t =    19.96s Find the "alphabet-J" Any
+    t =    20.02s Find the "screen-scroll" Any
+    t =    20.03s Find the "screen-scroll" Any
+    t =    20.05s Press "screen-scroll" Other[0.50, 0.85] for 0.1 seconds, then drag to "screen-scroll" Other[0.50, 0.85] -> (0.0, -420.2) with velocity of 250.00 pixels per second, and then hold for 0.3 seconds 
+    t =    20.05s     Wait for com.natophonetics.app to idle
+    t =    20.06s     Find the "screen-scroll" Other
+    t =    20.07s     Check for interrupting elements affecting "screen-scroll" Other
+    t =    20.14s     Synthesize event
+    t =    20.14s         Find the "screen-scroll" Other
+    t =    20.16s         Find the "screen-scroll" Other
+    t =    20.17s         Find the "screen-scroll" Other
+    t =    20.19s         Find the "screen-scroll" Other
+    t =    20.31s         Find the "screen-scroll" Other
+    t =    22.65s     Wait for com.natophonetics.app to idle
+    t =    22.66s Find the "alphabet-J" Any
+    t =    22.70s Find the "screen-scroll" Any
+    t =    22.72s Find the "screen-scroll" Any
+    t =    22.73s Press "screen-scroll" Other[0.50, 0.85] for 0.1 seconds, then drag to "screen-scroll" Other[0.50, 0.85] -> (0.0, -420.2) with velocity of 250.00 pixels per second, and then hold for 0.3 seconds 
+    t =    22.73s     Wait for com.natophonetics.app to idle
+    t =    22.73s     Find the "screen-scroll" Other
+    t =    22.74s     Check for interrupting elements affecting "screen-scroll" Other
+    t =    22.81s     Synthesize event
+    t =    22.81s         Find the "screen-scroll" Other
+    t =    22.83s         Find the "screen-scroll" Other
+    t =    22.84s         Find the "screen-scroll" Other
+    t =    22.85s         Find the "screen-scroll" Other
+    t =    22.88s         Find the "screen-scroll" Other
+    t =    25.22s     Wait for com.natophonetics.app to idle
+    t =    25.23s Find the "alphabet-J" Any
+    t =    25.29s Find the "screen-scroll" Any
+    t =    25.30s Find the "screen-scroll" Any
+    t =    25.32s Press "screen-scroll" Other[0.50, 0.85] for 0.1 seconds, then drag to "screen-scroll" Other[0.50, 0.85] -> (0.0, -420.2) with velocity of 250.00 pixels per second, and then hold for 0.3 seconds 
+    t =    25.32s     Wait for com.natophonetics.app to idle
+    t =    25.32s     Find the "screen-scroll" Other
+    t =    25.33s     Check for interrupting elements affecting "screen-scroll" Other
+    t =    25.39s     Synthesize event
+    t =    25.39s         Find the "screen-scroll" Other
+    t =    25.40s         Find the "screen-scroll" Other
+    t =    25.42s         Find the "screen-scroll" Other
+    t =    25.43s         Find the "screen-scroll" Other
+    t =    25.44s         Find the "screen-scroll" Other
+    t =    27.79s     Wait for com.natophonetics.app to idle
+    t =    27.79s Find the "alphabet-J" Any
+    t =    27.87s Find the "screen-scroll" Any
+    t =    27.88s Find the "screen-scroll" Any
+    t =    27.89s Press "screen-scroll" Other[0.50, 0.85] for 0.1 seconds, then drag to "screen-scroll" Other[0.50, 0.85] -> (0.0, -420.2) with velocity of 250.00 pixels per second, and then hold for 0.3 seconds 
+    t =    27.90s     Wait for com.natophonetics.app to idle
+    t =    27.90s     Find the "screen-scroll" Other
+    t =    27.91s     Check for interrupting elements affecting "screen-scroll" Other
+    t =    28.01s     Synthesize event
+    t =    28.01s         Find the "screen-scroll" Other
+    t =    28.02s         Find the "screen-scroll" Other
+    t =    28.04s         Find the "screen-scroll" Other
+    t =    28.05s         Find the "screen-scroll" Other
+    t =    28.07s         Find the "screen-scroll" Other
+    t =    30.53s     Wait for com.natophonetics.app to idle
+    t =    30.57s Find the "alphabet-J" Any
+    t =    31.05s Find the "screen-scroll" Any
+    t =    31.13s Find the "screen-scroll" Any
+    t =    31.18s Press "screen-scroll" Other[0.50, 0.85] for 0.1 seconds, then drag to "screen-scroll" Other[0.50, 0.85] -> (0.0, -420.2) with velocity of 250.00 pixels per second, and then hold for 0.3 seconds 
+    t =    31.18s     Wait for com.natophonetics.app to idle
+    t =    31.18s     Find the "screen-scroll" Other
+    t =    31.20s     Check for interrupting elements affecting "screen-scroll" Other
+    t =    31.80s     Synthesize event
+    t =    31.80s         Find the "screen-scroll" Other
+    t =    31.82s         Find the "screen-scroll" Other
+    t =    31.83s         Find the "screen-scroll" Other
+    t =    31.85s         Find the "screen-scroll" Other
+    t =    31.86s         Find the "screen-scroll" Other
+    t =    34.23s     Wait for com.natophonetics.app to idle
+    t =    34.25s Find the "alphabet-J" Any
+    t =    34.44s Find the "screen-scroll" Any
+    t =    34.46s Find the "screen-scroll" Any
+    t =    34.47s Press "screen-scroll" Other[0.50, 0.85] for 0.1 seconds, then drag to "screen-scroll" Other[0.50, 0.85] -> (0.0, -420.2) with velocity of 250.00 pixels per second, and then hold for 0.3 seconds 
+    t =    34.48s     Wait for com.natophonetics.app to idle
+    t =    34.48s     Find the "screen-scroll" Other
+    t =    34.49s     Check for interrupting elements affecting "screen-scroll" Other
+    t =    34.78s     Synthesize event
+    t =    34.78s         Find the "screen-scroll" Other
+    t =    34.80s         Find the "screen-scroll" Other
+    t =    34.82s         Find the "screen-scroll" Other
+    t =    34.83s         Find the "screen-scroll" Other
+    t =    34.85s         Find the "screen-scroll" Other
+    t =    37.26s     Wait for com.natophonetics.app to idle
+    t =    37.27s Find the "alphabet-J" Any
+    t =    37.35s Find the "screen-scroll" Any
+    t =    37.36s Find the "screen-scroll" Any
+    t =    37.38s Press "screen-scroll" Other[0.50, 0.85] for 0.1 seconds, then drag to "screen-scroll" Other[0.50, 0.85] -> (0.0, -420.2) with velocity of 250.00 pixels per second, and then hold for 0.3 seconds 
+    t =    37.38s     Wait for com.natophonetics.app to idle
+    t =    37.38s     Find the "screen-scroll" Other
+    t =    37.39s     Check for interrupting elements affecting "screen-scroll" Other
+    t =    37.50s     Synthesize event
+    t =    37.50s         Find the "screen-scroll" Other
+    t =    37.52s         Find the "screen-scroll" Other
+    t =    37.54s         Find the "screen-scroll" Other
+    t =    37.55s         Find the "screen-scroll" Other
+    t =    37.57s         Find the "screen-scroll" Other
+    t =    39.91s     Wait for com.natophonetics.app to idle
+    t =    39.92s Find the "alphabet-J" Any
+    t =    40.00s Find the "screen-scroll" Any
+    t =    40.02s Find the "screen-scroll" Any
+    t =    40.05s Press "screen-scroll" Other[0.50, 0.85] for 0.1 seconds, then drag to "screen-scroll" Other[0.50, 0.85] -> (0.0, -420.2) with velocity of 250.00 pixels per second, and then hold for 0.3 seconds 
+    t =    40.05s     Wait for com.natophonetics.app to idle
+    t =    40.05s     Find the "screen-scroll" Other
+    t =    40.07s     Check for interrupting elements affecting "screen-scroll" Other
+    t =    40.15s     Synthesize event
+    t =    40.16s         Find the "screen-scroll" Other
+    t =    40.17s         Find the "screen-scroll" Other
+    t =    40.19s         Find the "screen-scroll" Other
+    t =    40.20s         Find the "screen-scroll" Other
+    t =    40.22s         Find the "screen-scroll" Other
+    t =    42.56s     Wait for com.natophonetics.app to idle
+    t =    42.57s Find the "alphabet-J" Any
+    t =    42.72s Find the "screen-scroll" Any
+    t =    42.74s Find the "screen-scroll" Any
+    t =    42.75s Press "screen-scroll" Other[0.50, 0.85] for 0.1 seconds, then drag to "screen-scroll" Other[0.50, 0.85] -> (0.0, -420.2) with velocity of 250.00 pixels per second, and then hold for 0.3 seconds 
+    t =    42.75s     Wait for com.natophonetics.app to idle
+    t =    42.75s     Find the "screen-scroll" Other
+    t =    42.77s     Check for interrupting elements affecting "screen-scroll" Other
+    t =    42.91s     Synthesize event
+    t =    42.92s         Find the "screen-scroll" Other
+    t =    42.95s         Find the "screen-scroll" Other
+    t =    42.99s         Find the "screen-scroll" Other
+    t =    43.01s         Find the "screen-scroll" Other
+    t =    43.07s         Find the "screen-scroll" Other
+    t =    45.47s     Wait for com.natophonetics.app to idle
+BASELINE_READY phone-maximum-alphabet-J-dark
+    t =    50.49s Checking existence of `"alphabet-A" Any`
+    t =    50.59s Find the "alphabet-A" Any
+    t =    50.64s Checking existence of `"alphabet-B" Any`
+    t =    50.67s Find the "alphabet-B" Any
+    t =    50.70s Checking existence of `"alphabet-C" Any`
+    t =    50.73s Find the "alphabet-C" Any
+    t =    50.76s Checking existence of `"alphabet-D" Any`
+    t =    50.79s Find the "alphabet-D" Any
+    t =    50.83s Checking existence of `"alphabet-E" Any`
+    t =    50.90s Find the "alphabet-E" Any
+    t =    50.93s Checking existence of `"alphabet-F" Any`
+    t =    50.96s Find the "alphabet-F" Any
+    t =    51.01s Checking existence of `"alphabet-G" Any`
+    t =    51.04s Find the "alphabet-G" Any
+    t =    51.07s Checking existence of `"alphabet-H" Any`
+    t =    51.10s Find the "alphabet-H" Any
+    t =    51.15s Checking existence of `"alphabet-I" Any`
+    t =    51.19s Find the "alphabet-I" Any
+    t =    51.26s Find the "alphabet-I" Button
+    t =    51.32s Checking existence of `"alphabet-J" Any`
+    t =    51.36s Find the "alphabet-J" Any
+    t =    51.45s Find the "alphabet-J" Button
+    t =    51.51s Checking existence of `"alphabet-K" Any`
+    t =    51.54s Find the "alphabet-K" Any
+    t =    51.59s Checking existence of `"alphabet-L" Any`
+    t =    51.62s Find the "alphabet-L" Any
+    t =    51.67s Checking existence of `"alphabet-M" Any`
+    t =    51.70s Find the "alphabet-M" Any
+    t =    51.74s Checking existence of `"alphabet-N" Any`
+    t =    51.77s Find the "alphabet-N" Any
+    t =    51.82s Checking existence of `"alphabet-O" Any`
+    t =    51.86s Find the "alphabet-O" Any
+    t =    51.91s Checking existence of `"alphabet-P" Any`
+    t =    51.94s Find the "alphabet-P" Any
+    t =    51.98s Checking existence of `"alphabet-Q" Any`
+    t =    52.02s Find the "alphabet-Q" Any
+    t =    52.06s Checking existence of `"alphabet-R" Any`
+    t =    52.09s Find the "alphabet-R" Any
+    t =    52.13s Checking existence of `"alphabet-S" Any`
+    t =    52.17s Find the "alphabet-S" Any
+    t =    52.21s Checking existence of `"alphabet-T" Any`
+    t =    52.25s Find the "alphabet-T" Any
+    t =    52.29s Checking existence of `"alphabet-U" Any`
+    t =    52.32s Find the "alphabet-U" Any
+    t =    52.36s Checking existence of `"alphabet-V" Any`
+    t =    52.40s Find the "alphabet-V" Any
+    t =    52.44s Checking existence of `"alphabet-W" Any`
+    t =    52.47s Find the "alphabet-W" Any
+    t =    52.52s Checking existence of `"alphabet-X" Any`
+    t =    52.55s Find the "alphabet-X" Any
+    t =    52.59s Checking existence of `"alphabet-Y" Any`
+    t =    52.63s Find the "alphabet-Y" Any
+    t =    52.68s Checking existence of `"alphabet-Z" Any`
+    t =    52.72s Find the "alphabet-Z" Any
+    t =    52.76s Checking existence of `"converter-0" Any`
+    t =    52.94s Checking existence of `"converter-1" Any`
+    t =    53.16s Checking existence of `"converter-2" Any`
+    t =    53.33s Checking existence of `"converter-3" Any`
+    t =    53.49s Checking existence of `"converter-4" Any`
+    t =    53.65s Checking existence of `"converter-5" Any`
+    t =    53.82s Checking existence of `"converter-6" Any`
+    t =    54.00s Checking existence of `"quiz-card" Any`
+    t =    54.17s Checking existence of `"screen-scroll" Any`
+    t =    54.18s Find the "screen-scroll" Any
+    t =    54.20s Find the "screen-scroll" Other
+CAPTUREFRAMES phone-maximum-alphabet-J-dark {"alphabet-I":{"height":535.6669921875,"width":392.66665649414062,"x":16,"y":133.33338928222656},"alphabet-J":{"height":535.3330078125,"width":392.66665649414062,"x":16,"y":680.99989318847656},"screen-scroll":{"height":600.33331298828125,"width":402,"x":0,"y":239.66667175292969}}
+    t =    54.49s Added attachment named 'phone-maximum-alphabet-J-dark'
+    t =    54.50s Open com.natophonetics.app with URL natophonetics://settings
+    t =    54.50s     Launch com.natophonetics.app
+    t =    54.75s         Setting up automation session
+    t =    54.75s         Wait for com.natophonetics.app to idle
+    t =    55.76s Wait for com.natophonetics.app to become Running Foreground
+    t =    55.76s Tap "System" Any
+    t =    55.76s     Wait for com.natophonetics.app to idle
+    t =    55.77s     Find the "System" Any
+    t =    55.80s     Check for interrupting elements affecting "System" Other
+    t =    55.87s     Synthesize event
+    t =    55.88s         Scroll element to visible
+    t =    55.88s         Find the "System" Other
+    t =    55.91s         Computed hit point {201, 671.83331298828125} after scrolling to visible
+    t =    56.31s     Wait for com.natophonetics.app to idle
+    t =    56.32s Tear Down
+Test Case '-[CaptureUITests.CaptureUITests testPhoneMaximumNativeBaselines]' passed (56.935 seconds).
+Test Suite 'CaptureUITests' passed at 2026-11-17 16:49:59.011.
+	 Executed 1 test, with 0 failures (0 unexpected) in 56.935 (56.939) seconds
+Test Suite 'CaptureUITests.xctest' passed at 2026-11-17 16:49:59.012.
+	 Executed 1 test, with 0 failures (0 unexpected) in 56.935 (56.940) seconds
+Test Suite 'Selected tests' passed at 2026-11-17 16:49:59.012.
+	 Executed 1 test, with 0 failures (0 unexpected) in 56.935 (56.956) seconds
+2026-11-17 16:49:59.571 xcodebuild[76221:9889451] [MT] IDETestOperationsObserverDebug: 67.645 elapsed -- Testing started completed.
+2026-11-17 16:49:59.571 xcodebuild[76221:9889451] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-11-17 16:49:59.571 xcodebuild[76221:9889451] [MT] IDETestOperationsObserverDebug: 67.645 sec, +67.645 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/nato-ios-run07-capture/final-phone-maximum.xcresult
+
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+
+EXIT 0

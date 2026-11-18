@@ -1,0 +1,5 @@
+PASS alphabet-desktop-light: 26 tiles, fixed geometry/typography, custom fonts, reachable content
+PASS alphabet-narrow-200-dark: 26 tiles, fixed geometry/typography, custom fonts, reachable content
+PASS converter-all-desktop-light: 36 tiles, fixed geometry/typography, custom fonts, reachable content
+PASS blocked bundled font request: visible error and zero silent-fallback tiles
+PASS 5 measured states; 8 actual screenshots. Visual inspection remains separate.

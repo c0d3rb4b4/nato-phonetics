@@ -9,8 +9,10 @@ on:
   pull_request:
 
 jobs:
-  lint:
+  quality:
     runs-on: ubuntu-latest
+    env:
+      CI: '1'
 
     steps:
       - name: Checkout
@@ -19,11 +21,63 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version-file: .nvmrc
           cache: npm
 
+      - name: Pin npm
+        run: npm install --global npm@10.9.4
+
       - name: Install
-        run: npm install
+        run: npm ci
 
       - name: Lint
         run: npm run lint
+
+      - name: Check maintained application and typed routes
+        run: npm run typecheck
+
+      - name: Regression tests
+        run: npm test
+
+      - name: Verify independent dependency and build paths
+        run: npm run check:dependencies
+
+      - name: Review dependency advisories
+        run: npm run audit:review
+
+      - name: Build independent web
+        run: npm run export:web
+
+      - name: Install isolated browser test runner
+        run: |
+          npm install --prefix "$RUNNER_TEMP/nato-browser" --no-save --package-lock=false puppeteer@24.43.1
+          echo "NODE_PATH=$RUNNER_TEMP/nato-browser/node_modules" >> "$GITHUB_ENV"
+          browser_executable=$(NODE_PATH="$RUNNER_TEMP/nato-browser/node_modules" node -e "process.stdout.write(require('puppeteer').executablePath())")
+          echo "BROWSER_EXECUTABLE=$browser_executable" >> "$GITHUB_ENV"
+
+      - name: Exported browser regressions
+        run: |
+          node scripts/verify-preferences-browser.cjs dist
+          node scripts/verify-app-browser.cjs dist
+          node scripts/verify-tiles-browser.cjs dist
+          node scripts/verify-sessions-browser.cjs dist artifacts/session-browser/
+          node scripts/verify-numeric-browser.cjs dist artifacts/numeric-browser/
+          node scripts/verify-recall-browser.cjs dist artifacts/recall-browser/
+          node scripts/verify-progress-browser.cjs dist artifacts/progress-browser/
+          node scripts/verify-converter-browser.cjs dist artifacts/converter-browser/
+          node scripts/verify-pacing-browser.cjs dist artifacts/pacing-browser/
+
+      - name: Keep measured tile evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: web-tile-evidence-${{ github.sha }}
+          path: |
+            artifacts/tile-browser/
+            artifacts/session-browser/
+            artifacts/numeric-browser/
+            artifacts/recall-browser/
+            artifacts/progress-browser/
+            artifacts/converter-browser/
+            artifacts/pacing-browser/
+          if-no-files-found: ignore

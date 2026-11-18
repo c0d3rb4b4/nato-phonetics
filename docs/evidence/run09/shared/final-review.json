@@ -1,0 +1,24 @@
+{
+  "manifestSha256": "177b55d55c2c7cc3760600d494f37663d2a2e1ceee820c4bc209ae3efe06643b",
+  "maintainedInputsVerified": 137,
+  "confirmedPriorHashChanges": [
+    ".github/workflows/ci.yml",
+    "app/converter.js",
+    "app/privacy.js",
+    "src/lib/conversion.js",
+    "src/types.ts",
+    "tests/boundaries.test.mjs"
+  ],
+  "addedFiles": [
+    "src/lib/conversionExport.js",
+    "src/lib/conversionExport.web.js",
+    "scripts/verify-converter-browser.cjs",
+    "tests/conversion.test.mjs",
+    "tests/conversion-export.test.mjs"
+  ],
+  "priorManifestOtherInputs": "unchanged; no inherited deletion/revert outside selected edits",
+  "productReview": "One model; canonical versus speech preserved; export messages guarded; no native/dependency/font/storage/permission changes. Deprecated Clipboard isolated. Native failures remain open, no suppression/tolerance/scaling change.",
+  "testScope": "91 shared pass; production web checks pass; Android functional checkpoint + separate enlarged driver; one default iOS XCTest pass, maximum-text fails with native SIGABRT. No fresh native app/Release/full matrix or M11 pass.",
+  "screenshotInspection": "All 43 indexed originals inspected; failure/overlay/viewport/keyboard/injected font-error labels retained. Successful iOS maximum text output/control frames missing.",
+  "stop": "Native failure fingerprint and triage handoff; no further UI/framework cycle before verification/handoff reserve."
+}

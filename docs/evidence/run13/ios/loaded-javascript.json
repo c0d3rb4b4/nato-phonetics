@@ -1,0 +1,15 @@
+{
+  "capturedAt": "2026-11-18T11:43:15.096Z",
+  "method": "Hermes CDP Debugger.getScriptSource",
+  "scripts": [
+    {
+      "file": "artifacts/run13/ios/loaded-javascript/script-2.js",
+      "url": "http://127.0.0.1:8081/index.bundle//&platform=ios&dev=true&lazy=true&minify=false&inlineSourceMap=false&modulesOnly=false&runModule=true&excludeSource=true&sourcePaths=url-server&app=com.natophonetics.app",
+      "bytes": 5239939,
+      "sha256": "7286445632cde30b6f3eeebc80424218c3207065b44208640499b97ce66b967d",
+      "durableArchive": "docs/evidence/run13/ios/loaded-script-0.js.gz",
+      "archiveSha256": "977abe728d75eb397f8a77b51785c4266ccabc9289408760b9738194ab4b915c",
+      "progressSourcePresent": true
+    }
+  ]
+}

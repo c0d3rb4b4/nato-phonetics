@@ -1,0 +1,526 @@
+[
+  {
+    "file": "alphabet-transition-0-scale1.png",
+    "state": "Final candidate scale sequence, stage 0: 1× (cold start)",
+    "theme": "light",
+    "width": 720,
+    "height": 1600,
+    "sha256": "9c879c9cfa84ce5ce3041b4ac2b427fde47cf27787afab957a69b55e1a88c035",
+    "timestamp": "2026-11-17T14:27:36Z",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "androidVersion": "16",
+    "fontScale": "1",
+    "displaySize": "Physical size: 1080x2400\nOverride size: 720x1600",
+    "displayDensity": "Physical density: 420\nOverride density: 280",
+    "device": "Android16/API36 emulator nato-p00-api36",
+    "inspected": true,
+    "inspection": "Actual original PNG visually inspected by independent evidence agent: tile proportions, complete visible labels/guides and viewport fragments checked. Numerical raster gates are reported separately.",
+    "pixelRatio": 1.75,
+    "viewportDp": {
+      "width": 411.42857142857144,
+      "height": 914.2857142857143
+    },
+    "artifactManifest": "../../android/artifact.json",
+    "apkSha256": "e11acd393e8618b001c712607d711b0f36bf427f2cfa618bbbde6731cccbdb4b",
+    "runningJavaScriptSha256": "edc9558726b0e721afdd83d32a89b18ca42d308d3ac11aca37681cc0f313d2f8",
+    "findings": []
+  },
+  {
+    "file": "alphabet-transition-1-scale2.png",
+    "state": "Final candidate scale sequence, stage 1: 2× (live transition)",
+    "theme": "light",
+    "width": 720,
+    "height": 1600,
+    "sha256": "fe917d43261a8bada7e10b05bdb488a4e179d118476b8ef1e42d8256f26a3f23",
+    "timestamp": "2026-11-17T14:27:48Z",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "androidVersion": "16",
+    "fontScale": "2.0",
+    "displaySize": "Physical size: 1080x2400\nOverride size: 720x1600",
+    "displayDensity": "Physical density: 420\nOverride density: 280",
+    "device": "Android16/API36 emulator nato-p00-api36",
+    "inspected": true,
+    "inspection": "Actual original PNG visually inspected by independent evidence agent: tile proportions, complete visible labels/guides and viewport fragments checked. Numerical raster gates are reported separately.",
+    "pixelRatio": 1.75,
+    "viewportDp": {
+      "width": 411.42857142857144,
+      "height": 914.2857142857143
+    },
+    "artifactManifest": "../../android/artifact.json",
+    "apkSha256": "e11acd393e8618b001c712607d711b0f36bf427f2cfa618bbbde6731cccbdb4b",
+    "runningJavaScriptSha256": "edc9558726b0e721afdd83d32a89b18ca42d308d3ac11aca37681cc0f313d2f8",
+    "findings": [
+      {
+        "id": "android-live-scale-general-text",
+        "status": "open",
+        "owner": "P05.2/P05.8/R06/R07 engineering",
+        "detail": "Shared tiles retain their composition. Non-tile title/instruction enlarges or clips during live text-scale changes; the second instruction clause is absent in initial/returned views. Normal scroll-edge tile fragments are not internal clipping."
+      }
+    ]
+  },
+  {
+    "file": "alphabet-transition-2-scale1.png",
+    "state": "Final candidate scale sequence, stage 2: 1× (live transition)",
+    "theme": "light",
+    "width": 720,
+    "height": 1600,
+    "sha256": "3305623976f60aa5a5f01d5cfb6c06a63ed1f4514258ccce1a54ff865a7d7451",
+    "timestamp": "2026-11-17T14:28:01Z",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "androidVersion": "16",
+    "fontScale": "1.0",
+    "displaySize": "Physical size: 1080x2400\nOverride size: 720x1600",
+    "displayDensity": "Physical density: 420\nOverride density: 280",
+    "device": "Android16/API36 emulator nato-p00-api36",
+    "inspected": true,
+    "inspection": "Actual original PNG visually inspected by independent evidence agent: tile proportions, complete visible labels/guides and viewport fragments checked. Numerical raster gates are reported separately.",
+    "pixelRatio": 1.75,
+    "viewportDp": {
+      "width": 411.42857142857144,
+      "height": 914.2857142857143
+    },
+    "artifactManifest": "../../android/artifact.json",
+    "apkSha256": "e11acd393e8618b001c712607d711b0f36bf427f2cfa618bbbde6731cccbdb4b",
+    "runningJavaScriptSha256": "edc9558726b0e721afdd83d32a89b18ca42d308d3ac11aca37681cc0f313d2f8",
+    "findings": [
+      {
+        "id": "android-live-scale-general-text",
+        "status": "open",
+        "owner": "P05.2/P05.8/R06/R07 engineering",
+        "detail": "Shared tiles retain their composition. Non-tile title/instruction enlarges or clips during live text-scale changes; the second instruction clause is absent in initial/returned views. Normal scroll-edge tile fragments are not internal clipping."
+      }
+    ]
+  },
+  {
+    "file": "alphabet-transition-3-scale2.png",
+    "state": "Final candidate scale sequence, stage 3: 2× (live transition)",
+    "theme": "light",
+    "width": 720,
+    "height": 1600,
+    "sha256": "d10874a21d1d446cb282a000bb1bc16f2dff2159587fc0773053bc8542b8c315",
+    "timestamp": "2026-11-17T14:28:14Z",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "androidVersion": "16",
+    "fontScale": "2.0",
+    "displaySize": "Physical size: 1080x2400\nOverride size: 720x1600",
+    "displayDensity": "Physical density: 420\nOverride density: 280",
+    "device": "Android16/API36 emulator nato-p00-api36",
+    "inspected": true,
+    "inspection": "Actual original PNG visually inspected by independent evidence agent: tile proportions, complete visible labels/guides and viewport fragments checked. Numerical raster gates are reported separately.",
+    "pixelRatio": 1.75,
+    "viewportDp": {
+      "width": 411.42857142857144,
+      "height": 914.2857142857143
+    },
+    "artifactManifest": "../../android/artifact.json",
+    "apkSha256": "e11acd393e8618b001c712607d711b0f36bf427f2cfa618bbbde6731cccbdb4b",
+    "runningJavaScriptSha256": "edc9558726b0e721afdd83d32a89b18ca42d308d3ac11aca37681cc0f313d2f8",
+    "findings": [
+      {
+        "id": "android-live-scale-general-text",
+        "status": "open",
+        "owner": "P05.2/P05.8/R06/R07 engineering",
+        "detail": "Shared tiles retain their composition. Non-tile title/instruction enlarges or clips during live text-scale changes; the second instruction clause is absent in initial/returned views. Normal scroll-edge tile fragments are not internal clipping."
+      }
+    ]
+  },
+  {
+    "file": "alphabet-transition-4-scale1.png",
+    "state": "Final candidate scale sequence, stage 4: 1× (live transition)",
+    "theme": "light",
+    "width": 720,
+    "height": 1600,
+    "sha256": "5ac67f86f62a12a0c3215ac1b07bd32a24111fd6ec160d02cb89c6e1c5909528",
+    "timestamp": "2026-11-17T14:28:26Z",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "androidVersion": "16",
+    "fontScale": "1.0",
+    "displaySize": "Physical size: 1080x2400\nOverride size: 720x1600",
+    "displayDensity": "Physical density: 420\nOverride density: 280",
+    "device": "Android16/API36 emulator nato-p00-api36",
+    "inspected": true,
+    "inspection": "Actual original PNG visually inspected by independent evidence agent: tile proportions, complete visible labels/guides and viewport fragments checked. Numerical raster gates are reported separately.",
+    "pixelRatio": 1.75,
+    "viewportDp": {
+      "width": 411.42857142857144,
+      "height": 914.2857142857143
+    },
+    "artifactManifest": "../../android/artifact.json",
+    "apkSha256": "e11acd393e8618b001c712607d711b0f36bf427f2cfa618bbbde6731cccbdb4b",
+    "runningJavaScriptSha256": "edc9558726b0e721afdd83d32a89b18ca42d308d3ac11aca37681cc0f313d2f8",
+    "findings": [
+      {
+        "id": "android-live-scale-general-text",
+        "status": "open",
+        "owner": "P05.2/P05.8/R06/R07 engineering",
+        "detail": "Shared tiles retain their composition. Non-tile title/instruction enlarges or clips during live text-scale changes; the second instruction clause is absent in initial/returned views. Normal scroll-edge tile fragments are not internal clipping."
+      }
+    ]
+  },
+  {
+    "file": "alphabet-light-0.png",
+    "state": "Alphabet page 0; real native tile rectangles measured",
+    "theme": "light",
+    "width": 720,
+    "height": 1600,
+    "sha256": "48bf4c99e6e9e4e05f2b832d450a147051e38914a6b70cf8867817d197d1611b",
+    "timestamp": "2026-11-17T14:30:15Z",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "androidVersion": "16",
+    "fontScale": "1.0",
+    "displaySize": "Physical size: 1080x2400\nOverride size: 720x1600",
+    "displayDensity": "Physical density: 420\nOverride density: 280",
+    "device": "Android16/API36 emulator nato-p00-api36",
+    "inspected": true,
+    "inspection": "Actual original PNG visually inspected by independent evidence agent: tile proportions, complete visible labels/guides and viewport fragments checked. Numerical raster gates are reported separately.",
+    "pixelRatio": 1.75,
+    "viewportDp": {
+      "width": 411.42857142857144,
+      "height": 914.2857142857143
+    },
+    "artifactManifest": "../../android/artifact.json",
+    "apkSha256": "e11acd393e8618b001c712607d711b0f36bf427f2cfa618bbbde6731cccbdb4b",
+    "runningJavaScriptSha256": "edc9558726b0e721afdd83d32a89b18ca42d308d3ac11aca37681cc0f313d2f8",
+    "findings": []
+  },
+  {
+    "file": "alphabet-light-1.png",
+    "state": "Alphabet page 1; real native tile rectangles measured",
+    "theme": "light",
+    "width": 720,
+    "height": 1600,
+    "sha256": "547778fe2f94ebe41f17f9869ad020df5d55a72da3f4810bd79a8c6a301fa81e",
+    "timestamp": "2026-11-17T14:30:22Z",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "androidVersion": "16",
+    "fontScale": "1.0",
+    "displaySize": "Physical size: 1080x2400\nOverride size: 720x1600",
+    "displayDensity": "Physical density: 420\nOverride density: 280",
+    "device": "Android16/API36 emulator nato-p00-api36",
+    "inspected": true,
+    "inspection": "Actual original PNG visually inspected by independent evidence agent: tile proportions, complete visible labels/guides and viewport fragments checked. Numerical raster gates are reported separately.",
+    "pixelRatio": 1.75,
+    "viewportDp": {
+      "width": 411.42857142857144,
+      "height": 914.2857142857143
+    },
+    "artifactManifest": "../../android/artifact.json",
+    "apkSha256": "e11acd393e8618b001c712607d711b0f36bf427f2cfa618bbbde6731cccbdb4b",
+    "runningJavaScriptSha256": "edc9558726b0e721afdd83d32a89b18ca42d308d3ac11aca37681cc0f313d2f8",
+    "findings": []
+  },
+  {
+    "file": "alphabet-light-2.png",
+    "state": "Alphabet page 2; real native tile rectangles measured",
+    "theme": "light",
+    "width": 720,
+    "height": 1600,
+    "sha256": "efd3b0c56f51ef2a1d4a8acac86711d39e664bea15548f086f5939a689ed1535",
+    "timestamp": "2026-11-17T14:30:29Z",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "androidVersion": "16",
+    "fontScale": "1.0",
+    "displaySize": "Physical size: 1080x2400\nOverride size: 720x1600",
+    "displayDensity": "Physical density: 420\nOverride density: 280",
+    "device": "Android16/API36 emulator nato-p00-api36",
+    "inspected": true,
+    "inspection": "Actual original PNG visually inspected by independent evidence agent: tile proportions, complete visible labels/guides and viewport fragments checked. Numerical raster gates are reported separately.",
+    "pixelRatio": 1.75,
+    "viewportDp": {
+      "width": 411.42857142857144,
+      "height": 914.2857142857143
+    },
+    "artifactManifest": "../../android/artifact.json",
+    "apkSha256": "e11acd393e8618b001c712607d711b0f36bf427f2cfa618bbbde6731cccbdb4b",
+    "runningJavaScriptSha256": "edc9558726b0e721afdd83d32a89b18ca42d308d3ac11aca37681cc0f313d2f8",
+    "findings": []
+  },
+  {
+    "file": "converter-light.png",
+    "state": "Populated converter NUWJ359, same tile composition",
+    "theme": "light",
+    "width": 720,
+    "height": 1600,
+    "sha256": "5203faf9a6c56e3133212452e209357768aa5e246858efbd8308a4a71217711b",
+    "timestamp": "2026-11-17T14:30:48Z",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "androidVersion": "16",
+    "fontScale": "1.0",
+    "displaySize": "Physical size: 1080x2400\nOverride size: 720x1600",
+    "displayDensity": "Physical density: 420\nOverride density: 280",
+    "device": "Android16/API36 emulator nato-p00-api36",
+    "inspected": true,
+    "inspection": "Actual original PNG visually inspected by independent evidence agent: tile proportions, complete visible labels/guides and viewport fragments checked. Numerical raster gates are reported separately.",
+    "pixelRatio": 1.75,
+    "viewportDp": {
+      "width": 411.42857142857144,
+      "height": 914.2857142857143
+    },
+    "artifactManifest": "../../android/artifact.json",
+    "apkSha256": "e11acd393e8618b001c712607d711b0f36bf427f2cfa618bbbde6731cccbdb4b",
+    "runningJavaScriptSha256": "edc9558726b0e721afdd83d32a89b18ca42d308d3ac11aca37681cc0f313d2f8",
+    "findings": [
+      {
+        "id": "android-digit3-guide-raster-edge",
+        "status": "open",
+        "owner": "P05.8/R25 engineering",
+        "detail": "Raw nominal font-outline support gate observes TREE guide top−2.012 physical px against strict2px envelope. Actual baseline passes; faint alpha and integer font rounding analyzed separately. Visual inspection does not override this numerical failure."
+      }
+    ]
+  },
+  {
+    "file": "quiz-question-light.png",
+    "state": "Quiz unrevealed answer, portrait shared tile",
+    "theme": "light",
+    "width": 720,
+    "height": 1600,
+    "sha256": "d7e80bf0fc9437709ed36e9bb910b920858929c786e50fab3664addbb9c8f78f",
+    "timestamp": "2026-11-17T14:30:59Z",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "androidVersion": "16",
+    "fontScale": "1.0",
+    "displaySize": "Physical size: 1080x2400\nOverride size: 720x1600",
+    "displayDensity": "Physical density: 420\nOverride density: 280",
+    "device": "Android16/API36 emulator nato-p00-api36",
+    "inspected": true,
+    "inspection": "Actual original PNG visually inspected by independent evidence agent: tile proportions, complete visible labels/guides and viewport fragments checked. Numerical raster gates are reported separately.",
+    "pixelRatio": 1.75,
+    "viewportDp": {
+      "width": 411.42857142857144,
+      "height": 914.2857142857143
+    },
+    "artifactManifest": "../../android/artifact.json",
+    "apkSha256": "e11acd393e8618b001c712607d711b0f36bf427f2cfa618bbbde6731cccbdb4b",
+    "runningJavaScriptSha256": "edc9558726b0e721afdd83d32a89b18ca42d308d3ac11aca37681cc0f313d2f8",
+    "findings": []
+  },
+  {
+    "file": "quiz-feedback-light.png",
+    "state": "Quiz revealed answer and persistent feedback",
+    "theme": "light",
+    "width": 720,
+    "height": 1600,
+    "sha256": "229502d760861d18cbd752484c483758a5abfab638a474ed35eb61fc64b40cd3",
+    "timestamp": "2026-11-17T14:31:11Z",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "androidVersion": "16",
+    "fontScale": "1.0",
+    "displaySize": "Physical size: 1080x2400\nOverride size: 720x1600",
+    "displayDensity": "Physical density: 420\nOverride density: 280",
+    "device": "Android16/API36 emulator nato-p00-api36",
+    "inspected": true,
+    "inspection": "Actual original PNG visually inspected by independent evidence agent: tile proportions, complete visible labels/guides and viewport fragments checked. Numerical raster gates are reported separately.",
+    "pixelRatio": 1.75,
+    "viewportDp": {
+      "width": 411.42857142857144,
+      "height": 914.2857142857143
+    },
+    "artifactManifest": "../../android/artifact.json",
+    "apkSha256": "e11acd393e8618b001c712607d711b0f36bf427f2cfa618bbbde6731cccbdb4b",
+    "runningJavaScriptSha256": "edc9558726b0e721afdd83d32a89b18ca42d308d3ac11aca37681cc0f313d2f8",
+    "findings": []
+  },
+  {
+    "file": "alphabet-dark.png",
+    "state": "Alphabet in dark app theme",
+    "theme": "dark",
+    "width": 720,
+    "height": 1600,
+    "sha256": "52fe23cf7e0fc90504424bfd7f760ec9f6ef984c410f22c31f7accf1465ab513",
+    "timestamp": "2026-11-17T14:31:22Z",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "androidVersion": "16",
+    "fontScale": "1.0",
+    "displaySize": "Physical size: 1080x2400\nOverride size: 720x1600",
+    "displayDensity": "Physical density: 420\nOverride density: 280",
+    "device": "Android16/API36 emulator nato-p00-api36",
+    "inspected": true,
+    "inspection": "Actual original PNG visually inspected by independent evidence agent: tile proportions, complete visible labels/guides and viewport fragments checked. Numerical raster gates are reported separately.",
+    "pixelRatio": 1.75,
+    "viewportDp": {
+      "width": 411.42857142857144,
+      "height": 914.2857142857143
+    },
+    "artifactManifest": "../../android/artifact.json",
+    "apkSha256": "e11acd393e8618b001c712607d711b0f36bf427f2cfa618bbbde6731cccbdb4b",
+    "runningJavaScriptSha256": "edc9558726b0e721afdd83d32a89b18ca42d308d3ac11aca37681cc0f313d2f8",
+    "findings": []
+  },
+  {
+    "file": "alphabet-font-scale2.png",
+    "state": "Actual systemfontscale2; whole220x300 tile and compensated glyphmetrics",
+    "theme": "dark",
+    "width": 720,
+    "height": 1600,
+    "sha256": "5a19e322df1087ce629b911ebd6c7bca1315543fe31fd043c42d69ab21b38a41",
+    "timestamp": "2026-11-17T14:32:12Z",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "androidVersion": "16",
+    "fontScale": "2.0",
+    "displaySize": "Physical size: 1080x2400\nOverride size: 720x1600",
+    "displayDensity": "Physical density: 420\nOverride density: 280",
+    "device": "Android16/API36 emulator nato-p00-api36",
+    "inspected": true,
+    "inspection": "Actual original PNG visually inspected by independent evidence agent: tile proportions, complete visible labels/guides and viewport fragments checked. Numerical raster gates are reported separately.",
+    "pixelRatio": 1.75,
+    "viewportDp": {
+      "width": 411.42857142857144,
+      "height": 914.2857142857143
+    },
+    "artifactManifest": "../../android/artifact.json",
+    "apkSha256": "e11acd393e8618b001c712607d711b0f36bf427f2cfa618bbbde6731cccbdb4b",
+    "runningJavaScriptSha256": "edc9558726b0e721afdd83d32a89b18ca42d308d3ac11aca37681cc0f313d2f8",
+    "findings": [
+      {
+        "id": "android-live-scale-general-text",
+        "status": "open",
+        "owner": "P05.2/P05.8/R06/R07 engineering",
+        "detail": "Shared tiles retain their composition. Non-tile title/instruction enlarges or clips during live text-scale changes; the second instruction clause is absent in initial/returned views. Normal scroll-edge tile fragments are not internal clipping."
+      }
+    ]
+  },
+  {
+    "file": "alphabet-font-scale2-N.png",
+    "state": "Long word/guide at actual2x accessibilityscale: N",
+    "theme": "dark",
+    "width": 720,
+    "height": 1600,
+    "sha256": "5b02940536f4842ebf6b37cdf67bf6920f18cd2770227a92693273da5d8ac2e8",
+    "timestamp": "2026-11-17T14:32:40Z",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "androidVersion": "16",
+    "fontScale": "2.0",
+    "displaySize": "Physical size: 1080x2400\nOverride size: 720x1600",
+    "displayDensity": "Physical density: 420\nOverride density: 280",
+    "device": "Android16/API36 emulator nato-p00-api36",
+    "inspected": true,
+    "inspection": "Actual original PNG visually inspected by independent evidence agent: tile proportions, complete visible labels/guides and viewport fragments checked. Numerical raster gates are reported separately.",
+    "pixelRatio": 1.75,
+    "viewportDp": {
+      "width": 411.42857142857144,
+      "height": 914.2857142857143
+    },
+    "artifactManifest": "../../android/artifact.json",
+    "apkSha256": "e11acd393e8618b001c712607d711b0f36bf427f2cfa618bbbde6731cccbdb4b",
+    "runningJavaScriptSha256": "edc9558726b0e721afdd83d32a89b18ca42d308d3ac11aca37681cc0f313d2f8",
+    "findings": [
+      {
+        "id": "android-live-scale-general-text",
+        "status": "open",
+        "owner": "P05.2/P05.8/R06/R07 engineering",
+        "detail": "Shared tiles retain their composition. Non-tile title/instruction enlarges or clips during live text-scale changes; the second instruction clause is absent in initial/returned views. Normal scroll-edge tile fragments are not internal clipping."
+      }
+    ]
+  },
+  {
+    "file": "alphabet-font-scale2-U.png",
+    "state": "Actual2x Uniform long word/guide, reached with bounded bidirectional scroll",
+    "theme": "dark",
+    "width": 720,
+    "height": 1600,
+    "sha256": "7da97b67ea90f9acbe47d3ad2bde148221fea310d81b8f5a65027a94dde9766d",
+    "timestamp": "2026-11-17T14:36:23Z",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "androidVersion": "16",
+    "fontScale": "2.0",
+    "displaySize": "Physical size: 1080x2400\nOverride size: 720x1600",
+    "displayDensity": "Physical density: 420\nOverride density: 280",
+    "device": "Android16/API36 emulator nato-p00-api36",
+    "inspected": true,
+    "inspection": "Actual original PNG visually inspected by independent evidence agent: tile proportions, complete visible labels/guides and viewport fragments checked. Numerical raster gates are reported separately.",
+    "pixelRatio": 1.75,
+    "viewportDp": {
+      "width": 411.42857142857144,
+      "height": 914.2857142857143
+    },
+    "artifactManifest": "../../android/artifact.json",
+    "apkSha256": "e11acd393e8618b001c712607d711b0f36bf427f2cfa618bbbde6731cccbdb4b",
+    "runningJavaScriptSha256": "edc9558726b0e721afdd83d32a89b18ca42d308d3ac11aca37681cc0f313d2f8",
+    "findings": [
+      {
+        "id": "android-live-scale-general-text",
+        "status": "open",
+        "owner": "P05.2/P05.8/R06/R07 engineering",
+        "detail": "Shared tiles retain their composition. Non-tile title/instruction enlarges or clips during live text-scale changes; the second instruction clause is absent in initial/returned views. Normal scroll-edge tile fragments are not internal clipping."
+      }
+    ]
+  },
+  {
+    "file": "alphabet-narrow-320x568.png",
+    "state": "Actual native viewport/configuration: alphabet-narrow-320x568",
+    "theme": "light",
+    "width": 640,
+    "height": 1136,
+    "sha256": "a3bd30c3e4618f0c9e27f167938a37a62cc0f690f2704c01255455236bcc4c1a",
+    "timestamp": "2026-11-17T14:39:14Z",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "androidVersion": "16",
+    "fontScale": "1.0",
+    "displaySize": "Physical size: 1080x2400\nOverride size: 640x1136",
+    "displayDensity": "Physical density: 420\nOverride density: 320",
+    "device": "Android16/API36 emulator nato-p00-api36",
+    "inspected": true,
+    "inspection": "Actual original PNG visually inspected by independent evidence agent: tile proportions, complete visible labels/guides and viewport fragments checked. Numerical raster gates are reported separately.",
+    "pixelRatio": 2.0,
+    "viewportDp": {
+      "width": 320.0,
+      "height": 568.0
+    },
+    "artifactManifest": "../../android/artifact.json",
+    "apkSha256": "e11acd393e8618b001c712607d711b0f36bf427f2cfa618bbbde6731cccbdb4b",
+    "runningJavaScriptSha256": "edc9558726b0e721afdd83d32a89b18ca42d308d3ac11aca37681cc0f313d2f8",
+    "findings": []
+  },
+  {
+    "file": "alphabet-landscape-568x320.png",
+    "state": "Actual native viewport/configuration: alphabet-landscape-568x320",
+    "theme": "light",
+    "width": 1136,
+    "height": 640,
+    "sha256": "4339230d5989df6138b4b35fdd398361e68f76fd675abd4f3abac10b629affc6",
+    "timestamp": "2026-11-17T14:39:36Z",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "androidVersion": "16",
+    "fontScale": "1.0",
+    "displaySize": "Physical size: 1080x2400\nOverride size: 640x1136",
+    "displayDensity": "Physical density: 420\nOverride density: 320",
+    "device": "Android16/API36 emulator nato-p00-api36",
+    "inspected": true,
+    "inspection": "Actual original PNG visually inspected by independent evidence agent: tile proportions, complete visible labels/guides and viewport fragments checked. Numerical raster gates are reported separately.",
+    "pixelRatio": 2.0,
+    "viewportDp": {
+      "width": 568.0,
+      "height": 320.0
+    },
+    "artifactManifest": "../../android/artifact.json",
+    "apkSha256": "e11acd393e8618b001c712607d711b0f36bf427f2cfa618bbbde6731cccbdb4b",
+    "runningJavaScriptSha256": "edc9558726b0e721afdd83d32a89b18ca42d308d3ac11aca37681cc0f313d2f8",
+    "findings": []
+  },
+  {
+    "file": "alphabet-tablet-1067x1707.png",
+    "state": "Actual native viewport/configuration: alphabet-tablet-1067x1707",
+    "theme": "light",
+    "width": 1600,
+    "height": 2560,
+    "sha256": "023c5f809126208154c27cc7b3c3d5cffb42548d32eb5ee6a77ffae8881b5607",
+    "timestamp": "2026-11-17T14:39:59Z",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "androidVersion": "16",
+    "fontScale": "1.0",
+    "displaySize": "Physical size: 1080x2400\nOverride size: 1600x2560",
+    "displayDensity": "Physical density: 420\nOverride density: 240",
+    "device": "Android16/API36 emulator nato-p00-api36",
+    "inspected": true,
+    "inspection": "Actual original PNG visually inspected by independent evidence agent: tile proportions, complete visible labels/guides and viewport fragments checked. Numerical raster gates are reported separately.",
+    "pixelRatio": 1.5,
+    "viewportDp": {
+      "width": 1066.6666666666667,
+      "height": 1706.6666666666667
+    },
+    "artifactManifest": "../../android/artifact.json",
+    "apkSha256": "e11acd393e8618b001c712607d711b0f36bf427f2cfa618bbbde6731cccbdb4b",
+    "runningJavaScriptSha256": "edc9558726b0e721afdd83d32a89b18ca42d308d3ac11aca37681cc0f313d2f8",
+    "findings": []
+  }
+]

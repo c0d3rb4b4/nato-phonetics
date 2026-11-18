@@ -1,0 +1,11 @@
+# Final Run 12 source and evidence review
+
+Reviewed the final engine/UI, new recall tests/browser driver and source-change manifest against the resumed Run 11 boundaries. The delta has 11 changed maintained inputs plus two new maintained files; plan/review are tracked separately from the source manifest. Existing default choice behavior and guards remain covered by original letter/numeric regressions.
+
+- Session mode defaults to choice and is retained by restart/Retry; listening accepts only offered canonical symbols, typed compares documented canonical keys. Blank/overlong/stale/duplicate/cancelled responses cannot consume a question. Results use exact trimmed input and expected response.
+- Listening has no tile/guide before submission; its explicit text alternative reveals only the code word. Typed mode renders the existing concealed tile and supplies no choices. New code uses the existing guarded playback owner and cancels on transitions; no provider, microphone, storage, font, design or tolerance change.
+- Native live readability is not closed by retained state. iOS bulk/scroll-driver failures and scoped passes remain distinct. Debug warnings are not suppressed. OS keyboard suggestion-strip behavior is documented without claiming the app controls it.
+- New CI browser coverage mirrors meaningful failure modes; hosted CI, native app/Release rebuilds and physical acceptance remain unrun. Native installed binary and actual loaded JS hashes are separate from source identity.
+- Baseline preservation checks find no unexpected modification among 2,507 inherited files. `git diff --check` passes. All 52 primary actual images were inspected; metadata dimensions/hashes match. Status counts and unchecked P08.2/M11 reconcile; no required failed/unrun gate is called complete.
+
+The first final-link pass referenced its own not-yet-created report and failed. [Initial failure](../verification-first.log) is preserved; the corrected script creates an explicit in-progress report, checks local links and native/JS hashes, then writes the final result only after those assertions pass. [Final reconciliation](../verification.json). No application result or screenshot was substituted during this metadata correction.

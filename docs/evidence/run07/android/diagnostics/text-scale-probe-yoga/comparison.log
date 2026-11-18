@@ -1,0 +1,55 @@
+{
+  "passed": false,
+  "observations": 10,
+  "failures": [
+    {
+      "name": "live-1-scale2",
+      "example": "body",
+      "frameDelta": {
+        "width": -0.0000152587890625,
+        "height": -109.71430969238281
+      },
+      "eventEquivalent": false,
+      "rasterSame": false
+    },
+    {
+      "name": "live-1-scale2",
+      "example": "heading",
+      "frameDelta": {
+        "width": -0.0000152587890625,
+        "height": -39.42854309082031
+      },
+      "eventEquivalent": false,
+      "rasterSame": false
+    },
+    {
+      "name": "live-1-scale2",
+      "example": "feedback",
+      "frameDelta": {
+        "width": -0.0000152587890625,
+        "height": -48
+      },
+      "eventEquivalent": false,
+      "rasterSame": false
+    },
+    {
+      "name": "live-1-scale2",
+      "example": "nested",
+      "frameDelta": {
+        "width": -0.0000152587890625,
+        "height": -108
+      },
+      "eventEquivalent": false,
+      "rasterSame": false
+    },
+    {
+      "name": "live-1-scale2",
+      "example": "input",
+      "frameDelta": {
+        "width": 0,
+        "height": -16.000030517578125
+      },
+      "eventEquivalent": false
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild test-without-building -project /tmp/nato-ios-run08-capture/Capture.xcodeproj -scheme Capture -configuration Debug -destination "platform=iOS Simulator,id=0653F7EC-9237-4AC5-A264-12969E625070" -derivedDataPath /tmp/nato-ios-run08-capture/DerivedData CODE_SIGNING_ALLOWED=NO -parallel-testing-enabled NO -resultBundlePath /tmp/nato-ios-run08-capture/large.xcresult "-only-testing:CaptureUITests/CaptureUITests/testLargeTextSetupAndEarlyReview"
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+Writing result bundle at path:
+	/tmp/nato-ios-run08-capture/large.xcresult
+
+2026-11-17 17:50:28.443519+0000 CaptureUITests-Runner[87722:9998446] [Default] Running tests...
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-11-17 17:50:30.122.
+Test Suite 'CaptureUITests.xctest' started at 2026-11-17 17:50:30.126.
+Test Suite 'CaptureUITests' started at 2026-11-17 17:50:30.126.
+Test Case '-[CaptureUITests.CaptureUITests testLargeTextSetupAndEarlyReview]' started.
+    t =     0.03s Start Test at 2026-11-17 17:50:30.151
+    t =     0.26s Set Up
+    t =     0.33s Open com.natophonetics.app
+    t =     0.33s     Launch com.natophonetics.app
+    t =     0.33s         Terminate com.natophonetics.app:87473
+    t =     2.25s         Setting up automation session
+    t =     4.72s         Wait for com.natophonetics.app to idle
+    t =     8.30s Open com.natophonetics.app with URL natophonetics://letter-quiz
+    t =     8.30s     Launch com.natophonetics.app
+    t =     8.59s         Setting up automation session
+    t =     8.60s         Wait for com.natophonetics.app to idle
+    t =     9.62s Wait for com.natophonetics.app to become Running Foreground
+    t =     9.62s Waiting 15.0s for "quiz-start" Any to exist
+    t =    10.65s     Checking `Expect predicate `existsNoRetry == 1` for object "quiz-start" Any`
+    t =    10.65s         Checking existence of `"quiz-start" Any`
+    t =    10.77s Find the "screen-scroll" Any
+    t =    10.80s Checking existence of `"5 questions" Any`
+    t =    10.82s Find the "5 questions" Any
+    t =    10.87s Checking existence of `"5 questions" Other`
+    t =    10.89s Find the "5 questions" Other
+    t =    10.92s Press "screen-scroll" Any[0.50, 0.82] for 0.1 seconds, then drag to "screen-scroll" Any[0.50, 0.82] -> (0.0, -390.2) with velocity of 750.00 pixels per second, and then hold for 0.2 seconds 
+    t =    10.92s     Wait for com.natophonetics.app to idle
+    t =    10.92s     Find the "screen-scroll" Any
+    t =    10.93s     Check for interrupting elements affecting "screen-scroll" Other
+    t =    11.01s     Synthesize event
+    t =    11.01s         Find the "screen-scroll" Other
+    t =    11.02s         Find the "screen-scroll" Other
+    t =    11.03s         Find the "screen-scroll" Other
+    t =    11.05s         Find the "screen-scroll" Other
+    t =    11.06s         Find the "screen-scroll" Other
+    t =    12.17s     Wait for com.natophonetics.app to idle
+    t =    14.06s Find the "screen-scroll" Any
+    t =    14.14s Checking existence of `"5 questions" Any`
+    t =    14.18s Find the "5 questions" Any
+    t =    14.23s Find the "5 questions" Other
+    t =    14.25s Find the "5 questions" Other
+    t =    14.45s Added attachment named 'large-setup-dark'
+CAPTURE large-setup-dark
+    t =    14.45s Find the "screen-scroll" Any
+    t =    14.46s Checking existence of `"5 questions" Any`
+    t =    14.48s Find the "5 questions" Any
+    t =    14.51s Find the "5 questions" Other
+    t =    14.54s Find the "5 questions" Other
+    t =    14.58s Tap "5 questions" Any
+    t =    14.58s     Wait for com.natophonetics.app to idle
+    t =    14.58s     Find the "5 questions" Any
+    t =    14.60s     Check for interrupting elements affecting "5 questions" Other
+    t =    14.69s     Synthesize event
+    t =    14.99s     Wait for com.natophonetics.app to idle
+    t =    15.00s Find the "screen-scroll" Any
+    t =    15.02s Checking existence of `"quiz-start" Any`
+    t =    15.05s Find the "quiz-start" Any
+    t =    15.10s Find the "quiz-start" Button
+    t =    15.13s Find the "quiz-start" Button
+    t =    15.16s Checking existence of `"quiz-start" Button`
+    t =    15.18s Find the "quiz-start" Button
+    t =    15.20s Press "screen-scroll" Any[0.50, 0.82] for 0.1 seconds, then drag to "screen-scroll" Any[0.50, 0.82] -> (0.0, -390.2) with velocity of 750.00 pixels per second, and then hold for 0.2 seconds 
+    t =    15.20s     Wait for com.natophonetics.app to idle
+    t =    15.20s     Find the "screen-scroll" Any
+    t =    15.22s     Check for interrupting elements affecting "screen-scroll" Other
+    t =    15.25s     Synthesize event
+    t =    15.25s         Find the "screen-scroll" Other
+    t =    15.26s         Find the "screen-scroll" Other
+    t =    15.28s         Find the "screen-scroll" Other
+    t =    15.30s         Find the "screen-scroll" Other
+    t =    15.32s         Find the "screen-scroll" Other
+    t =    16.42s     Wait for com.natophonetics.app to idle
+    t =    18.15s Find the "screen-scroll" Any
+    t =    18.19s Checking existence of `"quiz-start" Any`
+    t =    18.22s Find the "quiz-start" Any
+    t =    18.26s Checking existence of `"quiz-start" Button`
+    t =    18.28s Find the "quiz-start" Button
+    t =    18.30s Press "screen-scroll" Any[0.50, 0.18] for 0.1 seconds, then drag to "screen-scroll" Any[0.50, 0.18] -> (0.0, 117.0) with velocity of 750.00 pixels per second, and then hold for 0.2 seconds 
+    t =    18.30s     Wait for com.natophonetics.app to idle
+    t =    18.30s     Find the "screen-scroll" Any
+    t =    18.31s     Check for interrupting elements affecting "screen-scroll" Other
+    t =    18.35s     Synthesize event
+    t =    18.35s         Find the "screen-scroll" Other
+    t =    18.36s         Find the "screen-scroll" Other
+    t =    18.38s         Find the "screen-scroll" Other
+    t =    18.39s         Find the "screen-scroll" Other
+    t =    18.41s         Find the "screen-scroll" Other
+    t =    19.14s     Wait for com.natophonetics.app to idle
+    t =    21.04s Find the "screen-scroll" Any
+    t =    21.10s Checking existence of `"quiz-start" Any`
+    t =    21.12s Find the "quiz-start" Any
+    t =    21.17s Find the "quiz-start" Button
+    t =    21.20s Find the "quiz-start" Button
+    t =    21.23s Tap "quiz-start" Any
+    t =    21.23s     Wait for com.natophonetics.app to idle
+    t =    21.23s     Find the "quiz-start" Any
+    t =    21.25s     Check for interrupting elements affecting "quiz-start" Button
+    t =    21.46s     Synthesize event
+    t =    21.77s     Wait for com.natophonetics.app to idle
+    t =    21.77s Find the "screen-scroll" Any
+    t =    21.79s Checking existence of `"quiz-letter" Any`
+    t =    21.82s Find the "quiz-letter" Any
+    t =    21.85s Find the "quiz-letter" StaticText
+    t =    21.89s Find the "quiz-letter" StaticText
+    t =    22.06s Added attachment named 'large-question-dark'
+CAPTURE large-question-dark
+    t =    22.06s Find the "screen-scroll" Any
+    t =    22.08s Checking existence of `"End round and review" Any`
+    t =    22.10s Find the "End round and review" Any
+    t =    22.13s Checking existence of `"End round and review" Button`
+    t =    22.15s Find the "End round and review" Button
+    t =    22.17s Press "screen-scroll" Any[0.50, 0.82] for 0.1 seconds, then drag to "screen-scroll" Any[0.50, 0.82] -> (0.0, -390.2) with velocity of 750.00 pixels per second, and then hold for 0.2 seconds 
+    t =    22.17s     Wait for com.natophonetics.app to idle
+    t =    22.18s     Find the "screen-scroll" Any
+    t =    22.19s     Check for interrupting elements affecting "screen-scroll" Other
+    t =    22.21s     Synthesize event
+    t =    22.21s         Find the "screen-scroll" Other
+    t =    22.23s         Find the "screen-scroll" Other
+    t =    22.35s         Find the "screen-scroll" Other
+    t =    22.37s         Find the "screen-scroll" Other
+    t =    22.50s         Find the "screen-scroll" Other
+    t =    23.59s     Wait for com.natophonetics.app to idle
+    t =    25.34s Find the "screen-scroll" Any
+    t =    25.39s Checking existence of `"End round and review" Any`
+    t =    25.42s Find the "End round and review" Any
+    t =    25.45s Checking existence of `"End round and review" Button`
+    t =    25.47s Find the "End round and review" Button
+    t =    25.50s Press "screen-scroll" Any[0.50, 0.82] for 0.1 seconds, then drag to "screen-scroll" Any[0.50, 0.82] -> (0.0, -390.2) with velocity of 750.00 pixels per second, and then hold for 0.2 seconds 
+    t =    25.50s     Wait for com.natophonetics.app to idle
+    t =    25.50s     Find the "screen-scroll" Any
+    t =    25.51s     Check for interrupting elements affecting "screen-scroll" Other
+    t =    25.64s     Synthesize event
+    t =    25.65s         Find the "screen-scroll" Other
+    t =    25.66s         Find the "screen-scroll" Other
+    t =    25.67s         Find the "screen-scroll" Other
+    t =    25.69s         Find the "screen-scroll" Other
+    t =    25.70s         Find the "screen-scroll" Other
+    t =    26.79s     Wait for com.natophonetics.app to idle
+    t =    27.22s Find the "screen-scroll" Any
+    t =    27.28s Checking existence of `"End round and review" Any`
+    t =    27.30s Find the "End round and review" Any
+    t =    27.34s Find the "End round and review" Button
+    t =    27.37s Find the "End round and review" Button
+    t =    27.40s Tap "End round and review" Any
+    t =    27.40s     Wait for com.natophonetics.app to idle
+    t =    27.40s     Find the "End round and review" Any
+    t =    27.43s     Check for interrupting elements affecting "End round and review" Button
+    t =    27.48s     Synthesize event
+    t =    27.77s     Wait for com.natophonetics.app to idle
+    t =    27.78s Find the "screen-scroll" Any
+    t =    27.80s Checking existence of `"quiz-score" Any`
+    t =    27.82s Find the "quiz-score" Any
+    t =    27.84s Checking existence of `"quiz-score" StaticText`
+    t =    27.86s Find the "quiz-score" StaticText
+    t =    27.88s Press "screen-scroll" Any[0.50, 0.18] for 0.1 seconds, then drag to "screen-scroll" Any[0.50, 0.18] -> (0.0, 390.2) with velocity of 750.00 pixels per second, and then hold for 0.2 seconds 
+    t =    27.88s     Wait for com.natophonetics.app to idle
+    t =    27.88s     Find the "screen-scroll" Any
+    t =    27.89s     Check for interrupting elements affecting "screen-scroll" Other
+    t =    27.92s     Synthesize event
+    t =    27.92s         Find the "screen-scroll" Other
+    t =    27.93s         Find the "screen-scroll" Other
+    t =    27.95s         Find the "screen-scroll" Other
+    t =    27.96s         Find the "screen-scroll" Other
+    t =    27.98s         Find the "screen-scroll" Other
+    t =    29.07s     Wait for com.natophonetics.app to idle
+    t =    30.82s Find the "screen-scroll" Any
+    t =    30.91s Checking existence of `"quiz-score" Any`
+    t =    30.95s Find the "quiz-score" Any
+    t =    31.00s Find the "quiz-score" StaticText
+    t =    31.03s Find the "quiz-score" StaticText
+    t =    31.21s Added attachment named 'large-results-dark'
+CAPTURE large-results-dark
+    t =    31.21s Find the "quiz-score" Any
+    t =    31.25s Tear Down
+Test Case '-[CaptureUITests.CaptureUITests testLargeTextSetupAndEarlyReview]' passed (31.760 seconds).
+Test Suite 'CaptureUITests' passed at 2026-11-17 17:51:01.912.
+	 Executed 1 test, with 0 failures (0 unexpected) in 31.760 (31.785) seconds
+Test Suite 'CaptureUITests.xctest' passed at 2026-11-17 17:51:01.913.
+	 Executed 1 test, with 0 failures (0 unexpected) in 31.760 (31.787) seconds
+Test Suite 'Selected tests' passed at 2026-11-17 17:51:01.913.
+	 Executed 1 test, with 0 failures (0 unexpected) in 31.760 (31.791) seconds
+2026-11-17 17:51:02.485 xcodebuild[87683:9997913] [MT] IDETestOperationsObserverDebug: 38.601 elapsed -- Testing started completed.
+2026-11-17 17:51:02.485 xcodebuild[87683:9997913] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-11-17 17:51:02.485 xcodebuild[87683:9997913] [MT] IDETestOperationsObserverDebug: 38.601 sec, +38.601 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/nato-ios-run08-capture/large.xcresult
+
+** TEST EXECUTE SUCCEEDED **
+
+Testing started

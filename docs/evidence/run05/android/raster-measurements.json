@@ -1,0 +1,6794 @@
+[
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "A",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "A",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 124,
+      "top": 403,
+      "right": 169,
+      "bottom": 448,
+      "count": 982
+    },
+    "expectedInk": {
+      "top": 403.495,
+      "bottom": 449.044
+    },
+    "deltaPixels": {
+      "top": -0.49500000000000455,
+      "bottom": -0.04399999999998272
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "A",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Alfa",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 120,
+      "top": 530,
+      "right": 171,
+      "bottom": 550,
+      "count": 476
+    },
+    "expectedInk": {
+      "top": 530.7760000000001,
+      "bottom": 550.9639999999999
+    },
+    "deltaPixels": {
+      "top": -0.7760000000000673,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "A",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "AL-fah",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 115,
+      "top": 576,
+      "right": 176,
+      "bottom": 591,
+      "count": 328
+    },
+    "expectedInk": {
+      "top": 577.87725,
+      "bottom": 591.7565
+    },
+    "deltaPixels": {
+      "top": -1.8772500000000036,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "B",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "B",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 343,
+      "top": 403,
+      "right": 379,
+      "bottom": 447,
+      "count": 1224
+    },
+    "expectedInk": {
+      "top": 404.062,
+      "bottom": 448.477
+    },
+    "deltaPixels": {
+      "top": -1.0620000000000118,
+      "bottom": -0.47699999999997544
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "B",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Bravo",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 326,
+      "top": 530,
+      "right": 397,
+      "bottom": 550,
+      "count": 615
+    },
+    "expectedInk": {
+      "top": 530.972,
+      "bottom": 550.9639999999999
+    },
+    "deltaPixels": {
+      "top": -0.97199999999998,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "B",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "BRAH-voh",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 314,
+      "top": 576,
+      "right": 408,
+      "bottom": 591,
+      "count": 569
+    },
+    "expectedInk": {
+      "top": 577.87725,
+      "bottom": 591.7565
+    },
+    "deltaPixels": {
+      "top": -1.8772500000000036,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "C",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "C",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 555,
+      "top": 402,
+      "right": 592,
+      "bottom": 448,
+      "count": 883
+    },
+    "expectedInk": {
+      "top": 403.369,
+      "bottom": 449.17
+    },
+    "deltaPixels": {
+      "top": -1.3690000000000282,
+      "bottom": -0.17000000000001592
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "C",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Charlie",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 529,
+      "top": 530,
+      "right": 617,
+      "bottom": 550,
+      "count": 721
+    },
+    "expectedInk": {
+      "top": 530.72,
+      "bottom": 550.9639999999999
+    },
+    "deltaPixels": {
+      "top": -0.7200000000000273,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "C",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "CHAR-lee",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 529,
+      "top": 576,
+      "right": 618,
+      "bottom": 591,
+      "count": 528
+    },
+    "expectedInk": {
+      "top": 577.83875,
+      "bottom": 591.7565
+    },
+    "deltaPixels": {
+      "top": -1.8387500000000045,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "D",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "D",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 126,
+      "top": 687,
+      "right": 167,
+      "bottom": 731,
+      "count": 1206
+    },
+    "expectedInk": {
+      "top": 688.062,
+      "bottom": 732.477
+    },
+    "deltaPixels": {
+      "top": -1.0620000000000118,
+      "bottom": -0.47699999999997544
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "D",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Delta",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 114,
+      "top": 814,
+      "right": 179,
+      "bottom": 834,
+      "count": 619
+    },
+    "expectedInk": {
+      "top": 814.7760000000001,
+      "bottom": 834.9639999999999
+    },
+    "deltaPixels": {
+      "top": -0.7760000000000673,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "D",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "DELL-tah",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 105,
+      "top": 860,
+      "right": 188,
+      "bottom": 875,
+      "count": 479
+    },
+    "expectedInk": {
+      "top": 861.87725,
+      "bottom": 875.7565
+    },
+    "deltaPixels": {
+      "top": -1.8772500000000036,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "E",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "E",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 346,
+      "top": 687,
+      "right": 377,
+      "bottom": 731,
+      "count": 977
+    },
+    "expectedInk": {
+      "top": 688.062,
+      "bottom": 732.477
+    },
+    "deltaPixels": {
+      "top": -1.0620000000000118,
+      "bottom": -0.47699999999997544
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "E",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Echo",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 333,
+      "top": 814,
+      "right": 390,
+      "bottom": 834,
+      "count": 526
+    },
+    "expectedInk": {
+      "top": 814.7760000000001,
+      "bottom": 834.9639999999999
+    },
+    "deltaPixels": {
+      "top": -0.7760000000000673,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "E",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "ECK-oh",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 329,
+      "top": 860,
+      "right": 394,
+      "bottom": 875,
+      "count": 397
+    },
+    "expectedInk": {
+      "top": 861.83875,
+      "bottom": 875.7565
+    },
+    "deltaPixels": {
+      "top": -1.8387500000000045,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "F",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "F",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 559,
+      "top": 687,
+      "right": 589,
+      "bottom": 732,
+      "count": 809
+    },
+    "expectedInk": {
+      "top": 688.062,
+      "bottom": 733.044
+    },
+    "deltaPixels": {
+      "top": -1.0620000000000118,
+      "bottom": -0.04399999999998272
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "F",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Foxtrot",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 529,
+      "top": 814,
+      "right": 619,
+      "bottom": 834,
+      "count": 774
+    },
+    "expectedInk": {
+      "top": 814.972,
+      "bottom": 834.9639999999999
+    },
+    "deltaPixels": {
+      "top": -0.97199999999998,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "F",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "FOKS-trot",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 529,
+      "top": 860,
+      "right": 618,
+      "bottom": 875,
+      "count": 545
+    },
+    "expectedInk": {
+      "top": 861.83875,
+      "bottom": 875.7565
+    },
+    "deltaPixels": {
+      "top": -1.8387500000000045,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "G",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "G",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 126,
+      "top": 969,
+      "right": 165,
+      "bottom": 1015,
+      "count": 1102
+    },
+    "expectedInk": {
+      "top": 970.369,
+      "bottom": 1016.17
+    },
+    "deltaPixels": {
+      "top": -1.3690000000000282,
+      "bottom": -0.16999999999995907
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "G",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Golf",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 120,
+      "top": 1097,
+      "right": 173,
+      "bottom": 1117,
+      "count": 499
+    },
+    "expectedInk": {
+      "top": 1097.72,
+      "bottom": 1117.964
+    },
+    "deltaPixels": {
+      "top": -0.7200000000000273,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "G",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "GOLF",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 121,
+      "top": 1143,
+      "right": 172,
+      "bottom": 1158,
+      "count": 316
+    },
+    "expectedInk": {
+      "top": 1144.83875,
+      "bottom": 1158.7565
+    },
+    "deltaPixels": {
+      "top": -1.8387499999998909,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "H",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "H",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 341,
+      "top": 970,
+      "right": 381,
+      "bottom": 1015,
+      "count": 1143
+    },
+    "expectedInk": {
+      "top": 970.495,
+      "bottom": 1016.044
+    },
+    "deltaPixels": {
+      "top": -0.49500000000000455,
+      "bottom": -0.04399999999998272
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "H",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Hotel",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 328,
+      "top": 1097,
+      "right": 396,
+      "bottom": 1117,
+      "count": 641
+    },
+    "expectedInk": {
+      "top": 1097.776,
+      "bottom": 1117.964
+    },
+    "deltaPixels": {
+      "top": -0.7760000000000673,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "H",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "hoh-TELL",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 318,
+      "top": 1143,
+      "right": 402,
+      "bottom": 1158,
+      "count": 475
+    },
+    "expectedInk": {
+      "top": 1144.87725,
+      "bottom": 1158.7565
+    },
+    "deltaPixels": {
+      "top": -1.8772500000000036,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "I",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "I",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 568,
+      "top": 970,
+      "right": 578,
+      "bottom": 1015,
+      "count": 487
+    },
+    "expectedInk": {
+      "top": 970.495,
+      "bottom": 1016.044
+    },
+    "deltaPixels": {
+      "top": -0.49500000000000455,
+      "bottom": -0.04399999999998272
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "I",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "India",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 544,
+      "top": 1097,
+      "right": 603,
+      "bottom": 1117,
+      "count": 547
+    },
+    "expectedInk": {
+      "top": 1097.776,
+      "bottom": 1117.964
+    },
+    "deltaPixels": {
+      "top": -0.7760000000000673,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "I",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "IN-dee-ah",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 528,
+      "top": 1143,
+      "right": 618,
+      "bottom": 1158,
+      "count": 510
+    },
+    "expectedInk": {
+      "top": 1144.87725,
+      "bottom": 1158.7565
+    },
+    "deltaPixels": {
+      "top": -1.8772500000000036,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "J",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "J",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 133,
+      "top": 1254,
+      "right": 152,
+      "bottom": 1299,
+      "count": 509
+    },
+    "expectedInk": {
+      "top": 1254.495,
+      "bottom": 1299.98415
+    },
+    "deltaPixels": {
+      "top": -0.49499999999989086,
+      "bottom": 0.015850000000000364
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "J",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Juliett",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 107,
+      "top": 1381,
+      "right": 183,
+      "bottom": 1401,
+      "count": 651
+    },
+    "expectedInk": {
+      "top": 1381.776,
+      "bottom": 1401.964
+    },
+    "deltaPixels": {
+      "top": -0.7760000000000673,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "J",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "JEW-lee-ett",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 90,
+      "top": 1427,
+      "right": 199,
+      "bottom": 1442,
+      "count": 614
+    },
+    "expectedInk": {
+      "top": 1428.87725,
+      "bottom": 1442.7565
+    },
+    "deltaPixels": {
+      "top": -1.8772500000000036,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "K",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "K",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 344,
+      "top": 1254,
+      "right": 380,
+      "bottom": 1299,
+      "count": 1040
+    },
+    "expectedInk": {
+      "top": 1254.495,
+      "bottom": 1300.044
+    },
+    "deltaPixels": {
+      "top": -0.49499999999989086,
+      "bottom": -0.044000000000096406
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "K",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Kilo",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 338,
+      "top": 1381,
+      "right": 384,
+      "bottom": 1401,
+      "count": 464
+    },
+    "expectedInk": {
+      "top": 1381.776,
+      "bottom": 1401.964
+    },
+    "deltaPixels": {
+      "top": -0.7760000000000673,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "K",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "KEY-loh",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 327,
+      "top": 1427,
+      "right": 396,
+      "bottom": 1442,
+      "count": 420
+    },
+    "expectedInk": {
+      "top": 1428.87725,
+      "bottom": 1442.7565
+    },
+    "deltaPixels": {
+      "top": -1.8772500000000036,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "L",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "L",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 559,
+      "top": 1254,
+      "right": 590,
+      "bottom": 1298,
+      "count": 661
+    },
+    "expectedInk": {
+      "top": 1254.936,
+      "bottom": 1299.477
+    },
+    "deltaPixels": {
+      "top": -0.9359999999999218,
+      "bottom": -0.47700000000008913
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "L",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Lima",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 545,
+      "top": 1381,
+      "right": 602,
+      "bottom": 1401,
+      "count": 477
+    },
+    "expectedInk": {
+      "top": 1381.804,
+      "bottom": 1401.964
+    },
+    "deltaPixels": {
+      "top": -0.8040000000000873,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-light-0.png",
+    "symbol": "L",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "LEE-mah",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 533,
+      "top": 1427,
+      "right": 613,
+      "bottom": 1442,
+      "count": 456
+    },
+    "expectedInk": {
+      "top": 1428.87725,
+      "bottom": 1442.7565
+    },
+    "deltaPixels": {
+      "top": -1.8772500000000036,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "M",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "M",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 123,
+      "top": 386,
+      "right": 169,
+      "bottom": 431,
+      "count": 1353
+    },
+    "expectedInk": {
+      "top": 386.495,
+      "bottom": 432.044
+    },
+    "deltaPixels": {
+      "top": -0.49500000000000455,
+      "bottom": -0.04399999999998272
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "M",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Mike",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 119,
+      "top": 513,
+      "right": 175,
+      "bottom": 533,
+      "count": 520
+    },
+    "expectedInk": {
+      "top": 513.7760000000001,
+      "bottom": 533.9639999999999
+    },
+    "deltaPixels": {
+      "top": -0.7760000000000673,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "M",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "MIKE",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 123,
+      "top": 559,
+      "right": 169,
+      "bottom": 574,
+      "count": 323
+    },
+    "expectedInk": {
+      "top": 560.87725,
+      "bottom": 574.718
+    },
+    "deltaPixels": {
+      "top": -1.8772500000000036,
+      "bottom": 0.2820000000000391
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "N",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "N",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 342,
+      "top": 386,
+      "right": 380,
+      "bottom": 431,
+      "count": 1182
+    },
+    "expectedInk": {
+      "top": 386.495,
+      "bottom": 432.044
+    },
+    "deltaPixels": {
+      "top": -0.49500000000000455,
+      "bottom": -0.04399999999998272
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "N",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "November",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 297,
+      "top": 513,
+      "right": 427,
+      "bottom": 533,
+      "count": 1086
+    },
+    "expectedInk": {
+      "top": 513.7760000000001,
+      "bottom": 533.9639999999999
+    },
+    "deltaPixels": {
+      "top": -0.7760000000000673,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "N",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "no-VEM-ber",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 306,
+      "top": 559,
+      "right": 416,
+      "bottom": 574,
+      "count": 598
+    },
+    "expectedInk": {
+      "top": 560.87725,
+      "bottom": 574.7565
+    },
+    "deltaPixels": {
+      "top": -1.8772500000000036,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "O",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "O",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 551,
+      "top": 385,
+      "right": 594,
+      "bottom": 431,
+      "count": 1161
+    },
+    "expectedInk": {
+      "top": 386.369,
+      "bottom": 432.17
+    },
+    "deltaPixels": {
+      "top": -1.3690000000000282,
+      "bottom": -0.17000000000001592
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "O",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Oscar",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 537,
+      "top": 513,
+      "right": 610,
+      "bottom": 533,
+      "count": 585
+    },
+    "expectedInk": {
+      "top": 513.72,
+      "bottom": 533.9639999999999
+    },
+    "deltaPixels": {
+      "top": -0.7200000000000273,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "O",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "OSS-cah",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 535,
+      "top": 559,
+      "right": 611,
+      "bottom": 574,
+      "count": 466
+    },
+    "expectedInk": {
+      "top": 560.83875,
+      "bottom": 574.7565
+    },
+    "deltaPixels": {
+      "top": -1.8387500000000045,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "P",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "P",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 129,
+      "top": 670,
+      "right": 165,
+      "bottom": 715,
+      "count": 984
+    },
+    "expectedInk": {
+      "top": 671.062,
+      "bottom": 716.044
+    },
+    "deltaPixels": {
+      "top": -1.0620000000000118,
+      "bottom": -0.04399999999998272
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "P",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Papa",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 116,
+      "top": 797,
+      "right": 176,
+      "bottom": 822,
+      "count": 584
+    },
+    "expectedInk": {
+      "top": 797.972,
+      "bottom": 822.948
+    },
+    "deltaPixels": {
+      "top": -0.97199999999998,
+      "bottom": 0.05200000000002092
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "P",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "pah-PAH",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 105,
+      "top": 843,
+      "right": 188,
+      "bottom": 861,
+      "count": 488
+    },
+    "expectedInk": {
+      "top": 844.87725,
+      "bottom": 862.183
+    },
+    "deltaPixels": {
+      "top": -1.8772500000000036,
+      "bottom": -0.18299999999999272
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "Q",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "Q",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 339,
+      "top": 669,
+      "right": 382,
+      "bottom": 727,
+      "count": 1305
+    },
+    "expectedInk": {
+      "top": 670.369,
+      "bottom": 728.34664
+    },
+    "deltaPixels": {
+      "top": -1.3690000000000282,
+      "bottom": -0.3466399999999794
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "Q",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Quebec",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 313,
+      "top": 797,
+      "right": 409,
+      "bottom": 822,
+      "count": 816
+    },
+    "expectedInk": {
+      "top": 797.72,
+      "bottom": 823.2065882352941
+    },
+    "deltaPixels": {
+      "top": -0.7200000000000273,
+      "bottom": -0.2065882352941344
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "Q",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "keh-BECK",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 316,
+      "top": 843,
+      "right": 407,
+      "bottom": 858,
+      "count": 567
+    },
+    "expectedInk": {
+      "top": 844.83875,
+      "bottom": 858.7565
+    },
+    "deltaPixels": {
+      "top": -1.8387500000000045,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "R",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "R",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 555,
+      "top": 670,
+      "right": 591,
+      "bottom": 715,
+      "count": 1170
+    },
+    "expectedInk": {
+      "top": 671.062,
+      "bottom": 716.044
+    },
+    "deltaPixels": {
+      "top": -1.0620000000000118,
+      "bottom": -0.04399999999998272
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "R",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Romeo",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 531,
+      "top": 797,
+      "right": 617,
+      "bottom": 817,
+      "count": 749
+    },
+    "expectedInk": {
+      "top": 797.972,
+      "bottom": 817.9639999999999
+    },
+    "deltaPixels": {
+      "top": -0.97199999999998,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "R",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "ROW-me-oh",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 517,
+      "top": 843,
+      "right": 630,
+      "bottom": 858,
+      "count": 655
+    },
+    "expectedInk": {
+      "top": 844.83875,
+      "bottom": 858.7565
+    },
+    "deltaPixels": {
+      "top": -1.8387500000000045,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "S",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "S",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 128,
+      "top": 952,
+      "right": 164,
+      "bottom": 998,
+      "count": 990
+    },
+    "expectedInk": {
+      "top": 953.369,
+      "bottom": 999.17
+    },
+    "deltaPixels": {
+      "top": -1.3690000000000282,
+      "bottom": -0.16999999999995907
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "S",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Sierra",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 111,
+      "top": 1080,
+      "right": 181,
+      "bottom": 1100,
+      "count": 590
+    },
+    "expectedInk": {
+      "top": 1080.72,
+      "bottom": 1100.964
+    },
+    "deltaPixels": {
+      "top": -0.7200000000000273,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "S",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "see-AIR-ah",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 95,
+      "top": 1126,
+      "right": 196,
+      "bottom": 1141,
+      "count": 563
+    },
+    "expectedInk": {
+      "top": 1127.87725,
+      "bottom": 1141.7565
+    },
+    "deltaPixels": {
+      "top": -1.8772500000000036,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "T",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "T",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 339,
+      "top": 953,
+      "right": 379,
+      "bottom": 998,
+      "count": 720
+    },
+    "expectedInk": {
+      "top": 954.062,
+      "bottom": 999.044
+    },
+    "deltaPixels": {
+      "top": -1.0620000000000118,
+      "bottom": -0.04399999999998272
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "T",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Tango",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 322,
+      "top": 1080,
+      "right": 399,
+      "bottom": 1105,
+      "count": 643
+    },
+    "expectedInk": {
+      "top": 1080.972,
+      "bottom": 1106.004
+    },
+    "deltaPixels": {
+      "top": -0.97199999999998,
+      "bottom": -0.0039999999999054126
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "T",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "TANG-go",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 319,
+      "top": 1126,
+      "right": 403,
+      "bottom": 1144,
+      "count": 512
+    },
+    "expectedInk": {
+      "top": 1127.83875,
+      "bottom": 1145.2215
+    },
+    "deltaPixels": {
+      "top": -1.8387499999998909,
+      "bottom": -0.2215000000001055
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "U",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "U",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 554,
+      "top": 953,
+      "right": 592,
+      "bottom": 998,
+      "count": 1001
+    },
+    "expectedInk": {
+      "top": 953.495,
+      "bottom": 999.17
+    },
+    "deltaPixels": {
+      "top": -0.49500000000000455,
+      "bottom": -0.16999999999995907
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "U",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Uniform",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 524,
+      "top": 1080,
+      "right": 623,
+      "bottom": 1100,
+      "count": 828
+    },
+    "expectedInk": {
+      "top": 1080.776,
+      "bottom": 1100.964
+    },
+    "deltaPixels": {
+      "top": -0.7760000000000673,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "U",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "YOU-nee-form",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 508,
+      "top": 1126,
+      "right": 637,
+      "bottom": 1141,
+      "count": 694
+    },
+    "expectedInk": {
+      "top": 1127.83875,
+      "bottom": 1141.7565
+    },
+    "deltaPixels": {
+      "top": -1.8387499999998909,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "V",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "V",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 124,
+      "top": 1237,
+      "right": 167,
+      "bottom": 1282,
+      "count": 875
+    },
+    "expectedInk": {
+      "top": 1237.495,
+      "bottom": 1283.044
+    },
+    "deltaPixels": {
+      "top": -0.49499999999989086,
+      "bottom": -0.044000000000096406
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "V",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Victor",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 108,
+      "top": 1364,
+      "right": 185,
+      "bottom": 1384,
+      "count": 590
+    },
+    "expectedInk": {
+      "top": 1364.776,
+      "bottom": 1384.964
+    },
+    "deltaPixels": {
+      "top": -0.7760000000000673,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "V",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "VIK-tah",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 113,
+      "top": 1410,
+      "right": 179,
+      "bottom": 1425,
+      "count": 382
+    },
+    "expectedInk": {
+      "top": 1411.87725,
+      "bottom": 1425.7565
+    },
+    "deltaPixels": {
+      "top": -1.8772500000000036,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "W",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "W",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 328,
+      "top": 1237,
+      "right": 394,
+      "bottom": 1282,
+      "count": 1519
+    },
+    "expectedInk": {
+      "top": 1237.495,
+      "bottom": 1283.044
+    },
+    "deltaPixels": {
+      "top": -0.49499999999989086,
+      "bottom": -0.044000000000096406
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "W",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Whiskey",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 306,
+      "top": 1364,
+      "right": 416,
+      "bottom": 1389,
+      "count": 924
+    },
+    "expectedInk": {
+      "top": 1364.776,
+      "bottom": 1389.948
+    },
+    "deltaPixels": {
+      "top": -0.7760000000000673,
+      "bottom": 0.05199999999990723
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "W",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "WISS-key",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 318,
+      "top": 1410,
+      "right": 406,
+      "bottom": 1428,
+      "count": 551
+    },
+    "expectedInk": {
+      "top": 1411.83875,
+      "bottom": 1429.183
+    },
+    "deltaPixels": {
+      "top": -1.8387499999998909,
+      "bottom": -0.18299999999999272
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "X",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "X",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 554,
+      "top": 1237,
+      "right": 592,
+      "bottom": 1282,
+      "count": 963
+    },
+    "expectedInk": {
+      "top": 1237.495,
+      "bottom": 1283.044
+    },
+    "deltaPixels": {
+      "top": -0.49499999999989086,
+      "bottom": -0.044000000000096406
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "X",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "X-ray",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 540,
+      "top": 1364,
+      "right": 606,
+      "bottom": 1389,
+      "count": 508
+    },
+    "expectedInk": {
+      "top": 1364.776,
+      "bottom": 1389.948
+    },
+    "deltaPixels": {
+      "top": -0.7760000000000673,
+      "bottom": 0.05199999999990723
+    }
+  },
+  {
+    "capture": "alphabet-light-1.png",
+    "symbol": "X",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "ECKS-ray",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 531,
+      "top": 1410,
+      "right": 615,
+      "bottom": 1428,
+      "count": 495
+    },
+    "expectedInk": {
+      "top": 1411.83875,
+      "bottom": 1429.183
+    },
+    "deltaPixels": {
+      "top": -1.8387499999998909,
+      "bottom": -0.18299999999999272
+    }
+  },
+  {
+    "capture": "alphabet-light-2.png",
+    "symbol": "P",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "P",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 129,
+      "top": 408,
+      "right": 165,
+      "bottom": 453,
+      "count": 984
+    },
+    "expectedInk": {
+      "top": 409.062,
+      "bottom": 454.044
+    },
+    "deltaPixels": {
+      "top": -1.0620000000000118,
+      "bottom": -0.04399999999998272
+    }
+  },
+  {
+    "capture": "alphabet-light-2.png",
+    "symbol": "P",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Papa",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 116,
+      "top": 535,
+      "right": 176,
+      "bottom": 560,
+      "count": 584
+    },
+    "expectedInk": {
+      "top": 535.972,
+      "bottom": 560.948
+    },
+    "deltaPixels": {
+      "top": -0.97199999999998,
+      "bottom": 0.05200000000002092
+    }
+  },
+  {
+    "capture": "alphabet-light-2.png",
+    "symbol": "P",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "pah-PAH",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 105,
+      "top": 581,
+      "right": 188,
+      "bottom": 599,
+      "count": 488
+    },
+    "expectedInk": {
+      "top": 582.87725,
+      "bottom": 600.183
+    },
+    "deltaPixels": {
+      "top": -1.8772500000000036,
+      "bottom": -0.18299999999999272
+    }
+  },
+  {
+    "capture": "alphabet-light-2.png",
+    "symbol": "Q",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "Q",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 339,
+      "top": 407,
+      "right": 382,
+      "bottom": 465,
+      "count": 1305
+    },
+    "expectedInk": {
+      "top": 408.369,
+      "bottom": 466.34664
+    },
+    "deltaPixels": {
+      "top": -1.3690000000000282,
+      "bottom": -0.3466399999999794
+    }
+  },
+  {
+    "capture": "alphabet-light-2.png",
+    "symbol": "Q",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Quebec",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 313,
+      "top": 535,
+      "right": 409,
+      "bottom": 560,
+      "count": 816
+    },
+    "expectedInk": {
+      "top": 535.72,
+      "bottom": 561.2065882352941
+    },
+    "deltaPixels": {
+      "top": -0.7200000000000273,
+      "bottom": -0.2065882352941344
+    }
+  },
+  {
+    "capture": "alphabet-light-2.png",
+    "symbol": "Q",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "keh-BECK",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 316,
+      "top": 581,
+      "right": 407,
+      "bottom": 596,
+      "count": 567
+    },
+    "expectedInk": {
+      "top": 582.83875,
+      "bottom": 596.7565
+    },
+    "deltaPixels": {
+      "top": -1.8387500000000045,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-light-2.png",
+    "symbol": "R",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "R",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 555,
+      "top": 408,
+      "right": 591,
+      "bottom": 453,
+      "count": 1170
+    },
+    "expectedInk": {
+      "top": 409.062,
+      "bottom": 454.044
+    },
+    "deltaPixels": {
+      "top": -1.0620000000000118,
+      "bottom": -0.04399999999998272
+    }
+  },
+  {
+    "capture": "alphabet-light-2.png",
+    "symbol": "R",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Romeo",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 531,
+      "top": 535,
+      "right": 617,
+      "bottom": 555,
+      "count": 749
+    },
+    "expectedInk": {
+      "top": 535.972,
+      "bottom": 555.9639999999999
+    },
+    "deltaPixels": {
+      "top": -0.97199999999998,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-light-2.png",
+    "symbol": "R",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "ROW-me-oh",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 517,
+      "top": 581,
+      "right": 630,
+      "bottom": 596,
+      "count": 655
+    },
+    "expectedInk": {
+      "top": 582.83875,
+      "bottom": 596.7565
+    },
+    "deltaPixels": {
+      "top": -1.8387500000000045,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-light-2.png",
+    "symbol": "S",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "S",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 128,
+      "top": 690,
+      "right": 164,
+      "bottom": 736,
+      "count": 990
+    },
+    "expectedInk": {
+      "top": 691.369,
+      "bottom": 737.17
+    },
+    "deltaPixels": {
+      "top": -1.3690000000000282,
+      "bottom": -0.16999999999995907
+    }
+  },
+  {
+    "capture": "alphabet-light-2.png",
+    "symbol": "S",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Sierra",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 111,
+      "top": 818,
+      "right": 181,
+      "bottom": 838,
+      "count": 590
+    },
+    "expectedInk": {
+      "top": 818.72,
+      "bottom": 838.9639999999999
+    },
+    "deltaPixels": {
+      "top": -0.7200000000000273,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-light-2.png",
+    "symbol": "S",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "see-AIR-ah",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 95,
+      "top": 864,
+      "right": 196,
+      "bottom": 879,
+      "count": 563
+    },
+    "expectedInk": {
+      "top": 865.87725,
+      "bottom": 879.7565
+    },
+    "deltaPixels": {
+      "top": -1.8772500000000036,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-light-2.png",
+    "symbol": "T",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "T",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 339,
+      "top": 691,
+      "right": 379,
+      "bottom": 736,
+      "count": 720
+    },
+    "expectedInk": {
+      "top": 692.062,
+      "bottom": 737.044
+    },
+    "deltaPixels": {
+      "top": -1.0620000000000118,
+      "bottom": -0.04399999999998272
+    }
+  },
+  {
+    "capture": "alphabet-light-2.png",
+    "symbol": "T",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Tango",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 322,
+      "top": 818,
+      "right": 399,
+      "bottom": 843,
+      "count": 643
+    },
+    "expectedInk": {
+      "top": 818.972,
+      "bottom": 844.004
+    },
+    "deltaPixels": {
+      "top": -0.97199999999998,
+      "bottom": -0.004000000000019099
+    }
+  },
+  {
+    "capture": "alphabet-light-2.png",
+    "symbol": "T",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "TANG-go",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 319,
+      "top": 864,
+      "right": 403,
+      "bottom": 882,
+      "count": 512
+    },
+    "expectedInk": {
+      "top": 865.83875,
+      "bottom": 883.2215
+    },
+    "deltaPixels": {
+      "top": -1.8387500000000045,
+      "bottom": -0.22149999999999181
+    }
+  },
+  {
+    "capture": "alphabet-light-2.png",
+    "symbol": "U",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "U",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 554,
+      "top": 691,
+      "right": 592,
+      "bottom": 736,
+      "count": 1001
+    },
+    "expectedInk": {
+      "top": 691.495,
+      "bottom": 737.17
+    },
+    "deltaPixels": {
+      "top": -0.49500000000000455,
+      "bottom": -0.16999999999995907
+    }
+  },
+  {
+    "capture": "alphabet-light-2.png",
+    "symbol": "U",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Uniform",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 524,
+      "top": 818,
+      "right": 623,
+      "bottom": 838,
+      "count": 828
+    },
+    "expectedInk": {
+      "top": 818.7760000000001,
+      "bottom": 838.9639999999999
+    },
+    "deltaPixels": {
+      "top": -0.7760000000000673,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-light-2.png",
+    "symbol": "U",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "YOU-nee-form",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 508,
+      "top": 864,
+      "right": 637,
+      "bottom": 879,
+      "count": 694
+    },
+    "expectedInk": {
+      "top": 865.83875,
+      "bottom": 879.7565
+    },
+    "deltaPixels": {
+      "top": -1.8387500000000045,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-light-2.png",
+    "symbol": "V",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "V",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 124,
+      "top": 975,
+      "right": 167,
+      "bottom": 1020,
+      "count": 875
+    },
+    "expectedInk": {
+      "top": 975.495,
+      "bottom": 1021.044
+    },
+    "deltaPixels": {
+      "top": -0.49500000000000455,
+      "bottom": -0.04399999999998272
+    }
+  },
+  {
+    "capture": "alphabet-light-2.png",
+    "symbol": "V",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Victor",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 108,
+      "top": 1102,
+      "right": 185,
+      "bottom": 1122,
+      "count": 590
+    },
+    "expectedInk": {
+      "top": 1102.776,
+      "bottom": 1122.964
+    },
+    "deltaPixels": {
+      "top": -0.7760000000000673,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-light-2.png",
+    "symbol": "V",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "VIK-tah",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 113,
+      "top": 1148,
+      "right": 179,
+      "bottom": 1163,
+      "count": 382
+    },
+    "expectedInk": {
+      "top": 1149.87725,
+      "bottom": 1163.7565
+    },
+    "deltaPixels": {
+      "top": -1.8772500000000036,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-light-2.png",
+    "symbol": "W",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "W",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 328,
+      "top": 975,
+      "right": 394,
+      "bottom": 1020,
+      "count": 1519
+    },
+    "expectedInk": {
+      "top": 975.495,
+      "bottom": 1021.044
+    },
+    "deltaPixels": {
+      "top": -0.49500000000000455,
+      "bottom": -0.04399999999998272
+    }
+  },
+  {
+    "capture": "alphabet-light-2.png",
+    "symbol": "W",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Whiskey",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 306,
+      "top": 1102,
+      "right": 416,
+      "bottom": 1127,
+      "count": 924
+    },
+    "expectedInk": {
+      "top": 1102.776,
+      "bottom": 1127.948
+    },
+    "deltaPixels": {
+      "top": -0.7760000000000673,
+      "bottom": 0.05199999999990723
+    }
+  },
+  {
+    "capture": "alphabet-light-2.png",
+    "symbol": "W",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "WISS-key",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 318,
+      "top": 1148,
+      "right": 406,
+      "bottom": 1166,
+      "count": 551
+    },
+    "expectedInk": {
+      "top": 1149.83875,
+      "bottom": 1167.183
+    },
+    "deltaPixels": {
+      "top": -1.8387499999998909,
+      "bottom": -0.18299999999999272
+    }
+  },
+  {
+    "capture": "alphabet-light-2.png",
+    "symbol": "X",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "X",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 554,
+      "top": 975,
+      "right": 592,
+      "bottom": 1020,
+      "count": 963
+    },
+    "expectedInk": {
+      "top": 975.495,
+      "bottom": 1021.044
+    },
+    "deltaPixels": {
+      "top": -0.49500000000000455,
+      "bottom": -0.04399999999998272
+    }
+  },
+  {
+    "capture": "alphabet-light-2.png",
+    "symbol": "X",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "X-ray",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 540,
+      "top": 1102,
+      "right": 606,
+      "bottom": 1127,
+      "count": 508
+    },
+    "expectedInk": {
+      "top": 1102.776,
+      "bottom": 1127.948
+    },
+    "deltaPixels": {
+      "top": -0.7760000000000673,
+      "bottom": 0.05199999999990723
+    }
+  },
+  {
+    "capture": "alphabet-light-2.png",
+    "symbol": "X",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "ECKS-ray",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 531,
+      "top": 1148,
+      "right": 615,
+      "bottom": 1166,
+      "count": 495
+    },
+    "expectedInk": {
+      "top": 1149.83875,
+      "bottom": 1167.183
+    },
+    "deltaPixels": {
+      "top": -1.8387499999998909,
+      "bottom": -0.18299999999999272
+    }
+  },
+  {
+    "capture": "alphabet-light-2.png",
+    "symbol": "Y",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "Y",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 234,
+      "top": 1258,
+      "right": 271,
+      "bottom": 1303,
+      "count": 718
+    },
+    "expectedInk": {
+      "top": 1258.495,
+      "bottom": 1304.044
+    },
+    "deltaPixels": {
+      "top": -0.49499999999989086,
+      "bottom": -0.044000000000096406
+    }
+  },
+  {
+    "capture": "alphabet-light-2.png",
+    "symbol": "Y",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Yankee",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 209,
+      "top": 1385,
+      "right": 297,
+      "bottom": 1405,
+      "count": 748
+    },
+    "expectedInk": {
+      "top": 1385.776,
+      "bottom": 1405.964
+    },
+    "deltaPixels": {
+      "top": -0.7760000000000673,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-light-2.png",
+    "symbol": "Y",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "YANG-key",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 207,
+      "top": 1431,
+      "right": 300,
+      "bottom": 1449,
+      "count": 549
+    },
+    "expectedInk": {
+      "top": 1432.83875,
+      "bottom": 1450.183
+    },
+    "deltaPixels": {
+      "top": -1.8387499999998909,
+      "bottom": -0.18299999999999272
+    }
+  },
+  {
+    "capture": "alphabet-light-2.png",
+    "symbol": "Z",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "Z",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 450,
+      "top": 1258,
+      "right": 485,
+      "bottom": 1302,
+      "count": 937
+    },
+    "expectedInk": {
+      "top": 1259.062,
+      "bottom": 1303.477
+    },
+    "deltaPixels": {
+      "top": -1.0619999999998981,
+      "bottom": -0.47700000000008913
+    }
+  },
+  {
+    "capture": "alphabet-light-2.png",
+    "symbol": "Z",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Zulu",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 440,
+      "top": 1385,
+      "right": 494,
+      "bottom": 1405,
+      "count": 490
+    },
+    "expectedInk": {
+      "top": 1385.776,
+      "bottom": 1405.964
+    },
+    "deltaPixels": {
+      "top": -0.7760000000000673,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-light-2.png",
+    "symbol": "Z",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "ZOO-loo",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 429,
+      "top": 1431,
+      "right": 505,
+      "bottom": 1446,
+      "count": 460
+    },
+    "expectedInk": {
+      "top": 1432.83875,
+      "bottom": 1446.7565
+    },
+    "deltaPixels": {
+      "top": -1.8387499999998909,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "converter-light.png",
+    "symbol": "N",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "N",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 127,
+      "top": 705,
+      "right": 165,
+      "bottom": 750,
+      "count": 1182
+    },
+    "expectedInk": {
+      "top": 705.495,
+      "bottom": 751.044
+    },
+    "deltaPixels": {
+      "top": -0.49500000000000455,
+      "bottom": -0.04399999999998272
+    }
+  },
+  {
+    "capture": "converter-light.png",
+    "symbol": "N",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "November",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 82,
+      "top": 832,
+      "right": 212,
+      "bottom": 852,
+      "count": 1086
+    },
+    "expectedInk": {
+      "top": 832.7760000000001,
+      "bottom": 852.9639999999999
+    },
+    "deltaPixels": {
+      "top": -0.7760000000000673,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "converter-light.png",
+    "symbol": "N",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "no-VEM-ber",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 91,
+      "top": 878,
+      "right": 201,
+      "bottom": 893,
+      "count": 598
+    },
+    "expectedInk": {
+      "top": 879.87725,
+      "bottom": 893.7565
+    },
+    "deltaPixels": {
+      "top": -1.8772500000000036,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "converter-light.png",
+    "symbol": "U",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "U",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 342,
+      "top": 705,
+      "right": 380,
+      "bottom": 750,
+      "count": 1001
+    },
+    "expectedInk": {
+      "top": 705.495,
+      "bottom": 751.17
+    },
+    "deltaPixels": {
+      "top": -0.49500000000000455,
+      "bottom": -0.16999999999995907
+    }
+  },
+  {
+    "capture": "converter-light.png",
+    "symbol": "U",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Uniform",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 312,
+      "top": 832,
+      "right": 411,
+      "bottom": 852,
+      "count": 828
+    },
+    "expectedInk": {
+      "top": 832.7760000000001,
+      "bottom": 852.9639999999999
+    },
+    "deltaPixels": {
+      "top": -0.7760000000000673,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "converter-light.png",
+    "symbol": "U",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "YOU-nee-form",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 296,
+      "top": 878,
+      "right": 425,
+      "bottom": 893,
+      "count": 694
+    },
+    "expectedInk": {
+      "top": 879.83875,
+      "bottom": 893.7565
+    },
+    "deltaPixels": {
+      "top": -1.8387500000000045,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "converter-light.png",
+    "symbol": "W",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "W",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 540,
+      "top": 705,
+      "right": 606,
+      "bottom": 750,
+      "count": 1519
+    },
+    "expectedInk": {
+      "top": 705.495,
+      "bottom": 751.044
+    },
+    "deltaPixels": {
+      "top": -0.49500000000000455,
+      "bottom": -0.04399999999998272
+    }
+  },
+  {
+    "capture": "converter-light.png",
+    "symbol": "W",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Whiskey",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 518,
+      "top": 832,
+      "right": 628,
+      "bottom": 857,
+      "count": 924
+    },
+    "expectedInk": {
+      "top": 832.7760000000001,
+      "bottom": 857.948
+    },
+    "deltaPixels": {
+      "top": -0.7760000000000673,
+      "bottom": 0.05200000000002092
+    }
+  },
+  {
+    "capture": "converter-light.png",
+    "symbol": "W",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "WISS-key",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 530,
+      "top": 878,
+      "right": 618,
+      "bottom": 896,
+      "count": 551
+    },
+    "expectedInk": {
+      "top": 879.83875,
+      "bottom": 897.183
+    },
+    "deltaPixels": {
+      "top": -1.8387500000000045,
+      "bottom": -0.18299999999999272
+    }
+  },
+  {
+    "capture": "converter-light.png",
+    "symbol": "J",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "J",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 133,
+      "top": 989,
+      "right": 152,
+      "bottom": 1034,
+      "count": 509
+    },
+    "expectedInk": {
+      "top": 989.495,
+      "bottom": 1034.98415
+    },
+    "deltaPixels": {
+      "top": -0.49500000000000455,
+      "bottom": 0.015850000000000364
+    }
+  },
+  {
+    "capture": "converter-light.png",
+    "symbol": "J",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Juliett",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 107,
+      "top": 1116,
+      "right": 183,
+      "bottom": 1136,
+      "count": 651
+    },
+    "expectedInk": {
+      "top": 1116.776,
+      "bottom": 1136.964
+    },
+    "deltaPixels": {
+      "top": -0.7760000000000673,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "converter-light.png",
+    "symbol": "J",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "JEW-lee-ett",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 90,
+      "top": 1162,
+      "right": 199,
+      "bottom": 1177,
+      "count": 614
+    },
+    "expectedInk": {
+      "top": 1163.87725,
+      "bottom": 1177.7565
+    },
+    "deltaPixels": {
+      "top": -1.8772500000000036,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "converter-light.png",
+    "symbol": "3",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "3",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 344,
+      "top": 988,
+      "right": 376,
+      "bottom": 1034,
+      "count": 885
+    },
+    "expectedInk": {
+      "top": 989.369,
+      "bottom": 1035.17
+    },
+    "deltaPixels": {
+      "top": -1.3690000000000282,
+      "bottom": -0.17000000000007276
+    }
+  },
+  {
+    "capture": "converter-light.png",
+    "symbol": "3",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Three",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 324,
+      "top": 1116,
+      "right": 396,
+      "bottom": 1136,
+      "count": 540
+    },
+    "expectedInk": {
+      "top": 1116.776,
+      "bottom": 1136.964
+    },
+    "deltaPixels": {
+      "top": -0.7760000000000673,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "converter-light.png",
+    "symbol": "3",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "TREE",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 337,
+      "top": 1162,
+      "right": 385,
+      "bottom": 1176,
+      "count": 331
+    },
+    "expectedInk": {
+      "top": 1164.012,
+      "bottom": 1177.718
+    },
+    "deltaPixels": {
+      "top": -2.0119999999999436,
+      "bottom": -0.7180000000000746
+    }
+  },
+  {
+    "capture": "converter-light.png",
+    "symbol": "5",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "5",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 557,
+      "top": 989,
+      "right": 589,
+      "bottom": 1034,
+      "count": 987
+    },
+    "expectedInk": {
+      "top": 990.062,
+      "bottom": 1035.17
+    },
+    "deltaPixels": {
+      "top": -1.0620000000000118,
+      "bottom": -0.17000000000007276
+    }
+  },
+  {
+    "capture": "converter-light.png",
+    "symbol": "5",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Five",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 549,
+      "top": 1116,
+      "right": 599,
+      "bottom": 1136,
+      "count": 433
+    },
+    "expectedInk": {
+      "top": 1116.804,
+      "bottom": 1136.964
+    },
+    "deltaPixels": {
+      "top": -0.8040000000000873,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "converter-light.png",
+    "symbol": "5",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "FIFE",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 554,
+      "top": 1162,
+      "right": 592,
+      "bottom": 1177,
+      "count": 265
+    },
+    "expectedInk": {
+      "top": 1163.87725,
+      "bottom": 1177.718
+    },
+    "deltaPixels": {
+      "top": -1.8772500000000036,
+      "bottom": 0.2819999999999254
+    }
+  },
+  {
+    "capture": "converter-light.png",
+    "symbol": "9",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "9",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 344,
+      "top": 1271,
+      "right": 376,
+      "bottom": 1317,
+      "count": 1017
+    },
+    "expectedInk": {
+      "top": 1272.369,
+      "bottom": 1318.17
+    },
+    "deltaPixels": {
+      "top": -1.3689999999999145,
+      "bottom": -0.17000000000007276
+    }
+  },
+  {
+    "capture": "converter-light.png",
+    "symbol": "9",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Nine",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 334,
+      "top": 1399,
+      "right": 389,
+      "bottom": 1419,
+      "count": 490
+    },
+    "expectedInk": {
+      "top": 1399.776,
+      "bottom": 1419.964
+    },
+    "deltaPixels": {
+      "top": -0.7760000000000673,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "converter-light.png",
+    "symbol": "9",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "NIN-er",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 331,
+      "top": 1445,
+      "right": 391,
+      "bottom": 1460,
+      "count": 343
+    },
+    "expectedInk": {
+      "top": 1446.87725,
+      "bottom": 1460.7565
+    },
+    "deltaPixels": {
+      "top": -1.8772500000000036,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "quiz-question-light.png",
+    "symbol": "V",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "V",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 339,
+      "top": 408,
+      "right": 382,
+      "bottom": 453,
+      "count": 875
+    },
+    "expectedInk": {
+      "top": 408.495,
+      "bottom": 454.044
+    },
+    "deltaPixels": {
+      "top": -0.49500000000000455,
+      "bottom": -0.04399999999998272
+    }
+  },
+  {
+    "capture": "quiz-feedback-light.png",
+    "symbol": "V",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "V",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 339,
+      "top": 408,
+      "right": 382,
+      "bottom": 453,
+      "count": 875
+    },
+    "expectedInk": {
+      "top": 408.495,
+      "bottom": 454.044
+    },
+    "deltaPixels": {
+      "top": -0.49500000000000455,
+      "bottom": -0.04399999999998272
+    }
+  },
+  {
+    "capture": "quiz-feedback-light.png",
+    "symbol": "V",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Victor",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 323,
+      "top": 535,
+      "right": 400,
+      "bottom": 555,
+      "count": 590
+    },
+    "expectedInk": {
+      "top": 535.7760000000001,
+      "bottom": 555.9639999999999
+    },
+    "deltaPixels": {
+      "top": -0.7760000000000673,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "quiz-feedback-light.png",
+    "symbol": "V",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "VIK-tah",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 328,
+      "top": 581,
+      "right": 394,
+      "bottom": 596,
+      "count": 382
+    },
+    "expectedInk": {
+      "top": 582.87725,
+      "bottom": 596.7565
+    },
+    "deltaPixels": {
+      "top": -1.8772500000000036,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "A",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "A",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 124,
+      "top": 403,
+      "right": 169,
+      "bottom": 448,
+      "count": 982
+    },
+    "expectedInk": {
+      "top": 403.495,
+      "bottom": 449.044
+    },
+    "deltaPixels": {
+      "top": -0.49500000000000455,
+      "bottom": -0.04399999999998272
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "A",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Alfa",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 120,
+      "top": 530,
+      "right": 171,
+      "bottom": 550,
+      "count": 476
+    },
+    "expectedInk": {
+      "top": 530.7760000000001,
+      "bottom": 550.9639999999999
+    },
+    "deltaPixels": {
+      "top": -0.7760000000000673,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "A",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "AL-fah",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 115,
+      "top": 576,
+      "right": 176,
+      "bottom": 591,
+      "count": 328
+    },
+    "expectedInk": {
+      "top": 577.87725,
+      "bottom": 591.7565
+    },
+    "deltaPixels": {
+      "top": -1.8772500000000036,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "B",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "B",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 343,
+      "top": 403,
+      "right": 379,
+      "bottom": 447,
+      "count": 1224
+    },
+    "expectedInk": {
+      "top": 404.062,
+      "bottom": 448.477
+    },
+    "deltaPixels": {
+      "top": -1.0620000000000118,
+      "bottom": -0.47699999999997544
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "B",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Bravo",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 326,
+      "top": 530,
+      "right": 397,
+      "bottom": 550,
+      "count": 615
+    },
+    "expectedInk": {
+      "top": 530.972,
+      "bottom": 550.9639999999999
+    },
+    "deltaPixels": {
+      "top": -0.97199999999998,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "B",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "BRAH-voh",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 314,
+      "top": 576,
+      "right": 408,
+      "bottom": 591,
+      "count": 569
+    },
+    "expectedInk": {
+      "top": 577.87725,
+      "bottom": 591.7565
+    },
+    "deltaPixels": {
+      "top": -1.8772500000000036,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "C",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "C",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 555,
+      "top": 402,
+      "right": 592,
+      "bottom": 448,
+      "count": 883
+    },
+    "expectedInk": {
+      "top": 403.369,
+      "bottom": 449.17
+    },
+    "deltaPixels": {
+      "top": -1.3690000000000282,
+      "bottom": -0.17000000000001592
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "C",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Charlie",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 529,
+      "top": 530,
+      "right": 617,
+      "bottom": 550,
+      "count": 721
+    },
+    "expectedInk": {
+      "top": 530.72,
+      "bottom": 550.9639999999999
+    },
+    "deltaPixels": {
+      "top": -0.7200000000000273,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "C",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "CHAR-lee",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 529,
+      "top": 576,
+      "right": 618,
+      "bottom": 591,
+      "count": 528
+    },
+    "expectedInk": {
+      "top": 577.83875,
+      "bottom": 591.7565
+    },
+    "deltaPixels": {
+      "top": -1.8387500000000045,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "D",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "D",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 126,
+      "top": 687,
+      "right": 167,
+      "bottom": 731,
+      "count": 1206
+    },
+    "expectedInk": {
+      "top": 688.062,
+      "bottom": 732.477
+    },
+    "deltaPixels": {
+      "top": -1.0620000000000118,
+      "bottom": -0.47699999999997544
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "D",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Delta",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 114,
+      "top": 814,
+      "right": 179,
+      "bottom": 834,
+      "count": 619
+    },
+    "expectedInk": {
+      "top": 814.7760000000001,
+      "bottom": 834.9639999999999
+    },
+    "deltaPixels": {
+      "top": -0.7760000000000673,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "D",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "DELL-tah",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 105,
+      "top": 860,
+      "right": 188,
+      "bottom": 875,
+      "count": 479
+    },
+    "expectedInk": {
+      "top": 861.87725,
+      "bottom": 875.7565
+    },
+    "deltaPixels": {
+      "top": -1.8772500000000036,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "E",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "E",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 346,
+      "top": 687,
+      "right": 377,
+      "bottom": 731,
+      "count": 977
+    },
+    "expectedInk": {
+      "top": 688.062,
+      "bottom": 732.477
+    },
+    "deltaPixels": {
+      "top": -1.0620000000000118,
+      "bottom": -0.47699999999997544
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "E",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Echo",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 333,
+      "top": 814,
+      "right": 390,
+      "bottom": 834,
+      "count": 526
+    },
+    "expectedInk": {
+      "top": 814.7760000000001,
+      "bottom": 834.9639999999999
+    },
+    "deltaPixels": {
+      "top": -0.7760000000000673,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "E",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "ECK-oh",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 329,
+      "top": 860,
+      "right": 394,
+      "bottom": 875,
+      "count": 397
+    },
+    "expectedInk": {
+      "top": 861.83875,
+      "bottom": 875.7565
+    },
+    "deltaPixels": {
+      "top": -1.8387500000000045,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "F",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "F",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 559,
+      "top": 687,
+      "right": 589,
+      "bottom": 732,
+      "count": 809
+    },
+    "expectedInk": {
+      "top": 688.062,
+      "bottom": 733.044
+    },
+    "deltaPixels": {
+      "top": -1.0620000000000118,
+      "bottom": -0.04399999999998272
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "F",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Foxtrot",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 529,
+      "top": 814,
+      "right": 619,
+      "bottom": 834,
+      "count": 774
+    },
+    "expectedInk": {
+      "top": 814.972,
+      "bottom": 834.9639999999999
+    },
+    "deltaPixels": {
+      "top": -0.97199999999998,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "F",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "FOKS-trot",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 529,
+      "top": 860,
+      "right": 618,
+      "bottom": 875,
+      "count": 545
+    },
+    "expectedInk": {
+      "top": 861.83875,
+      "bottom": 875.7565
+    },
+    "deltaPixels": {
+      "top": -1.8387500000000045,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "G",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "G",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 126,
+      "top": 969,
+      "right": 165,
+      "bottom": 1015,
+      "count": 1102
+    },
+    "expectedInk": {
+      "top": 970.369,
+      "bottom": 1016.17
+    },
+    "deltaPixels": {
+      "top": -1.3690000000000282,
+      "bottom": -0.16999999999995907
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "G",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Golf",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 120,
+      "top": 1097,
+      "right": 173,
+      "bottom": 1117,
+      "count": 499
+    },
+    "expectedInk": {
+      "top": 1097.72,
+      "bottom": 1117.964
+    },
+    "deltaPixels": {
+      "top": -0.7200000000000273,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "G",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "GOLF",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 121,
+      "top": 1143,
+      "right": 172,
+      "bottom": 1158,
+      "count": 316
+    },
+    "expectedInk": {
+      "top": 1144.83875,
+      "bottom": 1158.7565
+    },
+    "deltaPixels": {
+      "top": -1.8387499999998909,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "H",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "H",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 341,
+      "top": 970,
+      "right": 381,
+      "bottom": 1015,
+      "count": 1143
+    },
+    "expectedInk": {
+      "top": 970.495,
+      "bottom": 1016.044
+    },
+    "deltaPixels": {
+      "top": -0.49500000000000455,
+      "bottom": -0.04399999999998272
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "H",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Hotel",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 328,
+      "top": 1097,
+      "right": 396,
+      "bottom": 1117,
+      "count": 641
+    },
+    "expectedInk": {
+      "top": 1097.776,
+      "bottom": 1117.964
+    },
+    "deltaPixels": {
+      "top": -0.7760000000000673,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "H",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "hoh-TELL",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 318,
+      "top": 1143,
+      "right": 402,
+      "bottom": 1158,
+      "count": 475
+    },
+    "expectedInk": {
+      "top": 1144.87725,
+      "bottom": 1158.7565
+    },
+    "deltaPixels": {
+      "top": -1.8772500000000036,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "I",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "I",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 568,
+      "top": 970,
+      "right": 578,
+      "bottom": 1015,
+      "count": 487
+    },
+    "expectedInk": {
+      "top": 970.495,
+      "bottom": 1016.044
+    },
+    "deltaPixels": {
+      "top": -0.49500000000000455,
+      "bottom": -0.04399999999998272
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "I",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "India",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 544,
+      "top": 1097,
+      "right": 603,
+      "bottom": 1117,
+      "count": 547
+    },
+    "expectedInk": {
+      "top": 1097.776,
+      "bottom": 1117.964
+    },
+    "deltaPixels": {
+      "top": -0.7760000000000673,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "I",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "IN-dee-ah",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 528,
+      "top": 1143,
+      "right": 618,
+      "bottom": 1158,
+      "count": 510
+    },
+    "expectedInk": {
+      "top": 1144.87725,
+      "bottom": 1158.7565
+    },
+    "deltaPixels": {
+      "top": -1.8772500000000036,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "J",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "J",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 133,
+      "top": 1254,
+      "right": 152,
+      "bottom": 1299,
+      "count": 509
+    },
+    "expectedInk": {
+      "top": 1254.495,
+      "bottom": 1299.98415
+    },
+    "deltaPixels": {
+      "top": -0.49499999999989086,
+      "bottom": 0.015850000000000364
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "J",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Juliett",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 107,
+      "top": 1381,
+      "right": 183,
+      "bottom": 1401,
+      "count": 651
+    },
+    "expectedInk": {
+      "top": 1381.776,
+      "bottom": 1401.964
+    },
+    "deltaPixels": {
+      "top": -0.7760000000000673,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "J",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "JEW-lee-ett",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 90,
+      "top": 1427,
+      "right": 199,
+      "bottom": 1442,
+      "count": 614
+    },
+    "expectedInk": {
+      "top": 1428.87725,
+      "bottom": 1442.7565
+    },
+    "deltaPixels": {
+      "top": -1.8772500000000036,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "K",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "K",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 344,
+      "top": 1254,
+      "right": 380,
+      "bottom": 1299,
+      "count": 1040
+    },
+    "expectedInk": {
+      "top": 1254.495,
+      "bottom": 1300.044
+    },
+    "deltaPixels": {
+      "top": -0.49499999999989086,
+      "bottom": -0.044000000000096406
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "K",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Kilo",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 338,
+      "top": 1381,
+      "right": 384,
+      "bottom": 1401,
+      "count": 464
+    },
+    "expectedInk": {
+      "top": 1381.776,
+      "bottom": 1401.964
+    },
+    "deltaPixels": {
+      "top": -0.7760000000000673,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "K",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "KEY-loh",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 327,
+      "top": 1427,
+      "right": 396,
+      "bottom": 1442,
+      "count": 420
+    },
+    "expectedInk": {
+      "top": 1428.87725,
+      "bottom": 1442.7565
+    },
+    "deltaPixels": {
+      "top": -1.8772500000000036,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "L",
+    "scale": 1,
+    "density": 1.75,
+    "part": "letter",
+    "text": "L",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 559,
+      "top": 1254,
+      "right": 590,
+      "bottom": 1298,
+      "count": 661
+    },
+    "expectedInk": {
+      "top": 1254.936,
+      "bottom": 1299.477
+    },
+    "deltaPixels": {
+      "top": -0.9359999999999218,
+      "bottom": -0.47700000000008913
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "L",
+    "scale": 1,
+    "density": 1.75,
+    "part": "word",
+    "text": "Lima",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 545,
+      "top": 1381,
+      "right": 602,
+      "bottom": 1401,
+      "count": 477
+    },
+    "expectedInk": {
+      "top": 1381.804,
+      "bottom": 1401.964
+    },
+    "deltaPixels": {
+      "top": -0.8040000000000873,
+      "bottom": 0.03600000000005821
+    }
+  },
+  {
+    "capture": "alphabet-dark.png",
+    "symbol": "L",
+    "scale": 1,
+    "density": 1.75,
+    "part": "guide",
+    "text": "LEE-mah",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 533,
+      "top": 1427,
+      "right": 613,
+      "bottom": 1442,
+      "count": 456
+    },
+    "expectedInk": {
+      "top": 1428.87725,
+      "bottom": 1442.7565
+    },
+    "deltaPixels": {
+      "top": -1.8772500000000036,
+      "bottom": 0.24350000000004002
+    }
+  },
+  {
+    "capture": "alphabet-font-scale2.png",
+    "symbol": "A",
+    "scale": 2,
+    "density": 1.75,
+    "part": "letter",
+    "text": "A",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 315,
+      "top": 430,
+      "right": 405,
+      "bottom": 521,
+      "count": 3721
+    },
+    "expectedInk": {
+      "top": 429.99,
+      "bottom": 521.088
+    },
+    "deltaPixels": {
+      "top": 0.009999999999990905,
+      "bottom": 0.9120000000000346
+    }
+  },
+  {
+    "capture": "alphabet-font-scale2.png",
+    "symbol": "A",
+    "scale": 2,
+    "density": 1.75,
+    "part": "word",
+    "text": "Alfa",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 308,
+      "top": 685,
+      "right": 409,
+      "bottom": 725,
+      "count": 1643
+    },
+    "expectedInk": {
+      "top": 684.552,
+      "bottom": 724.928
+    },
+    "deltaPixels": {
+      "top": 0.4479999999999791,
+      "bottom": 1.0720000000000027
+    }
+  },
+  {
+    "capture": "alphabet-font-scale2.png",
+    "symbol": "A",
+    "scale": 2,
+    "density": 1.75,
+    "part": "guide",
+    "text": "AL-fah",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 300,
+      "top": 779,
+      "right": 417,
+      "bottom": 807,
+      "count": 1024
+    },
+    "expectedInk": {
+      "top": 778.7545,
+      "bottom": 806.513
+    },
+    "deltaPixels": {
+      "top": 0.24549999999999272,
+      "bottom": 1.4869999999999663
+    }
+  },
+  {
+    "capture": "alphabet-font-scale2.png",
+    "symbol": "B",
+    "scale": 2,
+    "density": 1.75,
+    "part": "letter",
+    "text": "B",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 325,
+      "top": 977,
+      "right": 397,
+      "bottom": 1065,
+      "count": 4642
+    },
+    "expectedInk": {
+      "top": 977.124,
+      "bottom": 1065.954
+    },
+    "deltaPixels": {
+      "top": -0.12400000000002365,
+      "bottom": 0.04600000000004911
+    }
+  },
+  {
+    "capture": "alphabet-font-scale2.png",
+    "symbol": "B",
+    "scale": 2,
+    "density": 1.75,
+    "part": "word",
+    "text": "Bravo",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 290,
+      "top": 1231,
+      "right": 432,
+      "bottom": 1271,
+      "count": 2187
+    },
+    "expectedInk": {
+      "top": 1230.944,
+      "bottom": 1270.9279999999999
+    },
+    "deltaPixels": {
+      "top": 0.05600000000004002,
+      "bottom": 1.0720000000001164
+    }
+  },
+  {
+    "capture": "alphabet-font-scale2.png",
+    "symbol": "B",
+    "scale": 2,
+    "density": 1.75,
+    "part": "guide",
+    "text": "BRAH-voh",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 268,
+      "top": 1325,
+      "right": 453,
+      "bottom": 1353,
+      "count": 1798
+    },
+    "expectedInk": {
+      "top": 1324.7545,
+      "bottom": 1352.513
+    },
+    "deltaPixels": {
+      "top": 0.24549999999999272,
+      "bottom": 1.48700000000008
+    }
+  },
+  {
+    "capture": "alphabet-font-scale2-N.png",
+    "symbol": "N",
+    "scale": 2,
+    "density": 1.75,
+    "part": "letter",
+    "text": "N",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 322,
+      "top": 774,
+      "right": 398,
+      "bottom": 865,
+      "count": 4483
+    },
+    "expectedInk": {
+      "top": 773.99,
+      "bottom": 865.088
+    },
+    "deltaPixels": {
+      "top": 0.009999999999990905,
+      "bottom": 0.9120000000000346
+    }
+  },
+  {
+    "capture": "alphabet-font-scale2-N.png",
+    "symbol": "N",
+    "scale": 2,
+    "density": 1.75,
+    "part": "word",
+    "text": "November",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 232,
+      "top": 1029,
+      "right": 492,
+      "bottom": 1069,
+      "count": 3760
+    },
+    "expectedInk": {
+      "top": 1028.5520000000001,
+      "bottom": 1068.9279999999999
+    },
+    "deltaPixels": {
+      "top": 0.4479999999998654,
+      "bottom": 1.0720000000001164
+    }
+  },
+  {
+    "capture": "alphabet-font-scale2-N.png",
+    "symbol": "N",
+    "scale": 2,
+    "density": 1.75,
+    "part": "guide",
+    "text": "no-VEM-ber",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 252,
+      "top": 1123,
+      "right": 469,
+      "bottom": 1151,
+      "count": 1877
+    },
+    "expectedInk": {
+      "top": 1122.7545,
+      "bottom": 1150.513
+    },
+    "deltaPixels": {
+      "top": 0.24549999999999272,
+      "bottom": 1.48700000000008
+    }
+  },
+  {
+    "capture": "alphabet-font-scale2-U.png",
+    "symbol": "U",
+    "scale": 2,
+    "density": 1.75,
+    "part": "letter",
+    "text": "U",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 321,
+      "top": 337,
+      "right": 398,
+      "bottom": 428,
+      "count": 3916
+    },
+    "expectedInk": {
+      "top": 336.99,
+      "bottom": 428.34000000000003
+    },
+    "deltaPixels": {
+      "top": 0.009999999999990905,
+      "bottom": 0.6599999999999682
+    }
+  },
+  {
+    "capture": "alphabet-font-scale2-U.png",
+    "symbol": "U",
+    "scale": 2,
+    "density": 1.75,
+    "part": "word",
+    "text": "Uniform",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 261,
+      "top": 592,
+      "right": 459,
+      "bottom": 632,
+      "count": 2902
+    },
+    "expectedInk": {
+      "top": 591.552,
+      "bottom": 631.928
+    },
+    "deltaPixels": {
+      "top": 0.4479999999999791,
+      "bottom": 1.0720000000000027
+    }
+  },
+  {
+    "capture": "alphabet-font-scale2-U.png",
+    "symbol": "U",
+    "scale": 2,
+    "density": 1.75,
+    "part": "guide",
+    "text": "YOU-nee-form",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 234,
+      "top": 686,
+      "right": 488,
+      "bottom": 714,
+      "count": 2165
+    },
+    "expectedInk": {
+      "top": 685.6775,
+      "bottom": 713.513
+    },
+    "deltaPixels": {
+      "top": 0.3224999999999909,
+      "bottom": 1.4869999999999663
+    }
+  },
+  {
+    "capture": "alphabet-font-scale2-U.png",
+    "symbol": "V",
+    "scale": 2,
+    "density": 1.75,
+    "part": "letter",
+    "text": "V",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 316,
+      "top": 883,
+      "right": 403,
+      "bottom": 974,
+      "count": 3339
+    },
+    "expectedInk": {
+      "top": 882.99,
+      "bottom": 974.088
+    },
+    "deltaPixels": {
+      "top": 0.009999999999990905,
+      "bottom": 0.9120000000000346
+    }
+  },
+  {
+    "capture": "alphabet-font-scale2-U.png",
+    "symbol": "V",
+    "scale": 2,
+    "density": 1.75,
+    "part": "word",
+    "text": "Victor",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 284,
+      "top": 1138,
+      "right": 437,
+      "bottom": 1178,
+      "count": 2085
+    },
+    "expectedInk": {
+      "top": 1137.5520000000001,
+      "bottom": 1177.9279999999999
+    },
+    "deltaPixels": {
+      "top": 0.4479999999998654,
+      "bottom": 1.0720000000001164
+    }
+  },
+  {
+    "capture": "alphabet-font-scale2-U.png",
+    "symbol": "V",
+    "scale": 2,
+    "density": 1.75,
+    "part": "guide",
+    "text": "VIK-tah",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 297,
+      "top": 1232,
+      "right": 425,
+      "bottom": 1260,
+      "count": 1211
+    },
+    "expectedInk": {
+      "top": 1231.7545,
+      "bottom": 1259.513
+    },
+    "deltaPixels": {
+      "top": 0.24549999999999272,
+      "bottom": 1.48700000000008
+    }
+  },
+  {
+    "capture": "alphabet-narrow-320x568.png",
+    "symbol": "A",
+    "scale": 1,
+    "density": 2,
+    "part": "letter",
+    "text": "A",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 172,
+      "top": 418,
+      "right": 223,
+      "bottom": 470,
+      "count": 1252
+    },
+    "expectedInk": {
+      "top": 418.28,
+      "bottom": 470.336
+    },
+    "deltaPixels": {
+      "top": -0.2799999999999727,
+      "bottom": 0.6639999999999873
+    }
+  },
+  {
+    "capture": "alphabet-narrow-320x568.png",
+    "symbol": "A",
+    "scale": 1,
+    "density": 2,
+    "part": "word",
+    "text": "Alfa",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 169,
+      "top": 564,
+      "right": 227,
+      "bottom": 587,
+      "count": 601
+    },
+    "expectedInk": {
+      "top": 563.744,
+      "bottom": 586.816
+    },
+    "deltaPixels": {
+      "top": 0.2559999999999718,
+      "bottom": 1.183999999999969
+    }
+  },
+  {
+    "capture": "alphabet-narrow-320x568.png",
+    "symbol": "A",
+    "scale": 1,
+    "density": 2,
+    "part": "guide",
+    "text": "AL-fah",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 164,
+      "top": 617,
+      "right": 230,
+      "bottom": 633,
+      "count": 379
+    },
+    "expectedInk": {
+      "top": 617.5740000000001,
+      "bottom": 633.436
+    },
+    "deltaPixels": {
+      "top": -0.5740000000000691,
+      "bottom": 0.5639999999999645
+    }
+  },
+  {
+    "capture": "alphabet-narrow-320x568.png",
+    "symbol": "B",
+    "scale": 1,
+    "density": 2,
+    "part": "letter",
+    "text": "B",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 422,
+      "top": 419,
+      "right": 463,
+      "bottom": 469,
+      "count": 1554
+    },
+    "expectedInk": {
+      "top": 418.928,
+      "bottom": 469.688
+    },
+    "deltaPixels": {
+      "top": 0.07200000000000273,
+      "bottom": 0.3120000000000118
+    }
+  },
+  {
+    "capture": "alphabet-narrow-320x568.png",
+    "symbol": "B",
+    "scale": 1,
+    "density": 2,
+    "part": "word",
+    "text": "Bravo",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 402,
+      "top": 564,
+      "right": 484,
+      "bottom": 587,
+      "count": 782
+    },
+    "expectedInk": {
+      "top": 563.968,
+      "bottom": 586.816
+    },
+    "deltaPixels": {
+      "top": 0.03200000000003911,
+      "bottom": 1.183999999999969
+    }
+  },
+  {
+    "capture": "alphabet-narrow-320x568.png",
+    "symbol": "B",
+    "scale": 1,
+    "density": 2,
+    "part": "guide",
+    "text": "BRAH-voh",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 390,
+      "top": 617,
+      "right": 494,
+      "bottom": 633,
+      "count": 641
+    },
+    "expectedInk": {
+      "top": 617.5740000000001,
+      "bottom": 633.436
+    },
+    "deltaPixels": {
+      "top": -0.5740000000000691,
+      "bottom": 0.5639999999999645
+    }
+  },
+  {
+    "capture": "alphabet-narrow-320x568.png",
+    "symbol": "C",
+    "scale": 1,
+    "density": 2,
+    "part": "letter",
+    "text": "C",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 177,
+      "top": 742,
+      "right": 220,
+      "bottom": 794,
+      "count": 1149
+    },
+    "expectedInk": {
+      "top": 742.136,
+      "bottom": 794.48
+    },
+    "deltaPixels": {
+      "top": -0.13599999999996726,
+      "bottom": 0.5199999999999818
+    }
+  },
+  {
+    "capture": "alphabet-narrow-320x568.png",
+    "symbol": "C",
+    "scale": 1,
+    "density": 2,
+    "part": "word",
+    "text": "Charlie",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 147,
+      "top": 888,
+      "right": 248,
+      "bottom": 911,
+      "count": 961
+    },
+    "expectedInk": {
+      "top": 887.6800000000001,
+      "bottom": 910.816
+    },
+    "deltaPixels": {
+      "top": 0.31999999999993634,
+      "bottom": 1.183999999999969
+    }
+  },
+  {
+    "capture": "alphabet-narrow-320x568.png",
+    "symbol": "C",
+    "scale": 1,
+    "density": 2,
+    "part": "guide",
+    "text": "CHAR-lee",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 148,
+      "top": 941,
+      "right": 248,
+      "bottom": 957,
+      "count": 607
+    },
+    "expectedInk": {
+      "top": 941.53,
+      "bottom": 957.436
+    },
+    "deltaPixels": {
+      "top": -0.5299999999999727,
+      "bottom": 0.5639999999999645
+    }
+  },
+  {
+    "capture": "alphabet-narrow-320x568.png",
+    "symbol": "D",
+    "scale": 1,
+    "density": 2,
+    "part": "letter",
+    "text": "D",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 419,
+      "top": 743,
+      "right": 466,
+      "bottom": 793,
+      "count": 1540
+    },
+    "expectedInk": {
+      "top": 742.928,
+      "bottom": 793.688
+    },
+    "deltaPixels": {
+      "top": 0.07200000000000273,
+      "bottom": 0.3120000000000118
+    }
+  },
+  {
+    "capture": "alphabet-narrow-320x568.png",
+    "symbol": "D",
+    "scale": 1,
+    "density": 2,
+    "part": "word",
+    "text": "Delta",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 405,
+      "top": 888,
+      "right": 480,
+      "bottom": 911,
+      "count": 809
+    },
+    "expectedInk": {
+      "top": 887.744,
+      "bottom": 910.816
+    },
+    "deltaPixels": {
+      "top": 0.2559999999999718,
+      "bottom": 1.183999999999969
+    }
+  },
+  {
+    "capture": "alphabet-narrow-320x568.png",
+    "symbol": "D",
+    "scale": 1,
+    "density": 2,
+    "part": "guide",
+    "text": "DELL-tah",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 396,
+      "top": 941,
+      "right": 487,
+      "bottom": 957,
+      "count": 559
+    },
+    "expectedInk": {
+      "top": 941.5740000000001,
+      "bottom": 957.436
+    },
+    "deltaPixels": {
+      "top": -0.5740000000000691,
+      "bottom": 0.5639999999999645
+    }
+  },
+  {
+    "capture": "alphabet-landscape-568x320.png",
+    "symbol": "M",
+    "scale": 1,
+    "density": 2,
+    "part": "letter",
+    "text": "M",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 208,
+      "top": 292,
+      "right": 260,
+      "bottom": 344,
+      "count": 1725
+    },
+    "expectedInk": {
+      "top": 292.28,
+      "bottom": 344.336
+    },
+    "deltaPixels": {
+      "top": -0.2799999999999727,
+      "bottom": 0.6639999999999873
+    }
+  },
+  {
+    "capture": "alphabet-landscape-568x320.png",
+    "symbol": "M",
+    "scale": 1,
+    "density": 2,
+    "part": "word",
+    "text": "Mike",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 202,
+      "top": 438,
+      "right": 268,
+      "bottom": 461,
+      "count": 705
+    },
+    "expectedInk": {
+      "top": 437.744,
+      "bottom": 460.81600000000003
+    },
+    "deltaPixels": {
+      "top": 0.2559999999999718,
+      "bottom": 1.183999999999969
+    }
+  },
+  {
+    "capture": "alphabet-landscape-568x320.png",
+    "symbol": "M",
+    "scale": 1,
+    "density": 2,
+    "part": "guide",
+    "text": "MIKE",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 209,
+      "top": 491,
+      "right": 260,
+      "bottom": 507,
+      "count": 374
+    },
+    "expectedInk": {
+      "top": 491.574,
+      "bottom": 507.392
+    },
+    "deltaPixels": {
+      "top": -0.5740000000000123,
+      "bottom": 0.6080000000000041
+    }
+  },
+  {
+    "capture": "alphabet-landscape-568x320.png",
+    "symbol": "N",
+    "scale": 1,
+    "density": 2,
+    "part": "letter",
+    "text": "N",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 456,
+      "top": 292,
+      "right": 500,
+      "bottom": 344,
+      "count": 1545
+    },
+    "expectedInk": {
+      "top": 292.28,
+      "bottom": 344.336
+    },
+    "deltaPixels": {
+      "top": -0.2799999999999727,
+      "bottom": 0.6639999999999873
+    }
+  },
+  {
+    "capture": "alphabet-landscape-568x320.png",
+    "symbol": "N",
+    "scale": 1,
+    "density": 2,
+    "part": "word",
+    "text": "November",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 405,
+      "top": 438,
+      "right": 554,
+      "bottom": 461,
+      "count": 1393
+    },
+    "expectedInk": {
+      "top": 437.744,
+      "bottom": 460.81600000000003
+    },
+    "deltaPixels": {
+      "top": 0.2559999999999718,
+      "bottom": 1.183999999999969
+    }
+  },
+  {
+    "capture": "alphabet-landscape-568x320.png",
+    "symbol": "N",
+    "scale": 1,
+    "density": 2,
+    "part": "guide",
+    "text": "no-VEM-ber",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 418,
+      "top": 491,
+      "right": 539,
+      "bottom": 507,
+      "count": 685
+    },
+    "expectedInk": {
+      "top": 491.574,
+      "bottom": 507.43600000000004
+    },
+    "deltaPixels": {
+      "top": -0.5740000000000123,
+      "bottom": 0.5639999999999645
+    }
+  },
+  {
+    "capture": "alphabet-landscape-568x320.png",
+    "symbol": "O",
+    "scale": 1,
+    "density": 2,
+    "part": "letter",
+    "text": "O",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 697,
+      "top": 292,
+      "right": 747,
+      "bottom": 344,
+      "count": 1500
+    },
+    "expectedInk": {
+      "top": 292.136,
+      "bottom": 344.48
+    },
+    "deltaPixels": {
+      "top": -0.1360000000000241,
+      "bottom": 0.5199999999999818
+    }
+  },
+  {
+    "capture": "alphabet-landscape-568x320.png",
+    "symbol": "O",
+    "scale": 1,
+    "density": 2,
+    "part": "word",
+    "text": "Oscar",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 682,
+      "top": 438,
+      "right": 764,
+      "bottom": 461,
+      "count": 747
+    },
+    "expectedInk": {
+      "top": 437.68,
+      "bottom": 460.81600000000003
+    },
+    "deltaPixels": {
+      "top": 0.3199999999999932,
+      "bottom": 1.183999999999969
+    }
+  },
+  {
+    "capture": "alphabet-landscape-568x320.png",
+    "symbol": "O",
+    "scale": 1,
+    "density": 2,
+    "part": "guide",
+    "text": "OSS-cah",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 679,
+      "top": 491,
+      "right": 765,
+      "bottom": 507,
+      "count": 532
+    },
+    "expectedInk": {
+      "top": 491.53,
+      "bottom": 507.43600000000004
+    },
+    "deltaPixels": {
+      "top": -0.5299999999999727,
+      "bottom": 0.5639999999999645
+    }
+  },
+  {
+    "capture": "alphabet-landscape-568x320.png",
+    "symbol": "P",
+    "scale": 1,
+    "density": 2,
+    "part": "letter",
+    "text": "P",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 947,
+      "top": 293,
+      "right": 987,
+      "bottom": 344,
+      "count": 1233
+    },
+    "expectedInk": {
+      "top": 292.928,
+      "bottom": 344.336
+    },
+    "deltaPixels": {
+      "top": 0.07200000000000273,
+      "bottom": 0.6639999999999873
+    }
+  },
+  {
+    "capture": "alphabet-landscape-568x320.png",
+    "symbol": "P",
+    "scale": 1,
+    "density": 2,
+    "part": "word",
+    "text": "Papa",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 932,
+      "top": 438,
+      "right": 1001,
+      "bottom": 466,
+      "count": 740
+    },
+    "expectedInk": {
+      "top": 437.96799999999996,
+      "bottom": 466.512
+    },
+    "deltaPixels": {
+      "top": 0.03200000000003911,
+      "bottom": 0.48799999999999955
+    }
+  },
+  {
+    "capture": "alphabet-landscape-568x320.png",
+    "symbol": "P",
+    "scale": 1,
+    "density": 2,
+    "part": "guide",
+    "text": "pah-PAH",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 920,
+      "top": 491,
+      "right": 1011,
+      "bottom": 510,
+      "count": 550
+    },
+    "expectedInk": {
+      "top": 491.574,
+      "bottom": 511.352
+    },
+    "deltaPixels": {
+      "top": -0.5740000000000123,
+      "bottom": -0.35199999999997544
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "A",
+    "scale": 1,
+    "density": 1.5,
+    "part": "letter",
+    "text": "A",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 323,
+      "top": 385,
+      "right": 361,
+      "bottom": 424,
+      "count": 723
+    },
+    "expectedInk": {
+      "top": 385.71,
+      "bottom": 424.752
+    },
+    "deltaPixels": {
+      "top": -0.7099999999999795,
+      "bottom": 0.24799999999999045
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "A",
+    "scale": 1,
+    "density": 1.5,
+    "part": "word",
+    "text": "Alfa",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 320,
+      "top": 495,
+      "right": 363,
+      "bottom": 512,
+      "count": 367
+    },
+    "expectedInk": {
+      "top": 494.808,
+      "bottom": 512.112
+    },
+    "deltaPixels": {
+      "top": 0.19200000000000728,
+      "bottom": 0.8880000000000337
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "A",
+    "scale": 1,
+    "density": 1.5,
+    "part": "guide",
+    "text": "AL-fah",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 316,
+      "top": 535,
+      "right": 366,
+      "bottom": 547,
+      "count": 247
+    },
+    "expectedInk": {
+      "top": 535.1804999999999,
+      "bottom": 547.077
+    },
+    "deltaPixels": {
+      "top": -0.18049999999993815,
+      "bottom": 0.9230000000000018
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "B",
+    "scale": 1,
+    "density": 1.5,
+    "part": "letter",
+    "text": "B",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 509,
+      "top": 386,
+      "right": 540,
+      "bottom": 423,
+      "count": 911
+    },
+    "expectedInk": {
+      "top": 386.196,
+      "bottom": 424.266
+    },
+    "deltaPixels": {
+      "top": -0.19600000000002638,
+      "bottom": -0.26600000000001955
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "B",
+    "scale": 1,
+    "density": 1.5,
+    "part": "word",
+    "text": "Bravo",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 496,
+      "top": 495,
+      "right": 555,
+      "bottom": 512,
+      "count": 475
+    },
+    "expectedInk": {
+      "top": 494.976,
+      "bottom": 512.112
+    },
+    "deltaPixels": {
+      "top": 0.02400000000000091,
+      "bottom": 0.8880000000000337
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "B",
+    "scale": 1,
+    "density": 1.5,
+    "part": "guide",
+    "text": "BRAH-voh",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 486,
+      "top": 535,
+      "right": 564,
+      "bottom": 547,
+      "count": 420
+    },
+    "expectedInk": {
+      "top": 535.1804999999999,
+      "bottom": 547.077
+    },
+    "deltaPixels": {
+      "top": -0.18049999999993815,
+      "bottom": 0.9230000000000018
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "C",
+    "scale": 1,
+    "density": 1.5,
+    "part": "letter",
+    "text": "C",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 692,
+      "top": 385,
+      "right": 724,
+      "bottom": 424,
+      "count": 656
+    },
+    "expectedInk": {
+      "top": 385.602,
+      "bottom": 424.86
+    },
+    "deltaPixels": {
+      "top": -0.6019999999999754,
+      "bottom": 0.13999999999998636
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "C",
+    "scale": 1,
+    "density": 1.5,
+    "part": "word",
+    "text": "Charlie",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 670,
+      "top": 494,
+      "right": 745,
+      "bottom": 512,
+      "count": 623
+    },
+    "expectedInk": {
+      "top": 494.76,
+      "bottom": 512.112
+    },
+    "deltaPixels": {
+      "top": -0.7599999999999909,
+      "bottom": 0.8880000000000337
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "C",
+    "scale": 1,
+    "density": 1.5,
+    "part": "guide",
+    "text": "CHAR-lee",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 671,
+      "top": 534,
+      "right": 746,
+      "bottom": 547,
+      "count": 407
+    },
+    "expectedInk": {
+      "top": 535.1475,
+      "bottom": 547.077
+    },
+    "deltaPixels": {
+      "top": -1.1475000000000364,
+      "bottom": 0.9230000000000018
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "D",
+    "scale": 1,
+    "density": 1.5,
+    "part": "letter",
+    "text": "D",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 873,
+      "top": 385,
+      "right": 909,
+      "bottom": 423,
+      "count": 911
+    },
+    "expectedInk": {
+      "top": 386.196,
+      "bottom": 424.266
+    },
+    "deltaPixels": {
+      "top": -1.1960000000000264,
+      "bottom": -0.26600000000001955
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "D",
+    "scale": 1,
+    "density": 1.5,
+    "part": "word",
+    "text": "Delta",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 864,
+      "top": 495,
+      "right": 919,
+      "bottom": 512,
+      "count": 480
+    },
+    "expectedInk": {
+      "top": 494.808,
+      "bottom": 512.112
+    },
+    "deltaPixels": {
+      "top": 0.19200000000000728,
+      "bottom": 0.8880000000000337
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "D",
+    "scale": 1,
+    "density": 1.5,
+    "part": "guide",
+    "text": "DELL-tah",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 856,
+      "top": 535,
+      "right": 925,
+      "bottom": 547,
+      "count": 356
+    },
+    "expectedInk": {
+      "top": 535.1804999999999,
+      "bottom": 547.077
+    },
+    "deltaPixels": {
+      "top": -0.18049999999993815,
+      "bottom": 0.9230000000000018
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "E",
+    "scale": 1,
+    "density": 1.5,
+    "part": "letter",
+    "text": "E",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 1061,
+      "top": 385,
+      "right": 1088,
+      "bottom": 423,
+      "count": 728
+    },
+    "expectedInk": {
+      "top": 386.196,
+      "bottom": 424.266
+    },
+    "deltaPixels": {
+      "top": -1.1960000000000264,
+      "bottom": -0.26600000000001955
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "E",
+    "scale": 1,
+    "density": 1.5,
+    "part": "word",
+    "text": "Echo",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 1050,
+      "top": 495,
+      "right": 1099,
+      "bottom": 512,
+      "count": 408
+    },
+    "expectedInk": {
+      "top": 494.808,
+      "bottom": 512.112
+    },
+    "deltaPixels": {
+      "top": 0.19200000000000728,
+      "bottom": 0.8880000000000337
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "E",
+    "scale": 1,
+    "density": 1.5,
+    "part": "guide",
+    "text": "ECK-oh",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 1047,
+      "top": 534,
+      "right": 1102,
+      "bottom": 547,
+      "count": 297
+    },
+    "expectedInk": {
+      "top": 535.1475,
+      "bottom": 547.077
+    },
+    "deltaPixels": {
+      "top": -1.1475000000000364,
+      "bottom": 0.9230000000000018
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "F",
+    "scale": 1,
+    "density": 1.5,
+    "part": "letter",
+    "text": "F",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 1245,
+      "top": 385,
+      "right": 1271,
+      "bottom": 424,
+      "count": 632
+    },
+    "expectedInk": {
+      "top": 386.196,
+      "bottom": 424.752
+    },
+    "deltaPixels": {
+      "top": -1.1960000000000264,
+      "bottom": 0.24799999999999045
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "F",
+    "scale": 1,
+    "density": 1.5,
+    "part": "word",
+    "text": "Foxtrot",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 1220,
+      "top": 495,
+      "right": 1297,
+      "bottom": 512,
+      "count": 575
+    },
+    "expectedInk": {
+      "top": 494.976,
+      "bottom": 512.112
+    },
+    "deltaPixels": {
+      "top": 0.02400000000000091,
+      "bottom": 0.8880000000000337
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "F",
+    "scale": 1,
+    "density": 1.5,
+    "part": "guide",
+    "text": "FOKS-trot",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 1220,
+      "top": 534,
+      "right": 1295,
+      "bottom": 547,
+      "count": 414
+    },
+    "expectedInk": {
+      "top": 535.1475,
+      "bottom": 547.077
+    },
+    "deltaPixels": {
+      "top": -1.1475000000000364,
+      "bottom": 0.9230000000000018
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "G",
+    "scale": 1,
+    "density": 1.5,
+    "part": "letter",
+    "text": "G",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 324,
+      "top": 628,
+      "right": 358,
+      "bottom": 667,
+      "count": 819
+    },
+    "expectedInk": {
+      "top": 628.602,
+      "bottom": 667.86
+    },
+    "deltaPixels": {
+      "top": -0.6019999999999754,
+      "bottom": 0.13999999999998636
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "G",
+    "scale": 1,
+    "density": 1.5,
+    "part": "word",
+    "text": "Golf",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 320,
+      "top": 737,
+      "right": 366,
+      "bottom": 755,
+      "count": 386
+    },
+    "expectedInk": {
+      "top": 737.76,
+      "bottom": 755.112
+    },
+    "deltaPixels": {
+      "top": -0.7599999999999909,
+      "bottom": 0.8880000000000337
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "G",
+    "scale": 1,
+    "density": 1.5,
+    "part": "guide",
+    "text": "GOLF",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 321,
+      "top": 777,
+      "right": 363,
+      "bottom": 790,
+      "count": 235
+    },
+    "expectedInk": {
+      "top": 778.1475,
+      "bottom": 790.077
+    },
+    "deltaPixels": {
+      "top": -1.1475000000000364,
+      "bottom": 0.9230000000000018
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "H",
+    "scale": 1,
+    "density": 1.5,
+    "part": "letter",
+    "text": "H",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 507,
+      "top": 628,
+      "right": 542,
+      "bottom": 667,
+      "count": 883
+    },
+    "expectedInk": {
+      "top": 628.71,
+      "bottom": 667.752
+    },
+    "deltaPixels": {
+      "top": -0.7100000000000364,
+      "bottom": 0.2480000000000473
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "H",
+    "scale": 1,
+    "density": 1.5,
+    "part": "word",
+    "text": "Hotel",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 497,
+      "top": 738,
+      "right": 555,
+      "bottom": 755,
+      "count": 466
+    },
+    "expectedInk": {
+      "top": 737.808,
+      "bottom": 755.112
+    },
+    "deltaPixels": {
+      "top": 0.19200000000000728,
+      "bottom": 0.8880000000000337
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "H",
+    "scale": 1,
+    "density": 1.5,
+    "part": "guide",
+    "text": "hoh-TELL",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 489,
+      "top": 778,
+      "right": 561,
+      "bottom": 790,
+      "count": 355
+    },
+    "expectedInk": {
+      "top": 778.1804999999999,
+      "bottom": 790.077
+    },
+    "deltaPixels": {
+      "top": -0.18049999999993815,
+      "bottom": 0.9230000000000018
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "I",
+    "scale": 1,
+    "density": 1.5,
+    "part": "letter",
+    "text": "I",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 703,
+      "top": 628,
+      "right": 712,
+      "bottom": 667,
+      "count": 378
+    },
+    "expectedInk": {
+      "top": 628.71,
+      "bottom": 667.752
+    },
+    "deltaPixels": {
+      "top": -0.7100000000000364,
+      "bottom": 0.2480000000000473
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "I",
+    "scale": 1,
+    "density": 1.5,
+    "part": "word",
+    "text": "India",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 684,
+      "top": 738,
+      "right": 733,
+      "bottom": 755,
+      "count": 434
+    },
+    "expectedInk": {
+      "top": 737.808,
+      "bottom": 755.112
+    },
+    "deltaPixels": {
+      "top": 0.19200000000000728,
+      "bottom": 0.8880000000000337
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "I",
+    "scale": 1,
+    "density": 1.5,
+    "part": "guide",
+    "text": "IN-dee-ah",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 670,
+      "top": 778,
+      "right": 746,
+      "bottom": 790,
+      "count": 379
+    },
+    "expectedInk": {
+      "top": 778.1804999999999,
+      "bottom": 790.077
+    },
+    "deltaPixels": {
+      "top": -0.18049999999993815,
+      "bottom": 0.9230000000000018
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "J",
+    "scale": 1,
+    "density": 1.5,
+    "part": "letter",
+    "text": "J",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 880,
+      "top": 628,
+      "right": 897,
+      "bottom": 667,
+      "count": 417
+    },
+    "expectedInk": {
+      "top": 628.71,
+      "bottom": 667.7007
+    },
+    "deltaPixels": {
+      "top": -0.7100000000000364,
+      "bottom": 0.29930000000001655
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "J",
+    "scale": 1,
+    "density": 1.5,
+    "part": "word",
+    "text": "Juliett",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 857,
+      "top": 738,
+      "right": 923,
+      "bottom": 755,
+      "count": 543
+    },
+    "expectedInk": {
+      "top": 737.808,
+      "bottom": 755.112
+    },
+    "deltaPixels": {
+      "top": 0.19200000000000728,
+      "bottom": 0.8880000000000337
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "J",
+    "scale": 1,
+    "density": 1.5,
+    "part": "guide",
+    "text": "JEW-lee-ett",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 843,
+      "top": 778,
+      "right": 936,
+      "bottom": 790,
+      "count": 473
+    },
+    "expectedInk": {
+      "top": 778.1804999999999,
+      "bottom": 790.077
+    },
+    "deltaPixels": {
+      "top": -0.18049999999993815,
+      "bottom": 0.9230000000000018
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "K",
+    "scale": 1,
+    "density": 1.5,
+    "part": "letter",
+    "text": "K",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 1059,
+      "top": 628,
+      "right": 1091,
+      "bottom": 667,
+      "count": 800
+    },
+    "expectedInk": {
+      "top": 628.71,
+      "bottom": 667.752
+    },
+    "deltaPixels": {
+      "top": -0.7100000000000364,
+      "bottom": 0.2480000000000473
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "K",
+    "scale": 1,
+    "density": 1.5,
+    "part": "word",
+    "text": "Kilo",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 1055,
+      "top": 738,
+      "right": 1093,
+      "bottom": 755,
+      "count": 327
+    },
+    "expectedInk": {
+      "top": 737.808,
+      "bottom": 755.112
+    },
+    "deltaPixels": {
+      "top": 0.19200000000000728,
+      "bottom": 0.8880000000000337
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "K",
+    "scale": 1,
+    "density": 1.5,
+    "part": "guide",
+    "text": "KEY-loh",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 1045,
+      "top": 778,
+      "right": 1103,
+      "bottom": 790,
+      "count": 309
+    },
+    "expectedInk": {
+      "top": 778.1804999999999,
+      "bottom": 790.077
+    },
+    "deltaPixels": {
+      "top": -0.18049999999993815,
+      "bottom": 0.9230000000000018
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "L",
+    "scale": 1,
+    "density": 1.5,
+    "part": "letter",
+    "text": "L",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 1245,
+      "top": 628,
+      "right": 1272,
+      "bottom": 666,
+      "count": 506
+    },
+    "expectedInk": {
+      "top": 629.088,
+      "bottom": 667.266
+    },
+    "deltaPixels": {
+      "top": -1.0879999999999654,
+      "bottom": -0.2659999999999627
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "L",
+    "scale": 1,
+    "density": 1.5,
+    "part": "word",
+    "text": "Lima",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 1233,
+      "top": 738,
+      "right": 1282,
+      "bottom": 755,
+      "count": 383
+    },
+    "expectedInk": {
+      "top": 737.832,
+      "bottom": 755.112
+    },
+    "deltaPixels": {
+      "top": 0.16800000000000637,
+      "bottom": 0.8880000000000337
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "L",
+    "scale": 1,
+    "density": 1.5,
+    "part": "guide",
+    "text": "LEE-mah",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 1223,
+      "top": 778,
+      "right": 1290,
+      "bottom": 790,
+      "count": 345
+    },
+    "expectedInk": {
+      "top": 778.1804999999999,
+      "bottom": 790.077
+    },
+    "deltaPixels": {
+      "top": -0.18049999999993815,
+      "bottom": 0.9230000000000018
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "M",
+    "scale": 1,
+    "density": 1.5,
+    "part": "letter",
+    "text": "M",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 322,
+      "top": 871,
+      "right": 362,
+      "bottom": 910,
+      "count": 1032
+    },
+    "expectedInk": {
+      "top": 871.71,
+      "bottom": 910.752
+    },
+    "deltaPixels": {
+      "top": -0.7100000000000364,
+      "bottom": 0.2480000000000473
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "M",
+    "scale": 1,
+    "density": 1.5,
+    "part": "word",
+    "text": "Mike",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 319,
+      "top": 981,
+      "right": 367,
+      "bottom": 998,
+      "count": 442
+    },
+    "expectedInk": {
+      "top": 980.808,
+      "bottom": 998.112
+    },
+    "deltaPixels": {
+      "top": 0.19200000000000728,
+      "bottom": 0.8880000000000337
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "M",
+    "scale": 1,
+    "density": 1.5,
+    "part": "guide",
+    "text": "MIKE",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 323,
+      "top": 1021,
+      "right": 362,
+      "bottom": 1032,
+      "count": 234
+    },
+    "expectedInk": {
+      "top": 1021.1804999999999,
+      "bottom": 1033.0439999999999
+    },
+    "deltaPixels": {
+      "top": -0.18049999999993815,
+      "bottom": -0.04399999999986903
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "N",
+    "scale": 1,
+    "density": 1.5,
+    "part": "letter",
+    "text": "N",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 508,
+      "top": 871,
+      "right": 541,
+      "bottom": 910,
+      "count": 877
+    },
+    "expectedInk": {
+      "top": 871.71,
+      "bottom": 910.752
+    },
+    "deltaPixels": {
+      "top": -0.7100000000000364,
+      "bottom": 0.2480000000000473
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "N",
+    "scale": 1,
+    "density": 1.5,
+    "part": "word",
+    "text": "November",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 471,
+      "top": 981,
+      "right": 582,
+      "bottom": 998,
+      "count": 814
+    },
+    "expectedInk": {
+      "top": 980.808,
+      "bottom": 998.112
+    },
+    "deltaPixels": {
+      "top": 0.19200000000000728,
+      "bottom": 0.8880000000000337
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "N",
+    "scale": 1,
+    "density": 1.5,
+    "part": "guide",
+    "text": "no-VEM-ber",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 478,
+      "top": 1021,
+      "right": 572,
+      "bottom": 1033,
+      "count": 461
+    },
+    "expectedInk": {
+      "top": 1021.1804999999999,
+      "bottom": 1033.077
+    },
+    "deltaPixels": {
+      "top": -0.18049999999993815,
+      "bottom": 0.9230000000000018
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "O",
+    "scale": 1,
+    "density": 1.5,
+    "part": "letter",
+    "text": "O",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 689,
+      "top": 871,
+      "right": 727,
+      "bottom": 910,
+      "count": 868
+    },
+    "expectedInk": {
+      "top": 871.602,
+      "bottom": 910.86
+    },
+    "deltaPixels": {
+      "top": -0.6019999999999754,
+      "bottom": 0.13999999999998636
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "O",
+    "scale": 1,
+    "density": 1.5,
+    "part": "word",
+    "text": "Oscar",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 678,
+      "top": 980,
+      "right": 740,
+      "bottom": 998,
+      "count": 466
+    },
+    "expectedInk": {
+      "top": 980.76,
+      "bottom": 998.112
+    },
+    "deltaPixels": {
+      "top": -0.7599999999999909,
+      "bottom": 0.8880000000000337
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "O",
+    "scale": 1,
+    "density": 1.5,
+    "part": "guide",
+    "text": "OSS-cah",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 676,
+      "top": 1020,
+      "right": 740,
+      "bottom": 1033,
+      "count": 353
+    },
+    "expectedInk": {
+      "top": 1021.1475,
+      "bottom": 1033.077
+    },
+    "deltaPixels": {
+      "top": -1.1475000000000364,
+      "bottom": 0.9230000000000018
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "P",
+    "scale": 1,
+    "density": 1.5,
+    "part": "letter",
+    "text": "P",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 876,
+      "top": 871,
+      "right": 907,
+      "bottom": 910,
+      "count": 753
+    },
+    "expectedInk": {
+      "top": 872.196,
+      "bottom": 910.752
+    },
+    "deltaPixels": {
+      "top": -1.1960000000000264,
+      "bottom": 0.2480000000000473
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "P",
+    "scale": 1,
+    "density": 1.5,
+    "part": "word",
+    "text": "Papa",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 866,
+      "top": 981,
+      "right": 916,
+      "bottom": 1002,
+      "count": 422
+    },
+    "expectedInk": {
+      "top": 980.976,
+      "bottom": 1002.384
+    },
+    "deltaPixels": {
+      "top": 0.02400000000000091,
+      "bottom": 0.6159999999999854
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "P",
+    "scale": 1,
+    "density": 1.5,
+    "part": "guide",
+    "text": "pah-PAH",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 856,
+      "top": 1021,
+      "right": 926,
+      "bottom": 1036,
+      "count": 366
+    },
+    "expectedInk": {
+      "top": 1021.1804999999999,
+      "bottom": 1036.0140000000001
+    },
+    "deltaPixels": {
+      "top": -0.18049999999993815,
+      "bottom": 0.9859999999998763
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "Q",
+    "scale": 1,
+    "density": 1.5,
+    "part": "letter",
+    "text": "Q",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 1055,
+      "top": 871,
+      "right": 1093,
+      "bottom": 920,
+      "count": 973
+    },
+    "expectedInk": {
+      "top": 871.602,
+      "bottom": 921.29712
+    },
+    "deltaPixels": {
+      "top": -0.6019999999999754,
+      "bottom": -0.29711999999994987
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "Q",
+    "scale": 1,
+    "density": 1.5,
+    "part": "word",
+    "text": "Quebec",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 1033,
+      "top": 980,
+      "right": 1115,
+      "bottom": 1002,
+      "count": 642
+    },
+    "expectedInk": {
+      "top": 980.76,
+      "bottom": 1002.6056470588235
+    },
+    "deltaPixels": {
+      "top": -0.7599999999999909,
+      "bottom": 0.3943529411765212
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "Q",
+    "scale": 1,
+    "density": 1.5,
+    "part": "guide",
+    "text": "keh-BECK",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 1036,
+      "top": 1020,
+      "right": 1113,
+      "bottom": 1033,
+      "count": 430
+    },
+    "expectedInk": {
+      "top": 1021.1475,
+      "bottom": 1033.077
+    },
+    "deltaPixels": {
+      "top": -1.1475000000000364,
+      "bottom": 0.9230000000000018
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "R",
+    "scale": 1,
+    "density": 1.5,
+    "part": "letter",
+    "text": "R",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 1241,
+      "top": 871,
+      "right": 1272,
+      "bottom": 910,
+      "count": 887
+    },
+    "expectedInk": {
+      "top": 872.196,
+      "bottom": 910.752
+    },
+    "deltaPixels": {
+      "top": -1.1960000000000264,
+      "bottom": 0.2480000000000473
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "R",
+    "scale": 1,
+    "density": 1.5,
+    "part": "word",
+    "text": "Romeo",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 1221,
+      "top": 981,
+      "right": 1295,
+      "bottom": 998,
+      "count": 573
+    },
+    "expectedInk": {
+      "top": 980.976,
+      "bottom": 998.112
+    },
+    "deltaPixels": {
+      "top": 0.02400000000000091,
+      "bottom": 0.8880000000000337
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "R",
+    "scale": 1,
+    "density": 1.5,
+    "part": "guide",
+    "text": "ROW-me-oh",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 1209,
+      "top": 1020,
+      "right": 1305,
+      "bottom": 1033,
+      "count": 494
+    },
+    "expectedInk": {
+      "top": 1021.1475,
+      "bottom": 1033.077
+    },
+    "deltaPixels": {
+      "top": -1.1475000000000364,
+      "bottom": 0.9230000000000018
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "S",
+    "scale": 1,
+    "density": 1.5,
+    "part": "letter",
+    "text": "S",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 327,
+      "top": 1114,
+      "right": 357,
+      "bottom": 1153,
+      "count": 738
+    },
+    "expectedInk": {
+      "top": 1114.602,
+      "bottom": 1153.86
+    },
+    "deltaPixels": {
+      "top": -0.6020000000000891,
+      "bottom": 0.14000000000010004
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "S",
+    "scale": 1,
+    "density": 1.5,
+    "part": "word",
+    "text": "Sierra",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 311,
+      "top": 1223,
+      "right": 373,
+      "bottom": 1241,
+      "count": 491
+    },
+    "expectedInk": {
+      "top": 1223.76,
+      "bottom": 1241.112
+    },
+    "deltaPixels": {
+      "top": -0.7599999999999909,
+      "bottom": 0.88799999999992
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "S",
+    "scale": 1,
+    "density": 1.5,
+    "part": "guide",
+    "text": "see-AIR-ah",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 300,
+      "top": 1264,
+      "right": 384,
+      "bottom": 1276,
+      "count": 429
+    },
+    "expectedInk": {
+      "top": 1264.1805,
+      "bottom": 1276.077
+    },
+    "deltaPixels": {
+      "top": -0.18049999999993815,
+      "bottom": 0.9230000000000018
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "T",
+    "scale": 1,
+    "density": 1.5,
+    "part": "letter",
+    "text": "T",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 506,
+      "top": 1114,
+      "right": 541,
+      "bottom": 1153,
+      "count": 576
+    },
+    "expectedInk": {
+      "top": 1115.196,
+      "bottom": 1153.752
+    },
+    "deltaPixels": {
+      "top": -1.1959999999999127,
+      "bottom": 0.2480000000000473
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "T",
+    "scale": 1,
+    "density": 1.5,
+    "part": "word",
+    "text": "Tango",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 491,
+      "top": 1224,
+      "right": 557,
+      "bottom": 1245,
+      "count": 498
+    },
+    "expectedInk": {
+      "top": 1223.976,
+      "bottom": 1245.432
+    },
+    "deltaPixels": {
+      "top": 0.023999999999887223,
+      "bottom": 0.5679999999999836
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "T",
+    "scale": 1,
+    "density": 1.5,
+    "part": "guide",
+    "text": "TANG-go",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 491,
+      "top": 1263,
+      "right": 561,
+      "bottom": 1279,
+      "count": 383
+    },
+    "expectedInk": {
+      "top": 1264.1475,
+      "bottom": 1279.047
+    },
+    "deltaPixels": {
+      "top": -1.1475000000000364,
+      "bottom": 0.9529999999999745
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "U",
+    "scale": 1,
+    "density": 1.5,
+    "part": "letter",
+    "text": "U",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 691,
+      "top": 1114,
+      "right": 724,
+      "bottom": 1153,
+      "count": 764
+    },
+    "expectedInk": {
+      "top": 1114.71,
+      "bottom": 1153.86
+    },
+    "deltaPixels": {
+      "top": -0.7100000000000364,
+      "bottom": 0.14000000000010004
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "U",
+    "scale": 1,
+    "density": 1.5,
+    "part": "word",
+    "text": "Uniform",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 665,
+      "top": 1224,
+      "right": 751,
+      "bottom": 1241,
+      "count": 664
+    },
+    "expectedInk": {
+      "top": 1223.808,
+      "bottom": 1241.112
+    },
+    "deltaPixels": {
+      "top": 0.19200000000000728,
+      "bottom": 0.88799999999992
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "U",
+    "scale": 1,
+    "density": 1.5,
+    "part": "guide",
+    "text": "YOU-nee-form",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 653,
+      "top": 1263,
+      "right": 762,
+      "bottom": 1276,
+      "count": 522
+    },
+    "expectedInk": {
+      "top": 1264.1475,
+      "bottom": 1276.077
+    },
+    "deltaPixels": {
+      "top": -1.1475000000000364,
+      "bottom": 0.9230000000000018
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "V",
+    "scale": 1,
+    "density": 1.5,
+    "part": "letter",
+    "text": "V",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 872,
+      "top": 1114,
+      "right": 910,
+      "bottom": 1153,
+      "count": 657
+    },
+    "expectedInk": {
+      "top": 1114.71,
+      "bottom": 1153.752
+    },
+    "deltaPixels": {
+      "top": -0.7100000000000364,
+      "bottom": 0.2480000000000473
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "V",
+    "scale": 1,
+    "density": 1.5,
+    "part": "word",
+    "text": "Victor",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 858,
+      "top": 1224,
+      "right": 924,
+      "bottom": 1241,
+      "count": 455
+    },
+    "expectedInk": {
+      "top": 1223.808,
+      "bottom": 1241.112
+    },
+    "deltaPixels": {
+      "top": 0.19200000000000728,
+      "bottom": 0.88799999999992
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "V",
+    "scale": 1,
+    "density": 1.5,
+    "part": "guide",
+    "text": "VIK-tah",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 863,
+      "top": 1264,
+      "right": 919,
+      "bottom": 1276,
+      "count": 288
+    },
+    "expectedInk": {
+      "top": 1264.1805,
+      "bottom": 1276.077
+    },
+    "deltaPixels": {
+      "top": -0.18049999999993815,
+      "bottom": 0.9230000000000018
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "W",
+    "scale": 1,
+    "density": 1.5,
+    "part": "letter",
+    "text": "W",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 1046,
+      "top": 1114,
+      "right": 1102,
+      "bottom": 1153,
+      "count": 1140
+    },
+    "expectedInk": {
+      "top": 1114.71,
+      "bottom": 1153.752
+    },
+    "deltaPixels": {
+      "top": -0.7100000000000364,
+      "bottom": 0.2480000000000473
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "W",
+    "scale": 1,
+    "density": 1.5,
+    "part": "word",
+    "text": "Whiskey",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 1027,
+      "top": 1224,
+      "right": 1122,
+      "bottom": 1245,
+      "count": 720
+    },
+    "expectedInk": {
+      "top": 1223.808,
+      "bottom": 1245.384
+    },
+    "deltaPixels": {
+      "top": 0.19200000000000728,
+      "bottom": 0.6159999999999854
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "W",
+    "scale": 1,
+    "density": 1.5,
+    "part": "guide",
+    "text": "WISS-key",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 1037,
+      "top": 1263,
+      "right": 1112,
+      "bottom": 1279,
+      "count": 422
+    },
+    "expectedInk": {
+      "top": 1264.1475,
+      "bottom": 1279.0140000000001
+    },
+    "deltaPixels": {
+      "top": -1.1475000000000364,
+      "bottom": 0.9859999999998763
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "X",
+    "scale": 1,
+    "density": 1.5,
+    "part": "letter",
+    "text": "X",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 1241,
+      "top": 1114,
+      "right": 1273,
+      "bottom": 1153,
+      "count": 724
+    },
+    "expectedInk": {
+      "top": 1114.71,
+      "bottom": 1153.752
+    },
+    "deltaPixels": {
+      "top": -0.7100000000000364,
+      "bottom": 0.2480000000000473
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "X",
+    "scale": 1,
+    "density": 1.5,
+    "part": "word",
+    "text": "X-ray",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 1229,
+      "top": 1224,
+      "right": 1287,
+      "bottom": 1245,
+      "count": 380
+    },
+    "expectedInk": {
+      "top": 1223.808,
+      "bottom": 1245.384
+    },
+    "deltaPixels": {
+      "top": 0.19200000000000728,
+      "bottom": 0.6159999999999854
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "X",
+    "scale": 1,
+    "density": 1.5,
+    "part": "guide",
+    "text": "ECKS-ray",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 1222,
+      "top": 1263,
+      "right": 1292,
+      "bottom": 1279,
+      "count": 377
+    },
+    "expectedInk": {
+      "top": 1264.1475,
+      "bottom": 1279.0140000000001
+    },
+    "deltaPixels": {
+      "top": -1.1475000000000364,
+      "bottom": 0.9859999999998763
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "Y",
+    "scale": 1,
+    "density": 1.5,
+    "part": "letter",
+    "text": "Y",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 692,
+      "top": 1357,
+      "right": 723,
+      "bottom": 1396,
+      "count": 555
+    },
+    "expectedInk": {
+      "top": 1357.71,
+      "bottom": 1396.752
+    },
+    "deltaPixels": {
+      "top": -0.7100000000000364,
+      "bottom": 0.2480000000000473
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "Y",
+    "scale": 1,
+    "density": 1.5,
+    "part": "word",
+    "text": "Yankee",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 670,
+      "top": 1467,
+      "right": 746,
+      "bottom": 1484,
+      "count": 553
+    },
+    "expectedInk": {
+      "top": 1466.808,
+      "bottom": 1484.112
+    },
+    "deltaPixels": {
+      "top": 0.19200000000000728,
+      "bottom": 0.88799999999992
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "Y",
+    "scale": 1,
+    "density": 1.5,
+    "part": "guide",
+    "text": "YANG-key",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 670,
+      "top": 1506,
+      "right": 748,
+      "bottom": 1522,
+      "count": 421
+    },
+    "expectedInk": {
+      "top": 1507.1475,
+      "bottom": 1522.0140000000001
+    },
+    "deltaPixels": {
+      "top": -1.1475000000000364,
+      "bottom": 0.9859999999998763
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "Z",
+    "scale": 1,
+    "density": 1.5,
+    "part": "letter",
+    "text": "Z",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 877,
+      "top": 1357,
+      "right": 907,
+      "bottom": 1395,
+      "count": 687
+    },
+    "expectedInk": {
+      "top": 1358.196,
+      "bottom": 1396.266
+    },
+    "deltaPixels": {
+      "top": -1.1959999999999127,
+      "bottom": -0.2660000000000764
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "Z",
+    "scale": 1,
+    "density": 1.5,
+    "part": "word",
+    "text": "Zulu",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 868,
+      "top": 1467,
+      "right": 913,
+      "bottom": 1484,
+      "count": 354
+    },
+    "expectedInk": {
+      "top": 1466.808,
+      "bottom": 1484.112
+    },
+    "deltaPixels": {
+      "top": 0.19200000000000728,
+      "bottom": 0.88799999999992
+    }
+  },
+  {
+    "capture": "alphabet-tablet-1067x1707.png",
+    "symbol": "Z",
+    "scale": 1,
+    "density": 1.5,
+    "part": "guide",
+    "text": "ZOO-loo",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 859,
+      "top": 1506,
+      "right": 924,
+      "bottom": 1519,
+      "count": 357
+    },
+    "expectedInk": {
+      "top": 1507.1475,
+      "bottom": 1519.077
+    },
+    "deltaPixels": {
+      "top": -1.1475000000000364,
+      "bottom": 0.9230000000000018
+    }
+  }
+]

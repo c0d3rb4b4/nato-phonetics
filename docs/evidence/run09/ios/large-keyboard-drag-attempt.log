@@ -1,0 +1,325 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild test-without-building -project /tmp/nato-ios-run09-capture/Capture.xcodeproj -scheme Capture -configuration Debug -destination "platform=iOS Simulator,id=0653F7EC-9237-4AC5-A264-12969E625070" -derivedDataPath /tmp/nato-ios-run09-capture/DerivedData CODE_SIGNING_ALLOWED=NO -parallel-testing-enabled NO -resultBundlePath /tmp/nato-ios-run09-capture/large.xcresult "-only-testing:CaptureUITests/CaptureUITests/testLargeConverterControls"
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+Writing result bundle at path:
+	/tmp/nato-ios-run09-capture/large.xcresult
+
+2026-11-17 18:42:38.188662+0000 CaptureUITests-Runner[97264:10083807] [Default] Running tests...
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-11-17 18:42:39.654.
+Test Suite 'CaptureUITests.xctest' started at 2026-11-17 18:42:39.655.
+Test Suite 'CaptureUITests' started at 2026-11-17 18:42:39.655.
+Test Case '-[CaptureUITests.CaptureUITests testLargeConverterControls]' started.
+    t =     0.00s Start Test at 2026-11-17 18:42:39.656
+    t =     0.12s Set Up
+    t =     0.12s Open com.natophonetics.app
+    t =     0.12s     Launch com.natophonetics.app
+    t =     0.12s         Terminate com.natophonetics.app:96963
+    t =     1.29s         Setting up automation session
+    t =     2.55s         Wait for com.natophonetics.app to idle
+    t =     4.12s Open com.natophonetics.app with URL natophonetics://converter
+    t =     4.12s     Launch com.natophonetics.app
+    t =     4.18s         Setting up automation session
+    t =     4.18s         Wait for com.natophonetics.app to idle
+    t =     5.20s Wait for com.natophonetics.app to become Running Foreground
+    t =     5.21s Find the "screen-scroll" Any
+    t =     5.29s Checking existence of `"converter-input" Any`
+    t =     5.33s Find the "converter-input" Any
+    t =     5.37s Find the "converter-input" TextView
+    t =     5.40s Find the "converter-input" TextView
+    t =     5.42s Tap "converter-input" Any
+    t =     5.42s     Wait for com.natophonetics.app to idle
+    t =     5.43s     Find the "converter-input" Any
+    t =     5.45s     Check for interrupting elements affecting "converter-input" TextView
+    t =     5.51s     Synthesize event
+    t =     5.80s     Wait for com.natophonetics.app to idle
+    t =     6.06s Type 'a3 b!' into "converter-input" Any
+    t =     6.06s     Wait for com.natophonetics.app to idle
+    t =     6.45s     Find the "converter-input" Any
+    t =     6.51s     Check for interrupting elements affecting "converter-input" TextView
+    t =     6.56s     Synthesize event
+    t =     6.84s     Wait for com.natophonetics.app to idle
+    t =     6.85s Find the "screen-scroll" Any
+    t =     6.91s Checking existence of `"Copy conversion" Any`
+    t =     6.95s Find the "Copy conversion" Any
+    t =     7.01s Checking existence of `"Copy conversion" Button`
+    t =     7.05s Find the "Copy conversion" Button
+    t =     7.10s Press "screen-scroll" Any[0.50, 0.82] for 0.1 seconds, then drag to "screen-scroll" Any[0.50, 0.82] -> (0.0, -305.5) with velocity of 750.00 pixels per second, and then hold for 0.2 seconds 
+    t =     7.10s     Wait for com.natophonetics.app to idle
+    t =     7.10s     Find the "screen-scroll" Any
+    t =     7.14s     Check for interrupting elements affecting "screen-scroll" Other
+    t =     7.18s     Synthesize event
+    t =     7.18s         Find the "screen-scroll" Other
+    t =     7.21s         Find the "screen-scroll" Other
+    t =     7.25s         Find the "screen-scroll" Other
+    t =     7.29s         Find the "screen-scroll" Other
+    t =     7.34s         Find the "screen-scroll" Other
+    t =     8.33s     Wait for com.natophonetics.app to idle
+    t =     8.34s Find the "screen-scroll" Any
+    t =     8.39s Checking existence of `"Copy conversion" Any`
+    t =     8.43s Find the "Copy conversion" Any
+    t =     8.49s Checking existence of `"Copy conversion" Button`
+    t =     8.53s Find the "Copy conversion" Button
+    t =     8.58s Press "screen-scroll" Any[0.50, 0.82] for 0.1 seconds, then drag to "screen-scroll" Any[0.50, 0.82] -> (0.0, -305.5) with velocity of 750.00 pixels per second, and then hold for 0.2 seconds 
+    t =     8.58s     Wait for com.natophonetics.app to idle
+    t =     8.58s     Find the "screen-scroll" Any
+    t =     8.62s     Check for interrupting elements affecting "screen-scroll" Other
+    t =     8.67s     Synthesize event
+    t =     8.67s         Find the "screen-scroll" Other
+    t =     8.71s         Find the "screen-scroll" Other
+    t =     8.74s         Find the "screen-scroll" Other
+    t =     8.78s         Find the "screen-scroll" Other
+    t =     8.82s         Find the "screen-scroll" Other
+    t =     9.81s     Wait for com.natophonetics.app to idle
+    t =     9.81s Find the "screen-scroll" Any
+    t =     9.86s Checking existence of `"Copy conversion" Any`
+    t =     9.91s Find the "Copy conversion" Any
+    t =     9.97s Checking existence of `"Copy conversion" Button`
+    t =    10.01s Find the "Copy conversion" Button
+    t =    10.06s Press "screen-scroll" Any[0.50, 0.82] for 0.1 seconds, then drag to "screen-scroll" Any[0.50, 0.82] -> (0.0, -305.5) with velocity of 750.00 pixels per second, and then hold for 0.2 seconds 
+    t =    10.06s     Wait for com.natophonetics.app to idle
+    t =    10.07s     Find the "screen-scroll" Any
+    t =    10.10s     Check for interrupting elements affecting "screen-scroll" Other
+    t =    10.14s     Synthesize event
+    t =    10.14s         Find the "screen-scroll" Other
+    t =    10.18s         Find the "screen-scroll" Other
+    t =    10.23s         Find the "screen-scroll" Other
+    t =    10.27s         Find the "screen-scroll" Other
+    t =    10.31s         Find the "screen-scroll" Other
+    t =    11.29s     Wait for com.natophonetics.app to idle
+    t =    11.30s Find the "screen-scroll" Any
+    t =    11.34s Checking existence of `"Copy conversion" Any`
+    t =    11.39s Find the "Copy conversion" Any
+    t =    11.45s Checking existence of `"Copy conversion" Button`
+    t =    11.49s Find the "Copy conversion" Button
+    t =    11.54s Press "screen-scroll" Any[0.50, 0.82] for 0.1 seconds, then drag to "screen-scroll" Any[0.50, 0.82] -> (0.0, -305.5) with velocity of 750.00 pixels per second, and then hold for 0.2 seconds 
+    t =    11.54s     Wait for com.natophonetics.app to idle
+    t =    11.55s     Find the "screen-scroll" Any
+    t =    11.58s     Check for interrupting elements affecting "screen-scroll" Other
+    t =    11.62s     Synthesize event
+    t =    11.63s         Find the "screen-scroll" Other
+    t =    11.66s         Find the "screen-scroll" Other
+    t =    11.70s         Find the "screen-scroll" Other
+    t =    11.74s         Find the "screen-scroll" Other
+    t =    11.77s         Find the "screen-scroll" Other
+    t =    12.77s     Wait for com.natophonetics.app to idle
+    t =    12.77s Find the "screen-scroll" Any
+    t =    12.82s Checking existence of `"Copy conversion" Any`
+    t =    12.88s Find the "Copy conversion" Any
+    t =    12.94s Checking existence of `"Copy conversion" Button`
+    t =    12.99s Find the "Copy conversion" Button
+    t =    13.05s Press "screen-scroll" Any[0.50, 0.82] for 0.1 seconds, then drag to "screen-scroll" Any[0.50, 0.82] -> (0.0, -305.5) with velocity of 750.00 pixels per second, and then hold for 0.2 seconds 
+    t =    13.05s     Wait for com.natophonetics.app to idle
+    t =    13.05s     Find the "screen-scroll" Any
+    t =    13.09s     Check for interrupting elements affecting "screen-scroll" Other
+    t =    13.13s     Synthesize event
+    t =    13.14s         Find the "screen-scroll" Other
+    t =    13.18s         Find the "screen-scroll" Other
+    t =    13.22s         Find the "screen-scroll" Other
+    t =    13.26s         Find the "screen-scroll" Other
+    t =    13.30s         Find the "screen-scroll" Other
+    t =    14.28s     Wait for com.natophonetics.app to idle
+    t =    14.29s Find the "screen-scroll" Any
+    t =    14.35s Checking existence of `"Copy conversion" Any`
+    t =    14.40s Find the "Copy conversion" Any
+    t =    14.45s Checking existence of `"Copy conversion" Button`
+    t =    14.50s Find the "Copy conversion" Button
+    t =    14.55s Press "screen-scroll" Any[0.50, 0.82] for 0.1 seconds, then drag to "screen-scroll" Any[0.50, 0.82] -> (0.0, -305.5) with velocity of 750.00 pixels per second, and then hold for 0.2 seconds 
+    t =    14.55s     Wait for com.natophonetics.app to idle
+    t =    14.55s     Find the "screen-scroll" Any
+    t =    14.58s     Check for interrupting elements affecting "screen-scroll" Other
+    t =    14.62s     Synthesize event
+    t =    14.62s         Find the "screen-scroll" Other
+    t =    14.66s         Find the "screen-scroll" Other
+    t =    14.69s         Find the "screen-scroll" Other
+    t =    14.73s         Find the "screen-scroll" Other
+    t =    14.77s         Find the "screen-scroll" Other
+    t =    15.75s     Wait for com.natophonetics.app to idle
+    t =    15.76s Find the "screen-scroll" Any
+    t =    15.81s Checking existence of `"Copy conversion" Any`
+    t =    15.86s Find the "Copy conversion" Any
+    t =    15.91s Checking existence of `"Copy conversion" Button`
+    t =    15.96s Find the "Copy conversion" Button
+    t =    16.01s Press "screen-scroll" Any[0.50, 0.82] for 0.1 seconds, then drag to "screen-scroll" Any[0.50, 0.82] -> (0.0, -305.5) with velocity of 750.00 pixels per second, and then hold for 0.2 seconds 
+    t =    16.01s     Wait for com.natophonetics.app to idle
+    t =    16.01s     Find the "screen-scroll" Any
+    t =    16.04s     Check for interrupting elements affecting "screen-scroll" Other
+    t =    16.09s     Synthesize event
+    t =    16.09s         Find the "screen-scroll" Other
+    t =    16.13s         Find the "screen-scroll" Other
+    t =    16.17s         Find the "screen-scroll" Other
+    t =    16.20s         Find the "screen-scroll" Other
+    t =    16.24s         Find the "screen-scroll" Other
+    t =    17.23s     Wait for com.natophonetics.app to idle
+    t =    17.24s Find the "screen-scroll" Any
+    t =    17.30s Checking existence of `"Copy conversion" Any`
+    t =    17.35s Find the "Copy conversion" Any
+    t =    17.40s Checking existence of `"Copy conversion" Button`
+    t =    17.44s Find the "Copy conversion" Button
+    t =    17.49s Press "screen-scroll" Any[0.50, 0.82] for 0.1 seconds, then drag to "screen-scroll" Any[0.50, 0.82] -> (0.0, -305.5) with velocity of 750.00 pixels per second, and then hold for 0.2 seconds 
+    t =    17.49s     Wait for com.natophonetics.app to idle
+    t =    17.49s     Find the "screen-scroll" Any
+    t =    17.53s     Check for interrupting elements affecting "screen-scroll" Other
+    t =    17.57s     Synthesize event
+    t =    17.57s         Find the "screen-scroll" Other
+    t =    17.61s         Find the "screen-scroll" Other
+    t =    17.64s         Find the "screen-scroll" Other
+    t =    17.68s         Find the "screen-scroll" Other
+    t =    17.72s         Find the "screen-scroll" Other
+    t =    18.71s     Wait for com.natophonetics.app to idle
+    t =    18.71s Find the "screen-scroll" Any
+    t =    18.76s Checking existence of `"Copy conversion" Any`
+    t =    18.81s Find the "Copy conversion" Any
+    t =    18.86s Checking existence of `"Copy conversion" Button`
+    t =    18.91s Find the "Copy conversion" Button
+    t =    18.95s Press "screen-scroll" Any[0.50, 0.82] for 0.1 seconds, then drag to "screen-scroll" Any[0.50, 0.82] -> (0.0, -305.5) with velocity of 750.00 pixels per second, and then hold for 0.2 seconds 
+    t =    18.95s     Wait for com.natophonetics.app to idle
+    t =    18.96s     Find the "screen-scroll" Any
+    t =    18.99s     Check for interrupting elements affecting "screen-scroll" Other
+    t =    19.03s     Synthesize event
+    t =    19.03s         Find the "screen-scroll" Other
+    t =    19.07s         Find the "screen-scroll" Other
+    t =    19.11s         Find the "screen-scroll" Other
+    t =    19.14s         Find the "screen-scroll" Other
+    t =    19.18s         Find the "screen-scroll" Other
+    t =    20.17s     Wait for com.natophonetics.app to idle
+    t =    20.17s Find the "screen-scroll" Any
+    t =    20.24s Checking existence of `"Copy conversion" Any`
+    t =    20.28s Find the "Copy conversion" Any
+    t =    20.34s Checking existence of `"Copy conversion" Button`
+    t =    20.40s Find the "Copy conversion" Button
+    t =    20.50s Press "screen-scroll" Any[0.50, 0.82] for 0.1 seconds, then drag to "screen-scroll" Any[0.50, 0.82] -> (0.0, -305.5) with velocity of 750.00 pixels per second, and then hold for 0.2 seconds 
+    t =    20.50s     Wait for com.natophonetics.app to idle
+    t =    20.50s     Find the "screen-scroll" Any
+    t =    20.56s     Check for interrupting elements affecting "screen-scroll" Other
+    t =    20.61s     Synthesize event
+    t =    20.61s         Find the "screen-scroll" Other
+    t =    20.66s         Find the "screen-scroll" Other
+    t =    20.70s         Find the "screen-scroll" Other
+    t =    20.75s         Find the "screen-scroll" Other
+    t =    20.80s         Find the "screen-scroll" Other
+    t =    21.80s     Wait for com.natophonetics.app to idle
+    t =    21.80s Find the "screen-scroll" Any
+    t =    21.85s Checking existence of `"Copy conversion" Any`
+    t =    21.90s Find the "Copy conversion" Any
+    t =    21.96s Checking existence of `"Copy conversion" Button`
+    t =    22.00s Find the "Copy conversion" Button
+    t =    22.05s Press "screen-scroll" Any[0.50, 0.82] for 0.1 seconds, then drag to "screen-scroll" Any[0.50, 0.82] -> (0.0, -305.5) with velocity of 750.00 pixels per second, and then hold for 0.2 seconds 
+    t =    22.05s     Wait for com.natophonetics.app to idle
+    t =    22.06s     Find the "screen-scroll" Any
+    t =    22.09s     Check for interrupting elements affecting "screen-scroll" Other
+    t =    22.16s     Synthesize event
+    t =    22.16s         Find the "screen-scroll" Other
+    t =    22.20s         Find the "screen-scroll" Other
+    t =    22.24s         Find the "screen-scroll" Other
+    t =    22.28s         Find the "screen-scroll" Other
+    t =    22.31s         Find the "screen-scroll" Other
+    t =    23.31s     Wait for com.natophonetics.app to idle
+    t =    23.31s Find the "screen-scroll" Any
+    t =    23.38s Checking existence of `"Copy conversion" Any`
+    t =    23.46s Find the "Copy conversion" Any
+    t =    23.55s Checking existence of `"Copy conversion" Button`
+    t =    23.60s Find the "Copy conversion" Button
+    t =    23.65s Press "screen-scroll" Any[0.50, 0.82] for 0.1 seconds, then drag to "screen-scroll" Any[0.50, 0.82] -> (0.0, -305.5) with velocity of 750.00 pixels per second, and then hold for 0.2 seconds 
+    t =    23.65s     Wait for com.natophonetics.app to idle
+    t =    23.66s     Find the "screen-scroll" Any
+    t =    23.69s     Check for interrupting elements affecting "screen-scroll" Other
+    t =    23.73s     Synthesize event
+    t =    23.74s         Find the "screen-scroll" Other
+    t =    23.77s         Find the "screen-scroll" Other
+    t =    23.81s         Find the "screen-scroll" Other
+    t =    23.86s         Find the "screen-scroll" Other
+    t =    23.91s         Find the "screen-scroll" Other
+    t =    24.92s     Wait for com.natophonetics.app to idle
+    t =    24.93s Find the "screen-scroll" Any
+    t =    25.02s Checking existence of `"Copy conversion" Any`
+    t =    25.09s Find the "Copy conversion" Any
+    t =    25.15s Checking existence of `"Copy conversion" Button`
+    t =    25.21s Find the "Copy conversion" Button
+    t =    25.26s Press "screen-scroll" Any[0.50, 0.82] for 0.1 seconds, then drag to "screen-scroll" Any[0.50, 0.82] -> (0.0, -305.5) with velocity of 750.00 pixels per second, and then hold for 0.2 seconds 
+    t =    25.26s     Wait for com.natophonetics.app to idle
+    t =    25.26s     Find the "screen-scroll" Any
+    t =    25.31s     Check for interrupting elements affecting "screen-scroll" Other
+    t =    25.42s     Synthesize event
+    t =    25.42s         Find the "screen-scroll" Other
+    t =    25.48s         Find the "screen-scroll" Other
+    t =    25.53s         Find the "screen-scroll" Other
+    t =    25.59s         Find the "screen-scroll" Other
+    t =    25.64s         Find the "screen-scroll" Other
+    t =    26.70s     Wait for com.natophonetics.app to idle
+    t =    26.71s Find the "screen-scroll" Any
+    t =    26.77s Checking existence of `"Copy conversion" Any`
+    t =    26.83s Find the "Copy conversion" Any
+    t =    26.88s Checking existence of `"Copy conversion" Button`
+    t =    26.93s Find the "Copy conversion" Button
+    t =    26.99s Press "screen-scroll" Any[0.50, 0.82] for 0.1 seconds, then drag to "screen-scroll" Any[0.50, 0.82] -> (0.0, -305.5) with velocity of 750.00 pixels per second, and then hold for 0.2 seconds 
+    t =    26.99s     Wait for com.natophonetics.app to idle
+    t =    26.99s     Find the "screen-scroll" Any
+    t =    27.03s     Check for interrupting elements affecting "screen-scroll" Other
+    t =    27.07s     Synthesize event
+    t =    27.08s         Find the "screen-scroll" Other
+    t =    27.11s         Find the "screen-scroll" Other
+    t =    27.16s         Find the "screen-scroll" Other
+    t =    27.20s         Find the "screen-scroll" Other
+    t =    27.24s         Find the "screen-scroll" Other
+    t =    28.24s     Wait for com.natophonetics.app to idle
+    t =    28.24s Find the "screen-scroll" Any
+    t =    28.30s Checking existence of `"Copy conversion" Any`
+    t =    28.35s Find the "Copy conversion" Any
+    t =    28.40s Checking existence of `"Copy conversion" Button`
+    t =    28.45s Find the "Copy conversion" Button
+    t =    28.50s Press "screen-scroll" Any[0.50, 0.82] for 0.1 seconds, then drag to "screen-scroll" Any[0.50, 0.82] -> (0.0, -305.5) with velocity of 750.00 pixels per second, and then hold for 0.2 seconds 
+    t =    28.50s     Wait for com.natophonetics.app to idle
+    t =    28.50s     Find the "screen-scroll" Any
+    t =    28.54s     Check for interrupting elements affecting "screen-scroll" Other
+    t =    28.58s     Synthesize event
+    t =    28.58s         Find the "screen-scroll" Other
+    t =    28.61s         Find the "screen-scroll" Other
+    t =    28.65s         Find the "screen-scroll" Other
+    t =    28.69s         Find the "screen-scroll" Other
+    t =    28.73s         Find the "screen-scroll" Other
+    t =    29.73s     Wait for com.natophonetics.app to idle
+    t =    29.73s Find the "screen-scroll" Any
+    t =    29.78s Checking existence of `"Copy conversion" Any`
+    t =    29.83s Find the "Copy conversion" Any
+    t =    29.88s Checking existence of `"Copy conversion" Button`
+    t =    29.93s Find the "Copy conversion" Button
+    t =    29.98s Press "screen-scroll" Any[0.50, 0.82] for 0.1 seconds, then drag to "screen-scroll" Any[0.50, 0.82] -> (0.0, -305.5) with velocity of 750.00 pixels per second, and then hold for 0.2 seconds 
+    t =    29.98s     Wait for com.natophonetics.app to idle
+    t =    29.98s     Find the "screen-scroll" Any
+    t =    30.02s     Check for interrupting elements affecting "screen-scroll" Other
+    t =    30.06s     Synthesize event
+    t =    30.06s         Find the "screen-scroll" Other
+    t =    30.10s         Find the "screen-scroll" Other
+    t =    30.13s         Find the "screen-scroll" Other
+    t =    30.17s         Find the "screen-scroll" Other
+    t =    30.21s         Find the "screen-scroll" Other
+    t =    31.20s     Wait for com.natophonetics.app to idle
+/tmp/nato-ios-run09-capture/CaptureUITests.swift:20: error: -[CaptureUITests.CaptureUITests testLargeConverterControls] : failed - Unreachable Copy conversion
+    t =    32.86s Tear Down
+Test Case '-[CaptureUITests.CaptureUITests testLargeConverterControls]' failed (33.487 seconds).
+Test Suite 'CaptureUITests' failed at 2026-11-17 18:43:13.143.
+	 Executed 1 test, with 1 failure (0 unexpected) in 33.487 (33.489) seconds
+Test Suite 'CaptureUITests.xctest' failed at 2026-11-17 18:43:13.145.
+	 Executed 1 test, with 1 failure (0 unexpected) in 33.487 (33.490) seconds
+Test Suite 'Selected tests' failed at 2026-11-17 18:43:13.145.
+	 Executed 1 test, with 1 failure (0 unexpected) in 33.487 (33.491) seconds
+2026-11-17 18:43:13.912 xcodebuild[97217:10084169]  IDETestOperationsObserverDebug: Failure collecting diagnostics from simulator: Process exited with error 72:
+ xcrun: error: unable to find utility "simctl", not a developer tool or in PATH
+
+2026-11-17 18:43:13.933 xcodebuild[97217:10083402] [MT] IDETestOperationsObserverDebug: 50.112 elapsed -- Testing started completed.
+2026-11-17 18:43:13.933 xcodebuild[97217:10083402] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-11-17 18:43:13.933 xcodebuild[97217:10083402] [MT] IDETestOperationsObserverDebug: 50.112 sec, +50.112 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/nato-ios-run09-capture/large.xcresult
+
+Failing tests:
+	CaptureUITests.testLargeConverterControls()
+
+** TEST EXECUTE FAILED **
+
+Testing started

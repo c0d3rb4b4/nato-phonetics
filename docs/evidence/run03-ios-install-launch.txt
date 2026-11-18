@@ -1,0 +1,6 @@
+Command: xcrun simctl install 0653F7EC-9237-4AC5-A264-12969E625070 artifacts/ios-simulator/Build/Products/Release-iphonesimulator/NATOPhonetics.app
+Exit: 0
+
+Command: xcrun simctl launch 0653F7EC-9237-4AC5-A264-12969E625070 com.natophonetics.app
+Exit: 0
+com.natophonetics.app: 68066

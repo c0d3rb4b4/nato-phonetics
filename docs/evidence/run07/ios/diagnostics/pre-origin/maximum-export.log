@@ -1,0 +1,11 @@
+Command: ['xcrun', 'xcresulttool', 'export', 'attachments', '--path', '/tmp/nato-ios-run07-capture/maximum.xcresult', '--output-path', '/tmp/nato-ios-run07-capture/maximum-export']
+Exported 5 attachments for: CaptureUITests/testMaximumNativeBaselines():
+File: 8E798B53-5875-4A4D-8D8A-43258F895053.png, suggested name: "maximum-quiz-feedback-dark_0_63B86BA6-025C-4244-B3E2-0D9CBC9717DE.png"
+File: C6901D55-42C3-40FF-BA28-FBDFE205F64C.png, suggested name: "maximum-quiz-question-dark_0_1DAE63FA-DF6F-42F1-8A02-B5E5D048411A.png"
+File: 2379178D-48C8-45AC-A1DA-5397BE7BCD41.png, suggested name: "maximum-converter-J-dark_0_62F8DD36-C8F1-48BE-90AB-EF6263C01F69.png"
+File: 395B8098-6ECB-4DF5-8708-0B36117E02C9.png, suggested name: "maximum-alphabet-J-dark_0_98A6F3CC-8E24-410B-9ED3-769BAA364800.png"
+File: 6B8ED80D-F862-405F-9FD5-735DEB21AEDA.png, suggested name: "maximum-alphabet-first-dark_0_E9ADE920-464D-48FE-8560-ECBE62F89658.png"
+
+Generated manifest file with attachment details: /tmp/nato-ios-run07-capture/maximum-export/manifest.json
+
+EXIT 0

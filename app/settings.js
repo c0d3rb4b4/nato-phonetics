@@ -1,136 +1,64 @@
-import { Ionicons } from '@expo/vector-icons';
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import { router, useFocusEffect } from 'expo-router';
-import * as Speech from 'expo-speech';
+import { router, useFocusEffect } from '../src/navigation';
 import { useCallback, useState } from 'react';
-import { Alert, Pressable, ScrollView, StyleSheet, Switch, Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
+import { Button, Feedback, Heading, Screen } from '../src/components/ui';
 import { useTheme } from '../src/context/ThemeContext';
+import { loadEnglishVoices } from '../src/lib/speech';
+
+/** @type {{value: import('../src/types').ThemeMode, label: string}[]} */
+const THEME_OPTIONS = [
+  { value: 'system', label: 'System' },
+  { value: 'light', label: 'Light' },
+  { value: 'dark', label: 'Dark' },
+];
 
 export default function SettingsScreen() {
-  const { theme, isDarkMode, toggleDarkMode } = useTheme();
-  const [selectedVoiceName, setSelectedVoiceName] = useState('Default');
+  const { theme, preferences, setThemeMode, isSaving, resetPreferences } = useTheme();
+  const [selectedVoiceName, setSelectedVoiceName] = useState('System Default');
 
-  // Reload voice name when screen gets focus
-  useFocusEffect(
-    useCallback(() => {
-      loadSelectedVoice();
-    }, [])
-  );
-
-  const loadSelectedVoice = async () => {
-    try {
-      const saved = await AsyncStorage.getItem('selectedVoice');
-      if (saved) {
-        const availableVoices = await Speech.getAvailableVoicesAsync();
-        const voice = availableVoices.find(v => v.identifier === saved);
-        if (voice) {
-          setSelectedVoiceName(voice.name);
-        }
-      }
-    } catch (e) {
-      console.error('Error loading voice:', e);
-      Alert.alert('Error', 'Failed to load voice settings.');
+  useFocusEffect(useCallback(() => {
+    let active = true;
+    if (preferences.selectedVoice === null) {
+      setSelectedVoiceName('System Default');
+    } else {
+      setSelectedVoiceName('Loading saved voice…');
+      loadEnglishVoices().then(voices => {
+        if (!active) return;
+        const voice = voices.find(item => item.identifier === preferences.selectedVoice);
+        setSelectedVoiceName(voice ? voice.name : 'Saved voice unavailable — choose System Default');
+      }).catch(() => {
+        if (active) setSelectedVoiceName('Saved voice — name unavailable');
+      });
     }
-  };
+    return () => { active = false; };
+  }, [preferences.selectedVoice]));
 
-  return (
-    <ScrollView style={[styles.container, { backgroundColor: theme.colors.background }]}>
-      <View style={styles.section}>
-        <Text style={[styles.sectionTitle, { color: theme.colors.text }]}>
-          Appearance
-        </Text>
-        
-        <View style={[styles.settingRow, { backgroundColor: theme.colors.surface }]}>
-          <View style={styles.settingInfo}>
-            <Text style={[styles.settingLabel, { color: theme.colors.text }]}>
-              Dark Mode
-            </Text>
-            <Text style={[styles.settingDescription, { color: theme.colors.textSecondary }]}>
-              Switch between light and dark theme
-            </Text>
-          </View>
-          <Switch
-            value={isDarkMode}
-            onValueChange={toggleDarkMode}
-            trackColor={{ false: '#D1D5DB', true: '#3B82F6' }}
-            thumbColor={isDarkMode ? '#FFFFFF' : '#F3F4F6'}
-          />
-        </View>
-      </View>
-
-      <View style={styles.section}>
-        <Text style={[styles.sectionTitle, { color: theme.colors.text }]}>
-          Voice
-        </Text>
-        
-        <Pressable 
-          onPress={() => router.push('/voice-select')}
-          style={[styles.settingRow, { backgroundColor: theme.colors.surface }]}
-        >
-          <View style={styles.settingInfo}>
-            <Text style={[styles.settingLabel, { color: theme.colors.text }]}>
-              Change Voice
-            </Text>
-            <Text style={[styles.settingDescription, { color: theme.colors.textSecondary }]}>
-              {selectedVoiceName}
-            </Text>
-          </View>
-          <Ionicons name="chevron-forward" size={20} color={theme.colors.textSecondary} />
-        </Pressable>
-      </View>
-
-      <View style={styles.section}>
-        <Text style={[styles.sectionTitle, { color: theme.colors.text }]}>
-          About Settings
-        </Text>
-        <Text style={[styles.infoText, { color: theme.colors.textSecondary }]}>
-          Customize your NATO Phonetics app experience. Your preferences are saved automatically.
-        </Text>
-      </View>
-    </ScrollView>
-  );
+  return <Screen>
+    <Heading>Appearance</Heading>
+    <Text style={[styles.infoText, { color: theme.colors.textSecondary }]}>System follows your device’s current light or dark appearance.</Text>
+    <View accessibilityRole="radiogroup" accessibilityLabel="Appearance" style={styles.group}>
+      {THEME_OPTIONS.map(option => <Button key={option.value} variant="secondary"
+        label={`${option.label}${preferences.themeMode === option.value ? ' ✓' : ''}`} accessibilityLabel={option.label}
+        accessibilityRole="radio" accessibilityState={{ checked: preferences.themeMode === option.value }}
+        aria-checked={preferences.themeMode === option.value}
+        onPress={() => { void setThemeMode(option.value); }} />)}
+    </View>
+    <Heading>Voice</Heading>
+    <Button label="Change Voice" variant="secondary" accessibilityHint={`Current choice: ${selectedVoiceName}`}
+      onPress={() => router.push('/voice-select')} />
+    <Text style={[styles.infoText, { color: theme.colors.textSecondary }]}>{selectedVoiceName}</Text>
+    <Button label="Audio help and sound test" variant="secondary" onPress={() => router.push('/audio-help')} />
+    <Heading>Preferences</Heading>
+    <Feedback message={isSaving ? 'Saving settings…' : 'Choices are selected after they have been saved on this device.'} />
+    <Button label="Reset Preferences" variant="secondary"
+      accessibilityHint="Restores System appearance, System Default voice and converter pace. Other app data is kept."
+      onPress={() => { void resetPreferences(); }} />
+    <Text style={[styles.infoText, { color: theme.colors.textSecondary }]}>Reset restores System appearance, System Default voice and converter pace (rate 1×, word pause 300 ms). It does not delete progress or other app data.</Text>
+    <Button label="Learning progress and deletion" variant="secondary" onPress={() => router.push('/progress')} />
+  </Screen>;
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    paddingHorizontal: 16,
-    paddingTop: 16,
-  },
-  section: {
-    marginBottom: 24,
-  },
-  sectionTitle: {
-    fontSize: 20,
-    fontWeight: '600',
-    marginBottom: 12,
-  },
-  settingRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    padding: 16,
-    borderRadius: 12,
-    shadowColor: '#000',
-    shadowOpacity: 0.05,
-    shadowRadius: 4,
-    shadowOffset: { width: 0, height: 2 },
-    elevation: 1,
-  },
-  settingInfo: {
-    flex: 1,
-    marginRight: 16,
-  },
-  settingLabel: {
-    fontSize: 16,
-    fontWeight: '500',
-    marginBottom: 4,
-  },
-  settingDescription: {
-    fontSize: 13,
-  },
-  infoText: {
-    fontSize: 14,
-    lineHeight: 20,
-  },
+  group: { gap: 8 },
+  infoText: { fontSize: 16, lineHeight: 24 },
 });

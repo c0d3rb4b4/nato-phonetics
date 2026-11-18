@@ -1,0 +1,376 @@
+[
+  {
+    "file": "light-1280-empty-due-review.png",
+    "theme": "light",
+    "width": 1280,
+    "height": 900,
+    "state": "empty-due-review",
+    "textScale": 1,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T11:37:27.243Z",
+    "command": "node scripts/verify-progress-browser.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run13/final-web"
+    ],
+    "sha256": "c14c2a06aaf6496439b82d9761e5cf789ef9e418a03a76ae56a015b0e8da777e",
+    "candidate": "Run13; source-identity.json and platform native/loaded-JS manifests"
+  },
+  {
+    "file": "light-1280-save-error.png",
+    "theme": "light",
+    "width": 1280,
+    "height": 900,
+    "state": "save-error",
+    "textScale": 1,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T11:37:27.464Z",
+    "command": "node scripts/verify-progress-browser.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run13/final-web"
+    ],
+    "sha256": "f5704207370bc3ae1d244f8965ebe40c771ddcc8d684d32d90a2c7e25ded5fd2",
+    "candidate": "Run13; source-identity.json and platform native/loaded-JS manifests"
+  },
+  {
+    "file": "light-1280-saved-summary.png",
+    "theme": "light",
+    "width": 1280,
+    "height": 900,
+    "state": "saved-summary",
+    "textScale": 1,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T11:37:28.424Z",
+    "command": "node scripts/verify-progress-browser.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run13/final-web"
+    ],
+    "sha256": "ed79ce855a7d387b97d25a0f75faa06d715b4fe54f499b6f3542de2ace617938",
+    "candidate": "Run13; source-identity.json and platform native/loaded-JS manifests"
+  },
+  {
+    "file": "light-1280-saved-symbols.png",
+    "theme": "light",
+    "width": 1280,
+    "height": 900,
+    "state": "saved-symbols",
+    "textScale": 1,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T11:37:28.488Z",
+    "command": "node scripts/verify-progress-browser.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run13/final-web"
+    ],
+    "sha256": "f8d45c22ca957a4e9dd8f599c7d8a6d87c23c2e6f7a603e1947a5cb0e3d4d846",
+    "candidate": "Run13; source-identity.json and platform native/loaded-JS manifests"
+  },
+  {
+    "file": "light-1280-due-review-setup.png",
+    "theme": "light",
+    "width": 1280,
+    "height": 900,
+    "state": "due-review-setup",
+    "textScale": 1,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T11:37:30.326Z",
+    "command": "node scripts/verify-progress-browser.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run13/final-web"
+    ],
+    "sha256": "8130f0aa148a93d304bcf3248c044de91c0a165c2f65e648a2c1b56b9effb826",
+    "candidate": "Run13; source-identity.json and platform native/loaded-JS manifests"
+  },
+  {
+    "file": "light-1280-due-review-question.png",
+    "theme": "light",
+    "width": 1280,
+    "height": 900,
+    "state": "due-review-question",
+    "textScale": 1,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T11:37:30.447Z",
+    "command": "node scripts/verify-progress-browser.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run13/final-web"
+    ],
+    "sha256": "2c305940ec2a5b03e3b996b49d1f988b9d374a2554d79f8f4dce6033d898e2ee",
+    "candidate": "Run13; source-identity.json and platform native/loaded-JS manifests"
+  },
+  {
+    "file": "light-1280-recovered-summary.png",
+    "theme": "light",
+    "width": 1280,
+    "height": 900,
+    "state": "recovered-summary",
+    "textScale": 1,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T11:37:32.202Z",
+    "command": "node scripts/verify-progress-browser.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run13/final-web"
+    ],
+    "sha256": "9823a709ed31be46082bfb1c46356436ed3ecc667443a0acba2dd5bd77e8e619",
+    "candidate": "Run13; source-identity.json and platform native/loaded-JS manifests"
+  },
+  {
+    "file": "light-1280-clear-confirmation.png",
+    "theme": "light",
+    "width": 1280,
+    "height": 900,
+    "state": "clear-confirmation",
+    "textScale": 1,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T11:37:32.308Z",
+    "command": "node scripts/verify-progress-browser.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run13/final-web"
+    ],
+    "sha256": "8acb3f365babd651796fb6e2a72cac0c7b104d3fd18684b120d5aa6dfac9ec42",
+    "candidate": "Run13; source-identity.json and platform native/loaded-JS manifests"
+  },
+  {
+    "file": "light-1280-clear-error.png",
+    "theme": "light",
+    "width": 1280,
+    "height": 900,
+    "state": "clear-error",
+    "textScale": 1,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T11:37:32.457Z",
+    "command": "node scripts/verify-progress-browser.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run13/final-web"
+    ],
+    "sha256": "3ca4bcebdf2f38cb7008d2e3e2bc0285055878870c9a1f2bc76e521f67a43ad9",
+    "candidate": "Run13; source-identity.json and platform native/loaded-JS manifests"
+  },
+  {
+    "file": "light-1280-cleared-summary.png",
+    "theme": "light",
+    "width": 1280,
+    "height": 900,
+    "state": "cleared-summary",
+    "textScale": 1,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T11:37:32.540Z",
+    "command": "node scripts/verify-progress-browser.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run13/final-web"
+    ],
+    "sha256": "97af13fd028fe8f928ee348a77e14426ee5c4d800b53c825c2d0c5f35166c8be",
+    "candidate": "Run13; source-identity.json and platform native/loaded-JS manifests"
+  },
+  {
+    "file": "light-1280-unsupported-schema.png",
+    "theme": "light",
+    "width": 1280,
+    "height": 900,
+    "state": "unsupported-schema",
+    "textScale": 1,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T11:37:33.204Z",
+    "command": "node scripts/verify-progress-browser.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run13/final-web"
+    ],
+    "sha256": "062943638e24730bade85d07c122dfe385a7b66427826ae5ab49c13dbdd103c2",
+    "candidate": "Run13; source-identity.json and platform native/loaded-JS manifests"
+  },
+  {
+    "file": "dark-320-empty-due-review.png",
+    "theme": "dark",
+    "width": 320,
+    "height": 568,
+    "state": "empty-due-review",
+    "textScale": 2,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T11:37:35.332Z",
+    "command": "node scripts/verify-progress-browser.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run13/final-web"
+    ],
+    "sha256": "1c7f3138a02767fbb07eae82fcdae7080bd31f3428736282dfa12de1e1b693e4",
+    "candidate": "Run13; source-identity.json and platform native/loaded-JS manifests"
+  },
+  {
+    "file": "dark-320-save-error.png",
+    "theme": "dark",
+    "width": 320,
+    "height": 568,
+    "state": "save-error",
+    "textScale": 2,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T11:37:35.612Z",
+    "command": "node scripts/verify-progress-browser.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run13/final-web"
+    ],
+    "sha256": "a8bd03c56d684ba9cf178ab4321fd74a584594fcdf9bd3835b60d84fa15df122",
+    "candidate": "Run13; source-identity.json and platform native/loaded-JS manifests"
+  },
+  {
+    "file": "dark-320-saved-summary.png",
+    "theme": "dark",
+    "width": 320,
+    "height": 568,
+    "state": "saved-summary",
+    "textScale": 2,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T11:37:37.354Z",
+    "command": "node scripts/verify-progress-browser.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run13/final-web"
+    ],
+    "sha256": "ed4ce05384f72f88a79fe50a0e2fdc88b7c3b9088f362de20addcb0436e4d795",
+    "candidate": "Run13; source-identity.json and platform native/loaded-JS manifests"
+  },
+  {
+    "file": "dark-320-saved-symbols.png",
+    "theme": "dark",
+    "width": 320,
+    "height": 568,
+    "state": "saved-symbols",
+    "textScale": 2,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T11:37:37.398Z",
+    "command": "node scripts/verify-progress-browser.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run13/final-web"
+    ],
+    "sha256": "116c4a02fa20e388d66c1c4299b4da45d7ca9eddca7f56ab8f87281e8c7a0bb8",
+    "candidate": "Run13; source-identity.json and platform native/loaded-JS manifests"
+  },
+  {
+    "file": "dark-320-due-review-setup.png",
+    "theme": "dark",
+    "width": 320,
+    "height": 568,
+    "state": "due-review-setup",
+    "textScale": 2,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T11:37:39.431Z",
+    "command": "node scripts/verify-progress-browser.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run13/final-web"
+    ],
+    "sha256": "2f957fb3de0f986eb81eb18b4e82bcd12142efc22a8f8cfd8b55ca206c4eff51",
+    "candidate": "Run13; source-identity.json and platform native/loaded-JS manifests"
+  },
+  {
+    "file": "dark-320-due-review-question.png",
+    "theme": "dark",
+    "width": 320,
+    "height": 568,
+    "state": "due-review-question",
+    "textScale": 2,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T11:37:39.562Z",
+    "command": "node scripts/verify-progress-browser.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run13/final-web"
+    ],
+    "sha256": "cf130313def3967eddf4448df9f2fa9a730aeb5f9e417606021c169cffc74f19",
+    "candidate": "Run13; source-identity.json and platform native/loaded-JS manifests"
+  },
+  {
+    "file": "dark-320-recovered-summary.png",
+    "theme": "dark",
+    "width": 320,
+    "height": 568,
+    "state": "recovered-summary",
+    "textScale": 2,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T11:37:41.047Z",
+    "command": "node scripts/verify-progress-browser.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run13/final-web"
+    ],
+    "sha256": "a61486e018f88e572a3d109e4f3e619cb4f41696e5a945c2fe1de1db609ebe5b",
+    "candidate": "Run13; source-identity.json and platform native/loaded-JS manifests"
+  },
+  {
+    "file": "dark-320-clear-confirmation.png",
+    "theme": "dark",
+    "width": 320,
+    "height": 568,
+    "state": "clear-confirmation",
+    "textScale": 2,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T11:37:41.129Z",
+    "command": "node scripts/verify-progress-browser.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run13/final-web"
+    ],
+    "sha256": "9edfa04e6fe1c0f07ab2682d07e59d407f8fc00759cc92e39fea3e9a21f77f7f",
+    "candidate": "Run13; source-identity.json and platform native/loaded-JS manifests"
+  },
+  {
+    "file": "dark-320-clear-error.png",
+    "theme": "dark",
+    "width": 320,
+    "height": 568,
+    "state": "clear-error",
+    "textScale": 2,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T11:37:41.264Z",
+    "command": "node scripts/verify-progress-browser.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run13/final-web"
+    ],
+    "sha256": "32f90808485e16ffe072607321c3d6a33962fb879d952403834a378de55b1373",
+    "candidate": "Run13; source-identity.json and platform native/loaded-JS manifests"
+  },
+  {
+    "file": "dark-320-cleared-summary.png",
+    "theme": "dark",
+    "width": 320,
+    "height": 568,
+    "state": "cleared-summary",
+    "textScale": 2,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T11:37:41.347Z",
+    "command": "node scripts/verify-progress-browser.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run13/final-web"
+    ],
+    "sha256": "d3fea3f89dc46a879a08c8571d1d3c536f036e22c2687312cc824ed9d4300239",
+    "candidate": "Run13; source-identity.json and platform native/loaded-JS manifests"
+  },
+  {
+    "file": "dark-320-unsupported-schema.png",
+    "theme": "dark",
+    "width": 320,
+    "height": 568,
+    "state": "unsupported-schema",
+    "textScale": 2,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T11:37:42.336Z",
+    "command": "node scripts/verify-progress-browser.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run13/final-web"
+    ],
+    "sha256": "39740eccb88151ab5c3c52e8bc0109b4b10ce10fda3bf048d8eb6a39aafad5af",
+    "candidate": "Run13; source-identity.json and platform native/loaded-JS manifests"
+  }
+]

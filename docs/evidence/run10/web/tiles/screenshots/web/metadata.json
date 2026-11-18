@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-17",
+  "capturedAt": "2026-11-18T09:37:13.403Z",
+  "platform": "web",
+  "os": "Darwin 25.6.0 arm64",
+  "browser": "Edg/157.0.4341.60",
+  "command": "node scripts/verify-tiles-browser.cjs /Users/mac/dev/apps/nato-phonetics/dist /Users/mac/dev/apps/nato-phonetics/docs/evidence/run10/web/tiles",
+  "selectedCaseFilter": "converter",
+  "baseline": null,
+  "assets": [
+    {
+      "file": "assets/app-TCRZWG7E.js",
+      "sha256": "9ad01643a2850a92de9acf38ec6423091a45d833d93115d3204e9a41edad1a3d"
+    },
+    {
+      "file": "NatoTile-ExtraBold-P5QNDEHJ.ttf",
+      "sha256": "b0150a84d5e000fcd276cf13e1863ca8bbaab0ff2a0dfdcfa958a48781dd7aa6"
+    },
+    {
+      "file": "NatoTile-Italic-AWOPV6AY.ttf",
+      "sha256": "50f16c8bec3ed31190d37403b6e15d200274e7a5e43f1a698a86eef7079d862b"
+    },
+    {
+      "file": "NatoTile-SemiBold-REJGIRDE.ttf",
+      "sha256": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f"
+    }
+  ],
+  "captures": [
+    {
+      "file": "converter-all-desktop-light-page-1.png",
+      "name": "converter-all-desktop-light",
+      "route": "/converter",
+      "width": 1280,
+      "height": 1200,
+      "theme": "light",
+      "dpr": 1,
+      "controlledRandomSeed": null,
+      "browser": "Edg/157.0.4341.60",
+      "bytes": 123360,
+      "sha256": "1985d6aaba205290d0c699505e3b7d7faf2cff4f2eaf7540f61c2a3e13ad85e6"
+    },
+    {
+      "file": "converter-all-desktop-light-first.png",
+      "name": "converter-all-desktop-light",
+      "route": "/converter",
+      "width": 1280,
+      "height": 1200,
+      "theme": "light",
+      "dpr": 1,
+      "controlledRandomSeed": null,
+      "browser": "Edg/157.0.4341.60",
+      "bytes": 114996,
+      "sha256": "e7ba863d94395c0f4ea5cae6465df994881701e4cd98e5ac3c6ef3e455d14995"
+    },
+    {
+      "file": "converter-all-desktop-light-last.png",
+      "name": "converter-all-desktop-light",
+      "route": "/converter",
+      "width": 1280,
+      "height": 1200,
+      "theme": "light",
+      "dpr": 1,
+      "controlledRandomSeed": null,
+      "browser": "Edg/157.0.4341.60",
+      "bytes": 114996,
+      "sha256": "e7ba863d94395c0f4ea5cae6465df994881701e4cd98e5ac3c6ef3e455d14995"
+    },
+    {
+      "file": "converter-narrow-dark-first.png",
+      "name": "converter-narrow-dark",
+      "route": "/converter",
+      "width": 320,
+      "height": 568,
+      "theme": "dark",
+      "dpr": 2,
+      "controlledRandomSeed": null,
+      "browser": "Edg/157.0.4341.60",
+      "bytes": 92306,
+      "sha256": "54698ffe4581aa34e86ec8e6881167e2f74acd41ce3d42a2dacc55346d1b7ad3"
+    },
+    {
+      "file": "converter-narrow-dark-last.png",
+      "name": "converter-narrow-dark",
+      "route": "/converter",
+      "width": 320,
+      "height": 568,
+      "theme": "dark",
+      "dpr": 2,
+      "controlledRandomSeed": null,
+      "browser": "Edg/157.0.4341.60",
+      "bytes": 37636,
+      "sha256": "078f9b611ba28d03ac6bf980835baa2e1f9664d5342f0f0cd9fe6a778821babc"
+    },
+    {
+      "file": "converter-narrow-200-light-first.png",
+      "name": "converter-narrow-200-light",
+      "route": "/converter",
+      "width": 320,
+      "height": 568,
+      "theme": "light",
+      "dpr": 2,
+      "scale": 2,
+      "controlledRandomSeed": null,
+      "browser": "Edg/157.0.4341.60",
+      "bytes": 80704,
+      "sha256": "4854299a1024a95d0b4e4467e52466c55027503d5adc1cfae9767021b26d8471"
+    },
+    {
+      "file": "converter-narrow-200-light-last.png",
+      "name": "converter-narrow-200-light",
+      "route": "/converter",
+      "width": 320,
+      "height": 568,
+      "theme": "light",
+      "dpr": 2,
+      "scale": 2,
+      "controlledRandomSeed": null,
+      "browser": "Edg/157.0.4341.60",
+      "bytes": 30124,
+      "sha256": "c4c2c9515499dc067824147142c4e4202288a8667208ec77896d68bdcb6e6a80"
+    },
+    {
+      "file": "alphabet-font-load-error.png",
+      "name": "alphabet-font-load-error",
+      "route": "/alphabet",
+      "width": 390,
+      "height": 844,
+      "theme": "system",
+      "dpr": 2,
+      "controlledRandomSeed": null,
+      "browser": "Edg/157.0.4341.60",
+      "bytes": 39559,
+      "sha256": "ba4ce14a95a8d3a738cfa4579218c4bc53f1e8f4faa2f09277a6ba144eb1f790"
+    }
+  ],
+  "inspection": "pending"
+}

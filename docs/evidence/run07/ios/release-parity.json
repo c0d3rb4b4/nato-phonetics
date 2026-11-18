@@ -1,0 +1,275 @@
+{
+  "passed": false,
+  "scope": "Installed Release iPhone DPR3 default/maximum J before/after horizontal scroll plus retained India word/guide; source/font/installed hashes separately verified",
+  "observations": 11,
+  "passedObservations": 8,
+  "envelopePhysicalPixels": 2,
+  "pixelIdenticalToDebug": true,
+  "maximumAbsoluteDelta": 2.042446952148339,
+  "reports": [
+    {
+      "file": "final-release-phone-default-alphabet-J-dark.png",
+      "debugReference": "final-debug-phone-default-alphabet-J-dark.png",
+      "symbol": "J",
+      "part": "letter",
+      "density": 3,
+      "scale": 1,
+      "scaleMethod": "Actual Debug native Dimensions for same device, OS category and unchanged source; no raw Release events claimed",
+      "inkPixels": {
+        "top": 683,
+        "bottom": 761
+      },
+      "expectedInk": {
+        "top": 683.42,
+        "bottom": 761.4014
+      },
+      "deltaPixels": {
+        "top": -0.4199999999999591,
+        "bottom": 0.5986000000000331
+      },
+      "rasterPassed": true,
+      "pixelsDifferent": 0,
+      "maximumChannelDifference": 0
+    },
+    {
+      "file": "final-release-phone-default-alphabet-J-dark.png",
+      "debugReference": "final-debug-phone-default-alphabet-J-dark.png",
+      "symbol": "J",
+      "part": "word",
+      "density": 3,
+      "scale": 1,
+      "scaleMethod": "Actual Debug native Dimensions for same device, OS category and unchanged source; no raw Release events claimed",
+      "inkPixels": {
+        "top": 901,
+        "bottom": 936
+      },
+      "expectedInk": {
+        "top": 901.616,
+        "bottom": 936.2239999999999
+      },
+      "deltaPixels": {
+        "top": -0.6159999999999854,
+        "bottom": 0.7760000000000673
+      },
+      "rasterPassed": true,
+      "pixelsDifferent": 0,
+      "maximumChannelDifference": 0
+    },
+    {
+      "file": "final-release-phone-default-alphabet-J-dark.png",
+      "debugReference": "final-debug-phone-default-alphabet-J-dark.png",
+      "symbol": "J",
+      "part": "guide",
+      "density": 3,
+      "scale": 1,
+      "scaleMethod": "Actual Debug native Dimensions for same device, OS category and unchanged source; no raw Release events claimed",
+      "inkPixels": {
+        "top": 982,
+        "bottom": 1006
+      },
+      "expectedInk": {
+        "top": 982.361,
+        "bottom": 1006.154
+      },
+      "deltaPixels": {
+        "top": -0.36099999999999,
+        "bottom": 0.8460000000000036
+      },
+      "rasterPassed": true,
+      "pixelsDifferent": 0,
+      "maximumChannelDifference": 0
+    },
+    {
+      "file": "final-release-phone-maximum-alphabet-J-dark.png",
+      "debugReference": "final-debug-phone-maximum-alphabet-J-dark.png",
+      "symbol": "I",
+      "part": "word",
+      "density": 3,
+      "scale": 3.571,
+      "scaleMethod": "Actual Debug native Dimensions for same device, OS category and unchanged source; no raw Release events claimed",
+      "inkPixels": {
+        "top": 1196,
+        "bottom": 1320
+      },
+      "expectedInk": {
+        "top": 1195.3728428115235,
+        "bottom": 1318.9580108115235
+      },
+      "deltaPixels": {
+        "top": 0.6271571884765308,
+        "bottom": 2.041989188476464
+      },
+      "rasterPassed": false,
+      "pixelsDifferent": 0,
+      "maximumChannelDifference": 0
+    },
+    {
+      "file": "final-release-phone-maximum-alphabet-J-dark.png",
+      "debugReference": "final-debug-phone-maximum-alphabet-J-dark.png",
+      "symbol": "I",
+      "part": "guide",
+      "density": 3,
+      "scale": 3.571,
+      "scaleMethod": "Actual Debug native Dimensions for same device, OS category and unchanged source; no raw Release events claimed",
+      "inkPixels": {
+        "top": 1484,
+        "bottom": 1569
+      },
+      "expectedInk": {
+        "top": 1483.7132378115236,
+        "bottom": 1568.6780408115237
+      },
+      "deltaPixels": {
+        "top": 0.28676218847635937,
+        "bottom": 1.321959188476285
+      },
+      "rasterPassed": true,
+      "pixelsDifferent": 0,
+      "maximumChannelDifference": 0
+    },
+    {
+      "file": "final-release-phone-maximum-focused-horizontal-alphabet-J-dark.png",
+      "debugReference": "final-debug-phone-maximum-focused-horizontal-alphabet-J-dark.png",
+      "symbol": "J",
+      "part": "letter",
+      "density": 3,
+      "scale": 3.571,
+      "scaleMethod": "Actual Debug native Dimensions for same device, OS category and unchanged source; no raw Release events claimed",
+      "inkPixels": {
+        "top": 946,
+        "bottom": 1226
+      },
+      "expectedInk": {
+        "top": 947.1944690478516,
+        "bottom": 1225.6660484478516
+      },
+      "deltaPixels": {
+        "top": -1.1944690478516122,
+        "bottom": 1.3339515521483918
+      },
+      "rasterPassed": true,
+      "pixelsDifferent": 0,
+      "maximumChannelDifference": 0
+    },
+    {
+      "file": "final-release-phone-maximum-focused-horizontal-alphabet-J-dark.png",
+      "debugReference": "final-debug-phone-maximum-focused-horizontal-alphabet-J-dark.png",
+      "symbol": "J",
+      "part": "word",
+      "density": 3,
+      "scale": 3.571,
+      "scaleMethod": "Actual Debug native Dimensions for same device, OS category and unchanged source; no raw Release events claimed",
+      "inkPixels": {
+        "top": 1727,
+        "bottom": 1851
+      },
+      "expectedInk": {
+        "top": 1726.3723850478516,
+        "bottom": 1849.9575530478517
+      },
+      "deltaPixels": {
+        "top": 0.6276149521484058,
+        "bottom": 2.042446952148339
+      },
+      "rasterPassed": false,
+      "pixelsDifferent": 0,
+      "maximumChannelDifference": 0
+    },
+    {
+      "file": "final-release-phone-maximum-focused-horizontal-alphabet-J-dark.png",
+      "debugReference": "final-debug-phone-maximum-focused-horizontal-alphabet-J-dark.png",
+      "symbol": "J",
+      "part": "guide",
+      "density": 3,
+      "scale": 3.571,
+      "scaleMethod": "Actual Debug native Dimensions for same device, OS category and unchanged source; no raw Release events claimed",
+      "inkPixels": {
+        "top": 2015,
+        "bottom": 2100
+      },
+      "expectedInk": {
+        "top": 2014.7127800478518,
+        "bottom": 2099.677583047852
+      },
+      "deltaPixels": {
+        "top": 0.28721995214823437,
+        "bottom": 1.32241695214816
+      },
+      "rasterPassed": true,
+      "pixelsDifferent": 0,
+      "maximumChannelDifference": 0
+    },
+    {
+      "file": "final-release-phone-maximum-focused-alphabet-J-dark.png",
+      "debugReference": "final-debug-phone-maximum-focused-alphabet-J-dark.png",
+      "symbol": "J",
+      "part": "letter",
+      "density": 3,
+      "scale": 3.571,
+      "scaleMethod": "Actual Debug native Dimensions for same device, OS category and unchanged source; no raw Release events claimed",
+      "inkPixels": {
+        "top": 946,
+        "bottom": 1226
+      },
+      "expectedInk": {
+        "top": 947.1944690478516,
+        "bottom": 1225.6660484478516
+      },
+      "deltaPixels": {
+        "top": -1.1944690478516122,
+        "bottom": 1.3339515521483918
+      },
+      "rasterPassed": true,
+      "pixelsDifferent": 0,
+      "maximumChannelDifference": 0
+    },
+    {
+      "file": "final-release-phone-maximum-focused-alphabet-J-dark.png",
+      "debugReference": "final-debug-phone-maximum-focused-alphabet-J-dark.png",
+      "symbol": "J",
+      "part": "word",
+      "density": 3,
+      "scale": 3.571,
+      "scaleMethod": "Actual Debug native Dimensions for same device, OS category and unchanged source; no raw Release events claimed",
+      "inkPixels": {
+        "top": 1727,
+        "bottom": 1851
+      },
+      "expectedInk": {
+        "top": 1726.3723850478516,
+        "bottom": 1849.9575530478517
+      },
+      "deltaPixels": {
+        "top": 0.6276149521484058,
+        "bottom": 2.042446952148339
+      },
+      "rasterPassed": false,
+      "pixelsDifferent": 0,
+      "maximumChannelDifference": 0
+    },
+    {
+      "file": "final-release-phone-maximum-focused-alphabet-J-dark.png",
+      "debugReference": "final-debug-phone-maximum-focused-alphabet-J-dark.png",
+      "symbol": "J",
+      "part": "guide",
+      "density": 3,
+      "scale": 3.571,
+      "scaleMethod": "Actual Debug native Dimensions for same device, OS category and unchanged source; no raw Release events claimed",
+      "inkPixels": {
+        "top": 2015,
+        "bottom": 2100
+      },
+      "expectedInk": {
+        "top": 2014.7127800478518,
+        "bottom": 2099.677583047852
+      },
+      "deltaPixels": {
+        "top": 0.28721995214823437,
+        "bottom": 1.32241695214816
+      },
+      "rasterPassed": true,
+      "pixelsDifferent": 0,
+      "maximumChannelDifference": 0
+    }
+  ]
+}

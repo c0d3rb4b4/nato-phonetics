@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/Users/mac/dev/apps/nato-phonetics/docs/evidence/run08/android/enlarged-session.py", line 28, in <module>
+    if __name__=='__main__':main()
+  File "/Users/mac/dev/apps/nato-phonetics/docs/evidence/run08/android/enlarged-session.py", line 10, in main
+    route('letter-quiz',cold=True);expect(desc='Start round');click('5 questions');click('Start round')
+  File "/Users/mac/dev/apps/nato-phonetics/docs/evidence/run08/android/verify_native.py", line 94, in route
+    value = adb('shell', 'am', 'start', '-W', '-a', 'android.intent.action.VIEW',
+  File "/Users/mac/dev/apps/nato-phonetics/docs/evidence/run08/android/verify_native.py", line 30, in adb
+    raise RuntimeError(f'adb {args}: {result.stderr.decode()} {result.stdout.decode(errors="replace")}')
+RuntimeError: adb ('shell', 'am', 'start', '-W', '-a', 'android.intent.action.VIEW', '-d', 'natophonetics://letter-quiz', '-p', 'com.natophonetics.app'):  Starting: Intent { act=android.intent.action.VIEW dat=natophonetics://letter-quiz/... pkg=com.natophonetics.app }
+Error: Activity not started, unable to resolve Intent { act=android.intent.action.VIEW dat=natophonetics://letter-quiz/... flg=0x10000000 xflg=0x4 pkg=com.natophonetics.app }
+

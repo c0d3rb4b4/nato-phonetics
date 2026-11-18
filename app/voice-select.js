@@ -1,182 +1,101 @@
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import * as Speech from 'expo-speech';
-import { useEffect, useState } from 'react';
-import { Alert, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { useEffect, useRef, useState } from 'react';
+import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
+import { PlaybackStatus } from '../src/components/PlaybackStatus';
+import { Button, Feedback, Heading, Screen } from '../src/components/ui';
 import { useTheme } from '../src/context/ThemeContext';
+import { usePlayback } from '../src/hooks/usePlayback';
+import { NATO_ALPHABET } from '../src/data/natoData';
+import { loadEnglishVoices } from '../src/lib/speech';
+import { filterEnglishVoices } from '../src/lib/audioVoices';
 
 export default function VoiceSelectScreen() {
-  const { theme } = useTheme();
-  const [voices, setVoices] = useState([]);
-  const [selectedVoice, setSelectedVoice] = useState(null);
-
-  useEffect(() => {
-    loadVoices();
-    loadSelectedVoice();
-  }, []);
-
+  const { theme, preferences, setSelectedVoice, isSaving } = useTheme();
+  const audio = usePlayback('voice-select');
+  const [voices, setVoices] = useState(/** @type {Awaited<ReturnType<typeof loadEnglishVoices>>} */ ([]));
+  const [state, setState] = useState('loading');
+  const [query, setQuery] = useState('');
+  const [locale, setLocale] = useState('');
+  const generation = useRef(0);
   const loadVoices = async () => {
+    const request = ++generation.current;
+    setState('loading');
     try {
-      const availableVoices = await Speech.getAvailableVoicesAsync();
-      // Try to get Enhanced quality voices first
-      let englishVoices = availableVoices.filter(v => 
-        v.language.startsWith('en') && v.quality === 'Enhanced'
-      );
-      
-      // Fallback to any English voices if no Enhanced ones
-      if (englishVoices.length === 0) {
-        englishVoices = availableVoices.filter(v => 
-          v.language.startsWith('en')
-        );
-      }
-      
-      englishVoices.sort((a, b) => a.name.localeCompare(b.name));
-      setVoices(englishVoices);
-      
-      if (englishVoices.length === 0) {
-        Alert.alert('No Voices Available', 'No English voices were found on this device.');
-      }
-    } catch (e) {
-      console.error('Error loading voices:', e);
-      Alert.alert('Error', 'Failed to load available voices. Please try again.');
+      const found = await loadEnglishVoices();
+      if (request !== generation.current) return;
+      setVoices(found);
+      setLocale(value => found.some(voice => voice.language === value) ? value : '');
+      setState(found.length ? 'ready' : 'empty');
+    } catch {
+      if (request === generation.current) setState('error');
     }
   };
-
-  const loadSelectedVoice = async () => {
-    try {
-      const saved = await AsyncStorage.getItem('selectedVoice');
-      if (saved) {
-        setSelectedVoice(saved);
-      }
-    } catch (e) {
-      console.error('Error loading voice:', e);
-      Alert.alert('Error', 'Failed to load your saved voice preference.');
-    }
-  };
-
-  const handleVoiceSelect = async (voiceIdentifier) => {
-    setSelectedVoice(voiceIdentifier);
-    try {
-      await AsyncStorage.setItem('selectedVoice', voiceIdentifier);
-      // Test the voice with a NATO phrase
-      Speech.speak('Alpha Bravo Charlie Delta Echo Foxtrot', { 
-        voice: voiceIdentifier,
-        language: 'en-GB'
-      });
-    } catch (e) {
-      console.error('Error saving voice:', e);
-      Alert.alert('Error', 'Failed to save voice selection. Please try again.');
-    }
-  };
-
-  return (
-    <ScrollView style={[styles.container, { backgroundColor: theme.colors.background }]}>
-      <View style={styles.section}>
-        <Text style={[styles.sectionTitle, { color: theme.colors.text }]}>
-          Select Voice
-        </Text>
-        <Text style={[styles.infoText, { color: theme.colors.textSecondary }]}>
-          Tap a voice to preview and select it
-        </Text>
+  useEffect(() => {
+    void loadVoices();
+    return () => { generation.current += 1; };
+  }, []);
+  const selected = preferences.selectedVoice;
+  const locales = [...new Set(voices.map(voice => voice.language))];
+  const filtered = filterEnglishVoices(voices, query, locale);
+  const removed = selected && state === 'ready' && !voices.some(voice => voice.identifier === selected);
+  const textColor = { color: theme.colors.text };
+  /** @param {string | null} id */
+  const select = (id) => { audio.stop(); void setSelectedVoice(id); };
+  /** @param {string | null} id */
+  const preview = (id) => { void audio.play(NATO_ALPHABET.slice(0, 3).map(entry => ({ text: entry.speechText })), { voice: id }); };
+  return <Screen>
+    <Heading>Select Voice</Heading>
+    <Text style={[styles.info, { color: theme.colors.textSecondary }]}>Choose a voice to save it. Preview plays a sample without changing your saved choice. All available English voices are listed by locale and quality.</Text>
+    {isSaving && <Feedback message="Saving settings…" />}
+    <PlaybackStatus audio={audio} />
+    <View testID="voice-list">
+      <Pressable accessibilityRole="radio" accessibilityLabel="System Default"
+        accessibilityState={{ checked: selected === null }} aria-checked={selected === null}
+        onPress={() => select(null)} style={[styles.voice, { backgroundColor: theme.colors.surface, borderColor: selected === null ? theme.colors.primary : theme.colors.border }]}>
+        <Text style={[styles.name, textColor]}>System Default {selected === null ? '✓' : ''}</Text>
+        <Text style={{ color: theme.colors.textSecondary }}>Let the speech provider choose a voice</Text>
+      </Pressable>
+      <Button label="Preview System Default" variant="secondary" onPress={() => preview(null)} />
+      <View testID="voice-status">
+        {state === 'loading' && <Feedback message="Loading English voices…" />}
+        {state === 'error' && <Feedback error message="Could not load voices. Try again or use System Default." />}
+        {state === 'empty' && <Feedback message="No English voices found. Install an English voice in your device settings, then retry. System Default may still work." />}
+        {removed && <Feedback message="Your saved voice is no longer available. Playback will use System Default; choose an available voice or save System Default below." />}
       </View>
-
-      <View style={styles.section}>
-        {voices.length === 0 ? (
-          <View style={[styles.voiceOption, { backgroundColor: theme.colors.surface }]}>
-            <Text style={[styles.settingLabel, { color: theme.colors.textSecondary }]}>
-              No English voices available on this device
-            </Text>
-          </View>
-        ) : (
-          voices.map((voice) => (
-            <Pressable
-              key={voice.identifier}
-              onPress={() => handleVoiceSelect(voice.identifier)}
-              style={[
-                styles.voiceOption,
-                { 
-                  backgroundColor: theme.colors.surface,
-                  borderColor: selectedVoice === voice.identifier 
-                    ? '#3B82F6' 
-                    : theme.colors.border,
-                  borderWidth: selectedVoice === voice.identifier ? 2 : 1,
-                }
-              ]}
-            >
-              <View style={styles.settingInfo}>
-                <Text style={[styles.settingLabel, { color: theme.colors.text }]}>
-                  {voice.name}
-                </Text>
-                <Text style={[styles.settingDescription, { color: theme.colors.textSecondary }]}>
-                  {voice.language} • {voice.quality || 'Standard'}
-                </Text>
-              </View>
-              {selectedVoice === voice.identifier && (
-                <View style={styles.selectedBadge}>
-                  <Text style={styles.selectedText}>✓</Text>
-                </View>
-              )}
-            </Pressable>
-          ))
-        )}
-      </View>
-    </ScrollView>
-  );
+      <Button label="Retry voice list" variant="secondary" onPress={() => { void loadVoices(); }} />
+      {state === 'ready' && <View style={styles.filters}>
+        <Heading>Find a voice</Heading>
+        <Text style={textColor}>Search by name, locale code or quality. Filters do not change your saved voice.</Text>
+        <TextInput testID="voice-search" accessibilityLabel="Search English voices" value={query}
+          placeholder="Name, locale or quality" placeholderTextColor={theme.colors.textSecondary}
+          autoCapitalize="none" autoCorrect={false} spellCheck={false}
+          onChangeText={value => { audio.stop(); setQuery(value); }}
+          style={[styles.search, { color: theme.colors.text, borderColor: theme.colors.border, backgroundColor: theme.colors.surface }]} />
+        {['', ...locales].map(value => <Button key={value} label={value ? `Locale ${value}` : 'All English locales'}
+          variant="secondary" accessibilityRole="radio" accessibilityState={{ checked: locale === value }} selected={locale === value}
+          onPress={() => { audio.stop(); setLocale(value); }} />)}
+        <Button label="Reset voice filters" variant="secondary" disabled={!query && !locale}
+          onPress={() => { audio.stop(); setQuery(''); setLocale(''); }} />
+        <Text testID="voice-filter-count" accessibilityLiveRegion="polite" style={textColor}>Showing {filtered.length} of {voices.length} English voices.</Text>
+        {!filtered.length && <Feedback message="No voices match these filters. Reset voice filters to see all available English voices." />}
+      </View>}
+      {state === 'ready' && filtered.map((voice, index) => <View key={voice.identifier}>
+        {(index === 0 || filtered[index - 1].language !== voice.language) && <Heading>{voice.language}</Heading>}
+        <Pressable accessibilityRole="radio" accessibilityLabel={`${voice.name}, ${voice.language}`}
+          accessibilityState={{ checked: selected === voice.identifier }} aria-checked={selected === voice.identifier}
+          onPress={() => select(voice.identifier)}
+          style={[styles.voice, { backgroundColor: theme.colors.surface, borderColor: selected === voice.identifier ? theme.colors.primary : theme.colors.border }]}>
+          <Text style={[styles.name, textColor]}>{voice.name} {selected === voice.identifier ? '✓' : ''}</Text>
+          <Text style={{ color: theme.colors.textSecondary }}>{voice.language} · {voice.quality || 'Default'}</Text>
+        </Pressable>
+        <Button label={`Preview ${voice.name}`} variant="secondary" onPress={() => preview(voice.identifier)} />
+      </View>)}
+    </View>
+  </Screen>;
 }
-
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    paddingHorizontal: 16,
-    paddingTop: 16,
-  },
-  section: {
-    marginBottom: 24,
-  },
-  sectionTitle: {
-    fontSize: 20,
-    fontWeight: '600',
-    marginBottom: 8,
-  },
-  infoText: {
-    fontSize: 14,
-    lineHeight: 20,
-  },
-  settingInfo: {
-    flex: 1,
-    marginRight: 16,
-  },
-  settingLabel: {
-    fontSize: 16,
-    fontWeight: '500',
-    marginBottom: 4,
-  },
-  settingDescription: {
-    fontSize: 13,
-  },
-  voiceOption: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    padding: 16,
-    borderRadius: 12,
-    marginBottom: 8,
-    shadowColor: '#000',
-    shadowOpacity: 0.05,
-    shadowRadius: 4,
-    shadowOffset: { width: 0, height: 2 },
-    elevation: 1,
-  },
-  selectedBadge: {
-    width: 28,
-    height: 28,
-    borderRadius: 14,
-    backgroundColor: '#3B82F6',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  selectedText: {
-    color: '#FFFFFF',
-    fontSize: 16,
-    fontWeight: '600',
-  },
+  filters: { gap: 10, marginTop: 12 },
+  search: { borderWidth: 1, borderRadius: 12, padding: 12, fontSize: 16, minHeight: 48 },
+  info: { fontSize: 15, lineHeight: 23, marginBottom: 12 },
+  voice: { padding: 16, borderRadius: 12, borderWidth: 2, marginVertical: 8, minHeight: 52 },
+  name: { fontSize: 17, fontWeight: '600', marginBottom: 4 },
 });

@@ -1,0 +1,1518 @@
+{
+  "date": "2026-11-17",
+  "checkedAt": "2026-11-17T17:30:33.548433+00:00",
+  "scope": "Documentation priority review; historical candidate artifact/image checks only; no new app acceptance",
+  "passed": true,
+  "errors": [],
+  "baseCommit": "784bb93c5cfb6edfd318d0dcec2d54d5bb222483",
+  "initialMaintainedFilesMatched": 184,
+  "maintainedSourceFilesAfter": 185,
+  "modifiedMaintainedDocuments": [
+    "README.md",
+    "docs/APP_REVIEW.md",
+    "docs/DELIVERY_PLAN.md",
+    "docs/EXECUTION_PROMPT.md",
+    "docs/TILE_DESIGN.md"
+  ],
+  "addedMaintainedDocuments": [
+    "docs/DELIVERY_PRIORITY_REVIEW.md"
+  ],
+  "removedMaintainedFiles": [],
+  "unchangedPriorMaintainedFiles": 179,
+  "inheritedTrackedDeletionsUnchanged": true,
+  "documents": [
+    {
+      "file": "README.md",
+      "sha256": "f9f279a8ba6004c474255f3987a411555b80fed8df20810738f5b8f05f10bb0f"
+    },
+    {
+      "file": "docs/APP_REVIEW.md",
+      "sha256": "cd67abf38eb425f4eb443ff4b9f46ab4e4d15ca6f5463f6b24f27282c5f4176e"
+    },
+    {
+      "file": "docs/DELIVERY_PLAN.md",
+      "sha256": "9ea659063d7abbb489cc927c1a11b4d592b1d8b26c41a8f760e650b0daf8e6e0"
+    },
+    {
+      "file": "docs/EXECUTION_PROMPT.md",
+      "sha256": "7d9ca49c5a20f1e750f2394f8c6bea4e01223319662c3811e534501db319411e"
+    },
+    {
+      "file": "docs/TILE_DESIGN.md",
+      "sha256": "3c2d8941e57495d9950d4efec21c74afa5292b66f21f2c5b6dba24928b99199f"
+    },
+    {
+      "file": "docs/DELIVERY_PRIORITY_REVIEW.md",
+      "sha256": "b60e5d595425a31d392c15d8ec65f3020b0bd90cde40b9b755549c8cd7c71299"
+    }
+  ],
+  "localLinksChecked": 284,
+  "localLinks": [
+    {
+      "document": "README.md",
+      "destination": "docs/DELIVERY_PLAN.md",
+      "valid": true
+    },
+    {
+      "document": "README.md",
+      "destination": "docs/evidence/run07/README.md",
+      "valid": true
+    },
+    {
+      "document": "README.md",
+      "destination": "docs/DELIVERY_PRIORITY_REVIEW.md",
+      "valid": true
+    },
+    {
+      "document": "README.md",
+      "destination": "docs/NATIVE_BUILDS.md",
+      "valid": true
+    },
+    {
+      "document": "README.md",
+      "destination": "docs/P00_MIGRATION.md",
+      "valid": true
+    },
+    {
+      "document": "README.md",
+      "destination": "scripts/patch-native-tts.cjs",
+      "valid": true
+    },
+    {
+      "document": "README.md",
+      "destination": ".github/workflows/native-builds.yml",
+      "valid": true
+    },
+    {
+      "document": "README.md",
+      "destination": "docs/SECURITY_REVIEW.md",
+      "valid": true
+    },
+    {
+      "document": "README.md",
+      "destination": "docs/TILE_DESIGN.md",
+      "valid": true
+    },
+    {
+      "document": "README.md",
+      "destination": "docs/AUDIO_VALIDATION.md",
+      "valid": true
+    },
+    {
+      "document": "README.md",
+      "destination": "PRIVACY.md",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "DELIVERY_PRIORITY_REVIEW.md",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "DELIVERY_PLAN.md#impact-triage-and-investigation-limits",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../app/letter-quiz.js",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../src/App.js",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../package.json",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../src/data/natoData.js",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../app/converter.js",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../src/data/natoData.js",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../app/converter.js",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../PRIVACY.md",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../app/about.js",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../app/voice-select.js",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../app/_layout.js",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../app/settings.js",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../app/letter-quiz.js",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../app/letter-quiz.js",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../app/alphabet.js",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../package-lock.json",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../src/lib/speech.js",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../app/letter-quiz.js",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../src/data/quizDistractors.js",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../app/letter-quiz.js",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../app/voice-select.js",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../app/settings.js",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../src/context/ThemeContext.js",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../.github/workflows/ci.yml",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../tsconfig.json",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../app/letter-quiz.js",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../app/converter.js",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../app/converter.js",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../scripts/generate-icons.js",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../assets/images/test.svg",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../app/about.js",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../app/menu.js",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../src/App.js",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../scripts/generate-icons.js",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../package.json",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../.github/workflows/ci.yml",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../../eclipse-timer/.github/workflows/eas-build.yml",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "DELIVERY_PLAN.md#p00--remove-expo-and-own-native-builds",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "evidence/run03/screenshots/web/alphabet-desktop-light.png",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "evidence/run03/screenshots/ios/alphabet-light.png",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "../app/alphabet.js",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "evidence/run04/screenshots/index.md",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "DELIVERY_PLAN.md#p05--make-the-application-accessible-and-dependable-to-navigate",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "DELIVERY_PLAN.md#current-delivery-order-and-residual-engineering-queue",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "DELIVERY_PLAN.md",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "EXECUTION_PROMPT.md",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "DELIVERY_PLAN.md#complete-scope-and-resolution-ledger",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "evidence/run07/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "evidence/run07/shared/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "evidence/run07/web/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "evidence/run07/android/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "evidence/run07/android/window-report.md",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "evidence/run07/ios/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "evidence/run07/source-identity.json",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "evidence/run07/screenshots/index.md",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "DELIVERY_PRIORITY_REVIEW.md",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "DELIVERY_PLAN.md#current-delivery-order-and-residual-engineering-queue",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "evidence/priority-review-2026-11-17/verification.json",
+      "valid": true
+    },
+    {
+      "document": "docs/APP_REVIEW.md",
+      "destination": "DELIVERY_PLAN.md#run-07--17-november-2026",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "APP_REVIEW.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "DELIVERY_PRIORITY_REVIEW.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/source-identity.json",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "EXECUTION_PROMPT.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "DELIVERY_PRIORITY_REVIEW.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/android/next-investigation.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/screenshots/android/final-quiz-controls-dark-scale2.png",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/android/diagnostics/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/ios/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run04/ios/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/ios/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "SECURITY_REVIEW.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "../../eclipse-timer/.github/workflows/eas-build.yml",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "../../eclipse-timer/documents/planning/self-hosted-macos-runner.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run04/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run04/screenshots/index.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/android/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/android/next-investigation.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run05/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/shared/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/ios/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "../src/lib/quizSession.js",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "../tests/quiz-session.test.mjs",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run05/shared/contrast-review.json",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run04/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run05/shared/QUIZ_SESSION.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "../../eclipse-timer/.github/workflows/android-emulator-screenshots.yml",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "../../eclipse-timer/.github/workflows/ios-simulator-screenshots.yml",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "#run-01--16-november-2026",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "#run-02--16-november-2026",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "#run-03--16-november-2026",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run03/screenshots/index.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "#run-04--16-november-2026",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run04/screenshots/index.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run05/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run05/screenshots/index.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run06/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run06/screenshots/index.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/screenshots/index.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "DELIVERY_PRIORITY_REVIEW.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/priority-review-2026-11-17/verification.json",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "SECURITY_REVIEW.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run01-code-sha256.txt",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "AUDIO_VALIDATION.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run02-home-hydration.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run02-tests.txt",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run02-browser.txt",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run02-preferences-browser.txt",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run02-home-hydration.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run02-code-sha256.txt",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run03-code-sha256.txt",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "P00_MIGRATION.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run03-install.txt",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run03-lint.txt",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run03-types.txt",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run03-type-probes.txt",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run03-tests.txt",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run03-no-expo.txt",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run03-audit.json",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run03-audit-review.txt",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "SECURITY_REVIEW.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run03/web-build.log",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run03/browser-app.log",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run03/browser-preferences.log",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run03-native-static-checks.txt",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run03-pod-final-locked.txt",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run03-android-bundle.txt",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run03-ios-bundle.txt",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run03/capture-ios-ui.swift",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run03/capture-ios-final-ui.log",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run03-fmt-patch-checks.txt",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run03-ios-build-patched.txt",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run03-ios-final-input-build.txt",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run03-ios-final-input-install-launch.txt",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run03-ios-artifact.json",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run03-android-build-retry.txt",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run03/screenshots/index.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run03/screenshots/ios/home-dark-restarted.png",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run03/screenshots/ios/converter-populated-light.png",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run03/screenshots/web/home-mobile-dark.png",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run03/screenshots/web/converter-desktop-light.png",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run03/screenshots/index.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run03/input-control/test.log",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run03/input-control/InputControlUITests.swift",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run04/shared/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run04/android/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run04/android/artifact.json",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run04/ios/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run04/ios/artifact.json",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run04/screenshots/index.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run04/screenshots/android/converter-populated-light.png",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run04/screenshots/ios/audio-playing.png",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run04/screenshots/web/home-mobile-dark.png",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run04/source-sha256.txt",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run04/artifact-verification.json",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run05/shared/initial-status.txt",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "TILE_DESIGN.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "fixtures/tile-reference.html",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run05/shared/contrast-review.json",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run05/shared/QUIZ_SESSION.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run05/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run05/screenshots/index.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run05/screenshots/web/alphabet-desktop-light-first.png",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run05/screenshots/android/converter-light.png",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run05/screenshots/ios/phone-converter-light.png",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run05/source-identity.json",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run05/artifact-verification.json",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run05/document-verification.json",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run05/android/live-font-scale-diagnosis.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run05/ios/window-resize-report.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run05/native-window-resize-investigation.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run06/shared/resume-comparison.json",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run06/android/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run06/android/upstream-investigation.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run06/ios/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run06/ios/raster-summary.json",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run06/shared/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run06/web/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run06/android/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run06/ios/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run06/document-verification.json",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run06/source-identity.json",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run06/android/artifact.json",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run06/android/loaded-javascript.json",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run06/ios/artifact.json",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run06/screenshots/index.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run06/screenshots/web/converter-narrow-dark-first.png",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run06/screenshots/android/ordinary-transition-1-scale2.png",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run06/screenshots/android/quiz-feedback-controls-scale2.png",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run06/screenshots/ios/ipad-header-small.png",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run06/screenshots/ios/maximum-final-converter-maximum-0-dark.png",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/shared/resume-comparison.json",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/shared/initial-git-status.txt",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/shared/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/web/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/android/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/ios/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/document-verification.json",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/source-identity.json",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/android/artifact.json",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/ios/debug-artifact.json",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/ios/artifact.json",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/screenshots/index.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/screenshots/web/converter-narrow-dark-last.png",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/screenshots/android/final-converter-dark-scale2-4.png",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/screenshots/android/window-split-large.png",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/screenshots/android/final-quiz-controls-dark-scale2.png",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/screenshots/ios/final-debug-maximum-alphabet-J-dark.png",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/screenshots/ios/final-release-phone-maximum-focused-alphabet-J-dark.png",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/android/next-investigation.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/shared/ios-dpr3-fringe-analysis.json",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "DELIVERY_PRIORITY_REVIEW.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/priority-review-2026-11-17/verification.json",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PLAN.md",
+      "destination": "evidence/run07/screenshots/index.md",
+      "valid": true
+    },
+    {
+      "document": "docs/EXECUTION_PROMPT.md",
+      "destination": "DELIVERY_PLAN.md#screenshot-evidence-before-the-final-summary",
+      "valid": true
+    },
+    {
+      "document": "docs/TILE_DESIGN.md",
+      "destination": "../src/lib/tileDesign.js",
+      "valid": true
+    },
+    {
+      "document": "docs/TILE_DESIGN.md",
+      "destination": "../src/components/NatoTile.js",
+      "valid": true
+    },
+    {
+      "document": "docs/TILE_DESIGN.md",
+      "destination": "fixtures/tile-reference.html",
+      "valid": true
+    },
+    {
+      "document": "docs/TILE_DESIGN.md",
+      "destination": "DELIVERY_PRIORITY_REVIEW.md",
+      "valid": true
+    },
+    {
+      "document": "docs/TILE_DESIGN.md",
+      "destination": "DELIVERY_PLAN.md#current-delivery-order-and-residual-engineering-queue",
+      "valid": true
+    },
+    {
+      "document": "docs/TILE_DESIGN.md",
+      "destination": "evidence/run05/android/live-font-scale-diagnosis.md",
+      "valid": true
+    },
+    {
+      "document": "docs/TILE_DESIGN.md",
+      "destination": "evidence/run06/android/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/TILE_DESIGN.md",
+      "destination": "evidence/run05/shared/contrast-review.json",
+      "valid": true
+    },
+    {
+      "document": "docs/TILE_DESIGN.md",
+      "destination": "../assets/fonts/OFL-Nunito.txt",
+      "valid": true
+    },
+    {
+      "document": "docs/TILE_DESIGN.md",
+      "destination": "../assets/fonts/manifest.json",
+      "valid": true
+    },
+    {
+      "document": "docs/TILE_DESIGN.md",
+      "destination": "evidence/run06/ios/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/TILE_DESIGN.md",
+      "destination": "evidence/run05/android/digit3-fringe-analysis.json",
+      "valid": true
+    },
+    {
+      "document": "docs/TILE_DESIGN.md",
+      "destination": "evidence/run07/shared/fidelity-audit.md",
+      "valid": true
+    },
+    {
+      "document": "docs/TILE_DESIGN.md",
+      "destination": "evidence/run07/android/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/TILE_DESIGN.md",
+      "destination": "evidence/run07/ios/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/TILE_DESIGN.md",
+      "destination": "evidence/run07/shared/ios-dpr3-fringe-analysis.json",
+      "valid": true
+    },
+    {
+      "document": "docs/TILE_DESIGN.md",
+      "destination": "evidence/run07/ios/phone-india-fringe.json",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PRIORITY_REVIEW.md",
+      "destination": "DELIVERY_PLAN.md#run-01--16-november-2026",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PRIORITY_REVIEW.md",
+      "destination": "evidence/run01-code-sha256.txt",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PRIORITY_REVIEW.md",
+      "destination": "evidence/run02-tests.txt",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PRIORITY_REVIEW.md",
+      "destination": "evidence/run02-browser.txt",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PRIORITY_REVIEW.md",
+      "destination": "evidence/run02-home-hydration.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PRIORITY_REVIEW.md",
+      "destination": "P00_MIGRATION.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PRIORITY_REVIEW.md",
+      "destination": "DELIVERY_PLAN.md#run-03--16-november-2026",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PRIORITY_REVIEW.md",
+      "destination": "evidence/run03/input-control/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PRIORITY_REVIEW.md",
+      "destination": "evidence/run04/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PRIORITY_REVIEW.md",
+      "destination": "evidence/run04/ios/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PRIORITY_REVIEW.md",
+      "destination": "evidence/run05/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PRIORITY_REVIEW.md",
+      "destination": "evidence/run05/shared/QUIZ_SESSION.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PRIORITY_REVIEW.md",
+      "destination": "evidence/run06/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PRIORITY_REVIEW.md",
+      "destination": "evidence/run07/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PRIORITY_REVIEW.md",
+      "destination": "evidence/run07/shared/source-changes.json",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PRIORITY_REVIEW.md",
+      "destination": "evidence/run07/screenshots/android/final-quiz-controls-dark-scale2.png",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PRIORITY_REVIEW.md",
+      "destination": "evidence/run07/android/diagnostics/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PRIORITY_REVIEW.md",
+      "destination": "evidence/run05/shared/QUIZ_SESSION.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PRIORITY_REVIEW.md",
+      "destination": "../app/letter-quiz.js",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PRIORITY_REVIEW.md",
+      "destination": "../app/converter.js",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PRIORITY_REVIEW.md",
+      "destination": "../src/lib/conversion.js",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PRIORITY_REVIEW.md",
+      "destination": "SECURITY_REVIEW.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PRIORITY_REVIEW.md",
+      "destination": "evidence/run07/ios/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PRIORITY_REVIEW.md",
+      "destination": "evidence/run07/shared/ios-dpr3-fringe-analysis.json",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PRIORITY_REVIEW.md",
+      "destination": "evidence/run04/ios/README.md",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PRIORITY_REVIEW.md",
+      "destination": "DELIVERY_PLAN.md#impact-triage-and-investigation-limits",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PRIORITY_REVIEW.md",
+      "destination": "evidence/priority-review-2026-11-17/initial-state.json",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PRIORITY_REVIEW.md",
+      "destination": "evidence/run03/screenshots/ios/alphabet-light.png",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PRIORITY_REVIEW.md",
+      "destination": "evidence/run07/screenshots/android/final-quiz-controls-dark-scale2.png",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PRIORITY_REVIEW.md",
+      "destination": "evidence/run07/screenshots/ios/final-release-phone-maximum-focused-alphabet-J-dark.png",
+      "valid": true
+    },
+    {
+      "document": "docs/DELIVERY_PRIORITY_REVIEW.md",
+      "destination": "evidence/priority-review-2026-11-17/verification.json",
+      "valid": true
+    },
+    {
+      "document": "docs/EXECUTION_PROMPT.md (copied prompt)",
+      "destination": "nato-phonetics/",
+      "base": "parent apps workspace",
+      "valid": true
+    },
+    {
+      "document": "docs/EXECUTION_PROMPT.md (copied prompt)",
+      "destination": "nato-phonetics/docs/DELIVERY_PLAN.md",
+      "base": "parent apps workspace",
+      "valid": true
+    },
+    {
+      "document": "docs/EXECUTION_PROMPT.md (copied prompt)",
+      "destination": "nato-phonetics/docs/APP_REVIEW.md",
+      "base": "parent apps workspace",
+      "valid": true
+    }
+  ],
+  "ledgerCounts": {
+    "open": 7,
+    "in-progress": 12,
+    "implemented-awaiting-M11": 12,
+    "resolved": 4,
+    "blocked": 0,
+    "scope-change-approved": 0
+  },
+  "tasksAndPhasesUnchanged": true,
+  "historicalCaptureTotals": {
+    "total": 92,
+    "final": 81,
+    "diagnostic": 11
+  },
+  "historicalArtifactHashChecks": 52,
+  "historicalArtifactFindings": [],
+  "historicalSourceIdentityDisposition": "Run07 identity remains frozen; five documentation amendments intentionally supersede it. All other prior maintained files match.",
+  "historicalEvidenceDisposition": "Prior evidence files not edited. Run07 screenshot/artifact identities rechecked read-only; no historical reports refrozen.",
+  "originalScreenshotsReopened": [
+    {
+      "file": "docs/evidence/run03/screenshots/ios/alphabet-light.png",
+      "sha256": "5c8bfc62b75db2143cc72ed6b4aa8058d4dc8bed3ba3a64f689d3913f8b419e4"
+    },
+    {
+      "file": "docs/evidence/run07/screenshots/android/final-quiz-controls-dark-scale2.png",
+      "sha256": "20ba1afdcf3fcab1318bdfa0b97e96465055a8e2fe133dc3955f5f08fb8426bf"
+    },
+    {
+      "file": "docs/evidence/run07/screenshots/ios/final-release-phone-maximum-focused-alphabet-J-dark.png",
+      "sha256": "de59abb008a4de76954c5fcaa65ef73bb0eaf9328aed0cade9fc64ea6df221c6"
+    }
+  ],
+  "newAppScreenshots": {
+    "status": "not-applicable",
+    "reason": "Documentation-only assessment; no changed application flow."
+  },
+  "newApplicationTestsBuilds": {
+    "status": "not-run-not-applicable",
+    "reason": "No application/native/dependency change; prior results retain their original scope."
+  },
+  "promptAsciiCharacters": 977,
+  "diffCheckPassed": true,
+  "reviewAuditorSha256": "c6f8c2a78b8704b6b22cc7290b0dfca578ebdd7dd344a82c0093812ccfd53488"
+}

@@ -1,0 +1,524 @@
+{
+  "probe": {
+    "dimensions": {
+      "fontScale": 1,
+      "height": 914.2857142857143,
+      "scale": 1.75,
+      "width": 411.42857142857144
+    },
+    "events": [
+      {
+        "kind": "control",
+        "lines": [
+          {
+            "ascender": 16.571428298950195,
+            "capHeight": 11.091428756713867,
+            "descender": 4,
+            "height": 20.571428298950195,
+            "text": "Tap a card to hear the ",
+            "width": 153.7142791748047,
+            "x": 0,
+            "xHeight": 8.199999809265137,
+            "y": 0
+          },
+          {
+            "ascender": 14.285714149475098,
+            "capHeight": 11.091428756713867,
+            "descender": 4,
+            "height": 18.285715103149414,
+            "text": "word. New playback ",
+            "width": 141.4575958251953,
+            "x": 0,
+            "xHeight": 8.199999809265137,
+            "y": 20.571428298950195
+          },
+          {
+            "ascender": 14.285714149475098,
+            "capHeight": 11.091428756713867,
+            "descender": 4.5714287757873535,
+            "height": 18.85714340209961,
+            "text": "replaces current audio.",
+            "width": 156.85714721679688,
+            "x": 0,
+            "xHeight": 8.199999809265137,
+            "y": 38.85714340209961
+          }
+        ],
+        "name": "body",
+        "scale": 1
+      },
+      {
+        "kind": "candidate",
+        "lines": [
+          {
+            "ascender": 16.571428298950195,
+            "capHeight": 11.091428756713867,
+            "descender": 4,
+            "height": 20.571428298950195,
+            "text": "Tap a card to hear the ",
+            "width": 153.7142791748047,
+            "x": 0,
+            "xHeight": 8.199999809265137,
+            "y": 0
+          },
+          {
+            "ascender": 14.285714149475098,
+            "capHeight": 11.091428756713867,
+            "descender": 4,
+            "height": 18.285715103149414,
+            "text": "word. New playback ",
+            "width": 141.4575958251953,
+            "x": 0,
+            "xHeight": 8.199999809265137,
+            "y": 20.571428298950195
+          },
+          {
+            "ascender": 14.285714149475098,
+            "capHeight": 11.091428756713867,
+            "descender": 4.5714287757873535,
+            "height": 18.85714340209961,
+            "text": "replaces current audio.",
+            "width": 156.85714721679688,
+            "x": 0,
+            "xHeight": 8.199999809265137,
+            "y": 38.85714340209961
+          }
+        ],
+        "name": "body",
+        "scale": 1
+      },
+      {
+        "kind": "control",
+        "lines": [
+          {
+            "ascender": 28,
+            "capHeight": 18.89714241027832,
+            "descender": 6.285714149475098,
+            "height": 34.28571319580078,
+            "text": "NATO ",
+            "width": 75.4375,
+            "x": 0,
+            "xHeight": 13.965714454650879,
+            "y": 0
+          },
+          {
+            "ascender": 24.571428298950195,
+            "capHeight": 18.89714241027832,
+            "descender": 6.285714149475098,
+            "height": 30.85714340209961,
+            "text": "Phonetic ",
+            "width": 112,
+            "x": 0,
+            "xHeight": 13.965714454650879,
+            "y": 34.28571319580078
+          },
+          {
+            "ascender": 24.571428298950195,
+            "capHeight": 18.89714241027832,
+            "descender": 7.4285712242126465,
+            "height": 32,
+            "text": "Alphabet",
+            "width": 106.85713958740234,
+            "x": 0,
+            "xHeight": 13.965714454650879,
+            "y": 65.14286041259766
+          }
+        ],
+        "name": "heading",
+        "scale": 1
+      },
+      {
+        "kind": "candidate",
+        "lines": [
+          {
+            "ascender": 28,
+            "capHeight": 18.89714241027832,
+            "descender": 6.285714149475098,
+            "height": 34.28571319580078,
+            "text": "NATO ",
+            "width": 75.4375,
+            "x": 0,
+            "xHeight": 13.965714454650879,
+            "y": 0
+          },
+          {
+            "ascender": 24.571428298950195,
+            "capHeight": 18.89714241027832,
+            "descender": 6.285714149475098,
+            "height": 30.85714340209961,
+            "text": "Phonetic ",
+            "width": 112,
+            "x": 0,
+            "xHeight": 13.965714454650879,
+            "y": 34.28571319580078
+          },
+          {
+            "ascender": 24.571428298950195,
+            "capHeight": 18.89714241027832,
+            "descender": 7.4285712242126465,
+            "height": 32,
+            "text": "Alphabet",
+            "width": 106.85713958740234,
+            "x": 0,
+            "xHeight": 13.965714454650879,
+            "y": 65.14286041259766
+          }
+        ],
+        "name": "heading",
+        "scale": 1
+      },
+      {
+        "kind": "control",
+        "lines": [
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "Correct! B is Bravo.",
+            "width": 133.59375,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          }
+        ],
+        "name": "feedback",
+        "scale": 1
+      },
+      {
+        "kind": "candidate",
+        "lines": [
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "Correct! B is Bravo.",
+            "width": 133.59375,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          }
+        ],
+        "name": "feedback",
+        "scale": 1
+      },
+      {
+        "kind": "control",
+        "lines": [
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "Text and practice\n",
+            "width": 123.59375,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          },
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "Your text stays in ",
+            "width": 124.52008819580078,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 24
+          },
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "memory.",
+            "width": 62.16294479370117,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 48
+          }
+        ],
+        "name": "nested",
+        "scale": 1
+      },
+      {
+        "kind": "candidate",
+        "lines": [
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "Text and practice\n",
+            "width": 123.59375,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          },
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "Your text stays in ",
+            "width": 124.52008819580078,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 24
+          },
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "memory.",
+            "width": 62.16294479370117,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 48
+          }
+        ],
+        "name": "nested",
+        "scale": 1
+      },
+      {
+        "kind": "control",
+        "name": "input",
+        "scale": 1,
+        "size": {
+          "height": 46.28571319580078,
+          "width": 599195.4375
+        }
+      },
+      {
+        "kind": "candidate",
+        "name": "input",
+        "scale": 1,
+        "size": {
+          "height": 46.28571319580078,
+          "width": 599195.4375
+        }
+      }
+    ],
+    "mounts": 1,
+    "value": "NUWJ359"
+  },
+  "layout": {
+    "dimensions": {
+      "fontScale": 1,
+      "height": 914.2857142857143,
+      "scale": 1.75,
+      "width": 411.42857142857144
+    },
+    "values": [
+      {
+        "frame": {
+          "height": 57.714263916015625,
+          "pageX": 18.285720825195312,
+          "pageY": 48,
+          "width": 176,
+          "x": 0,
+          "y": 0
+        },
+        "style": {
+          "color": "black",
+          "fontSize": 15,
+          "width": 176
+        },
+        "testID": "control-body",
+        "text": "Tap a card to hear the word. New playback replaces current audio."
+      },
+      {
+        "frame": {
+          "height": 57.714263916015625,
+          "pageX": 206.2857208251953,
+          "pageY": 48,
+          "width": 175.99998474121094,
+          "x": 188,
+          "y": 0
+        },
+        "style": {
+          "color": "black",
+          "fontSize": 15,
+          "width": 176
+        },
+        "testID": "candidate-body",
+        "text": "Tap a card to hear the word. New playback replaces current audio."
+      },
+      {
+        "frame": {
+          "height": 97.14288330078125,
+          "pageX": 18.285720825195312,
+          "pageY": 125.71426391601562,
+          "width": 176,
+          "x": 0,
+          "y": 0
+        },
+        "style": {
+          "color": "black",
+          "fontSize": 26,
+          "fontWeight": "700",
+          "width": 176
+        },
+        "testID": "control-heading",
+        "text": "NATO Phonetic Alphabet"
+      },
+      {
+        "frame": {
+          "height": 97.14288330078125,
+          "pageX": 206.2857208251953,
+          "pageY": 125.71426391601562,
+          "width": 175.99998474121094,
+          "x": 188,
+          "y": 0
+        },
+        "style": {
+          "color": "black",
+          "fontSize": 26,
+          "fontWeight": "700",
+          "width": 176
+        },
+        "testID": "candidate-heading",
+        "text": "NATO Phonetic Alphabet"
+      },
+      {
+        "frame": {
+          "height": 24,
+          "pageX": 18.285720825195312,
+          "pageY": 242.85714721679688,
+          "width": 176,
+          "x": 0,
+          "y": 0
+        },
+        "style": {
+          "color": "black",
+          "fontSize": 16,
+          "lineHeight": 24,
+          "width": 176
+        },
+        "testID": "control-feedback",
+        "text": "Correct! B is Bravo."
+      },
+      {
+        "frame": {
+          "height": 24,
+          "pageX": 206.2857208251953,
+          "pageY": 242.85714721679688,
+          "width": 175.99998474121094,
+          "x": 188,
+          "y": 0
+        },
+        "style": {
+          "color": "black",
+          "fontSize": 16,
+          "lineHeight": 24,
+          "width": 176
+        },
+        "testID": "candidate-feedback",
+        "text": "Correct! B is Bravo."
+      },
+      {
+        "frame": {
+          "height": 72,
+          "pageX": 18.285720825195312,
+          "pageY": 286.8571472167969,
+          "width": 176,
+          "x": 0,
+          "y": 0
+        },
+        "style": {
+          "color": "black",
+          "fontSize": 16,
+          "lineHeight": 24,
+          "width": 176
+        },
+        "testID": "control-nested",
+        "text": "Text and practice / Your text stays in memory."
+      },
+      {
+        "frame": {
+          "height": 0,
+          "pageX": 0,
+          "pageY": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        "style": {
+          "fontWeight": "700"
+        },
+        "text": "Text and practice\n"
+      },
+      {
+        "frame": {
+          "height": 72,
+          "pageX": 206.2857208251953,
+          "pageY": 286.8571472167969,
+          "width": 175.99998474121094,
+          "x": 188,
+          "y": 0
+        },
+        "style": {
+          "color": "black",
+          "fontSize": 16,
+          "lineHeight": 24,
+          "width": 176
+        },
+        "testID": "candidate-nested",
+        "text": "Text and practice / Your text stays in memory."
+      },
+      {
+        "frame": {
+          "height": 0,
+          "pageX": 0,
+          "pageY": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        "style": {
+          "fontWeight": "700"
+        },
+        "text": "Text and practice\n"
+      },
+      {
+        "frame": {
+          "height": 47.428558349609375,
+          "pageX": 17.714279174804688,
+          "pageY": 378.8571472167969,
+          "width": 375.4285888671875,
+          "x": 17.714284896850586,
+          "y": 378.8571472167969
+        },
+        "style": {
+          "borderWidth": 1,
+          "color": "black",
+          "fontSize": 18,
+          "marginBottom": 10
+        },
+        "testID": "control-input",
+        "text": "NUWJ359"
+      },
+      {
+        "frame": {
+          "height": 47.428558349609375,
+          "pageX": 17.714279174804688,
+          "pageY": 436,
+          "width": 375.4285888671875,
+          "x": 17.714284896850586,
+          "y": 436
+        },
+        "style": {
+          "borderWidth": 1,
+          "color": "black",
+          "fontSize": 18,
+          "marginBottom": 10
+        },
+        "testID": "candidate-input",
+        "text": "NUWJ359"
+      }
+    ]
+  }
+}

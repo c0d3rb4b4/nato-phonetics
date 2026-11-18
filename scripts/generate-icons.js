@@ -5,7 +5,7 @@ const path = require('path');
 const svgPath = path.join(__dirname, '../assets/images/test.svg');
 const outputDir = path.join(__dirname, '../assets/images');
 
-// Icon sizes needed for Expo app
+// Shared launcher and web icon asset sizes
 const icons = [
   { name: 'icon.png', size: 1024 },
   { name: 'favicon.png', size: 48 },

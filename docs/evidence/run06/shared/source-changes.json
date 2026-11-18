@@ -1,0 +1,75 @@
+{
+  "comparedWith": "docs/evidence/run05/source-sha256.txt",
+  "unchanged": 169,
+  "changed": [
+    {
+      "file": "README.md",
+      "before": "0c88839249314bbfbf9dbeee740ee8e6193435e8a5848632264e7b174d7e7cb0",
+      "after": "1edd7f6f4ff59ae40fd35ee5a7b263f4a8ee2cbe3c7695c6e5f3b3e10c43a029"
+    },
+    {
+      "file": "android/app/src/main/AndroidManifest.xml",
+      "before": "3b257d3ccccc518894408d538307795c45c93b2a9a2de63255e9c4f1c54a5f2a",
+      "after": "cce8bb32ebacf15d517e04ffdd9b644ea8bec46209e9eaaa132048fe37c22b94"
+    },
+    {
+      "file": "android/app/src/main/java/com/natophonetics/app/MainActivity.kt",
+      "before": "ea4529061902506ebedaf1855a2bf601f4bd91078279abd6c64ce0aa8121f53b",
+      "after": "b12e4cf04fd6176f2f0219ef692d2b4dc7da890adf956be0cb432cc6f54bfa7d"
+    },
+    {
+      "file": "app/_layout.js",
+      "before": "d41e1f2c22f9572eb0542d6f1bebf44639d21e3ef18af2d94ccf2031f2e1afe6",
+      "after": "00be02166d197db96a505281def979c77d609652862ae9590dd7d3791990a3ac"
+    },
+    {
+      "file": "docs/APP_REVIEW.md",
+      "before": "a91c8d1587369469cc28e57f3f552e078a3e7cf12416386ba2855ab4103625bb",
+      "after": "f6ccbb3bd43e9cbe29f97b64271b29eee60dbb6a1c98e38211de114319f48d3b"
+    },
+    {
+      "file": "docs/DELIVERY_PLAN.md",
+      "before": "f3ac5a27725a09f4eadcc33f79dcd8a80cf4372185d4dd1d341593fb3159684c",
+      "after": "310edbd3f9ca99e638e843933d3f0accf405ba1e3638a670d3005597b4c0152c"
+    },
+    {
+      "file": "docs/NATIVE_BUILDS.md",
+      "before": "a9ad0cea499bb70ae9e3bdc885edc3c94019ce155b4994a0cba1c7806467e995",
+      "after": "1baa0d32f4d24c8509fe53afb48d302fb9e7cd1e4f2e917af00a532fce3d8de1"
+    },
+    {
+      "file": "docs/TILE_DESIGN.md",
+      "before": "b4130faec3ce125ef920e23626cd35d8ce203739c98b1fe7276a1e7ae5095668",
+      "after": "baf1674a20cd7c71ff98060e78f371ddaa1fef16cd541934854e73059ad506a6"
+    },
+    {
+      "file": "ios/NATOPhonetics.xcodeproj/project.pbxproj",
+      "before": "feb73f6723c70cb6fa27b622db2d196e8229b86ecf7edae71a32ae20a4a03482",
+      "after": "e1465b155647a6ecf29c07fe137d970d9226f5f1931b5afb8c13cc7279b92d74"
+    },
+    {
+      "file": "tests/audio.test.mjs",
+      "before": "d835ccdd3d0ee79761ed3113803cd2d9d0f3e0f9c74f70cf1b5a2d89280bc22c",
+      "after": "9633c5fcaed58ffefc95eea423e1d0f1feca0d1d1de8c9f2794ea52280e8ac93"
+    }
+  ],
+  "added": [
+    {
+      "file": "ios/NATOPhonetics/HeaderInsets.swift",
+      "sha256": "65481015627b4d2f6436e280da588a523652d0a330ff4fc61a080cb2355bf1e0"
+    },
+    {
+      "file": "ios/NATOPhonetics/HeaderInsetsBridge.m",
+      "sha256": "43b9247d33e10de48f6e05124404e09b84789aab0c431014b23565042b97495c"
+    },
+    {
+      "file": "src/components/HeaderInsets.ios.js",
+      "sha256": "2d40773194f5252836f05fbf6543c3f5a474d926190757e186995560a6ea3ab2"
+    },
+    {
+      "file": "src/components/HeaderInsets.js",
+      "sha256": "3ec9c11d6db54ce5ad7d8c42052380999457b01294045f34be5573bf9e7a1f65"
+    }
+  ],
+  "removed": []
+}

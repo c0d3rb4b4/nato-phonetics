@@ -1,0 +1,12 @@
+# Run 11 final source delta review
+
+Reviewed the actual 21 changed/new maintained inputs against Run 10, not the entire inherited `784bb93` diff. [Baseline hash comparison](resume-comparison.json), [delta](source-changes.json), [preservation verification](../verification.json). The initial tree's unrelated code/evidence remains unchanged; no reset/checkout/commit occurred.
+
+- `practiceSets` derives symbols from the canonical alphabet/digits and example conversion. No alternate pronunciation source, mutation of canonical records or extra stored data. Examples clearly drill distinct symbols while their audio retains original order/repetitions/boundary.
+- `quizSession` accepts canonical digits and retains immutable identity/revision guards, shuffled coverage and explicit submission/Next/Retry transitions. Digit distractors are other canonical digits; default letter behavior is preserved and regressions pass.
+- Reference/quiz routes reuse shared tiles and audio ownership. Concealed tile label names a symbol, answer/guide stays unmounted before submission. Shared Button adds explicit web ARIA states without layout/font changes; browser AX checked-state regression passes.
+- Voice filters use full-list provider removal detection, preserve ordering/saved voice, keep Default outside filters, clear invalid locale after Retry and stop previews on filter changes. No-match/reset/shared/native assertions retained. No native provider change.
+- README/PRIVACY/in-app scope, practice/audio docs and M11 supplement describe memory-only category/set/query/locale. Future progress storage is not claimed. CI adds numeric browser suite and artifacts; hosted execution remains unrun.
+- Tests/scripts exercise actual semantic boundaries and production/native flows; driver failures and the unmeasured Android field are explicitly corrected rather than relabelled as app passes. Raw log/driver versions are preserved; the asserted Android continuation supplies exact preference equality and 30/30 restored count.
+
+Verification is proportional: 100 unit tests, active types/lint, independent web build/Expo scan, affected production browser and installed native checks. No new dependency/native app build or broad unchanged raster/runtime matrix. Android live ordinary-text P1, original iOS long-drag P1, strict P3 ink, maximum native voice/filter/focus and integrated release/security/runtime work remain open. No audible/physical AT/provider/privacy/signing/release acceptance inferred.

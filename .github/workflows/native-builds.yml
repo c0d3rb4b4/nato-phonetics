@@ -1,0 +1,58 @@
+name: Direct local native builds
+
+# Deliberately manual: untrusted pull requests must not execute on a private runner.
+# Configure a runner with the toolchains in docs/NATIVE_BUILDS.md first.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  native:
+    runs-on: [self-hosted, macOS, ARM64, nato-phonetics]
+    env:
+      CI: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Locked install and shared gates
+        run: |
+          npm install --global npm@10.9.4
+          npm ci
+          npm run check:dependencies
+          npm run typecheck
+          npm run lint
+          npm test
+          npm run audit:review
+          npm run export:web
+      - name: Direct Android APK and unsigned AAB
+        run: |
+          npm run build:android:debug
+          npm run build:android:release
+      - name: Install locked Ruby and iOS dependencies
+        run: |
+          bundle config set --local path vendor/bundle
+          bundle config set --local frozen true
+          bundle install
+          npm run ios:pods -- --deployment
+      - name: Direct unsigned iOS Simulator build
+        run: npm run build:ios:simulator
+      - name: Collect local build artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: direct-native-${{ github.sha }}
+          path: |
+            android/app/build/outputs/apk/debug/*.apk
+            android/app/build/outputs/bundle/release/*.aab
+            artifacts/ios-simulator/Build/Products/Release-iphonesimulator/*.app
+            dist/
+          if-no-files-found: warn

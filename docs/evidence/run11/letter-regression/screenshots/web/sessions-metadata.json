@@ -1,0 +1,145 @@
+[
+  {
+    "file": "light-1280-setup.png",
+    "theme": "light",
+    "width": 1280,
+    "height": 900,
+    "state": "setup",
+    "textScale": 1,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T10:22:06.131Z",
+    "command": "node scripts/verify-sessions-browser.cjs dist docs/evidence/run08"
+  },
+  {
+    "file": "light-1280-question.png",
+    "theme": "light",
+    "width": 1280,
+    "height": 900,
+    "state": "question",
+    "textScale": 1,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T10:22:06.280Z",
+    "command": "node scripts/verify-sessions-browser.cjs dist docs/evidence/run08"
+  },
+  {
+    "file": "light-1280-feedback.png",
+    "theme": "light",
+    "width": 1280,
+    "height": 900,
+    "state": "feedback",
+    "textScale": 1,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T10:22:06.458Z",
+    "command": "node scripts/verify-sessions-browser.cjs dist docs/evidence/run08"
+  },
+  {
+    "file": "light-1280-results.png",
+    "theme": "light",
+    "width": 1280,
+    "height": 900,
+    "state": "results",
+    "textScale": 1,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T10:22:06.673Z",
+    "command": "node scripts/verify-sessions-browser.cjs dist docs/evidence/run08"
+  },
+  {
+    "file": "light-1280-retry-complete.png",
+    "theme": "light",
+    "width": 1280,
+    "height": 900,
+    "state": "retry-complete",
+    "textScale": 1,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T10:22:06.956Z",
+    "command": "node scripts/verify-sessions-browser.cjs dist docs/evidence/run08"
+  },
+  {
+    "file": "light-1280-ended-early.png",
+    "theme": "light",
+    "width": 1280,
+    "height": 900,
+    "state": "ended-early",
+    "textScale": 1,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T10:22:09.008Z",
+    "command": "node scripts/verify-sessions-browser.cjs dist docs/evidence/run08"
+  },
+  {
+    "file": "dark-320-setup.png",
+    "theme": "dark",
+    "width": 320,
+    "height": 568,
+    "state": "setup",
+    "textScale": 1,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T10:22:10.266Z",
+    "command": "node scripts/verify-sessions-browser.cjs dist docs/evidence/run08"
+  },
+  {
+    "file": "dark-320-setup-200-percent.png",
+    "theme": "dark",
+    "width": 320,
+    "height": 568,
+    "state": "setup-200-percent",
+    "textScale": 2,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T10:22:10.315Z",
+    "command": "node scripts/verify-sessions-browser.cjs dist docs/evidence/run08"
+  },
+  {
+    "file": "dark-320-question.png",
+    "theme": "dark",
+    "width": 320,
+    "height": 568,
+    "state": "question",
+    "textScale": 2,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T10:22:10.451Z",
+    "command": "node scripts/verify-sessions-browser.cjs dist docs/evidence/run08"
+  },
+  {
+    "file": "dark-320-feedback.png",
+    "theme": "dark",
+    "width": 320,
+    "height": 568,
+    "state": "feedback",
+    "textScale": 2,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T10:22:10.616Z",
+    "command": "node scripts/verify-sessions-browser.cjs dist docs/evidence/run08"
+  },
+  {
+    "file": "dark-320-results.png",
+    "theme": "dark",
+    "width": 320,
+    "height": 568,
+    "state": "results",
+    "textScale": 2,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T10:22:10.781Z",
+    "command": "node scripts/verify-sessions-browser.cjs dist docs/evidence/run08"
+  },
+  {
+    "file": "dark-320-retry-complete.png",
+    "theme": "dark",
+    "width": 320,
+    "height": 568,
+    "state": "retry-complete",
+    "textScale": 2,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T10:22:11.049Z",
+    "command": "node scripts/verify-sessions-browser.cjs dist docs/evidence/run08"
+  },
+  {
+    "file": "dark-320-ended-early.png",
+    "theme": "dark",
+    "width": 320,
+    "height": 568,
+    "state": "ended-early",
+    "textScale": 2,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T10:22:13.015Z",
+    "command": "node scripts/verify-sessions-browser.cjs dist docs/evidence/run08"
+  }
+]

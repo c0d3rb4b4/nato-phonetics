@@ -1,0 +1,80 @@
+[
+  {
+    "file": "home-support-1280.png",
+    "state": "home updated discovery/help/memory-only inventory",
+    "width": 1280,
+    "height": 900,
+    "theme": "light",
+    "textScale": 1,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T11:13:12.520Z",
+    "command": "node docs/evidence/run12/web/support-captures.cjs",
+    "sha256": "da46eb1b8b49e4c459139a8ba2b2d156f04d5887f3b19c341b1ed3cff1247847",
+    "candidate": "Run12; source-identity.json; native binary/loaded graph per platform report"
+  },
+  {
+    "file": "audio-help-support-1280.png",
+    "state": "audio-help updated discovery/help/memory-only inventory",
+    "width": 1280,
+    "height": 900,
+    "theme": "light",
+    "textScale": 1,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T11:13:13.231Z",
+    "command": "node docs/evidence/run12/web/support-captures.cjs",
+    "sha256": "e0fdce0cec3d8c0ca5a63eb8086be5eb818f77d78f6141bf7be40ccbd56bfc10",
+    "candidate": "Run12; source-identity.json; native binary/loaded graph per platform report"
+  },
+  {
+    "file": "privacy-support-1280.png",
+    "state": "privacy updated discovery/help/memory-only inventory",
+    "width": 1280,
+    "height": 900,
+    "theme": "light",
+    "textScale": 1,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T11:13:14.542Z",
+    "command": "node docs/evidence/run12/web/support-captures.cjs",
+    "sha256": "6d5016481d3c12e2da0e2db04348e2a1c46ac304c4e3a6ace62565d440cd6b6f",
+    "candidate": "Run12; source-identity.json; native binary/loaded graph per platform report"
+  },
+  {
+    "file": "home-support-320.png",
+    "state": "home updated discovery/help/memory-only inventory",
+    "width": 320,
+    "height": 568,
+    "theme": "dark",
+    "textScale": 1,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T11:13:16.077Z",
+    "command": "node docs/evidence/run12/web/support-captures.cjs",
+    "sha256": "182f54762ab805749bca9fa7087bcd753e5e1bf1c7332cc8766c0c0efbf2a9cd",
+    "candidate": "Run12; source-identity.json; native binary/loaded graph per platform report"
+  },
+  {
+    "file": "audio-help-support-320.png",
+    "state": "audio-help updated discovery/help/memory-only inventory",
+    "width": 320,
+    "height": 568,
+    "theme": "dark",
+    "textScale": 1,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T11:13:17.082Z",
+    "command": "node docs/evidence/run12/web/support-captures.cjs",
+    "sha256": "15f7d8dcc3d86f235f6b1a41ea9129ba7b523464f3be4a02553019238a67bf5a",
+    "candidate": "Run12; source-identity.json; native binary/loaded graph per platform report"
+  },
+  {
+    "file": "privacy-support-320.png",
+    "state": "privacy updated discovery/help/memory-only inventory",
+    "width": 320,
+    "height": 568,
+    "theme": "dark",
+    "textScale": 1,
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T11:13:18.076Z",
+    "command": "node docs/evidence/run12/web/support-captures.cjs",
+    "sha256": "e7d52300201303c5d57364b2f9feca3dbe3ec26cc821770566348fd801ae3b0d",
+    "candidate": "Run12; source-identity.json; native binary/loaded graph per platform report"
+  }
+]

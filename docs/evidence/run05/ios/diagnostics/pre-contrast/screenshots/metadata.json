@@ -1,0 +1,486 @@
+{
+  "date": "2026-11-17",
+  "platform": "ios",
+  "captures": [
+    {
+      "file": "phone-alphabet-landscape-dark.png",
+      "pixels": {
+        "width": 1206,
+        "height": 2622
+      },
+      "sha256": "d5b72d64fde3452aa4a2b951048f7fd2db6e76ae4570db0438a0efb8190c72c8",
+      "capturedAt": "2026-11-17T13:18:21.829000+00:00",
+      "testIdentifier": "CaptureUITests/testPhoneTiles()",
+      "originalAttachment": {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "0653F7EC-9237-4AC5-A264-12969E625070",
+        "deviceName": "iPhone 17 Pro",
+        "exportedFileName": "371C5E71-F4FA-4505-BACA-0D7591051BB1.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "alphabet-landscape-dark_0_EFE3A58E-0B1C-426D-A36E-5515BB6D3EC3.png",
+        "timestamp": 1794921501.829
+      },
+      "captureMethod": "XCUIScreen.main.screenshot(), retained XCTest PNG exported with xcresulttool"
+    },
+    {
+      "file": "phone-alphabet-dark.png",
+      "pixels": {
+        "width": 1206,
+        "height": 2622
+      },
+      "sha256": "0dbfc84f28e2019ba5dbf7c9874a2dae3953163602f4a997be3be48fb4847d67",
+      "capturedAt": "2026-11-17T13:18:13.469000+00:00",
+      "testIdentifier": "CaptureUITests/testPhoneTiles()",
+      "originalAttachment": {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "0653F7EC-9237-4AC5-A264-12969E625070",
+        "deviceName": "iPhone 17 Pro",
+        "exportedFileName": "33049A62-9EDA-4366-897C-14FD30FB95E3.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "alphabet-dark_0_2E38831C-F98E-4676-84A0-40EBFF76380D.png",
+        "timestamp": 1794921493.469
+      },
+      "captureMethod": "XCUIScreen.main.screenshot(), retained XCTest PNG exported with xcresulttool"
+    },
+    {
+      "file": "phone-quiz-feedback-light.png",
+      "pixels": {
+        "width": 1206,
+        "height": 2622
+      },
+      "sha256": "af5e96117ea4e33652334b5802d644fd7a2c877d5273e7b1163a3c66e2594637",
+      "capturedAt": "2026-11-17T13:18:06.135000+00:00",
+      "testIdentifier": "CaptureUITests/testPhoneTiles()",
+      "originalAttachment": {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "0653F7EC-9237-4AC5-A264-12969E625070",
+        "deviceName": "iPhone 17 Pro",
+        "exportedFileName": "83A99FE6-4EFB-4708-85B5-6F170E919F10.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "quiz-feedback-light_0_013037FF-8A77-4D02-965C-8C1E99E13026.png",
+        "timestamp": 1794921486.135
+      },
+      "captureMethod": "XCUIScreen.main.screenshot(), retained XCTest PNG exported with xcresulttool"
+    },
+    {
+      "file": "phone-quiz-question-light.png",
+      "pixels": {
+        "width": 1206,
+        "height": 2622
+      },
+      "sha256": "2c39b0bf19c2775e824bc7406526886f7dd05bca3c050338fbc5cfc51b610484",
+      "capturedAt": "2026-11-17T13:18:01.096000+00:00",
+      "testIdentifier": "CaptureUITests/testPhoneTiles()",
+      "originalAttachment": {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "0653F7EC-9237-4AC5-A264-12969E625070",
+        "deviceName": "iPhone 17 Pro",
+        "exportedFileName": "DC282C24-7297-4631-B602-B5541C66721A.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "quiz-question-light_0_B630A7FA-FF77-4CEF-8F3F-62EB323D4042.png",
+        "timestamp": 1794921481.096
+      },
+      "captureMethod": "XCUIScreen.main.screenshot(), retained XCTest PNG exported with xcresulttool"
+    },
+    {
+      "file": "phone-converter-light.png",
+      "pixels": {
+        "width": 1206,
+        "height": 2622
+      },
+      "sha256": "4ae1bfa62cf4a267f77dd90e3825918cf06c3ccd4d1693996563e4487cf614f2",
+      "capturedAt": "2026-11-17T13:17:56.308000+00:00",
+      "testIdentifier": "CaptureUITests/testPhoneTiles()",
+      "originalAttachment": {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "0653F7EC-9237-4AC5-A264-12969E625070",
+        "deviceName": "iPhone 17 Pro",
+        "exportedFileName": "A3D229B7-6C01-46DD-A8A7-599028B8A4AD.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "converter-light_0_B186A78B-E971-48F6-B1B8-73D029EC9A75.png",
+        "timestamp": 1794921476.308
+      },
+      "captureMethod": "XCUIScreen.main.screenshot(), retained XCTest PNG exported with xcresulttool"
+    },
+    {
+      "file": "phone-alphabet-last-light.png",
+      "pixels": {
+        "width": 1206,
+        "height": 2622
+      },
+      "sha256": "8903b2aa7bcf17a7ea2b2f9b0c33d911c890e125d5ced1109cd7d6ebb5ca1807",
+      "capturedAt": "2026-11-17T13:17:43.597000+00:00",
+      "testIdentifier": "CaptureUITests/testPhoneTiles()",
+      "originalAttachment": {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "0653F7EC-9237-4AC5-A264-12969E625070",
+        "deviceName": "iPhone 17 Pro",
+        "exportedFileName": "7473B39C-9221-408D-946D-0E881D404966.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "alphabet-last-light_0_8083E27B-116B-4BBD-B7A1-1FDAC4E29A7B.png",
+        "timestamp": 1794921463.597
+      },
+      "captureMethod": "XCUIScreen.main.screenshot(), retained XCTest PNG exported with xcresulttool"
+    },
+    {
+      "file": "phone-alphabet-page-2-light.png",
+      "pixels": {
+        "width": 1206,
+        "height": 2622
+      },
+      "sha256": "8903b2aa7bcf17a7ea2b2f9b0c33d911c890e125d5ced1109cd7d6ebb5ca1807",
+      "capturedAt": "2026-11-17T13:17:36.527000+00:00",
+      "testIdentifier": "CaptureUITests/testPhoneTiles()",
+      "originalAttachment": {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "0653F7EC-9237-4AC5-A264-12969E625070",
+        "deviceName": "iPhone 17 Pro",
+        "exportedFileName": "B7739D81-679A-4FF4-AF2D-C2F80D43915A.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "alphabet-page-2-light_0_064D8756-5BDE-42D6-A4C1-C4C963DB651E.png",
+        "timestamp": 1794921456.527
+      },
+      "captureMethod": "XCUIScreen.main.screenshot(), retained XCTest PNG exported with xcresulttool"
+    },
+    {
+      "file": "phone-alphabet-page-1-light.png",
+      "pixels": {
+        "width": 1206,
+        "height": 2622
+      },
+      "sha256": "3c52bcefa81e906bcd743f40cf6cfc16fdecb8bc4a4eaf9dd41e3a89ac0914cc",
+      "capturedAt": "2026-11-17T13:17:27.469000+00:00",
+      "testIdentifier": "CaptureUITests/testPhoneTiles()",
+      "originalAttachment": {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "0653F7EC-9237-4AC5-A264-12969E625070",
+        "deviceName": "iPhone 17 Pro",
+        "exportedFileName": "6A6A5D8B-8A1D-4663-92B5-FBD32C37551A.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "alphabet-page-1-light_0_63ABE66D-CBB5-46F0-8846-E4576BCAC62C.png",
+        "timestamp": 1794921447.469
+      },
+      "captureMethod": "XCUIScreen.main.screenshot(), retained XCTest PNG exported with xcresulttool"
+    },
+    {
+      "file": "phone-alphabet-page-0-light.png",
+      "pixels": {
+        "width": 1206,
+        "height": 2622
+      },
+      "sha256": "ac6d44bfc42d0b9e1b1ea9b7d8a3b96462c0c5af5812c2a04e36dafa79d22214",
+      "capturedAt": "2026-11-17T13:17:16.351000+00:00",
+      "testIdentifier": "CaptureUITests/testPhoneTiles()",
+      "originalAttachment": {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "0653F7EC-9237-4AC5-A264-12969E625070",
+        "deviceName": "iPhone 17 Pro",
+        "exportedFileName": "54CEE2E9-3ECA-4C9D-94A2-C89262D6CA63.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "alphabet-page-0-light_0_9ACB2BC4-94D2-4F2F-9A43-4657523FED5B.png",
+        "timestamp": 1794921436.351
+      },
+      "captureMethod": "XCUIScreen.main.screenshot(), retained XCTest PNG exported with xcresulttool"
+    },
+    {
+      "file": "phone-alphabet-first-light.png",
+      "pixels": {
+        "width": 1206,
+        "height": 2622
+      },
+      "sha256": "ac6d44bfc42d0b9e1b1ea9b7d8a3b96462c0c5af5812c2a04e36dafa79d22214",
+      "capturedAt": "2026-11-17T13:17:10.427000+00:00",
+      "testIdentifier": "CaptureUITests/testPhoneTiles()",
+      "originalAttachment": {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "0653F7EC-9237-4AC5-A264-12969E625070",
+        "deviceName": "iPhone 17 Pro",
+        "exportedFileName": "0F5E7554-C577-4F64-B7BC-CDAA1176987F.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "alphabet-first-light_0_CEF974F6-4012-42AE-940D-AA8680BF4012.png",
+        "timestamp": 1794921430.427
+      },
+      "captureMethod": "XCUIScreen.main.screenshot(), retained XCTest PNG exported with xcresulttool"
+    },
+    {
+      "file": "accessibility-max-quiz-accessibility-feedback-reachable.png",
+      "pixels": {
+        "width": 1206,
+        "height": 2622
+      },
+      "sha256": "895510d90dffbd84d325dd5aee7f3bbe17553df7a0db820d745c3655d1f02a01",
+      "capturedAt": "2026-11-17T13:19:19.946000+00:00",
+      "testIdentifier": "CaptureUITests/testAccessibilityTiles()",
+      "originalAttachment": {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "0653F7EC-9237-4AC5-A264-12969E625070",
+        "deviceName": "iPhone 17 Pro",
+        "exportedFileName": "6B4461D4-64E6-4382-9ED5-2EDA952F3A1D.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "quiz-accessibility-feedback-reachable_0_4FB84F0C-949A-4EA9-944F-191D20798282.png",
+        "timestamp": 1794921559.946
+      },
+      "captureMethod": "XCUIScreen.main.screenshot(), retained XCTest PNG exported with xcresulttool"
+    },
+    {
+      "file": "accessibility-max-quiz-accessibility-question.png",
+      "pixels": {
+        "width": 1206,
+        "height": 2622
+      },
+      "sha256": "18657318accc8b1d28bc0ab5166482f28a00c07b72bcd0c211d227d3a95fd4d9",
+      "capturedAt": "2026-11-17T13:19:09.170000+00:00",
+      "testIdentifier": "CaptureUITests/testAccessibilityTiles()",
+      "originalAttachment": {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "0653F7EC-9237-4AC5-A264-12969E625070",
+        "deviceName": "iPhone 17 Pro",
+        "exportedFileName": "4DAA723E-C848-44A6-9BAD-6C6D029BC9DB.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "quiz-accessibility-question_0_9893BFB6-4F85-4D4F-8042-6D490213D559.png",
+        "timestamp": 1794921549.17
+      },
+      "captureMethod": "XCUIScreen.main.screenshot(), retained XCTest PNG exported with xcresulttool"
+    },
+    {
+      "file": "accessibility-max-alphabet-accessibility-scroll.png",
+      "pixels": {
+        "width": 1206,
+        "height": 2622
+      },
+      "sha256": "662b9eb8c266fbc411a2d3760827a6fb9bab6d7c98c85af02001c099a7ecb34d",
+      "capturedAt": "2026-11-17T13:19:04.803000+00:00",
+      "testIdentifier": "CaptureUITests/testAccessibilityTiles()",
+      "originalAttachment": {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "0653F7EC-9237-4AC5-A264-12969E625070",
+        "deviceName": "iPhone 17 Pro",
+        "exportedFileName": "A7A4A222-3117-4E75-9104-86F0646CAC66.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "alphabet-accessibility-scroll_0_7497321F-003F-4026-9DA1-4EA3AE67B1DF.png",
+        "timestamp": 1794921544.803
+      },
+      "captureMethod": "XCUIScreen.main.screenshot(), retained XCTest PNG exported with xcresulttool"
+    },
+    {
+      "file": "accessibility-max-alphabet-accessibility-first.png",
+      "pixels": {
+        "width": 1206,
+        "height": 2622
+      },
+      "sha256": "ef7e455484206297025b537e88c9fb261861bb706ddb9db001013ee4c3ae2693",
+      "capturedAt": "2026-11-17T13:18:57.875000+00:00",
+      "testIdentifier": "CaptureUITests/testAccessibilityTiles()",
+      "originalAttachment": {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "0653F7EC-9237-4AC5-A264-12969E625070",
+        "deviceName": "iPhone 17 Pro",
+        "exportedFileName": "FFB0D699-D2BE-4885-A7C5-9363E5779CC9.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "alphabet-accessibility-first_0_EC81BE2E-DED2-402F-8814-785A325561FA.png",
+        "timestamp": 1794921537.875
+      },
+      "captureMethod": "XCUIScreen.main.screenshot(), retained XCTest PNG exported with xcresulttool"
+    },
+    {
+      "file": "tablet-alphabet-viewport-landscape.png",
+      "pixels": {
+        "width": 1668,
+        "height": 2420
+      },
+      "sha256": "ab5ecfd2dc3458cf563fef7289f0242307c408ab82f571a10d378d5f9fb6f558",
+      "capturedAt": "2026-11-17T13:29:00.626000+00:00",
+      "testIdentifier": "CaptureUITests/testViewportTiles()",
+      "originalAttachment": {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "D6F0ADFF-A6FB-4B1C-B48F-2A77E35D29BB",
+        "deviceName": "iPad Pro 11-inch (M5)",
+        "exportedFileName": "B962CEC0-C0A8-404C-955D-807CCE9FFADB.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "alphabet-viewport-landscape_0_75CB6F4F-ECE8-48ED-B82C-52F7F8A7BAD7.png",
+        "timestamp": 1794922140.626
+      },
+      "captureMethod": "XCUIScreen.main.screenshot(), retained XCTest PNG exported with xcresulttool"
+    },
+    {
+      "file": "tablet-alphabet-viewport-last.png",
+      "pixels": {
+        "width": 1668,
+        "height": 2420
+      },
+      "sha256": "510a83af1c3b59124186b45090d5b923e751e0f8938121199f4d2060da2fa24c",
+      "capturedAt": "2026-11-17T13:28:45.928000+00:00",
+      "testIdentifier": "CaptureUITests/testViewportTiles()",
+      "originalAttachment": {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "D6F0ADFF-A6FB-4B1C-B48F-2A77E35D29BB",
+        "deviceName": "iPad Pro 11-inch (M5)",
+        "exportedFileName": "74425494-C5F7-4D62-B256-305401C2C026.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "alphabet-viewport-last_0_0BD740D4-8D82-4729-AB54-B87B8D2B6D85.png",
+        "timestamp": 1794922125.928
+      },
+      "captureMethod": "XCUIScreen.main.screenshot(), retained XCTest PNG exported with xcresulttool"
+    },
+    {
+      "file": "tablet-alphabet-viewport-portrait.png",
+      "pixels": {
+        "width": 1668,
+        "height": 2420
+      },
+      "sha256": "510a83af1c3b59124186b45090d5b923e751e0f8938121199f4d2060da2fa24c",
+      "capturedAt": "2026-11-17T13:28:32.261000+00:00",
+      "testIdentifier": "CaptureUITests/testViewportTiles()",
+      "originalAttachment": {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "D6F0ADFF-A6FB-4B1C-B48F-2A77E35D29BB",
+        "deviceName": "iPad Pro 11-inch (M5)",
+        "exportedFileName": "3D3CE6C7-B827-4CF5-81F4-651D6E540989.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "alphabet-viewport-portrait_0_E089D5C0-AC6F-4F78-AC00-0FE16605EFCE.png",
+        "timestamp": 1794922112.261
+      },
+      "captureMethod": "XCUIScreen.main.screenshot(), retained XCTest PNG exported with xcresulttool"
+    },
+    {
+      "file": "narrow-alphabet-viewport-landscape.png",
+      "pixels": {
+        "width": 1170,
+        "height": 2532
+      },
+      "sha256": "d01d518fdfc820fb609eb2cc924092b131e1e2d2ab322a2ee413f919edb0c729",
+      "capturedAt": "2026-11-17T13:34:15.283000+00:00",
+      "testIdentifier": "CaptureUITests/testViewportTiles()",
+      "originalAttachment": {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "FCFA5ED8-E56F-4E60-9AFC-1139B2B0BAF2",
+        "deviceName": "iPhone 16e",
+        "exportedFileName": "730F49B0-277E-4052-A39F-4544AE48391D.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "alphabet-viewport-landscape_0_38B52213-D382-4D9C-A86C-8D350A5B9894.png",
+        "timestamp": 1794922455.283
+      },
+      "captureMethod": "XCUIScreen.main.screenshot(), retained XCTest PNG exported with xcresulttool"
+    },
+    {
+      "file": "narrow-alphabet-viewport-last.png",
+      "pixels": {
+        "width": 1170,
+        "height": 2532
+      },
+      "sha256": "1cf75a7068d5f9bc01809203c37cf084fd0b40cce912187920ea1df74acb5bf5",
+      "capturedAt": "2026-11-17T13:33:54.006000+00:00",
+      "testIdentifier": "CaptureUITests/testViewportTiles()",
+      "originalAttachment": {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "FCFA5ED8-E56F-4E60-9AFC-1139B2B0BAF2",
+        "deviceName": "iPhone 16e",
+        "exportedFileName": "9A4168E5-7C36-4D0A-A780-E59D6BB03B3A.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "alphabet-viewport-last_0_E94CE620-747D-4637-B09E-8A76D993352E.png",
+        "timestamp": 1794922434.006
+      },
+      "captureMethod": "XCUIScreen.main.screenshot(), retained XCTest PNG exported with xcresulttool"
+    },
+    {
+      "file": "narrow-alphabet-viewport-page-1.png",
+      "pixels": {
+        "width": 1170,
+        "height": 2532
+      },
+      "sha256": "1cf75a7068d5f9bc01809203c37cf084fd0b40cce912187920ea1df74acb5bf5",
+      "capturedAt": "2026-11-17T13:33:45.449000+00:00",
+      "testIdentifier": "CaptureUITests/testViewportTiles()",
+      "originalAttachment": {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "FCFA5ED8-E56F-4E60-9AFC-1139B2B0BAF2",
+        "deviceName": "iPhone 16e",
+        "exportedFileName": "41980FBC-9A61-4068-B71F-914E4D001BF5.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "alphabet-viewport-page-1_0_70B0F13D-BB1D-4AAD-BC9D-96C33BC4D986.png",
+        "timestamp": 1794922425.449
+      },
+      "captureMethod": "XCUIScreen.main.screenshot(), retained XCTest PNG exported with xcresulttool"
+    },
+    {
+      "file": "narrow-alphabet-viewport-page-0.png",
+      "pixels": {
+        "width": 1170,
+        "height": 2532
+      },
+      "sha256": "9e41d869e9fe30111f1679b9df755f9830ccece494faa8dd1ab054de189de7e3",
+      "capturedAt": "2026-11-17T13:33:34.427000+00:00",
+      "testIdentifier": "CaptureUITests/testViewportTiles()",
+      "originalAttachment": {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "FCFA5ED8-E56F-4E60-9AFC-1139B2B0BAF2",
+        "deviceName": "iPhone 16e",
+        "exportedFileName": "16326278-4CAC-4DFC-A3BE-6CF326C94679.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "alphabet-viewport-page-0_0_D9E35FB9-FC34-49C3-A9FA-6A09628DB53C.png",
+        "timestamp": 1794922414.427
+      },
+      "captureMethod": "XCUIScreen.main.screenshot(), retained XCTest PNG exported with xcresulttool"
+    },
+    {
+      "file": "narrow-alphabet-viewport-portrait.png",
+      "pixels": {
+        "width": 1170,
+        "height": 2532
+      },
+      "sha256": "8d15f62550d250bf14bc72df0174dd01b15bc72bf92a533aef44b3792de337b5",
+      "capturedAt": "2026-11-17T13:33:21.559000+00:00",
+      "testIdentifier": "CaptureUITests/testViewportTiles()",
+      "originalAttachment": {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "FCFA5ED8-E56F-4E60-9AFC-1139B2B0BAF2",
+        "deviceName": "iPhone 16e",
+        "exportedFileName": "E86B881D-E82A-473A-B71C-0D0F1601ABF6.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "alphabet-viewport-portrait_0_143FE21A-F51F-4035-832D-1E7B92743786.png",
+        "timestamp": 1794922401.559
+      },
+      "captureMethod": "XCUIScreen.main.screenshot(), retained XCTest PNG exported with xcresulttool"
+    },
+    {
+      "file": "overflow-alphabet-accessibility-overflow-scrolled.png",
+      "pixels": {
+        "width": 1170,
+        "height": 2532
+      },
+      "sha256": "63c465c672f2344a5c8011b218b6cea64590624d971b5d17f9dd2a6629c2f8e1",
+      "capturedAt": "2026-11-17T13:35:38.571000+00:00",
+      "testIdentifier": "CaptureUITests/testAccessibilityOverflow()",
+      "originalAttachment": {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "FCFA5ED8-E56F-4E60-9AFC-1139B2B0BAF2",
+        "deviceName": "iPhone 16e",
+        "exportedFileName": "A4E7ACC7-FD58-40D1-8A2B-34FF776A7C50.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "alphabet-accessibility-overflow-scrolled_0_4AFDF4F1-D089-477F-BE3A-52252F1BF55E.png",
+        "timestamp": 1794922538.571
+      },
+      "captureMethod": "XCUIScreen.main.screenshot(), retained XCTest PNG exported with xcresulttool"
+    },
+    {
+      "file": "overflow-alphabet-accessibility-overflow-right.png",
+      "pixels": {
+        "width": 1170,
+        "height": 2532
+      },
+      "sha256": "21480c56e6599c0cb37d8b23b0670744b23a27012115160784e8f9aa7651106b",
+      "capturedAt": "2026-11-17T13:35:32.121000+00:00",
+      "testIdentifier": "CaptureUITests/testAccessibilityOverflow()",
+      "originalAttachment": {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "FCFA5ED8-E56F-4E60-9AFC-1139B2B0BAF2",
+        "deviceName": "iPhone 16e",
+        "exportedFileName": "9C01DD03-1BDF-4B3F-B4B0-A2B9BAC4A07B.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "alphabet-accessibility-overflow-right_0_52598D39-28D0-423D-9E3E-955790E34D01.png",
+        "timestamp": 1794922532.121
+      },
+      "captureMethod": "XCUIScreen.main.screenshot(), retained XCTest PNG exported with xcresulttool"
+    }
+  ]
+}

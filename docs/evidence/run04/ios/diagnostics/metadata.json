@@ -1,0 +1,27 @@
+{
+  "kind": "diagnostic-only copied app; not NATO application screenshots",
+  "captureMethod": "XCUIScreen.main.screenshot XCTest attachments",
+  "probeSource": "../input-probe.js",
+  "probeBundleSha256": "0550d369831cf1cfb632d8fabf638c13def8a54a75bb5fdfff7da74c4d1bc401",
+  "testResult": "6 executions,4 failures,2 passes; controlled and uncontrolled2 failures each",
+  "captures": [
+    {
+      "file": "minimal-controlled-missing-characters.png",
+      "sourceAttachment": "E5D3A973-7C3A-4479-B268-72AA3512BE43.png",
+      "sha256": "149e978986232ed8e3bde1c04baa5f2ec8bb7e3c4f6644eda306db76b86d9f77",
+      "inspected": true,
+      "observedValue": "C",
+      "expectedValue": "CV34 7AP"
+    },
+    {
+      "file": "minimal-uncontrolled-missing-characters.png",
+      "sourceAttachment": "494642DC-A474-4547-82B0-3E20FE3F529D.png",
+      "sha256": "62c1dbb83f9d63c52cdb3013cd5fe674e4608ad8d4748866e0c2b92d715d1e4a",
+      "inspected": true,
+      "observedValue": "C",
+      "expectedValue": "CV34 7AP"
+    }
+  ],
+  "probeNativeExecutableSha256": "1c1a9529e63a208dcfd0a287fddae31ac0d3808f90bf536ad9171d433da4c17a",
+  "probeSourceSha256": "602b3ad93dc8ce8b10bc05b487fafc51ed5858524e4124f5f43b3c4c985d4d6c"
+}

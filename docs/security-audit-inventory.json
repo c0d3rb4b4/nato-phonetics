@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "description": "Temporary engineering dispositions, not vulnerability fixes or owner release-risk acceptance. See SECURITY_REVIEW.md.",
+  "reviewedOn": "2026-11-17",
+  "reviewBy": "2026-12-16",
+  "lockfileSha256": "e606348ea9645ee3ffaab656315820c31db17db7e1b1208cbe6bf4ce1b6765c9",
+  "toolchain": {
+    "node": "v22.23.0",
+    "npm": "10.9.4"
+  },
+  "rawAuditExitStatus": 1,
+  "auditSummary": {
+    "info": 0,
+    "low": 0,
+    "moderate": 7,
+    "high": 1,
+    "critical": 0,
+    "total": 8
+  },
+  "entries": [
+    {
+      "package": "image-size",
+      "fingerprint": {
+        "severity": "high",
+        "isDirect": false,
+        "range": "0.6.3 - 2.0.2",
+        "effects": [],
+        "installed": [
+          {
+            "path": "node_modules/image-size",
+            "version": "1.2.1"
+          }
+        ],
+        "via": [
+          {
+            "name": "image-size",
+            "url": "https://github.com/advisories/GHSA-5p2g-fcmc-qvqq",
+            "severity": "high",
+            "range": ">=1.2.0 <=2.0.2"
+          },
+          {
+            "name": "image-size",
+            "url": "https://github.com/advisories/GHSA-w3rx-r6r6-pgpr",
+            "severity": "high",
+            "range": ">=0.6.3 <=2.0.2"
+          }
+        ]
+      },
+      "owner": "Repository maintainer (implementation); product/repository owner for release acceptance in M11.7",
+      "reviewedOn": "2026-11-17",
+      "reviewBy": "2026-12-16",
+      "applicability": "Retained Metro0.83.3 build-time image parsing through React Native0.81.5 and @react-native/metro-config0.81.5. Metro Assets.js passes asset bytes to image-size1.2.1. No authored upload feature; malicious repository/dependency asset bytes can still reach parser. Run04 native builds passed; build success and Run05 font assets do not fix the advisory.",
+      "remediation": "Upgrade to a compatible upstream Metro/parser fix or review a maintained backport in P00/P10. Metro0.83.3 requests image-size ^1.0.2; patched2.0.3+ is outside that range. No incompatible override applied. Re-review before release; M11.7 owns any release-risk acceptance.",
+      "evidence": "Run03 npm audit raw report: docs/evidence/run03-audit.json; npm explain image-size identifies Metro0.83.3; node_modules/metro/src/Assets.js imports parser. Expo chains removed by lockfile/installed graph check; image-size high advisory remains. Run05 unchanged lockfile: docs/evidence/run05/shared/audit.json and audit-review.log; matching high fingerprint, registry now reports 7 moderate/0 low."
+    }
+  ]
+}

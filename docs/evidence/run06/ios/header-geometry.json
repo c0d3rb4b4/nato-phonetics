@@ -1,0 +1,1422 @@
+[
+  {
+    "log": "window-header-test.log",
+    "state": "header-fullscreen",
+    "window": {
+      "height": 1210,
+      "width": 834,
+      "x": 0,
+      "y": 0
+    },
+    "header": {
+      "height": 56,
+      "width": 834,
+      "x": 0,
+      "y": 32
+    },
+    "additionalLeadingInset": 0,
+    "additionalTrailingInset": 0,
+    "bodyWidth": 834,
+    "tileColumns": 6,
+    "home": {
+      "height": 48,
+      "width": 48,
+      "x": 8,
+      "y": 36
+    },
+    "menu": {
+      "height": 48,
+      "width": 48,
+      "x": 778,
+      "y": 36
+    },
+    "visibleTileFrames": {
+      "alphabet-A": {
+        "height": 150,
+        "width": 110,
+        "x": 57,
+        "y": 174
+      },
+      "alphabet-B": {
+        "height": 150,
+        "width": 110,
+        "x": 179,
+        "y": 174
+      },
+      "alphabet-C": {
+        "height": 150,
+        "width": 110,
+        "x": 301,
+        "y": 174
+      },
+      "alphabet-D": {
+        "height": 150,
+        "width": 110,
+        "x": 423,
+        "y": 174
+      },
+      "alphabet-E": {
+        "height": 150,
+        "width": 110,
+        "x": 545,
+        "y": 174
+      },
+      "alphabet-F": {
+        "height": 150,
+        "width": 110,
+        "x": 667,
+        "y": 174
+      },
+      "alphabet-G": {
+        "height": 150,
+        "width": 110,
+        "x": 57,
+        "y": 336
+      },
+      "alphabet-H": {
+        "height": 150,
+        "width": 110,
+        "x": 179,
+        "y": 336
+      },
+      "alphabet-I": {
+        "height": 150,
+        "width": 110,
+        "x": 301,
+        "y": 336
+      },
+      "alphabet-J": {
+        "height": 150,
+        "width": 110,
+        "x": 423,
+        "y": 336
+      },
+      "alphabet-K": {
+        "height": 150,
+        "width": 110,
+        "x": 545,
+        "y": 336
+      },
+      "alphabet-L": {
+        "height": 150,
+        "width": 110,
+        "x": 667,
+        "y": 336
+      },
+      "alphabet-M": {
+        "height": 150,
+        "width": 110,
+        "x": 57,
+        "y": 498
+      },
+      "alphabet-N": {
+        "height": 150,
+        "width": 110,
+        "x": 179,
+        "y": 498
+      },
+      "alphabet-O": {
+        "height": 150,
+        "width": 110,
+        "x": 301,
+        "y": 498
+      },
+      "alphabet-P": {
+        "height": 150,
+        "width": 110,
+        "x": 423,
+        "y": 498
+      },
+      "alphabet-Q": {
+        "height": 150,
+        "width": 110,
+        "x": 545,
+        "y": 498
+      },
+      "alphabet-R": {
+        "height": 150,
+        "width": 110,
+        "x": 667,
+        "y": 498
+      },
+      "alphabet-S": {
+        "height": 150,
+        "width": 110,
+        "x": 57,
+        "y": 660
+      },
+      "alphabet-T": {
+        "height": 150,
+        "width": 110,
+        "x": 179,
+        "y": 660
+      },
+      "alphabet-U": {
+        "height": 150,
+        "width": 110,
+        "x": 301,
+        "y": 660
+      },
+      "alphabet-V": {
+        "height": 150,
+        "width": 110,
+        "x": 423,
+        "y": 660
+      },
+      "alphabet-W": {
+        "height": 150,
+        "width": 110,
+        "x": 545,
+        "y": 660
+      },
+      "alphabet-X": {
+        "height": 150,
+        "width": 110,
+        "x": 667,
+        "y": 660
+      },
+      "alphabet-Y": {
+        "height": 150,
+        "width": 110,
+        "x": 301,
+        "y": 822
+      },
+      "alphabet-Z": {
+        "height": 150,
+        "width": 110,
+        "x": 423,
+        "y": 822
+      }
+    }
+  },
+  {
+    "log": "window-header-test.log",
+    "state": "header-small",
+    "window": {
+      "height": 507,
+      "width": 375,
+      "x": 230,
+      "y": 294
+    },
+    "header": {
+      "height": 56,
+      "width": 302.5,
+      "x": 296,
+      "y": 304
+    },
+    "additionalLeadingInset": 66,
+    "additionalTrailingInset": 6.5,
+    "bodyWidth": 375,
+    "tileColumns": 2,
+    "home": {
+      "height": 48,
+      "width": 48,
+      "x": 304,
+      "y": 308
+    },
+    "menu": {
+      "height": 48,
+      "width": 48,
+      "x": 542.5,
+      "y": 308
+    },
+    "visibleTileFrames": {
+      "alphabet-A": {
+        "height": 150,
+        "width": 110,
+        "x": 301.5,
+        "y": 464
+      },
+      "alphabet-B": {
+        "height": 150,
+        "width": 110,
+        "x": 423.5,
+        "y": 464
+      },
+      "alphabet-C": {
+        "height": 150,
+        "width": 110,
+        "x": 301.5,
+        "y": 626
+      },
+      "alphabet-D": {
+        "height": 150,
+        "width": 110,
+        "x": 423.5,
+        "y": 626
+      },
+      "alphabet-E": {
+        "height": 150,
+        "width": 110,
+        "x": 301.5,
+        "y": 788
+      },
+      "alphabet-F": {
+        "height": 150,
+        "width": 110,
+        "x": 423.5,
+        "y": 788
+      }
+    }
+  },
+  {
+    "log": "window-header-test.log",
+    "state": "header-medium",
+    "window": {
+      "height": 692,
+      "width": 544,
+      "x": 146,
+      "y": 202
+    },
+    "header": {
+      "height": 56,
+      "width": 471.5,
+      "x": 212,
+      "y": 212
+    },
+    "additionalLeadingInset": 66,
+    "additionalTrailingInset": 6.5,
+    "bodyWidth": 544,
+    "tileColumns": 4,
+    "home": {
+      "height": 48,
+      "width": 48,
+      "x": 220,
+      "y": 216
+    },
+    "menu": {
+      "height": 48,
+      "width": 48,
+      "x": 627.5,
+      "y": 216
+    },
+    "visibleTileFrames": {
+      "alphabet-A": {
+        "height": 150,
+        "width": 110,
+        "x": 180,
+        "y": 354
+      },
+      "alphabet-B": {
+        "height": 150,
+        "width": 110,
+        "x": 302,
+        "y": 354
+      },
+      "alphabet-C": {
+        "height": 150,
+        "width": 110,
+        "x": 424,
+        "y": 354
+      },
+      "alphabet-D": {
+        "height": 150,
+        "width": 110,
+        "x": 546,
+        "y": 354
+      },
+      "alphabet-E": {
+        "height": 150,
+        "width": 110,
+        "x": 180,
+        "y": 516
+      },
+      "alphabet-F": {
+        "height": 150,
+        "width": 110,
+        "x": 302,
+        "y": 516
+      },
+      "alphabet-G": {
+        "height": 150,
+        "width": 110,
+        "x": 424,
+        "y": 516
+      },
+      "alphabet-H": {
+        "height": 150,
+        "width": 110,
+        "x": 546,
+        "y": 516
+      },
+      "alphabet-I": {
+        "height": 150,
+        "width": 110,
+        "x": 180,
+        "y": 678
+      },
+      "alphabet-J": {
+        "height": 150,
+        "width": 110,
+        "x": 302,
+        "y": 678
+      },
+      "alphabet-K": {
+        "height": 150,
+        "width": 110,
+        "x": 424,
+        "y": 678
+      },
+      "alphabet-L": {
+        "height": 150,
+        "width": 110,
+        "x": 546,
+        "y": 678
+      },
+      "alphabet-M": {
+        "height": 150,
+        "width": 110,
+        "x": 180,
+        "y": 840
+      },
+      "alphabet-N": {
+        "height": 150,
+        "width": 110,
+        "x": 302,
+        "y": 840
+      },
+      "alphabet-O": {
+        "height": 150,
+        "width": 110,
+        "x": 424,
+        "y": 840
+      },
+      "alphabet-P": {
+        "height": 150,
+        "width": 110,
+        "x": 546,
+        "y": 840
+      }
+    }
+  },
+  {
+    "log": "window-header-test.log",
+    "state": "header-landscape",
+    "window": {
+      "height": 692,
+      "width": 544,
+      "x": 334,
+      "y": 32
+    },
+    "header": {
+      "height": 56,
+      "width": 478,
+      "x": 400,
+      "y": 64
+    },
+    "additionalLeadingInset": 66,
+    "additionalTrailingInset": 0,
+    "bodyWidth": 544,
+    "tileColumns": 4,
+    "home": {
+      "height": 48,
+      "width": 48,
+      "x": 408,
+      "y": 68
+    },
+    "menu": {
+      "height": 48,
+      "width": 48,
+      "x": 822,
+      "y": 68
+    },
+    "visibleTileFrames": {
+      "alphabet-A": {
+        "height": 150,
+        "width": 110,
+        "x": 368,
+        "y": 206
+      },
+      "alphabet-B": {
+        "height": 150,
+        "width": 110,
+        "x": 490,
+        "y": 206
+      },
+      "alphabet-C": {
+        "height": 150,
+        "width": 110,
+        "x": 612,
+        "y": 206
+      },
+      "alphabet-D": {
+        "height": 150,
+        "width": 110,
+        "x": 734,
+        "y": 206
+      },
+      "alphabet-E": {
+        "height": 150,
+        "width": 110,
+        "x": 368,
+        "y": 368
+      },
+      "alphabet-F": {
+        "height": 150,
+        "width": 110,
+        "x": 490,
+        "y": 368
+      },
+      "alphabet-G": {
+        "height": 150,
+        "width": 110,
+        "x": 612,
+        "y": 368
+      },
+      "alphabet-H": {
+        "height": 150,
+        "width": 110,
+        "x": 734,
+        "y": 368
+      },
+      "alphabet-I": {
+        "height": 150,
+        "width": 110,
+        "x": 368,
+        "y": 530
+      },
+      "alphabet-J": {
+        "height": 150,
+        "width": 110,
+        "x": 490,
+        "y": 530
+      },
+      "alphabet-K": {
+        "height": 150,
+        "width": 110,
+        "x": 612,
+        "y": 530
+      },
+      "alphabet-L": {
+        "height": 150,
+        "width": 110,
+        "x": 734,
+        "y": 530
+      },
+      "alphabet-M": {
+        "height": 150,
+        "width": 110,
+        "x": 368,
+        "y": 692
+      },
+      "alphabet-N": {
+        "height": 150,
+        "width": 110,
+        "x": 490,
+        "y": 692
+      },
+      "alphabet-O": {
+        "height": 150,
+        "width": 110,
+        "x": 612,
+        "y": 692
+      },
+      "alphabet-P": {
+        "height": 150,
+        "width": 110,
+        "x": 734,
+        "y": 692
+      }
+    }
+  },
+  {
+    "log": "window-header-test.log",
+    "state": "header-restored",
+    "window": {
+      "height": 1210,
+      "width": 834,
+      "x": 0,
+      "y": 0
+    },
+    "header": {
+      "height": 56,
+      "width": 834,
+      "x": 0,
+      "y": 32
+    },
+    "additionalLeadingInset": 0,
+    "additionalTrailingInset": 0,
+    "bodyWidth": 834,
+    "tileColumns": 6,
+    "home": {
+      "height": 48,
+      "width": 48,
+      "x": 8,
+      "y": 36
+    },
+    "menu": {
+      "height": 48,
+      "width": 48,
+      "x": 778,
+      "y": 36
+    },
+    "visibleTileFrames": {
+      "alphabet-A": {
+        "height": 150,
+        "width": 110,
+        "x": 57,
+        "y": 174
+      },
+      "alphabet-B": {
+        "height": 150,
+        "width": 110,
+        "x": 179,
+        "y": 174
+      },
+      "alphabet-C": {
+        "height": 150,
+        "width": 110,
+        "x": 301,
+        "y": 174
+      },
+      "alphabet-D": {
+        "height": 150,
+        "width": 110,
+        "x": 423,
+        "y": 174
+      },
+      "alphabet-E": {
+        "height": 150,
+        "width": 110,
+        "x": 545,
+        "y": 174
+      },
+      "alphabet-F": {
+        "height": 150,
+        "width": 110,
+        "x": 667,
+        "y": 174
+      },
+      "alphabet-G": {
+        "height": 150,
+        "width": 110,
+        "x": 57,
+        "y": 336
+      },
+      "alphabet-H": {
+        "height": 150,
+        "width": 110,
+        "x": 179,
+        "y": 336
+      },
+      "alphabet-I": {
+        "height": 150,
+        "width": 110,
+        "x": 301,
+        "y": 336
+      },
+      "alphabet-J": {
+        "height": 150,
+        "width": 110,
+        "x": 423,
+        "y": 336
+      },
+      "alphabet-K": {
+        "height": 150,
+        "width": 110,
+        "x": 545,
+        "y": 336
+      },
+      "alphabet-L": {
+        "height": 150,
+        "width": 110,
+        "x": 667,
+        "y": 336
+      },
+      "alphabet-M": {
+        "height": 150,
+        "width": 110,
+        "x": 57,
+        "y": 498
+      },
+      "alphabet-N": {
+        "height": 150,
+        "width": 110,
+        "x": 179,
+        "y": 498
+      },
+      "alphabet-O": {
+        "height": 150,
+        "width": 110,
+        "x": 301,
+        "y": 498
+      },
+      "alphabet-P": {
+        "height": 150,
+        "width": 110,
+        "x": 423,
+        "y": 498
+      },
+      "alphabet-Q": {
+        "height": 150,
+        "width": 110,
+        "x": 545,
+        "y": 498
+      },
+      "alphabet-R": {
+        "height": 150,
+        "width": 110,
+        "x": 667,
+        "y": 498
+      },
+      "alphabet-S": {
+        "height": 150,
+        "width": 110,
+        "x": 57,
+        "y": 660
+      },
+      "alphabet-T": {
+        "height": 150,
+        "width": 110,
+        "x": 179,
+        "y": 660
+      },
+      "alphabet-U": {
+        "height": 150,
+        "width": 110,
+        "x": 301,
+        "y": 660
+      },
+      "alphabet-V": {
+        "height": 150,
+        "width": 110,
+        "x": 423,
+        "y": 660
+      },
+      "alphabet-W": {
+        "height": 150,
+        "width": 110,
+        "x": 545,
+        "y": 660
+      },
+      "alphabet-X": {
+        "height": 150,
+        "width": 110,
+        "x": 667,
+        "y": 660
+      },
+      "alphabet-Y": {
+        "height": 150,
+        "width": 110,
+        "x": 301,
+        "y": 822
+      },
+      "alphabet-Z": {
+        "height": 150,
+        "width": 110,
+        "x": 423,
+        "y": 822
+      }
+    }
+  },
+  {
+    "log": "window-header-centers-test.log",
+    "state": "header-fullscreen",
+    "window": {
+      "height": 1210,
+      "width": 834,
+      "x": 0,
+      "y": 0
+    },
+    "header": {
+      "height": 56,
+      "width": 834,
+      "x": 0,
+      "y": 32
+    },
+    "additionalLeadingInset": 0,
+    "additionalTrailingInset": 0,
+    "bodyWidth": 834,
+    "tileColumns": 6,
+    "home": {
+      "height": 48,
+      "width": 48,
+      "x": 8,
+      "y": 36
+    },
+    "menu": {
+      "height": 48,
+      "width": 48,
+      "x": 778,
+      "y": 36
+    },
+    "visibleTileFrames": {
+      "alphabet-A": {
+        "height": 150,
+        "width": 110,
+        "x": 57,
+        "y": 174
+      },
+      "alphabet-B": {
+        "height": 150,
+        "width": 110,
+        "x": 179,
+        "y": 174
+      },
+      "alphabet-C": {
+        "height": 150,
+        "width": 110,
+        "x": 301,
+        "y": 174
+      },
+      "alphabet-D": {
+        "height": 150,
+        "width": 110,
+        "x": 423,
+        "y": 174
+      },
+      "alphabet-E": {
+        "height": 150,
+        "width": 110,
+        "x": 545,
+        "y": 174
+      },
+      "alphabet-F": {
+        "height": 150,
+        "width": 110,
+        "x": 667,
+        "y": 174
+      },
+      "alphabet-G": {
+        "height": 150,
+        "width": 110,
+        "x": 57,
+        "y": 336
+      },
+      "alphabet-H": {
+        "height": 150,
+        "width": 110,
+        "x": 179,
+        "y": 336
+      },
+      "alphabet-I": {
+        "height": 150,
+        "width": 110,
+        "x": 301,
+        "y": 336
+      },
+      "alphabet-J": {
+        "height": 150,
+        "width": 110,
+        "x": 423,
+        "y": 336
+      },
+      "alphabet-K": {
+        "height": 150,
+        "width": 110,
+        "x": 545,
+        "y": 336
+      },
+      "alphabet-L": {
+        "height": 150,
+        "width": 110,
+        "x": 667,
+        "y": 336
+      },
+      "alphabet-M": {
+        "height": 150,
+        "width": 110,
+        "x": 57,
+        "y": 498
+      },
+      "alphabet-N": {
+        "height": 150,
+        "width": 110,
+        "x": 179,
+        "y": 498
+      },
+      "alphabet-O": {
+        "height": 150,
+        "width": 110,
+        "x": 301,
+        "y": 498
+      },
+      "alphabet-P": {
+        "height": 150,
+        "width": 110,
+        "x": 423,
+        "y": 498
+      },
+      "alphabet-Q": {
+        "height": 150,
+        "width": 110,
+        "x": 545,
+        "y": 498
+      },
+      "alphabet-R": {
+        "height": 150,
+        "width": 110,
+        "x": 667,
+        "y": 498
+      },
+      "alphabet-S": {
+        "height": 150,
+        "width": 110,
+        "x": 57,
+        "y": 660
+      },
+      "alphabet-T": {
+        "height": 150,
+        "width": 110,
+        "x": 179,
+        "y": 660
+      },
+      "alphabet-U": {
+        "height": 150,
+        "width": 110,
+        "x": 301,
+        "y": 660
+      },
+      "alphabet-V": {
+        "height": 150,
+        "width": 110,
+        "x": 423,
+        "y": 660
+      },
+      "alphabet-W": {
+        "height": 150,
+        "width": 110,
+        "x": 545,
+        "y": 660
+      },
+      "alphabet-X": {
+        "height": 150,
+        "width": 110,
+        "x": 667,
+        "y": 660
+      },
+      "alphabet-Y": {
+        "height": 150,
+        "width": 110,
+        "x": 301,
+        "y": 822
+      },
+      "alphabet-Z": {
+        "height": 150,
+        "width": 110,
+        "x": 423,
+        "y": 822
+      }
+    }
+  },
+  {
+    "log": "window-header-centers-test.log",
+    "state": "header-small",
+    "window": {
+      "height": 507,
+      "width": 375,
+      "x": 230,
+      "y": 294
+    },
+    "header": {
+      "height": 56,
+      "width": 302.5,
+      "x": 296,
+      "y": 304
+    },
+    "additionalLeadingInset": 66,
+    "additionalTrailingInset": 6.5,
+    "bodyWidth": 375,
+    "tileColumns": 2,
+    "home": {
+      "height": 48,
+      "width": 48,
+      "x": 304,
+      "y": 308
+    },
+    "menu": {
+      "height": 48,
+      "width": 48,
+      "x": 542.5,
+      "y": 308
+    },
+    "visibleTileFrames": {
+      "alphabet-A": {
+        "height": 150,
+        "width": 110,
+        "x": 301.5,
+        "y": 464
+      },
+      "alphabet-B": {
+        "height": 150,
+        "width": 110,
+        "x": 423.5,
+        "y": 464
+      },
+      "alphabet-C": {
+        "height": 150,
+        "width": 110,
+        "x": 301.5,
+        "y": 626
+      },
+      "alphabet-D": {
+        "height": 150,
+        "width": 110,
+        "x": 423.5,
+        "y": 626
+      },
+      "alphabet-E": {
+        "height": 150,
+        "width": 110,
+        "x": 301.5,
+        "y": 788
+      },
+      "alphabet-F": {
+        "height": 150,
+        "width": 110,
+        "x": 423.5,
+        "y": 788
+      }
+    }
+  },
+  {
+    "log": "window-header-centers-test.log",
+    "state": "header-medium",
+    "window": {
+      "height": 726,
+      "width": 575,
+      "x": 130,
+      "y": 185
+    },
+    "header": {
+      "height": 56,
+      "width": 502.5,
+      "x": 196,
+      "y": 195
+    },
+    "additionalLeadingInset": 66,
+    "additionalTrailingInset": 6.5,
+    "bodyWidth": 575,
+    "tileColumns": 4,
+    "home": {
+      "height": 48,
+      "width": 48,
+      "x": 204,
+      "y": 199
+    },
+    "menu": {
+      "height": 48,
+      "width": 48,
+      "x": 642.5,
+      "y": 199
+    },
+    "visibleTileFrames": {
+      "alphabet-A": {
+        "height": 150,
+        "width": 110,
+        "x": 179.5,
+        "y": 337
+      },
+      "alphabet-B": {
+        "height": 150,
+        "width": 110,
+        "x": 301.5,
+        "y": 337
+      },
+      "alphabet-C": {
+        "height": 150,
+        "width": 110,
+        "x": 423.5,
+        "y": 337
+      },
+      "alphabet-D": {
+        "height": 150,
+        "width": 110,
+        "x": 545.5,
+        "y": 337
+      },
+      "alphabet-E": {
+        "height": 150,
+        "width": 110,
+        "x": 179.5,
+        "y": 499
+      },
+      "alphabet-F": {
+        "height": 150,
+        "width": 110,
+        "x": 301.5,
+        "y": 499
+      },
+      "alphabet-G": {
+        "height": 150,
+        "width": 110,
+        "x": 423.5,
+        "y": 499
+      },
+      "alphabet-H": {
+        "height": 150,
+        "width": 110,
+        "x": 545.5,
+        "y": 499
+      },
+      "alphabet-I": {
+        "height": 150,
+        "width": 110,
+        "x": 179.5,
+        "y": 661
+      },
+      "alphabet-J": {
+        "height": 150,
+        "width": 110,
+        "x": 301.5,
+        "y": 661
+      },
+      "alphabet-K": {
+        "height": 150,
+        "width": 110,
+        "x": 423.5,
+        "y": 661
+      },
+      "alphabet-L": {
+        "height": 150,
+        "width": 110,
+        "x": 545.5,
+        "y": 661
+      },
+      "alphabet-M": {
+        "height": 150,
+        "width": 110,
+        "x": 179.5,
+        "y": 823
+      },
+      "alphabet-N": {
+        "height": 150,
+        "width": 110,
+        "x": 301.5,
+        "y": 823
+      },
+      "alphabet-O": {
+        "height": 150,
+        "width": 110,
+        "x": 423.5,
+        "y": 823
+      },
+      "alphabet-P": {
+        "height": 150,
+        "width": 110,
+        "x": 545.5,
+        "y": 823
+      }
+    }
+  },
+  {
+    "log": "window-header-centers-test.log",
+    "state": "header-landscape",
+    "window": {
+      "height": 692,
+      "width": 544,
+      "x": 334,
+      "y": 32
+    },
+    "header": {
+      "height": 56,
+      "width": 478,
+      "x": 400,
+      "y": 64
+    },
+    "additionalLeadingInset": 66,
+    "additionalTrailingInset": 0,
+    "bodyWidth": 544,
+    "tileColumns": 4,
+    "home": {
+      "height": 48,
+      "width": 48,
+      "x": 408,
+      "y": 68
+    },
+    "menu": {
+      "height": 48,
+      "width": 48,
+      "x": 822,
+      "y": 68
+    },
+    "visibleTileFrames": {
+      "alphabet-A": {
+        "height": 150,
+        "width": 110,
+        "x": 368,
+        "y": 206
+      },
+      "alphabet-B": {
+        "height": 150,
+        "width": 110,
+        "x": 490,
+        "y": 206
+      },
+      "alphabet-C": {
+        "height": 150,
+        "width": 110,
+        "x": 612,
+        "y": 206
+      },
+      "alphabet-D": {
+        "height": 150,
+        "width": 110,
+        "x": 734,
+        "y": 206
+      },
+      "alphabet-E": {
+        "height": 150,
+        "width": 110,
+        "x": 368,
+        "y": 368
+      },
+      "alphabet-F": {
+        "height": 150,
+        "width": 110,
+        "x": 490,
+        "y": 368
+      },
+      "alphabet-G": {
+        "height": 150,
+        "width": 110,
+        "x": 612,
+        "y": 368
+      },
+      "alphabet-H": {
+        "height": 150,
+        "width": 110,
+        "x": 734,
+        "y": 368
+      },
+      "alphabet-I": {
+        "height": 150,
+        "width": 110,
+        "x": 368,
+        "y": 530
+      },
+      "alphabet-J": {
+        "height": 150,
+        "width": 110,
+        "x": 490,
+        "y": 530
+      },
+      "alphabet-K": {
+        "height": 150,
+        "width": 110,
+        "x": 612,
+        "y": 530
+      },
+      "alphabet-L": {
+        "height": 150,
+        "width": 110,
+        "x": 734,
+        "y": 530
+      },
+      "alphabet-M": {
+        "height": 150,
+        "width": 110,
+        "x": 368,
+        "y": 692
+      },
+      "alphabet-N": {
+        "height": 150,
+        "width": 110,
+        "x": 490,
+        "y": 692
+      },
+      "alphabet-O": {
+        "height": 150,
+        "width": 110,
+        "x": 612,
+        "y": 692
+      },
+      "alphabet-P": {
+        "height": 150,
+        "width": 110,
+        "x": 734,
+        "y": 692
+      }
+    }
+  },
+  {
+    "log": "window-header-centers-test.log",
+    "state": "header-restored",
+    "window": {
+      "height": 1210,
+      "width": 834,
+      "x": 0,
+      "y": 0
+    },
+    "header": {
+      "height": 56,
+      "width": 834,
+      "x": 0,
+      "y": 32
+    },
+    "additionalLeadingInset": 0,
+    "additionalTrailingInset": 0,
+    "bodyWidth": 834,
+    "tileColumns": 6,
+    "home": {
+      "height": 48,
+      "width": 48,
+      "x": 8,
+      "y": 36
+    },
+    "menu": {
+      "height": 48,
+      "width": 48,
+      "x": 778,
+      "y": 36
+    },
+    "visibleTileFrames": {
+      "alphabet-A": {
+        "height": 150,
+        "width": 110,
+        "x": 57,
+        "y": 174
+      },
+      "alphabet-B": {
+        "height": 150,
+        "width": 110,
+        "x": 179,
+        "y": 174
+      },
+      "alphabet-C": {
+        "height": 150,
+        "width": 110,
+        "x": 301,
+        "y": 174
+      },
+      "alphabet-D": {
+        "height": 150,
+        "width": 110,
+        "x": 423,
+        "y": 174
+      },
+      "alphabet-E": {
+        "height": 150,
+        "width": 110,
+        "x": 545,
+        "y": 174
+      },
+      "alphabet-F": {
+        "height": 150,
+        "width": 110,
+        "x": 667,
+        "y": 174
+      },
+      "alphabet-G": {
+        "height": 150,
+        "width": 110,
+        "x": 57,
+        "y": 336
+      },
+      "alphabet-H": {
+        "height": 150,
+        "width": 110,
+        "x": 179,
+        "y": 336
+      },
+      "alphabet-I": {
+        "height": 150,
+        "width": 110,
+        "x": 301,
+        "y": 336
+      },
+      "alphabet-J": {
+        "height": 150,
+        "width": 110,
+        "x": 423,
+        "y": 336
+      },
+      "alphabet-K": {
+        "height": 150,
+        "width": 110,
+        "x": 545,
+        "y": 336
+      },
+      "alphabet-L": {
+        "height": 150,
+        "width": 110,
+        "x": 667,
+        "y": 336
+      },
+      "alphabet-M": {
+        "height": 150,
+        "width": 110,
+        "x": 57,
+        "y": 498
+      },
+      "alphabet-N": {
+        "height": 150,
+        "width": 110,
+        "x": 179,
+        "y": 498
+      },
+      "alphabet-O": {
+        "height": 150,
+        "width": 110,
+        "x": 301,
+        "y": 498
+      },
+      "alphabet-P": {
+        "height": 150,
+        "width": 110,
+        "x": 423,
+        "y": 498
+      },
+      "alphabet-Q": {
+        "height": 150,
+        "width": 110,
+        "x": 545,
+        "y": 498
+      },
+      "alphabet-R": {
+        "height": 150,
+        "width": 110,
+        "x": 667,
+        "y": 498
+      },
+      "alphabet-S": {
+        "height": 150,
+        "width": 110,
+        "x": 57,
+        "y": 660
+      },
+      "alphabet-T": {
+        "height": 150,
+        "width": 110,
+        "x": 179,
+        "y": 660
+      },
+      "alphabet-U": {
+        "height": 150,
+        "width": 110,
+        "x": 301,
+        "y": 660
+      },
+      "alphabet-V": {
+        "height": 150,
+        "width": 110,
+        "x": 423,
+        "y": 660
+      },
+      "alphabet-W": {
+        "height": 150,
+        "width": 110,
+        "x": 545,
+        "y": 660
+      },
+      "alphabet-X": {
+        "height": 150,
+        "width": 110,
+        "x": 667,
+        "y": 660
+      },
+      "alphabet-Y": {
+        "height": 150,
+        "width": 110,
+        "x": 301,
+        "y": 822
+      },
+      "alphabet-Z": {
+        "height": 150,
+        "width": 110,
+        "x": 423,
+        "y": 822
+      }
+    }
+  }
+]

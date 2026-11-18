@@ -1,331 +1,207 @@
-import { useRef, useState } from "react";
-import { Animated, Easing, Pressable, StyleSheet, Text, View } from "react-native";
-import { useTheme } from "../src/context/ThemeContext";
-import { NATO_ALPHABET } from "../src/data/natoData";
-import { QUIZ_DISTRACTORS } from "../src/data/quizDistractors";
-import { speak } from "../src/lib/speech";
+import { useCallback, useRef, useState } from 'react';
+import { Keyboard, StyleSheet, Text, TextInput, View } from 'react-native';
+import { entrySymbol, PRACTICE_SETS, practiceExampleOutput, practiceLengths } from '../src/lib/practiceSets';
+import { PlaybackStatus } from '../src/components/PlaybackStatus';
+import { NatoTile, TileGrid } from '../src/components/NatoTile';
+import { Button, Feedback, Heading, Screen } from '../src/components/ui';
+import { useTheme } from '../src/context/ThemeContext';
+import { usePlayback } from '../src/hooks/usePlayback';
+import { useFocusEffect } from '../src/navigation';
+import {
+  cancelQuizSession, createQuizSession, currentQuizQuestion, DEFAULT_QUIZ_SESSION_LENGTH,
+  nextQuizQuestion, quizActionGuard, quizSessionResults,
+  restartQuizSession, retryQuizMistakes, submitQuizAnswer, QUIZ_MODES, MAX_RECALL_ANSWER_LENGTH,
+} from '../src/lib/quizSession';
+import { normalizeAnswerKey } from '../src/lib/questions';
+import { useProgress } from '../src/hooks/useProgress';
+import { progressStore } from '../src/lib/progressStore';
+import { selectProgressSymbols } from '../src/lib/progress';
+import { ProgressStatus } from '../src/components/ProgressStatus';
+import { router } from '../src/navigation';
 
-function randomInt(max) {
-  return Math.floor(Math.random() * max);
-}
-
-function createQuestion() {
-  const correctIndex = randomInt(NATO_ALPHABET.length);
-  const correct = NATO_ALPHABET[correctIndex];
-
-  // Generate 3 random distractors for this letter
-  const distractors = generateDistractors(correct);
-  
-  // Combine correct answer with distractors
-  const allOptions = [correct.word, ...distractors];
-  
-  // Shuffle the options
-  allOptions.sort(() => Math.random() - 0.5);
-
-  return { correct, options: allOptions };
-}
-
-function generateDistractors(correct) {
-  const letter = correct.letter;
-  const pool = QUIZ_DISTRACTORS[letter] || [];
-  
-  // Filter out the correct word if it's in the pool
-  const available = pool.filter(w => w !== correct.word);
-  
-  // Pick 3 random distractors
-  const shuffled = [...available].sort(() => Math.random() - 0.5);
-  return shuffled.slice(0, 3);
-}
+const REVIEW_SCOPES = /** @type {const} */ ([
+  { id: 'all', label: 'Full symbol set' }, { id: 'due', label: 'Due review' }, { id: 'mistakes', label: 'Focus on mistakes' },
+]);
 
 export default function LetterQuizScreen() {
   const { theme } = useTheme();
-  const [question, setQuestion] = useState(() => createQuestion());
-  const [result, setResult] = useState(null);
-  const [selectedOption, setSelectedOption] = useState(null);
-  const flipAnim = useRef(new Animated.Value(0)).current;
-  const [isFlipped, setIsFlipped] = useState(false);
+  const audio = usePlayback('letter-quiz');
+  const progress = useProgress();
+  const [scope, setScope] = useState(/** @type {'all'|'due'|'mistakes'} */ ('all'));
+  const [practice, setPractice] = useState(PRACTICE_SETS[0]);
+  const [roundPractice, setRoundPractice] = useState(PRACTICE_SETS[0]);
+  const [length, setLength] = useState(DEFAULT_QUIZ_SESSION_LENGTH);
+  const [session, setSession] = useState(/** @type {import('../src/lib/quizSession').QuizSession | null} */ (null));
+  const [choosing, setChoosing] = useState(true);
+  const [mode, setMode] = useState(/** @type {import('../src/lib/quizSession').QuizMode} */ ('choice'));
+  const [typedAnswer, setTypedAnswer] = useState('');
+  const [answerError, setAnswerError] = useState('');
+  const [showCodeWord, setShowCodeWord] = useState(false);
+  const current = useRef(session);
+  const focused = useRef(false);
+  useFocusEffect(useCallback(() => {
+    focused.current = true;
+    // Navigation retains the round/recap; usePlayback releases owned audio.
+    return () => { focused.current = false; };
+  }, []));
 
-  const frontOpacity = flipAnim.interpolate({
-    inputRange: [0, 0.48, 0.5, 1],
-    outputRange: [1, 0.7, 0, 0],
-  });
+  /** Commit synchronously so rapid taps cannot submit or advance twice.
+   * Every rendered handler carries the engine's opaque question/revision guard.
+   * @param {import('../src/lib/quizSession').QuizSession} next */
+  const commit = next => { current.current = next; setSession(next); };
+  const question = session && currentQuizQuestion(session);
+  const guard = session && quizActionGuard(session);
+  const results = session && quizSessionResults(session);
+  const finished = session?.phase === 'complete' || session?.phase === 'cancelled';
+  const attempt = session?.attempts[session.index];
+  const feedback = session?.phase === 'feedback';
+  const textStyle = [styles.body, { color: theme.colors.text }];
+  const clearResponse = () => { setTypedAnswer(''); setAnswerError(''); setShowCodeWord(false); };
+  const reviewSymbols = selectProgressSymbols(progress.data, practice.symbols, scope, progress.now);
+  const effectiveLength = scope === 'all' ? length : Math.min(length, reviewSymbols.length);
 
-  const backOpacity = flipAnim.interpolate({
-    inputRange: [0, 0.5, 0.52, 1],
-    outputRange: [0, 0, 0.7, 1],
-  });
-
-  const frontScale = flipAnim.interpolate({
-    inputRange: [0, 0.5, 1],
-    outputRange: [1, 0.97, 0.95],
-  });
-
-  const backScale = flipAnim.interpolate({
-    inputRange: [0, 0.5, 1],
-    outputRange: [0.95, 0.97, 1],
-  });
-
-  const frontAnimatedStyle = {
-    opacity: frontOpacity,
-    transform: [{ scale: frontScale }],
+  const start = () => {
+    if (!focused.current || current.current !== session) return;
+    if (!reviewSymbols.length || (scope !== 'all' && progress.isLoading)) return;
+    audio.stop();
+    commit(session ? restartQuizSession(session, { length: effectiveLength, symbols: reviewSymbols, mode }) : createQuizSession({ length: effectiveLength, symbols: reviewSymbols, mode }));
+    clearResponse();
+    setRoundPractice(practice);
+    setChoosing(false);
   };
 
-  const backAnimatedStyle = {
-    opacity: backOpacity,
-    transform: [{ scale: backScale }],
+  /** @param {string} word */
+  const select = word => {
+    if (!focused.current || !current.current) return;
+    const next = submitQuizAnswer(current.current, guard, word);
+    if (next === current.current) return;
+    Keyboard.dismiss();
+    commit(next);
+    const savedAttempt = next.attempts[next.attempts.length - 1];
+    void progressStore.record(savedAttempt.questionId, savedAttempt.symbol, savedAttempt.correct);
+    if (question) void audio.play([{ text: question.correct.speechText }]);
+  };
+  const advance = () => {
+    if (!focused.current || !current.current) return;
+    const next = nextQuizQuestion(current.current, guard);
+    if (next === current.current) return;
+    audio.stop();
+    commit(next);
+    clearResponse();
   };
 
-  const handleSelect = (word) => {
-    const isCorrect = word === question.correct.word;
-    setSelectedOption(word);
-    setResult(isCorrect ? "correct" : "wrong");
-
-    // Flip card animation for both correct and wrong answers (eased)
-    Animated.timing(flipAnim, {
-      toValue: 1,
-      duration: 700,
-      easing: Easing.inOut(Easing.cubic),
-      useNativeDriver: true,
-    }).start(() => {
-      setIsFlipped(true);
-      speak(question.correct.word);
-    });
-
-    setTimeout(() => {
-      setResult(null);
-      setSelectedOption(null);
-      setIsFlipped(false);
-      flipAnim.setValue(0);
-      setQuestion(createQuestion());
-    }, isCorrect ? 2000 : 2500);
-  };
-
-  return (
-    <View style={[styles.screen, { backgroundColor: theme.colors.background }]}>
-      <Text style={[styles.prompt, { color: theme.colors.text }]}>
-        What is the NATO word for this letter?
-      </Text>
-
-      {/* Trading Card with Flip Animation */}
-      <View style={styles.cardContainer}>
-        <View style={styles.cardInner}>
-          <Animated.View style={[styles.cardWrapper, frontAnimatedStyle]}>
-            <View
-              style={[
-                styles.cardFace,
-                { backgroundColor: question.correct.color },
-              ]}
-            >
-              <View style={styles.cardHeader}>
-                <Text style={styles.letter}>{question.correct.letter}</Text>
-              </View>
-              <View style={styles.cardBody}>
-                <Text style={styles.wordCensored}>******</Text>
-                <Text style={styles.pronunciationCensored}>***</Text>
-              </View>
-            </View>
-          </Animated.View>
-
-          <Animated.View style={[styles.cardWrapper, styles.cardBack, backAnimatedStyle]}>
-            <View
-              style={[
-                styles.cardFace,
-                { backgroundColor: question.correct.color },
-              ]}
-            >
-              <View style={styles.cardHeader}>
-                <Text style={styles.letter}>{question.correct.letter}</Text>
-              </View>
-              <View style={styles.cardBody}>
-                <Text style={styles.wordRevealed}>{question.correct.word}</Text>
-                <Text style={styles.pronunciation}>{question.correct.pronunciation}</Text>
-              </View>
-            </View>
-          </Animated.View>
-        </View>
+  return <Screen>
+    {finished && results && <View testID="quiz-results" style={styles.section}>
+      <Heading focusKey={`${session.generation}-${session.phase}`}>{session.phase === 'complete' ? 'Round complete' : 'Round ended early'}</Heading>
+      <Text style={textStyle}>{roundPractice.label}{roundPractice.example ? ` · ${roundPractice.example}` : ''}</Text>
+      <Text style={textStyle}>{QUIZ_MODES.find(item => item.id === session.mode)?.label}</Text>
+      <Text style={textStyle} testID="quiz-score">{results.correct} correct of {results.answered} answered · {Math.round(results.accuracyPercent)}% accuracy</Text>
+      <Text style={textStyle}>{results.answered} of {results.total} questions answered.</Text>
+      <Heading>Missed answers</Heading>
+      {results.missed.length ? results.missed.map((miss, index) => <Text key={`${miss.symbol}-${index}`} style={textStyle}>
+        {session.mode === 'listening' ? `Expected symbol: ${miss.expected}` : `${miss.symbol} is ${miss.expected}`}. Your answer: {miss.answer}.
+      </Text>) : <Text style={textStyle}>{results.answered ? 'No missed answers.' : 'No answers submitted.'}</Text>}
+      {session.phase === 'complete' && results.missed.length > 0 && <Button label="Retry Mistakes" testID="quiz-retry" onPress={() => {
+        if (!focused.current || current.current !== session) return;
+        const retry = retryQuizMistakes(session);
+        if (retry) { audio.stop(); commit(retry); clearResponse(); setChoosing(false); }
+      }} />}
+      {!choosing && <Button label="Choose a new round" onPress={() => setChoosing(true)} />}
+    </View>}
+    {choosing ? <>
+      <Heading focusKey={finished ? undefined : 'setup'}>Letter and digit practice</Heading>
+      <Button label="View learning progress" variant="secondary" onPress={() => router.push('/progress')} />
+      <Text style={textStyle}>Choose how to answer.</Text>
+      <View style={styles.section}>
+        {QUIZ_MODES.map(item => <Button key={item.id} label={item.label} testID={`mode-${item.id}`} variant="secondary"
+          accessibilityRole="radio" accessibilityState={{ checked: mode === item.id }} selected={mode === item.id}
+          onPress={() => { audio.stop(); setMode(/** @type {import('../src/lib/quizSession').QuizMode} */ (item.id)); }} />)}
       </View>
-
-      {/* Multiple Choice Options */}
-      <View style={styles.options}>
-        {question.options.map((word, index) => {
-          const isSelected = selectedOption === word;
-          const isCorrect = word === question.correct.word;
-          const showCorrect = result === "correct" && isCorrect;
-          const showWrong = result === "wrong" && isSelected;
-
-          return (
-            <Pressable
-              key={index}
-              style={({ pressed }) => [
-                styles.option,
-                { backgroundColor: theme.colors.surface },
-                showCorrect && styles.optionCorrect,
-                showWrong && styles.optionWrong,
-                pressed && !result && styles.optionPressed,
-              ]}
-              onPress={() => !result && handleSelect(word)}
-              disabled={!!result}
-            >
-              <Text
-                style={[
-                  styles.optionText,
-                  { color: theme.colors.text },
-                  showCorrect && styles.optionTextCorrect,
-                  showWrong && styles.optionTextWrong,
-                ]}
-              >
-                {word}
-              </Text>
-            </Pressable>
-          );
-        })}
+      {mode === 'listening' && <Text style={textStyle}>Play a code word, then choose its letter or digit. Replay or show the code word as text whenever you need it. No microphone is used.</Text>}
+      {mode === 'typed' && <Text style={textStyle}>Type the canonical code word for the symbol. Case, accents, spaces and punctuation are ignored; Alpha and Juliet are accepted. Pronunciation guides are not alternative answers.</Text>}
+      <Text style={textStyle}>Choose the symbols to practise.</Text>
+      <View style={styles.section}>
+        {PRACTICE_SETS.map(set => <Button key={set.id} label={set.label} testID={`practice-${set.id}`} variant="secondary"
+          accessibilityRole="radio" accessibilityState={{ checked: practice === set }} selected={practice === set}
+          onPress={() => { audio.stop(); setPractice(set); setLength(Math.min(DEFAULT_QUIZ_SESSION_LENGTH, set.symbols.length)); }} />)}
       </View>
-
-      {result === "correct" && (
-        <Text style={[styles.feedback, styles.correct]}>✓ Correct!</Text>
-      )}
-      {result === "wrong" && (
-        <Text style={[styles.feedback, styles.wrong]}>
-          ✗ Not quite. The answer was "{question.correct.word}"
-        </Text>
-      )}
-    </View>
-  );
+      {practice.example && <>
+        <Text style={textStyle}>Example: {practice.example}. Questions practise its {practice.symbols.length} distinct symbols in shuffled order. Hear the complete example in its original order.</Text>
+        <Button label="Hear example" variant="secondary" onPress={() => { void audio.play(practiceExampleOutput(practice).speech); }} />
+        <Text style={textStyle} testID="practice-example-text">{practiceExampleOutput(practice).text}</Text>
+      </>}
+      <Text style={textStyle}>Choose full practice or use saved progress for this symbol set. Due review includes previously practised symbols whose review time has arrived. Focus includes symbols whose last saved answer was incorrect.</Text>
+      <View style={styles.section}>
+        {REVIEW_SCOPES.map(item => <Button key={item.id} label={item.label} testID={`review-${item.id}`} variant="secondary"
+          accessibilityRole="radio" accessibilityState={{ checked: scope === item.id }} selected={scope === item.id}
+          onPress={() => { audio.stop(); setScope(item.id); }} />)}
+      </View>
+      <Text testID="review-availability" style={textStyle}>{scope === 'all' ? `${practice.symbols.length} symbols in full practice.`
+        : progress.isLoading ? 'Loading review symbols…' : progress.error?.operation === 'load' ? 'Saved progress is unavailable. Retry progress storage or choose Full symbol set.'
+          : `${reviewSymbols.length} saved symbols available. ${!reviewSymbols.length ? 'Choose Full symbol set to practise now.' : 'This round uses each selected symbol at most once.'}`}</Text>
+      <Text style={textStyle}>Choose a short round. {scope === 'all' ? `Each of the ${practice.symbols.length} symbols appears once before the deck repeats.` : `Up to ${length} questions; ${effectiveLength} in this review.`}</Text>
+      <View style={styles.section}>
+        {practiceLengths(practice).map(count => <Button key={count} label={`${count} questions`} variant="secondary"
+          accessibilityRole="radio" accessibilityState={{ checked: length === count }} selected={length === count}
+          onPress={() => setLength(count)} />)}
+      </View>
+      <Button label={session ? 'Start new round' : 'Start round'} testID="quiz-start" disabled={!reviewSymbols.length || (scope !== 'all' && progress.isLoading)} onPress={start} />
+      <Text style={textStyle}>Each submitted answer saves symbol totals and a review time on this device. Round details, typed drafts and recaps stay in memory; starting a new round replaces the recap and closing or reloading clears it. Review selections are fixed when a round starts.</Text>
+    </> : question && session && <>
+      <Heading focusKey={`${session.generation}-${session.index}`} testID="quiz-prompt">{session.mode === 'listening'
+        ? 'Which symbol matches this code word?' : session.mode === 'typed' ? 'Type the code word for this symbol.' : 'What is the phonetic word for this symbol?'}</Heading>
+      <Text style={textStyle} testID="quiz-progress">Question {session.index + 1} of {session.length} · {results?.correct} correct</Text>
+      {(session.mode !== 'listening' || feedback) && <TileGrid>
+        <NatoTile entry={question.correct} concealed={!feedback} testID="quiz-card"
+          symbolTestID="quiz-letter" bodyTestID={feedback ? 'quiz-answer' : undefined} />
+      </TileGrid>}
+      {session.mode === 'listening' && !feedback && <>
+        <Button label="Play code word" testID="quiz-listen" onPress={() => {
+          if (focused.current && current.current === session) void audio.play([{ text: question.correct.speechText }]);
+        }} />
+        <Button label="Show code word as text" variant="secondary" accessibilityState={{ expanded: showCodeWord }} onPress={() => setShowCodeWord(true)} />
+        {showCodeWord && <Text testID="quiz-code-word" style={textStyle} accessibilityLiveRegion="polite" aria-live="polite">{question.correct.word}</Text>}
+        <Text style={textStyle}>Replay with Play code word. If audio is unavailable, use the text alternative; it counts toward the same practice score.</Text>
+      </>}
+      {!feedback && session.mode !== 'typed' && <Text style={textStyle}>Choose an answer below.</Text>}
+      {session.mode === 'typed' ? <>
+        {!feedback && <>
+          <TextInput testID="quiz-typed-answer" accessibilityLabel="Your code word" value={typedAnswer}
+            onChangeText={value => { setTypedAnswer(value); setAnswerError(''); }} maxLength={MAX_RECALL_ANSWER_LENGTH}
+            autoCorrect={false} spellCheck={false} autoCapitalize="none" autoComplete="off" returnKeyType="done"
+            placeholder="Type a code word" placeholderTextColor={theme.colors.textSecondary}
+            style={[styles.input, { color: theme.colors.text, borderColor: theme.colors.border, backgroundColor: theme.colors.surface }]}
+            onSubmitEditing={() => { if (normalizeAnswerKey(typedAnswer)) select(typedAnswer); else setAnswerError('Enter a code word before checking.'); }} />
+          <Button label="Check answer" testID="quiz-check" onPress={() => {
+            if (normalizeAnswerKey(typedAnswer)) select(typedAnswer); else setAnswerError('Enter a code word before checking.');
+          }} />
+          <Feedback message={answerError} error />
+        </>}
+        {feedback && <Text style={textStyle} testID="quiz-submitted-answer">Your answer: {attempt?.answer}</Text>}
+      </> : <View style={styles.section}>
+        {question.options.map((word, index) => <Button key={`${question.id.symbol}-${word}`} testID={`quiz-choice-${index}`}
+          label={`${word}${attempt?.answer === word ? ' · Your answer' : ''}`} accessibilityLabel={`Choose ${word}`}
+          variant="secondary" selected={attempt?.answer === word} disabled={feedback} onPress={() => select(word)} />)}
+      </View>}
+      {feedback && <>
+        <Feedback message={`${attempt?.correct ? 'Correct!' : 'Not quite.'} ${entrySymbol(question.correct)} is ${question.correct.word}.`} />
+        <Button label={session.index + 1 === session.length ? 'View results' : 'Next question'} testID="quiz-next" onPress={advance} />
+        <Button label="Replay answer" variant="secondary" onPress={() => {
+          if (focused.current && current.current === session) void audio.play([{ text: question.correct.speechText }]);
+        }} />
+      </>}
+      <Button label="End round and review" variant="secondary" onPress={() => {
+        if (!focused.current || current.current !== session) return;
+        audio.stop(); commit(cancelQuizSession(session));
+      }} />
+    </>}
+    <PlaybackStatus audio={audio} />
+    <ProgressStatus progress={progress} />
+  </Screen>;
 }
 
 const styles = StyleSheet.create({
-  screen: {
-    flex: 1,
-    paddingHorizontal: 16,
-    paddingTop: 16,
-  },
-  prompt: {
-    fontSize: 18,
-    fontWeight: "600",
-    marginBottom: 20,
-    textAlign: "center",
-  },
-  cardContainer: {
-    alignItems: "center",
-    marginBottom: 40,
-  },
-  cardInner: {
-    width: 180,
-    height: 240,
-    position: 'relative',
-  },
-  cardWrapper: {
-    width: 180,
-    height: 240,
-    position: 'absolute',
-  },
-  cardFace: {
-    width: 180,
-    height: 240,
-    borderRadius: 16,
-    shadowColor: "#000",
-    shadowOpacity: 0.2,
-    shadowRadius: 10,
-    shadowOffset: { width: 0, height: 4 },
-    elevation: 8,
-    overflow: "hidden",
-  },
-  cardFront: {
-  },
-  cardBack: {
-  },
-  cardHeader: {
-    height: 100,
-    justifyContent: "center",
-    alignItems: "center",
-    borderBottomWidth: 3,
-    borderBottomColor: "rgba(0, 0, 0, 0.15)",
-  },
-  letter: {
-    fontSize: 64,
-    fontWeight: "900",
-    color: "#1F2933",
-  },
-  cardBody: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    paddingHorizontal: 12,
-    paddingVertical: 16,
-  },
-  wordCensored: {
-    fontSize: 22,
-    fontWeight: "700",
-    color: "#1F2933",
-    marginBottom: 8,
-    letterSpacing: 2,
-  },
-  pronunciationCensored: {
-    fontSize: 13,
-    fontWeight: "400",
-    color: "#4A5568",
-    letterSpacing: 2,
-  },
-  wordRevealed: {
-    fontSize: 22,
-    fontWeight: "700",
-    color: "#1F2933",
-    marginBottom: 8,
-  },
-  pronunciation: {
-    fontSize: 13,
-    fontWeight: "400",
-    color: "#4A5568",
-    fontStyle: "italic",
-  },
-  options: {
-    gap: 10,
-  },
-  option: {
-    borderRadius: 12,
-    paddingVertical: 14,
-    paddingHorizontal: 16,
-    shadowColor: "#000",
-    shadowOpacity: 0.05,
-    shadowRadius: 4,
-    shadowOffset: { width: 0, height: 2 },
-    elevation: 2,
-  },
-  optionPressed: {
-    opacity: 0.8,
-    transform: [{ scale: 0.98 }],
-  },
-  optionCorrect: {
-    backgroundColor: "#D1FAE5",
-    borderWidth: 2,
-    borderColor: "#10B981",
-  },
-  optionWrong: {
-    backgroundColor: "#FEE2E2",
-    borderWidth: 2,
-    borderColor: "#EF4444",
-  },
-  optionText: {
-    fontSize: 17,
-    fontWeight: "600",
-    textAlign: "center",
-  },
-  optionTextCorrect: {
-    color: "#065F46",
-  },
-  optionTextWrong: {
-    color: "#991B1B",
-  },
-  feedback: {
-    marginTop: 20,
-    fontSize: 16,
-    fontWeight: "600",
-    textAlign: "center",
-  },
-  correct: {
-    color: "#16A34A",
-  },
-  wrong: {
-    color: "#EF4444",
-  },
+  body: { fontSize: 16, lineHeight: 24 },
+  input: { borderWidth: 1, borderRadius: 8, padding: 12, fontSize: 18, minHeight: 52 },
+  section: { gap: 10 },
 });

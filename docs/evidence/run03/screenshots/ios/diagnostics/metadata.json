@@ -1,0 +1,21 @@
+{
+  "purpose": "Diagnostic evidence of incomplete fast XCTest text entry; not successful sample capture",
+  "records": [
+    {
+      "file": "converter-fast-input-incomplete.png",
+      "bytes": 108563,
+      "sha256": "316f8fbfffb37d2f233074926a7543a0013373b60dc9bde273337dbe69866191"
+    },
+    {
+      "file": "converter-fast-without-return.png",
+      "bytes": 197514,
+      "sha256": "db7ea14a53d66918ff012cc787497cf06ab699802268c93dbcda7262991993eb"
+    },
+    {
+      "file": "converter-autocorrect-off-incomplete.png",
+      "bytes": 201795,
+      "sha256": "6d3724b8a759fa79ddc0d887ce31223da6d1a4b0dfa659f6857cc8e27d4caa33",
+      "note": "Actual simctl screenshot after failed editing test still shows CP; autocorrection disabled build"
+    }
+  ]
+}

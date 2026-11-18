@@ -1,0 +1,33 @@
+[
+  {
+    "check": "native-pacing-play-stop-replay",
+    "passed": true,
+    "timestamp": "2026-11-18T09:56:17Z",
+    "savedPacing": {
+      "rate": 0.75,
+      "wordPauseMs": 700
+    },
+    "provider": "actual Android TextToSpeech, no listening claim"
+  },
+  {
+    "check": "paging-menu-relaunch-pacing",
+    "passed": true,
+    "timestamp": "2026-11-18T09:59:08Z",
+    "inputIsMemoryOnly": true
+  },
+  {
+    "check": "long-os-paste-edit-copy-page",
+    "passed": true,
+    "timestamp": "2026-11-18T10:00:41Z",
+    "inputCharacters": 2001,
+    "outputCharacters": 10123,
+    "pasteThroughEditToUIAutomatorSeconds": 6.494579290999994,
+    "method": "driver-inclusive observation; no latency SLA"
+  },
+  {
+    "check": "live-scale-input-retained",
+    "passed": true,
+    "timestamp": "2026-11-18T10:02:19Z",
+    "accessibilityAcceptance": "open"
+  }
+]

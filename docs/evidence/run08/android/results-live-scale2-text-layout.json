@@ -1,0 +1,82 @@
+{
+  "dimensions": {
+    "fontScale": 2,
+    "height": 914.2857142857143,
+    "scale": 1.75,
+    "width": 411.42857142857144
+  },
+  "values": [
+    {
+      "frame": {
+        "height": 48.571441650390625,
+        "pageX": 56,
+        "pageY": 55.428558349609375,
+        "width": 299.4285583496094,
+        "x": 56,
+        "y": 3.4285714626312256
+      },
+      "style": {
+        "color": "#F5F7FA",
+        "flex": 1,
+        "fontSize": 18,
+        "fontWeight": "600",
+        "paddingHorizontal": 4,
+        "paddingVertical": 12,
+        "textAlign": "center"
+      },
+      "text": "Letter Quiz"
+    },
+    {
+      "frame": {
+        "height": 49.714263916015625,
+        "pageX": 16,
+        "pageY": 132,
+        "width": 379.4285583496094,
+        "x": 0,
+        "y": 8
+      },
+      "style": {
+        "color": "#F5F7FA",
+        "fontSize": 26,
+        "fontWeight": "700",
+        "marginVertical": 8
+      },
+      "text": "Round ended early"
+    },
+    {
+      "frame": {
+        "height": 49.71429443359375,
+        "pageX": 16,
+        "pageY": 335.4285888671875,
+        "width": 379.4285583496094,
+        "x": 0,
+        "y": 211.42857360839844
+      },
+      "style": {
+        "color": "#F5F7FA",
+        "fontSize": 26,
+        "fontWeight": "700",
+        "marginVertical": 8
+      },
+      "text": "Missed answers"
+    },
+    {
+      "frame": {
+        "height": 37.71435546875,
+        "pageX": 78.28571319580078,
+        "pageY": 499.4285888671875,
+        "width": 254.28573608398438,
+        "x": 62.28571319580078,
+        "y": 13.714285850524902
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Choose a new round"
+    }
+  ]
+}
