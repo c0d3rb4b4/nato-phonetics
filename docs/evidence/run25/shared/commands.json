@@ -1,0 +1,260 @@
+[
+  {
+    "command": [
+      "npm",
+      "run",
+      "lint"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-19T11:19:25.354139+00:00",
+    "endedAt": "2026-11-19T11:19:27.388990+00:00",
+    "exitCode": 0,
+    "log": "shared/lint.log",
+    "environment": {
+      "PATH": "/tmp/nato-phonetics-toolchain/node_modules/.bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Users/mac/.codex/tmp/arg0-macos/codex-arg05mnPUr:/Users/mac/.vscode/extensions/openai.chatgpt-26.1111.21308-darwin-arm64/bin/macos-aarch64",
+      "NODE_PATH": "/tmp/nato-run19-browser/node_modules",
+      "BROWSER_EXECUTABLE": "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+      "CADDY_EXECUTABLE": "/tmp/nato-run20-caddy/caddy"
+    }
+  },
+  {
+    "command": [
+      "node",
+      "scripts/verify-progress-recovery-browser.cjs",
+      "artifacts/run25/candidate/public",
+      "artifacts/run25/recovery/webkit",
+      "webkit"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-19T11:19:38.278108+00:00",
+    "endedAt": "2026-11-19T11:19:45.100300+00:00",
+    "exitCode": 1,
+    "log": "shared/recovery-webkit.log",
+    "environment": {
+      "PATH": "/tmp/nato-phonetics-toolchain/node_modules/.bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Users/mac/.codex/tmp/arg0-macos/codex-arg05mnPUr:/Users/mac/.vscode/extensions/openai.chatgpt-26.1111.21308-darwin-arm64/bin/macos-aarch64",
+      "NODE_PATH": "/tmp/nato-run19-browser/node_modules",
+      "BROWSER_EXECUTABLE": "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+      "CADDY_EXECUTABLE": "/tmp/nato-run20-caddy/caddy"
+    }
+  },
+  {
+    "command": [
+      "node",
+      "artifacts/run25/probe.cjs"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-19T11:20:32.317194+00:00",
+    "endedAt": "2026-11-19T11:20:33.906781+00:00",
+    "exitCode": 0,
+    "log": "shared/observer-probe.log",
+    "environment": {
+      "PATH": "/tmp/nato-phonetics-toolchain/node_modules/.bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Users/mac/.codex/tmp/arg0-macos/codex-arg05mnPUr:/Users/mac/.vscode/extensions/openai.chatgpt-26.1111.21308-darwin-arm64/bin/macos-aarch64",
+      "NODE_PATH": "/tmp/nato-run19-browser/node_modules",
+      "BROWSER_EXECUTABLE": "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+      "CADDY_EXECUTABLE": "/tmp/nato-run20-caddy/caddy"
+    }
+  },
+  {
+    "command": [
+      "node",
+      "scripts/verify-progress-recovery-browser.cjs",
+      "artifacts/run25/candidate/public",
+      "artifacts/run25/recovery/webkit-prototype",
+      "webkit"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-19T11:20:57.401795+00:00",
+    "endedAt": "2026-11-19T11:21:16.316683+00:00",
+    "exitCode": 0,
+    "log": "shared/recovery-webkit-prototype.log",
+    "environment": {
+      "PATH": "/tmp/nato-phonetics-toolchain/node_modules/.bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Users/mac/.codex/tmp/arg0-macos/codex-arg05mnPUr:/Users/mac/.vscode/extensions/openai.chatgpt-26.1111.21308-darwin-arm64/bin/macos-aarch64",
+      "NODE_PATH": "/tmp/nato-run19-browser/node_modules",
+      "BROWSER_EXECUTABLE": "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+      "CADDY_EXECUTABLE": "/tmp/nato-run20-caddy/caddy"
+    }
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "lint"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-19T11:21:47.476237+00:00",
+    "endedAt": "2026-11-19T11:21:49.502191+00:00",
+    "exitCode": 0,
+    "log": "shared/lint-final.log",
+    "environment": {
+      "PATH": "/tmp/nato-phonetics-toolchain/node_modules/.bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Users/mac/.codex/tmp/arg0-macos/codex-arg05mnPUr:/Users/mac/.vscode/extensions/openai.chatgpt-26.1111.21308-darwin-arm64/bin/macos-aarch64",
+      "NODE_PATH": "/tmp/nato-run19-browser/node_modules",
+      "BROWSER_EXECUTABLE": "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+      "CADDY_EXECUTABLE": "/tmp/nato-run20-caddy/caddy"
+    }
+  },
+  {
+    "command": [
+      "node",
+      "scripts/verify-progress-recovery-browser.cjs",
+      "artifacts/run25/candidate/public",
+      "artifacts/run25/recovery/firefox",
+      "firefox"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-19T11:21:36.247472+00:00",
+    "endedAt": "2026-11-19T11:21:55.945296+00:00",
+    "exitCode": 0,
+    "log": "shared/recovery-firefox.log",
+    "environment": {
+      "PATH": "/tmp/nato-phonetics-toolchain/node_modules/.bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Users/mac/.codex/tmp/arg0-macos/codex-arg05mnPUr:/Users/mac/.vscode/extensions/openai.chatgpt-26.1111.21308-darwin-arm64/bin/macos-aarch64",
+      "NODE_PATH": "/tmp/nato-run19-browser/node_modules",
+      "BROWSER_EXECUTABLE": "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+      "CADDY_EXECUTABLE": "/tmp/nato-run20-caddy/caddy"
+    }
+  },
+  {
+    "command": [
+      "node",
+      "-"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-19T11:22:12.433864+00:00",
+    "endedAt": "2026-11-19T11:22:12.502111+00:00",
+    "exitCode": 0,
+    "log": "shared/workflow.log",
+    "environment": {
+      "PATH": "/tmp/nato-phonetics-toolchain/node_modules/.bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Users/mac/.codex/tmp/arg0-macos/codex-arg05mnPUr:/Users/mac/.vscode/extensions/openai.chatgpt-26.1111.21308-darwin-arm64/bin/macos-aarch64",
+      "NODE_PATH": "/tmp/nato-run19-browser/node_modules",
+      "BROWSER_EXECUTABLE": "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+      "CADDY_EXECUTABLE": "/tmp/nato-run20-caddy/caddy"
+    }
+  },
+  {
+    "command": [
+      "node",
+      "scripts/verify-progress-recovery-browser.cjs",
+      "artifacts/run25/candidate/public",
+      "artifacts/run25/recovery/chromium",
+      "chromium"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-19T11:22:17.960143+00:00",
+    "endedAt": "2026-11-19T11:22:39.096309+00:00",
+    "exitCode": 0,
+    "log": "shared/recovery-chromium.log",
+    "environment": {
+      "PATH": "/tmp/nato-phonetics-toolchain/node_modules/.bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Users/mac/.codex/tmp/arg0-macos/codex-arg05mnPUr:/Users/mac/.vscode/extensions/openai.chatgpt-26.1111.21308-darwin-arm64/bin/macos-aarch64",
+      "NODE_PATH": "/tmp/nato-run19-browser/node_modules",
+      "BROWSER_EXECUTABLE": "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+      "CADDY_EXECUTABLE": "/tmp/nato-run20-caddy/caddy"
+    }
+  },
+  {
+    "command": [
+      "node",
+      "scripts/verify-web-host.cjs",
+      "docs/evidence/run20/hosting/nato-web.tar.gz",
+      "artifacts/run25/host-webkit-tabs",
+      "webkit",
+      "tabs"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-19T11:22:54.384214+00:00",
+    "endedAt": "2026-11-19T11:23:14.853745+00:00",
+    "exitCode": 1,
+    "log": "shared/host-webkit-tabs.log",
+    "environment": {
+      "PATH": "/tmp/nato-phonetics-toolchain/node_modules/.bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Users/mac/.codex/tmp/arg0-macos/codex-arg05mnPUr:/Users/mac/.vscode/extensions/openai.chatgpt-26.1111.21308-darwin-arm64/bin/macos-aarch64",
+      "NODE_PATH": "/tmp/nato-run19-browser/node_modules",
+      "BROWSER_EXECUTABLE": "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+      "CADDY_EXECUTABLE": "/tmp/nato-run20-caddy/caddy"
+    }
+  },
+  {
+    "command": [
+      "node",
+      "-"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-19T11:24:55.285649+00:00",
+    "endedAt": "2026-11-19T11:24:55.702661+00:00",
+    "exitCode": 0,
+    "log": "shared/inventory.log",
+    "environment": {
+      "PATH": "/tmp/nato-phonetics-toolchain/node_modules/.bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Users/mac/.codex/tmp/arg0-macos/codex-arg05mnPUr:/Users/mac/.vscode/extensions/openai.chatgpt-26.1111.21308-darwin-arm64/bin/macos-aarch64",
+      "NODE_PATH": "/tmp/nato-run19-browser/node_modules",
+      "BROWSER_EXECUTABLE": "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+      "CADDY_EXECUTABLE": "/tmp/nato-run20-caddy/caddy"
+    }
+  },
+  {
+    "command": [
+      "node",
+      "docs/evidence/run25/shared/observer-contract.cjs"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-19T11:26:04.186234+00:00",
+    "endedAt": "2026-11-19T11:26:13.310086+00:00",
+    "exitCode": 0,
+    "log": "shared/observer-contract.log",
+    "environment": {
+      "PATH": "/tmp/nato-phonetics-toolchain/node_modules/.bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Users/mac/.codex/tmp/arg0-macos/codex-arg05mnPUr:/Users/mac/.vscode/extensions/openai.chatgpt-26.1111.21308-darwin-arm64/bin/macos-aarch64",
+      "NODE_PATH": "/tmp/nato-run19-browser/node_modules",
+      "BROWSER_EXECUTABLE": "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+      "CADDY_EXECUTABLE": "/tmp/nato-run20-caddy/caddy"
+    }
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "lint"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-19T11:29:05.585831+00:00",
+    "endedAt": "2026-11-19T11:29:07.532396+00:00",
+    "exitCode": 0,
+    "log": "shared/lint-handoff.log",
+    "environment": {
+      "PATH": "/tmp/nato-phonetics-toolchain/node_modules/.bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Users/mac/.codex/tmp/arg0-macos/codex-arg05mnPUr:/Users/mac/.vscode/extensions/openai.chatgpt-26.1111.21308-darwin-arm64/bin/macos-aarch64",
+      "NODE_PATH": "/tmp/nato-run19-browser/node_modules",
+      "BROWSER_EXECUTABLE": "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+      "CADDY_EXECUTABLE": "/tmp/nato-run20-caddy/caddy"
+    }
+  },
+  {
+    "command": [
+      "python3",
+      "artifacts/run25/verify.py"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-19T11:32:52.960769+00:00",
+    "endedAt": "2026-11-19T11:32:54.746901+00:00",
+    "exitCode": 0,
+    "log": "shared/evidence-verification.log",
+    "environment": {
+      "PATH": "/tmp/nato-phonetics-toolchain/node_modules/.bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Users/mac/.codex/tmp/arg0-macos/codex-arg05mnPUr:/Users/mac/.vscode/extensions/openai.chatgpt-26.1111.21308-darwin-arm64/bin/macos-aarch64",
+      "NODE_PATH": "/tmp/nato-run19-browser/node_modules",
+      "BROWSER_EXECUTABLE": "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+      "CADDY_EXECUTABLE": "/tmp/nato-run20-caddy/caddy"
+    }
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-19T11:32:54.790450+00:00",
+    "endedAt": "2026-11-19T11:32:54.809929+00:00",
+    "exitCode": 0,
+    "log": "shared/whitespace.log",
+    "environment": {
+      "PATH": "/tmp/nato-phonetics-toolchain/node_modules/.bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Users/mac/.codex/tmp/arg0-macos/codex-arg05mnPUr:/Users/mac/.vscode/extensions/openai.chatgpt-26.1111.21308-darwin-arm64/bin/macos-aarch64",
+      "NODE_PATH": "/tmp/nato-run19-browser/node_modules",
+      "BROWSER_EXECUTABLE": "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+      "CADDY_EXECUTABLE": "/tmp/nato-run20-caddy/caddy"
+    }
+  }
+]

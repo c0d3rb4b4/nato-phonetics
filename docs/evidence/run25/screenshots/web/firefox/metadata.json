@@ -1,0 +1,242 @@
+[
+  {
+    "file": "ordinary-1280-saved.png",
+    "state": "Exactly one saved answer after real pointer input/Retry",
+    "at": "2026-11-19T11:21:40.308Z",
+    "engine": "firefox",
+    "browser": "159.0",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "theme": "light",
+    "scenario": "ordinary",
+    "candidate": {
+      "root": "/Users/mac/dev/apps/nato-phonetics/artifacts/run25/candidate/public",
+      "manifestSha256": "50810f855b532d68a7008ca3d8f38b2cc7563c7d80693c1eaddebfdb4f069ab4",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e"
+    },
+    "command": "node scripts/verify-progress-recovery-browser.cjs",
+    "arguments": [
+      "artifacts/run25/candidate/public",
+      "artifacts/run25/recovery/firefox",
+      "firefox"
+    ]
+  },
+  {
+    "file": "ordinary-320-saved.png",
+    "state": "Exactly one saved answer after real pointer input/Retry",
+    "at": "2026-11-19T11:21:40.973Z",
+    "engine": "firefox",
+    "browser": "159.0",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "theme": "dark",
+    "scenario": "ordinary",
+    "candidate": {
+      "root": "/Users/mac/dev/apps/nato-phonetics/artifacts/run25/candidate/public",
+      "manifestSha256": "50810f855b532d68a7008ca3d8f38b2cc7563c7d80693c1eaddebfdb4f069ab4",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e"
+    },
+    "command": "node scripts/verify-progress-recovery-browser.cjs",
+    "arguments": [
+      "artifacts/run25/candidate/public",
+      "artifacts/run25/recovery/firefox",
+      "firefox"
+    ]
+  },
+  {
+    "file": "quota-1280-pending.png",
+    "state": "First answer visibly pending with Retry; no saved record",
+    "at": "2026-11-19T11:21:41.514Z",
+    "engine": "firefox",
+    "browser": "159.0",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "theme": "light",
+    "scenario": "quota",
+    "candidate": {
+      "root": "/Users/mac/dev/apps/nato-phonetics/artifacts/run25/candidate/public",
+      "manifestSha256": "50810f855b532d68a7008ca3d8f38b2cc7563c7d80693c1eaddebfdb4f069ab4",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e"
+    },
+    "command": "node scripts/verify-progress-recovery-browser.cjs",
+    "arguments": [
+      "artifacts/run25/candidate/public",
+      "artifacts/run25/recovery/firefox",
+      "firefox"
+    ]
+  },
+  {
+    "file": "quota-1280-saved.png",
+    "state": "Exactly one saved answer after real pointer input/Retry",
+    "at": "2026-11-19T11:21:41.763Z",
+    "engine": "firefox",
+    "browser": "159.0",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "theme": "light",
+    "scenario": "quota",
+    "candidate": {
+      "root": "/Users/mac/dev/apps/nato-phonetics/artifacts/run25/candidate/public",
+      "manifestSha256": "50810f855b532d68a7008ca3d8f38b2cc7563c7d80693c1eaddebfdb4f069ab4",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e"
+    },
+    "command": "node scripts/verify-progress-recovery-browser.cjs",
+    "arguments": [
+      "artifacts/run25/candidate/public",
+      "artifacts/run25/recovery/firefox",
+      "firefox"
+    ]
+  },
+  {
+    "file": "quota-320-pending.png",
+    "state": "First answer visibly pending with Retry; no saved record",
+    "at": "2026-11-19T11:21:42.338Z",
+    "engine": "firefox",
+    "browser": "159.0",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "theme": "dark",
+    "scenario": "quota",
+    "candidate": {
+      "root": "/Users/mac/dev/apps/nato-phonetics/artifacts/run25/candidate/public",
+      "manifestSha256": "50810f855b532d68a7008ca3d8f38b2cc7563c7d80693c1eaddebfdb4f069ab4",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e"
+    },
+    "command": "node scripts/verify-progress-recovery-browser.cjs",
+    "arguments": [
+      "artifacts/run25/candidate/public",
+      "artifacts/run25/recovery/firefox",
+      "firefox"
+    ]
+  },
+  {
+    "file": "quota-320-saved.png",
+    "state": "Exactly one saved answer after real pointer input/Retry",
+    "at": "2026-11-19T11:21:42.590Z",
+    "engine": "firefox",
+    "browser": "159.0",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "theme": "dark",
+    "scenario": "quota",
+    "candidate": {
+      "root": "/Users/mac/dev/apps/nato-phonetics/artifacts/run25/candidate/public",
+      "manifestSha256": "50810f855b532d68a7008ca3d8f38b2cc7563c7d80693c1eaddebfdb4f069ab4",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e"
+    },
+    "command": "node scripts/verify-progress-recovery-browser.cjs",
+    "arguments": [
+      "artifacts/run25/candidate/public",
+      "artifacts/run25/recovery/firefox",
+      "firefox"
+    ]
+  },
+  {
+    "file": "lock-1280-pending.png",
+    "state": "First answer visibly pending with Retry; no saved record",
+    "at": "2026-11-19T11:21:48.723Z",
+    "engine": "firefox",
+    "browser": "159.0",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "theme": "light",
+    "scenario": "lock",
+    "candidate": {
+      "root": "/Users/mac/dev/apps/nato-phonetics/artifacts/run25/candidate/public",
+      "manifestSha256": "50810f855b532d68a7008ca3d8f38b2cc7563c7d80693c1eaddebfdb4f069ab4",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e"
+    },
+    "command": "node scripts/verify-progress-recovery-browser.cjs",
+    "arguments": [
+      "artifacts/run25/candidate/public",
+      "artifacts/run25/recovery/firefox",
+      "firefox"
+    ]
+  },
+  {
+    "file": "lock-1280-saved.png",
+    "state": "Exactly one saved answer after real pointer input/Retry",
+    "at": "2026-11-19T11:21:49.016Z",
+    "engine": "firefox",
+    "browser": "159.0",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "theme": "light",
+    "scenario": "lock",
+    "candidate": {
+      "root": "/Users/mac/dev/apps/nato-phonetics/artifacts/run25/candidate/public",
+      "manifestSha256": "50810f855b532d68a7008ca3d8f38b2cc7563c7d80693c1eaddebfdb4f069ab4",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e"
+    },
+    "command": "node scripts/verify-progress-recovery-browser.cjs",
+    "arguments": [
+      "artifacts/run25/candidate/public",
+      "artifacts/run25/recovery/firefox",
+      "firefox"
+    ]
+  },
+  {
+    "file": "lock-320-pending.png",
+    "state": "First answer visibly pending with Retry; no saved record",
+    "at": "2026-11-19T11:21:55.402Z",
+    "engine": "firefox",
+    "browser": "159.0",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "theme": "dark",
+    "scenario": "lock",
+    "candidate": {
+      "root": "/Users/mac/dev/apps/nato-phonetics/artifacts/run25/candidate/public",
+      "manifestSha256": "50810f855b532d68a7008ca3d8f38b2cc7563c7d80693c1eaddebfdb4f069ab4",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e"
+    },
+    "command": "node scripts/verify-progress-recovery-browser.cjs",
+    "arguments": [
+      "artifacts/run25/candidate/public",
+      "artifacts/run25/recovery/firefox",
+      "firefox"
+    ]
+  },
+  {
+    "file": "lock-320-saved.png",
+    "state": "Exactly one saved answer after real pointer input/Retry",
+    "at": "2026-11-19T11:21:55.641Z",
+    "engine": "firefox",
+    "browser": "159.0",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "theme": "dark",
+    "scenario": "lock",
+    "candidate": {
+      "root": "/Users/mac/dev/apps/nato-phonetics/artifacts/run25/candidate/public",
+      "manifestSha256": "50810f855b532d68a7008ca3d8f38b2cc7563c7d80693c1eaddebfdb4f069ab4",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e"
+    },
+    "command": "node scripts/verify-progress-recovery-browser.cjs",
+    "arguments": [
+      "artifacts/run25/candidate/public",
+      "artifacts/run25/recovery/firefox",
+      "firefox"
+    ]
+  }
+]

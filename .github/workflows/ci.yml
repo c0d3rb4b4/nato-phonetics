@@ -125,6 +125,8 @@ jobs:
           echo "NODE_PATH=$RUNNER_TEMP/nato-playwright/node_modules" >> "$GITHUB_ENV"
       - name: Check real cross-window progress and cold offline relaunch
         run: node scripts/verify-browser-support.cjs dist artifacts/browser-support/${{ matrix.engine }} ${{ matrix.engine }}
+      - name: Check first-answer storage failure and exactly-once Retry
+        run: node scripts/verify-progress-recovery-browser.cjs dist artifacts/browser-support/${{ matrix.engine }}/recovery ${{ matrix.engine }}
       - name: Check actual Chromium page freeze and deletion recovery
         if: matrix.engine == 'chromium'
         run: |

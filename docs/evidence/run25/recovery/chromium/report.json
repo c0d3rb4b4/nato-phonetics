@@ -1,0 +1,2091 @@
+{
+  "engine": "chromium",
+  "runner": "1.65.1",
+  "checks": [
+    {
+      "scenario": "ordinary",
+      "width": 1280,
+      "theme": "light",
+      "errors": [],
+      "automationErrors": [],
+      "snapshots": {
+        "saved": {
+          "events": [
+            {
+              "sequence": 1,
+              "type": "observer-installed",
+              "ms": 18,
+              "visibility": "visible",
+              "locksAvailable": true,
+              "secureContext": true
+            },
+            {
+              "sequence": 2,
+              "type": "storage-read",
+              "ms": 59.59999996423721,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 3,
+              "type": "storage-read",
+              "ms": 59.59999996423721,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 4,
+              "type": "storage-read",
+              "ms": 238,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 5,
+              "type": "before-pointer-answer",
+              "ms": 241,
+              "visibility": "visible"
+            },
+            {
+              "sequence": 6,
+              "type": "storage-read",
+              "ms": 277.5,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 7,
+              "type": "lock-request",
+              "ms": 281,
+              "visibility": "visible",
+              "operation": 7,
+              "aborted": false
+            },
+            {
+              "sequence": 8,
+              "type": "lock-acquired",
+              "ms": 292.0999999642372,
+              "visibility": "visible",
+              "operation": 7,
+              "mode": "exclusive"
+            },
+            {
+              "sequence": 9,
+              "type": "storage-read",
+              "ms": 292.0999999642372,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 10,
+              "type": "storage-write",
+              "ms": 292.30000001192093,
+              "visibility": "visible",
+              "present": true,
+              "version": 1,
+              "generation": null,
+              "total": 1
+            },
+            {
+              "sequence": 11,
+              "type": "lock-completed",
+              "ms": 293.5,
+              "visibility": "visible",
+              "operation": 7
+            },
+            {
+              "sequence": 12,
+              "type": "storage-read",
+              "ms": 306.5,
+              "visibility": "visible",
+              "present": true,
+              "version": 1,
+              "generation": null,
+              "total": 1
+            }
+          ],
+          "data": {
+            "present": true,
+            "version": 1,
+            "generation": null,
+            "total": 1
+          },
+          "locks": {
+            "held": [],
+            "pending": []
+          },
+          "visibility": "visible",
+          "url": "http://127.0.0.1:58683/letter-quiz",
+          "visibleText": "Letter Quiz\nWhat is the phonetic word for this symbol?\nQuestion 1 of 10 · 1 correct\nO\nOscar\nOSS-cah\nOasis\nOscar · Your answer\nOttawa\nOakland\nCorrect! O is Oscar.\nNext question\nReplay answer\nEnd round and review\nPlaying 1 of 1\nStop playback",
+          "controlled": false
+        },
+        "reloaded": {
+          "events": [
+            {
+              "sequence": 1,
+              "type": "observer-installed",
+              "ms": 7.699999988079071,
+              "visibility": "visible",
+              "locksAvailable": true,
+              "secureContext": true
+            },
+            {
+              "sequence": 2,
+              "type": "storage-read",
+              "ms": 23.899999976158142,
+              "visibility": "visible",
+              "present": true,
+              "version": 1,
+              "generation": null,
+              "total": 1
+            },
+            {
+              "sequence": 3,
+              "type": "storage-read",
+              "ms": 24,
+              "visibility": "visible",
+              "present": true,
+              "version": 1,
+              "generation": null,
+              "total": 1
+            },
+            {
+              "sequence": 4,
+              "type": "storage-read",
+              "ms": 47.59999996423721,
+              "visibility": "visible",
+              "present": true,
+              "version": 1,
+              "generation": null,
+              "total": 1
+            }
+          ],
+          "data": {
+            "present": true,
+            "version": 1,
+            "generation": null,
+            "total": 1
+          },
+          "locks": {
+            "held": [],
+            "pending": []
+          },
+          "visibility": "visible",
+          "url": "http://127.0.0.1:58683/progress",
+          "visibleText": "Learning Progress\nLearning progress\nSaved on this device or browser, without an account or app cloud sync. Every submitted answer counts, including listening text alternatives and Retry Mistakes. These totals combine practice modes; they are a practice aid, not a mastery assessment.\n1 answers saved · 1 correct · 0 errors\n1 of 36 symbols practised · 0 due now · 0 need another try\nOpen practice\nIn practice, choose a symbol set and Due review or Focus on mistakes. Unpractised symbols remain in Full symbol set. A wrong answer is due immediately; consecutive correct answers schedule review after 1, 3, 7, 14, then 30 elapsed days. Another correct answer keeps the 30-day interval. A miss resets the interval. Due counts refresh on return and each minute; device clock changes affect due times.\nSaved symbols\nO · Oscar: 1 attempts, 0 errors. Next review: 20/11/2026, 11:22:23. Last answer correct.\nClear Progress\nDelete all saved symbol totals and review times, including unsaved answers waiting for Retry. Appearance, voice and converter pace are kept. Your current round stays in memory; only answers submitted after deletion build new progress. This cannot be undone.\nClear Progress\nPreferences",
+          "controlled": true
+        }
+      },
+      "answer": {
+        "symbol": "O",
+        "word": "Oscar"
+      },
+      "record": "{\"version\":1,\"symbols\":{\"O\":{\"attempts\":1,\"errors\":0,\"streak\":1,\"lastReviewedAt\":1795087343246,\"dueAt\":1795173743246}}}",
+      "status": "passed"
+    },
+    {
+      "scenario": "ordinary",
+      "width": 320,
+      "theme": "dark",
+      "errors": [],
+      "automationErrors": [],
+      "snapshots": {
+        "saved": {
+          "events": [
+            {
+              "sequence": 1,
+              "type": "observer-installed",
+              "ms": 7.100000023841858,
+              "visibility": "visible",
+              "locksAvailable": true,
+              "secureContext": true
+            },
+            {
+              "sequence": 2,
+              "type": "storage-read",
+              "ms": 41.90000003576279,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 3,
+              "type": "storage-read",
+              "ms": 41.90000003576279,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 4,
+              "type": "storage-read",
+              "ms": 193.19999998807907,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 5,
+              "type": "before-pointer-answer",
+              "ms": 195.4000000357628,
+              "visibility": "visible"
+            },
+            {
+              "sequence": 6,
+              "type": "storage-read",
+              "ms": 212,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 7,
+              "type": "lock-request",
+              "ms": 214.9000000357628,
+              "visibility": "visible",
+              "operation": 7,
+              "aborted": false
+            },
+            {
+              "sequence": 8,
+              "type": "lock-acquired",
+              "ms": 230.19999998807907,
+              "visibility": "visible",
+              "operation": 7,
+              "mode": "exclusive"
+            },
+            {
+              "sequence": 9,
+              "type": "storage-read",
+              "ms": 230.19999998807907,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 10,
+              "type": "storage-write",
+              "ms": 230.30000001192093,
+              "visibility": "visible",
+              "present": true,
+              "version": 1,
+              "generation": null,
+              "total": 1
+            },
+            {
+              "sequence": 11,
+              "type": "lock-completed",
+              "ms": 231.60000002384186,
+              "visibility": "visible",
+              "operation": 7
+            },
+            {
+              "sequence": 12,
+              "type": "storage-read",
+              "ms": 235.10000002384186,
+              "visibility": "visible",
+              "present": true,
+              "version": 1,
+              "generation": null,
+              "total": 1
+            }
+          ],
+          "data": {
+            "present": true,
+            "version": 1,
+            "generation": null,
+            "total": 1
+          },
+          "locks": {
+            "held": [],
+            "pending": []
+          },
+          "visibility": "visible",
+          "url": "http://127.0.0.1:58683/letter-quiz",
+          "visibleText": "Letter Quiz\nWhat is the phonetic word for this symbol?\nQuestion 1 of 10 · 1 correct\nX\nX-ray\nECKS-ray\nX-ray · Your answer\nXanadu\nXavier\nXander\nCorrect! X is X-ray.\nNext question\nReplay answer\nEnd round and review\nPlaying 1 of 1\nStop playback",
+          "controlled": false
+        },
+        "reloaded": {
+          "events": [
+            {
+              "sequence": 1,
+              "type": "observer-installed",
+              "ms": 7.300000011920929,
+              "visibility": "visible",
+              "locksAvailable": true,
+              "secureContext": true
+            },
+            {
+              "sequence": 2,
+              "type": "storage-read",
+              "ms": 17.80000001192093,
+              "visibility": "visible",
+              "present": true,
+              "version": 1,
+              "generation": null,
+              "total": 1
+            },
+            {
+              "sequence": 3,
+              "type": "storage-read",
+              "ms": 17.899999976158142,
+              "visibility": "visible",
+              "present": true,
+              "version": 1,
+              "generation": null,
+              "total": 1
+            },
+            {
+              "sequence": 4,
+              "type": "storage-read",
+              "ms": 38.80000001192093,
+              "visibility": "visible",
+              "present": true,
+              "version": 1,
+              "generation": null,
+              "total": 1
+            }
+          ],
+          "data": {
+            "present": true,
+            "version": 1,
+            "generation": null,
+            "total": 1
+          },
+          "locks": {
+            "held": [],
+            "pending": []
+          },
+          "visibility": "visible",
+          "url": "http://127.0.0.1:58683/progress",
+          "visibleText": "Learning Progress\nLearning progress\nSaved on this device or browser, without an account or app cloud sync. Every submitted answer counts, including listening text alternatives and Retry Mistakes. These totals combine practice modes; they are a practice aid, not a mastery assessment.\n1 answers saved · 1 correct · 0 errors\n1 of 36 symbols practised · 0 due now · 0 need another try\nOpen practice\nIn practice, choose a symbol set and Due review or Focus on mistakes. Unpractised symbols remain in Full symbol set. A wrong answer is due immediately; consecutive correct answers schedule review after 1, 3, 7, 14, then 30 elapsed days. Another correct answer keeps the 30-day interval. A miss resets the interval. Due counts refresh on return and each minute; device clock changes affect due times.\nSaved symbols\nX · X-ray: 1 attempts, 0 errors. Next review: 20/11/2026, 11:22:23. Last answer correct.\nClear Progress\nDelete all saved symbol totals and review times, including unsaved answers waiting for Retry. Appearance, voice and converter pace are kept. Your current round stays in memory; only answers submitted after deletion build new progress. This cannot be undone.\nClear Progress\nPreferences",
+          "controlled": true
+        }
+      },
+      "answer": {
+        "symbol": "X",
+        "word": "X-ray"
+      },
+      "record": "{\"version\":1,\"symbols\":{\"X\":{\"attempts\":1,\"errors\":0,\"streak\":1,\"lastReviewedAt\":1795087343862,\"dueAt\":1795173743862}}}",
+      "status": "passed"
+    },
+    {
+      "scenario": "quota",
+      "width": 1280,
+      "theme": "light",
+      "errors": [],
+      "automationErrors": [],
+      "snapshots": {
+        "pending": {
+          "events": [
+            {
+              "sequence": 1,
+              "type": "observer-installed",
+              "ms": 7.600000023841858,
+              "visibility": "visible",
+              "locksAvailable": true,
+              "secureContext": true
+            },
+            {
+              "sequence": 2,
+              "type": "storage-read",
+              "ms": 41.10000002384186,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 3,
+              "type": "storage-read",
+              "ms": 41.19999998807907,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 4,
+              "type": "storage-read",
+              "ms": 199.30000001192093,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 5,
+              "type": "before-pointer-answer",
+              "ms": 201.89999997615814,
+              "visibility": "visible"
+            },
+            {
+              "sequence": 6,
+              "type": "storage-read",
+              "ms": 216.60000002384186,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 7,
+              "type": "lock-request",
+              "ms": 219.69999998807907,
+              "visibility": "visible",
+              "operation": 7,
+              "aborted": false
+            },
+            {
+              "sequence": 8,
+              "type": "lock-acquired",
+              "ms": 231.39999997615814,
+              "visibility": "visible",
+              "operation": 7,
+              "mode": "exclusive"
+            },
+            {
+              "sequence": 9,
+              "type": "storage-read",
+              "ms": 231.39999997615814,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 10,
+              "type": "storage-write-rejected",
+              "ms": 231.60000002384186,
+              "visibility": "visible",
+              "name": "QuotaExceededError",
+              "message": "Run25 deliberate first-write quota failure"
+            },
+            {
+              "sequence": 11,
+              "type": "lock-rejected",
+              "ms": 231.69999998807907,
+              "visibility": "visible",
+              "operation": 7,
+              "elapsedMs": 12,
+              "aborted": false,
+              "reason": {},
+              "name": "QuotaExceededError",
+              "message": "Run25 deliberate first-write quota failure"
+            }
+          ],
+          "data": {
+            "present": false,
+            "total": 0,
+            "generation": null
+          },
+          "locks": {
+            "held": [],
+            "pending": []
+          },
+          "visibility": "visible",
+          "url": "http://127.0.0.1:58683/letter-quiz",
+          "visibleText": "Letter Quiz\nWhat is the phonetic word for this symbol?\nQuestion 1 of 10 · 1 correct\nZ\nZulu\nZOO-loo\nZorro\nZulu · Your answer\nZion\nZurich\nCorrect! Z is Zulu.\nNext question\nReplay answer\nEnd round and review\nPlaying 1 of 1\nStop playback\nProgress could not be saved. The summary shows saved answers only. Unsaved answers can be retried while this app remains open.\n1 unsaved answer held in memory.\nRetry progress storage",
+          "controlled": false
+        },
+        "saved": {
+          "events": [
+            {
+              "sequence": 1,
+              "type": "observer-installed",
+              "ms": 7.600000023841858,
+              "visibility": "visible",
+              "locksAvailable": true,
+              "secureContext": true
+            },
+            {
+              "sequence": 2,
+              "type": "storage-read",
+              "ms": 41.10000002384186,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 3,
+              "type": "storage-read",
+              "ms": 41.19999998807907,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 4,
+              "type": "storage-read",
+              "ms": 199.30000001192093,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 5,
+              "type": "before-pointer-answer",
+              "ms": 201.89999997615814,
+              "visibility": "visible"
+            },
+            {
+              "sequence": 6,
+              "type": "storage-read",
+              "ms": 216.60000002384186,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 7,
+              "type": "lock-request",
+              "ms": 219.69999998807907,
+              "visibility": "visible",
+              "operation": 7,
+              "aborted": false
+            },
+            {
+              "sequence": 8,
+              "type": "lock-acquired",
+              "ms": 231.39999997615814,
+              "visibility": "visible",
+              "operation": 7,
+              "mode": "exclusive"
+            },
+            {
+              "sequence": 9,
+              "type": "storage-read",
+              "ms": 231.39999997615814,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 10,
+              "type": "storage-write-rejected",
+              "ms": 231.60000002384186,
+              "visibility": "visible",
+              "name": "QuotaExceededError",
+              "message": "Run25 deliberate first-write quota failure"
+            },
+            {
+              "sequence": 11,
+              "type": "lock-rejected",
+              "ms": 231.69999998807907,
+              "visibility": "visible",
+              "operation": 7,
+              "elapsedMs": 12,
+              "aborted": false,
+              "reason": {},
+              "name": "QuotaExceededError",
+              "message": "Run25 deliberate first-write quota failure"
+            },
+            {
+              "sequence": 12,
+              "type": "storage-read",
+              "ms": 242.39999997615814,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 13,
+              "type": "before-pointer-retry",
+              "ms": 319.30000001192093,
+              "visibility": "visible"
+            },
+            {
+              "sequence": 14,
+              "type": "lock-request",
+              "ms": 332.89999997615814,
+              "visibility": "visible",
+              "operation": 14,
+              "aborted": false
+            },
+            {
+              "sequence": 15,
+              "type": "storage-read",
+              "ms": 339.5,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 16,
+              "type": "storage-read",
+              "ms": 346.89999997615814,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 17,
+              "type": "lock-acquired",
+              "ms": 348.39999997615814,
+              "visibility": "visible",
+              "operation": 14,
+              "mode": "exclusive"
+            },
+            {
+              "sequence": 18,
+              "type": "storage-read",
+              "ms": 348.39999997615814,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 19,
+              "type": "storage-write",
+              "ms": 348.39999997615814,
+              "visibility": "visible",
+              "present": true,
+              "version": 1,
+              "generation": null,
+              "total": 1
+            },
+            {
+              "sequence": 20,
+              "type": "lock-completed",
+              "ms": 350.5,
+              "visibility": "visible",
+              "operation": 14
+            },
+            {
+              "sequence": 21,
+              "type": "storage-read",
+              "ms": 363.80000001192093,
+              "visibility": "visible",
+              "present": true,
+              "version": 1,
+              "generation": null,
+              "total": 1
+            }
+          ],
+          "data": {
+            "present": true,
+            "version": 1,
+            "generation": null,
+            "total": 1
+          },
+          "locks": {
+            "held": [],
+            "pending": []
+          },
+          "visibility": "visible",
+          "url": "http://127.0.0.1:58683/letter-quiz",
+          "visibleText": "Letter Quiz\nWhat is the phonetic word for this symbol?\nQuestion 1 of 10 · 1 correct\nZ\nZulu\nZOO-loo\nZorro\nZulu · Your answer\nZion\nZurich\nCorrect! Z is Zulu.\nNext question\nReplay answer\nEnd round and review\nPlaying 1 of 1\nStop playback",
+          "controlled": false
+        },
+        "reloaded": {
+          "events": [
+            {
+              "sequence": 1,
+              "type": "observer-installed",
+              "ms": 7.400000035762787,
+              "visibility": "visible",
+              "locksAvailable": true,
+              "secureContext": true
+            },
+            {
+              "sequence": 2,
+              "type": "storage-read",
+              "ms": 18.400000035762787,
+              "visibility": "visible",
+              "present": true,
+              "version": 1,
+              "generation": null,
+              "total": 1
+            },
+            {
+              "sequence": 3,
+              "type": "storage-read",
+              "ms": 18.5,
+              "visibility": "visible",
+              "present": true,
+              "version": 1,
+              "generation": null,
+              "total": 1
+            },
+            {
+              "sequence": 4,
+              "type": "storage-read",
+              "ms": 38.200000047683716,
+              "visibility": "visible",
+              "present": true,
+              "version": 1,
+              "generation": null,
+              "total": 1
+            }
+          ],
+          "data": {
+            "present": true,
+            "version": 1,
+            "generation": null,
+            "total": 1
+          },
+          "locks": {
+            "held": [],
+            "pending": []
+          },
+          "visibility": "visible",
+          "url": "http://127.0.0.1:58683/progress",
+          "visibleText": "Learning Progress\nLearning progress\nSaved on this device or browser, without an account or app cloud sync. Every submitted answer counts, including listening text alternatives and Retry Mistakes. These totals combine practice modes; they are a practice aid, not a mastery assessment.\n1 answers saved · 1 correct · 0 errors\n1 of 36 symbols practised · 0 due now · 0 need another try\nOpen practice\nIn practice, choose a symbol set and Due review or Focus on mistakes. Unpractised symbols remain in Full symbol set. A wrong answer is due immediately; consecutive correct answers schedule review after 1, 3, 7, 14, then 30 elapsed days. Another correct answer keeps the 30-day interval. A miss resets the interval. Due counts refresh on return and each minute; device clock changes affect due times.\nSaved symbols\nZ · Zulu: 1 attempts, 0 errors. Next review: 20/11/2026, 11:22:24. Last answer correct.\nClear Progress\nDelete all saved symbol totals and review times, including unsaved answers waiting for Retry. Appearance, voice and converter pace are kept. Your current round stays in memory; only answers submitted after deletion build new progress. This cannot be undone.\nClear Progress\nPreferences",
+          "controlled": true
+        }
+      },
+      "answer": {
+        "symbol": "Z",
+        "word": "Zulu"
+      },
+      "record": "{\"version\":1,\"symbols\":{\"Z\":{\"attempts\":1,\"errors\":0,\"streak\":1,\"lastReviewedAt\":1795087344498,\"dueAt\":1795173744498}}}",
+      "status": "passed"
+    },
+    {
+      "scenario": "quota",
+      "width": 320,
+      "theme": "dark",
+      "errors": [],
+      "automationErrors": [],
+      "snapshots": {
+        "pending": {
+          "events": [
+            {
+              "sequence": 1,
+              "type": "observer-installed",
+              "ms": 6.5,
+              "visibility": "visible",
+              "locksAvailable": true,
+              "secureContext": true
+            },
+            {
+              "sequence": 2,
+              "type": "storage-read",
+              "ms": 35.89999997615814,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 3,
+              "type": "storage-read",
+              "ms": 35.89999997615814,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 4,
+              "type": "storage-read",
+              "ms": 181.0999999642372,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 5,
+              "type": "before-pointer-answer",
+              "ms": 183.39999997615814,
+              "visibility": "visible"
+            },
+            {
+              "sequence": 6,
+              "type": "storage-read",
+              "ms": 199.0999999642372,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 7,
+              "type": "lock-request",
+              "ms": 202.39999997615814,
+              "visibility": "visible",
+              "operation": 7,
+              "aborted": false
+            },
+            {
+              "sequence": 8,
+              "type": "lock-acquired",
+              "ms": 218.5,
+              "visibility": "visible",
+              "operation": 7,
+              "mode": "exclusive"
+            },
+            {
+              "sequence": 9,
+              "type": "storage-read",
+              "ms": 218.5999999642372,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 10,
+              "type": "storage-write-rejected",
+              "ms": 218.69999998807907,
+              "visibility": "visible",
+              "name": "QuotaExceededError",
+              "message": "Run25 deliberate first-write quota failure"
+            },
+            {
+              "sequence": 11,
+              "type": "lock-rejected",
+              "ms": 218.89999997615814,
+              "visibility": "visible",
+              "operation": 7,
+              "elapsedMs": 16.5,
+              "aborted": false,
+              "reason": {},
+              "name": "QuotaExceededError",
+              "message": "Run25 deliberate first-write quota failure"
+            }
+          ],
+          "data": {
+            "present": false,
+            "total": 0,
+            "generation": null
+          },
+          "locks": {
+            "held": [],
+            "pending": []
+          },
+          "visibility": "visible",
+          "url": "http://127.0.0.1:58683/letter-quiz",
+          "visibleText": "Letter Quiz\nWhat is the phonetic word for this symbol?\nQuestion 1 of 10 · 1 correct\nE\nEcho\nECK-oh\nEdward\nEverest\nEdison\nEcho · Your answer\nCorrect! E is Echo.\nNext question\nReplay answer\nEnd round and review\nPlaying 1 of 1\nStop playback\nProgress could not be saved. The summary shows saved answers only. Unsaved answers can be retried while this app remains open.\n1 unsaved answer held in memory.\nRetry progress storage",
+          "controlled": false
+        },
+        "saved": {
+          "events": [
+            {
+              "sequence": 1,
+              "type": "observer-installed",
+              "ms": 6.5,
+              "visibility": "visible",
+              "locksAvailable": true,
+              "secureContext": true
+            },
+            {
+              "sequence": 2,
+              "type": "storage-read",
+              "ms": 35.89999997615814,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 3,
+              "type": "storage-read",
+              "ms": 35.89999997615814,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 4,
+              "type": "storage-read",
+              "ms": 181.0999999642372,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 5,
+              "type": "before-pointer-answer",
+              "ms": 183.39999997615814,
+              "visibility": "visible"
+            },
+            {
+              "sequence": 6,
+              "type": "storage-read",
+              "ms": 199.0999999642372,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 7,
+              "type": "lock-request",
+              "ms": 202.39999997615814,
+              "visibility": "visible",
+              "operation": 7,
+              "aborted": false
+            },
+            {
+              "sequence": 8,
+              "type": "lock-acquired",
+              "ms": 218.5,
+              "visibility": "visible",
+              "operation": 7,
+              "mode": "exclusive"
+            },
+            {
+              "sequence": 9,
+              "type": "storage-read",
+              "ms": 218.5999999642372,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 10,
+              "type": "storage-write-rejected",
+              "ms": 218.69999998807907,
+              "visibility": "visible",
+              "name": "QuotaExceededError",
+              "message": "Run25 deliberate first-write quota failure"
+            },
+            {
+              "sequence": 11,
+              "type": "lock-rejected",
+              "ms": 218.89999997615814,
+              "visibility": "visible",
+              "operation": 7,
+              "elapsedMs": 16.5,
+              "aborted": false,
+              "reason": {},
+              "name": "QuotaExceededError",
+              "message": "Run25 deliberate first-write quota failure"
+            },
+            {
+              "sequence": 12,
+              "type": "storage-read",
+              "ms": 237.89999997615814,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 13,
+              "type": "before-pointer-retry",
+              "ms": 293.39999997615814,
+              "visibility": "visible"
+            },
+            {
+              "sequence": 14,
+              "type": "lock-request",
+              "ms": 316.0999999642372,
+              "visibility": "visible",
+              "operation": 14,
+              "aborted": false
+            },
+            {
+              "sequence": 15,
+              "type": "storage-read",
+              "ms": 319.19999998807907,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 16,
+              "type": "storage-read",
+              "ms": 329.5,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 17,
+              "type": "lock-acquired",
+              "ms": 330.69999998807907,
+              "visibility": "visible",
+              "operation": 14,
+              "mode": "exclusive"
+            },
+            {
+              "sequence": 18,
+              "type": "storage-read",
+              "ms": 330.69999998807907,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 19,
+              "type": "storage-write",
+              "ms": 330.69999998807907,
+              "visibility": "visible",
+              "present": true,
+              "version": 1,
+              "generation": null,
+              "total": 1
+            },
+            {
+              "sequence": 20,
+              "type": "lock-completed",
+              "ms": 331.89999997615814,
+              "visibility": "visible",
+              "operation": 14
+            },
+            {
+              "sequence": 21,
+              "type": "storage-read",
+              "ms": 346.7999999523163,
+              "visibility": "visible",
+              "present": true,
+              "version": 1,
+              "generation": null,
+              "total": 1
+            }
+          ],
+          "data": {
+            "present": true,
+            "version": 1,
+            "generation": null,
+            "total": 1
+          },
+          "locks": {
+            "held": [],
+            "pending": []
+          },
+          "visibility": "visible",
+          "url": "http://127.0.0.1:58683/letter-quiz",
+          "visibleText": "Letter Quiz\nWhat is the phonetic word for this symbol?\nQuestion 1 of 10 · 1 correct\nE\nEcho\nECK-oh\nEdward\nEverest\nEdison\nEcho · Your answer\nCorrect! E is Echo.\nNext question\nReplay answer\nEnd round and review\nPlaying 1 of 1\nStop playback",
+          "controlled": false
+        },
+        "reloaded": {
+          "events": [
+            {
+              "sequence": 1,
+              "type": "observer-installed",
+              "ms": 7.099999964237213,
+              "visibility": "visible",
+              "locksAvailable": true,
+              "secureContext": true
+            },
+            {
+              "sequence": 2,
+              "type": "storage-read",
+              "ms": 19.19999998807907,
+              "visibility": "visible",
+              "present": true,
+              "version": 1,
+              "generation": null,
+              "total": 1
+            },
+            {
+              "sequence": 3,
+              "type": "storage-read",
+              "ms": 19.299999952316284,
+              "visibility": "visible",
+              "present": true,
+              "version": 1,
+              "generation": null,
+              "total": 1
+            },
+            {
+              "sequence": 4,
+              "type": "storage-read",
+              "ms": 38.69999998807907,
+              "visibility": "visible",
+              "present": true,
+              "version": 1,
+              "generation": null,
+              "total": 1
+            }
+          ],
+          "data": {
+            "present": true,
+            "version": 1,
+            "generation": null,
+            "total": 1
+          },
+          "locks": {
+            "held": [],
+            "pending": []
+          },
+          "visibility": "visible",
+          "url": "http://127.0.0.1:58683/progress",
+          "visibleText": "Learning Progress\nLearning progress\nSaved on this device or browser, without an account or app cloud sync. Every submitted answer counts, including listening text alternatives and Retry Mistakes. These totals combine practice modes; they are a practice aid, not a mastery assessment.\n1 answers saved · 1 correct · 0 errors\n1 of 36 symbols practised · 0 due now · 0 need another try\nOpen practice\nIn practice, choose a symbol set and Due review or Focus on mistakes. Unpractised symbols remain in Full symbol set. A wrong answer is due immediately; consecutive correct answers schedule review after 1, 3, 7, 14, then 30 elapsed days. Another correct answer keeps the 30-day interval. A miss resets the interval. Due counts refresh on return and each minute; device clock changes affect due times.\nSaved symbols\nE · Echo: 1 attempts, 0 errors. Next review: 20/11/2026, 11:22:25. Last answer correct.\nClear Progress\nDelete all saved symbol totals and review times, including unsaved answers waiting for Retry. Appearance, voice and converter pace are kept. Your current round stays in memory; only answers submitted after deletion build new progress. This cannot be undone.\nClear Progress\nPreferences",
+          "controlled": true
+        }
+      },
+      "answer": {
+        "symbol": "E",
+        "word": "Echo"
+      },
+      "record": "{\"version\":1,\"symbols\":{\"E\":{\"attempts\":1,\"errors\":0,\"streak\":1,\"lastReviewedAt\":1795087345195,\"dueAt\":1795173745195}}}",
+      "status": "passed"
+    },
+    {
+      "scenario": "lock",
+      "width": 1280,
+      "theme": "light",
+      "errors": [],
+      "automationErrors": [],
+      "snapshots": {
+        "pending": {
+          "events": [
+            {
+              "sequence": 1,
+              "type": "observer-installed",
+              "ms": 6,
+              "visibility": "visible",
+              "locksAvailable": true,
+              "secureContext": true
+            },
+            {
+              "sequence": 2,
+              "type": "storage-read",
+              "ms": 37.80000001192093,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 3,
+              "type": "storage-read",
+              "ms": 37.89999997615814,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 4,
+              "type": "storage-read",
+              "ms": 166.5999999642372,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 5,
+              "type": "before-pointer-answer",
+              "ms": 295.39999997615814,
+              "visibility": "visible"
+            },
+            {
+              "sequence": 6,
+              "type": "storage-read",
+              "ms": 315.69999998807907,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 7,
+              "type": "lock-request",
+              "ms": 318.80000001192093,
+              "visibility": "visible",
+              "operation": 7,
+              "aborted": false
+            },
+            {
+              "sequence": 8,
+              "type": "lock-rejected",
+              "ms": 5321.399999976158,
+              "visibility": "visible",
+              "operation": 7,
+              "elapsedMs": 5002.5,
+              "aborted": true,
+              "reason": {
+                "name": "TimeoutError",
+                "message": "signal timed out"
+              },
+              "name": "TimeoutError",
+              "message": "signal timed out"
+            }
+          ],
+          "data": {
+            "present": false,
+            "total": 0,
+            "generation": null
+          },
+          "locks": {
+            "held": [
+              {
+                "clientId": "05BC55C5AF84619DFF5B20577EE66A76",
+                "mode": "exclusive",
+                "name": "nato.progress.v1"
+              }
+            ],
+            "pending": []
+          },
+          "visibility": "visible",
+          "url": "http://127.0.0.1:58683/letter-quiz",
+          "visibleText": "Letter Quiz\nWhat is the phonetic word for this symbol?\nQuestion 1 of 10 · 1 correct\nS\nSierra\nsee-AIR-ah\nSweden\nSilver\nSierra · Your answer\nSapphire\nCorrect! S is Sierra.\nNext question\nReplay answer\nEnd round and review\nProgress could not be saved. The summary shows saved answers only. Unsaved answers can be retried while this app remains open.\n1 unsaved answer held in memory.\nRetry progress storage",
+          "controlled": false
+        },
+        "saved": {
+          "events": [
+            {
+              "sequence": 1,
+              "type": "observer-installed",
+              "ms": 6,
+              "visibility": "visible",
+              "locksAvailable": true,
+              "secureContext": true
+            },
+            {
+              "sequence": 2,
+              "type": "storage-read",
+              "ms": 37.80000001192093,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 3,
+              "type": "storage-read",
+              "ms": 37.89999997615814,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 4,
+              "type": "storage-read",
+              "ms": 166.5999999642372,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 5,
+              "type": "before-pointer-answer",
+              "ms": 295.39999997615814,
+              "visibility": "visible"
+            },
+            {
+              "sequence": 6,
+              "type": "storage-read",
+              "ms": 315.69999998807907,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 7,
+              "type": "lock-request",
+              "ms": 318.80000001192093,
+              "visibility": "visible",
+              "operation": 7,
+              "aborted": false
+            },
+            {
+              "sequence": 8,
+              "type": "lock-rejected",
+              "ms": 5321.399999976158,
+              "visibility": "visible",
+              "operation": 7,
+              "elapsedMs": 5002.5,
+              "aborted": true,
+              "reason": {
+                "name": "TimeoutError",
+                "message": "signal timed out"
+              },
+              "name": "TimeoutError",
+              "message": "signal timed out"
+            },
+            {
+              "sequence": 9,
+              "type": "storage-read",
+              "ms": 5663.5,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 10,
+              "type": "before-pointer-retry",
+              "ms": 5724.699999988079,
+              "visibility": "visible"
+            },
+            {
+              "sequence": 11,
+              "type": "lock-request",
+              "ms": 5732.099999964237,
+              "visibility": "visible",
+              "operation": 11,
+              "aborted": false
+            },
+            {
+              "sequence": 12,
+              "type": "storage-read",
+              "ms": 5735.699999988079,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 13,
+              "type": "storage-read",
+              "ms": 5746.199999988079,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 14,
+              "type": "lock-acquired",
+              "ms": 5747,
+              "visibility": "visible",
+              "operation": 11,
+              "mode": "exclusive"
+            },
+            {
+              "sequence": 15,
+              "type": "storage-read",
+              "ms": 5747.099999964237,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 16,
+              "type": "storage-write",
+              "ms": 5747.199999988079,
+              "visibility": "visible",
+              "present": true,
+              "version": 1,
+              "generation": null,
+              "total": 1
+            },
+            {
+              "sequence": 17,
+              "type": "lock-completed",
+              "ms": 5748.399999976158,
+              "visibility": "visible",
+              "operation": 11
+            },
+            {
+              "sequence": 18,
+              "type": "storage-read",
+              "ms": 5763.099999964237,
+              "visibility": "visible",
+              "present": true,
+              "version": 1,
+              "generation": null,
+              "total": 1
+            }
+          ],
+          "data": {
+            "present": true,
+            "version": 1,
+            "generation": null,
+            "total": 1
+          },
+          "locks": {
+            "held": [],
+            "pending": []
+          },
+          "visibility": "visible",
+          "url": "http://127.0.0.1:58683/letter-quiz",
+          "visibleText": "Letter Quiz\nWhat is the phonetic word for this symbol?\nQuestion 1 of 10 · 1 correct\nS\nSierra\nsee-AIR-ah\nSweden\nSilver\nSierra · Your answer\nSapphire\nCorrect! S is Sierra.\nNext question\nReplay answer\nEnd round and review",
+          "controlled": false
+        },
+        "reloaded": {
+          "events": [
+            {
+              "sequence": 1,
+              "type": "observer-installed",
+              "ms": 7.399999976158142,
+              "visibility": "visible",
+              "locksAvailable": true,
+              "secureContext": true
+            },
+            {
+              "sequence": 2,
+              "type": "storage-read",
+              "ms": 18.599999964237213,
+              "visibility": "visible",
+              "present": true,
+              "version": 1,
+              "generation": null,
+              "total": 1
+            },
+            {
+              "sequence": 3,
+              "type": "storage-read",
+              "ms": 18.80000001192093,
+              "visibility": "visible",
+              "present": true,
+              "version": 1,
+              "generation": null,
+              "total": 1
+            },
+            {
+              "sequence": 4,
+              "type": "storage-read",
+              "ms": 35.30000001192093,
+              "visibility": "visible",
+              "present": true,
+              "version": 1,
+              "generation": null,
+              "total": 1
+            }
+          ],
+          "data": {
+            "present": true,
+            "version": 1,
+            "generation": null,
+            "total": 1
+          },
+          "locks": {
+            "held": [],
+            "pending": []
+          },
+          "visibility": "visible",
+          "url": "http://127.0.0.1:58683/progress",
+          "visibleText": "Learning Progress\nLearning progress\nSaved on this device or browser, without an account or app cloud sync. Every submitted answer counts, including listening text alternatives and Retry Mistakes. These totals combine practice modes; they are a practice aid, not a mastery assessment.\n1 answers saved · 1 correct · 0 errors\n1 of 36 symbols practised · 0 due now · 0 need another try\nOpen practice\nIn practice, choose a symbol set and Due review or Focus on mistakes. Unpractised symbols remain in Full symbol set. A wrong answer is due immediately; consecutive correct answers schedule review after 1, 3, 7, 14, then 30 elapsed days. Another correct answer keeps the 30-day interval. A miss resets the interval. Due counts refresh on return and each minute; device clock changes affect due times.\nSaved symbols\nS · Sierra: 1 attempts, 0 errors. Next review: 20/11/2026, 11:22:26. Last answer correct.\nClear Progress\nDelete all saved symbol totals and review times, including unsaved answers waiting for Retry. Appearance, voice and converter pace are kept. Your current round stays in memory; only answers submitted after deletion build new progress. This cannot be undone.\nClear Progress\nPreferences",
+          "controlled": true
+        }
+      },
+      "answer": {
+        "symbol": "S",
+        "word": "Sierra"
+      },
+      "record": "{\"version\":1,\"symbols\":{\"S\":{\"attempts\":1,\"errors\":0,\"streak\":1,\"lastReviewedAt\":1795087346461,\"dueAt\":1795173746461}}}",
+      "status": "passed"
+    },
+    {
+      "scenario": "lock",
+      "width": 320,
+      "theme": "dark",
+      "errors": [],
+      "automationErrors": [],
+      "snapshots": {
+        "pending": {
+          "events": [
+            {
+              "sequence": 1,
+              "type": "observer-installed",
+              "ms": 7.800000011920929,
+              "visibility": "visible",
+              "locksAvailable": true,
+              "secureContext": true
+            },
+            {
+              "sequence": 2,
+              "type": "storage-read",
+              "ms": 37.89999997615814,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 3,
+              "type": "storage-read",
+              "ms": 38.10000002384186,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 4,
+              "type": "storage-read",
+              "ms": 183.19999998807907,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 5,
+              "type": "before-pointer-answer",
+              "ms": 291.30000001192093,
+              "visibility": "visible"
+            },
+            {
+              "sequence": 6,
+              "type": "storage-read",
+              "ms": 314.39999997615814,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 7,
+              "type": "lock-request",
+              "ms": 317.5,
+              "visibility": "visible",
+              "operation": 7,
+              "aborted": false
+            },
+            {
+              "sequence": 8,
+              "type": "lock-rejected",
+              "ms": 5319.100000023842,
+              "visibility": "visible",
+              "operation": 7,
+              "elapsedMs": 5001.600000023842,
+              "aborted": true,
+              "reason": {
+                "name": "TimeoutError",
+                "message": "signal timed out"
+              },
+              "name": "TimeoutError",
+              "message": "signal timed out"
+            }
+          ],
+          "data": {
+            "present": false,
+            "total": 0,
+            "generation": null
+          },
+          "locks": {
+            "held": [
+              {
+                "clientId": "64571F9679F7ACC2D4F59AABE686CE87",
+                "mode": "exclusive",
+                "name": "nato.progress.v1"
+              }
+            ],
+            "pending": []
+          },
+          "visibility": "visible",
+          "url": "http://127.0.0.1:58683/letter-quiz",
+          "visibleText": "Letter Quiz\nWhat is the phonetic word for this symbol?\nQuestion 1 of 10 · 1 correct\nI\nIndia\nIN-dee-ah\nIdaho\nIndia · Your answer\nImpact\nImpulse\nCorrect! I is India.\nNext question\nReplay answer\nEnd round and review\nProgress could not be saved. The summary shows saved answers only. Unsaved answers can be retried while this app remains open.\n1 unsaved answer held in memory.\nRetry progress storage",
+          "controlled": false
+        },
+        "saved": {
+          "events": [
+            {
+              "sequence": 1,
+              "type": "observer-installed",
+              "ms": 7.800000011920929,
+              "visibility": "visible",
+              "locksAvailable": true,
+              "secureContext": true
+            },
+            {
+              "sequence": 2,
+              "type": "storage-read",
+              "ms": 37.89999997615814,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 3,
+              "type": "storage-read",
+              "ms": 38.10000002384186,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 4,
+              "type": "storage-read",
+              "ms": 183.19999998807907,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 5,
+              "type": "before-pointer-answer",
+              "ms": 291.30000001192093,
+              "visibility": "visible"
+            },
+            {
+              "sequence": 6,
+              "type": "storage-read",
+              "ms": 314.39999997615814,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 7,
+              "type": "lock-request",
+              "ms": 317.5,
+              "visibility": "visible",
+              "operation": 7,
+              "aborted": false
+            },
+            {
+              "sequence": 8,
+              "type": "lock-rejected",
+              "ms": 5319.100000023842,
+              "visibility": "visible",
+              "operation": 7,
+              "elapsedMs": 5001.600000023842,
+              "aborted": true,
+              "reason": {
+                "name": "TimeoutError",
+                "message": "signal timed out"
+              },
+              "name": "TimeoutError",
+              "message": "signal timed out"
+            },
+            {
+              "sequence": 9,
+              "type": "storage-read",
+              "ms": 5668.399999976158,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 10,
+              "type": "before-pointer-retry",
+              "ms": 5733.399999976158,
+              "visibility": "visible"
+            },
+            {
+              "sequence": 11,
+              "type": "lock-request",
+              "ms": 5746.699999988079,
+              "visibility": "visible",
+              "operation": 11,
+              "aborted": false
+            },
+            {
+              "sequence": 12,
+              "type": "storage-read",
+              "ms": 5751,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 13,
+              "type": "storage-read",
+              "ms": 5760.100000023842,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 14,
+              "type": "lock-acquired",
+              "ms": 5760.899999976158,
+              "visibility": "visible",
+              "operation": 11,
+              "mode": "exclusive"
+            },
+            {
+              "sequence": 15,
+              "type": "storage-read",
+              "ms": 5761.100000023842,
+              "visibility": "visible",
+              "present": false,
+              "total": 0,
+              "generation": null
+            },
+            {
+              "sequence": 16,
+              "type": "storage-write",
+              "ms": 5761.199999988079,
+              "visibility": "visible",
+              "present": true,
+              "version": 1,
+              "generation": null,
+              "total": 1
+            },
+            {
+              "sequence": 17,
+              "type": "lock-completed",
+              "ms": 5762.699999988079,
+              "visibility": "visible",
+              "operation": 11
+            },
+            {
+              "sequence": 18,
+              "type": "storage-read",
+              "ms": 5776.899999976158,
+              "visibility": "visible",
+              "present": true,
+              "version": 1,
+              "generation": null,
+              "total": 1
+            }
+          ],
+          "data": {
+            "present": true,
+            "version": 1,
+            "generation": null,
+            "total": 1
+          },
+          "locks": {
+            "held": [],
+            "pending": []
+          },
+          "visibility": "visible",
+          "url": "http://127.0.0.1:58683/letter-quiz",
+          "visibleText": "Letter Quiz\nWhat is the phonetic word for this symbol?\nQuestion 1 of 10 · 1 correct\nI\nIndia\nIN-dee-ah\nIdaho\nIndia · Your answer\nImpact\nImpulse\nCorrect! I is India.\nNext question\nReplay answer\nEnd round and review",
+          "controlled": false
+        },
+        "reloaded": {
+          "events": [
+            {
+              "sequence": 1,
+              "type": "observer-installed",
+              "ms": 7.699999988079071,
+              "visibility": "visible",
+              "locksAvailable": true,
+              "secureContext": true
+            },
+            {
+              "sequence": 2,
+              "type": "storage-read",
+              "ms": 19.69999998807907,
+              "visibility": "visible",
+              "present": true,
+              "version": 1,
+              "generation": null,
+              "total": 1
+            },
+            {
+              "sequence": 3,
+              "type": "storage-read",
+              "ms": 19.69999998807907,
+              "visibility": "visible",
+              "present": true,
+              "version": 1,
+              "generation": null,
+              "total": 1
+            },
+            {
+              "sequence": 4,
+              "type": "storage-read",
+              "ms": 38.69999998807907,
+              "visibility": "visible",
+              "present": true,
+              "version": 1,
+              "generation": null,
+              "total": 1
+            }
+          ],
+          "data": {
+            "present": true,
+            "version": 1,
+            "generation": null,
+            "total": 1
+          },
+          "locks": {
+            "held": [],
+            "pending": []
+          },
+          "visibility": "visible",
+          "url": "http://127.0.0.1:58683/progress",
+          "visibleText": "Learning Progress\nLearning progress\nSaved on this device or browser, without an account or app cloud sync. Every submitted answer counts, including listening text alternatives and Retry Mistakes. These totals combine practice modes; they are a practice aid, not a mastery assessment.\n1 answers saved · 1 correct · 0 errors\n1 of 36 symbols practised · 0 due now · 0 need another try\nOpen practice\nIn practice, choose a symbol set and Due review or Focus on mistakes. Unpractised symbols remain in Full symbol set. A wrong answer is due immediately; consecutive correct answers schedule review after 1, 3, 7, 14, then 30 elapsed days. Another correct answer keeps the 30-day interval. A miss resets the interval. Due counts refresh on return and each minute; device clock changes affect due times.\nSaved symbols\nI · India: 1 attempts, 0 errors. Next review: 20/11/2026, 11:22:32. Last answer correct.\nClear Progress\nDelete all saved symbol totals and review times, including unsaved answers waiting for Retry. Appearance, voice and converter pace are kept. Your current round stays in memory; only answers submitted after deletion build new progress. This cannot be undone.\nClear Progress\nPreferences",
+          "controlled": true
+        }
+      },
+      "answer": {
+        "symbol": "I",
+        "word": "India"
+      },
+      "record": "{\"version\":1,\"symbols\":{\"I\":{\"attempts\":1,\"errors\":0,\"streak\":1,\"lastReviewedAt\":1795087352569,\"dueAt\":1795173752569}}}",
+      "status": "passed"
+    }
+  ],
+  "captures": [
+    {
+      "file": "ordinary-1280-saved.png",
+      "state": "Exactly one saved answer after real pointer input/Retry",
+      "at": "2026-11-19T11:22:23.454Z",
+      "engine": "chromium",
+      "browser": "157.0.4341.60",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "theme": "light",
+      "scenario": "ordinary",
+      "candidate": {
+        "root": "/Users/mac/dev/apps/nato-phonetics/artifacts/run25/candidate/public",
+        "manifestSha256": "50810f855b532d68a7008ca3d8f38b2cc7563c7d80693c1eaddebfdb4f069ab4",
+        "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e"
+      },
+      "command": "node scripts/verify-progress-recovery-browser.cjs",
+      "arguments": [
+        "artifacts/run25/candidate/public",
+        "artifacts/run25/recovery/chromium",
+        "chromium"
+      ]
+    },
+    {
+      "file": "ordinary-320-saved.png",
+      "state": "Exactly one saved answer after real pointer input/Retry",
+      "at": "2026-11-19T11:22:24.019Z",
+      "engine": "chromium",
+      "browser": "157.0.4341.60",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "theme": "dark",
+      "scenario": "ordinary",
+      "candidate": {
+        "root": "/Users/mac/dev/apps/nato-phonetics/artifacts/run25/candidate/public",
+        "manifestSha256": "50810f855b532d68a7008ca3d8f38b2cc7563c7d80693c1eaddebfdb4f069ab4",
+        "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e"
+      },
+      "command": "node scripts/verify-progress-recovery-browser.cjs",
+      "arguments": [
+        "artifacts/run25/candidate/public",
+        "artifacts/run25/recovery/chromium",
+        "chromium"
+      ]
+    },
+    {
+      "file": "quota-1280-pending.png",
+      "state": "First answer visibly pending with Retry; no saved record",
+      "at": "2026-11-19T11:22:24.600Z",
+      "engine": "chromium",
+      "browser": "157.0.4341.60",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "theme": "light",
+      "scenario": "quota",
+      "candidate": {
+        "root": "/Users/mac/dev/apps/nato-phonetics/artifacts/run25/candidate/public",
+        "manifestSha256": "50810f855b532d68a7008ca3d8f38b2cc7563c7d80693c1eaddebfdb4f069ab4",
+        "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e"
+      },
+      "command": "node scripts/verify-progress-recovery-browser.cjs",
+      "arguments": [
+        "artifacts/run25/candidate/public",
+        "artifacts/run25/recovery/chromium",
+        "chromium"
+      ]
+    },
+    {
+      "file": "quota-1280-saved.png",
+      "state": "Exactly one saved answer after real pointer input/Retry",
+      "at": "2026-11-19T11:22:24.806Z",
+      "engine": "chromium",
+      "browser": "157.0.4341.60",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "theme": "light",
+      "scenario": "quota",
+      "candidate": {
+        "root": "/Users/mac/dev/apps/nato-phonetics/artifacts/run25/candidate/public",
+        "manifestSha256": "50810f855b532d68a7008ca3d8f38b2cc7563c7d80693c1eaddebfdb4f069ab4",
+        "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e"
+      },
+      "command": "node scripts/verify-progress-recovery-browser.cjs",
+      "arguments": [
+        "artifacts/run25/candidate/public",
+        "artifacts/run25/recovery/chromium",
+        "chromium"
+      ]
+    },
+    {
+      "file": "quota-320-pending.png",
+      "state": "First answer visibly pending with Retry; no saved record",
+      "at": "2026-11-19T11:22:25.289Z",
+      "engine": "chromium",
+      "browser": "157.0.4341.60",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "theme": "dark",
+      "scenario": "quota",
+      "candidate": {
+        "root": "/Users/mac/dev/apps/nato-phonetics/artifacts/run25/candidate/public",
+        "manifestSha256": "50810f855b532d68a7008ca3d8f38b2cc7563c7d80693c1eaddebfdb4f069ab4",
+        "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e"
+      },
+      "command": "node scripts/verify-progress-recovery-browser.cjs",
+      "arguments": [
+        "artifacts/run25/candidate/public",
+        "artifacts/run25/recovery/chromium",
+        "chromium"
+      ]
+    },
+    {
+      "file": "quota-320-saved.png",
+      "state": "Exactly one saved answer after real pointer input/Retry",
+      "at": "2026-11-19T11:22:25.987Z",
+      "engine": "chromium",
+      "browser": "157.0.4341.60",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "theme": "dark",
+      "scenario": "quota",
+      "candidate": {
+        "root": "/Users/mac/dev/apps/nato-phonetics/artifacts/run25/candidate/public",
+        "manifestSha256": "50810f855b532d68a7008ca3d8f38b2cc7563c7d80693c1eaddebfdb4f069ab4",
+        "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e"
+      },
+      "command": "node scripts/verify-progress-recovery-browser.cjs",
+      "arguments": [
+        "artifacts/run25/candidate/public",
+        "artifacts/run25/recovery/chromium",
+        "chromium"
+      ]
+    },
+    {
+      "file": "lock-1280-pending.png",
+      "state": "First answer visibly pending with Retry; no saved record",
+      "at": "2026-11-19T11:22:31.870Z",
+      "engine": "chromium",
+      "browser": "157.0.4341.60",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "theme": "light",
+      "scenario": "lock",
+      "candidate": {
+        "root": "/Users/mac/dev/apps/nato-phonetics/artifacts/run25/candidate/public",
+        "manifestSha256": "50810f855b532d68a7008ca3d8f38b2cc7563c7d80693c1eaddebfdb4f069ab4",
+        "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e"
+      },
+      "command": "node scripts/verify-progress-recovery-browser.cjs",
+      "arguments": [
+        "artifacts/run25/candidate/public",
+        "artifacts/run25/recovery/chromium",
+        "chromium"
+      ]
+    },
+    {
+      "file": "lock-1280-saved.png",
+      "state": "Exactly one saved answer after real pointer input/Retry",
+      "at": "2026-11-19T11:22:32.087Z",
+      "engine": "chromium",
+      "browser": "157.0.4341.60",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "theme": "light",
+      "scenario": "lock",
+      "candidate": {
+        "root": "/Users/mac/dev/apps/nato-phonetics/artifacts/run25/candidate/public",
+        "manifestSha256": "50810f855b532d68a7008ca3d8f38b2cc7563c7d80693c1eaddebfdb4f069ab4",
+        "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e"
+      },
+      "command": "node scripts/verify-progress-recovery-browser.cjs",
+      "arguments": [
+        "artifacts/run25/candidate/public",
+        "artifacts/run25/recovery/chromium",
+        "chromium"
+      ]
+    },
+    {
+      "file": "lock-320-pending.png",
+      "state": "First answer visibly pending with Retry; no saved record",
+      "at": "2026-11-19T11:22:37.987Z",
+      "engine": "chromium",
+      "browser": "157.0.4341.60",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "theme": "dark",
+      "scenario": "lock",
+      "candidate": {
+        "root": "/Users/mac/dev/apps/nato-phonetics/artifacts/run25/candidate/public",
+        "manifestSha256": "50810f855b532d68a7008ca3d8f38b2cc7563c7d80693c1eaddebfdb4f069ab4",
+        "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e"
+      },
+      "command": "node scripts/verify-progress-recovery-browser.cjs",
+      "arguments": [
+        "artifacts/run25/candidate/public",
+        "artifacts/run25/recovery/chromium",
+        "chromium"
+      ]
+    },
+    {
+      "file": "lock-320-saved.png",
+      "state": "Exactly one saved answer after real pointer input/Retry",
+      "at": "2026-11-19T11:22:38.175Z",
+      "engine": "chromium",
+      "browser": "157.0.4341.60",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "theme": "dark",
+      "scenario": "lock",
+      "candidate": {
+        "root": "/Users/mac/dev/apps/nato-phonetics/artifacts/run25/candidate/public",
+        "manifestSha256": "50810f855b532d68a7008ca3d8f38b2cc7563c7d80693c1eaddebfdb4f069ab4",
+        "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e"
+      },
+      "command": "node scripts/verify-progress-recovery-browser.cjs",
+      "arguments": [
+        "artifacts/run25/candidate/public",
+        "artifacts/run25/recovery/chromium",
+        "chromium"
+      ]
+    }
+  ],
+  "boundary": "Local production build; injected quota and actual held lock are recovery qualification, not the cause of the Run24 spontaneous failure. No native, branded Safari, OS suspension, hosted CI or M11 pass.",
+  "runnerSha256": "4f190f5f7f08065aaffdabed808ffa561bfd504608cf48b29c4c479a728c2cf1",
+  "observerSha256": "cc825f6affda82c53118c68fee2836185198959bd04c6c4241db7e152fffc7ba",
+  "candidate": {
+    "root": "/Users/mac/dev/apps/nato-phonetics/artifacts/run25/candidate/public",
+    "manifestSha256": "50810f855b532d68a7008ca3d8f38b2cc7563c7d80693c1eaddebfdb4f069ab4",
+    "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e"
+  },
+  "browserExecutable": "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+  "browserExecutableSha256": "d6514367b4c33d3d443d07e6b31e0fe1d90c8be0fb8a925bb97954fb828eccae",
+  "browser": "157.0.4341.60",
+  "status": "passed",
+  "at": "2026-11-19T11:22:39.068Z"
+}

@@ -10,6 +10,7 @@ const { chromium, firefox, webkit } = require('playwright');
 const { packageWeb } = require('./package-web.cjs');
 const { writeOfflineManifest } = require('./offline-manifest.cjs');
 const { pathToFileURL } = require('node:url');
+const { observeProgress, progressSnapshot } = require('./progress-observation.cjs');
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 const id = value => `[data-testid="${value}"]:not([aria-hidden="true"] *)`;
@@ -58,6 +59,7 @@ async function workerSnapshot(page) {
 }
 async function main() {
   report.runnerSha256 = hash(await fs.readFile(__filename));
+  report.progressObserverSha256 = hash(await fs.readFile(path.join(__dirname, 'progress-observation.cjs')));
   report.browserExecutable = engine === 'chromium' && process.env.BROWSER_EXECUTABLE ? process.env.BROWSER_EXECUTABLE : browserType.executablePath();
   report.browserExecutableSha256 = hash(await fs.readFile(report.browserExecutable));
   assert(process.env.CADDY_EXECUTABLE, 'Set CADDY_EXECUTABLE to a verified Caddy binary');
@@ -127,6 +129,7 @@ async function main() {
     const ctx = await browserType.launchPersistentContext(profile, { headless: true, viewport: { width: 1280, height: 900 }, colorScheme: 'light',
       ...(engine === 'chromium' && process.env.BROWSER_EXECUTABLE ? { executablePath: process.env.BROWSER_EXECUTABLE } : {}) });
     ctx.setDefaultTimeout(15000); ctx.on('page', page => page.on('pageerror', error => report.errors.push(error.message)));
+    await ctx.addInitScript(observeProgress);
     report.browser = ctx.browser().version(); return ctx;
   }
   async function capture(page, file, state) {
@@ -189,6 +192,7 @@ async function main() {
   const word = PRACTICE_ENTRIES.find(entry => entrySymbol(entry) === symbol).word;
   await page.locator(named('Choose ' + word)).click(); await page.locator(id('quiz-answer')).waitFor();
   await page.waitForFunction(() => Object.values(JSON.parse(localStorage.getItem('nato.progress.v1'))?.symbols || {}).reduce((sum, row) => sum + row.attempts, 0) === 1);
+  report.firstAnswer = await progressSnapshot(page);
   await page.goto(origin + '/progress'); await page.locator(id('progress-summary')).waitFor();
   await capture(page, 'desktop-hosted-progress.png', 'Actual pointer answer saved through the packaged host');
   await page.goto(origin + '/converter'); await page.locator(id('converter-input')).fill('a3 b-');
@@ -319,6 +323,7 @@ main().catch(async error => {
     await page.screenshot({ path: path.join(output, 'diagnostics/failure.png') }).catch(() => {});
     report.failure.state = await workerSnapshot(page).catch(() => null);
     report.failure.visibleText = await page.locator('body').innerText().catch(() => null);
+    report.failure.progress = await progressSnapshot(page).catch(() => null);
   }
 }).finally(async () => {
   if (context) await context.close();

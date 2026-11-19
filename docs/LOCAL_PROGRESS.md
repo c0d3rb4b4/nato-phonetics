@@ -1,5 +1,11 @@
 # Local progress and review
 
+## Run25 — first-save boundary and recovery qualification
+
+[Run25](evidence/run25/README.md) adds test-only storage/lock observations and a maintained first-answer recovery runner/three-engine CI gate.18 actual production scenarios pass at1280×900/light and320×568/dark across Edge157, Firefox159 and PlaywrightWebKit27.2: ordinary first save, deliberate QuotaExceededError after acquisition, and actual exclusive-lock TimeoutError before acquisition after5seconds. One pending answer remains visible with no persisted record; actual double-pointer Retry saves exactly one write/one correct symbol aggregate. Exact serialized record/unrelated fixture survives reload without a write. Persisted generation is absent in these fresh-origin cases; observations capture actual reads/counts, not private pending queue fields.
+
+The maintained host runner preserves first-answer and failure boundary snapshots without automatically retrying. In its Run25 WebKit command, first save records request/acquire/read/write/completion and no remaining lock, then a separate rejected-update message check fails. That whole command stays failed; its later host scopes are unrun. [Failure/triage](evidence/run25/shared/forecast.md). Original Run24 spontaneous save/exact Retry remains unperformed and unexplained. Synthetic quota/held-lock recovery is not a causal reproduction or product repair. Original failure, closing-page pending loss risk, native/support/M11 gates remain. Prototype observation corrects an initial test-hook gap; final defensive summary probes preserve malformed raw records. No app bytes, stored key/schema, provider/privacy behavior or native adapter change.
+
 ## Run24 — observed first-answer save failure
 
 A real WebKit27.2 first pointer answer in a fresh persistent profile fails to save before host-update qualification; the UI reports1unsaved answer in memory and offers Retry. A subsequent serial fresh-profile host run passes exact saving/update/rollback/offline checks. [Original failed report/image](evidence/run24/diagnostics/readonly-webkit-tabs/report.json), [serial comparison](evidence/run24/hosting/webkit-tabs-serial/report.json). These observations do not establish the cause or scenario reach; concurrent browser/native work is context, not proof of resource starvation or a Web Locks defect.
