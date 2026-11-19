@@ -1,0 +1,1902 @@
+[
+  {
+    "file": "web/chromium-tabs-desktop-hosted-progress.png",
+    "state": "Actual pointer answer saved through the packaged host",
+    "capturedAt": "2026-11-19T10:40:35.288Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "engine": "chromium",
+    "browser": "157.0.4341.60",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+    "appearance": {
+      "background": "rgb(255, 253, 247)",
+      "preference": "system",
+      "system": "light"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/chromium-tabs",
+      "chromium",
+      "tabs"
+    ],
+    "scope": "chromium-tabs",
+    "report": "hosting/chromium-tabs/report.json",
+    "sha256": "50a67f2fa99b5068bc5b7ae8f722e96e4f7daa25e2a0515c5db3356bfce2aee8",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/chromium-tabs-desktop-hosted-converter.png",
+    "state": "Exact converter on the extracted production release",
+    "capturedAt": "2026-11-19T10:40:35.799Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "engine": "chromium",
+    "browser": "157.0.4341.60",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+    "appearance": {
+      "background": "rgb(255, 253, 247)",
+      "preference": "system",
+      "system": "light"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/chromium-tabs",
+      "chromium",
+      "tabs"
+    ],
+    "scope": "chromium-tabs",
+    "report": "hosting/chromium-tabs/report.json",
+    "sha256": "1868aed76f49248eb39775c3b3a2cc85d2245490caac54f1380bf53f209f9cd2",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/chromium-tabs-desktop-host-update-rejected.png",
+    "state": "Deliberately truncated origin response rejects update; active shell, draft and exact saved data survive",
+    "capturedAt": "2026-11-19T10:40:42.075Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "engine": "chromium",
+    "browser": "157.0.4341.60",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "light"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/chromium-tabs",
+      "chromium",
+      "tabs"
+    ],
+    "scope": "chromium-tabs",
+    "report": "hosting/chromium-tabs/report.json",
+    "sha256": "c9617d17f77abd71ad142028240a10e059d86007dfd3206243cd3421da296eb4",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/chromium-tabs-desktop-host-update-waiting.png",
+    "state": "Atomic root switch preserves the active shell and waits for every window to close",
+    "capturedAt": "2026-11-19T10:40:42.346Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "engine": "chromium",
+    "browser": "157.0.4341.60",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "light"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/chromium-tabs",
+      "chromium",
+      "tabs"
+    ],
+    "scope": "chromium-tabs",
+    "report": "hosting/chromium-tabs/report.json",
+    "sha256": "f0541d47a5eb2761830999fdc81f45cd2cd15f0f8c5c92d43a957d4254267cec",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/chromium-tabs-desktop-host-second-window-pinned.png",
+    "state": "Closing one window and reloading the other keeps the original shell while the new worker waits",
+    "capturedAt": "2026-11-19T10:40:43.115Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "engine": "chromium",
+    "browser": "157.0.4341.60",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "light"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/chromium-tabs",
+      "chromium",
+      "tabs"
+    ],
+    "scope": "chromium-tabs",
+    "report": "hosting/chromium-tabs/report.json",
+    "sha256": "1060ae09242dd134129e2be5ac35c17c6de8a553adbac7ed242b43088a65985c",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/chromium-tabs-narrow-host-rollback-ready.png",
+    "state": "Original candidate active after rollback with progress retained",
+    "capturedAt": "2026-11-19T10:40:48.089Z",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "engine": "chromium",
+    "browser": "157.0.4341.60",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "dark"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/chromium-tabs",
+      "chromium",
+      "tabs"
+    ],
+    "scope": "chromium-tabs",
+    "report": "hosting/chromium-tabs/report.json",
+    "sha256": "2079c7c24e569ca49a371659e46641c9a23ecc1013dd07e8235d0de0989fa92d",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/chromium-tabs-narrow-host-cache-repaired.png",
+    "state": "Actual missing pinned font repaired through Menu; original rollback shell and saved records retained",
+    "capturedAt": "2026-11-19T10:40:48.581Z",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "engine": "chromium",
+    "browser": "157.0.4341.60",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "dark"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/chromium-tabs",
+      "chromium",
+      "tabs"
+    ],
+    "scope": "chromium-tabs",
+    "report": "hosting/chromium-tabs/report.json",
+    "sha256": "dad5397e1e1e006b192e5a37336e5a24e8f8f434f7de4a58023769e9def835a7",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/chromium-tabs-narrow-host-offline-progress.png",
+    "state": "Saved answer accessible offline through the packaged shell after rollback",
+    "capturedAt": "2026-11-19T10:40:57.530Z",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "engine": "chromium",
+    "browser": "157.0.4341.60",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "dark"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/chromium-tabs",
+      "chromium",
+      "tabs"
+    ],
+    "scope": "chromium-tabs",
+    "report": "hosting/chromium-tabs/report.json",
+    "sha256": "28b7c5eb6ce2a63cde3bb55b5d22ed760d5eac4b6ea08cb3e45de876940ad792",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/firefox-tabs-desktop-hosted-progress.png",
+    "state": "Actual pointer answer saved through the packaged host",
+    "capturedAt": "2026-11-19T10:40:39.955Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "engine": "firefox",
+    "browser": "159.0",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:159.0) Gecko/20100101 Firefox/159.0",
+    "appearance": {
+      "background": "rgb(255, 253, 247)",
+      "preference": "system",
+      "system": "light"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/firefox-tabs",
+      "firefox",
+      "tabs"
+    ],
+    "scope": "firefox-tabs",
+    "report": "hosting/firefox-tabs/report.json",
+    "sha256": "26227bcf8638948c554be2af730c3843b03b1aabe1e8c169f2f603fa27bae655",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/firefox-tabs-desktop-hosted-converter.png",
+    "state": "Exact converter on the extracted production release",
+    "capturedAt": "2026-11-19T10:40:40.418Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "engine": "firefox",
+    "browser": "159.0",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:159.0) Gecko/20100101 Firefox/159.0",
+    "appearance": {
+      "background": "rgb(255, 253, 247)",
+      "preference": "system",
+      "system": "light"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/firefox-tabs",
+      "firefox",
+      "tabs"
+    ],
+    "scope": "firefox-tabs",
+    "report": "hosting/firefox-tabs/report.json",
+    "sha256": "3603574bd4af00696bf1feee629c12127f954ff343d99308ade5f936c43609b4",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/firefox-tabs-desktop-host-update-rejected.png",
+    "state": "Deliberately truncated origin response rejects update; active shell, draft and exact saved data survive",
+    "capturedAt": "2026-11-19T10:40:45.260Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "engine": "firefox",
+    "browser": "159.0",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:159.0) Gecko/20100101 Firefox/159.0",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "light"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/firefox-tabs",
+      "firefox",
+      "tabs"
+    ],
+    "scope": "firefox-tabs",
+    "report": "hosting/firefox-tabs/report.json",
+    "sha256": "b4ae2f136f2ce410af3cbb7cd706f8326bd26f27436b7302f15dc5bc7b06a6cf",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/firefox-tabs-desktop-host-update-waiting.png",
+    "state": "Atomic root switch preserves the active shell and waits for every window to close",
+    "capturedAt": "2026-11-19T10:40:46.793Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "engine": "firefox",
+    "browser": "159.0",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:159.0) Gecko/20100101 Firefox/159.0",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "light"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/firefox-tabs",
+      "firefox",
+      "tabs"
+    ],
+    "scope": "firefox-tabs",
+    "report": "hosting/firefox-tabs/report.json",
+    "sha256": "6f083c9bb8a9577b713668920f51a32f900e741b22ad6ac119d346c0e36a47be",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/firefox-tabs-desktop-host-second-window-pinned.png",
+    "state": "Closing one window and reloading the other keeps the original shell while the new worker waits",
+    "capturedAt": "2026-11-19T10:40:47.227Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "engine": "firefox",
+    "browser": "159.0",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:159.0) Gecko/20100101 Firefox/159.0",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "light"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/firefox-tabs",
+      "firefox",
+      "tabs"
+    ],
+    "scope": "firefox-tabs",
+    "report": "hosting/firefox-tabs/report.json",
+    "sha256": "c784f40fed18b4793e316260d2e15c2d4335958126b548ad67046eef8e1f006f",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/firefox-tabs-narrow-host-rollback-ready.png",
+    "state": "Original candidate active after rollback with progress retained",
+    "capturedAt": "2026-11-19T10:40:51.879Z",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "engine": "firefox",
+    "browser": "159.0",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:159.0) Gecko/20100101 Firefox/159.0",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "dark"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/firefox-tabs",
+      "firefox",
+      "tabs"
+    ],
+    "scope": "firefox-tabs",
+    "report": "hosting/firefox-tabs/report.json",
+    "sha256": "cb600a0d0d7feea2d412f96fbac572fd96adea97930cbb5e3b20ec84cf46b4d0",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/firefox-tabs-narrow-host-cache-repaired.png",
+    "state": "Actual missing pinned font repaired through Menu; original rollback shell and saved records retained",
+    "capturedAt": "2026-11-19T10:40:53.293Z",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "engine": "firefox",
+    "browser": "159.0",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:159.0) Gecko/20100101 Firefox/159.0",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "dark"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/firefox-tabs",
+      "firefox",
+      "tabs"
+    ],
+    "scope": "firefox-tabs",
+    "report": "hosting/firefox-tabs/report.json",
+    "sha256": "e8cf4e423e700690c573ac71c97fdd4b747fedf3baae559e028282e808318fa2",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/firefox-tabs-narrow-host-offline-progress.png",
+    "state": "Saved answer accessible offline through the packaged shell after rollback",
+    "capturedAt": "2026-11-19T10:40:57.671Z",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "engine": "firefox",
+    "browser": "159.0",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:159.0) Gecko/20100101 Firefox/159.0",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "dark"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/firefox-tabs",
+      "firefox",
+      "tabs"
+    ],
+    "scope": "firefox-tabs",
+    "report": "hosting/firefox-tabs/report.json",
+    "sha256": "ff722535b1ef80ee9a6b78a786e24e76bd0db169b60e92527e2512e2c3228d04",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/webkit-tabs-serial-desktop-hosted-progress.png",
+    "state": "Actual pointer answer saved through the packaged host",
+    "capturedAt": "2026-11-19T10:43:19.737Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "engine": "webkit",
+    "browser": "27.2",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+    "appearance": {
+      "background": "rgb(255, 253, 247)",
+      "preference": "system",
+      "system": "light"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/webkit-tabs-serial",
+      "webkit",
+      "tabs"
+    ],
+    "scope": "webkit-tabs-serial",
+    "report": "hosting/webkit-tabs-serial/report.json",
+    "sha256": "f793f1fdf1f3e0d913e3ee36b8a9ba3eaef0db3cf5d5a0e7f32623fd7de30118",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/webkit-tabs-serial-desktop-hosted-converter.png",
+    "state": "Exact converter on the extracted production release",
+    "capturedAt": "2026-11-19T10:43:20.009Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "engine": "webkit",
+    "browser": "27.2",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+    "appearance": {
+      "background": "rgb(255, 253, 247)",
+      "preference": "system",
+      "system": "light"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/webkit-tabs-serial",
+      "webkit",
+      "tabs"
+    ],
+    "scope": "webkit-tabs-serial",
+    "report": "hosting/webkit-tabs-serial/report.json",
+    "sha256": "29051670d6735ef0a0ca02f4e5df1daf69d6da5683db41eb0afbf67b2348ae44",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/webkit-tabs-serial-desktop-host-update-rejected.png",
+    "state": "Deliberately truncated origin response rejects update; active shell, draft and exact saved data survive",
+    "capturedAt": "2026-11-19T10:43:22.276Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "engine": "webkit",
+    "browser": "27.2",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "light"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/webkit-tabs-serial",
+      "webkit",
+      "tabs"
+    ],
+    "scope": "webkit-tabs-serial",
+    "report": "hosting/webkit-tabs-serial/report.json",
+    "sha256": "4f3725812f491393689eb78003bbc926eb6a8391cd5968bff8b9ed06296ace1f",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/webkit-tabs-serial-desktop-host-update-waiting.png",
+    "state": "Atomic root switch preserves the active shell and waits for every window to close",
+    "capturedAt": "2026-11-19T10:43:22.394Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "engine": "webkit",
+    "browser": "27.2",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "light"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/webkit-tabs-serial",
+      "webkit",
+      "tabs"
+    ],
+    "scope": "webkit-tabs-serial",
+    "report": "hosting/webkit-tabs-serial/report.json",
+    "sha256": "0e19d71d49cececc3ab845f0c5cf8c927fa54a3516ff5b54cb5ad482280da32e",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/webkit-tabs-serial-desktop-host-second-window-pinned.png",
+    "state": "Closing one window and reloading the other keeps the original shell while the new worker waits",
+    "capturedAt": "2026-11-19T10:43:22.555Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "engine": "webkit",
+    "browser": "27.2",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "light"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/webkit-tabs-serial",
+      "webkit",
+      "tabs"
+    ],
+    "scope": "webkit-tabs-serial",
+    "report": "hosting/webkit-tabs-serial/report.json",
+    "sha256": "0bc889313afc9dd6d63151bdc70dc78a43de5d2336d08334149914b4f65341b9",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/webkit-tabs-serial-narrow-host-rollback-ready.png",
+    "state": "Original candidate active after rollback with progress retained",
+    "capturedAt": "2026-11-19T10:43:27.912Z",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "engine": "webkit",
+    "browser": "27.2",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "dark"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/webkit-tabs-serial",
+      "webkit",
+      "tabs"
+    ],
+    "scope": "webkit-tabs-serial",
+    "report": "hosting/webkit-tabs-serial/report.json",
+    "sha256": "004f7c6435e2cce9a52ed833a757253ca931bb4e9d2cd09a0316b105555c926e",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/webkit-tabs-serial-narrow-host-cache-repaired.png",
+    "state": "Actual missing pinned font repaired through Menu; original rollback shell and saved records retained",
+    "capturedAt": "2026-11-19T10:43:28.071Z",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "engine": "webkit",
+    "browser": "27.2",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "dark"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/webkit-tabs-serial",
+      "webkit",
+      "tabs"
+    ],
+    "scope": "webkit-tabs-serial",
+    "report": "hosting/webkit-tabs-serial/report.json",
+    "sha256": "71c87d293257e11755e94d27d9a1256f00dc441aa21988225ed64b865c893750",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/webkit-tabs-serial-narrow-host-offline-progress.png",
+    "state": "Saved answer accessible offline through the packaged shell after rollback",
+    "capturedAt": "2026-11-19T10:43:32.600Z",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "engine": "webkit",
+    "browser": "27.2",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "dark"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/webkit-tabs-serial",
+      "webkit",
+      "tabs"
+    ],
+    "scope": "webkit-tabs-serial",
+    "report": "hosting/webkit-tabs-serial/report.json",
+    "sha256": "8794ab31d714ea8e603cac81d5b6c474278c90a55d6cdbda3d79922d2da998b1",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/chromium-process-desktop-hosted-progress.png",
+    "state": "Actual pointer answer saved through the packaged host",
+    "capturedAt": "2026-11-19T10:41:27.469Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "engine": "chromium",
+    "browser": "157.0.4341.60",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+    "appearance": {
+      "background": "rgb(255, 253, 247)",
+      "preference": "system",
+      "system": "light"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/chromium-process",
+      "chromium",
+      "process"
+    ],
+    "scope": "chromium-process",
+    "report": "hosting/chromium-process/report.json",
+    "sha256": "a0b19d12f3d963d5127a0ee1e4462042012b563dd44d62e37d605782d7a7f453",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/chromium-process-desktop-hosted-converter.png",
+    "state": "Exact converter on the extracted production release",
+    "capturedAt": "2026-11-19T10:41:27.715Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "engine": "chromium",
+    "browser": "157.0.4341.60",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+    "appearance": {
+      "background": "rgb(255, 253, 247)",
+      "preference": "system",
+      "system": "light"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/chromium-process",
+      "chromium",
+      "process"
+    ],
+    "scope": "chromium-process",
+    "report": "hosting/chromium-process/report.json",
+    "sha256": "1868aed76f49248eb39775c3b3a2cc85d2245490caac54f1380bf53f209f9cd2",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/chromium-process-desktop-host-update-rejected.png",
+    "state": "Deliberately truncated origin response rejects update; active shell, draft and exact saved data survive",
+    "capturedAt": "2026-11-19T10:41:33.652Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "engine": "chromium",
+    "browser": "157.0.4341.60",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "light"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/chromium-process",
+      "chromium",
+      "process"
+    ],
+    "scope": "chromium-process",
+    "report": "hosting/chromium-process/report.json",
+    "sha256": "c9617d17f77abd71ad142028240a10e059d86007dfd3206243cd3421da296eb4",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/chromium-process-desktop-host-update-waiting.png",
+    "state": "Atomic root switch preserves the active shell and waits for every window to close",
+    "capturedAt": "2026-11-19T10:41:33.951Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "engine": "chromium",
+    "browser": "157.0.4341.60",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "light"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/chromium-process",
+      "chromium",
+      "process"
+    ],
+    "scope": "chromium-process",
+    "report": "hosting/chromium-process/report.json",
+    "sha256": "f0541d47a5eb2761830999fdc81f45cd2cd15f0f8c5c92d43a957d4254267cec",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/chromium-process-desktop-host-second-window-pinned.png",
+    "state": "Closing one window and reloading the other keeps the original shell while the new worker waits",
+    "capturedAt": "2026-11-19T10:41:35.086Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "engine": "chromium",
+    "browser": "157.0.4341.60",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "light"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/chromium-process",
+      "chromium",
+      "process"
+    ],
+    "scope": "chromium-process",
+    "report": "hosting/chromium-process/report.json",
+    "sha256": "1060ae09242dd134129e2be5ac35c17c6de8a553adbac7ed242b43088a65985c",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/chromium-process-narrow-host-rollback-ready.png",
+    "state": "Original candidate active after rollback with progress retained",
+    "capturedAt": "2026-11-19T10:41:53.307Z",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "engine": "chromium",
+    "browser": "157.0.4341.60",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "dark"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/chromium-process",
+      "chromium",
+      "process"
+    ],
+    "scope": "chromium-process",
+    "report": "hosting/chromium-process/report.json",
+    "sha256": "2079c7c24e569ca49a371659e46641c9a23ecc1013dd07e8235d0de0989fa92d",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/chromium-process-narrow-host-cache-repaired.png",
+    "state": "Actual missing pinned font repaired through Menu; original rollback shell and saved records retained",
+    "capturedAt": "2026-11-19T10:41:55.868Z",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "engine": "chromium",
+    "browser": "157.0.4341.60",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "dark"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/chromium-process",
+      "chromium",
+      "process"
+    ],
+    "scope": "chromium-process",
+    "report": "hosting/chromium-process/report.json",
+    "sha256": "dad5397e1e1e006b192e5a37336e5a24e8f8f434f7de4a58023769e9def835a7",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/chromium-process-narrow-host-offline-progress.png",
+    "state": "Saved answer accessible offline through the packaged shell after rollback",
+    "capturedAt": "2026-11-19T10:42:04.310Z",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "engine": "chromium",
+    "browser": "157.0.4341.60",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "dark"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/chromium-process",
+      "chromium",
+      "process"
+    ],
+    "scope": "chromium-process",
+    "report": "hosting/chromium-process/report.json",
+    "sha256": "28b7c5eb6ce2a63cde3bb55b5d22ed760d5eac4b6ea08cb3e45de876940ad792",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/firefox-process-desktop-hosted-progress.png",
+    "state": "Actual pointer answer saved through the packaged host",
+    "capturedAt": "2026-11-19T10:41:33.532Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "engine": "firefox",
+    "browser": "159.0",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:159.0) Gecko/20100101 Firefox/159.0",
+    "appearance": {
+      "background": "rgb(255, 253, 247)",
+      "preference": "system",
+      "system": "light"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/firefox-process",
+      "firefox",
+      "process"
+    ],
+    "scope": "firefox-process",
+    "report": "hosting/firefox-process/report.json",
+    "sha256": "a2107240be567b2fc17f32d2ec86741a6fc226b153b8d3ea7f6d3648efe5ccad",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/firefox-process-desktop-hosted-converter.png",
+    "state": "Exact converter on the extracted production release",
+    "capturedAt": "2026-11-19T10:41:33.934Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "engine": "firefox",
+    "browser": "159.0",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:159.0) Gecko/20100101 Firefox/159.0",
+    "appearance": {
+      "background": "rgb(255, 253, 247)",
+      "preference": "system",
+      "system": "light"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/firefox-process",
+      "firefox",
+      "process"
+    ],
+    "scope": "firefox-process",
+    "report": "hosting/firefox-process/report.json",
+    "sha256": "3603574bd4af00696bf1feee629c12127f954ff343d99308ade5f936c43609b4",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/firefox-process-desktop-host-update-rejected.png",
+    "state": "Deliberately truncated origin response rejects update; active shell, draft and exact saved data survive",
+    "capturedAt": "2026-11-19T10:41:39.342Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "engine": "firefox",
+    "browser": "159.0",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:159.0) Gecko/20100101 Firefox/159.0",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "light"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/firefox-process",
+      "firefox",
+      "process"
+    ],
+    "scope": "firefox-process",
+    "report": "hosting/firefox-process/report.json",
+    "sha256": "b4ae2f136f2ce410af3cbb7cd706f8326bd26f27436b7302f15dc5bc7b06a6cf",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/firefox-process-desktop-host-update-waiting.png",
+    "state": "Atomic root switch preserves the active shell and waits for every window to close",
+    "capturedAt": "2026-11-19T10:41:40.528Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "engine": "firefox",
+    "browser": "159.0",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:159.0) Gecko/20100101 Firefox/159.0",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "light"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/firefox-process",
+      "firefox",
+      "process"
+    ],
+    "scope": "firefox-process",
+    "report": "hosting/firefox-process/report.json",
+    "sha256": "6f083c9bb8a9577b713668920f51a32f900e741b22ad6ac119d346c0e36a47be",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/firefox-process-desktop-host-second-window-pinned.png",
+    "state": "Closing one window and reloading the other keeps the original shell while the new worker waits",
+    "capturedAt": "2026-11-19T10:41:40.816Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "engine": "firefox",
+    "browser": "159.0",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:159.0) Gecko/20100101 Firefox/159.0",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "light"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/firefox-process",
+      "firefox",
+      "process"
+    ],
+    "scope": "firefox-process",
+    "report": "hosting/firefox-process/report.json",
+    "sha256": "c784f40fed18b4793e316260d2e15c2d4335958126b548ad67046eef8e1f006f",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/firefox-process-narrow-host-rollback-ready.png",
+    "state": "Original candidate active after rollback with progress retained",
+    "capturedAt": "2026-11-19T10:41:55.121Z",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "engine": "firefox",
+    "browser": "159.0",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:159.0) Gecko/20100101 Firefox/159.0",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "dark"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/firefox-process",
+      "firefox",
+      "process"
+    ],
+    "scope": "firefox-process",
+    "report": "hosting/firefox-process/report.json",
+    "sha256": "cb600a0d0d7feea2d412f96fbac572fd96adea97930cbb5e3b20ec84cf46b4d0",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/firefox-process-narrow-host-cache-repaired.png",
+    "state": "Actual missing pinned font repaired through Menu; original rollback shell and saved records retained",
+    "capturedAt": "2026-11-19T10:41:56.577Z",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "engine": "firefox",
+    "browser": "159.0",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:159.0) Gecko/20100101 Firefox/159.0",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "dark"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/firefox-process",
+      "firefox",
+      "process"
+    ],
+    "scope": "firefox-process",
+    "report": "hosting/firefox-process/report.json",
+    "sha256": "e8cf4e423e700690c573ac71c97fdd4b747fedf3baae559e028282e808318fa2",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/firefox-process-narrow-host-offline-progress.png",
+    "state": "Saved answer accessible offline through the packaged shell after rollback",
+    "capturedAt": "2026-11-19T10:42:02.525Z",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "engine": "firefox",
+    "browser": "159.0",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:159.0) Gecko/20100101 Firefox/159.0",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "dark"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/firefox-process",
+      "firefox",
+      "process"
+    ],
+    "scope": "firefox-process",
+    "report": "hosting/firefox-process/report.json",
+    "sha256": "ff722535b1ef80ee9a6b78a786e24e76bd0db169b60e92527e2512e2c3228d04",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/webkit-process-desktop-hosted-progress.png",
+    "state": "Actual pointer answer saved through the packaged host",
+    "capturedAt": "2026-11-19T10:40:19.237Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "engine": "webkit",
+    "browser": "27.2",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+    "appearance": {
+      "background": "rgb(255, 253, 247)",
+      "preference": "system",
+      "system": "light"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/webkit-process",
+      "webkit",
+      "process"
+    ],
+    "scope": "webkit-process",
+    "report": "hosting/webkit-process/report.json",
+    "sha256": "dd2d3ab932a7ec49d1f9797462d090d936a46a4ca849cc005863ba5edf05535d",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/webkit-process-desktop-hosted-converter.png",
+    "state": "Exact converter on the extracted production release",
+    "capturedAt": "2026-11-19T10:40:19.498Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "engine": "webkit",
+    "browser": "27.2",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+    "appearance": {
+      "background": "rgb(255, 253, 247)",
+      "preference": "system",
+      "system": "light"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/webkit-process",
+      "webkit",
+      "process"
+    ],
+    "scope": "webkit-process",
+    "report": "hosting/webkit-process/report.json",
+    "sha256": "29051670d6735ef0a0ca02f4e5df1daf69d6da5683db41eb0afbf67b2348ae44",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/webkit-process-desktop-host-update-rejected.png",
+    "state": "Deliberately truncated origin response rejects update; active shell, draft and exact saved data survive",
+    "capturedAt": "2026-11-19T10:40:24.326Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "engine": "webkit",
+    "browser": "27.2",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "light"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/webkit-process",
+      "webkit",
+      "process"
+    ],
+    "scope": "webkit-process",
+    "report": "hosting/webkit-process/report.json",
+    "sha256": "4f3725812f491393689eb78003bbc926eb6a8391cd5968bff8b9ed06296ace1f",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/webkit-process-desktop-host-update-waiting.png",
+    "state": "Atomic root switch preserves the active shell and waits for every window to close",
+    "capturedAt": "2026-11-19T10:40:24.714Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "engine": "webkit",
+    "browser": "27.2",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "light"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/webkit-process",
+      "webkit",
+      "process"
+    ],
+    "scope": "webkit-process",
+    "report": "hosting/webkit-process/report.json",
+    "sha256": "0e19d71d49cececc3ab845f0c5cf8c927fa54a3516ff5b54cb5ad482280da32e",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/webkit-process-desktop-host-second-window-pinned.png",
+    "state": "Closing one window and reloading the other keeps the original shell while the new worker waits",
+    "capturedAt": "2026-11-19T10:40:25.140Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "engine": "webkit",
+    "browser": "27.2",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "light"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/webkit-process",
+      "webkit",
+      "process"
+    ],
+    "scope": "webkit-process",
+    "report": "hosting/webkit-process/report.json",
+    "sha256": "0bc889313afc9dd6d63151bdc70dc78a43de5d2336d08334149914b4f65341b9",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/webkit-process-narrow-host-rollback-ready.png",
+    "state": "Original candidate active after rollback with progress retained",
+    "capturedAt": "2026-11-19T10:40:38.756Z",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "engine": "webkit",
+    "browser": "27.2",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "dark"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/webkit-process",
+      "webkit",
+      "process"
+    ],
+    "scope": "webkit-process",
+    "report": "hosting/webkit-process/report.json",
+    "sha256": "004f7c6435e2cce9a52ed833a757253ca931bb4e9d2cd09a0316b105555c926e",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/webkit-process-narrow-host-cache-repaired.png",
+    "state": "Actual missing pinned font repaired through Menu; original rollback shell and saved records retained",
+    "capturedAt": "2026-11-19T10:40:39.044Z",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "engine": "webkit",
+    "browser": "27.2",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "dark"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/webkit-process",
+      "webkit",
+      "process"
+    ],
+    "scope": "webkit-process",
+    "report": "hosting/webkit-process/report.json",
+    "sha256": "71c87d293257e11755e94d27d9a1256f00dc441aa21988225ed64b865c893750",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "web/webkit-process-narrow-host-offline-progress.png",
+    "state": "Saved answer accessible offline through the packaged shell after rollback",
+    "capturedAt": "2026-11-19T10:40:46.174Z",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "engine": "webkit",
+    "browser": "27.2",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+    "appearance": {
+      "background": "rgb(31, 41, 51)",
+      "preference": "dark",
+      "system": "dark"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "artifacts/run23/web/nato-web.tar.gz",
+      "artifacts/run24/readonly/webkit-process",
+      "webkit",
+      "process"
+    ],
+    "scope": "webkit-process",
+    "report": "hosting/webkit-process/report.json",
+    "sha256": "8794ab31d714ea8e603cac81d5b6c474278c90a55d6cdbda3d79922d2da998b1",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "ios/default-copy-after-menu.png",
+    "capturedAt": "2026-11-19T10:50:27.589000+00:00",
+    "platform": "iOS simulator",
+    "runtime": "iOS26.2",
+    "device": "iPhone17Pro",
+    "viewportPoints": [
+      402,
+      874
+    ],
+    "dpr": 3,
+    "theme": "light",
+    "textSize": "large",
+    "appCandidate": "Run23 Release; all25 installed files match",
+    "harnessSource": "ios/default-passing-driver.swift",
+    "command": "xcrun xcresulttool export attachments; exact path/arguments in ios/commands.json",
+    "state": "copy after menu",
+    "sha256": "b8e4365c04975c3d68ee3cbad9cd2f9fda31d654e15ef8af72d1459825f71c32",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "ios/default-plain-text-interior.png",
+    "capturedAt": "2026-11-19T10:50:23.742000+00:00",
+    "platform": "iOS simulator",
+    "runtime": "iOS26.2",
+    "device": "iPhone17Pro",
+    "viewportPoints": [
+      402,
+      874
+    ],
+    "dpr": 3,
+    "theme": "light",
+    "textSize": "large",
+    "appCandidate": "Run23 Release; all25 installed files match",
+    "harnessSource": "ios/default-passing-driver.swift",
+    "command": "xcrun xcresulttool export attachments; exact path/arguments in ios/commands.json",
+    "state": "plain text interior",
+    "sha256": "b8e4365c04975c3d68ee3cbad9cd2f9fda31d654e15ef8af72d1459825f71c32",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "ios/default-long-copy.png",
+    "capturedAt": "2026-11-19T10:50:21.676000+00:00",
+    "platform": "iOS simulator",
+    "runtime": "iOS26.2",
+    "device": "iPhone17Pro",
+    "viewportPoints": [
+      402,
+      874
+    ],
+    "dpr": 3,
+    "theme": "light",
+    "textSize": "large",
+    "appCandidate": "Run23 Release; all25 installed files match",
+    "harnessSource": "ios/default-passing-driver.swift",
+    "command": "xcrun xcresulttool export attachments; exact path/arguments in ios/commands.json",
+    "state": "long copy",
+    "sha256": "3277267b63628ceeeee2064dd477b69e5b7b34620b9ea7d304df0690dc18b204",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "ios/default-long-paste-keyboard.png",
+    "capturedAt": "2026-11-19T10:50:14.425000+00:00",
+    "platform": "iOS simulator",
+    "runtime": "iOS26.2",
+    "device": "iPhone17Pro",
+    "viewportPoints": [
+      402,
+      874
+    ],
+    "dpr": 3,
+    "theme": "light",
+    "textSize": "large",
+    "appCandidate": "Run23 Release; all25 installed files match",
+    "harnessSource": "ios/default-passing-driver.swift",
+    "command": "xcrun xcresulttool export attachments; exact path/arguments in ios/commands.json",
+    "state": "long paste keyboard",
+    "sha256": "9981680d6a5bf52ae9168dcc1ecfb1a0d68f3928918ed9c9a16acf3a56dc33e3",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "ios/default-share-share-cancelled.png",
+    "capturedAt": "2026-11-19T10:51:08.118000+00:00",
+    "platform": "iOS simulator",
+    "runtime": "iOS26.2",
+    "device": "iPhone17Pro",
+    "viewportPoints": [
+      402,
+      874
+    ],
+    "dpr": 3,
+    "theme": "light",
+    "textSize": "large",
+    "appCandidate": "Run23 Release; all25 installed files match",
+    "harnessSource": "ios/default-passing-driver.swift",
+    "command": "xcrun xcresulttool export attachments; exact path/arguments in ios/commands.json",
+    "state": "share cancelled",
+    "sha256": "695c0c63f1f6205b08d1defdba9cb576deb117db4b0e087d198b1fe51d71f3af",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "ios/default-share-share-sheet.png",
+    "capturedAt": "2026-11-19T10:51:04.818000+00:00",
+    "platform": "iOS simulator",
+    "runtime": "iOS26.2",
+    "device": "iPhone17Pro",
+    "viewportPoints": [
+      402,
+      874
+    ],
+    "dpr": 3,
+    "theme": "light",
+    "textSize": "large",
+    "appCandidate": "Run23 Release; all25 installed files match",
+    "harnessSource": "ios/default-passing-driver.swift",
+    "command": "xcrun xcresulttool export attachments; exact path/arguments in ios/commands.json",
+    "state": "share sheet",
+    "sha256": "81c3473a6cc0083d08ffcc30a7f0209f0bebb988ce66f08304d115f6c5b87232",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "ios/default-share-long-paste-keyboard.png",
+    "capturedAt": "2026-11-19T10:50:55.129000+00:00",
+    "platform": "iOS simulator",
+    "runtime": "iOS26.2",
+    "device": "iPhone17Pro",
+    "viewportPoints": [
+      402,
+      874
+    ],
+    "dpr": 3,
+    "theme": "light",
+    "textSize": "large",
+    "appCandidate": "Run23 Release; all25 installed files match",
+    "harnessSource": "ios/default-passing-driver.swift",
+    "command": "xcrun xcresulttool export attachments; exact path/arguments in ios/commands.json",
+    "state": "long paste keyboard",
+    "sha256": "9981680d6a5bf52ae9168dcc1ecfb1a0d68f3928918ed9c9a16acf3a56dc33e3",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "ios/maximum-copy-after-menu.png",
+    "capturedAt": "2026-11-19T10:55:24.697000+00:00",
+    "platform": "iOS simulator",
+    "runtime": "iOS26.2",
+    "device": "iPhone17Pro",
+    "viewportPoints": [
+      402,
+      874
+    ],
+    "dpr": 3,
+    "theme": "dark",
+    "textSize": "accessibility-extra-extra-extra-large",
+    "appCandidate": "Run23 Release; all25 installed files match",
+    "harnessSource": "ios/harness/CaptureUITests.swift",
+    "command": "xcrun xcresulttool export attachments; exact path/arguments in ios/commands.json",
+    "state": "copy after menu",
+    "sha256": "bbaf843c41347586f462a61cd172e6a722c7706684d133dcc2c19fe7d2b47371",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "ios/maximum-plain-text-interior.png",
+    "capturedAt": "2026-11-19T10:55:18.087000+00:00",
+    "platform": "iOS simulator",
+    "runtime": "iOS26.2",
+    "device": "iPhone17Pro",
+    "viewportPoints": [
+      402,
+      874
+    ],
+    "dpr": 3,
+    "theme": "dark",
+    "textSize": "accessibility-extra-extra-extra-large",
+    "appCandidate": "Run23 Release; all25 installed files match",
+    "harnessSource": "ios/harness/CaptureUITests.swift",
+    "command": "xcrun xcresulttool export attachments; exact path/arguments in ios/commands.json",
+    "state": "plain text interior",
+    "sha256": "21eac926cb91fdd5cbf0ed10be8b5fcb88b6261504325f15c8d2e89e4be11e63",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "ios/maximum-long-copy.png",
+    "capturedAt": "2026-11-19T10:55:12.011000+00:00",
+    "platform": "iOS simulator",
+    "runtime": "iOS26.2",
+    "device": "iPhone17Pro",
+    "viewportPoints": [
+      402,
+      874
+    ],
+    "dpr": 3,
+    "theme": "dark",
+    "textSize": "accessibility-extra-extra-extra-large",
+    "appCandidate": "Run23 Release; all25 installed files match",
+    "harnessSource": "ios/harness/CaptureUITests.swift",
+    "command": "xcrun xcresulttool export attachments; exact path/arguments in ios/commands.json",
+    "state": "long copy",
+    "sha256": "b0abb005a0b6da89e0660618db8e5ecc0e2aeae4cd37fcb5058af2f8e3725e63",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "ios/maximum-long-paste-keyboard.png",
+    "capturedAt": "2026-11-19T10:54:42.337000+00:00",
+    "platform": "iOS simulator",
+    "runtime": "iOS26.2",
+    "device": "iPhone17Pro",
+    "viewportPoints": [
+      402,
+      874
+    ],
+    "dpr": 3,
+    "theme": "dark",
+    "textSize": "accessibility-extra-extra-extra-large",
+    "appCandidate": "Run23 Release; all25 installed files match",
+    "harnessSource": "ios/harness/CaptureUITests.swift",
+    "command": "xcrun xcresulttool export attachments; exact path/arguments in ios/commands.json",
+    "state": "long paste keyboard",
+    "sha256": "d07684e55a694026118131e0665f2cd89efee6b6b597d0f881090274ee9eac35",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  }
+]

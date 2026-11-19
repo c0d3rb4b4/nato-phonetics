@@ -1,5 +1,11 @@
 # Local progress and review
 
+## Run24 — observed first-answer save failure
+
+A real WebKit27.2 first pointer answer in a fresh persistent profile fails to save before host-update qualification; the UI reports1unsaved answer in memory and offers Retry. A subsequent serial fresh-profile host run passes exact saving/update/rollback/offline checks. [Original failed report/image](evidence/run24/diagnostics/readonly-webkit-tabs/report.json), [serial comparison](evidence/run24/hosting/webkit-tabs-serial/report.json). These observations do not establish the cause or scenario reach; concurrent browser/native work is context, not proof of resource starvation or a Web Locks defect.
+
+P08.3/F07 remains P2/active for this reliability follow-up. Pending data would be lost if the failed page closes; actual saved-data loss is not demonstrated. The existing visible Retry is a recovery option, untested in this exact failure. Next bounded check: reproduce a first save with lock/storage exception and pending-generation evidence, then qualify actual Retry without duplicate scoring or overwriting records. Re-enter on recurrence, browser/storage/lifecycle changes or pre-release qualification; promote if ordinary repeatable loss or silent success appears. Keep the failed command red and all human results unperformed.
+
 Run 13 introduces a separate `nato.progress.v1` AsyncStorage record (browser storage on web). No account, backend, analytics, provider, permission or dependency is added. All 36 canonical letters/digits share per-symbol attempts, errors, scheduling step, last-review and next-due timestamps. Every guarded accepted submission counts once, across choice/listening/typed modes, partial rounds and Retry Mistakes. Listening text alternatives count equally. This is a simple practice aid, not a measured learning or mastery score.
 
 The record never contains typed answers, mode, practice set, raw audio, full sessions, recaps or question identities. Active rounds/drafts/recaps remain memory-only. Returning via Menu retains them; closing/reloading clears them. Saved totals survive restart. Appearance/voice/pace use the existing preference key and are independent.

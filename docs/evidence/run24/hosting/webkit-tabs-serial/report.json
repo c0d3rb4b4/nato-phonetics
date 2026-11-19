@@ -1,0 +1,271 @@
+{
+  "engine": "webkit",
+  "runner": "1.65.1",
+  "platform": "darwin",
+  "transitionMode": "tabs",
+  "idleWithNoAppClientsMs": 1000,
+  "checks": [
+    {
+      "name": "All 13 direct routes and trailing slashes return exact route HTML with revalidation",
+      "passed": true
+    },
+    {
+      "name": "Exact resource GET/HEAD bytes, MIME/cache headers, missing assets/private metadata 404, navigation fallback and method handling",
+      "passed": true
+    },
+    {
+      "name": "Real digest-rejected update leaves only complete original cache; explicit Retry installs verified update; two-window close/reload keeps original shell and exact progress/preferences/unrelated data",
+      "passed": true
+    },
+    {
+      "name": "Real atomic forward switch: old immutable asset available, actual worker waits, close-all/reopen activates new shell and preserves saved answer",
+      "passed": true,
+      "fixtureBuildId": "0fcaf01cc0e9f05f4e165b9b4a40e590d7460f61e457f2ddea50c862259a40b2"
+    },
+    {
+      "name": "Actual pinned font eviction returns 503; visible Menu check repairs exact digest from real host and preserves saved/unrelated records",
+      "passed": true
+    },
+    {
+      "name": "Real atomic rollback retains newer assets, activates original worker, preserves exact saved records and cold-relaunch offline progress with browser network disabled and Caddy stopped",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "boundary": "Actual local Caddy; public HTTPS/certificates/host, branded Safari/iOS, legacy clients and M11 remain unrun",
+  "runnerSha256": "1d3cc883ac1eed247723e09707d0887acc2d073f589fd1aab20dd0b16e6176c2",
+  "browserExecutable": "/Users/mac/Library/Caches/ms-playwright/webkit-2388/pw_run.sh",
+  "browserExecutableSha256": "a85baad3d8c07173ac387a59b41500c382b21ed692afe0964d29aac247ccc63b",
+  "runtimeDirectory": "/Users/mac/dev/apps/nato-phonetics/artifacts/run24/readonly/webkit-tabs-serial/runtime-Ih5xrN",
+  "candidate": {
+    "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+    "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+    "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+  },
+  "caddy": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+  "validation": "Valid configuration",
+  "validators": {
+    "etag": null,
+    "modified": null
+  },
+  "browser": "27.2",
+  "asyncPollingNegativeCheck": "Explicitly awaited false predicate times out, never passes",
+  "closeObservations": [
+    {
+      "mode": "tabs",
+      "pageCount": 2,
+      "beforeClose": {
+        "url": "http://127.0.0.1:56540/converter",
+        "controlled": true,
+        "active": {
+          "state": "activated",
+          "scriptURL": "http://127.0.0.1:56540/service-worker.js"
+        },
+        "waiting": {
+          "state": "installed",
+          "scriptURL": "http://127.0.0.1:56540/service-worker.js"
+        },
+        "installing": null,
+        "controllerIsActive": true,
+        "servedHtmlSha256": "15571e2af2ff2ed485a1e9a55017cac4e35cc3f38b3e4de64c48bf6c3b848e4b",
+        "caches": [
+          {
+            "name": "nato-shell-v1-d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+            "indexHtmlSha256": "15571e2af2ff2ed485a1e9a55017cac4e35cc3f38b3e4de64c48bf6c3b848e4b"
+          },
+          {
+            "name": "host-check-unrelated",
+            "indexHtmlSha256": null
+          },
+          {
+            "name": "nato-shell-v1-0fcaf01cc0e9f05f4e165b9b4a40e590d7460f61e457f2ddea50c862259a40b2",
+            "indexHtmlSha256": "fdcfb282782099779467e9b2f1d64af35102d17c63399e41c771e740150a2874"
+          }
+        ]
+      }
+    },
+    {
+      "mode": "tabs",
+      "pageCount": 1,
+      "beforeClose": {
+        "url": "http://127.0.0.1:56540/progress",
+        "controlled": true,
+        "active": {
+          "state": "activated",
+          "scriptURL": "http://127.0.0.1:56540/service-worker.js"
+        },
+        "waiting": {
+          "state": "installed",
+          "scriptURL": "http://127.0.0.1:56540/service-worker.js"
+        },
+        "installing": null,
+        "controllerIsActive": true,
+        "servedHtmlSha256": "fdcfb282782099779467e9b2f1d64af35102d17c63399e41c771e740150a2874",
+        "caches": [
+          {
+            "name": "host-check-unrelated",
+            "indexHtmlSha256": null
+          },
+          {
+            "name": "nato-shell-v1-0fcaf01cc0e9f05f4e165b9b4a40e590d7460f61e457f2ddea50c862259a40b2",
+            "indexHtmlSha256": "fdcfb282782099779467e9b2f1d64af35102d17c63399e41c771e740150a2874"
+          },
+          {
+            "name": "nato-shell-v1-d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+            "indexHtmlSha256": "15571e2af2ff2ed485a1e9a55017cac4e35cc3f38b3e4de64c48bf6c3b848e4b"
+          }
+        ]
+      }
+    }
+  ],
+  "reopenObservations": [
+    {
+      "route": "/progress",
+      "build": "0fcaf01cc0e9f05f4e165b9b4a40e590d7460f61e457f2ddea50c862259a40b2",
+      "expectedHtmlSha256": "fdcfb282782099779467e9b2f1d64af35102d17c63399e41c771e740150a2874",
+      "beforeFreshNavigation": {
+        "url": "http://127.0.0.1:56540/progress",
+        "controlled": true,
+        "active": {
+          "state": "activated",
+          "scriptURL": "http://127.0.0.1:56540/service-worker.js"
+        },
+        "waiting": null,
+        "installing": null,
+        "controllerIsActive": true,
+        "servedHtmlSha256": "fdcfb282782099779467e9b2f1d64af35102d17c63399e41c771e740150a2874",
+        "caches": [
+          {
+            "name": "host-check-unrelated",
+            "indexHtmlSha256": null
+          },
+          {
+            "name": "nato-shell-v1-0fcaf01cc0e9f05f4e165b9b4a40e590d7460f61e457f2ddea50c862259a40b2",
+            "indexHtmlSha256": "fdcfb282782099779467e9b2f1d64af35102d17c63399e41c771e740150a2874"
+          }
+        ]
+      },
+      "afterFreshNavigation": {
+        "url": "http://127.0.0.1:56540/progress",
+        "controlled": true,
+        "active": {
+          "state": "activated",
+          "scriptURL": "http://127.0.0.1:56540/service-worker.js"
+        },
+        "waiting": null,
+        "installing": null,
+        "controllerIsActive": true,
+        "servedHtmlSha256": "fdcfb282782099779467e9b2f1d64af35102d17c63399e41c771e740150a2874",
+        "caches": [
+          {
+            "name": "host-check-unrelated",
+            "indexHtmlSha256": null
+          },
+          {
+            "name": "nato-shell-v1-0fcaf01cc0e9f05f4e165b9b4a40e590d7460f61e457f2ddea50c862259a40b2",
+            "indexHtmlSha256": "fdcfb282782099779467e9b2f1d64af35102d17c63399e41c771e740150a2874"
+          }
+        ]
+      },
+      "servedExpectedHtmlBeforeCleanup": true,
+      "activeControllerBeforeCleanup": true,
+      "settled": {
+        "url": "http://127.0.0.1:56540/progress",
+        "controlled": true,
+        "active": {
+          "state": "activated",
+          "scriptURL": "http://127.0.0.1:56540/service-worker.js"
+        },
+        "waiting": null,
+        "installing": null,
+        "controllerIsActive": true,
+        "servedHtmlSha256": "fdcfb282782099779467e9b2f1d64af35102d17c63399e41c771e740150a2874",
+        "caches": [
+          {
+            "name": "host-check-unrelated",
+            "indexHtmlSha256": null
+          },
+          {
+            "name": "nato-shell-v1-0fcaf01cc0e9f05f4e165b9b4a40e590d7460f61e457f2ddea50c862259a40b2",
+            "indexHtmlSha256": "fdcfb282782099779467e9b2f1d64af35102d17c63399e41c771e740150a2874"
+          }
+        ]
+      }
+    },
+    {
+      "route": "/menu",
+      "build": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "expectedHtmlSha256": "15571e2af2ff2ed485a1e9a55017cac4e35cc3f38b3e4de64c48bf6c3b848e4b",
+      "beforeFreshNavigation": {
+        "url": "http://127.0.0.1:56540/menu",
+        "controlled": true,
+        "active": {
+          "state": "activated",
+          "scriptURL": "http://127.0.0.1:56540/service-worker.js"
+        },
+        "waiting": null,
+        "installing": null,
+        "controllerIsActive": true,
+        "servedHtmlSha256": "15571e2af2ff2ed485a1e9a55017cac4e35cc3f38b3e4de64c48bf6c3b848e4b",
+        "caches": [
+          {
+            "name": "host-check-unrelated",
+            "indexHtmlSha256": null
+          },
+          {
+            "name": "nato-shell-v1-d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+            "indexHtmlSha256": "15571e2af2ff2ed485a1e9a55017cac4e35cc3f38b3e4de64c48bf6c3b848e4b"
+          }
+        ]
+      },
+      "afterFreshNavigation": {
+        "url": "http://127.0.0.1:56540/menu",
+        "controlled": true,
+        "active": {
+          "state": "activated",
+          "scriptURL": "http://127.0.0.1:56540/service-worker.js"
+        },
+        "waiting": null,
+        "installing": null,
+        "controllerIsActive": true,
+        "servedHtmlSha256": "15571e2af2ff2ed485a1e9a55017cac4e35cc3f38b3e4de64c48bf6c3b848e4b",
+        "caches": [
+          {
+            "name": "host-check-unrelated",
+            "indexHtmlSha256": null
+          },
+          {
+            "name": "nato-shell-v1-d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+            "indexHtmlSha256": "15571e2af2ff2ed485a1e9a55017cac4e35cc3f38b3e4de64c48bf6c3b848e4b"
+          }
+        ]
+      },
+      "servedExpectedHtmlBeforeCleanup": true,
+      "activeControllerBeforeCleanup": true,
+      "settled": {
+        "url": "http://127.0.0.1:56540/menu",
+        "controlled": true,
+        "active": {
+          "state": "activated",
+          "scriptURL": "http://127.0.0.1:56540/service-worker.js"
+        },
+        "waiting": null,
+        "installing": null,
+        "controllerIsActive": true,
+        "servedHtmlSha256": "15571e2af2ff2ed485a1e9a55017cac4e35cc3f38b3e4de64c48bf6c3b848e4b",
+        "caches": [
+          {
+            "name": "host-check-unrelated",
+            "indexHtmlSha256": null
+          },
+          {
+            "name": "nato-shell-v1-d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+            "indexHtmlSha256": "15571e2af2ff2ed485a1e9a55017cac4e35cc3f38b3e4de64c48bf6c3b848e4b"
+          }
+        ]
+      }
+    }
+  ],
+  "originStoppedForOffline": true
+}

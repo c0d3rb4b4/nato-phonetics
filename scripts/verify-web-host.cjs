@@ -35,8 +35,31 @@ async function pollPage(page, predicate, arg, description, timeout = 15000) {
   } while (Date.now() < deadline);
   throw new Error(`Timed out waiting for ${description}`);
 }
+// Read actual controller/served bytes separately from cache housekeeping. One
+// failed combined predicate otherwise hides which update boundary diverged.
+async function workerSnapshot(page) {
+  return page.evaluate(async () => {
+    const digest = async response => response ? [...new Uint8Array(await crypto.subtle.digest('SHA-256', await response.arrayBuffer()))]
+      .map(byte => byte.toString(16).padStart(2, '0')).join('') : null;
+    const registration = await navigator.serviceWorker.getRegistration();
+    const worker = value => value ? { state: value.state, scriptURL: value.scriptURL } : null;
+    return {
+      url: location.href, controlled: !!navigator.serviceWorker.controller,
+      active: worker(registration?.active), waiting: worker(registration?.waiting), installing: worker(registration?.installing),
+      controllerIsActive: !!navigator.serviceWorker.controller && navigator.serviceWorker.controller === registration?.active,
+      servedHtmlSha256: await digest(await fetch('/index.html')),
+      // CacheStorage.match with cacheName never creates a cache that activation
+      // deleted between keys() and this read. caches.open would change the
+      // cleanup outcome being observed in precisely that race.
+      caches: await Promise.all((await caches.keys()).map(async name => ({ name,
+        indexHtmlSha256: await digest(await caches.match('/index.html', { cacheName: name })) }))),
+    };
+  });
+}
 async function main() {
   report.runnerSha256 = hash(await fs.readFile(__filename));
+  report.browserExecutable = engine === 'chromium' && process.env.BROWSER_EXECUTABLE ? process.env.BROWSER_EXECUTABLE : browserType.executablePath();
+  report.browserExecutableSha256 = hash(await fs.readFile(report.browserExecutable));
   assert(process.env.CADDY_EXECUTABLE, 'Set CADDY_EXECUTABLE to a verified Caddy binary');
   await fs.mkdir(output, { recursive: true });
   const work = await fs.mkdtemp(path.join(output, 'runtime-'));
@@ -132,15 +155,19 @@ async function main() {
       const registration = await navigator.serviceWorker.getRegistration();
       return registration?.active?.state === 'activated' && !registration.waiting && !registration.installing;
     }, undefined, 'normal worker activation after closing all windows');
-    const before = await target.evaluate(async () => ({ controllerIsActive: navigator.serviceWorker.controller === (await navigator.serviceWorker.getRegistration()).active,
-      caches: await Promise.all((await caches.keys()).map(async name => ({ name, entries: (await (await caches.open(name)).keys()).length }))) }));
+    const observation = { route, build, expectedHtmlSha256: htmlHash, beforeFreshNavigation: await workerSnapshot(target) };
+    (report.reopenObservations ||= []).push(observation);
     await target.goto(origin + route);
+    observation.afterFreshNavigation = await workerSnapshot(target);
+    observation.servedExpectedHtmlBeforeCleanup = observation.afterFreshNavigation.servedHtmlSha256 === htmlHash;
+    observation.activeControllerBeforeCleanup = observation.afterFreshNavigation.controllerIsActive;
     await ready(target, build);
-    const actualHtmlHash = hash(Buffer.from(await target.evaluate(async () => (await fetch('/index.html')).text())));
-    (report.reopenObservations ||= []).push({ route, build, beforeFreshNavigation: before, controllerIsActive: true, servedHtmlSha256: actualHtmlHash });
-    assert.equal(actualHtmlHash, htmlHash);
+    observation.settled = await workerSnapshot(target);
+    assert.equal(observation.settled.servedHtmlSha256, htmlHash);
   }
   async function closeAppWindows() {
+    (report.closeObservations ||= []).push({ mode: transitionMode, pageCount: context.pages().length,
+      beforeClose: await workerSnapshot(context.pages().at(-1)) });
     if (transitionMode === 'process') {
       await context.close(); context = await launch();
       return context.newPage();
@@ -290,12 +317,8 @@ main().catch(async error => {
   if (page) {
     await fs.mkdir(path.join(output, 'diagnostics'), { recursive: true });
     await page.screenshot({ path: path.join(output, 'diagnostics/failure.png') }).catch(() => {});
-    report.failure.state = await page.evaluate(async () => ({ url: location.href, text: document.body.innerText,
-      caches: await caches.keys(), controlled: !!navigator.serviceWorker.controller,
-      active: (await navigator.serviceWorker.getRegistration())?.active?.state,
-      waiting: (await navigator.serviceWorker.getRegistration())?.waiting?.state,
-      controllerIsActive: navigator.serviceWorker.controller === (await navigator.serviceWorker.getRegistration())?.active,
-      cacheEntries: await Promise.all((await caches.keys()).map(async name => ({ name, paths: (await (await caches.open(name)).keys()).map(request => new URL(request.url).pathname) }))) })).catch(() => null);
+    report.failure.state = await workerSnapshot(page).catch(() => null);
+    report.failure.visibleText = await page.locator('body').innerText().catch(() => null);
   }
 }).finally(async () => {
   if (context) await context.close();

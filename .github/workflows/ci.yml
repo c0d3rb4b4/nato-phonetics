@@ -7,6 +7,13 @@ on:
       - main
       - "agent/**"
   pull_request:
+  workflow_dispatch:
+    inputs:
+      host_transition:
+        description: Browser transition for the three-engine distribution checks
+        type: choice
+        options: [tabs, process]
+        default: tabs
 
 jobs:
   quality:
@@ -141,6 +148,7 @@ jobs:
         engine: [chromium, firefox, webkit]
     env:
       CI: '1'
+      HOST_TRANSITION: ${{ inputs.host_transition || 'tabs' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -163,12 +171,12 @@ jobs:
           node "$RUNNER_TEMP/nato-host-browser/node_modules/playwright/cli.js" install --with-deps ${{ matrix.engine }}
           echo "NODE_PATH=$RUNNER_TEMP/nato-host-browser/node_modules" >> "$GITHUB_ENV"
       - name: Qualify packaged host, forward update and rollback
-        run: node scripts/verify-web-host.cjs artifacts/web-distribution/build/nato-web.tar.gz artifacts/web-distribution/host ${{ matrix.engine }}
+        run: node scripts/verify-web-host.cjs artifacts/web-distribution/build/nato-web.tar.gz artifacts/web-distribution/host ${{ matrix.engine }} "$HOST_TRANSITION"
       - name: Keep candidate, report and screenshots
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: web-distribution-${{ matrix.engine }}-${{ github.sha }}
+          name: web-distribution-${{ matrix.engine }}-${{ env.HOST_TRANSITION }}-${{ github.sha }}
           path: |
             artifacts/web-distribution/build/
             artifacts/web-distribution/host/report.json

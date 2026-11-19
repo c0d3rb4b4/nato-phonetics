@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-19T11:00:31.828199+00:00",
+  "baseHead": "b551420f80e951a6db22cce1c79533510f1286f1",
+  "sourceId": "ddd62cffde7e433eb3dcbc4fe977023854039df84116e5c39f0d0f32abc19e69",
+  "modifiedMaintainedFiles": [
+    ".github/workflows/ci.yml",
+    "README.md",
+    "docs/APP_REVIEW.md",
+    "docs/CONVERTER_POLICY.md",
+    "docs/DELIVERY_PLAN.md",
+    "docs/LOCAL_PROGRESS.md",
+    "docs/RELEASE_RUNBOOK.md",
+    "docs/WEB_DISTRIBUTION.md",
+    "docs/WEB_OFFLINE.md",
+    "scripts/verify-web-host.cjs"
+  ],
+  "baselineFiles": 4359,
+  "priorEvidenceUntouched": true,
+  "reviewSnapshotPreserved": true,
+  "productNativeDependencyWorkerProviderPermissionSchemaUnchanged": true,
+  "statusCounts": {
+    "resolved": 6,
+    "implemented-awaiting-M11": 12,
+    "in-progress": 17
+  },
+  "allManualResultsUnperformed": true,
+  "sharedTests": "151 reused from Run23 at unchanged scope; not newly run",
+  "compiledYoga": "177 reused at unchanged original scope; not newly run",
+  "dependencyAudit": "Run23 raw0/review0/zero findings reused at unchanged lock; no fresh audit or release acceptance",
+  "webFinalGroups": 36,
+  "webNegativeControls": 6,
+  "nativePassingTests": 3,
+  "nativeMaximumShare": "failed65; missing sheet capture; original failures retained",
+  "finalCaptures": 59,
+  "androidCaptures": "inapplicable to this unchanged-product/tooling and iOS-only delta",
+  "linksChecked": 843,
+  "sourcePatchSha256": "804df681b431aca4942377eb79bff409f7b2609d0c89cf8a607d78b84d65f048",
+  "index": "Externally staged snapshot preserved; staged/newer working-tree differences reviewed, no index mutation/commit"
+}
