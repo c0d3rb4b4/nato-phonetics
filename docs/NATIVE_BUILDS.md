@@ -133,6 +133,12 @@ Android now handles `fontScale` in the Activity, refreshes React Native display 
 The [React Native iOS 27 lifecycle report](https://github.com/react/react-native/issues/58545) motivated the owned scene migration in Run 04. The new scene bootstrap is compiled with SDK 27.2 and verified on the available iOS 26.2 runtime. **iOS 27 runtime behavior remains unverified**, because that runtime was unavailable; retain it in P10 compatibility checks. This is a technical coverage limitation, not an outstanding owner licence action or a claim of support inferred from the deployment minimum.
 
 
+## Planned remote build completion — 19 November 2026
+
+[P10.8](DELIVERY_PLAN.md#p108--remote-build-pipeline-and-reusable-host-execution) is **P2/todo**, M–L. The existing self-hosted native workflow and separate web CI are authored; this does not establish a verified remote build. Complete them using shared Gradle/Xcode/web entry points that can also run on another authorized host, with pinned preflight, exact source/patch/artifact identities, durable logs, artifact retrieval and failure reporting. Keep private-runner trust boundaries and failed security/release gates intact. iOS requires a suitable macOS/Xcode host; other OS/architecture claims need qualification. A selectable Android source-framework diagnostic mode follows a justified P05.2 candidate; ordinary builds retain the current dependency path.
+
+The owner reports11GiB free and wants local work to proceed.25–30GiB was an advisory buffer, not a verified minimum: measure before large builds, serialize them and report actual shortfalls. Pipeline completion is scheduled later, with an enabling slice eligible earlier only if a measured local constraint blocks P1 validation and a host is available. Future restricted host/runner enrollment/access and signing inputs stay in M11.2; setup/implementation/verification remain engineering. No workflow is changed, host provisioned or build performed by this documentation amendment.
+
 ## Run 07 native text measurement, 17 November 2026
 
 The shared JavaScript tile correction reads pixel-rounded parent/box origins from native layout events and aligns the inner text to the existing whole-tile baseline. It changes no native project, font file or dependency. Android therefore reuses the hash-verified Run 06 debug APK with a separately archived Run 07 Metro bundle; APK identity alone cannot identify that running JavaScript. Native text events and strict raster checks are recorded in [Run 07](evidence/run07/README.md).
