@@ -1,0 +1,1593 @@
+diff --git a/README.md b/README.md
+index a318e2e..9149b38 100644
+--- a/README.md
++++ b/README.md
+@@ -1,8 +1,8 @@
+ # NATO Phonetics
+ 
+-A shared React Native app with repository-owned Android/iOS projects and an independent React Native Web build. It includes letter/digit reference, conversion with Copy/Share/Replay/pacing/paged cards, guarded practice sessions/results/Retry, listening and typed recall, local symbol progress/due review, appearance and voice selection. Run 16 adds a verified web offline shell, readiness/retry guidance and updates that wait for all app windows to close. Run 17 updates the compatible Metro family to remove the vulnerable image-size parser and prepares an unsigned Android Release AAB. Run 18 backports the merged Yoga precision correction for clipped iOS paragraphs, with guarded installation and a native rebuild. Run20 adds [reproducible static web archives and concrete hosting configuration](docs/WEB_DISTRIBUTION.md), with actual local update/rollback qualification. Run21 repairs asynchronous host verification and qualifies three-engine tab-close/update/rollback/repair/cold-offline scopes; WebKit process-close during a waiting update remains failed. [Current evidence](docs/evidence/run21/README.md), [actual screenshots](docs/evidence/run21/screenshots/index.md) and [delivery status](docs/DELIVERY_PLAN.md) distinguish delivered engineering from remaining native and human acceptance.
++A shared React Native app with repository-owned Android/iOS projects and an independent React Native Web build. It includes letter/digit reference, conversion with Copy/Share/Replay/pacing/paged cards, guarded practice sessions/results/Retry, listening and typed recall, local symbol progress/due review, appearance and voice selection. Run 16 adds a verified web offline shell, readiness/retry guidance and updates that wait for all app windows to close. Run 17 updates the compatible Metro family to remove the vulnerable image-size parser and prepares an unsigned Android Release AAB. Run 18 backports the merged Yoga precision correction for clipped iOS paragraphs, with guarded installation and a native rebuild. Run20 adds [reproducible static web archives and concrete hosting configuration](docs/WEB_DISTRIBUTION.md), with actual local update/rollback qualification. Run21 repairs asynchronous host verification and qualifies three-engine tab-close/update/rollback/repair/cold-offline scopes; WebKit process-close during a waiting update remains failed. Run22 adds shared local/Actions host execution (remote qualification remains open). Run23 delivers the compatible CLI/parser security repair and actual affected native/build verification. [Current evidence](docs/evidence/run23/README.md), [actual screenshots](docs/evidence/run23/screenshots/index.md) and [delivery status](docs/DELIVERY_PLAN.md) distinguish delivered engineering from remaining native and human acceptance.
+ 
+-P05–P10 remain active. Android live text still fails; Run20 traces absent stable-paragraph measurement and an input-shaped cache return without a JNI call, with no native repair. [Measurement boundary and next forecast](docs/ANDROID_TEXT_MEASUREMENT.md). Run18 repairs the observed default iOS policy ending; original iOS long-drag/max progress navigation, broader runtime/AT and three strict P3 ink fringes stay open. Current audit/review still fail28 high/3 low. Recognition implementation, signed distribution, actual public HTTPS hosting and integrated/M11 acceptance remain unfinished. [Delivery status](docs/DELIVERY_PLAN.md), [local progress](docs/LOCAL_PROGRESS.md), [recognition assessment](docs/SPOKEN_PRACTICE.md).
++P05–P10 remain active. Android live text still fails; Run20 traces absent stable-paragraph measurement and an input-shaped cache return without a JNI call, with no native repair. [Measurement boundary and next forecast](docs/ANDROID_TEXT_MEASUREMENT.md). Run18 repairs the observed default iOS policy ending; original iOS long-drag/max progress navigation, broader runtime/AT and three strict P3 ink fringes stay open. Run23 raw audit and review pass with zero findings after a compatible CLI/parser upgrade. Recognition implementation, signed distribution, actual public HTTPS hosting and integrated/M11 acceptance remain unfinished. [Delivery status](docs/DELIVERY_PLAN.md), [local progress](docs/LOCAL_PROGRESS.md), [recognition assessment](docs/SPOKEN_PRACTICE.md).
+ 
+ ## Setup and local development
+ 
+@@ -45,7 +45,7 @@ The React Native [0.81 environment guide](https://reactnative.dev/docs/0.81/set-
+ 
+ `npm ci` applies a small version-guarded [native speech patch](scripts/patch-native-tts.cjs): Android utterance IDs become UUIDs rather than hashes of spoken text, so delayed events from one “Alfa” cannot finish the next “Alfa.” Installation fails if the pinned provider source changes. Do not use `--ignore-scripts` for a delivery installation. The adapter tests also verify the installed source patch. Installation also applies the RN0.81.5/source-SHA-256-guarded [Yoga precision backport](scripts/patch-native-yoga.cjs), preserving full paragraph heights in source-built iOS. Rebuild/install iOS after this patch; refreshing Metro does not change the native library. Standard Android builds retain their Maven native binary. [Diagnosis, guards and qualification](docs/NATIVE_TEXT_PRECISION.md). Native audible playback remains a device check.
+ 
+-CI runs the shared gates and production browser tests. A separate manually triggered [native workflow](.github/workflows/native-builds.yml) builds on a prepared self-hosted macOS runner and collects artifacts without publishing. Hosted/self-hosted workflow execution is not implied by local results. [Security review](docs/SECURITY_REVIEW.md) records unresolved findings. Run 17 removes image-size through Metro 0.83.8 within the existing React Native 0.81.5 ranges. The current audit still reports 28 high/3 low affected package entries; picomatch has no selected repair or new disposition, so the security gate remains failed. No framework upgrade or owner risk acceptance is implied.
++CI runs the shared gates and production browser tests. A separate manually triggered [native workflow](.github/workflows/native-builds.yml) builds on a prepared self-hosted macOS runner and collects artifacts without publishing. Hosted/self-hosted workflow execution is not implied by local results. [Security review](docs/SECURITY_REVIEW.md) records unresolved findings. Run 17 removes image-size through Metro 0.83.8 within the existing React Native 0.81.5 ranges. Run23 upgrades the CLI family to20.2.0 and resolves patched fast-xml-parser5.12.1 through its upstream ranges; clean installation,151 tests,actual CLI/XML/native scopes and raw audit/review0 with zero findings qualify this dependency repair. Historical withdrawn matcher backtracking is not a package repair. [Current evidence](docs/evidence/run23/README.md). No framework upgrade or owner risk acceptance is implied.
+ 
+ ## Web routing and browser checks
+ 
+diff --git a/docs/APP_REVIEW.md b/docs/APP_REVIEW.md
+index 1db3d06..1814e29 100644
+--- a/docs/APP_REVIEW.md
++++ b/docs/APP_REVIEW.md
+@@ -409,11 +409,11 @@ Turn R01–R25 and selected feature items into individually owned work items, re
+ 
+ ## Current delivery status
+ 
+-**Updated:**19 November2026 — Run22 bounded P1 native context investigation and P10.8 local shared-host implementation. Original review snapshot/findings above are preserved; [the ledger](DELIVERY_PLAN.md#complete-scope-and-resolution-ledger) owns current status.
+-
+-- **Scope/status:** All35 remain required:0open/18in-progress/12implemented-awaiting-M11/5resolved/0blocked/0scope changes. P05–P10 stay active. P10.8 moves todo→active/partial; no whole task/phase closes and every M11 result is unperformed.
+-- **Delivered:** shared Actions/direct-host checks/web/native commands over existing entry points; pinned/resource preflight, serial workers/build lock, fresh output folders, exact dirty-source patch/untracked/hash identity, expected-source/drift rejection and durable failure/exit/signal/artifact reports. Trusted manual unsigned builds are independent of quality/audit job results; existing three-engine distribution CI reuses the web path. [Implementation/reports](evidence/run22/README.md), [guide](NATIVE_BUILDS.md#shared-host-execution--run22).
+-- **Actual checks:** 147 shared tests (including8 new host behavioral checks), lint/types/Expo-free graph and local APK/AAB/unsigned iOS simulator/web outputs pass in recorded scopes. Two web invocations, one requiring the exact source ID, yield the identical Run20/21 archive. Controlled build failure retains nonzero status/logs and no stale artifact. The first source-drift-rejected iOS attempt and setup failures stay failed; its stable-source retry is separate. Actual raw audit remains1 with7low/0high; the review gate passes. Primary metadata/classification and low-parser applicability are reconciled without a dependency repair or risk waiver. [Host results](evidence/run22/host/index.json).
+-- **P1/native boundary:** read-only normal-startup hooks observe Java/C++ surface multiplier1 at cold/live2, no root clone,15 cold versus10 live Yoga configuration calls, and the original3/4 failed frame comparison. Android visible clipping/state/caret/full native regression remains P05.2; no flag/cache workaround, root replacement, framework source patch or accessibility exception. [Context evidence](evidence/run22/android/context-report.json), [measurement scope](ANDROID_TEXT_MEASUREMENT.md).
+-- **Captures/reuse:** [actual inspected web/Android/iOS images](evidence/run22/screenshots/index.md), with Android diagnostic failures clearly labelled. Full integrated P10.7 matrix remains unfinished. App/native/font/provider/permission/storage/dependency/lock inputs are unchanged; Run21 three-engine host scopes and prior native/177 compiled Yoga evidence retain original limits. WebKit process-close while update waits and original native gesture/max-navigation/P3 ink failures remain open.
+-- **Remote/manual/next:** GitHub inventory finds0 registered self-hosted runners. No dispatch/enrollment/remote build, signing, public HTTPS, provider/recognition/AT/release acceptance is claimed. Actual remote standard artifacts/source reconstruction/retrieval/direct second invocation and justified framework diagnostics remain P10.8 engineering; restricted enrollment/access/signing stays M11.2. [Human-only supplement](evidence/run22/manual-handoff.md). Next P1 causal Android regression/cache-owner repair and P2 CLI/parser compatibility follow-up and advisory re-entry at triggers. Stop at the verified local tooling/artifact/capture handoff before a new substantial framework/provider/remote cycle. [Execution record](DELIVERY_PLAN.md#run22--19-november-2026).
++**Updated:** 19 November 2026 — Run23 compatible CLI/XML-parser remediation and affected build qualification. Original review snapshot/findings above are preserved; [the ledger](DELIVERY_PLAN.md#complete-scope-and-resolution-ledger) owns current status.
++
++- **Scope/status:** All 35 remain required: 0 open/17 in-progress/12 implemented-awaiting-M11/6 resolved/0 blocked/0 scope changes. **R08 resolves its automated dependency scope.** P05–P10 stay active; no whole phase closes and every M11 result is unperformed.
++- **Delivered:** three direct CLI pins 20.0.2→20.2.0 and thirteen CLI-family updates resolve the sole XML parser 4.5.7→5.12.1 through upstream ranges. Full lock delta reviewed; no override/RN/Metro/provider/app/permission/schema change. New maintained XML compatibility and bounded malformed-input regressions join existing CI tests. [Changes/assessment](evidence/run23/README.md), [lock review](evidence/run23/shared/lock-review.json).
++- **Actual checks:** fresh npm ci/locked Pods, 151 shared tests, types/lint/791-package Expo-free graph, exact CLI/autolink equality, real Apple workspace discovery, production browser and direct local APK/AAB/unsigned iOS simulator builds pass in recorded scopes. Retrieved/installed artifacts match; scoped real input/Menu/reference/digit smoke passes. **Raw audit and review both exit 0 with zero findings**, an actual compatible parser repair. Prior matcher withdrawal/backtracking is not a package repair or waiver. [Reports/candidate](evidence/run23/candidate.json), [security scope](SECURITY_REVIEW.md#run23--compatible-cli-and-xml-parser-remediation).
++- **Captures/reuse:** [8 actual inspected web/Android/iOS captures](evidence/run23/screenshots/index.md), with source/artifact/runtime metadata. Production web archive equals Run20/21/22; all eight Android framework-library hashes equal Run22. Qualified unchanged Run21 host scopes and previous renderer/native tests retain their original limits; no new full native/AT/runtime/raster or final P10.7 pass.
++- **Failures/limits:** initial numeric-entity expectations, absent-bundle Pods setup, source-map-only hash hypothesis and diagnostic filename correction are retained separately from final passes. Android live ordinary text still fails 3/4 with no context/owner/cache repair. Original iOS gestures/max navigation, WebKit waiting-update process-close and strict P3 ink failures remain open. [Corrections/remaining gates](evidence/run23/README.md).
++- **Remote/manual/next:** P10.8 local shared path remains delivered; no actual remote host/runner qualification. Signing, public HTTPS, recognition/provider/AT/release and integrated gates remain unfinished. Every human result stays unperformed in [M11](evidence/run23/manual-handoff.md). Next P1 Android causal native regression/repair; P2 remote completion when a suitable host exists or separately forecast P09 integration. Re-enter security on new advisory/exposure/tooling and before release. Stop at the verified dependency/native/capture/source/status handoff before a substantial framework/provider cycle. [Execution record](DELIVERY_PLAN.md#run23--19-november-2026).
+diff --git a/docs/DELIVERY_PLAN.md b/docs/DELIVERY_PLAN.md
+index 8e3ad8f..e6f3eca 100644
+--- a/docs/DELIVERY_PLAN.md
++++ b/docs/DELIVERY_PLAN.md
+@@ -3,7 +3,7 @@
+ **Created:** 16 November 2026
+ **Source:** [APP_REVIEW.md](APP_REVIEW.md), especially “Suggested delivery order” and its acceptance checklist.
+ **Scope:** All R01–R25 findings and F01–F10 proposals, including exact portrait tile styling, full Expo removal, direct native builds and final cross-platform screenshots. The request to deliver all changes includes the P3 features; none are silently deferred.
+-**Current state:** Run22 delivers shared host execution and independent failure-preserving native/web workflow wiring; actual local APK/AAB/unsigned iOS simulator/web modes qualify, with 147 shared tests and8 new host behavioral tests. P10.8 becomes active/partial: zero registered remote runners, so no remote execution/qualification. P05.2 read-only context trace observes multiplier1 at the surface/C++ boundary despite live2, no root clone and15→10 configured Yoga nodes; frame gate still fails3/4, no repair. Fresh raw audit remains1 with7low/0high while the high/critical review gate passes; no dependency repair. No whole task/phase closes; every M11 result unperformed. [Evidence](evidence/run22/README.md), [actual captures](evidence/run22/screenshots/index.md).
++**Current state:** Run23 upgrades the compatible CLI family20.0.2→20.2.0 and its sole XML parser 4.5.7→5.12.1 without overrides. Fresh locked install, 151 shared tests, types/lint/Expo-free graph, actual CLI/XML/bounded malformed-input checks, production browser and direct local APK/AAB/unsigned iOS simulator builds pass in recorded scopes. Raw npm audit and review both exit 0 with zero findings; R08 resolves its automated dependency scope without a waiver. All 35 remain required: 17 in-progress/12 implemented-awaiting-M11/6 resolved. No whole phase closes; P05–P10 stay active and every M11 result is unperformed. [Evidence](evidence/run23/README.md), [actual captures](evidence/run23/screenshots/index.md).
+ **Reusable execution prompt:** [EXECUTION_PROMPT.md](EXECUTION_PROMPT.md).
+ 
+ **Historical planning amendment — 19 November 2026 (P10.8 status superseded by Run22):** The owner reports **11 GiB free** and wants engineering to proceed with that capacity. The earlier 25–30 GiB suggestion was a planning buffer, not a measured requirement or mandatory gate. Recheck actual disk/toolchain needs before a large build, serialize heavy jobs and record any concrete shortfall; do not require more cleanup merely to resume useful work. Add **P10.8 (P2, todo)** for a verified GitHub/remote-host build pipeline using shared execution logic. This request schedules that implementation for later; no new pipeline or remote build is claimed. [Task and acceptance](#p108--remote-build-pipeline-and-reusable-host-execution), [planning evidence](evidence/2026-11-19-remote-build-planning/README.md).
+@@ -45,10 +45,10 @@ For every new failure, record: owning task; reproducible scenario/platform/setti
+ 
+ ### Current delivery order and residual engineering queue
+ 
+-**Run22 update — 19 November 2026:** Run22 delivers shared host execution and independent failure-preserving native/web workflow wiring; actual local APK/AAB/unsigned iOS simulator/web modes qualify, with 147 shared tests and8 new host behavioral tests. P10.8 becomes active/partial: zero registered remote runners, so no remote execution/qualification. P05.2 read-only context trace observes multiplier1 at the surface/C++ boundary despite live2, no root clone and15→10 configured Yoga nodes; frame gate still fails3/4, no repair. Fresh raw audit remains1 with7low/0high while the high/critical review gate passes; no dependency repair. No whole task/phase closes; every M11 result unperformed. [Evidence](evidence/run22/README.md), [actual captures](evidence/run22/screenshots/index.md). The19November planning amendment and all prior failures remain historical evidence; actual setup fixes use isolated JDK17.0.13 and DEVELOPER_DIR, with no larger free-space gate.
++**Run23 update — 19 November 2026:** Run23 upgrades the compatible CLI family20.0.2→20.2.0 and its sole XML parser 4.5.7→5.12.1 without overrides. Fresh locked install, 151 shared tests, types/lint/Expo-free graph, actual CLI/XML/bounded malformed-input checks, production browser and direct local APK/AAB/unsigned iOS simulator builds pass in recorded scopes. Raw npm audit and review both exit 0 with zero findings; R08 resolves its automated dependency scope without a waiver. All 35 remain required: 17 in-progress/12 implemented-awaiting-M11/6 resolved. No whole phase closes; P05–P10 stay active and every M11 result is unperformed. [Evidence](evidence/run23/README.md), [actual captures](evidence/run23/screenshots/index.md). Run22 local shared-host qualification remains delivered; actual remote execution is still open with no established runner. Android live sizing remains failed3/4 with no framework repair. WebKit waiting-update process-close, original iOS gestures/max navigation and strict P3 ink retain their recorded failures.
+ 
+ **Historical queue update — 19 November 2026, remote-build planning amendment after Run21:** Prior delivered core/assets/offline/parser/iOS paragraph work and Run19 runtime/lifecycle qualification are preserved. Run20 adds local static distribution/hosting engineering and scoped real forward/rollback/saved-progress assurance; public HTTPS/host, Linux/hosted CI, legacy/other-engine/native/integrated acceptance remain open. Normal-startup Android tracing supplies the first native call-boundary discrimination, but three live/cold controls still fail. Security remains failed28high/3low despite unchanged upstream withdrawal. No phase closes. Run21 supersedes unsafe async host-transition preconditions with explicit awaited polling and exact served-HTML assertions. Three-engine tab-close/update/rollback/repair/cold-offline scopes pass; WebKit browser-process-close during a waiting update fails and stays P10 engineering. [Evidence/correction](evidence/run21/README.md).
+-1. **P1 affected-flow reliability:** use [Run20 native trace](ANDROID_TEXT_MEASUREMENT.md) to isolate surface/context/dirty-owner propagation before stable paragraph measurement and the font-environment key/invalidation for the input-shaped C++ cache return. The first call-boundary evidence now exists; a full causal/native regression and reproducible repair do not. Forecast the source-build/regression/ABI/state/tile/caret cycle L/high uncertainty before starting; previous flag/cap/constraint/root hypotheses stay failed. No remount, scaling/assertion suppression or automatic framework fork. Run10 ordinary short iOS gestures retain their scoped pass; original long-drag/max navigation remain open at their existing triggers. Run22 R08 review now passes with0high/critical after registry withdrawal propagation; raw audit remains1/7low, with P2 CLI/parser applicability/compatibility follow-up and re-entry on changed exposure/advisory. No package repair or owner risk acceptance.
++1. **P1 affected-flow reliability:** use [Run20 native trace](ANDROID_TEXT_MEASUREMENT.md) to isolate surface/context/dirty-owner propagation before stable paragraph measurement and the font-environment key/invalidation for the input-shaped C++ cache return. The first call-boundary evidence now exists; a full causal/native regression and reproducible repair do not. Forecast the source-build/regression/ABI/state/tile/caret cycle L/high uncertainty before starting; previous flag/cap/constraint/root hypotheses stay failed. No remount, scaling/assertion suppression or automatic framework fork. Run10 ordinary short iOS gestures retain their scoped pass; original long-drag/max navigation remain open at their existing triggers. Run23 compatible CLI/parser repair now passes raw audit/review 0 with zero findings and actual affected native/tooling checks; R08 resolves its dependency scope. Historical matcher behavior/withdrawal is not a package repair; re-enter on new advisory/exposure/tooling changes and before release. No owner risk acceptance.
+ 2. **P2 useful core qualification:** P06.1/shared export and P07 session/results remain delivered. Run 10 implements P06.3 pacing/Replay/highlighting and P06.4 pagination/scrolling, measured through 2,000 characters. Finish affected native accessibility/input/navigation assurance without broadening unrelated tile polish; reuse Run 11’s scoped direct Stop→Replay keyboard comparison. P06.2/.3/.4 and P07.4 remain active where the inherited gate applies. No fixed batch size.
+ 3. **P2 release foundations and later learning value:** compatible security remediation, CI/native reproducibility and supported-runtime qualification remain eligible. **P10.8 remote-build completion is P2/active (local shared path delivered; remote qualification open):** reuse existing native/web entry points and workflows to offload builds to another suitable host. Schedule alongside P2 qualification and before P3 polish; P1 Android correctness and any newly promoted security work keep precedence. Pull forward the minimum enabling slice if a measured local resource limit prevents required P1 validation and a suitable host is available. The owner wants to proceed locally with reported11GiB free; P10.8 is not a new gate on local investigation. P08.1/.2/.3/.4 are functionally implemented with affected qualification open; P08.5 inventory/help is delivered. **P10.1 release assets and P09.1 assessment are delivered.** P10.2 shell/update engineering is delivered locally; P10.4 artifact/host-specific preparation, remaining P08.3 browser/runtime assurance and R08 new-advisory triage remain eligible by task; P10.3 current-candidate runbook is delivered. P09.2–.4 recognition/provider/permission/native build work needs its own M–L forecast; final P10/M11 integrated gates remain required.
+ 4. **P3 polish:** strict iPhone ink fringes and speculative raster combinations follow core completion unless new user-impact evidence promotes them.
+@@ -61,7 +61,7 @@ Engineering follow-ups stay here rather than in the human-only M11 queue:
+ | P05.8 / R25 DPR 3 India/Juliett fringes | **P3 parked; strict gate still failed** | P05.8 strict fidelity completion; **no P06/P07 implementation gate** | [Debug 453/456, Release 8/11](evidence/run07/ios/README.md); +2.042447 px versus 2 px. Next scheduled review after P06/P07 core completion, or before a release proposal. Existing UIFont/raster-phase diagnostic remains a lead. Run18 changes source-built iOS Yoga precision:26 default/maximum tile ratios and actual India/Juliett samples pass; full current baseline/strict raster sweep is unrun, so no old strict pass is inherited or failed fringe closed. | Renderer/font changes, readable-content/contrast/geometry regression, or core-complete polish capacity. Actual information loss promotes severity immediately. No tolerance change or release exception granted. |
+ | P06.4/P10 iOS bulk XCTest anomaly | **P2 parked compatibility follow-up; cause unknown** | Bulk-injection automation assurance; realistic converter input checks still required | [Minimal RN failures, real key-event/Paste passes](evidence/run04/ios/README.md). Run 10 now passes ordinary typing and exact 2,000-character OS Paste plus a following key, output/paging and Clear on iOS; original bulk-injection compatibility is still uncorrected. Run 12 listening/typed driver bulk input observes only `w` from `wrong` after Menu; location is not established by that command. Exact individual key events assert the whole response immediately and after Menu, and the scoped typed round/Retry passes. [Evidence](evidence/run12/ios/README.md). Next: retain this input method for realistic qualification; no new bulk-only archaeology absent a trigger. | Ordinary user-input loss promotes to P1; RN/input/runtime changes trigger scoped reproduction. Avoid repeated automation-only archaeology without new evidence. |
+ | P05/P10 iOS 27 / older header fallback | **P2 support qualification; unrun** | Claims/release coverage for the relevant supported runtime | [Runtime limits](evidence/run07/ios/README.md). Next: record advertised/minimum OS matrix and run available supported-runtime checks during P10. | Before claiming/releasing support, or after a native lifecycle/header change. Missing evidence is not a support pass. |
+-| R08/P10 matcher / low XML-parser chain | **P2 tooling follow-up; raw7low/exit1, review0/0high** | Current low parser/CLI and pre-release review; prior matcher timeout remains behavior evidence, no active high audit blocker | Run22 primary withdrawal matches Run19; fresh npm response drops matcher and reports7 low entries from one XML leaf. Two inspected CLI consumers do not enable stopNodes; no authored web input path. CLI20.2.0 candidate metadata only. [Assessment](evidence/run22/shared/security-assessment.json), [current review](SECURITY_REVIEW.md#run22--registry-reconciliation-and-bounded-low-parser-triage). No repair/owner acceptance. | Promote on new severity/advisory, untrusted stopNodes/XML/pattern exposure or changed tooling. M native/API/XML/locked-install cycle before selecting a CLI/parser upgrade; recheck before release. |
++| R08/P10 advisory maintenance | **Run23 dependency repair delivered; current raw/review0, zero findings** | Pre-release/new-advisory or changed-exposure review; historical matcher behavior is not package-repaired | CLI 20.2.0 uses patched XML parser 5.12.1 through upstream ranges; fresh install, actual XML/CLI/native scopes qualify. [Assessment](evidence/run23/shared/lock-review.json), [current review](SECURITY_REVIEW.md#run23--compatible-cli-and-xml-parser-remediation). Prior matcher timeout/withdrawal and failed audits stay historical. | Re-enter on new advisory/severity/untrusted XML or glob exposure/tooling changes; re-audit before release. No suppression, risk waiver or M11 acceptance. |
+ | P04/P10 iOS Debug late native finish warning | **P3 diagnostic; no source change** | Candidate audio/debug qualification; no independent feature gate | [Run 08 real-provider Stop probe](evidence/run08/ios/warnings.json): cancelled/idle, followed by `tts-finish` with no listeners; generic developer toast retained in some UI captures. Consistent with removed listeners after cancel; not proof of the sole toast cause. | Release-visible error, resumed/incorrect audio or integrated audio qualification. Add a meaningful late-event regression before altering cancellation; no warning suppression. |
+ | P06/P10 native clipboard API | **P2 upgrade/capability follow-up; current functional checks pass** | Future framework upgrade/Copy capability; no current implementation gate | Run 09 isolates the deprecated public Clipboard API included in pinned RN 0.81.5; actual clipboard checks and Debug deprecation overlay retained. | Framework upgrade/removal, clipboard failure or release qualification; assess a supported replacement with native builds before changing dependencies. |
+ | P05.2/P06.2 / iOS maximum text + keyboard drag | **P1 triage; original failed; ordinary short scope now passes** | Original touch/state reliability and release acceptance; no blanket affected-flow pass | [Run 10 iOS](evidence/run10/ios/README.md): fresh identified runner passes default and maximum short swipes/Copy with retained `a3 b!`; real 2,000-character Paste/edit/Copy/paging also passes. Run 09 repeated long-press-drag assertion/SIGABRT is not reproduced, fixed or rerun as a pass. Release/physical/long-gesture reach and cause remain unknown. | Reproduce ordinary user/state loss or relevant native/input/runtime change; isolate one touch/keyboard variable before a framework build. No assertion suppression or release exception. |
+@@ -139,7 +139,7 @@ The amended stages map as follows: **own the build** → P00; **restore trust**
+ - [x] **P02.4** Extract pure content/conversion/question boundaries where that helps testing; later phases own behavioral changes. Establish scripts such as `typecheck`, `test` and `export:web`, documenting their actual commands rather than assuming they already exist.
+ - [x] **P02.5** Update CI to use a compatible pinned toolchain, `npm ci`, lint, active-code type checking, focused tests and web export. Add actionable dependency review. Subsequent phases add regression cases to these gates.
+ 
+-**Automated exit:** Clean installation and gates pass; deliberate invalid fields, route usage and API options in maintained code are caught by the type checker, then the deliberate errors are removed. The dependency disposition is current and SDK packages are compatible. Native acceptance is recorded only in M11. **Current maintenance:** historical P02 foundation completion is retained; Run 17 compatible Metro/image-size remediation and unresolved picomatch audit are tracked under R08/P10.5. The current audit gate is failed, not a renewed P02 security pass.
++**Automated exit:** Clean installation and gates pass; deliberate invalid fields, route usage and API options in maintained code are caught by the type checker, then the deliberate errors are removed. The dependency disposition is current and SDK packages are compatible. Native acceptance is recorded only in M11. **Current maintenance:** historical P02 foundation completion is retained. Run17 Metro/image-size remediation and Run23 compatible CLI/parser remediation now pass actual raw audit/review 0 with zero findings; R08 resolves its automated scope. Prior failed audits remain historical. P10.5 final integrated and M11 acceptance remain unfinished. [Evidence](evidence/run23/README.md).
+ 
+ ## P03 — Stabilize preferences and theming
+ 
+@@ -234,9 +234,9 @@ The amended stages map as follows: **own the build** → P00; **restore trust**
+ - [x] **P10.2** Complete web layout/metadata, direct-route handling and a deliberate offline strategy. Run 16 implements [digest-verified app-shell caching](WEB_OFFLINE.md), pinned complete builds, all-route offline navigation, honest readiness/retry/eviction repair and default close-all-window updates without forced reload. Actual Edge production/process-restart/update/rollback tests, 320px dark/200% captures and native changed-policy captures pass in the [recorded scope](evidence/run16/README.md). Provider connectivity remains separate. This completes local engineering; actual HTTPS hosting, other-engine/frozen/legacy upgrades, physical/provider acceptance and integrated P10.4/.5/.7/M11 gates stay open. No install prompt or universal speech guarantee. Run19 adds scoped offline direct progress/converter/reference and persistent-profile relaunch evidence in Edge/Firefox/WebKit; production shell matches Run18 exactly. This does not inherit a full update/eviction/rollback pass for each new engine. [Scope](evidence/run19/README.md).
+ - [x] **P10.3** Finish current-candidate policy/support pages, version metadata, release assets, complete developer setup and release/runbook instructions. Run 15 [release runbook](RELEASE_RUNBOOK.md) consolidates non-Expo setup/commands, identifiers/build numbering, artifact/signing boundaries, HTTPS host contract, legacy-window update/rollback, current support limits and M11 result fields. Metadata/scripts match actual source; browser policy/capability/deletion text and [actual captures](evidence/run15/screenshots/index.md) are verified. P10.1 assets retain Run 14 evidence. This completes documentation engineering for implemented behavior; update it after future P09/P10 changes. Final integrated verification, actual distribution/hosting and P10.7/M11 acceptance remain open.
+ - [ ] **P10.4** Use P00's repository-owned native projects and direct Gradle/Xcode builds to prepare reproducible internal distribution artifacts where available. Prepare independent web hosting configuration and a deployment runbook. Do not reintroduce Expo/EAS as a build or distribution prerequisite. Required private signing/hosting inputs and actual owner publication steps are M11 tasks; do not put credentials in documents. Run 15 prepares the [web routing/cache-header/HTTPS/update/rollback contract](RELEASE_RUNBOOK.md#independent-web-deployment-contract); Run 16 updates it for generated worker/manifest/reference headers and removes the broad missing-asset rewrite. Run 17 actually builds the unsigned four-ABI Android Release AAB, archives/hashes its embedded Hermes bundle/fonts and verifies no signature; [identity](evidence/run17/android/release-artifact.json), [signature inspection](evidence/run17/android/release-signature.log). The iOS unsigned Release simulator build is refreshed and installed, with scoped runtime evidence, not a signed distribution artifact. Host selection/configuration, actual deployed URL, current-candidate signed internal distribution and private signing checks remain unfinished. Keep unchecked. Run20 delivers the [local deterministic archive/Caddy2.11.9 configuration/retention/rollback path](WEB_DISTRIBUTION.md), six packaging regressions and four actual extracted-host scopes, with [durable candidate/report](evidence/run20/README.md). This closes only the local packaging/configuration slice; public HTTPS/cert/host, signing/native distribution, final support/acceptance remain unfinished. Keep unchecked; independent CI job authored, hosted unrun. Run21 adds corrected awaited host gating, three-engine CI and18 passing actual tab-close/update/rollback/eviction/cold-offline groups with24 inspected captures. WebKit process-close-while-waiting remains failed; original Run20 async transition assumptions are superseded. No native/public-host/integrated/phase completion. [Scope/failures](evidence/run21/README.md), [captures](evidence/run21/screenshots/index.md). Run22 shared host entry emits identified local APK/AAB, unsigned simulator tar and identical web archive; exact native outputs are retrieved/installed for scoped captures. Remote/public-host/signing and final distribution remain open. [Evidence](evidence/run22/README.md).
+-- [ ] **P10.5** Run the integrated automated matrix on the final candidate: locked install, lint, active-code types, meaningful unit/component tests, browser flows, production web build, dependency/security review and direct Android/iOS builds. Recheck that build scripts and installed dependencies remain Expo-free. Resolve regressions in their owning phases. Run 17 partially rechecks clean locked installation,129 tests, active types/lint,795-package Expo-free graph, production app browser, direct Android Debug/Release and iOS Release builds/installed smoke. Current audit/disposition gate still fails28 high / 3 low, inherited native gates and recognition remain unfinished; this is not the final integrated matrix. [Scope and failed commands](evidence/run17/README.md). Run18 partially rechecks fresh install,133 tests,compiled installed Yoga177 checks,types/lint/Expo-free graph,unchanged production web and direct iOS Release/installed25-file identity. Scoped native/default/maximum evidence and actual all-target captures are [recorded](evidence/run18/README.md). Audit remains failed28high/3low; full integrated/native/support/recognition gates stay unfinished. Run19 adds24 passing scoped browser/lifecycle checks,types/lint/Expo-free graph/production build/workflow parsing and independent CI engine jobs (hosted unrun). Prior133 shared/compiled/native checks are reused because their inputs are unchanged. Security remains failed28high/3low, and final native/support/recognition/integrated gates remain unfinished. [Evidence](evidence/run19/README.md). Run20 adds6 passing packaging tests and4 real local hosting/update/rollback scope groups, types/lint/Expo-free graph/production build/workflow parsing. Prior133 shared/177 compiled/native scopes reused on unchanged inputs, not rerun. Audit and final integrated/native/provider/support gates stay failed/unperformed. [Commands](evidence/run20/shared/commands.json). Run21 adds corrected awaited host gating, three-engine CI and18 passing actual tab-close/update/rollback/eviction/cold-offline groups with24 inspected captures. WebKit process-close-while-waiting remains failed; original Run20 async transition assumptions are superseded. No native/public-host/integrated/phase completion. [Scope/failures](evidence/run21/README.md), [captures](evidence/run21/screenshots/index.md). Run22 actual host checks pass dependencies/types/lint/147 tests and record raw audit1/7low separately from the passing high/critical review gate. Local native builds and controlled missing-export failure/log retention qualify only their recorded scopes; source-drift-rejected first iOS attempt stays failed. [Reports](evidence/run22/README.md).
++- [ ] **P10.5** Run the integrated automated matrix on the final candidate: locked install, lint, active-code types, meaningful unit/component tests, browser flows, production web build, dependency/security review and direct Android/iOS builds. Recheck that build scripts and installed dependencies remain Expo-free. Resolve regressions in their owning phases. Run 17 partially rechecks clean locked installation,129 tests, active types/lint,795-package Expo-free graph, production app browser, direct Android Debug/Release and iOS Release builds/installed smoke. Current audit/disposition gate still fails28 high / 3 low, inherited native gates and recognition remain unfinished; this is not the final integrated matrix. [Scope and failed commands](evidence/run17/README.md). Run18 partially rechecks fresh install,133 tests,compiled installed Yoga177 checks,types/lint/Expo-free graph,unchanged production web and direct iOS Release/installed25-file identity. Scoped native/default/maximum evidence and actual all-target captures are [recorded](evidence/run18/README.md). Audit remains failed28high/3low; full integrated/native/support/recognition gates stay unfinished. Run19 adds24 passing scoped browser/lifecycle checks,types/lint/Expo-free graph/production build/workflow parsing and independent CI engine jobs (hosted unrun). Prior133 shared/compiled/native checks are reused because their inputs are unchanged. Security remains failed28high/3low, and final native/support/recognition/integrated gates remain unfinished. [Evidence](evidence/run19/README.md). Run20 adds6 passing packaging tests and4 real local hosting/update/rollback scope groups, types/lint/Expo-free graph/production build/workflow parsing. Prior133 shared/177 compiled/native scopes reused on unchanged inputs, not rerun. Audit and final integrated/native/provider/support gates stay failed/unperformed. [Commands](evidence/run20/shared/commands.json). Run21 adds corrected awaited host gating, three-engine CI and18 passing actual tab-close/update/rollback/eviction/cold-offline groups with24 inspected captures. WebKit process-close-while-waiting remains failed; original Run20 async transition assumptions are superseded. No native/public-host/integrated/phase completion. [Scope/failures](evidence/run21/README.md), [captures](evidence/run21/screenshots/index.md). Run22 actual host checks pass dependencies/types/lint/147 tests and record raw audit1/7low separately from the passing high/critical review gate. Local native builds and controlled missing-export failure/log retention qualify only their recorded scopes; source-drift-rejected first iOS attempt stays failed. [Reports](evidence/run22/README.md). Run23 fresh locked install/Pods, 151 tests, CLI/XML/bounded parser regressions, types/lint/Expo-free graph, production browser and direct local Android Debug/Release/iOS simulator plus installed smoke pass. Raw audit/review now0/zero findings after an actual compatible CLI/parser repair. This closes R08 automated dependency scope, not P10.5 final integrated/native/provider/support acceptance. [Evidence](evidence/run23/README.md).
+ - [ ] **P10.6** Prepare one consolidated M11 handoff with candidate revision/artifact identity, installation steps, exact scripts/scenarios, expected results, result fields and remaining prerequisites. Record a final implementation diff review. Run18 [candidate-specific human supplement](evidence/run18/manual-handoff.md) and source/artifact/diff reconciliation are prepared; final integrated consolidated handoff remains unfinished. Run19 [human-only supplement](evidence/run19/manual-handoff.md) adds browser-support boundaries; all human results unperformed.
+-- [ ] **P10.7** After implementation and final verification, capture actual screenshots from the completed web, Android and iOS apps, plus any other supported target, before writing the final summary. Follow the screenshot contract below, including R25 tile geometry/typography comparisons across viewport/orientation/text-scale cases; include an evidence index and linked images in the handoff/summary. Record unavailable targets and exact capture blockers without substituting mockups or another platform's images. Complete/retry captures when the required environment becomes available. Run18 adds13 inspected actual captures (2web/10iOS/1Android), with separate paired diagnostic images, exact candidate identity and retained failed OCR command. [Index](evidence/run18/screenshots/index.md). No changed-target capture is missing in this batch; the full integrated final matrix is still unfinished. Run19 adds21 inspected actual web captures across three runtimes and Chromium lifecycle states. Android/iOS captures are inapplicable to this tooling/qualification-only delta; native code and product bytes are unchanged, with prior Run18 captures retained. Full final integrated capture matrix stays incomplete. [Index](evidence/run19/screenshots/index.md). Run20 adds10 inspected actual captures:5 final local-host web,4 explicitly diagnostic Android,1 restored normal product. iOS/new native product captures inapplicable to the hosting/tooling-only product delta; no changed-target capture missing and no full final matrix pass. [Index/metadata](evidence/run20/screenshots/index.md). Run21 adds corrected awaited host gating, three-engine CI and18 passing actual tab-close/update/rollback/eviction/cold-offline groups with24 inspected captures. WebKit process-close-while-waiting remains failed; original Run20 async transition assumptions are superseded. No native/public-host/integrated/phase completion. [Scope/failures](evidence/run21/README.md), [captures](evidence/run21/screenshots/index.md). Run22 adds actual inspected web/Android/iOS captures, including separately labelled Android diagnostic failures and matching locally retrieved native artifacts. No changed-flow target is missing; the full integrated matrix stays incomplete. [Index](evidence/run22/screenshots/index.md).
++- [ ] **P10.7** After implementation and final verification, capture actual screenshots from the completed web, Android and iOS apps, plus any other supported target, before writing the final summary. Follow the screenshot contract below, including R25 tile geometry/typography comparisons across viewport/orientation/text-scale cases; include an evidence index and linked images in the handoff/summary. Record unavailable targets and exact capture blockers without substituting mockups or another platform's images. Complete/retry captures when the required environment becomes available. Run18 adds13 inspected actual captures (2web/10iOS/1Android), with separate paired diagnostic images, exact candidate identity and retained failed OCR command. [Index](evidence/run18/screenshots/index.md). No changed-target capture is missing in this batch; the full integrated final matrix is still unfinished. Run19 adds21 inspected actual web captures across three runtimes and Chromium lifecycle states. Android/iOS captures are inapplicable to this tooling/qualification-only delta; native code and product bytes are unchanged, with prior Run18 captures retained. Full final integrated capture matrix stays incomplete. [Index](evidence/run19/screenshots/index.md). Run20 adds10 inspected actual captures:5 final local-host web,4 explicitly diagnostic Android,1 restored normal product. iOS/new native product captures inapplicable to the hosting/tooling-only product delta; no changed-target capture missing and no full final matrix pass. [Index/metadata](evidence/run20/screenshots/index.md). Run21 adds corrected awaited host gating, three-engine CI and18 passing actual tab-close/update/rollback/eviction/cold-offline groups with24 inspected captures. WebKit process-close-while-waiting remains failed; original Run20 async transition assumptions are superseded. No native/public-host/integrated/phase completion. [Scope/failures](evidence/run21/README.md), [captures](evidence/run21/screenshots/index.md). Run22 adds actual inspected web/Android/iOS captures, including separately labelled Android diagnostic failures and matching locally retrieved native artifacts. No changed-flow target is missing; the full integrated matrix stays incomplete. [Index](evidence/run22/screenshots/index.md). Run23 adds 8 inspected actual captures (2 web/3 Android/3 iOS), identified local native products and exact typed-input/Menu/reference checks. No changed-target capture is missing; final integrated matrix remains incomplete. [Index](evidence/run23/screenshots/index.md).
+ 
+ - [ ] **P10.8** Complete and verify GitHub Actions build delegation and a reusable execution path for another remote host. **Priority P2; status active/partial; forecast M–L for remaining remote qualification.** Extend the existing workflows and `scripts/build-native.cjs`/web entry points; preserve P00's Expo/EAS-free contract. Cover standard Android/iOS/web outputs and the separately justified Android framework diagnostic variant. Keep runner-specific transport/bootstrap separate from shared build logic, retain failed check status and identify all artifacts by source/toolchain/hash. [Execution brief and acceptance](#p108--remote-build-pipeline-and-reusable-host-execution). This is unfinished engineering, not a new phase or a remote-build pass. Run22 implements and verifies the local shared path, trusted manual workflow separation, serial workers, source/artifact/log identities and controlled failures. Zero registered self-hosted runners; actual remote standard/justified diagnostic outputs, source reconstruction and direct second invocation remain unfinished. Keep unchecked/active. [Evidence](evidence/run22/README.md).
+ 
+@@ -291,6 +291,8 @@ Run this checkpoint after the agent has prepared a concrete proposal and cannot
+ 
+ **Run20 prepared supplement:** [concrete static candidate/host boundary and human-only acceptance](evidence/run20/manual-handoff.md); all human results unperformed. Native/security/CI/recognition repair remains engineering; no new restricted prerequisite.
+ 
++**Run23 prepared supplement:** [candidate-specific human-only handoff](evidence/run23/manual-handoff.md); all M11 results remain unperformed. No new local prerequisite or advisory waiver; native/remote/provider/support work stays engineering.
++
+ ### Checkpoint B: one integrated manual acceptance pass
+ 
+ Prerequisite: a named candidate revision and relevant installable artifacts from P10. All results must record platform/device, OS/browser, voice/provider where relevant, date, tester, candidate and evidence. Use pass/fail/blocked/not-applicable with a reason; empty checkboxes mean unperformed.
+@@ -328,19 +330,19 @@ This is the authoritative current status for review items. Preserve the historic
+ | R05 | P04 | P01/P08/P09/P10; M11.6/M11.7 | in-progress | Run 02: native/browser adapter strategy, provider-dependent policy/help, no raw text logging, explicit audio test and fallback. Provider/offline/policy acceptance M11.6/.7 and P09/P10 disclosures remain open. Run 10 updates README/PRIVACY/in-app policy for deliberately stored rate/wordPauseMs; input/cursor/page remain memory-only. M11 policy/provider acceptance remains pending.  Run 11 records reference category, practice set and voice query/locale as memory-only; no new provider, permission or saved key.  Run 12 memory-only mode/draft/text-alternative inventory/help added; no new permission/provider/persisted key. [Policy](../PRIVACY.md).  Run 13 adds explicit aggregate progress inventory/recovery/deletion/backup wording without raw responses, account/app sync or provider change; M11 policy acceptance stays pending. [Rules](LOCAL_PROGRESS.md).  Run 15 inventories browser-only deletion generation, Web Locks/HTTPS capability and legacy refresh limits in repository/in-app policy; native policy text is exactly preserved. [Evidence](evidence/run15/README.md). Run 16 inventories the public-only shell cache and waiting/eviction/retry rules; browser speech remains provider-dependent, native policy removes obsolete web status. [Evidence](evidence/run16/README.md). |
+ | R06 | P05 | All later UI; M11.4 | in-progress | Run 10 adds source-mapped playback, paged cards and scrolling complete input/output with named pace controls. Desktop/narrow/200% browser checks and scoped iOS normal/max-short-gesture/long-Paste checks pass. Android changed-flow results are in [Run 10](evidence/run10/README.md). Android live text P1, original iOS long-drag P1, remaining native/AT qualification keep affected acceptance open. Physical AT remains M11.4.  Run 11 repairs missing web checked state on shared radio Buttons with explicit aria-checked/disabled/expanded mapping; production AX checked property passes. New digit/practice/voice flows gain desktop/narrow/200% and scoped native evidence; affected native and physical AT gates remain open.  Run 12 production listening/typed answer concealment and accessible alternatives pass; affected native readability and physical AT stay open. [Evidence](evidence/run12/README.md).  Run 13 adds due/focus/summary/clear flows with desktop/narrow/200% browser and scoped native evidence; affected live Android and maximum iOS long-page navigation acceptance stay open. [Captures/limits](evidence/run13/README.md). Run 16 newly observes default iOS Release policy speech clipping; cold launch and reverted title/body experiment fail ink inspection despite passing labels/frames. P05.2 native disclosure acceptance remains open. [Evidence](evidence/run16/ios/README.md). Run18 repairs scoped default iOS policy ink loss through a guarded merged Yoga precision backport; same-JS native comparison and default/separate maximum-ending actual OCR/captures pass. Original whole maximum heading-OCR command stays failed with visibly drawn wrapped y; no general native/AT pass. [Evidence](evidence/run18/README.md). Run20 normal-startup native call trace narrows absent stable-paragraph measurement and input-shaped cache return. Actual live2/return1 pixels and3/4 failed frame gate retain P05.2; no repair/caret/AT acceptance. [Boundary](ANDROID_TEXT_MEASUREMENT.md).  Run22 context trace retains failed3/4 native gate; no repair/AT acceptance. [Evidence](evidence/run22/android/context-report.json). |
+ | R07 | P05 | P06–P09; M11.4 | in-progress | Run 10 converter geometry/fonts covers all 36 symbols across card pages and narrow/200% views; actual native changed-flow images are indexed. Font/design/tolerances/scaling are unchanged. Scoped iOS maximum short swipes/Copy retain input; this does not repair the original long-drag crash. Android live-size and historical strict ink gates remain open. [Captures and limits](evidence/run10/screenshots/index.md).  Run 11 reuses portrait tiles for digit reference/drills and tests narrow/200% web plus scoped maximum iOS numeric navigation; no font/metric/tolerance change or broad native raster pass.  Run 12 adds narrow/200% listening/typed controls and scoped iOS maximum checks; inherited Android affected gate stays open. [Captures](evidence/run12/screenshots/index.md).  Run 13 adds due/focus/summary/clear flows with desktop/narrow/200% browser and scoped native evidence; affected live Android and maximum iOS long-page navigation acceptance stay open. [Captures/limits](evidence/run13/README.md). Run18 changes source-built iOS Yoga edge subtraction precision without changing fonts/design/scaling. All26 default/maximum reference ratios and scoped native samples pass; full current native baseline/strict raster/window/runtime matrices remain unrun. [Scope](evidence/run18/ios/README.md). Run20 stable paragraph40.571dp/live2 versus135.429dp/cold2, feedback24 versus36 and input47.429 versus63.429 remain failed; revised text reaches JNI and measures168dp in both. Normal product restored with exact APK/loaded-source identity. [Evidence](evidence/run20/README.md).  Run22 context trace retains failed3/4 native gate; no repair/AT acceptance. [Evidence](evidence/run22/android/context-report.json). |
+-| R08 | P02 | P00 migration/P10 audit; M11.7 if risk acceptance needed | in-progress | Run 05 live registry: 0 critical/1 high/7 moderate/0 low; raw audit exits 1, current disposition gate passes. Package lock unchanged; changed registry counts are not remediation. Metro image-size1.2.1 remains high with unchanged fingerprint. SECURITY_REVIEW.md/inventory re-reviewed 17 November; P10/M11.7 pending. Run 16 current audit and disposition gate both fail: 0 critical/29 high/0 moderate/3 low, unchanged lockfile. New picomatch root propagates28 additional high entries; actual browser graph excludes affected build tools. R08 reopens for engineering compatibility/backport triage; no blanket inventory update, remediation or risk acceptance. [Triage](evidence/run16/shared/security-triage.json). Run 17 upgrades compatible Metro family to0.83.8 and removes image-size/queue; fresh install, real-image/1,360 malformed-pair regressions and native/build/runtime scope pass. Only obsolete image-size disposition is removed. Current raw/disposition audit stays failed28 high / 3 low; controlled matcher reproduction has a1s timeout, no selected backport or new acceptance. [Current evidence](evidence/run17/README.md). Run18 unchanged lock/inventory registry-backed audit/review still fails28high/3low; Yoga correctness patch is not advisory remediation or a new disposition. [Gate](evidence/run18/shared/audit-review.log). Run19 primary advisory is withdrawn, but actual npm audit/review still fail28high/3low; no reviewed compatible repair, disposition or acceptance. [Reconciliation](evidence/run19/shared/advisory.json), [failed gate](evidence/run19/shared/audit-review.log). Run20 primary withdrawal/latest4.0.7 remain unchanged; actual review gate still fails28high/3low. No patch/disposition or owner acceptance. [Gate](evidence/run20/shared/audit-review.log).  Run22 actual raw audit1/7low and review0/0high are reconciled with primary withdrawal; no code repair or waiver. [Gate](evidence/run22/host/host-checks/report.json). |
++| R08 | P02 | P00 migration/P10 audit; M11.7 if risk acceptance needed | resolved | Run 05 live registry: 0 critical/1 high/7 moderate/0 low; raw audit exits 1, current disposition gate passes. Package lock unchanged; changed registry counts are not remediation. Metro image-size1.2.1 remains high with unchanged fingerprint. SECURITY_REVIEW.md/inventory re-reviewed 17 November; P10/M11.7 pending. Run 16 current audit and disposition gate both fail: 0 critical/29 high/0 moderate/3 low, unchanged lockfile. New picomatch root propagates28 additional high entries; actual browser graph excludes affected build tools. R08 reopens for engineering compatibility/backport triage; no blanket inventory update, remediation or risk acceptance. [Triage](evidence/run16/shared/security-triage.json). Run 17 upgrades compatible Metro family to0.83.8 and removes image-size/queue; fresh install, real-image/1,360 malformed-pair regressions and native/build/runtime scope pass. Only obsolete image-size disposition is removed. Current raw/disposition audit stays failed28 high / 3 low; controlled matcher reproduction has a1s timeout, no selected backport or new acceptance. [Current evidence](evidence/run17/README.md). Run18 unchanged lock/inventory registry-backed audit/review still fails28high/3low; Yoga correctness patch is not advisory remediation or a new disposition. [Gate](evidence/run18/shared/audit-review.log). Run19 primary advisory is withdrawn, but actual npm audit/review still fail28high/3low; no reviewed compatible repair, disposition or acceptance. [Reconciliation](evidence/run19/shared/advisory.json), [failed gate](evidence/run19/shared/audit-review.log). Run20 primary withdrawal/latest4.0.7 remain unchanged; actual review gate still fails28high/3low. No patch/disposition or owner acceptance. [Gate](evidence/run20/shared/audit-review.log).  Run22 actual raw audit1/7low and review0/0high are reconciled with primary withdrawal; no code repair or waiver. [Gate](evidence/run22/host/host-checks/report.json).  **Run23 current:** compatible CLI 20.2.0 resolves patched parser 5.12.1; fresh install, 151 tests, real XML/CLI/native build and installed smoke scopes pass. Raw audit/review 0 with zero findings; no waiver/manual risk acceptance required for this dependency finding. Final integrated release/M11 remains pending. [Evidence](evidence/run23/README.md). |
+ | R09 | P04 | M11.5 | implemented-awaiting-M11 | Run 02: explicit completed/failed/cancelled results, stopped/error/timeout handling, default fallback on storage failure and specific retry guidance. Unit and browser error/15-second missing-callback tests pass; actual device recovery remains M11.5. |
+ | R10 | P07 | M11.5 | implemented-awaiting-M11 | Run 08 uses guarded immutable sessions with synchronous ref commits: duplicate submissions/Next, explicit feedback/last-answer View results, Replay and owned audio cancellation pass browser checks; default native round/Menu/Retry flows pass. Android live enlarged feedback remains P05.2; timing/listening/physical accessibility acceptance remains M11.4/.5. [Evidence](evidence/run08/README.md). |
+ | R11 | P07 | — | resolved | Run 02 P07.1: normalized keys exclude aliases/accents/separators, unique pools with canonical fallback, Fisher–Yates injected randomness. Six tests cover every letter/deficient pools/reproducibility/immutability; identical 10,000-question simulation now 0 duplicate/0 ambiguous sets. |
+ | R12 | P04 | P03; M11.5 | implemented-awaiting-M11 | Run 02: bounded English enumeration, all native qualities, normalized locale grouping, Default/loading/empty/error/retry, removed-voice playback fallback and separate save/preview. Preference race tests and browser saved/default/failure/preview checks pass; native voice/device acceptance M11.5.  Run 11 adds reversible query/locale filters and reset while Default and full-list removed-voice detection survive filtering; shared/production/native scoped evidence in Run 11. |
+ | R13 | P03 | P05 hydration; M11.4 | implemented-awaiting-M11 | Versioned store and live System/Light/Dark theme; 15 preference tests and exported-browser startup/reload/live-theme/reset/failure flows pass. Run03 iOS UI automation selects Dark and relaunches; captured appearance is inspected separately. Physical appearance/system bars remain M11.4. Run 10 optional v1 converterPacing is explicit-only, validates bounded choices, survives relaunch/unrelated changes and is removed by Reset; older records are not rewritten. New persistence/failure/reset tests pass; manual acceptance remains pending.  Run 13 tests and scoped native/browser checks verify Reset Preferences keeps the separate progress record, while confirmed Clear Progress keeps settings/unrelated keys; physical acceptance remains M11. |
+-| R14 | P02 | Every phase/P10; M11.7 native smoke | in-progress | Run 10: 94/94 tests, active types/lint, Expo-free graph and independent 12-route build pass. Production pacing/mapping/rate/pause/Replay/lifecycle/pagination/clipboard/long-input, qualified export regressions and scoped converter geometry pass. Five scoped iOS XTests pass; failed/interrupted/contaminated attempts remain explicit. Installed native binaries rehashed and loaded JS archived; Android results in [report](evidence/run10/README.md). CI adds pacing/upload, hosted CI unrun. No new app/Release build, fresh install/audit or full native raster/runtime-matrix claim.  Run 11: 100/100 tests, types/lint/Expo-free/build, numeric/letter/voice browser regressions and scoped installed native checks/captures. CI adds numeric suite/upload; hosted CI unrun. [Reports](evidence/run11/README.md).  Run 12 CI adds meaningful recall browser suite and evidence upload; local checks pass, hosted CI unrun.  Run 13: 113 tests, types/lint/Expo-free graph, 13-route production build and progress/letter/numeric/recall/app browser checks pass. CI adds progress suite/evidence; actual scoped native results and failed commands are retained. No native app/Release rebuild or hosted CI claim. [Reports](evidence/run13/README.md). Run 14 adds generator/negative/determinism/consumer checks to the existing CI npm test gate; hosted CI remains unrun.  Run 15: 122 tests/types/lint/Expo-free graph/13-route build and complete app + single-window progress + actual two-window concurrency suites pass. CI adds concurrency/evidence upload; hosted CI unrun. Failed/aborted drivers stay explicit. [Evidence](evidence/run15/README.md). Run 16: 127 tests/types/lint/Expo-free/build and full app/offline browser suites pass; actual iOS Release build/policy and Android Debug policy/loaded-JS captures. CI adds offline suite/evidence; hosted CI unrun. Current audit gate fails; first injected concurrency Retry command fails, diagnostic-only rerun passes; both retained. [Record](evidence/run16/README.md). Native changed Offline paragraph checks pass; adjacent iOS Speech ink loss remains failed and is never converted to a pass by label/frame assertions. Run 17 adds meaningful Metro asset regressions to the existing CI npm test gate:129 pass; clean install/types/lint/Expo-free graph/production app browser and direct native builds/scoped runtime pass. Four serial foreground mouse answers qualify a narrower input scope. Initial pointer-selector/iOS commands stay failed with separate corrected-scope evidence; audit remains failed and hosted CI unrun. [Run 17](evidence/run17/README.md). Run18 adds guarded native-Yoga installer regressions and compiled actual-source CI check. Fresh install,133 tests,177 compiled checks,types/lint/Expo-free graph,direct iOS Release/scoped native and actual all-target captures qualify recorded scope. Failed original commands retained; hosted CI/full integrated matrix unrun. [Evidence](evidence/run18/README.md). Run19 adds two maintained real-browser runners, independent pinned CI engine jobs and24 local passing scoped checks; lint/types/Expo-free/build/workflow parsing pass. Hosted CI and final integrated matrix unrun; historical133 shared/native correctness checks reused on unchanged inputs. [Evidence](evidence/run19/README.md). Run20 adds6 meaningful packaging regressions and a maintained real extracted-host runner covering4 scope groups. Three-job CI parses; new independent distribution job is authored, hosted Linux execution unrun. [Checks](evidence/run20/README.md).  Run21 repairs false-positive async host polling, adds independent3-engine distribution CI and actual18-group tab-close/rejection/Retry/rollback/repair/cold-offline assurance with exact saved records. WebKit process-close scope fails; no product/phase/security/hosted-CI/release pass. [Evidence](evidence/run21/README.md).  19 November planning amendment: P10.8 adds P2 remote-build/shared-execution implementation and real host qualification; task remains todo, no workflow change or remote pass. [Scope](#p108--remote-build-pipeline-and-reusable-host-execution).  Run22 shared host commands, identified actual local native/web outputs and independent failure-preserving workflow implemented; remote qualification remains P10.8 active. [Evidence](evidence/run22/README.md). |
++| R14 | P02 | Every phase/P10; M11.7 native smoke | in-progress | Run 10: 94/94 tests, active types/lint, Expo-free graph and independent 12-route build pass. Production pacing/mapping/rate/pause/Replay/lifecycle/pagination/clipboard/long-input, qualified export regressions and scoped converter geometry pass. Five scoped iOS XTests pass; failed/interrupted/contaminated attempts remain explicit. Installed native binaries rehashed and loaded JS archived; Android results in [report](evidence/run10/README.md). CI adds pacing/upload, hosted CI unrun. No new app/Release build, fresh install/audit or full native raster/runtime-matrix claim.  Run 11: 100/100 tests, types/lint/Expo-free/build, numeric/letter/voice browser regressions and scoped installed native checks/captures. CI adds numeric suite/upload; hosted CI unrun. [Reports](evidence/run11/README.md).  Run 12 CI adds meaningful recall browser suite and evidence upload; local checks pass, hosted CI unrun.  Run 13: 113 tests, types/lint/Expo-free graph, 13-route production build and progress/letter/numeric/recall/app browser checks pass. CI adds progress suite/evidence; actual scoped native results and failed commands are retained. No native app/Release rebuild or hosted CI claim. [Reports](evidence/run13/README.md). Run 14 adds generator/negative/determinism/consumer checks to the existing CI npm test gate; hosted CI remains unrun.  Run 15: 122 tests/types/lint/Expo-free graph/13-route build and complete app + single-window progress + actual two-window concurrency suites pass. CI adds concurrency/evidence upload; hosted CI unrun. Failed/aborted drivers stay explicit. [Evidence](evidence/run15/README.md). Run 16: 127 tests/types/lint/Expo-free/build and full app/offline browser suites pass; actual iOS Release build/policy and Android Debug policy/loaded-JS captures. CI adds offline suite/evidence; hosted CI unrun. Current audit gate fails; first injected concurrency Retry command fails, diagnostic-only rerun passes; both retained. [Record](evidence/run16/README.md). Native changed Offline paragraph checks pass; adjacent iOS Speech ink loss remains failed and is never converted to a pass by label/frame assertions. Run 17 adds meaningful Metro asset regressions to the existing CI npm test gate:129 pass; clean install/types/lint/Expo-free graph/production app browser and direct native builds/scoped runtime pass. Four serial foreground mouse answers qualify a narrower input scope. Initial pointer-selector/iOS commands stay failed with separate corrected-scope evidence; audit remains failed and hosted CI unrun. [Run 17](evidence/run17/README.md). Run18 adds guarded native-Yoga installer regressions and compiled actual-source CI check. Fresh install,133 tests,177 compiled checks,types/lint/Expo-free graph,direct iOS Release/scoped native and actual all-target captures qualify recorded scope. Failed original commands retained; hosted CI/full integrated matrix unrun. [Evidence](evidence/run18/README.md). Run19 adds two maintained real-browser runners, independent pinned CI engine jobs and24 local passing scoped checks; lint/types/Expo-free/build/workflow parsing pass. Hosted CI and final integrated matrix unrun; historical133 shared/native correctness checks reused on unchanged inputs. [Evidence](evidence/run19/README.md). Run20 adds6 meaningful packaging regressions and a maintained real extracted-host runner covering4 scope groups. Three-job CI parses; new independent distribution job is authored, hosted Linux execution unrun. [Checks](evidence/run20/README.md).  Run21 repairs false-positive async host polling, adds independent3-engine distribution CI and actual18-group tab-close/rejection/Retry/rollback/repair/cold-offline assurance with exact saved records. WebKit process-close scope fails; no product/phase/security/hosted-CI/release pass. [Evidence](evidence/run21/README.md).  19 November planning amendment: P10.8 adds P2 remote-build/shared-execution implementation and real host qualification; task remains todo, no workflow change or remote pass. [Scope](#p108--remote-build-pipeline-and-reusable-host-execution).  Run22 shared host commands, identified actual local native/web outputs and independent failure-preserving workflow implemented; remote qualification remains P10.8 active. [Evidence](evidence/run22/README.md).  Run23 adds actual compatible CLI/parser, 151-test, locked install/Pods, native artifact/installed smoke and production-browser assurance; hosted/remote/final integrated acceptance remains unrun. [Evidence](evidence/run23/README.md). |
+ | R15 | P02 | Every new module/P10 | resolved | Run 03: active JS/entries checked without Expo type tooling. Typed route table replaces generated routes; deliberate invalid route, canonical field and speech rate fail; restored typecheck passes. See evidence/run03-type-probes.txt. |
+ | R16 | P05 | P07/P10 regression | resolved | Run 03: independent web uses a deterministic neutral HTML/client loading shell, so Expo SSR is no longer used. Existing preference startup/route matrix revalidated without hydration errors. Historical Home mismatch diagnosis retained in Run02 evidence. |
+ | R17 | P06 | M11.5 | in-progress | Run 09 delivers normalization/shared tokens and export. Run 10 implements rate/word pause, Replay, source-mapped ring/label and measured 24-token card pages with complete scrolling input/text/export/speech. Real long Paste/edit/paging checks and scope are in [Run 10](evidence/run10/README.md). P06.2/.3/.4 remain partial for affected native assurance, original iOS long-drag crash and direct Stop→Replay/keyboard qualification; physical acceptance remains M11.5. [Policy](CONVERTER_POLICY.md).  Run 11 passes scoped serial native iOS Stop→Replay with and without keyboard and exact retained input. Original long-drag/P05.2 and other P06 gates remain open. |
+ | R18 | P05 | M11.4 | implemented-awaiting-M11 | Run 02 primary-button contrast remains verified. Run 05 repairs guide contrast on four symbols and pressed-opacity loss: all 36 tile entries now have at least 5.745:1 guide contrast and use an internal press/focus border; actual held-pointer browser check passes. [Contrast evidence](evidence/run05/shared/contrast-review.json). Physical appearance remains M11.4. |
+ | R19 | P10 | M11.4 | implemented-awaiting-M11 | Run 14 generates separate adaptive foreground/background and transparent alpha monochrome resources, safe bounds/negative/determinism tests and exact packaged layer hashes. Direct native builds, actual Android themed/color launcher, native circle/squircle diagnostics and installed iOS launcher/app pass. [Evidence](evidence/run14/README.md), [captures](evidence/run14/screenshots/index.md). Physical/OEM appearance and branding acceptance remain M11.4/.7. |
+-| R20 | P10 | P00/P01/P02/P09; M11.2/M11.7 | in-progress | Run 03: README, NATIVE_BUILDS.md and P00_MIGRATION.md document independent web, direct Gradle/Xcode, toolchains, local/self-hosted workflow, signing boundaries and artifacts. Native environment results below; final P10 release runbook/M11 acceptance pending. Run 14 updates asset regeneration/rebuild instructions and reconciles stale README progress status; final distribution/runbook still unfinished.  Run 15 delivers P10.3 [release runbook](RELEASE_RUNBOOK.md), checked metadata/commands, artifact/signing boundaries, supported-runtime limits and independent HTTPS hosting/update/rollback preparation. P10.4 actual distribution/host-specific deployment and final M11 acceptance stay open. Run 16 updates hosting/runbook for production workers, explicit routing/404/header requirements, repair/default waiting/rollback and separate development ports. Actual hosting/signing/integrated acceptance stays open. Run 17 updates actual Metro/toolchain/security and unsigned Android AAB instructions/identity; signing, hosting and final support/acceptance stay open. [Evidence](evidence/run17/README.md). Run18 documents the guarded Yoga installation/native rebuild/C++20 regression contract and current source/artifact/support limits in README/native builds/runbook/security. [Contract](NATIVE_TEXT_PRECISION.md). Run19 documents isolated runtime/lifecycle commands, exact scope/diagnostic boundaries and retained release gates in README/progress/offline/runbook. [Evidence](evidence/run19/README.md). Run20 delivers deterministic independent web candidate archives, content/file identity, concrete Caddy configuration and actual local atomic forward/rollback qualification. Public HTTPS/host/operations and native signing/final integrated gates remain open. [Contract](WEB_DISTRIBUTION.md).  Run21 repairs false-positive async host polling, adds independent3-engine distribution CI and actual18-group tab-close/rejection/Retry/rollback/repair/cold-offline assurance with exact saved records. WebKit process-close scope fails; no product/phase/security/hosted-CI/release pass. [Evidence](evidence/run21/README.md).  19 November planning amendment: P10.8 adds P2 remote-build/shared-execution implementation and real host qualification; task remains todo, no workflow change or remote pass. [Scope](#p108--remote-build-pipeline-and-reusable-host-execution).  Run22 shared host commands, identified actual local native/web outputs and independent failure-preserving workflow implemented; remote qualification remains P10.8 active. [Evidence](evidence/run22/README.md). |
++| R20 | P10 | P00/P01/P02/P09; M11.2/M11.7 | in-progress | Run 03: README, NATIVE_BUILDS.md and P00_MIGRATION.md document independent web, direct Gradle/Xcode, toolchains, local/self-hosted workflow, signing boundaries and artifacts. Native environment results below; final P10 release runbook/M11 acceptance pending. Run 14 updates asset regeneration/rebuild instructions and reconciles stale README progress status; final distribution/runbook still unfinished.  Run 15 delivers P10.3 [release runbook](RELEASE_RUNBOOK.md), checked metadata/commands, artifact/signing boundaries, supported-runtime limits and independent HTTPS hosting/update/rollback preparation. P10.4 actual distribution/host-specific deployment and final M11 acceptance stay open. Run 16 updates hosting/runbook for production workers, explicit routing/404/header requirements, repair/default waiting/rollback and separate development ports. Actual hosting/signing/integrated acceptance stays open. Run 17 updates actual Metro/toolchain/security and unsigned Android AAB instructions/identity; signing, hosting and final support/acceptance stay open. [Evidence](evidence/run17/README.md). Run18 documents the guarded Yoga installation/native rebuild/C++20 regression contract and current source/artifact/support limits in README/native builds/runbook/security. [Contract](NATIVE_TEXT_PRECISION.md). Run19 documents isolated runtime/lifecycle commands, exact scope/diagnostic boundaries and retained release gates in README/progress/offline/runbook. [Evidence](evidence/run19/README.md). Run20 delivers deterministic independent web candidate archives, content/file identity, concrete Caddy configuration and actual local atomic forward/rollback qualification. Public HTTPS/host/operations and native signing/final integrated gates remain open. [Contract](WEB_DISTRIBUTION.md).  Run21 repairs false-positive async host polling, adds independent3-engine distribution CI and actual18-group tab-close/rejection/Retry/rollback/repair/cold-offline assurance with exact saved records. WebKit process-close scope fails; no product/phase/security/hosted-CI/release pass. [Evidence](evidence/run21/README.md).  19 November planning amendment: P10.8 adds P2 remote-build/shared-execution implementation and real host qualification; task remains todo, no workflow change or remote pass. [Scope](#p108--remote-build-pipeline-and-reusable-host-execution).  Run22 shared host commands, identified actual local native/web outputs and independent failure-preserving workflow implemented; remote qualification remains P10.8 active. [Evidence](evidence/run22/README.md).  Run23 adds actual compatible CLI/parser, 151-test, locked install/Pods, native artifact/installed smoke and production-browser assurance; hosted/remote/final integrated acceptance remains unrun. [Evidence](evidence/run23/README.md). |
+ | R21 | P10 | P01/P05/P09; M11.7 | in-progress | Run 03: metadata moved from Expo config into app.json plus explicit native build metadata; version1.0.0, identifiers and scheme preserved. Privacy/help names native OS speech provider accurately. Recognition/final metadata remain P09/P10/M11.7. Run 14 delivers verified asset metadata/source/output identities, with unchanged version/identifiers and no microphone claim.  Run 15 updates browser policy/deletion/capability wording with actual captures, verifies version1.0.0/build1/identifiers against sources and documents real support/hosting limits. Recognition/offline and owner metadata/policy acceptance remain open. Run 16 web metadata/policy describes implemented shell caching without promising offline speech; native obsolete web sentence removed and actually captured. No identifiers/version/permissions changed. Run18 restores actual default iOS Speech-policy ending without changing policy wording/provider/permissions. Separate maximum ending and actual web/Android/iOS captures supplement scope; full runtime/physical policy acceptance stays open. [Captures](evidence/run18/screenshots/index.md). |
+ | R22 | P05 | M11.4/M11.7 | implemented-awaiting-M11 | Run 04 installed Android/iOS cold Menu→Home, warm/unknown links, retained navigation and Android hardware Back pass; iOS scene lifecycle now owns warm/cold URL forwarding. Browser route/history checks also pass. Physical-device/hosted URL acceptance remains M11.4/.7. |
+ | R23 | P10 | P01/P02 cleanup | resolved | Earlier runs remove unused entry/components/hooks/second theme/dependencies. Run 14 removes four consumer-verified starter React images; retained dependencies keep their current consumers and historical artwork stays linked. Generator now fails nonzero without success inventory on real invalid/unwritable output, validates 22 generated/native resources and passes reproducibility/negative checks in the 116-test suite. [Evidence](evidence/run14/shared/README.md). |
+@@ -439,6 +441,8 @@ Append one entry per run; keep historical entries. Detailed test logs may live i
+ 
+ | Run22 · 2026-11-19 | P05.2 M bounded surface/context trace, then P10.8 M shared host/workflow slice after reforecast; serialized actual native verification | Shared host commands/guards/workflows delivered and local platform artifacts verified; native text still fails3/4, raw audit remains1/7low and review gate passes. [Evidence](evidence/run22/README.md), [captures](evidence/run22/screenshots/index.md). No phase closes. | Zero registered remote runners; P10.8 actual remote qualification stays open. Prior/new failures preserved, all M11 unperformed. | Next P1 Android native regression/cache-owner repair and P2 CLI/parser compatibility follow-up and advisory re-entry; remote qualification when host exists. Stop at verified local tooling/source/capture handoff before another substantial framework/provider/remote cycle; no fixed phase count. |
+ 
++| Run23 · 2026-11-19 | R08/P10.5 M compatible CLI/parser upgrade, then real native/tooling assurance after reforecast | CLI 20.2.0/parser 5.12.1, 151 shared tests, locked npm/Pods, actual CLI/XML/production browser and local native builds/installed smoke pass; raw/review0/zero findings. R08 resolved; no phase closes. [Evidence](evidence/run23/README.md), [8 actual captures](evidence/run23/screenshots/index.md). | All M11 unperformed; prior Android/iOS/WebKit/P3 failures and remote/recognition/signing/public-host/integrated gates remain open. Initial test/Pods/source-map hypotheses and correction records retained. | Next P1 Android native owner/context/cache regression/repair; P2 remote qualification when a host exists or separately forecast recognition. Stop at verified dependency/build/capture/source/status handoff before substantial framework/provider/remote integration; no fixed phase count. |
++
+ For each implementation run, include:
+ 
+ ```text
+@@ -952,3 +956,15 @@ The requested later pipeline task is **P10.8, P2/todo, M–L**, completing exist
+ **Failures/scope:** First JDK preflight fails because the historical bundled-JDK path is gone. An isolated official Temurin17.0.13+11 download is checksum verified; no shell/system settings changed. First iOS preflight fails on active Command Line Tools; existing Xcode27.2 works with process-only DEVELOPER_DIR. The first real iOS compiler succeeds but source qualification is correctly rejected after install-verification tests were edited during compilation; preserve that failed attempt and separately qualify a stable-source cached retry. Controlled missing-export selection exits nonzero and retains logs without collecting a stale product. Raw audit remains1/7low while the high/critical review gate passes. The verification driver’s assertion of the historical failed audit result is preserved as a stale-expectation failure; actual gate outcomes supersede it. Standard native builds do not establish a framework-source build capacity/repair. All original native/WebKit/strict-ink/provider/support/signing/public-host/integrated failures/unrun gates remain explicit.
+ 
+ **Captures/manual/stop:** [Actual inspected screenshots](evidence/run22/screenshots/index.md) cover the diagnostic failures, restored product, retrieved native candidates and production web desktop/light and320px/dark. Full P10.7 integrated set remains unfinished. [Human-only handoff](evidence/run22/manual-handoff.md) leaves every result unperformed. P05–P10 remain active;35-item counts unchanged. Stop after local commands/failure guards/native artifact retrieval/captures/source/status reconciliation; remaining Android regression/source/ABI/caret/tile and recognition/provider cycles need substantial fresh implementation/verification, while actual remote qualification needs a suitable registered host. Next P1 Android causal native regression/cache/owner repair and P2 CLI/parser compatibility follow-up at triggers; no release acceptance.
++
++## Run23 — 19 November 2026
++
++**Resume/forecast:** clean `73b57e2`; no applicable AGENTS.md. Plan/review/evidence reconcile; README's stale Run20/21 security snapshot is corrected. Select R08/P10.5 P2 CLI/parser follow-up M/moderate tooling risk, a concrete upstream-compatible candidate. P05.2 stays P1: Run22 did not establish a native patch and its full context/owner/cache/source/ABI/caret/tile cycle is L/high uncertainty; no repeated hooks or failed flag/root hypothesis. Actual remote work needs an established host. [Forecast/checkpoints](evidence/run23/shared/forecast.md).
++
++**Delivered/verified:** pin all three direct CLI packages 20.2.0; thirteen CLI-family entries update together, with parser 5.12.1 through upstream ranges and no override/RN/Metro/provider upgrade. Complete 60-record lock delta reviewed. Native project/autolink output is exactly equal; actual Apple workspace discovery passes. Four meaningful maintained XML regressions cover repository/array/attribute/workspace behavior and a bounded malformed stop-node corpus through both resolved consumers. Old 4.5.7's400k-fragment diagnostic times out; patched 5.12.1 throws within the bound. This is a scoped corpus, not comprehensive fuzzing. Fresh npm ci/locked Pods, 151 tests, types/lint/791-package Expo-free graph and production browser pass. Raw audit/review exit 0 with zero findings; R08 resolves, without risk waiver or M11 acceptance. [Assessment](evidence/run23/shared/lock-review.json), [real parser results](evidence/run23/shared/parser-results.json), [commands/reports](evidence/run23/README.md).
++
++**Native/captures:** actual local Debug APK, all-four-ABI unsigned Release AAB and unsigned iOS simulator builds pass. Retrieved/installed artifacts match recorded identities; all eight Android framework hashes equal Run22. Installed default-scale input/Menu retention/reference/digit scopes pass; iOS typed input uses individual real keys. Eight actual web/Android/iOS images are inspected. Web archive is exactly Run20/21/22; app/native/font/layout/provider/permissions/schema source is unchanged. No changed-target capture is missing, no new full native/AT/runtime/raster pass is claimed. [Candidate](evidence/run23/candidate.json), [index](evidence/run23/screenshots/index.md).
++
++**Failures/reforecast:** initial two XML tests incorrectly expect numeric-reference decoding; exact old/current defaults agree, and corrected tests pass. First Pods command selects absent vendor/bundle and exits 127; existing Ruby 3.3 environment retry passes. Byte-identical consumer hypothesis fails only on sourceMappingURL trailer; exact bodies agree. A first diagnostic-result/command filename collision is repaired with distinct durable files and an explicit rerun. Original failures remain recorded. Clean install/Pods source timestamps expand the iOS rebuild beyond cached timing; measured capacity permits the actual serial standard builds. No general framework-build capacity guarantee. [Limits/corrections](evidence/run23/README.md).
++
++**Status/stop:** all 35 required: 17 in-progress/12 implemented-awaiting-M11/6 resolved; P05–P10 active, no whole phase closes. Every M11 result unperformed; [human supplement](evidence/run23/manual-handoff.md). Android live sizing 3/4, original iOS gesture/max navigation, WebKit process-close, strict P3 ink, recognition/remote/public HTTPS/signing/support/integrated gates remain open. Next P1 causal Android regression/repair; independent P2 remote qualification when a host exists or separately forecast P09 implementation. Stop after the verified dependency/native/capture/source/status handoff: the next framework/provider cycle adds substantial implementation and fresh verification. No preset phase count, publication, support exception or release acceptance.
+diff --git a/docs/NATIVE_BUILDS.md b/docs/NATIVE_BUILDS.md
+index 546d811..68261d1 100644
+--- a/docs/NATIVE_BUILDS.md
++++ b/docs/NATIVE_BUILDS.md
+@@ -15,7 +15,7 @@ The [release runbook](RELEASE_RUNBOOK.md) maps version/build metadata, distribut
+ | Tool | Repository choice |
+ |---|---|
+ | Node / npm | `22.23.0` / `10.9.4`; `.nvmrc`, engines and `package-lock.json` |
+-| React Native / community CLI | `0.81.5` / `20.0.2` |
++| React Native / community CLI | `0.81.5` / `20.2.0` (Run23 qualified) |
+ | Metro family | `0.83.8` within existing RN ranges; [Run 17 parser removal and qualification](evidence/run17/README.md) |
+ | Java | JDK 17; Run 03 found Temurin `17.0.13` locally |
+ | Gradle / Android Gradle plugin | Wrapper `8.14.3`, checked distribution SHA-256; plugin `8.11.0` from the pinned RN Gradle package |
+@@ -202,3 +202,11 @@ Run22 read-only GitHub inventory finds **zero registered self-hosted runners**.
+ 
+ 
+ Run22 local setup correction: the historical AnypointStudio JDK directory is absent. An isolated, SHA256-verified Temurin17.0.13+11 is available at `/tmp/nato-run22-jdk/jdk-17.0.13+11/Contents/Home`; use it as process `JAVA_HOME`. Existing `/Applications/Xcode.app/Contents/Developer` works as process `DEVELOPER_DIR` while global xcode-select remains on Command Line Tools. No shell/system configuration was changed. Actual standard builds fit the measured host capacity; no Android framework-source-build capacity guarantee is inferred. [Setup/qualification evidence](evidence/run22/README.md).
++
++## Run23 — compatible CLI/parser qualification
++
++All three direct CLI packages are pinned to20.2.0; the CLI family uses patched fast-xml-parser 5.12.1 through its upstream range. RN 0.81.5/Metro 0.83.8/native provider/Pod lock/project/permissions stay unchanged. The [upstream CLI20/RN0.81 compatibility table](https://github.com/react-native-community/cli/blob/v20.2.0/packages/cli/README.md#compatibility) supplies the candidate family; actual repository qualification is [Run23](evidence/run23/README.md), not inferred from that table. Source-map comments differ; the two CLI XML consumer bodies/config/autolink output remain equal. XML array/attribute/workspace and bounded malformed-stop-node checks run in `npm test`.
++
++Fresh locked npm and Pods installation, 151 tests/types/lint/Expo-free graph, real workspace discovery and local Android Debug/four-ABI unsigned Release/unsigned iOS simulator builds pass. Retrieved/installed default-scale converter/Menu/reference scopes and actual captures are [identified](evidence/run23/candidate.json). Raw audit/review now pass0 with zero findings. The first Pods command failed because vendor/bundle is absent on this host; select the existing Ruby 3.3 gem environment rather than setting BUNDLE_PATH to a nonexistent directory. The successful locked retry changes no Pod lock or native project. Clean installation refreshes native-source timestamps and can require a longer recompilation than a cached build.
++
++All eight Android framework-library hashes match Run22; no Android live-sizing fix is implied. Existing guarded speech/Yoga patches still apply after npm ci. Final native/physical/runtime/provider/signing/remote/integrated gates remain unfinished. Standard build entry points and publication boundaries are unchanged; no Expo/EAS path is introduced.
+diff --git a/docs/SECURITY_REVIEW.md b/docs/SECURITY_REVIEW.md
+index 7061e51..57138e9 100644
+--- a/docs/SECURITY_REVIEW.md
++++ b/docs/SECURITY_REVIEW.md
+@@ -94,3 +94,15 @@ All7 low package entries derive from the same [fast-xml-parser advisory](https:/
+ The registry [CLI20.2.0 metadata](evidence/run22/shared/cli-candidate.json) supplies a future compatibility candidate. A CLI/parser upgrade requires its own M/native/API/XML/fresh-install regression forecast and is unperformed; no4.x→5.x override is selected. Keep the low-parser/CLI follow-up **P2**, with promotion on enabled stopNodes/untrusted XML, changed severity/advisory or tooling exposure. R08 remains in-progress and raw audit remains nonzero; the current high/critical review gate is now passing. Final integrated and M11 acceptance remain open.
+ 
+ The run's verification driver initially asserted the historical red audit result and exited1 when the actual review passed; [original failure](evidence/run22/shared/host-verification.log) is retained. Actual147 shared tests/types/lint/dependency checks pass. This is a stale evidence-driver expectation, not a failed product/security check; final status uses actual raw and review results separately. Independent unsigned workflow jobs still preserve any future failed audit/check status, and a controlled missing-export build verifies nonzero status/log retention without stale artifacts.
++
++## Run23 — compatible CLI and XML parser remediation
++
++19 November 2026. **R08 resolves its automated dependency scope:** the [fresh raw audit](evidence/run23/shared/audit-after.log) and [review gate](evidence/run23/host/checks/report.json) both exit **0 with zero findings** after an actual dependency repair. No advisory suppression, engineering disposition or owner risk waiver is added. P10's integrated candidate and M11 release acceptance remain unfinished.
++
++All three direct Community CLI pins move together from 20.0.2 to **20.2.0**, updating thirteen CLI-family packages. The [upstream compatibility table](https://github.com/react-native-community/cli/blob/v20.2.0/packages/cli/README.md#compatibility) includes RN 0.81 in CLI 20's supported family; its warning about independent CLI upgrades is addressed with the actual repository checks below. Both XML consumers declare `fast-xml-parser: ^5.3.6`, which resolves to **5.12.1** in the new lock. The [maintainer advisory](https://github.com/NaturalIntelligence/fast-xml-parser/security/advisories/GHSA-474x-hrwr-fgx4) lists 5.12.0 as the first patched version. There is no parser override or RN/Metro/provider upgrade. [Reviewed 60-record lock delta and exact versions](evidence/run23/shared/lock-review.json), [full delta](evidence/run23/shared/lock-delta.json), [actual installed paths](evidence/run23/shared/xml-paths.log). Related CLI server body-parser/MIME/qs dependencies and package hoisting changes are included in that review.
++
++The actual native project/autolinking output equals the baseline, and real Apple workspace discovery returns the correct scheme. The two consumer implementations differ only in source-map comments. Four new maintained tests cover real Android launcher/deep-link discovery, activity/intent arrays, missing/malformed manifests, actual/single Xcode references and attribute values, and valid/malformed stop nodes through each consumer's resolved parser. A separate 400,000-fragment reproduction times out on old 4.5.7 at a one-second process bound; 5.12.1 throws within that bound. The maintained 100k/200k/400k corpus is bounded at five seconds for the whole worker. This is scoped regression evidence, not comprehensive fuzzing or a performance guarantee. [Actual comparison](evidence/run23/shared/parser-results.json), [consumer source diffs](evidence/run23/shared/consumer-source-comparison.json), [151-test report](evidence/run23/host/checks/report.json).
++
++Fresh locked npm/Pods installation, types/lint/Expo-free graph, production browser, direct local Debug APK/four-ABI unsigned Release AAB/unsigned iOS simulator builds and installed input/Menu/reference smoke pass. The web archive is byte-identical to Run20–22; Android's release JS matches Run17 and all eight framework library hashes match Run22. Twenty-four of 25 iOS app files, including product JS/fonts/resources, match Run22; the rebuilt executable has its own recorded hash. [Artifacts/limits](evidence/run23/candidate.json), [actual inspected captures](evidence/run23/screenshots/index.md). No Android live-sizing, original native gesture/raster/runtime, remote/signing or provider acceptance is inferred.
++
++Initial XML tests incorrectly expected default numeric-reference decoding; old/current defaults agree, and the corrected tests preserve that behavior. The first Pods command points at an absent bundle directory; the existing Ruby gem environment retry passes. Original failures and the source-map/file-name corrections remain in [Run23](evidence/run23/README.md). The prior withdrawn matcher advisory/backtracking behavior remains historical, without a matcher package fix. Re-enter security engineering on a new advisory/severity, changed tooling or untrusted XML/glob exposure, and re-audit before release.
+diff --git a/docs/security-audit-inventory.json b/docs/security-audit-inventory.json
+index efbe5ea..2c6aaf4 100644
+--- a/docs/security-audit-inventory.json
++++ b/docs/security-audit-inventory.json
+@@ -3,19 +3,19 @@
+   "description": "Temporary engineering dispositions, not vulnerability fixes or owner release-risk acceptance. See SECURITY_REVIEW.md.",
+   "reviewedOn": "2026-11-19",
+   "reviewBy": "2026-12-16",
+-  "lockfileSha256": "60af8f5d1b5d2965f59c9ce89549e9d0e63f089a920eb3b72acabef94a75a671",
++  "lockfileSha256": "4fd7f4c4217ca6065771d6bcdbb6ec8bcdc9fbccb68658ea991c65699dedcb00",
+   "toolchain": {
+     "node": "v22.23.0",
+     "npm": "10.9.4"
+   },
+-  "rawAuditExitStatus": 1,
++  "rawAuditExitStatus": 0,
+   "auditSummary": {
+     "info": 0,
+-    "low": 7,
++    "low": 0,
+     "moderate": 0,
+     "high": 0,
+     "critical": 0,
+-    "total": 7
++    "total": 0
+   },
+   "entries": [],
+   "remediated": [
+@@ -25,67 +25,112 @@
+       "remediation": "Compatible Metro0.83.8 family removes image-size and queue from complete lock/installed graph; no override or framework upgrade. See Run17 asset/native regression scope.",
+       "evidence": "docs/evidence/run17/shared/security-assessment.json; docs/evidence/run17/shared/lock-delta.json; docs/evidence/run17/shared/audit-after.json",
+       "date": "2026-11-18"
++    },
++    {
++      "package": "fast-xml-parser",
++      "previousVersion": "4.5.7",
++      "version": "5.12.1",
++      "remediation": "CLI20.2.0 family resolves upstream parser ^5.3.6 to patched5.12.1 without overrides; actual XML/CLI/native qualification is recorded in Run23.",
++      "date": "2026-11-19",
++      "evidence": "docs/evidence/run23/shared/audit-after.log; docs/evidence/run23/shared/lock-delta.json; docs/evidence/run23/shared/parser-results.json"
+     }
+   ],
+   "unreviewedHighFindings": {
+     "count": 0,
+-    "status": "Fresh registry report has no high/critical entries; same withdrawn matcher advisory. This is metadata reconciliation, not a code fix.",
+-    "nextAction": "Re-enter on changed advisory/exposure/build or pre-release review; retain historical matcher behavior evidence.",
+-    "evidence": "docs/evidence/run22/shared/security-assessment.json"
++    "status": "Fresh registry report has0 findings of any severity after compatible CLI/parser remediation. Historical withdrawn matcher behavior is not a repaired package.",
++    "nextAction": "Re-enter on changed advisory/exposure/tooling or pre-release review.",
++    "evidence": "docs/evidence/run23/shared/audit-after.log"
+   },
+   "previousSnapshot": {
+-    "date": "2026-11-18",
++    "schemaVersion": 1,
++    "description": "Temporary engineering dispositions, not vulnerability fixes or owner release-risk acceptance. See SECURITY_REVIEW.md.",
++    "reviewedOn": "2026-11-19",
++    "reviewBy": "2026-12-16",
++    "lockfileSha256": "60af8f5d1b5d2965f59c9ce89549e9d0e63f089a920eb3b72acabef94a75a671",
++    "toolchain": {
++      "node": "v22.23.0",
++      "npm": "10.9.4"
++    },
+     "rawAuditExitStatus": 1,
+     "auditSummary": {
+       "info": 0,
+-      "low": 3,
++      "low": 7,
+       "moderate": 0,
+-      "high": 28,
++      "high": 0,
+       "critical": 0,
+-      "total": 31
++      "total": 7
+     },
+-    "unreviewedHighFindings": {
+-      "count": 28,
+-      "root": "picomatch2.3.2 / GHSA-fc5q-39xc-vjpf",
+-      "status": "Unresolved engineering repair/triage; no disposition. Security review gate must fail.",
+-      "nextAction": "Reviewed upstream compatible fix or separately forecast semantics-preserving backport; recheck before release.",
+-      "evidence": "docs/evidence/run17/shared/security-assessment.json"
+-    },
+-    "evidence": "docs/evidence/run20/shared/audit-review.log"
+-  },
+-  "reviewGateExitStatus": 0,
+-  "lowFindings": {
+-    "advisory": "GHSA-474x-hrwr-fgx4",
+-    "installed": "fast-xml-parser4.5.7",
+-    "fixedVersions": [
++    "entries": [],
++    "remediated": [
+       {
+-        "package": {
+-          "ecosystem": "npm",
+-          "name": "fast-xml-parser"
+-        },
+-        "vulnerable_version_range": "<= 5.11.2",
+-        "first_patched_version": "5.12.0",
+-        "vulnerable_functions": []
++        "package": "image-size",
++        "previousVersion": "1.2.1",
++        "remediation": "Compatible Metro0.83.8 family removes image-size and queue from complete lock/installed graph; no override or framework upgrade. See Run17 asset/native regression scope.",
++        "evidence": "docs/evidence/run17/shared/security-assessment.json; docs/evidence/run17/shared/lock-delta.json; docs/evidence/run17/shared/audit-after.json",
++        "date": "2026-11-18"
+       }
+     ],
+-    "affectedEntries": [
+-      "@react-native-community/cli",
+-      "@react-native-community/cli-config-android",
+-      "@react-native-community/cli-doctor",
+-      "@react-native-community/cli-platform-android",
+-      "@react-native-community/cli-platform-apple",
+-      "@react-native-community/cli-platform-ios",
+-      "fast-xml-parser"
+-    ],
+-    "distinctLeafAdvisories": 1,
+-    "condition": "Non-default stopNodes plus crafted XML; primary advisory describes static analysis and no benchmark. Installed two CLI consumers use ignoreAttributes:false and do not enable stopNodes; parser default is[].",
+-    "inputs": "Repository AndroidManifest.xml and Xcode contents.xcworkspacedata; no authored converter/practice input or production web graph inclusion established. Source applicability inference, not comprehensive exploit/fuzz proof.",
+-    "sourceFiles": {
+-      "node_modules/@react-native-community/cli-config-android/build/config/getMainActivity.js": "d87b0842f35a8bbcc4a6f642d2a2e6c6f05967334e06e980f9f104ea8579d107",
+-      "node_modules/@react-native-community/cli-platform-apple/build/tools/getInfo.js": "d4b1548c2bc8fc4f822789621ad75496e6c6c5c625233c00dbafdc6fd4c926f0",
+-      "node_modules/fast-xml-parser/src/xmlparser/OptionsBuilder.js": "1a14c4879587a2ffd6d95abfd95baee05c70312ea51e7dda4c609f5e51b0dc1b"
++    "unreviewedHighFindings": {
++      "count": 0,
++      "status": "Fresh registry report has no high/critical entries; same withdrawn matcher advisory. This is metadata reconciliation, not a code fix.",
++      "nextAction": "Re-enter on changed advisory/exposure/build or pre-release review; retain historical matcher behavior evidence.",
++      "evidence": "docs/evidence/run22/shared/security-assessment.json"
++    },
++    "previousSnapshot": {
++      "date": "2026-11-18",
++      "rawAuditExitStatus": 1,
++      "auditSummary": {
++        "info": 0,
++        "low": 3,
++        "moderate": 0,
++        "high": 28,
++        "critical": 0,
++        "total": 31
++      },
++      "unreviewedHighFindings": {
++        "count": 28,
++        "root": "picomatch2.3.2 / GHSA-fc5q-39xc-vjpf",
++        "status": "Unresolved engineering repair/triage; no disposition. Security review gate must fail.",
++        "nextAction": "Reviewed upstream compatible fix or separately forecast semantics-preserving backport; recheck before release.",
++        "evidence": "docs/evidence/run17/shared/security-assessment.json"
++      },
++      "evidence": "docs/evidence/run20/shared/audit-review.log"
+     },
+-    "candidate": "npm suggests compatible-semver CLI20.2.0; registry metadata captured. No API/native/parser upgrade or fix is verified.",
+-    "priority": "P2 low-parser/CLI compatibility follow-up; promote on exposed stopNodes/untrusted XML, new severity/advisory or changed tooling. Recheck before release."
+-  }
++    "reviewGateExitStatus": 0,
++    "lowFindings": {
++      "advisory": "GHSA-474x-hrwr-fgx4",
++      "installed": "fast-xml-parser4.5.7",
++      "fixedVersions": [
++        {
++          "package": {
++            "ecosystem": "npm",
++            "name": "fast-xml-parser"
++          },
++          "vulnerable_version_range": "<= 5.11.2",
++          "first_patched_version": "5.12.0",
++          "vulnerable_functions": []
++        }
++      ],
++      "affectedEntries": [
++        "@react-native-community/cli",
++        "@react-native-community/cli-config-android",
++        "@react-native-community/cli-doctor",
++        "@react-native-community/cli-platform-android",
++        "@react-native-community/cli-platform-apple",
++        "@react-native-community/cli-platform-ios",
++        "fast-xml-parser"
++      ],
++      "distinctLeafAdvisories": 1,
++      "condition": "Non-default stopNodes plus crafted XML; primary advisory describes static analysis and no benchmark. Installed two CLI consumers use ignoreAttributes:false and do not enable stopNodes; parser default is[].",
++      "inputs": "Repository AndroidManifest.xml and Xcode contents.xcworkspacedata; no authored converter/practice input or production web graph inclusion established. Source applicability inference, not comprehensive exploit/fuzz proof.",
++      "sourceFiles": {
++        "node_modules/@react-native-community/cli-config-android/build/config/getMainActivity.js": "d87b0842f35a8bbcc4a6f642d2a2e6c6f05967334e06e980f9f104ea8579d107",
++        "node_modules/@react-native-community/cli-platform-apple/build/tools/getInfo.js": "d4b1548c2bc8fc4f822789621ad75496e6c6c5c625233c00dbafdc6fd4c926f0",
++        "node_modules/fast-xml-parser/src/xmlparser/OptionsBuilder.js": "1a14c4879587a2ffd6d95abfd95baee05c70312ea51e7dda4c609f5e51b0dc1b"
++      },
++      "candidate": "npm suggests compatible-semver CLI20.2.0; registry metadata captured. No API/native/parser upgrade or fix is verified.",
++      "priority": "P2 low-parser/CLI compatibility follow-up; promote on exposed stopNodes/untrusted XML, new severity/advisory or changed tooling. Recheck before release."
++    }
++  },
++  "reviewGateExitStatus": 0
+ }
+diff --git a/package-lock.json b/package-lock.json
+index 426d256..7094420 100644
+--- a/package-lock.json
++++ b/package-lock.json
+@@ -19,9 +19,9 @@
+       },
+       "devDependencies": {
+         "@eslint/js": "9.39.1",
+-        "@react-native-community/cli": "20.0.2",
+-        "@react-native-community/cli-platform-android": "20.0.2",
+-        "@react-native-community/cli-platform-ios": "20.0.2",
++        "@react-native-community/cli": "20.2.0",
++        "@react-native-community/cli-platform-android": "20.2.0",
++        "@react-native-community/cli-platform-ios": "20.2.0",
+         "@react-native/babel-preset": "0.81.5",
+         "@react-native/metro-config": "0.81.5",
+         "@types/react": "~19.1.0",
+@@ -2827,6 +2827,19 @@
+         "@jridgewell/sourcemap-codec": "^1.4.14"
+       }
+     },
++    "node_modules/@nodable/entities": {
++      "version": "3.1.0",
++      "resolved": "https://registry.npmjs.org/@nodable/entities/-/entities-3.1.0.tgz",
++      "integrity": "sha512-LsS/DjHr+uDM647Gru/cA8+J3a3HfhttwCKLyuoyN7yXTFCxKBtSgMQBvrW9yNPa2/zDRUNuGPaH5QUFoa4arQ==",
++      "devOptional": true,
++      "funding": [
++        {
++          "type": "github",
++          "url": "https://github.com/sponsors/nodable"
++        }
++      ],
++      "license": "MIT"
++    },
+     "node_modules/@nodelib/fs.scandir": {
+       "version": "2.1.5",
+       "resolved": "https://registry.npmjs.org/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz",
+@@ -2878,25 +2891,25 @@
+       }
+     },
+     "node_modules/@react-native-community/cli": {
+-      "version": "20.0.2",
+-      "resolved": "https://registry.npmjs.org/@react-native-community/cli/-/cli-20.0.2.tgz",
+-      "integrity": "sha512-ocgRFKRLX8b5rEK38SJfpr0AMl6SqseWljk6c5LxCG/zpCfPPNQdXq1OsDvmEwsqO4OEQ6tmOaSm9OgTm6FhbQ==",
++      "version": "20.2.0",
++      "resolved": "https://registry.npmjs.org/@react-native-community/cli/-/cli-20.2.0.tgz",
++      "integrity": "sha512-5RZKkBeUFC4hhrzySzxWmRJwXBTc2PE3L6QUgvnJk3QDxNYMY7aGuI8Gr9eZRS1DbiY10IPWqpJfqSIplzVG6A==",
+       "devOptional": true,
+       "license": "MIT",
+       "dependencies": {
+-        "@react-native-community/cli-clean": "20.0.2",
+-        "@react-native-community/cli-config": "20.0.2",
+-        "@react-native-community/cli-doctor": "20.0.2",
+-        "@react-native-community/cli-server-api": "20.0.2",
+-        "@react-native-community/cli-tools": "20.0.2",
+-        "@react-native-community/cli-types": "20.0.2",
+-        "chalk": "^4.1.2",
++        "@react-native-community/cli-clean": "20.2.0",
++        "@react-native-community/cli-config": "20.2.0",
++        "@react-native-community/cli-doctor": "20.2.0",
++        "@react-native-community/cli-server-api": "20.2.0",
++        "@react-native-community/cli-tools": "20.2.0",
++        "@react-native-community/cli-types": "20.2.0",
+         "commander": "^9.4.1",
+         "deepmerge": "^4.3.0",
+         "execa": "^5.0.0",
+         "find-up": "^5.0.0",
+         "fs-extra": "^8.1.0",
+         "graceful-fs": "^4.1.3",
++        "picocolors": "^1.1.1",
+         "prompts": "^2.4.2",
+         "semver": "^7.5.2"
+       },
+@@ -2908,177 +2921,83 @@
+       }
+     },
+     "node_modules/@react-native-community/cli-clean": {
+-      "version": "20.0.2",
+-      "resolved": "https://registry.npmjs.org/@react-native-community/cli-clean/-/cli-clean-20.0.2.tgz",
+-      "integrity": "sha512-hfbC69fTD0fqZCCep8aqnVztBXUhAckNhi76lEV7USENtgBRwNq2s1wATgKAzOhxKuAL9TEkf5TZ/Dhp/YLhCQ==",
++      "version": "20.2.0",
++      "resolved": "https://registry.npmjs.org/@react-native-community/cli-clean/-/cli-clean-20.2.0.tgz",
++      "integrity": "sha512-krqbhFiwHN8l5wZ2XTcrNq9N+DqDWHxW8RK0bIcrK0O+fMvjYi9e/1Pnx2W0CTotOVcZpHzUbgZ4TQVF231Skw==",
+       "devOptional": true,
+       "license": "MIT",
+       "dependencies": {
+-        "@react-native-community/cli-tools": "20.0.2",
+-        "chalk": "^4.1.2",
++        "@react-native-community/cli-tools": "20.2.0",
+         "execa": "^5.0.0",
+-        "fast-glob": "^3.3.2"
++        "fast-glob": "^3.3.2",
++        "picocolors": "^1.1.1"
+       }
+     },
+     "node_modules/@react-native-community/cli-config": {
+-      "version": "20.0.2",
+-      "resolved": "https://registry.npmjs.org/@react-native-community/cli-config/-/cli-config-20.0.2.tgz",
+-      "integrity": "sha512-OuSAyqTv0MBbRqSyO+80IKasHnwLESydZBTrLjIGwGhDokMH07mZo8Io2H8X300WWa57LC2L8vQf73TzGS3ikQ==",
++      "version": "20.2.0",
++      "resolved": "https://registry.npmjs.org/@react-native-community/cli-config/-/cli-config-20.2.0.tgz",
++      "integrity": "sha512-GF5FxgDfOSLPi/bSiE/xvOGELwzV2GLQnDED+7ArbPi01W1Vu+hD/m+J+bwX34Pocpo767eXAVxc2h9WFUTUfQ==",
+       "devOptional": true,
+       "license": "MIT",
+       "dependencies": {
+-        "@react-native-community/cli-tools": "20.0.2",
+-        "chalk": "^4.1.2",
++        "@react-native-community/cli-tools": "20.2.0",
+         "cosmiconfig": "^9.0.0",
+         "deepmerge": "^4.3.0",
+         "fast-glob": "^3.3.2",
+-        "joi": "^17.2.1"
++        "joi": "^17.2.1",
++        "picocolors": "^1.1.1"
+       }
+     },
+     "node_modules/@react-native-community/cli-config-android": {
+-      "version": "20.0.2",
+-      "resolved": "https://registry.npmjs.org/@react-native-community/cli-config-android/-/cli-config-android-20.0.2.tgz",
+-      "integrity": "sha512-5yZ2Grr89omnMptV36ilV4EIrRLrIYQAsTTVU/hNI2vL7lz6WB8rPhP5QuovXk3TIjl1Wz2r9A6ZNO2SNJ8nig==",
++      "version": "20.2.0",
++      "resolved": "https://registry.npmjs.org/@react-native-community/cli-config-android/-/cli-config-android-20.2.0.tgz",
++      "integrity": "sha512-lASofUNBVK0Pq3VEJ1JrCfAW94Rnk38DikauycRcoHl0hWjHIN3XhsN20dEq+CaIJoq37aCg5NSSSpmkET+ShA==",
+       "devOptional": true,
+       "license": "MIT",
+       "dependencies": {
+-        "@react-native-community/cli-tools": "20.0.2",
+-        "chalk": "^4.1.2",
++        "@react-native-community/cli-tools": "20.2.0",
+         "fast-glob": "^3.3.2",
+-        "fast-xml-parser": "^4.4.1"
++        "fast-xml-parser": "^5.3.6",
++        "picocolors": "^1.1.1"
+       }
+     },
+     "node_modules/@react-native-community/cli-config-apple": {
+-      "version": "20.0.2",
+-      "resolved": "https://registry.npmjs.org/@react-native-community/cli-config-apple/-/cli-config-apple-20.0.2.tgz",
+-      "integrity": "sha512-6MLL9Duu/JytqI6XfYuc78LSkRGfJoCqTSfqTJzBNSnz6S7XJps9spGBlgvrGh/j0howBpQlFH0J8Ws4N4mCxA==",
++      "version": "20.2.0",
++      "resolved": "https://registry.npmjs.org/@react-native-community/cli-config-apple/-/cli-config-apple-20.2.0.tgz",
++      "integrity": "sha512-oohr6BV2riWJ5PYjayi1u52bG3H95MwKPkJCZo9pnOlYTjifZQVkMxZ8VTuk392efh0bijVTYfxH8iJPi97SIQ==",
+       "devOptional": true,
+       "license": "MIT",
+       "dependencies": {
+-        "@react-native-community/cli-tools": "20.0.2",
+-        "chalk": "^4.1.2",
++        "@react-native-community/cli-tools": "20.2.0",
+         "execa": "^5.0.0",
+-        "fast-glob": "^3.3.2"
++        "fast-glob": "^3.3.2",
++        "picocolors": "^1.1.1"
+       }
+     },
+     "node_modules/@react-native-community/cli-doctor": {
+-      "version": "20.0.2",
+-      "resolved": "https://registry.npmjs.org/@react-native-community/cli-doctor/-/cli-doctor-20.0.2.tgz",
+-      "integrity": "sha512-PQ8BdoNDE2OaMGLH66HZE7FV4qj0iWBHi0lkPUTb8eJJ+vlvzUtBf0N9QSv2TAzFjA59a2FElk6jBWnDC/ql1A==",
++      "version": "20.2.0",
++      "resolved": "https://registry.npmjs.org/@react-native-community/cli-doctor/-/cli-doctor-20.2.0.tgz",
++      "integrity": "sha512-eZjlwmjPoBXgyD6nV5oDDocL1VH5UW4LxZcMAqyN3rQw5vq3CeJikFpNedKTtSl3P6JizIkInyIHpfrW+9qfJA==",
+       "devOptional": true,
+       "license": "MIT",
+       "dependencies": {
+-        "@react-native-community/cli-config": "20.0.2",
+-        "@react-native-community/cli-platform-android": "20.0.2",
+-        "@react-native-community/cli-platform-apple": "20.0.2",
+-        "@react-native-community/cli-platform-ios": "20.0.2",
+-        "@react-native-community/cli-tools": "20.0.2",
+-        "chalk": "^4.1.2",
++        "@react-native-community/cli-config": "20.2.0",
++        "@react-native-community/cli-platform-android": "20.2.0",
++        "@react-native-community/cli-platform-apple": "20.2.0",
++        "@react-native-community/cli-platform-ios": "20.2.0",
++        "@react-native-community/cli-tools": "20.2.0",
+         "command-exists": "^1.2.8",
+         "deepmerge": "^4.3.0",
+         "envinfo": "^7.13.0",
+         "execa": "^5.0.0",
+         "node-stream-zip": "^1.9.1",
+         "ora": "^5.4.1",
++        "picocolors": "^1.1.1",
+         "semver": "^7.5.2",
+         "wcwidth": "^1.0.1",
+         "yaml": "^2.2.1"
+       }
+     },
+-    "node_modules/@react-native-community/cli-doctor/node_modules/cli-cursor": {
+-      "version": "3.1.0",
+-      "resolved": "https://registry.npmjs.org/cli-cursor/-/cli-cursor-3.1.0.tgz",
+-      "integrity": "sha512-I/zHAwsKf9FqGoXM4WWRACob9+SNukZTd94DWF57E4toouRulbCxcUh6RKUEOQlYTHJnzkPMySvPNaaSLNfLZw==",
+-      "devOptional": true,
+-      "license": "MIT",
+-      "dependencies": {
+-        "restore-cursor": "^3.1.0"
+-      },
+-      "engines": {
+-        "node": ">=8"
+-      }
+-    },
+-    "node_modules/@react-native-community/cli-doctor/node_modules/log-symbols": {
+-      "version": "4.1.0",
+-      "resolved": "https://registry.npmjs.org/log-symbols/-/log-symbols-4.1.0.tgz",
+-      "integrity": "sha512-8XPvpAA8uyhfteu8pIvQxpJZ7SYYdpUivZpGy6sFsBuKRY/7rQGavedeB8aK+Zkyq6upMFVL/9AW6vOYzfRyLg==",
+-      "devOptional": true,
+-      "license": "MIT",
+-      "dependencies": {
+-        "chalk": "^4.1.0",
+-        "is-unicode-supported": "^0.1.0"
+-      },
+-      "engines": {
+-        "node": ">=10"
+-      },
+-      "funding": {
+-        "url": "https://github.com/sponsors/sindresorhus"
+-      }
+-    },
+-    "node_modules/@react-native-community/cli-doctor/node_modules/mimic-fn": {
+-      "version": "2.1.0",
+-      "resolved": "https://registry.npmjs.org/mimic-fn/-/mimic-fn-2.1.0.tgz",
+-      "integrity": "sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==",
+-      "devOptional": true,
+-      "license": "MIT",
+-      "engines": {
+-        "node": ">=6"
+-      }
+-    },
+-    "node_modules/@react-native-community/cli-doctor/node_modules/onetime": {
+-      "version": "5.1.2",
+-      "resolved": "https://registry.npmjs.org/onetime/-/onetime-5.1.2.tgz",
+-      "integrity": "sha512-kbpaSSGJTWdAY5KPVeMOKXSrPtr8C8C7wodJbcsd51jRnmD+GZu8Y0VoU6Dm5Z4vWr0Ig/1NKuWRKf7j5aaYSg==",
+-      "devOptional": true,
+-      "license": "MIT",
+-      "dependencies": {
+-        "mimic-fn": "^2.1.0"
+-      },
+-      "engines": {
+-        "node": ">=6"
+-      },
+-      "funding": {
+-        "url": "https://github.com/sponsors/sindresorhus"
+-      }
+-    },
+-    "node_modules/@react-native-community/cli-doctor/node_modules/ora": {
+-      "version": "5.4.1",
+-      "resolved": "https://registry.npmjs.org/ora/-/ora-5.4.1.tgz",
+-      "integrity": "sha512-5b6Y85tPxZZ7QytO+BQzysW31HJku27cRIlkbAXaNx+BdcVi+LlRFmVXzeF6a7JCwJpyw5c4b+YSVImQIrBpuQ==",
+-      "devOptional": true,
+-      "license": "MIT",
+-      "dependencies": {
+-        "bl": "^4.1.0",
+-        "chalk": "^4.1.0",
+-        "cli-cursor": "^3.1.0",
+-        "cli-spinners": "^2.5.0",
+-        "is-interactive": "^1.0.0",
+-        "is-unicode-supported": "^0.1.0",
+-        "log-symbols": "^4.1.0",
+-        "strip-ansi": "^6.0.0",
+-        "wcwidth": "^1.0.1"
+-      },
+-      "engines": {
+-        "node": ">=10"
+-      },
+-      "funding": {
+-        "url": "https://github.com/sponsors/sindresorhus"
+-      }
+-    },
+-    "node_modules/@react-native-community/cli-doctor/node_modules/restore-cursor": {
+-      "version": "3.1.0",
+-      "resolved": "https://registry.npmjs.org/restore-cursor/-/restore-cursor-3.1.0.tgz",
+-      "integrity": "sha512-l+sSefzHpj5qimhFSE5a8nufZYAM3sBSVMAPtYkmC+4EH2anSGaEMXSD0izRQbu9nfyQ9y5JrVmp7E8oZrUjvA==",
+-      "devOptional": true,
+-      "license": "MIT",
+-      "dependencies": {
+-        "onetime": "^5.1.0",
+-        "signal-exit": "^3.0.2"
+-      },
+-      "engines": {
+-        "node": ">=8"
+-      }
+-    },
+     "node_modules/@react-native-community/cli-doctor/node_modules/semver": {
+       "version": "7.8.6",
+       "resolved": "https://registry.npmjs.org/semver/-/semver-7.8.6.tgz",
+@@ -3093,52 +3012,52 @@
+       }
+     },
+     "node_modules/@react-native-community/cli-platform-android": {
+-      "version": "20.0.2",
+-      "resolved": "https://registry.npmjs.org/@react-native-community/cli-platform-android/-/cli-platform-android-20.0.2.tgz",
+-      "integrity": "sha512-Wo2AIkdv3PMEMT4k7QiNm3smNpWK6rd+glVH4Nm6Hco1EgLQ4I9x+gwcS1yN53UHYtq9YnguDCXk2L8duUESDQ==",
++      "version": "20.2.0",
++      "resolved": "https://registry.npmjs.org/@react-native-community/cli-platform-android/-/cli-platform-android-20.2.0.tgz",
++      "integrity": "sha512-fRglzcf/Yq5lnIkqdA8uf1GvlG18x3Dm48Yvo+l7KiWgh/SVtfVhfvalrtX5rmx+KeJkDA534bGoPvi5+ruWjw==",
+       "devOptional": true,
+       "license": "MIT",
+       "dependencies": {
+-        "@react-native-community/cli-config-android": "20.0.2",
+-        "@react-native-community/cli-tools": "20.0.2",
+-        "chalk": "^4.1.2",
++        "@react-native-community/cli-config-android": "20.2.0",
++        "@react-native-community/cli-tools": "20.2.0",
+         "execa": "^5.0.0",
+-        "logkitty": "^0.7.1"
++        "logkitty": "^0.7.1",
++        "picocolors": "^1.1.1"
+       }
+     },
+     "node_modules/@react-native-community/cli-platform-apple": {
+-      "version": "20.0.2",
+-      "resolved": "https://registry.npmjs.org/@react-native-community/cli-platform-apple/-/cli-platform-apple-20.0.2.tgz",
+-      "integrity": "sha512-PdsQVFLY+wGnAN1kZ38XzzWiUlqaG1cXdpkQ1rYaiiNu3PVTc2/KtteLcPG/wbApbfoPggQ/ffh+JGg7NL+HNw==",
++      "version": "20.2.0",
++      "resolved": "https://registry.npmjs.org/@react-native-community/cli-platform-apple/-/cli-platform-apple-20.2.0.tgz",
++      "integrity": "sha512-jkEPLAd8C/ZRu39a3nhxwSXe0iisUiJC808GExnrnTcViLtg3sad2ciQ/HjjvbdsPCS9sT+Jr7xh3MzBsPojsQ==",
+       "devOptional": true,
+       "license": "MIT",
+       "dependencies": {
+-        "@react-native-community/cli-config-apple": "20.0.2",
+-        "@react-native-community/cli-tools": "20.0.2",
+-        "chalk": "^4.1.2",
++        "@react-native-community/cli-config-apple": "20.2.0",
++        "@react-native-community/cli-tools": "20.2.0",
+         "execa": "^5.0.0",
+-        "fast-xml-parser": "^4.4.1"
++        "fast-xml-parser": "^5.3.6",
++        "picocolors": "^1.1.1"
+       }
+     },
+     "node_modules/@react-native-community/cli-platform-ios": {
+-      "version": "20.0.2",
+-      "resolved": "https://registry.npmjs.org/@react-native-community/cli-platform-ios/-/cli-platform-ios-20.0.2.tgz",
+-      "integrity": "sha512-bVOqLsBztT+xVV65uztJ7R/dtjj4vaPXJU1RLi35zLtr1APAxzf+2ydiixxtBjNFylM3AZlF8iL5WXjeWVqrmA==",
++      "version": "20.2.0",
++      "resolved": "https://registry.npmjs.org/@react-native-community/cli-platform-ios/-/cli-platform-ios-20.2.0.tgz",
++      "integrity": "sha512-bCKlBt2HoD7WTl/HX60+4HFhR1lKY64Y9MPWu7yWQwOCEqYRMi6MkRxLimiONj9M2/lNf0z9BPHDzdDe5HM2ag==",
+       "devOptional": true,
+       "license": "MIT",
+       "dependencies": {
+-        "@react-native-community/cli-platform-apple": "20.0.2"
++        "@react-native-community/cli-platform-apple": "20.2.0"
+       }
+     },
+     "node_modules/@react-native-community/cli-server-api": {
+-      "version": "20.0.2",
+-      "resolved": "https://registry.npmjs.org/@react-native-community/cli-server-api/-/cli-server-api-20.0.2.tgz",
+-      "integrity": "sha512-u4tUzWnc+qthaDvd1NxdCqCNMY7Px6dAH1ODAXMtt+N27llGMJOl0J3slMx03dScftOWbGM61KA5cCpaxphYVQ==",
++      "version": "20.2.0",
++      "resolved": "https://registry.npmjs.org/@react-native-community/cli-server-api/-/cli-server-api-20.2.0.tgz",
++      "integrity": "sha512-AI1fsl+6LNuOoDcdWsnF3s9ozqminGCUlbFcrgdZIJWyOuFBeQclNydI22VO3vWaO4dHQkfVa3Zo10AncWQvwA==",
+       "devOptional": true,
+       "license": "MIT",
+       "dependencies": {
+-        "@react-native-community/cli-tools": "20.0.2",
+-        "body-parser": "^1.20.3",
++        "@react-native-community/cli-tools": "20.2.0",
++        "body-parser": "^2.2.2",
+         "compression": "^1.7.1",
+         "connect": "^3.6.5",
+         "errorhandler": "^1.5.1",
+@@ -3183,54 +3102,24 @@
+       }
+     },
+     "node_modules/@react-native-community/cli-tools": {
+-      "version": "20.0.2",
+-      "resolved": "https://registry.npmjs.org/@react-native-community/cli-tools/-/cli-tools-20.0.2.tgz",
+-      "integrity": "sha512-bPYhRYggW9IIM8pvrZF/0r6HaxCyEWDn6zfPQPMWlkQUwkzFZ8GBY/M7yiHgDzozWKPT4DqZPumrq806Vcksow==",
++      "version": "20.2.0",
++      "resolved": "https://registry.npmjs.org/@react-native-community/cli-tools/-/cli-tools-20.2.0.tgz",
++      "integrity": "sha512-A5W2nqlTidPzGyXzS57jvHsMpQd8iOGSjePj4H318uMbhIdeIHQ5e59fNbdHahS62ISs+2p9s78sVHMbGVa1bg==",
+       "devOptional": true,
+       "license": "MIT",
+       "dependencies": {
+         "@vscode/sudo-prompt": "^9.0.0",
+         "appdirsjs": "^1.2.4",
+-        "chalk": "^4.1.2",
+         "execa": "^5.0.0",
+         "find-up": "^5.0.0",
+         "launch-editor": "^2.9.1",
+         "mime": "^2.4.1",
+         "ora": "^5.4.1",
++        "picocolors": "^1.1.1",
+         "prompts": "^2.4.2",
+         "semver": "^7.5.2"
+       }
+     },
+-    "node_modules/@react-native-community/cli-tools/node_modules/cli-cursor": {
+-      "version": "3.1.0",
+-      "resolved": "https://registry.npmjs.org/cli-cursor/-/cli-cursor-3.1.0.tgz",
+-      "integrity": "sha512-I/zHAwsKf9FqGoXM4WWRACob9+SNukZTd94DWF57E4toouRulbCxcUh6RKUEOQlYTHJnzkPMySvPNaaSLNfLZw==",
+-      "devOptional": true,
+-      "license": "MIT",
+-      "dependencies": {
+-        "restore-cursor": "^3.1.0"
+-      },
+-      "engines": {
+-        "node": ">=8"
+-      }
+-    },
+-    "node_modules/@react-native-community/cli-tools/node_modules/log-symbols": {
+-      "version": "4.1.0",
+-      "resolved": "https://registry.npmjs.org/log-symbols/-/log-symbols-4.1.0.tgz",
+-      "integrity": "sha512-8XPvpAA8uyhfteu8pIvQxpJZ7SYYdpUivZpGy6sFsBuKRY/7rQGavedeB8aK+Zkyq6upMFVL/9AW6vOYzfRyLg==",
+-      "devOptional": true,
+-      "license": "MIT",
+-      "dependencies": {
+-        "chalk": "^4.1.0",
+-        "is-unicode-supported": "^0.1.0"
+-      },
+-      "engines": {
+-        "node": ">=10"
+-      },
+-      "funding": {
+-        "url": "https://github.com/sponsors/sindresorhus"
+-      }
+-    },
+     "node_modules/@react-native-community/cli-tools/node_modules/mime": {
+       "version": "2.6.0",
+       "resolved": "https://registry.npmjs.org/mime/-/mime-2.6.0.tgz",
+@@ -3244,70 +3133,6 @@
+         "node": ">=4.0.0"
+       }
+     },
+-    "node_modules/@react-native-community/cli-tools/node_modules/mimic-fn": {
+-      "version": "2.1.0",
+-      "resolved": "https://registry.npmjs.org/mimic-fn/-/mimic-fn-2.1.0.tgz",
+-      "integrity": "sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==",
+-      "devOptional": true,
+-      "license": "MIT",
+-      "engines": {
+-        "node": ">=6"
+-      }
+-    },
+-    "node_modules/@react-native-community/cli-tools/node_modules/onetime": {
+-      "version": "5.1.2",
+-      "resolved": "https://registry.npmjs.org/onetime/-/onetime-5.1.2.tgz",
+-      "integrity": "sha512-kbpaSSGJTWdAY5KPVeMOKXSrPtr8C8C7wodJbcsd51jRnmD+GZu8Y0VoU6Dm5Z4vWr0Ig/1NKuWRKf7j5aaYSg==",
+-      "devOptional": true,
+-      "license": "MIT",
+-      "dependencies": {
+-        "mimic-fn": "^2.1.0"
+-      },
+-      "engines": {
+-        "node": ">=6"
+-      },
+-      "funding": {
+-        "url": "https://github.com/sponsors/sindresorhus"
+-      }
+-    },
+-    "node_modules/@react-native-community/cli-tools/node_modules/ora": {
+-      "version": "5.4.1",
+-      "resolved": "https://registry.npmjs.org/ora/-/ora-5.4.1.tgz",
+-      "integrity": "sha512-5b6Y85tPxZZ7QytO+BQzysW31HJku27cRIlkbAXaNx+BdcVi+LlRFmVXzeF6a7JCwJpyw5c4b+YSVImQIrBpuQ==",
+-      "devOptional": true,
+-      "license": "MIT",
+-      "dependencies": {
+-        "bl": "^4.1.0",
+-        "chalk": "^4.1.0",
+-        "cli-cursor": "^3.1.0",
+-        "cli-spinners": "^2.5.0",
+-        "is-interactive": "^1.0.0",
+-        "is-unicode-supported": "^0.1.0",
+-        "log-symbols": "^4.1.0",
+-        "strip-ansi": "^6.0.0",
+-        "wcwidth": "^1.0.1"
+-      },
+-      "engines": {
+-        "node": ">=10"
+-      },
+-      "funding": {
+-        "url": "https://github.com/sponsors/sindresorhus"
+-      }
+-    },
+-    "node_modules/@react-native-community/cli-tools/node_modules/restore-cursor": {
+-      "version": "3.1.0",
+-      "resolved": "https://registry.npmjs.org/restore-cursor/-/restore-cursor-3.1.0.tgz",
+-      "integrity": "sha512-l+sSefzHpj5qimhFSE5a8nufZYAM3sBSVMAPtYkmC+4EH2anSGaEMXSD0izRQbu9nfyQ9y5JrVmp7E8oZrUjvA==",
+-      "devOptional": true,
+-      "license": "MIT",
+-      "dependencies": {
+-        "onetime": "^5.1.0",
+-        "signal-exit": "^3.0.2"
+-      },
+-      "engines": {
+-        "node": ">=8"
+-      }
+-    },
+     "node_modules/@react-native-community/cli-tools/node_modules/semver": {
+       "version": "7.8.6",
+       "resolved": "https://registry.npmjs.org/semver/-/semver-7.8.6.tgz",
+@@ -3322,9 +3147,9 @@
+       }
+     },
+     "node_modules/@react-native-community/cli-types": {
+-      "version": "20.0.2",
+-      "resolved": "https://registry.npmjs.org/@react-native-community/cli-types/-/cli-types-20.0.2.tgz",
+-      "integrity": "sha512-OZzy6U4M8Szg8iiF459OoTjRKggxLrdhZVHKfRhrAUfojhjRiWbJNkkPxJtOIPeNSgsB0heizgpE4QwCgnYeuQ==",
++      "version": "20.2.0",
++      "resolved": "https://registry.npmjs.org/@react-native-community/cli-types/-/cli-types-20.2.0.tgz",
++      "integrity": "sha512-K60zY/ly8G9rGJQzZ+bFRyLEckAUzyF8Fu9a2Kw6JipCrOl7SiVRBVqjvOr/XnCRKuOpH8i9y7RVg07wkSGRBQ==",
+       "devOptional": true,
+       "license": "MIT",
+       "dependencies": {
+@@ -3871,6 +3696,16 @@
+         "node": ">= 0.6"
+       }
+     },
++    "node_modules/accepts/node_modules/negotiator": {
++      "version": "0.6.3",
++      "resolved": "https://registry.npmjs.org/negotiator/-/negotiator-0.6.3.tgz",
++      "integrity": "sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==",
++      "devOptional": true,
++      "license": "MIT",
++      "engines": {
++        "node": ">= 0.6"
++      }
++    },
+     "node_modules/acorn": {
+       "version": "8.19.0",
+       "resolved": "https://registry.npmjs.org/acorn/-/acorn-8.19.0.tgz",
+@@ -3997,6 +3832,19 @@
+         "node": ">= 8"
+       }
+     },
++    "node_modules/anynum": {
++      "version": "1.0.1",
++      "resolved": "https://registry.npmjs.org/anynum/-/anynum-1.0.1.tgz",
++      "integrity": "sha512-N6//FLET/tXYNM/F6ABca1oH6fWB+KlTt909Le28WMDBk8oaT4vY17DCrwg2MvmuqUKt3Ni4N5dGJ/EoBgcO6A==",
++      "devOptional": true,
++      "funding": [
++        {
++          "type": "github",
++          "url": "https://github.com/sponsors/NaturalIntelligence"
++        }
++      ],
++      "license": "MIT"
++    },
+     "node_modules/appdirsjs": {
+       "version": "1.2.8",
+       "resolved": "https://registry.npmjs.org/appdirsjs/-/appdirsjs-1.2.8.tgz",
+@@ -4428,47 +4276,30 @@
+       }
+     },
+     "node_modules/body-parser": {
+-      "version": "1.20.9",
+-      "resolved": "https://registry.npmjs.org/body-parser/-/body-parser-1.20.9.tgz",
+-      "integrity": "sha512-FISIQxV5u91Y9gvuFq3q/tA/qTqLJn3AhRcEvyozyhJTh5OBFFtv827AdHU7Rbyct4r+Ba1/99oFa1Y3yuFsdw==",
++      "version": "2.4.0",
++      "resolved": "https://registry.npmjs.org/body-parser/-/body-parser-2.4.0.tgz",
++      "integrity": "sha512-Ifk1KcLrxaGt1occQagQNFNNOqRt1LFuehEnHHzB8Z6cRgIxRU1TBaiIsUiCdA+gy5PL7Y1IX31DNKkRmxtXjQ==",
+       "devOptional": true,
+       "license": "MIT",
+       "dependencies": {
+-        "bytes": "~3.1.2",
+-        "content-type": "~1.0.5",
+-        "debug": "2.6.9",
+-        "depd": "2.0.0",
+-        "destroy": "~1.2.0",
+-        "http-errors": "~2.0.1",
+-        "iconv-lite": "~0.4.24",
+-        "on-finished": "~2.4.1",
+-        "qs": "~6.16.0",
+-        "raw-body": "~2.5.3",
+-        "type-is": "~1.6.18",
+-        "unpipe": "~1.0.0"
++        "bytes": "^3.1.2",
++        "content-type": "^2.1.0",
++        "debug": "^4.4.3",
++        "http-errors": "^2.0.1",
++        "iconv-lite": "^0.7.3",
++        "on-finished": "^2.4.1",
++        "qs": "^6.16.1",
++        "raw-body": "^3.0.2",
++        "type-is": "^2.1.0"
+       },
+       "engines": {
+-        "node": ">= 0.8",
+-        "npm": "1.2.8000 || >= 1.4.16"
+-      }
+-    },
+-    "node_modules/body-parser/node_modules/debug": {
+-      "version": "2.6.9",
+-      "resolved": "https://registry.npmjs.org/debug/-/debug-2.6.9.tgz",
+-      "integrity": "sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==",
+-      "devOptional": true,
+-      "license": "MIT",
+-      "dependencies": {
+-        "ms": "2.0.0"
++        "node": ">=18"
++      },
++      "funding": {
++        "type": "opencollective",
++        "url": "https://opencollective.com/express"
+       }
+     },
+-    "node_modules/body-parser/node_modules/ms": {
+-      "version": "2.0.0",
+-      "resolved": "https://registry.npmjs.org/ms/-/ms-2.0.0.tgz",
+-      "integrity": "sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A==",
+-      "devOptional": true,
+-      "license": "MIT"
+-    },
+     "node_modules/body-parser/node_modules/on-finished": {
+       "version": "2.4.2",
+       "resolved": "https://registry.npmjs.org/on-finished/-/on-finished-2.4.2.tgz",
+@@ -4737,6 +4568,19 @@
+       "integrity": "sha512-5tK7EtrZ0N+OLFMthtqOj4fI2Jeb88C4CAZPu25LDVUgXJ0A3Js4PMGqrn0JU1W0Mh1/Z8wZzYPxqUrXeBboCQ==",
+       "license": "MIT"
+     },
++    "node_modules/cli-cursor": {
++      "version": "3.1.0",
++      "resolved": "https://registry.npmjs.org/cli-cursor/-/cli-cursor-3.1.0.tgz",
++      "integrity": "sha512-I/zHAwsKf9FqGoXM4WWRACob9+SNukZTd94DWF57E4toouRulbCxcUh6RKUEOQlYTHJnzkPMySvPNaaSLNfLZw==",
++      "devOptional": true,
++      "license": "MIT",
++      "dependencies": {
++        "restore-cursor": "^3.1.0"
++      },
++      "engines": {
++        "node": ">=8"
++      }
++    },
+     "node_modules/cli-spinners": {
+       "version": "2.9.2",
+       "resolved": "https://registry.npmjs.org/cli-spinners/-/cli-spinners-2.9.2.tgz",
+@@ -4855,20 +4699,10 @@
+     },
+     "node_modules/compression/node_modules/ms": {
+       "version": "2.0.0",
+-      "resolved": "https://registry.npmjs.org/ms/-/ms-2.0.0.tgz",
+-      "integrity": "sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A==",
+-      "devOptional": true,
+-      "license": "MIT"
+-    },
+-    "node_modules/compression/node_modules/negotiator": {
+-      "version": "0.6.4",
+-      "resolved": "https://registry.npmjs.org/negotiator/-/negotiator-0.6.4.tgz",
+-      "integrity": "sha512-myRT3DiWPHqho5PrJaIRyaMv2kgYf0mUVgBNOYMuCH5Ki1yEiQaf/ZJuQ62nvpc44wL5WDbTX7yGJi1Neevw8w==",
+-      "devOptional": true,
+-      "license": "MIT",
+-      "engines": {
+-        "node": ">= 0.6"
+-      }
++      "resolved": "https://registry.npmjs.org/ms/-/ms-2.0.0.tgz",
++      "integrity": "sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A==",
++      "devOptional": true,
++      "license": "MIT"
+     },
+     "node_modules/concat-map": {
+       "version": "0.0.1",
+@@ -4907,13 +4741,16 @@
+       "license": "MIT"
+     },
+     "node_modules/content-type": {
+-      "version": "1.0.5",
+-      "resolved": "https://registry.npmjs.org/content-type/-/content-type-1.0.5.tgz",
+-      "integrity": "sha512-nTjqfcBFEipKdXCv4YDQWCfmcLZKm81ldF0pAopTvyrFGVbcR6P/VAAd5G7N+0tTr8QqiU0tFadD6FK4NtJwOA==",
+-      "devOptional": true,
++      "version": "2.1.0",
++      "resolved": "https://registry.npmjs.org/content-type/-/content-type-2.1.0.tgz",
++      "integrity": "sha512-mj7UPXE0jaqaOsukNZRUEfEi2AcL7C/vwmwcHV0O97eO1E1pxBZuyjlZrx5seTaNBg1U6+o35wpa35Qfcc+7ag==",
+       "license": "MIT",
+       "engines": {
+-        "node": ">= 0.6"
++        "node": ">=18"
++      },
++      "funding": {
++        "type": "opencollective",
++        "url": "https://opencollective.com/express"
+       }
+     },
+     "node_modules/convert-source-map": {
+@@ -5277,13 +5114,6 @@
+         "is-arrayish": "^0.2.1"
+       }
+     },
+-    "node_modules/error-ex/node_modules/is-arrayish": {
+-      "version": "0.2.1",
+-      "resolved": "https://registry.npmjs.org/is-arrayish/-/is-arrayish-0.2.1.tgz",
+-      "integrity": "sha512-zz06S8t0ozoDXMG+ube26zeCTNXcKIPJZJi8hBrF4idCLms4CG9QtK7qBl1boi5ODzFpjswb5JPmHCbMpjaYzg==",
+-      "devOptional": true,
+-      "license": "MIT"
+-    },
+     "node_modules/error-stack-parser": {
+       "version": "2.1.4",
+       "resolved": "https://registry.npmjs.org/error-stack-parser/-/error-stack-parser-2.1.4.tgz",
+@@ -5859,32 +5689,6 @@
+         "url": "https://github.com/sindresorhus/execa?sponsor=1"
+       }
+     },
+-    "node_modules/execa/node_modules/mimic-fn": {
+-      "version": "2.1.0",
+-      "resolved": "https://registry.npmjs.org/mimic-fn/-/mimic-fn-2.1.0.tgz",
+-      "integrity": "sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==",
+-      "devOptional": true,
+-      "license": "MIT",
+-      "engines": {
+-        "node": ">=6"
+-      }
+-    },
+-    "node_modules/execa/node_modules/onetime": {
+-      "version": "5.1.2",
+-      "resolved": "https://registry.npmjs.org/onetime/-/onetime-5.1.2.tgz",
+-      "integrity": "sha512-kbpaSSGJTWdAY5KPVeMOKXSrPtr8C8C7wodJbcsd51jRnmD+GZu8Y0VoU6Dm5Z4vWr0Ig/1NKuWRKf7j5aaYSg==",
+-      "devOptional": true,
+-      "license": "MIT",
+-      "dependencies": {
+-        "mimic-fn": "^2.1.0"
+-      },
+-      "engines": {
+-        "node": ">=6"
+-      },
+-      "funding": {
+-        "url": "https://github.com/sponsors/sindresorhus"
+-      }
+-    },
+     "node_modules/exponential-backoff": {
+       "version": "3.1.3",
+       "resolved": "https://registry.npmjs.org/exponential-backoff/-/exponential-backoff-3.1.3.tgz",
+@@ -5941,10 +5745,27 @@
+       "dev": true,
+       "license": "MIT"
+     },
++    "node_modules/fast-xml-builder": {
++      "version": "1.3.2",
++      "resolved": "https://registry.npmjs.org/fast-xml-builder/-/fast-xml-builder-1.3.2.tgz",
++      "integrity": "sha512-OX91VSlShLPDgRZV7tk/YQ4l8tT75QziF5Ixg8g4PFbCVPjuTWwN+yQfAxLJ0dufJpprdOd6HlM74Jhd39TcBQ==",
++      "devOptional": true,
++      "funding": [
++        {
++          "type": "github",
++          "url": "https://github.com/sponsors/NaturalIntelligence"
++        }
++      ],
++      "license": "MIT",
++      "dependencies": {
++        "path-expression-matcher": "^1.6.2",
++        "xml-naming": "^0.3.0"
++      }
++    },
+     "node_modules/fast-xml-parser": {
+-      "version": "4.5.7",
+-      "resolved": "https://registry.npmjs.org/fast-xml-parser/-/fast-xml-parser-4.5.7.tgz",
+-      "integrity": "sha512-a6Qh1RMCNbSrU1+sAyAAZH3rTe+OaWJbNZIq0S+ifZciUUOQtlVxBJwoTUE2bYhysmG/RYyI5WJFIKdBahJdrQ==",
++      "version": "5.12.1",
++      "resolved": "https://registry.npmjs.org/fast-xml-parser/-/fast-xml-parser-5.12.1.tgz",
++      "integrity": "sha512-wR8dO/fx+z8C5exuem1e7BKOWvjsuzvjS/tvA/Xu3Z1zQqJGcXrPzXbcAiaMgp2KjreEROcTkmnnisrcmJ2hYQ==",
+       "devOptional": true,
+       "funding": [
+         {
+@@ -5954,7 +5775,12 @@
+       ],
+       "license": "MIT",
+       "dependencies": {
+-        "strnum": "^1.0.5"
++        "@nodable/entities": "^3.1.0",
++        "fast-xml-builder": "^1.3.2",
++        "is-unsafe": "^2.0.3",
++        "path-expression-matcher": "^1.6.2",
++        "strnum": "^2.5.1",
++        "xml-naming": "^0.3.0"
+       },
+       "bin": {
+         "fxparser": "src/cli/cli.js"
+@@ -6551,16 +6377,20 @@
+       "license": "BSD-3-Clause"
+     },
+     "node_modules/iconv-lite": {
+-      "version": "0.4.24",
+-      "resolved": "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.24.tgz",
+-      "integrity": "sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==",
++      "version": "0.7.3",
++      "resolved": "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.7.3.tgz",
++      "integrity": "sha512-IKXpvIzjnC9XTAUbVBcMfGS0EPaIXtW6v+zr+RRp+hqULEpo0owZax6wyRwPOJbWbzjYspQwusTsfVr0ifh4uQ==",
+       "devOptional": true,
+       "license": "MIT",
+       "dependencies": {
+-        "safer-buffer": ">= 2.1.2 < 3"
++        "safer-buffer": ">= 2.1.2 < 3.0.0"
+       },
+       "engines": {
+         "node": ">=0.10.0"
++      },
++      "funding": {
++        "type": "opencollective",
++        "url": "https://opencollective.com/express"
+       }
+     },
+     "node_modules/ieee754": {
+@@ -6698,6 +6528,13 @@
+         "url": "https://github.com/sponsors/ljharb"
+       }
+     },
++    "node_modules/is-arrayish": {
++      "version": "0.2.1",
++      "resolved": "https://registry.npmjs.org/is-arrayish/-/is-arrayish-0.2.1.tgz",
++      "integrity": "sha512-zz06S8t0ozoDXMG+ube26zeCTNXcKIPJZJi8hBrF4idCLms4CG9QtK7qBl1boi5ODzFpjswb5JPmHCbMpjaYzg==",
++      "devOptional": true,
++      "license": "MIT"
++    },
+     "node_modules/is-async-function": {
+       "version": "2.1.1",
+       "resolved": "https://registry.npmjs.org/is-async-function/-/is-async-function-2.1.1.tgz",
+@@ -7110,6 +6947,19 @@
+         "url": "https://github.com/sponsors/sindresorhus"
+       }
+     },
++    "node_modules/is-unsafe": {
++      "version": "2.0.3",
++      "resolved": "https://registry.npmjs.org/is-unsafe/-/is-unsafe-2.0.3.tgz",
++      "integrity": "sha512-ZBllczCCO267vgdFb6Tq3pv+LhHaCiGMdr+ZsuL+OopruAg7S+3ZDs1vD0RPC0uSrkjzbraxaGjtX1YBxjPeFQ==",
++      "devOptional": true,
++      "funding": [
++        {
++          "type": "github",
++          "url": "https://github.com/sponsors/NaturalIntelligence"
++        }
++      ],
++      "license": "MIT"
++    },
+     "node_modules/is-weakmap": {
+       "version": "2.0.2",
+       "resolved": "https://registry.npmjs.org/is-weakmap/-/is-weakmap-2.0.2.tgz",
+@@ -7647,6 +7497,23 @@
+       "integrity": "sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ==",
+       "license": "MIT"
+     },
++    "node_modules/log-symbols": {
++      "version": "4.1.0",
++      "resolved": "https://registry.npmjs.org/log-symbols/-/log-symbols-4.1.0.tgz",
++      "integrity": "sha512-8XPvpAA8uyhfteu8pIvQxpJZ7SYYdpUivZpGy6sFsBuKRY/7rQGavedeB8aK+Zkyq6upMFVL/9AW6vOYzfRyLg==",
++      "devOptional": true,
++      "license": "MIT",
++      "dependencies": {
++        "chalk": "^4.1.0",
++        "is-unicode-supported": "^0.1.0"
++      },
++      "engines": {
++        "node": ">=10"
++      },
++      "funding": {
++        "url": "https://github.com/sponsors/sindresorhus"
++      }
++    },
+     "node_modules/logkitty": {
+       "version": "0.7.1",
+       "resolved": "https://registry.npmjs.org/logkitty/-/logkitty-0.7.1.tgz",
+@@ -7846,13 +7713,17 @@
+       }
+     },
+     "node_modules/media-typer": {
+-      "version": "0.3.0",
+-      "resolved": "https://registry.npmjs.org/media-typer/-/media-typer-0.3.0.tgz",
+-      "integrity": "sha512-dq+qelQ9akHpcOl/gUVRTxVIOkAJ1wR3QAvb4RsVjS8oVoFjDGTc679wJYmUmknUF5HwMLOgb5O+a3KxfWapPQ==",
++      "version": "1.1.1",
++      "resolved": "https://registry.npmjs.org/media-typer/-/media-typer-1.1.1.tgz",
++      "integrity": "sha512-yz3xRaG20c6/BOzvYoDaGtPmGscs7YivItZEEqe6GbwNfHuxu9YNmvnEkMzKldAGY4/80pRcQRZSEnhquk9XuQ==",
+       "devOptional": true,
+       "license": "MIT",
+       "engines": {
+-        "node": ">= 0.6"
++        "node": ">= 0.8"
++      },
++      "funding": {
++        "type": "opencollective",
++        "url": "https://opencollective.com/express"
+       }
+     },
+     "node_modules/memoize-one": {
+@@ -8169,28 +8040,6 @@
+         "node": ">= 0.6"
+       }
+     },
+-    "node_modules/metro/node_modules/content-type": {
+-      "version": "2.1.0",
+-      "resolved": "https://registry.npmjs.org/content-type/-/content-type-2.1.0.tgz",
+-      "integrity": "sha512-mj7UPXE0jaqaOsukNZRUEfEi2AcL7C/vwmwcHV0O97eO1E1pxBZuyjlZrx5seTaNBg1U6+o35wpa35Qfcc+7ag==",
+-      "license": "MIT",
+-      "engines": {
+-        "node": ">=18"
+-      },
+-      "funding": {
+-        "type": "opencollective",
+-        "url": "https://opencollective.com/express"
+-      }
+-    },
+-    "node_modules/metro/node_modules/mime-db": {
+-      "version": "1.54.0",
+-      "resolved": "https://registry.npmjs.org/mime-db/-/mime-db-1.54.0.tgz",
+-      "integrity": "sha512-aU5EJuIN2WDemCcAp2vFBfp/m4EAhWJnUNSSw0ixs7/kXbd6Pg64EmwJkNdFhB8aWt1sH2CTXrLxo/iAGV3oPQ==",
+-      "license": "MIT",
+-      "engines": {
+-        "node": ">= 0.6"
+-      }
+-    },
+     "node_modules/metro/node_modules/mime-types": {
+       "version": "3.0.2",
+       "resolved": "https://registry.npmjs.org/mime-types/-/mime-types-3.0.2.tgz",
+@@ -8249,10 +8098,9 @@
+       }
+     },
+     "node_modules/mime-db": {
+-      "version": "1.52.0",
+-      "resolved": "https://registry.npmjs.org/mime-db/-/mime-db-1.52.0.tgz",
+-      "integrity": "sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg==",
+-      "devOptional": true,
++      "version": "1.54.0",
++      "resolved": "https://registry.npmjs.org/mime-db/-/mime-db-1.54.0.tgz",
++      "integrity": "sha512-aU5EJuIN2WDemCcAp2vFBfp/m4EAhWJnUNSSw0ixs7/kXbd6Pg64EmwJkNdFhB8aWt1sH2CTXrLxo/iAGV3oPQ==",
+       "license": "MIT",
+       "engines": {
+         "node": ">= 0.6"
+@@ -8271,6 +8119,26 @@
+         "node": ">= 0.6"
+       }
+     },
++    "node_modules/mime-types/node_modules/mime-db": {
++      "version": "1.52.0",
++      "resolved": "https://registry.npmjs.org/mime-db/-/mime-db-1.52.0.tgz",
++      "integrity": "sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg==",
++      "devOptional": true,
++      "license": "MIT",
++      "engines": {
++        "node": ">= 0.6"
++      }
++    },
++    "node_modules/mimic-fn": {
++      "version": "2.1.0",
++      "resolved": "https://registry.npmjs.org/mimic-fn/-/mimic-fn-2.1.0.tgz",
++      "integrity": "sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==",
++      "devOptional": true,
++      "license": "MIT",
++      "engines": {
++        "node": ">=6"
++      }
++    },
+     "node_modules/minimatch": {
+       "version": "3.1.5",
+       "resolved": "https://registry.npmjs.org/minimatch/-/minimatch-3.1.5.tgz",
+@@ -8309,9 +8177,9 @@
+       "license": "MIT"
+     },
+     "node_modules/negotiator": {
+-      "version": "0.6.3",
+-      "resolved": "https://registry.npmjs.org/negotiator/-/negotiator-0.6.3.tgz",
+-      "integrity": "sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==",
++      "version": "0.6.4",
++      "resolved": "https://registry.npmjs.org/negotiator/-/negotiator-0.6.4.tgz",
++      "integrity": "sha512-myRT3DiWPHqho5PrJaIRyaMv2kgYf0mUVgBNOYMuCH5Ki1yEiQaf/ZJuQ62nvpc44wL5WDbTX7yGJi1Neevw8w==",
+       "devOptional": true,
+       "license": "MIT",
+       "engines": {
+@@ -8574,6 +8442,22 @@
+         "wrappy": "1"
+       }
+     },
++    "node_modules/onetime": {
++      "version": "5.1.2",
++      "resolved": "https://registry.npmjs.org/onetime/-/onetime-5.1.2.tgz",
++      "integrity": "sha512-kbpaSSGJTWdAY5KPVeMOKXSrPtr8C8C7wodJbcsd51jRnmD+GZu8Y0VoU6Dm5Z4vWr0Ig/1NKuWRKf7j5aaYSg==",
++      "devOptional": true,
++      "license": "MIT",
++      "dependencies": {
++        "mimic-fn": "^2.1.0"
++      },
++      "engines": {
++        "node": ">=6"
++      },
++      "funding": {
++        "url": "https://github.com/sponsors/sindresorhus"
++      }
++    },
+     "node_modules/open": {
+       "version": "7.4.2",
+       "resolved": "https://registry.npmjs.org/open/-/open-7.4.2.tgz",
+@@ -8608,6 +8492,30 @@
+         "node": ">= 0.8.0"
+       }
+     },
++    "node_modules/ora": {
++      "version": "5.4.1",
++      "resolved": "https://registry.npmjs.org/ora/-/ora-5.4.1.tgz",
++      "integrity": "sha512-5b6Y85tPxZZ7QytO+BQzysW31HJku27cRIlkbAXaNx+BdcVi+LlRFmVXzeF6a7JCwJpyw5c4b+YSVImQIrBpuQ==",
++      "devOptional": true,
++      "license": "MIT",
++      "dependencies": {
++        "bl": "^4.1.0",
++        "chalk": "^4.1.0",
++        "cli-cursor": "^3.1.0",
++        "cli-spinners": "^2.5.0",
++        "is-interactive": "^1.0.0",
++        "is-unicode-supported": "^0.1.0",
++        "log-symbols": "^4.1.0",
++        "strip-ansi": "^6.0.0",
++        "wcwidth": "^1.0.1"
++      },
++      "engines": {
++        "node": ">=10"
++      },
++      "funding": {
++        "url": "https://github.com/sponsors/sindresorhus"
++      }
++    },
+     "node_modules/own-keys": {
+       "version": "1.0.2",
+       "resolved": "https://registry.npmjs.org/own-keys/-/own-keys-1.0.2.tgz",
+@@ -8718,6 +8626,22 @@
+         "node": ">=8"
+       }
+     },
++    "node_modules/path-expression-matcher": {
++      "version": "1.6.2",
++      "resolved": "https://registry.npmjs.org/path-expression-matcher/-/path-expression-matcher-1.6.2.tgz",
++      "integrity": "sha512-enSlaiat05iasnzmgNxRj8reFdj3puY2QpNgP1aPIaVfT6nn9ICuPoFlKHk8EN22HcwewshO+mN2DGbkCEOtqQ==",
++      "devOptional": true,
++      "funding": [
++        {
++          "type": "github",
++          "url": "https://github.com/sponsors/NaturalIntelligence"
++        }
++      ],
++      "license": "MIT",
++      "engines": {
++        "node": ">=14.0.0"
++      }
++    },
+     "node_modules/path-is-absolute": {
+       "version": "1.0.1",
+       "resolved": "https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.1.tgz",
+@@ -8875,9 +8799,9 @@
+       }
+     },
+     "node_modules/qs": {
+-      "version": "6.16.2",
+-      "resolved": "https://registry.npmjs.org/qs/-/qs-6.16.2.tgz",
+-      "integrity": "sha512-VYdnB5S7/0IeXzBacUtwNAaM6d7Y/PgYnNC7bJCI6meqA/OgnsQbZMtVW8Dt2D1PHgbHGtYmhSoEIgvt7xZ2ZA==",
++      "version": "6.17.1",
++      "resolved": "https://registry.npmjs.org/qs/-/qs-6.17.1.tgz",
++      "integrity": "sha512-jd3COkaKVgGUW+ZHyEHCG9bH7RoaaiWuMgzsIBjUMVjLAaWGWpoUAVwljVvBHxRu/2qEHnadLGZrkutYUBPQJA==",
+       "devOptional": true,
+       "license": "BSD-3-Clause",
+       "dependencies": {
+@@ -8922,19 +8846,19 @@
+       }
+     },
+     "node_modules/raw-body": {
+-      "version": "2.5.3",
+-      "resolved": "https://registry.npmjs.org/raw-body/-/raw-body-2.5.3.tgz",
+-      "integrity": "sha512-s4VSOf6yN0rvbRZGxs8Om5CWj6seneMwK3oDb4lWDH0UPhWcxwOWw5+qk24bxq87szX1ydrwylIOp2uG1ojUpA==",
++      "version": "3.0.2",
++      "resolved": "https://registry.npmjs.org/raw-body/-/raw-body-3.0.2.tgz",
++      "integrity": "sha512-K5zQjDllxWkf7Z5xJdV0/B0WTNqx6vxG70zJE4N0kBs4LovmEYWJzQGxC9bS9RAKu3bgM40lrd5zoLJ12MQ5BA==",
+       "devOptional": true,
+       "license": "MIT",
+       "dependencies": {
+         "bytes": "~3.1.2",
+         "http-errors": "~2.0.1",
+-        "iconv-lite": "~0.4.24",
++        "iconv-lite": "~0.7.0",
+         "unpipe": "~1.0.0"
+       },
+       "engines": {
+-        "node": ">= 0.8"
++        "node": ">= 0.10"
+       }
+     },
+     "node_modules/react": {
+@@ -9335,6 +9259,20 @@
+         "node": ">=8"
+       }
+     },
++    "node_modules/restore-cursor": {
++      "version": "3.1.0",
++      "resolved": "https://registry.npmjs.org/restore-cursor/-/restore-cursor-3.1.0.tgz",
++      "integrity": "sha512-l+sSefzHpj5qimhFSE5a8nufZYAM3sBSVMAPtYkmC+4EH2anSGaEMXSD0izRQbu9nfyQ9y5JrVmp7E8oZrUjvA==",
++      "devOptional": true,
++      "license": "MIT",
++      "dependencies": {
++        "onetime": "^5.1.0",
++        "signal-exit": "^3.0.2"
++      },
++      "engines": {
++        "node": ">=8"
++      }
++    },
+     "node_modules/reusify": {
+       "version": "1.1.0",
+       "resolved": "https://registry.npmjs.org/reusify/-/reusify-1.1.0.tgz",
+@@ -10193,9 +10131,9 @@
+       }
+     },
+     "node_modules/strnum": {
+-      "version": "1.1.2",
+-      "resolved": "https://registry.npmjs.org/strnum/-/strnum-1.1.2.tgz",
+-      "integrity": "sha512-vrN+B7DBIoTTZjnPNewwhx6cBA/H+IS7rfW68n7XxC1y7uoiGQBxaKzqucGUgavX15dJgiGztLJ8vxuEzwqBdA==",
++      "version": "2.5.1",
++      "resolved": "https://registry.npmjs.org/strnum/-/strnum-2.5.1.tgz",
++      "integrity": "sha512-UM4nTLWzQiDBseVxUGxN0wJzIk0UU89Qi7pKXz9qISo+lhviJikTuikBsK/oFRlpvYHvSdz0TVoLyQ+sEpYwxA==",
+       "devOptional": true,
+       "funding": [
+         {
+@@ -10203,7 +10141,10 @@
+           "url": "https://github.com/sponsors/NaturalIntelligence"
+         }
+       ],
+-      "license": "MIT"
++      "license": "MIT",
++      "dependencies": {
++        "anynum": "^1.0.1"
++      }
+     },
+     "node_modules/styleq": {
+       "version": "0.1.3",
+@@ -10374,17 +10315,39 @@
+       }
+     },
+     "node_modules/type-is": {
+-      "version": "1.6.18",
+-      "resolved": "https://registry.npmjs.org/type-is/-/type-is-1.6.18.tgz",
+-      "integrity": "sha512-TkRKr9sUTxEH8MdfuCSP7VizJyzRNMjj2J2do2Jr3Kym598JVdEksuzPQCnlFPW4ky9Q+iA+ma9BGm06XQBy8g==",
++      "version": "2.1.0",
++      "resolved": "https://registry.npmjs.org/type-is/-/type-is-2.1.0.tgz",
++      "integrity": "sha512-faYHw0anBbc/kWF3zFTEnxSFOAGUX9GFbOBthvDdLsIlEoWOFOtS0zgCiQYwIskL9iGXZL3kAXD8OoZ4GmMATA==",
+       "devOptional": true,
+       "license": "MIT",
+       "dependencies": {
+-        "media-typer": "0.3.0",
+-        "mime-types": "~2.1.24"
++        "content-type": "^2.0.0",
++        "media-typer": "^1.1.0",
++        "mime-types": "^3.0.0"
+       },
+       "engines": {
+-        "node": ">= 0.6"
++        "node": ">= 18"
++      },
++      "funding": {
++        "type": "opencollective",
++        "url": "https://opencollective.com/express"
++      }
++    },
++    "node_modules/type-is/node_modules/mime-types": {
++      "version": "3.0.2",
++      "resolved": "https://registry.npmjs.org/mime-types/-/mime-types-3.0.2.tgz",
++      "integrity": "sha512-Lbgzdk0h4juoQ9fCKXW4by0UJqj+nOOrI9MJ1sSj4nI8aI2eo1qmvQEie4VD1glsS250n15LsWsYtCugiStS5A==",
++      "devOptional": true,
++      "license": "MIT",
++      "dependencies": {
++        "mime-db": "^1.54.0"
++      },
++      "engines": {
++        "node": ">=18"
++      },
++      "funding": {
++        "type": "opencollective",
++        "url": "https://opencollective.com/express"
+       }
+     },
+     "node_modules/typed-array-buffer": {
+@@ -10884,6 +10847,22 @@
+         }
+       }
+     },
++    "node_modules/xml-naming": {
++      "version": "0.3.0",
++      "resolved": "https://registry.npmjs.org/xml-naming/-/xml-naming-0.3.0.tgz",
++      "integrity": "sha512-ghig2TBE/H11aOVgmahA3MhimvkBr6JIYknH/Dhdk10nXwdbIqBJsbfMxpvFPG8bAw77gN29aQWvKpmVoPlvPQ==",
++      "devOptional": true,
++      "funding": [
++        {
++          "type": "github",
++          "url": "https://github.com/sponsors/NaturalIntelligence"
++        }
++      ],
++      "license": "MIT",
++      "engines": {
++        "node": ">=16.0.0"
++      }
++    },
+     "node_modules/y18n": {
+       "version": "5.0.8",
+       "resolved": "https://registry.npmjs.org/y18n/-/y18n-5.0.8.tgz",
+diff --git a/package.json b/package.json
+index e195604..3507816 100644
+--- a/package.json
++++ b/package.json
+@@ -38,9 +38,9 @@
+   },
+   "devDependencies": {
+     "@eslint/js": "9.39.1",
+-    "@react-native-community/cli": "20.0.2",
+-    "@react-native-community/cli-platform-android": "20.0.2",
+-    "@react-native-community/cli-platform-ios": "20.0.2",
++    "@react-native-community/cli": "20.2.0",
++    "@react-native-community/cli-platform-android": "20.2.0",
++    "@react-native-community/cli-platform-ios": "20.2.0",
+     "@react-native/babel-preset": "0.81.5",
+     "@react-native/metro-config": "0.81.5",
+     "@types/react": "~19.1.0",

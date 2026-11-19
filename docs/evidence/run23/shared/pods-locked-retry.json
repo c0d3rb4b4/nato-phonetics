@@ -1,0 +1,25 @@
+{
+  "command": [
+    "env",
+    "PATH=/opt/homebrew/opt/ruby@3.3/bin:/tmp/nato-ruby33-gems/bin:/tmp/nato-phonetics-toolchain/node_modules/.bin:/opt/homebrew/bin:/usr/bin:/bin",
+    "GEM_HOME=/tmp/nato-ruby33-gems",
+    "GEM_PATH=/tmp/nato-ruby33-gems",
+    "BUNDLE_FROZEN=true",
+    "bundle",
+    "exec",
+    "pod",
+    "install",
+    "--deployment",
+    "--project-directory=ios"
+  ],
+  "startedAt": "2026-11-19T10:09:17.708205+00:00",
+  "endedAt": "2026-11-19T10:09:29.978661+00:00",
+  "exitCode": 0,
+  "log": "pods-locked-retry.log",
+  "environment": {
+    "PATH": "/tmp/nato-phonetics-toolchain/node_modules/.bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Users/mac/.codex/tmp/arg0-macos/codex-arg05mnPUr:/Users/mac/.vscode/extensions/openai.chatgpt-26.1111.21308-darwin-arm64/bin/macos-aarch64",
+    "JAVA_HOME": "/tmp/nato-run22-jdk/jdk-17.0.13+11/Contents/Home",
+    "ANDROID_HOME": "/Users/mac/Library/Android/sdk",
+    "DEVELOPER_DIR": "/Applications/Xcode.app/Contents/Developer"
+  }
+}

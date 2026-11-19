@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-19T10:29:13.711023+00:00",
+  "baseHead": "73b57e2015bda66397a75631ca7faac04e34c50a",
+  "buildAndTestSourceId": "38d185116eed8f773585b0d510cd386523729bdb213296c83439de88906aad6c",
+  "finalSourceId": "28f737a3d4f966daa09858bb15024b3b77988dac840eb0d89bd619b045cc5397",
+  "sourcePatchSha256": "e1ba2d47b8ffc6cb3d152f337a8cd4aa5efa059934adde7ec0c915b4cd834628",
+  "changedMaintainedFiles": [
+    "README.md",
+    "docs/APP_REVIEW.md",
+    "docs/DELIVERY_PLAN.md",
+    "docs/NATIVE_BUILDS.md",
+    "docs/SECURITY_REVIEW.md",
+    "docs/security-audit-inventory.json",
+    "package-lock.json",
+    "package.json",
+    "tests/cli-xml.test.mjs"
+  ],
+  "postBuildChanges": [
+    "README.md",
+    "docs/APP_REVIEW.md",
+    "docs/DELIVERY_PLAN.md",
+    "docs/NATIVE_BUILDS.md",
+    "docs/SECURITY_REVIEW.md",
+    "docs/security-audit-inventory.json"
+  ],
+  "productSourceUnchanged": true,
+  "nativeWebFontProviderPermissionStorageSourceUnchanged": true,
+  "runtimeDependenciesUnchanged": true,
+  "existingReviewSnapshotPreserved": true,
+  "priorEvidenceUntouched": true,
+  "sharedTests": {
+    "passed": 151,
+    "failed": 0,
+    "newXmlTests": 4,
+    "compiledYoga177": "reused unchanged at original scope; not newly run"
+  },
+  "artifacts": {
+    "web": {
+      "status": "passed",
+      "sourceId": "38d185116eed8f773585b0d510cd386523729bdb213296c83439de88906aad6c",
+      "artifacts": [
+        {
+          "file": "nato-web.tar.gz",
+          "bytes": 324138,
+          "sha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96"
+        }
+      ],
+      "report": "host/web/report.json"
+    },
+    "android-debug": {
+      "status": "passed",
+      "sourceId": "38d185116eed8f773585b0d510cd386523729bdb213296c83439de88906aad6c",
+      "artifacts": [
+        {
+          "file": "app-debug.apk",
+          "bytes": 102169209,
+          "sha256": "77cfda13cdeabdcc2f15e6224497174c0ef799a6a796bdced0cbd4c688827476"
+        }
+      ],
+      "report": "host/android-debug/report.json"
+    },
+    "android-release": {
+      "status": "passed",
+      "sourceId": "38d185116eed8f773585b0d510cd386523729bdb213296c83439de88906aad6c",
+      "artifacts": [
+        {
+          "file": "app-release.aab",
+          "bytes": 33849142,
+          "sha256": "974cefbcc5001dbd81c4b9e74e177d8b61b2b9ad97f05b8cb419c1f511550972"
+        }
+      ],
+      "report": "host/android-release/report.json"
+    },
+    "ios-simulator": {
+      "status": "passed",
+      "sourceId": "38d185116eed8f773585b0d510cd386523729bdb213296c83439de88906aad6c",
+      "artifacts": [
+        {
+          "file": "ios-simulator.tar.gz",
+          "bytes": 4848708,
+          "sha256": "ac712996dc31cb456c6e590b40b8f737399af33ed704c6d9767c441b17b4fdee"
+        }
+      ],
+      "report": "host/ios-simulator/report.json"
+    }
+  },
+  "rawAuditExitCode": 0,
+  "rawAuditFindings": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "finalReviewGateExitCode": 0,
+  "captures": {
+    "count": 8,
+    "targets": [
+      "web",
+      "android",
+      "ios"
+    ],
+    "allInspected": true,
+    "missingChangedTargets": [],
+    "finalIntegratedMatrix": "unfinished"
+  },
+  "scopeCounts": {
+    "in-progress": 17,
+    "implemented-awaiting-M11": 12,
+    "resolved": 6,
+    "totalRequired": 35
+  },
+  "phaseStatus": "P05\u2013P10 active; no whole phase closes; M11 todo/unperformed",
+  "unrunAndFailedGates": [
+    "P05.2 Android live resizing remains failed3/4 from Run22; no new source regression/repair",
+    "Original iOS gesture/max navigation and strict P3 ink failures remain",
+    "WebKit waiting-update process-close remains failed",
+    "No recognition implementation/provider/permission acceptance",
+    "No actual remote/hosted/native-signing/public-HTTPS/full runtime/AT/integrated acceptance"
+  ],
+  "initialFailures": "shared/cli-xml-tests.log; shared/pods-locked.log; shared/source-hash-checkpoint.json; README.md filename correction",
+  "stopReason": "Verified compatible dependency/native/capture/source/status handoff; next P1 framework or P09 provider integration adds substantial implementation/verification, and actual remote qualification needs a suitable host.",
+  "localLinkCheck": {
+    "count": 834,
+    "broken": []
+  },
+  "finalDiffWhitespaceCheckExitCode": 0
+}

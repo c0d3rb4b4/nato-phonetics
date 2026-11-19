@@ -15,7 +15,7 @@ The [release runbook](RELEASE_RUNBOOK.md) maps version/build metadata, distribut
 | Tool | Repository choice |
 |---|---|
 | Node / npm | `22.23.0` / `10.9.4`; `.nvmrc`, engines and `package-lock.json` |
-| React Native / community CLI | `0.81.5` / `20.0.2` |
+| React Native / community CLI | `0.81.5` / `20.2.0` (Run23 qualified) |
 | Metro family | `0.83.8` within existing RN ranges; [Run 17 parser removal and qualification](evidence/run17/README.md) |
 | Java | JDK 17; Run 03 found Temurin `17.0.13` locally |
 | Gradle / Android Gradle plugin | Wrapper `8.14.3`, checked distribution SHA-256; plugin `8.11.0` from the pinned RN Gradle package |
@@ -202,3 +202,11 @@ Run22 read-only GitHub inventory finds **zero registered self-hosted runners**. 
 
 
 Run22 local setup correction: the historical AnypointStudio JDK directory is absent. An isolated, SHA256-verified Temurin17.0.13+11 is available at `/tmp/nato-run22-jdk/jdk-17.0.13+11/Contents/Home`; use it as process `JAVA_HOME`. Existing `/Applications/Xcode.app/Contents/Developer` works as process `DEVELOPER_DIR` while global xcode-select remains on Command Line Tools. No shell/system configuration was changed. Actual standard builds fit the measured host capacity; no Android framework-source-build capacity guarantee is inferred. [Setup/qualification evidence](evidence/run22/README.md).
+
+## Run23 — compatible CLI/parser qualification
+
+All three direct CLI packages are pinned to20.2.0; the CLI family uses patched fast-xml-parser 5.12.1 through its upstream range. RN 0.81.5/Metro 0.83.8/native provider/Pod lock/project/permissions stay unchanged. The [upstream CLI20/RN0.81 compatibility table](https://github.com/react-native-community/cli/blob/v20.2.0/packages/cli/README.md#compatibility) supplies the candidate family; actual repository qualification is [Run23](evidence/run23/README.md), not inferred from that table. Source-map comments differ; the two CLI XML consumer bodies/config/autolink output remain equal. XML array/attribute/workspace and bounded malformed-stop-node checks run in `npm test`.
+
+Fresh locked npm and Pods installation, 151 tests/types/lint/Expo-free graph, real workspace discovery and local Android Debug/four-ABI unsigned Release/unsigned iOS simulator builds pass. Retrieved/installed default-scale converter/Menu/reference scopes and actual captures are [identified](evidence/run23/candidate.json). Raw audit/review now pass0 with zero findings. The first Pods command failed because vendor/bundle is absent on this host; select the existing Ruby 3.3 gem environment rather than setting BUNDLE_PATH to a nonexistent directory. The successful locked retry changes no Pod lock or native project. Clean installation refreshes native-source timestamps and can require a longer recompilation than a cached build.
+
+All eight Android framework-library hashes match Run22; no Android live-sizing fix is implied. Existing guarded speech/Yoga patches still apply after npm ci. Final native/physical/runtime/provider/signing/remote/integrated gates remain unfinished. Standard build entry points and publication boundaries are unchanged; no Expo/EAS path is introduced.

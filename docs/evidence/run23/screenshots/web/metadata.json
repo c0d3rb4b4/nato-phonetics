@@ -1,0 +1,30 @@
+[
+  {
+    "file": "web/home-desktop-light.png",
+    "date": "2026-11-19T10:13:29.270Z",
+    "browser": "157.0.4341.60",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "theme": "light",
+    "route": "/",
+    "errors": [],
+    "sourceArchiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+    "command": "NODE_PATH=/tmp/nato-run19-browser/node_modules node docs/evidence/run23/capture-web.cjs"
+  },
+  {
+    "file": "web/converter-mobile-dark.png",
+    "date": "2026-11-19T10:13:30.066Z",
+    "browser": "157.0.4341.60",
+    "viewport": {
+      "width": 320,
+      "height": 800
+    },
+    "theme": "dark",
+    "route": "/converter",
+    "errors": [],
+    "sourceArchiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+    "command": "NODE_PATH=/tmp/nato-run19-browser/node_modules node docs/evidence/run23/capture-web.cjs"
+  }
+]

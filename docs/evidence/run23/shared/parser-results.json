@@ -1,0 +1,221 @@
+{
+  "results": [
+    {
+      "xml": "<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\">\n\n    <uses-permission android:name=\"android.permission.INTERNET\" />\n\n    <queries>\n      <intent><action android:name=\"android.intent.action.TTS_SERVICE\" /></intent>\n    </queries>\n\n    <application\n      android:name=\".MainApplication\"\n      android:label=\"@string/app_name\"\n      android:icon=\"@mipmap/ic_launcher\"\n      android:roundIcon=\"@mipmap/ic_launcher_round\"\n      android:allowBackup=\"false\"\n      android:theme=\"@style/AppTheme\"\n      android:usesCleartextTraffic=\"${usesCleartextTraffic}\"\n      android:enableOnBackInvokedCallback=\"false\"\n      android:supportsRtl=\"true\">\n      <activity\n        android:name=\".MainActivity\"\n        android:label=\"@string/app_name\"\n        android:configChanges=\"keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|fontScale\"\n        android:launchMode=\"singleTask\"\n        android:windowSoftInputMode=\"adjustResize\"\n        android:exported=\"true\">\n        <intent-filter>\n            <action android:name=\"android.intent.action.MAIN\" />\n            <category android:name=\"android.intent.category.LAUNCHER\" />\n        </intent-filter>\n        <intent-filter>\n          <action android:name=\"android.intent.action.VIEW\" />\n          <category android:name=\"android.intent.category.DEFAULT\" />\n          <category android:name=\"android.intent.category.BROWSABLE\" />\n          <data android:scheme=\"natophonetics\" />\n        </intent-filter>\n      </activity>\n    </application>\n</manifest>\n",
+      "old": {
+        "manifest": {
+          "uses-permission": {
+            "@_android:name": "android.permission.INTERNET"
+          },
+          "queries": {
+            "intent": {
+              "action": {
+                "@_android:name": "android.intent.action.TTS_SERVICE"
+              }
+            }
+          },
+          "application": {
+            "activity": {
+              "intent-filter": [
+                {
+                  "action": {
+                    "@_android:name": "android.intent.action.MAIN"
+                  },
+                  "category": {
+                    "@_android:name": "android.intent.category.LAUNCHER"
+                  }
+                },
+                {
+                  "action": {
+                    "@_android:name": "android.intent.action.VIEW"
+                  },
+                  "category": [
+                    {
+                      "@_android:name": "android.intent.category.DEFAULT"
+                    },
+                    {
+                      "@_android:name": "android.intent.category.BROWSABLE"
+                    }
+                  ],
+                  "data": {
+                    "@_android:scheme": "natophonetics"
+                  }
+                }
+              ],
+              "@_android:name": ".MainActivity",
+              "@_android:label": "@string/app_name",
+              "@_android:configChanges": "keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|fontScale",
+              "@_android:launchMode": "singleTask",
+              "@_android:windowSoftInputMode": "adjustResize",
+              "@_android:exported": "true"
+            },
+            "@_android:name": ".MainApplication",
+            "@_android:label": "@string/app_name",
+            "@_android:icon": "@mipmap/ic_launcher",
+            "@_android:roundIcon": "@mipmap/ic_launcher_round",
+            "@_android:allowBackup": "false",
+            "@_android:theme": "@style/AppTheme",
+            "@_android:usesCleartextTraffic": "${usesCleartextTraffic}",
+            "@_android:enableOnBackInvokedCallback": "false",
+            "@_android:supportsRtl": "true"
+          },
+          "@_xmlns:android": "http://schemas.android.com/apk/res/android"
+        }
+      },
+      "current": {
+        "manifest": {
+          "uses-permission": {
+            "@_android:name": "android.permission.INTERNET"
+          },
+          "queries": {
+            "intent": {
+              "action": {
+                "@_android:name": "android.intent.action.TTS_SERVICE"
+              }
+            }
+          },
+          "application": {
+            "activity": {
+              "intent-filter": [
+                {
+                  "action": {
+                    "@_android:name": "android.intent.action.MAIN"
+                  },
+                  "category": {
+                    "@_android:name": "android.intent.category.LAUNCHER"
+                  }
+                },
+                {
+                  "action": {
+                    "@_android:name": "android.intent.action.VIEW"
+                  },
+                  "category": [
+                    {
+                      "@_android:name": "android.intent.category.DEFAULT"
+                    },
+                    {
+                      "@_android:name": "android.intent.category.BROWSABLE"
+                    }
+                  ],
+                  "data": {
+                    "@_android:scheme": "natophonetics"
+                  }
+                }
+              ],
+              "@_android:name": ".MainActivity",
+              "@_android:label": "@string/app_name",
+              "@_android:configChanges": "keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|fontScale",
+              "@_android:launchMode": "singleTask",
+              "@_android:windowSoftInputMode": "adjustResize",
+              "@_android:exported": "true"
+            },
+            "@_android:name": ".MainApplication",
+            "@_android:label": "@string/app_name",
+            "@_android:icon": "@mipmap/ic_launcher",
+            "@_android:roundIcon": "@mipmap/ic_launcher_round",
+            "@_android:allowBackup": "false",
+            "@_android:theme": "@style/AppTheme",
+            "@_android:usesCleartextTraffic": "${usesCleartextTraffic}",
+            "@_android:enableOnBackInvokedCallback": "false",
+            "@_android:supportsRtl": "true"
+          },
+          "@_xmlns:android": "http://schemas.android.com/apk/res/android"
+        }
+      },
+      "equal": true
+    },
+    {
+      "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Workspace\n   version = \"1.0\">\n   <FileRef\n      location = \"group:NATOPhonetics.xcodeproj\">\n   </FileRef>\n   <FileRef\n      location = \"group:Pods/Pods.xcodeproj\">\n   </FileRef>\n</Workspace>\n",
+      "old": {
+        "?xml": {
+          "@_version": "1.0",
+          "@_encoding": "UTF-8"
+        },
+        "Workspace": {
+          "FileRef": [
+            {
+              "@_location": "group:NATOPhonetics.xcodeproj"
+            },
+            {
+              "@_location": "group:Pods/Pods.xcodeproj"
+            }
+          ],
+          "@_version": "1.0"
+        }
+      },
+      "current": {
+        "?xml": {
+          "@_version": "1.0",
+          "@_encoding": "UTF-8"
+        },
+        "Workspace": {
+          "FileRef": [
+            {
+              "@_location": "group:NATOPhonetics.xcodeproj"
+            },
+            {
+              "@_location": "group:Pods/Pods.xcodeproj"
+            }
+          ],
+          "@_version": "1.0"
+        }
+      },
+      "equal": true
+    },
+    {
+      "xml": "<Workspace><FileRef location=\"group:Café &amp; App.xcodeproj\"/></Workspace>",
+      "old": {
+        "Workspace": {
+          "FileRef": {
+            "@_location": "group:Café & App.xcodeproj"
+          }
+        }
+      },
+      "current": {
+        "Workspace": {
+          "FileRef": {
+            "@_location": "group:Café & App.xcodeproj"
+          }
+        }
+      },
+      "equal": true
+    },
+    {
+      "xml": "<Workspace><FileRef location=\"group:Caf&#233;.xcodeproj\"/></Workspace>",
+      "old": {
+        "Workspace": {
+          "FileRef": {
+            "@_location": "group:Caf&#233;.xcodeproj"
+          }
+        }
+      },
+      "current": {
+        "Workspace": {
+          "FileRef": {
+            "@_location": "group:Caf&#233;.xcodeproj"
+          }
+        }
+      },
+      "equal": true
+    }
+  ],
+  "bounded": {
+    "old4.5.7": {
+      "exitCode": null,
+      "signal": "SIGTERM",
+      "error": "ETIMEDOUT",
+      "elapsedMs": 1008.5735419999999,
+      "stdout": "",
+      "stderr": ""
+    },
+    "current5.12.1": {
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "elapsedMs": 44.838457999999946,
+      "stdout": "Unexpected end of stop\n",
+      "stderr": ""
+    }
+  },
+  "scope": "One bounded local corpus, not comprehensive fuzzing or a timing guarantee. Numeric entities are unchanged from prior parser defaults; initial tests incorrectly expected decoding."
+}

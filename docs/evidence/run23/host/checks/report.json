@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "mode": "checks",
+  "startedAt": "2026-11-19T10:08:23.460Z",
+  "status": "passed",
+  "host": {
+    "platform": "darwin",
+    "arch": "arm64",
+    "release": "25.6.0",
+    "node": "22.23.0"
+  },
+  "jobs": 1,
+  "install": false,
+  "preflightOnly": false,
+  "remoteJob": null,
+  "steps": [
+    {
+      "name": "check-dependencies",
+      "executable": "npm",
+      "args": [
+        "run",
+        "check:dependencies"
+      ],
+      "log": "logs/01-check-dependencies.log",
+      "startedAt": "2026-11-19T10:08:23.774Z",
+      "endedAt": "2026-11-19T10:08:24.442Z",
+      "exitCode": 0,
+      "signal": null
+    },
+    {
+      "name": "typecheck",
+      "executable": "npm",
+      "args": [
+        "run",
+        "typecheck"
+      ],
+      "log": "logs/02-typecheck.log",
+      "startedAt": "2026-11-19T10:08:24.442Z",
+      "endedAt": "2026-11-19T10:08:26.108Z",
+      "exitCode": 0,
+      "signal": null
+    },
+    {
+      "name": "lint",
+      "executable": "npm",
+      "args": [
+        "run",
+        "lint"
+      ],
+      "log": "logs/03-lint.log",
+      "startedAt": "2026-11-19T10:08:26.108Z",
+      "endedAt": "2026-11-19T10:08:27.895Z",
+      "exitCode": 0,
+      "signal": null
+    },
+    {
+      "name": "test",
+      "executable": "npm",
+      "args": [
+        "run",
+        "test"
+      ],
+      "log": "logs/04-test.log",
+      "startedAt": "2026-11-19T10:08:27.896Z",
+      "endedAt": "2026-11-19T10:08:32.936Z",
+      "exitCode": 0,
+      "signal": null
+    },
+    {
+      "name": "audit-review",
+      "executable": "npm",
+      "args": [
+        "run",
+        "audit:review"
+      ],
+      "log": "logs/05-audit-review.log",
+      "startedAt": "2026-11-19T10:08:32.936Z",
+      "endedAt": "2026-11-19T10:08:33.803Z",
+      "exitCode": 0,
+      "signal": null
+    }
+  ],
+  "artifacts": [],
+  "sourceId": "38d185116eed8f773585b0d510cd386523729bdb213296c83439de88906aad6c",
+  "preflight": {
+    "npm": "10.9.4",
+    "diskAvailableBytes": 8534409216,
+    "totalMemoryBytes": 8589934592,
+    "freeMemoryBytes": 132481024,
+    "cpus": 8,
+    "tools": {},
+    "capacityPolicy": "Measured inventory; no universal minimum or guarantee that a first build fits."
+  },
+  "exitCode": 0,
+  "endedAt": "2026-11-19T10:08:33.915Z"
+}
