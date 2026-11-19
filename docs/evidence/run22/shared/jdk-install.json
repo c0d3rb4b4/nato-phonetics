@@ -1,0 +1,20 @@
+{
+  "provider": "Eclipse Temurin",
+  "version": "17.0.13+11",
+  "archiveSha256": "d8b2f77f755d06e81a540834c5be22ed86f3c8a51a20396606c074303f8f9e2d",
+  "bytes": 185240495,
+  "primaryAssets": [
+    {
+      "browser_download_url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.13%2B11/OpenJDK17U-jdk_aarch64_mac_hotspot_17.0.13_11.tar.gz",
+      "name": "OpenJDK17U-jdk_aarch64_mac_hotspot_17.0.13_11.tar.gz",
+      "size": 185240495
+    },
+    {
+      "browser_download_url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.13%2B11/OpenJDK17U-jdk_aarch64_mac_hotspot_17.0.13_11.tar.gz.sha256.txt",
+      "name": "OpenJDK17U-jdk_aarch64_mac_hotspot_17.0.13_11.tar.gz.sha256.txt",
+      "size": 119
+    }
+  ],
+  "installation": "/tmp/nato-run22-jdk",
+  "scope": "isolated task tool; no shell/system configuration changed"
+}

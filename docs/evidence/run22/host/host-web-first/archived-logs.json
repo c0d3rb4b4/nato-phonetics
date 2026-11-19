@@ -1,0 +1,20 @@
+[
+  {
+    "reportLog": "logs/01-package-regressions.log",
+    "durableLog": "logs/01-package-regressions.log.gz",
+    "uncompressedSha256": "82257eadc96aa6c1ab357eae637d4af1dceca1ae62bb051407578b39623ff717",
+    "bytes": 1599
+  },
+  {
+    "reportLog": "logs/02-web-build.log",
+    "durableLog": "logs/02-web-build.log.gz",
+    "uncompressedSha256": "434e94175cd67feae0d35af4b2efa29f4d62dc1154fc9f1b03d244a3ee62c9fd",
+    "bytes": 471
+  },
+  {
+    "reportLog": "logs/03-web-package.log",
+    "durableLog": "logs/03-web-package.log.gz",
+    "uncompressedSha256": "6e83f85712750683a69d9863eab932485e432e99fae1b91c929a3faaafb1b974",
+    "bytes": 3763
+  }
+]

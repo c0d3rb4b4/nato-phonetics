@@ -128,6 +128,9 @@ Android now handles `fontScale` in the Activity, refreshes React Native display 
 
 ## Self-hosted CI runner
 
+Run22 replaces the serial audit/build chain with independent checks and selected unsigned native modes. See the [shared host execution guide](#shared-host-execution--run22) below; the earlier workflow description records its historical starting point.
+
+
 `.github/workflows/native-builds.yml` requires labels `self-hosted`, `macOS`, `ARM64`, `nato-phonetics`. The current Ruby lock supports Apple silicon Darwin; Intel runners are not verified by this lock. Prepare Ruby3.3.13/Bundler2.4.22, the documented Android SDK/licenses and working Xcode before dispatch. CI uses `npm ci`, frozen Bundler and `pod install --deployment`, then direct local builds and artifact upload. Workflow dispatch does not publish or approve release. If a local Homebrew Ruby reports a missing certificate issuer, configure its existing trusted CA bundle (Run03 used `/opt/homebrew/etc/ca-certificates/cert.pem`); do not disable certificate verification.
 
 The [React Native iOS 27 lifecycle report](https://github.com/react/react-native/issues/58545) motivated the owned scene migration in Run 04. The new scene bootstrap is compiled with SDK 27.2 and verified on the available iOS 26.2 runtime. **iOS 27 runtime behavior remains unverified**, because that runtime was unavailable; retain it in P10 compatibility checks. This is a technical coverage limitation, not an outstanding owner licence action or a claim of support inferred from the deployment minimum.
@@ -165,3 +168,37 @@ The [causal diagnosis and patch contract](NATIVE_TEXT_PRECISION.md) replace the 
 ## Run20 — Android diagnostics without a new native candidate
 
 [Normal-startup measurement tracing](ANDROID_TEXT_MEASUREMENT.md) reuses the exact installed/built Run17 Debug APK and records the diagnostic/product loaded bundles separately. C++/Java calls are observed through isolated tooling; no native source/flag/cache/package/lock change or rebuild occurs. The live/cold gate still fails3/4. Normal product entry/scale are restored and actual alphabet captured before owned Metro/trace daemon/emulator shutdown. [Artifact identity](evidence/run20/android/artifact.json), [captures/limits](evidence/run20/screenshots/index.md). A guarded source-build/regression/ABI/state/tile cycle remains a separate L/high-uncertainty P05.2 forecast. iOS sources/build scopes are unchanged.
+
+## Shared host execution — Run22
+
+[P10.8](DELIVERY_PLAN.md#p108--remote-build-pipeline-and-reusable-host-execution) is **active/partial**. `scripts/host-build.cjs` is the common entry point for Actions and a prepared local/remote host. It invokes the existing Gradle/Xcode/web implementations, measures available disk/memory, checks pinned Node/npm and platform tools, limits native workers (default1, explicit1–4) and takes a checkout build lock. No minimum free-space guess is a gate or a promise that a first build fits.
+
+Use a fresh output directory for every attempt. Bootstrap Node22.23.0/npm10.9.4 first; prepare JDK17/SDK36/Build Tools36.0.0/NDK27.1.12297006 for Android, or macOS/Xcode and Ruby3.3.13/Bundler2.4.22 for locked iOS installation. SDK licences and signing remain their existing prerequisites. The wrapper does not install SDKs or enroll a runner.
+
+```sh
+npm run build:host -- web --install --output artifacts/host-web-001
+npm run build:host -- android-debug --install --output artifacts/host-android-001
+npm run build:host -- android-release --output artifacts/host-aab-001
+npm run build:host -- ios-simulator --install --output artifacts/host-ios-001
+npm run build:host -- checks --output artifacts/host-checks-001
+npm run build:host -- android-debug --preflight-only --output artifacts/preflight-001
+```
+
+`--install` runs `npm ci`; iOS additionally uses frozen Bundler and `pod install --deployment`. Without it, the caller supplies the already locked/qualified dependency installation. `checks` records dependency/type/lint/test/audit outcomes independently and exits nonzero if any fails. No audit failure becomes acceptance. `web` runs packaging regressions, builds production pages and packages the verified static archive. Android emits APK/AAB; iOS simulator `.app`, archive and export outputs use tar.gz to preserve executable bits and bundle structure through Actions upload. `ios-archive`/`ios-export` remain separately selected signing-capable modes and are absent from the unsigned workflow; export uses the existing `NATO_EXPORT_OPTIONS_PLIST` environment input. No signing material is logged or included in source transfer.
+
+Each output contains `report.json`, `preflight.json` when preflight completes, per-command `logs/`, `source.json`, `source.patch`, `source-untracked/` when needed, and successful product SHA256/size records. Failed commands keep actual child exit/signal details; a failed build never collects a stale output. Source changes during execution reject qualification. Existing job directories are never overwritten. A concurrent invocation fails with its own report while preserving the original `artifacts/.host-build.lock/owner.json`; after an interrupted/killed job inspect its PID and prove no build is running before removing that stale lock. Logs/evidence and durable product copies are retained; only the owned lock is removed automatically. Standard Gradle/Pods/Xcode caches and products remain for reuse, subject to measured host capacity.
+
+Source identity covers tracked and unignored source/configuration/docs/test files, their executable bits/symlink targets and deletions. Historical/generated `docs/evidence/` and ignored local data/build/cache/signing files are excluded from the standard-build identity. The patch is relative to the recorded HEAD; untracked source files are copied separately. For a dirty candidate, transfer these reviewed inputs onto that exact HEAD over an authorized channel, then require its `sourceId`:
+
+```sh
+node scripts/host-build.cjs web --install --expected-source <sourceId> --output artifacts/remote-web-001
+```
+
+Verify the reconstructed source ID before accepting outputs; also compare artifact hashes after retrieval. A source manifest is not an automatic remote transport or permission to send a candidate elsewhere. Runner-specific SSH/checkout/bootstrap is outside build logic. Record a remote job ID (Actions records its run URL/attempt automatically), retrieve the entire evidence folder, and install the matching native artifact for any affected runtime regression/captures. A second direct invocation on that host demonstrates execution outside the Actions wrapper.
+
+The manual native workflow supports `all`, `android-debug`, `android-release`, `ios-simulator`. Its private job accepts only `main`/`develop`, uses the existing trusted labels and serializes its matrix; a separate Ubuntu checks job retains any failing check/audit status without a dependency that hides unsigned artifacts. All steps upload identified evidence on failure. The existing three-engine web distribution jobs use the same host entry point; browser/hosting checks remain their own gates. The selected workflow ref must already contain the reviewed implementation. Use `gh workflow run native-builds.yml --ref main -f mode=all`, inspect `gh run view <run-id>`, and retrieve `gh run download <run-id> --dir <new-directory>` only against the authorized candidate. These are instructions, not a recorded dispatch.
+
+Run22 read-only GitHub inventory finds **zero registered self-hosted runners**. No runner enrollment, workflow dispatch, remote build, signing or publication is performed. Actual remote standard outputs, source reconstruction/retrieval and on-host second invocation remain P10.8 engineering; only restricted enrollment/access belongs in M11.2. Framework diagnostic selection remains unavailable until P05.2 supplies a justified regression/patch and pinned source/CMake/ABI configuration; ordinary builds retain Maven RN0.81.5. [Run22 evidence and limitations](evidence/run22/README.md).
+
+
+Run22 local setup correction: the historical AnypointStudio JDK directory is absent. An isolated, SHA256-verified Temurin17.0.13+11 is available at `/tmp/nato-run22-jdk/jdk-17.0.13+11/Contents/Home`; use it as process `JAVA_HOME`. Existing `/Applications/Xcode.app/Contents/Developer` works as process `DEVELOPER_DIR` while global xcode-select remains on Command Line Tools. No shell/system configuration was changed. Actual standard builds fit the measured host capacity; no Android framework-source-build capacity guarantee is inferred. [Setup/qualification evidence](evidence/run22/README.md).

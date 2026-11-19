@@ -147,15 +147,11 @@ jobs:
         with:
           node-version-file: .nvmrc
           cache: npm
-      - name: Pin npm and install app
-        run: |
-          npm install --global npm@10.9.4
-          npm ci
+      - name: Pin bootstrap npm
+        run: npm install --global npm@10.9.4
       - name: Build and package static candidate
         run: |
-          node --test tests/web-package.test.mjs
-          npm run export:web
-          npm run package:web -- dist artifacts/web-distribution/nato-web.tar.gz
+          node scripts/host-build.cjs web --install --output artifacts/web-distribution/build
       - name: Install checksum-pinned Caddy and isolated browser
         run: |
           mkdir -p "$RUNNER_TEMP/nato-caddy"
@@ -167,14 +163,14 @@ jobs:
           node "$RUNNER_TEMP/nato-host-browser/node_modules/playwright/cli.js" install --with-deps ${{ matrix.engine }}
           echo "NODE_PATH=$RUNNER_TEMP/nato-host-browser/node_modules" >> "$GITHUB_ENV"
       - name: Qualify packaged host, forward update and rollback
-        run: node scripts/verify-web-host.cjs artifacts/web-distribution/nato-web.tar.gz artifacts/web-distribution/host ${{ matrix.engine }}
+        run: node scripts/verify-web-host.cjs artifacts/web-distribution/build/nato-web.tar.gz artifacts/web-distribution/host ${{ matrix.engine }}
       - name: Keep candidate, report and screenshots
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: web-distribution-${{ matrix.engine }}-${{ github.sha }}
           path: |
-            artifacts/web-distribution/nato-web.tar.gz
+            artifacts/web-distribution/build/
             artifacts/web-distribution/host/report.json
             artifacts/web-distribution/host/caddy.log
             artifacts/web-distribution/host/screenshots/

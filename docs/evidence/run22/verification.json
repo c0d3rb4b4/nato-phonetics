@@ -1,0 +1,90 @@
+{
+  "date": "2026-11-19",
+  "baselineHead": "f8c0a3c2a32b5f65dfcfbea70b94677a3a6113b5",
+  "finalHead": "f8c0a3c2a32b5f65dfcfbea70b94677a3a6113b5",
+  "changedBaselineFiles": [
+    ".github/workflows/ci.yml",
+    ".github/workflows/native-builds.yml",
+    "README.md",
+    "docs/ANDROID_TEXT_MEASUREMENT.md",
+    "docs/APP_REVIEW.md",
+    "docs/DELIVERY_PLAN.md",
+    "docs/NATIVE_BUILDS.md",
+    "docs/SECURITY_REVIEW.md",
+    "docs/security-audit-inventory.json",
+    "package.json",
+    "scripts/build-native.cjs"
+  ],
+  "baselineFiles": 4028,
+  "allOtherBaselineFilesPreserved": true,
+  "originalReviewPrefixPreserved": true,
+  "originalReadmePrefixPreserved": true,
+  "appNativeWebFontsProviderPermissionStorageInputsPreserved": true,
+  "dependenciesAndLockPreserved": true,
+  "ledgerCounts": {
+    "resolved": 5,
+    "implemented-awaiting-M11": 12,
+    "in-progress": 18
+  },
+  "phases": {
+    "P00": "agent-done",
+    "P01": "agent-done",
+    "P02": "agent-done",
+    "P03": "agent-done",
+    "P04": "agent-done",
+    "P05": "active",
+    "P06": "active",
+    "P07": "active",
+    "P08": "active",
+    "P09": "active",
+    "P10": "active",
+    "M11": "todo"
+  },
+  "M11": "all7 todo; no human results",
+  "P10.8": "active/partial; remote unperformed",
+  "screenshots": {
+    "inspected": 10,
+    "productViews": 5,
+    "failingFontDiagnostics": 4,
+    "rejectedLoadingCapture": 1,
+    "missingChangedTarget": null,
+    "fullIntegratedMatrix": "unfinished"
+  },
+  "hostOutputs": "actual local APK/AAB/iOS simulator/web; each report owns invocation source identity; final docs/security metadata follow builds",
+  "rawAudit": {
+    "exit": 1,
+    "high": 0,
+    "critical": 0,
+    "low": 7
+  },
+  "reviewAuditExit": 0,
+  "sharedTests": 147,
+  "newHostBehavioralTests": 8,
+  "frameworkNativeFix": "unperformed; live/cold fails3/4",
+  "remoteRunners": 0,
+  "priorEvidenceScopesReused": "Run21 unchanged archive/3-engine scopes; prior177 compiled/native/AT limits retained; no broad rerun",
+  "finalSourceIdentity": "source-identity.json",
+  "sourceIdentityDocDelta": "Final docs/security-inventory differ from command snapshots; product inputs and tested host implementation are unchanged. Final Android inspector archive is explicitly unperformed; actual APK/source/entry/Home scope recorded.",
+  "diskAvailableBytes": 6506151936,
+  "newOrChangedRelativeLinks": 104,
+  "newMissingLinks": [],
+  "gitDiffCheck": "pass",
+  "stagedDiffCheck": "pass",
+  "stagedPatchPreserved": true,
+  "implementationDiffReview": {
+    "result": "complete for this partial batch",
+    "reviewed": [
+      "shared host runner and8 behavioral tests",
+      "native job trust/ref/matrix and independent quality/failure evidence",
+      "web distribution reuse of existing packaging/hosting gates",
+      "native worker selection and actual artifact results",
+      "final current status/ledger/security/manual/screenshot boundaries"
+    ],
+    "limitations": [
+      "remote/hosted Actions execution unperformed",
+      "framework diagnostic selector withheld until justified native regression/patch",
+      "final Android inspector JS archive unperformed; scoped matching APK/source/entry/Home proof only"
+    ],
+    "sourceAndDependencies": "No app/native/layout/font/provider/permission/storage/dependency/lock change; final source manifest records tooling/docs/test candidate."
+  }
+}

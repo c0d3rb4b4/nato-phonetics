@@ -7,6 +7,11 @@ const path = require('node:path');
 const root = path.resolve(__dirname, '..');
 const artifacts = path.join(root, 'artifacts');
 const mode = process.argv[2];
+const jobs = Number(process.env.NATO_BUILD_JOBS || 1);
+if (!Number.isInteger(jobs) || jobs < 1 || jobs > 4) {
+  console.error('NATO_BUILD_JOBS must be an integer from 1 to 4.');
+  process.exit(1);
+}
 function run(command, args, cwd = root) {
   const result = spawnSync(command, args, { cwd, stdio: 'inherit', env: process.env });
   if (result.error) console.error(result.error.message);
@@ -15,20 +20,20 @@ function run(command, args, cwd = root) {
 mkdirSync(artifacts, { recursive: true });
 switch (mode) {
   case 'android-debug':
-    run(process.platform === 'win32' ? 'gradlew.bat' : './gradlew', [':app:assembleDebug', '--no-daemon'], path.join(root, 'android'));
+    run(process.platform === 'win32' ? 'gradlew.bat' : './gradlew', [':app:assembleDebug', '--no-daemon', `--max-workers=${jobs}`], path.join(root, 'android'));
     break;
   case 'android-release':
-    run(process.platform === 'win32' ? 'gradlew.bat' : './gradlew', [':app:bundleRelease', '--no-daemon'], path.join(root, 'android'));
+    run(process.platform === 'win32' ? 'gradlew.bat' : './gradlew', [':app:bundleRelease', '--no-daemon', `--max-workers=${jobs}`], path.join(root, 'android'));
     break;
   case 'ios-simulator':
     run('xcodebuild', ['-workspace', 'ios/NATOPhonetics.xcworkspace', '-scheme', 'NATOPhonetics',
       '-configuration', 'Release', '-sdk', 'iphonesimulator', '-destination', 'generic/platform=iOS Simulator',
-      `ARCHS=${process.arch === 'arm64' ? 'arm64' : 'x86_64'}`, '-jobs', '4',
+      `ARCHS=${process.arch === 'arm64' ? 'arm64' : 'x86_64'}`, '-jobs', String(jobs),
       '-derivedDataPath', 'artifacts/ios-simulator', 'ONLY_ACTIVE_ARCH=YES', 'CODE_SIGNING_ALLOWED=NO', 'build']);
     break;
   case 'ios-archive':
     run('xcodebuild', ['-workspace', 'ios/NATOPhonetics.xcworkspace', '-scheme', 'NATOPhonetics',
-      '-configuration', 'Release', '-destination', 'generic/platform=iOS',
+      '-configuration', 'Release', '-destination', 'generic/platform=iOS', '-jobs', String(jobs),
       '-archivePath', 'artifacts/NATOPhonetics.xcarchive', 'archive']);
     break;
   case 'ios-export': {

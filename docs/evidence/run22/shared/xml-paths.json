@@ -1,0 +1,480 @@
+[
+  {
+    "name": "fast-xml-parser",
+    "version": "4.5.7",
+    "location": "node_modules/fast-xml-parser",
+    "isWorkspace": false,
+    "dependents": [
+      {
+        "type": "prod",
+        "name": "fast-xml-parser",
+        "spec": "^4.4.1",
+        "from": {
+          "name": "@react-native-community/cli-config-android",
+          "version": "20.0.2",
+          "location": "node_modules/@react-native-community/cli-config-android",
+          "isWorkspace": false,
+          "dependents": [
+            {
+              "type": "prod",
+              "name": "@react-native-community/cli-config-android",
+              "spec": "20.0.2",
+              "from": {
+                "name": "@react-native-community/cli-platform-android",
+                "version": "20.0.2",
+                "location": "node_modules/@react-native-community/cli-platform-android",
+                "isWorkspace": false,
+                "dependents": [
+                  {
+                    "type": "dev",
+                    "name": "@react-native-community/cli-platform-android",
+                    "spec": "20.0.2",
+                    "from": {
+                      "location": "/Users/mac/dev/apps/nato-phonetics"
+                    }
+                  },
+                  {
+                    "type": "prod",
+                    "name": "@react-native-community/cli-platform-android",
+                    "spec": "20.0.2",
+                    "from": {
+                      "name": "@react-native-community/cli-doctor",
+                      "version": "20.0.2",
+                      "location": "node_modules/@react-native-community/cli-doctor",
+                      "isWorkspace": false,
+                      "dependents": [
+                        {
+                          "type": "prod",
+                          "name": "@react-native-community/cli-doctor",
+                          "spec": "20.0.2",
+                          "from": {
+                            "name": "@react-native-community/cli",
+                            "version": "20.0.2",
+                            "location": "node_modules/@react-native-community/cli",
+                            "isWorkspace": false,
+                            "dependents": [
+                              {
+                                "type": "dev",
+                                "name": "@react-native-community/cli",
+                                "spec": "20.0.2",
+                                "from": {
+                                  "location": "/Users/mac/dev/apps/nato-phonetics"
+                                }
+                              },
+                              {
+                                "type": "peerOptional",
+                                "name": "@react-native-community/cli",
+                                "spec": "*",
+                                "from": {
+                                  "name": "@react-native/community-cli-plugin",
+                                  "version": "0.81.5",
+                                  "location": "node_modules/@react-native/community-cli-plugin",
+                                  "isWorkspace": false,
+                                  "dependents": [
+                                    {
+                                      "type": "prod",
+                                      "name": "@react-native/community-cli-plugin",
+                                      "spec": "0.81.5",
+                                      "from": {
+                                        "name": "react-native",
+                                        "version": "0.81.5",
+                                        "location": "node_modules/react-native",
+                                        "isWorkspace": false,
+                                        "dependents": [
+                                          {
+                                            "type": "prod",
+                                            "name": "react-native",
+                                            "spec": "0.81.5",
+                                            "from": {
+                                              "location": "/Users/mac/dev/apps/nato-phonetics"
+                                            }
+                                          },
+                                          {
+                                            "type": "peer",
+                                            "name": "react-native",
+                                            "spec": "*",
+                                            "from": {
+                                              "name": "react-native-safe-area-context",
+                                              "version": "5.6.2",
+                                              "location": "node_modules/react-native-safe-area-context",
+                                              "isWorkspace": false,
+                                              "dependents": [
+                                                {
+                                                  "type": "prod",
+                                                  "name": "react-native-safe-area-context",
+                                                  "spec": "~5.6.0",
+                                                  "from": {
+                                                    "location": "/Users/mac/dev/apps/nato-phonetics"
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "type": "peer",
+                                            "name": "react-native",
+                                            "spec": "^0.0.0-0 || >=0.65 <1.0",
+                                            "from": {
+                                              "name": "@react-native-async-storage/async-storage",
+                                              "version": "2.2.0",
+                                              "location": "node_modules/@react-native-async-storage/async-storage",
+                                              "isWorkspace": false,
+                                              "dependents": [
+                                                {
+                                                  "type": "prod",
+                                                  "name": "@react-native-async-storage/async-storage",
+                                                  "spec": "2.2.0",
+                                                  "from": {
+                                                    "location": "/Users/mac/dev/apps/nato-phonetics"
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "type": "peer",
+                                            "name": "react-native",
+                                            "spec": "*",
+                                            "from": {
+                                              "name": "@react-native/virtualized-lists",
+                                              "version": "0.81.5",
+                                              "location": "node_modules/react-native/node_modules/@react-native/virtualized-lists",
+                                              "isWorkspace": false,
+                                              "dependents": [
+                                                {
+                                                  "type": "prod",
+                                                  "name": "@react-native/virtualized-lists",
+                                                  "spec": "0.81.5",
+                                                  "from": {
+                                                    "name": "react-native",
+                                                    "version": "0.81.5"
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "prod",
+        "name": "fast-xml-parser",
+        "spec": "^4.4.1",
+        "from": {
+          "name": "@react-native-community/cli-platform-apple",
+          "version": "20.0.2",
+          "location": "node_modules/@react-native-community/cli-platform-apple",
+          "isWorkspace": false,
+          "dependents": [
+            {
+              "type": "prod",
+              "name": "@react-native-community/cli-platform-apple",
+              "spec": "20.0.2",
+              "from": {
+                "name": "@react-native-community/cli-doctor",
+                "version": "20.0.2",
+                "location": "node_modules/@react-native-community/cli-doctor",
+                "isWorkspace": false,
+                "dependents": [
+                  {
+                    "type": "prod",
+                    "name": "@react-native-community/cli-doctor",
+                    "spec": "20.0.2",
+                    "from": {
+                      "name": "@react-native-community/cli",
+                      "version": "20.0.2",
+                      "location": "node_modules/@react-native-community/cli",
+                      "isWorkspace": false,
+                      "dependents": [
+                        {
+                          "type": "dev",
+                          "name": "@react-native-community/cli",
+                          "spec": "20.0.2",
+                          "from": {
+                            "location": "/Users/mac/dev/apps/nato-phonetics"
+                          }
+                        },
+                        {
+                          "type": "peerOptional",
+                          "name": "@react-native-community/cli",
+                          "spec": "*",
+                          "from": {
+                            "name": "@react-native/community-cli-plugin",
+                            "version": "0.81.5",
+                            "location": "node_modules/@react-native/community-cli-plugin",
+                            "isWorkspace": false,
+                            "dependents": [
+                              {
+                                "type": "prod",
+                                "name": "@react-native/community-cli-plugin",
+                                "spec": "0.81.5",
+                                "from": {
+                                  "name": "react-native",
+                                  "version": "0.81.5",
+                                  "location": "node_modules/react-native",
+                                  "isWorkspace": false,
+                                  "dependents": [
+                                    {
+                                      "type": "prod",
+                                      "name": "react-native",
+                                      "spec": "0.81.5",
+                                      "from": {
+                                        "location": "/Users/mac/dev/apps/nato-phonetics"
+                                      }
+                                    },
+                                    {
+                                      "type": "peer",
+                                      "name": "react-native",
+                                      "spec": "*",
+                                      "from": {
+                                        "name": "react-native-safe-area-context",
+                                        "version": "5.6.2",
+                                        "location": "node_modules/react-native-safe-area-context",
+                                        "isWorkspace": false,
+                                        "dependents": [
+                                          {
+                                            "type": "prod",
+                                            "name": "react-native-safe-area-context",
+                                            "spec": "~5.6.0",
+                                            "from": {
+                                              "location": "/Users/mac/dev/apps/nato-phonetics"
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "type": "peer",
+                                      "name": "react-native",
+                                      "spec": "^0.0.0-0 || >=0.65 <1.0",
+                                      "from": {
+                                        "name": "@react-native-async-storage/async-storage",
+                                        "version": "2.2.0",
+                                        "location": "node_modules/@react-native-async-storage/async-storage",
+                                        "isWorkspace": false,
+                                        "dependents": [
+                                          {
+                                            "type": "prod",
+                                            "name": "@react-native-async-storage/async-storage",
+                                            "spec": "2.2.0",
+                                            "from": {
+                                              "location": "/Users/mac/dev/apps/nato-phonetics"
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "type": "peer",
+                                      "name": "react-native",
+                                      "spec": "*",
+                                      "from": {
+                                        "name": "@react-native/virtualized-lists",
+                                        "version": "0.81.5",
+                                        "location": "node_modules/react-native/node_modules/@react-native/virtualized-lists",
+                                        "isWorkspace": false,
+                                        "dependents": [
+                                          {
+                                            "type": "prod",
+                                            "name": "@react-native/virtualized-lists",
+                                            "spec": "0.81.5",
+                                            "from": {
+                                              "name": "react-native",
+                                              "version": "0.81.5"
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "prod",
+              "name": "@react-native-community/cli-platform-apple",
+              "spec": "20.0.2",
+              "from": {
+                "name": "@react-native-community/cli-platform-ios",
+                "version": "20.0.2",
+                "location": "node_modules/@react-native-community/cli-platform-ios",
+                "isWorkspace": false,
+                "dependents": [
+                  {
+                    "type": "dev",
+                    "name": "@react-native-community/cli-platform-ios",
+                    "spec": "20.0.2",
+                    "from": {
+                      "location": "/Users/mac/dev/apps/nato-phonetics"
+                    }
+                  },
+                  {
+                    "type": "prod",
+                    "name": "@react-native-community/cli-platform-ios",
+                    "spec": "20.0.2",
+                    "from": {
+                      "name": "@react-native-community/cli-doctor",
+                      "version": "20.0.2",
+                      "location": "node_modules/@react-native-community/cli-doctor",
+                      "isWorkspace": false,
+                      "dependents": [
+                        {
+                          "type": "prod",
+                          "name": "@react-native-community/cli-doctor",
+                          "spec": "20.0.2",
+                          "from": {
+                            "name": "@react-native-community/cli",
+                            "version": "20.0.2",
+                            "location": "node_modules/@react-native-community/cli",
+                            "isWorkspace": false,
+                            "dependents": [
+                              {
+                                "type": "dev",
+                                "name": "@react-native-community/cli",
+                                "spec": "20.0.2",
+                                "from": {
+                                  "location": "/Users/mac/dev/apps/nato-phonetics"
+                                }
+                              },
+                              {
+                                "type": "peerOptional",
+                                "name": "@react-native-community/cli",
+                                "spec": "*",
+                                "from": {
+                                  "name": "@react-native/community-cli-plugin",
+                                  "version": "0.81.5",
+                                  "location": "node_modules/@react-native/community-cli-plugin",
+                                  "isWorkspace": false,
+                                  "dependents": [
+                                    {
+                                      "type": "prod",
+                                      "name": "@react-native/community-cli-plugin",
+                                      "spec": "0.81.5",
+                                      "from": {
+                                        "name": "react-native",
+                                        "version": "0.81.5",
+                                        "location": "node_modules/react-native",
+                                        "isWorkspace": false,
+                                        "dependents": [
+                                          {
+                                            "type": "prod",
+                                            "name": "react-native",
+                                            "spec": "0.81.5",
+                                            "from": {
+                                              "location": "/Users/mac/dev/apps/nato-phonetics"
+                                            }
+                                          },
+                                          {
+                                            "type": "peer",
+                                            "name": "react-native",
+                                            "spec": "*",
+                                            "from": {
+                                              "name": "react-native-safe-area-context",
+                                              "version": "5.6.2",
+                                              "location": "node_modules/react-native-safe-area-context",
+                                              "isWorkspace": false,
+                                              "dependents": [
+                                                {
+                                                  "type": "prod",
+                                                  "name": "react-native-safe-area-context",
+                                                  "spec": "~5.6.0",
+                                                  "from": {
+                                                    "location": "/Users/mac/dev/apps/nato-phonetics"
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "type": "peer",
+                                            "name": "react-native",
+                                            "spec": "^0.0.0-0 || >=0.65 <1.0",
+                                            "from": {
+                                              "name": "@react-native-async-storage/async-storage",
+                                              "version": "2.2.0",
+                                              "location": "node_modules/@react-native-async-storage/async-storage",
+                                              "isWorkspace": false,
+                                              "dependents": [
+                                                {
+                                                  "type": "prod",
+                                                  "name": "@react-native-async-storage/async-storage",
+                                                  "spec": "2.2.0",
+                                                  "from": {
+                                                    "location": "/Users/mac/dev/apps/nato-phonetics"
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "type": "peer",
+                                            "name": "react-native",
+                                            "spec": "*",
+                                            "from": {
+                                              "name": "@react-native/virtualized-lists",
+                                              "version": "0.81.5",
+                                              "location": "node_modules/react-native/node_modules/@react-native/virtualized-lists",
+                                              "isWorkspace": false,
+                                              "dependents": [
+                                                {
+                                                  "type": "prod",
+                                                  "name": "@react-native/virtualized-lists",
+                                                  "spec": "0.81.5",
+                                                  "from": {
+                                                    "name": "react-native",
+                                                    "version": "0.81.5"
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "dev": false,
+    "optional": false,
+    "devOptional": true,
+    "peer": false,
+    "bundled": false,
+    "overridden": false
+  }
+]
