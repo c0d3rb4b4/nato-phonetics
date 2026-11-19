@@ -1,0 +1,8 @@
+{"stage":"cold1","dimensions":{"fontScale":1,"height":914.2857142857143,"scale":1.75,"width":411.42857142857144},"frames":{"feedback":{"height":24,"width":260,"x":18.285720825195312,"y":139.42855834960938},"input":{"height":47.4285888671875,"width":375.4285888671875,"x":17.714279174804688,"y":175.42855834960938},"revision":{"height":59.428558349609375,"width":260,"x":18.285720825195312,"y":68},"stable":{"height":40.571441650390625,"width":260,"x":18.285720825195312,"y":15.428558349609375}},"mounts":1,"value":"NUWJ359"}
+TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received undefined
+    at Function.from (node:buffer:328:9)
+    at captureNativeJavascript (/Users/mac/dev/apps/nato-phonetics/scripts/capture-native-javascript.cjs:37:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async /Users/mac/dev/apps/nato-phonetics/scripts/verify-android-font-scale.cjs:80:5 {
+  code: 'ERR_INVALID_ARG_TYPE'
+}

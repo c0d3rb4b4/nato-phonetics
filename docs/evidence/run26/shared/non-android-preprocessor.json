@@ -1,0 +1,18 @@
+{
+  "method": "clang++ -E -P, Android undefined, same include lines elided; lexical token equality. Not a compiled iOS/runtime pass.",
+  "files": [
+    {
+      "file": "ReactCommon/react/renderer/components/view/YogaLayoutableShadowNode.h",
+      "equalNonAndroidTokens": true,
+      "originalTokens": 448,
+      "candidateTokens": 448
+    },
+    {
+      "file": "ReactCommon/react/renderer/components/view/YogaLayoutableShadowNode.cpp",
+      "equalNonAndroidTokens": true,
+      "originalTokens": 5465,
+      "candidateTokens": 5465
+    }
+  ],
+  "paragraphRestoredSha256": "7576a87a3fe98d6026288a13c0ae6a6f1ea307343d7a90091c83649a860bdc68"
+}

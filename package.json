@@ -25,7 +25,9 @@
     "build:ios:export": "node scripts/build-native.cjs ios-export",
     "ios:pods": "bundle exec pod install --project-directory=ios",
     "postinstall": "node scripts/patch-native-tts.cjs && node scripts/patch-native-yoga.cjs",
-    "check:yoga": "node scripts/verify-yoga-rounding.cjs"
+    "check:yoga": "node scripts/verify-yoga-rounding.cjs",
+    "prepare:android:source": "node scripts/prepare-android-source.cjs",
+    "check:android:font-scale": "node scripts/verify-android-font-scale.cjs"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "2.2.0",

@@ -1,0 +1,3947 @@
+{
+  "live085": {
+    "dimensions": {
+      "fontScale": 0.8500000238418579,
+      "height": 914.2857142857143,
+      "scale": 1.75,
+      "width": 411.42857142857144
+    },
+    "events": [
+      {
+        "lines": [
+          {
+            "ascender": 17.14285659790039,
+            "capHeight": 11.502856254577637,
+            "descender": 4,
+            "height": 21.14285659790039,
+            "text": "Tap a card to hear the word. New ",
+            "width": 236.953125,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          },
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 11.502856254577637,
+            "descender": 4.5714287757873535,
+            "height": 19.428571701049805,
+            "text": "playback replaces current audio.",
+            "width": 228.73214721679688,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 21.14285659790039
+          }
+        ],
+        "name": "stable",
+        "scale": 1
+      },
+      {
+        "lines": [
+          {
+            "ascender": 17.14285659790039,
+            "capHeight": 11.502856254577637,
+            "descender": 4,
+            "height": 21.14285659790039,
+            "text": "Tap a card to hear the word. New ",
+            "width": 236.953125,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          },
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 11.502856254577637,
+            "descender": 4,
+            "height": 18.85714340209961,
+            "text": "playback replaces current audio. ",
+            "width": 232.73214721679688,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 21.14285659790039
+          },
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 11.502856254577637,
+            "descender": 4.5714287757873535,
+            "height": 19.428571701049805,
+            "text": "Scale 1",
+            "width": 52.57143020629883,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 40
+          }
+        ],
+        "name": "revision",
+        "scale": 1
+      },
+      {
+        "lines": [
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "Correct! B is Bravo.",
+            "width": 133.59375,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          }
+        ],
+        "name": "feedback",
+        "scale": 1
+      },
+      {
+        "lines": [
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "Nested stable bold text and italic ",
+            "width": 236.57142639160156,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          },
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "words wrap with the system font ",
+            "width": 232.11160278320312,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 24
+          },
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "size.",
+            "width": 32.44643020629883,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 48
+          }
+        ],
+        "name": "nested",
+        "scale": 1
+      },
+      {
+        "name": "input",
+        "scale": 1,
+        "size": {
+          "height": 46.28571319580078,
+          "width": 599195.4375
+        }
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 3.4285714626312256,
+            "height": 18.285715103149414,
+            "text": "Tap a card to hear the word. New playback ",
+            "width": 261.6116027832031,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          },
+          {
+            "ascender": 12.571428298950195,
+            "capHeight": 9.857142448425293,
+            "descender": 4,
+            "height": 16.571428298950195,
+            "text": "replaces current audio.",
+            "width": 139.7455291748047,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 18.285715103149414
+          }
+        ],
+        "name": "stable",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 3.4285714626312256,
+            "height": 18.285715103149414,
+            "text": "Tap a card to hear the word. New playback ",
+            "width": 261.6116027832031,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          },
+          {
+            "ascender": 12.571428298950195,
+            "capHeight": 9.857142448425293,
+            "descender": 4,
+            "height": 16.571428298950195,
+            "text": "replaces current audio. Scale 1",
+            "width": 187.7455291748047,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 18.285715103149414
+          }
+        ],
+        "name": "revision",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 5.714285850524902,
+            "height": 20.571428298950195,
+            "text": "Correct! B is Bravo.",
+            "width": 116.546875,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          }
+        ],
+        "name": "feedback",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 5.714285850524902,
+            "height": 20.571428298950195,
+            "text": "Nested stable bold text and italic words ",
+            "width": 245.015625,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          },
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 5.714285850524902,
+            "height": 20.571428298950195,
+            "text": "wrap with the system font size.",
+            "width": 188.19642639160156,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 20.571428298950195
+          }
+        ],
+        "name": "nested",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 17.14285659790039,
+            "capHeight": 11.502856254577637,
+            "descender": 4,
+            "height": 21.14285659790039,
+            "text": "Tap a card to hear the word. New ",
+            "width": 236.953125,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          },
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 11.502856254577637,
+            "descender": 4.5714287757873535,
+            "height": 19.428571701049805,
+            "text": "playback replaces current audio.",
+            "width": 228.73214721679688,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 21.14285659790039
+          }
+        ],
+        "name": "stable",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 3.4285714626312256,
+            "height": 18.285715103149414,
+            "text": "Tap a card to hear the word. New ",
+            "width": 204.56919860839844,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          },
+          {
+            "ascender": 12.571428298950195,
+            "capHeight": 9.857142448425293,
+            "descender": 3.4285714626312256,
+            "height": 16,
+            "text": "playback replaces current audio. Scale ",
+            "width": 237.359375,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 18.285715103149414
+          },
+          {
+            "ascender": 12.571428298950195,
+            "capHeight": 9.857142448425293,
+            "descender": 4,
+            "height": 16.571428298950195,
+            "text": "0.8500000238418579",
+            "width": 129.7142791748047,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 34.28571319580078
+          }
+        ],
+        "name": "revision",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "Correct! B is Bravo.",
+            "width": 133.59375,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          }
+        ],
+        "name": "feedback",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "Nested stable bold text and italic ",
+            "width": 236.57142639160156,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          },
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "words wrap with the system font ",
+            "width": 232.11160278320312,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 24
+          },
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "size.",
+            "width": 32.44643020629883,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 48
+          }
+        ],
+        "name": "nested",
+        "scale": 0.8500000238418579
+      },
+      {
+        "name": "input",
+        "scale": 0.8500000238418579,
+        "size": {
+          "height": 46.28571319580078,
+          "width": 599195.4375
+        }
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 3.4285714626312256,
+            "height": 18.285715103149414,
+            "text": "Tap a card to hear the word. New playback ",
+            "width": 261.6116027832031,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          },
+          {
+            "ascender": 12.571428298950195,
+            "capHeight": 9.857142448425293,
+            "descender": 4,
+            "height": 16.571428298950195,
+            "text": "replaces current audio.",
+            "width": 139.7455291748047,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 18.285715103149414
+          }
+        ],
+        "name": "stable",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 5.714285850524902,
+            "height": 20.571428298950195,
+            "text": "Correct! B is Bravo.",
+            "width": 116.546875,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          }
+        ],
+        "name": "feedback",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 5.714285850524902,
+            "height": 20.571428298950195,
+            "text": "Nested stable bold text and italic words ",
+            "width": 245.015625,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          },
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 5.714285850524902,
+            "height": 20.571428298950195,
+            "text": "wrap with the system font size.",
+            "width": 188.19642639160156,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 20.571428298950195
+          }
+        ],
+        "name": "nested",
+        "scale": 0.8500000238418579
+      }
+    ],
+    "focused": true,
+    "frames": {
+      "feedback": {
+        "height": 20.5714111328125,
+        "width": 260,
+        "x": 18.285720825195312,
+        "y": 122.28573608398438
+      },
+      "input": {
+        "height": 44,
+        "width": 375.4285888671875,
+        "x": 17.714279174804688,
+        "y": 154.85714721679688
+      },
+      "nested": {
+        "height": 41.142852783203125,
+        "width": 260,
+        "x": 17.714279174804688,
+        "y": 198.28573608398438
+      },
+      "revision": {
+        "height": 50.857177734375,
+        "width": 260,
+        "x": 18.285720825195312,
+        "y": 59.428558349609375
+      },
+      "stable": {
+        "height": 34.85711669921875,
+        "width": 260,
+        "x": 18.285720825195312,
+        "y": 12.571441650390625
+      }
+    },
+    "mounts": 1,
+    "selection": {
+      "end": 7,
+      "start": 7
+    },
+    "value": "NUWJ359"
+  },
+  "live13": {
+    "dimensions": {
+      "fontScale": 1.2999999523162842,
+      "height": 914.2857142857143,
+      "scale": 1.75,
+      "width": 411.42857142857144
+    },
+    "events": [
+      {
+        "lines": [
+          {
+            "ascender": 17.14285659790039,
+            "capHeight": 11.502856254577637,
+            "descender": 4,
+            "height": 21.14285659790039,
+            "text": "Tap a card to hear the word. New ",
+            "width": 236.953125,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          },
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 11.502856254577637,
+            "descender": 4.5714287757873535,
+            "height": 19.428571701049805,
+            "text": "playback replaces current audio.",
+            "width": 228.73214721679688,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 21.14285659790039
+          }
+        ],
+        "name": "stable",
+        "scale": 1
+      },
+      {
+        "lines": [
+          {
+            "ascender": 17.14285659790039,
+            "capHeight": 11.502856254577637,
+            "descender": 4,
+            "height": 21.14285659790039,
+            "text": "Tap a card to hear the word. New ",
+            "width": 236.953125,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          },
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 11.502856254577637,
+            "descender": 4,
+            "height": 18.85714340209961,
+            "text": "playback replaces current audio. ",
+            "width": 232.73214721679688,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 21.14285659790039
+          },
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 11.502856254577637,
+            "descender": 4.5714287757873535,
+            "height": 19.428571701049805,
+            "text": "Scale 1",
+            "width": 52.57143020629883,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 40
+          }
+        ],
+        "name": "revision",
+        "scale": 1
+      },
+      {
+        "lines": [
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "Correct! B is Bravo.",
+            "width": 133.59375,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          }
+        ],
+        "name": "feedback",
+        "scale": 1
+      },
+      {
+        "lines": [
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "Nested stable bold text and italic ",
+            "width": 236.57142639160156,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          },
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "words wrap with the system font ",
+            "width": 232.11160278320312,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 24
+          },
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "size.",
+            "width": 32.44643020629883,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 48
+          }
+        ],
+        "name": "nested",
+        "scale": 1
+      },
+      {
+        "name": "input",
+        "scale": 1,
+        "size": {
+          "height": 46.28571319580078,
+          "width": 599195.4375
+        }
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 3.4285714626312256,
+            "height": 18.285715103149414,
+            "text": "Tap a card to hear the word. New playback ",
+            "width": 261.6116027832031,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          },
+          {
+            "ascender": 12.571428298950195,
+            "capHeight": 9.857142448425293,
+            "descender": 4,
+            "height": 16.571428298950195,
+            "text": "replaces current audio.",
+            "width": 139.7455291748047,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 18.285715103149414
+          }
+        ],
+        "name": "stable",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 3.4285714626312256,
+            "height": 18.285715103149414,
+            "text": "Tap a card to hear the word. New playback ",
+            "width": 261.6116027832031,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          },
+          {
+            "ascender": 12.571428298950195,
+            "capHeight": 9.857142448425293,
+            "descender": 4,
+            "height": 16.571428298950195,
+            "text": "replaces current audio. Scale 1",
+            "width": 187.7455291748047,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 18.285715103149414
+          }
+        ],
+        "name": "revision",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 5.714285850524902,
+            "height": 20.571428298950195,
+            "text": "Correct! B is Bravo.",
+            "width": 116.546875,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          }
+        ],
+        "name": "feedback",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 5.714285850524902,
+            "height": 20.571428298950195,
+            "text": "Nested stable bold text and italic words ",
+            "width": 245.015625,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          },
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 5.714285850524902,
+            "height": 20.571428298950195,
+            "text": "wrap with the system font size.",
+            "width": 188.19642639160156,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 20.571428298950195
+          }
+        ],
+        "name": "nested",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 17.14285659790039,
+            "capHeight": 11.502856254577637,
+            "descender": 4,
+            "height": 21.14285659790039,
+            "text": "Tap a card to hear the word. New ",
+            "width": 236.953125,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          },
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 11.502856254577637,
+            "descender": 4.5714287757873535,
+            "height": 19.428571701049805,
+            "text": "playback replaces current audio.",
+            "width": 228.73214721679688,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 21.14285659790039
+          }
+        ],
+        "name": "stable",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 3.4285714626312256,
+            "height": 18.285715103149414,
+            "text": "Tap a card to hear the word. New ",
+            "width": 204.56919860839844,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          },
+          {
+            "ascender": 12.571428298950195,
+            "capHeight": 9.857142448425293,
+            "descender": 3.4285714626312256,
+            "height": 16,
+            "text": "playback replaces current audio. Scale ",
+            "width": 237.359375,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 18.285715103149414
+          },
+          {
+            "ascender": 12.571428298950195,
+            "capHeight": 9.857142448425293,
+            "descender": 4,
+            "height": 16.571428298950195,
+            "text": "0.8500000238418579",
+            "width": 129.7142791748047,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 34.28571319580078
+          }
+        ],
+        "name": "revision",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "Correct! B is Bravo.",
+            "width": 133.59375,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          }
+        ],
+        "name": "feedback",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "Nested stable bold text and italic ",
+            "width": 236.57142639160156,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          },
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "words wrap with the system font ",
+            "width": 232.11160278320312,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 24
+          },
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "size.",
+            "width": 32.44643020629883,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 48
+          }
+        ],
+        "name": "nested",
+        "scale": 0.8500000238418579
+      },
+      {
+        "name": "input",
+        "scale": 0.8500000238418579,
+        "size": {
+          "height": 46.28571319580078,
+          "width": 599195.4375
+        }
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 3.4285714626312256,
+            "height": 18.285715103149414,
+            "text": "Tap a card to hear the word. New playback ",
+            "width": 261.6116027832031,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          },
+          {
+            "ascender": 12.571428298950195,
+            "capHeight": 9.857142448425293,
+            "descender": 4,
+            "height": 16.571428298950195,
+            "text": "replaces current audio.",
+            "width": 139.7455291748047,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 18.285715103149414
+          }
+        ],
+        "name": "stable",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 5.714285850524902,
+            "height": 20.571428298950195,
+            "text": "Correct! B is Bravo.",
+            "width": 116.546875,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          }
+        ],
+        "name": "feedback",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 5.714285850524902,
+            "height": 20.571428298950195,
+            "text": "Nested stable bold text and italic words ",
+            "width": 245.015625,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          },
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 5.714285850524902,
+            "height": 20.571428298950195,
+            "text": "wrap with the system font size.",
+            "width": 188.19642639160156,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 20.571428298950195
+          }
+        ],
+        "name": "nested",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 22.285715103149414,
+            "capHeight": 14.78857135772705,
+            "descender": 5.142857074737549,
+            "height": 27.428571701049805,
+            "text": "Tap a card to hear the word. ",
+            "width": 261.1428527832031,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 0
+          },
+          {
+            "ascender": 18.85714340209961,
+            "capHeight": 14.78857135772705,
+            "descender": 5.142857074737549,
+            "height": 24,
+            "text": "New playback replaces ",
+            "width": 216.23214721679688,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 27.428571701049805
+          },
+          {
+            "ascender": 18.85714340209961,
+            "capHeight": 14.78857135772705,
+            "descender": 5.714285850524902,
+            "height": 24.571428298950195,
+            "text": "current audio.",
+            "width": 127.23883819580078,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 51.42856979370117
+          }
+        ],
+        "name": "stable",
+        "scale": 1.2999999523162842
+      },
+      {
+        "lines": [
+          {
+            "ascender": 22.285715103149414,
+            "capHeight": 14.78857135772705,
+            "descender": 5.142857074737549,
+            "height": 27.428571701049805,
+            "text": "Tap a card to hear the word. ",
+            "width": 261.1428527832031,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 0
+          },
+          {
+            "ascender": 18.85714340209961,
+            "capHeight": 14.78857135772705,
+            "descender": 5.142857074737549,
+            "height": 24,
+            "text": "New playback replaces ",
+            "width": 216.23214721679688,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 27.428571701049805
+          },
+          {
+            "ascender": 18.85714340209961,
+            "capHeight": 14.78857135772705,
+            "descender": 5.142857074737549,
+            "height": 24,
+            "text": "current audio. Scale ",
+            "width": 187.81027221679688,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 51.42856979370117
+          },
+          {
+            "ascender": 18.85714340209961,
+            "capHeight": 14.78857135772705,
+            "descender": 5.714285850524902,
+            "height": 24.571428298950195,
+            "text": "0.8500000238418579",
+            "width": 200,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 75.42857360839844
+          }
+        ],
+        "name": "revision",
+        "scale": 1.2999999523162842
+      },
+      {
+        "lines": [
+          {
+            "ascender": 20.571428298950195,
+            "capHeight": 14.78857135772705,
+            "descender": 6.285714149475098,
+            "height": 26.85714340209961,
+            "text": "Correct! B is Bravo.",
+            "width": 173.96652221679688,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 0
+          }
+        ],
+        "name": "feedback",
+        "scale": 1.2999999523162842
+      },
+      {
+        "lines": [
+          {
+            "ascender": 20.571428298950195,
+            "capHeight": 14.78857135772705,
+            "descender": 6.285714149475098,
+            "height": 26.85714340209961,
+            "text": "Nested stable bold text and ",
+            "width": 257.1428527832031,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 0
+          },
+          {
+            "ascender": 20.571428298950195,
+            "capHeight": 14.78857135772705,
+            "descender": 6.285714149475098,
+            "height": 26.85714340209961,
+            "text": "italic words wrap with the ",
+            "width": 234.265625,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 26.85714340209961
+          },
+          {
+            "ascender": 20.571428298950195,
+            "capHeight": 14.78857135772705,
+            "descender": 6.285714149475098,
+            "height": 26.85714340209961,
+            "text": "system font size.",
+            "width": 158.125,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 53.71428680419922
+          }
+        ],
+        "name": "nested",
+        "scale": 1.2999999523162842
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 3.4285714626312256,
+            "height": 18.285715103149414,
+            "text": "Tap a card to hear the word. New playback ",
+            "width": 261.6116027832031,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          },
+          {
+            "ascender": 12.571428298950195,
+            "capHeight": 9.857142448425293,
+            "descender": 4,
+            "height": 16.571428298950195,
+            "text": "replaces current audio.",
+            "width": 139.7455291748047,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 18.285715103149414
+          }
+        ],
+        "name": "stable",
+        "scale": 1.2999999523162842
+      },
+      {
+        "lines": [
+          {
+            "ascender": 22.285715103149414,
+            "capHeight": 14.78857135772705,
+            "descender": 5.142857074737549,
+            "height": 27.428571701049805,
+            "text": "Tap a card to hear the word. ",
+            "width": 261.1428527832031,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 0
+          },
+          {
+            "ascender": 18.85714340209961,
+            "capHeight": 14.78857135772705,
+            "descender": 5.142857074737549,
+            "height": 24,
+            "text": "New playback replaces ",
+            "width": 216.23214721679688,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 27.428571701049805
+          },
+          {
+            "ascender": 18.85714340209961,
+            "capHeight": 14.78857135772705,
+            "descender": 5.142857074737549,
+            "height": 24,
+            "text": "current audio. Scale ",
+            "width": 187.81027221679688,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 51.42856979370117
+          },
+          {
+            "ascender": 18.85714340209961,
+            "capHeight": 14.78857135772705,
+            "descender": 5.714285850524902,
+            "height": 24.571428298950195,
+            "text": "1.2999999523162842",
+            "width": 200,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 75.42857360839844
+          }
+        ],
+        "name": "revision",
+        "scale": 1.2999999523162842
+      },
+      {
+        "name": "input",
+        "scale": 1.2999999523162842,
+        "size": {
+          "height": 46.28571319580078,
+          "width": 599195.4375
+        }
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 5.714285850524902,
+            "height": 20.571428298950195,
+            "text": "Correct! B is Bravo.",
+            "width": 116.546875,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          }
+        ],
+        "name": "feedback",
+        "scale": 1.2999999523162842
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 5.714285850524902,
+            "height": 20.571428298950195,
+            "text": "Nested stable bold text and italic words ",
+            "width": 245.015625,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          },
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 5.714285850524902,
+            "height": 20.571428298950195,
+            "text": "wrap with the system font size.",
+            "width": 188.19642639160156,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 20.571428298950195
+          }
+        ],
+        "name": "nested",
+        "scale": 1.2999999523162842
+      }
+    ],
+    "focused": true,
+    "frames": {
+      "feedback": {
+        "height": 20.571426391601562,
+        "width": 260,
+        "x": 18.285720825195312,
+        "y": 202.2857208251953
+      },
+      "input": {
+        "height": 44,
+        "width": 375.4285888671875,
+        "x": 17.714279174804688,
+        "y": 234.85714721679688
+      },
+      "nested": {
+        "height": 41.142852783203125,
+        "width": 260,
+        "x": 17.714279174804688,
+        "y": 278.28570556640625
+      },
+      "revision": {
+        "height": 100,
+        "width": 260,
+        "x": 18.285720825195312,
+        "y": 90.28573608398438
+      },
+      "stable": {
+        "height": 34.857177734375,
+        "width": 260,
+        "x": 18.285720825195312,
+        "y": 43.428558349609375
+      }
+    },
+    "mounts": 1,
+    "selection": {
+      "end": 7,
+      "start": 7
+    },
+    "value": "NUWJ359"
+  },
+  "live2": {
+    "dimensions": {
+      "fontScale": 2,
+      "height": 914.2857142857143,
+      "scale": 1.75,
+      "width": 411.42857142857144
+    },
+    "events": [
+      {
+        "lines": [
+          {
+            "ascender": 17.14285659790039,
+            "capHeight": 11.502856254577637,
+            "descender": 4,
+            "height": 21.14285659790039,
+            "text": "Tap a card to hear the word. New ",
+            "width": 236.953125,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          },
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 11.502856254577637,
+            "descender": 4.5714287757873535,
+            "height": 19.428571701049805,
+            "text": "playback replaces current audio.",
+            "width": 228.73214721679688,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 21.14285659790039
+          }
+        ],
+        "name": "stable",
+        "scale": 1
+      },
+      {
+        "lines": [
+          {
+            "ascender": 17.14285659790039,
+            "capHeight": 11.502856254577637,
+            "descender": 4,
+            "height": 21.14285659790039,
+            "text": "Tap a card to hear the word. New ",
+            "width": 236.953125,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          },
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 11.502856254577637,
+            "descender": 4,
+            "height": 18.85714340209961,
+            "text": "playback replaces current audio. ",
+            "width": 232.73214721679688,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 21.14285659790039
+          },
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 11.502856254577637,
+            "descender": 4.5714287757873535,
+            "height": 19.428571701049805,
+            "text": "Scale 1",
+            "width": 52.57143020629883,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 40
+          }
+        ],
+        "name": "revision",
+        "scale": 1
+      },
+      {
+        "lines": [
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "Correct! B is Bravo.",
+            "width": 133.59375,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          }
+        ],
+        "name": "feedback",
+        "scale": 1
+      },
+      {
+        "lines": [
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "Nested stable bold text and italic ",
+            "width": 236.57142639160156,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          },
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "words wrap with the system font ",
+            "width": 232.11160278320312,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 24
+          },
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "size.",
+            "width": 32.44643020629883,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 48
+          }
+        ],
+        "name": "nested",
+        "scale": 1
+      },
+      {
+        "name": "input",
+        "scale": 1,
+        "size": {
+          "height": 46.28571319580078,
+          "width": 599195.4375
+        }
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 3.4285714626312256,
+            "height": 18.285715103149414,
+            "text": "Tap a card to hear the word. New playback ",
+            "width": 261.6116027832031,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          },
+          {
+            "ascender": 12.571428298950195,
+            "capHeight": 9.857142448425293,
+            "descender": 4,
+            "height": 16.571428298950195,
+            "text": "replaces current audio.",
+            "width": 139.7455291748047,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 18.285715103149414
+          }
+        ],
+        "name": "stable",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 3.4285714626312256,
+            "height": 18.285715103149414,
+            "text": "Tap a card to hear the word. New playback ",
+            "width": 261.6116027832031,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          },
+          {
+            "ascender": 12.571428298950195,
+            "capHeight": 9.857142448425293,
+            "descender": 4,
+            "height": 16.571428298950195,
+            "text": "replaces current audio. Scale 1",
+            "width": 187.7455291748047,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 18.285715103149414
+          }
+        ],
+        "name": "revision",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 5.714285850524902,
+            "height": 20.571428298950195,
+            "text": "Correct! B is Bravo.",
+            "width": 116.546875,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          }
+        ],
+        "name": "feedback",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 5.714285850524902,
+            "height": 20.571428298950195,
+            "text": "Nested stable bold text and italic words ",
+            "width": 245.015625,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          },
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 5.714285850524902,
+            "height": 20.571428298950195,
+            "text": "wrap with the system font size.",
+            "width": 188.19642639160156,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 20.571428298950195
+          }
+        ],
+        "name": "nested",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 17.14285659790039,
+            "capHeight": 11.502856254577637,
+            "descender": 4,
+            "height": 21.14285659790039,
+            "text": "Tap a card to hear the word. New ",
+            "width": 236.953125,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          },
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 11.502856254577637,
+            "descender": 4.5714287757873535,
+            "height": 19.428571701049805,
+            "text": "playback replaces current audio.",
+            "width": 228.73214721679688,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 21.14285659790039
+          }
+        ],
+        "name": "stable",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 3.4285714626312256,
+            "height": 18.285715103149414,
+            "text": "Tap a card to hear the word. New ",
+            "width": 204.56919860839844,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          },
+          {
+            "ascender": 12.571428298950195,
+            "capHeight": 9.857142448425293,
+            "descender": 3.4285714626312256,
+            "height": 16,
+            "text": "playback replaces current audio. Scale ",
+            "width": 237.359375,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 18.285715103149414
+          },
+          {
+            "ascender": 12.571428298950195,
+            "capHeight": 9.857142448425293,
+            "descender": 4,
+            "height": 16.571428298950195,
+            "text": "0.8500000238418579",
+            "width": 129.7142791748047,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 34.28571319580078
+          }
+        ],
+        "name": "revision",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "Correct! B is Bravo.",
+            "width": 133.59375,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          }
+        ],
+        "name": "feedback",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "Nested stable bold text and italic ",
+            "width": 236.57142639160156,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          },
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "words wrap with the system font ",
+            "width": 232.11160278320312,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 24
+          },
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "size.",
+            "width": 32.44643020629883,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 48
+          }
+        ],
+        "name": "nested",
+        "scale": 0.8500000238418579
+      },
+      {
+        "name": "input",
+        "scale": 0.8500000238418579,
+        "size": {
+          "height": 46.28571319580078,
+          "width": 599195.4375
+        }
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 3.4285714626312256,
+            "height": 18.285715103149414,
+            "text": "Tap a card to hear the word. New playback ",
+            "width": 261.6116027832031,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          },
+          {
+            "ascender": 12.571428298950195,
+            "capHeight": 9.857142448425293,
+            "descender": 4,
+            "height": 16.571428298950195,
+            "text": "replaces current audio.",
+            "width": 139.7455291748047,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 18.285715103149414
+          }
+        ],
+        "name": "stable",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 5.714285850524902,
+            "height": 20.571428298950195,
+            "text": "Correct! B is Bravo.",
+            "width": 116.546875,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          }
+        ],
+        "name": "feedback",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 5.714285850524902,
+            "height": 20.571428298950195,
+            "text": "Nested stable bold text and italic words ",
+            "width": 245.015625,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          },
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 5.714285850524902,
+            "height": 20.571428298950195,
+            "text": "wrap with the system font size.",
+            "width": 188.19642639160156,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 20.571428298950195
+          }
+        ],
+        "name": "nested",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 22.285715103149414,
+            "capHeight": 14.78857135772705,
+            "descender": 5.142857074737549,
+            "height": 27.428571701049805,
+            "text": "Tap a card to hear the word. ",
+            "width": 261.1428527832031,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 0
+          },
+          {
+            "ascender": 18.85714340209961,
+            "capHeight": 14.78857135772705,
+            "descender": 5.142857074737549,
+            "height": 24,
+            "text": "New playback replaces ",
+            "width": 216.23214721679688,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 27.428571701049805
+          },
+          {
+            "ascender": 18.85714340209961,
+            "capHeight": 14.78857135772705,
+            "descender": 5.714285850524902,
+            "height": 24.571428298950195,
+            "text": "current audio.",
+            "width": 127.23883819580078,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 51.42856979370117
+          }
+        ],
+        "name": "stable",
+        "scale": 1.2999999523162842
+      },
+      {
+        "lines": [
+          {
+            "ascender": 22.285715103149414,
+            "capHeight": 14.78857135772705,
+            "descender": 5.142857074737549,
+            "height": 27.428571701049805,
+            "text": "Tap a card to hear the word. ",
+            "width": 261.1428527832031,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 0
+          },
+          {
+            "ascender": 18.85714340209961,
+            "capHeight": 14.78857135772705,
+            "descender": 5.142857074737549,
+            "height": 24,
+            "text": "New playback replaces ",
+            "width": 216.23214721679688,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 27.428571701049805
+          },
+          {
+            "ascender": 18.85714340209961,
+            "capHeight": 14.78857135772705,
+            "descender": 5.142857074737549,
+            "height": 24,
+            "text": "current audio. Scale ",
+            "width": 187.81027221679688,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 51.42856979370117
+          },
+          {
+            "ascender": 18.85714340209961,
+            "capHeight": 14.78857135772705,
+            "descender": 5.714285850524902,
+            "height": 24.571428298950195,
+            "text": "0.8500000238418579",
+            "width": 200,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 75.42857360839844
+          }
+        ],
+        "name": "revision",
+        "scale": 1.2999999523162842
+      },
+      {
+        "lines": [
+          {
+            "ascender": 20.571428298950195,
+            "capHeight": 14.78857135772705,
+            "descender": 6.285714149475098,
+            "height": 26.85714340209961,
+            "text": "Correct! B is Bravo.",
+            "width": 173.96652221679688,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 0
+          }
+        ],
+        "name": "feedback",
+        "scale": 1.2999999523162842
+      },
+      {
+        "lines": [
+          {
+            "ascender": 20.571428298950195,
+            "capHeight": 14.78857135772705,
+            "descender": 6.285714149475098,
+            "height": 26.85714340209961,
+            "text": "Nested stable bold text and ",
+            "width": 257.1428527832031,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 0
+          },
+          {
+            "ascender": 20.571428298950195,
+            "capHeight": 14.78857135772705,
+            "descender": 6.285714149475098,
+            "height": 26.85714340209961,
+            "text": "italic words wrap with the ",
+            "width": 234.265625,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 26.85714340209961
+          },
+          {
+            "ascender": 20.571428298950195,
+            "capHeight": 14.78857135772705,
+            "descender": 6.285714149475098,
+            "height": 26.85714340209961,
+            "text": "system font size.",
+            "width": 158.125,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 53.71428680419922
+          }
+        ],
+        "name": "nested",
+        "scale": 1.2999999523162842
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 3.4285714626312256,
+            "height": 18.285715103149414,
+            "text": "Tap a card to hear the word. New playback ",
+            "width": 261.6116027832031,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          },
+          {
+            "ascender": 12.571428298950195,
+            "capHeight": 9.857142448425293,
+            "descender": 4,
+            "height": 16.571428298950195,
+            "text": "replaces current audio.",
+            "width": 139.7455291748047,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 18.285715103149414
+          }
+        ],
+        "name": "stable",
+        "scale": 1.2999999523162842
+      },
+      {
+        "lines": [
+          {
+            "ascender": 22.285715103149414,
+            "capHeight": 14.78857135772705,
+            "descender": 5.142857074737549,
+            "height": 27.428571701049805,
+            "text": "Tap a card to hear the word. ",
+            "width": 261.1428527832031,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 0
+          },
+          {
+            "ascender": 18.85714340209961,
+            "capHeight": 14.78857135772705,
+            "descender": 5.142857074737549,
+            "height": 24,
+            "text": "New playback replaces ",
+            "width": 216.23214721679688,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 27.428571701049805
+          },
+          {
+            "ascender": 18.85714340209961,
+            "capHeight": 14.78857135772705,
+            "descender": 5.142857074737549,
+            "height": 24,
+            "text": "current audio. Scale ",
+            "width": 187.81027221679688,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 51.42856979370117
+          },
+          {
+            "ascender": 18.85714340209961,
+            "capHeight": 14.78857135772705,
+            "descender": 5.714285850524902,
+            "height": 24.571428298950195,
+            "text": "1.2999999523162842",
+            "width": 200,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 75.42857360839844
+          }
+        ],
+        "name": "revision",
+        "scale": 1.2999999523162842
+      },
+      {
+        "name": "input",
+        "scale": 1.2999999523162842,
+        "size": {
+          "height": 46.28571319580078,
+          "width": 599195.4375
+        }
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 5.714285850524902,
+            "height": 20.571428298950195,
+            "text": "Correct! B is Bravo.",
+            "width": 116.546875,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          }
+        ],
+        "name": "feedback",
+        "scale": 1.2999999523162842
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 5.714285850524902,
+            "height": 20.571428298950195,
+            "text": "Nested stable bold text and italic words ",
+            "width": 245.015625,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          },
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 5.714285850524902,
+            "height": 20.571428298950195,
+            "text": "wrap with the system font size.",
+            "width": 188.19642639160156,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 20.571428298950195
+          }
+        ],
+        "name": "nested",
+        "scale": 1.2999999523162842
+      },
+      {
+        "lines": [
+          {
+            "ascender": 22.285715103149414,
+            "capHeight": 14.78857135772705,
+            "descender": 5.142857074737549,
+            "height": 27.428571701049805,
+            "text": "Tap a card to hear the word. ",
+            "width": 261.1428527832031,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 0
+          },
+          {
+            "ascender": 18.85714340209961,
+            "capHeight": 14.78857135772705,
+            "descender": 5.142857074737549,
+            "height": 24,
+            "text": "New playback replaces ",
+            "width": 216.23214721679688,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 27.428571701049805
+          },
+          {
+            "ascender": 18.85714340209961,
+            "capHeight": 14.78857135772705,
+            "descender": 5.714285850524902,
+            "height": 24.571428298950195,
+            "text": "current audio.",
+            "width": 127.23883819580078,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 51.42856979370117
+          }
+        ],
+        "name": "stable",
+        "scale": 2
+      },
+      {
+        "lines": [
+          {
+            "ascender": 29.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 6.857142925262451,
+            "height": 36.57143020629883,
+            "text": "Tap a card to hear ",
+            "width": 232.20982360839844,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 0
+          },
+          {
+            "ascender": 25.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 6.857142925262451,
+            "height": 32.57143020629883,
+            "text": "the word. New ",
+            "width": 186.0267791748047,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 36.57143020629883
+          },
+          {
+            "ascender": 25.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 6.857142925262451,
+            "height": 32.57143020629883,
+            "text": "playback replaces ",
+            "width": 232.10714721679688,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 69.14286041259766
+          },
+          {
+            "ascender": 25.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 8,
+            "height": 33.71428680419922,
+            "text": "current audio.",
+            "width": 172.88392639160156,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 101.71428680419922
+          }
+        ],
+        "name": "stable",
+        "scale": 2
+      },
+      {
+        "lines": [
+          {
+            "ascender": 29.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 6.857142925262451,
+            "height": 36.57143020629883,
+            "text": "Tap a card to hear ",
+            "width": 232.20982360839844,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 0
+          },
+          {
+            "ascender": 25.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 6.857142925262451,
+            "height": 32.57143020629883,
+            "text": "the word. New ",
+            "width": 186.0267791748047,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 36.57143020629883
+          },
+          {
+            "ascender": 25.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 6.857142925262451,
+            "height": 32.57143020629883,
+            "text": "playback replaces ",
+            "width": 232.10714721679688,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 69.14286041259766
+          },
+          {
+            "ascender": 25.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 6.857142925262451,
+            "height": 32.57143020629883,
+            "text": "current audio. Scale ",
+            "width": 255.16964721679688,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 101.71428680419922
+          },
+          {
+            "ascender": 25.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 6.857142925262451,
+            "height": 32.57143020629883,
+            "text": "1.29999995231628",
+            "width": 247.42857360839844,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 134.2857208251953
+          },
+          {
+            "ascender": 25.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 8,
+            "height": 33.71428680419922,
+            "text": "42",
+            "width": 32,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 166.85714721679688
+          }
+        ],
+        "name": "revision",
+        "scale": 2
+      },
+      {
+        "lines": [
+          {
+            "ascender": 29.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 6.857142925262451,
+            "height": 36.57143020629883,
+            "text": "Tap a card to hear ",
+            "width": 232.20982360839844,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 0
+          },
+          {
+            "ascender": 25.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 6.857142925262451,
+            "height": 32.57143020629883,
+            "text": "the word. New ",
+            "width": 186.0267791748047,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 36.57143020629883
+          },
+          {
+            "ascender": 25.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 6.857142925262451,
+            "height": 32.57143020629883,
+            "text": "playback replaces ",
+            "width": 232.10714721679688,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 69.14286041259766
+          },
+          {
+            "ascender": 25.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 6.857142925262451,
+            "height": 32.57143020629883,
+            "text": "current audio. Scale ",
+            "width": 255.16964721679688,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 101.71428680419922
+          },
+          {
+            "ascender": 25.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 8,
+            "height": 33.71428680419922,
+            "text": "2",
+            "width": 16,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 134.2857208251953
+          }
+        ],
+        "name": "revision",
+        "scale": 2
+      },
+      {
+        "lines": [
+          {
+            "ascender": 20.571428298950195,
+            "capHeight": 14.78857135772705,
+            "descender": 6.285714149475098,
+            "height": 26.85714340209961,
+            "text": "Correct! B is Bravo.",
+            "width": 173.96652221679688,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 0
+          }
+        ],
+        "name": "feedback",
+        "scale": 2
+      },
+      {
+        "lines": [
+          {
+            "ascender": 20.571428298950195,
+            "capHeight": 14.78857135772705,
+            "descender": 6.285714149475098,
+            "height": 26.85714340209961,
+            "text": "Nested stable bold text and ",
+            "width": 257.1428527832031,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 0
+          },
+          {
+            "ascender": 20.571428298950195,
+            "capHeight": 14.78857135772705,
+            "descender": 6.285714149475098,
+            "height": 26.85714340209961,
+            "text": "italic words wrap with the ",
+            "width": 234.265625,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 26.85714340209961
+          },
+          {
+            "ascender": 20.571428298950195,
+            "capHeight": 14.78857135772705,
+            "descender": 6.285714149475098,
+            "height": 26.85714340209961,
+            "text": "system font size.",
+            "width": 158.125,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 53.71428680419922
+          }
+        ],
+        "name": "nested",
+        "scale": 2
+      },
+      {
+        "lines": [
+          {
+            "ascender": 27.428571701049805,
+            "capHeight": 20.125715255737305,
+            "descender": 8.571428298950195,
+            "height": 36,
+            "text": "Correct! B is Bravo.",
+            "width": 238.21205139160156,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 0
+          }
+        ],
+        "name": "feedback",
+        "scale": 2
+      },
+      {
+        "lines": [
+          {
+            "ascender": 27.428571701049805,
+            "capHeight": 20.125715255737305,
+            "descender": 8.571428298950195,
+            "height": 36,
+            "text": "Nested stable ",
+            "width": 180,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 0
+          },
+          {
+            "ascender": 27.428571701049805,
+            "capHeight": 20.125715255737305,
+            "descender": 8.571428298950195,
+            "height": 36,
+            "text": "bold text and italic ",
+            "width": 237.14285278320312,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 36
+          },
+          {
+            "ascender": 27.428571701049805,
+            "capHeight": 20.125715255737305,
+            "descender": 8.571428298950195,
+            "height": 36,
+            "text": "words wrap with the ",
+            "width": 255.765625,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 72
+          },
+          {
+            "ascender": 27.428571701049805,
+            "capHeight": 20.125715255737305,
+            "descender": 8.571428298950195,
+            "height": 36,
+            "text": "system font size.",
+            "width": 211.20982360839844,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 108
+          }
+        ],
+        "name": "nested",
+        "scale": 2
+      },
+      {
+        "lines": [
+          {
+            "ascender": 29.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 6.857142925262451,
+            "height": 36.57143020629883,
+            "text": "Tap a card to hear ",
+            "width": 232.20982360839844,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 0
+          },
+          {
+            "ascender": 25.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 6.857142925262451,
+            "height": 32.57143020629883,
+            "text": "the word. New ",
+            "width": 186.0267791748047,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 36.57143020629883
+          },
+          {
+            "ascender": 25.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 6.857142925262451,
+            "height": 32.57143020629883,
+            "text": "playback replaces ",
+            "width": 232.10714721679688,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 69.14286041259766
+          },
+          {
+            "ascender": 25.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 8,
+            "height": 33.71428680419922,
+            "text": "current audio.",
+            "width": 172.88392639160156,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 101.71428680419922
+          }
+        ],
+        "name": "stable",
+        "scale": 2
+      },
+      {
+        "name": "input",
+        "scale": 2,
+        "size": {
+          "height": 46.28571319580078,
+          "width": 599195.4375
+        }
+      }
+    ],
+    "focused": true,
+    "frames": {
+      "feedback": {
+        "height": 36,
+        "width": 260,
+        "x": 18.285720825195312,
+        "y": 389.71429443359375
+      },
+      "input": {
+        "height": 63.4285888671875,
+        "width": 375.4285888671875,
+        "x": 17.714279174804688,
+        "y": 437.71429443359375
+      },
+      "nested": {
+        "height": 144,
+        "width": 260,
+        "x": 17.714279174804688,
+        "y": 500.5714111328125
+      },
+      "revision": {
+        "height": 168,
+        "width": 260,
+        "x": 18.285720825195312,
+        "y": 209.71429443359375
+      },
+      "stable": {
+        "height": 135.4285888671875,
+        "width": 260,
+        "x": 18.285720825195312,
+        "y": 62.28570556640625
+      }
+    },
+    "mounts": 1,
+    "selection": {
+      "end": 7,
+      "start": 7
+    },
+    "value": "NUWJ359"
+  },
+  "return1": {
+    "dimensions": {
+      "fontScale": 1,
+      "height": 914.2857142857143,
+      "scale": 1.75,
+      "width": 411.42857142857144
+    },
+    "events": [
+      {
+        "lines": [
+          {
+            "ascender": 17.14285659790039,
+            "capHeight": 11.502856254577637,
+            "descender": 4,
+            "height": 21.14285659790039,
+            "text": "Tap a card to hear the word. New ",
+            "width": 236.953125,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          },
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 11.502856254577637,
+            "descender": 4.5714287757873535,
+            "height": 19.428571701049805,
+            "text": "playback replaces current audio.",
+            "width": 228.73214721679688,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 21.14285659790039
+          }
+        ],
+        "name": "stable",
+        "scale": 1
+      },
+      {
+        "lines": [
+          {
+            "ascender": 17.14285659790039,
+            "capHeight": 11.502856254577637,
+            "descender": 4,
+            "height": 21.14285659790039,
+            "text": "Tap a card to hear the word. New ",
+            "width": 236.953125,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          },
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 11.502856254577637,
+            "descender": 4,
+            "height": 18.85714340209961,
+            "text": "playback replaces current audio. ",
+            "width": 232.73214721679688,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 21.14285659790039
+          },
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 11.502856254577637,
+            "descender": 4.5714287757873535,
+            "height": 19.428571701049805,
+            "text": "Scale 1",
+            "width": 52.57143020629883,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 40
+          }
+        ],
+        "name": "revision",
+        "scale": 1
+      },
+      {
+        "lines": [
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "Correct! B is Bravo.",
+            "width": 133.59375,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          }
+        ],
+        "name": "feedback",
+        "scale": 1
+      },
+      {
+        "lines": [
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "Nested stable bold text and italic ",
+            "width": 236.57142639160156,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          },
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "words wrap with the system font ",
+            "width": 232.11160278320312,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 24
+          },
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "size.",
+            "width": 32.44643020629883,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 48
+          }
+        ],
+        "name": "nested",
+        "scale": 1
+      },
+      {
+        "name": "input",
+        "scale": 1,
+        "size": {
+          "height": 46.28571319580078,
+          "width": 599195.4375
+        }
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 3.4285714626312256,
+            "height": 18.285715103149414,
+            "text": "Tap a card to hear the word. New playback ",
+            "width": 261.6116027832031,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          },
+          {
+            "ascender": 12.571428298950195,
+            "capHeight": 9.857142448425293,
+            "descender": 4,
+            "height": 16.571428298950195,
+            "text": "replaces current audio.",
+            "width": 139.7455291748047,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 18.285715103149414
+          }
+        ],
+        "name": "stable",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 3.4285714626312256,
+            "height": 18.285715103149414,
+            "text": "Tap a card to hear the word. New playback ",
+            "width": 261.6116027832031,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          },
+          {
+            "ascender": 12.571428298950195,
+            "capHeight": 9.857142448425293,
+            "descender": 4,
+            "height": 16.571428298950195,
+            "text": "replaces current audio. Scale 1",
+            "width": 187.7455291748047,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 18.285715103149414
+          }
+        ],
+        "name": "revision",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 5.714285850524902,
+            "height": 20.571428298950195,
+            "text": "Correct! B is Bravo.",
+            "width": 116.546875,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          }
+        ],
+        "name": "feedback",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 5.714285850524902,
+            "height": 20.571428298950195,
+            "text": "Nested stable bold text and italic words ",
+            "width": 245.015625,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          },
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 5.714285850524902,
+            "height": 20.571428298950195,
+            "text": "wrap with the system font size.",
+            "width": 188.19642639160156,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 20.571428298950195
+          }
+        ],
+        "name": "nested",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 17.14285659790039,
+            "capHeight": 11.502856254577637,
+            "descender": 4,
+            "height": 21.14285659790039,
+            "text": "Tap a card to hear the word. New ",
+            "width": 236.953125,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          },
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 11.502856254577637,
+            "descender": 4.5714287757873535,
+            "height": 19.428571701049805,
+            "text": "playback replaces current audio.",
+            "width": 228.73214721679688,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 21.14285659790039
+          }
+        ],
+        "name": "stable",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 3.4285714626312256,
+            "height": 18.285715103149414,
+            "text": "Tap a card to hear the word. New ",
+            "width": 204.56919860839844,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          },
+          {
+            "ascender": 12.571428298950195,
+            "capHeight": 9.857142448425293,
+            "descender": 3.4285714626312256,
+            "height": 16,
+            "text": "playback replaces current audio. Scale ",
+            "width": 237.359375,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 18.285715103149414
+          },
+          {
+            "ascender": 12.571428298950195,
+            "capHeight": 9.857142448425293,
+            "descender": 4,
+            "height": 16.571428298950195,
+            "text": "0.8500000238418579",
+            "width": 129.7142791748047,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 34.28571319580078
+          }
+        ],
+        "name": "revision",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "Correct! B is Bravo.",
+            "width": 133.59375,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          }
+        ],
+        "name": "feedback",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "Nested stable bold text and italic ",
+            "width": 236.57142639160156,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          },
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "words wrap with the system font ",
+            "width": 232.11160278320312,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 24
+          },
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "size.",
+            "width": 32.44643020629883,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 48
+          }
+        ],
+        "name": "nested",
+        "scale": 0.8500000238418579
+      },
+      {
+        "name": "input",
+        "scale": 0.8500000238418579,
+        "size": {
+          "height": 46.28571319580078,
+          "width": 599195.4375
+        }
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 3.4285714626312256,
+            "height": 18.285715103149414,
+            "text": "Tap a card to hear the word. New playback ",
+            "width": 261.6116027832031,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          },
+          {
+            "ascender": 12.571428298950195,
+            "capHeight": 9.857142448425293,
+            "descender": 4,
+            "height": 16.571428298950195,
+            "text": "replaces current audio.",
+            "width": 139.7455291748047,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 18.285715103149414
+          }
+        ],
+        "name": "stable",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 5.714285850524902,
+            "height": 20.571428298950195,
+            "text": "Correct! B is Bravo.",
+            "width": 116.546875,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          }
+        ],
+        "name": "feedback",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 5.714285850524902,
+            "height": 20.571428298950195,
+            "text": "Nested stable bold text and italic words ",
+            "width": 245.015625,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          },
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 5.714285850524902,
+            "height": 20.571428298950195,
+            "text": "wrap with the system font size.",
+            "width": 188.19642639160156,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 20.571428298950195
+          }
+        ],
+        "name": "nested",
+        "scale": 0.8500000238418579
+      },
+      {
+        "lines": [
+          {
+            "ascender": 22.285715103149414,
+            "capHeight": 14.78857135772705,
+            "descender": 5.142857074737549,
+            "height": 27.428571701049805,
+            "text": "Tap a card to hear the word. ",
+            "width": 261.1428527832031,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 0
+          },
+          {
+            "ascender": 18.85714340209961,
+            "capHeight": 14.78857135772705,
+            "descender": 5.142857074737549,
+            "height": 24,
+            "text": "New playback replaces ",
+            "width": 216.23214721679688,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 27.428571701049805
+          },
+          {
+            "ascender": 18.85714340209961,
+            "capHeight": 14.78857135772705,
+            "descender": 5.714285850524902,
+            "height": 24.571428298950195,
+            "text": "current audio.",
+            "width": 127.23883819580078,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 51.42856979370117
+          }
+        ],
+        "name": "stable",
+        "scale": 1.2999999523162842
+      },
+      {
+        "lines": [
+          {
+            "ascender": 22.285715103149414,
+            "capHeight": 14.78857135772705,
+            "descender": 5.142857074737549,
+            "height": 27.428571701049805,
+            "text": "Tap a card to hear the word. ",
+            "width": 261.1428527832031,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 0
+          },
+          {
+            "ascender": 18.85714340209961,
+            "capHeight": 14.78857135772705,
+            "descender": 5.142857074737549,
+            "height": 24,
+            "text": "New playback replaces ",
+            "width": 216.23214721679688,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 27.428571701049805
+          },
+          {
+            "ascender": 18.85714340209961,
+            "capHeight": 14.78857135772705,
+            "descender": 5.142857074737549,
+            "height": 24,
+            "text": "current audio. Scale ",
+            "width": 187.81027221679688,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 51.42856979370117
+          },
+          {
+            "ascender": 18.85714340209961,
+            "capHeight": 14.78857135772705,
+            "descender": 5.714285850524902,
+            "height": 24.571428298950195,
+            "text": "0.8500000238418579",
+            "width": 200,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 75.42857360839844
+          }
+        ],
+        "name": "revision",
+        "scale": 1.2999999523162842
+      },
+      {
+        "lines": [
+          {
+            "ascender": 20.571428298950195,
+            "capHeight": 14.78857135772705,
+            "descender": 6.285714149475098,
+            "height": 26.85714340209961,
+            "text": "Correct! B is Bravo.",
+            "width": 173.96652221679688,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 0
+          }
+        ],
+        "name": "feedback",
+        "scale": 1.2999999523162842
+      },
+      {
+        "lines": [
+          {
+            "ascender": 20.571428298950195,
+            "capHeight": 14.78857135772705,
+            "descender": 6.285714149475098,
+            "height": 26.85714340209961,
+            "text": "Nested stable bold text and ",
+            "width": 257.1428527832031,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 0
+          },
+          {
+            "ascender": 20.571428298950195,
+            "capHeight": 14.78857135772705,
+            "descender": 6.285714149475098,
+            "height": 26.85714340209961,
+            "text": "italic words wrap with the ",
+            "width": 234.265625,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 26.85714340209961
+          },
+          {
+            "ascender": 20.571428298950195,
+            "capHeight": 14.78857135772705,
+            "descender": 6.285714149475098,
+            "height": 26.85714340209961,
+            "text": "system font size.",
+            "width": 158.125,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 53.71428680419922
+          }
+        ],
+        "name": "nested",
+        "scale": 1.2999999523162842
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 3.4285714626312256,
+            "height": 18.285715103149414,
+            "text": "Tap a card to hear the word. New playback ",
+            "width": 261.6116027832031,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          },
+          {
+            "ascender": 12.571428298950195,
+            "capHeight": 9.857142448425293,
+            "descender": 4,
+            "height": 16.571428298950195,
+            "text": "replaces current audio.",
+            "width": 139.7455291748047,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 18.285715103149414
+          }
+        ],
+        "name": "stable",
+        "scale": 1.2999999523162842
+      },
+      {
+        "lines": [
+          {
+            "ascender": 22.285715103149414,
+            "capHeight": 14.78857135772705,
+            "descender": 5.142857074737549,
+            "height": 27.428571701049805,
+            "text": "Tap a card to hear the word. ",
+            "width": 261.1428527832031,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 0
+          },
+          {
+            "ascender": 18.85714340209961,
+            "capHeight": 14.78857135772705,
+            "descender": 5.142857074737549,
+            "height": 24,
+            "text": "New playback replaces ",
+            "width": 216.23214721679688,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 27.428571701049805
+          },
+          {
+            "ascender": 18.85714340209961,
+            "capHeight": 14.78857135772705,
+            "descender": 5.142857074737549,
+            "height": 24,
+            "text": "current audio. Scale ",
+            "width": 187.81027221679688,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 51.42856979370117
+          },
+          {
+            "ascender": 18.85714340209961,
+            "capHeight": 14.78857135772705,
+            "descender": 5.714285850524902,
+            "height": 24.571428298950195,
+            "text": "1.2999999523162842",
+            "width": 200,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 75.42857360839844
+          }
+        ],
+        "name": "revision",
+        "scale": 1.2999999523162842
+      },
+      {
+        "name": "input",
+        "scale": 1.2999999523162842,
+        "size": {
+          "height": 46.28571319580078,
+          "width": 599195.4375
+        }
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 5.714285850524902,
+            "height": 20.571428298950195,
+            "text": "Correct! B is Bravo.",
+            "width": 116.546875,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          }
+        ],
+        "name": "feedback",
+        "scale": 1.2999999523162842
+      },
+      {
+        "lines": [
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 5.714285850524902,
+            "height": 20.571428298950195,
+            "text": "Nested stable bold text and italic words ",
+            "width": 245.015625,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 0
+          },
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 9.857142448425293,
+            "descender": 5.714285850524902,
+            "height": 20.571428298950195,
+            "text": "wrap with the system font size.",
+            "width": 188.19642639160156,
+            "x": 0,
+            "xHeight": 7.285714149475098,
+            "y": 20.571428298950195
+          }
+        ],
+        "name": "nested",
+        "scale": 1.2999999523162842
+      },
+      {
+        "lines": [
+          {
+            "ascender": 22.285715103149414,
+            "capHeight": 14.78857135772705,
+            "descender": 5.142857074737549,
+            "height": 27.428571701049805,
+            "text": "Tap a card to hear the word. ",
+            "width": 261.1428527832031,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 0
+          },
+          {
+            "ascender": 18.85714340209961,
+            "capHeight": 14.78857135772705,
+            "descender": 5.142857074737549,
+            "height": 24,
+            "text": "New playback replaces ",
+            "width": 216.23214721679688,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 27.428571701049805
+          },
+          {
+            "ascender": 18.85714340209961,
+            "capHeight": 14.78857135772705,
+            "descender": 5.714285850524902,
+            "height": 24.571428298950195,
+            "text": "current audio.",
+            "width": 127.23883819580078,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 51.42856979370117
+          }
+        ],
+        "name": "stable",
+        "scale": 2
+      },
+      {
+        "lines": [
+          {
+            "ascender": 29.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 6.857142925262451,
+            "height": 36.57143020629883,
+            "text": "Tap a card to hear ",
+            "width": 232.20982360839844,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 0
+          },
+          {
+            "ascender": 25.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 6.857142925262451,
+            "height": 32.57143020629883,
+            "text": "the word. New ",
+            "width": 186.0267791748047,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 36.57143020629883
+          },
+          {
+            "ascender": 25.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 6.857142925262451,
+            "height": 32.57143020629883,
+            "text": "playback replaces ",
+            "width": 232.10714721679688,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 69.14286041259766
+          },
+          {
+            "ascender": 25.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 8,
+            "height": 33.71428680419922,
+            "text": "current audio.",
+            "width": 172.88392639160156,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 101.71428680419922
+          }
+        ],
+        "name": "stable",
+        "scale": 2
+      },
+      {
+        "lines": [
+          {
+            "ascender": 29.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 6.857142925262451,
+            "height": 36.57143020629883,
+            "text": "Tap a card to hear ",
+            "width": 232.20982360839844,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 0
+          },
+          {
+            "ascender": 25.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 6.857142925262451,
+            "height": 32.57143020629883,
+            "text": "the word. New ",
+            "width": 186.0267791748047,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 36.57143020629883
+          },
+          {
+            "ascender": 25.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 6.857142925262451,
+            "height": 32.57143020629883,
+            "text": "playback replaces ",
+            "width": 232.10714721679688,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 69.14286041259766
+          },
+          {
+            "ascender": 25.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 6.857142925262451,
+            "height": 32.57143020629883,
+            "text": "current audio. Scale ",
+            "width": 255.16964721679688,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 101.71428680419922
+          },
+          {
+            "ascender": 25.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 6.857142925262451,
+            "height": 32.57143020629883,
+            "text": "1.29999995231628",
+            "width": 247.42857360839844,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 134.2857208251953
+          },
+          {
+            "ascender": 25.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 8,
+            "height": 33.71428680419922,
+            "text": "42",
+            "width": 32,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 166.85714721679688
+          }
+        ],
+        "name": "revision",
+        "scale": 2
+      },
+      {
+        "lines": [
+          {
+            "ascender": 29.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 6.857142925262451,
+            "height": 36.57143020629883,
+            "text": "Tap a card to hear ",
+            "width": 232.20982360839844,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 0
+          },
+          {
+            "ascender": 25.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 6.857142925262451,
+            "height": 32.57143020629883,
+            "text": "the word. New ",
+            "width": 186.0267791748047,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 36.57143020629883
+          },
+          {
+            "ascender": 25.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 6.857142925262451,
+            "height": 32.57143020629883,
+            "text": "playback replaces ",
+            "width": 232.10714721679688,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 69.14286041259766
+          },
+          {
+            "ascender": 25.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 6.857142925262451,
+            "height": 32.57143020629883,
+            "text": "current audio. Scale ",
+            "width": 255.16964721679688,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 101.71428680419922
+          },
+          {
+            "ascender": 25.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 8,
+            "height": 33.71428680419922,
+            "text": "2",
+            "width": 16,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 134.2857208251953
+          }
+        ],
+        "name": "revision",
+        "scale": 2
+      },
+      {
+        "lines": [
+          {
+            "ascender": 20.571428298950195,
+            "capHeight": 14.78857135772705,
+            "descender": 6.285714149475098,
+            "height": 26.85714340209961,
+            "text": "Correct! B is Bravo.",
+            "width": 173.96652221679688,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 0
+          }
+        ],
+        "name": "feedback",
+        "scale": 2
+      },
+      {
+        "lines": [
+          {
+            "ascender": 20.571428298950195,
+            "capHeight": 14.78857135772705,
+            "descender": 6.285714149475098,
+            "height": 26.85714340209961,
+            "text": "Nested stable bold text and ",
+            "width": 257.1428527832031,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 0
+          },
+          {
+            "ascender": 20.571428298950195,
+            "capHeight": 14.78857135772705,
+            "descender": 6.285714149475098,
+            "height": 26.85714340209961,
+            "text": "italic words wrap with the ",
+            "width": 234.265625,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 26.85714340209961
+          },
+          {
+            "ascender": 20.571428298950195,
+            "capHeight": 14.78857135772705,
+            "descender": 6.285714149475098,
+            "height": 26.85714340209961,
+            "text": "system font size.",
+            "width": 158.125,
+            "x": 0,
+            "xHeight": 10.931427955627441,
+            "y": 53.71428680419922
+          }
+        ],
+        "name": "nested",
+        "scale": 2
+      },
+      {
+        "lines": [
+          {
+            "ascender": 27.428571701049805,
+            "capHeight": 20.125715255737305,
+            "descender": 8.571428298950195,
+            "height": 36,
+            "text": "Correct! B is Bravo.",
+            "width": 238.21205139160156,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 0
+          }
+        ],
+        "name": "feedback",
+        "scale": 2
+      },
+      {
+        "lines": [
+          {
+            "ascender": 27.428571701049805,
+            "capHeight": 20.125715255737305,
+            "descender": 8.571428298950195,
+            "height": 36,
+            "text": "Nested stable ",
+            "width": 180,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 0
+          },
+          {
+            "ascender": 27.428571701049805,
+            "capHeight": 20.125715255737305,
+            "descender": 8.571428298950195,
+            "height": 36,
+            "text": "bold text and italic ",
+            "width": 237.14285278320312,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 36
+          },
+          {
+            "ascender": 27.428571701049805,
+            "capHeight": 20.125715255737305,
+            "descender": 8.571428298950195,
+            "height": 36,
+            "text": "words wrap with the ",
+            "width": 255.765625,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 72
+          },
+          {
+            "ascender": 27.428571701049805,
+            "capHeight": 20.125715255737305,
+            "descender": 8.571428298950195,
+            "height": 36,
+            "text": "system font size.",
+            "width": 211.20982360839844,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 108
+          }
+        ],
+        "name": "nested",
+        "scale": 2
+      },
+      {
+        "lines": [
+          {
+            "ascender": 29.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 6.857142925262451,
+            "height": 36.57143020629883,
+            "text": "Tap a card to hear ",
+            "width": 232.20982360839844,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 0
+          },
+          {
+            "ascender": 25.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 6.857142925262451,
+            "height": 32.57143020629883,
+            "text": "the word. New ",
+            "width": 186.0267791748047,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 36.57143020629883
+          },
+          {
+            "ascender": 25.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 6.857142925262451,
+            "height": 32.57143020629883,
+            "text": "playback replaces ",
+            "width": 232.10714721679688,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 69.14286041259766
+          },
+          {
+            "ascender": 25.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 8,
+            "height": 33.71428680419922,
+            "text": "current audio.",
+            "width": 172.88392639160156,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 101.71428680419922
+          }
+        ],
+        "name": "stable",
+        "scale": 2
+      },
+      {
+        "name": "input",
+        "scale": 2,
+        "size": {
+          "height": 46.28571319580078,
+          "width": 599195.4375
+        }
+      },
+      {
+        "lines": [
+          {
+            "ascender": 17.14285659790039,
+            "capHeight": 11.502856254577637,
+            "descender": 4,
+            "height": 21.14285659790039,
+            "text": "Tap a card to hear the word. New ",
+            "width": 236.953125,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          },
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 11.502856254577637,
+            "descender": 4.5714287757873535,
+            "height": 19.428571701049805,
+            "text": "playback replaces current audio.",
+            "width": 228.73214721679688,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 21.14285659790039
+          }
+        ],
+        "name": "stable",
+        "scale": 1
+      },
+      {
+        "lines": [
+          {
+            "ascender": 17.14285659790039,
+            "capHeight": 11.502856254577637,
+            "descender": 4,
+            "height": 21.14285659790039,
+            "text": "Tap a card to hear the word. New ",
+            "width": 236.953125,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          },
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 11.502856254577637,
+            "descender": 4,
+            "height": 18.85714340209961,
+            "text": "playback replaces current audio. ",
+            "width": 232.73214721679688,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 21.14285659790039
+          },
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 11.502856254577637,
+            "descender": 4.5714287757873535,
+            "height": 19.428571701049805,
+            "text": "Scale 2",
+            "width": 52.57143020629883,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 40
+          }
+        ],
+        "name": "revision",
+        "scale": 1
+      },
+      {
+        "lines": [
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "Correct! B is Bravo.",
+            "width": 133.59375,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          }
+        ],
+        "name": "feedback",
+        "scale": 1
+      },
+      {
+        "lines": [
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "Nested stable bold text and italic ",
+            "width": 236.57142639160156,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          },
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "words wrap with the system font ",
+            "width": 232.11160278320312,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 24
+          },
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "size.",
+            "width": 32.44643020629883,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 48
+          }
+        ],
+        "name": "nested",
+        "scale": 1
+      },
+      {
+        "lines": [
+          {
+            "ascender": 29.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 6.857142925262451,
+            "height": 36.57143020629883,
+            "text": "Tap a card to hear ",
+            "width": 232.20982360839844,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 0
+          },
+          {
+            "ascender": 25.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 6.857142925262451,
+            "height": 32.57143020629883,
+            "text": "the word. New ",
+            "width": 186.0267791748047,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 36.57143020629883
+          },
+          {
+            "ascender": 25.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 6.857142925262451,
+            "height": 32.57143020629883,
+            "text": "playback replaces ",
+            "width": 232.10714721679688,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 69.14286041259766
+          },
+          {
+            "ascender": 25.714284896850586,
+            "capHeight": 20.125715255737305,
+            "descender": 8,
+            "height": 33.71428680419922,
+            "text": "current audio.",
+            "width": 172.88392639160156,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 101.71428680419922
+          }
+        ],
+        "name": "stable",
+        "scale": 1
+      },
+      {
+        "lines": [
+          {
+            "ascender": 17.14285659790039,
+            "capHeight": 11.502856254577637,
+            "descender": 4,
+            "height": 21.14285659790039,
+            "text": "Tap a card to hear the word. New ",
+            "width": 236.953125,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          },
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 11.502856254577637,
+            "descender": 4,
+            "height": 18.85714340209961,
+            "text": "playback replaces current audio. ",
+            "width": 232.73214721679688,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 21.14285659790039
+          },
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 11.502856254577637,
+            "descender": 4.5714287757873535,
+            "height": 19.428571701049805,
+            "text": "Scale 1",
+            "width": 52.57143020629883,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 40
+          }
+        ],
+        "name": "revision",
+        "scale": 1
+      },
+      {
+        "lines": [
+          {
+            "ascender": 27.428571701049805,
+            "capHeight": 20.125715255737305,
+            "descender": 8.571428298950195,
+            "height": 36,
+            "text": "Correct! B is Bravo.",
+            "width": 238.21205139160156,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 0
+          }
+        ],
+        "name": "feedback",
+        "scale": 1
+      },
+      {
+        "lines": [
+          {
+            "ascender": 27.428571701049805,
+            "capHeight": 20.125715255737305,
+            "descender": 8.571428298950195,
+            "height": 36,
+            "text": "Nested stable ",
+            "width": 180,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 0
+          },
+          {
+            "ascender": 27.428571701049805,
+            "capHeight": 20.125715255737305,
+            "descender": 8.571428298950195,
+            "height": 36,
+            "text": "bold text and italic ",
+            "width": 237.14285278320312,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 36
+          },
+          {
+            "ascender": 27.428571701049805,
+            "capHeight": 20.125715255737305,
+            "descender": 8.571428298950195,
+            "height": 36,
+            "text": "words wrap with the ",
+            "width": 255.765625,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 72
+          },
+          {
+            "ascender": 27.428571701049805,
+            "capHeight": 20.125715255737305,
+            "descender": 8.571428298950195,
+            "height": 36,
+            "text": "system font size.",
+            "width": 211.20982360839844,
+            "x": 0,
+            "xHeight": 14.880000114440918,
+            "y": 108
+          }
+        ],
+        "name": "nested",
+        "scale": 1
+      },
+      {
+        "lines": [
+          {
+            "ascender": 17.14285659790039,
+            "capHeight": 11.502856254577637,
+            "descender": 4,
+            "height": 21.14285659790039,
+            "text": "Tap a card to hear the word. New ",
+            "width": 236.953125,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          },
+          {
+            "ascender": 14.857142448425293,
+            "capHeight": 11.502856254577637,
+            "descender": 4.5714287757873535,
+            "height": 19.428571701049805,
+            "text": "playback replaces current audio.",
+            "width": 228.73214721679688,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 21.14285659790039
+          }
+        ],
+        "name": "stable",
+        "scale": 1
+      },
+      {
+        "lines": [
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "Correct! B is Bravo.",
+            "width": 133.59375,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          }
+        ],
+        "name": "feedback",
+        "scale": 1
+      },
+      {
+        "lines": [
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "Nested stable bold text and italic ",
+            "width": 236.57142639160156,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 0
+          },
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "words wrap with the system font ",
+            "width": 232.11160278320312,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 24
+          },
+          {
+            "ascender": 17.714284896850586,
+            "capHeight": 11.502856254577637,
+            "descender": 6.285714149475098,
+            "height": 24,
+            "text": "size.",
+            "width": 32.44643020629883,
+            "x": 0,
+            "xHeight": 8.502857208251953,
+            "y": 48
+          }
+        ],
+        "name": "nested",
+        "scale": 1
+      },
+      {
+        "name": "input",
+        "scale": 1,
+        "size": {
+          "height": 46.28571319580078,
+          "width": 599195.4375
+        }
+      }
+    ],
+    "focused": true,
+    "frames": {
+      "feedback": {
+        "height": 24,
+        "width": 260,
+        "x": 18.285720825195312,
+        "y": 139.42855834960938
+      },
+      "input": {
+        "height": 47.4285888671875,
+        "width": 375.4285888671875,
+        "x": 17.714279174804688,
+        "y": 175.42855834960938
+      },
+      "nested": {
+        "height": 72,
+        "width": 260,
+        "x": 17.714279174804688,
+        "y": 222.28570556640625
+      },
+      "revision": {
+        "height": 59.428558349609375,
+        "width": 260,
+        "x": 18.285720825195312,
+        "y": 68
+      },
+      "stable": {
+        "height": 40.571441650390625,
+        "width": 260,
+        "x": 18.285720825195312,
+        "y": 15.428558349609375
+      }
+    },
+    "mounts": 1,
+    "selection": {
+      "end": 7,
+      "start": 7
+    },
+    "value": "NUWJ359"
+  }
+}

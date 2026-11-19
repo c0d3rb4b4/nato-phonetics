@@ -50,6 +50,84 @@ npm run build:android:release
 
 The release bundle is `android/app/build/outputs/bundle/release/app-release.aab`. It contains bundled JavaScript. Run 17 directly builds all four configured architectures and records the [unsigned AAB/embedded-bundle hashes](evidence/run17/android/release-artifact.json) and [actual signature inspection](evidence/run17/android/release-signature.log). This available artifact remains separate from signed internal-distribution acceptance. With no private credentials it remains unsigned. Set all four `NATO_UPLOAD_STORE_FILE`, `NATO_UPLOAD_STORE_PASSWORD`, `NATO_UPLOAD_KEY_ALIAS`, `NATO_UPLOAD_KEY_PASSWORD` values through the local environment/CI secret store to sign it; partial configuration fails rather than silently signing with a debug key. Keep the keystore and values outside this repository. Store submission is a separate M11 action.
 
+### P05.2 Android source candidate — Run26, acceptance still active
+
+Ordinary builds still consume Maven RN0.81.5. The opt-in candidate uses the
+exact installed npm source and hash-guarded patches; it has not yet passed all
+P05.2 application acceptance. Read [current checkpoints](evidence/run26/shared/forecast.md)
+before resuming. Do not mistake an edited C++ file for an installed repair.
+
+With the pinned Node22.23.0/JDK17/SDK36/NDK27.1.12297006 environment:
+
+```sh
+npm run prepare:android:source
+cd android
+./gradlew :app:dependencyInsight --dependency react-android --configuration debugRuntimeClasspath -PnatoReactNativeSource=true --max-workers=1
+./gradlew :app:assembleDebug -PnatoReactNativeSource=true -PreactNativeArchitectures=arm64-v8a --max-workers=1 '-Dorg.gradle.jvmargs=-Xmx2048m -XX:MaxMetaspaceSize=512m -XX:ActiveProcessorCount=2'
+```
+
+The [official composite-build path](https://reactnative.dev/contributing/how-to-build-from-source)
+is pinned to0.81.5 without a nightly upgrade. CMake3.30.5 is installed by the SDK
+on first use. The guarded build-only edit makes ReactAndroid compile against
+the same Maven Hermes0.81.5 prefab as the app, avoiding a redundant Hermes
+source build and its observed archive-prefix extraction failure. Explicit
+CMake compile/link job pools serialize Ninja; CMAKE_BUILD_PARALLEL_LEVEL alone
+does not constrain AGP's direct Ninja invocation. Inspect actual disk and swap
+at checkpoints. Run26 removes only owned, regenerable obsolete native
+intermediates and retains APK/AAB/source/evidence. All other ABIs and release
+qualification remain required before integrating a repair.
+
+The ordinary-text runtime regression uses normal AppRegistry startup:
+
+```sh
+npx --no-install react-native start --config tests/fixtures/android-font-scale/metro.config.cjs
+# In another shell, after installing the intended APK without clearing data:
+adb -s emulator-5580 reverse tcp:8081 tcp:8081
+ANDROID_SERIAL=emulator-5580 npm run check:android:font-scale -- artifacts/font-scale --sweep --editing
+```
+
+It records APK/fixture identity, frames, native widget content height, mount/value
+retention, strict one-pixel live/cold comparisons and actual screenshots. The
+full invocation checks60 frame/widget comparisons and3 committed-edit state
+checks. Correct outer frames alone cannot qualify editable glyph sizing. A collected red report exits1.
+Historical samples can exercise the same gate with
+`node scripts/verify-android-font-scale.cjs --samples docs/evidence/run20/android/samples.json`.
+This must fail the three original controls. After fixture use, stop its Metro,
+restore the ordinary Metro config and restart the product process; restore
+the captured font-scale value even on failure. Never replace a live React root.
+The separate [native executable](../scripts/native-tests/font-environment.cpp)
+links actual candidate RN/Yoga; build it with
+`ANDROID_HOME=... python3 scripts/build-android-font-native.py <exact-prefab> <output>`.
+Its RN_SERIALIZABLE_STATE ABI define must match the app. Use the exact candidate
+libraries for execution, record hashes and retain the original red control.
+It isolates renderer context/owner propagation; Android SP/JNI, focus/composition
+and real application acceptance are separate checks.
+
+Run26 extends this to six actual native regression cases: two font-change
+owner paths, two generation-only owner paths, adoption of clean JS children
+from an older font environment, and the actual RN measurement cache under a
+changed simulated SP environment. All native measurement bodies are preserved;
+the Android fixture supplies actual SP/JNI/frame acceptance. The input driver
+uses UIAutomator physical bounds, types before scale changes, and checks exact
+text/interior caret/focus/height afterward. Invoke its full scope with
+`--sweep --editing`; failed whole commands stay failed.
+
+The source repair tracks the font environment through Android surface JNI,
+LayoutContext and Yoga configuration/adoption, and independently keys the
+measurement/line caches by the actual SP environment. The getter observes
+public `TypedValue` SP conversion and density; it does not replace Android's
+nonlinear scaling. All shared C++ changes are Android-guarded. Exact original
+and patched hashes, [reviewable source diff](evidence/run26/android/font-environment-final.patch),
+[artifact identities](evidence/run26/android/candidate-adoption.json) and
+[checkpoints](evidence/run26/shared/forecast.md) identify the candidate. Source
+preparation checks every file before writing and refreshes stale exported
+headers before Gradle. Never mix old prefab headers with the new library.
+
+The standard Maven path remains unchanged as the failed control. Do not infer
+default-source integration, all-ABI/Release, IME composition, full tile/raster,
+resized-window or physical acceptance from an ARM64 Debug candidate. Actual
+P05.2 status and the exact next Android subtask live in the delivery plan.
+
 ## iOS
 
 Select a working Xcode using `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer`. `xcodebuild -version` and `xcrun simctl list devices available` should work before building. First-launch setup, an unaccepted Apple license or a broken Xcode installation needs machine-owner action; simulator signing itself needs no developer account.
@@ -153,6 +231,28 @@ The attempted Android ordinary-text cache invalidation adapters were isolated di
 Run 07 clears the historical maximum-size iPad J baseline/raster failure, but the added density-3 iPhone probe retains an `India` word lower-edge observation at +2.041928153 physical pixels against 2 px. Its native baseline is exact; actual font/raster-phase diagnosis remains P05.8 engineering. See [the retained measurement](evidence/run07/ios/phone-india-fringe.json). No tolerance or font asset was changed to hide it.
 
 The final focused Debug phone probe also retains two `Juliett` word lower-edge misses at +2.042446952 px, before and after the verified horizontal scroll. Required coverage passes, but strict raster is 453/456; native origin/baseline checks are 1,773/1,773. These are distinct gates.
+
+### Android composition gate (isolated test APK, API36)
+
+The Run26 composition regression uses the actual converter and a small test IME
+through Android's system-managed InputConnection. It is built with existing
+SDK36/build-tools36.0.0/JDK17; no new app dependency or production component is
+added. Use ordinary product Metro, not the fixture config:
+
+```sh
+python3 scripts/build-android-font-instrumentation.py artifacts/font-instrumentation
+python3 scripts/run-android-font-instrumentation.py artifacts/font-instrumentation/font-composition.apk EXACT_APP.apk artifacts/font-composition emulator-5580
+```
+
+Both installed APK hashes must match. The runner and instrumentation restore the
+original system font scale and IME even on failure. adb's exit0 is insufficient:
+actual instrumentation code and report must pass. The gate checks unchanged
+native view/Editable, focus/value/caret/composing range across1→2→1, continued
+composition and commit, with actual UiAutomation screenshots. Two early
+manually created connections failed the composition precondition before any
+font transition; the system-managed test IME passes5 checkpoints. This does not
+qualify physical/provider keyboards or AT. [Android Instrumentation](https://developer.android.com/reference/android/app/Instrumentation),
+[composing-span API](https://developer.android.com/reference/android/view/inputmethod/BaseInputConnection).
 
 ## Run 14 release resources, 18 November 2026
 

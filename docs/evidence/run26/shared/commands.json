@@ -1,0 +1,31 @@
+[
+  {
+    "command": "npm test",
+    "exitCode": 0,
+    "result": "157passed",
+    "log": "shared/tests-final.log"
+  },
+  {
+    "command": "npm run lint",
+    "exitCode": 0,
+    "log": "shared/lint-final.log"
+  },
+  {
+    "command": "npm run typecheck",
+    "exitCode": 0,
+    "log": "shared/typecheck-final.log"
+  },
+  {
+    "command": "npm run export:web",
+    "exitCode": 0,
+    "result": "13routes",
+    "log": "shared/web-export.log"
+  },
+  {
+    "command": "npm run package:web -- dist artifacts/run26/web-final.tar.gz",
+    "exitCode": 0,
+    "sha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+    "identicalTo": "Run23 exact archive SHA256",
+    "log": "shared/web-package.log"
+  }
+]

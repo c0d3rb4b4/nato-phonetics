@@ -1,0 +1,20 @@
+{
+  "serial": "emulator-5580",
+  "binarySha256": "68ea1853be006bbb2e455b5fb595980777fb98d7b7e93c180b1c25c63e2df1cc",
+  "librarySha256": {
+    "libreact_codegen_safeareacontext.so": "bd76d4bf5cc2f7326da08c12b932a0966ef92a4486668d57f77a3536c249cc71",
+    "libjsi.so": "9668869ab61baee209ccd5483dbbb695e1f4cd227bba52eb42222d78c8398f71",
+    "libnative-filters.so": "4294b57460e70a6351ce7ae2733a79c088c907dfa54673a657227ec5bb669594",
+    "libfbjni.so": "a9e35ba55d3f956920281f519385f8a72475ee24819799cb08375fdd4cce2b22",
+    "libhermestooling.so": "539762d81674a7ad2395ca8b55fb9fa105339235b1fa8890aeff3d2f1220f461",
+    "libnative-imagetranscoder.so": "2aed28298a25afd52ac670cf9682398c6c7ba42a57195c01efd565e7ddfe17ca",
+    "libimagepipeline.so": "1b377992e4256fa9398ec057722f84a359c7d588e570c8a41f51d930c19ece7d",
+    "libappmodules.so": "cf74a3915abe82051703e5057769a0a66d14b9ebe3820e5dc6ef6504c74262c3",
+    "libhermes.so": "de9ec8dc062f6cb755b879802f5696ca540f6ea3dddd32245a960119d68b8daa",
+    "libc++_shared.so": "3e852764502d06e0cf1080d532ae7c608b7649d946a3a9d7e84e3d4b7d683214",
+    "libreactnative.so": "45219e87365683805eca7c1a67e7a8528636ffed9cb20a04b1312befdca7ec72"
+  },
+  "exitCode": 1,
+  "stdout": "{\"cloneAlreadyDirty\":false}\n{\"detail\":true,\"viewCloned\":true,\"leafCloned\":false,\"viewClean\":true,\"leafClean\":true,\"measurable\":true}\n{\"passed\":false,\"contextCloneDirty\":true,\"layoutIfNeeded\":true,\"coldHeight\":10,\"liveHeight\":10,\"forcedRootHeight\":10,\"coldMeasures\":1,\"liveMeasures\":1,\"oldSealedTreePreserved\":true,\"observedRootScale\":2,\"directLayoutHeight\":10}\n{\"cloneAlreadyDirty\":true}\n{\"detail\":true,\"viewCloned\":true,\"leafCloned\":false,\"viewClean\":true,\"leafClean\":true,\"measurable\":true}\n{\"passed\":false,\"contextCloneDirty\":true,\"layoutIfNeeded\":true,\"coldHeight\":10,\"liveHeight\":10,\"forcedRootHeight\":10,\"coldMeasures\":1,\"liveMeasures\":1,\"oldSealedTreePreserved\":true,\"observedRootScale\":2,\"directLayoutHeight\":10}\n",
+  "stderr": ""
+}

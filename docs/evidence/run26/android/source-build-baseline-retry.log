@@ -1,0 +1,520 @@
+Starting a Gradle Daemon, 1 incompatible Daemon could not be reused, use --status for details
+> Task :gradle-plugin:settings-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:shared:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:shared:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:shared:compileJava NO-SOURCE
+> Task :gradle-plugin:shared:processResources NO-SOURCE
+> Task :gradle-plugin:shared:classes UP-TO-DATE
+> Task :gradle-plugin:shared:jar UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:compileJava NO-SOURCE
+> Task :gradle-plugin:settings-plugin:pluginDescriptors UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:processResources UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:classes UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:jar UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:react-native-gradle-plugin:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:compileJava NO-SOURCE
+> Task :gradle-plugin:react-native-gradle-plugin:pluginDescriptors UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:processResources UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:classes UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:jar UP-TO-DATE
+Warning: SDK processing. This version only understands SDK XML versions up to 3 but an SDK XML file of version 4 was encountered. This can happen if you use versions of Android Studio and the command-line tools that were released at different times.
+Warning: SDK processing. This version only understands SDK XML versions up to 3 but an SDK XML file of version 4 was encountered. This can happen if you use versions of Android Studio and the command-line tools that were released at different times.
+> Task :react-native:packages:react-native:ReactAndroid:buildCodegenCLI
+> Task :react-native:packages:react-native:ReactAndroid:generateCodegenSchemaFromJavaScript UP-TO-DATE
+> Task :react-native:packages:react-native:ReactAndroid:generateCodegenArtifactsFromSchema UP-TO-DATE
+> Task :react-native:packages:react-native:ReactAndroid:createNativeDepsDirectories UP-TO-DATE
+> Task :app:generateAutolinkingNewArchitectureFiles UP-TO-DATE
+> Task :app:generateAutolinkingPackageList UP-TO-DATE
+> Task :app:generateCodegenSchemaFromJavaScript SKIPPED
+> Task :app:generateCodegenArtifactsFromSchema SKIPPED
+> Task :app:generateReactNativeEntryPoint UP-TO-DATE
+> Task :react-native-async-storage_async-storage:generateCodegenSchemaFromJavaScript UP-TO-DATE
+> Task :react-native-async-storage_async-storage:generateCodegenArtifactsFromSchema UP-TO-DATE
+> Task :react-native-async-storage_async-storage:preBuild UP-TO-DATE
+> Task :react-native-safe-area-context:generateCodegenSchemaFromJavaScript UP-TO-DATE
+> Task :react-native-safe-area-context:generateCodegenArtifactsFromSchema UP-TO-DATE
+> Task :react-native-safe-area-context:preBuild UP-TO-DATE
+> Task :react-native-tts:preBuild UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:generateDebugBuildConfig UP-TO-DATE
+> Task :react-native-async-storage_async-storage:preDebugBuild UP-TO-DATE
+> Task :react-native-async-storage_async-storage:writeDebugAarMetadata UP-TO-DATE
+> Task :react-native-safe-area-context:preDebugBuild UP-TO-DATE
+> Task :react-native-safe-area-context:writeDebugAarMetadata UP-TO-DATE
+> Task :react-native-tts:preDebugBuild UP-TO-DATE
+> Task :react-native-tts:writeDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :react-native-async-storage_async-storage:generateDebugResValues UP-TO-DATE
+> Task :react-native-async-storage_async-storage:generateDebugResources UP-TO-DATE
+> Task :react-native-async-storage_async-storage:packageDebugResources UP-TO-DATE
+> Task :react-native-safe-area-context:generateDebugResValues UP-TO-DATE
+> Task :react-native-safe-area-context:generateDebugResources UP-TO-DATE
+> Task :react-native-safe-area-context:packageDebugResources UP-TO-DATE
+> Task :react-native-tts:generateDebugResValues UP-TO-DATE
+> Task :react-native-tts:generateDebugResources UP-TO-DATE
+> Task :react-native-tts:packageDebugResources UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :react-native:packages:react-native:ReactAndroid:downloadBoost UP-TO-DATE
+> Task :react-native:packages:react-native:ReactAndroid:prepareBoost UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-async-storage_async-storage:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-async-storage_async-storage:processDebugManifest UP-TO-DATE
+> Task :react-native-safe-area-context:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-safe-area-context:processDebugManifest UP-TO-DATE
+> Task :react-native-tts:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-tts:processDebugManifest UP-TO-DATE
+> Task :react-native-async-storage_async-storage:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-async-storage_async-storage:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-async-storage_async-storage:generateDebugRFile UP-TO-DATE
+> Task :react-native-safe-area-context:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-safe-area-context:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-safe-area-context:generateDebugRFile UP-TO-DATE
+> Task :react-native-tts:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-tts:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-tts:generateDebugRFile UP-TO-DATE
+> Task :react-native-async-storage_async-storage:generateDebugBuildConfig UP-TO-DATE
+> Task :react-native-async-storage_async-storage:javaPreCompileDebug UP-TO-DATE
+> Task :react-native-safe-area-context:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :react-native-safe-area-context:generateDebugBuildConfig UP-TO-DATE
+> Task :react-native-safe-area-context:javaPreCompileDebug UP-TO-DATE
+> Task :react-native-tts:generateDebugBuildConfig UP-TO-DATE
+> Task :react-native-tts:javaPreCompileDebug UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:mergeDebugShaders UP-TO-DATE
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :react-native-async-storage_async-storage:mergeDebugShaders UP-TO-DATE
+> Task :react-native-async-storage_async-storage:compileDebugShaders NO-SOURCE
+> Task :react-native-async-storage_async-storage:generateDebugAssets UP-TO-DATE
+> Task :react-native-async-storage_async-storage:mergeDebugAssets UP-TO-DATE
+> Task :react-native-safe-area-context:mergeDebugShaders UP-TO-DATE
+> Task :react-native-safe-area-context:compileDebugShaders NO-SOURCE
+> Task :react-native-safe-area-context:generateDebugAssets UP-TO-DATE
+> Task :react-native-safe-area-context:mergeDebugAssets UP-TO-DATE
+> Task :react-native-tts:mergeDebugShaders UP-TO-DATE
+> Task :react-native-tts:compileDebugShaders NO-SOURCE
+> Task :react-native-tts:generateDebugAssets UP-TO-DATE
+> Task :react-native-tts:mergeDebugAssets UP-TO-DATE
+> Task :app:desugarDebugFileDependencies UP-TO-DATE
+> Task :react-native-async-storage_async-storage:processDebugJavaRes NO-SOURCE
+> Task :react-native-tts:processDebugJavaRes NO-SOURCE
+> Task :react-native:packages:react-native:ReactAndroid:downloadDoubleConversion UP-TO-DATE
+> Task :react-native:packages:react-native:ReactAndroid:prepareDoubleConversion UP-TO-DATE
+> Task :react-native:packages:react-native:ReactAndroid:downloadFastFloat UP-TO-DATE
+> Task :react-native:packages:react-native:ReactAndroid:prepareFastFloat UP-TO-DATE
+> Task :react-native:packages:react-native:ReactAndroid:downloadFmt UP-TO-DATE
+> Task :react-native:packages:react-native:ReactAndroid:prepareFmt UP-TO-DATE
+> Task :react-native:packages:react-native:ReactAndroid:downloadFolly UP-TO-DATE
+> Task :react-native:packages:react-native:ReactAndroid:prepareFolly UP-TO-DATE
+> Task :react-native:packages:react-native:ReactAndroid:downloadGlog UP-TO-DATE
+> Task :react-native:packages:react-native:ReactAndroid:prepareGlog UP-TO-DATE
+> Task :react-native:packages:react-native:ReactAndroid:prepareNative3pDependencies UP-TO-DATE
+> Task :react-native:packages:react-native:ReactAndroid:preparePrefab UP-TO-DATE
+> Task :react-native:packages:react-native:ReactAndroid:preBuild
+> Task :react-native:packages:react-native:ReactAndroid:preDebugBuild
+> Task :react-native:packages:react-native:ReactAndroid:writeDebugAarMetadata UP-TO-DATE
+> Task :react-native:packages:react-native:ReactAndroid:generateDebugResValues UP-TO-DATE
+> Task :react-native:packages:react-native:ReactAndroid:generateDebugResources UP-TO-DATE
+> Task :react-native:packages:react-native:ReactAndroid:packageDebugResources UP-TO-DATE
+> Task :react-native:packages:react-native:ReactAndroid:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native:packages:react-native:ReactAndroid:processDebugManifest UP-TO-DATE
+> Task :app:checkDebugDuplicateClasses UP-TO-DATE
+> Task :react-native:packages:react-native:ReactAndroid:parseDebugLocalResources UP-TO-DATE
+> Task :react-native:packages:react-native:ReactAndroid:generateDebugRFile UP-TO-DATE
+> Task :react-native:packages:react-native:ReactAndroid:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native:packages:react-native:ReactAndroid:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :react-native:packages:react-native:ReactAndroid:generateDebugBuildConfig UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :react-native:packages:react-native:ReactAndroid:compileDebugKotlin
+> Task :app:processDebugMainManifest
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :react-native:packages:react-native:ReactAndroid:javaPreCompileDebug
+
+> Task :react-native:packages:react-native:ReactAndroid:compileDebugJavaWithJavac
+/Users/mac/dev/apps/nato-phonetics/node_modules/react-native/ReactAndroid/src/main/java/com/facebook/react/ReactActivityDelegate.java:121: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+  public ReactInstanceManager getReactInstanceManager() {
+                              ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning
+
+> Task :app:processDebugResources UP-TO-DATE
+> Task :react-native:packages:react-native:ReactAndroid:bundleLibCompileToJarDebug
+> Task :app:mergeExtDexDebug UP-TO-DATE
+> Task :app:mergeDebugJniLibFolders UP-TO-DATE
+> Task :react-native-async-storage_async-storage:mergeDebugJniLibFolders UP-TO-DATE
+> Task :react-native-async-storage_async-storage:mergeDebugNativeLibs NO-SOURCE
+> Task :react-native-async-storage_async-storage:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :react-native-safe-area-context:mergeDebugJniLibFolders UP-TO-DATE
+> Task :react-native-safe-area-context:mergeDebugNativeLibs NO-SOURCE
+> Task :react-native-safe-area-context:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :react-native-tts:mergeDebugJniLibFolders UP-TO-DATE
+> Task :react-native-tts:mergeDebugNativeLibs NO-SOURCE
+> Task :react-native-tts:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :app:validateSigningDebug UP-TO-DATE
+> Task :app:writeDebugAppMetadata UP-TO-DATE
+> Task :app:writeDebugSigningConfigVersions UP-TO-DATE
+> Task :react-native:packages:react-native:ReactAndroid:mergeDebugShaders
+> Task :react-native:packages:react-native:ReactAndroid:compileDebugShaders NO-SOURCE
+> Task :react-native:packages:react-native:ReactAndroid:generateDebugAssets UP-TO-DATE
+> Task :react-native:packages:react-native:ReactAndroid:mergeDebugAssets
+> Task :react-native:packages:react-native:ReactAndroid:bundleLibRuntimeToJarDebug
+> Task :react-native:packages:react-native:ReactAndroid:processDebugJavaRes
+> Task :react-native-async-storage_async-storage:compileDebugJavaWithJavac UP-TO-DATE
+> Task :react-native-async-storage_async-storage:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :react-native:packages:react-native:ReactAndroid:bundleLibRuntimeToDirDebug
+> Task :react-native:packages:react-native:ReactAndroid:configureCMakeDebug[arm64-v8a]
+> Task :react-native:packages:react-native:ReactAndroid:generateJsonModelDebug
+> Task :react-native:packages:react-native:ReactAndroid:prefabDebugConfigurePackage
+> Task :react-native-safe-area-context:compileDebugKotlin
+> Task :react-native:packages:react-native:ReactAndroid:buildCMakeDebug[arm64-v8a][hermestooling,jsi,etc]
+> Task :react-native:packages:react-native:ReactAndroid:buildCMakeDebug[arm64-v8a][hermestooling,jsi,etc] FAILED
+
+> Task :react-native-safe-area-context:compileDebugKotlin
+w: file:///Users/mac/dev/apps/nato-phonetics/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaView.kt:59:23 'val uiImplementation: UIImplementation!' is deprecated. Deprecated in Java.
+
+> Task :react-native-safe-area-context:compileDebugJavaWithJavac UP-TO-DATE
+> Task :react-native-safe-area-context:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :react-native-tts:compileDebugJavaWithJavac UP-TO-DATE
+> Task :react-native-tts:bundleLibCompileToJarDebug UP-TO-DATE
+
+> Task :app:compileDebugKotlin
+w: file:///Users/mac/dev/apps/nato-phonetics/android/app/src/main/java/com/natophonetics/app/MainApplication.kt:10:8 'class ReactNativeHost : Any' is deprecated. Deprecated in Java.
+w: file:///Users/mac/dev/apps/nato-phonetics/android/app/src/main/java/com/natophonetics/app/MainApplication.kt:17:16 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///Users/mac/dev/apps/nato-phonetics/android/app/src/main/java/com/natophonetics/app/MainApplication.kt:17:33 'class ReactNativeHost : Any' is deprecated. Deprecated in Java.
+w: file:///Users/mac/dev/apps/nato-phonetics/android/app/src/main/java/com/natophonetics/app/TileTypographyModule.kt:24:25 'field scaledDensity: Float' is deprecated. Deprecated in Java.
+w: file:///Users/mac/dev/apps/nato-phonetics/android/app/src/main/java/com/natophonetics/app/TileTypographyPackage.kt:9:16 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///Users/mac/dev/apps/nato-phonetics/android/app/src/main/java/com/natophonetics/app/TileTypographyPackage.kt:9:36 The corresponding parameter in the supertype 'ReactPackage' is named 'reactContext'. This may cause problems when calling this function with named arguments.
+w: file:///Users/mac/dev/apps/nato-phonetics/android/app/src/main/java/com/natophonetics/app/TileTypographyPackage.kt:11:35 The corresponding parameter in the supertype 'ReactPackage' is named 'reactContext'. This may cause problems when calling this function with named arguments.
+
+> Task :app:compileDebugJavaWithJavac UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:compressDebugAssets UP-TO-DATE
+> Task :react-native-safe-area-context:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :react-native-async-storage_async-storage:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :react-native-tts:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :app:dexBuilderDebug UP-TO-DATE
+> Task :app:mergeDebugGlobalSynthetics UP-TO-DATE
+> Task :app:processDebugJavaRes UP-TO-DATE
+> Task :react-native-safe-area-context:processDebugJavaRes UP-TO-DATE
+> Task :app:mergeDebugJavaResource
+> Task :react-native-safe-area-context:bundleLibRuntimeToDirDebug UP-TO-DATE
+> Task :react-native-async-storage_async-storage:bundleLibRuntimeToDirDebug UP-TO-DATE
+> Task :react-native-tts:bundleLibRuntimeToDirDebug UP-TO-DATE
+> Task :app:mergeLibDexDebug
+> Task :app:mergeProjectDexDebug UP-TO-DATE
+> Task :app:configureCMakeDebug[arm64-v8a]
+
+[Incubating] Problems report is available at: file:///Users/mac/dev/apps/nato-phonetics/android/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':react-native:packages:react-native:ReactAndroid:buildCMakeDebug[arm64-v8a][hermestooling,jsi,etc]'.
+> com.android.ide.common.process.ProcessException: ninja: Entering directory `/Users/mac/dev/apps/nato-phonetics/node_modules/react-native/ReactAndroid/.cxx/Debug/286s4b4l/arm64-v8a'
+  [0/2] Re-checking globbed directories...
+  [1/424] Building ASM object build/third-party-ndk/boost/CMakeFiles/boost.dir/asm/arm64-v8a/make_arm64_aapcs_elf_gas.S.o
+  [2/424] Building ASM object build/third-party-ndk/boost/CMakeFiles/boost.dir/asm/arm64-v8a/jump_arm64_aapcs_elf_gas.S.o
+  [3/424] Building ASM object build/third-party-ndk/boost/CMakeFiles/boost.dir/asm/arm64-v8a/ontop_arm64_aapcs_elf_gas.S.o
+  [4/424] Linking CXX static library build/third-party-ndk/boost/libboost.a
+  [5/424] Building CXX object build/third-party-ndk/double-conversion/CMakeFiles/double-conversion.dir/double-conversion/bignum.cc.o
+  [6/424] Building CXX object build/third-party-ndk/double-conversion/CMakeFiles/double-conversion.dir/double-conversion/diy-fp.cc.o
+  [7/424] Building CXX object build/third-party-ndk/double-conversion/CMakeFiles/double-conversion.dir/double-conversion/bignum-dtoa.cc.o
+  [8/424] Building CXX object build/third-party-ndk/double-conversion/CMakeFiles/double-conversion.dir/double-conversion/cached-powers.cc.o
+  [9/424] Building CXX object build/third-party-ndk/double-conversion/CMakeFiles/double-conversion.dir/double-conversion/fast-dtoa.cc.o
+  [10/424] Building CXX object build/third-party-ndk/double-conversion/CMakeFiles/double-conversion.dir/double-conversion/double-conversion.cc.o
+  [11/424] Building CXX object build/third-party-ndk/double-conversion/CMakeFiles/double-conversion.dir/double-conversion/fixed-dtoa.cc.o
+  [12/424] Building CXX object build/third-party-ndk/double-conversion/CMakeFiles/double-conversion.dir/double-conversion/strtod.cc.o
+  [13/424] Linking CXX static library build/third-party-ndk/double-conversion/libdouble-conversion.a
+  [14/424] Building CXX object build/third-party-ndk/glog/CMakeFiles/glog.dir/glog-0.3.5/src/signalhandler.cc.o
+  [15/424] Building CXX object build/third-party-ndk/glog/CMakeFiles/glog.dir/glog-0.3.5/src/raw_logging.cc.o
+  [16/424] Building CXX object build/third-party-ndk/glog/CMakeFiles/glog.dir/glog-0.3.5/src/utilities.cc.o
+  [17/424] Building CXX object build/third-party-ndk/glog/CMakeFiles/glog.dir/glog-0.3.5/src/vlog_is_on.cc.o
+  [18/424] Building CXX object build/third-party-ndk/glog/CMakeFiles/glog.dir/glog-0.3.5/src/symbolize.cc.o
+  [19/424] Building CXX object build/third-party-ndk/glog/CMakeFiles/glog.dir/glog-0.3.5/src/demangle.cc.o
+  [20/424] Building CXX object build/third-party-ndk/fmt/CMakeFiles/fmt.dir/src/format.cc.o
+  [21/424] Linking CXX static library build/third-party-ndk/fmt/libfmt.a
+  [22/424] Building CXX object build/third-party-ndk/glog/CMakeFiles/glog.dir/glog-0.3.5/src/logging.cc.o
+  [23/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/SharedMutex.cpp.o
+  [24/424] Linking CXX static library build/third-party-ndk/glog/libglog.a
+  [25/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/hash/SpookyHashV2.cpp.o
+  [26/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/Conv.cpp.o
+  [27/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/ScopeGuard.cpp.o
+  [28/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/detail/FileUtilDetail.cpp.o
+  [29/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/Demangle.cpp.o
+  [30/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/FileUtil.cpp.o
+  [31/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/Format.cpp.o
+  [32/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/String.cpp.o
+  [33/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/Unicode.cpp.o
+  [34/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/container/detail/F14Table.cpp.o
+  [35/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/detail/Futex.cpp.o
+  [36/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/memory/detail/MallocImpl.cpp.o
+  [37/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/concurrency/CacheLocality.cpp.o
+  [38/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/lang/CString.cpp.o
+  [39/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/detail/UniqueInstance.cpp.o
+  [40/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/synchronization/SanitizeThread.cpp.o
+  [41/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/lang/ToAscii.cpp.o
+  [42/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/lang/SafeAssert.cpp.o
+  [43/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/json/json_pointer.cpp.o
+  [44/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/YGEnums.cpp.o
+  [45/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/net/NetOps.cpp.o
+  [46/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/portability/SysUio.cpp.o
+  [47/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/synchronization/ParkingLot.cpp.o
+  [48/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/json/dynamic.cpp.o
+  [49/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/system/ThreadId.cpp.o
+  [50/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/detail/SplitStringSimd.cpp.o
+  [51/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/YGConfig.cpp.o
+  [52/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/system/AtFork.cpp.o
+  [53/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/YGValue.cpp.o
+  [54/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/YGNodeLayout.cpp.o
+  [55/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/YGNode.cpp.o
+  [56/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/YGPixelGrid.cpp.o
+  [57/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/YGNodeStyle.cpp.o
+  [58/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/algorithm/Baseline.cpp.o
+  [59/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/algorithm/Cache.cpp.o
+  [60/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/json/json.cpp.o
+  [61/424] Linking CXX static library build/third-party-ndk/folly/libfolly_runtime.a
+  [62/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/algorithm/PixelGrid.cpp.o
+  [63/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/algorithm/AbsoluteLayout.cpp.o
+  [64/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/node/LayoutResults.cpp.o
+  [65/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/config/Config.cpp.o
+  [66/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/debug/AssertFatal.cpp.o
+  [67/424] Building CXX object ReactCommon/reactperflogger/CMakeFiles/reactperflogger.dir/reactperflogger/FuseboxPerfettoDataSource.cpp.o
+  [68/424] Building CXX object ReactCommon/reactperflogger/CMakeFiles/reactperflogger.dir/reactperflogger/HermesPerfettoDataSource.cpp.o
+  [69/424] Building CXX object ReactCommon/reactperflogger/CMakeFiles/reactperflogger.dir/reactperflogger/ReactPerfetto.cpp.o
+  [70/424] Building CXX object ReactCommon/reactperflogger/CMakeFiles/reactperflogger.dir/reactperflogger/ReactPerfettoCategories.cpp.o
+  [71/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/algorithm/FlexLine.cpp.o
+  [72/424] Building CXX object ReactCommon/reactperflogger/CMakeFiles/reactperflogger.dir/reactperflogger/BridgeNativeModulePerfLogger.cpp.o
+  [73/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/debug/Log.cpp.o
+  [74/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/event/event.cpp.o
+  [75/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/algorithm/CalculateLayout.cpp.o
+  [76/424] Building CXX object ReactCommon/logger/CMakeFiles/logger.dir/react_native_log.cpp.o
+  [77/424] Building CXX object ReactCommon/runtimeexecutor/CMakeFiles/runtimeexecutor.dir/platform/cxx/ReactCommon/RuntimeExecutorSyncUIThreadUtils.cpp.o
+  [78/424] Building CXX object ReactCommon/reactperflogger/CMakeFiles/reactperflogger.dir/reactperflogger/ReactPerfettoLogger.cpp.o
+  [79/424] Building CXX object ReactCommon/cxxreact/CMakeFiles/react_cxxreact.dir/JSBundleType.cpp.o
+  [80/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/node/Node.cpp.o
+  [81/424] Linking CXX static library ReactCommon/yoga/yoga/libyogacore.a
+  [82/424] Building CXX object ReactCommon/cxxreact/CMakeFiles/react_cxxreact.dir/JSBigString.cpp.o
+  [83/424] Building CXX object ReactCommon/reactperflogger/CMakeFiles/reactperflogger.dir/fusebox/FuseboxTracer.cpp.o
+  [84/424] Building CXX object ReactCommon/cxxreact/CMakeFiles/react_cxxreact.dir/JSIndexedRAMBundle.cpp.o
+  [85/424] Building CXX object ReactCommon/jsitooling/CMakeFiles/jsitooling.dir/react/runtime/JSRuntimeFactory.cpp.o
+  [86/424] Building CXX object ReactCommon/jsitooling/CMakeFiles/jsitooling.dir/react/runtime/JSRuntimeFactoryCAPI.cpp.o
+  [87/424] Building CXX object ReactCommon/jsiexecutor/CMakeFiles/jsireact.dir/jsireact/JSINativeModules.cpp.o
+  [88/424] Building CXX object ReactCommon/cxxreact/CMakeFiles/react_cxxreact.dir/JSExecutor.cpp.o
+  [89/424] Building CXX object ReactCommon/cxxreact/CMakeFiles/react_cxxreact.dir/CxxNativeModule.cpp.o
+  [90/424] Building CXX object ReactCommon/jsi/CMakeFiles/jsi.dir/jsi/jsilib-posix.cpp.o
+  [91/424] Building CXX object ReactCommon/jsi/CMakeFiles/jsi.dir/jsi/jsilib-windows.cpp.o
+  [92/424] Building CXX object ReactCommon/oscompat/CMakeFiles/oscompat.dir/OSCompatPosix.cpp.o
+  [93/424] Building CXX object ReactCommon/cxxreact/CMakeFiles/react_cxxreact.dir/MethodCall.cpp.o
+  [94/424] Building CXX object ReactCommon/oscompat/CMakeFiles/oscompat.dir/OSCompatWindows.cpp.o
+  [95/424] Building CXX object ReactCommon/jsiexecutor/CMakeFiles/jsireact.dir/jsireact/JSIExecutor.cpp.o
+  [96/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/ExecutionContextManager.cpp.o
+  [97/424] Building CXX object ReactCommon/cxxreact/CMakeFiles/react_cxxreact.dir/RAMBundleRegistry.cpp.o
+  [98/424] Building CXX object ReactCommon/cxxreact/CMakeFiles/react_cxxreact.dir/Instance.cpp.o
+  [99/424] Building CXX object ReactCommon/cxxreact/CMakeFiles/react_cxxreact.dir/ReactMarker.cpp.o
+  [100/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/ExecutionContext.cpp.o
+  [101/424] Building CXX object ReactCommon/cxxreact/CMakeFiles/react_cxxreact.dir/ModuleRegistry.cpp.o
+  [102/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/ConsoleMessage.cpp.o
+  [103/424] Building CXX object ReactCommon/cxxreact/CMakeFiles/react_cxxreact.dir/NativeToJsBridge.cpp.o
+  [104/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/InspectorFlags.cpp.o
+  [105/424] Building CXX object ReactCommon/jsi/CMakeFiles/jsi.dir/jsi/jsi.cpp.o
+  [106/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/FallbackRuntimeTargetDelegate.cpp.o
+  [107/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/FallbackRuntimeAgentDelegate.cpp.o
+  [108/424] Building CXX object ReactCommon/jsi/CMakeFiles/jsi.dir/jsi/JSIDynamic.cpp.o
+  [109/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/HostAgent.cpp.o
+  [110/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/InspectorInterfaces.cpp.o
+  [111/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/InspectorPackagerConnection.cpp.o
+  [112/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/InspectorUtilities.cpp.o
+  [113/424] Linking CXX shared library /Users/mac/dev/apps/nato-phonetics/node_modules/react-native/ReactAndroid/build/intermediates/cxx/Debug/286s4b4l/obj/arm64-v8a/libjsi.so
+  [114/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/HostTarget.cpp.o
+  [115/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/InstanceAgent.cpp.o
+  [116/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/InstanceTarget.cpp.o
+  [117/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/RuntimeAgent.cpp.o
+  [118/424] Building CXX object ReactCommon/jsinspector-modern/network/CMakeFiles/jsinspector_network.dir/BoundedRequestBuffer.cpp.o
+  [119/424] Building CXX object ReactCommon/jsinspector-modern/tracing/CMakeFiles/jsinspector_tracing.dir/EventLoopReporter.cpp.o
+  [120/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/RuntimeTargetDebuggerSessionObserver.cpp.o
+  [121/424] Building CXX object ReactCommon/jsinspector-modern/network/CMakeFiles/jsinspector_network.dir/HttpUtils.cpp.o
+  [122/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/NetworkIOAgent.cpp.o
+  [123/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/RuntimeTarget.cpp.o
+  [124/424] Building CXX object ReactCommon/jsinspector-modern/cdp/CMakeFiles/jsinspector_cdp.dir/CdpJson.cpp.o
+  [125/424] Building CXX object ReactCommon/jsinspector-modern/network/CMakeFiles/jsinspector_network.dir/CdpNetwork.cpp.o
+  [126/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/TracingAgent.cpp.o
+  [127/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/RuntimeTargetConsole.cpp.o
+  [128/424] Building CXX object ReactCommon/jsinspector-modern/network/CMakeFiles/jsinspector_network.dir/NetworkReporter.cpp.o
+  [129/424] Building CXX object ReactCommon/hermes/inspector-modern/CMakeFiles/hermes_inspector_modern.dir/chrome/HermesRuntimeSamplingProfileSerializer.cpp.o
+  [130/424] Building CXX object ReactCommon/jsinspector-modern/tracing/CMakeFiles/jsinspector_tracing.dir/PerformanceTracer.cpp.o
+  [131/424] Building CXX object ReactCommon/jsinspector-modern/tracing/CMakeFiles/jsinspector_tracing.dir/RuntimeSamplingProfileTraceEventSerializer.cpp.o
+  [132/424] Building CXX object ReactCommon/hermes/inspector-modern/CMakeFiles/hermes_inspector_modern.dir/chrome/ConnectionDemux.cpp.o
+  [133/424] Building CXX object ReactCommon/hermes/inspector-modern/CMakeFiles/hermes_inspector_modern.dir/chrome/HermesRuntimeAgentDelegate.cpp.o
+  [134/424] Building CXX object ReactCommon/hermes/inspector-modern/CMakeFiles/hermes_inspector_modern.dir/chrome/Registration.cpp.o
+  [135/424] Building CXX object ReactCommon/hermes/executor/CMakeFiles/hermes_executor_common.dir/HermesExecutorFactory.cpp.o
+  [136/424] Building CXX object ReactCommon/react/debug/CMakeFiles/react_debug.dir/react_native_assert.cpp.o
+  [137/424] Building CXX object ReactCommon/react/renderer/runtimescheduler/CMakeFiles/react_renderer_runtimescheduler.dir/RuntimeScheduler.cpp.o
+  [138/424] Building CXX object ReactCommon/react/renderer/runtimescheduler/CMakeFiles/react_renderer_runtimescheduler.dir/RuntimeSchedulerCallInvoker.cpp.o
+  [139/424] Building CXX object ReactCommon/react/renderer/runtimescheduler/CMakeFiles/react_renderer_runtimescheduler.dir/RuntimeSchedulerBinding.cpp.o
+  [140/424] Building CXX object ReactCommon/react/renderer/runtimescheduler/CMakeFiles/react_renderer_runtimescheduler.dir/Task.cpp.o
+  [141/424] Building CXX object ReactCommon/hermes/inspector-modern/CMakeFiles/hermes_inspector_modern.dir/chrome/HermesRuntimeTargetDelegate.cpp.o
+  [142/424] Building CXX object ReactCommon/react/renderer/runtimescheduler/CMakeFiles/react_renderer_runtimescheduler.dir/RuntimeScheduler_Legacy.cpp.o
+  [143/424] Building CXX object ReactCommon/react/featureflags/CMakeFiles/react_featureflags.dir/ReactNativeFeatureFlags.cpp.o
+  [144/424] Building CXX object ReactCommon/react/featureflags/CMakeFiles/react_featureflags.dir/ReactNativeFeatureFlagsAccessor.cpp.o
+  [145/424] Building CXX object ReactCommon/react/renderer/runtimescheduler/CMakeFiles/react_renderer_runtimescheduler.dir/RuntimeScheduler_Modern.cpp.o
+  [146/424] Building CXX object ReactCommon/react/performance/timeline/CMakeFiles/react_performance_timeline.dir/PerformanceEntryKeyedBuffer.cpp.o
+  [147/424] Building CXX object ReactCommon/react/performance/timeline/CMakeFiles/react_performance_timeline.dir/PerformanceEntryCircularBuffer.cpp.o
+  [148/424] Building CXX object ReactCommon/react/performance/timeline/CMakeFiles/react_performance_timeline.dir/PerformanceObserverRegistry.cpp.o
+  [149/424] Building CXX object ReactCommon/react/performance/timeline/CMakeFiles/react_performance_timeline.dir/PerformanceObserver.cpp.o
+  [150/424] Building CXX object ReactCommon/react/performance/timeline/CMakeFiles/react_performance_timeline.dir/PerformanceEntryReporter.cpp.o
+  [151/424] Building CXX object ReactCommon/react/renderer/animations/CMakeFiles/react_renderer_animations.dir/utils.cpp.o
+  [152/424] Building CXX object ReactCommon/react/renderer/animations/CMakeFiles/react_renderer_animations.dir/LayoutAnimationDriver.cpp.o
+  [153/424] Building CXX object ReactCommon/react/renderer/componentregistry/CMakeFiles/react_renderer_componentregistry.dir/componentNameByReactViewName.cpp.o
+  [154/424] Building CXX object ReactCommon/react/renderer/attributedstring/CMakeFiles/react_renderer_attributedstring.dir/AttributedString.cpp.o
+  [155/424] Building CXX object ReactCommon/react/renderer/attributedstring/CMakeFiles/react_renderer_attributedstring.dir/AttributedStringBox.cpp.o
+  [156/424] Building CXX object ReactCommon/react/renderer/componentregistry/CMakeFiles/react_renderer_componentregistry.dir/ComponentDescriptorProviderRegistry.cpp.o
+  [157/424] Building CXX object ReactCommon/react/renderer/attributedstring/CMakeFiles/react_renderer_attributedstring.dir/ParagraphAttributes.cpp.o
+  [158/424] Building CXX object ReactCommon/react/renderer/attributedstring/CMakeFiles/react_renderer_attributedstring.dir/TextAttributes.cpp.o
+  [159/424] Building CXX object ReactCommon/react/renderer/animations/CMakeFiles/react_renderer_animations.dir/LayoutAnimationKeyFrameManager.cpp.o
+  [160/424] Building CXX object ReactCommon/react/renderer/componentregistry/CMakeFiles/react_renderer_componentregistry.dir/ComponentDescriptorRegistry.cpp.o
+  [161/424] Building CXX object ReactCommon/react/renderer/mounting/CMakeFiles/react_renderer_mounting.dir/MountingTransaction.cpp.o
+  [162/424] Building CXX object ReactCommon/react/renderer/mounting/CMakeFiles/react_renderer_mounting.dir/Differentiator.cpp.o
+  [163/424] Building CXX object ReactCommon/react/renderer/mounting/CMakeFiles/react_renderer_mounting.dir/MountingCoordinator.cpp.o
+  [164/424] Building CXX object ReactCommon/react/renderer/mounting/CMakeFiles/react_renderer_mounting.dir/ShadowView.cpp.o
+  [165/424] Building CXX object ReactCommon/react/renderer/mounting/CMakeFiles/react_renderer_mounting.dir/ShadowTreeRevision.cpp.o
+  [166/424] Building CXX object ReactCommon/react/renderer/mounting/CMakeFiles/react_renderer_mounting.dir/ShadowViewMutation.cpp.o
+  [167/424] Building CXX object ReactCommon/react/renderer/mounting/CMakeFiles/react_renderer_mounting.dir/ShadowTreeRegistry.cpp.o
+  [168/424] Building CXX object ReactCommon/react/renderer/mounting/CMakeFiles/react_renderer_mounting.dir/ShadowTree.cpp.o
+  [169/424] Building CXX object ReactCommon/react/renderer/mounting/CMakeFiles/react_renderer_mounting.dir/TelemetryController.cpp.o
+  [170/424] Building CXX object ReactCommon/react/renderer/mounting/CMakeFiles/react_renderer_mounting.dir/internal/CullingContext.cpp.o
+  [171/424] Building CXX object ReactCommon/react/renderer/mounting/CMakeFiles/react_renderer_mounting.dir/stubs/StubView.cpp.o
+  [172/424] Building CXX object ReactCommon/react/renderer/mounting/CMakeFiles/react_renderer_mounting.dir/internal/sliceChildShadowNodeViewPairs.cpp.o
+  [173/424] Building CXX object ReactCommon/react/renderer/telemetry/CMakeFiles/react_renderer_telemetry.dir/SurfaceTelemetry.cpp.o
+  [174/424] Building CXX object ReactCommon/react/renderer/mounting/CMakeFiles/react_renderer_mounting.dir/stubs/StubViewTree.cpp.o
+  [175/424] Building CXX object ReactCommon/react/renderer/telemetry/CMakeFiles/react_renderer_telemetry.dir/TransactionTelemetry.cpp.o
+  [176/424] Building CXX object ReactCommon/react/renderer/mounting/CMakeFiles/react_renderer_mounting.dir/stubs/stubs.cpp.o
+  [177/424] Building CXX object ReactCommon/react/renderer/mounting/CMakeFiles/react_renderer_mounting.dir/updateMountedFlag.cpp.o
+  [178/424] Building CXX object ReactCommon/react/renderer/scheduler/CMakeFiles/react_renderer_scheduler.dir/SurfaceHandler.cpp.o
+  [179/424] Building CXX object ReactCommon/react/renderer/uimanager/CMakeFiles/react_renderer_uimanager.dir/AppRegistryBinding.cpp.o
+  [180/424] Building CXX object ReactCommon/react/renderer/scheduler/CMakeFiles/react_renderer_scheduler.dir/SurfaceManager.cpp.o
+  [181/424] Building CXX object ReactCommon/react/renderer/scheduler/CMakeFiles/react_renderer_scheduler.dir/Scheduler.cpp.o
+  [182/424] Building CXX object ReactCommon/react/renderer/uimanager/CMakeFiles/react_renderer_uimanager.dir/UIManagerUpdateShadowTree.cpp.o
+  [183/424] Building CXX object ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/DynamicEventPayload.cpp.o
+  [184/424] Building CXX object ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/ComponentDescriptor.cpp.o
+  [185/424] Building CXX object ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/DynamicPropsUtilities.cpp.o
+  [186/424] Building CXX object ReactCommon/react/renderer/uimanager/CMakeFiles/react_renderer_uimanager.dir/PointerHoverTracker.cpp.o
+  [187/424] Building CXX object ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/EventBeat.cpp.o
+  [188/424] Building CXX object ReactCommon/react/renderer/uimanager/CMakeFiles/react_renderer_uimanager.dir/PointerEventsProcessor.cpp.o
+  [189/424] Building CXX object ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/EventListener.cpp.o
+  [190/424] Building CXX object ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/EventTarget.cpp.o
+  [191/424] Building CXX object ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/InstanceHandle.cpp.o
+  [192/424] Building CXX object ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/LayoutConstraints.cpp.o
+  [193/424] Building CXX object ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/EventDispatcher.cpp.o
+  [194/424] Building CXX object ReactCommon/react/renderer/uimanager/CMakeFiles/react_renderer_uimanager.dir/UIManager.cpp.o
+  [195/424] Building CXX object ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/EventEmitter.cpp.o
+  [196/424] Building CXX object ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/LayoutMetrics.cpp.o
+  [197/424] Building CXX object ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/EventQueue.cpp.o
+  [198/424] Building CXX object ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/RawPropsKey.cpp.o
+  [199/424] Building CXX object ReactCommon/react/renderer/uimanager/CMakeFiles/react_renderer_uimanager.dir/UIManagerBinding.cpp.o
+  [200/424] Building CXX object ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/RawEvent.cpp.o
+  [201/424] Building CXX object ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/Sealable.cpp.o
+  [202/424] Building CXX object ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/EventQueueProcessor.cpp.o
+  [203/424] Building CXX object ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/ReactRootViewTagGenerator.cpp.o
+  [204/424] Building CXX object ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/ShadowNodeTraits.cpp.o
+  [205/424] Building CXX object ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/RawPropsKeyMap.cpp.o
+  [206/424] Building CXX object ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/RawProps.cpp.o
+  [207/424] Building CXX object ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/Props.cpp.o
+  [208/424] Building CXX object ReactCommon/react/renderer/consistency/CMakeFiles/react_renderer_consistency.dir/ShadowTreeRevisionConsistencyManager.cpp.o
+  [209/424] Building CXX object ReactCommon/react/renderer/css/CMakeFiles/react_renderer_css.dir/CSSDummy.cpp.o
+  [210/424] Building CXX object ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/RawPropsParser.cpp.o
+  [211/424] Building CXX object ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/RawValue.cpp.o
+  [212/424] Building CXX object ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/LayoutableShadowNode.cpp.o
+  [213/424] Building CXX object ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/ValueFactoryEventPayload.cpp.o
+  [214/424] Building CXX object ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/StateUpdate.cpp.o
+  [215/424] Building CXX object ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/ShadowNodeFragment.cpp.o
+  [216/424] Building CXX object ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/ShadowNodeFamily.cpp.o
+  [217/424] Building CXX object ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/State.cpp.o
+  [218/424] Building CXX object ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/ShadowNode.cpp.o
+  [219/424] Building CXX object ReactCommon/react/renderer/graphics/CMakeFiles/react_renderer_graphics.dir/ColorComponents.cpp.o
+  [220/424] Building CXX object ReactCommon/react/renderer/debug/CMakeFiles/react_renderer_debug.dir/DebugStringConvertible.cpp.o
+  [221/424] Building CXX object ReactCommon/react/renderer/debug/CMakeFiles/react_renderer_debug.dir/DebugStringConvertibleItem.cpp.o
+  [222/424] Building CXX object ReactCommon/react/renderer/imagemanager/CMakeFiles/react_renderer_imagemanager.dir/ImageResponse.cpp.o
+  [223/424] Building CXX object ReactCommon/react/renderer/graphics/CMakeFiles/react_renderer_graphics.dir/Color.cpp.o
+  [224/424] Building CXX object ReactCommon/react/renderer/element/CMakeFiles/react_renderer_element.dir/Element.cpp.o
+  [225/424] Building CXX object ReactCommon/react/renderer/element/CMakeFiles/react_renderer_element.dir/ComponentBuilder.cpp.o
+  [226/424] Building CXX object ReactCommon/react/renderer/element/CMakeFiles/react_renderer_element.dir/ElementFragment.cpp.o
+  [227/424] Building CXX object ReactCommon/react/renderer/imagemanager/CMakeFiles/react_renderer_imagemanager.dir/ImageResponseObserverCoordinator.cpp.o
+  [228/424] Building CXX object ReactCommon/react/renderer/graphics/CMakeFiles/react_renderer_graphics.dir/Transform.cpp.o
+  [229/424] Building CXX object ReactCommon/react/renderer/uimanager/consistency/CMakeFiles/react_renderer_uimanager_consistency.dir/LazyShadowTreeRevisionConsistencyManager.cpp.o
+  [230/424] Building CXX object ReactCommon/react/renderer/imagemanager/CMakeFiles/react_renderer_imagemanager.dir/ImageTelemetry.cpp.o
+  [231/424] Building CXX object ReactCommon/react/renderer/dom/CMakeFiles/react_renderer_dom.dir/DOM.cpp.o
+  [232/424] Building CXX object ReactCommon/react/renderer/components/view/CMakeFiles/rrc_view.dir/BaseTouch.cpp.o
+  [233/424] Building CXX object ReactCommon/react/renderer/imagemanager/CMakeFiles/react_renderer_imagemanager.dir/ImageRequest.cpp.o
+  [234/424] Building CXX object ReactCommon/react/renderer/components/view/CMakeFiles/rrc_view.dir/PointerEvent.cpp.o
+  [235/424] Building CXX object ReactCommon/react/renderer/components/view/CMakeFiles/rrc_view.dir/TouchEvent.cpp.o
+  [236/424] Building CXX object ReactCommon/react/renderer/components/view/CMakeFiles/rrc_view.dir/BaseViewEventEmitter.cpp.o
+  [237/424] Building CXX object ReactCommon/react/renderer/imagemanager/CMakeFiles/react_renderer_imagemanager.dir/platform/android/react/renderer/imagemanager/ImageFetcher.cpp.o
+  [238/424] Building CXX object ReactCommon/react/renderer/components/view/CMakeFiles/rrc_view.dir/TouchEventEmitter.cpp.o
+  [239/424] Building CXX object ReactCommon/react/renderer/imagemanager/CMakeFiles/react_renderer_imagemanager.dir/platform/android/react/renderer/imagemanager/ImageManager.cpp.o
+  [240/424] Building CXX object ReactCommon/react/renderer/components/view/CMakeFiles/rrc_view.dir/ViewShadowNode.cpp.o
+  [241/424] Building CXX object ReactCommon/react/renderer/components/view/CMakeFiles/rrc_view.dir/AccessibilityProps.cpp.o
+  [242/424] Building CXX object ReactCommon/react/renderer/components/switch/CMakeFiles/rrc_switch.dir/androidswitch/react/renderer/components/androidswitch/AndroidSwitchMeasurementsManager.cpp.o
+  [243/424] Building CXX object ReactCommon/react/renderer/components/view/CMakeFiles/rrc_view.dir/YogaStylableProps.cpp.o
+  [244/424] Building CXX object ReactCommon/react/renderer/components/view/CMakeFiles/rrc_view.dir/YogaLayoutableShadowNode.cpp.o
+  [245/424] Building CXX object ReactCommon/react/renderer/components/switch/CMakeFiles/rrc_switch.dir/androidswitch/react/renderer/components/androidswitch/AndroidSwitchShadowNode.cpp.o
+  [246/424] Building CXX object ReactCommon/react/renderer/components/view/CMakeFiles/rrc_view.dir/platform/android/react/renderer/components/view/HostPlatformViewProps.cpp.o
+  [247/424] Building CXX object ReactCommon/react/renderer/components/textinput/CMakeFiles/rrc_textinput.dir/platform/android/react/renderer/components/androidtextinput/AndroidTextInputState.cpp.o
+  [248/424] Building CXX object ReactCommon/react/renderer/components/progressbar/CMakeFiles/rrc_progressbar.dir/android/react/renderer/components/progressbar/AndroidProgressBarMeasurementsManager.cpp.o
+  [249/424] Building CXX object ReactCommon/react/renderer/components/textinput/CMakeFiles/rrc_textinput.dir/TextInputEventEmitter.cpp.o
+  [250/424] Building CXX object ReactCommon/react/renderer/components/view/CMakeFiles/rrc_view.dir/BaseViewProps.cpp.o
+  [251/424] Building CXX object ReactCommon/react/renderer/components/textinput/CMakeFiles/rrc_textinput.dir/BaseTextInputProps.cpp.o
+  [252/424] Building CXX object ReactCommon/react/renderer/components/progressbar/CMakeFiles/rrc_progressbar.dir/android/react/renderer/components/progressbar/AndroidProgressBarShadowNode.cpp.o
+  [253/424] Building CXX object ReactCommon/react/renderer/components/legacyviewmanagerinterop/CMakeFiles/rrc_legacyviewmanagerinterop.dir/LegacyViewManagerInteropShadowNode.cpp.o
+  [254/424] Building CXX object ReactCommon/react/renderer/components/textinput/CMakeFiles/rrc_textinput.dir/platform/android/react/renderer/components/androidtextinput/AndroidTextInputProps.cpp.o
+  [255/424] Building CXX object ReactCommon/react/renderer/components/image/CMakeFiles/rrc_image.dir/ImageEventEmitter.cpp.o
+  [256/424] Building CXX object ReactCommon/react/renderer/components/legacyviewmanagerinterop/CMakeFiles/rrc_legacyviewmanagerinterop.dir/UnstableLegacyViewManagerAutomaticShadowNode.cpp.o
+  [257/424] Building CXX object ReactCommon/react/renderer/components/textinput/CMakeFiles/rrc_textinput.dir/platform/android/react/renderer/components/androidtextinput/AndroidTextInputShadowNode.cpp.o
+  [258/424] Building CXX object ReactCommon/react/renderer/components/root/CMakeFiles/rrc_root.dir/RootProps.cpp.o
+  [259/424] Building CXX object ReactCommon/react/renderer/components/root/CMakeFiles/rrc_root.dir/RootShadowNode.cpp.o
+  [260/424] Building CXX object ReactCommon/react/renderer/components/image/CMakeFiles/rrc_image.dir/ImageComponentDescriptor.cpp.o
+  [261/424] Building CXX object ReactCommon/react/renderer/components/image/CMakeFiles/rrc_image.dir/ImageProps.cpp.o
+  [262/424] Building CXX object ReactCommon/react/renderer/components/image/CMakeFiles/rrc_image.dir/ImageShadowNode.cpp.o
+  [263/424] Building CXX object ReactCommon/react/renderer/components/legacyviewmanagerinterop/CMakeFiles/rrc_legacyviewmanagerinterop.dir/LegacyViewManagerInteropViewProps.cpp.o
+  [264/424] Building CXX object ReactCommon/react/renderer/components/image/CMakeFiles/rrc_image.dir/ImageState.cpp.o
+  [265/424] Building CXX object ReactCommon/react/renderer/componentregistry/native/CMakeFiles/rrc_native.dir/NativeComponentRegistryBinding.cpp.o
+  [266/424] Building CXX object ReactCommon/react/renderer/components/text/CMakeFiles/rrc_text.dir/BaseTextShadowNode.cpp.o
+  ninja: build stopped: interrupted by user.
+  
+  C++ build system [build] failed while executing:
+      /Users/mac/Library/Android/sdk/cmake/3.30.5/bin/ninja \
+        -C \
+        /Users/mac/dev/apps/nato-phonetics/node_modules/react-native/ReactAndroid/.cxx/Debug/286s4b4l/arm64-v8a \
+        hermestooling \
+        jsi \
+        reactnative
+    from /Users/mac/dev/apps/nato-phonetics/node_modules/react-native/ReactAndroid
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 2m 42s
+148 actionable tasks: 18 executed, 130 up-to-date

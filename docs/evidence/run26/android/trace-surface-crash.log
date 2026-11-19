@@ -1,0 +1,35 @@
+--------- beginning of crash
+11-19 14:59:45.071  4727  4733 F libc    : Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x3563cc0000087b in tid 4733 (HeapTaskDaemon), pid 4727 (tophonetics.app)
+11-19 14:59:48.129  4840  4840 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+11-19 14:59:48.129  4840  4840 F DEBUG   : Build fingerprint: 'google/sdk_gphone64_arm64/emu64a:16/BE2A.250530.026.F3/13894323:userdebug/dev-keys'
+11-19 14:59:48.129  4840  4840 F DEBUG   : Revision: '0'
+11-19 14:59:48.129  4840  4840 F DEBUG   : ABI: 'arm64'
+11-19 14:59:48.129  4840  4840 F DEBUG   : Timestamp: 2026-11-19 14:59:45.344895874+0000
+11-19 14:59:48.129  4840  4840 F DEBUG   : Process uptime: 12s
+11-19 14:59:48.129  4840  4840 F DEBUG   : Cmdline: com.natophonetics.app
+11-19 14:59:48.129  4840  4840 F DEBUG   : pid: 4727, tid: 4733, name: HeapTaskDaemon  >>> com.natophonetics.app <<<
+11-19 14:59:48.129  4840  4840 F DEBUG   : uid: 10213
+11-19 14:59:48.129  4840  4840 F DEBUG   : tagged_addr_ctrl: 0000000000000001 (PR_TAGGED_ADDR_ENABLE)
+11-19 14:59:48.129  4840  4840 F DEBUG   : pac_enabled_keys: 000000000000000f (PR_PAC_APIAKEY, PR_PAC_APIBKEY, PR_PAC_APDAKEY, PR_PAC_APDBKEY)
+11-19 14:59:48.129  4840  4840 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x003563cc0000087b
+11-19 14:59:48.129  4840  4840 F DEBUG   :     x0  7ff000fe000000e0  x1  00000000000000ff  x2  0000007b6151e5f8  x3  0000007b6151e340
+11-19 14:59:48.129  4840  4840 F DEBUG   :     x4  0000007b6151ecd8  x5  0000000000000004  x6  0000000000000000  x7  0000000000000058
+11-19 14:59:48.129  4840  4840 F DEBUG   :     x8  0000007b98708b78  x9  003563cc00000879  x10 000000000000000c  x11 0c9c106e00000005
+11-19 14:59:48.129  4840  4840 F DEBUG   :     x12 7ff000fe00000000  x13 00000000000000ff  x14 0000000000000001  x15 0000000000000002
+11-19 14:59:48.129  4840  4840 F DEBUG   :     x16 0000007b996334e0  x17 0000007b98efd6bc  x18 0000007b60594000  x19 0000007b6151e7f0
+11-19 14:59:48.129  4840  4840 F DEBUG   :     x20 0000007ff93d11b0  x21 0000007e524d7c70  x22 0000007ff93d1290  x23 0000007b61520880
+11-19 14:59:48.129  4840  4840 F DEBUG   :     x24 0000007b61520880  x25 0000007ff93cd8c0  x26 0000007b6151ecd8  x27 0000007b9980de10
+11-19 14:59:48.129  4840  4840 F DEBUG   :     x28 0000007e524d7c70  x29 0000007b6151e570
+11-19 14:59:48.129  4840  4840 F DEBUG   :     lr  0000007b9924653c  sp  0000007b6151e3d0  pc  0000007b99246188  pst 0000000080001000
+11-19 14:59:48.129  4840  4840 F DEBUG   : 10 total frames
+11-19 14:59:48.129  4840  4840 F DEBUG   : backtrace:
+11-19 14:59:48.129  4840  4840 F DEBUG   :       #00 pc 0000000000646188  /apex/com.android.art/lib64/libart.so (art::ReferenceMapVisitor<art::RootCallbackVisitor, false>::VisitFrame()+1360) (BuildId: b229f9d1b6196afaae086f29f029f907)
+11-19 14:59:48.129  4840  4840 F DEBUG   :       #01 pc 000000000025ce30  /apex/com.android.art/lib64/libart.so (void art::StackVisitor::WalkStack<(art::StackVisitor::CountTransitions)1>(bool)+720) (BuildId: b229f9d1b6196afaae086f29f029f907)
+11-19 14:59:48.129  4840  4840 F DEBUG   :       #02 pc 000000000025c788  /apex/com.android.art/lib64/libart.so (void art::Thread::VisitRoots<false>(art::RootVisitor*)+1200) (BuildId: b229f9d1b6196afaae086f29f029f907)
+11-19 14:59:48.129  4840  4840 F DEBUG   :       #03 pc 00000000005c7eec  /apex/com.android.art/lib64/libart.so (art::gc::collector::MarkCompact::ThreadFlipVisitor::Run(art::Thread*)+96) (BuildId: b229f9d1b6196afaae086f29f029f907)
+11-19 14:59:48.129  4840  4840 F DEBUG   :       #04 pc 000000000025aa00  /apex/com.android.art/lib64/libart.so (art::Thread::EnsureFlipFunctionStarted(art::Thread*, art::Thread*, art::Thread::StateAndFlags, art::ThreadExitFlag*, bool*)+180) (BuildId: b229f9d1b6196afaae086f29f029f907)
+11-19 14:59:48.129  4840  4840 F DEBUG   :       #05 pc 000000000025a350  /apex/com.android.art/lib64/libart.so (art::ThreadList::FlipThreadRoots(art::Closure*, art::Closure*, art::gc::collector::GarbageCollector*, art::gc::GcPauseListener*)+1480) (BuildId: b229f9d1b6196afaae086f29f029f907)
+11-19 14:59:48.129  4840  4840 F DEBUG   :       #06 pc 0000000000408a60  /apex/com.android.art/lib64/libart.so (art::gc::collector::MarkCompact::RunPhases()+556) (BuildId: b229f9d1b6196afaae086f29f029f907)
+11-19 14:59:48.129  4840  4840 F DEBUG   :       #07 pc 00000000003d3e20  /apex/com.android.art/lib64/libart.so (art::gc::collector::GarbageCollector::Run(art::gc::GcCause, bool)+336) (BuildId: b229f9d1b6196afaae086f29f029f907)
+11-19 14:59:48.129  4840  4840 F DEBUG   :       #08 pc 000000000048a434  /apex/com.android.art/lib64/libart.so (art::gc::Heap::CollectGarbageInternal(art::gc::collector::GcType, art::gc::GcCause, bool, unsigned int)+508) (BuildId: b229f9d1b6196afaae086f29f029f907)
+11-19 14:59:48.129  4840  4840 F DEBUG   :       #09 pc 000000000000030c  <anonymous:7b91800000>

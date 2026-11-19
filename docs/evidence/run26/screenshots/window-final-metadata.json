@@ -1,0 +1,104 @@
+[
+  {
+    "stage": "cold1",
+    "file": "android/window-final/cold1.png",
+    "sha256": "37f591b126507e0e8ab2c1c0309ae3981373f2f698dca6f795ae4e8ce3fd7763",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "apkSha256": "1b045e2dc7b2f1761bd4f8aa708cde29b498f2c43963b3062cc08b8555c28eee",
+    "date": "2026-11-19",
+    "platform": "Android16/API36 arm64, emulator-5580",
+    "dimensions": {
+      "fontScale": 1,
+      "height": 914.2857142857143,
+      "scale": 1.75,
+      "width": 411.42857142857144
+    },
+    "theme": "fixture white",
+    "inspection": "Inspected actual raw image or uncropped contact sheet; no blank/loading/error screen. Viewport-limited scroll content is not a full reachability/raster pass."
+  },
+  {
+    "stage": "live2",
+    "file": "android/window-final/live2.png",
+    "sha256": "fc780faeed68cf993367737fcdd97ad2e4ec44aee0f3ef00b15decdecdab5593",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "apkSha256": "1b045e2dc7b2f1761bd4f8aa708cde29b498f2c43963b3062cc08b8555c28eee",
+    "date": "2026-11-19",
+    "platform": "Android16/API36 arm64, emulator-5580",
+    "dimensions": {
+      "fontScale": 2,
+      "height": 914.2857142857143,
+      "scale": 1.75,
+      "width": 411.42857142857144
+    },
+    "theme": "fixture white",
+    "inspection": "Inspected actual raw image or uncropped contact sheet; no blank/loading/error screen. Viewport-limited scroll content is not a full reachability/raster pass."
+  },
+  {
+    "stage": "return1",
+    "file": "android/window-final/return1.png",
+    "sha256": "a262d718366888d889cd196b527da3db91051fa8edb9a5088d57fab87e7cd108",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "apkSha256": "1b045e2dc7b2f1761bd4f8aa708cde29b498f2c43963b3062cc08b8555c28eee",
+    "date": "2026-11-19",
+    "platform": "Android16/API36 arm64, emulator-5580",
+    "dimensions": {
+      "fontScale": 1,
+      "height": 914.2857142857143,
+      "scale": 1.75,
+      "width": 411.42857142857144
+    },
+    "theme": "fixture white",
+    "inspection": "Inspected actual raw image or uncropped contact sheet; no blank/loading/error screen. Viewport-limited scroll content is not a full reachability/raster pass."
+  },
+  {
+    "stage": "cold2",
+    "file": "android/window-final/cold2.png",
+    "sha256": "723de2555fb2a742d2269a37bfb81d610461d6fe624f7f491e644a63689e92f4",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "apkSha256": "1b045e2dc7b2f1761bd4f8aa708cde29b498f2c43963b3062cc08b8555c28eee",
+    "date": "2026-11-19",
+    "platform": "Android16/API36 arm64, emulator-5580",
+    "dimensions": {
+      "fontScale": 2,
+      "height": 914.2857142857143,
+      "scale": 1.75,
+      "width": 411.42857142857144
+    },
+    "theme": "fixture white",
+    "inspection": "Inspected actual raw image or uncropped contact sheet; no blank/loading/error screen. Viewport-limited scroll content is not a full reachability/raster pass."
+  },
+  {
+    "stage": "resize-narrow2",
+    "file": "android/window-final/resize-narrow2.png",
+    "sha256": "c906e6024bed398eaa9c1aa626cd99463447960e107e4fbbbe9aed1e2a467b84",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "apkSha256": "1b045e2dc7b2f1761bd4f8aa708cde29b498f2c43963b3062cc08b8555c28eee",
+    "date": "2026-11-19",
+    "platform": "Android16/API36 arm64, emulator-5580",
+    "dimensions": {
+      "fontScale": 2,
+      "height": 571.4285714285714,
+      "scale": 1.75,
+      "width": 320
+    },
+    "theme": "fixture white",
+    "inspection": "Inspected actual raw image or uncropped contact sheet; no blank/loading/error screen. Viewport-limited scroll content is not a full reachability/raster pass."
+  },
+  {
+    "stage": "resize-restored2",
+    "file": "android/window-final/resize-restored2.png",
+    "sha256": "723de2555fb2a742d2269a37bfb81d610461d6fe624f7f491e644a63689e92f4",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "apkSha256": "1b045e2dc7b2f1761bd4f8aa708cde29b498f2c43963b3062cc08b8555c28eee",
+    "date": "2026-11-19",
+    "platform": "Android16/API36 arm64, emulator-5580",
+    "dimensions": {
+      "fontScale": 2,
+      "height": 914.2857142857143,
+      "scale": 1.75,
+      "width": 411.42857142857144
+    },
+    "theme": "fixture white",
+    "inspection": "Inspected actual raw image or uncropped contact sheet; no blank/loading/error screen. Viewport-limited scroll content is not a full reachability/raster pass."
+  }
+]

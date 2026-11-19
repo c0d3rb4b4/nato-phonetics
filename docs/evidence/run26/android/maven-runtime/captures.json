@@ -1,0 +1,26 @@
+[
+  {
+    "stage": "cold1",
+    "file": "screenshots/cold1.png",
+    "sha256": "caca847f43639b10aaabb531b22dacb30e344ff85a8cbc04e24765986164b146",
+    "command": "adb -s emulator-5580 exec-out screencap -p"
+  },
+  {
+    "stage": "live2",
+    "file": "screenshots/live2.png",
+    "sha256": "9b2b1edac10f78a7baa55f25a8caba9a62a1ddcde0708be299b0f9975bb10b5e",
+    "command": "adb -s emulator-5580 exec-out screencap -p"
+  },
+  {
+    "stage": "return1",
+    "file": "screenshots/return1.png",
+    "sha256": "9b2b1edac10f78a7baa55f25a8caba9a62a1ddcde0708be299b0f9975bb10b5e",
+    "command": "adb -s emulator-5580 exec-out screencap -p"
+  },
+  {
+    "stage": "cold2",
+    "file": "screenshots/cold2.png",
+    "sha256": "858740184501745e33e460415077b56522715f9d2ddfc7e36dbb5e3b59e529b0",
+    "command": "adb -s emulator-5580 exec-out screencap -p"
+  }
+]

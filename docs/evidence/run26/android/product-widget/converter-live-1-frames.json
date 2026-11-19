@@ -1,0 +1,986 @@
+{
+  "dimensions": {
+    "fontScale": 1,
+    "height": 914.2857142857143,
+    "scale": 1.75,
+    "width": 411.42857142857144
+  },
+  "values": [
+    {
+      "frame": {
+        "height": 48.571441650390625,
+        "pageX": 56,
+        "pageY": 55.428558349609375,
+        "width": 299.4285583496094,
+        "x": 56,
+        "y": 3.4285714626312256
+      },
+      "style": {
+        "color": "#1F2933",
+        "flex": 1,
+        "fontSize": 18,
+        "fontWeight": "600",
+        "paddingHorizontal": 4,
+        "paddingVertical": 12,
+        "textAlign": "center"
+      },
+      "text": "Word Converter"
+    },
+    {
+      "frame": {
+        "height": 21.71429443359375,
+        "pageX": 16,
+        "pageY": 132,
+        "width": 379.4285583496094,
+        "x": 16,
+        "y": 24
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontSize": 16,
+        "fontWeight": "600",
+        "marginVertical": 8
+      },
+      "text": "Type a word or phrase:"
+    },
+    {
+      "frame": {
+        "height": 50.85711669921875,
+        "pageX": 16,
+        "pageY": 173.71429443359375,
+        "width": 379.4285583496094,
+        "x": 16,
+        "y": 65.71428680419922
+      },
+      "style": {
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#E5E7EB",
+        "borderRadius": 12,
+        "borderWidth": 1,
+        "color": "#1F2933",
+        "fontSize": 18,
+        "marginBottom": 12,
+        "maxHeight": 200,
+        "minHeight": 48,
+        "padding": 12,
+        "textAlignVertical": "top"
+      },
+      "testID": "converter-input",
+      "text": "NUWJ359"
+    },
+    {
+      "frame": {
+        "height": 21.71429443359375,
+        "pageX": 166.85714721679688,
+        "pageY": 262.28570556640625,
+        "width": 77.71429443359375,
+        "x": 150.85714721679688,
+        "y": 13.714285850524902
+      },
+      "style": {
+        "color": "#1F2933",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Clear input"
+    },
+    {
+      "frame": {
+        "height": 69.14285278320312,
+        "pageX": 16,
+        "pageY": 309.71429443359375,
+        "width": 379.4285583496094,
+        "x": 16,
+        "y": 201.7142791748047
+      },
+      "style": {
+        "color": "#6B7280"
+      },
+      "text": "Letters A\u2013Z and digits 0\u20139. Tabs, newlines and spaces form word boundaries. Dash (-), dot (.), slash (/), at (@) and plus (+) are spoken literally, not NATO code words. Accents and other symbols are shown as not spoken."
+    },
+    {
+      "frame": {
+        "height": 21.71429443359375,
+        "pageX": 148,
+        "pageY": 405.1428527832031,
+        "width": 114.85714721679688,
+        "x": 132,
+        "y": 13.714285850524902
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Play Full Phrase"
+    },
+    {
+      "frame": {
+        "height": 21.71429443359375,
+        "pageX": 154.85714721679688,
+        "pageY": 466.8571472167969,
+        "width": 101.71429443359375,
+        "x": 138.85714721679688,
+        "y": 13.714285850524902
+      },
+      "style": {
+        "color": "#1F2933",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Replay phrase"
+    },
+    {
+      "frame": {
+        "height": 19.42852783203125,
+        "pageX": 16,
+        "pageY": 542.2857055664062,
+        "width": 379.4285583496094,
+        "x": 16,
+        "y": 434.28570556640625
+      },
+      "style": {
+        "color": "#1F2933"
+      },
+      "testID": "converter-current-token",
+      "text": "No token playing."
+    },
+    {
+      "frame": {
+        "height": 21.71429443359375,
+        "pageX": 124.57142639160156,
+        "pageY": 588,
+        "width": 162.2857208251953,
+        "x": 108.57142639160156,
+        "y": 13.714285850524902
+      },
+      "style": {
+        "color": "#1F2933",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Change playback pace"
+    },
+    {
+      "frame": {
+        "height": 21.71429443359375,
+        "pageX": 16,
+        "pageY": 674.8571166992188,
+        "width": 379.4285583496094,
+        "x": 16,
+        "y": 566.8571166992188
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontSize": 16,
+        "fontWeight": "600",
+        "marginVertical": 8
+      },
+      "text": "Plain text conversion"
+    },
+    {
+      "frame": {
+        "height": 74.28570556640625,
+        "pageX": 16,
+        "pageY": 717.1428833007812,
+        "width": 379.4285583496094,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "borderColor": "#E5E7EB",
+        "borderRadius": 12,
+        "borderWidth": 1,
+        "color": "#1F2933",
+        "fontSize": 16,
+        "lineHeight": 24,
+        "padding": 12
+      },
+      "testID": "converter-plain-text",
+      "text": "November Uniform Whiskey Juliett Three Five Nine"
+    },
+    {
+      "frame": {
+        "height": 36,
+        "pageX": 16,
+        "pageY": 802.8571166992188,
+        "width": 379.4285583496094,
+        "x": 16,
+        "y": 694.8571166992188
+      },
+      "style": {
+        "color": "#6B7280"
+      },
+      "testID": "converter-omissions",
+      "text": "No unsupported characters. In plain text, / separates input words."
+    },
+    {
+      "frame": {
+        "height": 21.71429443359375,
+        "pageX": 145.7142791748047,
+        "pageY": 864.5714111328125,
+        "width": 120.00001525878906,
+        "x": 129.7142791748047,
+        "y": 13.714285850524902
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Copy conversion"
+    },
+    {
+      "frame": {
+        "height": 21.71429443359375,
+        "pageX": 142.85714721679688,
+        "pageY": 926.2857055664062,
+        "width": 125.14285278320312,
+        "x": 126.85713958740234,
+        "y": 13.714285850524902
+      },
+      "style": {
+        "color": "#1F2933",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Share conversion"
+    },
+    {
+      "frame": {
+        "height": 21.71435546875,
+        "pageX": 16,
+        "pageY": 982.28564453125,
+        "width": 379.4285583496094,
+        "x": 16,
+        "y": 874.2857055664062
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontSize": 16,
+        "fontWeight": "600",
+        "marginVertical": 8
+      },
+      "text": "NATO Phonetic:"
+    },
+    {
+      "frame": {
+        "height": 52.5714111328125,
+        "pageX": 16,
+        "pageY": 1024,
+        "width": 379.4285583496094,
+        "x": 16,
+        "y": 916
+      },
+      "style": {
+        "color": "#6B7280"
+      },
+      "text": "Cards show 24 input tokens per page. Plain text, Copy, Share and phrase playback include the whole input. Input, playback position and card page stay in memory."
+    },
+    {
+      "frame": {
+        "height": 50.28564453125,
+        "pageX": 28.571426391601562,
+        "pageY": 1123.701171875,
+        "width": 110.28572082519531,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 50,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.29885659790038943
+          }
+        ],
+        "width": 110
+      },
+      "testID": "converter-0-letter-run",
+      "text": "N"
+    },
+    {
+      "frame": {
+        "height": 22.2857666015625,
+        "pageX": 36.57142639160156,
+        "pageY": 1202.692626953125,
+        "width": 94.28572082519531,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 22,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.1645717010498089
+          }
+        ],
+        "width": 94
+      },
+      "testID": "converter-0-word-run",
+      "text": "November"
+    },
+    {
+      "frame": {
+        "height": 16,
+        "pageX": 36.57142639160156,
+        "pageY": 1230.6190185546875,
+        "width": 94.28572082519531,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 16,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.2381434020996096
+          }
+        ],
+        "width": 94
+      },
+      "testID": "converter-0-pronunciation-run",
+      "text": "no-VEM-ber"
+    },
+    {
+      "frame": {
+        "height": 50.28564453125,
+        "pageX": 150.85714721679688,
+        "pageY": 1123.701171875,
+        "width": 110.85714721679688,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 50,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.29885659790038943
+          }
+        ],
+        "width": 110
+      },
+      "testID": "converter-1-letter-run",
+      "text": "U"
+    },
+    {
+      "frame": {
+        "height": 22.2857666015625,
+        "pageX": 158.85714721679688,
+        "pageY": 1202.692626953125,
+        "width": 94.85714721679688,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 22,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.1645717010498089
+          }
+        ],
+        "width": 94
+      },
+      "testID": "converter-1-word-run",
+      "text": "Uniform"
+    },
+    {
+      "frame": {
+        "height": 16,
+        "pageX": 158.85714721679688,
+        "pageY": 1230.6190185546875,
+        "width": 94.85714721679688,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 16,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.2381434020996096
+          }
+        ],
+        "width": 94
+      },
+      "testID": "converter-1-pronunciation-run",
+      "text": "YOU-nee-form"
+    },
+    {
+      "frame": {
+        "height": 50.28564453125,
+        "pageX": 272.5714416503906,
+        "pageY": 1123.701171875,
+        "width": 110.28570556640625,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 50,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.29885659790038943
+          }
+        ],
+        "width": 110
+      },
+      "testID": "converter-2-letter-run",
+      "text": "W"
+    },
+    {
+      "frame": {
+        "height": 22.2857666015625,
+        "pageX": 280.5714416503906,
+        "pageY": 1202.692626953125,
+        "width": 94.28570556640625,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 22,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.1645717010498089
+          }
+        ],
+        "width": 94
+      },
+      "testID": "converter-2-word-run",
+      "text": "Whiskey"
+    },
+    {
+      "frame": {
+        "height": 16,
+        "pageX": 280.5714416503906,
+        "pageY": 1230.6190185546875,
+        "width": 94.28570556640625,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 16,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.2381434020996096
+          }
+        ],
+        "width": 94
+      },
+      "testID": "converter-2-pronunciation-run",
+      "text": "WISS-key"
+    },
+    {
+      "frame": {
+        "height": 50.857177734375,
+        "pageX": 28.571426391601562,
+        "pageY": 1285.98681640625,
+        "width": 110.28572082519531,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 50,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.29885659790038943
+          }
+        ],
+        "width": 110
+      },
+      "testID": "converter-3-letter-run",
+      "text": "J"
+    },
+    {
+      "frame": {
+        "height": 22.857177734375,
+        "pageX": 36.57142639160156,
+        "pageY": 1364.978271484375,
+        "width": 94.28572082519531,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 22,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.1645717010498089
+          }
+        ],
+        "width": 94
+      },
+      "testID": "converter-3-word-run",
+      "text": "Juliett"
+    },
+    {
+      "frame": {
+        "height": 16,
+        "pageX": 36.57142639160156,
+        "pageY": 1392.90478515625,
+        "width": 94.28572082519531,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 16,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.2381434020996096
+          }
+        ],
+        "width": 94
+      },
+      "testID": "converter-3-pronunciation-run",
+      "text": "JEW-lee-ett"
+    },
+    {
+      "frame": {
+        "height": 50.857177734375,
+        "pageX": 150.85714721679688,
+        "pageY": 1285.98681640625,
+        "width": 110.85714721679688,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 50,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.29885659790038943
+          }
+        ],
+        "width": 110
+      },
+      "testID": "converter-4-letter-run",
+      "text": "3"
+    },
+    {
+      "frame": {
+        "height": 22.857177734375,
+        "pageX": 158.85714721679688,
+        "pageY": 1364.978271484375,
+        "width": 94.85714721679688,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 22,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.1645717010498089
+          }
+        ],
+        "width": 94
+      },
+      "testID": "converter-4-word-run",
+      "text": "Three"
+    },
+    {
+      "frame": {
+        "height": 16,
+        "pageX": 158.85714721679688,
+        "pageY": 1392.90478515625,
+        "width": 94.85714721679688,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 16,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.2381434020996096
+          }
+        ],
+        "width": 94
+      },
+      "testID": "converter-4-pronunciation-run",
+      "text": "TREE"
+    },
+    {
+      "frame": {
+        "height": 50.857177734375,
+        "pageX": 272.5714416503906,
+        "pageY": 1285.98681640625,
+        "width": 110.28570556640625,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 50,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.29885659790038943
+          }
+        ],
+        "width": 110
+      },
+      "testID": "converter-5-letter-run",
+      "text": "5"
+    },
+    {
+      "frame": {
+        "height": 22.857177734375,
+        "pageX": 280.5714416503906,
+        "pageY": 1364.978271484375,
+        "width": 94.28570556640625,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 22,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.1645717010498089
+          }
+        ],
+        "width": 94
+      },
+      "testID": "converter-5-word-run",
+      "text": "Five"
+    },
+    {
+      "frame": {
+        "height": 16,
+        "pageX": 280.5714416503906,
+        "pageY": 1392.90478515625,
+        "width": 94.28570556640625,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 16,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.2381434020996096
+          }
+        ],
+        "width": 94
+      },
+      "testID": "converter-5-pronunciation-run",
+      "text": "FIFE"
+    },
+    {
+      "frame": {
+        "height": 50.28564453125,
+        "pageX": 150.85714721679688,
+        "pageY": 1447.701171875,
+        "width": 110.85714721679688,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 50,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.29885659790038943
+          }
+        ],
+        "width": 110
+      },
+      "testID": "converter-6-letter-run",
+      "text": "9"
+    },
+    {
+      "frame": {
+        "height": 22.28564453125,
+        "pageX": 158.85714721679688,
+        "pageY": 1526.692626953125,
+        "width": 94.85714721679688,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 22,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.1645717010498089
+          }
+        ],
+        "width": 94
+      },
+      "testID": "converter-6-word-run",
+      "text": "Nine"
+    },
+    {
+      "frame": {
+        "height": 16,
+        "pageX": 158.85714721679688,
+        "pageY": 1554.6190185546875,
+        "width": 94.85714721679688,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 16,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.2381434020996096
+          }
+        ],
+        "width": 94
+      },
+      "testID": "converter-6-pronunciation-run",
+      "text": "NIN-er"
+    }
+  ]
+}

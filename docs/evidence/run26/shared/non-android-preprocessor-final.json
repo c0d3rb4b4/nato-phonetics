@@ -1,0 +1,29 @@
+{
+  "method": "clang++ -E -P; Android undefined, identical include lines elided, lexical tokens equal. No fresh iOS build/runtime claim.",
+  "files": [
+    {
+      "file": "ReactCommon/react/renderer/components/view/YogaLayoutableShadowNode.h",
+      "equalNonAndroidTokens": true,
+      "originalTokens": 448,
+      "candidateTokens": 448
+    },
+    {
+      "file": "ReactCommon/react/renderer/components/view/YogaLayoutableShadowNode.cpp",
+      "equalNonAndroidTokens": true,
+      "originalTokens": 5465,
+      "candidateTokens": 5465
+    },
+    {
+      "file": "ReactCommon/react/renderer/textlayoutmanager/TextMeasureCache.h",
+      "equalNonAndroidTokens": true,
+      "originalTokens": 1327,
+      "candidateTokens": 1327
+    },
+    {
+      "file": "ReactCommon/react/renderer/core/LayoutContext.h",
+      "equalNonAndroidTokens": true,
+      "originalTokens": 152,
+      "candidateTokens": 152
+    }
+  ]
+}

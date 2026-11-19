@@ -1,0 +1,60 @@
+{
+  "apk": "artifacts/run26/candidate-synchronized/app-debug.apk",
+  "apkSha256": "c7cee7e17e6f13f1fe8ef145c71e25e7255e683900e083fd315e6f8e1ef76486",
+  "nativeLibraries": {
+    "lib/arm64-v8a/libc++_shared.so": {
+      "sha256": "3e852764502d06e0cf1080d532ae7c608b7649d946a3a9d7e84e3d4b7d683214",
+      "buildId": "Build ID: 6783a7f3a0d9c67c55a74cadc441ed55aaa493da"
+    },
+    "lib/arm64-v8a/libfbjni.so": {
+      "sha256": "a9e35ba55d3f956920281f519385f8a72475ee24819799cb08375fdd4cce2b22",
+      "buildId": "Build ID: e438f6554af1d86b210a05412e96c4251e570157"
+    },
+    "lib/arm64-v8a/libhermes.so": {
+      "sha256": "de9ec8dc062f6cb755b879802f5696ca540f6ea3dddd32245a960119d68b8daa",
+      "buildId": "Build ID: bc9c540d5e0f8652717771ec980a6d535dc34e0e"
+    },
+    "lib/arm64-v8a/libhermestooling.so": {
+      "sha256": "650894553c3d667974336d9f919d8eefbe7489bd1f6d17de0d5a01932cf5c1eb",
+      "buildId": "Build ID: 40ff2e2c78c38e5b"
+    },
+    "lib/arm64-v8a/libimagepipeline.so": {
+      "sha256": "1b377992e4256fa9398ec057722f84a359c7d588e570c8a41f51d930c19ece7d",
+      "buildId": "Build ID: d0f121db897acfc4"
+    },
+    "lib/arm64-v8a/libjsi.so": {
+      "sha256": "14eef262cdcedcfc122ef452b0256a5b568219cf825b2c50eac12732e6aa5010",
+      "buildId": "Build ID: 510048bb1b187b74"
+    },
+    "lib/arm64-v8a/libnative-filters.so": {
+      "sha256": "4294b57460e70a6351ce7ae2733a79c088c907dfa54673a657227ec5bb669594",
+      "buildId": "Build ID: 04562bd3ada0842b"
+    },
+    "lib/arm64-v8a/libnative-imagetranscoder.so": {
+      "sha256": "2aed28298a25afd52ac670cf9682398c6c7ba42a57195c01efd565e7ddfe17ca",
+      "buildId": "Build ID: 7eef0da60ca68bf3"
+    },
+    "lib/arm64-v8a/libappmodules.so": {
+      "sha256": "f9949376235029bb10f35fe8c0a02752c9204a3fee244fb0b7d992591679a0b9",
+      "buildId": "Build ID: b57c371c2226ef7a0700b2db6e6dd34c749a1515"
+    },
+    "lib/arm64-v8a/libreact_codegen_safeareacontext.so": {
+      "sha256": "db8f9df355f9e3b7cca0ae925917bc518c90d37284aad1235901e93822dc3cb7",
+      "buildId": "Build ID: b8cc87224dd0d8879df3e437c7197cc56033eeaf"
+    },
+    "lib/arm64-v8a/libreactnative.so": {
+      "sha256": "f20f6a679f9e28dbb13b418f288a93d7980b797ed3305345c082145af360f4fd",
+      "buildId": "Build ID: dc5242af91ac4d17"
+    }
+  },
+  "sourceMode": "opt-in; ordinary Maven path unchanged/failing",
+  "version": "0.81.5",
+  "abi": "arm64-v8a",
+  "buildLog": "source-build-synchronized.log",
+  "guardedPatches": {
+    "scripts/patches/react-native-0.81.5-font-environment.json": "40b96678a31d872475730cf6c7ac809fc74eeaec1237e74c0f9419ee54e2ee57",
+    "scripts/patches/react-native-0.81.5-source-build.json": "4776470029e3b888f3d0c1c0bc3ae01888d0a36247c0a2335ea7e8c4d649628e",
+    "scripts/patches/react-native-0.81.5-yoga-pixel-grid.json": "68a2b61a286c2993840e21778a4d791e186e5d9bd6c220142424c0e9c1d4a47d"
+  },
+  "nativeLibrariesEqualGenerationCandidate": true
+}

@@ -1,0 +1,20 @@
+{
+  "serial": "emulator-5580",
+  "binarySha256": "3895997100e8869b7ffa5e9d8a46c90851bf720ae1937ff4fb462fa8a36db026",
+  "librarySha256": {
+    "libreact_codegen_safeareacontext.so": "13aea081676c654f015f16ef660439e82b1eeb75e73afb222e85e3ef0977561e",
+    "libjsi.so": "14eef262cdcedcfc122ef452b0256a5b568219cf825b2c50eac12732e6aa5010",
+    "libnative-filters.so": "4294b57460e70a6351ce7ae2733a79c088c907dfa54673a657227ec5bb669594",
+    "libfbjni.so": "a9e35ba55d3f956920281f519385f8a72475ee24819799cb08375fdd4cce2b22",
+    "libhermestooling.so": "650894553c3d667974336d9f919d8eefbe7489bd1f6d17de0d5a01932cf5c1eb",
+    "libnative-imagetranscoder.so": "2aed28298a25afd52ac670cf9682398c6c7ba42a57195c01efd565e7ddfe17ca",
+    "libimagepipeline.so": "1b377992e4256fa9398ec057722f84a359c7d588e570c8a41f51d930c19ece7d",
+    "libappmodules.so": "2c957e8d2f59d82a2a877b706a58a5eb50e5661a28e89e3ee118be0e43fa1ea9",
+    "libhermes.so": "de9ec8dc062f6cb755b879802f5696ca540f6ea3dddd32245a960119d68b8daa",
+    "libc++_shared.so": "3e852764502d06e0cf1080d532ae7c608b7649d946a3a9d7e84e3d4b7d683214",
+    "libreactnative.so": "e6ae794abf5117f824493bd9b57d6c4d6103a6566f96c47a98197376397fd68a"
+  },
+  "exitCode": 0,
+  "stdout": "{\"cloneAlreadyDirty\":false}\n{\"detail\":true,\"viewCloned\":true,\"leafCloned\":true,\"viewClean\":true,\"leafClean\":true,\"measurable\":true}\n{\"passed\":true,\"contextCloneDirty\":true,\"layoutIfNeeded\":true,\"coldHeight\":10,\"liveHeight\":20,\"forcedRootHeight\":20,\"coldMeasures\":1,\"liveMeasures\":2,\"oldSealedTreePreserved\":true,\"observedRootScale\":2,\"directLayoutHeight\":20}\n{\"cloneAlreadyDirty\":true}\n{\"detail\":true,\"viewCloned\":true,\"leafCloned\":true,\"viewClean\":true,\"leafClean\":true,\"measurable\":true}\n{\"passed\":true,\"contextCloneDirty\":true,\"layoutIfNeeded\":true,\"coldHeight\":10,\"liveHeight\":20,\"forcedRootHeight\":20,\"coldMeasures\":1,\"liveMeasures\":2,\"oldSealedTreePreserved\":true,\"observedRootScale\":2,\"directLayoutHeight\":20}\n",
+  "stderr": ""
+}

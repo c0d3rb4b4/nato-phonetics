@@ -1,0 +1,87 @@
+{
+  "passed": false,
+  "tolerancePhysicalPixels": 1,
+  "errors": [],
+  "comparisons": [
+    {
+      "liveStage": "live2",
+      "coldStage": "cold2",
+      "name": "stable",
+      "live": 135.4285888671875,
+      "cold": 135.4285888671875,
+      "passed": true
+    },
+    {
+      "liveStage": "live2",
+      "coldStage": "cold2",
+      "name": "feedback",
+      "live": 36,
+      "cold": 36,
+      "passed": true
+    },
+    {
+      "liveStage": "live2",
+      "coldStage": "cold2",
+      "name": "input",
+      "live": 63.4285888671875,
+      "cold": 63.4285888671875,
+      "passed": true
+    },
+    {
+      "liveStage": "live2",
+      "coldStage": "cold2",
+      "name": "revision",
+      "live": 168,
+      "cold": 168,
+      "passed": true
+    },
+    {
+      "liveStage": "live2",
+      "coldStage": "cold2",
+      "name": "nested",
+      "live": 144,
+      "cold": 144,
+      "passed": true
+    },
+    {
+      "liveStage": "return1",
+      "coldStage": "cold1",
+      "name": "stable",
+      "live": 135.4285888671875,
+      "cold": 40.571441650390625,
+      "passed": false
+    },
+    {
+      "liveStage": "return1",
+      "coldStage": "cold1",
+      "name": "feedback",
+      "live": 36,
+      "cold": 24,
+      "passed": false
+    },
+    {
+      "liveStage": "return1",
+      "coldStage": "cold1",
+      "name": "input",
+      "live": 47.428558349609375,
+      "cold": 47.4285888671875,
+      "passed": true
+    },
+    {
+      "liveStage": "return1",
+      "coldStage": "cold1",
+      "name": "revision",
+      "live": 59.428558349609375,
+      "cold": 59.428558349609375,
+      "passed": true
+    },
+    {
+      "liveStage": "return1",
+      "coldStage": "cold1",
+      "name": "nested",
+      "live": 143.99996948242188,
+      "cold": 72,
+      "passed": false
+    }
+  ]
+}

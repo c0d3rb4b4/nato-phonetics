@@ -1,0 +1,17 @@
+{
+  "apk": "artifacts/run26/candidate-matching/app-debug.apk",
+  "apkSha256": "30aa00e946d83fb48497738a8cd1541cba280602756815a030ef040a492a5f1b",
+  "nativeLibraries": {
+    "lib/arm64-v8a/libc++_shared.so": "3e852764502d06e0cf1080d532ae7c608b7649d946a3a9d7e84e3d4b7d683214",
+    "lib/arm64-v8a/libfbjni.so": "a9e35ba55d3f956920281f519385f8a72475ee24819799cb08375fdd4cce2b22",
+    "lib/arm64-v8a/libhermes.so": "de9ec8dc062f6cb755b879802f5696ca540f6ea3dddd32245a960119d68b8daa",
+    "lib/arm64-v8a/libhermestooling.so": "650894553c3d667974336d9f919d8eefbe7489bd1f6d17de0d5a01932cf5c1eb",
+    "lib/arm64-v8a/libimagepipeline.so": "1b377992e4256fa9398ec057722f84a359c7d588e570c8a41f51d930c19ece7d",
+    "lib/arm64-v8a/libjsi.so": "14eef262cdcedcfc122ef452b0256a5b568219cf825b2c50eac12732e6aa5010",
+    "lib/arm64-v8a/libnative-filters.so": "4294b57460e70a6351ce7ae2733a79c088c907dfa54673a657227ec5bb669594",
+    "lib/arm64-v8a/libnative-imagetranscoder.so": "2aed28298a25afd52ac670cf9682398c6c7ba42a57195c01efd565e7ddfe17ca",
+    "lib/arm64-v8a/libreactnative.so": "cca8dc89d46d58d21c023911ef0a4eb27aa05b4593261dd0b1c441285e19994d",
+    "lib/arm64-v8a/libappmodules.so": "2c957e8d2f59d82a2a877b706a58a5eb50e5661a28e89e3ee118be0e43fa1ea9",
+    "lib/arm64-v8a/libreact_codegen_safeareacontext.so": "13aea081676c654f015f16ef660439e82b1eeb75e73afb222e85e3ef0977561e"
+  }
+}

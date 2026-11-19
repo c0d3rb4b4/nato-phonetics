@@ -1,0 +1,23 @@
+/Users/mac/dev/apps/nato-phonetics/scripts/native-tests/font-environment.cpp:41:64: error: no viable conversion from 'std::nullptr_t' to 'EventDispatcher::Weak' (aka 'weak_ptr<const EventDispatcher>')
+   41 |   auto registry = providers.createComponentDescriptorRegistry({nullptr, context, nullptr});
+      |                                                                ^~~~~~~
+/Users/mac/Library/Android/sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/__memory/shared_ptr.h:1307:25: note: candidate constructor not viable: no known conversion from 'std::nullptr_t' to 'const weak_ptr<const EventDispatcher> &' for 1st argument
+ 1307 |   _LIBCPP_HIDE_FROM_ABI weak_ptr(weak_ptr const& __r) _NOEXCEPT;
+      |                         ^        ~~~~~~~~~~~~~~~~~~~
+/Users/mac/Library/Android/sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/__memory/shared_ptr.h:1312:25: note: candidate constructor not viable: no known conversion from 'std::nullptr_t' to 'weak_ptr<const EventDispatcher> &&' for 1st argument
+ 1312 |   _LIBCPP_HIDE_FROM_ABI weak_ptr(weak_ptr&& __r) _NOEXCEPT;
+      |                         ^        ~~~~~~~~~~~~~~
+/Users/mac/Library/Android/sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/__memory/shared_ptr.h:1305:25: note: candidate template ignored: could not match 'shared_ptr<_Yp>' against 'std::nullptr_t'
+ 1305 |   _LIBCPP_HIDE_FROM_ABI weak_ptr(shared_ptr<_Yp> const& __r) _NOEXCEPT;
+      |                         ^
+/Users/mac/Library/Android/sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/__memory/shared_ptr.h:1310:25: note: candidate template ignored: could not match 'weak_ptr<_Yp>' against 'std::nullptr_t'
+ 1310 |   _LIBCPP_HIDE_FROM_ABI weak_ptr(weak_ptr<_Yp> const& __r) _NOEXCEPT;
+      |                         ^
+/Users/mac/Library/Android/sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/__memory/shared_ptr.h:1315:25: note: candidate template ignored: could not match 'weak_ptr<_Yp>' against 'std::nullptr_t'
+ 1315 |   _LIBCPP_HIDE_FROM_ABI weak_ptr(weak_ptr<_Yp>&& __r) _NOEXCEPT;
+      |                         ^
+/Users/mac/.gradle/caches/8.14.3/transforms/16642ac4adfbde330822e02191f8f7e1/transformed/react-android-0.81.5-debug/prefab/modules/reactnative/include/react/renderer/componentregistry/ComponentDescriptorProviderRegistry.h:54:44: note: in initialization of temporary of type 'const ComponentDescriptorParameters' created to list-initialize this reference
+   54 |       const ComponentDescriptorParameters& parameters) const;
+      |                                            ^
+/Users/mac/.gradle/caches/8.14.3/transforms/16642ac4adfbde330822e02191f8f7e1/transformed/react-android-0.81.5-debug/prefab/modules/reactnative/include/react/renderer/componentregistry/ComponentDescriptorProviderRegistry.h:54:44: note: passing argument to parameter 'parameters' here
+1 error generated.

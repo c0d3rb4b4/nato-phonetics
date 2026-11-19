@@ -1,0 +1,19 @@
+{
+  "serial": "emulator-5580",
+  "identities": {
+    "com.natophonetics.app": {
+      "installed": "/data/app/~~aIxYVKLpKIi_rj7CwkF2eQ==/com.natophonetics.app-9VE_h-G7McX4GlchVfm3_Q==/base.apk",
+      "sha256": "1b045e2dc7b2f1761bd4f8aa708cde29b498f2c43963b3062cc08b8555c28eee",
+      "expectedSha256": "1b045e2dc7b2f1761bd4f8aa708cde29b498f2c43963b3062cc08b8555c28eee"
+    },
+    "com.natophonetics.fonttest": {
+      "installed": "/data/app/~~TNv39p1rstxdu4m2BPtINw==/com.natophonetics.fonttest-LEkSKI257CGfW2kyEWtwHg==/base.apk",
+      "sha256": "9453567fa883a626bf71b73ba1c286f5f6459899bf36431cf329fc224247ccf0",
+      "expectedSha256": "9453567fa883a626bf71b73ba1c286f5f6459899bf36431cf329fc224247ccf0"
+    }
+  },
+  "originalScale": "1",
+  "originalIme": "com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME",
+  "adbExitCode": 0,
+  "passed": true
+}

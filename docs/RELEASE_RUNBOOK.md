@@ -6,6 +6,16 @@ Run19 adds [scoped browser/lifecycle qualification](evidence/run19/README.md) wi
 
 ## Identity and supported configuration
 
+**Current Run26 Android amendment:** the [opt-in source candidate](evidence/run26/README.md)
+repairs the observed live-font cases in scoped ARM64 Debug tests. Standard
+Maven builds and earlier unsigned Release artifacts retain the bug. Follow
+the pinned [source-build/ABI contract](NATIVE_BUILDS.md#p052-android-source-candidate--run26-acceptance-still-active);
+finish current raster, other-ABI/Release and default-build integration before
+claiming a repaired release. The test IME is isolated from the product APK.
+The dated security paragraphs above are historical: Run23's locked audit/review
+zero-finding scope remains current at unchanged dependency bytes, with no fresh
+Run26 audit or release acceptance.
+
 | Field | Current source/value | Release action |
 |---|---|---|
 | Product and registration | `app.json`: NATO Phonetics / `NATOPhonetics` | Keep native registration aligned with `index.js` and app delegates |

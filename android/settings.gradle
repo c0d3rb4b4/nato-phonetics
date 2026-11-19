@@ -4,3 +4,14 @@ extensions.configure(com.facebook.react.ReactSettingsExtension){ ex -> ex.autoli
 rootProject.name = 'NATOPhonetics'
 include ':app'
 includeBuild('../node_modules/@react-native/gradle-plugin')
+
+// Opt-in P05.2 native regression build; ordinary builds retain Maven artifacts.
+// Hermes stays pinned to the same 0.81.5 Maven artifact in both candidates.
+if (providers.gradleProperty('natoReactNativeSource').orNull == 'true') {
+    includeBuild('../node_modules/react-native') {
+        dependencySubstitution {
+            substitute(module('com.facebook.react:react-android')).using(project(':packages:react-native:ReactAndroid'))
+            substitute(module('com.facebook.react:react-native')).using(project(':packages:react-native:ReactAndroid'))
+        }
+    }
+}

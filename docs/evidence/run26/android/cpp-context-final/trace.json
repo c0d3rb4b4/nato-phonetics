@@ -1,0 +1,7235 @@
+[
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "prepared-text-flag",
+      "time": 1795103008182,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "layout-context",
+      "time": 1795103008767,
+      "thread": 5041,
+      "symbol": "_ZN8facebook5react24YogaLayoutableShadowNode10layoutTreeENS0_13LayoutContextENS0_17LayoutConstraintsE",
+      "node": "0xb4000075602fac38",
+      "font": 1,
+      "generation": "1"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "layout-context",
+      "time": 1795103008768,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746016bbb8",
+      "font": 1,
+      "generation": "1"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "prepared-text-flag",
+      "time": 1795103008768,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-enter",
+      "time": 1795103008768,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746016bbb8",
+        "font": 1,
+        "generation": "1"
+      },
+      "baseMultiplier": 1,
+      "fragmentMultiplier": 1
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-leave",
+      "time": 1795103008789,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746016bbb8",
+        "font": 1,
+        "generation": "1"
+      },
+      "width": 375.4285583496094,
+      "height": 19.428571701049805
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "layout-context",
+      "time": 1795103008789,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746016d578",
+      "font": 1,
+      "generation": "1"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "prepared-text-flag",
+      "time": 1795103008789,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-enter",
+      "time": 1795103008789,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746016d578",
+        "font": 1,
+        "generation": "1"
+      },
+      "baseMultiplier": 1,
+      "fragmentMultiplier": 1
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-leave",
+      "time": 1795103008797,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746016d578",
+        "font": 1,
+        "generation": "1"
+      },
+      "width": 260,
+      "height": 40.57143020629883
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "layout-context",
+      "time": 1795103008797,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746015e0d8",
+      "font": 1,
+      "generation": "1"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "prepared-text-flag",
+      "time": 1795103008797,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-enter",
+      "time": 1795103008797,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746015e0d8",
+        "font": 1,
+        "generation": "1"
+      },
+      "baseMultiplier": 1,
+      "fragmentMultiplier": 1
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-leave",
+      "time": 1795103008799,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746015e0d8",
+        "font": 1,
+        "generation": "1"
+      },
+      "width": 260,
+      "height": 59.42856979370117
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "layout-context",
+      "time": 1795103008799,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746016e8c8",
+      "font": 1,
+      "generation": "1"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "prepared-text-flag",
+      "time": 1795103008799,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-enter",
+      "time": 1795103008799,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746016e8c8",
+        "font": 1,
+        "generation": "1"
+      },
+      "baseMultiplier": 1,
+      "fragmentMultiplier": 1
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-leave",
+      "time": 1795103008800,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746016e8c8",
+        "font": 1,
+        "generation": "1"
+      },
+      "width": 260,
+      "height": 24
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "layout-context",
+      "time": 1795103008800,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007560215ee8",
+      "font": 1,
+      "generation": "1"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-enter",
+      "time": 1795103008800,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007560215ee8",
+        "font": 1,
+        "generation": "1"
+      },
+      "baseMultiplier": 1,
+      "fragmentMultiplier": 1
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-leave",
+      "time": 1795103008807,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007560215ee8",
+        "font": 1,
+        "generation": "1"
+      },
+      "width": 365.4285583496094,
+      "height": 24.571428298950195
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "layout-context",
+      "time": 1795103008807,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746016fc18",
+      "font": 1,
+      "generation": "1"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "prepared-text-flag",
+      "time": 1795103008807,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-enter",
+      "time": 1795103008808,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746016fc18",
+        "font": 1,
+        "generation": "1"
+      },
+      "baseMultiplier": 1,
+      "fragmentMultiplier": 1
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-leave",
+      "time": 1795103008817,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746016fc18",
+        "font": 1,
+        "generation": "1"
+      },
+      "width": 260,
+      "height": 72
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "prepared-text-flag",
+      "time": 1795103008817,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "prepared-text-flag",
+      "time": 1795103008817,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "prepared-text-flag",
+      "time": 1795103008817,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "prepared-text-flag",
+      "time": 1795103008817,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "prepared-text-flag",
+      "time": 1795103008825,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "prepared-text-flag",
+      "time": 1795103008825,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "prepared-text-flag",
+      "time": 1795103008830,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "prepared-text-flag",
+      "time": 1795103008830,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "prepared-text-flag",
+      "time": 1795103008834,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "prepared-text-flag",
+      "time": 1795103008834,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "layout-context",
+      "time": 1795103011749,
+      "thread": 4999,
+      "symbol": "_ZN8facebook5react24YogaLayoutableShadowNode10layoutTreeENS0_13LayoutContextENS0_17LayoutConstraintsE",
+      "node": "0xb4000075602b6088",
+      "font": 0.8500000238418579,
+      "generation": "2"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "layout-context",
+      "time": 1795103011753,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007460191268",
+      "font": 0.8500000238418579,
+      "generation": "2"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "prepared-text-flag",
+      "time": 1795103011753,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "cpp-measure-enter",
+      "time": 1795103011753,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460191268",
+        "font": 0.8500000238418579,
+        "generation": "2"
+      },
+      "baseMultiplier": 0.8500000238418579,
+      "fragmentMultiplier": 0.8500000238418579
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "cpp-measure-leave",
+      "time": 1795103011764,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460191268",
+        "font": 0.8500000238418579,
+        "generation": "2"
+      },
+      "width": 375.4285583496094,
+      "height": 16.571428298950195
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "layout-context",
+      "time": 1795103011764,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007460190bf8",
+      "font": 0.8500000238418579,
+      "generation": "2"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "prepared-text-flag",
+      "time": 1795103011764,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "cpp-measure-enter",
+      "time": 1795103011764,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460190bf8",
+        "font": 0.8500000238418579,
+        "generation": "2"
+      },
+      "baseMultiplier": 0.8500000238418579,
+      "fragmentMultiplier": 0.8500000238418579
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "cpp-measure-leave",
+      "time": 1795103011770,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460190bf8",
+        "font": 0.8500000238418579,
+        "generation": "2"
+      },
+      "width": 260,
+      "height": 34.85714340209961
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "layout-context",
+      "time": 1795103011770,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746018f238",
+      "font": 0.8500000238418579,
+      "generation": "2"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "prepared-text-flag",
+      "time": 1795103011770,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "cpp-measure-enter",
+      "time": 1795103011770,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746018f238",
+        "font": 0.8500000238418579,
+        "generation": "2"
+      },
+      "baseMultiplier": 0.8500000238418579,
+      "fragmentMultiplier": 0.8500000238418579
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "cpp-measure-leave",
+      "time": 1795103011774,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746018f238",
+        "font": 0.8500000238418579,
+        "generation": "2"
+      },
+      "width": 260,
+      "height": 34.85714340209961
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "layout-context",
+      "time": 1795103011774,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746018d208",
+      "font": 0.8500000238418579,
+      "generation": "2"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "prepared-text-flag",
+      "time": 1795103011774,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "cpp-measure-enter",
+      "time": 1795103011774,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746018d208",
+        "font": 0.8500000238418579,
+        "generation": "2"
+      },
+      "baseMultiplier": 0.8500000238418579,
+      "fragmentMultiplier": 0.8500000238418579
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "cpp-measure-leave",
+      "time": 1795103011791,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746018d208",
+        "font": 0.8500000238418579,
+        "generation": "2"
+      },
+      "width": 260,
+      "height": 20.571428298950195
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "layout-context",
+      "time": 1795103011791,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075602be638",
+      "font": 0.8500000238418579,
+      "generation": "2"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "cpp-measure-enter",
+      "time": 1795103011791,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000075602be638",
+        "font": 0.8500000238418579,
+        "generation": "2"
+      },
+      "baseMultiplier": 0.8500000238418579,
+      "fragmentMultiplier": 0.8500000238418579
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "cpp-measure-leave",
+      "time": 1795103011797,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000075602be638",
+        "font": 0.8500000238418579,
+        "generation": "2"
+      },
+      "width": 365.4285583496094,
+      "height": 21.14285659790039
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "layout-context",
+      "time": 1795103011797,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746018dee8",
+      "font": 0.8500000238418579,
+      "generation": "2"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "prepared-text-flag",
+      "time": 1795103011797,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "cpp-measure-enter",
+      "time": 1795103011797,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746018dee8",
+        "font": 0.8500000238418579,
+        "generation": "2"
+      },
+      "baseMultiplier": 0.8500000238418579,
+      "fragmentMultiplier": 0.8500000238418579
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "cpp-measure-leave",
+      "time": 1795103011799,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746018dee8",
+        "font": 0.8500000238418579,
+        "generation": "2"
+      },
+      "width": 260,
+      "height": 41.14285659790039
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "prepared-text-flag",
+      "time": 1795103011799,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "prepared-text-flag",
+      "time": 1795103011799,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "prepared-text-flag",
+      "time": 1795103011799,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "prepared-text-flag",
+      "time": 1795103011799,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "prepared-text-flag",
+      "time": 1795103011805,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "prepared-text-flag",
+      "time": 1795103011805,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "prepared-text-flag",
+      "time": 1795103011806,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "prepared-text-flag",
+      "time": 1795103011806,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "prepared-text-flag",
+      "time": 1795103011807,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "prepared-text-flag",
+      "time": 1795103011807,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "layout-context",
+      "time": 1795103011898,
+      "thread": 5041,
+      "symbol": "_ZN8facebook5react24YogaLayoutableShadowNode10layoutTreeENS0_13LayoutContextENS0_17LayoutConstraintsE",
+      "node": "0xb4000075602c6798",
+      "font": 0.8500000238418579,
+      "generation": "2"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "layout-context",
+      "time": 1795103011898,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007460196c88",
+      "font": 0.8500000238418579,
+      "generation": "2"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "prepared-text-flag",
+      "time": 1795103011898,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "cpp-measure-enter",
+      "time": 1795103011898,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460196c88",
+        "font": 0.8500000238418579,
+        "generation": "2"
+      },
+      "baseMultiplier": 0.8500000238418579,
+      "fragmentMultiplier": 0.8500000238418579
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "cpp-measure-leave",
+      "time": 1795103011902,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460196c88",
+        "font": 0.8500000238418579,
+        "generation": "2"
+      },
+      "width": 375.4285583496094,
+      "height": 16.571428298950195
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "layout-context",
+      "time": 1795103011902,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000074601945e8",
+      "font": 0.8500000238418579,
+      "generation": "2"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "prepared-text-flag",
+      "time": 1795103011902,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "cpp-measure-enter",
+      "time": 1795103011902,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000074601945e8",
+        "font": 0.8500000238418579,
+        "generation": "2"
+      },
+      "baseMultiplier": 0.8500000238418579,
+      "fragmentMultiplier": 0.8500000238418579
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "cpp-measure-leave",
+      "time": 1795103011902,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000074601945e8",
+        "font": 0.8500000238418579,
+        "generation": "2"
+      },
+      "width": 260,
+      "height": 34.85714340209961
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "layout-context",
+      "time": 1795103011902,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007460191f48",
+      "font": 0.8500000238418579,
+      "generation": "2"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "prepared-text-flag",
+      "time": 1795103011903,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "cpp-measure-enter",
+      "time": 1795103011903,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460191f48",
+        "font": 0.8500000238418579,
+        "generation": "2"
+      },
+      "baseMultiplier": 0.8500000238418579,
+      "fragmentMultiplier": 0.8500000238418579
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "cpp-measure-leave",
+      "time": 1795103011910,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460191f48",
+        "font": 0.8500000238418579,
+        "generation": "2"
+      },
+      "width": 260,
+      "height": 50.85714340209961
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "layout-context",
+      "time": 1795103011910,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007460193f78",
+      "font": 0.8500000238418579,
+      "generation": "2"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "prepared-text-flag",
+      "time": 1795103011910,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "cpp-measure-enter",
+      "time": 1795103011910,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460193f78",
+        "font": 0.8500000238418579,
+        "generation": "2"
+      },
+      "baseMultiplier": 0.8500000238418579,
+      "fragmentMultiplier": 0.8500000238418579
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "cpp-measure-leave",
+      "time": 1795103011910,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460193f78",
+        "font": 0.8500000238418579,
+        "generation": "2"
+      },
+      "width": 260,
+      "height": 20.571428298950195
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "layout-context",
+      "time": 1795103011910,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075602c15a8",
+      "font": 0.8500000238418579,
+      "generation": "2"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "cpp-measure-enter",
+      "time": 1795103011910,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000075602c15a8",
+        "font": 0.8500000238418579,
+        "generation": "2"
+      },
+      "baseMultiplier": 0.8500000238418579,
+      "fragmentMultiplier": 0.8500000238418579
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "cpp-measure-leave",
+      "time": 1795103011910,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000075602c15a8",
+        "font": 0.8500000238418579,
+        "generation": "2"
+      },
+      "width": 365.4285583496094,
+      "height": 21.14285659790039
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "layout-context",
+      "time": 1795103011910,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000074601952c8",
+      "font": 0.8500000238418579,
+      "generation": "2"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "prepared-text-flag",
+      "time": 1795103011910,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "cpp-measure-enter",
+      "time": 1795103011910,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000074601952c8",
+        "font": 0.8500000238418579,
+        "generation": "2"
+      },
+      "baseMultiplier": 0.8500000238418579,
+      "fragmentMultiplier": 0.8500000238418579
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "cpp-measure-leave",
+      "time": 1795103011911,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000074601952c8",
+        "font": 0.8500000238418579,
+        "generation": "2"
+      },
+      "width": 260,
+      "height": 41.14285659790039
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "prepared-text-flag",
+      "time": 1795103011911,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "prepared-text-flag",
+      "time": 1795103011911,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "prepared-text-flag",
+      "time": 1795103011911,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "prepared-text-flag",
+      "time": 1795103011911,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "prepared-text-flag",
+      "time": 1795103011911,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "prepared-text-flag",
+      "time": 1795103011911,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "prepared-text-flag",
+      "time": 1795103011923,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "prepared-text-flag",
+      "time": 1795103011926,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "prepared-text-flag",
+      "time": 1795103011926,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep0",
+      "kind": "prepared-text-flag",
+      "time": 1795103011926,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "layout-context",
+      "time": 1795103014460,
+      "thread": 4999,
+      "symbol": "_ZN8facebook5react24YogaLayoutableShadowNode10layoutTreeENS0_13LayoutContextENS0_17LayoutConstraintsE",
+      "node": "0xb40000756020cc48",
+      "font": 1.2999999523162842,
+      "generation": "3"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "layout-context",
+      "time": 1795103014462,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746018f238",
+      "font": 1.2999999523162842,
+      "generation": "3"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "prepared-text-flag",
+      "time": 1795103014466,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "cpp-measure-enter",
+      "time": 1795103014466,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746018f238",
+        "font": 1.2999999523162842,
+        "generation": "3"
+      },
+      "baseMultiplier": 1.2999999523162842,
+      "fragmentMultiplier": 1.2999999523162842
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "layout-context",
+      "time": 1795103014484,
+      "thread": 5041,
+      "symbol": "_ZN8facebook5react24YogaLayoutableShadowNode10layoutTreeENS0_13LayoutContextENS0_17LayoutConstraintsE",
+      "node": "0xb4000075602b9898",
+      "font": 0.8500000238418579,
+      "generation": "2"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "layout-context",
+      "time": 1795103014484,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007460126878",
+      "font": 0.8500000238418579,
+      "generation": "2"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "prepared-text-flag",
+      "time": 1795103014484,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "cpp-measure-enter",
+      "time": 1795103014484,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460126878",
+        "font": 0.8500000238418579,
+        "generation": "2"
+      },
+      "baseMultiplier": 0.8500000238418579,
+      "fragmentMultiplier": 0.8500000238418579
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "cpp-measure-leave",
+      "time": 1795103014494,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746018f238",
+        "font": 1.2999999523162842,
+        "generation": "3"
+      },
+      "width": 375.4285583496094,
+      "height": 47.42856979370117
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "layout-context",
+      "time": 1795103014494,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007460191268",
+      "font": 1.2999999523162842,
+      "generation": "3"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "prepared-text-flag",
+      "time": 1795103014494,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "cpp-measure-enter",
+      "time": 1795103014494,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460191268",
+        "font": 1.2999999523162842,
+        "generation": "3"
+      },
+      "baseMultiplier": 1.2999999523162842,
+      "fragmentMultiplier": 1.2999999523162842
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "cpp-measure-leave",
+      "time": 1795103014496,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460126878",
+        "font": 0.8500000238418579,
+        "generation": "2"
+      },
+      "width": 375.4285583496094,
+      "height": 47.42856979370117
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "layout-context",
+      "time": 1795103014496,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007460196618",
+      "font": 0.8500000238418579,
+      "generation": "2"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "prepared-text-flag",
+      "time": 1795103014497,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "cpp-measure-enter",
+      "time": 1795103014497,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460196618",
+        "font": 0.8500000238418579,
+        "generation": "2"
+      },
+      "baseMultiplier": 0.8500000238418579,
+      "fragmentMultiplier": 0.8500000238418579
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "cpp-measure-leave",
+      "time": 1795103014499,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460191268",
+        "font": 1.2999999523162842,
+        "generation": "3"
+      },
+      "width": 260,
+      "height": 76
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "layout-context",
+      "time": 1795103014499,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746018d208",
+      "font": 1.2999999523162842,
+      "generation": "3"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "prepared-text-flag",
+      "time": 1795103014499,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "cpp-measure-enter",
+      "time": 1795103014499,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746018d208",
+        "font": 1.2999999523162842,
+        "generation": "3"
+      },
+      "baseMultiplier": 1.2999999523162842,
+      "fragmentMultiplier": 1.2999999523162842
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "cpp-measure-leave",
+      "time": 1795103014500,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746018d208",
+        "font": 1.2999999523162842,
+        "generation": "3"
+      },
+      "width": 260,
+      "height": 100
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "layout-context",
+      "time": 1795103014500,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746018dee8",
+      "font": 1.2999999523162842,
+      "generation": "3"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "prepared-text-flag",
+      "time": 1795103014500,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "cpp-measure-enter",
+      "time": 1795103014500,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746018dee8",
+        "font": 1.2999999523162842,
+        "generation": "3"
+      },
+      "baseMultiplier": 1.2999999523162842,
+      "fragmentMultiplier": 1.2999999523162842
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "cpp-measure-leave",
+      "time": 1795103014501,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746018dee8",
+        "font": 1.2999999523162842,
+        "generation": "3"
+      },
+      "width": 260,
+      "height": 26.85714340209961
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "layout-context",
+      "time": 1795103014501,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075602ab858",
+      "font": 1.2999999523162842,
+      "generation": "3"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "cpp-measure-enter",
+      "time": 1795103014501,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000075602ab858",
+        "font": 1.2999999523162842,
+        "generation": "3"
+      },
+      "baseMultiplier": 1.2999999523162842,
+      "fragmentMultiplier": 1.2999999523162842
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "cpp-measure-leave",
+      "time": 1795103014501,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460196618",
+        "font": 0.8500000238418579,
+        "generation": "2"
+      },
+      "width": 260,
+      "height": 100
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "layout-context",
+      "time": 1795103014501,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075602bdd98",
+      "font": 0.8500000238418579,
+      "generation": "2"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "cpp-measure-enter",
+      "time": 1795103014501,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000075602bdd98",
+        "font": 0.8500000238418579,
+        "generation": "2"
+      },
+      "baseMultiplier": 0.8500000238418579,
+      "fragmentMultiplier": 0.8500000238418579
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "cpp-measure-leave",
+      "time": 1795103014503,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000075602bdd98",
+        "font": 0.8500000238418579,
+        "generation": "2"
+      },
+      "width": 365.4285583496094,
+      "height": 29.714284896850586
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "prepared-text-flag",
+      "time": 1795103014503,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "prepared-text-flag",
+      "time": 1795103014503,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "prepared-text-flag",
+      "time": 1795103014503,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "prepared-text-flag",
+      "time": 1795103014503,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "cpp-measure-leave",
+      "time": 1795103014506,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000075602ab858",
+        "font": 1.2999999523162842,
+        "generation": "3"
+      },
+      "width": 365.4285583496094,
+      "height": 29.714284896850586
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "layout-context",
+      "time": 1795103014506,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007460195938",
+      "font": 1.2999999523162842,
+      "generation": "3"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "prepared-text-flag",
+      "time": 1795103014506,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "cpp-measure-enter",
+      "time": 1795103014506,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460195938",
+        "font": 1.2999999523162842,
+        "generation": "3"
+      },
+      "baseMultiplier": 1.2999999523162842,
+      "fragmentMultiplier": 1.2999999523162842
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "cpp-measure-leave",
+      "time": 1795103014509,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460195938",
+        "font": 1.2999999523162842,
+        "generation": "3"
+      },
+      "width": 260,
+      "height": 80.57142639160156
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "prepared-text-flag",
+      "time": 1795103014509,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "prepared-text-flag",
+      "time": 1795103014509,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "prepared-text-flag",
+      "time": 1795103014509,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "prepared-text-flag",
+      "time": 1795103014509,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "prepared-text-flag",
+      "time": 1795103014514,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "prepared-text-flag",
+      "time": 1795103014514,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "prepared-text-flag",
+      "time": 1795103014514,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "prepared-text-flag",
+      "time": 1795103014517,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "prepared-text-flag",
+      "time": 1795103014519,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "prepared-text-flag",
+      "time": 1795103014519,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "prepared-text-flag",
+      "time": 1795103014521,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "prepared-text-flag",
+      "time": 1795103014521,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "prepared-text-flag",
+      "time": 1795103014527,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "prepared-text-flag",
+      "time": 1795103014530,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "prepared-text-flag",
+      "time": 1795103014530,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep1",
+      "kind": "prepared-text-flag",
+      "time": 1795103014530,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "layout-context",
+      "time": 1795103017195,
+      "thread": 4999,
+      "symbol": "_ZN8facebook5react24YogaLayoutableShadowNode10layoutTreeENS0_13LayoutContextENS0_17LayoutConstraintsE",
+      "node": "0xb4000075602b01a8",
+      "font": 2,
+      "generation": "4"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "layout-context",
+      "time": 1795103017210,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746018e558",
+      "font": 2,
+      "generation": "4"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "prepared-text-flag",
+      "time": 1795103017210,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "cpp-measure-enter",
+      "time": 1795103017210,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746018e558",
+        "font": 2,
+        "generation": "4"
+      },
+      "baseMultiplier": 2,
+      "fragmentMultiplier": 2
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "cpp-measure-leave",
+      "time": 1795103017218,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746018e558",
+        "font": 2,
+        "generation": "4"
+      },
+      "width": 375.4285583496094,
+      "height": 66.28571319580078
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "layout-context",
+      "time": 1795103017218,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746018ebc8",
+      "font": 2,
+      "generation": "4"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "prepared-text-flag",
+      "time": 1795103017218,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "cpp-measure-enter",
+      "time": 1795103017218,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746018ebc8",
+        "font": 2,
+        "generation": "4"
+      },
+      "baseMultiplier": 2,
+      "fragmentMultiplier": 2
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "cpp-measure-leave",
+      "time": 1795103017220,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746018ebc8",
+        "font": 2,
+        "generation": "4"
+      },
+      "width": 260,
+      "height": 135.42857360839844
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "layout-context",
+      "time": 1795103017220,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007460190588",
+      "font": 2,
+      "generation": "4"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "prepared-text-flag",
+      "time": 1795103017220,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "cpp-measure-enter",
+      "time": 1795103017221,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460190588",
+        "font": 2,
+        "generation": "4"
+      },
+      "baseMultiplier": 2,
+      "fragmentMultiplier": 2
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "cpp-measure-leave",
+      "time": 1795103017224,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460190588",
+        "font": 2,
+        "generation": "4"
+      },
+      "width": 260,
+      "height": 200.57142639160156
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "layout-context",
+      "time": 1795103017224,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746013fe08",
+      "font": 2,
+      "generation": "4"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "prepared-text-flag",
+      "time": 1795103017224,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "cpp-measure-enter",
+      "time": 1795103017224,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746013fe08",
+        "font": 2,
+        "generation": "4"
+      },
+      "baseMultiplier": 2,
+      "fragmentMultiplier": 2
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "layout-context",
+      "time": 1795103017225,
+      "thread": 5041,
+      "symbol": "_ZN8facebook5react24YogaLayoutableShadowNode10layoutTreeENS0_13LayoutContextENS0_17LayoutConstraintsE",
+      "node": "0xb40000756021e8e8",
+      "font": 1.2999999523162842,
+      "generation": "3"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "layout-context",
+      "time": 1795103017225,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007460129588",
+      "font": 1.2999999523162842,
+      "generation": "3"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "prepared-text-flag",
+      "time": 1795103017225,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "cpp-measure-enter",
+      "time": 1795103017225,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460129588",
+        "font": 1.2999999523162842,
+        "generation": "3"
+      },
+      "baseMultiplier": 1.2999999523162842,
+      "fragmentMultiplier": 1.2999999523162842
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "cpp-measure-leave",
+      "time": 1795103017228,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746013fe08",
+        "font": 2,
+        "generation": "4"
+      },
+      "width": 260,
+      "height": 36
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "layout-context",
+      "time": 1795103017240,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075602005e8",
+      "font": 2,
+      "generation": "4"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "cpp-measure-enter",
+      "time": 1795103017240,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000075602005e8",
+        "font": 2,
+        "generation": "4"
+      },
+      "baseMultiplier": 2,
+      "fragmentMultiplier": 2
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "cpp-measure-leave",
+      "time": 1795103017240,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000075602005e8",
+        "font": 2,
+        "generation": "4"
+      },
+      "width": 365.4285583496094,
+      "height": 40.57143020629883
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "layout-context",
+      "time": 1795103017241,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007460140ae8",
+      "font": 2,
+      "generation": "4"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "prepared-text-flag",
+      "time": 1795103017241,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "cpp-measure-enter",
+      "time": 1795103017241,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460140ae8",
+        "font": 2,
+        "generation": "4"
+      },
+      "baseMultiplier": 2,
+      "fragmentMultiplier": 2
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "cpp-measure-leave",
+      "time": 1795103017241,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460129588",
+        "font": 1.2999999523162842,
+        "generation": "3"
+      },
+      "width": 375.4285583496094,
+      "height": 66.28571319580078
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "layout-context",
+      "time": 1795103017241,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007460126ee8",
+      "font": 1.2999999523162842,
+      "generation": "3"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "prepared-text-flag",
+      "time": 1795103017241,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "cpp-measure-enter",
+      "time": 1795103017241,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460126ee8",
+        "font": 1.2999999523162842,
+        "generation": "3"
+      },
+      "baseMultiplier": 1.2999999523162842,
+      "fragmentMultiplier": 1.2999999523162842
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "cpp-measure-leave",
+      "time": 1795103017245,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460140ae8",
+        "font": 2,
+        "generation": "4"
+      },
+      "width": 260,
+      "height": 144
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "prepared-text-flag",
+      "time": 1795103017245,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "prepared-text-flag",
+      "time": 1795103017245,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "prepared-text-flag",
+      "time": 1795103017246,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "prepared-text-flag",
+      "time": 1795103017246,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "cpp-measure-leave",
+      "time": 1795103017246,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460126ee8",
+        "font": 1.2999999523162842,
+        "generation": "3"
+      },
+      "width": 260,
+      "height": 135.42857360839844
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "layout-context",
+      "time": 1795103017248,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746012b5b8",
+      "font": 1.2999999523162842,
+      "generation": "3"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "prepared-text-flag",
+      "time": 1795103017248,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "cpp-measure-enter",
+      "time": 1795103017248,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746012b5b8",
+        "font": 1.2999999523162842,
+        "generation": "3"
+      },
+      "baseMultiplier": 1.2999999523162842,
+      "fragmentMultiplier": 1.2999999523162842
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "prepared-text-flag",
+      "time": 1795103017248,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "prepared-text-flag",
+      "time": 1795103017248,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "cpp-measure-leave",
+      "time": 1795103017250,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746012b5b8",
+        "font": 1.2999999523162842,
+        "generation": "3"
+      },
+      "width": 260,
+      "height": 168
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "layout-context",
+      "time": 1795103017252,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007460177cd8",
+      "font": 1.2999999523162842,
+      "generation": "3"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "prepared-text-flag",
+      "time": 1795103017252,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "cpp-measure-enter",
+      "time": 1795103017252,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460177cd8",
+        "font": 1.2999999523162842,
+        "generation": "3"
+      },
+      "baseMultiplier": 1.2999999523162842,
+      "fragmentMultiplier": 1.2999999523162842
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "cpp-measure-leave",
+      "time": 1795103017254,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460177cd8",
+        "font": 1.2999999523162842,
+        "generation": "3"
+      },
+      "width": 260,
+      "height": 36
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "layout-context",
+      "time": 1795103017258,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007560273ba8",
+      "font": 1.2999999523162842,
+      "generation": "3"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "cpp-measure-enter",
+      "time": 1795103017258,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007560273ba8",
+        "font": 1.2999999523162842,
+        "generation": "3"
+      },
+      "baseMultiplier": 1.2999999523162842,
+      "fragmentMultiplier": 1.2999999523162842
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "prepared-text-flag",
+      "time": 1795103017258,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "prepared-text-flag",
+      "time": 1795103017258,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "cpp-measure-leave",
+      "time": 1795103017260,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007560273ba8",
+        "font": 1.2999999523162842,
+        "generation": "3"
+      },
+      "width": 365.4285583496094,
+      "height": 40.57143020629883
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "layout-context",
+      "time": 1795103017262,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007460198648",
+      "font": 1.2999999523162842,
+      "generation": "3"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "prepared-text-flag",
+      "time": 1795103017262,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "cpp-measure-enter",
+      "time": 1795103017262,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460198648",
+        "font": 1.2999999523162842,
+        "generation": "3"
+      },
+      "baseMultiplier": 1.2999999523162842,
+      "fragmentMultiplier": 1.2999999523162842
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "prepared-text-flag",
+      "time": 1795103017262,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "prepared-text-flag",
+      "time": 1795103017262,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "cpp-measure-leave",
+      "time": 1795103017267,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460198648",
+        "font": 1.2999999523162842,
+        "generation": "3"
+      },
+      "width": 260,
+      "height": 144
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "prepared-text-flag",
+      "time": 1795103017269,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "prepared-text-flag",
+      "time": 1795103017269,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "prepared-text-flag",
+      "time": 1795103017269,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "prepared-text-flag",
+      "time": 1795103017269,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "prepared-text-flag",
+      "time": 1795103017271,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "prepared-text-flag",
+      "time": 1795103017271,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "prepared-text-flag",
+      "time": 1795103017272,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "prepared-text-flag",
+      "time": 1795103017272,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "prepared-text-flag",
+      "time": 1795103017272,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep2",
+      "kind": "prepared-text-flag",
+      "time": 1795103017273,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "layout-context",
+      "time": 1795103019924,
+      "thread": 4999,
+      "symbol": "_ZN8facebook5react24YogaLayoutableShadowNode10layoutTreeENS0_13LayoutContextENS0_17LayoutConstraintsE",
+      "node": "0xb400007560402e78",
+      "font": 1,
+      "generation": "5"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "layout-context",
+      "time": 1795103019927,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007460123b68",
+      "font": 1,
+      "generation": "5"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "prepared-text-flag",
+      "time": 1795103019927,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "cpp-measure-enter",
+      "time": 1795103019927,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460123b68",
+        "font": 1,
+        "generation": "5"
+      },
+      "baseMultiplier": 1,
+      "fragmentMultiplier": 1
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "cpp-measure-leave",
+      "time": 1795103019931,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460123b68",
+        "font": 1,
+        "generation": "5"
+      },
+      "width": 375.4285583496094,
+      "height": 19.428571701049805
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "layout-context",
+      "time": 1795103019931,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746011baa8",
+      "font": 1,
+      "generation": "5"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "prepared-text-flag",
+      "time": 1795103019931,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "cpp-measure-enter",
+      "time": 1795103019931,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746011baa8",
+        "font": 1,
+        "generation": "5"
+      },
+      "baseMultiplier": 1,
+      "fragmentMultiplier": 1
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "cpp-measure-leave",
+      "time": 1795103019932,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746011baa8",
+        "font": 1,
+        "generation": "5"
+      },
+      "width": 260,
+      "height": 40.57143020629883
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "layout-context",
+      "time": 1795103019932,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746011a758",
+      "font": 1,
+      "generation": "5"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "prepared-text-flag",
+      "time": 1795103019932,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "cpp-measure-enter",
+      "time": 1795103019932,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746011a758",
+        "font": 1,
+        "generation": "5"
+      },
+      "baseMultiplier": 1,
+      "fragmentMultiplier": 1
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "cpp-measure-leave",
+      "time": 1795103019934,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746011a758",
+        "font": 1,
+        "generation": "5"
+      },
+      "width": 260,
+      "height": 59.42856979370117
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "layout-context",
+      "time": 1795103019934,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007460179698",
+      "font": 1,
+      "generation": "5"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "prepared-text-flag",
+      "time": 1795103019934,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "cpp-measure-enter",
+      "time": 1795103019934,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460179698",
+        "font": 1,
+        "generation": "5"
+      },
+      "baseMultiplier": 1,
+      "fragmentMultiplier": 1
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "cpp-measure-leave",
+      "time": 1795103019934,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460179698",
+        "font": 1,
+        "generation": "5"
+      },
+      "width": 260,
+      "height": 24
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "layout-context",
+      "time": 1795103019934,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007560401048",
+      "font": 1,
+      "generation": "5"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "cpp-measure-enter",
+      "time": 1795103019935,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007560401048",
+        "font": 1,
+        "generation": "5"
+      },
+      "baseMultiplier": 1,
+      "fragmentMultiplier": 1
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "cpp-measure-leave",
+      "time": 1795103019935,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007560401048",
+        "font": 1,
+        "generation": "5"
+      },
+      "width": 365.4285583496094,
+      "height": 24.571428298950195
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "layout-context",
+      "time": 1795103019935,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000074601810e8",
+      "font": 1,
+      "generation": "5"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "prepared-text-flag",
+      "time": 1795103019937,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "cpp-measure-enter",
+      "time": 1795103019937,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000074601810e8",
+        "font": 1,
+        "generation": "5"
+      },
+      "baseMultiplier": 1,
+      "fragmentMultiplier": 1
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "cpp-measure-leave",
+      "time": 1795103019939,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000074601810e8",
+        "font": 1,
+        "generation": "5"
+      },
+      "width": 260,
+      "height": 72
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "prepared-text-flag",
+      "time": 1795103019939,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "prepared-text-flag",
+      "time": 1795103019939,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "prepared-text-flag",
+      "time": 1795103019939,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "prepared-text-flag",
+      "time": 1795103019939,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "prepared-text-flag",
+      "time": 1795103019941,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "prepared-text-flag",
+      "time": 1795103019941,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "prepared-text-flag",
+      "time": 1795103019943,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "prepared-text-flag",
+      "time": 1795103019943,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "prepared-text-flag",
+      "time": 1795103019944,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "prepared-text-flag",
+      "time": 1795103019944,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "layout-context",
+      "time": 1795103019958,
+      "thread": 5041,
+      "symbol": "_ZN8facebook5react24YogaLayoutableShadowNode10layoutTreeENS0_13LayoutContextENS0_17LayoutConstraintsE",
+      "node": "0xb4000075603fe528",
+      "font": 1,
+      "generation": "5"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "layout-context",
+      "time": 1795103019958,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007460199328",
+      "font": 1,
+      "generation": "5"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "prepared-text-flag",
+      "time": 1795103019958,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "cpp-measure-enter",
+      "time": 1795103019958,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460199328",
+        "font": 1,
+        "generation": "5"
+      },
+      "baseMultiplier": 1,
+      "fragmentMultiplier": 1
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "cpp-measure-leave",
+      "time": 1795103019959,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460199328",
+        "font": 1,
+        "generation": "5"
+      },
+      "width": 375.4285583496094,
+      "height": 19.428571701049805
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "layout-context",
+      "time": 1795103019959,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007460188b38",
+      "font": 1,
+      "generation": "5"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "prepared-text-flag",
+      "time": 1795103019959,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "cpp-measure-enter",
+      "time": 1795103019959,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460188b38",
+        "font": 1,
+        "generation": "5"
+      },
+      "baseMultiplier": 1,
+      "fragmentMultiplier": 1
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "cpp-measure-leave",
+      "time": 1795103019959,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460188b38",
+        "font": 1,
+        "generation": "5"
+      },
+      "width": 260,
+      "height": 40.57143020629883
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "layout-context",
+      "time": 1795103019959,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746018f238",
+      "font": 1,
+      "generation": "5"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "prepared-text-flag",
+      "time": 1795103019959,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "cpp-measure-enter",
+      "time": 1795103019959,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746018f238",
+        "font": 1,
+        "generation": "5"
+      },
+      "baseMultiplier": 1,
+      "fragmentMultiplier": 1
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "cpp-measure-leave",
+      "time": 1795103019959,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746018f238",
+        "font": 1,
+        "generation": "5"
+      },
+      "width": 260,
+      "height": 59.42856979370117
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "layout-context",
+      "time": 1795103019959,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007460185e28",
+      "font": 1,
+      "generation": "5"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "prepared-text-flag",
+      "time": 1795103019959,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "cpp-measure-enter",
+      "time": 1795103019959,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460185e28",
+        "font": 1,
+        "generation": "5"
+      },
+      "baseMultiplier": 1,
+      "fragmentMultiplier": 1
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "cpp-measure-leave",
+      "time": 1795103019959,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460185e28",
+        "font": 1,
+        "generation": "5"
+      },
+      "width": 260,
+      "height": 24
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "layout-context",
+      "time": 1795103019959,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075603fe978",
+      "font": 1,
+      "generation": "5"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "cpp-measure-enter",
+      "time": 1795103019959,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000075603fe978",
+        "font": 1,
+        "generation": "5"
+      },
+      "baseMultiplier": 1,
+      "fragmentMultiplier": 1
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "cpp-measure-leave",
+      "time": 1795103019959,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000075603fe978",
+        "font": 1,
+        "generation": "5"
+      },
+      "width": 365.4285583496094,
+      "height": 24.571428298950195
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "layout-context",
+      "time": 1795103019959,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007460191268",
+      "font": 1,
+      "generation": "5"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "prepared-text-flag",
+      "time": 1795103019959,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "cpp-measure-enter",
+      "time": 1795103019959,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460191268",
+        "font": 1,
+        "generation": "5"
+      },
+      "baseMultiplier": 1,
+      "fragmentMultiplier": 1
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "cpp-measure-leave",
+      "time": 1795103019960,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460191268",
+        "font": 1,
+        "generation": "5"
+      },
+      "width": 260,
+      "height": 72
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "prepared-text-flag",
+      "time": 1795103019960,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "prepared-text-flag",
+      "time": 1795103019960,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "prepared-text-flag",
+      "time": 1795103019960,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "prepared-text-flag",
+      "time": 1795103019960,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "prepared-text-flag",
+      "time": 1795103019960,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "prepared-text-flag",
+      "time": 1795103019960,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "prepared-text-flag",
+      "time": 1795103019974,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "prepared-text-flag",
+      "time": 1795103019974,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "prepared-text-flag",
+      "time": 1795103019974,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep3",
+      "kind": "prepared-text-flag",
+      "time": 1795103019974,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "layout-context",
+      "time": 1795103022655,
+      "thread": 4999,
+      "symbol": "_ZN8facebook5react24YogaLayoutableShadowNode10layoutTreeENS0_13LayoutContextENS0_17LayoutConstraintsE",
+      "node": "0xb4000075603f9788",
+      "font": 0.8500000238418579,
+      "generation": "6"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "layout-context",
+      "time": 1795103022659,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746019ace8",
+      "font": 0.8500000238418579,
+      "generation": "6"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "prepared-text-flag",
+      "time": 1795103022659,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "cpp-measure-enter",
+      "time": 1795103022660,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746019ace8",
+        "font": 0.8500000238418579,
+        "generation": "6"
+      },
+      "baseMultiplier": 0.8500000238418579,
+      "fragmentMultiplier": 0.8500000238418579
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "cpp-measure-leave",
+      "time": 1795103022692,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746019ace8",
+        "font": 0.8500000238418579,
+        "generation": "6"
+      },
+      "width": 375.4285583496094,
+      "height": 16.571428298950195
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "layout-context",
+      "time": 1795103022692,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746018d208",
+      "font": 0.8500000238418579,
+      "generation": "6"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "prepared-text-flag",
+      "time": 1795103022692,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "cpp-measure-enter",
+      "time": 1795103022692,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746018d208",
+        "font": 0.8500000238418579,
+        "generation": "6"
+      },
+      "baseMultiplier": 0.8500000238418579,
+      "fragmentMultiplier": 0.8500000238418579
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "cpp-measure-leave",
+      "time": 1795103022695,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746018d208",
+        "font": 0.8500000238418579,
+        "generation": "6"
+      },
+      "width": 260,
+      "height": 34.85714340209961
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "layout-context",
+      "time": 1795103022695,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746018dee8",
+      "font": 0.8500000238418579,
+      "generation": "6"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "prepared-text-flag",
+      "time": 1795103022695,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "cpp-measure-enter",
+      "time": 1795103022695,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746018dee8",
+        "font": 0.8500000238418579,
+        "generation": "6"
+      },
+      "baseMultiplier": 0.8500000238418579,
+      "fragmentMultiplier": 0.8500000238418579
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "cpp-measure-leave",
+      "time": 1795103022696,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746018dee8",
+        "font": 0.8500000238418579,
+        "generation": "6"
+      },
+      "width": 260,
+      "height": 34.85714340209961
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "layout-context",
+      "time": 1795103022696,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007460195938",
+      "font": 0.8500000238418579,
+      "generation": "6"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "prepared-text-flag",
+      "time": 1795103022696,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "cpp-measure-enter",
+      "time": 1795103022696,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460195938",
+        "font": 0.8500000238418579,
+        "generation": "6"
+      },
+      "baseMultiplier": 0.8500000238418579,
+      "fragmentMultiplier": 0.8500000238418579
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "cpp-measure-leave",
+      "time": 1795103022702,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460195938",
+        "font": 0.8500000238418579,
+        "generation": "6"
+      },
+      "width": 260,
+      "height": 20.571428298950195
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "layout-context",
+      "time": 1795103022702,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075603fd3e8",
+      "font": 0.8500000238418579,
+      "generation": "6"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "cpp-measure-enter",
+      "time": 1795103022702,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000075603fd3e8",
+        "font": 0.8500000238418579,
+        "generation": "6"
+      },
+      "baseMultiplier": 0.8500000238418579,
+      "fragmentMultiplier": 0.8500000238418579
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "cpp-measure-leave",
+      "time": 1795103022703,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000075603fd3e8",
+        "font": 0.8500000238418579,
+        "generation": "6"
+      },
+      "width": 365.4285583496094,
+      "height": 21.14285659790039
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "layout-context",
+      "time": 1795103022703,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746019a678",
+      "font": 0.8500000238418579,
+      "generation": "6"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "prepared-text-flag",
+      "time": 1795103022703,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "cpp-measure-enter",
+      "time": 1795103022704,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746019a678",
+        "font": 0.8500000238418579,
+        "generation": "6"
+      },
+      "baseMultiplier": 0.8500000238418579,
+      "fragmentMultiplier": 0.8500000238418579
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "cpp-measure-leave",
+      "time": 1795103022706,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746019a678",
+        "font": 0.8500000238418579,
+        "generation": "6"
+      },
+      "width": 260,
+      "height": 41.14285659790039
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "prepared-text-flag",
+      "time": 1795103022706,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "prepared-text-flag",
+      "time": 1795103022706,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "prepared-text-flag",
+      "time": 1795103022706,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "prepared-text-flag",
+      "time": 1795103022707,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "prepared-text-flag",
+      "time": 1795103022710,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "prepared-text-flag",
+      "time": 1795103022710,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "prepared-text-flag",
+      "time": 1795103022711,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "prepared-text-flag",
+      "time": 1795103022711,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "prepared-text-flag",
+      "time": 1795103022718,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "prepared-text-flag",
+      "time": 1795103022718,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "layout-context",
+      "time": 1795103022729,
+      "thread": 5041,
+      "symbol": "_ZN8facebook5react24YogaLayoutableShadowNode10layoutTreeENS0_13LayoutContextENS0_17LayoutConstraintsE",
+      "node": "0xb4000075603f4e38",
+      "font": 0.8500000238418579,
+      "generation": "6"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "layout-context",
+      "time": 1795103022729,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000074601a13e8",
+      "font": 0.8500000238418579,
+      "generation": "6"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "prepared-text-flag",
+      "time": 1795103022729,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "cpp-measure-enter",
+      "time": 1795103022730,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000074601a13e8",
+        "font": 0.8500000238418579,
+        "generation": "6"
+      },
+      "baseMultiplier": 0.8500000238418579,
+      "fragmentMultiplier": 0.8500000238418579
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "cpp-measure-leave",
+      "time": 1795103022731,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000074601a13e8",
+        "font": 0.8500000238418579,
+        "generation": "6"
+      },
+      "width": 375.4285583496094,
+      "height": 16.571428298950195
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "layout-context",
+      "time": 1795103022731,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000074601a0098",
+      "font": 0.8500000238418579,
+      "generation": "6"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "prepared-text-flag",
+      "time": 1795103022731,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "cpp-measure-enter",
+      "time": 1795103022731,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000074601a0098",
+        "font": 0.8500000238418579,
+        "generation": "6"
+      },
+      "baseMultiplier": 0.8500000238418579,
+      "fragmentMultiplier": 0.8500000238418579
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "cpp-measure-leave",
+      "time": 1795103022731,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000074601a0098",
+        "font": 0.8500000238418579,
+        "generation": "6"
+      },
+      "width": 260,
+      "height": 34.85714340209961
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "layout-context",
+      "time": 1795103022731,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000074601a3a88",
+      "font": 0.8500000238418579,
+      "generation": "6"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "prepared-text-flag",
+      "time": 1795103022731,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "cpp-measure-enter",
+      "time": 1795103022731,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000074601a3a88",
+        "font": 0.8500000238418579,
+        "generation": "6"
+      },
+      "baseMultiplier": 0.8500000238418579,
+      "fragmentMultiplier": 0.8500000238418579
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "cpp-measure-leave",
+      "time": 1795103022732,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000074601a3a88",
+        "font": 0.8500000238418579,
+        "generation": "6"
+      },
+      "width": 260,
+      "height": 50.85714340209961
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "layout-context",
+      "time": 1795103022732,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000074601a2da8",
+      "font": 0.8500000238418579,
+      "generation": "6"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "prepared-text-flag",
+      "time": 1795103022732,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "cpp-measure-enter",
+      "time": 1795103022732,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000074601a2da8",
+        "font": 0.8500000238418579,
+        "generation": "6"
+      },
+      "baseMultiplier": 0.8500000238418579,
+      "fragmentMultiplier": 0.8500000238418579
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "cpp-measure-leave",
+      "time": 1795103022732,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000074601a2da8",
+        "font": 0.8500000238418579,
+        "generation": "6"
+      },
+      "width": 260,
+      "height": 20.571428298950195
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "layout-context",
+      "time": 1795103022732,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075603f2318",
+      "font": 0.8500000238418579,
+      "generation": "6"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "cpp-measure-enter",
+      "time": 1795103022732,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000075603f2318",
+        "font": 0.8500000238418579,
+        "generation": "6"
+      },
+      "baseMultiplier": 0.8500000238418579,
+      "fragmentMultiplier": 0.8500000238418579
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "cpp-measure-leave",
+      "time": 1795103022733,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000075603f2318",
+        "font": 0.8500000238418579,
+        "generation": "6"
+      },
+      "width": 365.4285583496094,
+      "height": 21.14285659790039
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "layout-context",
+      "time": 1795103022734,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000074601a4dd8",
+      "font": 0.8500000238418579,
+      "generation": "6"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "prepared-text-flag",
+      "time": 1795103022734,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "cpp-measure-enter",
+      "time": 1795103022734,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000074601a4dd8",
+        "font": 0.8500000238418579,
+        "generation": "6"
+      },
+      "baseMultiplier": 0.8500000238418579,
+      "fragmentMultiplier": 0.8500000238418579
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "cpp-measure-leave",
+      "time": 1795103022734,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000074601a4dd8",
+        "font": 0.8500000238418579,
+        "generation": "6"
+      },
+      "width": 260,
+      "height": 41.14285659790039
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "prepared-text-flag",
+      "time": 1795103022734,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "prepared-text-flag",
+      "time": 1795103022734,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "prepared-text-flag",
+      "time": 1795103022734,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "prepared-text-flag",
+      "time": 1795103022734,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "prepared-text-flag",
+      "time": 1795103022735,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "prepared-text-flag",
+      "time": 1795103022735,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "prepared-text-flag",
+      "time": 1795103022738,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "prepared-text-flag",
+      "time": 1795103022738,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "prepared-text-flag",
+      "time": 1795103022738,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep4",
+      "kind": "prepared-text-flag",
+      "time": 1795103022738,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "layout-context",
+      "time": 1795103025372,
+      "thread": 4999,
+      "symbol": "_ZN8facebook5react24YogaLayoutableShadowNode10layoutTreeENS0_13LayoutContextENS0_17LayoutConstraintsE",
+      "node": "0xb4000075602b01a8",
+      "font": 2,
+      "generation": "7"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "layout-context",
+      "time": 1795103025383,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007460195938",
+      "font": 2,
+      "generation": "7"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "prepared-text-flag",
+      "time": 1795103025383,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "cpp-measure-enter",
+      "time": 1795103025383,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460195938",
+        "font": 2,
+        "generation": "7"
+      },
+      "baseMultiplier": 2,
+      "fragmentMultiplier": 2
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "cpp-measure-leave",
+      "time": 1795103025428,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460195938",
+        "font": 2,
+        "generation": "7"
+      },
+      "width": 375.4285583496094,
+      "height": 66.28571319580078
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "layout-context",
+      "time": 1795103025428,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746018d208",
+      "font": 2,
+      "generation": "7"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "prepared-text-flag",
+      "time": 1795103025428,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "cpp-measure-enter",
+      "time": 1795103025428,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746018d208",
+        "font": 2,
+        "generation": "7"
+      },
+      "baseMultiplier": 2,
+      "fragmentMultiplier": 2
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "cpp-measure-leave",
+      "time": 1795103025432,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746018d208",
+        "font": 2,
+        "generation": "7"
+      },
+      "width": 260,
+      "height": 135.42857360839844
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "layout-context",
+      "time": 1795103025437,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746018dee8",
+      "font": 2,
+      "generation": "7"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "prepared-text-flag",
+      "time": 1795103025437,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "cpp-measure-enter",
+      "time": 1795103025438,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746018dee8",
+        "font": 2,
+        "generation": "7"
+      },
+      "baseMultiplier": 2,
+      "fragmentMultiplier": 2
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "cpp-measure-leave",
+      "time": 1795103025440,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746018dee8",
+        "font": 2,
+        "generation": "7"
+      },
+      "width": 260,
+      "height": 200.57142639160156
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "layout-context",
+      "time": 1795103025440,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746019a678",
+      "font": 2,
+      "generation": "7"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "prepared-text-flag",
+      "time": 1795103025440,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "cpp-measure-enter",
+      "time": 1795103025441,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746019a678",
+        "font": 2,
+        "generation": "7"
+      },
+      "baseMultiplier": 2,
+      "fragmentMultiplier": 2
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "cpp-measure-leave",
+      "time": 1795103025446,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746019a678",
+        "font": 2,
+        "generation": "7"
+      },
+      "width": 260,
+      "height": 36
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "layout-context",
+      "time": 1795103025446,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075603fb168",
+      "font": 2,
+      "generation": "7"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "cpp-measure-enter",
+      "time": 1795103025446,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000075603fb168",
+        "font": 2,
+        "generation": "7"
+      },
+      "baseMultiplier": 2,
+      "fragmentMultiplier": 2
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "cpp-measure-leave",
+      "time": 1795103025447,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000075603fb168",
+        "font": 2,
+        "generation": "7"
+      },
+      "width": 365.4285583496094,
+      "height": 40.57143020629883
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "layout-context",
+      "time": 1795103025447,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746019ed48",
+      "font": 2,
+      "generation": "7"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "prepared-text-flag",
+      "time": 1795103025447,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "cpp-measure-enter",
+      "time": 1795103025447,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746019ed48",
+        "font": 2,
+        "generation": "7"
+      },
+      "baseMultiplier": 2,
+      "fragmentMultiplier": 2
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "cpp-measure-leave",
+      "time": 1795103025448,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746019ed48",
+        "font": 2,
+        "generation": "7"
+      },
+      "width": 260,
+      "height": 144
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "prepared-text-flag",
+      "time": 1795103025449,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "prepared-text-flag",
+      "time": 1795103025449,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "prepared-text-flag",
+      "time": 1795103025449,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "prepared-text-flag",
+      "time": 1795103025449,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "prepared-text-flag",
+      "time": 1795103025452,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "prepared-text-flag",
+      "time": 1795103025452,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "prepared-text-flag",
+      "time": 1795103025457,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "prepared-text-flag",
+      "time": 1795103025457,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "prepared-text-flag",
+      "time": 1795103025460,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "prepared-text-flag",
+      "time": 1795103025460,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "layout-context",
+      "time": 1795103025462,
+      "thread": 5041,
+      "symbol": "_ZN8facebook5react24YogaLayoutableShadowNode10layoutTreeENS0_13LayoutContextENS0_17LayoutConstraintsE",
+      "node": "0xb4000075602b0e98",
+      "font": 0.8500000238418579,
+      "generation": "6"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "layout-context",
+      "time": 1795103025462,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000074601a4768",
+      "font": 0.8500000238418579,
+      "generation": "6"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "prepared-text-flag",
+      "time": 1795103025463,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "cpp-measure-enter",
+      "time": 1795103025463,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000074601a4768",
+        "font": 0.8500000238418579,
+        "generation": "6"
+      },
+      "baseMultiplier": 0.8500000238418579,
+      "fragmentMultiplier": 0.8500000238418579
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "cpp-measure-leave",
+      "time": 1795103025463,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000074601a4768",
+        "font": 0.8500000238418579,
+        "generation": "6"
+      },
+      "width": 375.4285583496094,
+      "height": 66.28571319580078
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "layout-context",
+      "time": 1795103025463,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746018e558",
+      "font": 0.8500000238418579,
+      "generation": "6"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "prepared-text-flag",
+      "time": 1795103025463,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "cpp-measure-enter",
+      "time": 1795103025463,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746018e558",
+        "font": 0.8500000238418579,
+        "generation": "6"
+      },
+      "baseMultiplier": 0.8500000238418579,
+      "fragmentMultiplier": 0.8500000238418579
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "cpp-measure-leave",
+      "time": 1795103025464,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746018e558",
+        "font": 0.8500000238418579,
+        "generation": "6"
+      },
+      "width": 260,
+      "height": 168
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "layout-context",
+      "time": 1795103025464,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075602f8568",
+      "font": 0.8500000238418579,
+      "generation": "6"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "cpp-measure-enter",
+      "time": 1795103025464,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000075602f8568",
+        "font": 0.8500000238418579,
+        "generation": "6"
+      },
+      "baseMultiplier": 0.8500000238418579,
+      "fragmentMultiplier": 0.8500000238418579
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "cpp-measure-leave",
+      "time": 1795103025465,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000075602f8568",
+        "font": 0.8500000238418579,
+        "generation": "6"
+      },
+      "width": 365.4285583496094,
+      "height": 40.57143020629883
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "prepared-text-flag",
+      "time": 1795103025465,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "prepared-text-flag",
+      "time": 1795103025465,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "prepared-text-flag",
+      "time": 1795103025465,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "prepared-text-flag",
+      "time": 1795103025465,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "prepared-text-flag",
+      "time": 1795103025472,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "prepared-text-flag",
+      "time": 1795103025472,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "prepared-text-flag",
+      "time": 1795103025474,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "prepared-text-flag",
+      "time": 1795103025474,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "prepared-text-flag",
+      "time": 1795103025475,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep5",
+      "kind": "prepared-text-flag",
+      "time": 1795103025475,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "layout-context",
+      "time": 1795103028067,
+      "thread": 4999,
+      "symbol": "_ZN8facebook5react24YogaLayoutableShadowNode10layoutTreeENS0_13LayoutContextENS0_17LayoutConstraintsE",
+      "node": "0xb4000075602bae28",
+      "font": 1.2999999523162842,
+      "generation": "8"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "layout-context",
+      "time": 1795103028068,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746019e068",
+      "font": 1.2999999523162842,
+      "generation": "8"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "prepared-text-flag",
+      "time": 1795103028068,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "cpp-measure-enter",
+      "time": 1795103028068,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746019e068",
+        "font": 1.2999999523162842,
+        "generation": "8"
+      },
+      "baseMultiplier": 1.2999999523162842,
+      "fragmentMultiplier": 1.2999999523162842
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "cpp-measure-leave",
+      "time": 1795103028080,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746019e068",
+        "font": 1.2999999523162842,
+        "generation": "8"
+      },
+      "width": 375.4285583496094,
+      "height": 25.14285659790039
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "layout-context",
+      "time": 1795103028083,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746019d388",
+      "font": 1.2999999523162842,
+      "generation": "8"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "prepared-text-flag",
+      "time": 1795103028083,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "cpp-measure-enter",
+      "time": 1795103028083,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746019d388",
+        "font": 1.2999999523162842,
+        "generation": "8"
+      },
+      "baseMultiplier": 1.2999999523162842,
+      "fragmentMultiplier": 1.2999999523162842
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "cpp-measure-leave",
+      "time": 1795103028084,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746019d388",
+        "font": 1.2999999523162842,
+        "generation": "8"
+      },
+      "width": 260,
+      "height": 76
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "layout-context",
+      "time": 1795103028085,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746019ed48",
+      "font": 1.2999999523162842,
+      "generation": "8"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "prepared-text-flag",
+      "time": 1795103028085,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "cpp-measure-enter",
+      "time": 1795103028085,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746019ed48",
+        "font": 1.2999999523162842,
+        "generation": "8"
+      },
+      "baseMultiplier": 1.2999999523162842,
+      "fragmentMultiplier": 1.2999999523162842
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "layout-context",
+      "time": 1795103028085,
+      "thread": 5041,
+      "symbol": "_ZN8facebook5react24YogaLayoutableShadowNode10layoutTreeENS0_13LayoutContextENS0_17LayoutConstraintsE",
+      "node": "0xb4000075601fa708",
+      "font": 2,
+      "generation": "7"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "layout-context",
+      "time": 1795103028085,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746019f3b8",
+      "font": 2,
+      "generation": "7"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "prepared-text-flag",
+      "time": 1795103028085,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "cpp-measure-enter",
+      "time": 1795103028086,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746019f3b8",
+        "font": 2,
+        "generation": "7"
+      },
+      "baseMultiplier": 2,
+      "fragmentMultiplier": 2
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "cpp-measure-leave",
+      "time": 1795103028086,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746019ed48",
+        "font": 1.2999999523162842,
+        "generation": "8"
+      },
+      "width": 260,
+      "height": 76
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "layout-context",
+      "time": 1795103028086,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007460190588",
+      "font": 1.2999999523162842,
+      "generation": "8"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "prepared-text-flag",
+      "time": 1795103028086,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "cpp-measure-enter",
+      "time": 1795103028086,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460190588",
+        "font": 1.2999999523162842,
+        "generation": "8"
+      },
+      "baseMultiplier": 1.2999999523162842,
+      "fragmentMultiplier": 1.2999999523162842
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "cpp-measure-leave",
+      "time": 1795103028088,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460190588",
+        "font": 1.2999999523162842,
+        "generation": "8"
+      },
+      "width": 260,
+      "height": 26.85714340209961
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "layout-context",
+      "time": 1795103028088,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075602c08b8",
+      "font": 1.2999999523162842,
+      "generation": "8"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "cpp-measure-enter",
+      "time": 1795103028088,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000075602c08b8",
+        "font": 1.2999999523162842,
+        "generation": "8"
+      },
+      "baseMultiplier": 1.2999999523162842,
+      "fragmentMultiplier": 1.2999999523162842
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "cpp-measure-leave",
+      "time": 1795103028089,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000075602c08b8",
+        "font": 1.2999999523162842,
+        "generation": "8"
+      },
+      "width": 365.4285583496094,
+      "height": 29.714284896850586
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "layout-context",
+      "time": 1795103028089,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007460199328",
+      "font": 1.2999999523162842,
+      "generation": "8"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "prepared-text-flag",
+      "time": 1795103028089,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "cpp-measure-enter",
+      "time": 1795103028089,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460199328",
+        "font": 1.2999999523162842,
+        "generation": "8"
+      },
+      "baseMultiplier": 1.2999999523162842,
+      "fragmentMultiplier": 1.2999999523162842
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "cpp-measure-leave",
+      "time": 1795103028090,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460199328",
+        "font": 1.2999999523162842,
+        "generation": "8"
+      },
+      "width": 260,
+      "height": 80.57142639160156
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "prepared-text-flag",
+      "time": 1795103028091,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "prepared-text-flag",
+      "time": 1795103028091,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "prepared-text-flag",
+      "time": 1795103028091,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "prepared-text-flag",
+      "time": 1795103028091,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "prepared-text-flag",
+      "time": 1795103028094,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "prepared-text-flag",
+      "time": 1795103028094,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "prepared-text-flag",
+      "time": 1795103028096,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "prepared-text-flag",
+      "time": 1795103028096,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "prepared-text-flag",
+      "time": 1795103028098,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "prepared-text-flag",
+      "time": 1795103028098,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "cpp-measure-leave",
+      "time": 1795103028102,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746019f3b8",
+        "font": 2,
+        "generation": "7"
+      },
+      "width": 375.4285583496094,
+      "height": 47.42856979370117
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "layout-context",
+      "time": 1795103028102,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746018d208",
+      "font": 2,
+      "generation": "7"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "prepared-text-flag",
+      "time": 1795103028102,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "cpp-measure-enter",
+      "time": 1795103028102,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746018d208",
+        "font": 2,
+        "generation": "7"
+      },
+      "baseMultiplier": 2,
+      "fragmentMultiplier": 2
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "cpp-measure-leave",
+      "time": 1795103028103,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746018d208",
+        "font": 2,
+        "generation": "7"
+      },
+      "width": 260,
+      "height": 76
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "layout-context",
+      "time": 1795103028103,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007460194c58",
+      "font": 2,
+      "generation": "7"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "prepared-text-flag",
+      "time": 1795103028103,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "cpp-measure-enter",
+      "time": 1795103028103,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460194c58",
+        "font": 2,
+        "generation": "7"
+      },
+      "baseMultiplier": 2,
+      "fragmentMultiplier": 2
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "cpp-measure-leave",
+      "time": 1795103028103,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460194c58",
+        "font": 2,
+        "generation": "7"
+      },
+      "width": 260,
+      "height": 100
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "layout-context",
+      "time": 1795103028103,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746019c6a8",
+      "font": 2,
+      "generation": "7"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "prepared-text-flag",
+      "time": 1795103028103,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "cpp-measure-enter",
+      "time": 1795103028103,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746019c6a8",
+        "font": 2,
+        "generation": "7"
+      },
+      "baseMultiplier": 2,
+      "fragmentMultiplier": 2
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "cpp-measure-leave",
+      "time": 1795103028104,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746019c6a8",
+        "font": 2,
+        "generation": "7"
+      },
+      "width": 260,
+      "height": 26.85714340209961
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "layout-context",
+      "time": 1795103028104,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075603fc6f8",
+      "font": 2,
+      "generation": "7"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "cpp-measure-enter",
+      "time": 1795103028104,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000075603fc6f8",
+        "font": 2,
+        "generation": "7"
+      },
+      "baseMultiplier": 2,
+      "fragmentMultiplier": 2
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "cpp-measure-leave",
+      "time": 1795103028104,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000075603fc6f8",
+        "font": 2,
+        "generation": "7"
+      },
+      "width": 365.4285583496094,
+      "height": 29.714284896850586
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "layout-context",
+      "time": 1795103028104,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007460195938",
+      "font": 2,
+      "generation": "7"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "prepared-text-flag",
+      "time": 1795103028104,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "cpp-measure-enter",
+      "time": 1795103028104,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460195938",
+        "font": 2,
+        "generation": "7"
+      },
+      "baseMultiplier": 2,
+      "fragmentMultiplier": 2
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "cpp-measure-leave",
+      "time": 1795103028114,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460195938",
+        "font": 2,
+        "generation": "7"
+      },
+      "width": 260,
+      "height": 80.57142639160156
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "prepared-text-flag",
+      "time": 1795103028114,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "prepared-text-flag",
+      "time": 1795103028115,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "prepared-text-flag",
+      "time": 1795103028115,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "prepared-text-flag",
+      "time": 1795103028117,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "prepared-text-flag",
+      "time": 1795103028119,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "prepared-text-flag",
+      "time": 1795103028119,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "prepared-text-flag",
+      "time": 1795103028123,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "prepared-text-flag",
+      "time": 1795103028123,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "prepared-text-flag",
+      "time": 1795103028126,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep6",
+      "kind": "prepared-text-flag",
+      "time": 1795103028126,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "layout-context",
+      "time": 1795103030900,
+      "thread": 4999,
+      "symbol": "_ZN8facebook5react24YogaLayoutableShadowNode10layoutTreeENS0_13LayoutContextENS0_17LayoutConstraintsE",
+      "node": "0xb400007560202cb8",
+      "font": 1,
+      "generation": "9"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "layout-context",
+      "time": 1795103030906,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007460126ee8",
+      "font": 1,
+      "generation": "9"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "prepared-text-flag",
+      "time": 1795103030906,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "cpp-measure-enter",
+      "time": 1795103030906,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460126ee8",
+        "font": 1,
+        "generation": "9"
+      },
+      "baseMultiplier": 1,
+      "fragmentMultiplier": 1
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "cpp-measure-leave",
+      "time": 1795103030917,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460126ee8",
+        "font": 1,
+        "generation": "9"
+      },
+      "width": 375.4285583496094,
+      "height": 19.428571701049805
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "layout-context",
+      "time": 1795103030917,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb40000746012b5b8",
+      "font": 1,
+      "generation": "9"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "prepared-text-flag",
+      "time": 1795103030917,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "cpp-measure-enter",
+      "time": 1795103030918,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746012b5b8",
+        "font": 1,
+        "generation": "9"
+      },
+      "baseMultiplier": 1,
+      "fragmentMultiplier": 1
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "cpp-measure-leave",
+      "time": 1795103030919,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb40000746012b5b8",
+        "font": 1,
+        "generation": "9"
+      },
+      "width": 260,
+      "height": 40.57143020629883
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "layout-context",
+      "time": 1795103030919,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007460177cd8",
+      "font": 1,
+      "generation": "9"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "prepared-text-flag",
+      "time": 1795103030919,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "cpp-measure-enter",
+      "time": 1795103030919,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460177cd8",
+        "font": 1,
+        "generation": "9"
+      },
+      "baseMultiplier": 1,
+      "fragmentMultiplier": 1
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "cpp-measure-leave",
+      "time": 1795103030920,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460177cd8",
+        "font": 1,
+        "generation": "9"
+      },
+      "width": 260,
+      "height": 59.42856979370117
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "layout-context",
+      "time": 1795103030920,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007460188b38",
+      "font": 1,
+      "generation": "9"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "prepared-text-flag",
+      "time": 1795103030920,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "cpp-measure-enter",
+      "time": 1795103030920,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460188b38",
+        "font": 1,
+        "generation": "9"
+      },
+      "baseMultiplier": 1,
+      "fragmentMultiplier": 1
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "cpp-measure-leave",
+      "time": 1795103030923,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460188b38",
+        "font": 1,
+        "generation": "9"
+      },
+      "width": 260,
+      "height": 24
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "layout-context",
+      "time": 1795103030924,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075602c7038",
+      "font": 1,
+      "generation": "9"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "cpp-measure-enter",
+      "time": 1795103030924,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000075602c7038",
+        "font": 1,
+        "generation": "9"
+      },
+      "baseMultiplier": 1,
+      "fragmentMultiplier": 1
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "cpp-measure-leave",
+      "time": 1795103030926,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000075602c7038",
+        "font": 1,
+        "generation": "9"
+      },
+      "width": 365.4285583496094,
+      "height": 24.571428298950195
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "layout-context",
+      "time": 1795103030926,
+      "thread": 4999,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb400007460125b98",
+      "font": 1,
+      "generation": "9"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "prepared-text-flag",
+      "time": 1795103030926,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "cpp-measure-enter",
+      "time": 1795103030926,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460125b98",
+        "font": 1,
+        "generation": "9"
+      },
+      "baseMultiplier": 1,
+      "fragmentMultiplier": 1
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "cpp-measure-leave",
+      "time": 1795103030934,
+      "thread": 4999,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb400007460125b98",
+        "font": 1,
+        "generation": "9"
+      },
+      "width": 260,
+      "height": 72
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "prepared-text-flag",
+      "time": 1795103030935,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "prepared-text-flag",
+      "time": 1795103030935,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "prepared-text-flag",
+      "time": 1795103030935,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "prepared-text-flag",
+      "time": 1795103030935,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "prepared-text-flag",
+      "time": 1795103030941,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "prepared-text-flag",
+      "time": 1795103030955,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "prepared-text-flag",
+      "time": 1795103030957,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "prepared-text-flag",
+      "time": 1795103030957,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "prepared-text-flag",
+      "time": 1795103030958,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "prepared-text-flag",
+      "time": 1795103030958,
+      "thread": 4999,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "layout-context",
+      "time": 1795103031005,
+      "thread": 5041,
+      "symbol": "_ZN8facebook5react24YogaLayoutableShadowNode10layoutTreeENS0_13LayoutContextENS0_17LayoutConstraintsE",
+      "node": "0xb4000075603f9338",
+      "font": 1,
+      "generation": "9"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "layout-context",
+      "time": 1795103031010,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000074601a5ab8",
+      "font": 1,
+      "generation": "9"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "prepared-text-flag",
+      "time": 1795103031010,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "cpp-measure-enter",
+      "time": 1795103031010,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000074601a5ab8",
+        "font": 1,
+        "generation": "9"
+      },
+      "baseMultiplier": 1,
+      "fragmentMultiplier": 1
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "cpp-measure-leave",
+      "time": 1795103031011,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000074601a5ab8",
+        "font": 1,
+        "generation": "9"
+      },
+      "width": 375.4285583496094,
+      "height": 19.428571701049805
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "layout-context",
+      "time": 1795103031011,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000074601a6128",
+      "font": 1,
+      "generation": "9"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "prepared-text-flag",
+      "time": 1795103031011,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "cpp-measure-enter",
+      "time": 1795103031011,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000074601a6128",
+        "font": 1,
+        "generation": "9"
+      },
+      "baseMultiplier": 1,
+      "fragmentMultiplier": 1
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "cpp-measure-leave",
+      "time": 1795103031011,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000074601a6128",
+        "font": 1,
+        "generation": "9"
+      },
+      "width": 260,
+      "height": 40.57143020629883
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "layout-context",
+      "time": 1795103031011,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000074601a5448",
+      "font": 1,
+      "generation": "9"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "prepared-text-flag",
+      "time": 1795103031011,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "cpp-measure-enter",
+      "time": 1795103031011,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000074601a5448",
+        "font": 1,
+        "generation": "9"
+      },
+      "baseMultiplier": 1,
+      "fragmentMultiplier": 1
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "cpp-measure-leave",
+      "time": 1795103031012,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000074601a5448",
+        "font": 1,
+        "generation": "9"
+      },
+      "width": 260,
+      "height": 59.42856979370117
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "layout-context",
+      "time": 1795103031012,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000074601aae68",
+      "font": 1,
+      "generation": "9"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "prepared-text-flag",
+      "time": 1795103031012,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "cpp-measure-enter",
+      "time": 1795103031012,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000074601aae68",
+        "font": 1,
+        "generation": "9"
+      },
+      "baseMultiplier": 1,
+      "fragmentMultiplier": 1
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "cpp-measure-leave",
+      "time": 1795103031012,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000074601aae68",
+        "font": 1,
+        "generation": "9"
+      },
+      "width": 260,
+      "height": 24
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "layout-context",
+      "time": 1795103031012,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075603f8648",
+      "font": 1,
+      "generation": "9"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "cpp-measure-enter",
+      "time": 1795103031012,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000075603f8648",
+        "font": 1,
+        "generation": "9"
+      },
+      "baseMultiplier": 1,
+      "fragmentMultiplier": 1
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "cpp-measure-leave",
+      "time": 1795103031012,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000075603f8648",
+        "font": 1,
+        "generation": "9"
+      },
+      "width": 365.4285583496094,
+      "height": 24.571428298950195
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "layout-context",
+      "time": 1795103031012,
+      "thread": 5041,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000074601a8158",
+      "font": 1,
+      "generation": "9"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "prepared-text-flag",
+      "time": 1795103031012,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "cpp-measure-enter",
+      "time": 1795103031012,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000074601a8158",
+        "font": 1,
+        "generation": "9"
+      },
+      "baseMultiplier": 1,
+      "fragmentMultiplier": 1
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "cpp-measure-leave",
+      "time": 1795103031012,
+      "thread": 5041,
+      "caller": {
+        "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+        "node": "0xb4000074601a8158",
+        "font": 1,
+        "generation": "9"
+      },
+      "width": 260,
+      "height": 72
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "prepared-text-flag",
+      "time": 1795103031012,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "prepared-text-flag",
+      "time": 1795103031012,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "prepared-text-flag",
+      "time": 1795103031012,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "prepared-text-flag",
+      "time": 1795103031012,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "prepared-text-flag",
+      "time": 1795103031013,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "prepared-text-flag",
+      "time": 1795103031013,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "prepared-text-flag",
+      "time": 1795103031015,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "prepared-text-flag",
+      "time": 1795103031015,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "prepared-text-flag",
+      "time": 1795103031015,
+      "thread": 5041,
+      "value": false
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "sweep7",
+      "kind": "prepared-text-flag",
+      "time": 1795103031016,
+      "thread": 5041,
+      "value": false
+    }
+  }
+]

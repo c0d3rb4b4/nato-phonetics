@@ -16,7 +16,7 @@ module.exports = [
     rules: { 'no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }] },
   },
   {
-    files: ['app/**/*.js', 'src/**/*.js', 'web/**/*.jsx', 'index.web.js'],
+    files: ['app/**/*.js', 'src/**/*.js', 'web/**/*.jsx', 'tests/fixtures/**/*.js', 'index.web.js'],
     plugins: { 'react-hooks': hooks, react },
     rules: { 'react/jsx-uses-vars': 'error', 'react-hooks/rules-of-hooks': 'error', 'react-hooks/exhaustive-deps': 'error' },
   },

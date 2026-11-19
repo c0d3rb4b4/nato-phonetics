@@ -1,0 +1,82 @@
+{
+  "version": "0.81.5",
+  "status": "Candidate2 propagates dirty measured leaves through their Yoga owners; candidate1 native regression stayed red after matching ABI. Runtime input/cache qualification remains separate.",
+  "files": [
+    {
+      "path": "ReactAndroid/src/main/java/com/facebook/react/runtime/ReactSurfaceImpl.kt",
+      "originalSha256": "f0708ad65967cfc56e5526a56a2e899b699e2a1e5b1806da72c9bd2bd13ed41c",
+      "patchedSha256": "1f1d651c582f43c532427e7ac64f4a3749010722ffa7d2ab8918cc21d89d2d1a",
+      "changes": [
+        {
+          "before": "    private fun getFontScale(context: Context): Float =\n        if (ReactNativeFeatureFlags.enableFontScaleChangesUpdatingLayout())\n            context.getResources().getConfiguration().fontScale\n        else 1f",
+          "after": "    private fun getFontScale(context: Context): Float =\n        context.getResources().getConfiguration().fontScale"
+        }
+      ]
+    },
+    {
+      "path": "ReactCommon/react/renderer/components/view/YogaLayoutableShadowNode.h",
+      "originalSha256": "c9575424f0a81a6d69bdc81c76b4c9545bd3ca944d0f53c6876fe614180b75b2",
+      "patchedSha256": "d3225d73ca014b63067ba5fcf1706bd303984db0653923d7860697fe9d7f1213",
+      "changes": [
+        {
+          "before": "      float pointScaleFactor,\n      YGErrata defaultErrata,",
+          "after": "      float pointScaleFactor,\n      float fontSizeMultiplier,\n      YGErrata defaultErrata,"
+        },
+        {
+          "before": "  bool yogaTreeHasBeenConfigured_{false};",
+          "after": "  bool yogaTreeHasBeenConfigured_{false};\n  float fontSizeMultiplier_{1.0f};"
+        }
+      ]
+    },
+    {
+      "path": "ReactCommon/react/renderer/components/view/YogaLayoutableShadowNode.cpp",
+      "originalSha256": "1205e21ce3ebab04a95035c45bf5c0a16e739ff5f64def6701f86b02de90055e",
+      "patchedSha256": "fcd0aebc078f2d40623e23c4c86df86c3deaf3d12e457de7c21d6665395c23bd",
+      "changes": [
+        {
+          "before": "                    .yogaNode_) {",
+          "after": "                    .yogaNode_),\n      fontSizeMultiplier_(static_cast<const YogaLayoutableShadowNode&>(sourceShadowNode)\n                              .fontSizeMultiplier_) {"
+        },
+        {
+          "before": "void YogaLayoutableShadowNode::configureYogaTree(\n    float pointScaleFactor,\n    YGErrata",
+          "after": "void YogaLayoutableShadowNode::configureYogaTree(\n    float pointScaleFactor,\n    float fontSizeMultiplier,\n    YGErrata"
+        },
+        {
+          "before": "  // Set state on our own Yoga node\n  YGErrata errata",
+          "after": "  // A font environment change invalidates measured leaves even when their\n  // props and layout constraints are unchanged. Descendant traversal below\n  // retains normal copy-on-write ownership of sealed ShadowTree revisions.\n  if (fontSizeMultiplier_ != fontSizeMultiplier &&\n      getTraits().check(ShadowNodeTraits::Trait::MeasurableYogaNode)) {\n    yogaNode_.markDirtyAndPropagate();\n  }\n  fontSizeMultiplier_ = fontSizeMultiplier;\n\n  // Set state on our own Yoga node\n  YGErrata errata"
+        },
+        {
+          "before": "    if (child.yogaTreeHasBeenConfigured_ &&\n        childLayoutMetrics",
+          "after": "    if (child.yogaTreeHasBeenConfigured_ &&\n        child.fontSizeMultiplier_ == fontSizeMultiplier &&\n        childLayoutMetrics"
+        },
+        {
+          "before": "          pointScaleFactor, child.resolveErrata(errata), swapLeftAndRight);",
+          "after": "          pointScaleFactor, fontSizeMultiplier, child.resolveErrata(errata), swapLeftAndRight);"
+        },
+        {
+          "before": "          pointScaleFactor, errata, swapLeftAndRight);",
+          "after": "          pointScaleFactor, fontSizeMultiplier, errata, swapLeftAndRight);"
+        },
+        {
+          "before": "        layoutContext.pointScaleFactor,\n        YGErrataAll",
+          "after": "        layoutContext.pointScaleFactor,\n        layoutContext.fontSizeMultiplier,\n        YGErrataAll"
+        }
+      ]
+    },
+    {
+      "path": "ReactCommon/react/renderer/components/text/ParagraphShadowNode.cpp",
+      "originalSha256": "7576a87a3fe98d6026288a13c0ae6a6f1ea307343d7a90091c83649a860bdc68",
+      "patchedSha256": "f99304de42975a9154e29eb1b780a3903a573eb2d9050cb3e12c282a7661c510",
+      "changes": [
+        {
+          "before": "  if (content_.has_value()) {\n    return content_.value();\n  }\n\n  ensureUnsealed();\n\n  auto textAttributes",
+          "after": "  auto textAttributes"
+        },
+        {
+          "before": "  textAttributes.apply(getConcreteProps().textAttributes);\n  textAttributes.layoutDirection",
+          "after": "  textAttributes.apply(getConcreteProps().textAttributes);\n  if (content_.has_value() &&\n      content_->attributedString.getBaseTextAttributes().fontSizeMultiplier ==\n          textAttributes.fontSizeMultiplier) {\n    return content_.value();\n  }\n  ensureUnsealed();\n  textAttributes.layoutDirection"
+        }
+      ]
+    }
+  ]
+}
