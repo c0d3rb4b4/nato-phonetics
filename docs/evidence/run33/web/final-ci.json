@@ -1,0 +1,132 @@
+{
+  "run": "https://github.com/c0d3rb4b4/nato-phonetics/actions/runs/44783764462",
+  "commit": "5963498a42fafe82296139e7a0ac7210aa78f384",
+  "branch": "develop",
+  "attempt": 1,
+  "status": "completed",
+  "conclusion": "failure",
+  "jobs": [
+    {
+      "name": "browser-support (webkit)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/c0d3rb4b4/nato-phonetics/actions/runs/44783764462/job/136453058596",
+      "failedSteps": []
+    },
+    {
+      "name": "web-distribution (webkit)",
+      "status": "completed",
+      "conclusion": "failure",
+      "url": "https://github.com/c0d3rb4b4/nato-phonetics/actions/runs/44783764462/job/136453058992",
+      "failedSteps": [
+        "Qualify packaged host, forward update and rollback"
+      ]
+    },
+    {
+      "name": "web-distribution (firefox)",
+      "status": "completed",
+      "conclusion": "failure",
+      "url": "https://github.com/c0d3rb4b4/nato-phonetics/actions/runs/44783764462/job/136453059038",
+      "failedSteps": [
+        "Qualify packaged host, forward update and rollback"
+      ]
+    },
+    {
+      "name": "browser-support (chromium)",
+      "status": "completed",
+      "conclusion": "failure",
+      "url": "https://github.com/c0d3rb4b4/nato-phonetics/actions/runs/44783764462/job/136453059070",
+      "failedSteps": [
+        "Check actual Chromium page freeze and deletion recovery"
+      ]
+    },
+    {
+      "name": "web-distribution (chromium)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/c0d3rb4b4/nato-phonetics/actions/runs/44783764462/job/136453059083",
+      "failedSteps": []
+    },
+    {
+      "name": "quality",
+      "status": "completed",
+      "conclusion": "failure",
+      "url": "https://github.com/c0d3rb4b4/nato-phonetics/actions/runs/44783764462/job/136453059131",
+      "failedSteps": [
+        "Exported browser regressions"
+      ]
+    },
+    {
+      "name": "browser-support (firefox)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/c0d3rb4b4/nato-phonetics/actions/runs/44783764462/job/136453059174",
+      "failedSteps": []
+    }
+  ],
+  "downloads": [
+    {
+      "engine": "chromium",
+      "jobUrl": "https://github.com/c0d3rb4b4/nato-phonetics/actions/runs/44783764462/job/136453059083",
+      "jobConclusion": "success",
+      "jobStatus": "completed",
+      "url": "https://github.com/c0d3rb4b4/nato-phonetics/actions/runs/44783764462/artifacts/14650879318",
+      "expiresAt": "2027-02-18T17:29:22Z",
+      "zipBytes": 871980,
+      "verifiedZipDigest": "sha256:e3e4b196c24694ef36d5dfbe052aac1c1d87729a8527ead16c50b7077492a760",
+      "package": {
+        "file": "nato-web.tar.gz",
+        "bytes": 324148,
+        "sha256": "eff5fbf66d65b738cb2e5c7fb43cd972d03fa63e622589cf92d35f34cd440fed"
+      },
+      "sourceId": "76b2f5c491a47ade1c25e5840e4001697428671e69b5c9176b0329a688466314",
+      "contentId": "9f9139ef06d52e65b3175ba87988974d58df1a53da406259e86ea969eed38b19",
+      "shellBuildId": "6aba500e0cd7ef9580ee24cdf73ad41581a1cc3f28c917b7ba8448c54e584d4c",
+      "verifiedInventoryFiles": 21,
+      "browserGroupsPassed": 6,
+      "browserGateError": null
+    },
+    {
+      "engine": "firefox",
+      "jobUrl": "https://github.com/c0d3rb4b4/nato-phonetics/actions/runs/44783764462/job/136453059038",
+      "jobConclusion": "failure",
+      "jobStatus": "completed",
+      "url": "https://github.com/c0d3rb4b4/nato-phonetics/actions/runs/44783764462/artifacts/14653695518",
+      "expiresAt": "2027-02-18T17:29:22Z",
+      "zipBytes": 823316,
+      "verifiedZipDigest": "sha256:475447e7ebe7a498e49b2a102f4e7f09b2a395b67f57794721105456eba38d8b",
+      "package": {
+        "file": "nato-web.tar.gz",
+        "bytes": 324148,
+        "sha256": "eff5fbf66d65b738cb2e5c7fb43cd972d03fa63e622589cf92d35f34cd440fed"
+      },
+      "sourceId": "76b2f5c491a47ade1c25e5840e4001697428671e69b5c9176b0329a688466314",
+      "contentId": "9f9139ef06d52e65b3175ba87988974d58df1a53da406259e86ea969eed38b19",
+      "shellBuildId": "6aba500e0cd7ef9580ee24cdf73ad41581a1cc3f28c917b7ba8448c54e584d4c",
+      "verifiedInventoryFiles": 21,
+      "browserGroupsPassed": 3,
+      "browserGateError": "browserContext.newPage: Target page, context or browser has been closed"
+    },
+    {
+      "engine": "webkit",
+      "jobUrl": "https://github.com/c0d3rb4b4/nato-phonetics/actions/runs/44783764462/job/136453058992",
+      "jobConclusion": "failure",
+      "jobStatus": "completed",
+      "url": "https://github.com/c0d3rb4b4/nato-phonetics/actions/runs/44783764462/artifacts/14652519841",
+      "expiresAt": "2027-02-18T17:29:22Z",
+      "zipBytes": 641313,
+      "verifiedZipDigest": "sha256:3167975f0710870dbb31eb7349e3fab8918ea4322161fc8b4e7cc320dd867050",
+      "package": {
+        "file": "nato-web.tar.gz",
+        "bytes": 324148,
+        "sha256": "eff5fbf66d65b738cb2e5c7fb43cd972d03fa63e622589cf92d35f34cd440fed"
+      },
+      "sourceId": "76b2f5c491a47ade1c25e5840e4001697428671e69b5c9176b0329a688466314",
+      "contentId": "9f9139ef06d52e65b3175ba87988974d58df1a53da406259e86ea969eed38b19",
+      "shellBuildId": "6aba500e0cd7ef9580ee24cdf73ad41581a1cc3f28c917b7ba8448c54e584d4c",
+      "verifiedInventoryFiles": 21,
+      "browserGroupsPassed": 2,
+      "browserGateError": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('[data-testid=\"web-offline-status\"]:not([aria-hidden=\"true\"] *)').filter({ hasText: 'could not finish' }) to be visible\n"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "commit": "5963498a42fafe82296139e7a0ac7210aa78f384",
+  "hostedRun": "44783764365",
+  "retrieval": {
+    "mode": "android-develop",
+    "commit": "5963498a42fafe82296139e7a0ac7210aa78f384",
+    "sourceId": "76b2f5c491a47ade1c25e5840e4001697428671e69b5c9176b0329a688466314",
+    "remoteJob": {
+      "provider": "github",
+      "runId": "44783764365",
+      "runUrl": "https://github.com/c0d3rb4b4/nato-phonetics/actions/runs/44783764365",
+      "attempt": "1"
+    },
+    "artifacts": [
+      {
+        "file": "app-develop.apk",
+        "bytes": 47891152,
+        "sha256": "1ee7dc5fcd0d1ba79ca3402816c3dedc95469d03ef11810080eb26551ec46e2e"
+      }
+    ]
+  },
+  "before": {
+    "com.natophonetics.app": {
+      "sha256": "ee08061b86ce98ffb108d7de7e1f94d023ed97601bffdbb85ac3b43675bd3284",
+      "uid": "package:com.natophonetics.app uid:10227",
+      "apkPath": "/data/app/~~fXZ1JX25M0U1_Y5nri-mhw==/com.natophonetics.app-Ijmg8xTgxlggt5-fAcpUTw==/base.apk",
+      "dataDir": [
+        "/data/user/0/com.natophonetics.app"
+      ],
+      "firstInstallTime": [
+        "2026-11-20 18:01:46"
+      ]
+    },
+    "com.natophonetics.app.dev": {
+      "sha256": "1ed4af77fc49861a39cd68382e9a3c51384df32c1b9bba774db8c77f157fee78",
+      "uid": "package:com.natophonetics.app.dev uid:10228",
+      "apkPath": "/data/app/~~NP1_i7Yu8NJ-Kvc7A4XRFA==/com.natophonetics.app.dev-NpthRQyM6hRIMaNdKnMCKA==/base.apk",
+      "dataDir": [
+        "/data/user/0/com.natophonetics.app.dev"
+      ],
+      "firstInstallTime": [
+        "2026-11-20 18:02:04"
+      ]
+    }
+  },
+  "after": {
+    "com.natophonetics.app": {
+      "sha256": "ee08061b86ce98ffb108d7de7e1f94d023ed97601bffdbb85ac3b43675bd3284",
+      "uid": "package:com.natophonetics.app uid:10227",
+      "apkPath": "/data/app/~~fXZ1JX25M0U1_Y5nri-mhw==/com.natophonetics.app-Ijmg8xTgxlggt5-fAcpUTw==/base.apk",
+      "dataDir": [
+        "/data/user/0/com.natophonetics.app"
+      ],
+      "firstInstallTime": [
+        "2026-11-20 18:01:46"
+      ]
+    },
+    "com.natophonetics.app.dev": {
+      "sha256": "1ee7dc5fcd0d1ba79ca3402816c3dedc95469d03ef11810080eb26551ec46e2e",
+      "uid": "package:com.natophonetics.app.dev uid:10228",
+      "apkPath": "/data/app/~~uuZRnKvyEDxFYoT8tq1LHA==/com.natophonetics.app.dev-XFZ3mADZbCXnR47-f8FAUw==/base.apk",
+      "dataDir": [
+        "/data/user/0/com.natophonetics.app.dev"
+      ],
+      "firstInstallTime": [
+        "2026-11-20 18:02:04"
+      ]
+    }
+  },
+  "checks": [
+    "artifact SHA and source/run binding",
+    "differently hashed locally built APK updated by hosted APK",
+    "dev Light and production-ID Dark each persisted across cold launches before and after update",
+    "production-ID bytes, UID and data directory unchanged",
+    "dev first-install time, UID and data directory unchanged"
+  ],
+  "smoke": "../screenshots/android/windows-hosted-44783764365/smoke.json"
+}

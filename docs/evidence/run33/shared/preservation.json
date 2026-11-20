@@ -1,0 +1,49 @@
+{
+  "initialCommit": "08fadda80e0c7ecf0d7590f36e4a86ad5484df7e",
+  "untouchedInputs": [
+    {
+      "file": ".github/configure-chromium-sandbox.sh",
+      "sha256": "ff2adf61b3cc4a35e1a04798957d97e2a6e21db07ae0a67b1268fc38083bdd90"
+    },
+    {
+      "file": "docs/PIPELINE_EXECUTION_PROMPT.md",
+      "sha256": "5881f9c4ec433dc7ac1d9793e19fd91e2074b06cae9b81eca4e6275823c82105"
+    },
+    {
+      "file": ".github/workflows/ci.yml",
+      "sha256": "8596a7e17f1d0cf456e83f3a4c56c9b234b7038cc4a8a9a73115bdcc11f134e3"
+    },
+    {
+      "file": ".gitignore",
+      "sha256": "bde4007d90622f5a1e5ef5f22c02f0d69586561e250f297089287a1ca965a1f2"
+    },
+    {
+      "file": "scripts/verify-app-browser.cjs",
+      "sha256": "2905b561a6b6ae529b425c0e9fdf97fd678fcc2cb4ea2bae2d8defb1f074dc21"
+    },
+    {
+      "file": "scripts/verify-preferences-browser.cjs",
+      "sha256": "ec8784864ebdd95e936d3f7b3c682f5b0f6c32d5f84efc89aedf4fc3813d66c4"
+    },
+    {
+      "file": "scripts/verify-tiles-browser.cjs",
+      "sha256": "20f9aef7d1e32801051987fa94dd25c5e6a99e8881d188cc87803a3b3d9efc2c"
+    },
+    {
+      "file": "scripts/verify-web-host.cjs",
+      "sha256": "6dd3d323cfa4b8b9b0b005a842bf0579dbbec4ce2dd01160f52addeb6d6b6c69"
+    }
+  ],
+  "existingDocChanges": [
+    {
+      "file": "docs/DELIVERY_PLAN.md",
+      "originalAddedLines": 16,
+      "allRetained": true
+    },
+    {
+      "file": "docs/APP_REVIEW.md",
+      "originalAddedLines": 6,
+      "allRetained": true
+    }
+  ]
+}

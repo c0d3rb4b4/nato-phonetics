@@ -65,7 +65,7 @@ Android minimum API 24 / compile-target 36 and iOS minimum 15.1 are **configured
 1. Use the pinned Node 22.23.0/npm 10.9.4 and locked native toolchains in [Native builds](NATIVE_BUILDS.md). Start from a clean checkout, or preserve and identify an intentional uncommitted candidate with a source SHA-256 manifest and a base revision. Never identify an Android Debug candidate only by its APK: also archive/hash the Metro graph actually loaded by the app. Release builds identify their embedded JS. Keep install scripts enabled and record the 13 reviewed renderer/build file hashes. Rebuild both native apps to consume the Yoga source change. Use ordinary Android Gradle settings for the release candidate.
 2. Run `npm ci`, `npm run lint`, `npm run typecheck`, `npm test`, `npm run check:yoga`, `npm run check:dependencies`, `npm run audit:review`, then `npm run export:web`. Keep raw audit failure and its dated disposition distinct. Regenerate/verify artwork with `npm run generate-icons` and rebuild native consumers after any asset change. [Artwork contract](RELEASE_ASSETS.md).
 3. Run the CI production browser commands in [the workflow](../.github/workflows/ci.yml), including progress concurrency, lifecycle, the independent runtime matrix and the actual service-worker offline/update suite. Use the isolated pinned Puppeteer/Playwright setup in [README](../README.md#web-routing-and-browser-checks). Keep stdout, exits, browser/version, source/build hashes and actual screenshot metadata. A mock speech callback establishes controller behavior, not audible correctness.
-4. Run direct native builds and installed-app checks. Keep the fresh locked install, dependency audit and all native/runtime checks as actual candidate evidence; earlier builds remain historical. Preserve storage during upgrade tests. The [native workflow](../.github/workflows/native-builds.yml) prepares builds on a configured private runner and never publishes; local success does not claim a hosted workflow ran.
+4. Run direct native builds and installed-app checks. Keep the fresh locked install, dependency audit and all native/runtime checks as actual candidate evidence; earlier builds remain historical. Preserve storage during upgrade tests. The branch workflow uses standard hosted runners by default. Its download jobs bind the retrieved files to the build report, commit and producing attempt. [Branch builds and downloads](#branch-builds-and-downloads).
 5. Run P10.5's integrated matrix, prepare P10.6's one consolidated M11 handoff, and capture P10.7's full final target/flow matrix. Include remaining P1/P3 failures without renaming them as passes. Owner acceptance/publication is the final M11 action after the candidate, hashes, install steps, policy and exact outstanding checks are ready.
 
 ## Native artifacts and distribution boundary
@@ -73,12 +73,44 @@ Android minimum API 24 / compile-target 36 and iOS minimum 15.1 are **configured
 | Build command | Output | Meaning / installation |
 |---|---|---|
 | `npm run build:android:debug` | `android/app/build/outputs/apk/debug/app-debug.apk` | Development key, requires running Metro and ADB reverse; use the documented emulator install flow |
-| `npm run build:android:release` | `android/app/build/outputs/bundle/release/app-release.aab` | Bundled JS; unsigned unless all four private signing inputs are supplied. An AAB is not directly installed with `adb install` |
+| `npm run build:android:develop` | `android/app/build/outputs/apk/develop/app-develop.apk` | Bundled JS, development signature, separate package and learning data. Install or upgrade using `adb install -r` |
+| `npm run build:android:release` | `android/app/build/outputs/apk/release/app-release-unsigned.apk` and `android/app/build/outputs/bundle/release/app-release.aab` | Branch builds retain unsigned originals. Under a separately authorized signed build the APK is `app-release.apk`. The AAB is a bundle for distribution tooling |
 | `npm run build:ios:simulator` | `artifacts/ios-simulator/Build/Products/Release-iphonesimulator/NATOPhonetics.app` | Unsigned simulator app with bundled JS; `simctl install`/`launch`, not a physical-device IPA |
 | `npm run build:ios:archive` | `artifacts/NATOPhonetics.xcarchive` | Device archive needs a configured Apple team/provisioning |
 | `npm run build:ios:export` | `artifacts/ios-export/` | Requires local `NATO_EXPORT_OPTIONS_PLIST` and valid signing/provisioning; no upload is performed |
 
 Exact SDK setup, signing variable names, commands and simulator/ADB instructions are in [Native builds](NATIVE_BUILDS.md). Keep secrets outside the repository and logs. Debug/simulator artifacts do not replace signed internal distribution, physical installation, microphone/provider tests or owner release acceptance. These human results stay in M11.2/.7. No new signed artifacts are claimed by this documentation task.
+
+## Branch builds and downloads
+
+| Event | Jobs |
+|---|---|
+| Code or build-input push to `develop` | Build and inspect `android-develop`, download it onto a fresh host, then install, cold-launch and reinstall it on an Android emulator |
+| Code or build-input push to `main` | Build, inspect and retrieve `android-release` and `ios-simulator` independently |
+| Manual dispatch on `main` or `develop` | Choose `all`, `android-debug`, `android-develop`, `android-release` or `ios-simulator`. Shared quality/security checks run independently |
+| Web CI | Existing push/PR browser and `web-distribution` jobs retain the packaged site and runtime results |
+
+Use the ordinary source-backed renderer and each platform's locked dependencies. The hosted Android job uses Ubuntu 24.04, JDK 17, SDK/build tools 36, NDK 27.1.12297006 and CMake 3.22.1/3.30.5. The simulator job uses an ARM64 macOS 26 runner, Xcode 26.2, pinned Ruby 3.3.13 and Bundler 2.4.22. Node and npm follow the repository pins. An authorized private Mac with labels `self-hosted`, `macOS`, `ARM64`, `nato-phonetics` can be selected with `-f private_runner=true` on manual dispatch. Prepare its tools in advance and restrict its runner group to trusted workflows. Use one runner service per private build Mac so separate dispatches queue on the same machine. The private matrix runs one mode at a time. Fork PR checks use the existing hosted CI. [Workflow](../.github/workflows/native-builds.yml) · [Shared job](../.github/workflows/native-mode.yml).
+
+For a manual build, the selected branch must contain the reviewed pipeline. Use the full SHA and producing attempt from the build job. A verification-only retry can use a product from an earlier attempt of that run.
+
+```sh
+gh workflow run native-builds.yml --ref develop -f mode=android-develop
+gh run list --workflow native-builds.yml --branch develop
+gh run view "$RUN_ID"
+gh run download "$RUN_ID" --name "host-$MODE-$SHA-$RUN_ID-$ATTEMPT" --dir "$NEW_DIRECTORY"
+node scripts/verify-host-artifacts.cjs "$NEW_DIRECTORY" "$MODE" "$SHA" "$RUN_ID" "$ATTEMPT"
+# Retry failed jobs. Each producing attempt gets a distinct artifact.
+gh run rerun "$RUN_ID" --failed
+```
+
+The report and inspection JSON identify the version, application ID, build, architecture, signing status, digest, source and execution. The download verifier checks the expected product set, byte counts, digests, source and producing attempt. A failed build retains the step exits and logs. Inspect the red job and its `failed-*` diagnostic artifact. A failed post-download launch keeps its runtime evidence visible. A successful compiler job alone is insufficient for acceptance.
+
+On a prepared host, run the same command directly with a fresh output directory, for example `node scripts/host-build.cjs android-develop --install --jobs 1 --output artifacts/dev-001`. Use `--expected-source` for a reconstructed candidate. Inspect source differences and retain the lock/download identities before reusing any cache. Hosted VMs are disposable. On persistent hosts retain the reports and products, and check lock ownership before removing an interrupted job's lock. [Source transfer and cache handling](NATIVE_BUILDS.md#shared-host-execution--run22).
+
+For development testing, install the verified APK with `adb -s "$SERIAL" install -r "$NEW_DIRECTORY/app-develop.apk"`. It has its own launcher label, `com.natophonetics.app.dev` data directory and `natophonetics-dev://converter` link. The checked-in public development certificate permits upgrades within this channel. Preserve existing learning data on any signature mismatch. On an isolated test emulator with Metro stopped and port 8081 unforwarded, run `python scripts/smoke-android-develop.py "$NEW_DIRECTORY/app-develop.apk" artifacts/dev-smoke-001 --serial "$SERIAL"`. For iOS, the host extracts the simulator archive, compares the installed files, launches it on a fresh iPhone simulator and records the screenshot.
+
+Production branch jobs omit distribution credentials. Signed Android builds and iOS device archive/export use the separately authorized release environment. A GitHub prerelease, store submission and release acceptance require the existing M11.7 decision. [Run 33 qualification](evidence/run33/README.md).
 
 ## Independent web deployment contract
 

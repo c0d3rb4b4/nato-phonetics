@@ -1,0 +1,220 @@
+
+C:\n33m\android>if "Windows_NT" == "Windows_NT" setlocal
+
+C:\n33m\android>set DIRNAME=C:\n33m\android\ 
+
+C:\n33m\android>if "C:\n33m\android\" == "" set DIRNAME=. 
+
+C:\n33m\android>set APP_BASE_NAME=gradlew 
+
+C:\n33m\android>set APP_HOME=C:\n33m\android\ 
+
+C:\n33m\android>for %i in ("C:\n33m\android\") do set APP_HOME=%~fi 
+
+C:\n33m\android>set APP_HOME=C:\n33m\android\ 
+
+C:\n33m\android>set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m" 
+
+C:\n33m\android>if defined JAVA_HOME goto findJavaFromJavaHome 
+
+C:\n33m\android>set JAVA_HOME=C:\Program Files\Microsoft\jdk-17.0.13.11-hotspot\ 
+
+C:\n33m\android>set JAVA_EXE=C:\Program Files\Microsoft\jdk-17.0.13.11-hotspot\/bin/java.exe 
+
+C:\n33m\android>if exist "C:\Program Files\Microsoft\jdk-17.0.13.11-hotspot\/bin/java.exe" goto execute 
+
+C:\n33m\android>set CLASSPATH= 
+
+C:\n33m\android>"C:\Program Files\Microsoft\jdk-17.0.13.11-hotspot\/bin/java.exe" "-Xmx64m" "-Xms64m"   "-Dorg.gradle.appname=gradlew" -classpath "" -jar "C:\n33m\android\\gradle\wrapper\gradle-wrapper.jar" :app:processDevelopMainManifest --max-workers=1 --no-daemon --console=plain 
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :gradle-plugin:settings-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:shared:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:shared:compileKotlin
+> Task :gradle-plugin:shared:compileJava NO-SOURCE
+> Task :gradle-plugin:shared:processResources NO-SOURCE
+> Task :gradle-plugin:shared:classes UP-TO-DATE
+> Task :gradle-plugin:shared:jar
+> Task :gradle-plugin:settings-plugin:compileKotlin
+> Task :gradle-plugin:settings-plugin:compileJava NO-SOURCE
+> Task :gradle-plugin:settings-plugin:pluginDescriptors
+> Task :gradle-plugin:settings-plugin:processResources
+> Task :gradle-plugin:settings-plugin:classes
+> Task :gradle-plugin:settings-plugin:jar
+> Task :gradle-plugin:react-native-gradle-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:react-native-gradle-plugin:compileKotlin
+> Task :gradle-plugin:react-native-gradle-plugin:compileJava NO-SOURCE
+> Task :gradle-plugin:react-native-gradle-plugin:pluginDescriptors
+> Task :gradle-plugin:react-native-gradle-plugin:processResources
+> Task :gradle-plugin:react-native-gradle-plugin:classes
+> Task :gradle-plugin:react-native-gradle-plugin:jar
+> Task :react-native:packages:react-native:ReactAndroid:buildCodegenCLI
+> Task :react-native:packages:react-native:ReactAndroid:generateCodegenSchemaFromJavaScript
+> Task :react-native:packages:react-native:ReactAndroid:generateCodegenArtifactsFromSchema
+> Task :react-native:packages:react-native:ReactAndroid:createNativeDepsDirectories UP-TO-DATE
+
+> Task :app:createBundleDevelopJsAndAssets
+
+                        ▒▒▓▓▓▓▒▒
+                     ▒▓▓▓▒▒░░▒▒▓▓▓▒
+                  ▒▓▓▓▓░░░▒▒▒▒░░░▓▓▓▓▒
+                 ▓▓▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▓▓
+                 ▓▓░░░░░▒▓▓▓▓▓▓▒░░░░░▓▓
+                 ▓▓░░▓▓▒░░░▒▒░░░▒▓▒░░▓▓
+                 ▓▓░░▓▓▓▓▓▒▒▒▒▓▓▓▓▒░░▓▓
+                 ▓▓░░▓▓▓▓▓▓▓▓▓▓▓▓▓▒░░▓▓
+                 ▓▓▒░░▒▒▓▓▓▓▓▓▓▓▒░░░▒▓▓
+                  ▒▓▓▓▒░░░▒▓▓▒░░░▒▓▓▓▒
+                     ▒▓▓▓▒░░░░▒▓▓▓▒
+                        ▒▒▓▓▓▓▒▒
+
+
+ WARN  the transform cache was reset.
+                Welcome to Metro v0.83.8
+              Fast - Scalable - Integrated
+
+
+transform[stderr]: (node:72988) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+transform[stderr]: (Use `node --trace-warnings ...` to show where the warning was created)
+transform[stderr]: (node:62368) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+transform[stderr]: (Use `node --trace-warnings ...` to show where the warning was created)
+transform[stderr]: (node:77424) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+transform[stderr]: (Use `node --trace-warnings ...` to show where the warning was created)
+transform[stderr]: (node:42816) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+transform[stderr]: (Use `node --trace-warnings ...` to show where the warning was created)
+transform[stderr]: (node:77068) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+transform[stderr]: (Use `node --trace-warnings ...` to show where the warning was created)
+transform[stderr]: (node:64836) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+transform[stderr]: (Use `node --trace-warnings ...` to show where the warning was created)
+transform[stderr]: (node:71516) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+transform[stderr]: (Use `node --trace-warnings ...` to show where the warning was created)
+transform[stderr]: (node:66168) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+transform[stderr]: (Use `node --trace-warnings ...` to show where the warning was created)
+transform[stderr]: (node:67948) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+transform[stderr]: (Use `node --trace-warnings ...` to show where the warning was created)
+transform[stderr]: (node:69944) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+transform[stderr]: (Use `node --trace-warnings ...` to show where the warning was created)
+transform[stderr]: (node:78148) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+transform[stderr]: (Use `node --trace-warnings ...` to show where the warning was created)
+transform[stderr]: (node:70584) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+transform[stderr]: (Use `node --trace-warnings ...` to show where the warning was created)
+transform[stderr]: (node:66572) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+transform[stderr]: (Use `node --trace-warnings ...` to show where the warning was created)
+transform[stderr]: (node:78576) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+transform[stderr]: (Use `node --trace-warnings ...` to show where the warning was created)
+LOG:Writing bundle output to: android\app\build\generated\assets\createBundleDevelopJsAndAssets\index.android.bundle
+LOG:Writing sourcemap output to: android\app\build\intermediates\sourcemaps\react\develop\index.android.bundle.packager.map
+LOG:Done writing bundle output
+LOG:Done writing sourcemap output
+
+> Task :app:generateAutolinkingNewArchitectureFiles
+> Task :app:generateAutolinkingPackageList
+> Task :app:generateCodegenSchemaFromJavaScript SKIPPED
+> Task :app:generateCodegenArtifactsFromSchema SKIPPED
+> Task :app:generateReactNativeEntryPoint
+> Task :react-native-async-storage_async-storage:generateCodegenSchemaFromJavaScript
+> Task :react-native-async-storage_async-storage:generateCodegenArtifactsFromSchema
+> Task :react-native-async-storage_async-storage:preBuild
+> Task :react-native-safe-area-context:generateCodegenSchemaFromJavaScript
+> Task :react-native-safe-area-context:generateCodegenArtifactsFromSchema
+> Task :react-native-safe-area-context:preBuild
+> Task :react-native-tts:preBuild UP-TO-DATE
+> Task :app:preBuild
+> Task :app:preDevelopBuild
+> Task :app:generateDevelopResValues
+> Task :app:extractDeepLinksDevelop
+> Task :react-native-async-storage_async-storage:preReleaseBuild
+> Task :react-native-async-storage_async-storage:generateReleaseResValues
+> Task :react-native-async-storage_async-storage:extractDeepLinksRelease
+
+> Task :react-native-async-storage_async-storage:processReleaseManifest
+package="com.reactnativecommunity.asyncstorage" found in source AndroidManifest.xml: C:\n33m\node_modules\@react-native-async-storage\async-storage\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="com.reactnativecommunity.asyncstorage" from the source AndroidManifest.xml: C:\n33m\node_modules\@react-native-async-storage\async-storage\android\src\main\AndroidManifest.xml.
+
+> Task :react-native:packages:react-native:ReactAndroid:downloadBoost
+> Task :react-native:packages:react-native:ReactAndroid:prepareBoost
+> Task :react-native-safe-area-context:preReleaseBuild
+> Task :react-native-safe-area-context:generateReleaseResValues
+> Task :react-native-safe-area-context:extractDeepLinksRelease
+> Task :react-native:packages:react-native:ReactAndroid:downloadDoubleConversion
+> Task :react-native:packages:react-native:ReactAndroid:prepareDoubleConversion
+
+> Task :react-native-safe-area-context:processReleaseManifest
+package="com.th3rdwave.safeareacontext" found in source AndroidManifest.xml: C:\n33m\node_modules\react-native-safe-area-context\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="com.th3rdwave.safeareacontext" from the source AndroidManifest.xml: C:\n33m\node_modules\react-native-safe-area-context\android\src\main\AndroidManifest.xml.
+
+> Task :react-native-tts:preReleaseBuild UP-TO-DATE
+> Task :react-native-tts:generateReleaseResValues
+> Task :react-native-tts:extractDeepLinksRelease
+> Task :react-native:packages:react-native:ReactAndroid:downloadFastFloat
+> Task :react-native:packages:react-native:ReactAndroid:prepareFastFloat
+
+> Task :react-native-tts:processReleaseManifest
+package="net.no_mad.tts" found in source AndroidManifest.xml: C:\n33m\node_modules\react-native-tts\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="net.no_mad.tts" from the source AndroidManifest.xml: C:\n33m\node_modules\react-native-tts\android\src\main\AndroidManifest.xml.
+
+> Task :react-native:packages:react-native:ReactAndroid:downloadFmt
+> Task :react-native:packages:react-native:ReactAndroid:prepareFmt
+> Task :react-native:packages:react-native:ReactAndroid:downloadFolly
+> Task :react-native:packages:react-native:ReactAndroid:prepareFolly
+> Task :react-native:packages:react-native:ReactAndroid:downloadGlog
+> Task :react-native:packages:react-native:ReactAndroid:prepareGlog
+> Task :react-native:packages:react-native:ReactAndroid:prepareNative3pDependencies
+> Task :react-native:packages:react-native:ReactAndroid:preparePrefab
+> Task :react-native:packages:react-native:ReactAndroid:preBuild
+> Task :react-native:packages:react-native:ReactAndroid:preReleaseBuild
+> Task :react-native:packages:react-native:ReactAndroid:generateReleaseResValues
+> Task :react-native:packages:react-native:ReactAndroid:extractDeepLinksRelease
+
+> Task :react-native:packages:react-native:ReactAndroid:processReleaseManifest
+C:\n33m\node_modules\react-native\ReactAndroid\src\main\AndroidManifest.xml:10:3-13:9 Warning:
+	uses-sdk:targetSdkVersion value (36) specified in the manifest file is ignored. It is overridden by the value declared in the DSL or the variant API, or 1 if not declared/present. Current value is (24).
+
+C:\n33m\android\app\src\main\AndroidManifest.xml:16:7-61 Error:
+	Attribute application@usesCleartextTraffic at AndroidManifest.xml:16:7-61 requires a placeholder substitution but no value for <usesCleartextTraffic> is provided.
+C:\n33m\android\app\src\main\AndroidManifest.xml Error:
+	Validation failed, exiting
+> Task :app:processDevelopMainManifest FAILED
+
+See https://developer.android.com/r/studio-ui/build/manifest-merger for more information about the manifest merger.
+
+
+[Incubating] Problems report is available at: file:///C:/n33m/android/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:processDevelopMainManifest'.
+> Manifest merger failed with multiple errors, see logs
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 2m 53s
+49 actionable tasks: 49 executed
+
+C:\n33m\android>if 1 EQU 0 goto mainEnd 
+
+C:\n33m\android>rem Set variable GRADLE_EXIT_CONSOLE if you need the _script_ return code instead of 
+
+C:\n33m\android>rem the _cmd.exe /c_ return code! 
+
+C:\n33m\android>set EXIT_CODE=1 
+
+C:\n33m\android>if 1 EQU 0 set EXIT_CODE=1 
+
+C:\n33m\android>if not "" == "" exit 1 
+
+C:\n33m\android>exit /b 1 

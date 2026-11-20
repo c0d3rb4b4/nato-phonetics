@@ -1,0 +1,18 @@
+{
+  "mode": "android-release",
+  "commit": "5963498a42fafe82296139e7a0ac7210aa78f384",
+  "sourceId": "b31fb38e71d4df2099b2435e9d9663f0db92f443ba1445a40ead20a4e25b995d",
+  "remoteJob": null,
+  "artifacts": [
+    {
+      "file": "app-release-unsigned.apk",
+      "bytes": 47864420,
+      "sha256": "df1a678fab1536dc07b64425a71261f3802eedbc7a70eb5ace5604a4fcc92587"
+    },
+    {
+      "file": "app-release.aab",
+      "bytes": 34045215,
+      "sha256": "d2d796e81da239466443928702a91c21194f8e27d345281dfd75c791abd1316e"
+    }
+  ]
+}

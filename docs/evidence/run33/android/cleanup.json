@@ -1,0 +1,18 @@
+{
+  "ownedAvd": "artifacts/run33/android-avd",
+  "physicalDeviceUsed": false,
+  "stopped": [
+    "emulator-5684",
+    "emulator-5686"
+  ],
+  "isolatedCheckout": "C:/n33",
+  "adbDevices": [
+    "List of devices attached",
+    ""
+  ],
+  "retainedProducts": [
+    "artifacts/run33/windows-develop",
+    "artifacts/run33/windows-release"
+  ],
+  "crossHostUpdate": "Read-only restart of owned emulator-5686 completed the cross-host checks and shut down again."
+}

@@ -49,14 +49,15 @@ The React Native [0.81 environment guide](https://reactnative.dev/docs/0.81/set-
 | `npm run check:dependencies` | Installed graph/lockfile and native/web consumer check for Expo removal |
 | `npm run audit:review` | Real npm audit plus dated high/critical dispositions; not a clean-audit claim |
 | `npm run build:android:debug` | Direct Gradle debug APK |
-| `npm run build:android:release` | Direct Gradle AAB; unsigned unless private signing is supplied |
+| `npm run build:android:develop` | Standalone development APK with bundled JS, a separate app ID and the public development key |
+| `npm run build:android:release` | Direct Gradle APK and AAB. Trusted branch jobs produce unsigned outputs |
 | `npm run ios:pods` | Install native dependencies using the locked Ruby toolchain |
 | `npm run build:ios:simulator` | Direct Xcode Release simulator build, no signing |
 | `npm run build:ios:archive` / `npm run build:ios:export` | Credential-dependent distribution preparation |
 
 Keep npm install scripts enabled. The postinstall checks the original or reviewed hashes for 13 React Native files, prepares the Android renderer and the Yoga precision fix used by both source-built native targets, and applies the speech provider patch. Rebuild native apps after changing these sources. Android speech uses distinct IDs for repeated utterances so a late callback cannot finish a later replay. [Renderer preparation](scripts/prepare-android-source.cjs), [speech patch](scripts/patch-native-tts.cjs), [Yoga evidence](docs/NATIVE_TEXT_PRECISION.md).
 
-CI runs the shared gates and production browser tests. A separate manually triggered [native workflow](.github/workflows/native-builds.yml) builds on a prepared self-hosted macOS runner and collects artifacts without publishing. Hosted/self-hosted workflow execution is not implied by local results. [Security review](docs/SECURITY_REVIEW.md) records unresolved findings. Run 17 removes image-size through Metro 0.83.8 within the existing React Native 0.81.5 ranges. Run23 upgrades the CLI family to20.2.0 and resolves patched fast-xml-parser5.12.1 through its upstream ranges; clean installation,151 tests,actual CLI/XML/native scopes and raw audit/review0 with zero findings qualify this dependency repair. Historical withdrawn matcher backtracking is not a package repair. [Current evidence](docs/evidence/run23/README.md). No framework upgrade or owner risk acceptance is implied.
+CI runs the shared gates and production browser tests. The native workflow builds a standalone Android APK for `develop` and the Android Release APK/AAB and iOS simulator app for `main`. Trusted manual reruns can select individual products. The runbook covers download verification and installing the development APK alongside production. [Native workflow](.github/workflows/native-builds.yml) · [Artifact runbook](docs/RELEASE_RUNBOOK.md#branch-builds-and-downloads). [Security review](docs/SECURITY_REVIEW.md) records unresolved findings. Run 17 removes image-size through Metro 0.83.8 within the existing React Native 0.81.5 ranges. Run23 upgrades the CLI family to20.2.0 and resolves patched fast-xml-parser5.12.1 through its upstream ranges; clean installation,151 tests,actual CLI/XML/native scopes and raw audit/review0 with zero findings qualify this dependency repair. Historical withdrawn matcher backtracking is not a package repair. [Current evidence](docs/evidence/run23/README.md). No framework upgrade or owner risk acceptance is implied.
 
 ## Web routing and browser checks
 

@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 2,
+  "mode": "android-release",
+  "startedAt": "2026-11-20T17:59:45.720Z",
+  "status": "passed",
+  "host": {
+    "platform": "win32",
+    "arch": "x64",
+    "release": "10.0.26200",
+    "node": "22.23.0"
+  },
+  "jobs": 1,
+  "install": false,
+  "preflightOnly": false,
+  "remoteJob": null,
+  "steps": [
+    {
+      "name": "native-build",
+      "executable": "C:\\Users\\lalit\\AppData\\Local\\Temp\\nato-run31-android-tools\\node-v22.23.0-win-x64\\node.exe",
+      "args": [
+        "scripts/build-native.cjs",
+        "android-release"
+      ],
+      "log": "logs/01-native-build.log",
+      "startedAt": "2026-11-20T17:59:46.145Z",
+      "endedAt": "2026-11-20T18:01:05.484Z",
+      "exitCode": 0,
+      "signal": null
+    },
+    {
+      "name": "verify-android-product",
+      "executable": "python",
+      "args": [
+        "scripts/verify-android-product.py",
+        "android-release",
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run33\\windows-release.staging-NezNnL\\app-release-unsigned.apk",
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run33\\windows-release.staging-NezNnL\\app-release.aab"
+      ],
+      "log": "logs/02-verify-android-product.log",
+      "startedAt": "2026-11-20T18:01:05.567Z",
+      "endedAt": "2026-11-20T18:01:06.555Z",
+      "exitCode": 0,
+      "signal": null
+    }
+  ],
+  "artifacts": [
+    {
+      "file": "app-release-unsigned.apk",
+      "bytes": 47864420,
+      "sha256": "df1a678fab1536dc07b64425a71261f3802eedbc7a70eb5ace5604a4fcc92587"
+    },
+    {
+      "file": "app-release.aab",
+      "bytes": 34045215,
+      "sha256": "d2d796e81da239466443928702a91c21194f8e27d345281dfd75c791abd1316e"
+    }
+  ],
+  "sourceId": "b31fb38e71d4df2099b2435e9d9663f0db92f443ba1445a40ead20a4e25b995d",
+  "commit": "5963498a42fafe82296139e7a0ac7210aa78f384",
+  "preflight": {
+    "npm": "10.9.4",
+    "diskAvailableBytes": 355444678656,
+    "totalMemoryBytes": 137131008000,
+    "freeMemoryBytes": 77216649216,
+    "cpus": 24,
+    "tools": {
+      "java": "openjdk version \"17.0.13\" 2024-10-15 LTS\r\nOpenJDK Runtime Environment Microsoft-10376486 (build 17.0.13+11-LTS)\r\nOpenJDK 64-Bit Server VM Microsoft-10376486 (build 17.0.13+11-LTS, mixed mode, sharing)",
+      "android": {
+        "sdk": "C:\\Users\\lalit\\AppData\\Local\\Android\\Sdk",
+        "ndk": "Pkg.Desc = Android NDK\nPkg.Revision = 27.1.12297006\nPkg.BaseRevision = 27.1.12297006\nPkg.ReleaseName = r27b",
+        "cmakeInstalled": [
+          "3.22.1"
+        ]
+      }
+    },
+    "capacityPolicy": "Measured inventory; no universal minimum or guarantee that a first build fits."
+  },
+  "product": {
+    "platform": "android",
+    "mode": "android-release",
+    "packageId": "com.natophonetics.app",
+    "versionCode": 1,
+    "version": "1.0.0",
+    "debuggable": false,
+    "abis": [
+      "armeabi-v7a",
+      "arm64-v8a",
+      "x86",
+      "x86_64"
+    ],
+    "signing": "unsigned",
+    "certificateSha256": null,
+    "files": {
+      "app-release-unsigned.apk": {
+        "bytes": 47864420,
+        "sha256": "df1a678fab1536dc07b64425a71261f3802eedbc7a70eb5ace5604a4fcc92587"
+      },
+      "app-release.aab": {
+        "bytes": 34045215,
+        "sha256": "d2d796e81da239466443928702a91c21194f8e27d345281dfd75c791abd1316e"
+      }
+    },
+    "nativeLibraries": {
+      "arm64-v8a": {
+        "libappmodules.so": "32157ecaf578f50960b8a710c0850c778145edb2a66c395664ef424f677fe250",
+        "libc++_shared.so": "3e852764502d06e0cf1080d532ae7c608b7649d946a3a9d7e84e3d4b7d683214",
+        "libfbjni.so": "a9e35ba55d3f956920281f519385f8a72475ee24819799cb08375fdd4cce2b22",
+        "libhermes.so": "5705c7e2cf51fcd3befa825ae2a6717524037b368cdac005a7a63c4a92ef4467",
+        "libhermestooling.so": "4e909b1b3cc889c6f2d586a77a6ef788de3864b8c624ff3615c3c8e25d2dda6a",
+        "libimagepipeline.so": "1b377992e4256fa9398ec057722f84a359c7d588e570c8a41f51d930c19ece7d",
+        "libjsi.so": "6293979b11a6db73294a16fd86ab4b384fba036c5f4e4ac082300839987172ea",
+        "libnative-filters.so": "4294b57460e70a6351ce7ae2733a79c088c907dfa54673a657227ec5bb669594",
+        "libnative-imagetranscoder.so": "2aed28298a25afd52ac670cf9682398c6c7ba42a57195c01efd565e7ddfe17ca",
+        "libreact_codegen_safeareacontext.so": "ceb631f19764c9b5eb42a6ebf3538ca7054b6e99b84187a57a0a72f07e31b0a3",
+        "libreactnative.so": "0735e7f3e4b4b2a1b45ea08e516944a0f1d9e43e9500c3271beb705a630777f8"
+      },
+      "armeabi-v7a": {
+        "libappmodules.so": "d4c482bb56a7c8b4e1d9497bfebdd82bbb90b1bf6e2a254b2d05d962add60114",
+        "libc++_shared.so": "84e7d99b7b6df960b37c28e43808cc5c2c62d1bb9449e27683fc53309dea5b6c",
+        "libfbjni.so": "6739b4db111283fe0a86a3a5fdd80efe5d963355dd161b95ec179f01cc9685d5",
+        "libhermes.so": "a6dbdce33340f793b38205a70d0a9ceda09bdbc57ef5b60b03ffaf7190c03407",
+        "libhermestooling.so": "d5cff4ab735f0e1b64da8acb964b761301275b05b907dda008049a9d1d1cbf30",
+        "libimagepipeline.so": "0fb5021bcf1cbb6c10630732560bb80bad7187c8b8391e6c001b3f892fa613d5",
+        "libjsi.so": "3d8c51e6a959d700581dd95bbf49e1d618c7b7ded4c9ae18a78fd16652217b75",
+        "libnative-filters.so": "fb3d55facc8dfdc856441015c2a8d803b10b6c3cf09524c4f04562cec186a62e",
+        "libnative-imagetranscoder.so": "40905f1c50315f66362a8e10e2ac19d1df62c3f1800bc2ee639047d09c9f1bd9",
+        "libreact_codegen_safeareacontext.so": "feb63cdb3be5fad1cd601cb00968b2d7607ea0f45b80c7e0201783ba6013c252",
+        "libreactnative.so": "5f2bd41114e62cbb1e0941765de78561cfdb6300d9080ad498e7cbb9b35ee879"
+      },
+      "x86": {
+        "libappmodules.so": "b57088b7d0f3b7d15ccf7218a2c966c292d3139eaef203d3d226dff7c101a7d6",
+        "libc++_shared.so": "3bd6a3c5d1baa1fac3bdd8452ccc403fd1b464b3f80eb9fa207df5ec2d565129",
+        "libfbjni.so": "735533ea082fe331b293a947f5ac32556ea433c7db1d2fe76e4ac9a440917c65",
+        "libhermes.so": "e453504708b8625dcb668c62536969b1c331dc9eb7a5e69f9628d7edeb3c25a4",
+        "libhermestooling.so": "05a615b87d34210b31d623a2b555f175d770ab3ca8a8ff317c977f0a5be75d3c",
+        "libimagepipeline.so": "afd22bf7e62e5d08c0ec17ff6c0a273bfc580052c89363c0cb5d72e98d3b4cf4",
+        "libjsi.so": "343d8c1de4a0f0113dfd4876f0b0d9fa55c90b873c340c73da35d2f5dc4f3929",
+        "libnative-filters.so": "6947adfed7f745e52408b11d83a3cf25072749c3336aa35c634928c6dcfa5da0",
+        "libnative-imagetranscoder.so": "943c8757e57f59556027d460c0e86738d5969794db905febbe4926fd1d3fa663",
+        "libreact_codegen_safeareacontext.so": "ca16d47ef5ca7e7e4db8f36a905cbed52aed2033b3f88351747bb0fa23448d35",
+        "libreactnative.so": "a3515e890ea175ebb22b60efa490494f62e60f0af69ff5c7e2f286fd4c6ec464"
+      },
+      "x86_64": {
+        "libappmodules.so": "85afe37acf927733c2f19d6c0898e2ecc3526abef378fac64aa08266b95cbf9e",
+        "libc++_shared.so": "0a2c7afa35b183fdd5a3cb20e2080ad54cbea06c2a4f0bc8f122cb7d1e9e0b9f",
+        "libfbjni.so": "a51410366a0394e05bc04052cfb237c70dcf7d4d53a56e1d00a041436cb0b653",
+        "libhermes.so": "2e9e9d813b39822f60c9343b7a6df37e85ed07da297ade1f868117be73c5bd09",
+        "libhermestooling.so": "3dabd8f8029002d08155f98b53f5600e90d4e794afbe548b3c4a7b3698f5123d",
+        "libimagepipeline.so": "2e596f4955f65abaa93c891b49eb58b5416581806a04bde0097cc369ae4dbfb3",
+        "libjsi.so": "f6891872ef294b4f18716883ef845382407f503d521787336cf247ac1f54b2d3",
+        "libnative-filters.so": "1a5270f007dd4b2f0fc52ceac82e05143648ba9be59c2213a21cf61c84f1f5e5",
+        "libnative-imagetranscoder.so": "f6b92ad7f1c30973f40704c46987504757c3d079c7f4ace6efc8b318dd9c22f3",
+        "libreact_codegen_safeareacontext.so": "5e5f41e197d9cbdd96f1171a6dd44acb0e390e80f279bc8cbf76a281b278dbf4",
+        "libreactnative.so": "cd17ec0def8da6e6679a3e5adb2f34fea170a500d38443f3b420ed684982bbda"
+      }
+    },
+    "fonts": {
+      "assets/fonts/NatoTile-ExtraBold.ttf": "b0150a84d5e000fcd276cf13e1863ca8bbaab0ff2a0dfdcfa958a48781dd7aa6",
+      "assets/fonts/NatoTile-Italic.ttf": "50f16c8bec3ed31190d37403b6e15d200274e7a5e43f1a698a86eef7079d862b",
+      "assets/fonts/NatoTile-SemiBold.ttf": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f"
+    },
+    "bundleSha256": "8e3640ec67ac556177f199f88abbd5cc2c37b81723a76845548c8e8d3b4900ea",
+    "dex": {
+      "classes.dex": "2fd523d37f04d985498e51da22ac7844f43418c640885a99473898682b8e34cb",
+      "classes2.dex": "61b6354751b69f69d0b88fe66ac63fcfbfffd35f70a73939d7c90043d8eb33cc"
+    }
+  },
+  "exitCode": 0,
+  "endedAt": "2026-11-20T18:01:06.795Z"
+}

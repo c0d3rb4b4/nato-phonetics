@@ -1,0 +1,43 @@
+{
+  "job": "https://github.com/c0d3rb4b4/nato-phonetics/actions/runs/44782950296/job/136450162421",
+  "download": "https://github.com/c0d3rb4b4/nato-phonetics/actions/runs/44782950296/artifacts/14651238529",
+  "builds": [
+    {
+      "mode": "web",
+      "commit": "be1f3f657c447f14cac276bea13666cfb3731c45",
+      "sourceId": "afd23eac6a263a185d662ae3a1cd405ff6431c532902bff9f7da604ae6685cab",
+      "remoteJob": {
+        "provider": "github",
+        "runId": "44782950296",
+        "runUrl": "https://github.com/c0d3rb4b4/nato-phonetics/actions/runs/44782950296",
+        "attempt": "1"
+      },
+      "artifacts": [
+        {
+          "file": "nato-web.tar.gz",
+          "bytes": 324148,
+          "sha256": "eff5fbf66d65b738cb2e5c7fb43cd972d03fa63e622589cf92d35f34cd440fed"
+        }
+      ]
+    },
+    {
+      "mode": "web",
+      "commit": "be1f3f657c447f14cac276bea13666cfb3731c45",
+      "sourceId": "afd23eac6a263a185d662ae3a1cd405ff6431c532902bff9f7da604ae6685cab",
+      "remoteJob": {
+        "provider": "github",
+        "runId": "44782950296",
+        "runUrl": "https://github.com/c0d3rb4b4/nato-phonetics/actions/runs/44782950296",
+        "attempt": "1"
+      },
+      "artifacts": [
+        {
+          "file": "nato-web.tar.gz",
+          "bytes": 324148,
+          "sha256": "eff5fbf66d65b738cb2e5c7fb43cd972d03fa63e622589cf92d35f34cd440fed"
+        }
+      ]
+    }
+  ],
+  "comparedArchiveSha256": "eff5fbf66d65b738cb2e5c7fb43cd972d03fa63e622589cf92d35f34cd440fed"
+}

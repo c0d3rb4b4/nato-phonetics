@@ -1,0 +1,46 @@
+{
+  "jobUrl": "https://github.com/c0d3rb4b4/nato-phonetics/actions/runs/44781899068/job/136446644608",
+  "artifactUrl": "https://github.com/c0d3rb4b4/nato-phonetics/actions/runs/44781899068/artifacts/14653659485",
+  "verifiedDigest": "sha256:e37f23b311516b1bed63d1accf462acf23e8fd322fa033ce53d2c96c0a1b028f",
+  "status": "failed",
+  "artifacts": [],
+  "commit": "a3888526b42b1256b387caa7510f9f54c4c58257",
+  "sourceId": "24e6d50e1e69fe2de27ebeb768c5108ece923131db9342393082a0ec876b3cab",
+  "steps": [
+    {
+      "name": "locked-install",
+      "executable": "npm",
+      "args": [
+        "ci"
+      ],
+      "log": "logs/01-locked-install.log",
+      "startedAt": "2026-11-20T17:18:54.985Z",
+      "endedAt": "2026-11-20T17:18:59.013Z",
+      "exitCode": 0,
+      "signal": null
+    },
+    {
+      "name": "native-build",
+      "executable": "/opt/hostedtoolcache/node/22.23.0/x64/bin/node",
+      "args": [
+        "scripts/build-native.cjs",
+        "android-develop"
+      ],
+      "log": "logs/02-native-build.log",
+      "startedAt": "2026-11-20T17:18:59.014Z",
+      "endedAt": "2026-11-20T17:54:44.590Z",
+      "exitCode": 1,
+      "signal": null
+    }
+  ],
+  "archiveHasBinary": false,
+  "logSha256": "744a6680676ea2b793caa90b1c9cea70d5cef28d14df14583c1b154660ff16d0",
+  "diagnostics": [
+    "> Task :app:processDevelopMainManifest FAILED",
+    "\tAttribute application@usesCleartextTraffic at AndroidManifest.xml:16:7-61 requires a placeholder substitution but no value for <usesCleartextTraffic> is provided.",
+    "* What went wrong:",
+    "Execution failed for task ':app:processDevelopMainManifest'.",
+    "> Manifest merger failed with multiple errors, see logs",
+    "BUILD FAILED in 35m 45s"
+  ]
+}

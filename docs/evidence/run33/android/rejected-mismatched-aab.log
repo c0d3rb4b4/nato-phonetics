@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\dev\apps\nato-phonetics\scripts\verify-android-product.py", line 164, in <module>
+    print(json.dumps(inspect(args.mode, args.apk, args.aab), indent=2))
+  File "C:\dev\apps\nato-phonetics\scripts\verify-android-product.py", line 143, in inspect
+    require(payload(archive, 'base/', abis, True) == contents, 'APK/AAB packaged payloads differ')
+  File "C:\dev\apps\nato-phonetics\scripts\verify-android-product.py", line 23, in require
+    raise ValueError(message)
+ValueError: APK/AAB packaged payloads differ

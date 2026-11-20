@@ -1,0 +1,49 @@
+{
+  "platform": "iphonesimulator",
+  "packageId": "com.natophonetics.app",
+  "version": "1.0.0",
+  "build": "1",
+  "abis": [
+    "arm64"
+  ],
+  "signing": "ad-hoc simulator executable",
+  "minimumOS": "15.1",
+  "files": {
+    "AppIcon60x60@2x.png": "2ca05d5518c8483366dc6e4eeb44124bcb053817a8155a8033233a06570c5cb7",
+    "AppIcon76x76@2x~ipad.png": "907679e506220bb00a755d2784fea5cf9bcb393c0bcc7d01016721200eb49cf8",
+    "Assets.car": "74b4b7d18c371f5b9f64cf4d5da962e6024f903836a60148ba6bc8a27ee119f1",
+    "Frameworks/hermes.framework/Info.plist": "25707e7627f5f187a4a3011688bd45d1b2614660c908d842ed8ba48b5cb130ad",
+    "Frameworks/hermes.framework/hermes": "2fa64650bb6e1fa353445c49775c1c0652d6dc1ccc9dccd942b5d9334bd4694e",
+    "Info.plist": "61dea9d5285579c453bbda8befc143382129cff84f20779a919ca72fd7e82734",
+    "LaunchScreen.storyboardc/Info.plist": "448ed5ac69ed842e3df9619b25982422ecdc5bddaafeb681825f20bf9b2acd9c",
+    "LaunchScreen.storyboardc/UIViewController-launch-controller.nib": "8920ae9b1512c83f54d0220742a7300ad2c6d92c871bf733b987cd90c5233757",
+    "LaunchScreen.storyboardc/launch-controller-view-launch-view.nib": "507ebbac54e982e775f39fca3d3b01bfd9b0946b8bbeac07477faea6ef79414d",
+    "NATOPhonetics": "a6a08bf000f3642ff08daf73a10768cb8a31d8ff4e2ff86eae04fe2764044a96",
+    "NatoTile-ExtraBold.ttf": "b0150a84d5e000fcd276cf13e1863ca8bbaab0ff2a0dfdcfa958a48781dd7aa6",
+    "NatoTile-Italic.ttf": "50f16c8bec3ed31190d37403b6e15d200274e7a5e43f1a698a86eef7079d862b",
+    "NatoTile-SemiBold.ttf": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f",
+    "PkgInfo": "82502191c9484b04d685374f9879a0066069c49b8acae7a04b01d38d07e8eca0",
+    "PrivacyInfo.xcprivacy": "f6f307c393813414588063f29eb7c88417f6e86adff2fa145a332991a8bfdd94",
+    "RCT-Folly_privacy.bundle/Info.plist": "9a1f89fa5e96c1a8ac603c01be6f5a00ec695252c11525980262f87d347b4b67",
+    "RNCAsyncStorage_resources.bundle/Info.plist": "3580c141656fec51d5ac553d1c65af447f799ebe19860481c18b85d4b0376490",
+    "RNCAsyncStorage_resources.bundle/PrivacyInfo.xcprivacy": "0b1287d0e686cf867d38d97cca5dc694b3029f27c4fe4270dd4bd2fd5458a2f0",
+    "React-Core_privacy.bundle/Info.plist": "2564fa74d1c16b571789e197151e2714a4457d3add95bb9ca0e7ebe3a10dd33d",
+    "React-Core_privacy.bundle/PrivacyInfo.xcprivacy": "7c08969e459621a6ecec043ccdb9012651f185811945f75517c623dae2e11627",
+    "React-cxxreact_privacy.bundle/Info.plist": "822338e1a312abc0340bbd9ced40879e8f7de89ef229b98ef85492e86f7c1958",
+    "React-cxxreact_privacy.bundle/PrivacyInfo.xcprivacy": "0587d155c56a6f4f0647ebc6b6a0bd026615cd610ee8f209a9786b79a96ad335",
+    "boost_privacy.bundle/Info.plist": "c682eb50b973c992f66b696e00a9ec510509318ab05c6fb9f839212c954843d6",
+    "glog_privacy.bundle/Info.plist": "e1501a4b4873a348b4d8d7e4a1877b0dd8a97c955792470d7a3efe87ba40d94d",
+    "main.jsbundle": "06368ff6f83f0cc76b8a26bcb448935cf4991f4975f57c846ef56bd35e92ec05"
+  },
+  "archiveSha256": "d25853fcb820eae43ef5f95d89c28ac6b899f4539bf05aad23187ce6dd1cffb6",
+  "simulator": {
+    "udid": "AC3949A5-4B67-4667-BC5E-90A85C181A6C",
+    "deviceType": "com.apple.CoreSimulator.SimDeviceType.iPhone-17-Pro",
+    "runtime": "com.apple.CoreSimulator.SimRuntime.iOS-26-5",
+    "installedMatchesArchive": true,
+    "launchPid": "38110",
+    "appearance": "light",
+    "screenshot": "ios-home.png",
+    "screenshotSha256": "474ec36aff7e7575acc008cb3e2f6729c258782339819d9a75c5fde589ef0b91"
+  }
+}

@@ -1,0 +1,4 @@
+{"executable":"bundle","args":["install"],"cwd":"/Users/runner/work/nato-phonetics/nato-phonetics","startedAt":"2026-11-20T17:20:26.024Z"}
+Your bundle only supports platforms ["arm64-darwin-25"] but your local platform
+is arm64-darwin-23. Add the current platform to the lockfile with
+`bundle lock --add-platform arm64-darwin-23` and try again.
