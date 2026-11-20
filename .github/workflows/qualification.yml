@@ -1,0 +1,82 @@
+name: P10.8 isolated unsigned qualification
+on:
+  push:
+    branches: [qualification/p10-8-candidate]
+permissions:
+  contents: read
+jobs:
+  selection:
+    runs-on: ubuntu-24.04
+    outputs:
+      modes: ${{ steps.matrix.outputs.modes }}
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: false}
+      - id: matrix
+        run: |
+          node --test tests/native-workflow.test.mjs
+          node scripts/select-native-modes.cjs push refs/heads/develop
+          node scripts/select-native-modes.cjs push refs/heads/main
+          modes=$(node scripts/select-native-modes.cjs workflow_dispatch refs/heads/develop all)
+          echo "modes=$modes" >> "$GITHUB_OUTPUT"
+  native:
+    needs: selection
+    strategy:
+      fail-fast: false
+      matrix:
+        mode: ${{ fromJSON(needs.selection.outputs.modes) }}
+    uses: ./.github/workflows/native-mode.yml
+    with:
+      mode: ${{ matrix.mode }}
+  deliberate-failure:
+    name: Controlled Gradle failure with retained logs
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: false}
+      - uses: actions/setup-node@v4
+        with: {node-version-file: .nvmrc}
+      - uses: actions/setup-java@v4
+        with: {distribution: temurin, java-version: '17'}
+      - run: |
+          npm install --global npm@10.9.4
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'platforms;android-36' 'build-tools;36.0.0' 'ndk;27.1.12297006'
+      - name: Identify and reconstruct the single intentional invalid Gradle setting
+        run: |
+          printf '\norg.gradle.java.home=/intentionally-missing-p108-jdk\n' >> android/gradle.properties
+          node scripts/host-build.cjs android-debug --preflight-only --output artifacts/identified
+          id=$(node -p 'require("./artifacts/identified/source.json").sourceId')
+          git restore android/gradle.properties
+          git apply artifacts/identified/source.patch
+          node scripts/host-build.cjs android-debug --preflight-only --expected-source "$id" --output artifacts/reconstructed
+          echo "SOURCE_ID=$id" >> "$GITHUB_ENV"
+      - name: Seed a stale output and run the actual Gradle wrapper
+        run: |
+          mkdir -p android/app/build/outputs/apk/debug
+          echo 'P10.8 stale APK control' > android/app/build/outputs/apk/debug/app-debug.apk
+          node scripts/host-build.cjs android-debug --expected-source "$SOURCE_ID" --output artifacts/failed-control
+      - if: always()
+        name: Assert the compiler exit and absence of downloadable products
+        run: |
+          node - <<'NODE'
+          const assert = require('node:assert/strict')
+          const fs = require('node:fs')
+          const dir = 'artifacts/failed-control'
+          const report = require('./' + dir + '/report.json')
+          assert.equal(report.status, 'failed')
+          assert.equal(report.exitCode, 1)
+          assert.deepEqual(report.artifacts, [])
+          assert.deepEqual(fs.readdirSync(dir).filter(name => /\.(apk|aab|gz)$/.test(name)), [])
+          const step = report.steps.find(s => s.name === 'native-build')
+          assert(step.exitCode !== 0)
+          assert.match(fs.readFileSync(dir + '/' + step.log, 'utf8'), /intentionally-missing-p108-jdk/)
+          NODE
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: controlled-failure-${{ github.sha }}-${{ github.run_attempt }}
+          path: |
+            artifacts/identified/
+            artifacts/reconstructed/
+            artifacts/failed-control/
+          if-no-files-found: error
