@@ -13,6 +13,7 @@ test('all maintained URLs and static HTML aliases resolve to the same screen', (
 });
 
 test('native custom scheme supports host and path forms without accepting external schemes', () => {
+  assert.equal(resolveRoute('natophonetics-dev://converter'), '/converter');
   assert.equal(resolveRoute('natophonetics://converter'), '/converter');
   assert.equal(resolveRoute('natophonetics://progress'), '/progress');
   assert.equal(resolveRoute('natophonetics:///voice-select?source=test'), '/voice-select');

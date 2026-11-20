@@ -1,0 +1,145 @@
+name: Build and qualify one native mode
+
+on:
+  workflow_call:
+    inputs:
+      mode:
+        required: true
+        type: string
+      private_runner:
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build ${{ inputs.mode }}
+    if: >-
+      contains(fromJSON('["android-debug","android-develop","android-release","ios-simulator"]'), inputs.mode) &&
+      (!inputs.private_runner || (github.event_name == 'workflow_dispatch' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop')))
+    runs-on: ${{ fromJSON(inputs.private_runner && '["self-hosted","macOS","ARM64","nato-phonetics"]' || (inputs.mode == 'ios-simulator' && '["macos-26"]' || '["ubuntu-24.04"]')) }}
+    timeout-minutes: 240
+    env:
+      CI: '1'
+      MODE: ${{ inputs.mode }}
+      OUTPUT: artifacts/host-${{ inputs.mode }}-${{ github.run_id }}-${{ github.run_attempt }}
+      JOBS: ${{ inputs.private_runner && '1' || (inputs.mode == 'ios-simulator' && '2' || '3') }}
+      CMAKE_BUILD_PARALLEL_LEVEL: ${{ inputs.private_runner && '1' || '3' }}
+      NATO_UPLOAD_STORE_FILE: ''
+      NATO_UPLOAD_STORE_PASSWORD: ''
+      NATO_UPLOAD_KEY_ALIAS: ''
+      NATO_UPLOAD_KEY_PASSWORD: ''
+    outputs:
+      artifact_id: ${{ steps.upload.outputs.artifact-id }}
+      build_attempt: ${{ steps.context.outputs.attempt }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - id: context
+        name: Record runner and attempt
+        run: |
+          mkdir -p artifacts/setup
+          echo "attempt=$GITHUB_RUN_ATTEMPT" >> "$GITHUB_OUTPUT"
+          { uname -a; df -h .; } | tee artifacts/setup/runner.log
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm install --global npm@10.9.4 2>&1 | tee artifacts/setup/npm.log
+        shell: bash
+      - uses: actions/setup-java@v4
+        if: startsWith(inputs.mode, 'android-')
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Prepare pinned Android SDK packages
+        if: startsWith(inputs.mode, 'android-') && !inputs.private_runner
+        shell: bash
+        run: |
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --install \
+            'platform-tools' 'platforms;android-36' 'build-tools;36.0.0' \
+            'ndk;27.1.12297006' 'cmake;3.22.1' 'cmake;3.30.5' 2>&1 | tee artifacts/setup/android.log
+      - name: Select hosted Xcode and simulator runtime
+        if: inputs.mode == 'ios-simulator' && !inputs.private_runner
+        shell: bash
+        run: |
+          export DEVELOPER_DIR=/Applications/Xcode_26.2.app/Contents/Developer
+          { xcodebuild -version; xcrun simctl list runtimes; } | tee artifacts/setup/xcode.log
+          echo "DEVELOPER_DIR=$DEVELOPER_DIR" >> "$GITHUB_ENV"
+      - uses: ruby/setup-ruby@v1
+        if: inputs.mode == 'ios-simulator' && !inputs.private_runner
+        with:
+          bundler: '2.4.22'
+      - name: Shared locked install, direct build and product inspection
+        shell: bash
+        run: |
+          node scripts/host-build.cjs "$MODE" --jobs "$JOBS" --install --output "$OUTPUT" 2>&1 | tee artifacts/setup/host.log
+          node scripts/verify-host-artifacts.cjs "$OUTPUT" "$MODE" "$GITHUB_SHA" "$GITHUB_RUN_ID" "$GITHUB_RUN_ATTEMPT"
+      - name: Upload qualified products and identity report
+        id: upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: host-${{ inputs.mode }}-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ env.OUTPUT }}/
+          if-no-files-found: error
+          compression-level: 0
+      - name: Preserve failure reports and setup logs
+        if: failure() || cancelled()
+        uses: actions/upload-artifact@v4
+        with:
+          name: failed-${{ inputs.mode }}-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            artifacts/setup/
+            ${{ env.OUTPUT }}/report.json
+            ${{ env.OUTPUT }}/source.json
+            ${{ env.OUTPUT }}/source.patch
+            ${{ env.OUTPUT }}/preflight.json
+            ${{ env.OUTPUT }}/logs/
+            ${{ env.OUTPUT }}/*.json
+            ${{ env.OUTPUT }}/*.png
+          if-no-files-found: warn
+
+  verify:
+    name: Verify downloaded ${{ inputs.mode }}
+    needs: build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      MODE: ${{ inputs.mode }}
+      BUILD_ATTEMPT: ${{ needs.build.outputs.build_attempt }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+      - uses: actions/download-artifact@v4
+        with:
+          artifact-ids: ${{ needs.build.outputs.artifact_id }}
+          path: ${{ runner.temp }}/native-product
+          merge-multiple: true
+      - name: Match retrieved bytes and producing run
+        run: node scripts/verify-host-artifacts.cjs "$RUNNER_TEMP/native-product" "$MODE" "$GITHUB_SHA" "$GITHUB_RUN_ID" "$BUILD_ATTEMPT"
+      - name: Enable emulator acceleration on disposable Ubuntu host
+        if: inputs.mode == 'android-develop'
+        run: sudo setfacl -m "u:$(id -un):rw" /dev/kvm
+      - name: Install and cold-launch retrieved development APK
+        if: inputs.mode == 'android-develop'
+        uses: reactivecircus/android-emulator-runner@a421e43855164a8197daf9d8d40fe71c6996bb0d # v2
+        with:
+          api-level: 33
+          arch: x86_64
+          target: google_apis
+          profile: pixel_2
+          script: python3 scripts/smoke-android-develop.py "$RUNNER_TEMP/native-product/app-develop.apk" artifacts/develop-smoke --serial "$ANDROID_SERIAL"
+      - name: Retain runtime observations
+        if: always() && inputs.mode == 'android-develop'
+        uses: actions/upload-artifact@v4
+        with:
+          name: develop-smoke-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: artifacts/develop-smoke/
+          if-no-files-found: warn

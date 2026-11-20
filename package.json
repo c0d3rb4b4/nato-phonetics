@@ -17,6 +17,7 @@
     "check:dependencies": "node scripts/check-no-expo.cjs",
     "audit:review": "node scripts/check-audit.cjs",
     "build:android": "node scripts/build-native.cjs android-debug",
+    "build:android:develop": "node scripts/build-native.cjs android-develop",
     "build:android:release": "node scripts/build-native.cjs android-release",
     "build:ios": "node scripts/build-native.cjs ios-simulator",
     "build:android:debug": "node scripts/build-native.cjs android-debug",

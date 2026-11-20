@@ -20,13 +20,17 @@ function run(command, args, cwd = root) {
 mkdirSync(artifacts, { recursive: true });
 switch (mode) {
   case 'android-debug':
+  case 'android-develop':
   case 'android-release': {
-    const task = mode === 'android-debug' ? ':app:assembleDebug' : ':app:bundleRelease';
-    const verify = mode === 'android-debug' ? ':app:verifyDebugRenderer' : ':app:verifyReleaseRenderer';
-    const args = [verify, task, '--no-daemon', `--max-workers=${jobs}`];
+    const tasks = {
+      'android-debug': [':app:verifyDebugRenderer', ':app:assembleDebug'],
+      'android-develop': [':app:verifyDevelopRenderer', ':app:assembleDevelop'],
+      'android-release': [':app:verifyReleaseRenderer', ':app:assembleRelease', ':app:bundleRelease'],
+    };
+    const args = [...tasks[mode], '--no-daemon', `--max-workers=${jobs}`];
     const android = path.join(root, 'android');
-    // Windows runs the tracked batch wrapper through cmd. Only the two fixed
-    // task pairs and the validated worker count are passed to the shell.
+    // Windows runs the tracked batch wrapper through cmd. Only the fixed
+    // tasks and the validated worker count are passed to the shell.
     if (process.platform === 'win32') run('cmd.exe', ['/d', '/c', '.\\gradlew.bat', ...args], android);
     else run('./gradlew', args, android);
     break;
@@ -53,6 +57,6 @@ switch (mode) {
     break;
   }
   default:
-    console.error('Usage: node scripts/build-native.cjs android-debug|android-release|ios-simulator|ios-archive|ios-export');
+    console.error('Usage: node scripts/build-native.cjs android-debug|android-develop|android-release|ios-simulator|ios-archive|ios-export');
     process.exit(1);
 }

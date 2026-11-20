@@ -42,7 +42,8 @@ test('ordinary Android entry points pass their default tasks, worker limit and a
     : '#!/bin/sh\nprintf "%s\\n" "$*"\nexit 17\n', { mode: 0o755 });
   for (const [mode, verify, task] of [
     ['android-debug', 'verifyDebugRenderer', 'assembleDebug'],
-    ['android-release', 'verifyReleaseRenderer', 'bundleRelease'],
+    ['android-develop', 'verifyDevelopRenderer', 'assembleDevelop'],
+    ['android-release', 'verifyReleaseRenderer', 'assembleRelease :app:bundleRelease'],
   ]) {
     const result = spawnSync(process.execPath, [launcher, mode], {
       encoding: 'utf8', env: { ...process.env, NATO_BUILD_JOBS: '2' },

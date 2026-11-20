@@ -7,7 +7,7 @@ const { createHash } = require('node:crypto');
 const { spawnSync } = require('node:child_process');
 const npmInvocation = require('./npm-invocation.cjs');
 
-const MODES = ['checks', 'web', 'android-debug', 'android-release', 'ios-simulator', 'ios-archive', 'ios-export'];
+const MODES = ['checks', 'web', 'android-debug', 'android-develop', 'android-release', 'ios-simulator', 'ios-archive', 'ios-export'];
 const hash = value => createHash('sha256').update(value).digest('hex');
 const json = (file, value) => fs.writeFileSync(file, JSON.stringify(value, null, 2) + '\n');
 function command(command, args, root) {
@@ -63,17 +63,20 @@ function runHost(options) {
   }
   if (fs.existsSync(output)) throw new Error('Output directory already exists; use a new job directory');
   fs.mkdirSync(output, { recursive: true });
-  const report = { schemaVersion: 1, mode: options.mode, startedAt: new Date().toISOString(), status: 'running',
+  const report = { schemaVersion: 2, mode: options.mode, startedAt: new Date().toISOString(), status: 'running',
     host: { platform: process.platform, arch: process.arch, release: os.release(), node: process.versions.node },
     jobs: options.jobs || 1, install: Boolean(options.install), preflightOnly: Boolean(options.preflightOnly),
-    remoteJob: process.env.GITHUB_RUN_ID ? { provider: 'github', runUrl: `https://github.com/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`, attempt: process.env.GITHUB_RUN_ATTEMPT } : null,
+    remoteJob: process.env.GITHUB_RUN_ID ? { provider: 'github', runId: process.env.GITHUB_RUN_ID,
+      runUrl: `https://github.com/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`, attempt: process.env.GITHUB_RUN_ATTEMPT } : null,
     steps: [], artifacts: [] };
   const reportFile = path.join(output, 'report.json');
   const lock = path.join(root, 'artifacts', '.host-build.lock');
   let ownsLock = false;
   let source;
+  let staging;
+  const promoted = [];
   const save = () => json(reportFile, report);
-  function step(name, executable, args, { cwd = root, required = true, env = {} } = {}) {
+  function step(name, executable, args, { cwd = root, required = true, env = {}, jsonOutput = false } = {}) {
     const log = `logs/${String(report.steps.length + 1).padStart(2, '0')}-${name}.log`;
     fs.mkdirSync(path.join(output, 'logs'), { recursive: true });
     const fd = fs.openSync(path.join(output, log), 'wx');
@@ -81,20 +84,25 @@ function runHost(options) {
     fs.writeSync(fd, JSON.stringify({ executable, args, cwd, startedAt }) + '\n');
     console.log(`${name}: ${log}`);
     let result;
+    const resultFile = path.join(output, name + '.json');
+    const stdout = jsonOutput ? fs.openSync(resultFile, 'wx') : fd;
     try {
-      result = spawnSync(executable, args, { cwd, stdio: ['ignore', fd, fd],
+      result = spawnSync(executable, args, { cwd, stdio: ['ignore', stdout, fd],
         env: { ...process.env, NATO_BUILD_JOBS: String(report.jobs), ...env } });
       if (result.error) fs.writeSync(fd, result.error.message + '\n');
-    } finally { fs.closeSync(fd); }
+    } finally {
+      fs.closeSync(fd);
+      if (jsonOutput) fs.closeSync(stdout);
+    }
     const record = { name, executable, args, log, startedAt, endedAt: new Date().toISOString(),
       exitCode: result.status ?? 1, signal: result.signal || null };
     report.steps.push(record); save();
     if (required && record.exitCode !== 0) throw new Error(`${name} failed (${record.exitCode}); see ${log}`);
-    return record.exitCode;
+    return jsonOutput ? JSON.parse(fs.readFileSync(resultFile, 'utf8')) : record.exitCode;
   }
   function artifact(file, name = path.basename(file)) {
     if (!fs.statSync(file).isFile()) throw new Error(`Artifact missing: ${file}`);
-    const destination = path.join(output, name);
+    const destination = path.join(staging, name);
     if (path.resolve(file) !== destination) fs.copyFileSync(file, destination);
     report.artifacts.push({ file: name, bytes: fs.statSync(destination).size, sha256: hash(fs.readFileSync(destination)) });
   }
@@ -110,6 +118,7 @@ function runHost(options) {
     source = sourceSnapshot(root);
     const { patch, untracked, ...identity } = source;
     report.sourceId = source.sourceId;
+    report.commit = source.head;
     json(path.join(output, 'source.json'), { ...identity, patchSha256: hash(patch), untracked,
       exclusions: ['ignored files', 'docs/evidence/ (historical/generated evidence, not standard build input)'] });
     fs.writeFileSync(path.join(output, 'source.patch'), patch);
@@ -159,6 +168,8 @@ function runHost(options) {
     }
     json(path.join(output, 'preflight.json'), report.preflight); save();
     if (!options.preflightOnly) {
+      // Keep unqualified products outside the upload directory, including on cancellation.
+      staging = fs.mkdtempSync(output + '.staging-');
       if (options.install) {
         step('locked-install', npm, [...prefix, 'ci']);
         if (options.mode.startsWith('ios-')) {
@@ -173,30 +184,51 @@ function runHost(options) {
       } else if (options.mode === 'web') {
         step('package-regressions', process.execPath, ['--test', 'tests/web-package.test.mjs']);
         step('web-build', npm, [...prefix, 'run', 'export:web']);
-        step('web-package', process.execPath, ['scripts/package-web.cjs', 'dist', path.join(output, 'nato-web.tar.gz')]);
-        artifact(path.join(output, 'nato-web.tar.gz'));
+        step('web-package', process.execPath, ['scripts/package-web.cjs', 'dist', path.join(staging, 'nato-web.tar.gz')]);
+        artifact(path.join(staging, 'nato-web.tar.gz'));
       } else {
         step('native-build', process.execPath, ['scripts/build-native.cjs', options.mode]);
-        if (options.mode === 'android-debug') artifact(path.join(root, 'android/app/build/outputs/apk/debug/app-debug.apk'));
-        else if (options.mode === 'android-release') artifact(path.join(root, 'android/app/build/outputs/bundle/release/app-release.aab'));
-        else {
+        if (options.mode.startsWith('android-')) {
+          const variant = options.mode.slice('android-'.length);
+          const builds = path.join(root, 'android/app/build/outputs');
+          const unsigned = variant === 'release' && !process.env.NATO_UPLOAD_STORE_FILE;
+          const apkName = `app-${variant}${unsigned ? '-unsigned' : ''}.apk`;
+          artifact(path.join(builds, 'apk', variant, apkName));
+          if (variant === 'release') artifact(path.join(builds, 'bundle/release/app-release.aab'));
+          report.product = step('verify-android-product', process.platform === 'win32' ? 'python' : 'python3', [
+            'scripts/verify-android-product.py', options.mode, ...report.artifacts.map(a => path.join(staging, a.file)),
+          ], { jsonOutput: true });
+        } else {
           const products = { 'ios-simulator': ['artifacts/ios-simulator/Build/Products/Release-iphonesimulator', 'NATOPhonetics.app'],
             'ios-archive': ['artifacts', 'NATOPhonetics.xcarchive'], 'ios-export': ['artifacts', 'ios-export'] };
           const [directory, name] = products[options.mode];
-          const archive = path.join(output, `${options.mode}.tar.gz`);
+          const archive = path.join(staging, `${options.mode}.tar.gz`);
           step('preserve-native-product', 'tar', ['-czf', archive, '-C', path.join(root, directory), name]);
           artifact(archive);
+          if (options.mode === 'ios-simulator') {
+            report.product = step('verify-ios-simulator', 'python3', [
+              'scripts/verify-ios-simulator.py', archive, path.join(output, 'ios-home.png'),
+            ], { jsonOutput: true });
+          }
         }
       }
     }
     if (sourceSnapshot(root).sourceId !== source.sourceId) throw new Error('Candidate source changed during execution; artifact qualification rejected');
+    for (const product of report.artifacts) {
+      const target = path.join(output, product.file);
+      fs.renameSync(path.join(staging, product.file), target);
+      promoted.push(target);
+    }
     report.status = options.preflightOnly ? 'preflight-pass' : 'passed';
     report.exitCode = 0;
   } catch (error) {
+    for (const file of promoted) fs.unlinkSync(file);
+    report.artifacts = [];
     report.status = 'failed'; report.exitCode = 1; report.error = error.message;
     console.error(error.message);
   } finally {
     report.endedAt = new Date().toISOString(); save();
+    if (staging) fs.rmSync(staging, { recursive: true, force: true });
     if (ownsLock) fs.rmSync(lock, { recursive: true });
   }
   return report;

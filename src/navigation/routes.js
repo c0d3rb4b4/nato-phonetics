@@ -20,7 +20,7 @@ export const ROUTE_TITLES = {
 export function resolveRoute(value) {
   // Custom-scheme URLs use both host-style (://converter) and path-style
   // (:///converter) forms. Web routes also support static-host .html URLs.
-  let path = value.replace(/^natophonetics:\/\//i, '/').split(/[?#]/)[0];
+  let path = value.replace(/^natophonetics(?:-dev)?:\/\//i, '/').split(/[?#]/)[0];
   try { path = decodeURIComponent(path); } catch { return '/+not-found'; }
   path = path.replace(/^\/+/, '/').replace(/\.html$/, '').replace(/\/+$/, '') || '/';
   if (path === '/index') path = '/';
