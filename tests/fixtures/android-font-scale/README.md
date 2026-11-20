@@ -52,10 +52,22 @@ the separate C++ renderer/cache executable are in [NATIVE_BUILDS.md](../../../do
 
 
 The C++ renderer/cache harness is separate: `build-android-font-native.py`
-requires the exact candidate prefab and uses Debug mode by default. Append
-`--release` for Release prefab, matching RN's production class layout and O2.
-The library's Sealable/debug-string ABI is checked before compilation; a wrong
-mode is rejected. The six explicit test predicates remain unchanged, including
-old-tree preservation, changed owner/adoption heights and cache callbacks.
-Run27 qualifies both compile modes and actual ARM64 Release execution; other
-ABIs and full Release application/default-build integration remain open.
+requires the exact candidate prefab and uses Debug mode and `arm64-v8a` by
+default. Append `--release` for Release prefab, matching RN's production class
+layout and O2. Select `--abi armeabi-v7a`, `--abi x86` or `--abi x86_64` to
+compile/link against that ABI's exported libraries and fbjni. The helper checks
+ELF class/machine, Sealable/debug-string mode and exported patched headers
+before compilation. Font-generation detection handles both 32-bit and 64-bit
+`uint64_t` encodings; a wrong architecture, mode or header is rejected.
+
+```sh
+ANDROID_HOME=... python3 scripts/build-android-font-native.py \
+  EXACT_PREFAB OUTPUT --release --abi armeabi-v7a
+```
+
+The six explicit test predicates remain unchanged, including old-tree
+preservation, changed owner/adoption heights and cache callbacks. Compile/link
+success does not establish that those predicates executed. Run27 qualifies
+both compile modes and actual ARM64 Release execution; full Release application
+and default-build integration remain open. Use the current plan/evidence for
+each ABI's actual qualification status.

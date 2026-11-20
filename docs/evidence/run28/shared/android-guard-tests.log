@@ -1,0 +1,46 @@
+TAP version 13
+# Subtest: run20 real stale native measurements remain rejected
+ok 1 - run20 real stale native measurements remain rejected
+  ---
+  duration_ms: 3.443
+  type: 'test'
+  ...
+# Subtest: run22 real stale native measurements remain rejected
+ok 2 - run22 real stale native measurements remain rejected
+  ---
+  duration_ms: 0.636
+  type: 'test'
+  ...
+# Subtest: native acceptance rejects incomplete stages and remounts even with cold-equivalent frames
+ok 3 - native acceptance rejects incomplete stages and remounts even with cold-equivalent frames
+  ---
+  duration_ms: 0.400333
+  type: 'test'
+  ...
+# Subtest: correct outer frames cannot hide stale editable glyph sizing
+ok 4 - correct outer frames cannot hide stale editable glyph sizing
+  ---
+  duration_ms: 2.547292
+  type: 'test'
+  ...
+# Subtest: native source preparation is repeatable and preserves unrelated bytes
+ok 5 - native source preparation is repeatable and preserves unrelated bytes
+  ---
+  duration_ms: 44.538416
+  type: 'test'
+  ...
+# Subtest: native context drift fails before any source file is patched
+ok 6 - native context drift fails before any source file is patched
+  ---
+  duration_ms: 10.126
+  type: 'test'
+  ...
+1..6
+# tests 6
+# suites 0
+# pass 6
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 126.634

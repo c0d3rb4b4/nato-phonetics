@@ -1,12 +1,14 @@
 # Android live font sizing: issue, repair candidates and evidence
 
-**P05.2 / P1 · Evidence through Run27 · 19 November 2026**
+**P05.2 / P1 · Evidence through Run28 · 20 November 2026**
 
-**Current conclusion:** an opt-in Android source candidate repairs the observed failures in the tested ARM64 Debug and scoped ARM64 Release configurations. The ordinary build still uses the original Maven framework and retains the bug. P05.2 is active; this is not a completed release fix.
+**Current conclusion:** an opt-in Android source candidate repairs the observed failures in the tested ARM64 Debug and scoped ARM64 Release configurations. All configured source Release ABIs now have compile/package/link qualification; non-ARM64 execution and full Release affected gates are unrun. The ordinary build still uses the original Maven framework and retains the bug. P05.2 is active; this is not a completed release fix.
 
 This report explains the issue, shows actual screenshots, traces the repair candidates, and separates passing checks, persistent failures, test-tool failures and untested risks. It adds analysis of existing evidence; no application code, build, emulator test or acceptance result is changed by preparing it. The archived [Run26 PDF edition](evidence/run26/reports/android-font-scale-p1.pdf) embeds the original screenshot examples and retains its dated Run26 status. This Markdown report adds the later Run27 qualification; the archived PDF is unchanged.
 
-**Run27 update:** the original complete current-source F1 tile scope now passes625 native baselines/271 ink observations. Unsigned ARM64 source Release build,6 native causal cases and5 real-product composition checkpoints pass. No product/native repair source changed; test helpers now match Debug/Release ABIs and retrieve non-debuggable evidence. Other ABIs/full Release/default integration remain open. [Reports and limitations](evidence/run27/README.md), [25 actual captures](evidence/run27/screenshots/index.md).
+**Run28 update:** three remaining source Release ABI APK/AAB builds and native consumer links pass with exact JS/Hermes/ELF/prefab/header identity. The ABI-selectable helper handles32/64-bit generation encodings, rejects wrong architecture/mode/headers and passes fresh6 native cases on exact ARM64 Release libraries. Metro honors explicit shared worker limits after an actual setup/write failure; an emulator disk rejection is also retained. Scoped retries/resource recovery,8 tests/lint and4 inspected actual images pass. Full Release/default integration/additional-ABI runtime remain open. [Evidence](evidence/run28/README.md), [captures](evidence/run28/screenshots/index.md).
+
+**Run27 update (retained scope):** the original complete current-source F1 tile scope now passes625 native baselines/271 ink observations. Unsigned ARM64 source Release build,6 native causal cases and5 real-product composition checkpoints pass. No product/native repair source changed; test helpers now match Debug/Release ABIs and retrieve non-debuggable evidence. Other ABIs/full Release/default integration remain open. [Reports and limitations](evidence/run27/README.md), [25 actual captures](evidence/run27/screenshots/index.md).
 
 | Question | Answer |
 |---|---|
@@ -204,9 +206,9 @@ No screen remount/reset, replacement input value, accessibility scaling cap, rel
 
 ## 8. Remaining repair path and reproducibility
 
-**Next unfinished, unblocked Android task: P05.2-F2 remaining source ABI qualification**, starting with armeabi-v7a, followed by x86/x86_64, full Release affected gates and ordinary default integration. F1 complete Run07 context/part scope now passes on the existing source Debug APK; reuse it unless a changed renderer/font/layout invalidates it. ARM64 source Release compilation/package, six actual native cases and five test-IME checkpoints pass, but do not substitute those for unrun Release fixture/raster/application gates.
+**Next unfinished, unblocked Android task: P05.2-F2 full Release affected verification**, then ordinary clean-install/default integration. All configured source Release ABI compile/package/link scopes now pass; other ABI runtime remains unrun. Retain Run27 complete Debug F1 and scoped ARM64 Release evidence without repeating unchanged work.
 
-Re-run affected gates on the exact eventual default-integration artifact, rather than relabeling opt-in reports. These are engineering tasks with no new missing human input. P05.2 stays active before unrelated P2 work. [Concrete command, artifacts and checkpoint](evidence/run27/android/next-android.md), [human-only supplement](evidence/run27/manual-handoff.md).
+The current60-comparison fixture reads a development inspector and cannot directly inspect the intended non-debuggable Release APK. Deliver a test-only normal-startup Release observation path tied to exact native/Hermes payloads, apply unchanged frame/widget/state/sweep/edit/window and actual product/raster gates, then integrate/requalify the ordinary default build. Sample captures/native regressions do not substitute for these gates. [Concrete next checkpoint/artifacts/commands](evidence/run28/android/next-android.md), [human-only boundaries](evidence/run28/manual-handoff.md). No new owner input blocks engineering.
 
 The reproduction/build entry points are:
 
@@ -239,3 +241,7 @@ The fixture entry is used only for diagnostic acceptance. The real converter, qu
 The 11 font-source files group into: `ReactSurfaceImpl.kt`; `DisplayMetricsHolder.kt`; the Kotlin/JNI `SurfaceHandlerBinding` trio; `LayoutContext.h`; `YogaLayoutableShadowNode.h/.cpp`; `TextMeasureCache.h`; Android `TextLayoutManager.cpp`; and `ReactEditText.kt`. The [unified patch](evidence/run26/android/font-environment-final.patch) and [guard manifest](../scripts/patches/react-native-0.81.5-font-environment.json) give exact paths and original/patched hashes. Existing application source, dependency lock, prior evidence and user changes are preserved.
 
 This report's primary evidence is the [Run26 evidence summary](evidence/run26/README.md), [source/capture verification manifest](evidence/run26/verification.json), [original Run20/22 measurement analysis](ANDROID_TEXT_MEASUREMENT.md) and the raw JSON/captures linked throughout. PDF figures are embedded; local evidence links require the repository checkout. Creating this report does not change any task or test status.
+
+## Run28 ABI/tooling/resource supplement
+
+[Run28](evidence/run28/README.md) qualifies the previously missing source Release ABI compile/link/package scopes and preserves exact product JS/native repair/font/design inputs. The first x86 command fails during observed resource pressure; a separately passing retry follows explicit Metro worker control and generated-cache reclamation. Its OS errno and individual causal contribution are unproven. The first emulator launch separately fails explicit disk preflight, then the same settings boot after measured recovery. No generated object/static-link cache is treated as an irreplaceable source/product: exact APK/AAB/shared libraries/headers/config/toolchain/evidence remain, while future native recompilation may be cold. These are build/tool failures, not newly demonstrated application font regressions. Original failed commands stay red. [Failure triage](evidence/run28/android/x86-setup-failure.md), [resource/capture checkpoints](evidence/run28/shared/forecast.md).

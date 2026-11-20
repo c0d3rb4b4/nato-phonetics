@@ -1,0 +1,1749 @@
+{
+  "fileCount": 435,
+  "filesRemoved": [
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/CMakeFiles/_CMakeLTOTest-C/bin/libfoo.a",
+      "bytes": 3724
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/foo.c.o",
+      "bytes": 3584
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/main.c.o",
+      "bytes": 4144
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/CMakeFiles/_CMakeLTOTest-CXX/bin/libfoo.a",
+      "bytes": 3764
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/foo.cpp.o",
+      "bytes": 3620
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/main.cpp.o",
+      "bytes": 4184
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/CMakeFiles/3.30.5-g0033d09/CompilerIdC/CMakeCCompilerId.o",
+      "bytes": 5456
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/CMakeFiles/3.30.5-g0033d09/CompilerIdCXX/CMakeCXXCompilerId.o",
+      "bytes": 5552
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsiexecutor/CMakeFiles/jsireact.dir/jsireact/JSIExecutor.cpp.o",
+      "bytes": 1287096
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsiexecutor/CMakeFiles/jsireact.dir/jsireact/JSINativeModules.cpp.o",
+      "bytes": 411532
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/yoga/yoga/libyogacore.a",
+      "bytes": 3951986
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/yoga/yoga/CMakeFiles/_CMakeLTOTest-C/bin/libfoo.a",
+      "bytes": 3724
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/yoga/yoga/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/foo.c.o",
+      "bytes": 3584
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/yoga/yoga/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/main.c.o",
+      "bytes": 3988
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/yoga/yoga/CMakeFiles/_CMakeLTOTest-CXX/bin/libfoo.a",
+      "bytes": 3768
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/yoga/yoga/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/foo.cpp.o",
+      "bytes": 3624
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/yoga/yoga/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/main.cpp.o",
+      "bytes": 4024
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/YGValue.cpp.o",
+      "bytes": 29272
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/YGNode.cpp.o",
+      "bytes": 385408
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/YGConfig.cpp.o",
+      "bytes": 107336
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/YGEnums.cpp.o",
+      "bytes": 22920
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/YGNodeLayout.cpp.o",
+      "bytes": 64236
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/YGNodeStyle.cpp.o",
+      "bytes": 485028
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/YGPixelGrid.cpp.o",
+      "bytes": 33916
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/config/Config.cpp.o",
+      "bytes": 121316
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/algorithm/FlexLine.cpp.o",
+      "bytes": 396360
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/algorithm/AbsoluteLayout.cpp.o",
+      "bytes": 435612
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/algorithm/PixelGrid.cpp.o",
+      "bytes": 94756
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/algorithm/Cache.cpp.o",
+      "bytes": 43368
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/algorithm/Baseline.cpp.o",
+      "bytes": 303384
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/algorithm/CalculateLayout.cpp.o",
+      "bytes": 713392
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/node/Node.cpp.o",
+      "bytes": 481780
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/node/LayoutResults.cpp.o",
+      "bytes": 58672
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/event/event.cpp.o",
+      "bytes": 65136
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/debug/AssertFatal.cpp.o",
+      "bytes": 37708
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/debug/Log.cpp.o",
+      "bytes": 48124
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/logger/CMakeFiles/logger.dir/react_native_log.cpp.o",
+      "bytes": 122524
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/cxxreact/CMakeFiles/react_cxxreact.dir/ReactMarker.cpp.o",
+      "bytes": 58296
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/cxxreact/CMakeFiles/react_cxxreact.dir/MethodCall.cpp.o",
+      "bytes": 644508
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/cxxreact/CMakeFiles/react_cxxreact.dir/CxxNativeModule.cpp.o",
+      "bytes": 1213172
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/cxxreact/CMakeFiles/react_cxxreact.dir/Instance.cpp.o",
+      "bytes": 1302032
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/cxxreact/CMakeFiles/react_cxxreact.dir/JSBigString.cpp.o",
+      "bytes": 184128
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/cxxreact/CMakeFiles/react_cxxreact.dir/JSBundleType.cpp.o",
+      "bytes": 10556
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/cxxreact/CMakeFiles/react_cxxreact.dir/JSExecutor.cpp.o",
+      "bytes": 151212
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/cxxreact/CMakeFiles/react_cxxreact.dir/JSIndexedRAMBundle.cpp.o",
+      "bytes": 367212
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/cxxreact/CMakeFiles/react_cxxreact.dir/ModuleRegistry.cpp.o",
+      "bytes": 1086264
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/cxxreact/CMakeFiles/react_cxxreact.dir/NativeToJsBridge.cpp.o",
+      "bytes": 1031860
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/cxxreact/CMakeFiles/react_cxxreact.dir/RAMBundleRegistry.cpp.o",
+      "bytes": 542680
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsitooling/CMakeFiles/jsitooling.dir/react/runtime/JSRuntimeFactory.cpp.o",
+      "bytes": 132296
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsitooling/CMakeFiles/jsitooling.dir/react/runtime/JSRuntimeFactoryCAPI.cpp.o",
+      "bytes": 35380
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsi/CMakeFiles/jsi.dir/jsi/JSIDynamic.cpp.o",
+      "bytes": 939608
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsi/CMakeFiles/jsi.dir/jsi/jsilib-posix.cpp.o",
+      "bytes": 138688
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsi/CMakeFiles/jsi.dir/jsi/jsi.cpp.o",
+      "bytes": 1168396
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsi/CMakeFiles/jsi.dir/jsi/jsilib-windows.cpp.o",
+      "bytes": 2536
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/reactperflogger/CMakeFiles/reactperflogger.dir/fusebox/FuseboxTracer.cpp.o",
+      "bytes": 997220
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/reactperflogger/CMakeFiles/reactperflogger.dir/reactperflogger/ReactPerfetto.cpp.o",
+      "bytes": 2600
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/reactperflogger/CMakeFiles/reactperflogger.dir/reactperflogger/ReactPerfettoLogger.cpp.o",
+      "bytes": 56664
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/reactperflogger/CMakeFiles/reactperflogger.dir/reactperflogger/HermesPerfettoDataSource.cpp.o",
+      "bytes": 2628
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/reactperflogger/CMakeFiles/reactperflogger.dir/reactperflogger/FuseboxPerfettoDataSource.cpp.o",
+      "bytes": 2640
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/reactperflogger/CMakeFiles/reactperflogger.dir/reactperflogger/ReactPerfettoCategories.cpp.o",
+      "bytes": 2628
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/reactperflogger/CMakeFiles/reactperflogger.dir/reactperflogger/BridgeNativeModulePerfLogger.cpp.o",
+      "bytes": 58588
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/runtimeexecutor/CMakeFiles/runtimeexecutor.dir/platform/cxx/ReactCommon/RuntimeExecutorSyncUIThreadUtils.cpp.o",
+      "bytes": 232156
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/oscompat/CMakeFiles/oscompat.dir/OSCompatWindows.cpp.o",
+      "bytes": 2536
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/oscompat/CMakeFiles/oscompat.dir/OSCompatPosix.cpp.o",
+      "bytes": 6548
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/hermes/inspector-modern/CMakeFiles/hermes_inspector_modern.dir/chrome/HermesRuntimeTargetDelegate.cpp.o",
+      "bytes": 384852
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/hermes/inspector-modern/CMakeFiles/hermes_inspector_modern.dir/chrome/Registration.cpp.o",
+      "bytes": 2596
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/hermes/inspector-modern/CMakeFiles/hermes_inspector_modern.dir/chrome/HermesRuntimeSamplingProfileSerializer.cpp.o",
+      "bytes": 527600
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/hermes/inspector-modern/CMakeFiles/hermes_inspector_modern.dir/chrome/ConnectionDemux.cpp.o",
+      "bytes": 2604
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/hermes/inspector-modern/CMakeFiles/hermes_inspector_modern.dir/chrome/HermesRuntimeAgentDelegate.cpp.o",
+      "bytes": 2640
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/hermes/executor/CMakeFiles/hermes_executor_common.dir/HermesExecutorFactory.cpp.o",
+      "bytes": 847152
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsinspector-modern/cdp/CMakeFiles/jsinspector_cdp.dir/CdpJson.cpp.o",
+      "bytes": 550176
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsinspector-modern/tracing/CMakeFiles/jsinspector_tracing.dir/EventLoopReporter.cpp.o",
+      "bytes": 5248
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsinspector-modern/tracing/CMakeFiles/jsinspector_tracing.dir/RuntimeSamplingProfileTraceEventSerializer.cpp.o",
+      "bytes": 865268
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsinspector-modern/tracing/CMakeFiles/jsinspector_tracing.dir/PerformanceTracer.cpp.o",
+      "bytes": 1001456
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/RuntimeTarget.cpp.o",
+      "bytes": 1168316
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/TracingAgent.cpp.o",
+      "bytes": 641616
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/InspectorUtilities.cpp.o",
+      "bytes": 126716
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/ExecutionContextManager.cpp.o",
+      "bytes": 6900
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/ExecutionContext.cpp.o",
+      "bytes": 226104
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/InspectorInterfaces.cpp.o",
+      "bytes": 765040
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/RuntimeAgent.cpp.o",
+      "bytes": 1075688
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/HostTarget.cpp.o",
+      "bytes": 1692772
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/FallbackRuntimeAgentDelegate.cpp.o",
+      "bytes": 524224
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/NetworkIOAgent.cpp.o",
+      "bytes": 2444340
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/RuntimeTargetDebuggerSessionObserver.cpp.o",
+      "bytes": 385348
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/ConsoleMessage.cpp.o",
+      "bytes": 259180
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/InstanceTarget.cpp.o",
+      "bytes": 722752
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/InspectorFlags.cpp.o",
+      "bytes": 133952
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/RuntimeTargetConsole.cpp.o",
+      "bytes": 2080020
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/HostAgent.cpp.o",
+      "bytes": 155772
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/InspectorPackagerConnection.cpp.o",
+      "bytes": 1302084
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/FallbackRuntimeTargetDelegate.cpp.o",
+      "bytes": 188140
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/InstanceAgent.cpp.o",
+      "bytes": 753596
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsinspector-modern/network/CMakeFiles/jsinspector_network.dir/CdpNetwork.cpp.o",
+      "bytes": 711364
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsinspector-modern/network/CMakeFiles/jsinspector_network.dir/BoundedRequestBuffer.cpp.o",
+      "bytes": 586944
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsinspector-modern/network/CMakeFiles/jsinspector_network.dir/HttpUtils.cpp.o",
+      "bytes": 185620
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsinspector-modern/network/CMakeFiles/jsinspector_network.dir/NetworkReporter.cpp.o",
+      "bytes": 741412
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/nativemodule/core/CMakeFiles/react_nativemodule_core.dir/ReactCommon/TurboModulePerfLogger.cpp.o",
+      "bytes": 57952
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/nativemodule/core/CMakeFiles/react_nativemodule_core.dir/ReactCommon/TurboCxxModule.cpp.o",
+      "bytes": 1461660
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/nativemodule/core/CMakeFiles/react_nativemodule_core.dir/ReactCommon/TurboModuleBinding.cpp.o",
+      "bytes": 420328
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/nativemodule/core/CMakeFiles/react_nativemodule_core.dir/ReactCommon/TurboModuleWithJSIBindings.cpp.o",
+      "bytes": 38332
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/nativemodule/core/CMakeFiles/react_nativemodule_core.dir/ReactCommon/TurboModule.cpp.o",
+      "bytes": 820536
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/nativemodule/core/CMakeFiles/react_nativemodule_core.dir/ReactCommon/CxxTurboModuleUtils.cpp.o",
+      "bytes": 362388
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/nativemodule/core/CMakeFiles/react_nativemodule_core.dir/ReactCommon/TurboModuleUtils.cpp.o",
+      "bytes": 334980
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/nativemodule/core/CMakeFiles/react_nativemodule_core.dir/platform/android/ReactCommon/JavaInteropTurboModule.cpp.o",
+      "bytes": 723520
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/nativemodule/core/CMakeFiles/react_nativemodule_core.dir/platform/android/ReactCommon/JavaTurboModule.cpp.o",
+      "bytes": 3632016
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/nativemodule/idlecallbacks/CMakeFiles/react_nativemodule_idlecallbacks.dir/NativeIdleCallbacks.cpp.o",
+      "bytes": 1024392
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/nativemodule/microtasks/CMakeFiles/react_nativemodule_microtasks.dir/NativeMicrotasks.cpp.o",
+      "bytes": 571572
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/nativemodule/defaults/CMakeFiles/react_nativemodule_defaults.dir/DefaultTurboModules.cpp.o",
+      "bytes": 220076
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/nativemodule/dom/CMakeFiles/react_nativemodule_dom.dir/NativeDOM.cpp.o",
+      "bytes": 1091520
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/nativemodule/featureflags/CMakeFiles/react_nativemodule_featureflags.dir/NativeReactNativeFeatureFlags.cpp.o",
+      "bytes": 588468
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/imagemanager/CMakeFiles/react_renderer_imagemanager.dir/ImageResponse.cpp.o",
+      "bytes": 29116
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/imagemanager/CMakeFiles/react_renderer_imagemanager.dir/ImageRequest.cpp.o",
+      "bytes": 219068
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/imagemanager/CMakeFiles/react_renderer_imagemanager.dir/ImageResponseObserverCoordinator.cpp.o",
+      "bytes": 195488
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/imagemanager/CMakeFiles/react_renderer_imagemanager.dir/ImageTelemetry.cpp.o",
+      "bytes": 39620
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/imagemanager/CMakeFiles/react_renderer_imagemanager.dir/platform/android/react/renderer/imagemanager/ImageFetcher.cpp.o",
+      "bytes": 605344
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/imagemanager/CMakeFiles/react_renderer_imagemanager.dir/platform/android/react/renderer/imagemanager/ImageManager.cpp.o",
+      "bytes": 272428
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/RawPropsKey.cpp.o",
+      "bytes": 106588
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/RawPropsKeyMap.cpp.o",
+      "bytes": 339472
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/LayoutMetrics.cpp.o",
+      "bytes": 32004
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/EventListener.cpp.o",
+      "bytes": 163640
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/ShadowNodeFragment.cpp.o",
+      "bytes": 101000
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/LayoutableShadowNode.cpp.o",
+      "bytes": 585040
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/StateUpdate.cpp.o",
+      "bytes": 89284
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/ComponentDescriptor.cpp.o",
+      "bytes": 193700
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/InstanceHandle.cpp.o",
+      "bytes": 39268
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/EventDispatcher.cpp.o",
+      "bytes": 241480
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/EventBeat.cpp.o",
+      "bytes": 147272
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/EventEmitter.cpp.o",
+      "bytes": 356776
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/ValueFactoryEventPayload.cpp.o",
+      "bytes": 59228
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/Props.cpp.o",
+      "bytes": 455732
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/RawEvent.cpp.o",
+      "bytes": 118796
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/EventQueue.cpp.o",
+      "bytes": 472332
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/RawPropsParser.cpp.o",
+      "bytes": 602320
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/Sealable.cpp.o",
+      "bytes": 19304
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/RawValue.cpp.o",
+      "bytes": 34016
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/ReactRootViewTagGenerator.cpp.o",
+      "bytes": 42212
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/EventQueueProcessor.cpp.o",
+      "bytes": 193264
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/ShadowNode.cpp.o",
+      "bytes": 864824
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/DynamicPropsUtilities.cpp.o",
+      "bytes": 433156
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/State.cpp.o",
+      "bytes": 116116
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/LayoutConstraints.cpp.o",
+      "bytes": 38136
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/ShadowNodeFamily.cpp.o",
+      "bytes": 433968
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/DynamicEventPayload.cpp.o",
+      "bytes": 201688
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/RawProps.cpp.o",
+      "bytes": 445332
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/ShadowNodeTraits.cpp.o",
+      "bytes": 4504
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/core/CMakeFiles/react_renderer_core.dir/EventTarget.cpp.o",
+      "bytes": 51276
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/css/CMakeFiles/react_renderer_css.dir/CSSDummy.cpp.o",
+      "bytes": 2548
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/mounting/CMakeFiles/react_renderer_mounting.dir/MountingTransaction.cpp.o",
+      "bytes": 266952
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/mounting/CMakeFiles/react_renderer_mounting.dir/Differentiator.cpp.o",
+      "bytes": 953040
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/mounting/CMakeFiles/react_renderer_mounting.dir/MountingCoordinator.cpp.o",
+      "bytes": 534932
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/mounting/CMakeFiles/react_renderer_mounting.dir/ShadowView.cpp.o",
+      "bytes": 157096
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/mounting/CMakeFiles/react_renderer_mounting.dir/ShadowViewMutation.cpp.o",
+      "bytes": 157720
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/mounting/CMakeFiles/react_renderer_mounting.dir/updateMountedFlag.cpp.o",
+      "bytes": 132560
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/mounting/CMakeFiles/react_renderer_mounting.dir/ShadowTreeRegistry.cpp.o",
+      "bytes": 245584
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/mounting/CMakeFiles/react_renderer_mounting.dir/ShadowTree.cpp.o",
+      "bytes": 2105636
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/mounting/CMakeFiles/react_renderer_mounting.dir/ShadowTreeRevision.cpp.o",
+      "bytes": 89472
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/mounting/CMakeFiles/react_renderer_mounting.dir/TelemetryController.cpp.o",
+      "bytes": 278984
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/mounting/CMakeFiles/react_renderer_mounting.dir/stubs/stubs.cpp.o",
+      "bytes": 553084
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/mounting/CMakeFiles/react_renderer_mounting.dir/stubs/StubView.cpp.o",
+      "bytes": 166004
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/mounting/CMakeFiles/react_renderer_mounting.dir/stubs/StubViewTree.cpp.o",
+      "bytes": 803564
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/mounting/CMakeFiles/react_renderer_mounting.dir/internal/CullingContext.cpp.o",
+      "bytes": 281688
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/mounting/CMakeFiles/react_renderer_mounting.dir/internal/sliceChildShadowNodeViewPairs.cpp.o",
+      "bytes": 491792
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/mapbuffer/CMakeFiles/react_renderer_mapbuffer.dir/MapBufferBuilder.cpp.o",
+      "bytes": 350756
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/mapbuffer/CMakeFiles/react_renderer_mapbuffer.dir/MapBuffer.cpp.o",
+      "bytes": 244320
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/element/CMakeFiles/react_renderer_element.dir/Element.cpp.o",
+      "bytes": 89428
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/element/CMakeFiles/react_renderer_element.dir/ComponentBuilder.cpp.o",
+      "bytes": 311412
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/element/CMakeFiles/react_renderer_element.dir/ElementFragment.cpp.o",
+      "bytes": 89456
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/scheduler/libreact_renderer_scheduler.a",
+      "bytes": 53697114
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/scheduler/CMakeFiles/react_renderer_scheduler.dir/SurfaceManager.cpp.o",
+      "bytes": 788904
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/scheduler/CMakeFiles/react_renderer_scheduler.dir/Scheduler.cpp.o",
+      "bytes": 1564960
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/scheduler/CMakeFiles/react_renderer_scheduler.dir/SurfaceHandler.cpp.o",
+      "bytes": 706848
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/attributedstring/CMakeFiles/react_renderer_attributedstring.dir/AttributedString.cpp.o",
+      "bytes": 462704
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/attributedstring/CMakeFiles/react_renderer_attributedstring.dir/TextAttributes.cpp.o",
+      "bytes": 451036
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/attributedstring/CMakeFiles/react_renderer_attributedstring.dir/AttributedStringBox.cpp.o",
+      "bytes": 391216
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/attributedstring/CMakeFiles/react_renderer_attributedstring.dir/ParagraphAttributes.cpp.o",
+      "bytes": 121904
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/textlayoutmanager/CMakeFiles/react_renderer_textlayoutmanager.dir/TextMeasureCache.cpp.o",
+      "bytes": 316776
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/textlayoutmanager/CMakeFiles/react_renderer_textlayoutmanager.dir/platform/android/react/renderer/textlayoutmanager/TextLayoutManager.cpp.o",
+      "bytes": 2485816
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/consistency/CMakeFiles/react_renderer_consistency.dir/ShadowTreeRevisionConsistencyManager.cpp.o",
+      "bytes": 2652
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/leakchecker/libreact_renderer_leakchecker.a",
+      "bytes": 7961158
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/leakchecker/CMakeFiles/react_renderer_leakchecker.dir/LeakChecker.cpp.o",
+      "bytes": 355268
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/leakchecker/CMakeFiles/react_renderer_leakchecker.dir/WeakFamilyRegistry.cpp.o",
+      "bytes": 337984
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/runtimescheduler/libreact_renderer_runtimescheduler.a",
+      "bytes": 10215240
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/runtimescheduler/CMakeFiles/react_renderer_runtimescheduler.dir/Task.cpp.o",
+      "bytes": 176916
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/runtimescheduler/CMakeFiles/react_renderer_runtimescheduler.dir/RuntimeSchedulerCallInvoker.cpp.o",
+      "bytes": 447596
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/runtimescheduler/CMakeFiles/react_renderer_runtimescheduler.dir/RuntimeScheduler_Modern.cpp.o",
+      "bytes": 853224
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/runtimescheduler/CMakeFiles/react_renderer_runtimescheduler.dir/RuntimeScheduler.cpp.o",
+      "bytes": 297200
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/runtimescheduler/CMakeFiles/react_renderer_runtimescheduler.dir/RuntimeSchedulerBinding.cpp.o",
+      "bytes": 606896
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/runtimescheduler/CMakeFiles/react_renderer_runtimescheduler.dir/RuntimeScheduler_Legacy.cpp.o",
+      "bytes": 665920
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/safeareaview/librrc_safeareaview.a",
+      "bytes": 62943178
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/safeareaview/CMakeFiles/rrc_safeareaview.dir/SafeAreaViewShadowNode.cpp.o",
+      "bytes": 89924
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/safeareaview/CMakeFiles/rrc_safeareaview.dir/SafeAreaViewState.cpp.o",
+      "bytes": 399588
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/scrollview/librrc_scrollview.a",
+      "bytes": 30577020
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/scrollview/CMakeFiles/rrc_scrollview.dir/ScrollEvent.cpp.o",
+      "bytes": 525620
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/scrollview/CMakeFiles/rrc_scrollview.dir/ScrollViewState.cpp.o",
+      "bytes": 40296
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/scrollview/CMakeFiles/rrc_scrollview.dir/BaseScrollViewProps.cpp.o",
+      "bytes": 2132220
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/scrollview/CMakeFiles/rrc_scrollview.dir/ScrollViewEventEmitter.cpp.o",
+      "bytes": 225992
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/scrollview/CMakeFiles/rrc_scrollview.dir/ScrollViewShadowNode.cpp.o",
+      "bytes": 965368
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/scrollview/CMakeFiles/rrc_scrollview.dir/platform/android/react/renderer/components/scrollview/AndroidHorizontalScrollContentViewShadowNode.cpp.o",
+      "bytes": 354468
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/scrollview/CMakeFiles/rrc_scrollview.dir/platform/android/react/renderer/components/scrollview/HostPlatformScrollViewProps.cpp.o",
+      "bytes": 1084936
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/textinput/CMakeFiles/rrc_textinput.dir/TextInputEventEmitter.cpp.o",
+      "bytes": 721772
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/textinput/CMakeFiles/rrc_textinput.dir/BaseTextInputProps.cpp.o",
+      "bytes": 2689796
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/textinput/CMakeFiles/rrc_textinput.dir/platform/android/react/renderer/components/androidtextinput/AndroidTextInputShadowNode.cpp.o",
+      "bytes": 1225916
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/textinput/CMakeFiles/rrc_textinput.dir/platform/android/react/renderer/components/androidtextinput/AndroidTextInputState.cpp.o",
+      "bytes": 705256
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/textinput/CMakeFiles/rrc_textinput.dir/platform/android/react/renderer/components/androidtextinput/AndroidTextInputProps.cpp.o",
+      "bytes": 2872480
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/progressbar/CMakeFiles/rrc_progressbar.dir/android/react/renderer/components/progressbar/AndroidProgressBarShadowNode.cpp.o",
+      "bytes": 363808
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/progressbar/CMakeFiles/rrc_progressbar.dir/android/react/renderer/components/progressbar/AndroidProgressBarMeasurementsManager.cpp.o",
+      "bytes": 851988
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/image/CMakeFiles/rrc_image.dir/ImageEventEmitter.cpp.o",
+      "bytes": 541172
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/image/CMakeFiles/rrc_image.dir/ImageState.cpp.o",
+      "bytes": 205016
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/image/CMakeFiles/rrc_image.dir/ImageComponentDescriptor.cpp.o",
+      "bytes": 2186132
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/image/CMakeFiles/rrc_image.dir/ImageShadowNode.cpp.o",
+      "bytes": 1131044
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/image/CMakeFiles/rrc_image.dir/ImageProps.cpp.o",
+      "bytes": 3289364
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/view/CMakeFiles/rrc_view.dir/BaseViewProps.cpp.o",
+      "bytes": 7046412
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/view/CMakeFiles/rrc_view.dir/AccessibilityProps.cpp.o",
+      "bytes": 1531692
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/view/CMakeFiles/rrc_view.dir/BaseViewEventEmitter.cpp.o",
+      "bytes": 393488
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/view/CMakeFiles/rrc_view.dir/BaseTouch.cpp.o",
+      "bytes": 52880
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/view/CMakeFiles/rrc_view.dir/YogaStylableProps.cpp.o",
+      "bytes": 1444060
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/view/CMakeFiles/rrc_view.dir/TouchEvent.cpp.o",
+      "bytes": 32036
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/view/CMakeFiles/rrc_view.dir/TouchEventEmitter.cpp.o",
+      "bytes": 611284
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/view/CMakeFiles/rrc_view.dir/YogaLayoutableShadowNode.cpp.o",
+      "bytes": 966968
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/view/CMakeFiles/rrc_view.dir/PointerEvent.cpp.o",
+      "bytes": 183720
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/view/CMakeFiles/rrc_view.dir/ViewShadowNode.cpp.o",
+      "bytes": 903184
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/view/CMakeFiles/rrc_view.dir/platform/android/react/renderer/components/view/HostPlatformViewProps.cpp.o",
+      "bytes": 2679100
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/switch/librrc_switch.a",
+      "bytes": 63158426
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/switch/CMakeFiles/rrc_switch.dir/androidswitch/react/renderer/components/androidswitch/AndroidSwitchShadowNode.cpp.o",
+      "bytes": 361660
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/switch/CMakeFiles/rrc_switch.dir/androidswitch/react/renderer/components/androidswitch/AndroidSwitchMeasurementsManager.cpp.o",
+      "bytes": 341324
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/root/CMakeFiles/rrc_root.dir/RootProps.cpp.o",
+      "bytes": 868648
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/root/CMakeFiles/rrc_root.dir/RootShadowNode.cpp.o",
+      "bytes": 1002024
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/text/CMakeFiles/rrc_text.dir/ParagraphComponentDescriptor.cpp.o",
+      "bytes": 89896
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/text/CMakeFiles/rrc_text.dir/RawTextProps.cpp.o",
+      "bytes": 457676
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/text/CMakeFiles/rrc_text.dir/ParagraphEventEmitter.cpp.o",
+      "bytes": 397156
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/text/CMakeFiles/rrc_text.dir/BaseTextProps.cpp.o",
+      "bytes": 2731404
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/text/CMakeFiles/rrc_text.dir/ParagraphShadowNode.cpp.o",
+      "bytes": 1423156
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/text/CMakeFiles/rrc_text.dir/ParagraphProps.cpp.o",
+      "bytes": 1383444
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/text/CMakeFiles/rrc_text.dir/TextProps.cpp.o",
+      "bytes": 488512
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/text/CMakeFiles/rrc_text.dir/BaseTextShadowNode.cpp.o",
+      "bytes": 442376
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/text/CMakeFiles/rrc_text.dir/TextShadowNode.cpp.o",
+      "bytes": 89832
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/text/CMakeFiles/rrc_text.dir/RawTextShadowNode.cpp.o",
+      "bytes": 89856
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/text/CMakeFiles/rrc_text.dir/platform/android/react/renderer/components/text/ParagraphState.cpp.o",
+      "bytes": 809424
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/modal/librrc_modal.a",
+      "bytes": 60192412
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/modal/CMakeFiles/rrc_modal.dir/ModalHostViewState.cpp.o",
+      "bytes": 403804
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/modal/CMakeFiles/rrc_modal.dir/ModalHostViewShadowNode.cpp.o",
+      "bytes": 89904
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/modal/CMakeFiles/rrc_modal.dir/platform/android/ModalHostViewUtils.cpp.o",
+      "bytes": 167244
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/legacyviewmanagerinterop/CMakeFiles/rrc_legacyviewmanagerinterop.dir/UnstableLegacyViewManagerAutomaticComponentDescriptor.cpp.o",
+      "bytes": 1397724
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/legacyviewmanagerinterop/CMakeFiles/rrc_legacyviewmanagerinterop.dir/UnstableLegacyViewManagerAutomaticShadowNode.cpp.o",
+      "bytes": 3404
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/legacyviewmanagerinterop/CMakeFiles/rrc_legacyviewmanagerinterop.dir/LegacyViewManagerInteropViewProps.cpp.o",
+      "bytes": 765748
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/legacyviewmanagerinterop/CMakeFiles/rrc_legacyviewmanagerinterop.dir/LegacyViewManagerInteropShadowNode.cpp.o",
+      "bytes": 3348
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/dom/CMakeFiles/react_renderer_dom.dir/DOM.cpp.o",
+      "bytes": 356868
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/componentregistry/native/CMakeFiles/rrc_native.dir/NativeComponentRegistryBinding.cpp.o",
+      "bytes": 318312
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/componentregistry/CMakeFiles/react_renderer_componentregistry.dir/componentNameByReactViewName.cpp.o",
+      "bytes": 133260
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/componentregistry/CMakeFiles/react_renderer_componentregistry.dir/ComponentDescriptorRegistry.cpp.o",
+      "bytes": 2132608
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/componentregistry/CMakeFiles/react_renderer_componentregistry.dir/ComponentDescriptorProviderRegistry.cpp.o",
+      "bytes": 440828
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/telemetry/CMakeFiles/react_renderer_telemetry.dir/TransactionTelemetry.cpp.o",
+      "bytes": 153492
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/telemetry/CMakeFiles/react_renderer_telemetry.dir/SurfaceTelemetry.cpp.o",
+      "bytes": 178604
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/graphics/CMakeFiles/react_renderer_graphics.dir/ColorComponents.cpp.o",
+      "bytes": 32780
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/graphics/CMakeFiles/react_renderer_graphics.dir/Color.cpp.o",
+      "bytes": 47240
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/graphics/CMakeFiles/react_renderer_graphics.dir/Transform.cpp.o",
+      "bytes": 331944
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/observers/events/CMakeFiles/react_renderer_observers_events.dir/EventPerformanceLogger.cpp.o",
+      "bytes": 604832
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/animations/libreact_renderer_animations.a",
+      "bytes": 46826666
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/animations/CMakeFiles/react_renderer_animations.dir/utils.cpp.o",
+      "bytes": 118836
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/animations/CMakeFiles/react_renderer_animations.dir/LayoutAnimationDriver.cpp.o",
+      "bytes": 487940
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/animations/CMakeFiles/react_renderer_animations.dir/LayoutAnimationKeyFrameManager.cpp.o",
+      "bytes": 2644692
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/debug/CMakeFiles/react_renderer_debug.dir/DebugStringConvertibleItem.cpp.o",
+      "bytes": 32088
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/debug/CMakeFiles/react_renderer_debug.dir/DebugStringConvertible.cpp.o",
+      "bytes": 32784
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/uimanager/CMakeFiles/react_renderer_uimanager.dir/UIManagerBinding.cpp.o",
+      "bytes": 3106060
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/uimanager/CMakeFiles/react_renderer_uimanager.dir/PointerEventsProcessor.cpp.o",
+      "bytes": 917840
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/uimanager/CMakeFiles/react_renderer_uimanager.dir/UIManager.cpp.o",
+      "bytes": 2655368
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/uimanager/CMakeFiles/react_renderer_uimanager.dir/UIManagerUpdateShadowTree.cpp.o",
+      "bytes": 1393652
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/uimanager/CMakeFiles/react_renderer_uimanager.dir/PointerHoverTracker.cpp.o",
+      "bytes": 406940
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/uimanager/CMakeFiles/react_renderer_uimanager.dir/AppRegistryBinding.cpp.o",
+      "bytes": 189112
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/uimanager/consistency/CMakeFiles/react_renderer_uimanager_consistency.dir/LazyShadowTreeRevisionConsistencyManager.cpp.o",
+      "bytes": 387196
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/runtime/CMakeFiles/bridgeless.dir/BufferedRuntimeExecutor.cpp.o",
+      "bytes": 185416
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/runtime/CMakeFiles/bridgeless.dir/BridgelessNativeMethodCallInvoker.cpp.o",
+      "bytes": 101704
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/runtime/CMakeFiles/bridgeless.dir/ReactInstance.cpp.o",
+      "bytes": 3359120
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/runtime/CMakeFiles/bridgeless.dir/TimerManager.cpp.o",
+      "bytes": 1063140
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/runtime/nativeviewconfig/CMakeFiles/bridgelessnativeviewconfig.dir/LegacyUIManagerConstantsProviderBinding.cpp.o",
+      "bytes": 366364
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/runtime/hermes/CMakeFiles/bridgelesshermes.dir/HermesInstance.cpp.o",
+      "bytes": 378172
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/utils/CMakeFiles/react_utils.dir/jsi-utils.cpp.o",
+      "bytes": 204432
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/utils/CMakeFiles/react_utils.dir/RunLoopObserver.cpp.o",
+      "bytes": 53580
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/utils/CMakeFiles/react_utils.dir/platform/android/react/utils/LowPriorityExecutor.cpp.o",
+      "bytes": 312180
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/bridging/CMakeFiles/react_bridging.dir/LongLivedObject.cpp.o",
+      "bytes": 371612
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/featureflags/CMakeFiles/react_featureflags.dir/ReactNativeFeatureFlagsAccessor.cpp.o",
+      "bytes": 426960
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/featureflags/CMakeFiles/react_featureflags.dir/ReactNativeFeatureFlags.cpp.o",
+      "bytes": 225424
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/performance/timeline/CMakeFiles/react_performance_timeline.dir/PerformanceObserverRegistry.cpp.o",
+      "bytes": 219496
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/performance/timeline/CMakeFiles/react_performance_timeline.dir/PerformanceObserver.cpp.o",
+      "bytes": 512580
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/performance/timeline/CMakeFiles/react_performance_timeline.dir/PerformanceEntryCircularBuffer.cpp.o",
+      "bytes": 827536
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/performance/timeline/CMakeFiles/react_performance_timeline.dir/PerformanceEntryReporter.cpp.o",
+      "bytes": 1171436
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/performance/timeline/CMakeFiles/react_performance_timeline.dir/PerformanceEntryKeyedBuffer.cpp.o",
+      "bytes": 915712
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/debug/CMakeFiles/react_debug.dir/react_native_assert.cpp.o",
+      "bytes": 5504
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jserrorhandler/CMakeFiles/jserrorhandler.dir/StackTraceParser.cpp.o",
+      "bytes": 2091200
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jserrorhandler/CMakeFiles/jserrorhandler.dir/JsErrorHandler.cpp.o",
+      "bytes": 798808
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/generated/source/codegen/jni/CMakeFiles/react_codegen_rncore.dir/FBReactNativeSpec-generated.cpp.o",
+      "bytes": 4203196
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/generated/source/codegen/jni/CMakeFiles/react_codegen_rncore.dir/react/renderer/components/FBReactNativeSpec/Props.cpp.o",
+      "bytes": 2830224
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/generated/source/codegen/jni/CMakeFiles/react_codegen_rncore.dir/react/renderer/components/FBReactNativeSpec/States.cpp.o",
+      "bytes": 89424
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/generated/source/codegen/jni/CMakeFiles/react_codegen_rncore.dir/react/renderer/components/FBReactNativeSpec/ComponentDescriptors.cpp.o",
+      "bytes": 3171664
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/generated/source/codegen/jni/CMakeFiles/react_codegen_rncore.dir/react/renderer/components/FBReactNativeSpec/FBReactNativeSpecJSI-generated.cpp.o",
+      "bytes": 3042312
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/generated/source/codegen/jni/CMakeFiles/react_codegen_rncore.dir/react/renderer/components/FBReactNativeSpec/EventEmitters.cpp.o",
+      "bytes": 1022164
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/generated/source/codegen/jni/CMakeFiles/react_codegen_rncore.dir/react/renderer/components/FBReactNativeSpec/ShadowNodes.cpp.o",
+      "bytes": 91460
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/boost/libboost.a",
+      "bytes": 7284
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/boost/CMakeFiles/boost.dir/asm/x86_64/make_x86_64_sysv_elf_gas.S.o",
+      "bytes": 2424
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/boost/CMakeFiles/boost.dir/asm/x86_64/jump_x86_64_sysv_elf_gas.S.o",
+      "bytes": 2200
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/boost/CMakeFiles/boost.dir/asm/x86_64/ontop_x86_64_sysv_elf_gas.S.o",
+      "bytes": 2200
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/fmt/libfmt.a",
+      "bytes": 1417218
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/fmt/CMakeFiles/fmt.dir/src/format.cc.o",
+      "bytes": 1396356
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/glog/libglog.a",
+      "bytes": 1681588
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/glog/CMakeFiles/glog.dir/glog-0.3.5/src/raw_logging.cc.o",
+      "bytes": 102084
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/glog/CMakeFiles/glog.dir/glog-0.3.5/src/demangle.cc.o",
+      "bytes": 186076
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/glog/CMakeFiles/glog.dir/glog-0.3.5/src/utilities.cc.o",
+      "bytes": 179508
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/glog/CMakeFiles/glog.dir/glog-0.3.5/src/signalhandler.cc.o",
+      "bytes": 89032
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/glog/CMakeFiles/glog.dir/glog-0.3.5/src/vlog_is_on.cc.o",
+      "bytes": 163760
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/glog/CMakeFiles/glog.dir/glog-0.3.5/src/symbolize.cc.o",
+      "bytes": 88460
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/glog/CMakeFiles/glog.dir/glog-0.3.5/src/logging.cc.o",
+      "bytes": 858936
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/double-conversion/libdouble-conversion.a",
+      "bytes": 365546
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/double-conversion/CMakeFiles/double-conversion.dir/double-conversion/diy-fp.cc.o",
+      "bytes": 5320
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/double-conversion/CMakeFiles/double-conversion.dir/double-conversion/strtod.cc.o",
+      "bytes": 43740
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/double-conversion/CMakeFiles/double-conversion.dir/double-conversion/cached-powers.cc.o",
+      "bytes": 14088
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/double-conversion/CMakeFiles/double-conversion.dir/double-conversion/bignum-dtoa.cc.o",
+      "bytes": 31484
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/double-conversion/CMakeFiles/double-conversion.dir/double-conversion/fast-dtoa.cc.o",
+      "bytes": 38324
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/double-conversion/CMakeFiles/double-conversion.dir/double-conversion/bignum.cc.o",
+      "bytes": 96352
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/double-conversion/CMakeFiles/double-conversion.dir/double-conversion/double-conversion.cc.o",
+      "bytes": 85976
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/double-conversion/CMakeFiles/double-conversion.dir/double-conversion/fixed-dtoa.cc.o",
+      "bytes": 46496
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/folly/libfolly_runtime.a",
+      "bytes": 10492956
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/String.cpp.o",
+      "bytes": 429708
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/SharedMutex.cpp.o",
+      "bytes": 431716
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/FileUtil.cpp.o",
+      "bytes": 225056
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/Demangle.cpp.o",
+      "bytes": 176960
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/Conv.cpp.o",
+      "bytes": 690296
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/Format.cpp.o",
+      "bytes": 440584
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/ScopeGuard.cpp.o",
+      "bytes": 116788
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/Unicode.cpp.o",
+      "bytes": 205456
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/net/NetOps.cpp.o",
+      "bytes": 70832
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/memory/detail/MallocImpl.cpp.o",
+      "bytes": 5496
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/synchronization/SanitizeThread.cpp.o",
+      "bytes": 6860
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/synchronization/ParkingLot.cpp.o",
+      "bytes": 58492
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/hash/SpookyHashV2.cpp.o",
+      "bytes": 73504
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/lang/SafeAssert.cpp.o",
+      "bytes": 74316
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/lang/ToAscii.cpp.o",
+      "bytes": 47460
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/lang/CString.cpp.o",
+      "bytes": 45508
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/container/detail/F14Table.cpp.o",
+      "bytes": 66432
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/concurrency/CacheLocality.cpp.o",
+      "bytes": 1010812
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/system/ThreadId.cpp.o",
+      "bytes": 73056
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/system/AtFork.cpp.o",
+      "bytes": 266804
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/detail/UniqueInstance.cpp.o",
+      "bytes": 283840
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/detail/FileUtilDetail.cpp.o",
+      "bytes": 118984
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/detail/SplitStringSimd.cpp.o",
+      "bytes": 1944548
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/detail/Futex.cpp.o",
+      "bytes": 146092
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/json/dynamic.cpp.o",
+      "bytes": 1327104
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/json/json_pointer.cpp.o",
+      "bytes": 391348
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/json/json.cpp.o",
+      "bytes": 1606412
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/portability/SysUio.cpp.o",
+      "bytes": 41804
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/first-party/jni-lib-merge/CMakeFiles/jni_lib_merge_glue.dir/jni_lib_merge.c.o",
+      "bytes": 36080
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/first-party/fbgloginit/CMakeFiles/glog_init.dir/glog_init.cpp.o",
+      "bytes": 143140
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/first-party/yogajni/CMakeFiles/yoga.dir/jni/YGJNIVanilla.cpp.o",
+      "bytes": 424168
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/first-party/yogajni/CMakeFiles/yoga.dir/jni/yogajni.cpp.o",
+      "bytes": 57300
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/first-party/yogajni/CMakeFiles/yoga.dir/jni/LayoutContext.cpp.o",
+      "bytes": 173984
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/first-party/yogajni/CMakeFiles/yoga.dir/jni/corefunctions.cpp.o",
+      "bytes": 93604
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/first-party/yogajni/CMakeFiles/yoga.dir/jni/common.cpp.o",
+      "bytes": 71284
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/first-party/yogajni/CMakeFiles/yoga.dir/jni/YogaJniException.cpp.o",
+      "bytes": 104740
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/mapbuffer/CMakeFiles/mapbufferjni.dir/react/common/mapbuffer/JWritableMapBuffer.cpp.o",
+      "bytes": 618740
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/mapbuffer/CMakeFiles/mapbufferjni.dir/react/common/mapbuffer/JReadableMapBuffer.cpp.o",
+      "bytes": 350184
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/runtime/hermes/jni/CMakeFiles/hermesinstancejni.dir/JHermesInstance.cpp.o",
+      "bytes": 298156
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/runtime/hermes/jni/CMakeFiles/hermesinstancejni.dir/OnLoad.cpp.o",
+      "bytes": 152004
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/runtime/jni/CMakeFiles/rninstance.dir/JJSTimerExecutor.cpp.o",
+      "bytes": 495300
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/runtime/jni/CMakeFiles/rninstance.dir/JavaTimerRegistry.cpp.o",
+      "bytes": 165432
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/runtime/jni/CMakeFiles/rninstance.dir/JReactHostInspectorTarget.cpp.o",
+      "bytes": 1317504
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/runtime/jni/CMakeFiles/rninstance.dir/JJavaTimerManager.cpp.o",
+      "bytes": 171000
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/runtime/jni/CMakeFiles/rninstance.dir/JReactInstance.cpp.o",
+      "bytes": 2286452
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/runtime/jni/CMakeFiles/rninstance.dir/OnLoad.cpp.o",
+      "bytes": 152060
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/runtime/jni/CMakeFiles/rninstance.dir/JReactExceptionManager.cpp.o",
+      "bytes": 640504
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/newarchdefaults/CMakeFiles/react_newarchdefaults.dir/DefaultComponentsRegistry.cpp.o",
+      "bytes": 1999420
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/newarchdefaults/CMakeFiles/react_newarchdefaults.dir/OnLoad.cpp.o",
+      "bytes": 205252
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/newarchdefaults/CMakeFiles/react_newarchdefaults.dir/DefaultTurboModuleManagerDelegate.cpp.o",
+      "bytes": 799492
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/turbomodule/CMakeFiles/turbomodulejsijni.dir/ReactCommon/TurboModuleManager.cpp.o",
+      "bytes": 1824884
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/turbomodule/CMakeFiles/turbomodulejsijni.dir/ReactCommon/OnLoad.cpp.o",
+      "bytes": 345340
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/turbomodule/CMakeFiles/turbomodulejsijni.dir/ReactCommon/BindingsInstallerHolder.cpp.o",
+      "bytes": 152212
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/turbomodule/CMakeFiles/callinvokerholder.dir/ReactCommon/CallInvokerHolder.cpp.o",
+      "bytes": 47344
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/turbomodule/CMakeFiles/callinvokerholder.dir/ReactCommon/NativeMethodCallInvokerHolder.cpp.o",
+      "bytes": 48084
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/devsupport/CMakeFiles/react_devsupportjni.dir/JCxxInspectorPackagerConnectionWebSocketDelegate.cpp.o",
+      "bytes": 432192
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/devsupport/CMakeFiles/react_devsupportjni.dir/JInspectorFlags.cpp.o",
+      "bytes": 202128
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/devsupport/CMakeFiles/react_devsupportjni.dir/JCxxInspectorPackagerConnectionWebSocket.cpp.o",
+      "bytes": 301356
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/devsupport/CMakeFiles/react_devsupportjni.dir/JCxxInspectorPackagerConnection.cpp.o",
+      "bytes": 466076
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/devsupport/CMakeFiles/react_devsupportjni.dir/OnLoad.cpp.o",
+      "bytes": 149912
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/devsupport/CMakeFiles/react_devsupportjni.dir/JCxxInspectorPackagerConnectionDelegateImpl.cpp.o",
+      "bytes": 656584
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/fabric/CMakeFiles/fabricjni.dir/JFabricUIManager.cpp.o",
+      "bytes": 277016
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/fabric/CMakeFiles/fabricjni.dir/FabricMountingManager.cpp.o",
+      "bytes": 1748776
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/fabric/CMakeFiles/fabricjni.dir/CoreComponentsRegistry.cpp.o",
+      "bytes": 8680164
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/fabric/CMakeFiles/fabricjni.dir/FabricUIManagerBinding.cpp.o",
+      "bytes": 2425140
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/fabric/CMakeFiles/fabricjni.dir/MountItem.cpp.o",
+      "bytes": 133468
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/fabric/CMakeFiles/fabricjni.dir/ComponentFactory.cpp.o",
+      "bytes": 291140
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/fabric/CMakeFiles/fabricjni.dir/EventBeatManager.cpp.o",
+      "bytes": 444212
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/fabric/CMakeFiles/fabricjni.dir/AndroidEventBeat.cpp.o",
+      "bytes": 198688
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/fabric/CMakeFiles/fabricjni.dir/EventEmitterWrapper.cpp.o",
+      "bytes": 640784
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/fabric/CMakeFiles/fabricjni.dir/StateWrapperImpl.cpp.o",
+      "bytes": 585984
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/fabric/CMakeFiles/fabricjni.dir/OnLoad.cpp.o",
+      "bytes": 205076
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/fabric/CMakeFiles/fabricjni.dir/SurfaceHandlerBinding.cpp.o",
+      "bytes": 696032
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/fabric/CMakeFiles/fabricjni.dir/FocusOrderingHelper.cpp.o",
+      "bytes": 208180
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/hermes/reactexecutor/CMakeFiles/hermes_executor.dir/OnLoad.cpp.o",
+      "bytes": 853620
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/hermes/instrumentation/CMakeFiles/jsijniprofiler.dir/HermesSamplingProfiler.cpp.o",
+      "bytes": 247564
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/hermes/instrumentation/CMakeFiles/jsijniprofiler.dir/OnLoad.cpp.o",
+      "bytes": 150252
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/featureflags/CMakeFiles/react_featureflagsjni.dir/OnLoad.cpp.o",
+      "bytes": 149552
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/featureflags/CMakeFiles/react_featureflagsjni.dir/JReactNativeFeatureFlagsCxxInterop.cpp.o",
+      "bytes": 622712
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/jni/CMakeFiles/reactnativejni_common.dir/OnLoad-common.cpp.o",
+      "bytes": 544356
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/jni/CMakeFiles/reactnativejni_common.dir/JDynamicNative.cpp.o",
+      "bytes": 674820
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/jni/CMakeFiles/reactnativejni_common.dir/ReadableNativeArray.cpp.o",
+      "bytes": 495560
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/jni/CMakeFiles/reactnativejni_common.dir/NativeMap.cpp.o",
+      "bytes": 347640
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/jni/CMakeFiles/reactnativejni_common.dir/WritableNativeArray.cpp.o",
+      "bytes": 667224
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/jni/CMakeFiles/reactnativejni_common.dir/ReadableNativeMap.cpp.o",
+      "bytes": 1213708
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/jni/CMakeFiles/reactnativejni_common.dir/NativeArray.cpp.o",
+      "bytes": 381700
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/jni/CMakeFiles/reactnativejni_common.dir/JReactMarker.cpp.o",
+      "bytes": 400824
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/jni/CMakeFiles/reactnativejni_common.dir/WritableNativeMap.cpp.o",
+      "bytes": 1050124
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/jni/CMakeFiles/reactnativejni_common.dir/NativeCommon.cpp.o",
+      "bytes": 214244
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/jni/CMakeFiles/reactnativejni_common.dir/TransformHelper.cpp.o",
+      "bytes": 1897432
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/jni/CMakeFiles/reactnativejni.dir/CatalystInstanceImpl.cpp.o",
+      "bytes": 2313052
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/jni/CMakeFiles/reactnativejni.dir/JRuntimeScheduler.cpp.o",
+      "bytes": 46392
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/jni/CMakeFiles/reactnativejni.dir/JExecutor.cpp.o",
+      "bytes": 171092
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/jni/CMakeFiles/reactnativejni.dir/JReactCxxErrorHandler.cpp.o",
+      "bytes": 242496
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/jni/CMakeFiles/reactnativejni.dir/ReactInstanceManagerInspectorTarget.cpp.o",
+      "bytes": 1231724
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/jni/CMakeFiles/reactnativejni.dir/InspectorNetworkRequestListener.cpp.o",
+      "bytes": 1084292
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/jni/CMakeFiles/reactnativejni.dir/SafeReleaseJniRef.cpp.o",
+      "bytes": 94196
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/jni/CMakeFiles/reactnativejni.dir/ModuleRegistryBuilder.cpp.o",
+      "bytes": 1045920
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/jni/CMakeFiles/reactnativejni.dir/JSLogging.cpp.o",
+      "bytes": 80924
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/jni/CMakeFiles/reactnativejni.dir/JavaModuleWrapper.cpp.o",
+      "bytes": 1295384
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/jni/CMakeFiles/reactnativejni.dir/JReactSoftExceptionLogger.cpp.o",
+      "bytes": 248236
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/jni/CMakeFiles/reactnativejni.dir/OnLoad.cpp.o",
+      "bytes": 402280
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/jni/CMakeFiles/reactnativejni.dir/JInspector.cpp.o",
+      "bytes": 837012
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/jni/CMakeFiles/reactnativejni.dir/JSLoader.cpp.o",
+      "bytes": 222828
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/jni/CMakeFiles/reactnativejni.dir/JMessageQueueThread.cpp.o",
+      "bytes": 593728
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/jni/CMakeFiles/reactnativejni.dir/MethodInvoker.cpp.o",
+      "bytes": 1241524
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/jni/CMakeFiles/reactnativejni.dir/JRuntimeExecutor.cpp.o",
+      "bytes": 49892
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/jni/CMakeFiles/reactnativejni.dir/JniJSModulesUnbundle.cpp.o",
+      "bytes": 302380
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/reactnativeblob/CMakeFiles/reactnativeblob.dir/BlobCollector.cpp.o",
+      "bytes": 514084
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/reactnativeblob/CMakeFiles/reactnativeblob.dir/OnLoad.cpp.o",
+      "bytes": 149704
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/uimanager/CMakeFiles/uimanagerjni.dir/UIConstantsProviderBinding.cpp.o",
+      "bytes": 1217072
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/uimanager/CMakeFiles/uimanagerjni.dir/ComponentNameResolverBinding.cpp.o",
+      "bytes": 835820
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/uimanager/CMakeFiles/uimanagerjni.dir/OnLoad.cpp.o",
+      "bytes": 151464
+    }
+  ],
+  "bytesRemoved": 597171436,
+  "beforeAvailableBytes": 1276514304,
+  "afterAvailableBytes": 1874800640,
+  "reason": "Reclaim only qualified Run28 x86_64 objects/static-link cache before emulator runtime; source/products/shared libraries/config/toolchain/history preserved, future recompilation required when needed"
+}

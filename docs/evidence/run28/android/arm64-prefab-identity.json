@@ -1,0 +1,16 @@
+{
+  "prefab": "artifacts/run28/prefab-arm64",
+  "sourceHeaders": "node_modules/react-native/ReactAndroid/build/intermediates/prefab_package/release/prefab",
+  "allRun27NativeSourceGuardsMatch": 13,
+  "exportedPatchedHeaders": {
+    "ReactCommon/react/renderer/components/view/YogaLayoutableShadowNode.h": "74ff94afa4419bb920ed30d71aaa6c5c918674592f9979b6224a138580421d0a",
+    "ReactCommon/react/renderer/textlayoutmanager/TextMeasureCache.h": "549099d6f19ea58e67e636c7b257c0b960e3c0a8c4764c2afac693b8894afd69",
+    "ReactCommon/react/renderer/core/LayoutContext.h": "27f37642e5af50be464397bbfd57b1a76a0151d3b0c2b29a860ade0e8bdd8053"
+  },
+  "exactRun27ApkLibrarySha256": {
+    "libreactnative.so": "bfc4388dfe7cfd9e35f3df2d46f42973fd8157d97cb33193a2821c7db913c717",
+    "libjsi.so": "a9eec6684ff84a7d79c6e03c7825f4a1fae90ac905f57309ee1b3037b4b61a35"
+  },
+  "productionFilesEdited": false,
+  "passed": true
+}

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/mac/dev/apps/nato-phonetics/scripts/build-android-font-native.py", line 45, in <module>
+    verify_elf(libraries[name])
+  File "/Users/mac/dev/apps/nato-phonetics/scripts/build-android-font-native.py", line 33, in verify_elf
+    raise RuntimeError(f'Native library/executable does not match requested ABI {abi}: {file}')
+RuntimeError: Native library/executable does not match requested ABI x86_64: /private/var/folders/wp/y315c6t566v1qhs116zrm3tr0000gn/T/nato-run28-guards-ri9sp_eo/wrong-machine/modules/reactnative/libs/android.x86_64/libreactnative.so

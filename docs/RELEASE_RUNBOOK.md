@@ -6,7 +6,20 @@ Run19 adds [scoped browser/lifecycle qualification](evidence/run19/README.md) wi
 
 ## Identity and supported configuration
 
-**Current Run27 Android amendment:** [F1 complete scope and ARM64 source Release
+**Current Run28 Android amendment:** [remaining configured source Release ABI
+qualification](evidence/run28/README.md) passes armeabi-v7a/x86/x86_64 build,
+exact JS/Hermes/ELF/prefab/header and native consumer-link scopes, retaining
+Run27 ARM64/F1 evidence. Fresh ARM646 native cases and4 actual captures pass.
+Original x86 setup/write and emulator disk failures remain archived; explicit
+Metro worker control and measured generated-cache recovery enable scoped retries.
+Set `NATO_BUILD_JOBS=1` for serialized source builds; Gradle's worker limit alone
+did not cap Metro. Full Release affected gates, other ABI runtime and ordinary
+clean-install/default integration stay P1. [Next checkpoint](evidence/run28/android/next-android.md).
+All originals remain unsigned; existing local test copy uses only the public
+development key. No fresh audit/remote/private signing/public hosting/release
+acceptance; dated Run23 security results retain their recorded scope.
+
+**Historical Run27 Android amendment:** [F1 complete scope and ARM64 source Release
 qualification](evidence/run27/README.md) add625 baselines/271 ink observations,
 actual unsigned APK/AAB,6 native cases/5 real-product test-IME checkpoints and25
 inspected captures. Embedded product JS matches Run23; engine matches pinned

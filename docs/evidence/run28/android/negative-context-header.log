@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/mac/dev/apps/nato-phonetics/scripts/build-android-font-native.py", line 76, in <module>
+    raise RuntimeError('Exported context/surface header/library ABI mismatch: '+exported)
+RuntimeError: Exported context/surface header/library ABI mismatch: react/renderer/core/LayoutContext.h

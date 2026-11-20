@@ -1,0 +1,22 @@
+{
+  "command": [
+    "/Users/mac/Library/Android/sdk/emulator/emulator",
+    "-avd",
+    "nato-p00-api36",
+    "-port",
+    "5580",
+    "-no-window",
+    "-no-snapshot",
+    "-no-boot-anim",
+    "-gpu",
+    "host",
+    "-memory",
+    "2560"
+  ],
+  "exitCode": 1,
+  "observedError": "FATAL: Your device does not have enough disk space to run avd: nato-p00-api36",
+  "log": "emulator.log",
+  "reportedToolDurationSeconds": 0.92427375,
+  "observedAt": "2026-11-20T11:01:31.348469+00:00",
+  "newRuntimeOrCapturePass": false
+}

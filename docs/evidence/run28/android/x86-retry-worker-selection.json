@@ -1,0 +1,9 @@
+{
+  "invocationEnvironmentSupplement": {
+    "NATO_BUILD_JOBS": "1"
+  },
+  "loadedConfigMaxWorkers": 1,
+  "reason": "Retry explicitly sets NATO_BUILD_JOBS=1; initial evidence runner omitted this variable from its environment allowlist. Subsequent runner records include it.",
+  "source": "exact retry invocation and actual Metro configuration load",
+  "passed": true
+}

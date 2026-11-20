@@ -52,7 +52,23 @@ The release bundle is `android/app/build/outputs/bundle/release/app-release.aab`
 
 ### P05.2 Android source candidate — Run26, acceptance still active
 
-**Run27 qualification update:** F1 original complete tile scope passes625 native
+**Run28 current qualification:** all configured source Release ABIs have
+compile/package qualification (ARM64 Run27; armeabi-v7a/x86/x86_64 Run28).
+Exact payload/Hermes/ELF/prefab/header and consumer links pass; fresh ARM64
+six-case runtime and4 inspected actual captures pass. Other ABI execution,
+full Release affected gates and clean default integration remain open P1.
+[Evidence/products](evidence/run28/README.md),
+[exact next observation/gate](evidence/run28/android/next-android.md).
+
+`NATO_BUILD_JOBS=1..4` now also controls Metro's separate worker pool when
+explicitly supplied, including the existing host/native wrappers. An unspecified
+value preserves Metro's default. Set1 for the serialized source commands below;
+Gradle's `--max-workers` alone did not cap the observed8 Metro workers. One x86
+setup/write failure and an emulator disk rejection remain archived; passing
+retries followed measured cache/resource recovery. Only generated compile caches
+were reclaimed; future builds may be cold. No fixed free-space minimum is imposed.
+
+**Historical Run27 qualification update:** F1 original complete tile scope passes625 native
 baselines/271 ink observations. Actual source ARM64 unsigned Release APK/AAB,
 six native cases and five real-product composition checkpoints pass. Other
 ABIs/full Release affected gates and clean default integration remain active;
@@ -68,15 +84,19 @@ Originals are unsigned. The separate local development-signed test copy retains
 the exact original payload and remains non-debuggable; no private signing or
 distribution acceptance follows. [Artifact identity and signature checks](evidence/run27/android/release-artifacts.json).
 
-The standalone ARM64 C++ helper now supports `--release`:
+The standalone C++ helper supports `--release` and explicit ABI selection:
 
 ```sh
 ANDROID_HOME=... python3 scripts/build-android-font-native.py <release-prefab> <output> --release
+ANDROID_HOME=... python3 scripts/build-android-font-native.py <release-prefab> <output> --release --abi armeabi-v7a
 ```
 
 This selects the actual production class layout from `react/debug/flags.h`;
-Debug is the default. A library Sealable/debug-string ABI mismatch is rejected
-before compiling, with existing source/header guards retained. The six explicit
+Debug and `arm64-v8a` are the defaults; `armeabi-v7a`, `x86` and `x86_64` select
+their matching compiler target and exported/fbjni libraries. ELF class/machine,
+Sealable/debug-string mode and exported-header mismatches are rejected before
+compiling. Font-generation ABI detection handles both 32-bit and 64-bit
+`uint64_t` encodings. The six explicit
 result predicates are identical in both variants. First Release link with old
 Debug macros failed and remains archived; correct Debug/Release compiles and
 actual Release execution pass. This is test-tool ABI matching, not a product
@@ -97,7 +117,7 @@ or native repair source changes. [Fixture guide](../tests/fixtures/android-font-
 
 Ordinary builds still consume Maven RN0.81.5. The opt-in candidate uses the
 exact installed npm source and hash-guarded patches; it has not yet passed all
-P05.2 application acceptance. Read [current checkpoints](evidence/run26/shared/forecast.md)
+P05.2 application acceptance. Read [current checkpoints](evidence/run28/shared/forecast.md)
 before resuming. Do not mistake an edited C++ file for an installed repair.
 
 With the pinned Node22.23.0/JDK17/SDK36/NDK27.1.12297006 environment:
@@ -106,7 +126,7 @@ With the pinned Node22.23.0/JDK17/SDK36/NDK27.1.12297006 environment:
 npm run prepare:android:source
 cd android
 ./gradlew :app:dependencyInsight --dependency react-android --configuration debugRuntimeClasspath -PnatoReactNativeSource=true --max-workers=1
-./gradlew :app:assembleDebug -PnatoReactNativeSource=true -PreactNativeArchitectures=arm64-v8a --max-workers=1 '-Dorg.gradle.jvmargs=-Xmx2048m -XX:MaxMetaspaceSize=512m -XX:ActiveProcessorCount=2'
+NATO_BUILD_JOBS=1 ./gradlew :app:assembleDebug -PnatoReactNativeSource=true -PreactNativeArchitectures=arm64-v8a --max-workers=1 '-Dorg.gradle.jvmargs=-Xmx2048m -XX:MaxMetaspaceSize=512m -XX:ActiveProcessorCount=2'
 ```
 
 The [official composite-build path](https://reactnative.dev/contributing/how-to-build-from-source)
@@ -259,7 +279,7 @@ The [React Native iOS 27 lifecycle report](https://github.com/react/react-native
 
 ## Planned remote build completion — 19 November 2026
 
-[P10.8](DELIVERY_PLAN.md#p108--remote-build-pipeline-and-reusable-host-execution) is **P2/todo**, M–L. The existing self-hosted native workflow and separate web CI are authored; this does not establish a verified remote build. Complete them using shared Gradle/Xcode/web entry points that can also run on another authorized host, with pinned preflight, exact source/patch/artifact identities, durable logs, artifact retrieval and failure reporting. Keep private-runner trust boundaries and failed security/release gates intact. iOS requires a suitable macOS/Xcode host; other OS/architecture claims need qualification. A selectable Android source-framework diagnostic mode follows a justified P05.2 candidate; ordinary builds retain the current dependency path.
+[P10.8](DELIVERY_PLAN.md#p108--remote-build-pipeline-and-reusable-host-execution) is **P2/active/partial**, M–L for remaining remote qualification. The existing self-hosted native workflow and separate web CI are authored; this does not establish a verified remote build. Complete them using shared Gradle/Xcode/web entry points that can also run on another authorized host, with pinned preflight, exact source/patch/artifact identities, durable logs, artifact retrieval and failure reporting. Keep private-runner trust boundaries and failed security/release gates intact. iOS requires a suitable macOS/Xcode host; other OS/architecture claims need qualification. A selectable Android source-framework diagnostic mode follows a justified P05.2 candidate; ordinary builds retain the current dependency path.
 
 The owner reports11GiB free and wants local work to proceed.25–30GiB was an advisory buffer, not a verified minimum: measure before large builds, serialize them and report actual shortfalls. Pipeline completion is scheduled later, with an enabling slice eligible earlier only if a measured local constraint blocks P1 validation and a host is available. Future restricted host/runner enrollment/access and signing inputs stay in M11.2; setup/implementation/verification remain engineering. No workflow is changed, host provisioned or build performed by this documentation amendment.
 
