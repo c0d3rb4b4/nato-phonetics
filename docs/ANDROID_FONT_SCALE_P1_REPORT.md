@@ -1,5 +1,8 @@
 # Android live font sizing: issue, repair candidates and evidence
 
+**Run29 current Android checkpoint — 20 November 2026:** an inspector-free, test-only Release fixture/native observer now passes60 strict frame/widget comparisons,12resize/12narrow and3edit checks on the exact preserved Release native/Hermes payload.487 other non-signature APK entries, including dependency metadata, match the original. Scoped unchanged production Release converter/submitted quiz/Next samples,12tests/lint and40inspected actual captures pass. Full production Release baseline/ink/context/window acceptance, ordinary clean/default integration and other ABI runtime remain open P1. Initial tool/packaging failures are retained and corrected final qualification is separate. [Evidence](evidence/run29/README.md), [captures](evidence/run29/screenshots/index.md), [next P1](evidence/run29/android/next-android.md).
+
+
 **P05.2 / P1 · Evidence through Run28 · 20 November 2026**
 
 **Current conclusion:** an opt-in Android source candidate repairs the observed failures in the tested ARM64 Debug and scoped ARM64 Release configurations. All configured source Release ABIs now have compile/package/link qualification; non-ARM64 execution and full Release affected gates are unrun. The ordinary build still uses the original Maven framework and retains the bug. P05.2 is active; this is not a completed release fix.
@@ -14,10 +17,10 @@ This report explains the issue, shows actual screenshots, traces the repair cand
 |---|---|
 | What breaks? | After changing Android's system font size while the app is open, some unchanged text keeps its old layout size. Enlarged glyphs clip, and editable input can keep small glyphs even after its frame grows. |
 | What is the repair? | Keep the actual font environment consistent across surface layout, Yoga subtree reuse, text measurement caches and the native editable widget. These are separate boundaries, not one cache bug. |
-| Does the final candidate pass? | Yes in recorded ARM64 Debug scopes, now including complete F1 baseline/ink checks; scoped ARM64 Release build/native/composition checks also pass. Full Release and default integration remain open. |
+| Does the final candidate pass? | Yes in recorded ARM64 Debug/F1 scopes and Run29 exact-payload Release fixture/sweep/edit/resize/narrow scopes; scoped production state/native/composition checks pass. Full production Release fidelity and default integration remain open. |
 | Does the default app build include it? | No. Source compilation is explicitly selected; default-build integration is unfinished. |
 | What new failure does the final repair demonstrably introduce? | No new application regression has been demonstrated in its executed acceptance scopes. This does not establish safety in untested configurations. Intermediate candidates and test/build tools did fail, as detailed below. |
-| Why is it still P1? | Existing ordinary builds remain affected, and other source ABIs, full Release affected gates and default integration are unfinished. |
+| Why is it still P1? | Existing ordinary builds remain affected; full production Release fidelity and default integration are unfinished. All configured source ABI builds are qualified, while non-ARM64 execution is unrun. |
 
 ## 1. The issue in ordinary use
 

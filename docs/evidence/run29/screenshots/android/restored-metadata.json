@@ -1,0 +1,13 @@
+{
+  "file": "restored-product.png",
+  "sha256": "9a42ddd7af3a5bf0a824e12e85dabc4d1bdbd5b3b573294826ccb010bf4bee73",
+  "timestamp": "2026-11-20T11:56:01.473530+00:00",
+  "command": "adb -s emulator-5580 exec-out screencap -p",
+  "candidate": "1b045e2dc7b2f1761bd4f8aa708cde29b498f2c43963b3062cc08b8555c28eee",
+  "state": "Exact initial Debug APK restored, ordinary Metro product reference",
+  "platform": "Android16/API36 ARM64",
+  "size": "Physical size: 1080x2400\nOverride size: 720x1600",
+  "density": "Physical density: 420\nOverride density: 280",
+  "fontScale": "1.0",
+  "theme": "retained dark preference"
+}

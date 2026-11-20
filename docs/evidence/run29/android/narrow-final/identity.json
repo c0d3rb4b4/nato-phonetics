@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "serial": "emulator-5580",
+  "identities": {
+    "com.natophonetics.app": {
+      "local": "/Users/mac/dev/apps/nato-phonetics/artifacts/run29/release-fixture/font-release-fixture.apk",
+      "installed": "/data/app/~~ZijKOEf1saQoy4l_HOlJrw==/com.natophonetics.app--0FBvvyUpzmAQgpz583iPg==/base.apk",
+      "sha256": "f56ea0f34d1260fee54c241debf9396eaf77cf772476dd54ce9d18fb0e131ecd",
+      "expectedSha256": "f56ea0f34d1260fee54c241debf9396eaf77cf772476dd54ce9d18fb0e131ecd"
+    },
+    "com.natophonetics.fonttest": {
+      "local": "/Users/mac/dev/apps/nato-phonetics/artifacts/run29/instrumentation/font-composition.apk",
+      "installed": "/data/app/~~k5lk12M2uYuAlPZkNIfwew==/com.natophonetics.fonttest-UNI2Fv8yFRK3RlGXjEHtMg==/base.apk",
+      "sha256": "c5fe31e6e0ca2abc21587009efe796f9dd0dffb2b1e7b22e58b77b3b226ff9c5",
+      "expectedSha256": "c5fe31e6e0ca2abc21587009efe796f9dd0dffb2b1e7b22e58b77b3b226ff9c5"
+    }
+  },
+  "runtime": "16",
+  "api": "36",
+  "originalFontScale": "1.0",
+  "originalWindowSize": "Physical size: 1080x2400\nOverride size: 560x1000",
+  "results": [
+    {
+      "scenario": "primary",
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5580",
+        "shell",
+        "am",
+        "instrument",
+        "-w",
+        "-r",
+        "-e",
+        "scenario",
+        "primary",
+        "com.natophonetics.fonttest/com.natophonetics.fonttest.FontScaleFixtureInstrumentation"
+      ],
+      "exitCode": 0,
+      "evidenceComplete": true,
+      "passed": true
+    },
+    {
+      "scenario": "cold2",
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5580",
+        "shell",
+        "am",
+        "instrument",
+        "-w",
+        "-r",
+        "-e",
+        "scenario",
+        "cold2",
+        "com.natophonetics.fonttest/com.natophonetics.fonttest.FontScaleFixtureInstrumentation"
+      ],
+      "exitCode": 0,
+      "evidenceComplete": true,
+      "passed": true
+    }
+  ],
+  "scope": "Separate embedded fixture on identical Release native/Hermes payload; production entry not exercised"
+}

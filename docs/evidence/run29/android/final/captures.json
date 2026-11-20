@@ -1,0 +1,134 @@
+[
+  {
+    "stage": "cold1",
+    "file": "screenshots/cold1.png",
+    "sha256": "14fe031421d7ce1d1e6d6f6c1a01b61b38a241b07dc40f8653a440f40bd8d148",
+    "command": "Instrumentation UiAutomation.takeScreenshot; adb exec-out cat /storage/emulated/0/Android/data/com.natophonetics.app/files/font-fixture-primary/cold1.png"
+  },
+  {
+    "stage": "live2",
+    "file": "screenshots/live2.png",
+    "sha256": "9956517f5fe6e917b6e842a048782154f185caaaea35f93d3a3efed919c3ba0c",
+    "command": "Instrumentation UiAutomation.takeScreenshot; adb exec-out cat /storage/emulated/0/Android/data/com.natophonetics.app/files/font-fixture-primary/live2.png"
+  },
+  {
+    "stage": "return1",
+    "file": "screenshots/return1.png",
+    "sha256": "14fe031421d7ce1d1e6d6f6c1a01b61b38a241b07dc40f8653a440f40bd8d148",
+    "command": "Instrumentation UiAutomation.takeScreenshot; adb exec-out cat /storage/emulated/0/Android/data/com.natophonetics.app/files/font-fixture-primary/return1.png"
+  },
+  {
+    "stage": "cold2",
+    "file": "screenshots/cold2.png",
+    "sha256": "9956517f5fe6e917b6e842a048782154f185caaaea35f93d3a3efed919c3ba0c",
+    "command": "Instrumentation UiAutomation.takeScreenshot; adb exec-out cat /storage/emulated/0/Android/data/com.natophonetics.app/files/font-fixture-cold2/cold2.png"
+  },
+  {
+    "stage": "resize-narrow2",
+    "file": "screenshots/resize-narrow2.png",
+    "sha256": "ce540d881f0c7143d3fcabbf1726d040739c74c5fdd8145543276ac246cf53c9",
+    "command": "Instrumentation UiAutomation.takeScreenshot; adb exec-out cat /storage/emulated/0/Android/data/com.natophonetics.app/files/font-fixture-cold2/resize-narrow2.png"
+  },
+  {
+    "stage": "resize-restored2",
+    "file": "screenshots/resize-restored2.png",
+    "sha256": "9956517f5fe6e917b6e842a048782154f185caaaea35f93d3a3efed919c3ba0c",
+    "command": "Instrumentation UiAutomation.takeScreenshot; adb exec-out cat /storage/emulated/0/Android/data/com.natophonetics.app/files/font-fixture-cold2/resize-restored2.png"
+  },
+  {
+    "stage": "cold085",
+    "file": "screenshots/cold085.png",
+    "sha256": "1c8d237467c4f7cbef746f378116c45e5b112791adc677d469ecc573488bf826",
+    "command": "Instrumentation UiAutomation.takeScreenshot; adb exec-out cat /storage/emulated/0/Android/data/com.natophonetics.app/files/font-fixture-cold085/cold085.png"
+  },
+  {
+    "stage": "cold13",
+    "file": "screenshots/cold13.png",
+    "sha256": "90b281ac0639c9e7c38cae2e2710edc8e09206924a3793342f96d6240216f31f",
+    "command": "Instrumentation UiAutomation.takeScreenshot; adb exec-out cat /storage/emulated/0/Android/data/com.natophonetics.app/files/font-fixture-cold13/cold13.png"
+  },
+  {
+    "stage": "sweep0-0.85",
+    "file": "screenshots/sweep0-0.85.png",
+    "sha256": "1c8d237467c4f7cbef746f378116c45e5b112791adc677d469ecc573488bf826",
+    "command": "Instrumentation UiAutomation.takeScreenshot; adb exec-out cat /storage/emulated/0/Android/data/com.natophonetics.app/files/font-fixture-sweep/sweep0-0.85.png"
+  },
+  {
+    "stage": "sweep1-1.3",
+    "file": "screenshots/sweep1-1.3.png",
+    "sha256": "90b281ac0639c9e7c38cae2e2710edc8e09206924a3793342f96d6240216f31f",
+    "command": "Instrumentation UiAutomation.takeScreenshot; adb exec-out cat /storage/emulated/0/Android/data/com.natophonetics.app/files/font-fixture-sweep/sweep1-1.3.png"
+  },
+  {
+    "stage": "sweep2-2.0",
+    "file": "screenshots/sweep2-2.0.png",
+    "sha256": "9956517f5fe6e917b6e842a048782154f185caaaea35f93d3a3efed919c3ba0c",
+    "command": "Instrumentation UiAutomation.takeScreenshot; adb exec-out cat /storage/emulated/0/Android/data/com.natophonetics.app/files/font-fixture-sweep/sweep2-2.0.png"
+  },
+  {
+    "stage": "sweep3-1.0",
+    "file": "screenshots/sweep3-1.0.png",
+    "sha256": "14fe031421d7ce1d1e6d6f6c1a01b61b38a241b07dc40f8653a440f40bd8d148",
+    "command": "Instrumentation UiAutomation.takeScreenshot; adb exec-out cat /storage/emulated/0/Android/data/com.natophonetics.app/files/font-fixture-sweep/sweep3-1.0.png"
+  },
+  {
+    "stage": "sweep4-0.85",
+    "file": "screenshots/sweep4-0.85.png",
+    "sha256": "1c8d237467c4f7cbef746f378116c45e5b112791adc677d469ecc573488bf826",
+    "command": "Instrumentation UiAutomation.takeScreenshot; adb exec-out cat /storage/emulated/0/Android/data/com.natophonetics.app/files/font-fixture-sweep/sweep4-0.85.png"
+  },
+  {
+    "stage": "sweep5-2.0",
+    "file": "screenshots/sweep5-2.0.png",
+    "sha256": "9956517f5fe6e917b6e842a048782154f185caaaea35f93d3a3efed919c3ba0c",
+    "command": "Instrumentation UiAutomation.takeScreenshot; adb exec-out cat /storage/emulated/0/Android/data/com.natophonetics.app/files/font-fixture-sweep/sweep5-2.0.png"
+  },
+  {
+    "stage": "sweep6-1.3",
+    "file": "screenshots/sweep6-1.3.png",
+    "sha256": "90b281ac0639c9e7c38cae2e2710edc8e09206924a3793342f96d6240216f31f",
+    "command": "Instrumentation UiAutomation.takeScreenshot; adb exec-out cat /storage/emulated/0/Android/data/com.natophonetics.app/files/font-fixture-sweep/sweep6-1.3.png"
+  },
+  {
+    "stage": "sweep7-1.0",
+    "file": "screenshots/sweep7-1.0.png",
+    "sha256": "14fe031421d7ce1d1e6d6f6c1a01b61b38a241b07dc40f8653a440f40bd8d148",
+    "command": "Instrumentation UiAutomation.takeScreenshot; adb exec-out cat /storage/emulated/0/Android/data/com.natophonetics.app/files/font-fixture-sweep/sweep7-1.0.png"
+  },
+  {
+    "stage": "editing-start",
+    "file": "screenshots/editing-start.png",
+    "sha256": "14fe031421d7ce1d1e6d6f6c1a01b61b38a241b07dc40f8653a440f40bd8d148",
+    "command": "Instrumentation UiAutomation.takeScreenshot; adb exec-out cat /storage/emulated/0/Android/data/com.natophonetics.app/files/font-fixture-editing/editing-start.png"
+  },
+  {
+    "stage": "editing-before",
+    "file": "screenshots/editing-before.png",
+    "sha256": "8a57d4f3d395ceb8642430853bbf9e29725dead2fd4cf9d65c62bd0eb67a2bda",
+    "command": "Instrumentation UiAutomation.takeScreenshot; adb exec-out cat /storage/emulated/0/Android/data/com.natophonetics.app/files/font-fixture-editing/editing-before.png"
+  },
+  {
+    "stage": "editing-typed-before",
+    "file": "screenshots/editing-typed-before.png",
+    "sha256": "69c0c331f463bfc7e87dc0478ea2fc919a0a555ac438a90786531edfa382cc85",
+    "command": "Instrumentation UiAutomation.takeScreenshot; adb exec-out cat /storage/emulated/0/Android/data/com.natophonetics.app/files/font-fixture-editing/editing-typed-before.png"
+  },
+  {
+    "stage": "editing-live2",
+    "file": "screenshots/editing-live2.png",
+    "sha256": "39807a679727c3813b77e853d7cc58f68ea91bd16e77eb4e55be60966aace020",
+    "command": "Instrumentation UiAutomation.takeScreenshot; adb exec-out cat /storage/emulated/0/Android/data/com.natophonetics.app/files/font-fixture-editing/editing-live2.png"
+  },
+  {
+    "stage": "editing-return1",
+    "file": "screenshots/editing-return1.png",
+    "sha256": "3c23b309fb1f6e2b47193e7da2299c04c64369bd76873c1b52799e29a2a2e262",
+    "command": "Instrumentation UiAutomation.takeScreenshot; adb exec-out cat /storage/emulated/0/Android/data/com.natophonetics.app/files/font-fixture-editing/editing-return1.png"
+  },
+  {
+    "stage": "editing-insert",
+    "file": "screenshots/editing-insert.png",
+    "sha256": "627fa444b162508e396dcfff530780b87cd1f62da2cdac39315c7898d37da4fe",
+    "command": "Instrumentation UiAutomation.takeScreenshot; adb exec-out cat /storage/emulated/0/Android/data/com.natophonetics.app/files/font-fixture-editing/editing-insert.png"
+  }
+]

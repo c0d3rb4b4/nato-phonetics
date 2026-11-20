@@ -1,0 +1,24 @@
+{
+  "command": [
+    "node",
+    "scripts/check-android-font-release-fixture.cjs",
+    "docs/evidence/run29/android/minimal-corrected",
+    "--primary-only"
+  ],
+  "cwd": "/Users/mac/dev/apps/nato-phonetics",
+  "environment": {
+    "PATH": "/tmp/nato-phonetics-toolchain/node_modules/node/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Users/mac/.codex/tmp/arg0-macos/codex-arg05mnPUr:/Users/mac/.vscode/extensions/openai.chatgpt-26.1111.21308-darwin-arm64/bin/macos-aarch64"
+  },
+  "startedAt": "2026-11-20T11:40:19.819038+00:00",
+  "before": {
+    "availableBytes": 3044999168,
+    "swap": "vm.swapusage: total = 11264.00M  used = 10886.62M  free = 377.38M  (encrypted)"
+  },
+  "exitCode": 0,
+  "durationSeconds": 0.20508237499999998,
+  "after": {
+    "availableBytes": 3044958208,
+    "swap": "vm.swapusage: total = 11264.00M  used = 10878.62M  free = 385.38M  (encrypted)"
+  },
+  "finishedAt": "2026-11-20T11:40:20.030172+00:00"
+}

@@ -1,12 +1,15 @@
 # Release preparation and web hosting
 
+**Run29 current Android checkpoint — 20 November 2026:** an inspector-free, test-only Release fixture/native observer now passes60 strict frame/widget comparisons,12resize/12narrow and3edit checks on the exact preserved Release native/Hermes payload.487 other non-signature APK entries, including dependency metadata, match the original. Scoped unchanged production Release converter/submitted quiz/Next samples,12tests/lint and40inspected actual captures pass. Full production Release baseline/ink/context/window acceptance, ordinary clean/default integration and other ABI runtime remain open P1. Initial tool/packaging failures are retained and corrected final qualification is separate. [Evidence](evidence/run29/README.md), [captures](evidence/run29/screenshots/index.md), [next P1](evidence/run29/android/next-android.md).
+
+
 Prepared 18 November 2026 (P10.3 and partial P10.4). This describes the implemented candidate; it is not publication or release acceptance. [Current delivery status](APP_REVIEW.md#current-delivery-status) and [the plan](DELIVERY_PLAN.md) retain all unfinished engineering and human gates. Run 18 adds a guarded source-built iOS Yoga precision repair; [current candidate scope](evidence/run18/README.md) and [native patch/rebuild contract](NATIVE_TEXT_PRECISION.md). Run 16 implements P10.2 caching with local Edge evidence. Run 17 prepares the [actual unsigned all-architecture Android Release AAB](evidence/run17/android/release-artifact.json) with its embedded JavaScript and signature inspection, and qualifies compatible Metro parser removal. Hosted/other-engine qualification, signed native distribution, P09 spoken recognition and integrated P10.5–.7 remain unfinished. R08 still fails for 28 picomatch-derived high entries; the prior image-size disposition is removed after remediation, with no new acceptance.
 
 Run19 adds [scoped browser/lifecycle qualification](evidence/run19/README.md) with unchanged product/native/shell bytes: Edge157, Playwright Firefox159 and WebKit27.2 on macOS pass simultaneous pointer/progress/recovery/offline relaunch checks; a separate Chromium check measures actual hidden-page freezing and deletion safety. The CI engine matrix is authored, hosted execution unrun. Branded Safari/iOS, other OS/runtime versions, OS process suspension, full new-engine update/eviction/rollback and legacy hosted upgrades remain unqualified. GitHub's new matcher-advisory withdrawal has not removed the npm findings in the current snapshot; raw/review gates still fail28high/3low. No release claim changes.
 
 ## Identity and supported configuration
 
-**Current Run28 Android amendment:** [remaining configured source Release ABI
+**Historical Run28 Android amendment:** [remaining configured source Release ABI
 qualification](evidence/run28/README.md) passes armeabi-v7a/x86/x86_64 build,
 exact JS/Hermes/ELF/prefab/header and native consumer-link scopes, retaining
 Run27 ARM64/F1 evidence. Fresh ARM646 native cases and4 actual captures pass.

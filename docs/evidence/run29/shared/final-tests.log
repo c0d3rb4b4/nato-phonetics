@@ -1,0 +1,82 @@
+TAP version 13
+# Subtest: run20 real stale native measurements remain rejected
+ok 1 - run20 real stale native measurements remain rejected
+  ---
+  duration_ms: 5.045041
+  type: 'test'
+  ...
+# Subtest: run22 real stale native measurements remain rejected
+ok 2 - run22 real stale native measurements remain rejected
+  ---
+  duration_ms: 0.558792
+  type: 'test'
+  ...
+# Subtest: native acceptance rejects incomplete stages and remounts even with cold-equivalent frames
+ok 3 - native acceptance rejects incomplete stages and remounts even with cold-equivalent frames
+  ---
+  duration_ms: 0.936792
+  type: 'test'
+  ...
+# Subtest: correct outer frames cannot hide stale editable glyph sizing
+ok 4 - correct outer frames cannot hide stale editable glyph sizing
+  ---
+  duration_ms: 3.131958
+  type: 'test'
+  ...
+# Subtest: actual Release observations retain strict frame/widget, sweep, edit and resize acceptance
+ok 5 - actual Release observations retain strict frame/widget, sweep, edit and resize acceptance
+  ---
+  duration_ms: 6.397417
+  type: 'test'
+  ...
+# Subtest: Release gate rejects missing native evidence, replacement and stale glyph paint despite matching frames
+ok 6 - Release gate rejects missing native evidence, replacement and stale glyph paint despite matching frames
+  ---
+  duration_ms: 10.761333
+  type: 'test'
+  ...
+# Subtest: Release gate rejects lost caret, changed input, absent sweep and absent cold reference
+ok 7 - Release gate rejects lost caret, changed input, absent sweep and absent cold reference
+  ---
+  duration_ms: 10.772584
+  type: 'test'
+  ...
+# Subtest: Android float32 scale representation passes; wrong environment or >1px frame deviation fails
+ok 8 - Android float32 scale representation passes; wrong environment or >1px frame deviation fails
+  ---
+  duration_ms: 3.267208
+  type: 'test'
+  ...
+# Subtest: native source preparation is repeatable and preserves unrelated bytes
+ok 9 - native source preparation is repeatable and preserves unrelated bytes
+  ---
+  duration_ms: 52.939333
+  type: 'test'
+  ...
+# Subtest: native context drift fails before any source file is patched
+ok 10 - native context drift fails before any source file is patched
+  ---
+  duration_ms: 13.496333
+  type: 'test'
+  ...
+# Subtest: Metro honors explicit shared build limits and preserves its unspecified default
+ok 11 - Metro honors explicit shared build limits and preserves its unspecified default
+  ---
+  duration_ms: 367.635791
+  type: 'test'
+  ...
+# Subtest: Metro rejects invalid worker limits before starting transform processes
+ok 12 - Metro rejects invalid worker limits before starting transform processes
+  ---
+  duration_ms: 363.304958
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 817.349042

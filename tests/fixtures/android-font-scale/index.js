@@ -7,7 +7,28 @@ function Probe() {
   const dimensions = useWindowDimensions();
   const [value, setValue] = useState('NUWJ359');
   const refs = useRef({});
+  const observation = useRef(null);
   useEffect(() => { globalThis.__fontProbe.mounts += 1; }, []);
+  // Test fixture only: native instrumentation can observe a production-mode
+  // Hermes bundle without an inspector, state update, or root replacement.
+  useEffect(() => {
+    let active = true;
+    const timer = setInterval(() => {
+      const probe = globalThis.__fontProbe;
+      const measuredDimensions = probe.dimensions;
+      Promise.all(Object.entries(refs.current).map(([name, ref]) => new Promise(resolve => {
+        if (!ref) { resolve(null); return; }
+        ref.measureInWindow((x,y,width,height) => resolve([name, {x,y,width,height}]));
+      }))).then(rows => {
+        if (!active || measuredDimensions !== globalThis.__fontProbe.dimensions || rows.some(row => !row)) return;
+        observation.current?.setNativeProps({accessibilityLabel: JSON.stringify({
+          ...probe, frames: Object.fromEntries(rows), events: probe.events.slice(-100),
+          sequence: (probe.sequence = (probe.sequence || 0) + 1),
+        })});
+      });
+    }, 200);
+    return () => { active = false; clearInterval(timer); };
+  }, []);
   globalThis.__fontProbe.dimensions = dimensions;
   globalThis.__fontProbe.value = value;
   globalThis.__fontProbe.sample = () => {
@@ -21,6 +42,8 @@ function Probe() {
     ['feedback', 'Correct! B is Bravo.'],
   ];
   return <ScrollView style={{backgroundColor: 'white'}} contentContainerStyle={{padding: 18,paddingTop: 48}}>
+    <View ref={observation} testID="probe-observation" collapsable={false}
+      pointerEvents="none" style={{position:'absolute',width:0,height:0}} />
     <Text style={{color:'black',fontSize:14}}>Diagnostic normal startup — scale {dimensions.fontScale}</Text>
     {examples.map(([name,text]) => <View key={name} style={{marginBottom:12}}>
       <Text ref={ref=>{refs.current[name]=ref;}} testID={name}

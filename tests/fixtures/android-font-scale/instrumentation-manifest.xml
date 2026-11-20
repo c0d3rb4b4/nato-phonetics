@@ -8,4 +8,5 @@
     <receiver android:name=".FontTestImeCommand" android:exported="true" />
   </application>
   <instrumentation android:name="com.natophonetics.fonttest.FontScaleInstrumentation" android:targetPackage="com.natophonetics.app" />
+  <instrumentation android:name="com.natophonetics.fonttest.FontScaleFixtureInstrumentation" android:targetPackage="com.natophonetics.app" />
 </manifest>

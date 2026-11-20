@@ -1,0 +1,25 @@
+{
+  "command": [
+    "python3",
+    "scripts/build-android-font-instrumentation.py",
+    "artifacts/run29/instrumentation"
+  ],
+  "cwd": "/Users/mac/dev/apps/nato-phonetics",
+  "environment": {
+    "JAVA_HOME": "/tmp/nato-run22-jdk/jdk-17.0.13+11/Contents/Home",
+    "ANDROID_HOME": "/Users/mac/Library/Android/sdk",
+    "PATH": "/tmp/nato-phonetics-toolchain/node_modules/node/bin:/tmp/nato-run22-jdk/jdk-17.0.13+11/Contents/Home/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Users/mac/.codex/tmp/arg0-macos/codex-arg05mnPUr:/Users/mac/.vscode/extensions/openai.chatgpt-26.1111.21308-darwin-arm64/bin/macos-aarch64"
+  },
+  "startedAt": "2026-11-20T11:39:02.265818+00:00",
+  "before": {
+    "availableBytes": 4168335360,
+    "swap": "vm.swapusage: total = 10240.00M  used = 9432.75M  free = 807.25M  (encrypted)"
+  },
+  "exitCode": 0,
+  "durationSeconds": 3.9786370419999995,
+  "after": {
+    "availableBytes": 4128731136,
+    "swap": "vm.swapusage: total = 10240.00M  used = 9483.00M  free = 757.00M  (encrypted)"
+  },
+  "finishedAt": "2026-11-20T11:39:06.251888+00:00"
+}

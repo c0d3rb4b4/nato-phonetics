@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "settingsAndApk": {
+    "apkSha256": "1b045e2dc7b2f1761bd4f8aa708cde29b498f2c43963b3062cc08b8555c28eee",
+    "fontScale": "1.0",
+    "window": "Physical size: 1080x2400\nOverride size: 720x1600",
+    "density": "Physical density: 420\nOverride density: 280",
+    "ime": "com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME"
+  },
+  "matchesInitial": true,
+  "ordinaryProductReferenceVerified": true,
+  "appDataCleared": false,
+  "ownedToolingShutdown": {
+    "metroPid": 32374,
+    "metroCommand": "node node_modules/react-native/cli.js start --host 127.0.0.1 --port 8081",
+    "metroStopped": true,
+    "emulatorStopped": true,
+    "emulatorKill": {
+      "exitCode": 0,
+      "stdout": "OK: killing emulator, bye bye\nOK\n",
+      "stderr": ""
+    },
+    "gradleStarted": false
+  },
+  "fixtureUndefined": true,
+  "testApk": "Updated isolated instrumentation utility remains installed; no product module or permission was added"
+}

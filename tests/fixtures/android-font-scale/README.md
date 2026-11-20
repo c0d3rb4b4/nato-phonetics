@@ -71,3 +71,49 @@ success does not establish that those predicates executed. Run27 qualifies
 both compile modes and actual ARM64 Release execution; full Release application
 and default-build integration remain open. Use the current plan/evidence for
 each ABI's actual qualification status.
+
+## Inspector-free Release fixture (Run29)
+
+For a non-debuggable Release framework candidate, build a **separate diagnostic
+APK** with this fixture as embedded production Hermes bytecode. The original
+APK stays untouched. The builder requires exact entry-set/hash equality for
+all non-signature entries except `assets/index.android.bundle`, including
+META-INF dependency/ServiceLoader metadata, manifest, DEX, native libraries,
+engine and fonts. Local signing uses the checked-in public development key;
+this is not distribution signing or production-JS acceptance.
+
+```sh
+python3 scripts/build-android-font-release-fixture.py ORIGINAL_RELEASE_APK FIXTURE_OUTPUT
+python3 scripts/build-android-font-instrumentation.py TEST_OUTPUT
+python3 scripts/run-android-font-release-fixture.py TEST_APK FIXTURE_APK EVIDENCE SERIAL
+node scripts/check-android-font-release-fixture.cjs EVIDENCE
+```
+
+Use the pinned Node22/JDK17/SDK36 environment from NATIVE_BUILDS.md. No Metro or
+inspector is used during execution. The fixture automatically exports complete
+read-only frame snapshots through a zero-sized test view's native content
+description, without React state updates. A separate SDK-only instrumentation
+class reads them and records native Activity/View/Editable identity, paint and
+layout size, focus, text and selection. All six scenarios cold/live/sweep/edit/
+resize run as normal AppRegistry startup; no live root replacement. The driver
+requires every expected report/stage/PNG, binds installed APK hashes, restores
+font/window on failure and stops its fixture process. The gate applies the
+unchanged1physical-pixel comparisons plus native-state checks. Android
+float32 environment values use the existing1e-6 readiness epsilon; pixel gates
+are unchanged.
+
+The collector's optional final positional scenario names are `primary cold2
+cold085 cold13 sweep editing`. `--primary-only` on the **gate** is for a scoped
+primary/narrow run; it does not establish the extended matrix. Cold2 also
+records actual resize/restoration; native/physical IME composition remains a
+separate real-product test. Original Run20/22 stale frames and Run26 stale
+widget negative controls remain rejected.
+
+Final Run29 fixturef56ea0f3 passes60frame/widget comparisons,12resize/12narrow
+and3edit checks; original487 other payload entries match. The metadata-deficient
+initial fixture remains diagnostic only. See [actual evidence](../../../docs/evidence/run29/README.md)
+and [exact next Release production fidelity work](../../../docs/evidence/run29/android/next-android.md).
+After collecting evidence, restore the intended product APK without data clear,
+remove only the collected owned external `font-fixture-*` exports, and restore
+ordinary Metro for an initial Debug product. This tooling does not close full
+Release tile baseline/raster/application/window or default-build integration.

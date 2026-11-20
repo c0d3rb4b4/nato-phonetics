@@ -1,0 +1,27 @@
+{
+  "command": [
+    "python3",
+    "scripts/build-android-font-release-fixture.py",
+    "artifacts/run27/release-arm64/app-release-unsigned.apk",
+    "artifacts/run29/release-fixture"
+  ],
+  "cwd": "/Users/mac/dev/apps/nato-phonetics",
+  "environment": {
+    "JAVA_HOME": "/tmp/nato-run22-jdk/jdk-17.0.13+11/Contents/Home",
+    "ANDROID_HOME": "/Users/mac/Library/Android/sdk",
+    "NATO_BUILD_JOBS": "1",
+    "PATH": "/tmp/nato-phonetics-toolchain/node_modules/node/bin:/tmp/nato-run22-jdk/jdk-17.0.13+11/Contents/Home/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Users/mac/.codex/tmp/arg0-macos/codex-arg05mnPUr:/Users/mac/.vscode/extensions/openai.chatgpt-26.1111.21308-darwin-arm64/bin/macos-aarch64"
+  },
+  "startedAt": "2026-11-20T11:38:47.411761+00:00",
+  "before": {
+    "availableBytes": 4175368192,
+    "swap": "vm.swapusage: total = 10240.00M  used = 9306.50M  free = 933.50M  (encrypted)"
+  },
+  "exitCode": 0,
+  "durationSeconds": 18.226642042,
+  "after": {
+    "availableBytes": 4128800768,
+    "swap": "vm.swapusage: total = 10240.00M  used = 9483.00M  free = 757.00M  (encrypted)"
+  },
+  "finishedAt": "2026-11-20T11:39:05.646272+00:00"
+}

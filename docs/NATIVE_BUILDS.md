@@ -1,5 +1,8 @@
 # Direct native builds
 
+**Run29 current Android checkpoint — 20 November 2026:** an inspector-free, test-only Release fixture/native observer now passes60 strict frame/widget comparisons,12resize/12narrow and3edit checks on the exact preserved Release native/Hermes payload.487 other non-signature APK entries, including dependency metadata, match the original. Scoped unchanged production Release converter/submitted quiz/Next samples,12tests/lint and40inspected actual captures pass. Full production Release baseline/ink/context/window acceptance, ordinary clean/default integration and other ABI runtime remain open P1. Initial tool/packaging failures are retained and corrected final qualification is separate. [Evidence](evidence/run29/README.md), [captures](evidence/run29/screenshots/index.md), [next P1](evidence/run29/android/next-android.md).
+
+
 The repository owns `android/` and `ios/`. They originate from the official [`@react-native-community/template@0.81.5`](https://www.npmjs.com/package/@react-native-community/template/v/0.81.5), adapted directly without prebuild. Gradle, CocoaPods and Xcode call React Native's own CLI/scripts. Eclipse Timer's local artifact pattern informed this setup; its hosted-build integrations were not copied.
 
 The app retains `com.natophonetics.app`, version `1.0.0` (native build number `1`), `natophonetics://` links, the application branding and AsyncStorage `2.2.0`. Native registration is `NATOPhonetics`. Configured deployment minimums are Android API 24 and iOS 15.1. Run 05 enables phone/tablet orientation changes and removes the iPad full-screen requirement for responsive tile layouts; configuration is not runtime acceptance on every OS/device/window size. Neither macOS, Windows, watchOS nor Wear OS is a configured target.
@@ -52,7 +55,16 @@ The release bundle is `android/app/build/outputs/bundle/release/app-release.aab`
 
 ### P05.2 Android source candidate — Run26, acceptance still active
 
-**Run28 current qualification:** all configured source Release ABIs have
+Run29 also provides a separate, exact-payload Release fixture and SDK-only native
+observer when the development inspector is unavailable. Use the pinned toolchain
+and the [fixture build/collect/gate commands](../tests/fixtures/android-font-scale/README.md#inspector-free-release-fixture-run29).
+This diagnostic replaces only embedded JS in a locally signed copy, preserves all
+non-signature metadata/native/DEX/manifest entries and never changes the original
+product artifact. It qualifies framework fixture behavior, not production JS or
+full Release tile fidelity. Do not install the fixture as a product/distribution
+candidate. [Final payload manifest](evidence/run29/android/fixture-payload-identity-final.json).
+
+**Historical Run28 qualification:** all configured source Release ABIs have
 compile/package qualification (ARM64 Run27; armeabi-v7a/x86/x86_64 Run28).
 Exact payload/Hermes/ELF/prefab/header and consumer links pass; fresh ARM64
 six-case runtime and4 inspected actual captures pass. Other ABI execution,

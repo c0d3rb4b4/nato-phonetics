@@ -1,0 +1,11 @@
+adb: device 'primary' not found
+Traceback (most recent call last):
+  File "/Users/mac/dev/apps/nato-phonetics/scripts/run-android-font-release-fixture.py", line 15, in <module>
+    (out/(package+'.install.log')).write_bytes(call('install','-r',str(apk)))
+  File "/Users/mac/dev/apps/nato-phonetics/scripts/run-android-font-release-fixture.py", line 10, in call
+    def call(*args):return subprocess.check_output(adb+list(args),timeout=45)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 424, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['adb', '-s', 'primary', 'install', '-r', '/Users/mac/dev/apps/nato-phonetics/artifacts/run29/release-fixture/font-release-fixture.apk']' returned non-zero exit status 1.
