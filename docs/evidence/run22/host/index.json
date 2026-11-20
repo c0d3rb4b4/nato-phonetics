@@ -1,0 +1,244 @@
+[
+  {
+    "job": "host-android-debug",
+    "status": "failed",
+    "sourceId": "4c9bd1bfb3fe6d4a9d48e8f31c56927ff49217c9d605cff000969756c80d99cf",
+    "exitCode": 1,
+    "error": "Android requires JDK17; set JAVA_HOME",
+    "artifacts": [],
+    "logs": []
+  },
+  {
+    "job": "host-android-debug-final",
+    "status": "passed",
+    "sourceId": "3d6342bc0c50aa437ab3347126dfe1053077ac38d2596c6828306856d7af85d3",
+    "exitCode": 0,
+    "error": null,
+    "artifacts": [
+      {
+        "file": "app-debug.apk",
+        "bytes": 102169209,
+        "sha256": "77cfda13cdeabdcc2f15e6224497174c0ef799a6a796bdced0cbd4c688827476"
+      }
+    ],
+    "logs": [
+      {
+        "reportLog": "logs/01-native-build.log",
+        "durableLog": "logs/01-native-build.log.gz",
+        "uncompressedSha256": "813a4ad39e4d5491bb26833688b6e8aa55dcc0e69b7f4ff79d7fa3d017bf1a38",
+        "bytes": 12995
+      }
+    ]
+  },
+  {
+    "job": "host-android-release",
+    "status": "passed",
+    "sourceId": "3d6342bc0c50aa437ab3347126dfe1053077ac38d2596c6828306856d7af85d3",
+    "exitCode": 0,
+    "error": null,
+    "artifacts": [
+      {
+        "file": "app-release.aab",
+        "bytes": 33849142,
+        "sha256": "974cefbcc5001dbd81c4b9e74e177d8b61b2b9ad97f05b8cb419c1f511550972"
+      }
+    ],
+    "logs": [
+      {
+        "reportLog": "logs/01-native-build.log",
+        "durableLog": "logs/01-native-build.log.gz",
+        "uncompressedSha256": "baac0ad104fefd553fd50ab595d35da45d70632a9b8745f0b15cf56b068f35a0",
+        "bytes": 20280
+      }
+    ]
+  },
+  {
+    "job": "host-checks",
+    "status": "passed",
+    "sourceId": "3d6342bc0c50aa437ab3347126dfe1053077ac38d2596c6828306856d7af85d3",
+    "exitCode": 0,
+    "error": null,
+    "artifacts": [],
+    "logs": [
+      {
+        "reportLog": "logs/01-check-dependencies.log",
+        "durableLog": "logs/01-check-dependencies.log.gz",
+        "uncompressedSha256": "6549705d9fe4a12ed2d4d4825d080b13b0729971cfa7619d5d4ba201b9a391bd",
+        "bytes": 319
+      },
+      {
+        "reportLog": "logs/02-typecheck.log",
+        "durableLog": "logs/02-typecheck.log.gz",
+        "uncompressedSha256": "31858ec5dd16eb3ab10c47b629013dc1c52d19bcdf158fdb98e57236d272f323",
+        "bytes": 180
+      },
+      {
+        "reportLog": "logs/03-lint.log",
+        "durableLog": "logs/03-lint.log.gz",
+        "uncompressedSha256": "d46cb27d1fd5e5dc7bd226ae54f16c32ffe8101b1ba3c2b6489fa31632c4e6c7",
+        "bytes": 183
+      },
+      {
+        "reportLog": "logs/04-test.log",
+        "durableLog": "logs/04-test.log.gz",
+        "uncompressedSha256": "5aa458778fa20bb56ae23511505472581d86e58d9d77c85337dcbf4ea86ad7b1",
+        "bytes": 36224
+      },
+      {
+        "reportLog": "logs/05-audit-review.log",
+        "durableLog": "logs/05-audit-review.log.gz",
+        "uncompressedSha256": "47964e25dd05f3d6e6f98c625673ea857727982a60417c3d4331800a9f82a3d7",
+        "bytes": 531
+      }
+    ]
+  },
+  {
+    "job": "host-controlled-failure",
+    "status": "failed",
+    "sourceId": "3d6342bc0c50aa437ab3347126dfe1053077ac38d2596c6828306856d7af85d3",
+    "exitCode": 1,
+    "error": "native-build failed (1); see logs/01-native-build.log",
+    "artifacts": [],
+    "logs": [
+      {
+        "reportLog": "logs/01-native-build.log",
+        "durableLog": "logs/01-native-build.log.gz",
+        "uncompressedSha256": "50a8a4f57cb050136798c3a5f0113fc2a4f912be1d0e00d24dcf9c4139eb6b63",
+        "bytes": 285
+      }
+    ]
+  },
+  {
+    "job": "host-ios-final",
+    "status": "passed",
+    "sourceId": "3d6342bc0c50aa437ab3347126dfe1053077ac38d2596c6828306856d7af85d3",
+    "exitCode": 0,
+    "error": null,
+    "artifacts": [
+      {
+        "file": "ios-simulator.tar.gz",
+        "bytes": 4848681,
+        "sha256": "8cdaa7274162240ed19e2f961dd293a8474ab6443a98ba47945f158c57c57452"
+      }
+    ],
+    "logs": [
+      {
+        "reportLog": "logs/01-native-build.log",
+        "durableLog": "logs/01-native-build.log.gz",
+        "uncompressedSha256": "4b2a7e4b96f24161029086b86e00c89064bad6286371295d73a64dea711e2a78",
+        "bytes": 358272
+      },
+      {
+        "reportLog": "logs/02-preserve-native-product.log",
+        "durableLog": "logs/02-preserve-native-product.log.gz",
+        "uncompressedSha256": "9d3168eae9ff60e919642d9f5f2422998ff3ddf1b6233c4a41659a2eb7934860",
+        "bytes": 333
+      }
+    ]
+  },
+  {
+    "job": "host-ios-preflight",
+    "status": "failed",
+    "sourceId": "4c9bd1bfb3fe6d4a9d48e8f31c56927ff49217c9d605cff000969756c80d99cf",
+    "exitCode": 1,
+    "error": "xcodebuild -version: xcode-select: error: tool 'xcodebuild' requires Xcode, but active developer directory '/Library/Developer/CommandLineTools' is a command line tools instance\n",
+    "artifacts": [],
+    "logs": []
+  },
+  {
+    "job": "host-ios-simulator",
+    "status": "failed",
+    "sourceId": "4c9bd1bfb3fe6d4a9d48e8f31c56927ff49217c9d605cff000969756c80d99cf",
+    "exitCode": 1,
+    "error": "Candidate source changed during execution; artifact qualification rejected",
+    "artifacts": [
+      {
+        "file": "ios-simulator.tar.gz",
+        "bytes": 4848680,
+        "sha256": "a00214976f9f0c4114c659d7129df60ddce07414f5d2a7b6678b08c22f887e70"
+      }
+    ],
+    "logs": [
+      {
+        "reportLog": "logs/01-native-build.log",
+        "durableLog": "logs/01-native-build.log.gz",
+        "uncompressedSha256": "389cbaa4aad5e4d67e27e4a59b15381ee563a47aac888f4d6fee9340ec954166",
+        "bytes": 5963252
+      },
+      {
+        "reportLog": "logs/02-preserve-native-product.log",
+        "durableLog": "logs/02-preserve-native-product.log.gz",
+        "uncompressedSha256": "ea0f5c7a37f5cfa57ef62184a4c9a9959be03be759d19022eb0fee1742bed7e4",
+        "bytes": 337
+      }
+    ]
+  },
+  {
+    "job": "host-web-first",
+    "status": "passed",
+    "sourceId": "4c9bd1bfb3fe6d4a9d48e8f31c56927ff49217c9d605cff000969756c80d99cf",
+    "exitCode": 0,
+    "error": null,
+    "artifacts": [
+      {
+        "file": "nato-web.tar.gz",
+        "bytes": 324138,
+        "sha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96"
+      }
+    ],
+    "logs": [
+      {
+        "reportLog": "logs/01-package-regressions.log",
+        "durableLog": "logs/01-package-regressions.log.gz",
+        "uncompressedSha256": "82257eadc96aa6c1ab357eae637d4af1dceca1ae62bb051407578b39623ff717",
+        "bytes": 1599
+      },
+      {
+        "reportLog": "logs/02-web-build.log",
+        "durableLog": "logs/02-web-build.log.gz",
+        "uncompressedSha256": "434e94175cd67feae0d35af4b2efa29f4d62dc1154fc9f1b03d244a3ee62c9fd",
+        "bytes": 471
+      },
+      {
+        "reportLog": "logs/03-web-package.log",
+        "durableLog": "logs/03-web-package.log.gz",
+        "uncompressedSha256": "6e83f85712750683a69d9863eab932485e432e99fae1b91c929a3faaafb1b974",
+        "bytes": 3763
+      }
+    ]
+  },
+  {
+    "job": "host-web-second",
+    "status": "passed",
+    "sourceId": "4c9bd1bfb3fe6d4a9d48e8f31c56927ff49217c9d605cff000969756c80d99cf",
+    "exitCode": 0,
+    "error": null,
+    "artifacts": [
+      {
+        "file": "nato-web.tar.gz",
+        "bytes": 324138,
+        "sha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96"
+      }
+    ],
+    "logs": [
+      {
+        "reportLog": "logs/01-package-regressions.log",
+        "durableLog": "logs/01-package-regressions.log.gz",
+        "uncompressedSha256": "bad838234bf985b8a0d565ed7609bc9ecd36ebd0b894e3fbe8bcbae3ee3007d7",
+        "bytes": 1598
+      },
+      {
+        "reportLog": "logs/02-web-build.log",
+        "durableLog": "logs/02-web-build.log.gz",
+        "uncompressedSha256": "ca783bcb0882fcd440353093e369cc656ad23a320c7e9149952ef3f9eb732ca9",
+        "bytes": 471
+      },
+      {
+        "reportLog": "logs/03-web-package.log",
+        "durableLog": "logs/03-web-package.log.gz",
+        "uncompressedSha256": "e4fcea56bebc9bf23dde520c15d37e862f1fe6396cd9b60a794a488c0ee39fdb",
+        "bytes": 3765
+      }
+    ]
+  }
+]

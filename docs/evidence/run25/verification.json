@@ -1,0 +1,78 @@
+{
+  "at": "2026-11-19T11:32:54.741830+00:00",
+  "baseHead": "b79ef565e0ed5bf1d16b31010dd15e40369d5bfc",
+  "initialWorkingTree": "",
+  "baselineFiles": 4544,
+  "modifiedMaintainedFiles": [
+    ".github/workflows/ci.yml",
+    "README.md",
+    "docs/APP_REVIEW.md",
+    "docs/DELIVERY_PLAN.md",
+    "docs/LOCAL_PROGRESS.md",
+    "docs/RELEASE_RUNBOOK.md",
+    "docs/WEB_DISTRIBUTION.md",
+    "scripts/progress-observation.cjs",
+    "scripts/verify-progress-recovery-browser.cjs",
+    "scripts/verify-web-host.cjs"
+  ],
+  "sourceFilesSha256": {
+    ".github/workflows/ci.yml": "4f2f5ba02ff663a38784524abf45da247bdc7ac372e0c187e0b6a3a2a3c7e051",
+    "README.md": "d35228a88d91d50216c4235907ea1cf09e52b7e31f6dc7b86fdee77467ce7677",
+    "docs/APP_REVIEW.md": "1290284992149cb3a7647c8a31189bf0328e5ff25ca6c96659f68eacbc1307e9",
+    "docs/DELIVERY_PLAN.md": "1dd7449d1c6ddf0b929468b126dc3e2933ce851fcb79b45b2c298a4df82f89e8",
+    "docs/LOCAL_PROGRESS.md": "e1ad0b9ef1ff5467eeae089551bb35a5a82be22d2ff33754c30f4d4310a4976d",
+    "docs/RELEASE_RUNBOOK.md": "b5084cb0bbf1b2958540ffa9607989b36350b3d03aefa298f62fa97537169817",
+    "docs/WEB_DISTRIBUTION.md": "befb0d6ff274dc8cada9114b46cd9b7ba783c3f42d78be26df7c784704bd2f8e",
+    "scripts/progress-observation.cjs": "cfd1667b7fb8bf184e7b6fefd1470d1b6d32c0538f8f0886559226e8c7648b6a",
+    "scripts/verify-progress-recovery-browser.cjs": "4f190f5f7f08065aaffdabed808ffa561bfd504608cf48b29c4c479a728c2cf1",
+    "scripts/verify-web-host.cjs": "b21067d2716376510fb2cd18f35caa3337295b6ebf92a9de541eec985417ad5e"
+  },
+  "sourceId": "783732773d385ba522c9acb119da9e5a702cdefe8422e48d990bf72daee5c1dd",
+  "sourcePatchSha256": "e2ac235e1b96a1323007f87f9f07ac7c6a401632e1d5dedf3fb2467ab765ea7d",
+  "priorEvidenceUntouched": true,
+  "reviewSnapshotPreserved": true,
+  "indexUnchangedEmpty": true,
+  "productNativeDependencyWorkerProviderPermissionSchemaUnchanged": true,
+  "statusCounts": {
+    "resolved": 6,
+    "implemented-awaiting-M11": 12,
+    "in-progress": 17
+  },
+  "requiredItems": 35,
+  "allManualResultsUnperformed": true,
+  "phases": "P05\u2013P10 active; no phase closes",
+  "recovery": [
+    {
+      "engine": "chromium",
+      "scenarios": 6,
+      "captures": 10,
+      "browser": "157.0.4341.60"
+    },
+    {
+      "engine": "firefox",
+      "scenarios": 6,
+      "captures": 10,
+      "browser": "159.0"
+    },
+    {
+      "engine": "webkit",
+      "scenarios": 6,
+      "captures": 10,
+      "browser": "27.2"
+    }
+  ],
+  "observerContractProbes": 3,
+  "hostCommand": "failed1;2HTTP/resource groups and observed first-save boundary qualified; rejected-update feedback fails; later update/rollback/repair/offline unrun",
+  "initialObserverCommand": "failed1 after2ordinary scopes; original observer/runner/report retained",
+  "finalCaptures": 30,
+  "separateDiagnosticImages": 6,
+  "nativeCaptures": "inapplicable to browser-tooling/CI-only delta; prior native scopes retained; final P10.7 remains unfinished",
+  "linksChecked": 828,
+  "maintainedLint": "passed0warnings",
+  "workflowGate": "local matrix/nonzero/always-upload assertions pass; hosted Linux unrun",
+  "reuse": "151shared tests/177compiledYoga/Run23directbuilds/rawaudit0/review0 reused at unchanged scope, not newly run",
+  "runtimeObserverSha256": "cc825f6affda82c53118c68fee2836185198959bd04c6c4241db7e152fffc7ba",
+  "finalObserverSha256": "cfd1667b7fb8bf184e7b6fefd1470d1b6d32c0538f8f0886559226e8c7648b6a",
+  "finalObserverDelta": "defensive malformed-row diagnostic summary only;3real-browser contract probes pass; valid-record recovery assertions/production bytes unchanged",
+  "noCommitOrPublication": true
+}

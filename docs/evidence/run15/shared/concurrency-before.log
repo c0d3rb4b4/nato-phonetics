@@ -1,0 +1,23 @@
+TargetCloseError: Protocol error (Runtime.callFunctionOn): Target closed
+    at CallbackRegistry.clear (/Users/mac/.npm/_npx/e5f4bcd55d2c7c9f/node_modules/puppeteer-core/lib/cjs/puppeteer/common/CallbackRegistry.js:82:36)
+    at CdpCDPSession.onClosed (/Users/mac/.npm/_npx/e5f4bcd55d2c7c9f/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/CdpSession.js:115:25)
+    at #onClose (/Users/mac/.npm/_npx/e5f4bcd55d2c7c9f/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/Connection.js:190:21)
+    at WebSocket.<anonymous> (/Users/mac/.npm/_npx/e5f4bcd55d2c7c9f/node_modules/puppeteer-core/lib/cjs/puppeteer/node/NodeWebSocketTransport.js:48:30)
+    at callListener (/Users/mac/.npm/_npx/e5f4bcd55d2c7c9f/node_modules/ws/lib/event-target.js:290:14)
+    at WebSocket.onClose (/Users/mac/.npm/_npx/e5f4bcd55d2c7c9f/node_modules/ws/lib/event-target.js:220:9)
+    at WebSocket.emit (node:events:519:28)
+    at WebSocket.emitClose (/Users/mac/.npm/_npx/e5f4bcd55d2c7c9f/node_modules/ws/lib/websocket.js:279:10)
+    at Socket.socketOnClose (/Users/mac/.npm/_npx/e5f4bcd55d2c7c9f/node_modules/ws/lib/websocket.js:1360:15)
+    at Socket.emit (node:events:519:28) {
+  cause: ProtocolError
+      at <instance_members_initializer> (/Users/mac/.npm/_npx/e5f4bcd55d2c7c9f/node_modules/puppeteer-core/lib/cjs/puppeteer/common/CallbackRegistry.js:103:14)
+      at new Callback (/Users/mac/.npm/_npx/e5f4bcd55d2c7c9f/node_modules/puppeteer-core/lib/cjs/puppeteer/common/CallbackRegistry.js:107:16)
+      at CallbackRegistry.create (/Users/mac/.npm/_npx/e5f4bcd55d2c7c9f/node_modules/puppeteer-core/lib/cjs/puppeteer/common/CallbackRegistry.js:25:26)
+      at Connection._rawSend (/Users/mac/.npm/_npx/e5f4bcd55d2c7c9f/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/Connection.js:108:26)
+      at CdpCDPSession.send (/Users/mac/.npm/_npx/e5f4bcd55d2c7c9f/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/CdpSession.js:74:33)
+      at #evaluate (/Users/mac/.npm/_npx/e5f4bcd55d2c7c9f/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/ExecutionContext.js:363:50)
+      at ExecutionContext.evaluate (/Users/mac/.npm/_npx/e5f4bcd55d2c7c9f/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/ExecutionContext.js:277:36)
+      at IsolatedWorld.evaluate (/Users/mac/.npm/_npx/e5f4bcd55d2c7c9f/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/IsolatedWorld.js:105:30)
+      at CdpJSHandle.evaluate (/Users/mac/.npm/_npx/e5f4bcd55d2c7c9f/node_modules/puppeteer-core/lib/cjs/puppeteer/api/JSHandle.js:149:37)
+      at CdpElementHandle.evaluate (/Users/mac/.npm/_npx/e5f4bcd55d2c7c9f/node_modules/puppeteer-core/lib/cjs/puppeteer/api/ElementHandle.js:347:38)
+}

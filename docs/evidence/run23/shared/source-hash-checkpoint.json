@@ -1,0 +1,6 @@
+{
+  "initialByteEqualityAssertion": "failed",
+  "reason": "Only terminal sourceMappingURL comments differ; fetched exact prior20.0.2 sources match Run22 hashes.",
+  "correctedSemanticComparison": "passed for both consumers",
+  "evidence": "consumer-source-comparison.json; cli-config-android.patch; cli-platform-apple.patch"
+}

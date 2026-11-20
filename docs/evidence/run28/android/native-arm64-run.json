@@ -1,0 +1,26 @@
+{
+  "command": [
+    "python3",
+    "scripts/run-android-font-native.py",
+    "artifacts/run28/native-arm64/font-environment",
+    "artifacts/run27/release-libs",
+    "docs/evidence/run28/android/native-arm64",
+    "emulator-5580"
+  ],
+  "cwd": "/Users/mac/dev/apps/nato-phonetics",
+  "environment": {
+    "PATH": "/Users/mac/Library/Android/sdk/platform-tools:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Users/mac/.codex/tmp/arg0-macos/codex-arg05mnPUr:/Users/mac/.vscode/extensions/openai.chatgpt-26.1111.21308-darwin-arm64/bin/macos-aarch64"
+  },
+  "startedAt": "2026-11-20T11:02:07.853342+00:00",
+  "before": {
+    "availableBytes": 3095629824,
+    "swap": "vm.swapusage: total = 11264.00M  used = 10850.31M  free = 413.69M  (encrypted)"
+  },
+  "exitCode": 0,
+  "durationSeconds": 2.525241625,
+  "after": {
+    "availableBytes": 3095203840,
+    "swap": "vm.swapusage: total = 11264.00M  used = 10872.12M  free = 391.88M  (encrypted)"
+  },
+  "finishedAt": "2026-11-20T11:02:10.393469+00:00"
+}

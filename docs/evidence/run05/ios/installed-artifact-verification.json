@@ -1,0 +1,41 @@
+[
+  {
+    "device": "iPhone17Pro",
+    "udid": "0653F7EC-9237-4AC5-A264-12969E625070",
+    "installedPath": "/Users/mac/Library/Developer/CoreSimulator/Devices/0653F7EC-9237-4AC5-A264-12969E625070/data/Containers/Bundle/Application/83A4047B-C556-425E-AE4C-1F469F01241F/NATOPhonetics.app",
+    "method": "Unique simulator bundle with matching Info.plist CFBundleIdentifier and MobileContainerManager MCMMetadataIdentifier; filesystem SHA256 after shutdown",
+    "matchesBuiltArtifact": {
+      "NATOPhonetics": true,
+      "main.jsbundle": true,
+      "NatoTile-ExtraBold.ttf": true,
+      "NatoTile-SemiBold.ttf": true,
+      "NatoTile-Italic.ttf": true
+    }
+  },
+  {
+    "device": "iPadPro11M5",
+    "udid": "D6F0ADFF-A6FB-4B1C-B48F-2A77E35D29BB",
+    "installedPath": "/Users/mac/Library/Developer/CoreSimulator/Devices/D6F0ADFF-A6FB-4B1C-B48F-2A77E35D29BB/data/Containers/Bundle/Application/698DAE3F-E2A0-4A2B-A268-90A4C3554846/NATOPhonetics.app",
+    "method": "Unique simulator bundle with matching Info.plist CFBundleIdentifier and MobileContainerManager MCMMetadataIdentifier; filesystem SHA256 after shutdown",
+    "matchesBuiltArtifact": {
+      "NATOPhonetics": true,
+      "main.jsbundle": true,
+      "NatoTile-ExtraBold.ttf": true,
+      "NatoTile-SemiBold.ttf": true,
+      "NatoTile-Italic.ttf": true
+    }
+  },
+  {
+    "device": "iPhone16e",
+    "udid": "FCFA5ED8-E56F-4E60-9AFC-1139B2B0BAF2",
+    "installedPath": "/Users/mac/Library/Developer/CoreSimulator/Devices/FCFA5ED8-E56F-4E60-9AFC-1139B2B0BAF2/data/Containers/Bundle/Application/6A2FE989-0FBF-476C-A04B-E4A32488A7A8/NATOPhonetics.app",
+    "method": "Unique simulator bundle with matching Info.plist CFBundleIdentifier and MobileContainerManager MCMMetadataIdentifier; filesystem SHA256 after shutdown",
+    "matchesBuiltArtifact": {
+      "NATOPhonetics": true,
+      "main.jsbundle": true,
+      "NatoTile-ExtraBold.ttf": true,
+      "NatoTile-SemiBold.ttf": true,
+      "NatoTile-Italic.ttf": true
+    }
+  }
+]

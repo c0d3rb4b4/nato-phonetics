@@ -1,0 +1,1890 @@
+[
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "layout-context",
+      "time": 1795100651849,
+      "thread": 5159,
+      "symbol": "_ZN8facebook5react24YogaLayoutableShadowNode10layoutTreeENS0_13LayoutContextENS0_17LayoutConstraintsE",
+      "fontMultiplier": 1,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "layout-context",
+      "time": 1795100651850,
+      "thread": 5159,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 1,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-enter",
+      "time": 1795100651850,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-leave",
+      "time": 1795100651871,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 375.4285583496094,
+      "height": 19.428571701049805
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "layout-context",
+      "time": 1795100651871,
+      "thread": 5159,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 1,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-enter",
+      "time": 1795100651871,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-leave",
+      "time": 1795100651876,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 260,
+      "height": 40.57143020629883
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "layout-context",
+      "time": 1795100651877,
+      "thread": 5159,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 1,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-enter",
+      "time": 1795100651877,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-leave",
+      "time": 1795100651881,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 260,
+      "height": 59.42856979370117
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "layout-context",
+      "time": 1795100651882,
+      "thread": 5159,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 1,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-enter",
+      "time": 1795100651882,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-leave",
+      "time": 1795100651885,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 260,
+      "height": 24
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "layout-context",
+      "time": 1795100651886,
+      "thread": 5159,
+      "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 1,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-enter",
+      "time": 1795100651886,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-leave",
+      "time": 1795100651887,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 365.4285583496094,
+      "height": 24.571428298950195
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "layout-context",
+      "time": 1795100651887,
+      "thread": 5159,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 1,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-enter",
+      "time": 1795100651887,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-leave",
+      "time": 1795100651892,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 260,
+      "height": 72
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "layout-context",
+      "time": 1795100654982,
+      "thread": 5114,
+      "symbol": "_ZN8facebook5react24YogaLayoutableShadowNode10layoutTreeENS0_13LayoutContextENS0_17LayoutConstraintsE",
+      "fontMultiplier": 0.8500000238418579,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "layout-context",
+      "time": 1795100654987,
+      "thread": 5114,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 0.8500000238418579,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "cpp-measure-enter",
+      "time": 1795100654988,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "cpp-measure-leave",
+      "time": 1795100654996,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 375.4285583496094,
+      "height": 16.571428298950195
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "layout-context",
+      "time": 1795100654998,
+      "thread": 5114,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 0.8500000238418579,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "cpp-measure-enter",
+      "time": 1795100654998,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "cpp-measure-leave",
+      "time": 1795100655002,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 260,
+      "height": 34.85714340209961
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "layout-context",
+      "time": 1795100655002,
+      "thread": 5114,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 0.8500000238418579,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "cpp-measure-enter",
+      "time": 1795100655002,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "cpp-measure-leave",
+      "time": 1795100655003,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 260,
+      "height": 34.85714340209961
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "layout-context",
+      "time": 1795100655003,
+      "thread": 5114,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 0.8500000238418579,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "cpp-measure-enter",
+      "time": 1795100655003,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "cpp-measure-leave",
+      "time": 1795100655003,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 260,
+      "height": 20.571428298950195
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "layout-context",
+      "time": 1795100655004,
+      "thread": 5114,
+      "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 0.8500000238418579,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "cpp-measure-enter",
+      "time": 1795100655004,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "cpp-measure-leave",
+      "time": 1795100655004,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 365.4285583496094,
+      "height": 21.14285659790039
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "layout-context",
+      "time": 1795100655008,
+      "thread": 5114,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 0.8500000238418579,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "cpp-measure-enter",
+      "time": 1795100655008,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "cpp-measure-leave",
+      "time": 1795100655011,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 260,
+      "height": 41.14285659790039
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "layout-context",
+      "time": 1795100655063,
+      "thread": 5159,
+      "symbol": "_ZN8facebook5react24YogaLayoutableShadowNode10layoutTreeENS0_13LayoutContextENS0_17LayoutConstraintsE",
+      "fontMultiplier": 0.8500000238418579,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "layout-context",
+      "time": 1795100655063,
+      "thread": 5159,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 0.8500000238418579,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "cpp-measure-enter",
+      "time": 1795100655063,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "cpp-measure-leave",
+      "time": 1795100655066,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 375.4285583496094,
+      "height": 16.571428298950195
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "layout-context",
+      "time": 1795100655066,
+      "thread": 5159,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 0.8500000238418579,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "cpp-measure-enter",
+      "time": 1795100655066,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "cpp-measure-leave",
+      "time": 1795100655066,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 260,
+      "height": 34.85714340209961
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "layout-context",
+      "time": 1795100655066,
+      "thread": 5159,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 0.8500000238418579,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "cpp-measure-enter",
+      "time": 1795100655066,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "cpp-measure-leave",
+      "time": 1795100655079,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 260,
+      "height": 50.85714340209961
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "layout-context",
+      "time": 1795100655079,
+      "thread": 5159,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 0.8500000238418579,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "cpp-measure-enter",
+      "time": 1795100655079,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "cpp-measure-leave",
+      "time": 1795100655079,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 260,
+      "height": 20.571428298950195
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "layout-context",
+      "time": 1795100655081,
+      "thread": 5159,
+      "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 0.8500000238418579,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "cpp-measure-enter",
+      "time": 1795100655082,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "cpp-measure-leave",
+      "time": 1795100655082,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 365.4285583496094,
+      "height": 21.14285659790039
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "layout-context",
+      "time": 1795100655082,
+      "thread": 5159,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 0.8500000238418579,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "cpp-measure-enter",
+      "time": 1795100655082,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "cpp-measure-leave",
+      "time": 1795100655082,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 260,
+      "height": 41.14285659790039
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "layout-context",
+      "time": 1795100655165,
+      "thread": 5159,
+      "symbol": "_ZN8facebook5react24YogaLayoutableShadowNode10layoutTreeENS0_13LayoutContextENS0_17LayoutConstraintsE",
+      "fontMultiplier": 0.8500000238418579,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "layout-context",
+      "time": 1795100655165,
+      "thread": 5159,
+      "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 0.8500000238418579,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "cpp-measure-enter",
+      "time": 1795100655165,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live085",
+      "kind": "cpp-measure-leave",
+      "time": 1795100655166,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 365.4285583496094,
+      "height": 21.14285659790039
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "layout-context",
+      "time": 1795100657786,
+      "thread": 5114,
+      "symbol": "_ZN8facebook5react24YogaLayoutableShadowNode10layoutTreeENS0_13LayoutContextENS0_17LayoutConstraintsE",
+      "fontMultiplier": 1.2999999523162842,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "layout-context",
+      "time": 1795100657787,
+      "thread": 5114,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 1.2999999523162842,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "cpp-measure-enter",
+      "time": 1795100657787,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "cpp-measure-leave",
+      "time": 1795100657794,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 375.4285583496094,
+      "height": 47.42856979370117
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "layout-context",
+      "time": 1795100657795,
+      "thread": 5114,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 1.2999999523162842,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "cpp-measure-enter",
+      "time": 1795100657795,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "cpp-measure-leave",
+      "time": 1795100657797,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 260,
+      "height": 76
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "layout-context",
+      "time": 1795100657797,
+      "thread": 5114,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 1.2999999523162842,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "cpp-measure-enter",
+      "time": 1795100657797,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "cpp-measure-leave",
+      "time": 1795100657798,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 260,
+      "height": 100
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "layout-context",
+      "time": 1795100657798,
+      "thread": 5114,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 1.2999999523162842,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "cpp-measure-enter",
+      "time": 1795100657798,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "cpp-measure-leave",
+      "time": 1795100657798,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 260,
+      "height": 26.85714340209961
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "layout-context",
+      "time": 1795100657798,
+      "thread": 5114,
+      "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 1.2999999523162842,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "cpp-measure-enter",
+      "time": 1795100657799,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "cpp-measure-leave",
+      "time": 1795100657801,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 365.4285583496094,
+      "height": 29.714284896850586
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "layout-context",
+      "time": 1795100657801,
+      "thread": 5114,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 1.2999999523162842,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "cpp-measure-enter",
+      "time": 1795100657801,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "cpp-measure-leave",
+      "time": 1795100657804,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 260,
+      "height": 80.57142639160156
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "layout-context",
+      "time": 1795100657864,
+      "thread": 5159,
+      "symbol": "_ZN8facebook5react24YogaLayoutableShadowNode10layoutTreeENS0_13LayoutContextENS0_17LayoutConstraintsE",
+      "fontMultiplier": 1.2999999523162842,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "layout-context",
+      "time": 1795100657865,
+      "thread": 5159,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 1.2999999523162842,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "cpp-measure-enter",
+      "time": 1795100657865,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "cpp-measure-leave",
+      "time": 1795100657868,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 375.4285583496094,
+      "height": 47.42856979370117
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "layout-context",
+      "time": 1795100657868,
+      "thread": 5159,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 1.2999999523162842,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "cpp-measure-enter",
+      "time": 1795100657868,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "cpp-measure-leave",
+      "time": 1795100657868,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 260,
+      "height": 76
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "layout-context",
+      "time": 1795100657868,
+      "thread": 5159,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 1.2999999523162842,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "cpp-measure-enter",
+      "time": 1795100657868,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "cpp-measure-leave",
+      "time": 1795100657870,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 260,
+      "height": 100
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "layout-context",
+      "time": 1795100657870,
+      "thread": 5159,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 1.2999999523162842,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "cpp-measure-enter",
+      "time": 1795100657870,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "cpp-measure-leave",
+      "time": 1795100657870,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 260,
+      "height": 26.85714340209961
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "layout-context",
+      "time": 1795100657870,
+      "thread": 5159,
+      "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 1.2999999523162842,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "cpp-measure-enter",
+      "time": 1795100657870,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "cpp-measure-leave",
+      "time": 1795100657870,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 365.4285583496094,
+      "height": 29.714284896850586
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "layout-context",
+      "time": 1795100657870,
+      "thread": 5159,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 1.2999999523162842,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "cpp-measure-enter",
+      "time": 1795100657870,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live13",
+      "kind": "cpp-measure-leave",
+      "time": 1795100657870,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 260,
+      "height": 80.57142639160156
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "layout-context",
+      "time": 1795100660459,
+      "thread": 5114,
+      "symbol": "_ZN8facebook5react24YogaLayoutableShadowNode10layoutTreeENS0_13LayoutContextENS0_17LayoutConstraintsE",
+      "fontMultiplier": 2,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "layout-context",
+      "time": 1795100660459,
+      "thread": 5114,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 2,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "cpp-measure-enter",
+      "time": 1795100660460,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "cpp-measure-leave",
+      "time": 1795100660470,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 375.4285583496094,
+      "height": 66.28571319580078
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "layout-context",
+      "time": 1795100660470,
+      "thread": 5114,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 2,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "cpp-measure-enter",
+      "time": 1795100660471,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "cpp-measure-leave",
+      "time": 1795100660478,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 260,
+      "height": 135.42857360839844
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "layout-context",
+      "time": 1795100660478,
+      "thread": 5114,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 2,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "cpp-measure-enter",
+      "time": 1795100660478,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "cpp-measure-leave",
+      "time": 1795100660480,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 260,
+      "height": 200.57142639160156
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "layout-context",
+      "time": 1795100660480,
+      "thread": 5114,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 2,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "cpp-measure-enter",
+      "time": 1795100660480,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "cpp-measure-leave",
+      "time": 1795100660483,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 260,
+      "height": 36
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "layout-context",
+      "time": 1795100660483,
+      "thread": 5114,
+      "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 2,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "cpp-measure-enter",
+      "time": 1795100660484,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "cpp-measure-leave",
+      "time": 1795100660485,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 365.4285583496094,
+      "height": 40.57143020629883
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "layout-context",
+      "time": 1795100660485,
+      "thread": 5114,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 2,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "cpp-measure-enter",
+      "time": 1795100660485,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "cpp-measure-leave",
+      "time": 1795100660491,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 260,
+      "height": 144
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "layout-context",
+      "time": 1795100660510,
+      "thread": 5159,
+      "symbol": "_ZN8facebook5react24YogaLayoutableShadowNode10layoutTreeENS0_13LayoutContextENS0_17LayoutConstraintsE",
+      "fontMultiplier": 2,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "layout-context",
+      "time": 1795100660510,
+      "thread": 5159,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 2,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "cpp-measure-enter",
+      "time": 1795100660510,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "cpp-measure-leave",
+      "time": 1795100660515,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 375.4285583496094,
+      "height": 66.28571319580078
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "layout-context",
+      "time": 1795100660515,
+      "thread": 5159,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 2,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "cpp-measure-enter",
+      "time": 1795100660515,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "cpp-measure-leave",
+      "time": 1795100660515,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 260,
+      "height": 135.42857360839844
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "layout-context",
+      "time": 1795100660515,
+      "thread": 5159,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 2,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "cpp-measure-enter",
+      "time": 1795100660515,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "cpp-measure-leave",
+      "time": 1795100660521,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 260,
+      "height": 168
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "layout-context",
+      "time": 1795100660521,
+      "thread": 5159,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 2,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "cpp-measure-enter",
+      "time": 1795100660521,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "cpp-measure-leave",
+      "time": 1795100660521,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 260,
+      "height": 36
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "layout-context",
+      "time": 1795100660521,
+      "thread": 5159,
+      "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 2,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "cpp-measure-enter",
+      "time": 1795100660521,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "cpp-measure-leave",
+      "time": 1795100660521,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 365.4285583496094,
+      "height": 40.57143020629883
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "layout-context",
+      "time": 1795100660521,
+      "thread": 5159,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 2,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "cpp-measure-enter",
+      "time": 1795100660521,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "cpp-measure-leave",
+      "time": 1795100660521,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 260,
+      "height": 144
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "layout-context",
+      "time": 1795100663276,
+      "thread": 5114,
+      "symbol": "_ZN8facebook5react24YogaLayoutableShadowNode10layoutTreeENS0_13LayoutContextENS0_17LayoutConstraintsE",
+      "fontMultiplier": 1,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "layout-context",
+      "time": 1795100663278,
+      "thread": 5114,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 1,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "cpp-measure-enter",
+      "time": 1795100663278,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "cpp-measure-leave",
+      "time": 1795100663283,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 375.4285583496094,
+      "height": 19.428571701049805
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "layout-context",
+      "time": 1795100663284,
+      "thread": 5114,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 1,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "cpp-measure-enter",
+      "time": 1795100663284,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "cpp-measure-leave",
+      "time": 1795100663285,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 260,
+      "height": 40.57143020629883
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "layout-context",
+      "time": 1795100663285,
+      "thread": 5114,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 1,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "cpp-measure-enter",
+      "time": 1795100663285,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "cpp-measure-leave",
+      "time": 1795100663289,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 260,
+      "height": 59.42856979370117
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "layout-context",
+      "time": 1795100663292,
+      "thread": 5114,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 1,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "cpp-measure-enter",
+      "time": 1795100663294,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "cpp-measure-leave",
+      "time": 1795100663294,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 260,
+      "height": 24
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "layout-context",
+      "time": 1795100663294,
+      "thread": 5159,
+      "symbol": "_ZN8facebook5react24YogaLayoutableShadowNode10layoutTreeENS0_13LayoutContextENS0_17LayoutConstraintsE",
+      "fontMultiplier": 2,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "layout-context",
+      "time": 1795100663294,
+      "thread": 5159,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 2,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "cpp-measure-enter",
+      "time": 1795100663294,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "layout-context",
+      "time": 1795100663294,
+      "thread": 5114,
+      "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 1,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "cpp-measure-enter",
+      "time": 1795100663294,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "cpp-measure-leave",
+      "time": 1795100663294,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 365.4285583496094,
+      "height": 24.571428298950195
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "layout-context",
+      "time": 1795100663294,
+      "thread": 5114,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 1,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "cpp-measure-enter",
+      "time": 1795100663294,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "cpp-measure-leave",
+      "time": 1795100663295,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 375.4285583496094,
+      "height": 19.428571701049805
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "layout-context",
+      "time": 1795100663295,
+      "thread": 5159,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 2,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "cpp-measure-enter",
+      "time": 1795100663295,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "cpp-measure-leave",
+      "time": 1795100663295,
+      "thread": 5114,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 260,
+      "height": 72
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "cpp-measure-leave",
+      "time": 1795100663295,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 260,
+      "height": 59.42856979370117
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "layout-context",
+      "time": 1795100663295,
+      "thread": 5159,
+      "symbol": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "fontMultiplier": 2,
+      "pointDensity": 1.75
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "cpp-measure-enter",
+      "time": 1795100663295,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "cpp-measure-leave",
+      "time": 1795100663295,
+      "thread": 5159,
+      "caller": "_ZNK8facebook5react26AndroidTextInputShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "width": 365.4285583496094,
+      "height": 40.57143020629883
+    }
+  }
+]

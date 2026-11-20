@@ -1,0 +1,31 @@
+[
+  {
+    "type": "send",
+    "payload": {
+      "stage": "boot",
+      "kind": "hook",
+      "time": 1795019930933,
+      "thread": 3830,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "boot",
+      "kind": "hook",
+      "time": 1795019930934,
+      "thread": 3830,
+      "symbol": "_ZNK8facebook5react17TextLayoutManager7measureERKNS0_19AttributedStringBoxERKNS0_19ParagraphAttributesERKNS0_17TextLayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "boot",
+      "kind": "java-ready",
+      "time": 1795019931105,
+      "thread": 3830
+    }
+  }
+]

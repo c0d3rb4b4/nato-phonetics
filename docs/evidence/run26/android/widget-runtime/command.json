@@ -1,0 +1,12 @@
+{
+  "command": "ANDROID_SERIAL=emulator-5580 npm run check:android:font-scale -- docs/evidence/run26/android/widget-runtime --sweep --editing",
+  "exitCode": 0,
+  "apkSha256": "1b045e2dc7b2f1761bd4f8aa708cde29b498f2c43963b3062cc08b8555c28eee",
+  "counts": {
+    "shortFrames": 10,
+    "shortWidgets": 2,
+    "sweepFrames": 40,
+    "sweepWidgets": 8,
+    "editing": 3
+  }
+}

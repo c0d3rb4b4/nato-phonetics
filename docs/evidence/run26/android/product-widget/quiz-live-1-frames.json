@@ -1,0 +1,1246 @@
+{
+  "dimensions": {
+    "fontScale": 1,
+    "height": 914.2857142857143,
+    "scale": 1.75,
+    "width": 411.42857142857144
+  },
+  "values": [
+    {
+      "frame": {
+        "height": 48.571441650390625,
+        "pageX": 56,
+        "pageY": 55.428558349609375,
+        "width": 299.4285583496094,
+        "x": 56,
+        "y": 3.4285714626312256
+      },
+      "style": {
+        "color": "#1F2933",
+        "flex": 1,
+        "fontSize": 18,
+        "fontWeight": "600",
+        "paddingHorizontal": 4,
+        "paddingVertical": 12,
+        "textAlign": "center"
+      },
+      "text": "Letter Quiz"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontSize": 16,
+        "fontWeight": "600",
+        "marginVertical": 8
+      },
+      "text": "Type a word or phrase:"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#E5E7EB",
+        "borderRadius": 12,
+        "borderWidth": 1,
+        "color": "#1F2933",
+        "fontSize": 18,
+        "marginBottom": 12,
+        "maxHeight": 200,
+        "minHeight": 48,
+        "padding": 12,
+        "textAlignVertical": "top"
+      },
+      "testID": "converter-input",
+      "text": "NUWJ359"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Clear input"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#6B7280"
+      },
+      "text": "Letters A\u2013Z and digits 0\u20139. Tabs, newlines and spaces form word boundaries. Dash (-), dot (.), slash (/), at (@) and plus (+) are spoken literally, not NATO code words. Accents and other symbols are shown as not spoken."
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Play Full Phrase"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Replay phrase"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933"
+      },
+      "testID": "converter-current-token",
+      "text": "No token playing."
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Change playback pace"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontSize": 16,
+        "fontWeight": "600",
+        "marginVertical": 8
+      },
+      "text": "Plain text conversion"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "borderColor": "#E5E7EB",
+        "borderRadius": 12,
+        "borderWidth": 1,
+        "color": "#1F2933",
+        "fontSize": 16,
+        "lineHeight": 24,
+        "padding": 12
+      },
+      "testID": "converter-plain-text",
+      "text": "November Uniform Whiskey Juliett Three Five Nine"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#6B7280"
+      },
+      "testID": "converter-omissions",
+      "text": "No unsupported characters. In plain text, / separates input words."
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Copy conversion"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Share conversion"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontSize": 16,
+        "fontWeight": "600",
+        "marginVertical": 8
+      },
+      "text": "NATO Phonetic:"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#6B7280"
+      },
+      "text": "Cards show 24 input tokens per page. Plain text, Copy, Share and phrase playback include the whole input. Input, playback position and card page stay in memory."
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 50,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 110
+      },
+      "testID": "converter-0-letter-run",
+      "text": "N"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 22,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 94
+      },
+      "testID": "converter-0-word-run",
+      "text": "November"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 16,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 94
+      },
+      "testID": "converter-0-pronunciation-run",
+      "text": "no-VEM-ber"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 50,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 110
+      },
+      "testID": "converter-1-letter-run",
+      "text": "U"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 22,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 94
+      },
+      "testID": "converter-1-word-run",
+      "text": "Uniform"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 16,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 94
+      },
+      "testID": "converter-1-pronunciation-run",
+      "text": "YOU-nee-form"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 50,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 110
+      },
+      "testID": "converter-2-letter-run",
+      "text": "W"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 22,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 94
+      },
+      "testID": "converter-2-word-run",
+      "text": "Whiskey"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 16,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 94
+      },
+      "testID": "converter-2-pronunciation-run",
+      "text": "WISS-key"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 50,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 110
+      },
+      "testID": "converter-3-letter-run",
+      "text": "J"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 22,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 94
+      },
+      "testID": "converter-3-word-run",
+      "text": "Juliett"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 16,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 94
+      },
+      "testID": "converter-3-pronunciation-run",
+      "text": "JEW-lee-ett"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 50,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 110
+      },
+      "testID": "converter-4-letter-run",
+      "text": "3"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 22,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 94
+      },
+      "testID": "converter-4-word-run",
+      "text": "Three"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 16,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 94
+      },
+      "testID": "converter-4-pronunciation-run",
+      "text": "TREE"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 50,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 110
+      },
+      "testID": "converter-5-letter-run",
+      "text": "5"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 22,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 94
+      },
+      "testID": "converter-5-word-run",
+      "text": "Five"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 16,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 94
+      },
+      "testID": "converter-5-pronunciation-run",
+      "text": "FIFE"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 50,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 110
+      },
+      "testID": "converter-6-letter-run",
+      "text": "9"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 22,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 94
+      },
+      "testID": "converter-6-word-run",
+      "text": "Nine"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 16,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 94
+      },
+      "testID": "converter-6-pronunciation-run",
+      "text": "NIN-er"
+    },
+    {
+      "frame": {
+        "height": 66.28570556640625,
+        "pageX": 16,
+        "pageY": 76,
+        "width": 379.4285583496094,
+        "x": 16,
+        "y": 24
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontSize": 26,
+        "fontWeight": "700",
+        "marginVertical": 8
+      },
+      "testID": "quiz-prompt",
+      "text": "What is the phonetic word for this symbol?"
+    },
+    {
+      "frame": {
+        "height": 50.285736083984375,
+        "pageX": 150.85714721679688,
+        "pageY": 201.98684692382812,
+        "width": 110.85714721679688,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 50,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.29885659790038943
+          }
+        ],
+        "width": 110
+      },
+      "testID": "quiz-letter",
+      "text": "R"
+    },
+    {
+      "frame": {
+        "height": 22.28570556640625,
+        "pageX": 158.85714721679688,
+        "pageY": 280.9783020019531,
+        "width": 94.85714721679688,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 22,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.1645717010498089
+          }
+        ],
+        "width": 94
+      },
+      "testID": "quiz-card-word-run",
+      "text": "Romeo"
+    },
+    {
+      "frame": {
+        "height": 16,
+        "pageX": 158.85714721679688,
+        "pageY": 308.90472412109375,
+        "width": 94.85714721679688,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 16,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.2381434020996096
+          }
+        ],
+        "width": 94
+      },
+      "testID": "quiz-card-pronunciation-run",
+      "text": "ROW-me-oh"
+    },
+    {
+      "frame": {
+        "height": 21.71429443359375,
+        "pageX": 134.28570556640625,
+        "pageY": 378.2857360839844,
+        "width": 142.85714721679688,
+        "x": 118.28571319580078,
+        "y": 13.714285850524902
+      },
+      "style": {
+        "color": "#1F2933",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Rebel \u00b7 Your answer"
+    },
+    {
+      "frame": {
+        "height": 21.71429443359375,
+        "pageX": 176.57142639160156,
+        "pageY": 438.2857360839844,
+        "width": 57.71427917480469,
+        "x": 160.57142639160156,
+        "y": 13.714285850524902
+      },
+      "style": {
+        "color": "#1F2933",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Rwanda"
+    },
+    {
+      "frame": {
+        "height": 21.71429443359375,
+        "pageX": 180,
+        "pageY": 497.71429443359375,
+        "width": 50.857147216796875,
+        "x": 164,
+        "y": 13.714285850524902
+      },
+      "style": {
+        "color": "#1F2933",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Romeo"
+    },
+    {
+      "frame": {
+        "height": 21.71429443359375,
+        "pageX": 177.7142791748047,
+        "pageY": 557.7142944335938,
+        "width": 56,
+        "x": 161.7142791748047,
+        "y": 13.714285850524902
+      },
+      "style": {
+        "color": "#1F2933",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Reactor"
+    },
+    {
+      "frame": {
+        "height": 24,
+        "pageX": 16,
+        "pageY": 613.1428833007812,
+        "width": 379.4285583496094,
+        "x": 16,
+        "y": 561.1428833007812
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontSize": 16,
+        "lineHeight": 24,
+        "marginVertical": 8
+      },
+      "text": "Not quite. R is Romeo."
+    },
+    {
+      "frame": {
+        "height": 21.71429443359375,
+        "pageX": 156,
+        "pageY": 670.857177734375,
+        "width": 99.42857360839844,
+        "x": 140,
+        "y": 13.714285850524902
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Next question"
+    },
+    {
+      "frame": {
+        "height": 21.71429443359375,
+        "pageX": 153.14285278320312,
+        "pageY": 732.5714111328125,
+        "width": 104.57144165039062,
+        "x": 137.14285278320312,
+        "y": 13.714285850524902
+      },
+      "style": {
+        "color": "#1F2933",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Replay answer"
+    },
+    {
+      "frame": {
+        "height": 21.71429443359375,
+        "pageX": 128,
+        "pageY": 794.2857055664062,
+        "width": 155.4285888671875,
+        "x": 112,
+        "y": 13.714285850524902
+      },
+      "style": {
+        "color": "#1F2933",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "End round and review"
+    }
+  ]
+}

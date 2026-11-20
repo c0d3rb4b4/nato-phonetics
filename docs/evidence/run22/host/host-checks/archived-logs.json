@@ -1,0 +1,32 @@
+[
+  {
+    "reportLog": "logs/01-check-dependencies.log",
+    "durableLog": "logs/01-check-dependencies.log.gz",
+    "uncompressedSha256": "6549705d9fe4a12ed2d4d4825d080b13b0729971cfa7619d5d4ba201b9a391bd",
+    "bytes": 319
+  },
+  {
+    "reportLog": "logs/02-typecheck.log",
+    "durableLog": "logs/02-typecheck.log.gz",
+    "uncompressedSha256": "31858ec5dd16eb3ab10c47b629013dc1c52d19bcdf158fdb98e57236d272f323",
+    "bytes": 180
+  },
+  {
+    "reportLog": "logs/03-lint.log",
+    "durableLog": "logs/03-lint.log.gz",
+    "uncompressedSha256": "d46cb27d1fd5e5dc7bd226ae54f16c32ffe8101b1ba3c2b6489fa31632c4e6c7",
+    "bytes": 183
+  },
+  {
+    "reportLog": "logs/04-test.log",
+    "durableLog": "logs/04-test.log.gz",
+    "uncompressedSha256": "5aa458778fa20bb56ae23511505472581d86e58d9d77c85337dcbf4ea86ad7b1",
+    "bytes": 36224
+  },
+  {
+    "reportLog": "logs/05-audit-review.log",
+    "durableLog": "logs/05-audit-review.log.gz",
+    "uncompressedSha256": "47964e25dd05f3d6e6f98c625673ea857727982a60417c3d4331800a9f82a3d7",
+    "bytes": 531
+  }
+]

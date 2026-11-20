@@ -1,0 +1,26 @@
+{
+  "command": [
+    "python3",
+    "scripts/build-android-font-native.py",
+    "node_modules/react-native/ReactAndroid/build/intermediates/prefab_package/release/prefab",
+    "artifacts/run27/native-release"
+  ],
+  "cwd": "/Users/mac/dev/apps/nato-phonetics",
+  "environment": {
+    "JAVA_HOME": "/tmp/nato-run22-jdk/jdk-17.0.13+11/Contents/Home",
+    "ANDROID_HOME": "/Users/mac/Library/Android/sdk",
+    "PATH": "/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Users/mac/.codex/tmp/arg0-macos/codex-arg05mnPUr:/Users/mac/.vscode/extensions/openai.chatgpt-26.1111.21308-darwin-arm64/bin/macos-aarch64"
+  },
+  "startedAt": "2026-11-19T21:27:49.883306+00:00",
+  "before": {
+    "availableBytes": 2363281408,
+    "swap": "vm.swapusage: total = 12288.00M  used = 11449.44M  free = 838.56M  (encrypted)"
+  },
+  "exitCode": 1,
+  "durationSeconds": 3.393321959,
+  "after": {
+    "availableBytes": 2362822656,
+    "swap": "vm.swapusage: total = 12288.00M  used = 11441.44M  free = 846.56M  (encrypted)"
+  },
+  "finishedAt": "2026-11-19T21:27:53.283365+00:00"
+}

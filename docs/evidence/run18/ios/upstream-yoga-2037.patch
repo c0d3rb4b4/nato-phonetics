@@ -1,0 +1,281 @@
+From b7b054000b48fbf8a72168804c91d8731582dc28 Mon Sep 17 00:00:00 2001
+From: ybelakov <yavor@team-gpt.com>
+Date: Fri, 9 Oct 2026 17:25:45 +0300
+Subject: [PATCH 1/3] Round node dimensions in double so far-off nodes keep
+ their full size
+
+A node's rounded width and height are the difference of its two rounded
+absolute edges. roundValueToPixelGrid returns float, so that difference was
+taken in float; far from the origin a float has fewer bits than a pixel, and
+when the two edges fall on either side of a power of two they are quantized
+differently. A measured text node spanning y = 2048 on a 3x screen came out
+43.9998779 tall instead of 44, one float step short of the two lines it was
+measured at, and the text renderer then dropped the last line.
+
+Round in double and subtract before narrowing to float. The public
+roundValueToPixelGrid keeps its signature.
+---
+ tests/YGRoundingLargeOffsetTest.cpp | 46 +++++++++++++++++++++++++
+ yoga/algorithm/PixelGrid.cpp        | 52 ++++++++++++++++++++---------
+ 2 files changed, 82 insertions(+), 16 deletions(-)
+ create mode 100644 tests/YGRoundingLargeOffsetTest.cpp
+
+diff --git a/tests/YGRoundingLargeOffsetTest.cpp b/tests/YGRoundingLargeOffsetTest.cpp
+new file mode 100644
+index 0000000000..8736d3cb8f
+--- /dev/null
++++ b/tests/YGRoundingLargeOffsetTest.cpp
+@@ -0,0 +1,46 @@
++/*
++ * Copyright (c) Meta Platforms, Inc. and affiliates.
++ *
++ * This source code is licensed under the MIT license found in the
++ * LICENSE file in the root directory of this source tree.
++ */
++
++#include <gtest/gtest.h>
++#include <yoga/Yoga.h>
++
++static YGSize _measureTwoLines(
++    YGNodeConstRef /*node*/,
++    float /*width*/,
++    YGMeasureMode /*widthMode*/,
++    float /*height*/,
++    YGMeasureMode /*heightMode*/) {
++  return YGSize{292.0f, 44.0f};
++}
++
++// A measured (text) node far from the origin on a 3x screen, with its top
++// below 2048 and its bottom above. Each edge is rounded to the pixel grid and
++// the height is their difference; in float the two edges have different
++// precision and the height came out 43.9998779 instead of 44, one step short
++// of the two lines the node was measured at.
++TEST(YogaTest, rounding_measured_height_far_from_origin_is_exact) {
++  YGConfigRef config = YGConfigNew();
++  YGConfigSetPointScaleFactor(config, 3.0f);
++
++  YGNodeRef root = YGNodeNewWithConfig(config);
++  YGNodeStyleSetWidth(root, 300);
++
++  YGNodeRef spacer = YGNodeNewWithConfig(config);
++  YGNodeStyleSetHeight(spacer, 2004.0f + 1.0f / 3.0f);
++  YGNodeInsertChild(root, spacer, 0);
++
++  YGNodeRef text = YGNodeNewWithConfig(config);
++  YGNodeSetMeasureFunc(text, _measureTwoLines);
++  YGNodeInsertChild(root, text, 1);
++
++  YGNodeCalculateLayout(root, YGUndefined, YGUndefined, YGDirectionLTR);
++
++  ASSERT_EQ(44.0f, YGNodeLayoutGetHeight(text));
++
++  YGNodeFreeRecursive(root);
++  YGConfigFree(config);
++}
+diff --git a/yoga/algorithm/PixelGrid.cpp b/yoga/algorithm/PixelGrid.cpp
+index 754a10b3a1..d92f381ad7 100644
+--- a/yoga/algorithm/PixelGrid.cpp
++++ b/yoga/algorithm/PixelGrid.cpp
+@@ -12,7 +12,14 @@
+ 
+ namespace facebook::yoga {
+ 
+-float roundValueToPixelGrid(
++namespace {
++
++// Rounds in double precision. A dimension is the difference of two rounded
++// edges, and far from the origin a float has fewer bits than a pixel: taking
++// that difference in float can leave it a step short of the real size (for
++// example 43.9998 instead of 44 for a node spanning y = 2048 on a 3x screen),
++// which makes a text renderer drop the last line. Subtract first, then narrow.
++double roundValueToPixelGridDouble(
+     const double value,
+     const double pointScaleFactor,
+     const bool forceCeil,
+@@ -60,7 +67,18 @@ float roundValueToPixelGrid(
+   }
+   return (std::isnan(scaledValue) || std::isnan(pointScaleFactor))
+       ? YGUndefined
+-      : (float)(scaledValue / pointScaleFactor);
++      : scaledValue / pointScaleFactor;
++}
++
++} // namespace
++
++float roundValueToPixelGrid(
++    const double value,
++    const double pointScaleFactor,
++    const bool forceCeil,
++    const bool forceFloor) {
++  return static_cast<float>(roundValueToPixelGridDouble(
++      value, pointScaleFactor, forceCeil, forceFloor));
+ }
+ 
+ void roundLayoutResultsToPixelGrid(
+@@ -109,23 +127,25 @@ void roundLayoutResultsToPixelGrid(
+ 
+     node->getLayout().setDimension(
+         Dimension::Width,
+-        roundValueToPixelGrid(
+-            absoluteNodeRight,
+-            pointScaleFactor,
+-            (textRounding && hasFractionalWidth),
+-            (textRounding && !hasFractionalWidth)) -
+-            roundValueToPixelGrid(
+-                absoluteNodeLeft, pointScaleFactor, false, textRounding));
++        static_cast<float>(
++            roundValueToPixelGridDouble(
++                absoluteNodeRight,
++                pointScaleFactor,
++                (textRounding && hasFractionalWidth),
++                (textRounding && !hasFractionalWidth)) -
++            roundValueToPixelGridDouble(
++                absoluteNodeLeft, pointScaleFactor, false, textRounding)));
+ 
+     node->getLayout().setDimension(
+         Dimension::Height,
+-        roundValueToPixelGrid(
+-            absoluteNodeBottom,
+-            pointScaleFactor,
+-            (textRounding && hasFractionalHeight),
+-            (textRounding && !hasFractionalHeight)) -
+-            roundValueToPixelGrid(
+-                absoluteNodeTop, pointScaleFactor, false, textRounding));
++        static_cast<float>(
++            roundValueToPixelGridDouble(
++                absoluteNodeBottom,
++                pointScaleFactor,
++                (textRounding && hasFractionalHeight),
++                (textRounding && !hasFractionalHeight)) -
++            roundValueToPixelGridDouble(
++                absoluteNodeTop, pointScaleFactor, false, textRounding)));
+   }
+ 
+   for (yoga::Node* child : node->getChildren()) {
+
+From 471a2010eab2a9771013a001e00465f84af04c98 Mon Sep 17 00:00:00 2001
+From: ybelakov <yavor@team-gpt.com>
+Date: Fri, 9 Oct 2026 17:49:03 +0300
+Subject: [PATCH 2/3] Cover both fractions on either side of 1024, 2048 and
+ 4096 in the rounding test
+
+On the previous rounding each of these came out off by a float step
+(44.00006, 43.99994, 43.99988, 43.99988 and 43.99976); all are exactly 44
+now.
+---
+ tests/YGRoundingLargeOffsetTest.cpp | 60 ++++++++++++++++-------------
+ 1 file changed, 34 insertions(+), 26 deletions(-)
+
+diff --git a/tests/YGRoundingLargeOffsetTest.cpp b/tests/YGRoundingLargeOffsetTest.cpp
+index 8736d3cb8f..b8378449c1 100644
+--- a/tests/YGRoundingLargeOffsetTest.cpp
++++ b/tests/YGRoundingLargeOffsetTest.cpp
+@@ -17,30 +17,38 @@ static YGSize _measureTwoLines(
+   return YGSize{292.0f, 44.0f};
+ }
+ 
+-// A measured (text) node far from the origin on a 3x screen, with its top
+-// below 2048 and its bottom above. Each edge is rounded to the pixel grid and
+-// the height is their difference; in float the two edges have different
+-// precision and the height came out 43.9998779 instead of 44, one step short
+-// of the two lines the node was measured at.
+-TEST(YogaTest, rounding_measured_height_far_from_origin_is_exact) {
+-  YGConfigRef config = YGConfigNew();
+-  YGConfigSetPointScaleFactor(config, 3.0f);
+-
+-  YGNodeRef root = YGNodeNewWithConfig(config);
+-  YGNodeStyleSetWidth(root, 300);
+-
+-  YGNodeRef spacer = YGNodeNewWithConfig(config);
+-  YGNodeStyleSetHeight(spacer, 2004.0f + 1.0f / 3.0f);
+-  YGNodeInsertChild(root, spacer, 0);
+-
+-  YGNodeRef text = YGNodeNewWithConfig(config);
+-  YGNodeSetMeasureFunc(text, _measureTwoLines);
+-  YGNodeInsertChild(root, text, 1);
+-
+-  YGNodeCalculateLayout(root, YGUndefined, YGUndefined, YGDirectionLTR);
+-
+-  ASSERT_EQ(44.0f, YGNodeLayoutGetHeight(text));
+-
+-  YGNodeFreeRecursive(root);
+-  YGConfigFree(config);
++// A measured (text) node far from the origin on a 3x screen, with its top on
++// one side of a power of two and its bottom on the other. Each edge is rounded
++// to the pixel grid and the height is their difference; in float the two
++// edges have different precision and the height came out one step short (for
++// example 43.9998779 instead of 44 for a node spanning 2048), so a text
++// renderer given that box dropped the last line.
++TEST(YogaTest, rounding_measured_height_is_exact_across_float_steps) {
++  for (const float spacer :
++       {1012.0f + 1.0f / 3.0f,
++        1012.0f + 2.0f / 3.0f,
++        2004.0f + 1.0f / 3.0f,
++        2028.0f + 2.0f / 3.0f,
++        4052.0f + 2.0f / 3.0f}) {
++    YGConfigRef config = YGConfigNew();
++    YGConfigSetPointScaleFactor(config, 3.0f);
++
++    YGNodeRef root = YGNodeNewWithConfig(config);
++    YGNodeStyleSetWidth(root, 300);
++
++    YGNodeRef spacerNode = YGNodeNewWithConfig(config);
++    YGNodeStyleSetHeight(spacerNode, spacer);
++    YGNodeInsertChild(root, spacerNode, 0);
++
++    YGNodeRef text = YGNodeNewWithConfig(config);
++    YGNodeSetMeasureFunc(text, _measureTwoLines);
++    YGNodeInsertChild(root, text, 1);
++
++    YGNodeCalculateLayout(root, YGUndefined, YGUndefined, YGDirectionLTR);
++
++    ASSERT_EQ(44.0f, YGNodeLayoutGetHeight(text)) << "spacer " << spacer;
++
++    YGNodeFreeRecursive(root);
++    YGConfigFree(config);
++  }
+ }
+
+From d6eaad81461b1f5857ec2d84b63a68d7120357be Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?nishan=20=28o=5E=E2=96=BD=5Eo=29?= <nishanbende@gmail.com>
+Date: Wed, 14 Oct 2026 19:37:52 +0530
+Subject: [PATCH 3/3] Remove comments
+
+---
+ tests/YGRoundingLargeOffsetTest.cpp | 6 ------
+ yoga/algorithm/PixelGrid.cpp        | 5 -----
+ 2 files changed, 11 deletions(-)
+
+diff --git a/tests/YGRoundingLargeOffsetTest.cpp b/tests/YGRoundingLargeOffsetTest.cpp
+index b8378449c1..991d5e1acf 100644
+--- a/tests/YGRoundingLargeOffsetTest.cpp
++++ b/tests/YGRoundingLargeOffsetTest.cpp
+@@ -17,12 +17,6 @@ static YGSize _measureTwoLines(
+   return YGSize{292.0f, 44.0f};
+ }
+ 
+-// A measured (text) node far from the origin on a 3x screen, with its top on
+-// one side of a power of two and its bottom on the other. Each edge is rounded
+-// to the pixel grid and the height is their difference; in float the two
+-// edges have different precision and the height came out one step short (for
+-// example 43.9998779 instead of 44 for a node spanning 2048), so a text
+-// renderer given that box dropped the last line.
+ TEST(YogaTest, rounding_measured_height_is_exact_across_float_steps) {
+   for (const float spacer :
+        {1012.0f + 1.0f / 3.0f,
+diff --git a/yoga/algorithm/PixelGrid.cpp b/yoga/algorithm/PixelGrid.cpp
+index d92f381ad7..476b316d3c 100644
+--- a/yoga/algorithm/PixelGrid.cpp
++++ b/yoga/algorithm/PixelGrid.cpp
+@@ -14,11 +14,6 @@ namespace facebook::yoga {
+ 
+ namespace {
+ 
+-// Rounds in double precision. A dimension is the difference of two rounded
+-// edges, and far from the origin a float has fewer bits than a pixel: taking
+-// that difference in float can leave it a step short of the real size (for
+-// example 43.9998 instead of 44 for a node spanning y = 2048 on a 3x screen),
+-// which makes a text renderer drop the last line. Subtract first, then narrow.
+ double roundValueToPixelGridDouble(
+     const double value,
+     const double pointScaleFactor,

@@ -1,0 +1,7 @@
+# Run 18 Android policy and identity
+
+The standard Gradle project uses Maven react-android and does not compile the patched local Yoga source. The [installed Run17 Debug APK](artifact.json) matches its retained built hash; no Android native rebuild is selected or claimed. [Actual loaded Hermes source](loaded-javascript.json) is separately archived and matches Run17 exactly. Source/graph reuse does not repair the open Android live ordinary-text failure.
+
+Android16/API36/arm64,720×1600/280dpi/fontScale1/Light. The [actual capture command](capture-policy.log) passes complete Speech-label/reachability checks, and the [inspected screenshot](../screenshots/android/policy-complete.png) visibly contains the full microphone-access ending and adjacent Offline paragraph. [Driver](capture-policy.py), [UI hierarchy](hierarchies/policy-complete.xml). Default policy scope only; no broad native/AT/provider pass.
+
+The [first emulator start](emulator.log) exits1 for insufficient free disk. After cleaning reproducible completed native object/intermediate caches while retaining/hash-checking app/APK/AAB products and all source/history, [retry](emulator-retry.log) boots and [bootstrap](bootstrap.log) passes. [Recovery record](../shared/storage-recovery.json). This is resolved machine work, not an owner prerequisite. Emulator and Metro stop deliberately after capture/loaded-source archival; no publication, signing or human acceptance.

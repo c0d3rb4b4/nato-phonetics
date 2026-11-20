@@ -1,0 +1,100 @@
+{
+  "date": "2026-11-17",
+  "platform": "android",
+  "package": "com.natophonetics.app",
+  "version": "1.0.0",
+  "versionCode": 1,
+  "apkPath": "artifacts/run05/android/NATOPhonetics-1.0.0-debug.apk",
+  "apkSha256": "e11acd393e8618b001c712607d711b0f36bf427f2cfa618bbbde6731cccbdb4b",
+  "apkBytes": 102721657,
+  "installedApkPath": "/data/app/~~9EWW2ZsLJao1IroYvIEtrA==/com.natophonetics.app-nXon8N4p6y0d9qngpEd1AA==/base.apk",
+  "installedApkSha256": "e11acd393e8618b001c712607d711b0f36bf427f2cfa618bbbde6731cccbdb4b",
+  "fonts": [
+    {
+      "file": "assets/fonts/NatoTile-ExtraBold.ttf",
+      "sha256": "b0150a84d5e000fcd276cf13e1863ca8bbaab0ff2a0dfdcfa958a48781dd7aa6"
+    },
+    {
+      "file": "assets/fonts/NatoTile-SemiBold.ttf",
+      "sha256": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f"
+    },
+    {
+      "file": "assets/fonts/NatoTile-Italic.ttf",
+      "sha256": "50f16c8bec3ed31190d37403b6e15d200274e7a5e43f1a698a86eef7079d862b"
+    }
+  ],
+  "runtime": "Android16/API36",
+  "emulator": "nato-p00-api36",
+  "serial": "emulator-5580",
+  "display": "720x1600@280dpi baseline; recorded narrow/landscape/tablet overrides in screenshot metadata",
+  "runningJavaScript": {
+    "capturedAt": "2026-11-17T14:43:15.884Z",
+    "method": "Hermes CDP Debugger.getScriptSource",
+    "scripts": [
+      {
+        "file": "artifacts/run05/android/loaded-javascript/script-2.js",
+        "url": "http://127.0.0.1:8081/index.bundle//&platform=android&dev=true&lazy=true&minify=false&app=com.natophonetics.app&modulesOnly=false&runModule=true&excludeSource=true&sourcePaths=url-server",
+        "bytes": 5151137,
+        "sha256": "edc9558726b0e721afdd83d32a89b18ca42d308d3ac11aca37681cc0f313d2f8"
+      }
+    ]
+  },
+  "note": "Debug APK needs Metro. APK and observed loaded JavaScript together identify the executed candidate. This is a development certificate build, not signed distribution.",
+  "findings": [
+    {
+      "id": "android-live-scale-general-text",
+      "status": "open",
+      "owner": "P05.2/P05.8/R06/R07 engineering",
+      "detail": "During live200percent and returned100percent systemfont changes, non-tile header/instruction clip or retain stale enlarged text; the second instruction clause disappears. Sharedtile geometry/fonts/raster now pass the five-step cycle after inverse-cache removal; overall app text lifecycle remains unfinished. See scale-transition-final.log and screenshot stages2/4."
+    },
+    {
+      "id": "android-tile-inverse-cache",
+      "status": "resolved",
+      "owner": "P05.7/R25 engineering",
+      "detail": "Prior cachedinverse values drifted from native renderer metrics on return1x. Removal of JS memoization verified by120glyph observations and390nativebaselines through1\u21922\u21921\u21922\u21921; historical failure retained under diagnostics/live-scale-reset."
+    },
+    {
+      "id": "android-digit3-guide-raster-edge",
+      "status": "open",
+      "owner": "P05.8/R25 engineering",
+      "detail": "Expanded native raster gate:282/283 observations within2px; converter digit3 TREE guide top\u22122.012px remains a raw nominal gate failure. See raster-final.log and independent fringe analysis."
+    }
+  ],
+  "notExercised": [
+    {
+      "case": "Actual Android app-window resizing/freeform",
+      "reason": "Emulator featurelist does not advertise android.software.freeform_window_management; display wm size overrides are viewport evidence, not an app-window resize."
+    }
+  ],
+  "rasterVerification": {
+    "observations": 283,
+    "passed": false,
+    "nominalEnvelopePhysicalPixels": 2,
+    "failures": [
+      {
+        "capture": "converter-light.png",
+        "symbol": "3",
+        "scale": 1,
+        "density": 1.75,
+        "part": "guide",
+        "text": "TREE",
+        "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+        "inkPixels": {
+          "left": 337,
+          "top": 1162,
+          "right": 385,
+          "bottom": 1176,
+          "count": 331
+        },
+        "expectedInk": {
+          "top": 1164.012,
+          "bottom": 1177.718
+        },
+        "deltaPixels": {
+          "top": -2.0119999999999436,
+          "bottom": -0.7180000000000746
+        }
+      }
+    ]
+  }
+}

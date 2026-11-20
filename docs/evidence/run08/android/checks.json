@@ -1,0 +1,48 @@
+[
+  {
+    "check": "native-session-flow",
+    "passed": true,
+    "timestamp": "2026-11-17T17:46:32Z",
+    "symbols": [
+      "L",
+      "N",
+      "B",
+      "O",
+      "F"
+    ],
+    "answered": 5,
+    "correct": 0,
+    "retryLength": 5,
+    "menuRetained": true
+  },
+  {
+    "check": "submitted-live-scale2-retains-round",
+    "passed": true,
+    "timestamp": "2026-11-17T17:54:28Z",
+    "previousProgress": [
+      [
+        "Question ",
+        1,
+        " of ",
+        5,
+        " \u00b7 ",
+        0,
+        " correct"
+      ],
+      [
+        "Question ",
+        1,
+        " of ",
+        5,
+        " \u00b7 ",
+        0,
+        " correct"
+      ]
+    ]
+  },
+  {
+    "check": "cold-scale2-question-feedback-review-reachable",
+    "passed": true,
+    "timestamp": "2026-11-17T17:55:16Z"
+  }
+]

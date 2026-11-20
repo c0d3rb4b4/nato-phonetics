@@ -1,4 +1,5 @@
 // Similar sounding words for quiz distractors
+/** @type {Record<import('../types').LetterSymbol, string[]>} */
 export const QUIZ_DISTRACTORS = {
   'A': ['Alpha', 'Arrow', 'Angel', 'Anchor', 'Atlas', 'Austin', 'Adam', 'Apollo', 'Arctic', 'Amber', 'Aspen', 'Azure', 'Apex', 'Atlas', 'Autumn', 'Avalon', 'Avenger', 'Atlantic', 'Alabama', 'Alaska'],
   'B': ['Brave', 'Bingo', 'Banner', 'Boston', 'Baker', 'Bishop', 'Bullet', 'Buffalo', 'Berlin', 'Beacon', 'Blaze', 'Bomber', 'Beta', 'Bronze', 'Bridge', 'Boulder', 'Bengal', 'Brazil', 'Belgium', 'Britain'],

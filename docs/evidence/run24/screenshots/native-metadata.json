@@ -1,0 +1,222 @@
+[
+  {
+    "file": "ios/default-copy-after-menu.png",
+    "capturedAt": "2026-11-19T10:50:27.589000+00:00",
+    "platform": "iOS simulator",
+    "runtime": "iOS26.2",
+    "device": "iPhone17Pro",
+    "viewportPoints": [
+      402,
+      874
+    ],
+    "dpr": 3,
+    "theme": "light",
+    "textSize": "large",
+    "appCandidate": "Run23 Release; all25 installed files match",
+    "harnessSource": "ios/default-passing-driver.swift",
+    "command": "xcrun xcresulttool export attachments; exact path/arguments in ios/commands.json",
+    "state": "copy after menu",
+    "sha256": "b8e4365c04975c3d68ee3cbad9cd2f9fda31d654e15ef8af72d1459825f71c32",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "ios/default-plain-text-interior.png",
+    "capturedAt": "2026-11-19T10:50:23.742000+00:00",
+    "platform": "iOS simulator",
+    "runtime": "iOS26.2",
+    "device": "iPhone17Pro",
+    "viewportPoints": [
+      402,
+      874
+    ],
+    "dpr": 3,
+    "theme": "light",
+    "textSize": "large",
+    "appCandidate": "Run23 Release; all25 installed files match",
+    "harnessSource": "ios/default-passing-driver.swift",
+    "command": "xcrun xcresulttool export attachments; exact path/arguments in ios/commands.json",
+    "state": "plain text interior",
+    "sha256": "b8e4365c04975c3d68ee3cbad9cd2f9fda31d654e15ef8af72d1459825f71c32",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "ios/default-long-copy.png",
+    "capturedAt": "2026-11-19T10:50:21.676000+00:00",
+    "platform": "iOS simulator",
+    "runtime": "iOS26.2",
+    "device": "iPhone17Pro",
+    "viewportPoints": [
+      402,
+      874
+    ],
+    "dpr": 3,
+    "theme": "light",
+    "textSize": "large",
+    "appCandidate": "Run23 Release; all25 installed files match",
+    "harnessSource": "ios/default-passing-driver.swift",
+    "command": "xcrun xcresulttool export attachments; exact path/arguments in ios/commands.json",
+    "state": "long copy",
+    "sha256": "3277267b63628ceeeee2064dd477b69e5b7b34620b9ea7d304df0690dc18b204",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "ios/default-long-paste-keyboard.png",
+    "capturedAt": "2026-11-19T10:50:14.425000+00:00",
+    "platform": "iOS simulator",
+    "runtime": "iOS26.2",
+    "device": "iPhone17Pro",
+    "viewportPoints": [
+      402,
+      874
+    ],
+    "dpr": 3,
+    "theme": "light",
+    "textSize": "large",
+    "appCandidate": "Run23 Release; all25 installed files match",
+    "harnessSource": "ios/default-passing-driver.swift",
+    "command": "xcrun xcresulttool export attachments; exact path/arguments in ios/commands.json",
+    "state": "long paste keyboard",
+    "sha256": "9981680d6a5bf52ae9168dcc1ecfb1a0d68f3928918ed9c9a16acf3a56dc33e3",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "ios/default-share-share-cancelled.png",
+    "capturedAt": "2026-11-19T10:51:08.118000+00:00",
+    "platform": "iOS simulator",
+    "runtime": "iOS26.2",
+    "device": "iPhone17Pro",
+    "viewportPoints": [
+      402,
+      874
+    ],
+    "dpr": 3,
+    "theme": "light",
+    "textSize": "large",
+    "appCandidate": "Run23 Release; all25 installed files match",
+    "harnessSource": "ios/default-passing-driver.swift",
+    "command": "xcrun xcresulttool export attachments; exact path/arguments in ios/commands.json",
+    "state": "share cancelled",
+    "sha256": "695c0c63f1f6205b08d1defdba9cb576deb117db4b0e087d198b1fe51d71f3af",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "ios/default-share-share-sheet.png",
+    "capturedAt": "2026-11-19T10:51:04.818000+00:00",
+    "platform": "iOS simulator",
+    "runtime": "iOS26.2",
+    "device": "iPhone17Pro",
+    "viewportPoints": [
+      402,
+      874
+    ],
+    "dpr": 3,
+    "theme": "light",
+    "textSize": "large",
+    "appCandidate": "Run23 Release; all25 installed files match",
+    "harnessSource": "ios/default-passing-driver.swift",
+    "command": "xcrun xcresulttool export attachments; exact path/arguments in ios/commands.json",
+    "state": "share sheet",
+    "sha256": "81c3473a6cc0083d08ffcc30a7f0209f0bebb988ce66f08304d115f6c5b87232",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "ios/default-share-long-paste-keyboard.png",
+    "capturedAt": "2026-11-19T10:50:55.129000+00:00",
+    "platform": "iOS simulator",
+    "runtime": "iOS26.2",
+    "device": "iPhone17Pro",
+    "viewportPoints": [
+      402,
+      874
+    ],
+    "dpr": 3,
+    "theme": "light",
+    "textSize": "large",
+    "appCandidate": "Run23 Release; all25 installed files match",
+    "harnessSource": "ios/default-passing-driver.swift",
+    "command": "xcrun xcresulttool export attachments; exact path/arguments in ios/commands.json",
+    "state": "long paste keyboard",
+    "sha256": "9981680d6a5bf52ae9168dcc1ecfb1a0d68f3928918ed9c9a16acf3a56dc33e3",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "ios/maximum-copy-after-menu.png",
+    "capturedAt": "2026-11-19T10:55:24.697000+00:00",
+    "platform": "iOS simulator",
+    "runtime": "iOS26.2",
+    "device": "iPhone17Pro",
+    "viewportPoints": [
+      402,
+      874
+    ],
+    "dpr": 3,
+    "theme": "dark",
+    "textSize": "accessibility-extra-extra-extra-large",
+    "appCandidate": "Run23 Release; all25 installed files match",
+    "harnessSource": "ios/harness/CaptureUITests.swift",
+    "command": "xcrun xcresulttool export attachments; exact path/arguments in ios/commands.json",
+    "state": "copy after menu",
+    "sha256": "bbaf843c41347586f462a61cd172e6a722c7706684d133dcc2c19fe7d2b47371",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "ios/maximum-plain-text-interior.png",
+    "capturedAt": "2026-11-19T10:55:18.087000+00:00",
+    "platform": "iOS simulator",
+    "runtime": "iOS26.2",
+    "device": "iPhone17Pro",
+    "viewportPoints": [
+      402,
+      874
+    ],
+    "dpr": 3,
+    "theme": "dark",
+    "textSize": "accessibility-extra-extra-extra-large",
+    "appCandidate": "Run23 Release; all25 installed files match",
+    "harnessSource": "ios/harness/CaptureUITests.swift",
+    "command": "xcrun xcresulttool export attachments; exact path/arguments in ios/commands.json",
+    "state": "plain text interior",
+    "sha256": "21eac926cb91fdd5cbf0ed10be8b5fcb88b6261504325f15c8d2e89e4be11e63",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "ios/maximum-long-copy.png",
+    "capturedAt": "2026-11-19T10:55:12.011000+00:00",
+    "platform": "iOS simulator",
+    "runtime": "iOS26.2",
+    "device": "iPhone17Pro",
+    "viewportPoints": [
+      402,
+      874
+    ],
+    "dpr": 3,
+    "theme": "dark",
+    "textSize": "accessibility-extra-extra-extra-large",
+    "appCandidate": "Run23 Release; all25 installed files match",
+    "harnessSource": "ios/harness/CaptureUITests.swift",
+    "command": "xcrun xcresulttool export attachments; exact path/arguments in ios/commands.json",
+    "state": "long copy",
+    "sha256": "b0abb005a0b6da89e0660618db8e5ecc0e2aeae4cd37fcb5058af2f8e3725e63",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  },
+  {
+    "file": "ios/maximum-long-paste-keyboard.png",
+    "capturedAt": "2026-11-19T10:54:42.337000+00:00",
+    "platform": "iOS simulator",
+    "runtime": "iOS26.2",
+    "device": "iPhone17Pro",
+    "viewportPoints": [
+      402,
+      874
+    ],
+    "dpr": 3,
+    "theme": "dark",
+    "textSize": "accessibility-extra-extra-extra-large",
+    "appCandidate": "Run23 Release; all25 installed files match",
+    "harnessSource": "ios/harness/CaptureUITests.swift",
+    "command": "xcrun xcresulttool export attachments; exact path/arguments in ios/commands.json",
+    "state": "long paste keyboard",
+    "sha256": "d07684e55a694026118131e0665f2cd89efee6b6b597d0f881090274ee9eac35",
+    "inspection": "Inspected actual image/contact sheet; no blank/loading capture. Natural scrolling/keyboard occlusion retained; no whole accessibility pass."
+  }
+]

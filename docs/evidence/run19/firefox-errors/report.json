@@ -1,0 +1,64 @@
+{
+  "engine": "firefox",
+  "runner": "1.65.1",
+  "checks": [
+    {
+      "scope": "two simultaneous actual pointer answers; exact selected word/feedback and both live summaries",
+      "answers": [
+        {
+          "symbol": "T",
+          "word": "Tango"
+        },
+        {
+          "symbol": "W",
+          "word": "Whiskey"
+        }
+      ]
+    },
+    {
+      "scope": "failed-write Retry with withheld storage events cannot resurrect deleted answers",
+      "generation": "074efbeb-dd01-43f3-a0fd-a48ce88fc609"
+    },
+    {
+      "scope": "a new submission after unseen deletion saves exactly once"
+    },
+    {
+      "scope": "real exclusive-lock timeout followed by awaited release/actual pointer Retry saves once"
+    },
+    {
+      "scope": "offline direct progress route preserves exact aggregate record with test server disconnected"
+    },
+    {
+      "scope": "offline converter/reference direct routes render actual app and bundled tiles"
+    },
+    {
+      "scope": "persistent browser relaunch offline restores shell/exact progress/unrelated key; converter draft remains memory-only"
+    }
+  ],
+  "errors": [],
+  "automationErrors": [
+    {
+      "message": "deliberate quota failure",
+      "stack": "Error: deliberate quota failure\n    at vE/x/< (http://127.0.0.1:56665/assets/app-W3AARF6X.js:17:104502)\n    at async*run (http://127.0.0.1:56665/assets/app-W3AARF6X.js:17:106084)\n    at d (http://127.0.0.1:56665/assets/app-W3AARF6X.js:17:103444)\n    at x (http://127.0.0.1:56665/assets/app-W3AARF6X.js:17:104040)\n    at vE/record/< (http://127.0.0.1:56665/assets/app-W3AARF6X.js:17:105231)\n    at promise callback*h (http://127.0.0.1:56665/assets/app-W3AARF6X.js:17:103390)\n    at record (http://127.0.0.1:56665/assets/app-W3AARF6X.js:17:105130)\n    at Me (http://127.0.0.1:56665/assets/app-W3AARF6X.js:17:108726)\n    at onPress (http://127.0.0.1:56665/assets/app-W3AARF6X.js:17:115832)\n    at onClick (http://127.0.0.1:56665/assets/app-W3AARF6X.js:17:30974)\n    at d7 (http://127.0.0.1:56665/assets/app-W3AARF6X.js:8:117000)\n    at $7</E6/< (http://127.0.0.1:56665/assets/app-W3AARF6X.js:8:122000)\n    at mh (http://127.0.0.1:56665/assets/app-W3AARF6X.js:8:9042)\n    at E6 (http://127.0.0.1:56665/assets/app-W3AARF6X.js:8:118234)\n    at o2 (http://127.0.0.1:56665/assets/app-W3AARF6X.js:9:26563)\n    at BR (http://127.0.0.1:56665/assets/app-W3AARF6X.js:9:26379)\n    at EventListener.handleEvent*p7 (http://127.0.0.1:56665/assets/app-W3AARF6X.js:8:117795)\n    at g6 (http://127.0.0.1:56665/assets/app-W3AARF6X.js:8:117195)\n    at $7</a2/< (http://127.0.0.1:56665/assets/app-W3AARF6X.js:8:117361)\n    at a2 (http://127.0.0.1:56665/assets/app-W3AARF6X.js:8:117306)\n    at $7</sc.createRoot (http://127.0.0.1:56665/assets/app-W3AARF6X.js:9:33607)\n    at  (http://127.0.0.1:56665/assets/app-W3AARF6X.js:18:7399)"
+    }
+  ],
+  "browser": "159.0",
+  "capabilities": {
+    "secureContext": true,
+    "locks": true,
+    "serviceWorker": true,
+    "cacheStorage": true,
+    "abortTimeout": true
+  },
+  "freeze": "Not run in this suite: dedicated Puppeteer lifecycle suite checks Chromium freeze. No Firefox/WebKit or OS process suspension pass.",
+  "shell": {
+    "controller": "http://127.0.0.1:56665/service-worker.js",
+    "caches": [
+      "nato-shell-v1-d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e"
+    ]
+  },
+  "errorBoundary": "Actual window error/unhandledrejection events must be empty. Firefox automation must report exactly the single injected quota rejection; all other automation errors fail.",
+  "status": "passed",
+  "deniedServerRequests": 0,
+  "at": "2026-11-18T16:21:26.003Z"
+}

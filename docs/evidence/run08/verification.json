@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "date": "2026-11-17",
+  "applicationManifestSha256": "52e7ef6239a316c989741d60eb3ea2152e00e68a6c81ca1c82c651380c0267f1",
+  "inheritedUnchangedFiles": 129,
+  "unexpectedRemovedFiles": 0,
+  "indexedInspectedScreenshots": 44,
+  "screenshotsByTarget": {
+    "web": 20,
+    "android": 15,
+    "ios": 9
+  },
+  "supplementaryDiagnosticScreenshot": "ios/diagnostics/url-confirmation.png",
+  "checkedLocalLinks": 388,
+  "missingLinks": [],
+  "ledgerCounts": {
+    "resolved": 4,
+    "implemented-awaiting-M11": 12,
+    "in-progress": 12,
+    "open": 7
+  },
+  "taskStatus": {
+    "P07.2": "delivered",
+    "P07.4": "partial; affected Android live enlarged-text gate open",
+    "P07": "active",
+    "P05.2": "failed; no repair claimed",
+    "M11": "unperformed"
+  },
+  "notRepeated": "Unchanged locked install/audit/native app builds/full tile-window-raster matrices; historical evidence retains scope"
+}

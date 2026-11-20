@@ -1,0 +1,54 @@
+{
+  "nativeApk": "artifacts/run06/android/NATOPhonetics-1.0.0-debug.apk",
+  "nativeApkSha256": "0ecf22d08d00d964d61d77cfc8c14607607627020733c5397e839e70db9cadda",
+  "source": [
+    {
+      "file": "node_modules/react-native/package.json",
+      "sha256": "82105be2013f90516cdc635bbd1d485453bac2b3af15749eedafca05adcccfcd"
+    },
+    {
+      "file": "node_modules/react-native/ReactCommon/react/renderer/attributedstring/TextAttributes.h",
+      "sha256": "f1623b68fe23aabd9653f8cc7afc06c293bc4e9c5a870df0d6807b8284c0799e"
+    },
+    {
+      "file": "node_modules/react-native/ReactCommon/react/renderer/attributedstring/TextAttributes.cpp",
+      "sha256": "03fb56037a80224f98196384168e59a71e198cc00c7bb2710c9980515eeeda97"
+    },
+    {
+      "file": "node_modules/react-native/ReactCommon/react/renderer/components/text/ParagraphShadowNode.cpp",
+      "sha256": "7576a87a3fe98d6026288a13c0ae6a6f1ea307343d7a90091c83649a860bdc68"
+    },
+    {
+      "file": "node_modules/react-native/ReactCommon/react/renderer/components/view/YogaLayoutableShadowNode.cpp",
+      "sha256": "1205e21ce3ebab04a95035c45bf5c0a16e739ff5f64def6701f86b02de90055e"
+    },
+    {
+      "file": "node_modules/react-native/ReactAndroid/src/main/java/com/facebook/react/uimanager/PixelUtil.kt",
+      "sha256": "8ea751ab403a63b810b503dc8acfeb404399ecf987795a2a92db0480289adb6b"
+    },
+    {
+      "file": "docs/evidence/run07/android/diagnostics/text-scale-probe/run.py",
+      "sha256": "daacdc7793863c6284a880139046000fe2472658ccc61abd75222ee2d731df31"
+    },
+    {
+      "file": "docs/evidence/run07/android/diagnostics/text-scale-probe/compare.cjs",
+      "sha256": "285766c4d6b69bed93daf32716c319058a2c22644666b6e259a692c02069c536"
+    },
+    {
+      "file": "docs/evidence/run07/android/diagnostics/text-scale-probe/mount-probe.js",
+      "sha256": "c6ce763959d4cd5f6653107a5bbee0ca54f9d1a12392f8bc89a1f7f0a9fe053c"
+    },
+    {
+      "file": "docs/evidence/run07/android/diagnostics/text-scale-probe-yoga/run.py",
+      "sha256": "3f1224656bf41907352a5e36cb5d43644440409b3b27332ee95b4427091665d5"
+    },
+    {
+      "file": "docs/evidence/run07/android/diagnostics/text-scale-probe-yoga/compare.cjs",
+      "sha256": "59bc01bc26cced6014a24ae3dc12b28a39e50438e524084e431a6acd25efc7ec"
+    },
+    {
+      "file": "docs/evidence/run07/android/diagnostics/text-scale-probe-yoga/mount-probe.js",
+      "sha256": "44057e0d002b18b54196023bb26ea6209b5bb8efb9a2e0fe30a680792c693754"
+    }
+  ]
+}

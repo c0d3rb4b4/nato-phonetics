@@ -1,0 +1,70 @@
+{"level":"info","ts":1795084871.5429592,"msg":"using config from file","file":"/Users/mac/dev/apps/nato-phonetics/artifacts/run24/readonly/webkit-tabs/runtime-5MZKiW/a/Caddyfile"}
+{"level":"info","ts":1795084871.545344,"msg":"adapted config to JSON","adapter":"caddyfile"}
+{"level":"info","ts":1795084871.547199,"logger":"http","msg":"servers shutting down with eternal grace period"}
+{"level":"info","ts":1795084871.54725,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x5f17d5608100"}
+{"level":"info","ts":1795084871.54731,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0x5f17d5608100"}
+page.waitForFunction: Timeout 15000ms exceeded.
+    at main (/Users/mac/dev/apps/nato-phonetics/scripts/verify-web-host.cjs:191:14) {
+  log: [],
+  name: 'TimeoutError'
+}
+{
+  "engine": "webkit",
+  "runner": "1.65.1",
+  "platform": "darwin",
+  "transitionMode": "tabs",
+  "idleWithNoAppClientsMs": 1000,
+  "checks": [
+    {
+      "name": "All 13 direct routes and trailing slashes return exact route HTML with revalidation",
+      "passed": true
+    },
+    {
+      "name": "Exact resource GET/HEAD bytes, MIME/cache headers, missing assets/private metadata 404, navigation fallback and method handling",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "boundary": "Actual local Caddy; public HTTPS/certificates/host, branded Safari/iOS, legacy clients and M11 remain unrun",
+  "runnerSha256": "1d3cc883ac1eed247723e09707d0887acc2d073f589fd1aab20dd0b16e6176c2",
+  "browserExecutable": "/Users/mac/Library/Caches/ms-playwright/webkit-2388/pw_run.sh",
+  "browserExecutableSha256": "a85baad3d8c07173ac387a59b41500c382b21ed692afe0964d29aac247ccc63b",
+  "runtimeDirectory": "/Users/mac/dev/apps/nato-phonetics/artifacts/run24/readonly/webkit-tabs/runtime-5MZKiW",
+  "candidate": {
+    "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+    "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+    "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+  },
+  "caddy": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+  "validation": "Valid configuration",
+  "validators": {
+    "etag": null,
+    "modified": null
+  },
+  "browser": "27.2",
+  "asyncPollingNegativeCheck": "Explicitly awaited false predicate times out, never passes",
+  "failure": {
+    "message": "page.waitForFunction: Timeout 15000ms exceeded.",
+    "stack": "page.waitForFunction: Timeout 15000ms exceeded.\n    at main (/Users/mac/dev/apps/nato-phonetics/scripts/verify-web-host.cjs:191:14)",
+    "state": {
+      "url": "http://127.0.0.1:56313/letter-quiz",
+      "controlled": false,
+      "active": {
+        "state": "activated",
+        "scriptURL": "http://127.0.0.1:56313/service-worker.js"
+      },
+      "waiting": null,
+      "installing": null,
+      "controllerIsActive": false,
+      "servedHtmlSha256": "15571e2af2ff2ed485a1e9a55017cac4e35cc3f38b3e4de64c48bf6c3b848e4b",
+      "caches": [
+        {
+          "name": "nato-shell-v1-d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+          "indexHtmlSha256": "15571e2af2ff2ed485a1e9a55017cac4e35cc3f38b3e4de64c48bf6c3b848e4b"
+        }
+      ]
+    },
+    "visibleText": "Letter Quiz\nWhat is the phonetic word for this symbol?\nQuestion 1 of 10 · 1 correct\nV\nVictorVIK-tah\nVenus\nVancouver\nVictor · Your answer\nViolet\nCorrect! V is Victor.\nNext question\nReplay answer\nEnd round and review\nProgress could not be saved. The summary shows saved answers only. Unsaved answers can be retried while this app remains open.\n1 unsaved answer held in memory.\nRetry progress storage"
+  }
+}

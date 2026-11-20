@@ -1,0 +1,18 @@
+Monitoring boot status for iPhone 17 Pro (0653F7EC-9237-4AC5-A264-12969E625070).
+[2026-11-18 14:49:53 +0000] Status=1, isTerminal=NO, Elapsed=00:02.
+	Waiting on BackBoard
+
+[2026-11-18 14:49:54 +0000] Status=2, isTerminal=NO, Elapsed=00:03.
+	Waiting on Data Migration
+		Reason:(null)
+		Migration Elapsed:00:00 seconds
+
+[2026-11-18 14:49:59 +0000] Status=4, isTerminal=NO, Elapsed=00:07.
+	Waiting on System App
+
+[2026-11-18 14:50:02 +0000] Status=4, isTerminal=NO, Elapsed=00:11.
+	Waiting on System App
+
+[2026-11-18 14:50:05 +0000] Status=4294967295, isTerminal=YES, Elapsed=00:14.
+	Finished
+

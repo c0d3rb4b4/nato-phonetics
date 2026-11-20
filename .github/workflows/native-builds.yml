@@ -1,0 +1,69 @@
+name: Direct host native builds
+
+# Private runner execution is limited to manually selected trusted branches.
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Unsigned build selection
+        type: choice
+        default: all
+        options: [all, android-debug, android-release, ios-simulator]
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    # A failed audit remains a failed job; unsigned build evidence is independent.
+    runs-on: ubuntu-latest
+    env:
+      CI: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm install --global npm@10.9.4
+      - name: Shared locked install and quality/security checks
+        run: node scripts/host-build.cjs checks --install --output artifacts/host-checks
+      - name: Retain every gate and failure log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: host-checks-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: artifacts/host-checks/
+          if-no-files-found: error
+
+  native:
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop'
+    # No needs: checks. Audit failure must not hide selected unsigned diagnostics.
+    runs-on: [self-hosted, macOS, ARM64, nato-phonetics]
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        mode: ${{ fromJSON(inputs.mode == 'all' && '["android-debug","android-release","ios-simulator"]' || format('["{0}"]', inputs.mode)) }}
+    env:
+      CI: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - run: npm install --global npm@10.9.4
+      - name: Shared locked dependencies, preflight and direct build
+        run: node scripts/host-build.cjs ${{ matrix.mode }} --install --jobs 1 --output artifacts/host-${{ matrix.mode }}
+      - name: Collect identified products and all failure logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: host-${{ matrix.mode }}-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: artifacts/host-${{ matrix.mode }}/
+          if-no-files-found: error

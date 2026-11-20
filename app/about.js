@@ -1,132 +1,28 @@
-import { Linking, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { useRouter } from '../src/navigation';
+import { StyleSheet, Text, View } from 'react-native';
+import { Button, ExternalLink, Heading, Screen } from '../src/components/ui';
 import { useTheme } from '../src/context/ThemeContext';
+import { APP_NAME, APP_VERSION, SUPPORT_URL } from '../src/lib/appMetadata';
 
 export default function AboutScreen() {
   const { theme } = useTheme();
-
-  const openLink = (url) => {
-    Linking.openURL(url);
-  };
-
-  return (
-    <ScrollView style={[styles.container, { backgroundColor: theme.colors.background }]}>
-      <View style={styles.section}>
-        <Text style={[styles.title, { color: theme.colors.text }]}>
-          NATO Phonetics
-        </Text>
-        <Text style={[styles.version, { color: theme.colors.textSecondary }]}>
-          Version 1.0.0
-        </Text>
-      </View>
-
-      <View style={styles.section}>
-        <Text style={[styles.sectionTitle, { color: theme.colors.text }]}>
-          About This App
-        </Text>
-        <Text style={[styles.paragraph, { color: theme.colors.textSecondary }]}>
-          NATO Phonetics is a comprehensive learning tool for the NATO phonetic alphabet. 
-          The NATO phonetic alphabet is used worldwide for radio communications to ensure 
-          clarity and avoid misunderstandings.
-        </Text>
-        <Text style={[styles.paragraph, { color: theme.colors.textSecondary }]}>
-          This app helps you learn, practice, and master the NATO phonetic alphabet through:
-        </Text>
-        <View style={styles.bulletList}>
-          <Text style={[styles.bullet, { color: theme.colors.textSecondary }]}>
-            • Interactive alphabet reference with audio
-          </Text>
-          <Text style={[styles.bullet, { color: theme.colors.textSecondary }]}>
-            • Word to NATO phonetic converter
-          </Text>
-          <Text style={[styles.bullet, { color: theme.colors.textSecondary }]}>
-            • Multiple quiz modes for practice
-          </Text>
-          <Text style={[styles.bullet, { color: theme.colors.textSecondary }]}>
-            • Pronunciation guides
-          </Text>
-        </View>
-      </View>
-
-      <View style={styles.section}>
-        <Text style={[styles.sectionTitle, { color: theme.colors.text }]}>
-          The NATO Alphabet
-        </Text>
-        <Text style={[styles.paragraph, { color: theme.colors.textSecondary }]}>
-          Also known as the International Radiotelephony Spelling Alphabet, it assigns 
-          code words to each letter of the English alphabet. These code words were chosen 
-          to sound distinct from each other when spoken, even in poor audio conditions.
-        </Text>
-      </View>
-
-      <View style={styles.section}>
-        <Text style={[styles.sectionTitle, { color: theme.colors.text }]}>
-          Privacy & Data
-        </Text>
-        <Text style={[styles.paragraph, { color: theme.colors.textSecondary }]}>
-          Your privacy matters. This app processes all data locally on your device and does not 
-          collect, transmit, or store any personal information on external servers.
-        </Text>
-      </View>
-
-      <View style={[styles.footer, { borderTopColor: theme.colors.border }]}>
-        <Text style={[styles.footerText, { color: theme.colors.textSecondary }]}>
-          © 2025 NATO Phonetics App
-        </Text>
-        <Text style={[styles.footerText, { color: theme.colors.textSecondary }]}>
-          Made with ❤️ for learners everywhere
-        </Text>
-      </View>
-    </ScrollView>
-  );
+  const router = useRouter();
+  return <Screen>
+    <Heading>{APP_NAME}</Heading>
+    <Text style={[styles.paragraph, { color: theme.colors.textSecondary }]}>Version {APP_VERSION}</Text>
+    <Heading>Learn and practice</Heading>
+    <Text style={[styles.paragraph, { color: theme.colors.text }]}>The International Radiotelephony Spelling Alphabet uses distinct code words to make letters easier to understand over radio and telephone.</Text>
+    <View style={styles.features}>
+      {['Alphabet reference with pronunciation guides and audio', 'Word-to-phonetic conversion', 'Letter/digit choice, listening and typed recall', 'Local progress with due and focused review', 'Device voice and appearance preferences'].map(feature =>
+        <Text key={feature} style={[styles.paragraph, { color: theme.colors.text }]}>• {feature}</Text>)}
+    </View>
+    <Heading>Privacy and support</Heading>
+    <Text style={[styles.paragraph, { color: theme.colors.text }]}>Your preferences and symbol progress are saved on this device, without an account or app cloud sync. Audio uses your device or browser’s speech provider; processing and internet requirements depend on the selected voice and provider.</Text>
+    <Button label="Read privacy policy" variant="secondary" onPress={() => router.push('/privacy')} />
+    <Button label="Audio help and sound test" variant="secondary" onPress={() => router.push('/audio-help')} />
+    <ExternalLink label="Support and issue tracker" url={SUPPORT_URL} />
+    <Text style={[styles.paragraph, { color: theme.colors.textSecondary }]}>Support opens GitHub in your browser. Avoid posting sensitive text or personal information.</Text>
+  </Screen>;
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    paddingHorizontal: 16,
-    paddingTop: 16,
-  },
-  section: {
-    marginBottom: 32,
-  },
-  title: {
-    fontSize: 32,
-    fontWeight: '700',
-    marginBottom: 8,
-    textAlign: 'center',
-  },
-  version: {
-    fontSize: 14,
-    textAlign: 'center',
-    marginBottom: 8,
-  },
-  sectionTitle: {
-    fontSize: 20,
-    fontWeight: '600',
-    marginBottom: 12,
-  },
-  paragraph: {
-    fontSize: 15,
-    lineHeight: 22,
-    marginBottom: 12,
-  },
-  bulletList: {
-    marginTop: 8,
-    marginLeft: 8,
-  },
-  bullet: {
-    fontSize: 15,
-    lineHeight: 24,
-  },
-  footer: {
-    marginTop: 24,
-    paddingTop: 24,
-    borderTopWidth: 1,
-    alignItems: 'center',
-    paddingBottom: 32,
-  },
-  footerText: {
-    fontSize: 13,
-    marginBottom: 4,
-  },
-});
+const styles = StyleSheet.create({ paragraph: { fontSize: 16, lineHeight: 24 }, features: { gap: 8 } });

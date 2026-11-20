@@ -1,0 +1,25 @@
+AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
++ actual - expected
+
++ [
++   {
++     bottom: 475,
++     height: 18,
++     left: 1041.15625,
++     right: 1045.34375,
++     top: 457,
++     width: 4.1875,
++     x: 1041.15625,
++     y: 457
++   }
++ ]
+- []
+
+    at /Users/mac/dev/apps/nato-phonetics/docs/evidence/run18/shared/capture-policy-web.cjs:19:14 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: [Array],
+  expected: [],
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}

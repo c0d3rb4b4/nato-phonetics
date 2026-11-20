@@ -1,0 +1,105 @@
+{"level":"info","ts":1795084523.790074,"msg":"using config from file","file":"/Users/mac/dev/apps/nato-phonetics/artifacts/run24/webkit-original-complete-setup/runtime-5TiNex/a/Caddyfile"}
+{"level":"info","ts":1795084523.792874,"msg":"adapted config to JSON","adapter":"caddyfile"}
+{"level":"info","ts":1795084523.794286,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x4f48aa261b80"}
+{"level":"info","ts":1795084523.795595,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0x4f48aa261b80"}
+{"level":"info","ts":1795084523.795604,"logger":"http","msg":"servers shutting down with eternal grace period"}
+Error: Cannot find module '../package.json'
+Require stack:
+- /Users/mac/dev/apps/nato-phonetics/artifacts/run24/original/scripts/package-web.cjs
+- /Users/mac/dev/apps/nato-phonetics/artifacts/run24/original/scripts/verify-web-host.cjs
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1040:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1045:22)
+    at Function._load (node:internal/modules/cjs/loader:1216:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)
+    at Module.require (node:internal/modules/cjs/loader:1527:12)
+    at require (node:internal/modules/helpers:147:16)
+    at packageWeb (/Users/mac/dev/apps/nato-phonetics/artifacts/run24/original/scripts/package-web.cjs:113:41)
+    at async main (/Users/mac/dev/apps/nato-phonetics/artifacts/run24/original/scripts/verify-web-host.cjs:202:3) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/mac/dev/apps/nato-phonetics/artifacts/run24/original/scripts/package-web.cjs',
+    '/Users/mac/dev/apps/nato-phonetics/artifacts/run24/original/scripts/verify-web-host.cjs'
+  ]
+}
+{
+  "engine": "webkit",
+  "runner": "1.65.1",
+  "platform": "darwin",
+  "transitionMode": "process",
+  "idleWithNoAppClientsMs": 0,
+  "checks": [
+    {
+      "name": "All 13 direct routes and trailing slashes return exact route HTML with revalidation",
+      "passed": true
+    },
+    {
+      "name": "Exact resource GET/HEAD bytes, MIME/cache headers, missing assets/private metadata 404, navigation fallback and method handling",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "boundary": "Actual local Caddy; public HTTPS/certificates/host, branded Safari/iOS, legacy clients and M11 remain unrun",
+  "runnerSha256": "dc1d873bba2841b07ed23947f47bfab2b948062ad0ce4cfc208fd1aecada9d43",
+  "runtimeDirectory": "/Users/mac/dev/apps/nato-phonetics/artifacts/run24/webkit-original-complete-setup/runtime-5TiNex",
+  "candidate": {
+    "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+    "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+    "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+  },
+  "caddy": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+  "validation": "Valid configuration",
+  "validators": {
+    "etag": null,
+    "modified": null
+  },
+  "browser": "27.2",
+  "asyncPollingNegativeCheck": "Explicitly awaited false predicate times out, never passes",
+  "failure": {
+    "message": "Cannot find module '../package.json'\nRequire stack:\n- /Users/mac/dev/apps/nato-phonetics/artifacts/run24/original/scripts/package-web.cjs\n- /Users/mac/dev/apps/nato-phonetics/artifacts/run24/original/scripts/verify-web-host.cjs",
+    "stack": "Error: Cannot find module '../package.json'\nRequire stack:\n- /Users/mac/dev/apps/nato-phonetics/artifacts/run24/original/scripts/package-web.cjs\n- /Users/mac/dev/apps/nato-phonetics/artifacts/run24/original/scripts/verify-web-host.cjs\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1040:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1045:22)\n    at Function._load (node:internal/modules/cjs/loader:1216:25)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Module.require (node:internal/modules/cjs/loader:1527:12)\n    at require (node:internal/modules/helpers:147:16)\n    at packageWeb (/Users/mac/dev/apps/nato-phonetics/artifacts/run24/original/scripts/package-web.cjs:113:41)\n    at async main (/Users/mac/dev/apps/nato-phonetics/artifacts/run24/original/scripts/verify-web-host.cjs:202:3)",
+    "state": {
+      "url": "http://127.0.0.1:55673/converter",
+      "text": "Word Converter\nType a word or phrase:\nClear input\nLetters A–Z and digits 0–9. Tabs, newlines and spaces form word boundaries. Dash (-), dot (.), slash (/), at (@) and plus (+) are spoken literally, not NATO code words. Accents and other symbols are shown as not spoken.\nPlay Full Phrase\nReplay phrase\nNo token playing.\nChange playback pace\nRate 1× · word pause 300 ms\nPlain text conversion\nAlfa Three / Bravo dash\nNo unsupported characters. In plain text, / separates input words.\nCopy conversion\nShare conversion\nNATO Phonetic:\nCards show 24 input tokens per page. Plain text, Copy, Share and phrase playback include the whole input. Input, playback position and card page stay in memory.\nCard page 1 of 1 · tokens 1–5 of 5\nA\nAlfaAL-fah\n3\nThreeTREE\nSPACE\nB\nBravoBRAH-voh\nPlay dash\n- · Literal separator",
+      "caches": [
+        "nato-shell-v1-d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+        "host-check-unrelated"
+      ],
+      "controlled": true,
+      "active": "activated",
+      "controllerIsActive": true,
+      "cacheEntries": [
+        {
+          "name": "nato-shell-v1-d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+          "paths": [
+            "/+not-found.html",
+            "/NatoTile-ExtraBold-P5QNDEHJ.ttf",
+            "/NatoTile-Italic-AWOPV6AY.ttf",
+            "/NatoTile-SemiBold-REJGIRDE.ttf",
+            "/_sitemap.html",
+            "/about.html",
+            "/alphabet.html",
+            "/audio-help.html",
+            "/converter.html",
+            "/favicon.png",
+            "/index.html",
+            "/letter-quiz.html",
+            "/menu.html",
+            "/privacy.html",
+            "/progress.html",
+            "/settings.html",
+            "/voice-select.html",
+            "/assets/app-W3AARF6X.js"
+          ]
+        },
+        {
+          "name": "host-check-unrelated",
+          "paths": [
+            "/host-check-unrelated"
+          ]
+        }
+      ]
+    }
+  }
+}

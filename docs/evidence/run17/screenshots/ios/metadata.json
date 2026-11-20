@@ -1,0 +1,102 @@
+[
+  {
+    "file": "release-digits.png",
+    "state": "release-digits",
+    "theme": "light",
+    "at": "2026-11-18T14:53:56.299000+00:00",
+    "device": "iPhone17Pro",
+    "runtime": "iOS26.2",
+    "viewportPt": [
+      402,
+      874
+    ],
+    "dpr": 3,
+    "fontSizeCategory": "large",
+    "width": 1206,
+    "height": 2622,
+    "sha256": "db6f77fd6ee60f29011f3c6d7c1589c6b51d5f9bb4378034e6c3a574ac071f63",
+    "command": "XCTAttachment(screenshot:XCUIScreen.main.screenshot()); xcresulttool export attachments",
+    "platform": "ios",
+    "inspected": true
+  },
+  {
+    "file": "release-alphabet.png",
+    "state": "release-alphabet",
+    "theme": "light",
+    "at": "2026-11-18T14:53:54.487000+00:00",
+    "device": "iPhone17Pro",
+    "runtime": "iOS26.2",
+    "viewportPt": [
+      402,
+      874
+    ],
+    "dpr": 3,
+    "fontSizeCategory": "large",
+    "width": 1206,
+    "height": 2622,
+    "sha256": "57c966e059940dad01ae79d20bbfd3a5e8c4f25f93176782faadd3c7291f93f3",
+    "command": "XCTAttachment(screenshot:XCUIScreen.main.screenshot()); xcresulttool export attachments",
+    "platform": "ios",
+    "inspected": true
+  },
+  {
+    "file": "release-converter-copy.png",
+    "state": "release-converter-copy",
+    "theme": "light",
+    "at": "2026-11-18T14:53:50.824000+00:00",
+    "device": "iPhone17Pro",
+    "runtime": "iOS26.2",
+    "viewportPt": [
+      402,
+      874
+    ],
+    "dpr": 3,
+    "fontSizeCategory": "large",
+    "width": 1206,
+    "height": 2622,
+    "sha256": "31acf1a10afc9141f2276109c597f1253843c29d11ceb66d487140292278a262",
+    "command": "XCTAttachment(screenshot:XCUIScreen.main.screenshot()); xcresulttool export attachments",
+    "platform": "ios",
+    "inspected": true
+  },
+  {
+    "file": "release-converter-keyboard.png",
+    "state": "release-converter-keyboard",
+    "theme": "light",
+    "at": "2026-11-18T14:53:46.359000+00:00",
+    "device": "iPhone17Pro",
+    "runtime": "iOS26.2",
+    "viewportPt": [
+      402,
+      874
+    ],
+    "dpr": 3,
+    "fontSizeCategory": "large",
+    "width": 1206,
+    "height": 2622,
+    "sha256": "0a48531cd8af5d04063a2dbc2f3d3a07a74dabe15f144a81c86e4f2437b97b32",
+    "command": "XCTAttachment(screenshot:XCUIScreen.main.screenshot()); xcresulttool export attachments",
+    "platform": "ios",
+    "inspected": true
+  },
+  {
+    "file": "release-long-phrase-stopped.png",
+    "state": "release-long-phrase-stopped",
+    "theme": "light",
+    "at": "2026-11-18T14:54:20.960000+00:00",
+    "device": "iPhone17Pro",
+    "runtime": "iOS26.2",
+    "viewportPt": [
+      402,
+      874
+    ],
+    "dpr": 3,
+    "fontSizeCategory": "large",
+    "width": 1206,
+    "height": 2622,
+    "sha256": "6d218b83cf6f59b6715645026928c94f0e9bf0c2d6d0e07f13ae6e46f655dc53",
+    "command": "XCTAttachment(screenshot:XCUIScreen.main.screenshot()); xcresulttool export attachments",
+    "platform": "ios",
+    "inspected": true
+  }
+]

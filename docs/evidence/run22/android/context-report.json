@@ -1,0 +1,62 @@
+{
+  "errors": [],
+  "stages": {
+    "cold1": {
+      "surfaceFontScales": [
+        1
+      ],
+      "layoutContexts": [
+        {
+          "pointScaleFactor": 1.75,
+          "fontSizeMultiplier": 1,
+          "pointer": "0x6e59189260"
+        }
+      ],
+      "rootCloneCalls": 0,
+      "yogaConfigureCalls": 15
+    },
+    "live2": {
+      "surfaceFontScales": [
+        1
+      ],
+      "layoutContexts": [
+        {
+          "pointScaleFactor": 1.75,
+          "fontSizeMultiplier": 1,
+          "pointer": "0x6e59189050"
+        }
+      ],
+      "rootCloneCalls": 0,
+      "yogaConfigureCalls": 10
+    },
+    "return1": {
+      "surfaceFontScales": [
+        1
+      ],
+      "layoutContexts": [
+        {
+          "pointScaleFactor": 1.75,
+          "fontSizeMultiplier": 1,
+          "pointer": "0x6e59189050"
+        }
+      ],
+      "rootCloneCalls": 0,
+      "yogaConfigureCalls": 10
+    },
+    "cold2": {
+      "surfaceFontScales": [
+        1
+      ],
+      "layoutContexts": [
+        {
+          "pointScaleFactor": 1.75,
+          "fontSizeMultiplier": 1,
+          "pointer": "0x6e50dcb050"
+        }
+      ],
+      "rootCloneCalls": 0,
+      "yogaConfigureCalls": 15
+    }
+  },
+  "scope": "Read-only ARM64 diagnostic; context offsets0/20 inferred from pinned Android float LayoutContext and cross-checked against surface args/density; no native regression or patch."
+}

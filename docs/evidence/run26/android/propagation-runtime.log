@@ -1,0 +1,79 @@
+{"stage":"cold1","dimensions":{"fontScale":1,"height":914.2857142857143,"scale":1.75,"width":411.42857142857144},"frames":{"feedback":{"height":24,"width":260,"x":18.285720825195312,"y":139.42855834960938},"input":{"height":47.4285888671875,"width":375.4285888671875,"x":17.714279174804688,"y":175.42855834960938},"revision":{"height":59.428558349609375,"width":260,"x":18.285720825195312,"y":68},"stable":{"height":40.571441650390625,"width":260,"x":18.285720825195312,"y":15.428558349609375}},"mounts":1,"value":"NUWJ359"}
+{"stage":"live2","dimensions":{"fontScale":2,"height":914.2857142857143,"scale":1.75,"width":411.42857142857144},"frames":{"feedback":{"height":36,"width":260,"x":18.285720825195312,"y":389.71429443359375},"input":{"height":63.4285888671875,"width":375.4285888671875,"x":17.714279174804688,"y":437.71429443359375},"revision":{"height":168,"width":260,"x":18.285720825195312,"y":209.71429443359375},"stable":{"height":135.4285888671875,"width":260,"x":18.285720825195312,"y":62.28570556640625}},"mounts":1,"value":"NUWJ359"}
+{"stage":"return1","dimensions":{"fontScale":1,"height":914.2857142857143,"scale":1.75,"width":411.42857142857144},"frames":{"feedback":{"height":24,"width":260,"x":18.285720825195312,"y":139.42855834960938},"input":{"height":47.4285888671875,"width":375.4285888671875,"x":17.714279174804688,"y":175.42855834960938},"revision":{"height":59.428558349609375,"width":260,"x":18.285720825195312,"y":68},"stable":{"height":40.571441650390625,"width":260,"x":18.285720825195312,"y":15.428558349609375}},"mounts":1,"value":"NUWJ359"}
+{"stage":"cold2","dimensions":{"fontScale":2,"height":914.2857142857143,"scale":1.75,"width":411.42857142857144},"frames":{"feedback":{"height":36,"width":260,"x":18.285720825195312,"y":389.71429443359375},"input":{"height":63.4285888671875,"width":375.4285888671875,"x":17.714279174804688,"y":437.71429443359375},"revision":{"height":168,"width":260,"x":18.285720825195312,"y":209.71429443359375},"stable":{"height":135.4285888671875,"width":260,"x":18.285720825195312,"y":62.28570556640625}},"mounts":1,"value":"NUWJ359"}
+{
+  "passed": true,
+  "tolerancePhysicalPixels": 1,
+  "errors": [],
+  "comparisons": [
+    {
+      "liveStage": "live2",
+      "coldStage": "cold2",
+      "name": "stable",
+      "live": 135.4285888671875,
+      "cold": 135.4285888671875,
+      "passed": true
+    },
+    {
+      "liveStage": "live2",
+      "coldStage": "cold2",
+      "name": "feedback",
+      "live": 36,
+      "cold": 36,
+      "passed": true
+    },
+    {
+      "liveStage": "live2",
+      "coldStage": "cold2",
+      "name": "input",
+      "live": 63.4285888671875,
+      "cold": 63.4285888671875,
+      "passed": true
+    },
+    {
+      "liveStage": "live2",
+      "coldStage": "cold2",
+      "name": "revision",
+      "live": 168,
+      "cold": 168,
+      "passed": true
+    },
+    {
+      "liveStage": "return1",
+      "coldStage": "cold1",
+      "name": "stable",
+      "live": 40.571441650390625,
+      "cold": 40.571441650390625,
+      "passed": true
+    },
+    {
+      "liveStage": "return1",
+      "coldStage": "cold1",
+      "name": "feedback",
+      "live": 24,
+      "cold": 24,
+      "passed": true
+    },
+    {
+      "liveStage": "return1",
+      "coldStage": "cold1",
+      "name": "input",
+      "live": 47.4285888671875,
+      "cold": 47.4285888671875,
+      "passed": true
+    },
+    {
+      "liveStage": "return1",
+      "coldStage": "cold1",
+      "name": "revision",
+      "live": 59.428558349609375,
+      "cold": 59.428558349609375,
+      "passed": true
+    }
+  ]
+}
+Error: Hermes did not return source: {"script":{"endColumn":0,"endLine":0,"executionContextId":1,"hash":"","scriptId":"2","scriptLanguage":"JavaScript","sourceMapURL":"http://127.0.0.1:8081/tests/fixtures/android-font-scale/index.map?platform=android&dev=true&lazy=true&minify=false&app=com.natophonetics.app&modulesOnly=false&runModule=true&excludeSource=true&sourcePaths=url-server","startColumn":0,"startLine":0,"url":"http://127.0.0.1:8081/tests/fixtures/android-font-scale/index.bundle//&platform=android&dev=true&lazy=true&minify=false&app=com.natophonetics.app&modulesOnly=false&runModule=true&excludeSource=true&sourcePaths=url-server"},"response":{"error":{"message":"Failed to fetch source url http://localhost:8081/tests/fixtures/android-font-scale/index.bundle//&platform=android&dev=true&lazy=true&minify=false&app=com.natophonetics.app&modulesOnly=false&runModule=true&excludeSource=true&sourcePaths=url-server: HTTP 404 Not Found"}}}
+    at captureNativeJavascript (/Users/mac/dev/apps/nato-phonetics/scripts/capture-native-javascript.cjs:39:51)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async /Users/mac/dev/apps/nato-phonetics/scripts/verify-android-font-scale.cjs:89:5

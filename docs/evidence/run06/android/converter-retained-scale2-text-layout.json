@@ -1,0 +1,6202 @@
+{
+  "dimensions": {
+    "fontScale": 2,
+    "height": 914.2857142857143,
+    "scale": 1.75,
+    "width": 411.42857142857144
+  },
+  "values": [
+    {
+      "frame": {
+        "height": 48.571441650390625,
+        "pageX": 56,
+        "pageY": 55.428558349609375,
+        "width": 299.4285583496094,
+        "x": 56,
+        "y": 3.4285714626312256
+      },
+      "style": {
+        "color": "#1F2933",
+        "flex": 1,
+        "fontSize": 18,
+        "fontWeight": "600",
+        "paddingHorizontal": 4,
+        "paddingVertical": 12,
+        "textAlign": "center"
+      },
+      "text": "Word Converter"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 15,
+        "marginBottom": 12
+      },
+      "text": "Tap a card to hear the word. New playback replaces current audio."
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-A-letter-run",
+      "text": "A"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-A-word-run",
+      "text": "Alfa"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-A-pronunciation-run",
+      "text": "AL-fah"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-B-letter-run",
+      "text": "B"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-B-word-run",
+      "text": "Bravo"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-B-pronunciation-run",
+      "text": "BRAH-voh"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-C-letter-run",
+      "text": "C"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-C-word-run",
+      "text": "Charlie"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-C-pronunciation-run",
+      "text": "CHAR-lee"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-D-letter-run",
+      "text": "D"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-D-word-run",
+      "text": "Delta"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-D-pronunciation-run",
+      "text": "DELL-tah"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-E-letter-run",
+      "text": "E"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-E-word-run",
+      "text": "Echo"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-E-pronunciation-run",
+      "text": "ECK-oh"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-F-letter-run",
+      "text": "F"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-F-word-run",
+      "text": "Foxtrot"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-F-pronunciation-run",
+      "text": "FOKS-trot"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-G-letter-run",
+      "text": "G"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-G-word-run",
+      "text": "Golf"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-G-pronunciation-run",
+      "text": "GOLF"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-H-letter-run",
+      "text": "H"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-H-word-run",
+      "text": "Hotel"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-H-pronunciation-run",
+      "text": "hoh-TELL"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-I-letter-run",
+      "text": "I"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-I-word-run",
+      "text": "India"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-I-pronunciation-run",
+      "text": "IN-dee-ah"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-J-letter-run",
+      "text": "J"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-J-word-run",
+      "text": "Juliett"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-J-pronunciation-run",
+      "text": "JEW-lee-ett"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-K-letter-run",
+      "text": "K"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-K-word-run",
+      "text": "Kilo"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-K-pronunciation-run",
+      "text": "KEY-loh"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-L-letter-run",
+      "text": "L"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-L-word-run",
+      "text": "Lima"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-L-pronunciation-run",
+      "text": "LEE-mah"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-M-letter-run",
+      "text": "M"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-M-word-run",
+      "text": "Mike"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-M-pronunciation-run",
+      "text": "MIKE"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-N-letter-run",
+      "text": "N"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-N-word-run",
+      "text": "November"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-N-pronunciation-run",
+      "text": "no-VEM-ber"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-O-letter-run",
+      "text": "O"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-O-word-run",
+      "text": "Oscar"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-O-pronunciation-run",
+      "text": "OSS-cah"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-P-letter-run",
+      "text": "P"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-P-word-run",
+      "text": "Papa"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-P-pronunciation-run",
+      "text": "pah-PAH"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-Q-letter-run",
+      "text": "Q"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-Q-word-run",
+      "text": "Quebec"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-Q-pronunciation-run",
+      "text": "keh-BECK"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-R-letter-run",
+      "text": "R"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-R-word-run",
+      "text": "Romeo"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-R-pronunciation-run",
+      "text": "ROW-me-oh"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-S-letter-run",
+      "text": "S"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-S-word-run",
+      "text": "Sierra"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-S-pronunciation-run",
+      "text": "see-AIR-ah"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-T-letter-run",
+      "text": "T"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-T-word-run",
+      "text": "Tango"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-T-pronunciation-run",
+      "text": "TANG-go"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-U-letter-run",
+      "text": "U"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-U-word-run",
+      "text": "Uniform"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-U-pronunciation-run",
+      "text": "YOU-nee-form"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-V-letter-run",
+      "text": "V"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-V-word-run",
+      "text": "Victor"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-V-pronunciation-run",
+      "text": "VIK-tah"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-W-letter-run",
+      "text": "W"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-W-word-run",
+      "text": "Whiskey"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-W-pronunciation-run",
+      "text": "WISS-key"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-X-letter-run",
+      "text": "X"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-X-word-run",
+      "text": "X-ray"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-X-pronunciation-run",
+      "text": "ECKS-ray"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-Y-letter-run",
+      "text": "Y"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-Y-word-run",
+      "text": "Yankee"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-Y-pronunciation-run",
+      "text": "YANG-key"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-Z-letter-run",
+      "text": "Z"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-Z-word-run",
+      "text": "Zulu"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-Z-pronunciation-run",
+      "text": "ZOO-loo"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontSize": 26,
+        "fontWeight": "700",
+        "marginVertical": 8
+      },
+      "text": "Appearance"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 16,
+        "lineHeight": 24
+      },
+      "text": "System follows your device\u2019s current light or dark appearance."
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "System"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Light \u2713"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Dark"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontSize": 26,
+        "fontWeight": "700",
+        "marginVertical": 8
+      },
+      "text": "Voice"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Change Voice"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 16,
+        "lineHeight": 24
+      },
+      "text": "System Default"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Audio help and sound test"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontSize": 26,
+        "fontWeight": "700",
+        "marginVertical": 8
+      },
+      "text": "Preferences"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontSize": 16,
+        "lineHeight": 24,
+        "marginVertical": 8
+      },
+      "text": "Choices are selected after they have been saved on this device."
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Reset Preferences"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 16,
+        "lineHeight": 24
+      },
+      "text": "Reset restores System appearance and System Default voice. It does not delete progress or other app data."
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 15,
+        "marginBottom": 12
+      },
+      "text": "Tap a card to hear the word. New playback replaces current audio."
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-A-letter-run",
+      "text": "A"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-A-word-run",
+      "text": "Alfa"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-A-pronunciation-run",
+      "text": "AL-fah"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-B-letter-run",
+      "text": "B"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-B-word-run",
+      "text": "Bravo"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-B-pronunciation-run",
+      "text": "BRAH-voh"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-C-letter-run",
+      "text": "C"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-C-word-run",
+      "text": "Charlie"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-C-pronunciation-run",
+      "text": "CHAR-lee"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-D-letter-run",
+      "text": "D"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-D-word-run",
+      "text": "Delta"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-D-pronunciation-run",
+      "text": "DELL-tah"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-E-letter-run",
+      "text": "E"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-E-word-run",
+      "text": "Echo"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-E-pronunciation-run",
+      "text": "ECK-oh"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-F-letter-run",
+      "text": "F"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-F-word-run",
+      "text": "Foxtrot"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-F-pronunciation-run",
+      "text": "FOKS-trot"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-G-letter-run",
+      "text": "G"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-G-word-run",
+      "text": "Golf"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-G-pronunciation-run",
+      "text": "GOLF"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-H-letter-run",
+      "text": "H"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-H-word-run",
+      "text": "Hotel"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-H-pronunciation-run",
+      "text": "hoh-TELL"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-I-letter-run",
+      "text": "I"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-I-word-run",
+      "text": "India"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-I-pronunciation-run",
+      "text": "IN-dee-ah"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-J-letter-run",
+      "text": "J"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-J-word-run",
+      "text": "Juliett"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-J-pronunciation-run",
+      "text": "JEW-lee-ett"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-K-letter-run",
+      "text": "K"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-K-word-run",
+      "text": "Kilo"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-K-pronunciation-run",
+      "text": "KEY-loh"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-L-letter-run",
+      "text": "L"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-L-word-run",
+      "text": "Lima"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-L-pronunciation-run",
+      "text": "LEE-mah"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-M-letter-run",
+      "text": "M"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-M-word-run",
+      "text": "Mike"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-M-pronunciation-run",
+      "text": "MIKE"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-N-letter-run",
+      "text": "N"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-N-word-run",
+      "text": "November"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-N-pronunciation-run",
+      "text": "no-VEM-ber"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-O-letter-run",
+      "text": "O"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-O-word-run",
+      "text": "Oscar"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-O-pronunciation-run",
+      "text": "OSS-cah"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-P-letter-run",
+      "text": "P"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-P-word-run",
+      "text": "Papa"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-P-pronunciation-run",
+      "text": "pah-PAH"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-Q-letter-run",
+      "text": "Q"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-Q-word-run",
+      "text": "Quebec"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-Q-pronunciation-run",
+      "text": "keh-BECK"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-R-letter-run",
+      "text": "R"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-R-word-run",
+      "text": "Romeo"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-R-pronunciation-run",
+      "text": "ROW-me-oh"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-S-letter-run",
+      "text": "S"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-S-word-run",
+      "text": "Sierra"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-S-pronunciation-run",
+      "text": "see-AIR-ah"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-T-letter-run",
+      "text": "T"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-T-word-run",
+      "text": "Tango"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-T-pronunciation-run",
+      "text": "TANG-go"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-U-letter-run",
+      "text": "U"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-U-word-run",
+      "text": "Uniform"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-U-pronunciation-run",
+      "text": "YOU-nee-form"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-V-letter-run",
+      "text": "V"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-V-word-run",
+      "text": "Victor"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-V-pronunciation-run",
+      "text": "VIK-tah"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-W-letter-run",
+      "text": "W"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-W-word-run",
+      "text": "Whiskey"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-W-pronunciation-run",
+      "text": "WISS-key"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-X-letter-run",
+      "text": "X"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-X-word-run",
+      "text": "X-ray"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-X-pronunciation-run",
+      "text": "ECKS-ray"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-Y-letter-run",
+      "text": "Y"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-Y-word-run",
+      "text": "Yankee"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-Y-pronunciation-run",
+      "text": "YANG-key"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 220
+      },
+      "testID": "alphabet-Z-letter-run",
+      "text": "Z"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-Z-word-run",
+      "text": "Zulu"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": 0
+          }
+        ],
+        "width": 188
+      },
+      "testID": "alphabet-Z-pronunciation-run",
+      "text": "ZOO-loo"
+    },
+    {
+      "frame": {
+        "height": 21.7142333984375,
+        "pageX": 16,
+        "pageY": 132,
+        "width": 379.4285583496094,
+        "x": 16,
+        "y": 24
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontSize": 16,
+        "fontWeight": "600",
+        "marginVertical": 8
+      },
+      "text": "Type a word or phrase:"
+    },
+    {
+      "frame": {
+        "height": 50.857177734375,
+        "pageX": 16,
+        "pageY": 173.7142333984375,
+        "width": 379.4285583496094,
+        "x": 16,
+        "y": 65.71428680419922
+      },
+      "style": {
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#E5E7EB",
+        "borderRadius": 12,
+        "borderWidth": 1,
+        "color": "#1F2933",
+        "fontSize": 18,
+        "marginBottom": 12,
+        "minHeight": 48,
+        "padding": 12
+      },
+      "testID": "converter-input",
+      "text": "NUWJ359"
+    },
+    {
+      "frame": {
+        "height": 21.71435546875,
+        "pageX": 148,
+        "pageY": 262.28564453125,
+        "width": 114.85714721679688,
+        "x": 132,
+        "y": 13.714285850524902
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Play Full Phrase"
+    },
+    {
+      "frame": {
+        "height": 21.7142333984375,
+        "pageX": 16,
+        "pageY": 345.71429443359375,
+        "width": 379.4285583496094,
+        "x": 16,
+        "y": 237.7142791748047
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontSize": 16,
+        "fontWeight": "600",
+        "marginVertical": 8
+      },
+      "text": "NATO Phonetic:"
+    },
+    {
+      "frame": {
+        "height": 99.99993896484375,
+        "pageX": 96,
+        "pageY": 395.9737548828125,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.026286804199216363
+          }
+        ],
+        "width": 220
+      },
+      "testID": "converter-0-letter-run",
+      "text": "N"
+    },
+    {
+      "frame": {
+        "height": 44,
+        "pageX": 112,
+        "pageY": 554.2423095703125,
+        "width": 188,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.04343020629883654
+          }
+        ],
+        "width": 188
+      },
+      "testID": "converter-0-word-run",
+      "text": "November"
+    },
+    {
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 610.0951538085938,
+        "width": 188,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.19057170104980514
+          }
+        ],
+        "width": 188
+      },
+      "testID": "converter-0-pronunciation-run",
+      "text": "no-VEM-ber"
+    },
+    {
+      "frame": {
+        "height": 100,
+        "pageX": 96,
+        "pageY": 707.9737548828125,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.026286804199216363
+          }
+        ],
+        "width": 220
+      },
+      "testID": "converter-1-letter-run",
+      "text": "U"
+    },
+    {
+      "frame": {
+        "height": 44,
+        "pageX": 112,
+        "pageY": 866.2423095703125,
+        "width": 188,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.04343020629883654
+          }
+        ],
+        "width": 188
+      },
+      "testID": "converter-1-word-run",
+      "text": "Uniform"
+    },
+    {
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 922.0951538085938,
+        "width": 188,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.19057170104980514
+          }
+        ],
+        "width": 188
+      },
+      "testID": "converter-1-pronunciation-run",
+      "text": "YOU-nee-form"
+    },
+    {
+      "frame": {
+        "height": 100,
+        "pageX": 96,
+        "pageY": 1019.9736328125,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.026286804199216363
+          }
+        ],
+        "width": 220
+      },
+      "testID": "converter-2-letter-run",
+      "text": "W"
+    },
+    {
+      "frame": {
+        "height": 44,
+        "pageX": 112,
+        "pageY": 1178.2423095703125,
+        "width": 188,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.04343020629883654
+          }
+        ],
+        "width": 188
+      },
+      "testID": "converter-2-word-run",
+      "text": "Whiskey"
+    },
+    {
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 1234.09521484375,
+        "width": 188,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.19057170104980514
+          }
+        ],
+        "width": 188
+      },
+      "testID": "converter-2-pronunciation-run",
+      "text": "WISS-key"
+    },
+    {
+      "frame": {
+        "height": 100,
+        "pageX": 96,
+        "pageY": 1331.9736328125,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.026286804199216363
+          }
+        ],
+        "width": 220
+      },
+      "testID": "converter-3-letter-run",
+      "text": "J"
+    },
+    {
+      "frame": {
+        "height": 44,
+        "pageX": 112,
+        "pageY": 1490.2423095703125,
+        "width": 188,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.04343020629883654
+          }
+        ],
+        "width": 188
+      },
+      "testID": "converter-3-word-run",
+      "text": "Juliett"
+    },
+    {
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 1546.0950927734375,
+        "width": 188,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.19057170104980514
+          }
+        ],
+        "width": 188
+      },
+      "testID": "converter-3-pronunciation-run",
+      "text": "JEW-lee-ett"
+    },
+    {
+      "frame": {
+        "height": 100,
+        "pageX": 96,
+        "pageY": 1643.9737548828125,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.026286804199216363
+          }
+        ],
+        "width": 220
+      },
+      "testID": "converter-4-letter-run",
+      "text": "3"
+    },
+    {
+      "frame": {
+        "height": 44,
+        "pageX": 112,
+        "pageY": 1802.2423095703125,
+        "width": 188,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.04343020629883654
+          }
+        ],
+        "width": 188
+      },
+      "testID": "converter-4-word-run",
+      "text": "Three"
+    },
+    {
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 1858.0950927734375,
+        "width": 188,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.19057170104980514
+          }
+        ],
+        "width": 188
+      },
+      "testID": "converter-4-pronunciation-run",
+      "text": "TREE"
+    },
+    {
+      "frame": {
+        "height": 99.9998779296875,
+        "pageX": 96,
+        "pageY": 1955.9737548828125,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.026286804199216363
+          }
+        ],
+        "width": 220
+      },
+      "testID": "converter-5-letter-run",
+      "text": "5"
+    },
+    {
+      "frame": {
+        "height": 44,
+        "pageX": 112,
+        "pageY": 2114.2421875,
+        "width": 188,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.04343020629883654
+          }
+        ],
+        "width": 188
+      },
+      "testID": "converter-5-word-run",
+      "text": "Five"
+    },
+    {
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 2170.09521484375,
+        "width": 188,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.19057170104980514
+          }
+        ],
+        "width": 188
+      },
+      "testID": "converter-5-pronunciation-run",
+      "text": "FIFE"
+    },
+    {
+      "frame": {
+        "height": 100,
+        "pageX": 96,
+        "pageY": 2267.9736328125,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.026286804199216363
+          }
+        ],
+        "width": 220
+      },
+      "testID": "converter-6-letter-run",
+      "text": "9"
+    },
+    {
+      "frame": {
+        "height": 44,
+        "pageX": 112,
+        "pageY": 2426.2421875,
+        "width": 188,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.04343020629883654
+          }
+        ],
+        "width": 188
+      },
+      "testID": "converter-6-word-run",
+      "text": "Nine"
+    },
+    {
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 2482.09521484375,
+        "width": 188,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.19057170104980514
+          }
+        ],
+        "width": 188
+      },
+      "testID": "converter-6-pronunciation-run",
+      "text": "NIN-er"
+    }
+  ]
+}

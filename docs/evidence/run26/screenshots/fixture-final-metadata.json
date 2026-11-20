@@ -1,0 +1,222 @@
+[
+  {
+    "stage": "cold1",
+    "file": "android/fixture-final/cold1.png",
+    "sha256": "37f591b126507e0e8ab2c1c0309ae3981373f2f698dca6f795ae4e8ce3fd7763",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "apkSha256": "1b045e2dc7b2f1761bd4f8aa708cde29b498f2c43963b3062cc08b8555c28eee",
+    "platform": "Android16/API36 arm64",
+    "viewport": "720x1600 physical, 411.429x914.286dp, density1.75",
+    "theme": "fixture white",
+    "inspection": "Inspected actual raw image or uncropped contact sheet; no blank/loading/error screen. Viewport-limited scroll content is not a full reachability/raster pass."
+  },
+  {
+    "stage": "live2",
+    "file": "android/fixture-final/live2.png",
+    "sha256": "723de2555fb2a742d2269a37bfb81d610461d6fe624f7f491e644a63689e92f4",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "apkSha256": "1b045e2dc7b2f1761bd4f8aa708cde29b498f2c43963b3062cc08b8555c28eee",
+    "platform": "Android16/API36 arm64",
+    "viewport": "720x1600 physical, 411.429x914.286dp, density1.75",
+    "theme": "fixture white",
+    "inspection": "Inspected actual raw image or uncropped contact sheet; no blank/loading/error screen. Viewport-limited scroll content is not a full reachability/raster pass."
+  },
+  {
+    "stage": "return1",
+    "file": "android/fixture-final/return1.png",
+    "sha256": "37f591b126507e0e8ab2c1c0309ae3981373f2f698dca6f795ae4e8ce3fd7763",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "apkSha256": "1b045e2dc7b2f1761bd4f8aa708cde29b498f2c43963b3062cc08b8555c28eee",
+    "platform": "Android16/API36 arm64",
+    "viewport": "720x1600 physical, 411.429x914.286dp, density1.75",
+    "theme": "fixture white",
+    "inspection": "Inspected actual raw image or uncropped contact sheet; no blank/loading/error screen. Viewport-limited scroll content is not a full reachability/raster pass."
+  },
+  {
+    "stage": "cold2",
+    "file": "android/fixture-final/cold2.png",
+    "sha256": "723de2555fb2a742d2269a37bfb81d610461d6fe624f7f491e644a63689e92f4",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "apkSha256": "1b045e2dc7b2f1761bd4f8aa708cde29b498f2c43963b3062cc08b8555c28eee",
+    "platform": "Android16/API36 arm64",
+    "viewport": "720x1600 physical, 411.429x914.286dp, density1.75",
+    "theme": "fixture white",
+    "inspection": "Inspected actual raw image or uncropped contact sheet; no blank/loading/error screen. Viewport-limited scroll content is not a full reachability/raster pass."
+  },
+  {
+    "stage": "cold085",
+    "file": "android/fixture-final/cold085.png",
+    "sha256": "668582894837d435068ccebb51f92768ef275dd4a1141f6f4e0029fe68dd883c",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "apkSha256": "1b045e2dc7b2f1761bd4f8aa708cde29b498f2c43963b3062cc08b8555c28eee",
+    "platform": "Android16/API36 arm64",
+    "viewport": "720x1600 physical, 411.429x914.286dp, density1.75",
+    "theme": "fixture white",
+    "inspection": "Inspected actual raw image or uncropped contact sheet; no blank/loading/error screen. Viewport-limited scroll content is not a full reachability/raster pass."
+  },
+  {
+    "stage": "cold13",
+    "file": "android/fixture-final/cold13.png",
+    "sha256": "300a73962d53aa757c576fa41c5005206c4dee750610ebe036e3d8808029d7f4",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "apkSha256": "1b045e2dc7b2f1761bd4f8aa708cde29b498f2c43963b3062cc08b8555c28eee",
+    "platform": "Android16/API36 arm64",
+    "viewport": "720x1600 physical, 411.429x914.286dp, density1.75",
+    "theme": "fixture white",
+    "inspection": "Inspected actual raw image or uncropped contact sheet; no blank/loading/error screen. Viewport-limited scroll content is not a full reachability/raster pass."
+  },
+  {
+    "stage": "sweep0-0.85",
+    "file": "android/fixture-final/sweep0-0.85.png",
+    "sha256": "668582894837d435068ccebb51f92768ef275dd4a1141f6f4e0029fe68dd883c",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "apkSha256": "1b045e2dc7b2f1761bd4f8aa708cde29b498f2c43963b3062cc08b8555c28eee",
+    "platform": "Android16/API36 arm64",
+    "viewport": "720x1600 physical, 411.429x914.286dp, density1.75",
+    "theme": "fixture white",
+    "inspection": "Inspected actual raw image or uncropped contact sheet; no blank/loading/error screen. Viewport-limited scroll content is not a full reachability/raster pass."
+  },
+  {
+    "stage": "sweep1-1.3",
+    "file": "android/fixture-final/sweep1-1.3.png",
+    "sha256": "300a73962d53aa757c576fa41c5005206c4dee750610ebe036e3d8808029d7f4",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "apkSha256": "1b045e2dc7b2f1761bd4f8aa708cde29b498f2c43963b3062cc08b8555c28eee",
+    "platform": "Android16/API36 arm64",
+    "viewport": "720x1600 physical, 411.429x914.286dp, density1.75",
+    "theme": "fixture white",
+    "inspection": "Inspected actual raw image or uncropped contact sheet; no blank/loading/error screen. Viewport-limited scroll content is not a full reachability/raster pass."
+  },
+  {
+    "stage": "sweep2-2",
+    "file": "android/fixture-final/sweep2-2.png",
+    "sha256": "723de2555fb2a742d2269a37bfb81d610461d6fe624f7f491e644a63689e92f4",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "apkSha256": "1b045e2dc7b2f1761bd4f8aa708cde29b498f2c43963b3062cc08b8555c28eee",
+    "platform": "Android16/API36 arm64",
+    "viewport": "720x1600 physical, 411.429x914.286dp, density1.75",
+    "theme": "fixture white",
+    "inspection": "Inspected actual raw image or uncropped contact sheet; no blank/loading/error screen. Viewport-limited scroll content is not a full reachability/raster pass."
+  },
+  {
+    "stage": "sweep3-1",
+    "file": "android/fixture-final/sweep3-1.png",
+    "sha256": "37f591b126507e0e8ab2c1c0309ae3981373f2f698dca6f795ae4e8ce3fd7763",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "apkSha256": "1b045e2dc7b2f1761bd4f8aa708cde29b498f2c43963b3062cc08b8555c28eee",
+    "platform": "Android16/API36 arm64",
+    "viewport": "720x1600 physical, 411.429x914.286dp, density1.75",
+    "theme": "fixture white",
+    "inspection": "Inspected actual raw image or uncropped contact sheet; no blank/loading/error screen. Viewport-limited scroll content is not a full reachability/raster pass."
+  },
+  {
+    "stage": "sweep4-0.85",
+    "file": "android/fixture-final/sweep4-0.85.png",
+    "sha256": "668582894837d435068ccebb51f92768ef275dd4a1141f6f4e0029fe68dd883c",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "apkSha256": "1b045e2dc7b2f1761bd4f8aa708cde29b498f2c43963b3062cc08b8555c28eee",
+    "platform": "Android16/API36 arm64",
+    "viewport": "720x1600 physical, 411.429x914.286dp, density1.75",
+    "theme": "fixture white",
+    "inspection": "Inspected actual raw image or uncropped contact sheet; no blank/loading/error screen. Viewport-limited scroll content is not a full reachability/raster pass."
+  },
+  {
+    "stage": "sweep5-2",
+    "file": "android/fixture-final/sweep5-2.png",
+    "sha256": "723de2555fb2a742d2269a37bfb81d610461d6fe624f7f491e644a63689e92f4",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "apkSha256": "1b045e2dc7b2f1761bd4f8aa708cde29b498f2c43963b3062cc08b8555c28eee",
+    "platform": "Android16/API36 arm64",
+    "viewport": "720x1600 physical, 411.429x914.286dp, density1.75",
+    "theme": "fixture white",
+    "inspection": "Inspected actual raw image or uncropped contact sheet; no blank/loading/error screen. Viewport-limited scroll content is not a full reachability/raster pass."
+  },
+  {
+    "stage": "sweep6-1.3",
+    "file": "android/fixture-final/sweep6-1.3.png",
+    "sha256": "300a73962d53aa757c576fa41c5005206c4dee750610ebe036e3d8808029d7f4",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "apkSha256": "1b045e2dc7b2f1761bd4f8aa708cde29b498f2c43963b3062cc08b8555c28eee",
+    "platform": "Android16/API36 arm64",
+    "viewport": "720x1600 physical, 411.429x914.286dp, density1.75",
+    "theme": "fixture white",
+    "inspection": "Inspected actual raw image or uncropped contact sheet; no blank/loading/error screen. Viewport-limited scroll content is not a full reachability/raster pass."
+  },
+  {
+    "stage": "sweep7-1",
+    "file": "android/fixture-final/sweep7-1.png",
+    "sha256": "37f591b126507e0e8ab2c1c0309ae3981373f2f698dca6f795ae4e8ce3fd7763",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "apkSha256": "1b045e2dc7b2f1761bd4f8aa708cde29b498f2c43963b3062cc08b8555c28eee",
+    "platform": "Android16/API36 arm64",
+    "viewport": "720x1600 physical, 411.429x914.286dp, density1.75",
+    "theme": "fixture white",
+    "inspection": "Inspected actual raw image or uncropped contact sheet; no blank/loading/error screen. Viewport-limited scroll content is not a full reachability/raster pass."
+  },
+  {
+    "stage": "editing-start",
+    "file": "android/fixture-final/editing-start.png",
+    "sha256": "37f591b126507e0e8ab2c1c0309ae3981373f2f698dca6f795ae4e8ce3fd7763",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "apkSha256": "1b045e2dc7b2f1761bd4f8aa708cde29b498f2c43963b3062cc08b8555c28eee",
+    "platform": "Android16/API36 arm64",
+    "viewport": "720x1600 physical, 411.429x914.286dp, density1.75",
+    "theme": "fixture white",
+    "inspection": "Inspected actual raw image or uncropped contact sheet; no blank/loading/error screen. Viewport-limited scroll content is not a full reachability/raster pass."
+  },
+  {
+    "stage": "editing-before",
+    "file": "android/fixture-final/editing-before.png",
+    "sha256": "dd0a28dca14bee0486e33e70a24a8afab5f6a9c2dac93a118ad4b483be7fb25e",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "apkSha256": "1b045e2dc7b2f1761bd4f8aa708cde29b498f2c43963b3062cc08b8555c28eee",
+    "platform": "Android16/API36 arm64",
+    "viewport": "720x1600 physical, 411.429x914.286dp, density1.75",
+    "theme": "fixture white",
+    "inspection": "Inspected actual raw image or uncropped contact sheet; no blank/loading/error screen. Viewport-limited scroll content is not a full reachability/raster pass."
+  },
+  {
+    "stage": "editing-typed-before",
+    "file": "android/fixture-final/editing-typed-before.png",
+    "sha256": "21d278d29b0623c7230aac0ddf7b991ab86afe2dca2273fcc199d3c9b23721d1",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "apkSha256": "1b045e2dc7b2f1761bd4f8aa708cde29b498f2c43963b3062cc08b8555c28eee",
+    "platform": "Android16/API36 arm64",
+    "viewport": "720x1600 physical, 411.429x914.286dp, density1.75",
+    "theme": "fixture white",
+    "inspection": "Inspected actual raw image or uncropped contact sheet; no blank/loading/error screen. Viewport-limited scroll content is not a full reachability/raster pass."
+  },
+  {
+    "stage": "editing-live2",
+    "file": "android/fixture-final/editing-live2.png",
+    "sha256": "00be5e5c9d12b63d9677dad1318f6f9ee04839b994e70b6ed2e01bee5616b006",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "apkSha256": "1b045e2dc7b2f1761bd4f8aa708cde29b498f2c43963b3062cc08b8555c28eee",
+    "platform": "Android16/API36 arm64",
+    "viewport": "720x1600 physical, 411.429x914.286dp, density1.75",
+    "theme": "fixture white",
+    "inspection": "Inspected actual raw image or uncropped contact sheet; no blank/loading/error screen. Viewport-limited scroll content is not a full reachability/raster pass."
+  },
+  {
+    "stage": "editing-return1",
+    "file": "android/fixture-final/editing-return1.png",
+    "sha256": "2999798c128b2f6ad1a5245458d4cf6bf41691e5c6c1bc2d049c8274ce3c4c5e",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "apkSha256": "1b045e2dc7b2f1761bd4f8aa708cde29b498f2c43963b3062cc08b8555c28eee",
+    "platform": "Android16/API36 arm64",
+    "viewport": "720x1600 physical, 411.429x914.286dp, density1.75",
+    "theme": "fixture white",
+    "inspection": "Inspected actual raw image or uncropped contact sheet; no blank/loading/error screen. Viewport-limited scroll content is not a full reachability/raster pass."
+  },
+  {
+    "stage": "editing-insert",
+    "file": "android/fixture-final/editing-insert.png",
+    "sha256": "60d995e582eb373d63c5e12da0aa5bc689bdfe4eca1e709d41670d8bf84c4a70",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "apkSha256": "1b045e2dc7b2f1761bd4f8aa708cde29b498f2c43963b3062cc08b8555c28eee",
+    "platform": "Android16/API36 arm64",
+    "viewport": "720x1600 physical, 411.429x914.286dp, density1.75",
+    "theme": "fixture white",
+    "inspection": "Inspected actual raw image or uncropped contact sheet; no blank/loading/error screen. Viewport-limited scroll content is not a full reachability/raster pass."
+  }
+]

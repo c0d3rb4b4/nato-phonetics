@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-19",
+  "rawAuditExitCode": 1,
+  "reviewGateExitCode": 0,
+  "counts": {
+    "info": 0,
+    "low": 7,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 7
+  },
+  "lockSha256": "60af8f5d1b5d2965f59c9ce89549e9d0e63f089a920eb3b72acabef94a75a671",
+  "dependenciesChanged": false,
+  "activeHighCriticalEntries": [],
+  "matcher": {
+    "advisory": "GHSA-fc5q-39xc-vjpf",
+    "withdrawnAt": "2026-11-18T15:38:56Z",
+    "updatedAt": "2026-11-18T15:38:58Z",
+    "classification": "Absent from fresh npm report; same primary withdrawal as Run19. Registry propagation/classification change, not a package repair. Prior bounded backtracking result retained; no trusted-input exposure expansion established."
+  },
+  "low": {
+    "advisory": "GHSA-474x-hrwr-fgx4",
+    "installed": "fast-xml-parser4.5.7",
+    "fixedVersions": [
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "fast-xml-parser"
+        },
+        "vulnerable_version_range": "<= 5.11.2",
+        "first_patched_version": "5.12.0",
+        "vulnerable_functions": []
+      }
+    ],
+    "affectedEntries": [
+      "@react-native-community/cli",
+      "@react-native-community/cli-config-android",
+      "@react-native-community/cli-doctor",
+      "@react-native-community/cli-platform-android",
+      "@react-native-community/cli-platform-apple",
+      "@react-native-community/cli-platform-ios",
+      "fast-xml-parser"
+    ],
+    "distinctLeafAdvisories": 1,
+    "condition": "Non-default stopNodes plus crafted XML; primary advisory describes static analysis and no benchmark. Installed two CLI consumers use ignoreAttributes:false and do not enable stopNodes; parser default is[].",
+    "inputs": "Repository AndroidManifest.xml and Xcode contents.xcworkspacedata; no authored converter/practice input or production web graph inclusion established. Source applicability inference, not comprehensive exploit/fuzz proof.",
+    "sourceFiles": {
+      "node_modules/@react-native-community/cli-config-android/build/config/getMainActivity.js": "d87b0842f35a8bbcc4a6f642d2a2e6c6f05967334e06e980f9f104ea8579d107",
+      "node_modules/@react-native-community/cli-platform-apple/build/tools/getInfo.js": "d4b1548c2bc8fc4f822789621ad75496e6c6c5c625233c00dbafdc6fd4c926f0",
+      "node_modules/fast-xml-parser/src/xmlparser/OptionsBuilder.js": "1a14c4879587a2ffd6d95abfd95baee05c70312ea51e7dda4c609f5e51b0dc1b"
+    },
+    "candidate": "npm suggests compatible-semver CLI20.2.0; registry metadata captured. No API/native/parser upgrade or fix is verified.",
+    "priority": "P2 low-parser/CLI compatibility follow-up; promote on exposed stopNodes/untrusted XML, new severity/advisory or changed tooling. Recheck before release."
+  },
+  "releaseAcceptance": "Unperformed M11; raw audit7low remains nonzero. No blanket disposition, suppression, remediation or owner acceptance."
+}

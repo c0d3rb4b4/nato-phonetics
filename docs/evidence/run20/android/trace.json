@@ -1,0 +1,1200 @@
+[
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "java-ready",
+      "time": 1795019979137,
+      "thread": 3942
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "hook",
+      "time": 1795019979463,
+      "thread": 3942,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "hook",
+      "time": 1795019979463,
+      "thread": 3942,
+      "symbol": "_ZNK8facebook5react17TextLayoutManager7measureERKNS0_19AttributedStringBoxERKNS0_19ParagraphAttributesERKNS0_17TextLayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "paragraph-enter",
+      "time": 1795019981635,
+      "thread": 3984,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075bb0f38c8"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-enter",
+      "time": 1795019981636,
+      "thread": 3984,
+      "symbol": "_ZNK8facebook5react17TextLayoutManager7measureERKNS0_19AttributedStringBoxERKNS0_19ParagraphAttributesERKNS0_17TextLayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075fb0ce828"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "java-layout",
+      "time": 1795019981670,
+      "thread": 3984,
+      "fontScale": 1,
+      "text": "Diagnostic normal startup \u2014 scale 1",
+      "height": 34,
+      "width": 657,
+      "lines": 1,
+      "paintSize": 25
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "jni-measure",
+      "time": 1795019981672,
+      "thread": 3984,
+      "surface": 1,
+      "text": "Diagnostic normal startup \u2014 scale 1",
+      "constraints": [
+        375.4285583496094,
+        375.4285583496094,
+        0,
+        null
+      ],
+      "result": "4880695674000862647"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-leave",
+      "time": 1795019981672,
+      "thread": 3984,
+      "size": {
+        "width": 375.4285583496094,
+        "height": 19.428571701049805
+      }
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "paragraph-leave",
+      "time": 1795019981672,
+      "thread": 3984
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "paragraph-enter",
+      "time": 1795019981672,
+      "thread": 3984,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075bb0f3f38"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-enter",
+      "time": 1795019981672,
+      "thread": 3984,
+      "symbol": "_ZNK8facebook5react17TextLayoutManager7measureERKNS0_19AttributedStringBoxERKNS0_19ParagraphAttributesERKNS0_17TextLayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075fb0ce828"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "java-layout",
+      "time": 1795019981684,
+      "thread": 3984,
+      "fontScale": 1,
+      "text": "Tap a card to hear the word. New playback replaces current audio.",
+      "height": 71,
+      "width": 455,
+      "lines": 2,
+      "paintSize": 28
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "jni-measure",
+      "time": 1795019981685,
+      "thread": 3984,
+      "surface": 1,
+      "text": "Tap a card to hear the word. New playback replaces current audio.",
+      "constraints": [
+        260,
+        260,
+        0,
+        null
+      ],
+      "result": "4864450548623100197"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-leave",
+      "time": 1795019981686,
+      "thread": 3984,
+      "size": {
+        "width": 260,
+        "height": 40.57143020629883
+      }
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "paragraph-leave",
+      "time": 1795019981686,
+      "thread": 3984
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "paragraph-enter",
+      "time": 1795019981686,
+      "thread": 3984,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075bb0f1f08"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-enter",
+      "time": 1795019981686,
+      "thread": 3984,
+      "symbol": "_ZNK8facebook5react17TextLayoutManager7measureERKNS0_19AttributedStringBoxERKNS0_19ParagraphAttributesERKNS0_17TextLayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075fb0ce828"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "java-layout",
+      "time": 1795019981694,
+      "thread": 3984,
+      "fontScale": 1,
+      "text": "Tap a card to hear the word. New playback replaces current audio. Scale 1",
+      "height": 104,
+      "width": 455,
+      "lines": 3,
+      "paintSize": 28
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "jni-measure",
+      "time": 1795019981694,
+      "thread": 3984,
+      "surface": 1,
+      "text": "Tap a card to hear the word. New playback replaces current audio. Scale 1",
+      "constraints": [
+        260,
+        260,
+        0,
+        null
+      ],
+      "result": "4864450548628043483"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-leave",
+      "time": 1795019981695,
+      "thread": 3984,
+      "size": {
+        "width": 260,
+        "height": 59.42856979370117
+      }
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "paragraph-leave",
+      "time": 1795019981695,
+      "thread": 3984
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "paragraph-enter",
+      "time": 1795019981695,
+      "thread": 3984,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075bb0fc668"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-enter",
+      "time": 1795019981695,
+      "thread": 3984,
+      "symbol": "_ZNK8facebook5react17TextLayoutManager7measureERKNS0_19AttributedStringBoxERKNS0_19ParagraphAttributesERKNS0_17TextLayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075fb0ce828"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "java-layout",
+      "time": 1795019981703,
+      "thread": 3984,
+      "fontScale": 1,
+      "text": "Correct! B is Bravo.",
+      "height": 42,
+      "width": 455,
+      "lines": 1,
+      "paintSize": 28
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "jni-measure",
+      "time": 1795019981705,
+      "thread": 3984,
+      "surface": 1,
+      "text": "Correct! B is Bravo.",
+      "constraints": [
+        260,
+        260,
+        0,
+        null
+      ],
+      "result": "4864450548616658944"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-leave",
+      "time": 1795019981706,
+      "thread": 3984,
+      "size": {
+        "width": 260,
+        "height": 24
+      }
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "paragraph-leave",
+      "time": 1795019981706,
+      "thread": 3984
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-enter",
+      "time": 1795019981706,
+      "thread": 3984,
+      "symbol": "_ZNK8facebook5react17TextLayoutManager7measureERKNS0_19AttributedStringBoxERKNS0_19ParagraphAttributesERKNS0_17TextLayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075fb0d1ae8"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "java-layout",
+      "time": 1795019981708,
+      "thread": 3984,
+      "fontScale": 1,
+      "text": "NUWJ359",
+      "height": 43,
+      "width": 144,
+      "lines": 1,
+      "paintSize": 32
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "jni-measure",
+      "time": 1795019981708,
+      "thread": 3984,
+      "surface": 1,
+      "text": "NUWJ359",
+      "constraints": [
+        365.4285583496094,
+        null,
+        0,
+        null
+      ],
+      "result": "4802123946017460809"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "cpp-measure-leave",
+      "time": 1795019981708,
+      "thread": 3984,
+      "size": {
+        "width": 365.4285583496094,
+        "height": 24.571428298950195
+      }
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "java-layout",
+      "time": 1795019981710,
+      "thread": 3984,
+      "fontScale": 1,
+      "text": "Tap a card to hear the word. New playback replaces current audio.",
+      "height": 71,
+      "width": 455,
+      "lines": 2,
+      "paintSize": 28
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "java-layout",
+      "time": 1795019981715,
+      "thread": 3984,
+      "fontScale": 1,
+      "text": "Tap a card to hear the word. New playback replaces current audio. Scale 1",
+      "height": 104,
+      "width": 455,
+      "lines": 3,
+      "paintSize": 28
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold1",
+      "kind": "java-layout",
+      "time": 1795019981721,
+      "thread": 3984,
+      "fontScale": 1,
+      "text": "Correct! B is Bravo.",
+      "height": 42,
+      "width": 455,
+      "lines": 1,
+      "paintSize": 28
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "paragraph-enter",
+      "time": 1795019984631,
+      "thread": 3984,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075bb115588"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "cpp-measure-enter",
+      "time": 1795019984631,
+      "thread": 3984,
+      "symbol": "_ZNK8facebook5react17TextLayoutManager7measureERKNS0_19AttributedStringBoxERKNS0_19ParagraphAttributesERKNS0_17TextLayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075fb0ce828"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "java-layout",
+      "time": 1795019984651,
+      "thread": 3984,
+      "fontScale": 2,
+      "text": "Diagnostic normal startup \u2014 scale 2",
+      "height": 116,
+      "width": 657,
+      "lines": 2,
+      "paintSize": 46
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "jni-measure",
+      "time": 1795019984651,
+      "thread": 3984,
+      "surface": 1,
+      "text": "Diagnostic normal startup \u2014 scale 2",
+      "constraints": [
+        375.4285583496094,
+        375.4285583496094,
+        0,
+        null
+      ],
+      "result": "4880695674016141897"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "cpp-measure-leave",
+      "time": 1795019984652,
+      "thread": 3984,
+      "size": {
+        "width": 375.4285583496094,
+        "height": 66.28571319580078
+      }
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "paragraph-leave",
+      "time": 1795019984652,
+      "thread": 3984
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "paragraph-enter",
+      "time": 1795019984652,
+      "thread": 3984,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075bb10c178"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "cpp-measure-enter",
+      "time": 1795019984653,
+      "thread": 3984,
+      "symbol": "_ZNK8facebook5react17TextLayoutManager7measureERKNS0_19AttributedStringBoxERKNS0_19ParagraphAttributesERKNS0_17TextLayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075fb0ce828"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "java-layout",
+      "time": 1795019984656,
+      "thread": 3984,
+      "fontScale": 2,
+      "text": "Tap a card to hear the word. New playback replaces current audio. Scale 2",
+      "height": 294,
+      "width": 455,
+      "lines": 5,
+      "paintSize": 49
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "jni-measure",
+      "time": 1795019984657,
+      "thread": 3984,
+      "surface": 1,
+      "text": "Tap a card to hear the word. New playback replaces current audio. Scale 2",
+      "constraints": [
+        260,
+        260,
+        0,
+        null
+      ],
+      "result": "4864450548640251904"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "cpp-measure-leave",
+      "time": 1795019984658,
+      "thread": 3984,
+      "size": {
+        "width": 260,
+        "height": 168
+      }
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "paragraph-leave",
+      "time": 1795019984658,
+      "thread": 3984
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "cpp-measure-enter",
+      "time": 1795019984658,
+      "thread": 3984,
+      "symbol": "_ZNK8facebook5react17TextLayoutManager7measureERKNS0_19AttributedStringBoxERKNS0_19ParagraphAttributesERKNS0_17TextLayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075fb0d1ae8"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "cpp-measure-leave",
+      "time": 1795019984661,
+      "thread": 3984,
+      "size": {
+        "width": 365.4285583496094,
+        "height": 24.571428298950195
+      }
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "java-layout",
+      "time": 1795019984664,
+      "thread": 3984,
+      "fontScale": 2,
+      "text": "Tap a card to hear the word. New playback replaces current audio.",
+      "height": 237,
+      "width": 455,
+      "lines": 4,
+      "paintSize": 49
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "live2",
+      "kind": "java-layout",
+      "time": 1795019984670,
+      "thread": 3984,
+      "fontScale": 2,
+      "text": "Tap a card to hear the word. New playback replaces current audio. Scale 2",
+      "height": 294,
+      "width": 455,
+      "lines": 5,
+      "paintSize": 49
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "paragraph-enter",
+      "time": 1795019986957,
+      "thread": 3984,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075bb0f38c8"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "cpp-measure-enter",
+      "time": 1795019986958,
+      "thread": 3984,
+      "symbol": "_ZNK8facebook5react17TextLayoutManager7measureERKNS0_19AttributedStringBoxERKNS0_19ParagraphAttributesERKNS0_17TextLayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075fb0ce828"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "cpp-measure-leave",
+      "time": 1795019986959,
+      "thread": 3984,
+      "size": {
+        "width": 375.4285583496094,
+        "height": 19.428571701049805
+      }
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "paragraph-leave",
+      "time": 1795019986959,
+      "thread": 3984
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "paragraph-enter",
+      "time": 1795019986959,
+      "thread": 3984,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075bb0f1f08"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "cpp-measure-enter",
+      "time": 1795019986959,
+      "thread": 3984,
+      "symbol": "_ZNK8facebook5react17TextLayoutManager7measureERKNS0_19AttributedStringBoxERKNS0_19ParagraphAttributesERKNS0_17TextLayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075fb0ce828"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "cpp-measure-leave",
+      "time": 1795019986968,
+      "thread": 3984,
+      "size": {
+        "width": 260,
+        "height": 59.42856979370117
+      }
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "paragraph-leave",
+      "time": 1795019986968,
+      "thread": 3984
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "cpp-measure-enter",
+      "time": 1795019986968,
+      "thread": 3984,
+      "symbol": "_ZNK8facebook5react17TextLayoutManager7measureERKNS0_19AttributedStringBoxERKNS0_19ParagraphAttributesERKNS0_17TextLayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075fb0d1ae8"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "return1",
+      "kind": "cpp-measure-leave",
+      "time": 1795019986968,
+      "thread": 3984,
+      "size": {
+        "width": 365.4285583496094,
+        "height": 24.571428298950195
+      }
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "java-ready",
+      "time": 1795019992142,
+      "thread": 4093
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "hook",
+      "time": 1795019992443,
+      "thread": 4093,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "hook",
+      "time": 1795019992444,
+      "thread": 4093,
+      "symbol": "_ZNK8facebook5react17TextLayoutManager7measureERKNS0_19AttributedStringBoxERKNS0_19ParagraphAttributesERKNS0_17TextLayoutContextERKNS0_17LayoutConstraintsE"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "paragraph-enter",
+      "time": 1795019994999,
+      "thread": 4137,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075bb0f1f08"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "cpp-measure-enter",
+      "time": 1795019995000,
+      "thread": 4137,
+      "symbol": "_ZNK8facebook5react17TextLayoutManager7measureERKNS0_19AttributedStringBoxERKNS0_19ParagraphAttributesERKNS0_17TextLayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075fb0cd4e8"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "java-layout",
+      "time": 1795019995039,
+      "thread": 4137,
+      "fontScale": 2,
+      "text": "Diagnostic normal startup \u2014 scale 2",
+      "height": 116,
+      "width": 657,
+      "lines": 2,
+      "paintSize": 46
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "jni-measure",
+      "time": 1795019995041,
+      "thread": 4137,
+      "surface": 1,
+      "text": "Diagnostic normal startup \u2014 scale 2",
+      "constraints": [
+        375.4285583496094,
+        375.4285583496094,
+        0,
+        null
+      ],
+      "result": "4880695674016141897"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "cpp-measure-leave",
+      "time": 1795019995041,
+      "thread": 4137,
+      "size": {
+        "width": 375.4285583496094,
+        "height": 66.28571319580078
+      }
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "paragraph-leave",
+      "time": 1795019995041,
+      "thread": 4137
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "paragraph-enter",
+      "time": 1795019995042,
+      "thread": 4137,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075bb0f9fc8"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "cpp-measure-enter",
+      "time": 1795019995042,
+      "thread": 4137,
+      "symbol": "_ZNK8facebook5react17TextLayoutManager7measureERKNS0_19AttributedStringBoxERKNS0_19ParagraphAttributesERKNS0_17TextLayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075fb0cd4e8"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "java-layout",
+      "time": 1795019995047,
+      "thread": 4137,
+      "fontScale": 2,
+      "text": "Tap a card to hear the word. New playback replaces current audio.",
+      "height": 237,
+      "width": 455,
+      "lines": 4,
+      "paintSize": 49
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "jni-measure",
+      "time": 1795019995047,
+      "thread": 4137,
+      "surface": 1,
+      "text": "Tap a card to hear the word. New playback replaces current audio.",
+      "constraints": [
+        260,
+        260,
+        0,
+        null
+      ],
+      "result": "4864450548638117303"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "cpp-measure-leave",
+      "time": 1795019995047,
+      "thread": 4137,
+      "size": {
+        "width": 260,
+        "height": 135.42857360839844
+      }
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "paragraph-leave",
+      "time": 1795019995047,
+      "thread": 4137
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "paragraph-enter",
+      "time": 1795019995047,
+      "thread": 4137,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075bb0fa638"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "cpp-measure-enter",
+      "time": 1795019995048,
+      "thread": 4137,
+      "symbol": "_ZNK8facebook5react17TextLayoutManager7measureERKNS0_19AttributedStringBoxERKNS0_19ParagraphAttributesERKNS0_17TextLayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075fb0cd4e8"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "java-layout",
+      "time": 1795019995052,
+      "thread": 4137,
+      "fontScale": 2,
+      "text": "Tap a card to hear the word. New playback replaces current audio. Scale 2",
+      "height": 294,
+      "width": 455,
+      "lines": 5,
+      "paintSize": 49
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "jni-measure",
+      "time": 1795019995053,
+      "thread": 4137,
+      "surface": 1,
+      "text": "Tap a card to hear the word. New playback replaces current audio. Scale 2",
+      "constraints": [
+        260,
+        260,
+        0,
+        null
+      ],
+      "result": "4864450548640251904"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "cpp-measure-leave",
+      "time": 1795019995053,
+      "thread": 4137,
+      "size": {
+        "width": 260,
+        "height": 168
+      }
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "paragraph-leave",
+      "time": 1795019995053,
+      "thread": 4137
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "paragraph-enter",
+      "time": 1795019995053,
+      "thread": 4137,
+      "symbol": "_ZNK8facebook5react19ParagraphShadowNode14measureContentERKNS0_13LayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075bb0fccd8"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "cpp-measure-enter",
+      "time": 1795019995053,
+      "thread": 4137,
+      "symbol": "_ZNK8facebook5react17TextLayoutManager7measureERKNS0_19AttributedStringBoxERKNS0_19ParagraphAttributesERKNS0_17TextLayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075fb0cd4e8"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "java-layout",
+      "time": 1795019995058,
+      "thread": 4137,
+      "fontScale": 2,
+      "text": "Correct! B is Bravo.",
+      "height": 63,
+      "width": 455,
+      "lines": 1,
+      "paintSize": 49
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "jni-measure",
+      "time": 1795019995059,
+      "thread": 4137,
+      "surface": 1,
+      "text": "Correct! B is Bravo.",
+      "constraints": [
+        260,
+        260,
+        0,
+        null
+      ],
+      "result": "4864450548621901824"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "cpp-measure-leave",
+      "time": 1795019995059,
+      "thread": 4137,
+      "size": {
+        "width": 260,
+        "height": 36
+      }
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "paragraph-leave",
+      "time": 1795019995059,
+      "thread": 4137
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "cpp-measure-enter",
+      "time": 1795019995060,
+      "thread": 4137,
+      "symbol": "_ZNK8facebook5react17TextLayoutManager7measureERKNS0_19AttributedStringBoxERKNS0_19ParagraphAttributesERKNS0_17TextLayoutContextERKNS0_17LayoutConstraintsE",
+      "node": "0xb4000075fb0c97a8"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "java-layout",
+      "time": 1795019995070,
+      "thread": 4137,
+      "fontScale": 2,
+      "text": "NUWJ359",
+      "height": 71,
+      "width": 238,
+      "lines": 1,
+      "paintSize": 53
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "jni-measure",
+      "time": 1795019995070,
+      "thread": 4137,
+      "surface": 1,
+      "text": "NUWJ359",
+      "constraints": [
+        365.4285583496094,
+        null,
+        0,
+        null
+      ],
+      "result": "4830110601464400165"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "cpp-measure-leave",
+      "time": 1795019995071,
+      "thread": 4137,
+      "size": {
+        "width": 365.4285583496094,
+        "height": 40.57143020629883
+      }
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "java-layout",
+      "time": 1795019995072,
+      "thread": 4137,
+      "fontScale": 2,
+      "text": "Tap a card to hear the word. New playback replaces current audio.",
+      "height": 237,
+      "width": 455,
+      "lines": 4,
+      "paintSize": 49
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "java-layout",
+      "time": 1795019995076,
+      "thread": 4137,
+      "fontScale": 2,
+      "text": "Tap a card to hear the word. New playback replaces current audio. Scale 2",
+      "height": 294,
+      "width": 455,
+      "lines": 5,
+      "paintSize": 49
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "stage": "cold2",
+      "kind": "java-layout",
+      "time": 1795019995082,
+      "thread": 4137,
+      "fontScale": 2,
+      "text": "Correct! B is Bravo.",
+      "height": 63,
+      "width": 455,
+      "lines": 1,
+      "paintSize": 49
+    }
+  }
+]

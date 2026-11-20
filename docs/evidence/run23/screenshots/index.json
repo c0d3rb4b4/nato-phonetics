@@ -1,0 +1,242 @@
+[
+  {
+    "platform": "web",
+    "file": "web/home-desktop-light.png",
+    "date": "2026-11-19T10:13:29.270Z",
+    "browser": "157.0.4341.60",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "theme": "light",
+    "route": "/",
+    "errors": [],
+    "sourceArchiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+    "command": "NODE_PATH=/tmp/nato-run19-browser/node_modules node docs/evidence/run23/capture-web.cjs",
+    "sha256": "0a012b72c7b83f1c786051fd5d5e4c8cfde83a80ec5868f21c4cfc65d19d7782",
+    "pixels": [
+      1280,
+      900
+    ],
+    "inspected": true,
+    "inspection": "Usable actual application state; no blank/loading screen or new visible error. Scroll/keyboard boundaries are part of the captured state; no full raster/AT acceptance.",
+    "sourceId": "38d185116eed8f773585b0d510cd386523729bdb213296c83439de88906aad6c",
+    "artifactSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96"
+  },
+  {
+    "platform": "web",
+    "file": "web/converter-mobile-dark.png",
+    "date": "2026-11-19T10:13:30.066Z",
+    "browser": "157.0.4341.60",
+    "viewport": {
+      "width": 320,
+      "height": 800
+    },
+    "theme": "dark",
+    "route": "/converter",
+    "errors": [],
+    "sourceArchiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+    "command": "NODE_PATH=/tmp/nato-run19-browser/node_modules node docs/evidence/run23/capture-web.cjs",
+    "sha256": "165fba29326dcd95d473e515576340c6ae1d57e4cacc21b671c24bd145d1213e",
+    "pixels": [
+      320,
+      800
+    ],
+    "inspected": true,
+    "inspection": "Usable actual application state; no blank/loading screen or new visible error. Scroll/keyboard boundaries are part of the captured state; no full raster/AT acceptance.",
+    "sourceId": "38d185116eed8f773585b0d510cd386523729bdb213296c83439de88906aad6c",
+    "artifactSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96"
+  },
+  {
+    "platform": "ios",
+    "file": "ios/alphabet-light.png",
+    "date": "2026-11-19T10:22:44.299000+00:00",
+    "device": {
+      "dataPath": "/Users/mac/Library/Developer/CoreSimulator/Devices/0653F7EC-9237-4AC5-A264-12969E625070/data",
+      "dataPathSize": 2310909952,
+      "logPath": "/Users/mac/Library/Logs/CoreSimulator/0653F7EC-9237-4AC5-A264-12969E625070",
+      "udid": "0653F7EC-9237-4AC5-A264-12969E625070",
+      "lastUsedAt": "2026-11-19T09:50:24Z",
+      "isAvailable": true,
+      "logPathSize": 577536,
+      "deviceTypeIdentifier": "com.apple.CoreSimulator.SimDeviceType.iPhone-17-Pro",
+      "state": "Shutdown",
+      "name": "iPhone 17 Pro"
+    },
+    "runtime": "iOS26.2",
+    "theme": "light",
+    "textSize": "large",
+    "viewportPoints": [
+      402,
+      874
+    ],
+    "dpr": 3,
+    "archiveSha256": "ac712996dc31cb456c6e590b40b8f737399af33ed704c6d9767c441b17b4fdee",
+    "command": "xcrun xcresulttool export attachments --path artifacts/run23/ios-smoke.xcresult --output-path artifacts/run23/ios-attachments",
+    "sha256": "a5896be63b74eec1cc274a4f1cddbc5367b2c648d332b58d4d88ba889074420f",
+    "pixels": [
+      1206,
+      2622
+    ],
+    "inspected": true,
+    "inspection": "Usable actual application state; no blank/loading screen or new visible error. Scroll/keyboard boundaries are part of the captured state; no full raster/AT acceptance.",
+    "sourceId": "38d185116eed8f773585b0d510cd386523729bdb213296c83439de88906aad6c",
+    "artifactSha256": "ac712996dc31cb456c6e590b40b8f737399af33ed704c6d9767c441b17b4fdee",
+    "captureMethod": "XCUIScreen.main.screenshot via actual XCTest; xcresulttool export attachments",
+    "captureTest": "CLISmokeUITests/testCLIRebuiltApp"
+  },
+  {
+    "platform": "ios",
+    "file": "ios/converter-typed-input.png",
+    "date": "2026-11-19T10:22:39.569000+00:00",
+    "device": {
+      "dataPath": "/Users/mac/Library/Developer/CoreSimulator/Devices/0653F7EC-9237-4AC5-A264-12969E625070/data",
+      "dataPathSize": 2310909952,
+      "logPath": "/Users/mac/Library/Logs/CoreSimulator/0653F7EC-9237-4AC5-A264-12969E625070",
+      "udid": "0653F7EC-9237-4AC5-A264-12969E625070",
+      "lastUsedAt": "2026-11-19T09:50:24Z",
+      "isAvailable": true,
+      "logPathSize": 577536,
+      "deviceTypeIdentifier": "com.apple.CoreSimulator.SimDeviceType.iPhone-17-Pro",
+      "state": "Shutdown",
+      "name": "iPhone 17 Pro"
+    },
+    "runtime": "iOS26.2",
+    "theme": "light",
+    "textSize": "large",
+    "viewportPoints": [
+      402,
+      874
+    ],
+    "dpr": 3,
+    "archiveSha256": "ac712996dc31cb456c6e590b40b8f737399af33ed704c6d9767c441b17b4fdee",
+    "command": "xcrun xcresulttool export attachments --path artifacts/run23/ios-smoke.xcresult --output-path artifacts/run23/ios-attachments",
+    "sha256": "0142f19ea8d8614a21e438d3a581cbe95def5b5b0ae764f05b00336b6fecc1ec",
+    "pixels": [
+      1206,
+      2622
+    ],
+    "inspected": true,
+    "inspection": "Usable actual application state; no blank/loading screen or new visible error. Scroll/keyboard boundaries are part of the captured state; no full raster/AT acceptance.",
+    "sourceId": "38d185116eed8f773585b0d510cd386523729bdb213296c83439de88906aad6c",
+    "artifactSha256": "ac712996dc31cb456c6e590b40b8f737399af33ed704c6d9767c441b17b4fdee",
+    "captureMethod": "XCUIScreen.main.screenshot via actual XCTest; xcresulttool export attachments",
+    "captureTest": "CLISmokeUITests/testCLIRebuiltApp"
+  },
+  {
+    "platform": "ios",
+    "file": "ios/home-light.png",
+    "date": "2026-11-19T10:22:31.841000+00:00",
+    "device": {
+      "dataPath": "/Users/mac/Library/Developer/CoreSimulator/Devices/0653F7EC-9237-4AC5-A264-12969E625070/data",
+      "dataPathSize": 2310909952,
+      "logPath": "/Users/mac/Library/Logs/CoreSimulator/0653F7EC-9237-4AC5-A264-12969E625070",
+      "udid": "0653F7EC-9237-4AC5-A264-12969E625070",
+      "lastUsedAt": "2026-11-19T09:50:24Z",
+      "isAvailable": true,
+      "logPathSize": 577536,
+      "deviceTypeIdentifier": "com.apple.CoreSimulator.SimDeviceType.iPhone-17-Pro",
+      "state": "Shutdown",
+      "name": "iPhone 17 Pro"
+    },
+    "runtime": "iOS26.2",
+    "theme": "light",
+    "textSize": "large",
+    "viewportPoints": [
+      402,
+      874
+    ],
+    "dpr": 3,
+    "archiveSha256": "ac712996dc31cb456c6e590b40b8f737399af33ed704c6d9767c441b17b4fdee",
+    "command": "xcrun xcresulttool export attachments --path artifacts/run23/ios-smoke.xcresult --output-path artifacts/run23/ios-attachments",
+    "sha256": "ce617485c21bec33ff36617776ed7355cd8fca80bc9220554b4dca21165c64e9",
+    "pixels": [
+      1206,
+      2622
+    ],
+    "inspected": true,
+    "inspection": "Usable actual application state; no blank/loading screen or new visible error. Scroll/keyboard boundaries are part of the captured state; no full raster/AT acceptance.",
+    "sourceId": "38d185116eed8f773585b0d510cd386523729bdb213296c83439de88906aad6c",
+    "artifactSha256": "ac712996dc31cb456c6e590b40b8f737399af33ed704c6d9767c441b17b4fdee",
+    "captureMethod": "XCUIScreen.main.screenshot via actual XCTest; xcresulttool export attachments",
+    "captureTest": "CLISmokeUITests/testCLIRebuiltApp"
+  },
+  {
+    "platform": "android",
+    "file": "android/converter-typed-input.png",
+    "state": "Actual installed CLI20.2.0-built app, exact a3 b! input, default scale",
+    "theme": "light",
+    "width": 720,
+    "height": 1600,
+    "sha256": "6f5f72dc68d1b06b6c74087e451a89a3bb17b99ee11657879e02f3d79c097ad0",
+    "timestamp": "2026-11-19T10:24:14Z",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "androidVersion": "16",
+    "fontScale": "1",
+    "displaySize": "Physical size: 1080x2400\nOverride size: 720x1600",
+    "displayDensity": "Physical density: 420\nOverride density: 280",
+    "pixels": [
+      720,
+      1600
+    ],
+    "inspected": true,
+    "inspection": "Usable actual application state; no blank/loading screen or new visible error. Scroll/keyboard boundaries are part of the captured state; no full raster/AT acceptance.",
+    "sourceId": "38d185116eed8f773585b0d510cd386523729bdb213296c83439de88906aad6c",
+    "artifactSha256": "77cfda13cdeabdcc2f15e6224497174c0ef799a6a796bdced0cbd4c688827476",
+    "runtime": "Android16/API36 arm64",
+    "device": "nato-p00-api36 / emulator-5580",
+    "normalProductEntry": true
+  },
+  {
+    "platform": "android",
+    "file": "android/alphabet-light.png",
+    "state": "Actual installed reference, pinned portrait tiles and fonts",
+    "theme": "light",
+    "width": 720,
+    "height": 1600,
+    "sha256": "780b63756c101d4905371929b704690d74970fff43b0d30ef21e37a4df30f4eb",
+    "timestamp": "2026-11-19T10:24:27Z",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "androidVersion": "16",
+    "fontScale": "1",
+    "displaySize": "Physical size: 1080x2400\nOverride size: 720x1600",
+    "displayDensity": "Physical density: 420\nOverride density: 280",
+    "pixels": [
+      720,
+      1600
+    ],
+    "inspected": true,
+    "inspection": "Usable actual application state; no blank/loading screen or new visible error. Scroll/keyboard boundaries are part of the captured state; no full raster/AT acceptance.",
+    "sourceId": "38d185116eed8f773585b0d510cd386523729bdb213296c83439de88906aad6c",
+    "artifactSha256": "77cfda13cdeabdcc2f15e6224497174c0ef799a6a796bdced0cbd4c688827476",
+    "runtime": "Android16/API36 arm64",
+    "device": "nato-p00-api36 / emulator-5580",
+    "normalProductEntry": true
+  },
+  {
+    "platform": "android",
+    "file": "android/digits-light.png",
+    "state": "Actual installed digit reference",
+    "theme": "light",
+    "width": 720,
+    "height": 1600,
+    "sha256": "7bba8ee00552bc48edf839c44c0abf163eceffb98b77341dee0a1194b9a57cb6",
+    "timestamp": "2026-11-19T10:24:35Z",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "androidVersion": "16",
+    "fontScale": "1",
+    "displaySize": "Physical size: 1080x2400\nOverride size: 720x1600",
+    "displayDensity": "Physical density: 420\nOverride density: 280",
+    "pixels": [
+      720,
+      1600
+    ],
+    "inspected": true,
+    "inspection": "Usable actual application state; no blank/loading screen or new visible error. Scroll/keyboard boundaries are part of the captured state; no full raster/AT acceptance.",
+    "sourceId": "38d185116eed8f773585b0d510cd386523729bdb213296c83439de88906aad6c",
+    "artifactSha256": "77cfda13cdeabdcc2f15e6224497174c0ef799a6a796bdced0cbd4c688827476",
+    "runtime": "Android16/API36 arm64",
+    "device": "nato-p00-api36 / emulator-5580",
+    "normalProductEntry": true
+  }
+]

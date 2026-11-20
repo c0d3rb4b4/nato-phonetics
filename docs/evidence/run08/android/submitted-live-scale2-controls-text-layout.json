@@ -1,0 +1,289 @@
+{
+  "dimensions": {
+    "fontScale": 2,
+    "height": 914.2857142857143,
+    "scale": 1.75,
+    "width": 411.42857142857144
+  },
+  "values": [
+    {
+      "frame": {
+        "height": 48.571441650390625,
+        "pageX": 56,
+        "pageY": 55.428558349609375,
+        "width": 299.4285583496094,
+        "x": 56,
+        "y": 3.4285714626312256
+      },
+      "style": {
+        "color": "#F5F7FA",
+        "flex": 1,
+        "fontSize": 18,
+        "fontWeight": "600",
+        "paddingHorizontal": 4,
+        "paddingVertical": 12,
+        "textAlign": "center"
+      },
+      "text": "Letter Quiz"
+    },
+    {
+      "frame": {
+        "height": 66.28570556640625,
+        "pageX": 16,
+        "pageY": -74.28573608398438,
+        "width": 379.4285583496094,
+        "x": 16,
+        "y": 24
+      },
+      "style": {
+        "color": "#F5F7FA",
+        "fontSize": 26,
+        "fontWeight": "700",
+        "marginVertical": 8
+      },
+      "text": "What is the NATO word for this letter?"
+    },
+    {
+      "frame": {
+        "height": 100,
+        "pageX": 96,
+        "pageY": 55.973724365234375,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 68.38710021972656,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 100,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.026286804199216363
+          }
+        ],
+        "width": 220
+      },
+      "testID": "quiz-letter",
+      "text": "I"
+    },
+    {
+      "frame": {
+        "height": 44.000030517578125,
+        "pageX": 112,
+        "pageY": 213.95657348632812,
+        "width": 188,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 19,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 36.774192810058594,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.3291434020996178
+          }
+        ],
+        "width": 188
+      },
+      "testID": "quiz-card-word-run",
+      "text": "India"
+    },
+    {
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 269.8094482421875,
+        "width": 188,
+        "x": 0,
+        "y": 0
+      },
+      "style": {
+        "color": "#374151",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 19,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 0,
+        "transform": [
+          {
+            "translateY": -0.4762848968505864
+          }
+        ],
+        "width": 188
+      },
+      "testID": "quiz-card-pronunciation-run",
+      "text": "IN-dee-ah"
+    },
+    {
+      "frame": {
+        "height": 21.71429443359375,
+        "pageX": 125.71428680419922,
+        "pageY": 377.71429443359375,
+        "width": 159.42855834960938,
+        "x": 109.71428680419922,
+        "y": 13.714285850524902
+      },
+      "style": {
+        "color": "#F5F7FA",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Impulse \u00b7 Your answer"
+    },
+    {
+      "frame": {
+        "height": 21.71429443359375,
+        "pageX": 188,
+        "pageY": 437.71429443359375,
+        "width": 35.42857360839844,
+        "x": 172,
+        "y": 13.714285850524902
+      },
+      "style": {
+        "color": "#F5F7FA",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "India"
+    },
+    {
+      "frame": {
+        "height": 21.71429443359375,
+        "pageX": 182.85714721679688,
+        "pageY": 497.14288330078125,
+        "width": 45.142852783203125,
+        "x": 166.85714721679688,
+        "y": 13.714285850524902
+      },
+      "style": {
+        "color": "#F5F7FA",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Indigo"
+    },
+    {
+      "frame": {
+        "height": 21.7142333984375,
+        "pageX": 194.2857208251953,
+        "pageY": 557.1428833007812,
+        "width": 22.28570556640625,
+        "x": 178.2857208251953,
+        "y": 13.714285850524902
+      },
+      "style": {
+        "color": "#F5F7FA",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Iris"
+    },
+    {
+      "frame": {
+        "height": 24,
+        "pageX": 16,
+        "pageY": 612.5714111328125,
+        "width": 379.4285583496094,
+        "x": 16,
+        "y": 710.8571166992188
+      },
+      "style": {
+        "color": "#F5F7FA",
+        "fontSize": 16,
+        "lineHeight": 24,
+        "marginVertical": 8
+      },
+      "text": "Not quite. I is India."
+    },
+    {
+      "frame": {
+        "height": 21.71429443359375,
+        "pageX": 156,
+        "pageY": 670.857177734375,
+        "width": 99.42857360839844,
+        "x": 140,
+        "y": 13.714285850524902
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Next question"
+    },
+    {
+      "frame": {
+        "height": 21.71429443359375,
+        "pageX": 153.14285278320312,
+        "pageY": 732.5714721679688,
+        "width": 104.57144165039062,
+        "x": 137.14285278320312,
+        "y": 13.714285850524902
+      },
+      "style": {
+        "color": "#F5F7FA",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Replay answer"
+    },
+    {
+      "frame": {
+        "height": 21.7142333984375,
+        "pageX": 128,
+        "pageY": 794.2857055664062,
+        "width": 155.42855834960938,
+        "x": 112,
+        "y": 13.714285850524902
+      },
+      "style": {
+        "color": "#F5F7FA",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "End round and review"
+    }
+  ]
+}

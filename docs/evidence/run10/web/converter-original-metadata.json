@@ -1,0 +1,134 @@
+[
+  {
+    "file": "light-1280-empty.png",
+    "theme": "light",
+    "width": 1280,
+    "height": 900,
+    "state": "empty",
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T09:36:58.592Z",
+    "command": "node scripts/verify-converter-browser.cjs dist docs/evidence/run09",
+    "provider": "controlled speech; real browser clipboard; share branches explicitly controlled"
+  },
+  {
+    "file": "light-1280-copied.png",
+    "theme": "light",
+    "width": 1280,
+    "height": 900,
+    "state": "copied",
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T09:36:59.879Z",
+    "command": "node scripts/verify-converter-browser.cjs dist docs/evidence/run09",
+    "provider": "controlled speech; real browser clipboard; share branches explicitly controlled"
+  },
+  {
+    "file": "light-1280-share-fallback.png",
+    "theme": "light",
+    "width": 1280,
+    "height": 900,
+    "state": "share-fallback",
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T09:36:59.986Z",
+    "command": "node scripts/verify-converter-browser.cjs dist docs/evidence/run09",
+    "provider": "controlled speech; real browser clipboard; share branches explicitly controlled"
+  },
+  {
+    "file": "light-1280-copy-denied.png",
+    "theme": "light",
+    "width": 1280,
+    "height": 900,
+    "state": "copy-denied",
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T09:37:00.181Z",
+    "command": "node scripts/verify-converter-browser.cjs dist docs/evidence/run09",
+    "provider": "controlled speech; real browser clipboard; share branches explicitly controlled"
+  },
+  {
+    "file": "light-1280-cards.png",
+    "theme": "light",
+    "width": 1280,
+    "height": 900,
+    "state": "cards",
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T09:37:01.627Z",
+    "command": "node scripts/verify-converter-browser.cjs dist docs/evidence/run09",
+    "provider": "controlled speech; real browser clipboard; share branches explicitly controlled"
+  },
+  {
+    "file": "dark-320-empty.png",
+    "theme": "dark",
+    "width": 320,
+    "height": 568,
+    "state": "empty",
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T09:37:03.223Z",
+    "command": "node scripts/verify-converter-browser.cjs dist docs/evidence/run09",
+    "provider": "controlled speech; real browser clipboard; share branches explicitly controlled"
+  },
+  {
+    "file": "dark-320-copied.png",
+    "theme": "dark",
+    "width": 320,
+    "height": 568,
+    "state": "copied",
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T09:37:03.436Z",
+    "command": "node scripts/verify-converter-browser.cjs dist docs/evidence/run09",
+    "provider": "controlled speech; real browser clipboard; share branches explicitly controlled"
+  },
+  {
+    "file": "dark-320-share-fallback.png",
+    "theme": "dark",
+    "width": 320,
+    "height": 568,
+    "state": "share-fallback",
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T09:37:03.499Z",
+    "command": "node scripts/verify-converter-browser.cjs dist docs/evidence/run09",
+    "provider": "controlled speech; real browser clipboard; share branches explicitly controlled"
+  },
+  {
+    "file": "dark-320-copy-denied.png",
+    "theme": "dark",
+    "width": 320,
+    "height": 568,
+    "state": "copy-denied",
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T09:37:03.683Z",
+    "command": "node scripts/verify-converter-browser.cjs dist docs/evidence/run09",
+    "provider": "controlled speech; real browser clipboard; share branches explicitly controlled"
+  },
+  {
+    "file": "dark-320-cards.png",
+    "theme": "dark",
+    "width": 320,
+    "height": 568,
+    "state": "cards",
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T09:37:05.152Z",
+    "command": "node scripts/verify-converter-browser.cjs dist docs/evidence/run09",
+    "provider": "controlled speech; real browser clipboard; share branches explicitly controlled"
+  },
+  {
+    "file": "dark-320-plain-200-percent.png",
+    "theme": "dark",
+    "width": 320,
+    "height": 568,
+    "state": "plain-200-percent",
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T09:37:05.263Z",
+    "command": "node scripts/verify-converter-browser.cjs dist docs/evidence/run09",
+    "provider": "controlled speech; real browser clipboard; share branches explicitly controlled"
+  },
+  {
+    "file": "dark-320-controls-200-percent.png",
+    "theme": "dark",
+    "width": 320,
+    "height": 568,
+    "state": "controls-200-percent",
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T09:37:05.401Z",
+    "command": "node scripts/verify-converter-browser.cjs dist docs/evidence/run09",
+    "provider": "controlled speech; real browser clipboard; share branches explicitly controlled"
+  }
+]

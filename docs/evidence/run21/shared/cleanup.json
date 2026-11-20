@@ -1,0 +1,18 @@
+{
+  "removedOwnedGeneratedRuntimeDirectories": [
+    "artifacts/run21/chromium-first/runtime-NEXdYU",
+    "artifacts/run21/chromium-identity/runtime-phveeN",
+    "artifacts/run21/chromium-poll/runtime-I6GtwW",
+    "artifacts/run21/chromium-worker/runtime-qnv5n2",
+    "artifacts/run21/final/chromium/runtime-Y6mbwT",
+    "artifacts/run21/final/firefox/runtime-bsaSkl",
+    "artifacts/run21/final/webkit/runtime-siQzBe",
+    "artifacts/run21/firefox/runtime-mmx0xQ",
+    "artifacts/run21/webkit/runtime-JdmIUN",
+    "artifacts/run21/webkit-tabs/runtime-4DjnFL",
+    "artifacts/run21/reviewed/chromium/runtime-Xv98qz",
+    "artifacts/run21/reviewed/firefox/runtime-G653sM",
+    "artifacts/run21/reviewed/webkit/runtime-ZlQnLv"
+  ],
+  "scope": "Only Run21 temporary browser profiles/extracted fixtures after durable report/capture preservation; prior evidence/user files untouched"
+}

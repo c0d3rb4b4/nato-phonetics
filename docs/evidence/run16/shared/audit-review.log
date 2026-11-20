@@ -1,0 +1,35 @@
+
+> nato-phonetics@1.0.0 audit:review
+> node scripts/check-audit.cjs
+
+Raw npm audit exit status: 1
+npm audit findings (still unresolved): {"info":0,"low":3,"moderate":0,"high":29,"critical":0,"total":32}
+  high: @jest/environment
+  high: @jest/fake-timers
+  high: @jest/transform
+  high: @react-native-community/cli
+  high: @react-native-community/cli-clean
+  high: @react-native-community/cli-config
+  high: @react-native-community/cli-config-android
+  high: @react-native-community/cli-config-apple
+  high: @react-native-community/cli-doctor
+  high: @react-native-community/cli-platform-apple
+  high: @react-native/community-cli-plugin
+  high: @react-native/metro-config
+  high: anymatch
+  high: babel-jest
+  high: fast-glob
+  high: image-size
+  high: jest-environment-node
+  high: jest-haste-map
+  high: jest-message-util
+  high: jest-mock
+  high: jest-util
+  high: jest-worker
+  high: metro
+  high: metro-config
+  high: metro-file-map
+  high: metro-transform-worker
+  high: micromatch
+  high: picomatch
+  high: react-native

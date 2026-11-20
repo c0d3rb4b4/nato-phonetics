@@ -1,0 +1,220 @@
+{
+  "thresholdPhysicalPx": 1,
+  "cases": [
+    {
+      "name": "alphabet-tablet-dark",
+      "scale": 1,
+      "dpr": 2,
+      "maxPhysicalError": 1.6880000000000024,
+      "fields": {
+        "letter": {
+          "cssError": -0.8440000000000012,
+          "physicalError": -1.6880000000000024,
+          "actual": 40,
+          "expected": 40.844
+        },
+        "pronunciation": {
+          "cssError": -0.6189999999999998,
+          "physicalError": -1.2379999999999995,
+          "actual": 122,
+          "expected": 122.619
+        }
+      }
+    },
+    {
+      "name": "alphabet-narrow-light",
+      "scale": 1,
+      "dpr": 2,
+      "maxPhysicalError": 1.6880000000000024,
+      "fields": {
+        "letter": {
+          "cssError": -0.8440000000000012,
+          "physicalError": -1.6880000000000024,
+          "actual": 40,
+          "expected": 40.844
+        },
+        "pronunciation": {
+          "cssError": -0.6189999999999998,
+          "physicalError": -1.2379999999999995,
+          "actual": 122,
+          "expected": 122.619
+        }
+      }
+    },
+    {
+      "name": "alphabet-phone-dark",
+      "scale": 1,
+      "dpr": 3,
+      "maxPhysicalError": 2.5320000000000036,
+      "fields": {
+        "letter": {
+          "cssError": -0.8440000000000012,
+          "physicalError": -2.5320000000000036,
+          "actual": 40,
+          "expected": 40.844
+        },
+        "pronunciation": {
+          "cssError": -0.6189999999999998,
+          "physicalError": -1.8569999999999993,
+          "actual": 122,
+          "expected": 122.619
+        }
+      }
+    },
+    {
+      "name": "alphabet-landscape-light",
+      "scale": 1,
+      "dpr": 3,
+      "maxPhysicalError": 2.5320000000000036,
+      "fields": {
+        "letter": {
+          "cssError": -0.8440000000000012,
+          "physicalError": -2.5320000000000036,
+          "actual": 40,
+          "expected": 40.844
+        },
+        "pronunciation": {
+          "cssError": -0.6189999999999998,
+          "physicalError": -1.8569999999999993,
+          "actual": 122,
+          "expected": 122.619
+        }
+      }
+    },
+    {
+      "name": "alphabet-narrow-200-dark",
+      "scale": 2,
+      "dpr": 2,
+      "maxPhysicalError": 1.0559999999999832,
+      "fields": {
+        "word": {
+          "cssError": -0.5279999999999916,
+          "physicalError": -1.0559999999999832,
+          "actual": 198,
+          "expected": 198.528
+        }
+      }
+    },
+    {
+      "name": "alphabet-narrow-300-overflow-light",
+      "scale": 3,
+      "dpr": 2,
+      "maxPhysicalError": 1.7139999999999418,
+      "fields": {
+        "letter": {
+          "cssError": -0.5320000000000107,
+          "physicalError": -1.0640000000000214,
+          "actual": 122,
+          "expected": 122.53200000000001
+        },
+        "pronunciation": {
+          "cssError": -0.8569999999999709,
+          "physicalError": -1.7139999999999418,
+          "actual": 367,
+          "expected": 367.85699999999997
+        }
+      }
+    },
+    {
+      "name": "alphabet-tablet-200-light",
+      "scale": 2,
+      "dpr": 2,
+      "maxPhysicalError": 1.0559999999999832,
+      "fields": {
+        "word": {
+          "cssError": -0.5279999999999916,
+          "physicalError": -1.0559999999999832,
+          "actual": 198,
+          "expected": 198.528
+        }
+      }
+    },
+    {
+      "name": "converter-narrow-dark",
+      "scale": 1,
+      "dpr": 2,
+      "maxPhysicalError": 1.6880000000000024,
+      "fields": {
+        "letter": {
+          "cssError": -0.8440000000000012,
+          "physicalError": -1.6880000000000024,
+          "actual": 40,
+          "expected": 40.844
+        },
+        "pronunciation": {
+          "cssError": -0.6189999999999998,
+          "physicalError": -1.2379999999999995,
+          "actual": 122,
+          "expected": 122.619
+        }
+      }
+    },
+    {
+      "name": "converter-narrow-200-light",
+      "scale": 2,
+      "dpr": 2,
+      "maxPhysicalError": 1.0559999999999832,
+      "fields": {
+        "word": {
+          "cssError": -0.5279999999999916,
+          "physicalError": -1.0559999999999832,
+          "actual": 198,
+          "expected": 198.528
+        }
+      }
+    },
+    {
+      "name": "quiz-narrow-light",
+      "scale": 1,
+      "dpr": 2,
+      "maxPhysicalError": 1.6880000000000024,
+      "fields": {
+        "letter": {
+          "cssError": -0.8440000000000012,
+          "physicalError": -1.6880000000000024,
+          "actual": 40,
+          "expected": 40.844
+        }
+      }
+    },
+    {
+      "name": "quiz-narrow-light",
+      "state": "revealed",
+      "scale": 1,
+      "dpr": 2,
+      "maxPhysicalError": 1.6880000000000024,
+      "fields": {
+        "letter": {
+          "cssError": -0.8440000000000012,
+          "physicalError": -1.6880000000000024,
+          "actual": 40,
+          "expected": 40.844
+        },
+        "pronunciation": {
+          "cssError": -0.6189999999999998,
+          "physicalError": -1.2379999999999995,
+          "actual": 122,
+          "expected": 122.619
+        }
+      }
+    },
+    {
+      "name": "quiz-narrow-200-dark",
+      "state": "revealed",
+      "scale": 2,
+      "dpr": 2,
+      "maxPhysicalError": 1.0559999999999832,
+      "fields": {
+        "word": {
+          "cssError": -0.5279999999999916,
+          "physicalError": -1.0559999999999832,
+          "actual": 198,
+          "expected": 198.528
+        }
+      }
+    }
+  ],
+  "candidate": "Pre-baseline-fix bundle app-FU4OQHBU.js",
+  "bundleSha256": "1e4dec6e75f7645557f70f7098d1738057c335f44f9f88d783bf5a3601650083",
+  "sourceMeasurements": "../diagnostics/web-pre-baseline-fix/web-tile-measurements.json"
+}

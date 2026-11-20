@@ -1,0 +1,298 @@
+[
+  {
+    "check": "cold-home-rendered",
+    "passed": true,
+    "timestamp": "2026-11-16T18:16:37Z"
+  },
+  {
+    "check": "bulk-input-and-seven-output-cards",
+    "passed": true,
+    "timestamp": "2026-11-16T18:17:10Z",
+    "input": "CV34 7AP"
+  },
+  {
+    "check": "menu-back-retains-converter",
+    "passed": true,
+    "timestamp": "2026-11-16T18:17:23Z"
+  },
+  {
+    "check": "hardware-back-retains-converter",
+    "passed": true,
+    "timestamp": "2026-11-16T18:17:28Z"
+  },
+  {
+    "check": "bulk-edit-replaces-output",
+    "passed": true,
+    "timestamp": "2026-11-16T18:17:38Z",
+    "input": "CV34 7AZ"
+  },
+  {
+    "check": "real-google-tts-voices-enumerated",
+    "passed": true,
+    "timestamp": "2026-11-16T18:17:41Z",
+    "count": 17
+  },
+  {
+    "check": "system-default-preview-completes",
+    "passed": true,
+    "timestamp": "2026-11-16T18:19:15Z",
+    "snapshot": {
+      "owner": "voice-select:\u00abr2\u00bb",
+      "result": {
+        "status": "completed"
+      },
+      "status": "idle",
+      "tokenCount": 3,
+      "tokenIndex": 2,
+      "warning": null
+    }
+  },
+  {
+    "check": "three-distinct-native-utterances-completed",
+    "passed": true,
+    "timestamp": "2026-11-16T18:19:15Z"
+  },
+  {
+    "check": "explicit-stop-cancels",
+    "passed": true,
+    "timestamp": "2026-11-16T18:19:32Z",
+    "snapshot": {
+      "owner": "converter:\u00abr3\u00bb",
+      "result": {
+        "status": "cancelled"
+      },
+      "status": "idle",
+      "tokenCount": 26,
+      "tokenIndex": 2,
+      "warning": null
+    }
+  },
+  {
+    "check": "navigation-cancels",
+    "passed": true,
+    "timestamp": "2026-11-16T18:19:41Z",
+    "snapshot": {
+      "owner": "converter:\u00abr3\u00bb",
+      "result": {
+        "status": "cancelled"
+      },
+      "status": "idle",
+      "tokenCount": 26,
+      "tokenIndex": 2,
+      "warning": null
+    }
+  },
+  {
+    "check": "background-cancels",
+    "passed": true,
+    "timestamp": "2026-11-16T18:19:48Z",
+    "snapshot": {
+      "owner": "converter:\u00abr3\u00bb",
+      "result": {
+        "status": "cancelled"
+      },
+      "status": "idle",
+      "tokenCount": 26,
+      "tokenIndex": 0,
+      "warning": null
+    }
+  },
+  {
+    "check": "foreground-does-not-resume",
+    "passed": true,
+    "timestamp": "2026-11-16T18:19:52Z",
+    "snapshot": {
+      "owner": "converter:\u00abr3\u00bb",
+      "result": {
+        "status": "cancelled"
+      },
+      "status": "idle",
+      "tokenCount": 26,
+      "tokenIndex": 0,
+      "warning": null
+    }
+  },
+  {
+    "check": "replacement-completes",
+    "passed": true,
+    "timestamp": "2026-11-16T18:20:07Z",
+    "snapshot": {
+      "owner": "converter:\u00abr3\u00bb",
+      "result": {
+        "status": "completed"
+      },
+      "status": "idle",
+      "tokenCount": 1,
+      "tokenIndex": 0,
+      "warning": null
+    }
+  },
+  {
+    "check": "quiz-four-choices-and-feedback",
+    "passed": true,
+    "timestamp": "2026-11-16T18:20:27Z"
+  },
+  {
+    "check": "warm-link-settings",
+    "passed": true,
+    "timestamp": "2026-11-16T18:20:30Z"
+  },
+  {
+    "check": "warm-link-about",
+    "passed": true,
+    "timestamp": "2026-11-16T18:20:33Z"
+  },
+  {
+    "check": "warm-link-privacy",
+    "passed": true,
+    "timestamp": "2026-11-16T18:20:36Z"
+  },
+  {
+    "check": "warm-link-audio-help",
+    "passed": true,
+    "timestamp": "2026-11-16T18:20:39Z"
+  },
+  {
+    "check": "warm-link-_sitemap",
+    "passed": true,
+    "timestamp": "2026-11-16T18:20:44Z"
+  },
+  {
+    "check": "warm-link-not-a-route",
+    "passed": true,
+    "timestamp": "2026-11-16T18:20:46Z"
+  },
+  {
+    "check": "cold-menu-home-fallback",
+    "passed": true,
+    "timestamp": "2026-11-16T18:21:01Z"
+  },
+  {
+    "check": "saved-theme-survives-process-restart",
+    "passed": true,
+    "timestamp": "2026-11-16T18:21:15Z"
+  },
+  {
+    "check": "native-legacy-theme-and-voice-migration",
+    "passed": true,
+    "timestamp": "2026-11-16T18:21:22Z",
+    "preferences": {
+      "selectedVoice": "en-US-language",
+      "themeMode": "dark",
+      "version": 1
+    },
+    "storage": [
+      [
+        "nato.preferences.v1",
+        "{\"version\":1,\"themeMode\":\"dark\",\"selectedVoice\":\"en-US-language\"}"
+      ],
+      [
+        "darkMode",
+        null
+      ],
+      [
+        "selectedVoice",
+        null
+      ],
+      [
+        "nato.progress.p00-fixture",
+        "keep"
+      ]
+    ]
+  },
+  {
+    "check": "native-reset-preserves-unrelated-data",
+    "passed": true,
+    "timestamp": "2026-11-16T18:21:26Z",
+    "storage": [
+      [
+        "nato.preferences.v1",
+        "{\"version\":1,\"themeMode\":\"system\",\"selectedVoice\":null}"
+      ],
+      [
+        "nato.progress.p00-fixture",
+        "keep"
+      ]
+    ]
+  },
+  {
+    "check": "suite-complete",
+    "passed": true,
+    "timestamp": "2026-11-16T18:21:33Z",
+    "checks": 25,
+    "captures": 11
+  },
+  {
+    "check": "voice-list-retry-renders-enumerated-voice",
+    "passed": true,
+    "timestamp": "2026-11-16T18:23:32Z",
+    "count": 30,
+    "visible": [
+      "en-GB-language, en-GB",
+      "en-gb-x-gba-local, en-GB",
+      "en-gb-x-gba-network, en-GB"
+    ]
+  },
+  {
+    "check": "native-start-finish-id-pairs-match",
+    "passed": true,
+    "timestamp": "2026-11-16T18:23:32Z"
+  },
+  {
+    "check": "repeated-identical-words-complete",
+    "passed": true,
+    "timestamp": "2026-11-16T18:23:49Z",
+    "snapshot": {
+      "owner": "converter:\u00abr1\u00bb",
+      "result": {
+        "status": "completed"
+      },
+      "status": "idle",
+      "tokenCount": 4,
+      "tokenIndex": 3,
+      "warning": null
+    }
+  },
+  {
+    "check": "four-identical-words-have-distinct-native-ids",
+    "passed": true,
+    "timestamp": "2026-11-16T18:23:49Z"
+  },
+  {
+    "check": "menu-navigation-cancels-supplement",
+    "passed": true,
+    "timestamp": "2026-11-16T18:24:08Z",
+    "snapshot": {
+      "owner": "converter:\u00abr1\u00bb",
+      "result": {
+        "status": "cancelled"
+      },
+      "status": "idle",
+      "tokenCount": 26,
+      "tokenIndex": 2,
+      "warning": null
+    }
+  },
+  {
+    "check": "menu-back-does-not-resume",
+    "passed": true,
+    "timestamp": "2026-11-16T18:24:10Z",
+    "snapshot": {
+      "owner": "converter:\u00abr1\u00bb",
+      "result": {
+        "status": "cancelled"
+      },
+      "status": "idle",
+      "tokenCount": 26,
+      "tokenIndex": 2,
+      "warning": null
+    }
+  },
+  {
+    "check": "supplement-complete",
+    "passed": true,
+    "timestamp": "2026-11-16T18:24:14Z",
+    "checks": 32,
+    "captures": 12
+  }
+]

@@ -1,0 +1,18 @@
+{"level":"info","ts":1795084991.312396,"msg":"maxprocs: Leaving GOMAXPROCS=8: CPU quota undefined"}
+{"level":"info","ts":1795084991.312458,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":7730941132,"previous":9223372036854775807}
+{"level":"info","ts":1795084991.312465,"msg":"using config from file","file":"/Users/mac/dev/apps/nato-phonetics/artifacts/run24/readonly/webkit-tabs-serial/runtime-Ih5xrN/a/Caddyfile"}
+{"level":"info","ts":1795084991.312469,"msg":"adapted config to JSON","adapter":"caddyfile"}
+{"level":"warn","ts":1795084991.312475,"logger":"admin","msg":"admin endpoint disabled"}
+{"level":"info","ts":1795084991.3126059,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x31f42c53f300"}
+{"level":"warn","ts":1795084991.314999,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":56540"}
+{"level":"warn","ts":1795084991.3150358,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":56540"}
+{"level":"info","ts":1795084991.315045,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+{"level":"info","ts":1795084991.317162,"msg":"autosaved config (load with --resume flag)","file":"/Users/mac/dev/apps/nato-phonetics/artifacts/run24/readonly/webkit-tabs-serial/runtime-Ih5xrN/config/caddy/autosave.json"}
+{"level":"info","ts":1795084991.317186,"msg":"serving initial configuration"}
+{"level":"info","ts":1795084991.326807,"logger":"tls","msg":"cleaning storage unit","storage":"FileStorage:/Users/mac/dev/apps/nato-phonetics/artifacts/run24/readonly/webkit-tabs-serial/runtime-Ih5xrN/data/caddy"}
+{"level":"info","ts":1795084991.333272,"logger":"tls","msg":"finished cleaning storage units"}
+{"level":"info","ts":1795085008.146662,"msg":"shutting down apps, then terminating","signal":"SIGTERM"}
+{"level":"warn","ts":1795085008.1574662,"msg":"exiting; byeee!! 👋","signal":"SIGTERM"}
+{"level":"info","ts":1795085008.160946,"logger":"http","msg":"servers shutting down with eternal grace period"}
+{"level":"info","ts":1795085008.1673338,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0x31f42c53f300"}
+{"level":"info","ts":1795085008.17056,"msg":"shutdown complete","signal":"SIGTERM","exit_code":0}

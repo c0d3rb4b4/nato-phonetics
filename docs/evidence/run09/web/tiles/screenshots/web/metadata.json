@@ -1,0 +1,124 @@
+{
+  "date": "2026-11-17",
+  "capturedAt": "2026-11-17T18:24:17.443Z",
+  "platform": "web",
+  "os": "Darwin 25.6.0 arm64",
+  "browser": "Edg/157.0.4341.60",
+  "command": "node scripts/verify-tiles-browser.cjs /Users/mac/dev/apps/nato-phonetics/dist /Users/mac/dev/apps/nato-phonetics/docs/evidence/run09/web/tiles",
+  "selectedCaseFilter": "converter",
+  "baseline": null,
+  "assets": [
+    {
+      "file": "assets/app-MI3UNJTU.js",
+      "sha256": "350d50b793cc7d88723f5e96d94cd825d86d83b64fd64464006c8b9749ed3766"
+    },
+    {
+      "file": "NatoTile-ExtraBold-P5QNDEHJ.ttf",
+      "sha256": "b0150a84d5e000fcd276cf13e1863ca8bbaab0ff2a0dfdcfa958a48781dd7aa6"
+    },
+    {
+      "file": "NatoTile-Italic-AWOPV6AY.ttf",
+      "sha256": "50f16c8bec3ed31190d37403b6e15d200274e7a5e43f1a698a86eef7079d862b"
+    },
+    {
+      "file": "NatoTile-SemiBold-REJGIRDE.ttf",
+      "sha256": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f"
+    }
+  ],
+  "captures": [
+    {
+      "file": "converter-all-desktop-light-first.png",
+      "name": "converter-all-desktop-light",
+      "route": "/converter",
+      "width": 1280,
+      "height": 1200,
+      "theme": "light",
+      "dpr": 1,
+      "controlledRandomSeed": null,
+      "browser": "Edg/157.0.4341.60",
+      "bytes": 130023,
+      "sha256": "a2d079a71c6d739c315392f3fc856680e56e03e3e88b625f9c3c9a507c03f8bc"
+    },
+    {
+      "file": "converter-all-desktop-light-last.png",
+      "name": "converter-all-desktop-light",
+      "route": "/converter",
+      "width": 1280,
+      "height": 1200,
+      "theme": "light",
+      "dpr": 1,
+      "controlledRandomSeed": null,
+      "browser": "Edg/157.0.4341.60",
+      "bytes": 116174,
+      "sha256": "b92630f7aa1d3b8dd502242808949dae29d7e507161eedc80c9f9944a6fe66ec"
+    },
+    {
+      "file": "converter-narrow-dark-first.png",
+      "name": "converter-narrow-dark",
+      "route": "/converter",
+      "width": 320,
+      "height": 568,
+      "theme": "dark",
+      "dpr": 2,
+      "controlledRandomSeed": null,
+      "browser": "Edg/157.0.4341.60",
+      "bytes": 97699,
+      "sha256": "2cb825cd87533d37d1c653ba166a18ba9ea22d2c9b1880e4ddc24d8b2d926d9d"
+    },
+    {
+      "file": "converter-narrow-dark-last.png",
+      "name": "converter-narrow-dark",
+      "route": "/converter",
+      "width": 320,
+      "height": 568,
+      "theme": "dark",
+      "dpr": 2,
+      "controlledRandomSeed": null,
+      "browser": "Edg/157.0.4341.60",
+      "bytes": 37636,
+      "sha256": "078f9b611ba28d03ac6bf980835baa2e1f9664d5342f0f0cd9fe6a778821babc"
+    },
+    {
+      "file": "converter-narrow-200-light-first.png",
+      "name": "converter-narrow-200-light",
+      "route": "/converter",
+      "width": 320,
+      "height": 568,
+      "theme": "light",
+      "dpr": 2,
+      "scale": 2,
+      "controlledRandomSeed": null,
+      "browser": "Edg/157.0.4341.60",
+      "bytes": 80704,
+      "sha256": "4854299a1024a95d0b4e4467e52466c55027503d5adc1cfae9767021b26d8471"
+    },
+    {
+      "file": "converter-narrow-200-light-last.png",
+      "name": "converter-narrow-200-light",
+      "route": "/converter",
+      "width": 320,
+      "height": 568,
+      "theme": "light",
+      "dpr": 2,
+      "scale": 2,
+      "controlledRandomSeed": null,
+      "browser": "Edg/157.0.4341.60",
+      "bytes": 30124,
+      "sha256": "c4c2c9515499dc067824147142c4e4202288a8667208ec77896d68bdcb6e6a80"
+    },
+    {
+      "file": "alphabet-font-load-error.png",
+      "name": "alphabet-font-load-error",
+      "route": "/alphabet",
+      "width": 390,
+      "height": 844,
+      "theme": "system",
+      "dpr": 2,
+      "controlledRandomSeed": null,
+      "browser": "Edg/157.0.4341.60",
+      "bytes": 39559,
+      "sha256": "ba4ce14a95a8d3a738cfa4579218c4bc53f1e8f4faa2f09277a6ba144eb1f790"
+    }
+  ],
+  "inspection": "pending"
+}

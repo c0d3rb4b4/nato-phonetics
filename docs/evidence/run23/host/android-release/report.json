@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "mode": "android-release",
+  "startedAt": "2026-11-19T10:10:47.127Z",
+  "status": "passed",
+  "host": {
+    "platform": "darwin",
+    "arch": "arm64",
+    "release": "25.6.0",
+    "node": "22.23.0"
+  },
+  "jobs": 1,
+  "install": false,
+  "preflightOnly": false,
+  "remoteJob": null,
+  "steps": [
+    {
+      "name": "native-build",
+      "executable": "/private/tmp/nato-phonetics-toolchain/node_modules/node/bin/node",
+      "args": [
+        "scripts/build-native.cjs",
+        "android-release"
+      ],
+      "log": "logs/01-native-build.log",
+      "startedAt": "2026-11-19T10:10:47.388Z",
+      "endedAt": "2026-11-19T10:12:06.203Z",
+      "exitCode": 0,
+      "signal": null
+    }
+  ],
+  "artifacts": [
+    {
+      "file": "app-release.aab",
+      "bytes": 33849142,
+      "sha256": "974cefbcc5001dbd81c4b9e74e177d8b61b2b9ad97f05b8cb419c1f511550972"
+    }
+  ],
+  "sourceId": "38d185116eed8f773585b0d510cd386523729bdb213296c83439de88906aad6c",
+  "preflight": {
+    "npm": "10.9.4",
+    "diskAvailableBytes": 7213592576,
+    "totalMemoryBytes": 8589934592,
+    "freeMemoryBytes": 1068318720,
+    "cpus": 8,
+    "tools": {
+      "java": "openjdk version \"17.0.13\" 2024-10-15\nOpenJDK Runtime Environment Temurin-17.0.13+11 (build 17.0.13+11)\nOpenJDK 64-Bit Server VM Temurin-17.0.13+11 (build 17.0.13+11, mixed mode, sharing)",
+      "android": {
+        "sdk": "/Users/mac/Library/Android/sdk",
+        "ndk": "Pkg.Desc = Android NDK\nPkg.Revision = 27.1.12297006\nPkg.BaseRevision = 27.1.12297006\nPkg.ReleaseName = r27b",
+        "cmakeInstalled": [
+          "3.22.1"
+        ]
+      }
+    },
+    "capacityPolicy": "Measured inventory; no universal minimum or guarantee that a first build fits."
+  },
+  "exitCode": 0,
+  "endedAt": "2026-11-19T10:12:06.476Z"
+}

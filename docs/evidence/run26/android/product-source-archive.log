@@ -1,0 +1,9 @@
+/Users/mac/dev/apps/nato-phonetics/scripts/capture-native-javascript.cjs:10
+  if (!page) throw new Error('Installed app Hermes target missing');
+                   ^
+
+Error: Installed app Hermes target missing
+    at captureNativeJavascript (/Users/mac/dev/apps/nato-phonetics/scripts/capture-native-javascript.cjs:10:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+
+Node.js v22.23.0

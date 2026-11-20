@@ -1,0 +1,5 @@
+PASS converter-all-desktop-light: 36 tiles, fixed geometry/typography, custom fonts, reachable content
+PASS converter-narrow-dark: 7 tiles, fixed geometry/typography, custom fonts, reachable content
+PASS converter-narrow-200-light: 7 tiles, fixed geometry/typography, custom fonts, reachable content
+PASS blocked bundled font request: visible error and zero silent-fallback tiles
+PASS 4 measured states; 7 actual screenshots. Visual inspection remains separate.

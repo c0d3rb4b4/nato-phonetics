@@ -1,0 +1,7630 @@
+{
+  "values": [
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-grid",
+      "style": {
+        "flexShrink": 0,
+        "width": "100%"
+      },
+      "tag": 4442,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-A",
+      "style": {
+        "backgroundColor": "#9AD7FF",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 3984,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-A-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 3972,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-A-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 3970,
+      "text": "A"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-A-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 3982,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-A-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 3976,
+      "text": "Alfa"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-A-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 3980,
+      "text": "AL-fah"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-B",
+      "style": {
+        "backgroundColor": "#8FD6D8",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4002,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-B-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 3990,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-B-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 3988,
+      "text": "B"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-B-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4000,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-B-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 3994,
+      "text": "Bravo"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-B-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 3998,
+      "text": "BRAH-voh"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-C",
+      "style": {
+        "backgroundColor": "#C3B9FF",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4020,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-C-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4008,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-C-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4006,
+      "text": "C"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-C-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4018,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-C-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4012,
+      "text": "Charlie"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-C-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4016,
+      "text": "CHAR-lee"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-D",
+      "style": {
+        "backgroundColor": "#FFC1A6",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4038,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-D-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4026,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-D-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4024,
+      "text": "D"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-D-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4036,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-D-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4030,
+      "text": "Delta"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-D-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4034,
+      "text": "DELL-tah"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-E",
+      "style": {
+        "backgroundColor": "#FFE28C",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4056,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-E-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4044,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-E-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4042,
+      "text": "E"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-E-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4054,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-E-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4048,
+      "text": "Echo"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-E-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4052,
+      "text": "ECK-oh"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-F",
+      "style": {
+        "backgroundColor": "#FBC0D6",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4074,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-F-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4062,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-F-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4060,
+      "text": "F"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-F-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4072,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-F-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4066,
+      "text": "Foxtrot"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-F-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4070,
+      "text": "FOKS-trot"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-G",
+      "style": {
+        "backgroundColor": "#ACF0C0",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4092,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-G-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4080,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-G-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4078,
+      "text": "G"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-G-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4090,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-G-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4084,
+      "text": "Golf"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-G-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4088,
+      "text": "GOLF"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-H",
+      "style": {
+        "backgroundColor": "#FFB4AE",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4110,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-H-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4098,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-H-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4096,
+      "text": "H"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-H-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4108,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-H-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4102,
+      "text": "Hotel"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-H-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4106,
+      "text": "hoh-TELL"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-I",
+      "style": {
+        "backgroundColor": "#FFD9A8",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4128,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-I-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4116,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-I-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4114,
+      "text": "I"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-I-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4126,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-I-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4120,
+      "text": "India"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-I-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4124,
+      "text": "IN-dee-ah"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-J",
+      "style": {
+        "backgroundColor": "#C9E9FF",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4146,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-J-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4134,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-J-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4132,
+      "text": "J"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-J-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4144,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-J-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4138,
+      "text": "Juliett"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-J-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4142,
+      "text": "JEW-lee-ett"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-K",
+      "style": {
+        "backgroundColor": "#FFEFA3",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4164,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-K-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4152,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-K-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4150,
+      "text": "K"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-K-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4162,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-K-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4156,
+      "text": "Kilo"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-K-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4160,
+      "text": "KEY-loh"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-L",
+      "style": {
+        "backgroundColor": "#E4C9FF",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4182,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-L-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4170,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-L-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4168,
+      "text": "L"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-L-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4180,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-L-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4174,
+      "text": "Lima"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-L-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4178,
+      "text": "LEE-mah"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-M",
+      "style": {
+        "backgroundColor": "#FFB6B6",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4200,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-M-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4188,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-M-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4186,
+      "text": "M"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-M-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4198,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-M-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4192,
+      "text": "Mike"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-M-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4196,
+      "text": "MIKE"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-N",
+      "style": {
+        "backgroundColor": "#FFE3A4",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4218,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-N-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4206,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-N-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4204,
+      "text": "N"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-N-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4216,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-N-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4210,
+      "text": "November"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-N-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4214,
+      "text": "no-VEM-ber"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-O",
+      "style": {
+        "backgroundColor": "#C8F2D0",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4236,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-O-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4224,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-O-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4222,
+      "text": "O"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-O-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4234,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-O-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4228,
+      "text": "Oscar"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-O-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4232,
+      "text": "OSS-cah"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-P",
+      "style": {
+        "backgroundColor": "#B5D8FF",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4254,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-P-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4242,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-P-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4240,
+      "text": "P"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-P-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4252,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-P-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4246,
+      "text": "Papa"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-P-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4250,
+      "text": "pah-PAH"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-Q",
+      "style": {
+        "backgroundColor": "#E8C7FF",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4272,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-Q-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4260,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-Q-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4258,
+      "text": "Q"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-Q-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4270,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-Q-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4264,
+      "text": "Quebec"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-Q-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4268,
+      "text": "keh-BECK"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-R",
+      "style": {
+        "backgroundColor": "#FFB2B9",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4290,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-R-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4278,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-R-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4276,
+      "text": "R"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-R-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4288,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-R-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4282,
+      "text": "Romeo"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-R-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4286,
+      "text": "ROW-me-oh"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-S",
+      "style": {
+        "backgroundColor": "#BEEBD5",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4308,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-S-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4296,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-S-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4294,
+      "text": "S"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-S-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4306,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-S-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4300,
+      "text": "Sierra"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-S-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4304,
+      "text": "see-AIR-ah"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-T",
+      "style": {
+        "backgroundColor": "#FFC9A8",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4326,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-T-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4314,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-T-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4312,
+      "text": "T"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-T-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4324,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-T-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4318,
+      "text": "Tango"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-T-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4322,
+      "text": "TANG-go"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-U",
+      "style": {
+        "backgroundColor": "#B8E9FF",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4344,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-U-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4332,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-U-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4330,
+      "text": "U"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-U-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4342,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-U-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4336,
+      "text": "Uniform"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-U-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4340,
+      "text": "YOU-nee-form"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-V",
+      "style": {
+        "backgroundColor": "#C4D4FF",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4362,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-V-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4350,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-V-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4348,
+      "text": "V"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-V-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4360,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-V-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4354,
+      "text": "Victor"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-V-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4358,
+      "text": "VIK-tah"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-W",
+      "style": {
+        "backgroundColor": "#CFE0FF",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4380,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-W-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4368,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-W-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4366,
+      "text": "W"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-W-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4378,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-W-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4372,
+      "text": "Whiskey"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-W-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4376,
+      "text": "WISS-key"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-X",
+      "style": {
+        "backgroundColor": "#D5C7FF",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4398,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-X-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4386,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-X-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4384,
+      "text": "X"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-X-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4396,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-X-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4390,
+      "text": "X-ray"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-X-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4394,
+      "text": "ECKS-ray"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-Y",
+      "style": {
+        "backgroundColor": "#FFD0AF",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4416,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-Y-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4404,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-Y-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4402,
+      "text": "Y"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-Y-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4414,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-Y-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4408,
+      "text": "Yankee"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-Y-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4412,
+      "text": "YANG-key"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-Z",
+      "style": {
+        "backgroundColor": "#FFE6B3",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4434,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-Z-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4422,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-Z-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4420,
+      "text": "Z"
+    },
+    {
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-Z-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4432,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-Z-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4426,
+      "text": "Zulu"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 0,
+        "pageX": 0,
+        "pageY": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-Z-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4430,
+      "text": "ZOO-loo"
+    },
+    {
+      "frame": {
+        "height": 8104,
+        "pageX": 16,
+        "pageY": 215.428466796875,
+        "width": 379.4285583496094,
+        "x": 16,
+        "y": 107.42857360839844
+      },
+      "id": "alphabet-grid",
+      "style": {
+        "flexShrink": 0,
+        "width": "100%"
+      },
+      "tag": 4934,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 300.000244140625,
+        "pageX": 96,
+        "pageY": 215.428466796875,
+        "width": 220,
+        "x": 80,
+        "y": 0
+      },
+      "id": "alphabet-A",
+      "style": {
+        "backgroundColor": "#9AD7FF",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4476,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 120,
+        "pageX": 96,
+        "pageY": 215.428466796875,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-A-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4464,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 100,
+        "pageX": 96,
+        "pageY": 223.428466796875,
+        "width": 220,
+        "x": 0,
+        "y": 8
+      },
+      "id": "alphabet-A-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4462,
+      "text": "A"
+    },
+    {
+      "frame": {
+        "height": 180.000244140625,
+        "pageX": 96,
+        "pageY": 335.428466796875,
+        "width": 220,
+        "x": 0,
+        "y": 120
+      },
+      "id": "alphabet-A-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4474,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 44,
+        "pageX": 112,
+        "pageY": 381.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 45.71428680419922
+      },
+      "id": "alphabet-A-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4468,
+      "text": "Alfa"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 437.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 101.71428680419922
+      },
+      "id": "alphabet-A-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4472,
+      "text": "AL-fah"
+    },
+    {
+      "frame": {
+        "height": 300,
+        "pageX": 96,
+        "pageY": 527.4287109375,
+        "width": 220,
+        "x": 80,
+        "y": 312
+      },
+      "id": "alphabet-B",
+      "style": {
+        "backgroundColor": "#8FD6D8",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4494,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 120,
+        "pageX": 96,
+        "pageY": 527.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-B-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4482,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 100,
+        "pageX": 96,
+        "pageY": 535.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 8
+      },
+      "id": "alphabet-B-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4480,
+      "text": "B"
+    },
+    {
+      "frame": {
+        "height": 180,
+        "pageX": 96,
+        "pageY": 647.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 120
+      },
+      "id": "alphabet-B-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4492,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 44,
+        "pageX": 112,
+        "pageY": 693.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 45.71428680419922
+      },
+      "id": "alphabet-B-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4486,
+      "text": "Bravo"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 749.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 101.71428680419922
+      },
+      "id": "alphabet-B-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4490,
+      "text": "BRAH-voh"
+    },
+    {
+      "frame": {
+        "height": 300,
+        "pageX": 96,
+        "pageY": 839.4287109375,
+        "width": 220,
+        "x": 80,
+        "y": 624
+      },
+      "id": "alphabet-C",
+      "style": {
+        "backgroundColor": "#C3B9FF",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4512,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 120,
+        "pageX": 96,
+        "pageY": 839.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-C-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4500,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 100,
+        "pageX": 96,
+        "pageY": 847.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 8
+      },
+      "id": "alphabet-C-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4498,
+      "text": "C"
+    },
+    {
+      "frame": {
+        "height": 180,
+        "pageX": 96,
+        "pageY": 959.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 120
+      },
+      "id": "alphabet-C-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4510,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 44,
+        "pageX": 112,
+        "pageY": 1005.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 45.71428680419922
+      },
+      "id": "alphabet-C-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4504,
+      "text": "Charlie"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 1061.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 101.71428680419922
+      },
+      "id": "alphabet-C-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4508,
+      "text": "CHAR-lee"
+    },
+    {
+      "frame": {
+        "height": 300,
+        "pageX": 96,
+        "pageY": 1151.4287109375,
+        "width": 220,
+        "x": 80,
+        "y": 936
+      },
+      "id": "alphabet-D",
+      "style": {
+        "backgroundColor": "#FFC1A6",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4530,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 120,
+        "pageX": 96,
+        "pageY": 1151.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-D-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4518,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 100,
+        "pageX": 96,
+        "pageY": 1159.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 8
+      },
+      "id": "alphabet-D-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4516,
+      "text": "D"
+    },
+    {
+      "frame": {
+        "height": 180,
+        "pageX": 96,
+        "pageY": 1271.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 120
+      },
+      "id": "alphabet-D-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4528,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 44,
+        "pageX": 112,
+        "pageY": 1317.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 45.71428680419922
+      },
+      "id": "alphabet-D-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4522,
+      "text": "Delta"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 1373.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 101.71428680419922
+      },
+      "id": "alphabet-D-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4526,
+      "text": "DELL-tah"
+    },
+    {
+      "frame": {
+        "height": 300,
+        "pageX": 96,
+        "pageY": 1463.4287109375,
+        "width": 220,
+        "x": 80,
+        "y": 1248
+      },
+      "id": "alphabet-E",
+      "style": {
+        "backgroundColor": "#FFE28C",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4548,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 120,
+        "pageX": 96,
+        "pageY": 1463.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-E-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4536,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 100,
+        "pageX": 96,
+        "pageY": 1471.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 8
+      },
+      "id": "alphabet-E-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4534,
+      "text": "E"
+    },
+    {
+      "frame": {
+        "height": 180,
+        "pageX": 96,
+        "pageY": 1583.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 120
+      },
+      "id": "alphabet-E-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4546,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 44,
+        "pageX": 112,
+        "pageY": 1629.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 45.71428680419922
+      },
+      "id": "alphabet-E-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4540,
+      "text": "Echo"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 1685.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 101.71428680419922
+      },
+      "id": "alphabet-E-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4544,
+      "text": "ECK-oh"
+    },
+    {
+      "frame": {
+        "height": 300,
+        "pageX": 96,
+        "pageY": 1775.4287109375,
+        "width": 220,
+        "x": 80,
+        "y": 1560
+      },
+      "id": "alphabet-F",
+      "style": {
+        "backgroundColor": "#FBC0D6",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4566,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 120,
+        "pageX": 96,
+        "pageY": 1775.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-F-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4554,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 100,
+        "pageX": 96,
+        "pageY": 1783.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 8
+      },
+      "id": "alphabet-F-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4552,
+      "text": "F"
+    },
+    {
+      "frame": {
+        "height": 180,
+        "pageX": 96,
+        "pageY": 1895.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 120
+      },
+      "id": "alphabet-F-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4564,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 44,
+        "pageX": 112,
+        "pageY": 1941.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 45.71428680419922
+      },
+      "id": "alphabet-F-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4558,
+      "text": "Foxtrot"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 1997.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 101.71428680419922
+      },
+      "id": "alphabet-F-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4562,
+      "text": "FOKS-trot"
+    },
+    {
+      "frame": {
+        "height": 300,
+        "pageX": 96,
+        "pageY": 2087.4287109375,
+        "width": 220,
+        "x": 80,
+        "y": 1872
+      },
+      "id": "alphabet-G",
+      "style": {
+        "backgroundColor": "#ACF0C0",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4584,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 120,
+        "pageX": 96,
+        "pageY": 2087.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-G-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4572,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 100,
+        "pageX": 96,
+        "pageY": 2095.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 8
+      },
+      "id": "alphabet-G-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4570,
+      "text": "G"
+    },
+    {
+      "frame": {
+        "height": 180,
+        "pageX": 96,
+        "pageY": 2207.428466796875,
+        "width": 220,
+        "x": 0,
+        "y": 120
+      },
+      "id": "alphabet-G-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4582,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 44,
+        "pageX": 112,
+        "pageY": 2253.142822265625,
+        "width": 188,
+        "x": 16,
+        "y": 45.71428680419922
+      },
+      "id": "alphabet-G-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4576,
+      "text": "Golf"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 2309.142822265625,
+        "width": 188,
+        "x": 16,
+        "y": 101.71428680419922
+      },
+      "id": "alphabet-G-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4580,
+      "text": "GOLF"
+    },
+    {
+      "frame": {
+        "height": 300,
+        "pageX": 96,
+        "pageY": 2399.428466796875,
+        "width": 220,
+        "x": 80,
+        "y": 2184
+      },
+      "id": "alphabet-H",
+      "style": {
+        "backgroundColor": "#FFB4AE",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4602,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 120,
+        "pageX": 96,
+        "pageY": 2399.428466796875,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-H-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4590,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 100,
+        "pageX": 96,
+        "pageY": 2407.428466796875,
+        "width": 220,
+        "x": 0,
+        "y": 8
+      },
+      "id": "alphabet-H-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4588,
+      "text": "H"
+    },
+    {
+      "frame": {
+        "height": 180,
+        "pageX": 96,
+        "pageY": 2519.428466796875,
+        "width": 220,
+        "x": 0,
+        "y": 120
+      },
+      "id": "alphabet-H-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4600,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 44,
+        "pageX": 112,
+        "pageY": 2565.142822265625,
+        "width": 188,
+        "x": 16,
+        "y": 45.71428680419922
+      },
+      "id": "alphabet-H-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4594,
+      "text": "Hotel"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 2621.142822265625,
+        "width": 188,
+        "x": 16,
+        "y": 101.71428680419922
+      },
+      "id": "alphabet-H-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4598,
+      "text": "hoh-TELL"
+    },
+    {
+      "frame": {
+        "height": 300,
+        "pageX": 96,
+        "pageY": 2711.428466796875,
+        "width": 220,
+        "x": 80,
+        "y": 2496
+      },
+      "id": "alphabet-I",
+      "style": {
+        "backgroundColor": "#FFD9A8",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4620,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 120,
+        "pageX": 96,
+        "pageY": 2711.428466796875,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-I-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4608,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 100,
+        "pageX": 96,
+        "pageY": 2719.428466796875,
+        "width": 220,
+        "x": 0,
+        "y": 8
+      },
+      "id": "alphabet-I-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4606,
+      "text": "I"
+    },
+    {
+      "frame": {
+        "height": 180,
+        "pageX": 96,
+        "pageY": 2831.428466796875,
+        "width": 220,
+        "x": 0,
+        "y": 120
+      },
+      "id": "alphabet-I-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4618,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 44,
+        "pageX": 112,
+        "pageY": 2877.142822265625,
+        "width": 188,
+        "x": 16,
+        "y": 45.71428680419922
+      },
+      "id": "alphabet-I-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4612,
+      "text": "India"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 2933.142822265625,
+        "width": 188,
+        "x": 16,
+        "y": 101.71428680419922
+      },
+      "id": "alphabet-I-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4616,
+      "text": "IN-dee-ah"
+    },
+    {
+      "frame": {
+        "height": 300,
+        "pageX": 96,
+        "pageY": 3023.428466796875,
+        "width": 220,
+        "x": 80,
+        "y": 2808
+      },
+      "id": "alphabet-J",
+      "style": {
+        "backgroundColor": "#C9E9FF",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4638,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 120,
+        "pageX": 96,
+        "pageY": 3023.428466796875,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-J-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4626,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 100,
+        "pageX": 96,
+        "pageY": 3031.428466796875,
+        "width": 220,
+        "x": 0,
+        "y": 8
+      },
+      "id": "alphabet-J-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4624,
+      "text": "J"
+    },
+    {
+      "frame": {
+        "height": 180,
+        "pageX": 96,
+        "pageY": 3143.428466796875,
+        "width": 220,
+        "x": 0,
+        "y": 120
+      },
+      "id": "alphabet-J-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4636,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 44,
+        "pageX": 112,
+        "pageY": 3189.142822265625,
+        "width": 188,
+        "x": 16,
+        "y": 45.71428680419922
+      },
+      "id": "alphabet-J-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4630,
+      "text": "Juliett"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 3245.142822265625,
+        "width": 188,
+        "x": 16,
+        "y": 101.71428680419922
+      },
+      "id": "alphabet-J-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4634,
+      "text": "JEW-lee-ett"
+    },
+    {
+      "frame": {
+        "height": 300,
+        "pageX": 96,
+        "pageY": 3335.428466796875,
+        "width": 220,
+        "x": 80,
+        "y": 3120
+      },
+      "id": "alphabet-K",
+      "style": {
+        "backgroundColor": "#FFEFA3",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4656,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 120,
+        "pageX": 96,
+        "pageY": 3335.428466796875,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-K-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4644,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 100,
+        "pageX": 96,
+        "pageY": 3343.428466796875,
+        "width": 220,
+        "x": 0,
+        "y": 8
+      },
+      "id": "alphabet-K-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4642,
+      "text": "K"
+    },
+    {
+      "frame": {
+        "height": 180,
+        "pageX": 96,
+        "pageY": 3455.428466796875,
+        "width": 220,
+        "x": 0,
+        "y": 120
+      },
+      "id": "alphabet-K-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4654,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 44,
+        "pageX": 112,
+        "pageY": 3501.142822265625,
+        "width": 188,
+        "x": 16,
+        "y": 45.71428680419922
+      },
+      "id": "alphabet-K-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4648,
+      "text": "Kilo"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 3557.142822265625,
+        "width": 188,
+        "x": 16,
+        "y": 101.71428680419922
+      },
+      "id": "alphabet-K-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4652,
+      "text": "KEY-loh"
+    },
+    {
+      "frame": {
+        "height": 300,
+        "pageX": 96,
+        "pageY": 3647.428466796875,
+        "width": 220,
+        "x": 80,
+        "y": 3432
+      },
+      "id": "alphabet-L",
+      "style": {
+        "backgroundColor": "#E4C9FF",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4674,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 120,
+        "pageX": 96,
+        "pageY": 3647.428466796875,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-L-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4662,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 100,
+        "pageX": 96,
+        "pageY": 3655.428466796875,
+        "width": 220,
+        "x": 0,
+        "y": 8
+      },
+      "id": "alphabet-L-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4660,
+      "text": "L"
+    },
+    {
+      "frame": {
+        "height": 180,
+        "pageX": 96,
+        "pageY": 3767.428466796875,
+        "width": 220,
+        "x": 0,
+        "y": 120
+      },
+      "id": "alphabet-L-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4672,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 44,
+        "pageX": 112,
+        "pageY": 3813.142822265625,
+        "width": 188,
+        "x": 16,
+        "y": 45.71428680419922
+      },
+      "id": "alphabet-L-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4666,
+      "text": "Lima"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 3869.142822265625,
+        "width": 188,
+        "x": 16,
+        "y": 101.71428680419922
+      },
+      "id": "alphabet-L-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4670,
+      "text": "LEE-mah"
+    },
+    {
+      "frame": {
+        "height": 300.000244140625,
+        "pageX": 96,
+        "pageY": 3959.428466796875,
+        "width": 220,
+        "x": 80,
+        "y": 3744
+      },
+      "id": "alphabet-M",
+      "style": {
+        "backgroundColor": "#FFB6B6",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4692,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 120,
+        "pageX": 96,
+        "pageY": 3959.428466796875,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-M-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4680,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 100,
+        "pageX": 96,
+        "pageY": 3967.428466796875,
+        "width": 220,
+        "x": 0,
+        "y": 8
+      },
+      "id": "alphabet-M-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4678,
+      "text": "M"
+    },
+    {
+      "frame": {
+        "height": 180.000244140625,
+        "pageX": 96,
+        "pageY": 4079.428466796875,
+        "width": 220,
+        "x": 0,
+        "y": 120
+      },
+      "id": "alphabet-M-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4690,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 44,
+        "pageX": 112,
+        "pageY": 4125.142578125,
+        "width": 188,
+        "x": 16,
+        "y": 45.71428680419922
+      },
+      "id": "alphabet-M-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4684,
+      "text": "Mike"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 4181.142578125,
+        "width": 188,
+        "x": 16,
+        "y": 101.71428680419922
+      },
+      "id": "alphabet-M-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4688,
+      "text": "MIKE"
+    },
+    {
+      "frame": {
+        "height": 300,
+        "pageX": 96,
+        "pageY": 4271.4287109375,
+        "width": 220,
+        "x": 80,
+        "y": 4056
+      },
+      "id": "alphabet-N",
+      "style": {
+        "backgroundColor": "#FFE3A4",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4710,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 120,
+        "pageX": 96,
+        "pageY": 4271.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-N-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4698,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 100,
+        "pageX": 96,
+        "pageY": 4279.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 8
+      },
+      "id": "alphabet-N-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4696,
+      "text": "N"
+    },
+    {
+      "frame": {
+        "height": 180,
+        "pageX": 96,
+        "pageY": 4391.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 120
+      },
+      "id": "alphabet-N-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4708,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 44,
+        "pageX": 112,
+        "pageY": 4437.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 45.71428680419922
+      },
+      "id": "alphabet-N-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4702,
+      "text": "November"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 4493.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 101.71428680419922
+      },
+      "id": "alphabet-N-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4706,
+      "text": "no-VEM-ber"
+    },
+    {
+      "frame": {
+        "height": 300,
+        "pageX": 96,
+        "pageY": 4583.4287109375,
+        "width": 220,
+        "x": 80,
+        "y": 4368
+      },
+      "id": "alphabet-O",
+      "style": {
+        "backgroundColor": "#C8F2D0",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4728,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 120,
+        "pageX": 96,
+        "pageY": 4583.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-O-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4716,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 100,
+        "pageX": 96,
+        "pageY": 4591.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 8
+      },
+      "id": "alphabet-O-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4714,
+      "text": "O"
+    },
+    {
+      "frame": {
+        "height": 180,
+        "pageX": 96,
+        "pageY": 4703.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 120
+      },
+      "id": "alphabet-O-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4726,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 44,
+        "pageX": 112,
+        "pageY": 4749.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 45.71428680419922
+      },
+      "id": "alphabet-O-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4720,
+      "text": "Oscar"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 4805.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 101.71428680419922
+      },
+      "id": "alphabet-O-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4724,
+      "text": "OSS-cah"
+    },
+    {
+      "frame": {
+        "height": 300,
+        "pageX": 96,
+        "pageY": 4895.4287109375,
+        "width": 220,
+        "x": 80,
+        "y": 4680
+      },
+      "id": "alphabet-P",
+      "style": {
+        "backgroundColor": "#B5D8FF",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4746,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 120,
+        "pageX": 96,
+        "pageY": 4895.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-P-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4734,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 100,
+        "pageX": 96,
+        "pageY": 4903.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 8
+      },
+      "id": "alphabet-P-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4732,
+      "text": "P"
+    },
+    {
+      "frame": {
+        "height": 180,
+        "pageX": 96,
+        "pageY": 5015.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 120
+      },
+      "id": "alphabet-P-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4744,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 44,
+        "pageX": 112,
+        "pageY": 5061.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 45.71428680419922
+      },
+      "id": "alphabet-P-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4738,
+      "text": "Papa"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 5117.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 101.71428680419922
+      },
+      "id": "alphabet-P-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4742,
+      "text": "pah-PAH"
+    },
+    {
+      "frame": {
+        "height": 300,
+        "pageX": 96,
+        "pageY": 5207.4287109375,
+        "width": 220,
+        "x": 80,
+        "y": 4992
+      },
+      "id": "alphabet-Q",
+      "style": {
+        "backgroundColor": "#E8C7FF",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4764,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 120,
+        "pageX": 96,
+        "pageY": 5207.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-Q-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4752,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 100,
+        "pageX": 96,
+        "pageY": 5215.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 8
+      },
+      "id": "alphabet-Q-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4750,
+      "text": "Q"
+    },
+    {
+      "frame": {
+        "height": 180,
+        "pageX": 96,
+        "pageY": 5327.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 120
+      },
+      "id": "alphabet-Q-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4762,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 44,
+        "pageX": 112,
+        "pageY": 5373.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 45.71428680419922
+      },
+      "id": "alphabet-Q-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4756,
+      "text": "Quebec"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 5429.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 101.71428680419922
+      },
+      "id": "alphabet-Q-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4760,
+      "text": "keh-BECK"
+    },
+    {
+      "frame": {
+        "height": 300,
+        "pageX": 96,
+        "pageY": 5519.4287109375,
+        "width": 220,
+        "x": 80,
+        "y": 5304
+      },
+      "id": "alphabet-R",
+      "style": {
+        "backgroundColor": "#FFB2B9",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4782,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 120,
+        "pageX": 96,
+        "pageY": 5519.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-R-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4770,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 100,
+        "pageX": 96,
+        "pageY": 5527.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 8
+      },
+      "id": "alphabet-R-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4768,
+      "text": "R"
+    },
+    {
+      "frame": {
+        "height": 180,
+        "pageX": 96,
+        "pageY": 5639.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 120
+      },
+      "id": "alphabet-R-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4780,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 44,
+        "pageX": 112,
+        "pageY": 5685.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 45.71428680419922
+      },
+      "id": "alphabet-R-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4774,
+      "text": "Romeo"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 5741.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 101.71428680419922
+      },
+      "id": "alphabet-R-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4778,
+      "text": "ROW-me-oh"
+    },
+    {
+      "frame": {
+        "height": 300,
+        "pageX": 96,
+        "pageY": 5831.4287109375,
+        "width": 220,
+        "x": 80,
+        "y": 5616
+      },
+      "id": "alphabet-S",
+      "style": {
+        "backgroundColor": "#BEEBD5",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4800,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 120,
+        "pageX": 96,
+        "pageY": 5831.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-S-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4788,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 100,
+        "pageX": 96,
+        "pageY": 5839.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 8
+      },
+      "id": "alphabet-S-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4786,
+      "text": "S"
+    },
+    {
+      "frame": {
+        "height": 180,
+        "pageX": 96,
+        "pageY": 5951.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 120
+      },
+      "id": "alphabet-S-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4798,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 44,
+        "pageX": 112,
+        "pageY": 5997.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 45.71428680419922
+      },
+      "id": "alphabet-S-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4792,
+      "text": "Sierra"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 6053.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 101.71428680419922
+      },
+      "id": "alphabet-S-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4796,
+      "text": "see-AIR-ah"
+    },
+    {
+      "frame": {
+        "height": 300,
+        "pageX": 96,
+        "pageY": 6143.4287109375,
+        "width": 220,
+        "x": 80,
+        "y": 5928
+      },
+      "id": "alphabet-T",
+      "style": {
+        "backgroundColor": "#FFC9A8",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4818,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 120,
+        "pageX": 96,
+        "pageY": 6143.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-T-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4806,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 100,
+        "pageX": 96,
+        "pageY": 6151.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 8
+      },
+      "id": "alphabet-T-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4804,
+      "text": "T"
+    },
+    {
+      "frame": {
+        "height": 180,
+        "pageX": 96,
+        "pageY": 6263.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 120
+      },
+      "id": "alphabet-T-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4816,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 44,
+        "pageX": 112,
+        "pageY": 6309.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 45.71428680419922
+      },
+      "id": "alphabet-T-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4810,
+      "text": "Tango"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 6365.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 101.71428680419922
+      },
+      "id": "alphabet-T-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4814,
+      "text": "TANG-go"
+    },
+    {
+      "frame": {
+        "height": 300,
+        "pageX": 96,
+        "pageY": 6455.4287109375,
+        "width": 220,
+        "x": 80,
+        "y": 6240
+      },
+      "id": "alphabet-U",
+      "style": {
+        "backgroundColor": "#B8E9FF",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4836,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 120,
+        "pageX": 96,
+        "pageY": 6455.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-U-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4824,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 100,
+        "pageX": 96,
+        "pageY": 6463.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 8
+      },
+      "id": "alphabet-U-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4822,
+      "text": "U"
+    },
+    {
+      "frame": {
+        "height": 180,
+        "pageX": 96,
+        "pageY": 6575.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 120
+      },
+      "id": "alphabet-U-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4834,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 44,
+        "pageX": 112,
+        "pageY": 6621.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 45.71428680419922
+      },
+      "id": "alphabet-U-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4828,
+      "text": "Uniform"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 6677.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 101.71428680419922
+      },
+      "id": "alphabet-U-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4832,
+      "text": "YOU-nee-form"
+    },
+    {
+      "frame": {
+        "height": 300,
+        "pageX": 96,
+        "pageY": 6767.4287109375,
+        "width": 220,
+        "x": 80,
+        "y": 6552
+      },
+      "id": "alphabet-V",
+      "style": {
+        "backgroundColor": "#C4D4FF",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4854,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 120,
+        "pageX": 96,
+        "pageY": 6767.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-V-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4842,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 100,
+        "pageX": 96,
+        "pageY": 6775.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 8
+      },
+      "id": "alphabet-V-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4840,
+      "text": "V"
+    },
+    {
+      "frame": {
+        "height": 180,
+        "pageX": 96,
+        "pageY": 6887.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 120
+      },
+      "id": "alphabet-V-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4852,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 44,
+        "pageX": 112,
+        "pageY": 6933.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 45.71428680419922
+      },
+      "id": "alphabet-V-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4846,
+      "text": "Victor"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 6989.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 101.71428680419922
+      },
+      "id": "alphabet-V-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4850,
+      "text": "VIK-tah"
+    },
+    {
+      "frame": {
+        "height": 300,
+        "pageX": 96,
+        "pageY": 7079.4287109375,
+        "width": 220,
+        "x": 80,
+        "y": 6864
+      },
+      "id": "alphabet-W",
+      "style": {
+        "backgroundColor": "#CFE0FF",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4872,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 120,
+        "pageX": 96,
+        "pageY": 7079.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-W-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4860,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 100,
+        "pageX": 96,
+        "pageY": 7087.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 8
+      },
+      "id": "alphabet-W-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4858,
+      "text": "W"
+    },
+    {
+      "frame": {
+        "height": 180,
+        "pageX": 96,
+        "pageY": 7199.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 120
+      },
+      "id": "alphabet-W-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4870,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 44,
+        "pageX": 112,
+        "pageY": 7245.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 45.71428680419922
+      },
+      "id": "alphabet-W-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4864,
+      "text": "Whiskey"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 7301.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 101.71428680419922
+      },
+      "id": "alphabet-W-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4868,
+      "text": "WISS-key"
+    },
+    {
+      "frame": {
+        "height": 300,
+        "pageX": 96,
+        "pageY": 7391.4287109375,
+        "width": 220,
+        "x": 80,
+        "y": 7176
+      },
+      "id": "alphabet-X",
+      "style": {
+        "backgroundColor": "#D5C7FF",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4890,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 120,
+        "pageX": 96,
+        "pageY": 7391.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-X-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4878,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 100,
+        "pageX": 96,
+        "pageY": 7399.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 8
+      },
+      "id": "alphabet-X-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4876,
+      "text": "X"
+    },
+    {
+      "frame": {
+        "height": 180,
+        "pageX": 96,
+        "pageY": 7511.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 120
+      },
+      "id": "alphabet-X-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4888,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 44,
+        "pageX": 112,
+        "pageY": 7557.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 45.71428680419922
+      },
+      "id": "alphabet-X-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4882,
+      "text": "X-ray"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 7613.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 101.71428680419922
+      },
+      "id": "alphabet-X-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4886,
+      "text": "ECKS-ray"
+    },
+    {
+      "frame": {
+        "height": 300,
+        "pageX": 96,
+        "pageY": 7703.4287109375,
+        "width": 220,
+        "x": 80,
+        "y": 7488
+      },
+      "id": "alphabet-Y",
+      "style": {
+        "backgroundColor": "#FFD0AF",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4908,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 120,
+        "pageX": 96,
+        "pageY": 7703.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-Y-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4896,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 100,
+        "pageX": 96,
+        "pageY": 7711.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 8
+      },
+      "id": "alphabet-Y-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4894,
+      "text": "Y"
+    },
+    {
+      "frame": {
+        "height": 180,
+        "pageX": 96,
+        "pageY": 7823.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 120
+      },
+      "id": "alphabet-Y-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4906,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 44,
+        "pageX": 112,
+        "pageY": 7869.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 45.71428680419922
+      },
+      "id": "alphabet-Y-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4900,
+      "text": "Yankee"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 7925.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 101.71428680419922
+      },
+      "id": "alphabet-Y-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4904,
+      "text": "YANG-key"
+    },
+    {
+      "frame": {
+        "height": 300,
+        "pageX": 96,
+        "pageY": 8015.4287109375,
+        "width": 220,
+        "x": 80,
+        "y": 7800
+      },
+      "id": "alphabet-Z",
+      "style": {
+        "backgroundColor": "#FFE6B3",
+        "borderRadius": 24,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 300,
+        "overflow": "hidden",
+        "width": 220
+      },
+      "tag": 4926,
+      "text": null
+    },
+    {
+      "frame": {
+        "height": 120,
+        "pageX": 96,
+        "pageY": 8015.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 0
+      },
+      "id": "alphabet-Z-header",
+      "style": {
+        "borderBottomColor": "rgba(0,0,0,0.1)",
+        "borderBottomWidth": 4,
+        "height": 120
+      },
+      "tag": 4914,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 100,
+        "pageX": 96,
+        "pageY": 8023.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 8
+      },
+      "id": "alphabet-Z-letter",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-ExtraBold",
+        "fontSize": 36,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "height": 100,
+        "includeFontPadding": false,
+        "left": 0,
+        "letterSpacing": 0,
+        "lineHeight": 50,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 8,
+        "width": 220
+      },
+      "tag": 4912,
+      "text": "Z"
+    },
+    {
+      "frame": {
+        "height": 180,
+        "pageX": 96,
+        "pageY": 8135.4287109375,
+        "width": 220,
+        "x": 0,
+        "y": 120
+      },
+      "id": "alphabet-Z-body",
+      "style": {
+        "height": 180
+      },
+      "tag": 4924,
+      "text": null
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 43.99951171875,
+        "pageX": 112,
+        "pageY": 8181.14306640625,
+        "width": 188,
+        "x": 16,
+        "y": 45.71428680419922
+      },
+      "id": "alphabet-Z-word",
+      "style": {
+        "color": "#1F2933",
+        "fontFamily": "NatoTile-SemiBold",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+        "height": 44,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 46,
+        "width": 188
+      },
+      "tag": 4918,
+      "text": "Zulu"
+    },
+    {
+      "allowFontScaling": true,
+      "frame": {
+        "height": 32,
+        "pageX": 112,
+        "pageY": 8237.142578125,
+        "width": 188,
+        "x": 16,
+        "y": 101.71428680419922
+      },
+      "id": "alphabet-Z-pronunciation",
+      "style": {
+        "color": "#4A5568",
+        "fontFamily": "NatoTile-Italic",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "height": 32,
+        "includeFontPadding": false,
+        "left": 16,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+        "position": "absolute",
+        "textAlign": "center",
+        "top": 102,
+        "width": 188
+      },
+      "tag": 4922,
+      "text": "ZOO-loo"
+    }
+  ]
+}

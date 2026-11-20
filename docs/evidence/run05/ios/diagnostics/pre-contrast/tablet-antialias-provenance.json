@@ -1,0 +1,13 @@
+{
+  "status": "historical pre-contrast diagnostic; guide foreground #4A5568; not final candidate evidence",
+  "method": "Foreground/background RGB alpha estimate, with alpha0.05/0.1 thresholds separately from original solid RGBdistance38. Original script copy is retained for provenance; use maintained ios/analyze-fringe.cjs with TILE_EVIDENCE_DIR, TILE_SCREENSHOT_DIR and TILE_GUIDE_COLOR=#4A5568 for portable replay.",
+  "inputs": {
+    "tablet-raster-measurements.json": "f0893a0dd251087bb6da81d8255c125faf8ad3f13f41d4145e4d43d52e2d2625",
+    "tablet-test.log": "10653175a51547ffb293bb520075af0e7a63a2c9251545c20d505e6a8fc5fc57",
+    "artifact.json": "0898ee99d817d25832e2dcf2fdca7faa73f2fbdb7b54c7e8d7d1ab8d715d5859",
+    "analyze-fringe-original.cjs": "ac2f2d367854f2b513f76788bbf8f000bcba323e08fd57a319670fb34f62de90",
+    "screenshots/tablet-alphabet-viewport-landscape.png": "ab5ecfd2dc3458cf563fef7289f0242307c408ab82f571a10d378d5f9fb6f558",
+    "screenshots/tablet-alphabet-viewport-last.png": "510a83af1c3b59124186b45090d5b923e751e0f8938121199f4d2060da2fa24c",
+    "screenshots/tablet-alphabet-viewport-portrait.png": "510a83af1c3b59124186b45090d5b923e751e0f8938121199f4d2060da2fa24c"
+  }
+}

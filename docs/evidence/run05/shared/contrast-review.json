@@ -1,0 +1,269 @@
+{
+  "date": "2026-11-17",
+  "method": "sRGB relative luminance; opaque normal text, and prior group-alpha composite over light theme",
+  "threshold": 4.5,
+  "initialGuide": "#4A5568",
+  "correctedGuide": "#374151",
+  "initialFailures": [
+    "C",
+    "H",
+    "R",
+    "2"
+  ],
+  "minimumCorrectedGuideRatio": 5.744635589355315,
+  "pressedCorrection": "Removed group opacity; an internal border indicates press/focus, retaining normal text contrast. Actual held-pointer checks are in browser evidence.",
+  "rows": [
+    {
+      "symbol": "A",
+      "background": "#9AD7FF",
+      "initialGuideRatio": 4.851587089154544,
+      "correctedGuideRatio": 6.644897365543549,
+      "formerOpacity85WithCorrectedGuideOnLight": 4.556690589034342
+    },
+    {
+      "symbol": "B",
+      "background": "#8FD6D8",
+      "initialGuideRatio": 4.579212351877332,
+      "correctedGuideRatio": 6.271843735687065,
+      "formerOpacity85WithCorrectedGuideOnLight": 4.342799218122646
+    },
+    {
+      "symbol": "C",
+      "background": "#C3B9FF",
+      "initialGuideRatio": 4.194285979755558,
+      "correctedGuideRatio": 5.744635589355315,
+      "formerOpacity85WithCorrectedGuideOnLight": 4.048345904172443
+    },
+    {
+      "symbol": "D",
+      "background": "#FFC1A6",
+      "initialGuideRatio": 4.813041543678411,
+      "correctedGuideRatio": 6.592104085966984,
+      "formerOpacity85WithCorrectedGuideOnLight": 4.52967565857915
+    },
+    {
+      "symbol": "E",
+      "background": "#FFE28C",
+      "initialGuideRatio": 5.916303125352436,
+      "correctedGuideRatio": 8.103168371293185,
+      "formerOpacity85WithCorrectedGuideOnLight": 5.386205187840354
+    },
+    {
+      "symbol": "F",
+      "background": "#FBC0D6",
+      "initialGuideRatio": 4.878295258433052,
+      "correctedGuideRatio": 6.681477775297294,
+      "formerOpacity85WithCorrectedGuideOnLight": 4.583642942747592
+    },
+    {
+      "symbol": "G",
+      "background": "#ACF0C0",
+      "initialGuideRatio": 5.726402196129785,
+      "correctedGuideRatio": 7.843073651541227,
+      "formerOpacity85WithCorrectedGuideOnLight": 5.23582238541232
+    },
+    {
+      "symbol": "H",
+      "background": "#FFB4AE",
+      "initialGuideRatio": 4.440731220729984,
+      "correctedGuideRatio": 6.08217530623734,
+      "formerOpacity85WithCorrectedGuideOnLight": 4.23151553225357
+    },
+    {
+      "symbol": "I",
+      "background": "#FFD9A8",
+      "initialGuideRatio": 5.641560265531914,
+      "correctedGuideRatio": 7.7268712809030315,
+      "formerOpacity85WithCorrectedGuideOnLight": 5.179115842224524
+    },
+    {
+      "symbol": "J",
+      "background": "#C9E9FF",
+      "initialGuideRatio": 5.942762642636297,
+      "correctedGuideRatio": 8.139408218885764,
+      "formerOpacity85WithCorrectedGuideOnLight": 5.412749737231724
+    },
+    {
+      "symbol": "K",
+      "background": "#FFEFA3",
+      "initialGuideRatio": 6.496219909828276,
+      "correctedGuideRatio": 8.897441965188316,
+      "formerOpacity85WithCorrectedGuideOnLight": 5.832414347014894
+    },
+    {
+      "symbol": "L",
+      "background": "#E4C9FF",
+      "initialGuideRatio": 5.052010136180894,
+      "correctedGuideRatio": 6.919403532846358,
+      "formerOpacity85WithCorrectedGuideOnLight": 4.724736282648458
+    },
+    {
+      "symbol": "M",
+      "background": "#FFB6B6",
+      "initialGuideRatio": 4.522064435715602,
+      "correctedGuideRatio": 6.193572021592046,
+      "formerOpacity85WithCorrectedGuideOnLight": 4.297172252309616
+    },
+    {
+      "symbol": "N",
+      "background": "#FFE3A4",
+      "initialGuideRatio": 6.011795749870504,
+      "correctedGuideRatio": 8.233958291669431,
+      "formerOpacity85WithCorrectedGuideOnLight": 5.463561859062881
+    },
+    {
+      "symbol": "O",
+      "background": "#C8F2D0",
+      "initialGuideRatio": 6.116379205171144,
+      "correctedGuideRatio": 8.377199320602042,
+      "formerOpacity85WithCorrectedGuideOnLight": 5.544160679964195
+    },
+    {
+      "symbol": "P",
+      "background": "#B5D8FF",
+      "initialGuideRatio": 5.099903367204246,
+      "correctedGuideRatio": 6.984999717931,
+      "formerOpacity85WithCorrectedGuideOnLight": 4.759871904096798
+    },
+    {
+      "symbol": "Q",
+      "background": "#E8C7FF",
+      "initialGuideRatio": 5.033044402718343,
+      "correctedGuideRatio": 6.893427424409054,
+      "formerOpacity85WithCorrectedGuideOnLight": 4.708692163494507
+    },
+    {
+      "symbol": "R",
+      "background": "#FFB2B9",
+      "initialGuideRatio": 4.415291944524421,
+      "correctedGuideRatio": 6.047332815247626,
+      "formerOpacity85WithCorrectedGuideOnLight": 4.210731433646795
+    },
+    {
+      "symbol": "S",
+      "background": "#BEEBD5",
+      "initialGuideRatio": 5.745847269429429,
+      "correctedGuideRatio": 7.869706279991916,
+      "formerOpacity85WithCorrectedGuideOnLight": 5.260095709058967
+    },
+    {
+      "symbol": "T",
+      "background": "#FFC9A8",
+      "initialGuideRatio": 5.078756433012619,
+      "correctedGuideRatio": 6.956036163383378,
+      "formerOpacity85WithCorrectedGuideOnLight": 4.7400235641128425
+    },
+    {
+      "symbol": "U",
+      "background": "#B8E9FF",
+      "initialGuideRatio": 5.783136153385826,
+      "correctedGuideRatio": 7.920778393552407,
+      "formerOpacity85WithCorrectedGuideOnLight": 5.285529206941668
+    },
+    {
+      "symbol": "V",
+      "background": "#C4D4FF",
+      "initialGuideRatio": 5.0918214697661455,
+      "correctedGuideRatio": 6.973930478523739,
+      "formerOpacity85WithCorrectedGuideOnLight": 4.757036685066362
+    },
+    {
+      "symbol": "W",
+      "background": "#CFE0FF",
+      "initialGuideRatio": 5.647569683919706,
+      "correctedGuideRatio": 7.735101983079387,
+      "formerOpacity85WithCorrectedGuideOnLight": 5.188230020975121
+    },
+    {
+      "symbol": "X",
+      "background": "#D5C7FF",
+      "initialGuideRatio": 4.817333270194435,
+      "correctedGuideRatio": 6.597982179402369,
+      "formerOpacity85WithCorrectedGuideOnLight": 4.542450331467435
+    },
+    {
+      "symbol": "Y",
+      "background": "#FFD0AF",
+      "initialGuideRatio": 5.337240591557958,
+      "correctedGuideRatio": 7.310064787952906,
+      "formerOpacity85WithCorrectedGuideOnLight": 4.943279889963423
+    },
+    {
+      "symbol": "Z",
+      "background": "#FFE6B3",
+      "initialGuideRatio": 6.17161115885775,
+      "correctedGuideRatio": 8.452846867848258,
+      "formerOpacity85WithCorrectedGuideOnLight": 5.587819855060761
+    },
+    {
+      "symbol": "0",
+      "background": "#B8E9FF",
+      "initialGuideRatio": 5.783136153385826,
+      "correctedGuideRatio": 7.920778393552407,
+      "formerOpacity85WithCorrectedGuideOnLight": 5.285529206941668
+    },
+    {
+      "symbol": "1",
+      "background": "#FFE28C",
+      "initialGuideRatio": 5.916303125352436,
+      "correctedGuideRatio": 8.103168371293185,
+      "formerOpacity85WithCorrectedGuideOnLight": 5.386205187840354
+    },
+    {
+      "symbol": "2",
+      "background": "#C3B9FF",
+      "initialGuideRatio": 4.194285979755558,
+      "correctedGuideRatio": 5.744635589355315,
+      "formerOpacity85WithCorrectedGuideOnLight": 4.048345904172443
+    },
+    {
+      "symbol": "3",
+      "background": "#ACF0C0",
+      "initialGuideRatio": 5.726402196129785,
+      "correctedGuideRatio": 7.843073651541227,
+      "formerOpacity85WithCorrectedGuideOnLight": 5.23582238541232
+    },
+    {
+      "symbol": "4",
+      "background": "#FFC1A6",
+      "initialGuideRatio": 4.813041543678411,
+      "correctedGuideRatio": 6.592104085966984,
+      "formerOpacity85WithCorrectedGuideOnLight": 4.52967565857915
+    },
+    {
+      "symbol": "5",
+      "background": "#FFEFA3",
+      "initialGuideRatio": 6.496219909828276,
+      "correctedGuideRatio": 8.897441965188316,
+      "formerOpacity85WithCorrectedGuideOnLight": 5.832414347014894
+    },
+    {
+      "symbol": "6",
+      "background": "#FFB6B6",
+      "initialGuideRatio": 4.522064435715602,
+      "correctedGuideRatio": 6.193572021592046,
+      "formerOpacity85WithCorrectedGuideOnLight": 4.297172252309616
+    },
+    {
+      "symbol": "7",
+      "background": "#E4C9FF",
+      "initialGuideRatio": 5.052010136180894,
+      "correctedGuideRatio": 6.919403532846358,
+      "formerOpacity85WithCorrectedGuideOnLight": 4.724736282648458
+    },
+    {
+      "symbol": "8",
+      "background": "#C8F2D0",
+      "initialGuideRatio": 6.116379205171144,
+      "correctedGuideRatio": 8.377199320602042,
+      "formerOpacity85WithCorrectedGuideOnLight": 5.544160679964195
+    },
+    {
+      "symbol": "9",
+      "background": "#B5D8FF",
+      "initialGuideRatio": 5.099903367204246,
+      "correctedGuideRatio": 6.984999717931,
+      "formerOpacity85WithCorrectedGuideOnLight": 4.759871904096798
+    }
+  ]
+}

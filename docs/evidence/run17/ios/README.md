@@ -1,0 +1,14 @@
+# Run 17 installed iOS Release scope
+
+18 November 2026. iPhone 17 Pro/iOS 26.2, 402×874pt/DPR3, default Large, Light. [Direct unsigned Release build](build.log) passes; [installed identity](artifact.json) compares all 25 packaged files, including executable, embedded main.jsbundle, fonts and compiled artwork. `main.jsbundle.gz` archives the actual embedded graph. Native framework/configuration/provider/font/scaling/UI source is identical to the Run 16 baseline; Metro family/runtime/parser tooling changes within its existing compatible range. No signed/physical/other-OS acceptance.
+
+[Final actual XCTest harness](harness/CaptureUITests.swift) and [log](capture-final.log): **2 tests, 0 failures**. First test enters exact `a3 b!` through individual key events, asserts the complete plain conversion and Copy confirmation, preserves exact input after Menu/Back and opens alphabet/digits. Second uses 26 individual keys, real provider Play→Stop, idle state and exact retained input. Five actual original [attachments](attachments.json) are exported and inspected in the [screenshot index](../screenshots/index.md). Keyboard and viewport-edge crops are explicit; no image proves audible correctness or large-text acceptance. Clipboard confirmation is not a new OS clipboard-byte equality claim.
+
+Two earlier commands remain **failed**:
+
+- [Generic-tap source](CaptureUITests-initial.swift), [first log](capture.log), [actual post-failure image](initial-no-input-focus.png): tap does not establish keyboard focus, so no typing is dispatched. Ordinary-user reach/cause is unlocalized.
+- [Coordinate/combined source](CaptureUITests-coordinate.swift), [second log](capture-coordinate.log): coordinate tap plus explicit keyboard assertion passes exact input; the combined short-phrase attempt then fails reaching Stop. No instrumented causal claim about provider completion versus scroll reach. Final tests use the existing keyboard-aware alignment and a separate long-phrase scenario; they do not turn this command into a pass.
+
+No assertion was suppressed and no product patch accompanies these driver changes. First-tap/short-phrase/bulk-input/long-drag/native-readability assurances remain distinct; relevant input/native/runtime changes or ordinary-user reproduction trigger re-entry. Failed-test automatic diagnostic collection also reports the host's default simctl lookup; explicit DEVELOPER_DIR boot/install/capture/identity commands work. Both failed native commands/sources and final changed-scope evidence are retained.
+
+The completed build's disposable object/module cache is removed only after build/install, preserving products, bundled-JS hashes, the active separate UI harness and all history. [Disk record](../shared/storage-recovery.json). Final simulator shutdown restores the initial shutdown state. Existing native P1/P3, maximum-text/gesture/navigation, iOS 27/older OS and all M11 acceptance remain open.

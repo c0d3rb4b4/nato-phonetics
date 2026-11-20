@@ -1,0 +1,636 @@
+Command: ['xcodebuild', 'test-without-building', '-project', '/tmp/nato-ios-run06-resize/WindowResize.xcodeproj', '-scheme', 'WindowResize', '-configuration', 'Debug', '-destination', 'platform=iOS Simulator,id=D6F0ADFF-A6FB-4B1C-B48F-2A77E35D29BB', '-derivedDataPath', '/tmp/nato-ios-run06-resize/DerivedData', 'CODE_SIGNING_ALLOWED=NO', '-parallel-testing-enabled', 'NO', '-resultBundlePath', '/tmp/nato-ios-run06-resize/enlarged.xcresult', '-only-testing:WindowResizeUITests/WindowResizeUITests/testLargeTextWindowHeader']
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild test-without-building -project /tmp/nato-ios-run06-resize/WindowResize.xcodeproj -scheme WindowResize -configuration Debug -destination "platform=iOS Simulator,id=D6F0ADFF-A6FB-4B1C-B48F-2A77E35D29BB" -derivedDataPath /tmp/nato-ios-run06-resize/DerivedData CODE_SIGNING_ALLOWED=NO -parallel-testing-enabled NO -resultBundlePath /tmp/nato-ios-run06-resize/enlarged.xcresult "-only-testing:WindowResizeUITests/WindowResizeUITests/testLargeTextWindowHeader"
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+Writing result bundle at path:
+	/tmp/nato-ios-run06-resize/enlarged.xcresult
+
+2026-11-17 15:28:29.896093+0000 WindowResizeUITests-Runner[54041:9738579] [Default] Running tests...
+2026-11-17 15:28:30.107603+0000 WindowResizeUITests-Runner[54041:9738579] [UIKit App Config] Update the Info.plist: Launch screens will soon be required.
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-11-17 15:28:31.463.
+Test Suite 'WindowResizeUITests.xctest' started at 2026-11-17 15:28:31.470.
+Test Suite 'WindowResizeUITests' started at 2026-11-17 15:28:31.471.
+Test Case '-[WindowResizeUITests.WindowResizeUITests testLargeTextWindowHeader]' started.
+    t =     0.00s Start Test at 2026-11-17 15:28:31.473
+    t =     0.13s Set Up
+    t =     0.13s Setting device orientation to Portrait
+    t =     0.22s     Wait for com.apple.DocumentManager.DockFolderViewService to idle
+    t =     0.24s     Wait for com.natophonetics.app to idle
+    t =     0.25s     Wait for com.apple.springboard to idle
+    t =     0.26s Open com.natophonetics.app
+    t =     0.26s     Launch com.natophonetics.app
+    t =     0.26s         Terminate com.natophonetics.app:53891
+    t =     2.37s         Setting up automation session
+    t =     4.48s         Wait for com.natophonetics.app to idle
+    t =     6.11s Open com.natophonetics.app with URL natophonetics://alphabet
+    t =     6.11s     Launch com.natophonetics.app
+    t =     6.20s         Setting up automation session
+    t =     6.20s         Wait for com.natophonetics.app to idle
+    t =     7.22s Wait for com.natophonetics.app to become Running Foreground
+    t =     7.22s Waiting 15.0s for "alphabet-A" Any to exist
+    t =     8.29s     Checking `Expect predicate `existsNoRetry == 1` for object "alphabet-A" Any`
+    t =     8.29s         Checking existence of `"alphabet-A" Any`
+    t =     8.42s Find the Window (First Match)
+    t =     8.45s Find the Window (First Match)
+    t =     8.46s Press Window at {{230.0, 198.0}, {375.0, 700.0}}[0.00, 0.00] -> (363.0, 688.0) for 0.1 seconds, then drag to Window at {{230.0, 198.0}, {375.0, 700.0}}[0.00, 0.00] -> (-5.0, 257.0) with velocity of 250.00 pixels per second, and then hold for 0.3 seconds 
+    t =     8.46s     Wait for com.natophonetics.app to idle
+    t =     8.46s     Find the Window at {{230.0, 198.0}, {375.0, 700.0}}
+    t =     8.47s     Check for interrupting elements affecting Window
+    t =     8.53s         Wait for com.apple.DocumentManager.DockFolderViewService to idle
+    t =     8.60s         Wait for com.apple.springboard to idle
+    t =     8.77s Ignoring failure to get hierarchy for remote element in process 53980 (Error getting main window kAXErrorServerNotFound)
+    t =     8.78s Ignoring failure to get hierarchy for remote element in process 53980 (Error getting main window kAXErrorServerNotFound)
+    t =     8.85s     Synthesize event
+    t =     8.85s         Find the Window at {{230.0, 198.0}, {375.0, 700.0}}
+    t =     8.88s         Find the Window at {{230.0, 198.0}, {375.0, 700.0}}
+    t =     8.89s         Find the Window at {{230.0, 198.0}, {375.0, 700.0}}
+    t =     8.90s         Find the Window at {{230.0, 198.0}, {375.0, 700.0}}
+    t =     8.91s         Find the Window at {{230.0, 198.0}, {375.0, 700.0}}
+    t =    11.94s     Wait for com.natophonetics.app to idle
+    t =    13.97s Find the "Home" Any
+    t =    14.08s Find the "Open menu" Any
+    t =    14.10s Requesting snapshot of accessibility hierarchy for app with pid 54054
+    t =    14.68s Requesting snapshot of accessibility hierarchy for app with pid 54054
+HEADERDEBUG header-enlarged-small Attributes: Application, 0x1027324d0, pid: 54054, label: 'NATO Phonetics'
+Element subtree:
+ →Application, 0x1027324d0, pid: 54054, label: 'NATO Phonetics'
+    Window (Main), 0x101f4b880, {{230.0, 305.0}, {375.0, 486.0}}
+      Other, 0x101f4f500, {{230.0, 305.0}, {375.0, 486.0}}
+        Other, 0x101f4f630, {{230.0, 305.0}, {375.0, 486.0}}
+          Other, 0x101f4f260, {{230.0, 305.0}, {375.0, 486.0}}
+            Other, 0x101f4f390, {{230.0, 305.0}, {375.0, 486.0}}
+              Other, 0x101f4fbe0, {{230.0, 305.0}, {375.0, 486.0}}
+                Other, 0x101f4f760, {{230.0, 305.0}, {375.0, 486.0}}
+                  Other, 0x101f4f890, {{230.0, 305.0}, {375.0, 486.0}}
+                    Other, 0x101f4f9c0, {{230.0, 305.0}, {375.0, 66.0}}
+                      Other, 0x101f4fd10, {{230.0, 315.0}, {375.0, 56.0}}, identifier: 'header-insets'
+                      Other, 0x101f4fe40, {{230.0, 315.0}, {375.0, 56.0}}
+                        Other, 0x101f4ff70, {{230.0, 315.0}, {375.0, 56.0}}
+                      Other, 0x101f500a0, {{296.0, 315.0}, {302.5, 56.0}}, identifier: 'app-header'
+                      Button, 0x101f501d0, {{304.0, 319.0}, {48.0, 48.0}}, label: 'Home'
+                      StaticText, 0x101f50300, {{352.0, 316.0}, {190.5, 53.5}}, label: 'NATO Alphabet'
+                        StaticText, 0x101f50430, {{352.0, 316.0}, {190.5, 53.5}}, label: 'NATO Alphabet'
+                      Button, 0x101f50560, {{542.5, 319.0}, {48.0, 48.0}}, label: 'Open menu'
+                    Other, 0x101f50690, {{230.0, 305.0}, {375.0, 486.0}}, identifier: 'app-theme'
+                    Other, 0x101f507c0, {{230.0, 371.0}, {375.0, 420.0}}
+                      Other, 0x101f508f0, {{230.0, 371.0}, {375.0, 410.0}}, identifier: 'screen-scroll'
+                        ScrollView, 0x101f50a20, {{230.0, 371.0}, {375.0, 410.0}}
+                          Other, 0x101f50b50, {{230.0, 371.0}, {375.0, 2935.0}}
+                            Other, 0x101f50c80, {{230.0, 371.0}, {375.0, 2935.0}}
+                              StaticText, 0x101f50db0, {{246.0, 387.0}, {343.0, 48.5}}, label: 'Tap a card to hear the word. New playback replaces current audio.'
+                                StaticText, 0x101f50ee0, {{246.0, 387.0}, {343.0, 48.5}}, label: 'Tap a card to hear the word. New playback replaces current audio.'
+                              Other, 0x101f51010, {{246.0, 487.5}, {343.0, 2786.5}}, identifier: 'alphabet-grid'
+                              Other, 0x101f51140, {{246.0, 487.5}, {343.0, 2786.5}}
+                                ScrollView, 0x101f51270, {{246.0, 487.5}, {343.0, 2786.5}}
+                                  Other, 0x101f513a0, {{246.0, 487.5}, {343.0, 2786.5}}
+                                    Other, 0x101f514d0, {{246.0, 487.5}, {343.0, 2786.5}}
+                                      Button, 0x101f51600, {{262.5, 487.5}, {149.0, 203.0}}, identifier: 'alphabet-A', label: 'Play A, Alfa'
+                                        Other, 0x101f51730, {{262.5, 487.5}, {149.0, 81.0}}, identifier: 'alphabet-A-header'
+                                        Other, 0x101f51860, {{262.5, 493.0}, {149.0, 67.5}}, identifier: 'alphabet-A-letter'
+                                        StaticText, 0x101f51990, {{262.5, 493.0}, {149.0, 68.5}}, identifier: 'alphabet-A-letter-run', label: 'A'
+                                          StaticText, 0x101f51ac0, {{262.5, 493.0}, {149.0, 68.5}}, label: 'A'
+                                        Other, 0x101f51bf0, {{262.5, 568.5}, {149.0, 122.0}}, identifier: 'alphabet-A-body'
+                                        Other, 0x101f51d20, {{273.5, 599.5}, {127.0, 29.5}}, identifier: 'alphabet-A-word'
+                                        StaticText, 0x101f51e50, {{273.5, 599.5}, {128.0, 30.5}}, identifier: 'alphabet-A-word-run', label: 'Alfa'
+                                          StaticText, 0x101f51f80, {{273.5, 599.5}, {128.0, 30.5}}, label: 'Alfa'
+                                        Other, 0x101f520b0, {{273.5, 637.5}, {127.0, 22.0}}, identifier: 'alphabet-A-pronunciation'
+                                        StaticText, 0x101f521e0, {{273.5, 637.5}, {128.0, 22.0}}, identifier: 'alphabet-A-pronunciation-run', label: 'AL-fah'
+                                          StaticText, 0x101f52310, {{273.5, 637.5}, {128.0, 22.0}}, label: 'AL-fah'
+                                      Button, 0x101f52440, {{423.5, 487.5}, {149.0, 203.0}}, identifier: 'alphabet-B', label: 'Play B, Bravo'
+                                        Other, 0x101f52570, {{423.5, 487.5}, {149.0, 81.0}}, identifier: 'alphabet-B-header'
+                                        Other, 0x101f526a0, {{423.5, 493.0}, {149.0, 67.5}}, identifier: 'alphabet-B-letter'
+                                        StaticText, 0x101f527d0, {{423.5, 493.0}, {149.0, 68.5}}, identifier: 'alphabet-B-letter-run', label: 'B'
+                                          StaticText, 0x101f52900, {{423.5, 493.0}, {149.0, 68.5}}, label: 'B'
+                                        Other, 0x101f52a30, {{423.5, 568.5}, {149.0, 122.0}}, identifier: 'alphabet-B-body'
+                                        Other, 0x101f52b60, {{434.5, 599.5}, {127.0, 29.5}}, identifier: 'alphabet-B-word'
+                                        StaticText, 0x101f52c90, {{434.5, 599.5}, {128.0, 30.5}}, identifier: 'alphabet-B-word-run', label: 'Bravo'
+                                          StaticText, 0x101f52dc0, {{434.5, 599.5}, {128.0, 30.5}}, label: 'Bravo'
+                                        Other, 0x101f52ef0, {{434.5, 637.5}, {127.0, 22.0}}, identifier: 'alphabet-B-pronunciation'
+                                        StaticText, 0x101f53020, {{434.5, 637.5}, {128.0, 22.0}}, identifier: 'alphabet-B-pronunciation-run', label: 'BRAH-voh'
+                                          StaticText, 0x101f53150, {{434.5, 637.5}, {128.0, 22.0}}, label: 'BRAH-voh'
+                                      Button, 0x101f53280, {{262.5, 702.5}, {149.0, 203.0}}, identifier: 'alphabet-C', label: 'Play C, Charlie'
+                                        Other, 0x101f533b0, {{262.5, 702.5}, {149.0, 81.0}}, identifier: 'alphabet-C-header'
+                                        Other, 0x101f534e0, {{262.5, 708.0}, {149.0, 67.5}}, identifier: 'alphabet-C-letter'
+                                        StaticText, 0x101f53610, {{262.5, 708.0}, {149.0, 68.5}}, identifier: 'alphabet-C-letter-run', label: 'C'
+                                          StaticText, 0x101f53740, {{262.5, 708.0}, {149.0, 68.5}}, label: 'C'
+                                        Other, 0x101f53870, {{262.5, 783.5}, {149.0, 122.0}}, identifier: 'alphabet-C-body'
+                                        Other, 0x101f539a0, {{273.5, 814.5}, {127.0, 30.0}}, identifier: 'alphabet-C-word'
+                                        StaticText, 0x101f53ad0, {{273.5, 814.5}, {128.0, 30.5}}, identifier: 'alphabet-C-word-run', label: 'Charlie'
+                                          StaticText, 0x101f53c00, {{273.5, 814.5}, {128.0, 30.5}}, label: 'Charlie'
+                                        Other, 0x101f53d30, {{273.5, 852.5}, {127.0, 22.0}}, identifier: 'alphabet-C-pronunciation'
+                                        StaticText, 0x101f53e60, {{273.5, 852.5}, {128.0, 22.0}}, identifier: 'alphabet-C-pronunciation-run', label: 'CHAR-lee'
+                                          StaticText, 0x101f53f90, {{273.5, 852.5}, {128.0, 22.0}}, label: 'CHAR-lee'
+                                      Button, 0x101f540c0, {{423.5, 702.5}, {149.0, 203.0}}, identifier: 'alphabet-D', label: 'Play D, Delta'
+                                        Other, 0x101f541f0, {{423.5, 702.5}, {149.0, 81.0}}, identifier: 'alphabet-D-header'
+                                        Other, 0x101f54320, {{423.5, 708.0}, {149.0, 67.5}}, identifier: 'alphabet-D-letter'
+                                        StaticText, 0x101f54450, {{423.5, 708.0}, {149.0, 68.5}}, identifier: 'alphabet-D-letter-run', label: 'D'
+                                          StaticText, 0x101f54580, {{423.5, 708.0}, {149.0, 68.5}}, label: 'D'
+                                        Other, 0x101f546b0, {{423.5, 783.5}, {149.0, 122.0}}, identifier: 'alphabet-D-body'
+                                        Other, 0x101f547e0, {{434.5, 814.5}, {127.0, 30.0}}, identifier: 'alphabet-D-word'
+                                        StaticText, 0x101f54910, {{434.5, 814.5}, {128.0, 30.5}}, identifier: 'alphabet-D-word-run', label: 'Delta'
+                                          StaticText, 0x101f54a40, {{434.5, 814.5}, {128.0, 30.5}}, label: 'Delta'
+                                        Other, 0x101f54b70, {{434.5, 852.5}, {127.0, 22.0}}, identifier: 'alphabet-D-pronunciation'
+                                        StaticText, 0x101f54ca0, {{434.5, 852.5}, {128.0, 22.0}}, identifier: 'alphabet-D-pronunciation-run', label: 'DELL-tah'
+                                          StaticText, 0x101f54dd0, {{434.5, 852.5}, {128.0, 22.0}}, label: 'DELL-tah'
+                                      Button, 0x101f54f00, {{262.5, 917.5}, {149.0, 203.0}}, identifier: 'alphabet-E', label: 'Play E, Echo'
+                                        Other, 0x102624f00, {{262.5, 917.5}, {149.0, 81.0}}, identifier: 'alphabet-E-header'
+                                        Other, 0x10262a370, {{262.5, 923.0}, {149.0, 67.5}}, identifier: 'alphabet-E-letter'
+                                        StaticText, 0x102629cb0, {{262.5, 923.0}, {149.0, 68.0}}, identifier: 'alphabet-E-letter-run', label: 'E'
+                                          StaticText, 0x102628f20, {{262.5, 923.0}, {149.0, 68.0}}, label: 'E'
+                                        Other, 0x102628bd0, {{262.5, 998.5}, {149.0, 122.0}}, identifier: 'alphabet-E-body'
+                                        Other, 0x10262aa30, {{273.5, 1029.5}, {127.0, 30.0}}, identifier: 'alphabet-E-word'
+                                        StaticText, 0x10262a6d0, {{273.5, 1029.5}, {128.0, 30.0}}, identifier: 'alphabet-E-word-run', label: 'Echo'
+                                          StaticText, 0x10262a010, {{273.5, 1029.5}, {128.0, 30.0}}, label: 'Echo'
+                                        Other, 0x10262add0, {{273.5, 1067.5}, {127.0, 21.5}}, identifier: 'alphabet-E-pronunciation'
+                                        StaticText, 0x10262b170, {{273.5, 1067.5}, {128.0, 22.0}}, identifier: 'alphabet-E-pronunciation-run', label: 'ECK-oh'
+                                          StaticText, 0x10262b4f0, {{273.5, 1067.5}, {128.0, 22.0}}, label: 'ECK-oh'
+                                      Button, 0x10262b870, {{423.5, 917.5}, {149.0, 203.0}}, identifier: 'alphabet-F', label: 'Play F, Foxtrot'
+                                        Other, 0x10262bbe0, {{423.5, 917.5}, {149.0, 81.0}}, identifier: 'alphabet-F-header'
+                                        Other, 0x10262bf80, {{423.5, 923.0}, {149.0, 67.5}}, identifier: 'alphabet-F-letter'
+                                        StaticText, 0x10262c2f0, {{423.5, 923.0}, {149.0, 68.0}}, identifier: 'alphabet-F-letter-run', label: 'F'
+                                          StaticText, 0x10262c650, {{423.5, 923.0}, {149.0, 68.0}}, label: 'F'
+                                        Other, 0x10262c9b0, {{423.5, 998.5}, {149.0, 122.0}}, identifier: 'alphabet-F-body'
+                                        Other, 0x10262cd20, {{434.5, 1029.5}, {127.0, 30.0}}, identifier: 'alphabet-F-word'
+                                        StaticText, 0x10262d0a0, {{434.5, 1029.5}, {128.0, 30.0}}, identifier: 'alphabet-F-word-run', label: 'Foxtrot'
+                                          StaticText, 0x10262d430, {{434.5, 1029.5}, {128.0, 30.0}}, label: 'Foxtrot'
+                                        Other, 0x10262d7b0, {{434.5, 1067.5}, {127.0, 21.5}}, identifier: 'alphabet-F-pronunciation'
+                                        StaticText, 0x10262db20, {{434.5, 1067.5}, {128.0, 22.0}}, identifier: 'alphabet-F-pronunciation-run', label: 'FOKS-trot'
+                                          StaticText, 0x10262dea0, {{434.5, 1067.5}, {128.0, 22.0}}, label: 'FOKS-trot'
+                                      Button, 0x10262e220, {{262.5, 1132.5}, {149.0, 203.0}}, identifier: 'alphabet-G', label: 'Play G, Golf'
+                                        Other, 0x10262e590, {{262.5, 1132.5}, {149.0, 81.0}}, identifier: 'alphabet-G-header'
+                                        Other, 0x10262e910, {{262.5, 1138.0}, {149.0, 67.5}}, identifier: 'alphabet-G-letter'
+                                        StaticText, 0x10262ecb0, {{262.5, 1138.0}, {149.0, 68.0}}, identifier: 'alphabet-G-letter-run', label: 'G'
+                                          StaticText, 0x10262f000, {{262.5, 1138.0}, {149.0, 68.0}}, label: 'G'
+                                        Other, 0x10262f360, {{262.5, 1213.5}, {149.0, 122.0}}, identifier: 'alphabet-G-body'
+                                        Other, 0x10262f6e0, {{273.5, 1244.5}, {127.0, 30.0}}, identifier: 'alphabet-G-word'
+                                        StaticText, 0x10262fa50, {{273.5, 1244.5}, {128.0, 30.0}}, identifier: 'alphabet-G-word-run', label: 'Golf'
+                                          StaticText, 0x10262fdb0, {{273.5, 1244.5}, {128.0, 30.0}}, label: 'Golf'
+                                        Other, 0x102630110, {{273.5, 1282.5}, {127.0, 21.5}}, identifier: 'alphabet-G-pronunciation'
+                                        StaticText, 0x102630460, {{273.5, 1282.5}, {128.0, 22.0}}, identifier: 'alphabet-G-pronunciation-run', label: 'GOLF'
+                                          StaticText, 0x1026307e0, {{273.5, 1282.5}, {128.0, 22.0}}, label: 'GOLF'
+                                      Button, 0x102630b40, {{423.5, 1132.5}, {149.0, 203.0}}, identifier: 'alphabet-H', label: 'Play H, Hotel'
+                                        Other, 0x102630ea0, {{423.5, 1132.5}, {149.0, 81.0}}, identifier: 'alphabet-H-header'
+                                        Other, 0x102631200, {{423.5, 1138.0}, {149.0, 67.5}}, identifier: 'alphabet-H-letter'
+                                        StaticText, 0x102631550, {{423.5, 1138.0}, {149.0, 68.0}}, identifier: 'alphabet-H-letter-run', label: 'H'
+                                          StaticText, 0x102632050, {{423.5, 1138.0}, {149.0, 68.0}}, label: 'H'
+                                        Other, 0x1026323d0, {{423.5, 1213.5}, {149.0, 122.0}}, identifier: 'alphabet-H-body'
+                                        Other, 0x102632720, {{434.5, 1244.5}, {127.0, 30.0}}, identifier: 'alphabet-H-word'
+                                        StaticText, 0x102632a80, {{434.5, 1244.5}, {128.0, 30.0}}, identifier: 'alphabet-H-word-run', label: 'Hotel'
+                                          StaticText, 0x102632df0, {{434.5, 1244.5}, {128.0, 30.0}}, label: 'Hotel'
+                                        Other, 0x102633650, {{434.5, 1282.5}, {127.0, 21.5}}, identifier: 'alphabet-H-pronunciation'
+                                        StaticText, 0x102634160, {{434.5, 1282.5}, {128.0, 22.0}}, identifier: 'alphabet-H-pronunciation-run', label: 'hoh-TELL'
+                                          StaticText, 0x1026344e0, {{434.5, 1282.5}, {128.0, 22.0}}, label: 'hoh-TELL'
+                                      Button, 0x102634850, {{262.5, 1347.5}, {149.0, 203.0}}, identifier: 'alphabet-I', label: 'Play I, India'
+                                        Other, 0x102634bc0, {{262.5, 1347.5}, {149.0, 81.0}}, identifier: 'alphabet-I-header'
+                                        Other, 0x102634f40, {{262.5, 1353.0}, {149.0, 68.0}}, identifier: 'alphabet-I-letter'
+                                        StaticText, 0x1026352e0, {{262.5, 1353.0}, {149.0, 68.0}}, identifier: 'alphabet-I-letter-run', label: 'I'
+                                          StaticText, 0x102635680, {{262.5, 1353.0}, {149.0, 68.0}}, label: 'I'
+                                        Other, 0x102635a00, {{262.5, 1428.5}, {149.0, 122.0}}, identifier: 'alphabet-I-body'
+                                        Other, 0x102635d50, {{273.5, 1459.5}, {127.0, 30.0}}, identifier: 'alphabet-I-word'
+                                        StaticText, 0x1026360c0, {{273.5, 1459.5}, {128.0, 30.0}}, identifier: 'alphabet-I-word-run', label: 'India'
+                                          StaticText, 0x102636440, {{273.5, 1459.5}, {128.0, 30.0}}, label: 'India'
+                                        Other, 0x1026367c0, {{273.5, 1497.5}, {127.0, 21.5}}, identifier: 'alphabet-I-pronunciation'
+                                        StaticText, 0x102636b10, {{273.5, 1497.5}, {128.0, 22.5}}, identifier: 'alphabet-I-pronunciation-run', label: 'IN-dee-ah'
+                                          StaticText, 0x102636e70, {{273.5, 1497.5}, {128.0, 22.5}}, label: 'IN-dee-ah'
+                                      Button, 0x102637200, {{423.5, 1347.5}, {149.0, 203.0}}, identifier: 'alphabet-J', label: 'Play J, Juliett'
+                                        Other, 0x102637570, {{423.5, 1347.5}, {149.0, 81.0}}, identifier: 'alphabet-J-header'
+                                        Other, 0x1026378d0, {{423.5, 1353.0}, {149.0, 68.0}}, identifier: 'alphabet-J-letter'
+                                        StaticText, 0x102637c10, {{423.5, 1353.0}, {149.0, 68.0}}, identifier: 'alphabet-J-letter-run', label: 'J'
+                                          StaticText, 0x102637f80, {{423.5, 1353.0}, {149.0, 68.0}}, label: 'J'
+                                        Other, 0x1026382d0, {{423.5, 1428.5}, {149.0, 122.0}}, identifier: 'alphabet-J-body'
+                                        Other, 0x102638620, {{434.5, 1459.5}, {127.0, 30.0}}, identifier: 'alphabet-J-word'
+                                        StaticText, 0x102638970, {{434.5, 1459.5}, {128.0, 30.0}}, identifier: 'alphabet-J-word-run', label: 'Juliett'
+                                          StaticText, 0x102638cd0, {{434.5, 1459.5}, {128.0, 30.0}}, label: 'Juliett'
+                                        Other, 0x102639030, {{434.5, 1497.5}, {127.0, 21.5}}, identifier: 'alphabet-J-pronunciation'
+                                        StaticText, 0x1026393b0, {{434.5, 1497.5}, {128.0, 22.5}}, identifier: 'alphabet-J-pronunciation-run', label: 'JEW-lee-ett'
+                                          StaticText, 0x102639740, {{434.5, 1497.5}, {128.0, 22.5}}, label: 'JEW-lee-ett'
+                                      Button, 0x102639aa0, {{262.5, 1562.5}, {149.0, 202.5}}, identifier: 'alphabet-K', label: 'Play K, Kilo'
+                                        Other, 0x102639e40, {{262.5, 1562.5}, {149.0, 81.0}}, identifier: 'alphabet-K-header'
+                                        Other, 0x10263a190, {{262.5, 1568.0}, {149.0, 68.0}}, identifier: 'alphabet-K-letter'
+                                        StaticText, 0x10263a520, {{262.5, 1568.0}, {149.0, 68.0}}, identifier: 'alphabet-K-letter-run', label: 'K'
+                                          StaticText, 0x10263a8a0, {{262.5, 1568.0}, {149.0, 68.0}}, label: 'K'
+                                        Other, 0x10263abf0, {{262.5, 1643.5}, {149.0, 121.5}}, identifier: 'alphabet-K-body'
+                                        Other, 0x10263af90, {{273.5, 1674.5}, {127.0, 30.0}}, identifier: 'alphabet-K-word'
+                                        StaticText, 0x10263b310, {{273.5, 1674.5}, {128.0, 30.0}}, identifier: 'alphabet-K-word-run', label: 'Kilo'
+                                          StaticText, 0x10263b660, {{273.5, 1674.5}, {128.0, 30.0}}, label: 'Kilo'
+                                        Other, 0x10263b9c0, {{273.5, 1712.5}, {127.0, 21.5}}, identifier: 'alphabet-K-pronunciation'
+                                        StaticText, 0x10263bd40, {{273.5, 1712.5}, {128.0, 22.5}}, identifier: 'alphabet-K-pronunciation-run', label: 'KEY-loh'
+                                          StaticText, 0x10263c0a0, {{273.5, 1712.5}, {128.0, 22.5}}, label: 'KEY-loh'
+                                      Button, 0x10263c3f0, {{423.5, 1562.5}, {149.0, 202.5}}, identifier: 'alphabet-L', label: 'Play L, Lima'
+                                        Other, 0x10263c750, {{423.5, 1562.5}, {149.0, 81.0}}, identifier: 'alphabet-L-header'
+                                        Other, 0x10263cad0, {{423.5, 1568.0}, {149.0, 68.0}}, identifier: 'alphabet-L-letter'
+                                        StaticText, 0x10263ce50, {{423.5, 1568.0}, {149.0, 68.0}}, identifier: 'alphabet-L-letter-run', label: 'L'
+                                          StaticText, 0x10263d1c0, {{423.5, 1568.0}, {149.0, 68.0}}, label: 'L'
+                                        Other, 0x10263d530, {{423.5, 1643.5}, {149.0, 121.5}}, identifier: 'alphabet-L-body'
+                                        Other, 0x10263d890, {{434.5, 1674.5}, {127.0, 30.0}}, identifier: 'alphabet-L-word'
+                                        StaticText, 0x10263dbf0, {{434.5, 1674.5}, {128.0, 30.0}}, identifier: 'alphabet-L-word-run', label: 'Lima'
+                                          StaticText, 0x102732170, {{434.5, 1674.5}, {128.0, 30.0}}, label: 'Lima'
+                                        Other, 0x102732f50, {{434.5, 1712.5}, {127.0, 21.5}}, identifier: 'alphabet-L-pronunciation'
+                                        StaticText, 0x1027332c0, {{434.5, 1712.5}, {128.0, 22.5}}, identifier: 'alphabet-L-pronunciation-run', label: 'LEE-mah'
+                                          StaticText, 0x102733620, {{434.5, 1712.5}, {128.0, 22.5}}, label: 'LEE-mah'
+                                      Button, 0x101f55030, {{262.5, 1777.0}, {149.0, 203.0}}, identifier: 'alphabet-M', label: 'Play M, Mike'
+                                        Other, 0x101f55160, {{262.5, 1777.0}, {149.0, 81.5}}, identifier: 'alphabet-M-header'
+                                        Other, 0x101f55290, {{262.5, 1782.5}, {149.0, 68.0}}, identifier: 'alphabet-M-letter'
+                                        StaticText, 0x101f553c0, {{262.5, 1782.5}, {149.0, 68.0}}, identifier: 'alphabet-M-letter-run', label: 'M'
+                                          StaticText, 0x101f554f0, {{262.5, 1782.5}, {149.0, 68.0}}, label: 'M'
+                                        Other, 0x101f55620, {{262.5, 1858.0}, {149.0, 121.5}}, identifier: 'alphabet-M-body'
+                                        Other, 0x101f55750, {{273.5, 1889.0}, {127.0, 30.0}}, identifier: 'alphabet-M-word'
+                                        StaticText, 0x101f55880, {{273.5, 1889.0}, {128.0, 30.5}}, identifier: 'alphabet-M-word-run', label: 'Mike'
+                                          StaticText, 0x101f559b0, {{273.5, 1889.0}, {128.0, 30.5}}, label: 'Mike'
+                                        Other, 0x101f55ae0, {{273.5, 1927.0}, {127.0, 21.5}}, identifier: 'alphabet-M-pronunciation'
+                                        StaticText, 0x101f55c10, {{273.5, 1927.0}, {128.0, 22.5}}, identifier: 'alphabet-M-pronunciation-run', label: 'MIKE'
+                                          StaticText, 0x101f55d40, {{273.5, 1927.0}, {128.0, 22.5}}, label: 'MIKE'
+                                      Button, 0x101f55e70, {{423.5, 1777.0}, {149.0, 203.0}}, identifier: 'alphabet-N', label: 'Play N, November'
+                                        Other, 0x101f55fa0, {{423.5, 1777.0}, {149.0, 81.5}}, identifier: 'alphabet-N-header'
+                                        Other, 0x1027339b0, {{423.5, 1782.5}, {149.0, 68.0}}, identifier: 'alphabet-N-letter'
+                                        StaticText, 0x102733d00, {{423.5, 1782.5}, {149.0, 68.0}}, identifier: 'alphabet-N-letter-run', label: 'N'
+                                          StaticText, 0x102734070, {{423.5, 1782.5}, {149.0, 68.0}}, label: 'N'
+                                        Other, 0x1027343e0, {{423.5, 1858.0}, {149.0, 121.5}}, identifier: 'alphabet-N-body'
+                                        Other, 0x102734750, {{434.5, 1889.0}, {127.0, 30.0}}, identifier: 'alphabet-N-word'
+                                        StaticText, 0x102734ad0, {{434.5, 1889.0}, {128.0, 30.5}}, identifier: 'alphabet-N-word-run', label: 'November'
+                                          StaticText, 0x102734e10, {{434.5, 1889.0}, {128.0, 30.5}}, label: 'November'
+                                        Other, 0x102735160, {{434.5, 1927.0}, {127.0, 21.5}}, identifier: 'alphabet-N-pronunciation'
+                                        StaticText, 0x1027354d0, {{434.5, 1927.0}, {128.0, 22.5}}, identifier: 'alphabet-N-pronunciation-run', label: 'no-VEM-ber'
+                                          StaticText, 0x10263df50, {{434.5, 1927.0}, {128.0, 22.5}}, label: 'no-VEM-ber'
+                                      Button, 0x102735830, {{262.5, 1992.0}, {149.0, 203.0}}, identifier: 'alphabet-O', label: 'Play O, Oscar'
+                                        Other, 0x101f560d0, {{262.5, 1992.0}, {149.0, 81.5}}, identifier: 'alphabet-O-header'
+                                        Other, 0x101f56200, {{262.5, 1997.5}, {149.0, 67.5}}, identifier: 'alphabet-O-letter'
+                                        StaticText, 0x101f56330, {{262.5, 1997.5}, {149.0, 68.0}}, identifier: 'alphabet-O-letter-run', label: 'O'
+                                          StaticText, 0x101f56460, {{262.5, 1997.5}, {149.0, 68.0}}, label: 'O'
+                                        Other, 0x101f56590, {{262.5, 2073.0}, {149.0, 121.5}}, identifier: 'alphabet-O-body'
+                                        Other, 0x101f566c0, {{273.5, 2104.0}, {127.0, 29.5}}, identifier: 'alphabet-O-word'
+                                        StaticText, 0x102735ba0, {{273.5, 2104.0}, {128.0, 30.5}}, identifier: 'alphabet-O-word-run', label: 'Oscar'
+                                          StaticText, 0x102735f20, {{273.5, 2104.0}, {128.0, 30.5}}, label: 'Oscar'
+                                        Other, 0x101f567f0, {{273.5, 2142.0}, {127.0, 21.5}}, identifier: 'alphabet-O-pronunciation'
+                                        StaticText, 0x101f56920, {{273.5, 2142.0}, {128.0, 22.0}}, identifier: 'alphabet-O-pronunciation-run', label: 'OSS-cah'
+                                          StaticText, 0x101f56a50, {{273.5, 2142.0}, {128.0, 22.0}}, label: 'OSS-cah'
+                                      Button, 0x101f56b80, {{423.5, 1992.0}, {149.0, 203.0}}, identifier: 'alphabet-P', label: 'Play P, Papa'
+                                        Other, 0x101f56cb0, {{423.5, 1992.0}, {149.0, 81.5}}, identifier: 'alphabet-P-header'
+                                        Other, 0x101f56de0, {{423.5, 1997.5}, {149.0, 67.5}}, identifier: 'alphabet-P-letter'
+                                        StaticText, 0x101f56f10, {{423.5, 1997.5}, {149.0, 68.0}}, identifier: 'alphabet-P-letter-run', label: 'P'
+                                          StaticText, 0x101f57040, {{423.5, 1997.5}, {149.0, 68.0}}, label: 'P'
+                                        Other, 0x101f57170, {{423.5, 2073.0}, {149.0, 121.5}}, identifier: 'alphabet-P-body'
+                                        Other, 0x101f572a0, {{434.5, 2104.0}, {127.0, 29.5}}, identifier: 'alphabet-P-word'
+                                        StaticText, 0x101f573d0, {{434.5, 2104.0}, {128.0, 30.5}}, identifier: 'alphabet-P-word-run', label: 'Papa'
+                                          StaticText, 0x101f57500, {{434.5, 2104.0}, {128.0, 30.5}}, label: 'Papa'
+                                        Other, 0x101f57630, {{434.5, 2142.0}, {127.0, 21.5}}, identifier: 'alphabet-P-pronunciation'
+                                        StaticText, 0x101f57760, {{434.5, 2142.0}, {128.0, 22.0}}, identifier: 'alphabet-P-pronunciation-run', label: 'pah-PAH'
+                                          StaticText, 0x101f57890, {{434.5, 2142.0}, {128.0, 22.0}}, label: 'pah-PAH'
+                                      Button, 0x102530b60, {{262.5, 2207.0}, {149.0, 203.0}}, identifier: 'alphabet-Q', label: 'Play Q, Quebec'
+                                        Other, 0x102736280, {{262.5, 2207.0}, {149.0, 81.5}}, identifier: 'alphabet-Q-header'
+                                        Other, 0x1027365e0, {{262.5, 2212.5}, {149.0, 67.5}}, identifier: 'alphabet-Q-letter'
+                                        StaticText, 0x102736940, {{262.5, 2212.5}, {149.0, 68.0}}, identifier: 'alphabet-Q-letter-run', label: 'Q'
+                                          StaticText, 0x102736c90, {{262.5, 2212.5}, {149.0, 68.0}}, label: 'Q'
+                                        Other, 0x102737020, {{262.5, 2288.0}, {149.0, 121.5}}, identifier: 'alphabet-Q-body'
+                                        Other, 0x1027373a0, {{273.5, 2319.0}, {127.0, 29.5}}, identifier: 'alphabet-Q-word'
+                                        StaticText, 0x1027376f0, {{273.5, 2319.0}, {128.0, 30.5}}, identifier: 'alphabet-Q-word-run', label: 'Quebec'
+                                          StaticText, 0x102737a40, {{273.5, 2319.0}, {128.0, 30.5}}, label: 'Quebec'
+                                        Other, 0x102737d90, {{273.5, 2357.0}, {127.0, 21.5}}, identifier: 'alphabet-Q-pronunciation'
+                                        StaticText, 0x102738100, {{273.5, 2357.0}, {128.0, 22.0}}, identifier: 'alphabet-Q-pronunciation-run', label: 'keh-BECK'
+                                          StaticText, 0x102738450, {{273.5, 2357.0}, {128.0, 22.0}}, label: 'keh-BECK'
+                                      Button, 0x102738790, {{423.5, 2207.0}, {149.0, 203.0}}, identifier: 'alphabet-R', label: 'Play R, Romeo'
+                                        Other, 0x102738ae0, {{423.5, 2207.0}, {149.0, 81.5}}, identifier: 'alphabet-R-header'
+                                        Other, 0x102738e40, {{423.5, 2212.5}, {149.0, 67.5}}, identifier: 'alphabet-R-letter'
+                                        StaticText, 0x1027391c0, {{423.5, 2212.5}, {149.0, 68.0}}, identifier: 'alphabet-R-letter-run', label: 'R'
+                                          StaticText, 0x102739550, {{423.5, 2212.5}, {149.0, 68.0}}, label: 'R'
+                                        Other, 0x1027398a0, {{423.5, 2288.0}, {149.0, 121.5}}, identifier: 'alphabet-R-body'
+                                        Other, 0x10273a3b0, {{434.5, 2319.0}, {127.0, 29.5}}, identifier: 'alphabet-R-word'
+                                        StaticText, 0x10273a730, {{434.5, 2319.0}, {128.0, 30.5}}, identifier: 'alphabet-R-word-run', label: 'Romeo'
+                                          StaticText, 0x10273aaa0, {{434.5, 2319.0}, {128.0, 30.5}}, label: 'Romeo'
+                                        Other, 0x10273ae00, {{434.5, 2357.0}, {127.0, 21.5}}, identifier: 'alphabet-R-pronunciation'
+                                        StaticText, 0x10273b170, {{434.5, 2357.0}, {128.0, 22.0}}, identifier: 'alphabet-R-pronunciation-run', label: 'ROW-me-oh'
+                                          StaticText, 0x10273b4e0, {{434.5, 2357.0}, {128.0, 22.0}}, label: 'ROW-me-oh'
+                                      Button, 0x10273b860, {{262.5, 2422.0}, {149.0, 203.0}}, identifier: 'alphabet-S', label: 'Play S, Sierra'
+                                        Other, 0x10273bbe0, {{262.5, 2422.0}, {149.0, 81.0}}, identifier: 'alphabet-S-header'
+                                        Other, 0x10273bf30, {{262.5, 2427.5}, {149.0, 67.5}}, identifier: 'alphabet-S-letter'
+                                        StaticText, 0x10273c2a0, {{262.5, 2427.5}, {149.0, 68.5}}, identifier: 'alphabet-S-letter-run', label: 'S'
+                                          StaticText, 0x10273c5f0, {{262.5, 2427.5}, {149.0, 68.5}}, label: 'S'
+                                        Other, 0x10273c990, {{262.5, 2503.0}, {149.0, 122.0}}, identifier: 'alphabet-S-body'
+                                        Other, 0x10273cce0, {{273.5, 2534.0}, {127.0, 29.5}}, identifier: 'alphabet-S-word'
+                                        StaticText, 0x10273d030, {{273.5, 2534.0}, {128.0, 30.5}}, identifier: 'alphabet-S-word-run', label: 'Sierra'
+                                          StaticText, 0x10273d390, {{273.5, 2534.0}, {128.0, 30.5}}, label: 'Sierra'
+                                        Other, 0x10273d6f0, {{273.5, 2572.0}, {127.0, 22.0}}, identifier: 'alphabet-S-pronunciation'
+                                        StaticText, 0x10273da60, {{273.5, 2572.0}, {128.0, 22.0}}, identifier: 'alphabet-S-pronunciation-run', label: 'see-AIR-ah'
+                                          StaticText, 0x10273dda0, {{273.5, 2572.0}, {128.0, 22.0}}, label: 'see-AIR-ah'
+                                      Button, 0x10273e0f0, {{423.5, 2422.0}, {149.0, 203.0}}, identifier: 'alphabet-T', label: 'Play T, Tango'
+                                        Other, 0x10273e490, {{423.5, 2422.0}, {149.0, 81.0}}, identifier: 'alphabet-T-header'
+                                        Other, 0x10273e800, {{423.5, 2427.5}, {149.0, 67.5}}, identifier: 'alphabet-T-letter'
+                                        StaticText, 0x10273eb50, {{423.5, 2427.5}, {149.0, 68.5}}, identifier: 'alphabet-T-letter-run', label: 'T'
+                                          StaticText, 0x10273eed0, {{423.5, 2427.5}, {149.0, 68.5}}, label: 'T'
+                                        Other, 0x10273f240, {{423.5, 2503.0}, {149.0, 122.0}}, identifier: 'alphabet-T-body'
+                                        Other, 0x10273f5a0, {{434.5, 2534.0}, {127.0, 29.5}}, identifier: 'alphabet-T-word'
+                                        StaticText, 0x10273f920, {{434.5, 2534.0}, {128.0, 30.5}}, identifier: 'alphabet-T-word-run', label: 'Tango'
+                                          StaticText, 0x10273fc90, {{434.5, 2534.0}, {128.0, 30.5}}, label: 'Tango'
+                                        Other, 0x102740cd0, {{434.5, 2572.0}, {127.0, 22.0}}, identifier: 'alphabet-T-pronunciation'
+                                        StaticText, 0x102741040, {{434.5, 2572.0}, {128.0, 22.0}}, identifier: 'alphabet-T-pronunciation-run', label: 'TANG-go'
+                                          StaticText, 0x1027413b0, {{434.5, 2572.0}, {128.0, 22.0}}, label: 'TANG-go'
+                                      Button, 0x102741730, {{262.5, 2637.0}, {149.0, 203.0}}, identifier: 'alphabet-U', label: 'Play U, Uniform'
+                                        Other, 0x102741f60, {{262.5, 2637.0}, {149.0, 81.0}}, identifier: 'alphabet-U-header'
+                                        Other, 0x1027422b0, {{262.5, 2642.5}, {149.0, 67.5}}, identifier: 'alphabet-U-letter'
+                                        StaticText, 0x102742610, {{262.5, 2642.5}, {149.0, 68.5}}, identifier: 'alphabet-U-letter-run', label: 'U'
+                                          StaticText, 0x102742990, {{262.5, 2642.5}, {149.0, 68.5}}, label: 'U'
+                                        Other, 0x102742d00, {{262.5, 2718.0}, {149.0, 122.0}}, identifier: 'alphabet-U-body'
+                                        Other, 0x102743060, {{273.5, 2749.0}, {127.0, 29.5}}, identifier: 'alphabet-U-word'
+                                        StaticText, 0x1027433f0, {{273.5, 2749.0}, {128.0, 30.5}}, identifier: 'alphabet-U-word-run', label: 'Uniform'
+                                          StaticText, 0x102743760, {{273.5, 2749.0}, {128.0, 30.5}}, label: 'Uniform'
+                                        Other, 0x102743ac0, {{273.5, 2787.0}, {127.0, 22.0}}, identifier: 'alphabet-U-pronunciation'
+                                        StaticText, 0x102743e10, {{273.5, 2787.0}, {128.0, 22.0}}, identifier: 'alphabet-U-pronunciation-run', label: 'YOU-nee-form'
+                                          StaticText, 0x102744eb0, {{273.5, 2787.0}, {128.0, 22.0}}, label: 'YOU-nee-form'
+                                      Button, 0x102745200, {{423.5, 2637.0}, {149.0, 203.0}}, identifier: 'alphabet-V', label: 'Play V, Victor'
+                                        Other, 0x102745590, {{423.5, 2637.0}, {149.0, 81.0}}, identifier: 'alphabet-V-header'
+                                        Other, 0x102745910, {{423.5, 2642.5}, {149.0, 67.5}}, identifier: 'alphabet-V-letter'
+                                        StaticText, 0x102745c90, {{423.5, 2642.5}, {149.0, 68.5}}, identifier: 'alphabet-V-letter-run', label: 'V'
+                                          StaticText, 0x102746010, {{423.5, 2642.5}, {149.0, 68.5}}, label: 'V'
+                                        Other, 0x102746390, {{423.5, 2718.0}, {149.0, 122.0}}, identifier: 'alphabet-V-body'
+                                        Other, 0x102746ed0, {{434.5, 2749.0}, {127.0, 29.5}}, identifier: 'alphabet-V-word'
+                                        StaticText, 0x102747a60, {{434.5, 2749.0}, {128.0, 30.5}}, identifier: 'alphabet-V-word-run', label: 'Victor'
+                                          StaticText, 0x102747df0, {{434.5, 2749.0}, {128.0, 30.5}}, label: 'Victor'
+                                        Other, 0x102748170, {{434.5, 2787.0}, {127.0, 22.0}}, identifier: 'alphabet-V-pronunciation'
+                                        StaticText, 0x102748500, {{434.5, 2787.0}, {128.0, 22.0}}, identifier: 'alphabet-V-pronunciation-run', label: 'VIK-tah'
+                                          StaticText, 0x102748870, {{434.5, 2787.0}, {128.0, 22.0}}, label: 'VIK-tah'
+                                      Button, 0x102748c00, {{262.5, 2852.0}, {149.0, 203.0}}, identifier: 'alphabet-W', label: 'Play W, Whiskey'
+                                        Other, 0x102748f90, {{262.5, 2852.0}, {149.0, 81.0}}, identifier: 'alphabet-W-header'
+                                        Other, 0x102749500, {{262.5, 2857.5}, {149.0, 67.5}}, identifier: 'alphabet-W-letter'
+                                        StaticText, 0x102749880, {{262.5, 2857.5}, {149.0, 68.5}}, identifier: 'alphabet-W-letter-run', label: 'W'
+                                          StaticText, 0x102749c10, {{262.5, 2857.5}, {149.0, 68.5}}, label: 'W'
+                                        Other, 0x102749fa0, {{262.5, 2933.0}, {149.0, 122.0}}, identifier: 'alphabet-W-body'
+                                        Other, 0x10274a320, {{273.5, 2964.0}, {127.0, 30.0}}, identifier: 'alphabet-W-word'
+                                        StaticText, 0x10274a6a0, {{273.5, 2964.0}, {128.0, 30.5}}, identifier: 'alphabet-W-word-run', label: 'Whiskey'
+                                          StaticText, 0x10274aa30, {{273.5, 2964.0}, {128.0, 30.5}}, label: 'Whiskey'
+                                        Other, 0x10274adb0, {{273.5, 3002.0}, {127.0, 22.0}}, identifier: 'alphabet-W-pronunciation'
+                                        StaticText, 0x10274b150, {{273.5, 3002.0}, {128.0, 22.0}}, identifier: 'alphabet-W-pronunciation-run', label: 'WISS-key'
+                                          StaticText, 0x10274b4d0, {{273.5, 3002.0}, {128.0, 22.0}}, label: 'WISS-key'
+                                      Button, 0x10274b850, {{423.5, 2852.0}, {149.0, 203.0}}, identifier: 'alphabet-X', label: 'Play X, X-ray'
+                                        Other, 0x10274bbd0, {{423.5, 2852.0}, {149.0, 81.0}}, identifier: 'alphabet-X-header'
+                                        Other, 0x10274bf50, {{423.5, 2857.5}, {149.0, 67.5}}, identifier: 'alphabet-X-letter'
+                                        StaticText, 0x10274c2d0, {{423.5, 2857.5}, {149.0, 68.5}}, identifier: 'alphabet-X-letter-run', label: 'X'
+                                          StaticText, 0x10274c650, {{423.5, 2857.5}, {149.0, 68.5}}, label: 'X'
+                                        Other, 0x10274c9e0, {{423.5, 2933.0}, {149.0, 122.0}}, identifier: 'alphabet-X-body'
+                                        Other, 0x10274cd70, {{434.5, 2964.0}, {127.0, 30.0}}, identifier: 'alphabet-X-word'
+                                        StaticText, 0x10274d110, {{434.5, 2964.0}, {128.0, 30.5}}, identifier: 'alphabet-X-word-run', label: 'X-ray'
+                                          StaticText, 0x10274dc60, {{434.5, 2964.0}, {128.0, 30.5}}, label: 'X-ray'
+                                        Other, 0x10274e000, {{434.5, 3002.0}, {127.0, 22.0}}, identifier: 'alphabet-X-pronunciation'
+                                        StaticText, 0x10274e380, {{434.5, 3002.0}, {128.0, 22.0}}, identifier: 'alphabet-X-pronunciation-run', label: 'ECKS-ray'
+                                          StaticText, 0x10274e6f0, {{434.5, 3002.0}, {128.0, 22.0}}, label: 'ECKS-ray'
+                                      Button, 0x10274ea40, {{262.5, 3067.0}, {149.0, 203.0}}, identifier: 'alphabet-Y', label: 'Play Y, Yankee'
+                                        Other, 0x10274edb0, {{262.5, 3067.0}, {149.0, 81.0}}, identifier: 'alphabet-Y-header'
+                                        Other, 0x10274f110, {{262.5, 3072.5}, {149.0, 67.5}}, identifier: 'alphabet-Y-letter'
+                                        StaticText, 0x10274f470, {{262.5, 3072.5}, {149.0, 68.0}}, identifier: 'alphabet-Y-letter-run', label: 'Y'
+                                          StaticText, 0x10274f800, {{262.5, 3072.5}, {149.0, 68.0}}, label: 'Y'
+                                        Other, 0x10274fb60, {{262.5, 3148.0}, {149.0, 122.0}}, identifier: 'alphabet-Y-body'
+                                        Other, 0x10274fef0, {{273.5, 3179.0}, {127.0, 30.0}}, identifier: 'alphabet-Y-word'
+                                        StaticText, 0x102750260, {{273.5, 3179.0}, {128.0, 30.0}}, identifier: 'alphabet-Y-word-run', label: 'Yankee'
+                                          StaticText, 0x1027505c0, {{273.5, 3179.0}, {128.0, 30.0}}, label: 'Yankee'
+                                        Other, 0x102750950, {{273.5, 3217.0}, {127.0, 21.5}}, identifier: 'alphabet-Y-pronunciation'
+                                        StaticText, 0x102750ce0, {{273.5, 3217.0}, {128.0, 22.0}}, identifier: 'alphabet-Y-pronunciation-run', label: 'YANG-key'
+                                          StaticText, 0x102751070, {{273.5, 3217.0}, {128.0, 22.0}}, label: 'YANG-key'
+                                      Button, 0x1027513e0, {{423.5, 3067.0}, {149.0, 203.0}}, identifier: 'alphabet-Z', label: 'Play Z, Zulu'
+                                        Other, 0x102751750, {{423.5, 3067.0}, {149.0, 81.0}}, identifier: 'alphabet-Z-header'
+                                        Other, 0x102751ac0, {{423.5, 3072.5}, {149.0, 67.5}}, identifier: 'alphabet-Z-letter'
+                                        StaticText, 0x102751e30, {{423.5, 3072.5}, {149.0, 68.0}}, identifier: 'alphabet-Z-letter-run', label: 'Z'
+                                          StaticText, 0x102752180, {{423.5, 3072.5}, {149.0, 68.0}}, label: 'Z'
+                                        Other, 0x102752510, {{423.5, 3148.0}, {149.0, 122.0}}, identifier: 'alphabet-Z-body'
+                                        Other, 0x102752880, {{434.5, 3179.0}, {127.0, 30.0}}, identifier: 'alphabet-Z-word'
+                                        StaticText, 0x102752bd0, {{434.5, 3179.0}, {128.0, 30.0}}, identifier: 'alphabet-Z-word-run', label: 'Zulu'
+                                          StaticText, 0x102752f60, {{434.5, 3179.0}, {128.0, 30.0}}, label: 'Zulu'
+                                        Other, 0x1027532f0, {{434.5, 3217.0}, {127.0, 21.5}}, identifier: 'alphabet-Z-pronunciation'
+                                        StaticText, 0x102753660, {{434.5, 3217.0}, {128.0, 22.0}}, identifier: 'alphabet-Z-pronunciation-run', label: 'ZOO-loo'
+                                          StaticText, 0x1027539c0, {{434.5, 3217.0}, {128.0, 22.0}}, label: 'ZOO-loo'
+                                  Other, 0x102753d10, {{556.0, 487.5}, {30.0, 2770.5}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                    Other, 0x1027540a0, {{583.0, 490.5}, {3.0, 5558.5}}
+                                  Other, 0x102754410, {{262.0, 3241.0}, {311.0, 30.0}}, label: 'Horizontal scroll bar, 1 page', value: 0%
+                                    Other, 0x102754770, {{459.0, 3268.0}, {111.0, 3.0}}
+                                  Other, 0x102754ad0, {{556.0, 487.5}, {30.0, 2770.5}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                    Other, 0x102754e60, {{583.0, 490.5}, {3.0, 5558.5}}
+                                  Other, 0x1027559a0, {{262.0, 3241.0}, {311.0, 30.0}}, label: 'Horizontal scroll bar, 1 page', value: 0%
+                                    Other, 0x102755cf0, {{459.0, 3268.0}, {111.0, 3.0}}
+                          Other, 0x102756070, {{572.0, 371.0}, {30.0, 388.0}}, label: 'Vertical scroll bar, 8 pages', value: 0%
+                            Other, 0x1027563e0, {{599.0, 374.0}, {3.0, 53.5}}
+                          Other, 0x102756740, {{252.0, 748.0}, {331.0, 30.0}}, label: 'Horizontal scroll bar, 1 page', value: 0%
+                            Other, 0x102756aa0, {{255.0, 775.0}, {325.0, 3.0}}
+                          Other, 0x102757600, {{572.0, 371.0}, {30.0, 388.0}}, label: 'Vertical scroll bar, 8 pages', value: 0%
+                            Other, 0x102757990, {{599.0, 374.0}, {3.0, 53.5}}
+                          Other, 0x102757ce0, {{252.0, 748.0}, {331.0, 30.0}}, label: 'Horizontal scroll bar, 1 page', value: 0%
+                            Other, 0x102758040, {{255.0, 775.0}, {325.0, 3.0}}
+Path to element:
+ →Application, 0x1027324d0, pid: 54054, label: 'NATO Phonetics'
+Query chain:
+ →Find: Application 'com.natophonetics.app'
+  Output: {
+    Application, 0x10263e650, pid: 54054, label: 'NATO Phonetics'
+  }
+
+    t =    14.80s Checking existence of `"Home" Any`
+    t =    14.80s Find the "Home" Any
+    t =    14.82s Find the "Home" Button
+    t =    14.83s Checking existence of `"Open menu" Any`
+    t =    14.84s Find the "Open menu" Any
+    t =    14.86s Find the "Open menu" Button
+    t =    14.87s Checking existence of `"app-header" Any`
+    t =    14.88s Find the "app-header" Any
+    t =    14.90s Find the "app-header" Other
+    t =    14.91s Checking existence of `"header-insets" Any`
+    t =    14.92s Find the "header-insets" Any
+    t =    14.94s Find the "header-insets" Other
+    t =    14.95s Checking existence of `"screen-scroll" Any`
+    t =    14.96s Find the "screen-scroll" Any
+    t =    14.98s Find the "screen-scroll" Other
+    t =    14.99s Checking existence of `"alphabet-A" Any`
+    t =    15.02s Find the "alphabet-A" Any
+    t =    15.12s Find the "alphabet-A" Button
+    t =    15.15s Checking existence of `"alphabet-B" Any`
+    t =    15.18s Find the "alphabet-B" Any
+    t =    15.22s Find the "alphabet-B" Button
+    t =    15.25s Checking existence of `"alphabet-C" Any`
+    t =    15.28s Find the "alphabet-C" Any
+    t =    15.32s Find the "alphabet-C" Button
+    t =    15.35s Checking existence of `"alphabet-D" Any`
+    t =    15.38s Find the "alphabet-D" Any
+    t =    15.41s Find the "alphabet-D" Button
+    t =    15.46s Checking existence of `"alphabet-E" Any`
+    t =    15.49s Find the "alphabet-E" Any
+    t =    15.52s Checking existence of `"alphabet-F" Any`
+    t =    15.56s Find the "alphabet-F" Any
+    t =    15.60s Checking existence of `"alphabet-G" Any`
+    t =    15.63s Find the "alphabet-G" Any
+    t =    15.68s Checking existence of `"alphabet-H" Any`
+    t =    15.73s Find the "alphabet-H" Any
+    t =    15.77s Checking existence of `"alphabet-I" Any`
+    t =    15.82s Find the "alphabet-I" Any
+    t =    15.86s Checking existence of `"alphabet-J" Any`
+    t =    15.89s Find the "alphabet-J" Any
+    t =    15.93s Checking existence of `"alphabet-K" Any`
+    t =    15.96s Find the "alphabet-K" Any
+    t =    16.00s Checking existence of `"alphabet-L" Any`
+    t =    16.03s Find the "alphabet-L" Any
+    t =    16.06s Checking existence of `"alphabet-M" Any`
+    t =    16.09s Find the "alphabet-M" Any
+    t =    16.14s Checking existence of `"alphabet-N" Any`
+    t =    16.17s Find the "alphabet-N" Any
+    t =    16.21s Checking existence of `"alphabet-O" Any`
+    t =    16.24s Find the "alphabet-O" Any
+    t =    16.28s Checking existence of `"alphabet-P" Any`
+    t =    16.31s Find the "alphabet-P" Any
+    t =    16.35s Checking existence of `"alphabet-Q" Any`
+    t =    16.38s Find the "alphabet-Q" Any
+    t =    16.42s Checking existence of `"alphabet-R" Any`
+    t =    16.45s Find the "alphabet-R" Any
+    t =    16.49s Checking existence of `"alphabet-S" Any`
+    t =    16.52s Find the "alphabet-S" Any
+    t =    16.56s Checking existence of `"alphabet-T" Any`
+    t =    16.60s Find the "alphabet-T" Any
+    t =    16.64s Checking existence of `"alphabet-U" Any`
+    t =    16.67s Find the "alphabet-U" Any
+    t =    16.71s Checking existence of `"alphabet-V" Any`
+    t =    16.74s Find the "alphabet-V" Any
+    t =    16.78s Checking existence of `"alphabet-W" Any`
+    t =    16.82s Find the "alphabet-W" Any
+    t =    16.86s Checking existence of `"alphabet-X" Any`
+    t =    16.90s Find the "alphabet-X" Any
+    t =    16.94s Checking existence of `"alphabet-Y" Any`
+    t =    16.97s Find the "alphabet-Y" Any
+    t =    17.02s Checking existence of `"alphabet-Z" Any`
+    t =    17.05s Find the "alphabet-Z" Any
+    t =    17.10s Find the Window (First Match)
+CAPTUREFRAMES header-enlarged-small {"alphabet-A":{"height":203,"width":149,"x":262.5,"y":487.5},"alphabet-B":{"height":203,"width":149,"x":423.5,"y":487.5},"alphabet-C":{"height":203,"width":149,"x":262.5,"y":702.5},"alphabet-D":{"height":203,"width":149,"x":423.5,"y":702.5},"app-header":{"height":56,"width":302.5,"x":296,"y":315},"header-insets":{"height":56,"width":375,"x":230,"y":315},"Home":{"height":48,"width":48,"x":304,"y":319},"Open menu":{"height":48,"width":48,"x":542.5,"y":319},"screen-scroll":{"height":410,"width":375,"x":230,"y":371},"window":{"height":486,"width":375,"x":230,"y":305}}
+    t =    17.65s Added attachment named 'header-enlarged-small'
+    t =    17.66s Tap "Open menu" Button[0.50, 0.50]
+    t =    17.66s     Wait for com.natophonetics.app to idle
+    t =    17.66s     Find the "Open menu" Button
+    t =    17.68s     Check for interrupting elements affecting "Open menu" Button
+    t =    17.74s         Wait for com.apple.DocumentManager.DockFolderViewService to idle
+    t =    17.81s         Wait for com.apple.springboard to idle
+    t =    17.91s Ignoring failure to get hierarchy for remote element in process 53980 (Error getting main window kAXErrorServerNotFound)
+    t =    17.91s Ignoring failure to get hierarchy for remote element in process 53980 (Error getting main window kAXErrorServerNotFound)
+    t =    17.93s     Synthesize event
+    t =    17.95s         Find the "Open menu" Button
+    t =    17.96s         Find the "Open menu" Button
+    t =    17.98s         Find the "Open menu" Button
+    t =    18.31s     Wait for com.natophonetics.app to idle
+    t =    18.32s Waiting 10.0s for "Back to App" Any to exist
+    t =    19.40s     Checking `Expect predicate `existsNoRetry == 1` for object "Back to App" Any`
+    t =    19.42s         Checking existence of `"Back to App" Any`
+    t =    19.47s Tap "Back to App" Any
+    t =    19.47s     Wait for com.natophonetics.app to idle
+    t =    19.47s     Find the "Back to App" Any
+    t =    19.49s     Check for interrupting elements affecting "Back to App" Button
+    t =    19.60s         Wait for com.apple.DocumentManager.DockFolderViewService to idle
+    t =    19.63s         Wait for com.apple.springboard to idle
+    t =    19.68s Ignoring failure to get hierarchy for remote element in process 53980 (Error getting main window kAXErrorServerNotFound)
+    t =    19.68s Ignoring failure to get hierarchy for remote element in process 53980 (Error getting main window kAXErrorServerNotFound)
+    t =    19.70s     Synthesize event
+    t =    19.74s         Scroll element to visible
+    t =    19.78s         Find the "Back to App" Button
+    t =    19.81s         Computed hit point {417.5, 656} after scrolling to visible
+    t =    20.10s     Wait for com.natophonetics.app to idle
+    t =    20.10s Waiting 10.0s for "alphabet-A" Any to exist
+    t =    21.18s     Checking `Expect predicate `existsNoRetry == 1` for object "alphabet-A" Any`
+    t =    21.18s         Checking existence of `"alphabet-A" Any`
+    t =    21.25s Tap "Home" Button[0.50, 0.50]
+    t =    21.25s     Wait for com.natophonetics.app to idle
+    t =    21.25s     Find the "Home" Button
+    t =    21.26s     Check for interrupting elements affecting "Home" Button
+    t =    21.27s         Wait for com.apple.DocumentManager.DockFolderViewService to idle
+    t =    21.33s         Wait for com.apple.springboard to idle
+    t =    21.37s Ignoring failure to get hierarchy for remote element in process 53980 (Error getting main window kAXErrorServerNotFound)
+    t =    21.37s Ignoring failure to get hierarchy for remote element in process 53980 (Error getting main window kAXErrorServerNotFound)
+    t =    21.38s     Synthesize event
+    t =    21.40s         Find the "Home" Button
+    t =    21.41s         Find the "Home" Button
+    t =    21.42s         Find the "Home" Button
+    t =    21.73s     Wait for com.natophonetics.app to idle
+    t =    21.73s Waiting 10.0s for "Learn, convert, and quiz yourself on the NATO alphabet." Any to exist
+    t =    22.80s     Checking `Expect predicate `existsNoRetry == 1` for object "Learn, convert, and quiz yourself on the NATO alphabet." Any`
+    t =    22.80s         Checking existence of `"Learn, convert, and quiz yourself on the NATO alphabet." Any`
+    t =    22.85s Checking existence of `"Home" Any`
+    t =    22.86s Find the "Home" Any
+    t =    22.89s Find the "Home" StaticText
+    t =    22.90s Checking existence of `"Open menu" Any`
+    t =    22.90s Find the "Open menu" Any
+    t =    22.92s Find the "Open menu" Button
+    t =    22.93s Checking existence of `"app-header" Any`
+    t =    22.94s Find the "app-header" Any
+    t =    22.95s Find the "app-header" Other
+    t =    22.96s Checking existence of `"header-insets" Any`
+    t =    22.97s Find the "header-insets" Any
+    t =    22.98s Find the "header-insets" Other
+    t =    23.00s Checking existence of `"screen-scroll" Any`
+    t =    23.00s Find the "screen-scroll" Any
+    t =    23.02s Find the "screen-scroll" Other
+    t =    23.03s Checking existence of `"alphabet-A" Any`
+    t =    23.07s Checking existence of `"alphabet-B" Any`
+    t =    23.12s Checking existence of `"alphabet-C" Any`
+    t =    23.16s Checking existence of `"alphabet-D" Any`
+    t =    23.20s Checking existence of `"alphabet-E" Any`
+    t =    23.23s Checking existence of `"alphabet-F" Any`
+    t =    23.27s Checking existence of `"alphabet-G" Any`
+    t =    23.31s Checking existence of `"alphabet-H" Any`
+    t =    23.34s Checking existence of `"alphabet-I" Any`
+    t =    23.38s Checking existence of `"alphabet-J" Any`
+    t =    23.42s Checking existence of `"alphabet-K" Any`
+    t =    23.45s Checking existence of `"alphabet-L" Any`
+    t =    23.49s Checking existence of `"alphabet-M" Any`
+    t =    23.52s Checking existence of `"alphabet-N" Any`
+    t =    23.55s Checking existence of `"alphabet-O" Any`
+    t =    23.59s Checking existence of `"alphabet-P" Any`
+    t =    23.62s Checking existence of `"alphabet-Q" Any`
+    t =    23.66s Checking existence of `"alphabet-R" Any`
+    t =    23.69s Checking existence of `"alphabet-S" Any`
+    t =    23.72s Checking existence of `"alphabet-T" Any`
+    t =    23.76s Checking existence of `"alphabet-U" Any`
+    t =    23.79s Checking existence of `"alphabet-V" Any`
+    t =    23.82s Checking existence of `"alphabet-W" Any`
+    t =    23.85s Checking existence of `"alphabet-X" Any`
+    t =    23.88s Checking existence of `"alphabet-Y" Any`
+    t =    23.91s Checking existence of `"alphabet-Z" Any`
+    t =    23.95s Find the Window (First Match)
+CAPTUREFRAMES header-enlarged-small-home {"app-header":{"height":56,"width":302.5,"x":296,"y":315},"header-insets":{"height":56,"width":375,"x":230,"y":315},"Home":{"height":53.5,"width":190.5,"x":352,"y":316},"Open menu":{"height":48,"width":48,"x":542.5,"y":319},"screen-scroll":{"height":410,"width":375,"x":230,"y":371},"window":{"height":486,"width":375,"x":230,"y":305}}
+    t =    24.24s Added attachment named 'header-enlarged-small-home'
+    t =    24.24s Open com.natophonetics.app with URL natophonetics://alphabet
+    t =    24.24s     Launch com.natophonetics.app
+    t =    24.36s         Setting up automation session
+    t =    24.37s         Wait for com.natophonetics.app to idle
+    t =    25.38s Wait for com.natophonetics.app to become Running Foreground
+    t =    25.38s Waiting 10.0s for "alphabet-A" Any to exist
+    t =    26.46s     Checking `Expect predicate `existsNoRetry == 1` for object "alphabet-A" Any`
+    t =    26.46s         Checking existence of `"alphabet-A" Any`
+    t =    26.52s Find the Window (First Match)
+    t =    26.54s Press Window at {{230.0, 305.0}, {375.0, 486.0}}[0.00, 0.00] -> (363.0, 474.0) for 0.1 seconds, then drag to Window at {{230.0, 305.0}, {375.0, 486.0}}[0.00, 0.00] -> (363.0, 581.0) with velocity of 250.00 pixels per second, and then hold for 0.3 seconds 
+    t =    26.54s     Wait for com.natophonetics.app to idle
+    t =    26.54s     Find the Window at {{230.0, 305.0}, {375.0, 486.0}}
+    t =    26.54s     Check for interrupting elements affecting Window
+    t =    26.60s         Wait for com.apple.DocumentManager.DockFolderViewService to idle
+    t =    26.67s         Wait for com.apple.springboard to idle
+    t =    26.80s Ignoring failure to get hierarchy for remote element in process 53980 (Error getting main window kAXErrorServerNotFound)
+    t =    26.80s Ignoring failure to get hierarchy for remote element in process 53980 (Error getting main window kAXErrorServerNotFound)
+    t =    26.82s     Synthesize event
+    t =    26.85s         Find the Window at {{230.0, 305.0}, {375.0, 486.0}}
+    t =    26.86s         Find the Window at {{230.0, 305.0}, {375.0, 486.0}}
+    t =    26.87s         Find the Window at {{230.0, 305.0}, {375.0, 486.0}}
+    t =    26.88s         Find the Window at {{230.0, 305.0}, {375.0, 486.0}}
+    t =    26.88s         Find the Window at {{230.0, 305.0}, {375.0, 486.0}}
+    t =    28.03s     Wait for com.natophonetics.app to idle
+    t =    30.07s Tear Down
+Test Case '-[WindowResizeUITests.WindowResizeUITests testLargeTextWindowHeader]' passed (31.013 seconds).
+Test Suite 'WindowResizeUITests' passed at 2026-11-17 15:29:02.488.
+	 Executed 1 test, with 0 failures (0 unexpected) in 31.013 (31.017) seconds
+Test Suite 'WindowResizeUITests.xctest' passed at 2026-11-17 15:29:02.489.
+	 Executed 1 test, with 0 failures (0 unexpected) in 31.013 (31.019) seconds
+Test Suite 'Selected tests' passed at 2026-11-17 15:29:02.493.
+	 Executed 1 test, with 0 failures (0 unexpected) in 31.013 (31.029) seconds
+2026-11-17 15:29:03.158 xcodebuild[54033:9738106] [MT] IDETestOperationsObserverDebug: 41.823 elapsed -- Testing started completed.
+2026-11-17 15:29:03.158 xcodebuild[54033:9738106] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-11-17 15:29:03.159 xcodebuild[54033:9738106] [MT] IDETestOperationsObserverDebug: 41.823 sec, +41.823 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/nato-ios-run06-resize/enlarged.xcresult
+
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+
+EXIT 0

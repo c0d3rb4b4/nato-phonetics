@@ -1,0 +1,101 @@
+[
+  {
+    "file": "light-1280-pace.png",
+    "width": 1280,
+    "height": 900,
+    "theme": "light",
+    "state": "pace",
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T10:04:36.938Z",
+    "command": "node scripts/verify-pacing-browser.cjs dist docs/evidence/run10",
+    "provider": "controlled Web Speech completion, production app DOM"
+  },
+  {
+    "file": "light-1280-highlight.png",
+    "width": 1280,
+    "height": 900,
+    "theme": "light",
+    "state": "highlight",
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T10:04:37.152Z",
+    "command": "node scripts/verify-pacing-browser.cjs dist docs/evidence/run10",
+    "provider": "controlled Web Speech completion, production app DOM"
+  },
+  {
+    "file": "light-1280-paged-long-input.png",
+    "width": 1280,
+    "height": 900,
+    "theme": "light",
+    "state": "paged-long-input",
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T10:04:40.095Z",
+    "command": "node scripts/verify-pacing-browser.cjs dist docs/evidence/run10",
+    "provider": "controlled Web Speech completion, production app DOM"
+  },
+  {
+    "file": "light-1280-individual-page-2-highlight.png",
+    "width": 1280,
+    "height": 900,
+    "theme": "light",
+    "state": "individual-page-2-highlight",
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T10:04:40.263Z",
+    "command": "node scripts/verify-pacing-browser.cjs dist docs/evidence/run10",
+    "provider": "controlled Web Speech completion, production app DOM"
+  },
+  {
+    "file": "dark-320-pace.png",
+    "width": 320,
+    "height": 568,
+    "theme": "dark",
+    "state": "pace",
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T10:04:41.684Z",
+    "command": "node scripts/verify-pacing-browser.cjs dist docs/evidence/run10",
+    "provider": "controlled Web Speech completion, production app DOM"
+  },
+  {
+    "file": "dark-320-highlight.png",
+    "width": 320,
+    "height": 568,
+    "theme": "dark",
+    "state": "highlight",
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T10:04:41.833Z",
+    "command": "node scripts/verify-pacing-browser.cjs dist docs/evidence/run10",
+    "provider": "controlled Web Speech completion, production app DOM"
+  },
+  {
+    "file": "dark-320-paged-long-input.png",
+    "width": 320,
+    "height": 568,
+    "theme": "dark",
+    "state": "paged-long-input",
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T10:04:44.851Z",
+    "command": "node scripts/verify-pacing-browser.cjs dist docs/evidence/run10",
+    "provider": "controlled Web Speech completion, production app DOM"
+  },
+  {
+    "file": "dark-320-individual-page-2-highlight.png",
+    "width": 320,
+    "height": 568,
+    "theme": "dark",
+    "state": "individual-page-2-highlight",
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T10:04:44.999Z",
+    "command": "node scripts/verify-pacing-browser.cjs dist docs/evidence/run10",
+    "provider": "controlled Web Speech completion, production app DOM"
+  },
+  {
+    "file": "dark-320-pace-200-percent.png",
+    "width": 320,
+    "height": 568,
+    "theme": "dark",
+    "state": "pace-200-percent",
+    "browser": "Edg/157.0.4341.60",
+    "capturedAt": "2026-11-18T10:04:45.219Z",
+    "command": "node scripts/verify-pacing-browser.cjs dist docs/evidence/run10",
+    "provider": "controlled Web Speech completion, production app DOM"
+  }
+]

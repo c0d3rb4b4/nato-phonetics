@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-18",
+  "node": "22.23.0",
+  "npm": "10.9.4",
+  "browser": "Edge157.0.4341.60",
+  "hostOS": "ProductName:\t\tmacOS\nProductVersion:\t\t26.6.2\nBuildVersion:\t\t25G83\n",
+  "commands": [
+    {
+      "command": "npm run lint",
+      "exitCode": 0,
+      "scope": "final source",
+      "evidence": "shared/lint.log",
+      "logModifiedAt": "2026-11-18T14:34:27.021408+00:00"
+    },
+    {
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "scope": "final source",
+      "evidence": "shared/types.log",
+      "logModifiedAt": "2026-11-18T14:28:02.208543+00:00"
+    },
+    {
+      "command": "node docs/evidence/run16/shared/capture-web-inputs.cjs",
+      "exitCode": 0,
+      "scope": "unchanged production build options; actual esbuild inputs captured",
+      "evidence": "shared/build.log",
+      "logModifiedAt": "2026-11-18T14:22:32.711088+00:00"
+    },
+    {
+      "command": "node scripts/verify-offline-browser.cjs dist docs/evidence/run16",
+      "exitCode": 0,
+      "scope": "final production A + explicit modified-HTML fixture B;10 scenario groups",
+      "evidence": "shared/offline-final.log",
+      "logModifiedAt": "2026-11-18T14:34:42.268287+00:00"
+    },
+    {
+      "command": "node docs/evidence/run16/capture-light.cjs",
+      "exitCode": 0,
+      "scope": "final production A actual Light readiness/policy",
+      "evidence": "shared/light-captures.log",
+      "logModifiedAt": "2026-11-18T14:23:20.803424+00:00"
+    },
+    {
+      "command": "node scripts/verify-app-browser.cjs dist",
+      "exitCode": 0,
+      "scope": "full app regression on split-policy checkpoint; final restored A matches initial pinned full-regression bytes",
+      "evidence": "shared/app-browser-final.log",
+      "logModifiedAt": "2026-11-18T14:22:02.828548+00:00"
+    },
+    {
+      "command": "node scripts/verify-progress-concurrency-browser.cjs dist docs/evidence/run16/concurrency-diagnostic",
+      "exitCode": 0,
+      "scope": "seven original cases with failure-only diagnostics; earlier pinned command remains failed",
+      "evidence": "shared/concurrency-diagnostic.log",
+      "logModifiedAt": "2026-11-18T14:10:07.311307+00:00"
+    },
+    {
+      "command": "npm run build:ios:simulator",
+      "exitCode": 0,
+      "scope": "final pinned wrapper/bundle; unsigned simulator app",
+      "evidence": "ios/build.log",
+      "logModifiedAt": "2026-11-18T14:22:55.852434+00:00"
+    },
+    {
+      "command": "xcodebuild test Capture testNativePolicy final-policy.xcresult",
+      "exitCode": 0,
+      "scope": "final changed-Offline label/frame/reachability; adjacent Speech pixels fail, no whole-policy pass",
+      "evidence": "ios/final-policy.log",
+      "logModifiedAt": "2026-11-18T14:28:08.793188+00:00"
+    },
+    {
+      "command": "python3 -u docs/evidence/run16/android/policy.py",
+      "exitCode": 0,
+      "scope": "installed Debug + final actual Metro graph; changed Offline paragraph",
+      "evidence": "android/policy-recovery.log",
+      "logModifiedAt": "2026-11-18T14:25:50.512094+00:00"
+    },
+    {
+      "command": "node docs/evidence/run16/android/capture-loaded-bundles.cjs",
+      "exitCode": 0,
+      "scope": "actual Hermes loaded graph",
+      "evidence": "android/loaded-javascript-recovery.log",
+      "logModifiedAt": "2026-11-18T14:26:00.771427+00:00"
+    },
+    {
+      "command": "npm audit --json --audit-level=low",
+      "exitCode": 1,
+      "scope": "current live registry;29high/3low unchanged lock",
+      "evidence": "shared/audit.json",
+      "logModifiedAt": "2026-11-18T14:11:43.592147+00:00"
+    },
+    {
+      "command": "npm run audit:review",
+      "exitCode": 1,
+      "scope": "new unresolved high fingerprints; stderr separate",
+      "evidence": "shared/audit-review.log",
+      "logModifiedAt": "2026-11-18T14:11:45.102396+00:00"
+    },
+    {
+      "command": "python3 docs/evidence/run16/shared/finalize.py",
+      "exitCode": 0,
+      "scope": "final source/resource/image/hash/link/manual-count reconciliation",
+      "evidence": "verification.json",
+      "logModifiedAt": "2026-11-18T14:35:21.551359+00:00"
+    }
+  ]
+}

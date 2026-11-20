@@ -1,0 +1,53 @@
+[
+  {
+    "file": "home-from-launcher.png",
+    "state": "home-from-launcher",
+    "os": "iOS 26.2",
+    "device": "iPhone 17 Pro",
+    "width": 1206,
+    "height": 2622,
+    "dpr": 3,
+    "theme": "dark app / light launcher",
+    "contentSizeCategory": "large",
+    "capturedAt": "2026-11-18T12:46:11.891000+00:00",
+    "sha256": "2758656e1a0add52633166babcee4a5ef35998d25ade86204312599a381a36fe",
+    "command": "XCUIScreen.main.screenshot; xcrun xcresulttool export attachments",
+    "qualification": "Passing real Release installed-app/launcher test; capture.log",
+    "candidateManifestSha256": "ab074efd3f8310f64d8cb337c734735118cc94de6864dd22f91f0a6fa6f05142",
+    "evidenceKind": "actual installed native app or OS launcher"
+  },
+  {
+    "file": "launcher-release.png",
+    "state": "launcher-release",
+    "os": "iOS 26.2",
+    "device": "iPhone 17 Pro",
+    "width": 1206,
+    "height": 2622,
+    "dpr": 3,
+    "theme": "dark app / light launcher",
+    "contentSizeCategory": "large",
+    "capturedAt": "2026-11-18T12:46:09.171000+00:00",
+    "sha256": "ccc9637b8a1e06cb91747f34e52d7e45a1833234c63c23c114125cf0e62a4235",
+    "command": "XCUIScreen.main.screenshot; xcrun xcresulttool export attachments",
+    "qualification": "Passing real Release installed-app/launcher test; capture.log",
+    "candidateManifestSha256": "ab074efd3f8310f64d8cb337c734735118cc94de6864dd22f91f0a6fa6f05142",
+    "evidenceKind": "actual installed native app or OS launcher"
+  },
+  {
+    "file": "home-release.png",
+    "state": "home-release",
+    "os": "iOS 26.2",
+    "device": "iPhone 17 Pro",
+    "width": 1206,
+    "height": 2622,
+    "dpr": 3,
+    "theme": "dark app / light launcher",
+    "contentSizeCategory": "large",
+    "capturedAt": "2026-11-18T12:46:05.762000+00:00",
+    "sha256": "c19d73512c064b73d255bd005be2f7be964c210541eaa20df2d8fb0feef542d3",
+    "command": "XCUIScreen.main.screenshot; xcrun xcresulttool export attachments",
+    "qualification": "Passing real Release installed-app/launcher test; capture.log",
+    "candidateManifestSha256": "ab074efd3f8310f64d8cb337c734735118cc94de6864dd22f91f0a6fa6f05142",
+    "evidenceKind": "actual installed native app or OS launcher"
+  }
+]

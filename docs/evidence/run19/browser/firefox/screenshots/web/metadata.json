@@ -1,0 +1,116 @@
+[
+  {
+    "file": "desktop-merged-progress.png",
+    "state": "Both simultaneous pointer answers saved",
+    "capturedAt": "2026-11-18T16:23:24.049Z",
+    "engine": "firefox",
+    "browser": "159.0",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:159.0) Gecko/20100101 Firefox/159.0",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "theme": "light",
+    "command": "node scripts/verify-browser-support.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run19/browser/firefox",
+      "firefox"
+    ]
+  },
+  {
+    "file": "narrow-merged-progress.png",
+    "state": "Same saved totals in the second dark narrow window",
+    "capturedAt": "2026-11-18T16:23:24.074Z",
+    "engine": "firefox",
+    "browser": "159.0",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:159.0) Gecko/20100101 Firefox/159.0",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "theme": "dark",
+    "command": "node scripts/verify-browser-support.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run19/browser/firefox",
+      "firefox"
+    ]
+  },
+  {
+    "file": "narrow-lock-timeout.png",
+    "state": "Real five-second lock timeout retains one unsaved answer",
+    "capturedAt": "2026-11-18T16:23:30.126Z",
+    "engine": "firefox",
+    "browser": "159.0",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:159.0) Gecko/20100101 Firefox/159.0",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "theme": "dark",
+    "command": "node scripts/verify-browser-support.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run19/browser/firefox",
+      "firefox"
+    ]
+  },
+  {
+    "file": "desktop-offline-progress.png",
+    "state": "Direct offline progress route retains saved aggregates",
+    "capturedAt": "2026-11-18T16:23:30.646Z",
+    "engine": "firefox",
+    "browser": "159.0",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:159.0) Gecko/20100101 Firefox/159.0",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "theme": "light",
+    "command": "node scripts/verify-browser-support.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run19/browser/firefox",
+      "firefox"
+    ]
+  },
+  {
+    "file": "desktop-offline-converter.png",
+    "state": "Production converter works from cached shell offline",
+    "capturedAt": "2026-11-18T16:23:30.873Z",
+    "engine": "firefox",
+    "browser": "159.0",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:159.0) Gecko/20100101 Firefox/159.0",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "theme": "light",
+    "command": "node scripts/verify-browser-support.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run19/browser/firefox",
+      "firefox"
+    ]
+  },
+  {
+    "file": "narrow-cold-offline-progress.png",
+    "state": "New persistent browser session opens saved progress offline",
+    "capturedAt": "2026-11-18T16:23:33.685Z",
+    "engine": "firefox",
+    "browser": "159.0",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:159.0) Gecko/20100101 Firefox/159.0",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "theme": "dark",
+    "command": "node scripts/verify-browser-support.cjs",
+    "arguments": [
+      "dist",
+      "docs/evidence/run19/browser/firefox",
+      "firefox"
+    ]
+  }
+]

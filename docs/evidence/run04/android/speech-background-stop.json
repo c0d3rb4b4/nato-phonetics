@@ -1,0 +1,41 @@
+{
+  "events": [
+    {
+      "id": "072c40fc-81b8-4a1f-8710-8069742a4424",
+      "kind": "tts-start",
+      "time": 1794853188297
+    },
+    {
+      "id": "072c40fc-81b8-4a1f-8710-8069742a4424",
+      "kind": "tts-cancel",
+      "time": 1794853188682
+    }
+  ],
+  "states": [
+    {
+      "status": "preparing",
+      "time": 1794853187949,
+      "tokenCount": 26,
+      "tokenIndex": -1
+    },
+    {
+      "status": "preparing",
+      "time": 1794853188160,
+      "tokenCount": 26,
+      "tokenIndex": -1
+    },
+    {
+      "status": "playing",
+      "time": 1794853188160,
+      "tokenCount": 26,
+      "tokenIndex": 0
+    },
+    {
+      "result": "cancelled",
+      "status": "idle",
+      "time": 1794853188553,
+      "tokenCount": 26,
+      "tokenIndex": 0
+    }
+  ]
+}

@@ -1,43 +1,80 @@
 # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
-# dependencies
+# Dependencies
 node_modules/
+.bundle/
+vendor/bundle/
 
-# Expo
-.expo/
+# Build output
 dist/
 web-build/
-expo-env.d.ts
+artifacts/
+coverage/
+playwright-report/
+test-results/
 
-# Native
+# Native build caches and products (keep the Android/iOS source projects)
+.gradle/
+.cxx/
 .kotlin/
-*.orig.*
+android/**/build/
+ios/build/
+ios/Pods/
+DerivedData/
+*.xcresult/
+*.dSYM/
+*.app/
+*.apk
+*.aab
+*.ipa
+*.bcsymbolmap
+
+# Machine-specific native settings and Xcode user state
+android/local.properties
+ios/.xcode.env.local
+**/xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+*.local.xcconfig
+
+# Signing material; the standard public development key is required for debug builds
+*.keystore
+!/android/app/debug.keystore
+*.pfx
 *.jks
 *.p8
 *.p12
 *.key
 *.mobileprovision
+*.pem
 
 # Metro
 .metro-health-check*
 
-# debug
+# Local tool logs
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+*.orig.*
 
-# macOS
+# OS files
 .DS_Store
-*.pem
+Thumbs.db
+Desktop.ini
 
-# local env files
-.env*.local
+# Local environment files (keep shareable templates)
+.env
+.env.*
+!.env.example
+!.env.*.example
 
-# typescript
+# TypeScript and Python caches
 *.tsbuildinfo
+__pycache__/
+*.py[cod]
 
 app-example
 
-# generated native folders
-/ios
-/android
+# Keep docs/, including the full evidence history and screenshots, for handoff.
+# Keep lockfiles, the Gradle wrapper, shared Xcode projects/schemes, and ios/.xcode.env.

@@ -1,0 +1,7 @@
+{
+  "firstExtraction": "Python3.9 TypeError: extractall does not support filter; no candidate extracted",
+  "correction": "tar -xzf trusted repository archive into owned artifacts/run25/candidate; every release file SHA256 verified",
+  "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+  "evidenceSummaryFirstAttempt": "KeyError: failure after a comprehension rebound local report variable; copied evidence preserved; summary generation corrected with separate host variable. No runtime test failed or altered.",
+  "verificationFirstAttempt": "Three forward links to verification.json fail before that generated output exists. Verifier now validates the known output target after generating it; every other local target checked normally. No product/runtime failure."
+}

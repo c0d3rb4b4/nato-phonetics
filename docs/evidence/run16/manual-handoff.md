@@ -1,0 +1,14 @@
+# Run 16 supplement to the M11 handoff
+
+Prepared 18 November 2026. **All human results unperformed.** This supplements the final P10.6 candidate handoff, not a separate acceptance phase or publication request. [Source manifest](source-identity.json), [actual evidence](README.md), [screenshots](screenshots/index.md), [offline contract](../../WEB_OFFLINE.md).
+
+No new owner input blocks current engineering. New security fingerprints, native paragraph/measurement issues, the injected Retry failure, other-engine/frozen/legacy-hosted assurance and host configuration are engineering tasks. Private signing/hosting access, device/provider packs and release decisions remain M11.1/.2 only when a concrete prepared candidate needs them.
+
+| M11 | Human scenario on integrated candidate | Expected/result fields |
+|---|---|---|
+| .4 | On physical small/large devices, use browser Menu readiness/update/Retry with keyboard/AT and large text; read the complete policy including speech microphone and offline paragraphs. Compare native separated policy title/body readability. | Readable reachable controls/content; speech-provider limitations announced; capture platform/device/OS/browser, text size/theme, AT, candidate hash, steps, actual/pass/fail/evidence/person/date. Unperformed. |
+| .5 | Complete a round/save progress; keep another window/draft open while an update waits. Finish/save or explicitly discard in-memory work, close every window and reopen. Check saved totals/settings. Try storage restrictions/eviction recovery without clearing useful data. | No forced reload; waiting guidance; saved data retained, drafts/unsaved events have disclosed page lifetime. Real interruption/physical browser results unperformed. |
+| .6 | First connected successful setup, airplane-mode browser close/cold launch of reference/converter/practice/progress, then independent audio/provider checks. Inspect network/provider behavior and cache contents against policy. | Shell availability separated from voice/provider connectivity; first-ever offline visit cannot succeed without resources; cache contains public build assets only. Record provider/voice/network evidence. Unperformed; no recognition permission/provider acceptance inferred. |
+| .7 | At the actual authorized HTTPS URL, validate every direct route/404/headers, upgrade from the real prior deployed version and rollback. Install signed internal native artifacts and review accurate metadata/policy/screenshots. | Real URL/host/access, artifact and shell IDs, versions, exact old/new client states and disposition. Unperformed. Current audit gate is red; no release-risk acceptance recorded. |
+
+Signing, publication, audible content, physical AT, learning usability and owner policy acceptance remain pending. A later human failure reopens its owning P task; all existing manual worksheets and native P1/P3 failures remain valid.

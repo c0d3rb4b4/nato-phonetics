@@ -1,0 +1,12 @@
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+null !== 'true'
+
+    at /Users/mac/dev/apps/nato-phonetics/scripts/verify-pacing-browser.cjs:29:19 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: null,
+  expected: 'true',
+  operator: 'strictEqual',
+  diff: 'simple'
+}

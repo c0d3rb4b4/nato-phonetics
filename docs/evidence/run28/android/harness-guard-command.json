@@ -1,0 +1,23 @@
+{
+  "command": [
+    "python3",
+    "docs/evidence/run28/android/check-harness-guards.py"
+  ],
+  "cwd": "/Users/mac/dev/apps/nato-phonetics",
+  "environment": {
+    "ANDROID_HOME": "/Users/mac/Library/Android/sdk",
+    "PATH": "/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Users/mac/.codex/tmp/arg0-macos/codex-arg05mnPUr:/Users/mac/.vscode/extensions/openai.chatgpt-26.1111.21308-darwin-arm64/bin/macos-aarch64"
+  },
+  "startedAt": "2026-11-20T10:41:52.013301+00:00",
+  "before": {
+    "availableBytes": 1184575488,
+    "swap": "vm.swapusage: total = 11264.00M  used = 10576.25M  free = 687.75M  (encrypted)"
+  },
+  "exitCode": 0,
+  "durationSeconds": 0.410461125,
+  "after": {
+    "availableBytes": 1184493568,
+    "swap": "vm.swapusage: total = 11264.00M  used = 10576.25M  free = 687.75M  (encrypted)"
+  },
+  "finishedAt": "2026-11-20T10:41:52.430770+00:00"
+}

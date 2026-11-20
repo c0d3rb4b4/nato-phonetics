@@ -1,0 +1,263 @@
+{
+  "before": {
+    "log": "metrics-test.log",
+    "lines": [
+      {
+        "text": "Speech and connectivity\n",
+        "x": 0,
+        "y": 0,
+        "width": 231.42083168029785,
+        "height": 25,
+        "descender": 5.390625,
+        "capHeight": 14.091796875,
+        "ascender": 19.609375,
+        "xHeight": 10.68359375
+      },
+      {
+        "text": "Requested playback passes text through the native ",
+        "x": 0,
+        "y": 25,
+        "width": 370,
+        "height": 25,
+        "descender": 4.42578125,
+        "capHeight": 11.2734375,
+        "ascender": 20.57421875,
+        "xHeight": 8.421875
+      },
+      {
+        "text": "operating system speech API or directly to the ",
+        "x": 0,
+        "y": 50,
+        "width": 338.609375,
+        "height": 25,
+        "descender": 4.42578125,
+        "capHeight": 11.2734375,
+        "ascender": 20.57421875,
+        "xHeight": 8.421875
+      },
+      {
+        "text": "browser\u2019s speech provider on web. Voices, ",
+        "x": 0,
+        "y": 75,
+        "width": 313.890625,
+        "height": 25,
+        "descender": 4.42578125,
+        "capHeight": 11.2734375,
+        "ascender": 20.57421875,
+        "xHeight": 8.421875
+      },
+      {
+        "text": "processing location, connectivity and retention ",
+        "x": 0,
+        "y": 100,
+        "width": 342.828125,
+        "height": 25,
+        "descender": 4.42578125,
+        "capHeight": 11.2734375,
+        "ascender": 20.57421875,
+        "xHeight": 8.421875
+      },
+      {
+        "text": "depend on that provider. Some voices may use ",
+        "x": 0,
+        "y": 125,
+        "width": 342.7421875,
+        "height": 25,
+        "descender": 4.42578125,
+        "capHeight": 11.2734375,
+        "ascender": 20.57421875,
+        "xHeight": 8.421875
+      },
+      {
+        "text": "network services. The app does not enforce on-",
+        "x": 0,
+        "y": 150,
+        "width": 347.3671875,
+        "height": 25,
+        "descender": 4.42578125,
+        "capHeight": 11.2734375,
+        "ascender": 20.57421875,
+        "xHeight": 8.421875
+      },
+      {
+        "text": "device speech or verify provider retention. Check ",
+        "x": 0,
+        "y": 175,
+        "width": 360.34375,
+        "height": 25,
+        "descender": 4.42578125,
+        "capHeight": 11.2734375,
+        "ascender": 20.57421875,
+        "xHeight": 8.421875
+      },
+      {
+        "text": "your provider\u2019s settings and policy before entering ",
+        "x": 0,
+        "y": 200,
+        "width": 368.796875,
+        "height": 25,
+        "descender": 4.42578125,
+        "capHeight": 11.2734375,
+        "ascender": 20.57421875,
+        "xHeight": 8.421875
+      },
+      {
+        "text": "sensitive text. Speech output does not request microphone access.",
+        "x": 0,
+        "y": 225,
+        "width": 370,
+        "height": 25,
+        "descender": 4.42578125,
+        "capHeight": 11.2734375,
+        "ascender": 20.57421875,
+        "xHeight": 8.421875
+      }
+    ],
+    "frame": {
+      "x": 16,
+      "y": 1721.3333740234375,
+      "width": 370,
+      "height": 274.9998779296875
+    },
+    "lineCount": 10
+  },
+  "after": {
+    "log": "metrics-patched-test.log",
+    "lines": [
+      {
+        "text": "Speech and connectivity\n",
+        "x": 0,
+        "y": 0,
+        "width": 231.42083168029785,
+        "height": 25,
+        "descender": 5.390625,
+        "capHeight": 14.091796875,
+        "ascender": 19.609375,
+        "xHeight": 10.68359375
+      },
+      {
+        "text": "Requested playback passes text through the native ",
+        "x": 0,
+        "y": 25,
+        "width": 370,
+        "height": 25,
+        "descender": 4.42578125,
+        "capHeight": 11.2734375,
+        "ascender": 20.57421875,
+        "xHeight": 8.421875
+      },
+      {
+        "text": "operating system speech API or directly to the ",
+        "x": 0,
+        "y": 50,
+        "width": 338.609375,
+        "height": 25,
+        "descender": 4.42578125,
+        "capHeight": 11.2734375,
+        "ascender": 20.57421875,
+        "xHeight": 8.421875
+      },
+      {
+        "text": "browser\u2019s speech provider on web. Voices, ",
+        "x": 0,
+        "y": 75,
+        "width": 313.890625,
+        "height": 25,
+        "descender": 4.42578125,
+        "capHeight": 11.2734375,
+        "ascender": 20.57421875,
+        "xHeight": 8.421875
+      },
+      {
+        "text": "processing location, connectivity and retention ",
+        "x": 0,
+        "y": 100,
+        "width": 342.828125,
+        "height": 25,
+        "descender": 4.42578125,
+        "capHeight": 11.2734375,
+        "ascender": 20.57421875,
+        "xHeight": 8.421875
+      },
+      {
+        "text": "depend on that provider. Some voices may use ",
+        "x": 0,
+        "y": 125,
+        "width": 342.7421875,
+        "height": 25,
+        "descender": 4.42578125,
+        "capHeight": 11.2734375,
+        "ascender": 20.57421875,
+        "xHeight": 8.421875
+      },
+      {
+        "text": "network services. The app does not enforce on-",
+        "x": 0,
+        "y": 150,
+        "width": 347.3671875,
+        "height": 25,
+        "descender": 4.42578125,
+        "capHeight": 11.2734375,
+        "ascender": 20.57421875,
+        "xHeight": 8.421875
+      },
+      {
+        "text": "device speech or verify provider retention. Check ",
+        "x": 0,
+        "y": 175,
+        "width": 360.34375,
+        "height": 25,
+        "descender": 4.42578125,
+        "capHeight": 11.2734375,
+        "ascender": 20.57421875,
+        "xHeight": 8.421875
+      },
+      {
+        "text": "your provider\u2019s settings and policy before entering ",
+        "x": 0,
+        "y": 200,
+        "width": 368.796875,
+        "height": 25,
+        "descender": 4.42578125,
+        "capHeight": 11.2734375,
+        "ascender": 20.57421875,
+        "xHeight": 8.421875
+      },
+      {
+        "text": "sensitive text. Speech output does not request ",
+        "x": 0,
+        "y": 225,
+        "width": 341.59375,
+        "height": 25,
+        "descender": 4.42578125,
+        "capHeight": 11.2734375,
+        "ascender": 20.57421875,
+        "xHeight": 8.421875
+      },
+      {
+        "text": "microphone access.",
+        "x": 0,
+        "y": 250,
+        "width": 145.34375,
+        "height": 25,
+        "descender": 4.42578125,
+        "capHeight": 11.2734375,
+        "ascender": 20.57421875,
+        "xHeight": 8.421875
+      }
+    ],
+    "frame": {
+      "x": 16,
+      "y": 1721.3333740234375,
+      "width": 370,
+      "height": 275
+    },
+    "lineCount": 11
+  },
+  "diagnosticJSIdentical": true,
+  "diagnosticJSsha256": "fa5dfebd0a2b072fb0c55040a3d20ec9ea3c299d84a363abe9dd87aa886ecca8",
+  "beforeExecutableSha256": "b777f51141c0190b078849b10e3edf1e7d703fbfc7dc1122b33b576bff01f92e",
+  "afterExecutableSha256": "5f91c57c82d762c5e9d62b1b2a5606d62cc625d46fe354284c8b079c65305765",
+  "nativeExecutableChanged": true,
+  "mechanism": "Original Yoga narrows rounded absolute edges to float before subtraction; tiny height loss makes TextKit collapse the last line. Merged Yoga2037 subtracts in double then narrows. Actual same-JS native comparison restores complete last line; Android live font scaling is separate."
+}

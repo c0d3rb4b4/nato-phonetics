@@ -1,0 +1,8 @@
+Invalid argument
+RUN release-phone-maximum-focused-test.log
+Traceback (most recent call last):
+  File "/Users/mac/dev/apps/nato-phonetics/docs/evidence/run07/ios/run-release-phone.py", line 36, in <module>
+    run(['xcodebuild','test-without-building','-project',str(DIRECTORY/'Capture.xcodeproj'),'-scheme','Capture','-configuration','Debug','-destination','platform=iOS Simulator,id='+DEVICE,'-derivedDataPath',str(DIRECTORY/'DerivedData'),'CODE_SIGNING_ALLOWED=NO','-parallel-testing-enabled','NO','-resultBundlePath',result,'-only-testing:CaptureUITests/CaptureUITests/'+method],name+'-test.log')
+  File "/Users/mac/dev/apps/nato-phonetics/docs/evidence/run07/ios/run-release-phone.py", line 14, in run
+    if p.returncode:raise RuntimeError(log+' failed')
+RuntimeError: release-phone-maximum-focused-test.log failed

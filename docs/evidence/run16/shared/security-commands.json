@@ -1,0 +1,33 @@
+[
+  {
+    "command": [
+      "npm",
+      "audit",
+      "--json",
+      "--audit-level=low"
+    ],
+    "exitCode": 1,
+    "at": "2026-11-18T14:11:43.592279+00:00"
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "audit:review"
+    ],
+    "exitCode": 1,
+    "at": "2026-11-18T14:11:45.102538+00:00"
+  },
+  {
+    "command": [
+      "npm",
+      "view",
+      "metro@0.83",
+      "version",
+      "dependencies.image-size",
+      "--json"
+    ],
+    "exitCode": 0,
+    "at": "2026-11-18T14:11:45.392991+00:00"
+  }
+]

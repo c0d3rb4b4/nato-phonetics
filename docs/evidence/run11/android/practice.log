@@ -1,0 +1,7 @@
+{"check": "digit-three-native-completes", "passed": true, "timestamp": "2026-11-18T10:38:36Z", "snapshot": {"owner": "alphabet:\u00abr0\u00bb", "result": {"status": "completed"}, "status": "idle", "tokenCount": 1, "tokenIndex": 0, "warning": null}}
+{"check": "numeric-native-round", "passed": true, "timestamp": "2026-11-18T10:40:50Z", "symbols": ["8", "1", "0", "7", "2"], "duplicateSymbols": false, "menuRetainsFeedback": true}
+{"check": "native-example-postcode", "passed": true, "timestamp": "2026-11-18T10:41:42Z", "snapshot": {"owner": "letter-quiz:\u00abr1\u00bb", "result": {"status": "completed"}, "status": "idle", "tokenCount": 7, "tokenIndex": 6, "warning": null}}
+{"check": "native-example-callsign", "passed": true, "timestamp": "2026-11-18T10:42:15Z", "snapshot": {"owner": "letter-quiz:\u00abr1\u00bb", "result": {"status": "completed"}, "status": "idle", "tokenCount": 6, "tokenIndex": 5, "warning": null}}
+{"check": "mixed-and-example-native", "passed": true, "timestamp": "2026-11-18T10:42:27Z", "exampleAudio": "real provider completion; no human listening pass"}
+{"check": "native-voice-search-reset", "passed": true, "timestamp": "2026-11-18T10:42:59Z", "storageUnchanged": true}
+{"check": "numeric-live-state-retained", "passed": true, "timestamp": "2026-11-18T10:44:09Z", "symbol": "6", "readabilityAcceptance": "FAILED inherited P05.2; inspect frame, no repair shipped"}

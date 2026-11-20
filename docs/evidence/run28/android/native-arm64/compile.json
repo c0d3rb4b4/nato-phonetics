@@ -1,0 +1,55 @@
+{
+  "command": [
+    "/Users/mac/Library/Android/sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++",
+    "-DNDEBUG",
+    "--target=aarch64-none-linux-android24",
+    "--sysroot=/Users/mac/Library/Android/sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/darwin-x86_64/sysroot",
+    "-std=c++20",
+    "-fexceptions",
+    "-frtti",
+    "-g1",
+    "-O2",
+    "-DANDROID",
+    "-DRN_SERIALIZABLE_STATE",
+    "-DFOLLY_NO_CONFIG=1",
+    "-DFOLLY_MOBILE=1",
+    "-DFOLLY_USE_LIBCPP=1",
+    "-DFOLLY_CFG_NO_COROUTINES=1",
+    "-DFOLLY_HAVE_CLOCK_GETTIME=1",
+    "-DFOLLY_HAVE_RECVMMSG=1",
+    "-DFOLLY_HAVE_PTHREAD=1",
+    "-DFOLLY_HAVE_XSI_STRERROR_R=1",
+    "-I/Users/mac/dev/apps/nato-phonetics/artifacts/run28/prefab-arm64/modules/reactnative/include",
+    "-I/Users/mac/dev/apps/nato-phonetics/artifacts/run28/prefab-arm64/modules/jsi/include",
+    "-I/Users/mac/.gradle/caches/8.14.3/transforms/b35483dbaae88a5871caa7f8394aeb91/transformed/fbjni-0.7.0/prefab/modules/fbjni/include",
+    "-I/Users/mac/dev/apps/nato-phonetics/node_modules/react-native/ReactCommon",
+    "-I/Users/mac/dev/apps/nato-phonetics/node_modules/react-native/ReactCommon/react/renderer/graphics/platform/android",
+    "-I/Users/mac/dev/apps/nato-phonetics/node_modules/react-native/ReactCommon/react/renderer/components/view/platform/android",
+    "/Users/mac/dev/apps/nato-phonetics/scripts/native-tests/font-environment.cpp",
+    "/Users/mac/dev/apps/nato-phonetics/artifacts/run28/prefab-arm64/modules/reactnative/libs/android.arm64-v8a/libreactnative.so",
+    "/Users/mac/dev/apps/nato-phonetics/artifacts/run28/prefab-arm64/modules/jsi/libs/android.arm64-v8a/libjsi.so",
+    "/Users/mac/.gradle/caches/8.14.3/transforms/b35483dbaae88a5871caa7f8394aeb91/transformed/fbjni-0.7.0/prefab/modules/fbjni/libs/android.arm64-v8a/libfbjni.so",
+    "-llog",
+    "-landroid",
+    "-o",
+    "/Users/mac/dev/apps/nato-phonetics/artifacts/run28/native-arm64/font-environment"
+  ],
+  "abi": "arm64-v8a",
+  "contextGenerationAbi": true,
+  "buildVariant": "Release",
+  "libraryDebugAbi": false,
+  "exitCode": 0,
+  "libraries": {
+    "reactnative": {
+      "path": "/Users/mac/dev/apps/nato-phonetics/artifacts/run28/prefab-arm64/modules/reactnative/libs/android.arm64-v8a/libreactnative.so",
+      "sha256": "bfc4388dfe7cfd9e35f3df2d46f42973fd8157d97cb33193a2821c7db913c717"
+    },
+    "jsi": {
+      "path": "/Users/mac/dev/apps/nato-phonetics/artifacts/run28/prefab-arm64/modules/jsi/libs/android.arm64-v8a/libjsi.so",
+      "sha256": "a9eec6684ff84a7d79c6e03c7825f4a1fae90ac905f57309ee1b3037b4b61a35"
+    }
+  },
+  "executableSha256": "952b6c0f5b37fbc34977090478cdb8b2f29e8e4609e05da05b11c4d2cc9506cf",
+  "fontEnvironmentAbi": true,
+  "exportedYogaHeaderSha256": "74ff94afa4419bb920ed30d71aaa6c5c918674592f9979b6224a138580421d0a"
+}

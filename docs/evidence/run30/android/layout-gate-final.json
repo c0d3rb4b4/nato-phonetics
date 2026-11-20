@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/tmp/nato-phonetics-toolchain/node_modules/node/bin/node",
+    "scripts/check-android-release-tiles.cjs",
+    "docs/evidence/run30/android"
+  ],
+  "cwd": "/Users/mac/dev/apps/nato-phonetics",
+  "startedAt": "2026-11-20T12:32:43.038574+00:00",
+  "availableBytesBefore": 1395785728,
+  "exitCode": 0,
+  "durationSeconds": 0.055515541999999994,
+  "availableBytesAfter": 1395765248,
+  "finishedAt": "2026-11-20T12:32:43.094112+00:00"
+}

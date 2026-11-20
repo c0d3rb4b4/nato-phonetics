@@ -1,0 +1,62 @@
+
+> nato-phonetics@1.0.0 audit:review
+> node scripts/check-audit.cjs
+
+Raw npm audit exit status: 1
+npm audit findings (still unresolved): {"info":0,"low":3,"moderate":0,"high":28,"critical":0,"total":31}
+  high: @jest/environment
+  high: @jest/fake-timers
+  high: @jest/transform
+  high: @react-native-community/cli
+  high: @react-native-community/cli-clean
+  high: @react-native-community/cli-config
+  high: @react-native-community/cli-config-android
+  high: @react-native-community/cli-config-apple
+  high: @react-native-community/cli-doctor
+  high: @react-native-community/cli-platform-apple
+  high: @react-native/community-cli-plugin
+  high: @react-native/metro-config
+  high: anymatch
+  high: babel-jest
+  high: fast-glob
+  high: jest-environment-node
+  high: jest-haste-map
+  high: jest-message-util
+  high: jest-mock
+  high: jest-util
+  high: jest-worker
+  high: metro
+  high: metro-config
+  high: metro-file-map
+  high: metro-transform-worker
+  high: micromatch
+  high: picomatch
+  high: react-native
+Security review gate failed: @jest/environment: new high finding; investigate and document before changing the inventory
+@jest/fake-timers: new high finding; investigate and document before changing the inventory
+@jest/transform: new high finding; investigate and document before changing the inventory
+@react-native-community/cli: new high finding; investigate and document before changing the inventory
+@react-native-community/cli-clean: new high finding; investigate and document before changing the inventory
+@react-native-community/cli-config: new high finding; investigate and document before changing the inventory
+@react-native-community/cli-config-android: new high finding; investigate and document before changing the inventory
+@react-native-community/cli-config-apple: new high finding; investigate and document before changing the inventory
+@react-native-community/cli-doctor: new high finding; investigate and document before changing the inventory
+@react-native-community/cli-platform-apple: new high finding; investigate and document before changing the inventory
+@react-native/community-cli-plugin: new high finding; investigate and document before changing the inventory
+@react-native/metro-config: new high finding; investigate and document before changing the inventory
+anymatch: new high finding; investigate and document before changing the inventory
+babel-jest: new high finding; investigate and document before changing the inventory
+fast-glob: new high finding; investigate and document before changing the inventory
+jest-environment-node: new high finding; investigate and document before changing the inventory
+jest-haste-map: new high finding; investigate and document before changing the inventory
+jest-message-util: new high finding; investigate and document before changing the inventory
+jest-mock: new high finding; investigate and document before changing the inventory
+jest-util: new high finding; investigate and document before changing the inventory
+jest-worker: new high finding; investigate and document before changing the inventory
+metro: new high finding; investigate and document before changing the inventory
+metro-config: new high finding; investigate and document before changing the inventory
+metro-file-map: new high finding; investigate and document before changing the inventory
+metro-transform-worker: new high finding; investigate and document before changing the inventory
+micromatch: new high finding; investigate and document before changing the inventory
+picomatch: new high finding; investigate and document before changing the inventory
+react-native: new high finding; investigate and document before changing the inventory

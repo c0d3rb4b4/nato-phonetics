@@ -1,0 +1,80 @@
+TAP version 13
+# Subtest: CLI discovers the real Android launcher with its separate deep-link intent
+ok 1 - CLI discovers the real Android launcher with its separate deep-link intent
+  ---
+  duration_ms: 9.160125
+  type: 'test'
+  ...
+# Subtest: CLI manifest parsing preserves single/multiple activities, intent arrays and escaped names
+not ok 2 - CLI manifest parsing preserves single/multiple activities, intent arrays and escaped names
+  ---
+  duration_ms: 2.694375
+  type: 'test'
+  location: '/Users/mac/dev/apps/nato-phonetics/tests/cli-xml.test.mjs:18:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + '.Caf&#233;Activity'
+    - '.CaféActivity'
+           ^
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: '.CaféActivity'
+  actual: '.Caf&#233;Activity'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/mac/dev/apps/nato-phonetics/tests/cli-xml.test.mjs:29:12)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: Apple CLI-resolved parser preserves workspace attributes and single/multiple project references
+not ok 3 - Apple CLI-resolved parser preserves workspace attributes and single/multiple project references
+  ---
+  duration_ms: 3.013291
+  type: 'test'
+  location: '/Users/mac/dev/apps/nato-phonetics/tests/cli-xml.test.mjs:37:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + 'group:Caf&#233; & App.xcodeproj'
+    - 'group:Café & App.xcodeproj'
+                ^
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'group:Café & App.xcodeproj'
+  actual: 'group:Caf&#233; & App.xcodeproj'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/mac/dev/apps/nato-phonetics/tests/cli-xml.test.mjs:43:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: both CLI-resolved parsers bound unterminated stop nodes and retain valid literal bodies
+ok 4 - both CLI-resolved parsers bound unterminated stop nodes and retain valid literal bodies
+  ---
+  duration_ms: 80.128708
+  type: 'test'
+  ...
+1..4
+# tests 4
+# suites 0
+# pass 2
+# fail 2
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 159.729125

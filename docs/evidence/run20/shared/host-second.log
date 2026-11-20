@@ -1,0 +1,37 @@
+{"level":"info","ts":1795020489.302627,"msg":"using config from file","file":"/Users/mac/dev/apps/nato-phonetics/artifacts/run20/host-second/runtime-T7eXrO/a/Caddyfile"}
+{"level":"info","ts":1795020489.304765,"msg":"adapted config to JSON","adapter":"caddyfile"}
+{"level":"info","ts":1795020489.3082209,"logger":"http","msg":"servers shutting down with eternal grace period"}
+{"level":"info","ts":1795020489.308179,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x710f8ac46600"}
+{"level":"info","ts":1795020489.309071,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0x710f8ac46600"}
+{
+  "checks": [
+    {
+      "name": "All 13 direct routes and trailing slashes return exact route HTML with revalidation",
+      "passed": true
+    },
+    {
+      "name": "Exact resource GET/HEAD bytes, MIME/cache headers, missing assets/private metadata 404, navigation fallback and method handling",
+      "passed": true
+    },
+    {
+      "name": "Real atomic forward switch: old immutable asset available, actual worker waits, close-all/reopen activates new shell and preserves saved answer",
+      "passed": true,
+      "fixtureBuildId": "0fcaf01cc0e9f05f4e165b9b4a40e590d7460f61e457f2ddea50c862259a40b2"
+    },
+    {
+      "name": "Real atomic rollback retains newer immutable assets, activates original worker after close-all, preserves exact saved total and offline direct progress",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "boundary": "Actual local Caddy; public HTTPS/certificates/host and M11 remain unrun",
+  "candidate": {
+    "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run20/nato-web-final.tar.gz",
+    "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+    "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+  },
+  "caddy": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+  "validation": "Valid configuration",
+  "browser": "157.0.4341.60"
+}

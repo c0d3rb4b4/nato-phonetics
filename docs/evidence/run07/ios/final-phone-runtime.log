@@ -1,0 +1,7 @@
+NATIVE phone-default-alphabet-J-dark 235
+RUN final-phone-default-export.log
+RUN final-phone-default-metadata.log
+NATIVE phone-maximum-alphabet-J-dark 235
+RUN final-phone-maximum-export.log
+RUN final-phone-maximum-metadata.log
+RUN loaded-javascript.log

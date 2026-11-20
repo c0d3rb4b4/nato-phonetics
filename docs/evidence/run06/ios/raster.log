@@ -1,0 +1,13 @@
+{"passed":false,"coveragePassed":true,"observations":238,"passedObservations":234,"failedObservations":4,"maximumAlphabetPairs":78,"maximumConverterPairs":21,"defaultDarkConverterRequiredPairs":12,"quizContexts":4,"inkSupportThreshold":"Any RGB channel differs from uniform tile background by >8","envelopePhysicalPixels":2,"maximumAbsoluteDelta":2.0803018181818516,"excludedRois":112,"failures":[{"file":"maximum-final-converter-maximum-3-dark.png","id":"converter-3","symbol":"J","part":"letter","text":"J","density":2,"scale":3.5727272727272728,"inkPixels":{"top":966,"bottom":1152,"count":8244},"expectedInk":{"top":965.1821818181818,"bottom":1150.9196981818181},"deltaPixels":{"top":0.8178181818182111,"bottom":2.0803018181818516}},{"file":"maximum-final-converter-maximum-2-dark.png","id":"converter-3","symbol":"J","part":"letter","text":"J","density":2,"scale":3.5727272727272728,"inkPixels":{"top":966,"bottom":1152,"count":8244},"expectedInk":{"top":965.1821818181818,"bottom":1150.9196981818181},"deltaPixels":{"top":0.8178181818182111,"bottom":2.0803018181818516}},{"file":"maximum-final-alphabet-maximum-I-dark.png","id":"alphabet-J","symbol":"J","part":"letter","text":"J","density":2,"scale":3.5727272727272728,"inkPixels":{"top":430,"bottom":616,"count":8244},"expectedInk":{"top":429.1821818181818,"bottom":614.9196981818181},"deltaPixels":{"top":0.8178181818182111,"bottom":2.0803018181818516}},{"file":"maximum-final-alphabet-maximum-G-dark.png","id":"alphabet-J","symbol":"J","part":"letter","text":"J","density":2,"scale":3.5727272727272728,"inkPixels":{"top":1525,"bottom":1711,"count":8244},"expectedInk":{"top":1524.1821818181818,"bottom":1709.9196981818181},"deltaPixels":{"top":0.8178181818182111,"bottom":2.0803018181818516}}]}
+AssertionError [ERR_ASSERTION]: Strict raster envelope failed; retained all failures in raster-summary.json
+
+4 !== 0
+
+    at /Users/mac/dev/apps/nato-phonetics/docs/evidence/run06/ios/check-raster.cjs:48:9 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 4,
+  expected: 0,
+  operator: 'strictEqual',
+  diff: 'simple'
+}

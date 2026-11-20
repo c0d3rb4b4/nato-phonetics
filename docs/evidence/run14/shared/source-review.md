@@ -1,0 +1,11 @@
+# Run 14 scoped source review
+
+Reviewed final generator, vector sources, manifest/consumers, three icon regressions, cleanup diff, native build/install/resource/capture evidence, recognition probes/contract and current plan/review/README/build instructions.
+
+Generator rasterizes local outlined vectors, checks every layer's pixel dimensions/alpha/safe bounds, verifies opaque RGB full/iOS icons, synchronizes native copies and reads written bytes before reporting completion. Sources/outputs are identified by deterministic SHA-256. Negative tests include malformed masks, repeated generation, unowned directories and actual output creation blocked by a file. Errors return nonzero with no success inventory. A failure can leave a partial output set; documentation requires complete regeneration. No claim of cross-filesystem transactional writes.
+
+Native resource changes need actual rebuild/install, which pass; Android packaged layers match verified PNGs, installed APK hash matches, iOS installed files match the compiled Release product. Android JS is separately archived; iOS bundled JS is identified. Native Canvas crops are diagnostic images, not another production launcher. Actual Pixel Launcher themed/color and SpringBoard icon→app states are captured. Driver failures remain labelled; no inherited accessibility/input/gesture gate closes.
+
+The four removed starter images match initial hashes and have no maintained consumer. Existing dependency/lockfile, production app/native source, permissions, storage/fonts and .gitignore are unchanged. Original artwork stays linked as historical evidence. Recognition is assessment-only: official sources, build/provider/permission boundaries and replaceable interface design, with no microphone/start/model installation or feature completion claim. Standalone iOS authorization cannot be attributed to the app; browser API presence is not local recognition readiness. No permanent support exception.
+
+Current source/status/link/hash checks are in ../verification.json. P09/P10 remain active, physical M11 and final integrated checks unperformed. Remaining native P1, concurrent progress, P3 ink, security/runtime/offline and actual recognition delivery are explicit. No publishing, credentials or release acceptance.

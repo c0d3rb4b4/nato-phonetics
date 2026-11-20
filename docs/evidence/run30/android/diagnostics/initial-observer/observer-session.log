@@ -1,0 +1,5 @@
+INSTRUMENTATION_RESULT: error=java.lang.NoSuchMethodError: No static method readString(Ljava/nio/file/Path;)Ljava/lang/String; in class Ljava/nio/file/Files; or its super classes (declaration of 'java.nio.file.Files' appears in /apex/com.android.art/javalib/core-oj.jar)
+	at com.natophonetics.fonttest.TileLayoutInstrumentation.onStart(TileLayoutInstrumentation.java:137)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2597)
+
+INSTRUMENTATION_CODE: 0

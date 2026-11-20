@@ -1,0 +1,23 @@
+{
+  "passed": false,
+  "error": "java.lang.AssertionError: Composition changed: {\"stage\":\"composition-before\",\"value\":\"NUWQJ359\",\"selectionStart\":4,\"selectionEnd\":4,\"composingStart\":-1,\"composingEnd\":-1,\"focused\":true,\"textSizePx\":32,\"heightPx\":89,\"fontScale\":1,\"sameView\":true,\"sameEditable\":true,\"activityIdentity\":184240870}\n\tat com.natophonetics.fonttest.FontScaleInstrumentation.require(FontScaleInstrumentation.java:69)\n\tat com.natophonetics.fonttest.FontScaleInstrumentation.snapshot(FontScaleInstrumentation.java:108)\n\tat com.natophonetics.fonttest.FontScaleInstrumentation.onStart(FontScaleInstrumentation.java:137)\n\tat android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2597)\n",
+  "stages": [
+    {
+      "stage": "composition-before",
+      "value": "NUWQJ359",
+      "selectionStart": 4,
+      "selectionEnd": 4,
+      "composingStart": -1,
+      "composingEnd": -1,
+      "focused": true,
+      "textSizePx": 32,
+      "heightPx": 89,
+      "fontScale": 1,
+      "sameView": true,
+      "sameEditable": true,
+      "activityIdentity": 184240870
+    }
+  ],
+  "originalScale": "1",
+  "scope": "Real product InputConnection composition; no physical\/provider IME or AT claim"
+}

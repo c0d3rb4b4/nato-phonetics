@@ -1,0 +1,74 @@
+[
+  {
+    "file": "ordinary-1280-saved.png",
+    "state": "Exactly one saved answer after real pointer input/Retry",
+    "at": "2026-11-19T11:19:43.751Z",
+    "engine": "webkit",
+    "browser": "27.2",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "theme": "light",
+    "scenario": "ordinary",
+    "candidate": {
+      "root": "/Users/mac/dev/apps/nato-phonetics/artifacts/run25/candidate/public",
+      "manifestSha256": "50810f855b532d68a7008ca3d8f38b2cc7563c7d80693c1eaddebfdb4f069ab4",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e"
+    },
+    "command": "node scripts/verify-progress-recovery-browser.cjs",
+    "arguments": [
+      "artifacts/run25/candidate/public",
+      "artifacts/run25/recovery/webkit",
+      "webkit"
+    ]
+  },
+  {
+    "file": "ordinary-320-saved.png",
+    "state": "Exactly one saved answer after real pointer input/Retry",
+    "at": "2026-11-19T11:19:44.485Z",
+    "engine": "webkit",
+    "browser": "27.2",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "theme": "dark",
+    "scenario": "ordinary",
+    "candidate": {
+      "root": "/Users/mac/dev/apps/nato-phonetics/artifacts/run25/candidate/public",
+      "manifestSha256": "50810f855b532d68a7008ca3d8f38b2cc7563c7d80693c1eaddebfdb4f069ab4",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e"
+    },
+    "command": "node scripts/verify-progress-recovery-browser.cjs",
+    "arguments": [
+      "artifacts/run25/candidate/public",
+      "artifacts/run25/recovery/webkit",
+      "webkit"
+    ]
+  },
+  {
+    "file": "failure.png",
+    "state": "Failed scope; retained without Retry or assertion relaxation",
+    "at": "2026-11-19T11:19:45.036Z",
+    "engine": "webkit",
+    "browser": "27.2",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "theme": "light",
+    "scenario": "quota",
+    "candidate": {
+      "root": "/Users/mac/dev/apps/nato-phonetics/artifacts/run25/candidate/public",
+      "manifestSha256": "50810f855b532d68a7008ca3d8f38b2cc7563c7d80693c1eaddebfdb4f069ab4",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e"
+    },
+    "command": "node scripts/verify-progress-recovery-browser.cjs",
+    "arguments": [
+      "artifacts/run25/candidate/public",
+      "artifacts/run25/recovery/webkit",
+      "webkit"
+    ]
+  }
+]

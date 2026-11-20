@@ -1,0 +1,6 @@
+PASS first launch, saved appearance reload, explicit override, return to System, live OS changes
+PASS legacy migration, System Default voice, scoped reset preserving unrelated progress
+PASS failed write reports error and preserves saved appearance
+PASS direct Home/Settings/Voice routes; no hydration errors. Browser: Edg/157.0.4341.60
+
+Command exit: 0

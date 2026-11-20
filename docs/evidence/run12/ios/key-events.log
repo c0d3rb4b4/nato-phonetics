@@ -1,0 +1,1161 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild test -project /tmp/nato-ios-run12-capture/Capture.xcodeproj -scheme Capture -configuration Debug -destination "platform=iOS Simulator,id=0653F7EC-9237-4AC5-A264-12969E625070" -derivedDataPath /tmp/nato-ios-run12-capture/DerivedData -resultBundlePath /tmp/nato-ios-run12-capture/key-events.xcresult -jobs 2 CODE_SIGNING_ALLOWED=NO -parallel-testing-enabled NO "-only-testing:CaptureUITests/PracticeUITests/testListeningAndTyped"
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+Writing result bundle at path:
+	/tmp/nato-ios-run12-capture/key-events.xcresult
+
+Build Preparation
+Build task concurrency set to 2 via user default IDEBuildOperationMaxNumberOfConcurrentCompileTasks
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (1 target)
+    Target 'CaptureUITests' in project 'Capture' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: bb5b257063fd8d3ca5e5d4877e1cbdfe
+Build description path: /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/XCBuildData/bb5b257063fd8d3ca5e5d4877e1cbdfe.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk /tmp/nato-ios-run12-capture/DerivedData/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache
+    cd /tmp/nato-ios-run12-capture/Capture.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -o /tmp/nato-ios-run12-capture/DerivedData/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache
+
+SwiftDriver CaptureUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-run12-capture
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CaptureUITests -Onone @/tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -target arm64-apple-ios16.4-simulator -g -module-cache-path /tmp/nato-ios-run12-capture/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/nato-ios-run12-capture/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/nato-ios-run12-capture/DerivedData/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/nato-ios-run12-capture/DerivedData/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk/Developer/Library/Frameworks -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/nato-ios-run12-capture/DerivedData/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache -output-file-map /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/nato-ios-run12-capture/DerivedData/ModuleCache.noindex -sdk-module-cache-path /tmp/nato-ios-run12-capture/DerivedData/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /tmp/nato-ios-run12-capture/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-generated-files.hmap -Xcc -I/tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-own-target-headers.hmap -Xcc -I/tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-project-headers.hmap -Xcc -I/tmp/nato-ios-run12-capture/DerivedData/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/DerivedSources/arm64 -Xcc -I/tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests-Swift.h -working-directory /tmp/nato-ios-run12-capture -experimental-emit-module-separately -disable-cmo
+
+SwiftCompile normal arm64 Compiling\ CaptureUITests.swift /tmp/nato-ios-run12-capture/CaptureUITests.swift (in target 'CaptureUITests' from project 'Capture')
+
+SwiftCompile normal arm64 /tmp/nato-ios-run12-capture/CaptureUITests.swift (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-run12-capture
+    builtin-SwiftPerFileCompile CaptureUITests.swift
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ CaptureUITests (in target 'CaptureUITests' from project 'Capture')
+
+SwiftCompile normal arm64 (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-run12-capture
+    
+
+SwiftDriverJobDiscovery normal arm64 Compiling CaptureUITests.swift (in target 'CaptureUITests' from project 'Capture')
+
+SwiftDriver\ Compilation CaptureUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-run12-capture
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CaptureUITests -Onone @/tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -target arm64-apple-ios16.4-simulator -g -module-cache-path /tmp/nato-ios-run12-capture/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/nato-ios-run12-capture/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/nato-ios-run12-capture/DerivedData/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/nato-ios-run12-capture/DerivedData/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk/Developer/Library/Frameworks -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/nato-ios-run12-capture/DerivedData/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache -output-file-map /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/nato-ios-run12-capture/DerivedData/ModuleCache.noindex -sdk-module-cache-path /tmp/nato-ios-run12-capture/DerivedData/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /tmp/nato-ios-run12-capture/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-generated-files.hmap -Xcc -I/tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-own-target-headers.hmap -Xcc -I/tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-project-headers.hmap -Xcc -I/tmp/nato-ios-run12-capture/DerivedData/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/DerivedSources/arm64 -Xcc -I/tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests-Swift.h -working-directory /tmp/nato-ios-run12-capture -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for CaptureUITests (in target 'CaptureUITests' from project 'Capture')
+
+SwiftDriver\ Compilation\ Requirements CaptureUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-run12-capture
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CaptureUITests -Onone @/tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -target arm64-apple-ios16.4-simulator -g -module-cache-path /tmp/nato-ios-run12-capture/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/nato-ios-run12-capture/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/nato-ios-run12-capture/DerivedData/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/nato-ios-run12-capture/DerivedData/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk/Developer/Library/Frameworks -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/nato-ios-run12-capture/DerivedData/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache -output-file-map /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/nato-ios-run12-capture/DerivedData/ModuleCache.noindex -sdk-module-cache-path /tmp/nato-ios-run12-capture/DerivedData/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /tmp/nato-ios-run12-capture/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-generated-files.hmap -Xcc -I/tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-own-target-headers.hmap -Xcc -I/tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests-project-headers.hmap -Xcc -I/tmp/nato-ios-run12-capture/DerivedData/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/DerivedSources/arm64 -Xcc -I/tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests-Swift.h -working-directory /tmp/nato-ios-run12-capture -experimental-emit-module-separately -disable-cmo
+
+Copy /tmp/nato-ios-run12-capture/DerivedData/Build/Products/Debug-iphonesimulator/CaptureUITests.swiftmodule/arm64-apple-ios-simulator.swiftmodule /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.swiftmodule (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-run12-capture
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.swiftmodule /tmp/nato-ios-run12-capture/DerivedData/Build/Products/Debug-iphonesimulator/CaptureUITests.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Ld /tmp/nato-ios-run12-capture/DerivedData/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/CaptureUITests normal (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-run12-capture
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios16.4-simulator -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/tmp/nato-ios-run12-capture/DerivedData/Build/Products/Debug-iphonesimulator -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F/tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/tmp/nato-ios-run12-capture/DerivedData/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk/Developer/Library/Frameworks -filelist /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.swiftmodule -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport -framework Foundation -o /tmp/nato-ios-run12-capture/DerivedData/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/CaptureUITests
+/tmp/nato-ios-run12-capture/Capture.xcodeproj: CaptureUITests: ld: warning: building for iOS-simulator-16.4, but linking with dylib '@rpath/XCTest.framework/XCTest' which was built for newer version 17.0
+/tmp/nato-ios-run12-capture/Capture.xcodeproj: CaptureUITests: ld: warning: building for iOS-simulator-16.4, but linking with dylib '@rpath/libXCTestSwiftSupport.dylib' which was built for newer version 17.0
+/tmp/nato-ios-run12-capture/Capture.xcodeproj: CaptureUITests: ld: warning: building for iOS-simulator-16.4, but linking with dylib '@rpath/XCUIAutomation.framework/XCUIAutomation' which was built for newer version 17.0
+
+Copy /tmp/nato-ios-run12-capture/DerivedData/Build/Products/Debug-iphonesimulator/CaptureUITests.swiftmodule/arm64-apple-ios-simulator.abi.json /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.abi.json (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-run12-capture
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.abi.json /tmp/nato-ios-run12-capture/DerivedData/Build/Products/Debug-iphonesimulator/CaptureUITests.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /tmp/nato-ios-run12-capture/DerivedData/Build/Products/Debug-iphonesimulator/CaptureUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.swiftsourceinfo (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-run12-capture
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.swiftsourceinfo /tmp/nato-ios-run12-capture/DerivedData/Build/Products/Debug-iphonesimulator/CaptureUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+ExtractAppIntentsMetadata (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-run12-capture
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name CaptureUITests --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk --xcode-version 27B52 --platform-family iOS --deployment-target 16.4 --bundle-identifier com.natophonetics.capture.run12 --output /tmp/nato-ios-run12-capture/DerivedData/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest --target-triple arm64-apple-ios16.4-simulator --binary-file /tmp/nato-ios-run12-capture/DerivedData/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/CaptureUITests --dependency-file /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests_dependency_info.dat --stringsdata-file /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.SwiftFileList --metadata-file-list /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests.DependencyMetadataFileList --static-metadata-file-list /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/CaptureUITests.DependencyStaticMetadataFileList --swift-const-vals-list /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/Objects-normal/arm64/CaptureUITests.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-11-18 11:03:28.477 appintentsmetadataprocessor[72058:11000871] Starting App Intents metadata extraction
+2026-11-18 11:03:28.488 appintentsmetadataprocessor[72058:11000871] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+ProcessInfoPlistFile /tmp/nato-ios-run12-capture/DerivedData/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/Info.plist /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/empty-CaptureUITests.plist (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-run12-capture
+    builtin-infoPlistUtility /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/empty-CaptureUITests.plist -producttype com.apple.product-type.bundle.ui-testing -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/ProductTypeInfoPlistAdditions.plist -o /tmp/nato-ios-run12-capture/DerivedData/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/Info.plist
+
+CopySwiftLibs /tmp/nato-ios-run12-capture/DerivedData/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest (in target 'CaptureUITests' from project 'Capture')
+    cd /tmp/nato-ios-run12-capture
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /tmp/nato-ios-run12-capture/DerivedData/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/CaptureUITests --scan-folder /tmp/nato-ios-run12-capture/DerivedData/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/Frameworks --scan-folder /tmp/nato-ios-run12-capture/DerivedData/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/PlugIns --scan-folder /tmp/nato-ios-run12-capture/DerivedData/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/SystemExtensions --scan-folder /tmp/nato-ios-run12-capture/DerivedData/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/Extensions --scan-folder /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /tmp/nato-ios-run12-capture/DerivedData/Build/Products/Debug-iphonesimulator/CaptureUITests-Runner.app/PlugIns/CaptureUITests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/Capture.build/Debug-iphonesimulator/CaptureUITests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+PruneExplicitPrecompiledModules /tmp/nato-ios-run12-capture/DerivedData/SDKExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /tmp/nato-ios-run12-capture/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+2026-11-18 11:03:33.751507+0000 CaptureUITests-Runner[72067:11001116] [Default] Running tests...
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-11-18 11:03:34.830.
+Test Suite 'CaptureUITests.xctest' started at 2026-11-18 11:03:34.831.
+Test Suite 'PracticeUITests' started at 2026-11-18 11:03:34.831.
+Test Case '-[CaptureUITests.PracticeUITests testListeningAndTyped]' started.
+    t =     0.00s Start Test at 2026-11-18 11:03:34.832
+    t =     0.10s Set Up
+    t =     0.10s Checking existence of `"Open" Button`
+    t =     0.18s Terminate com.natophonetics.app:71791
+    t =     1.20s Open com.natophonetics.app
+    t =     1.20s     Launch com.natophonetics.app
+    t =     1.39s         Setting up automation session
+    t =     2.19s         Wait for com.natophonetics.app to idle
+    t =     3.62s Open com.natophonetics.app with URL natophonetics://letter-quiz
+    t =     3.62s     Launch com.natophonetics.app
+    t =     3.64s         Setting up automation session
+    t =     3.64s         Wait for com.natophonetics.app to idle
+    t =     4.67s Waiting 60.0s for "mode-choice" Any to exist
+    t =     5.74s     Checking `Expect predicate `existsNoRetry == 1` for object "mode-choice" Any`
+    t =     5.74s         Checking existence of `"mode-choice" Any`
+    t =     5.85s Find the "screen-scroll" Any
+    t =     5.86s Checking existence of `Keyboard (First Match)`
+    t =     5.88s Find the "mode-listening" Any
+RUN12 ALIGN mode-listening frame=(16.0, 287.33333587646484, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =     5.91s Checking existence of `"mode-listening" Other`
+    t =     5.93s Find the "mode-listening" Other
+    t =     5.97s Tap "mode-listening" Any
+    t =     5.97s     Wait for com.natophonetics.app to idle
+    t =     5.97s     Find the "mode-listening" Any
+    t =     5.99s     Check for interrupting elements affecting "mode-listening" Other
+    t =     6.11s     Synthesize event
+    t =     6.42s     Wait for com.natophonetics.app to idle
+    t =     6.57s Added attachment named 'listening-setup'
+    t =     6.57s Find the "screen-scroll" Any
+    t =     6.58s Checking existence of `Keyboard (First Match)`
+    t =     6.60s Find the "practice-digits" Any
+RUN12 ALIGN practice-digits frame=(16.0, 583.3333435058594, 370.0, 47.999969482421875) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =     6.62s Checking existence of `"practice-digits" Other`
+    t =     6.64s Find the "practice-digits" Other
+    t =     6.67s Tap "practice-digits" Any
+    t =     6.67s     Wait for com.natophonetics.app to idle
+    t =     6.67s     Find the "practice-digits" Any
+    t =     6.69s     Check for interrupting elements affecting "practice-digits" Other
+    t =     6.71s     Synthesize event
+    t =     7.01s     Wait for com.natophonetics.app to idle
+    t =     7.01s Find the "screen-scroll" Any
+    t =     7.04s Checking existence of `Keyboard (First Match)`
+    t =     7.07s Find the "5 questions" Any
+RUN12 ALIGN 5 questions frame=(16.0, 877.3333129882812, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =     7.10s Checking existence of `"5 questions" Other`
+    t =     7.12s Find the "5 questions" Other
+    t =     7.15s Checking existence of `"5 questions" Other`
+    t =     7.17s Press Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 815.0) for 0.0 seconds, then drag to Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 704.7) with velocity of 250.00 pixels per second, and then hold for 0.0 seconds 
+    t =     7.17s     Wait for com.natophonetics.app to idle
+    t =     7.17s     Find the Application 'com.natophonetics.app'
+    t =     7.18s     Check for interrupting elements affecting "NATO Phonetics" Application
+    t =     7.20s     Synthesize event
+    t =     7.20s         Find the Application 'com.natophonetics.app'
+    t =     7.21s         Find the Application 'com.natophonetics.app'
+    t =     7.22s         Find the Application 'com.natophonetics.app'
+    t =     7.23s         Find the Application 'com.natophonetics.app'
+    t =     7.24s         Find the Application 'com.natophonetics.app'
+    t =     7.93s     Wait for com.natophonetics.app to idle
+    t =     7.93s Find the "screen-scroll" Any
+    t =     7.96s Checking existence of `Keyboard (First Match)`
+    t =     7.98s Find the "5 questions" Any
+RUN12 ALIGN 5 questions frame=(16.0, 781.6666463216146, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =     8.01s Checking existence of `"5 questions" Other`
+    t =     8.04s Find the "5 questions" Other
+    t =     8.07s Tap "5 questions" Any
+    t =     8.07s     Wait for com.natophonetics.app to idle
+    t =     8.07s     Find the "5 questions" Any
+    t =     8.09s     Check for interrupting elements affecting "5 questions" Other
+    t =     8.12s     Synthesize event
+    t =     8.42s     Wait for com.natophonetics.app to idle
+    t =     8.42s Find the "screen-scroll" Any
+    t =     8.45s Checking existence of `Keyboard (First Match)`
+    t =     8.47s Find the "quiz-start" Any
+RUN12 ALIGN quiz-start frame=(16.0, 899.6666463216146, 370.0, 48.00006103515625) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =     8.50s Checking existence of `"quiz-start" Button`
+    t =     8.53s Find the "quiz-start" Button
+    t =     8.56s Checking existence of `"quiz-start" Button`
+    t =     8.58s Press Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 815.0) for 0.0 seconds, then drag to Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 682.3) with velocity of 250.00 pixels per second, and then hold for 0.0 seconds 
+    t =     8.58s     Wait for com.natophonetics.app to idle
+    t =     8.59s     Find the Application 'com.natophonetics.app'
+    t =     8.60s     Check for interrupting elements affecting "NATO Phonetics" Application
+    t =     8.61s     Synthesize event
+    t =     8.62s         Find the Application 'com.natophonetics.app'
+    t =     8.63s         Find the Application 'com.natophonetics.app'
+    t =     8.64s         Find the Application 'com.natophonetics.app'
+    t =     8.65s         Find the Application 'com.natophonetics.app'
+    t =     8.66s         Find the Application 'com.natophonetics.app'
+    t =     9.43s     Wait for com.natophonetics.app to idle
+    t =     9.43s Find the "screen-scroll" Any
+    t =     9.45s Checking existence of `Keyboard (First Match)`
+    t =     9.47s Find the "quiz-start" Any
+RUN12 ALIGN quiz-start frame=(16.0, 780.9999796549479, 370.0, 48.00006103515625) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =     9.50s Checking existence of `"quiz-start" Button`
+    t =     9.53s Find the "quiz-start" Button
+    t =     9.56s Tap "quiz-start" Any
+    t =     9.56s     Wait for com.natophonetics.app to idle
+    t =     9.57s     Find the "quiz-start" Any
+    t =     9.60s     Check for interrupting elements affecting "quiz-start" Button
+    t =     9.67s     Synthesize event
+    t =     9.98s     Wait for com.natophonetics.app to idle
+    t =     9.98s Checking existence of `"quiz-card" Any`
+    t =    10.01s Checking existence of `"quiz-letter" Any`
+    t =    10.04s Checking existence of `"quiz-code-word" Any`
+    t =    10.07s Find the "screen-scroll" Any
+    t =    10.08s Checking existence of `Keyboard (First Match)`
+    t =    10.10s Find the "quiz-listen" Any
+RUN12 ALIGN quiz-listen frame=(16.0, 257.99999491373694, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    10.12s Checking existence of `"quiz-listen" Button`
+    t =    10.14s Find the "quiz-listen" Button
+    t =    10.17s Tap "quiz-listen" Any
+    t =    10.17s     Wait for com.natophonetics.app to idle
+    t =    10.17s     Find the "quiz-listen" Any
+    t =    10.19s     Check for interrupting elements affecting "quiz-listen" Button
+    t =    10.33s     Synthesize event
+    t =    10.63s     Wait for com.natophonetics.app to idle
+    t =    10.75s Added attachment named 'listening-question'
+    t =    10.75s Checking existence of `"Stop playback" Any`
+    t =    10.79s Find the "screen-scroll" Any
+    t =    10.81s Checking existence of `Keyboard (First Match)`
+    t =    10.82s Find the "Stop playback" Any
+RUN12 ALIGN Stop playback frame=(16.0, 847.9999796549479, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    10.85s Checking existence of `"Stop playback" Button`
+    t =    10.88s Find the "Stop playback" Button
+    t =    10.93s Checking existence of `"Stop playback" Button`
+    t =    10.95s Press Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 815.0) for 0.0 seconds, then drag to Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 734.0) with velocity of 250.00 pixels per second, and then hold for 0.0 seconds 
+    t =    10.95s     Wait for com.natophonetics.app to idle
+    t =    10.95s     Find the Application 'com.natophonetics.app'
+    t =    10.97s     Check for interrupting elements affecting "NATO Phonetics" Application
+    t =    10.99s     Synthesize event
+    t =    10.99s         Find the Application 'com.natophonetics.app'
+    t =    11.00s         Find the Application 'com.natophonetics.app'
+    t =    11.02s         Find the Application 'com.natophonetics.app'
+    t =    11.04s         Find the Application 'com.natophonetics.app'
+    t =    11.06s         Find the Application 'com.natophonetics.app'
+    t =    11.62s     Wait for com.natophonetics.app to idle
+    t =    11.63s Find the "screen-scroll" Any
+    t =    11.64s Checking existence of `Keyboard (First Match)`
+    t =    11.65s Find the "Stop playback" Any
+RUN12 ALIGN Stop playback frame=(16.0, 777.9999796549479, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    11.70s Checking existence of `"Stop playback" Button`
+    t =    11.73s Find the "Stop playback" Button
+    t =    11.82s Tap "Stop playback" Any
+    t =    11.82s     Wait for com.natophonetics.app to idle
+    t =    11.83s     Find the "Stop playback" Any
+    t =    11.85s     Check for interrupting elements affecting "Stop playback" Button
+    t =    11.89s     Synthesize event
+    t =    12.19s     Wait for com.natophonetics.app to idle
+    t =    12.19s Find the "screen-scroll" Any
+    t =    12.21s Checking existence of `Keyboard (First Match)`
+    t =    12.22s Find the "quiz-listen" Any
+RUN12 ALIGN quiz-listen frame=(16.0, 257.99999491373694, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    12.24s Checking existence of `"quiz-listen" Button`
+    t =    12.26s Find the "quiz-listen" Button
+    t =    12.29s Tap "quiz-listen" Any
+    t =    12.29s     Wait for com.natophonetics.app to idle
+    t =    12.29s     Find the "quiz-listen" Any
+    t =    12.31s     Check for interrupting elements affecting "quiz-listen" Button
+    t =    12.33s     Synthesize event
+    t =    12.62s     Wait for com.natophonetics.app to idle
+    t =    12.63s Tap "Open menu" Any
+    t =    12.63s     Wait for com.natophonetics.app to idle
+    t =    12.63s     Find the "Open menu" Any
+    t =    12.65s     Check for interrupting elements affecting "Open menu" Button
+    t =    12.69s     Synthesize event
+    t =    12.98s     Wait for com.natophonetics.app to idle
+    t =    12.98s Find the "screen-scroll" Any
+    t =    13.01s Checking existence of `Keyboard (First Match)`
+    t =    13.03s Find the "Back to App" Any
+RUN12 ALIGN Back to App frame=(16.0, 612.0, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    13.05s Checking existence of `"Back to App" Button`
+    t =    13.07s Find the "Back to App" Button
+    t =    13.10s Tap "Back to App" Any
+    t =    13.10s     Wait for com.natophonetics.app to idle
+    t =    13.10s     Find the "Back to App" Any
+    t =    13.12s     Check for interrupting elements affecting "Back to App" Button
+    t =    13.14s     Synthesize event
+    t =    13.44s     Wait for com.natophonetics.app to idle
+    t =    13.44s Checking existence of `"quiz-card" Any`
+    t =    13.51s Find the "screen-scroll" Any
+    t =    13.52s Checking existence of `Keyboard (First Match)`
+    t =    13.54s Find the "Show code word as text" Any
+RUN12 ALIGN Show code word as text frame=(16.0, 317.99999491373694, 370.0, 48.00000000000006) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    13.56s Checking existence of `"Show code word as text" Button`
+    t =    13.58s Find the "Show code word as text" Button
+    t =    13.61s Tap "Show code word as text" Any
+    t =    13.61s     Wait for com.natophonetics.app to idle
+    t =    13.61s     Find the "Show code word as text" Any
+    t =    13.63s     Check for interrupting elements affecting "Show code word as text" Button
+    t =    13.66s     Synthesize event
+    t =    13.95s     Wait for com.natophonetics.app to idle
+    t =    13.96s Find the "quiz-code-word" Any
+RUN12 LISTEN symbol=6 word=Six
+    t =    14.00s Find the "screen-scroll" Any
+    t =    14.02s Checking existence of `Keyboard (First Match)`
+    t =    14.03s Find the "quiz-code-word" Any
+RUN12 ALIGN quiz-code-word frame=(16.0, 378.00001017252606, 370.0, 24.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    14.06s Checking existence of `"quiz-code-word" StaticText`
+    t =    14.08s Find the "quiz-code-word" StaticText
+    t =    14.20s Added attachment named 'listening-text-alternative'
+    t =    14.20s Find the "screen-scroll" Any
+    t =    14.22s Checking existence of `Keyboard (First Match)`
+    t =    14.23s Find the "Choose 6" Any
+RUN12 ALIGN Choose 6 frame=(16.0, 592.0000101725261, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    14.26s Checking existence of `"quiz-choice-1" Button`
+    t =    14.28s Find the "quiz-choice-1" Button
+    t =    14.31s Tap "Choose 6" Any
+    t =    14.31s     Wait for com.natophonetics.app to idle
+    t =    14.31s     Find the "Choose 6" Any
+    t =    14.33s     Check for interrupting elements affecting "quiz-choice-1" Button
+    t =    14.36s     Synthesize event
+    t =    14.65s     Wait for com.natophonetics.app to idle
+    t =    14.65s Checking existence of `"quiz-answer" Any`
+    t =    14.71s Find the "screen-scroll" Any
+    t =    14.73s Checking existence of `Keyboard (First Match)`
+    t =    14.75s Find the "quiz-next" Any
+RUN12 ALIGN quiz-next frame=(16.0, 709.9999796549479, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    14.77s Checking existence of `"quiz-next" Button`
+    t =    14.79s Find the "quiz-next" Button
+    t =    14.91s Added attachment named 'listening-feedback'
+    t =    14.91s Find the "screen-scroll" Any
+    t =    14.93s Checking existence of `Keyboard (First Match)`
+    t =    14.95s Find the "quiz-next" Any
+RUN12 ALIGN quiz-next frame=(16.0, 709.9999796549479, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    14.97s Checking existence of `"quiz-next" Button`
+    t =    14.99s Find the "quiz-next" Button
+    t =    15.02s Tap "quiz-next" Any
+    t =    15.02s     Wait for com.natophonetics.app to idle
+    t =    15.02s     Find the "quiz-next" Any
+    t =    15.04s     Check for interrupting elements affecting "quiz-next" Button
+    t =    15.07s     Synthesize event
+    t =    15.37s     Wait for com.natophonetics.app to idle
+    t =    15.37s Checking existence of `"quiz-card" Any`
+    t =    15.43s Checking existence of `"quiz-letter" Any`
+    t =    15.46s Checking existence of `"quiz-code-word" Any`
+    t =    15.48s Find the "screen-scroll" Any
+    t =    15.50s Checking existence of `Keyboard (First Match)`
+    t =    15.51s Find the "quiz-listen" Any
+RUN12 ALIGN quiz-listen frame=(16.0, 257.99999491373694, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    15.53s Checking existence of `"quiz-listen" Button`
+    t =    15.55s Find the "quiz-listen" Button
+    t =    15.58s Tap "quiz-listen" Any
+    t =    15.58s     Wait for com.natophonetics.app to idle
+    t =    15.58s     Find the "quiz-listen" Any
+    t =    15.60s     Check for interrupting elements affecting "quiz-listen" Button
+    t =    15.62s     Synthesize event
+    t =    15.91s     Wait for com.natophonetics.app to idle
+    t =    15.92s Find the "screen-scroll" Any
+    t =    15.95s Checking existence of `Keyboard (First Match)`
+    t =    15.97s Find the "Show code word as text" Any
+RUN12 ALIGN Show code word as text frame=(16.0, 317.99999491373694, 370.0, 48.00000000000006) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    16.00s Checking existence of `"Show code word as text" Button`
+    t =    16.02s Find the "Show code word as text" Button
+    t =    16.04s Tap "Show code word as text" Any
+    t =    16.04s     Wait for com.natophonetics.app to idle
+    t =    16.05s     Find the "Show code word as text" Any
+    t =    16.07s     Check for interrupting elements affecting "Show code word as text" Button
+    t =    16.10s     Synthesize event
+    t =    16.39s     Wait for com.natophonetics.app to idle
+    t =    16.39s Find the "quiz-code-word" Any
+RUN12 LISTEN symbol=4 word=Four
+    t =    16.44s Find the "screen-scroll" Any
+    t =    16.46s Checking existence of `Keyboard (First Match)`
+    t =    16.47s Find the "Choose 4" Any
+RUN12 ALIGN Choose 4 frame=(16.0, 592.0000101725261, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    16.50s Checking existence of `"quiz-choice-1" Button`
+    t =    16.52s Find the "quiz-choice-1" Button
+    t =    16.55s Tap "Choose 4" Any
+    t =    16.55s     Wait for com.natophonetics.app to idle
+    t =    16.55s     Find the "Choose 4" Any
+    t =    16.57s     Check for interrupting elements affecting "quiz-choice-1" Button
+    t =    16.60s     Synthesize event
+    t =    16.89s     Wait for com.natophonetics.app to idle
+    t =    16.90s Checking existence of `"quiz-answer" Any`
+    t =    16.96s Find the "screen-scroll" Any
+    t =    16.98s Checking existence of `Keyboard (First Match)`
+    t =    17.00s Find the "quiz-next" Any
+RUN12 ALIGN quiz-next frame=(16.0, 709.9999796549479, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    17.02s Checking existence of `"quiz-next" Button`
+    t =    17.04s Find the "quiz-next" Button
+    t =    17.07s Tap "quiz-next" Any
+    t =    17.07s     Wait for com.natophonetics.app to idle
+    t =    17.07s     Find the "quiz-next" Any
+    t =    17.09s     Check for interrupting elements affecting "quiz-next" Button
+    t =    17.12s     Synthesize event
+    t =    17.41s     Wait for com.natophonetics.app to idle
+    t =    17.42s Checking existence of `"quiz-card" Any`
+    t =    17.48s Checking existence of `"quiz-letter" Any`
+    t =    17.51s Checking existence of `"quiz-code-word" Any`
+    t =    17.54s Find the "screen-scroll" Any
+    t =    17.55s Checking existence of `Keyboard (First Match)`
+    t =    17.57s Find the "quiz-listen" Any
+RUN12 ALIGN quiz-listen frame=(16.0, 257.99999491373694, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    17.59s Checking existence of `"quiz-listen" Button`
+    t =    17.61s Find the "quiz-listen" Button
+    t =    17.63s Tap "quiz-listen" Any
+    t =    17.63s     Wait for com.natophonetics.app to idle
+    t =    17.63s     Find the "quiz-listen" Any
+    t =    17.65s     Check for interrupting elements affecting "quiz-listen" Button
+    t =    17.68s     Synthesize event
+    t =    17.97s     Wait for com.natophonetics.app to idle
+    t =    17.98s Find the "screen-scroll" Any
+    t =    18.01s Checking existence of `Keyboard (First Match)`
+    t =    18.03s Find the "Show code word as text" Any
+RUN12 ALIGN Show code word as text frame=(16.0, 317.99999491373694, 370.0, 48.00000000000006) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    18.06s Checking existence of `"Show code word as text" Button`
+    t =    18.08s Find the "Show code word as text" Button
+    t =    18.10s Tap "Show code word as text" Any
+    t =    18.10s     Wait for com.natophonetics.app to idle
+    t =    18.11s     Find the "Show code word as text" Any
+    t =    18.13s     Check for interrupting elements affecting "Show code word as text" Button
+    t =    18.15s     Synthesize event
+    t =    18.45s     Wait for com.natophonetics.app to idle
+    t =    18.45s Find the "quiz-code-word" Any
+RUN12 LISTEN symbol=0 word=Zero
+    t =    18.49s Find the "screen-scroll" Any
+    t =    18.51s Checking existence of `Keyboard (First Match)`
+    t =    18.52s Find the "Choose 0" Any
+RUN12 ALIGN Choose 0 frame=(16.0, 708.000010172526, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    18.55s Checking existence of `"quiz-choice-3" Button`
+    t =    18.57s Find the "quiz-choice-3" Button
+    t =    18.60s Tap "Choose 0" Any
+    t =    18.60s     Wait for com.natophonetics.app to idle
+    t =    18.60s     Find the "Choose 0" Any
+    t =    18.62s     Check for interrupting elements affecting "quiz-choice-3" Button
+    t =    18.65s     Synthesize event
+    t =    18.94s     Wait for com.natophonetics.app to idle
+    t =    18.94s Checking existence of `"quiz-answer" Any`
+    t =    19.01s Find the "screen-scroll" Any
+    t =    19.02s Checking existence of `Keyboard (First Match)`
+    t =    19.04s Find the "quiz-next" Any
+RUN12 ALIGN quiz-next frame=(16.0, 709.9999796549479, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    19.07s Checking existence of `"quiz-next" Button`
+    t =    19.09s Find the "quiz-next" Button
+    t =    19.12s Tap "quiz-next" Any
+    t =    19.12s     Wait for com.natophonetics.app to idle
+    t =    19.12s     Find the "quiz-next" Any
+    t =    19.14s     Check for interrupting elements affecting "quiz-next" Button
+    t =    19.17s     Synthesize event
+    t =    19.47s     Wait for com.natophonetics.app to idle
+    t =    19.47s Checking existence of `"quiz-card" Any`
+    t =    19.53s Checking existence of `"quiz-letter" Any`
+    t =    19.56s Checking existence of `"quiz-code-word" Any`
+    t =    19.59s Find the "screen-scroll" Any
+    t =    19.60s Checking existence of `Keyboard (First Match)`
+    t =    19.62s Find the "quiz-listen" Any
+RUN12 ALIGN quiz-listen frame=(16.0, 257.99999491373694, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    19.64s Checking existence of `"quiz-listen" Button`
+    t =    19.66s Find the "quiz-listen" Button
+    t =    19.68s Tap "quiz-listen" Any
+    t =    19.68s     Wait for com.natophonetics.app to idle
+    t =    19.69s     Find the "quiz-listen" Any
+    t =    19.71s     Check for interrupting elements affecting "quiz-listen" Button
+    t =    19.73s     Synthesize event
+    t =    20.02s     Wait for com.natophonetics.app to idle
+    t =    20.02s Find the "screen-scroll" Any
+    t =    20.04s Checking existence of `Keyboard (First Match)`
+    t =    20.05s Find the "Show code word as text" Any
+RUN12 ALIGN Show code word as text frame=(16.0, 317.99999491373694, 370.0, 48.00000000000006) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    20.08s Checking existence of `"Show code word as text" Button`
+    t =    20.10s Find the "Show code word as text" Button
+    t =    20.12s Tap "Show code word as text" Any
+    t =    20.12s     Wait for com.natophonetics.app to idle
+    t =    20.13s     Find the "Show code word as text" Any
+    t =    20.15s     Check for interrupting elements affecting "Show code word as text" Button
+    t =    20.18s     Synthesize event
+    t =    20.47s     Wait for com.natophonetics.app to idle
+    t =    20.47s Find the "quiz-code-word" Any
+RUN12 LISTEN symbol=9 word=Nine
+    t =    20.50s Find the "screen-scroll" Any
+    t =    20.52s Checking existence of `Keyboard (First Match)`
+    t =    20.53s Find the "Choose 9" Any
+RUN12 ALIGN Choose 9 frame=(16.0, 534.0000101725261, 370.0, 47.999969482421875) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    20.56s Checking existence of `"quiz-choice-0" Button`
+    t =    20.58s Find the "quiz-choice-0" Button
+    t =    20.61s Tap "Choose 9" Any
+    t =    20.61s     Wait for com.natophonetics.app to idle
+    t =    20.61s     Find the "Choose 9" Any
+    t =    20.63s     Check for interrupting elements affecting "quiz-choice-0" Button
+    t =    20.66s     Synthesize event
+    t =    20.95s     Wait for com.natophonetics.app to idle
+    t =    20.95s Checking existence of `"quiz-answer" Any`
+    t =    21.02s Find the "screen-scroll" Any
+    t =    21.03s Checking existence of `Keyboard (First Match)`
+    t =    21.05s Find the "quiz-next" Any
+RUN12 ALIGN quiz-next frame=(16.0, 709.9999796549479, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    21.08s Checking existence of `"quiz-next" Button`
+    t =    21.10s Find the "quiz-next" Button
+    t =    21.13s Tap "quiz-next" Any
+    t =    21.13s     Wait for com.natophonetics.app to idle
+    t =    21.13s     Find the "quiz-next" Any
+    t =    21.15s     Check for interrupting elements affecting "quiz-next" Button
+    t =    21.18s     Synthesize event
+    t =    21.48s     Wait for com.natophonetics.app to idle
+    t =    21.48s Checking existence of `"quiz-card" Any`
+    t =    21.54s Checking existence of `"quiz-letter" Any`
+    t =    21.57s Checking existence of `"quiz-code-word" Any`
+    t =    21.60s Find the "screen-scroll" Any
+    t =    21.61s Checking existence of `Keyboard (First Match)`
+    t =    21.63s Find the "quiz-listen" Any
+RUN12 ALIGN quiz-listen frame=(16.0, 257.99999491373694, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    21.65s Checking existence of `"quiz-listen" Button`
+    t =    21.67s Find the "quiz-listen" Button
+    t =    21.70s Tap "quiz-listen" Any
+    t =    21.70s     Wait for com.natophonetics.app to idle
+    t =    21.70s     Find the "quiz-listen" Any
+    t =    21.72s     Check for interrupting elements affecting "quiz-listen" Button
+    t =    21.74s     Synthesize event
+    t =    22.03s     Wait for com.natophonetics.app to idle
+    t =    22.04s Find the "screen-scroll" Any
+    t =    22.06s Checking existence of `Keyboard (First Match)`
+    t =    22.09s Find the "Show code word as text" Any
+RUN12 ALIGN Show code word as text frame=(16.0, 317.99999491373694, 370.0, 48.00000000000006) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    22.12s Checking existence of `"Show code word as text" Button`
+    t =    22.14s Find the "Show code word as text" Button
+    t =    22.16s Tap "Show code word as text" Any
+    t =    22.16s     Wait for com.natophonetics.app to idle
+    t =    22.16s     Find the "Show code word as text" Any
+    t =    22.18s     Check for interrupting elements affecting "Show code word as text" Button
+    t =    22.21s     Synthesize event
+    t =    22.51s     Wait for com.natophonetics.app to idle
+    t =    22.52s Find the "quiz-code-word" Any
+RUN12 LISTEN symbol=5 word=Five
+    t =    22.56s Find the "screen-scroll" Any
+    t =    22.58s Checking existence of `Keyboard (First Match)`
+    t =    22.60s Find the "Choose 5" Any
+RUN12 ALIGN Choose 5 frame=(16.0, 534.0000101725261, 370.0, 47.999969482421875) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    22.62s Checking existence of `"quiz-choice-0" Button`
+    t =    22.64s Find the "quiz-choice-0" Button
+    t =    22.67s Tap "Choose 5" Any
+    t =    22.67s     Wait for com.natophonetics.app to idle
+    t =    22.67s     Find the "Choose 5" Any
+    t =    22.69s     Check for interrupting elements affecting "quiz-choice-0" Button
+    t =    22.72s     Synthesize event
+    t =    23.01s     Wait for com.natophonetics.app to idle
+    t =    23.01s Checking existence of `"quiz-answer" Any`
+    t =    23.08s Find the "screen-scroll" Any
+    t =    23.09s Checking existence of `Keyboard (First Match)`
+    t =    23.11s Find the "quiz-next" Any
+RUN12 ALIGN quiz-next frame=(16.0, 709.9999796549479, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    23.14s Checking existence of `"quiz-next" Button`
+    t =    23.16s Find the "quiz-next" Button
+    t =    23.19s Tap "quiz-next" Any
+    t =    23.19s     Wait for com.natophonetics.app to idle
+    t =    23.19s     Find the "quiz-next" Any
+    t =    23.21s     Check for interrupting elements affecting "quiz-next" Button
+    t =    23.24s     Synthesize event
+    t =    23.53s     Wait for com.natophonetics.app to idle
+    t =    23.54s Find the "quiz-score" Any
+    t =    23.58s Find the "screen-scroll" Any
+    t =    23.60s Checking existence of `Keyboard (First Match)`
+    t =    23.62s Find the "quiz-score" Any
+RUN12 ALIGN quiz-score frame=(16.0, 259.33333587646484, 370.0, 24.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    23.64s Checking existence of `"quiz-score" StaticText`
+    t =    23.66s Find the "quiz-score" StaticText
+    t =    23.78s Added attachment named 'listening-results'
+    t =    23.78s Find the "screen-scroll" Any
+    t =    23.79s Checking existence of `Keyboard (First Match)`
+    t =    23.80s Find the "Choose a new round" Any
+RUN12 ALIGN Choose a new round frame=(16.0, 418.6666564941406, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    23.83s Checking existence of `"Choose a new round" Button`
+    t =    23.85s Find the "Choose a new round" Button
+    t =    23.87s Tap "Choose a new round" Any
+    t =    23.87s     Wait for com.natophonetics.app to idle
+    t =    23.88s     Find the "Choose a new round" Any
+    t =    23.90s     Check for interrupting elements affecting "Choose a new round" Button
+    t =    23.92s     Synthesize event
+    t =    24.21s     Wait for com.natophonetics.app to idle
+    t =    24.22s Find the "screen-scroll" Any
+    t =    24.25s Checking existence of `Keyboard (First Match)`
+    t =    24.28s Find the "mode-typed" Any
+RUN12 ALIGN mode-typed frame=(16.0, 632.0, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    24.31s Checking existence of `"mode-typed" Other`
+    t =    24.33s Find the "mode-typed" Other
+    t =    24.36s Tap "mode-typed" Any
+    t =    24.36s     Wait for com.natophonetics.app to idle
+    t =    24.37s     Find the "mode-typed" Any
+    t =    24.39s     Check for interrupting elements affecting "mode-typed" Other
+    t =    24.42s     Synthesize event
+    t =    24.71s     Wait for com.natophonetics.app to idle
+    t =    24.72s Find the "screen-scroll" Any
+    t =    24.74s Checking existence of `Keyboard (First Match)`
+    t =    24.77s Find the "practice-letters" Any
+RUN12 ALIGN practice-letters frame=(16.0, 836.0, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    24.80s Checking existence of `"practice-letters" Other`
+    t =    24.83s Find the "practice-letters" Other
+    t =    24.86s Checking existence of `"practice-letters" Other`
+    t =    24.89s Press Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 815.0) for 0.0 seconds, then drag to Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 745.0) with velocity of 250.00 pixels per second, and then hold for 0.0 seconds 
+    t =    24.89s     Wait for com.natophonetics.app to idle
+    t =    24.89s     Find the Application 'com.natophonetics.app'
+    t =    24.90s     Check for interrupting elements affecting "NATO Phonetics" Application
+    t =    24.92s     Synthesize event
+    t =    24.92s         Find the Application 'com.natophonetics.app'
+    t =    24.94s         Find the Application 'com.natophonetics.app'
+    t =    24.95s         Find the Application 'com.natophonetics.app'
+    t =    24.97s         Find the Application 'com.natophonetics.app'
+    t =    24.98s         Find the Application 'com.natophonetics.app'
+    t =    25.50s     Wait for com.natophonetics.app to idle
+    t =    25.51s Find the "screen-scroll" Any
+    t =    25.54s Checking existence of `Keyboard (First Match)`
+    t =    25.57s Find the "practice-letters" Any
+RUN12 ALIGN practice-letters frame=(16.0, 836.0, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    25.60s Checking existence of `"practice-letters" Other`
+    t =    25.63s Find the "practice-letters" Other
+    t =    25.66s Checking existence of `"practice-letters" Other`
+    t =    25.69s Press Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 815.0) for 0.0 seconds, then drag to Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 745.0) with velocity of 250.00 pixels per second, and then hold for 0.0 seconds 
+    t =    25.69s     Wait for com.natophonetics.app to idle
+    t =    25.69s     Find the Application 'com.natophonetics.app'
+    t =    25.71s     Check for interrupting elements affecting "NATO Phonetics" Application
+    t =    25.72s     Synthesize event
+    t =    25.73s         Find the Application 'com.natophonetics.app'
+    t =    25.74s         Find the Application 'com.natophonetics.app'
+    t =    25.76s         Find the Application 'com.natophonetics.app'
+    t =    25.77s         Find the Application 'com.natophonetics.app'
+    t =    25.79s         Find the Application 'com.natophonetics.app'
+    t =    26.31s     Wait for com.natophonetics.app to idle
+    t =    26.31s Find the "screen-scroll" Any
+    t =    26.34s Checking existence of `Keyboard (First Match)`
+    t =    26.37s Find the "practice-letters" Any
+RUN12 ALIGN practice-letters frame=(16.0, 836.0, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    26.40s Checking existence of `"practice-letters" Other`
+    t =    26.43s Find the "practice-letters" Other
+    t =    26.46s Checking existence of `"practice-letters" Other`
+    t =    26.49s Press Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 815.0) for 0.0 seconds, then drag to Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 745.0) with velocity of 250.00 pixels per second, and then hold for 0.0 seconds 
+    t =    26.49s     Wait for com.natophonetics.app to idle
+    t =    26.49s     Find the Application 'com.natophonetics.app'
+    t =    26.51s     Check for interrupting elements affecting "NATO Phonetics" Application
+    t =    26.52s     Synthesize event
+    t =    26.53s         Find the Application 'com.natophonetics.app'
+    t =    26.54s         Find the Application 'com.natophonetics.app'
+    t =    26.56s         Find the Application 'com.natophonetics.app'
+    t =    26.57s         Find the Application 'com.natophonetics.app'
+    t =    26.59s         Find the Application 'com.natophonetics.app'
+    t =    27.10s     Wait for com.natophonetics.app to idle
+    t =    27.10s Find the "screen-scroll" Any
+    t =    27.13s Checking existence of `Keyboard (First Match)`
+    t =    27.16s Find the "practice-letters" Any
+RUN12 ALIGN practice-letters frame=(16.0, 836.0, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    27.20s Checking existence of `"practice-letters" Other`
+    t =    27.22s Find the "practice-letters" Other
+    t =    27.25s Checking existence of `"practice-letters" Other`
+    t =    27.28s Press Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 815.0) for 0.0 seconds, then drag to Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 745.0) with velocity of 250.00 pixels per second, and then hold for 0.0 seconds 
+    t =    27.28s     Wait for com.natophonetics.app to idle
+    t =    27.28s     Find the Application 'com.natophonetics.app'
+    t =    27.30s     Check for interrupting elements affecting "NATO Phonetics" Application
+    t =    27.32s     Synthesize event
+    t =    27.32s         Find the Application 'com.natophonetics.app'
+    t =    27.33s         Find the Application 'com.natophonetics.app'
+    t =    27.35s         Find the Application 'com.natophonetics.app'
+    t =    27.36s         Find the Application 'com.natophonetics.app'
+    t =    27.38s         Find the Application 'com.natophonetics.app'
+    t =    27.89s     Wait for com.natophonetics.app to idle
+    t =    27.90s Find the "screen-scroll" Any
+    t =    27.93s Checking existence of `Keyboard (First Match)`
+    t =    27.96s Find the "practice-letters" Any
+RUN12 ALIGN practice-letters frame=(16.0, 836.0, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    27.99s Checking existence of `"practice-letters" Other`
+    t =    28.02s Find the "practice-letters" Other
+    t =    28.05s Checking existence of `"practice-letters" Other`
+    t =    28.07s Press Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 815.0) for 0.0 seconds, then drag to Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 745.0) with velocity of 250.00 pixels per second, and then hold for 0.0 seconds 
+    t =    28.07s     Wait for com.natophonetics.app to idle
+    t =    28.08s     Find the Application 'com.natophonetics.app'
+    t =    28.09s     Check for interrupting elements affecting "NATO Phonetics" Application
+    t =    28.11s     Synthesize event
+    t =    28.11s         Find the Application 'com.natophonetics.app'
+    t =    28.13s         Find the Application 'com.natophonetics.app'
+    t =    28.14s         Find the Application 'com.natophonetics.app'
+    t =    28.16s         Find the Application 'com.natophonetics.app'
+    t =    28.17s         Find the Application 'com.natophonetics.app'
+    t =    28.69s     Wait for com.natophonetics.app to idle
+    t =    28.70s Find the "screen-scroll" Any
+    t =    28.73s Checking existence of `Keyboard (First Match)`
+    t =    28.76s Find the "practice-letters" Any
+RUN12 ALIGN practice-letters frame=(16.0, 836.0, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    28.79s Checking existence of `"practice-letters" Other`
+    t =    28.82s Find the "practice-letters" Other
+    t =    28.85s Checking existence of `"practice-letters" Other`
+    t =    28.87s Press Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 815.0) for 0.0 seconds, then drag to Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 745.0) with velocity of 250.00 pixels per second, and then hold for 0.0 seconds 
+    t =    28.87s     Wait for com.natophonetics.app to idle
+    t =    28.88s     Find the Application 'com.natophonetics.app'
+    t =    28.89s     Check for interrupting elements affecting "NATO Phonetics" Application
+    t =    28.91s     Synthesize event
+    t =    28.91s         Find the Application 'com.natophonetics.app'
+    t =    28.93s         Find the Application 'com.natophonetics.app'
+    t =    28.94s         Find the Application 'com.natophonetics.app'
+    t =    28.95s         Find the Application 'com.natophonetics.app'
+    t =    28.97s         Find the Application 'com.natophonetics.app'
+    t =    29.49s     Wait for com.natophonetics.app to idle
+    t =    29.50s Find the "screen-scroll" Any
+    t =    29.53s Checking existence of `Keyboard (First Match)`
+    t =    29.56s Find the "practice-letters" Any
+RUN12 ALIGN practice-letters frame=(16.0, 836.0, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    29.59s Checking existence of `"practice-letters" Other`
+    t =    29.62s Find the "practice-letters" Other
+    t =    29.65s Checking existence of `"practice-letters" Other`
+    t =    29.67s Press Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 815.0) for 0.0 seconds, then drag to Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 745.0) with velocity of 250.00 pixels per second, and then hold for 0.0 seconds 
+    t =    29.67s     Wait for com.natophonetics.app to idle
+    t =    29.68s     Find the Application 'com.natophonetics.app'
+    t =    29.69s     Check for interrupting elements affecting "NATO Phonetics" Application
+    t =    29.71s     Synthesize event
+    t =    29.71s         Find the Application 'com.natophonetics.app'
+    t =    29.73s         Find the Application 'com.natophonetics.app'
+    t =    29.74s         Find the Application 'com.natophonetics.app'
+    t =    29.75s         Find the Application 'com.natophonetics.app'
+    t =    29.77s         Find the Application 'com.natophonetics.app'
+    t =    30.28s     Wait for com.natophonetics.app to idle
+    t =    30.28s Find the "screen-scroll" Any
+    t =    30.30s Checking existence of `Keyboard (First Match)`
+    t =    30.32s Find the "practice-letters" Any
+RUN12 ALIGN practice-letters frame=(16.0, 836.0, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    30.35s Checking existence of `"practice-letters" Other`
+    t =    30.38s Find the "practice-letters" Other
+    t =    30.42s Checking existence of `"practice-letters" Other`
+    t =    30.45s Press Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 815.0) for 0.0 seconds, then drag to Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 745.0) with velocity of 250.00 pixels per second, and then hold for 0.0 seconds 
+    t =    30.45s     Wait for com.natophonetics.app to idle
+    t =    30.56s     Find the Application 'com.natophonetics.app'
+    t =    30.58s     Check for interrupting elements affecting "NATO Phonetics" Application
+    t =    30.60s     Synthesize event
+    t =    30.60s         Find the Application 'com.natophonetics.app'
+    t =    30.61s         Find the Application 'com.natophonetics.app'
+    t =    30.63s         Find the Application 'com.natophonetics.app'
+    t =    30.64s         Find the Application 'com.natophonetics.app'
+    t =    30.66s         Find the Application 'com.natophonetics.app'
+    t =    31.17s     Wait for com.natophonetics.app to idle
+    t =    31.18s Find the "screen-scroll" Any
+    t =    31.21s Checking existence of `Keyboard (First Match)`
+    t =    31.24s Find the "practice-letters" Any
+RUN12 ALIGN practice-letters frame=(16.0, 836.0, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    31.27s Checking existence of `"practice-letters" Other`
+    t =    31.30s Find the "practice-letters" Other
+    t =    31.33s Checking existence of `"practice-letters" Other`
+    t =    31.36s Press Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 815.0) for 0.0 seconds, then drag to Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 745.0) with velocity of 250.00 pixels per second, and then hold for 0.0 seconds 
+    t =    31.36s     Wait for com.natophonetics.app to idle
+    t =    31.36s     Find the Application 'com.natophonetics.app'
+    t =    31.38s     Check for interrupting elements affecting "NATO Phonetics" Application
+    t =    31.39s     Synthesize event
+    t =    31.40s         Find the Application 'com.natophonetics.app'
+    t =    31.41s         Find the Application 'com.natophonetics.app'
+    t =    31.43s         Find the Application 'com.natophonetics.app'
+    t =    31.44s         Find the Application 'com.natophonetics.app'
+    t =    31.46s         Find the Application 'com.natophonetics.app'
+    t =    31.98s     Wait for com.natophonetics.app to idle
+    t =    31.98s Find the "screen-scroll" Any
+    t =    32.01s Checking existence of `Keyboard (First Match)`
+    t =    32.04s Find the "practice-letters" Any
+RUN12 ALIGN practice-letters frame=(16.0, 836.0, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    32.07s Checking existence of `"practice-letters" Other`
+    t =    32.10s Find the "practice-letters" Other
+    t =    32.13s Checking existence of `"practice-letters" Other`
+    t =    32.16s Press Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 815.0) for 0.0 seconds, then drag to Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 745.0) with velocity of 250.00 pixels per second, and then hold for 0.0 seconds 
+    t =    32.16s     Wait for com.natophonetics.app to idle
+    t =    32.16s     Find the Application 'com.natophonetics.app'
+    t =    32.18s     Check for interrupting elements affecting "NATO Phonetics" Application
+    t =    32.19s     Synthesize event
+    t =    32.20s         Find the Application 'com.natophonetics.app'
+    t =    32.21s         Find the Application 'com.natophonetics.app'
+    t =    32.23s         Find the Application 'com.natophonetics.app'
+    t =    32.24s         Find the Application 'com.natophonetics.app'
+    t =    32.26s         Find the Application 'com.natophonetics.app'
+    t =    32.78s     Wait for com.natophonetics.app to idle
+    t =    32.78s Find the "screen-scroll" Any
+    t =    32.81s Checking existence of `Keyboard (First Match)`
+    t =    32.84s Find the "practice-letters" Any
+RUN12 ALIGN practice-letters frame=(16.0, 836.0, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    32.87s Checking existence of `"practice-letters" Other`
+    t =    32.90s Find the "practice-letters" Other
+    t =    32.93s Checking existence of `"practice-letters" Other`
+    t =    32.96s Press Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 815.0) for 0.0 seconds, then drag to Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 745.0) with velocity of 250.00 pixels per second, and then hold for 0.0 seconds 
+    t =    32.96s     Wait for com.natophonetics.app to idle
+    t =    32.96s     Find the Application 'com.natophonetics.app'
+    t =    32.97s     Check for interrupting elements affecting "NATO Phonetics" Application
+    t =    32.99s     Synthesize event
+    t =    32.99s         Find the Application 'com.natophonetics.app'
+    t =    33.01s         Find the Application 'com.natophonetics.app'
+    t =    33.02s         Find the Application 'com.natophonetics.app'
+    t =    33.04s         Find the Application 'com.natophonetics.app'
+    t =    33.05s         Find the Application 'com.natophonetics.app'
+    t =    33.58s     Wait for com.natophonetics.app to idle
+    t =    33.58s Find the "screen-scroll" Any
+    t =    33.61s Checking existence of `Keyboard (First Match)`
+    t =    33.64s Find the "practice-letters" Any
+RUN12 ALIGN practice-letters frame=(16.0, 836.0, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    33.67s Checking existence of `"practice-letters" Other`
+    t =    33.70s Find the "practice-letters" Other
+    t =    33.73s Checking existence of `"practice-letters" Other`
+    t =    33.76s Press Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 815.0) for 0.0 seconds, then drag to Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 745.0) with velocity of 250.00 pixels per second, and then hold for 0.0 seconds 
+    t =    33.76s     Wait for com.natophonetics.app to idle
+    t =    33.76s     Find the Application 'com.natophonetics.app'
+    t =    33.78s     Check for interrupting elements affecting "NATO Phonetics" Application
+    t =    33.79s     Synthesize event
+    t =    33.80s         Find the Application 'com.natophonetics.app'
+    t =    33.81s         Find the Application 'com.natophonetics.app'
+    t =    33.83s         Find the Application 'com.natophonetics.app'
+    t =    33.84s         Find the Application 'com.natophonetics.app'
+    t =    33.86s         Find the Application 'com.natophonetics.app'
+    t =    34.37s     Wait for com.natophonetics.app to idle
+    t =    34.38s Find the "screen-scroll" Any
+    t =    34.41s Checking existence of `Keyboard (First Match)`
+    t =    34.44s Find the "practice-letters" Any
+RUN12 ALIGN practice-letters frame=(16.0, 836.0, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    34.47s Checking existence of `"practice-letters" Other`
+    t =    34.50s Find the "practice-letters" Other
+    t =    34.53s Checking existence of `"practice-letters" Other`
+    t =    34.56s Press Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 815.0) for 0.0 seconds, then drag to Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 745.0) with velocity of 250.00 pixels per second, and then hold for 0.0 seconds 
+    t =    34.56s     Wait for com.natophonetics.app to idle
+    t =    34.56s     Find the Application 'com.natophonetics.app'
+    t =    34.58s     Check for interrupting elements affecting "NATO Phonetics" Application
+    t =    34.60s     Synthesize event
+    t =    34.60s         Find the Application 'com.natophonetics.app'
+    t =    34.61s         Find the Application 'com.natophonetics.app'
+    t =    34.63s         Find the Application 'com.natophonetics.app'
+    t =    34.65s         Find the Application 'com.natophonetics.app'
+    t =    34.66s         Find the Application 'com.natophonetics.app'
+    t =    35.18s     Wait for com.natophonetics.app to idle
+    t =    35.19s Find the "screen-scroll" Any
+    t =    35.22s Checking existence of `Keyboard (First Match)`
+    t =    35.25s Find the "practice-letters" Any
+RUN12 ALIGN practice-letters frame=(16.0, 836.0, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    35.28s Checking existence of `"practice-letters" Other`
+    t =    35.31s Find the "practice-letters" Other
+    t =    35.35s Checking existence of `"practice-letters" Other`
+    t =    35.37s Press Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 815.0) for 0.0 seconds, then drag to Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 745.0) with velocity of 250.00 pixels per second, and then hold for 0.0 seconds 
+    t =    35.37s     Wait for com.natophonetics.app to idle
+    t =    35.37s     Find the Application 'com.natophonetics.app'
+    t =    35.39s     Check for interrupting elements affecting "NATO Phonetics" Application
+    t =    35.41s     Synthesize event
+    t =    35.42s         Find the Application 'com.natophonetics.app'
+    t =    35.43s         Find the Application 'com.natophonetics.app'
+    t =    35.45s         Find the Application 'com.natophonetics.app'
+    t =    35.46s         Find the Application 'com.natophonetics.app'
+    t =    35.48s         Find the Application 'com.natophonetics.app'
+    t =    35.99s     Wait for com.natophonetics.app to idle
+    t =    36.00s Find the "screen-scroll" Any
+    t =    36.01s Checking existence of `Keyboard (First Match)`
+    t =    36.04s Find the "practice-letters" Any
+RUN12 ALIGN practice-letters frame=(16.0, 836.0, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    36.09s Checking existence of `"practice-letters" Other`
+    t =    36.12s Find the "practice-letters" Other
+    t =    36.16s Checking existence of `"practice-letters" Other`
+    t =    36.19s Press Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 815.0) for 0.0 seconds, then drag to Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 745.0) with velocity of 250.00 pixels per second, and then hold for 0.0 seconds 
+    t =    36.19s     Wait for com.natophonetics.app to idle
+    t =    36.19s     Find the Application 'com.natophonetics.app'
+    t =    36.20s     Check for interrupting elements affecting "NATO Phonetics" Application
+    t =    36.23s     Synthesize event
+    t =    36.23s         Find the Application 'com.natophonetics.app'
+    t =    36.24s         Find the Application 'com.natophonetics.app'
+    t =    36.26s         Find the Application 'com.natophonetics.app'
+    t =    36.28s         Find the Application 'com.natophonetics.app'
+    t =    36.29s         Find the Application 'com.natophonetics.app'
+    t =    36.81s     Wait for com.natophonetics.app to idle
+    t =    36.81s Find the "screen-scroll" Any
+    t =    36.83s Checking existence of `Keyboard (First Match)`
+    t =    36.86s Find the "practice-letters" Any
+RUN12 ALIGN practice-letters frame=(16.0, 836.0, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    36.89s Checking existence of `"practice-letters" Other`
+    t =    36.92s Find the "practice-letters" Other
+    t =    36.96s Checking existence of `"practice-letters" Other`
+    t =    36.98s Press Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 815.0) for 0.0 seconds, then drag to Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 745.0) with velocity of 250.00 pixels per second, and then hold for 0.0 seconds 
+    t =    36.98s     Wait for com.natophonetics.app to idle
+    t =    36.99s     Find the Application 'com.natophonetics.app'
+    t =    37.00s     Check for interrupting elements affecting "NATO Phonetics" Application
+    t =    37.02s     Synthesize event
+    t =    37.02s         Find the Application 'com.natophonetics.app'
+    t =    37.04s         Find the Application 'com.natophonetics.app'
+    t =    37.05s         Find the Application 'com.natophonetics.app'
+    t =    37.07s         Find the Application 'com.natophonetics.app'
+    t =    37.09s         Find the Application 'com.natophonetics.app'
+    t =    37.60s     Wait for com.natophonetics.app to idle
+    t =    37.61s Find the "screen-scroll" Any
+    t =    37.63s Checking existence of `Keyboard (First Match)`
+    t =    37.67s Find the "practice-letters" Any
+RUN12 ALIGN practice-letters frame=(16.0, 836.0, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    37.70s Checking existence of `"practice-letters" Other`
+    t =    37.73s Find the "practice-letters" Other
+    t =    37.76s Checking existence of `"practice-letters" Other`
+    t =    37.79s Press Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 815.0) for 0.0 seconds, then drag to Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 745.0) with velocity of 250.00 pixels per second, and then hold for 0.0 seconds 
+    t =    37.79s     Wait for com.natophonetics.app to idle
+    t =    37.79s     Find the Application 'com.natophonetics.app'
+    t =    37.81s     Check for interrupting elements affecting "NATO Phonetics" Application
+    t =    37.83s     Synthesize event
+    t =    37.83s         Find the Application 'com.natophonetics.app'
+    t =    37.84s         Find the Application 'com.natophonetics.app'
+    t =    37.87s         Find the Application 'com.natophonetics.app'
+    t =    37.89s         Find the Application 'com.natophonetics.app'
+    t =    37.90s         Find the Application 'com.natophonetics.app'
+    t =    38.43s     Wait for com.natophonetics.app to idle
+    t =    38.43s Find the "screen-scroll" Any
+    t =    38.46s Checking existence of `Keyboard (First Match)`
+    t =    38.49s Find the "practice-letters" Any
+RUN12 ALIGN practice-letters frame=(16.0, 836.0, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    38.53s Checking existence of `"practice-letters" Other`
+    t =    38.55s Find the "practice-letters" Other
+    t =    38.59s Checking existence of `"practice-letters" Other`
+    t =    38.62s Press Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 815.0) for 0.0 seconds, then drag to Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 745.0) with velocity of 250.00 pixels per second, and then hold for 0.0 seconds 
+    t =    38.62s     Wait for com.natophonetics.app to idle
+    t =    38.62s     Find the Application 'com.natophonetics.app'
+    t =    38.63s     Check for interrupting elements affecting "NATO Phonetics" Application
+    t =    38.65s     Synthesize event
+    t =    38.66s         Find the Application 'com.natophonetics.app'
+    t =    38.67s         Find the Application 'com.natophonetics.app'
+    t =    38.69s         Find the Application 'com.natophonetics.app'
+    t =    38.70s         Find the Application 'com.natophonetics.app'
+    t =    38.72s         Find the Application 'com.natophonetics.app'
+    t =    39.23s     Wait for com.natophonetics.app to idle
+    t =    39.24s Find the "screen-scroll" Any
+    t =    39.27s Checking existence of `Keyboard (First Match)`
+    t =    39.30s Find the "practice-letters" Any
+RUN12 ALIGN practice-letters frame=(16.0, 836.0, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    39.33s Checking existence of `"practice-letters" Other`
+    t =    39.36s Find the "practice-letters" Other
+    t =    39.39s Checking existence of `"practice-letters" Other`
+    t =    39.42s Press Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 815.0) for 0.0 seconds, then drag to Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 745.0) with velocity of 250.00 pixels per second, and then hold for 0.0 seconds 
+    t =    39.42s     Wait for com.natophonetics.app to idle
+    t =    39.42s     Find the Application 'com.natophonetics.app'
+    t =    39.44s     Check for interrupting elements affecting "NATO Phonetics" Application
+    t =    39.46s     Synthesize event
+    t =    39.46s         Find the Application 'com.natophonetics.app'
+    t =    39.47s         Find the Application 'com.natophonetics.app'
+    t =    39.49s         Find the Application 'com.natophonetics.app'
+    t =    39.50s         Find the Application 'com.natophonetics.app'
+    t =    39.52s         Find the Application 'com.natophonetics.app'
+    t =    40.03s     Wait for com.natophonetics.app to idle
+    t =    40.04s Find the "screen-scroll" Any
+    t =    40.07s Checking existence of `Keyboard (First Match)`
+    t =    40.10s Find the "practice-letters" Any
+RUN12 ALIGN practice-letters frame=(16.0, 836.0, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    40.13s Checking existence of `"practice-letters" Other`
+    t =    40.16s Find the "practice-letters" Other
+    t =    40.19s Checking existence of `"practice-letters" Other`
+    t =    40.22s Press Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 815.0) for 0.0 seconds, then drag to Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 745.0) with velocity of 250.00 pixels per second, and then hold for 0.0 seconds 
+    t =    40.22s     Wait for com.natophonetics.app to idle
+    t =    40.22s     Find the Application 'com.natophonetics.app'
+    t =    40.24s     Check for interrupting elements affecting "NATO Phonetics" Application
+    t =    40.25s     Synthesize event
+    t =    40.26s         Find the Application 'com.natophonetics.app'
+    t =    40.27s         Find the Application 'com.natophonetics.app'
+    t =    40.29s         Find the Application 'com.natophonetics.app'
+    t =    40.31s         Find the Application 'com.natophonetics.app'
+    t =    40.32s         Find the Application 'com.natophonetics.app'
+    t =    40.84s     Wait for com.natophonetics.app to idle
+    t =    40.84s Find the "screen-scroll" Any
+    t =    40.86s Checking existence of `Keyboard (First Match)`
+    t =    40.88s Find the "practice-letters" Any
+RUN12 ALIGN practice-letters frame=(16.0, 836.0, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    40.91s Checking existence of `"practice-letters" Other`
+    t =    40.93s Find the "practice-letters" Other
+    t =    40.97s Checking existence of `"practice-letters" Other`
+    t =    40.99s Press Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 815.0) for 0.0 seconds, then drag to Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 745.0) with velocity of 250.00 pixels per second, and then hold for 0.0 seconds 
+    t =    40.99s     Wait for com.natophonetics.app to idle
+    t =    41.00s     Find the Application 'com.natophonetics.app'
+    t =    41.01s     Check for interrupting elements affecting "NATO Phonetics" Application
+    t =    41.03s     Synthesize event
+    t =    41.03s         Find the Application 'com.natophonetics.app'
+    t =    41.05s         Find the Application 'com.natophonetics.app'
+    t =    41.07s         Find the Application 'com.natophonetics.app'
+    t =    41.08s         Find the Application 'com.natophonetics.app'
+    t =    41.10s         Find the Application 'com.natophonetics.app'
+    t =    41.62s     Wait for com.natophonetics.app to idle
+    t =    41.62s Find the "screen-scroll" Any
+    t =    41.65s Checking existence of `Keyboard (First Match)`
+    t =    41.68s Find the "practice-letters" Any
+RUN12 ALIGN practice-letters frame=(16.0, 836.0, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    41.71s Checking existence of `"practice-letters" Other`
+    t =    41.74s Find the "practice-letters" Other
+    t =    41.77s Checking existence of `"practice-letters" Other`
+    t =    41.80s Press Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 815.0) for 0.0 seconds, then drag to Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 745.0) with velocity of 250.00 pixels per second, and then hold for 0.0 seconds 
+    t =    41.80s     Wait for com.natophonetics.app to idle
+    t =    41.80s     Find the Application 'com.natophonetics.app'
+    t =    41.81s     Check for interrupting elements affecting "NATO Phonetics" Application
+    t =    41.83s     Synthesize event
+    t =    41.84s         Find the Application 'com.natophonetics.app'
+    t =    41.85s         Find the Application 'com.natophonetics.app'
+    t =    41.86s         Find the Application 'com.natophonetics.app'
+    t =    41.88s         Find the Application 'com.natophonetics.app'
+    t =    41.90s         Find the Application 'com.natophonetics.app'
+    t =    42.42s     Wait for com.natophonetics.app to idle
+    t =    42.42s Find the "screen-scroll" Any
+    t =    42.45s Checking existence of `Keyboard (First Match)`
+    t =    42.48s Find the "practice-letters" Any
+RUN12 ALIGN practice-letters frame=(16.0, 836.0, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    42.51s Checking existence of `"practice-letters" Other`
+    t =    42.54s Find the "practice-letters" Other
+    t =    42.57s Checking existence of `"practice-letters" Other`
+    t =    42.60s Press Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 815.0) for 0.0 seconds, then drag to Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 745.0) with velocity of 250.00 pixels per second, and then hold for 0.0 seconds 
+    t =    42.60s     Wait for com.natophonetics.app to idle
+    t =    42.60s     Find the Application 'com.natophonetics.app'
+    t =    42.62s     Check for interrupting elements affecting "NATO Phonetics" Application
+    t =    42.64s     Synthesize event
+    t =    42.64s         Find the Application 'com.natophonetics.app'
+    t =    42.65s         Find the Application 'com.natophonetics.app'
+    t =    42.67s         Find the Application 'com.natophonetics.app'
+    t =    42.68s         Find the Application 'com.natophonetics.app'
+    t =    42.70s         Find the Application 'com.natophonetics.app'
+    t =    43.22s     Wait for com.natophonetics.app to idle
+    t =    43.22s Find the "screen-scroll" Any
+    t =    43.25s Checking existence of `Keyboard (First Match)`
+    t =    43.28s Find the "practice-letters" Any
+RUN12 ALIGN practice-letters frame=(16.0, 836.0, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    43.31s Checking existence of `"practice-letters" Other`
+    t =    43.34s Find the "practice-letters" Other
+    t =    43.37s Checking existence of `"practice-letters" Other`
+    t =    43.40s Press Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 815.0) for 0.0 seconds, then drag to Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 745.0) with velocity of 250.00 pixels per second, and then hold for 0.0 seconds 
+    t =    43.40s     Wait for com.natophonetics.app to idle
+    t =    43.40s     Find the Application 'com.natophonetics.app'
+    t =    43.42s     Check for interrupting elements affecting "NATO Phonetics" Application
+    t =    43.43s     Synthesize event
+    t =    43.44s         Find the Application 'com.natophonetics.app'
+    t =    43.45s         Find the Application 'com.natophonetics.app'
+    t =    43.47s         Find the Application 'com.natophonetics.app'
+    t =    43.48s         Find the Application 'com.natophonetics.app'
+    t =    43.50s         Find the Application 'com.natophonetics.app'
+    t =    44.01s     Wait for com.natophonetics.app to idle
+    t =    44.02s Find the "screen-scroll" Any
+    t =    44.05s Checking existence of `Keyboard (First Match)`
+    t =    44.08s Find the "practice-letters" Any
+RUN12 ALIGN practice-letters frame=(16.0, 836.0, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    44.11s Checking existence of `"practice-letters" Other`
+    t =    44.13s Find the "practice-letters" Other
+    t =    44.17s Checking existence of `"practice-letters" Other`
+    t =    44.19s Press Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 815.0) for 0.0 seconds, then drag to Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 745.0) with velocity of 250.00 pixels per second, and then hold for 0.0 seconds 
+    t =    44.19s     Wait for com.natophonetics.app to idle
+    t =    44.19s     Find the Application 'com.natophonetics.app'
+    t =    44.21s     Check for interrupting elements affecting "NATO Phonetics" Application
+    t =    44.23s     Synthesize event
+    t =    44.23s         Find the Application 'com.natophonetics.app'
+    t =    44.25s         Find the Application 'com.natophonetics.app'
+    t =    44.27s         Find the Application 'com.natophonetics.app'
+    t =    44.28s         Find the Application 'com.natophonetics.app'
+    t =    44.30s         Find the Application 'com.natophonetics.app'
+    t =    44.82s     Wait for com.natophonetics.app to idle
+    t =    44.83s Find the "screen-scroll" Any
+    t =    44.85s Checking existence of `Keyboard (First Match)`
+    t =    44.88s Find the "practice-letters" Any
+RUN12 ALIGN practice-letters frame=(16.0, 836.0, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    44.91s Checking existence of `"practice-letters" Other`
+    t =    44.94s Find the "practice-letters" Other
+    t =    44.97s Checking existence of `"practice-letters" Other`
+    t =    45.00s Press Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 815.0) for 0.0 seconds, then drag to Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 745.0) with velocity of 250.00 pixels per second, and then hold for 0.0 seconds 
+    t =    45.00s     Wait for com.natophonetics.app to idle
+    t =    45.00s     Find the Application 'com.natophonetics.app'
+    t =    45.02s     Check for interrupting elements affecting "NATO Phonetics" Application
+    t =    45.04s     Synthesize event
+    t =    45.04s         Find the Application 'com.natophonetics.app'
+    t =    45.05s         Find the Application 'com.natophonetics.app'
+    t =    45.07s         Find the Application 'com.natophonetics.app'
+    t =    45.08s         Find the Application 'com.natophonetics.app'
+    t =    45.10s         Find the Application 'com.natophonetics.app'
+    t =    45.62s     Wait for com.natophonetics.app to idle
+    t =    45.62s Find the "screen-scroll" Any
+    t =    45.65s Checking existence of `Keyboard (First Match)`
+    t =    45.68s Find the "practice-letters" Any
+RUN12 ALIGN practice-letters frame=(16.0, 836.0, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    45.71s Checking existence of `"practice-letters" Other`
+    t =    45.74s Find the "practice-letters" Other
+    t =    45.77s Checking existence of `"practice-letters" Other`
+    t =    45.80s Press Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 815.0) for 0.0 seconds, then drag to Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 745.0) with velocity of 250.00 pixels per second, and then hold for 0.0 seconds 
+    t =    45.80s     Wait for com.natophonetics.app to idle
+    t =    45.80s     Find the Application 'com.natophonetics.app'
+    t =    45.82s     Check for interrupting elements affecting "NATO Phonetics" Application
+    t =    45.83s     Synthesize event
+    t =    45.84s         Find the Application 'com.natophonetics.app'
+    t =    45.85s         Find the Application 'com.natophonetics.app'
+    t =    45.87s         Find the Application 'com.natophonetics.app'
+    t =    45.88s         Find the Application 'com.natophonetics.app'
+    t =    45.90s         Find the Application 'com.natophonetics.app'
+    t =    46.42s     Wait for com.natophonetics.app to idle
+    t =    46.42s Find the "screen-scroll" Any
+    t =    46.45s Checking existence of `Keyboard (First Match)`
+    t =    46.48s Find the "practice-letters" Any
+RUN12 ALIGN practice-letters frame=(16.0, 836.0, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    46.51s Checking existence of `"practice-letters" Other`
+    t =    46.54s Find the "practice-letters" Other
+    t =    46.57s Checking existence of `"practice-letters" Other`
+    t =    46.60s Press Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 815.0) for 0.0 seconds, then drag to Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 745.0) with velocity of 250.00 pixels per second, and then hold for 0.0 seconds 
+    t =    46.60s     Wait for com.natophonetics.app to idle
+    t =    46.60s     Find the Application 'com.natophonetics.app'
+    t =    46.62s     Check for interrupting elements affecting "NATO Phonetics" Application
+    t =    46.64s     Synthesize event
+    t =    46.64s         Find the Application 'com.natophonetics.app'
+    t =    46.65s         Find the Application 'com.natophonetics.app'
+    t =    46.67s         Find the Application 'com.natophonetics.app'
+    t =    46.68s         Find the Application 'com.natophonetics.app'
+    t =    46.70s         Find the Application 'com.natophonetics.app'
+    t =    47.22s     Wait for com.natophonetics.app to idle
+    t =    47.23s Find the "screen-scroll" Any
+    t =    47.26s Checking existence of `Keyboard (First Match)`
+    t =    47.29s Find the "practice-letters" Any
+RUN12 ALIGN practice-letters frame=(16.0, 836.0, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    47.32s Checking existence of `"practice-letters" Other`
+    t =    47.34s Find the "practice-letters" Other
+    t =    47.38s Checking existence of `"practice-letters" Other`
+    t =    47.40s Press Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 815.0) for 0.0 seconds, then drag to Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 745.0) with velocity of 250.00 pixels per second, and then hold for 0.0 seconds 
+    t =    47.40s     Wait for com.natophonetics.app to idle
+    t =    47.41s     Find the Application 'com.natophonetics.app'
+    t =    47.42s     Check for interrupting elements affecting "NATO Phonetics" Application
+    t =    47.44s     Synthesize event
+    t =    47.44s         Find the Application 'com.natophonetics.app'
+    t =    47.46s         Find the Application 'com.natophonetics.app'
+    t =    47.47s         Find the Application 'com.natophonetics.app'
+    t =    47.49s         Find the Application 'com.natophonetics.app'
+    t =    47.50s         Find the Application 'com.natophonetics.app'
+    t =    48.03s     Wait for com.natophonetics.app to idle
+    t =    48.03s Find the "screen-scroll" Any
+    t =    48.06s Checking existence of `Keyboard (First Match)`
+    t =    48.09s Find the "practice-letters" Any
+RUN12 ALIGN practice-letters frame=(16.0, 836.0, 370.0, 48.0) view=(0.0, 118.0, 402.0, 722.0) bottom=840.0
+    t =    48.12s Checking existence of `"practice-letters" Other`
+    t =    48.15s Find the "practice-letters" Other
+    t =    48.18s Checking existence of `"practice-letters" Other`
+    t =    48.21s Press Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 815.0) for 0.0 seconds, then drag to Application 'com.natophonetics.app'[0.00, 0.00] -> (386.0, 745.0) with velocity of 250.00 pixels per second, and then hold for 0.0 seconds 
+    t =    48.21s     Wait for com.natophonetics.app to idle
+    t =    48.21s     Find the Application 'com.natophonetics.app'
+    t =    48.23s     Check for interrupting elements affecting "NATO Phonetics" Application
+    t =    48.25s     Synthesize event
+    t =    48.25s         Find the Application 'com.natophonetics.app'
+    t =    48.26s         Find the Application 'com.natophonetics.app'
+    t =    48.28s         Find the Application 'com.natophonetics.app'
+    t =    48.29s         Find the Application 'com.natophonetics.app'
+    t =    48.31s         Find the Application 'com.natophonetics.app'
+    t =    48.84s     Wait for com.natophonetics.app to idle
+/tmp/nato-ios-run12-capture/CaptureUITests.swift:24: error: -[CaptureUITests.PracticeUITests testListeningAndTyped] : failed - Unreachable practice-letters
+    t =    48.94s Tear Down
+Test Case '-[CaptureUITests.PracticeUITests testListeningAndTyped]' failed (49.310 seconds).
+Test Suite 'PracticeUITests' failed at 2026-11-18 11:04:24.143.
+	 Executed 1 test, with 1 failure (0 unexpected) in 49.310 (49.312) seconds
+Test Suite 'CaptureUITests.xctest' failed at 2026-11-18 11:04:24.144.
+	 Executed 1 test, with 1 failure (0 unexpected) in 49.310 (49.314) seconds
+Test Suite 'Selected tests' failed at 2026-11-18 11:04:24.145.
+	 Executed 1 test, with 1 failure (0 unexpected) in 49.310 (49.315) seconds
+2026-11-18 11:04:24.695 xcodebuild[72019:11000795]  IDETestOperationsObserverDebug: Failure collecting diagnostics from simulator: Process exited with error 72:
+ xcrun: error: unable to find utility "simctl", not a developer tool or in PATH
+
+2026-11-18 11:04:24.712 xcodebuild[72019:11000721] [MT] IDETestOperationsObserverDebug: 56.149 elapsed -- Testing started completed.
+2026-11-18 11:04:24.712 xcodebuild[72019:11000721] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-11-18 11:04:24.712 xcodebuild[72019:11000721] [MT] IDETestOperationsObserverDebug: 56.149 sec, +56.149 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/nato-ios-run12-capture/key-events.xcresult
+
+Failing tests:
+	PracticeUITests.testListeningAndTyped()
+
+** TEST FAILED **
+
+Testing started

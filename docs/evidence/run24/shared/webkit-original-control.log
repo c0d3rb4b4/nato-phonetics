@@ -1,0 +1,100 @@
+{"level":"info","ts":1795084443.342844,"msg":"using config from file","file":"/Users/mac/dev/apps/nato-phonetics/artifacts/run24/webkit-original-control/runtime-S7WCtF/a/Caddyfile"}
+{"level":"info","ts":1795084443.347778,"msg":"adapted config to JSON","adapter":"caddyfile"}
+{"level":"info","ts":1795084443.349737,"logger":"http","msg":"servers shutting down with eternal grace period"}
+{"level":"info","ts":1795084443.349479,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x7126f9a06780"}
+{"level":"info","ts":1795084443.350501,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0x7126f9a06780"}
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/Users/mac/dev/apps/nato-phonetics/artifacts/run24/original/src/navigation/routes.js' imported from /Users/mac/dev/apps/nato-phonetics/artifacts/run24/original/scripts/package-web.cjs
+    at finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    at moduleResolve (node:internal/modules/esm/resolve:861:10)
+    at defaultResolve (node:internal/modules/esm/resolve:985:11)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:747:20)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)
+    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:680:36)
+    at TracingChannel.tracePromise (node:diagnostics_channel:350:14)
+    at ModuleLoader.import (node:internal/modules/esm/loader:679:21)
+    at defaultImportModuleDynamicallyForScript (node:internal/modules/esm/utils:235:31) {
+  code: 'ERR_MODULE_NOT_FOUND',
+  url: 'file:///Users/mac/dev/apps/nato-phonetics/artifacts/run24/original/src/navigation/routes.js'
+}
+{
+  "engine": "webkit",
+  "runner": "1.65.1",
+  "platform": "darwin",
+  "transitionMode": "process",
+  "idleWithNoAppClientsMs": 0,
+  "checks": [
+    {
+      "name": "All 13 direct routes and trailing slashes return exact route HTML with revalidation",
+      "passed": true
+    },
+    {
+      "name": "Exact resource GET/HEAD bytes, MIME/cache headers, missing assets/private metadata 404, navigation fallback and method handling",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "boundary": "Actual local Caddy; public HTTPS/certificates/host, branded Safari/iOS, legacy clients and M11 remain unrun",
+  "runnerSha256": "dc1d873bba2841b07ed23947f47bfab2b948062ad0ce4cfc208fd1aecada9d43",
+  "runtimeDirectory": "/Users/mac/dev/apps/nato-phonetics/artifacts/run24/webkit-original-control/runtime-S7WCtF",
+  "candidate": {
+    "artifact": "/Users/mac/dev/apps/nato-phonetics/artifacts/run23/web/nato-web.tar.gz",
+    "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+    "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+  },
+  "caddy": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+  "validation": "Valid configuration",
+  "validators": {
+    "etag": null,
+    "modified": null
+  },
+  "browser": "27.2",
+  "asyncPollingNegativeCheck": "Explicitly awaited false predicate times out, never passes",
+  "failure": {
+    "message": "Cannot find module '/Users/mac/dev/apps/nato-phonetics/artifacts/run24/original/src/navigation/routes.js' imported from /Users/mac/dev/apps/nato-phonetics/artifacts/run24/original/scripts/package-web.cjs",
+    "stack": "Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/Users/mac/dev/apps/nato-phonetics/artifacts/run24/original/src/navigation/routes.js' imported from /Users/mac/dev/apps/nato-phonetics/artifacts/run24/original/scripts/package-web.cjs\n    at finalizeResolution (node:internal/modules/esm/resolve:275:11)\n    at moduleResolve (node:internal/modules/esm/resolve:861:10)\n    at defaultResolve (node:internal/modules/esm/resolve:985:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:747:20)\n    at ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)\n    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:680:36)\n    at TracingChannel.tracePromise (node:diagnostics_channel:350:14)\n    at ModuleLoader.import (node:internal/modules/esm/loader:679:21)\n    at defaultImportModuleDynamicallyForScript (node:internal/modules/esm/utils:235:31)",
+    "state": {
+      "url": "http://127.0.0.1:55499/converter",
+      "text": "Word Converter\nType a word or phrase:\nClear input\nLetters A–Z and digits 0–9. Tabs, newlines and spaces form word boundaries. Dash (-), dot (.), slash (/), at (@) and plus (+) are spoken literally, not NATO code words. Accents and other symbols are shown as not spoken.\nPlay Full Phrase\nReplay phrase\nNo token playing.\nChange playback pace\nRate 1× · word pause 300 ms\nPlain text conversion\nAlfa Three / Bravo dash\nNo unsupported characters. In plain text, / separates input words.\nCopy conversion\nShare conversion\nNATO Phonetic:\nCards show 24 input tokens per page. Plain text, Copy, Share and phrase playback include the whole input. Input, playback position and card page stay in memory.\nCard page 1 of 1 · tokens 1–5 of 5\nA\nAlfaAL-fah\n3\nThreeTREE\nSPACE\nB\nBravoBRAH-voh\nPlay dash\n- · Literal separator",
+      "caches": [
+        "nato-shell-v1-d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+        "host-check-unrelated"
+      ],
+      "controlled": true,
+      "active": "activated",
+      "controllerIsActive": true,
+      "cacheEntries": [
+        {
+          "name": "nato-shell-v1-d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+          "paths": [
+            "/+not-found.html",
+            "/NatoTile-Italic-AWOPV6AY.ttf",
+            "/_sitemap.html",
+            "/about.html",
+            "/alphabet.html",
+            "/audio-help.html",
+            "/converter.html",
+            "/letter-quiz.html",
+            "/menu.html",
+            "/settings.html",
+            "/voice-select.html",
+            "/NatoTile-ExtraBold-P5QNDEHJ.ttf",
+            "/NatoTile-SemiBold-REJGIRDE.ttf",
+            "/favicon.png",
+            "/index.html",
+            "/privacy.html",
+            "/progress.html",
+            "/assets/app-W3AARF6X.js"
+          ]
+        },
+        {
+          "name": "host-check-unrelated",
+          "paths": [
+            "/host-check-unrelated"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,95 @@
+ M .github/workflows/ci.yml
+ M .gitignore
+ M PRIVACY.md
+ M README.md
+ M app.json
+ M app/_layout.js
+ M app/about.js
+ M app/alphabet.js
+ M app/converter.js
+ M app/index.js
+ M app/letter-quiz.js
+ M app/menu.js
+ M app/settings.js
+ D app/voice-quiz.js
+ M app/voice-select.js
+ D components/external-link.tsx
+ D components/haptic-tab.tsx
+ D components/hello-wave.tsx
+ D components/parallax-scroll-view.tsx
+ D components/themed-text.tsx
+ D components/themed-view.tsx
+ D components/ui/collapsible.tsx
+ D components/ui/icon-symbol.ios.tsx
+ D components/ui/icon-symbol.tsx
+ D constants/theme.ts
+ M eslint.config.js
+ D hooks/use-color-scheme.ts
+ D hooks/use-color-scheme.web.ts
+ D hooks/use-theme-color.ts
+ M package-lock.json
+ M package.json
+ M scripts/generate-icons.js
+ D scripts/reset-project.js
+ M src/App.js
+ M src/context/ThemeContext.js
+ M src/data/natoData.js
+ M src/data/quizDistractors.js
+ M src/lib/speech.js
+ M tsconfig.json
+?? .github/workflows/native-builds.yml
+?? .nvmrc
+?? .ruby-version
+?? Gemfile
+?? Gemfile.lock
+?? android/
+?? app/+not-found.js
+?? app/_sitemap.js
+?? app/audio-help.js
+?? app/privacy.js
+?? assets/fonts/
+?? babel.config.js
+?? docs/
+?? index.js
+?? index.web.js
+?? ios/
+?? metro.config.js
+?? react-native.config.js
+?? scripts/build-native.cjs
+?? scripts/build-web.cjs
+?? scripts/check-audit.cjs
+?? scripts/check-no-expo.cjs
+?? scripts/diagnose-home-hydration.cjs
+?? scripts/patch-native-tts.cjs
+?? scripts/serve-web.cjs
+?? scripts/verify-app-browser.cjs
+?? scripts/verify-converter-browser.cjs
+?? scripts/verify-preferences-browser.cjs
+?? scripts/verify-sessions-browser.cjs
+?? scripts/verify-tiles-browser.cjs
+?? src/assets.d.ts
+?? src/components/
+?? src/hooks/
+?? src/lib/appMetadata.js
+?? src/lib/audioVoices.js
+?? src/lib/browserSpeech.js
+?? src/lib/conversion.js
+?? src/lib/conversionExport.js
+?? src/lib/conversionExport.web.js
+?? src/lib/nativeTtsAdapter.js
+?? src/lib/platformSpeech.js
+?? src/lib/platformSpeech.web.js
+?? src/lib/playbackController.js
+?? src/lib/preferenceStore.js
+?? src/lib/preferences.js
+?? src/lib/questions.js
+?? src/lib/quizSession.js
+?? src/lib/tileDesign.js
+?? src/lib/tileTextUnits.android.js
+?? src/lib/tileTextUnits.js
+?? src/lib/tileTextUnits.web.js
+?? src/navigation/
+?? src/package.json
+?? src/types.ts
+?? tests/
+?? web/

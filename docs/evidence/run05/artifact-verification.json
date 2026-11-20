@@ -1,0 +1,208 @@
+{
+  "date": "2026-11-17",
+  "checks": [
+    {
+      "file": "assets/fonts/NatoTile-ExtraBold.ttf",
+      "bytes": 132184,
+      "sha256": "b0150a84d5e000fcd276cf13e1863ca8bbaab0ff2a0dfdcfa958a48781dd7aa6",
+      "expectedSha256": "b0150a84d5e000fcd276cf13e1863ca8bbaab0ff2a0dfdcfa958a48781dd7aa6",
+      "matchesManifest": true,
+      "label": "source font"
+    },
+    {
+      "file": "assets/fonts/NatoTile-SemiBold.ttf",
+      "bytes": 132264,
+      "sha256": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f",
+      "expectedSha256": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f",
+      "matchesManifest": true,
+      "label": "source font"
+    },
+    {
+      "file": "assets/fonts/NatoTile-Italic.ttf",
+      "bytes": 135236,
+      "sha256": "50f16c8bec3ed31190d37403b6e15d200274e7a5e43f1a698a86eef7079d862b",
+      "expectedSha256": "50f16c8bec3ed31190d37403b6e15d200274e7a5e43f1a698a86eef7079d862b",
+      "matchesManifest": true,
+      "label": "source font"
+    },
+    {
+      "file": "dist/assets/app-P7C3PCTX.js",
+      "bytes": 360997,
+      "sha256": "bd3bb2f2a3b1cbefeefb999ce72b23bb1d3cce9b2980b8a6880fb80b54dcff02",
+      "expectedSha256": "bd3bb2f2a3b1cbefeefb999ce72b23bb1d3cce9b2980b8a6880fb80b54dcff02",
+      "matchesManifest": true,
+      "label": "captured web build"
+    },
+    {
+      "file": "dist/NatoTile-ExtraBold-P5QNDEHJ.ttf",
+      "bytes": 132184,
+      "sha256": "b0150a84d5e000fcd276cf13e1863ca8bbaab0ff2a0dfdcfa958a48781dd7aa6",
+      "expectedSha256": "b0150a84d5e000fcd276cf13e1863ca8bbaab0ff2a0dfdcfa958a48781dd7aa6",
+      "matchesManifest": true,
+      "label": "captured web build"
+    },
+    {
+      "file": "dist/NatoTile-Italic-AWOPV6AY.ttf",
+      "bytes": 135236,
+      "sha256": "50f16c8bec3ed31190d37403b6e15d200274e7a5e43f1a698a86eef7079d862b",
+      "expectedSha256": "50f16c8bec3ed31190d37403b6e15d200274e7a5e43f1a698a86eef7079d862b",
+      "matchesManifest": true,
+      "label": "captured web build"
+    },
+    {
+      "file": "dist/NatoTile-SemiBold-REJGIRDE.ttf",
+      "bytes": 132264,
+      "sha256": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f",
+      "expectedSha256": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f",
+      "matchesManifest": true,
+      "label": "captured web build"
+    },
+    {
+      "file": "artifacts/ios-simulator/Build/Products/Release-iphonesimulator/NATOPhonetics.app/NATOPhonetics",
+      "bytes": 9822064,
+      "sha256": "18b55a8cb6d0943fbb61879fd4bbccd9e8d2dfa0608fe66f696fd3a50993dfdd",
+      "expectedSha256": "18b55a8cb6d0943fbb61879fd4bbccd9e8d2dfa0608fe66f696fd3a50993dfdd",
+      "matchesManifest": true,
+      "label": "iOS executable"
+    },
+    {
+      "file": "artifacts/ios-simulator/Build/Products/Release-iphonesimulator/NATOPhonetics.app/main.jsbundle",
+      "bytes": 1645947,
+      "sha256": "9eb4c86dbfeb40e6ec7e6b9fcc054e73152a9b74b545e82429870ac14b5b8520",
+      "expectedSha256": "9eb4c86dbfeb40e6ec7e6b9fcc054e73152a9b74b545e82429870ac14b5b8520",
+      "matchesManifest": true,
+      "label": "iOS JavaScript"
+    },
+    {
+      "file": "artifacts/run05/ios/NATOPhonetics-1.0.0-simulator.zip",
+      "bytes": 4812785,
+      "sha256": "22786a609671ccdce152753a773c7a301de7a47128cbe32b6701394f9c566b98",
+      "expectedSha256": "22786a609671ccdce152753a773c7a301de7a47128cbe32b6701394f9c566b98",
+      "matchesManifest": true,
+      "label": "iOS simulator archive"
+    },
+    {
+      "file": "artifacts/run05/ios/NATOPhonetics-1.0.0-simulator.zip!NATOPhonetics.app/NATOPhonetics",
+      "sha256": "18b55a8cb6d0943fbb61879fd4bbccd9e8d2dfa0608fe66f696fd3a50993dfdd",
+      "expectedSha256": "18b55a8cb6d0943fbb61879fd4bbccd9e8d2dfa0608fe66f696fd3a50993dfdd",
+      "matchesManifest": true,
+      "label": "iOS archived candidate"
+    },
+    {
+      "file": "artifacts/run05/ios/NATOPhonetics-1.0.0-simulator.zip!NATOPhonetics.app/main.jsbundle",
+      "sha256": "9eb4c86dbfeb40e6ec7e6b9fcc054e73152a9b74b545e82429870ac14b5b8520",
+      "expectedSha256": "9eb4c86dbfeb40e6ec7e6b9fcc054e73152a9b74b545e82429870ac14b5b8520",
+      "matchesManifest": true,
+      "label": "iOS archived candidate"
+    },
+    {
+      "file": "artifacts/run05/ios/NATOPhonetics-1.0.0-simulator.zip!NATOPhonetics.app/NatoTile-ExtraBold.ttf",
+      "sha256": "b0150a84d5e000fcd276cf13e1863ca8bbaab0ff2a0dfdcfa958a48781dd7aa6",
+      "expectedSha256": "b0150a84d5e000fcd276cf13e1863ca8bbaab0ff2a0dfdcfa958a48781dd7aa6",
+      "matchesManifest": true,
+      "label": "iOS archived candidate"
+    },
+    {
+      "file": "artifacts/run05/ios/NATOPhonetics-1.0.0-simulator.zip!NATOPhonetics.app/NatoTile-SemiBold.ttf",
+      "sha256": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f",
+      "expectedSha256": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f",
+      "matchesManifest": true,
+      "label": "iOS archived candidate"
+    },
+    {
+      "file": "artifacts/run05/ios/NATOPhonetics-1.0.0-simulator.zip!NATOPhonetics.app/NatoTile-Italic.ttf",
+      "sha256": "50f16c8bec3ed31190d37403b6e15d200274e7a5e43f1a698a86eef7079d862b",
+      "expectedSha256": "50f16c8bec3ed31190d37403b6e15d200274e7a5e43f1a698a86eef7079d862b",
+      "matchesManifest": true,
+      "label": "iOS archived candidate"
+    },
+    {
+      "file": "artifacts/ios-simulator/Build/Products/Release-iphonesimulator/NATOPhonetics.app/NatoTile-ExtraBold.ttf",
+      "bytes": 132184,
+      "sha256": "b0150a84d5e000fcd276cf13e1863ca8bbaab0ff2a0dfdcfa958a48781dd7aa6",
+      "expectedSha256": "b0150a84d5e000fcd276cf13e1863ca8bbaab0ff2a0dfdcfa958a48781dd7aa6",
+      "matchesManifest": true,
+      "label": "iOS bundled font"
+    },
+    {
+      "file": "artifacts/ios-simulator/Build/Products/Release-iphonesimulator/NATOPhonetics.app/NatoTile-SemiBold.ttf",
+      "bytes": 132264,
+      "sha256": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f",
+      "expectedSha256": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f",
+      "matchesManifest": true,
+      "label": "iOS bundled font"
+    },
+    {
+      "file": "artifacts/ios-simulator/Build/Products/Release-iphonesimulator/NATOPhonetics.app/NatoTile-Italic.ttf",
+      "bytes": 135236,
+      "sha256": "50f16c8bec3ed31190d37403b6e15d200274e7a5e43f1a698a86eef7079d862b",
+      "expectedSha256": "50f16c8bec3ed31190d37403b6e15d200274e7a5e43f1a698a86eef7079d862b",
+      "matchesManifest": true,
+      "label": "iOS bundled font"
+    },
+    {
+      "file": "artifacts/run05/android/NATOPhonetics-1.0.0-debug.apk",
+      "bytes": 102721657,
+      "sha256": "e11acd393e8618b001c712607d711b0f36bf427f2cfa618bbbde6731cccbdb4b",
+      "expectedSha256": "e11acd393e8618b001c712607d711b0f36bf427f2cfa618bbbde6731cccbdb4b",
+      "matchesManifest": true,
+      "label": "Android APK"
+    },
+    {
+      "file": "artifacts/run05/android/NATOPhonetics-1.0.0-debug.apk!assets/fonts/NatoTile-ExtraBold.ttf",
+      "sha256": "b0150a84d5e000fcd276cf13e1863ca8bbaab0ff2a0dfdcfa958a48781dd7aa6",
+      "expectedSha256": "b0150a84d5e000fcd276cf13e1863ca8bbaab0ff2a0dfdcfa958a48781dd7aa6",
+      "matchesManifest": true
+    },
+    {
+      "file": "artifacts/run05/android/NATOPhonetics-1.0.0-debug.apk!assets/fonts/NatoTile-SemiBold.ttf",
+      "sha256": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f",
+      "expectedSha256": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f",
+      "matchesManifest": true
+    },
+    {
+      "file": "artifacts/run05/android/NATOPhonetics-1.0.0-debug.apk!assets/fonts/NatoTile-Italic.ttf",
+      "sha256": "50f16c8bec3ed31190d37403b6e15d200274e7a5e43f1a698a86eef7079d862b",
+      "expectedSha256": "50f16c8bec3ed31190d37403b6e15d200274e7a5e43f1a698a86eef7079d862b",
+      "matchesManifest": true
+    },
+    {
+      "file": "artifacts/run05/android/loaded-javascript/script-2.js",
+      "bytes": 5151137,
+      "sha256": "edc9558726b0e721afdd83d32a89b18ca42d308d3ac11aca37681cc0f313d2f8",
+      "expectedSha256": "edc9558726b0e721afdd83d32a89b18ca42d308d3ac11aca37681cc0f313d2f8",
+      "matchesManifest": true,
+      "label": "Android loaded JavaScript"
+    }
+  ],
+  "findings": [
+    {
+      "file": "docs/evidence/run05/ios/artifact.json",
+      "id": "window-header-overlap",
+      "status": "open",
+      "owner": "P05.2/P05.8/R06/R07 engineering",
+      "detail": "Actual375×579 iPad window preserves tile geometry but OStraffic-lightcontrols overlap Home; see window-resize-report.md and ipad-window-small.png."
+    },
+    {
+      "file": "docs/evidence/run05/android/artifact.json",
+      "id": "android-live-scale-general-text",
+      "status": "open",
+      "owner": "P05.2/P05.8/R06/R07 engineering",
+      "detail": "During live200percent and returned100percent systemfont changes, non-tile header/instruction clip or retain stale enlarged text; the second instruction clause disappears. Sharedtile geometry/fonts/raster now pass the five-step cycle after inverse-cache removal; overall app text lifecycle remains unfinished. See scale-transition-final.log and screenshot stages2/4."
+    },
+    {
+      "file": "docs/evidence/run05/android/artifact.json",
+      "id": "android-tile-inverse-cache",
+      "status": "resolved",
+      "owner": "P05.7/R25 engineering",
+      "detail": "Prior cachedinverse values drifted from native renderer metrics on return1x. Removal of JS memoization verified by120glyph observations and390nativebaselines through1→2→1→2→1; historical failure retained under diagnostics/live-scale-reset."
+    },
+    {
+      "file": "docs/evidence/run05/android/artifact.json",
+      "id": "android-digit3-guide-raster-edge",
+      "status": "open",
+      "owner": "P05.8/R25 engineering",
+      "detail": "Expanded native raster gate:282/283 observations within2px; converter digit3 TREE guide top−2.012px remains a raw nominal gate failure. See raster-final.log and independent fringe analysis."
+    }
+  ]
+}

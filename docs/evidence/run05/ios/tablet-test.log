@@ -1,0 +1,505 @@
+Command: ['xcodebuild', 'test-without-building', '-project', '/tmp/nato-ios-run05/Capture.xcodeproj', '-scheme', 'Capture', '-destination', 'platform=iOS Simulator,id=D6F0ADFF-A6FB-4B1C-B48F-2A77E35D29BB', '-derivedDataPath', '/tmp/nato-ios-run05/build', '-resultBundlePath', '/tmp/nato-ios-run05/FinalContrast-tablet.xcresult', '-parallel-testing-enabled', 'NO', '-only-testing:CaptureUITests/CaptureUITests/testViewportTiles', 'CODE_SIGNING_ALLOWED=NO']
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild test-without-building -project /tmp/nato-ios-run05/Capture.xcodeproj -scheme Capture -destination "platform=iOS Simulator,id=D6F0ADFF-A6FB-4B1C-B48F-2A77E35D29BB" -derivedDataPath /tmp/nato-ios-run05/build -resultBundlePath /tmp/nato-ios-run05/FinalContrast-tablet.xcresult -parallel-testing-enabled NO "-only-testing:CaptureUITests/CaptureUITests/testViewportTiles" CODE_SIGNING_ALLOWED=NO
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+Writing result bundle at path:
+	/tmp/nato-ios-run05/FinalContrast-tablet.xcresult
+
+2026-11-17 13:50:54.737705+0000 CaptureUITests-Runner[30500:9561190] [Default] Running tests...
+2026-11-17 13:50:55.082177+0000 CaptureUITests-Runner[30500:9561190] [UIKit App Config] Update the Info.plist: Launch screens will soon be required.
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-11-17 13:51:10.406.
+Test Suite 'CaptureUITests.xctest' started at 2026-11-17 13:51:10.407.
+Test Suite 'CaptureUITests' started at 2026-11-17 13:51:10.407.
+Test Case '-[CaptureUITests.CaptureUITests testViewportTiles]' started.
+    t =     0.00s Start Test at 2026-11-17 13:51:10.409
+    t =     5.45s Set Up
+    t =     5.48s Setting device orientation to Portrait
+    t =     5.62s     Device orientation changed to Portrait
+    t =     6.49s     Wait for com.apple.DocumentManager.DockFolderViewService to idle
+    t =     7.06s     Wait for com.apple.springboard to idle
+    t =     7.34s Open com.natophonetics.app
+    t =     7.34s     Launch com.natophonetics.app
+    t =    13.04s         Setting up automation session
+    t =    15.11s         Wait for com.natophonetics.app to idle
+    t =    17.29s Open com.natophonetics.app with URL natophonetics://settings
+    t =    17.29s     Launch com.natophonetics.app
+    t =    17.87s         Setting up automation session
+    t =    17.88s         Wait for com.natophonetics.app to idle
+    t =    18.91s Wait for com.natophonetics.app to become Running Foreground
+    t =    18.92s Checking existence of `"Light" Any`
+    t =    19.09s Tap "Light" Any
+    t =    19.09s     Wait for com.natophonetics.app to idle
+    t =    19.09s     Find the "Light" Any
+    t =    19.11s     Check for interrupting elements affecting "Light" Other
+    t =    19.21s         Wait for com.apple.springboard to idle
+    t =    19.53s     Synthesize event
+    t =    20.06s     Wait for com.natophonetics.app to idle
+    t =    20.06s Open com.natophonetics.app with URL natophonetics://alphabet
+    t =    20.06s     Launch com.natophonetics.app
+    t =    20.23s         Setting up automation session
+    t =    20.24s         Wait for com.natophonetics.app to idle
+    t =    21.26s Wait for com.natophonetics.app to become Running Foreground
+    t =    21.26s Checking existence of `"alphabet-A" Any`
+    t =    21.33s Find the "alphabet-A" Any
+FRAME alphabet-A 57.0 174.0 110.0 150.0
+    t =    21.40s Checking existence of `"alphabet-B" Any`
+    t =    21.43s Find the "alphabet-B" Any
+FRAME alphabet-B 179.0 174.0 110.0 150.0
+    t =    22.51s Checking existence of `"alphabet-A" Any`
+    t =    22.55s Find the "alphabet-A" Any
+    t =    22.60s Find the "alphabet-A" Button
+    t =    22.63s Checking existence of `"alphabet-B" Any`
+    t =    22.66s Find the "alphabet-B" Any
+    t =    22.70s Find the "alphabet-B" Button
+    t =    22.74s Checking existence of `"alphabet-C" Any`
+    t =    22.76s Find the "alphabet-C" Any
+    t =    22.80s Find the "alphabet-C" Button
+    t =    22.86s Checking existence of `"alphabet-D" Any`
+    t =    22.89s Find the "alphabet-D" Any
+    t =    22.92s Find the "alphabet-D" Button
+    t =    22.96s Checking existence of `"alphabet-E" Any`
+    t =    23.00s Find the "alphabet-E" Any
+    t =    23.05s Find the "alphabet-E" Button
+    t =    23.10s Checking existence of `"alphabet-F" Any`
+    t =    23.14s Find the "alphabet-F" Any
+    t =    23.23s Find the "alphabet-F" Button
+    t =    23.26s Checking existence of `"alphabet-G" Any`
+    t =    23.29s Find the "alphabet-G" Any
+    t =    23.35s Find the "alphabet-G" Button
+    t =    23.39s Checking existence of `"alphabet-H" Any`
+    t =    23.43s Find the "alphabet-H" Any
+    t =    23.49s Find the "alphabet-H" Button
+    t =    23.54s Checking existence of `"alphabet-I" Any`
+    t =    23.70s Find the "alphabet-I" Any
+    t =    23.74s Find the "alphabet-I" Button
+    t =    23.79s Checking existence of `"alphabet-J" Any`
+    t =    23.82s Find the "alphabet-J" Any
+    t =    23.86s Find the "alphabet-J" Button
+    t =    23.89s Checking existence of `"alphabet-K" Any`
+    t =    23.92s Find the "alphabet-K" Any
+    t =    23.96s Find the "alphabet-K" Button
+    t =    24.00s Checking existence of `"alphabet-L" Any`
+    t =    24.04s Find the "alphabet-L" Any
+    t =    24.08s Find the "alphabet-L" Button
+    t =    24.12s Checking existence of `"alphabet-M" Any`
+    t =    24.16s Find the "alphabet-M" Any
+    t =    24.21s Find the "alphabet-M" Button
+    t =    24.26s Checking existence of `"alphabet-N" Any`
+    t =    24.30s Find the "alphabet-N" Any
+    t =    24.36s Find the "alphabet-N" Button
+    t =    24.40s Checking existence of `"alphabet-O" Any`
+    t =    24.43s Find the "alphabet-O" Any
+    t =    24.47s Find the "alphabet-O" Button
+    t =    24.51s Checking existence of `"alphabet-P" Any`
+    t =    24.55s Find the "alphabet-P" Any
+    t =    24.60s Find the "alphabet-P" Button
+    t =    24.63s Checking existence of `"alphabet-Q" Any`
+    t =    24.67s Find the "alphabet-Q" Any
+    t =    24.71s Find the "alphabet-Q" Button
+    t =    24.75s Checking existence of `"alphabet-R" Any`
+    t =    24.78s Find the "alphabet-R" Any
+    t =    24.83s Find the "alphabet-R" Button
+    t =    24.87s Checking existence of `"alphabet-S" Any`
+    t =    24.90s Find the "alphabet-S" Any
+    t =    24.95s Find the "alphabet-S" Button
+    t =    24.99s Checking existence of `"alphabet-T" Any`
+    t =    25.05s Find the "alphabet-T" Any
+    t =    25.11s Find the "alphabet-T" Button
+    t =    25.17s Checking existence of `"alphabet-U" Any`
+    t =    25.21s Find the "alphabet-U" Any
+    t =    25.25s Find the "alphabet-U" Button
+    t =    25.29s Checking existence of `"alphabet-V" Any`
+    t =    25.33s Find the "alphabet-V" Any
+    t =    25.38s Find the "alphabet-V" Button
+    t =    25.42s Checking existence of `"alphabet-W" Any`
+    t =    25.45s Find the "alphabet-W" Any
+    t =    25.50s Find the "alphabet-W" Button
+    t =    25.54s Checking existence of `"alphabet-X" Any`
+    t =    25.57s Find the "alphabet-X" Any
+    t =    25.62s Find the "alphabet-X" Button
+    t =    25.66s Checking existence of `"alphabet-Y" Any`
+    t =    25.70s Find the "alphabet-Y" Any
+    t =    25.75s Find the "alphabet-Y" Button
+    t =    25.79s Checking existence of `"alphabet-Z" Any`
+    t =    25.82s Find the "alphabet-Z" Any
+    t =    25.87s Find the "alphabet-Z" Button
+    t =    25.92s Checking existence of `"converter-0" Any`
+    t =    26.10s Checking existence of `"converter-1" Any`
+    t =    26.26s Checking existence of `"converter-2" Any`
+    t =    26.42s Checking existence of `"converter-3" Any`
+    t =    26.58s Checking existence of `"converter-4" Any`
+    t =    26.76s Checking existence of `"converter-5" Any`
+    t =    26.94s Checking existence of `"converter-6" Any`
+    t =    27.12s Checking existence of `"quiz-card" Any`
+CAPTUREFRAMES alphabet-viewport-portrait {"alphabet-A":{"height":150,"width":110,"x":57,"y":174},"alphabet-B":{"height":150,"width":110,"x":179,"y":174},"alphabet-C":{"height":150,"width":110,"x":301,"y":174},"alphabet-D":{"height":150,"width":110,"x":423,"y":174},"alphabet-E":{"height":150,"width":110,"x":545,"y":174},"alphabet-F":{"height":150,"width":110,"x":667,"y":174},"alphabet-G":{"height":150,"width":110,"x":57,"y":336},"alphabet-H":{"height":150,"width":110,"x":179,"y":336},"alphabet-I":{"height":150,"width":110,"x":301,"y":336},"alphabet-J":{"height":150,"width":110,"x":423,"y":336},"alphabet-K":{"height":150,"width":110,"x":545,"y":336},"alphabet-L":{"height":150,"width":110,"x":667,"y":336},"alphabet-M":{"height":150,"width":110,"x":57,"y":498},"alphabet-N":{"height":150,"width":110,"x":179,"y":498},"alphabet-O":{"height":150,"width":110,"x":301,"y":498},"alphabet-P":{"height":150,"width":110,"x":423,"y":498},"alphabet-Q":{"height":150,"width":110,"x":545,"y":498},"alphabet-R":{"height":150,"width":110,"x":667,"y":498},"alphabet-S":{"height":150,"width":110,"x":57,"y":660},"alphabet-T":{"height":150,"width":110,"x":179,"y":660},"alphabet-U":{"height":150,"width":110,"x":301,"y":660},"alphabet-V":{"height":150,"width":110,"x":423,"y":660},"alphabet-W":{"height":150,"width":110,"x":545,"y":660},"alphabet-X":{"height":150,"width":110,"x":667,"y":660},"alphabet-Y":{"height":150,"width":110,"x":301,"y":822},"alphabet-Z":{"height":150,"width":110,"x":423,"y":822}}
+    t =    27.56s Added attachment named 'alphabet-viewport-portrait'
+CAPTURE alphabet-viewport-portrait
+    t =    27.56s Checking existence of `"alphabet-A" Any`
+    t =    27.59s Find the "alphabet-A" Any
+    t =    27.64s Checking existence of `"alphabet-A" Any`
+    t =    27.67s Find the "alphabet-A" Any
+FRAME alphabet-A 57.0 174.0 110.0 150.0
+    t =    27.70s Checking existence of `"alphabet-B" Any`
+    t =    27.73s Find the "alphabet-B" Any
+    t =    27.77s Checking existence of `"alphabet-B" Any`
+    t =    27.80s Find the "alphabet-B" Any
+FRAME alphabet-B 179.0 174.0 110.0 150.0
+    t =    27.82s Checking existence of `"alphabet-C" Any`
+    t =    27.85s Find the "alphabet-C" Any
+    t =    27.89s Checking existence of `"alphabet-C" Any`
+    t =    27.91s Find the "alphabet-C" Any
+FRAME alphabet-C 301.0 174.0 110.0 150.0
+    t =    27.95s Checking existence of `"alphabet-D" Any`
+    t =    27.97s Find the "alphabet-D" Any
+    t =    28.00s Checking existence of `"alphabet-D" Any`
+    t =    28.03s Find the "alphabet-D" Any
+FRAME alphabet-D 423.0 174.0 110.0 150.0
+    t =    28.06s Checking existence of `"alphabet-E" Any`
+    t =    28.09s Find the "alphabet-E" Any
+    t =    28.13s Checking existence of `"alphabet-E" Any`
+    t =    28.16s Find the "alphabet-E" Any
+FRAME alphabet-E 545.0 174.0 110.0 150.0
+    t =    28.19s Checking existence of `"alphabet-F" Any`
+    t =    28.23s Find the "alphabet-F" Any
+    t =    28.29s Checking existence of `"alphabet-F" Any`
+    t =    28.33s Find the "alphabet-F" Any
+FRAME alphabet-F 667.0 174.0 110.0 150.0
+    t =    28.38s Checking existence of `"alphabet-G" Any`
+    t =    28.43s Find the "alphabet-G" Any
+    t =    28.48s Checking existence of `"alphabet-G" Any`
+    t =    28.51s Find the "alphabet-G" Any
+FRAME alphabet-G 57.0 336.0 110.0 150.0
+    t =    28.55s Checking existence of `"alphabet-H" Any`
+    t =    28.58s Find the "alphabet-H" Any
+    t =    28.69s Checking existence of `"alphabet-H" Any`
+    t =    28.72s Find the "alphabet-H" Any
+FRAME alphabet-H 179.0 336.0 110.0 150.0
+    t =    28.76s Checking existence of `"alphabet-I" Any`
+    t =    28.79s Find the "alphabet-I" Any
+    t =    28.84s Checking existence of `"alphabet-I" Any`
+    t =    28.89s Find the "alphabet-I" Any
+FRAME alphabet-I 301.0 336.0 110.0 150.0
+    t =    28.92s Checking existence of `"alphabet-J" Any`
+    t =    28.95s Find the "alphabet-J" Any
+    t =    28.99s Checking existence of `"alphabet-J" Any`
+    t =    29.02s Find the "alphabet-J" Any
+FRAME alphabet-J 423.0 336.0 110.0 150.0
+    t =    29.05s Checking existence of `"alphabet-K" Any`
+    t =    29.08s Find the "alphabet-K" Any
+    t =    29.12s Checking existence of `"alphabet-K" Any`
+    t =    29.15s Find the "alphabet-K" Any
+FRAME alphabet-K 545.0 336.0 110.0 150.0
+    t =    29.18s Checking existence of `"alphabet-L" Any`
+    t =    29.23s Find the "alphabet-L" Any
+    t =    29.32s Checking existence of `"alphabet-L" Any`
+    t =    29.35s Find the "alphabet-L" Any
+FRAME alphabet-L 667.0 336.0 110.0 150.0
+    t =    29.39s Checking existence of `"alphabet-M" Any`
+    t =    29.43s Find the "alphabet-M" Any
+    t =    29.47s Checking existence of `"alphabet-M" Any`
+    t =    29.50s Find the "alphabet-M" Any
+FRAME alphabet-M 57.0 498.0 110.0 150.0
+    t =    29.53s Checking existence of `"alphabet-N" Any`
+    t =    29.56s Find the "alphabet-N" Any
+    t =    29.60s Checking existence of `"alphabet-N" Any`
+    t =    29.64s Find the "alphabet-N" Any
+FRAME alphabet-N 179.0 498.0 110.0 150.0
+    t =    29.67s Checking existence of `"alphabet-O" Any`
+    t =    29.70s Find the "alphabet-O" Any
+    t =    29.75s Checking existence of `"alphabet-O" Any`
+    t =    29.78s Find the "alphabet-O" Any
+FRAME alphabet-O 301.0 498.0 110.0 150.0
+    t =    29.82s Checking existence of `"alphabet-P" Any`
+    t =    29.85s Find the "alphabet-P" Any
+    t =    29.89s Checking existence of `"alphabet-P" Any`
+    t =    29.92s Find the "alphabet-P" Any
+FRAME alphabet-P 423.0 498.0 110.0 150.0
+    t =    29.96s Checking existence of `"alphabet-Q" Any`
+    t =    29.99s Find the "alphabet-Q" Any
+    t =    30.03s Checking existence of `"alphabet-Q" Any`
+    t =    30.06s Find the "alphabet-Q" Any
+FRAME alphabet-Q 545.0 498.0 110.0 150.0
+    t =    30.10s Checking existence of `"alphabet-R" Any`
+    t =    30.15s Find the "alphabet-R" Any
+    t =    30.21s Checking existence of `"alphabet-R" Any`
+    t =    30.24s Find the "alphabet-R" Any
+FRAME alphabet-R 667.0 498.0 110.0 150.0
+    t =    30.27s Checking existence of `"alphabet-S" Any`
+    t =    30.31s Find the "alphabet-S" Any
+    t =    30.35s Checking existence of `"alphabet-S" Any`
+    t =    30.39s Find the "alphabet-S" Any
+FRAME alphabet-S 57.0 660.0 110.0 150.0
+    t =    30.42s Checking existence of `"alphabet-T" Any`
+    t =    30.46s Find the "alphabet-T" Any
+    t =    30.52s Checking existence of `"alphabet-T" Any`
+    t =    30.55s Find the "alphabet-T" Any
+FRAME alphabet-T 179.0 660.0 110.0 150.0
+    t =    30.61s Checking existence of `"alphabet-U" Any`
+    t =    30.65s Find the "alphabet-U" Any
+    t =    30.69s Checking existence of `"alphabet-U" Any`
+    t =    30.73s Find the "alphabet-U" Any
+FRAME alphabet-U 301.0 660.0 110.0 150.0
+    t =    30.76s Checking existence of `"alphabet-V" Any`
+    t =    30.80s Find the "alphabet-V" Any
+    t =    30.84s Checking existence of `"alphabet-V" Any`
+    t =    30.87s Find the "alphabet-V" Any
+FRAME alphabet-V 423.0 660.0 110.0 150.0
+    t =    30.91s Checking existence of `"alphabet-W" Any`
+    t =    30.94s Find the "alphabet-W" Any
+    t =    31.00s Checking existence of `"alphabet-W" Any`
+    t =    31.06s Find the "alphabet-W" Any
+FRAME alphabet-W 545.0 660.0 110.0 150.0
+    t =    31.11s Checking existence of `"alphabet-X" Any`
+    t =    31.14s Find the "alphabet-X" Any
+    t =    31.18s Checking existence of `"alphabet-X" Any`
+    t =    31.22s Find the "alphabet-X" Any
+FRAME alphabet-X 667.0 660.0 110.0 150.0
+    t =    31.26s Checking existence of `"alphabet-Y" Any`
+    t =    31.31s Find the "alphabet-Y" Any
+    t =    31.38s Checking existence of `"alphabet-Y" Any`
+    t =    31.42s Find the "alphabet-Y" Any
+FRAME alphabet-Y 301.0 822.0 110.0 150.0
+    t =    31.47s Checking existence of `"alphabet-Z" Any`
+    t =    31.51s Find the "alphabet-Z" Any
+    t =    31.56s Checking existence of `"alphabet-Z" Any`
+    t =    31.60s Find the "alphabet-Z" Any
+FRAME alphabet-Z 423.0 822.0 110.0 150.0
+    t =    31.64s Find the "alphabet-Z" Any
+    t =    32.70s Checking existence of `"alphabet-A" Any`
+    t =    32.74s Find the "alphabet-A" Any
+    t =    32.78s Find the "alphabet-A" Button
+    t =    32.81s Checking existence of `"alphabet-B" Any`
+    t =    32.84s Find the "alphabet-B" Any
+    t =    32.89s Find the "alphabet-B" Button
+    t =    32.92s Checking existence of `"alphabet-C" Any`
+    t =    32.99s Find the "alphabet-C" Any
+    t =    33.06s Find the "alphabet-C" Button
+    t =    33.09s Checking existence of `"alphabet-D" Any`
+    t =    33.12s Find the "alphabet-D" Any
+    t =    33.17s Find the "alphabet-D" Button
+    t =    33.22s Checking existence of `"alphabet-E" Any`
+    t =    33.25s Find the "alphabet-E" Any
+    t =    33.28s Find the "alphabet-E" Button
+    t =    33.32s Checking existence of `"alphabet-F" Any`
+    t =    33.35s Find the "alphabet-F" Any
+    t =    33.38s Find the "alphabet-F" Button
+    t =    33.42s Checking existence of `"alphabet-G" Any`
+    t =    33.44s Find the "alphabet-G" Any
+    t =    33.48s Find the "alphabet-G" Button
+    t =    33.51s Checking existence of `"alphabet-H" Any`
+    t =    33.54s Find the "alphabet-H" Any
+    t =    33.59s Find the "alphabet-H" Button
+    t =    33.62s Checking existence of `"alphabet-I" Any`
+    t =    33.65s Find the "alphabet-I" Any
+    t =    33.69s Find the "alphabet-I" Button
+    t =    33.72s Checking existence of `"alphabet-J" Any`
+    t =    33.75s Find the "alphabet-J" Any
+    t =    33.78s Find the "alphabet-J" Button
+    t =    33.81s Checking existence of `"alphabet-K" Any`
+    t =    33.85s Find the "alphabet-K" Any
+    t =    33.89s Find the "alphabet-K" Button
+    t =    33.92s Checking existence of `"alphabet-L" Any`
+    t =    33.95s Find the "alphabet-L" Any
+    t =    33.99s Find the "alphabet-L" Button
+    t =    34.02s Checking existence of `"alphabet-M" Any`
+    t =    34.05s Find the "alphabet-M" Any
+    t =    34.08s Find the "alphabet-M" Button
+    t =    34.11s Checking existence of `"alphabet-N" Any`
+    t =    34.14s Find the "alphabet-N" Any
+    t =    34.18s Find the "alphabet-N" Button
+    t =    34.21s Checking existence of `"alphabet-O" Any`
+    t =    34.24s Find the "alphabet-O" Any
+    t =    34.28s Find the "alphabet-O" Button
+    t =    34.31s Checking existence of `"alphabet-P" Any`
+    t =    34.34s Find the "alphabet-P" Any
+    t =    34.38s Find the "alphabet-P" Button
+    t =    34.41s Checking existence of `"alphabet-Q" Any`
+    t =    34.44s Find the "alphabet-Q" Any
+    t =    34.48s Find the "alphabet-Q" Button
+    t =    34.52s Checking existence of `"alphabet-R" Any`
+    t =    34.55s Find the "alphabet-R" Any
+    t =    34.59s Find the "alphabet-R" Button
+    t =    34.62s Checking existence of `"alphabet-S" Any`
+    t =    34.65s Find the "alphabet-S" Any
+    t =    34.69s Find the "alphabet-S" Button
+    t =    34.73s Checking existence of `"alphabet-T" Any`
+    t =    34.76s Find the "alphabet-T" Any
+    t =    34.79s Find the "alphabet-T" Button
+    t =    34.83s Checking existence of `"alphabet-U" Any`
+    t =    34.86s Find the "alphabet-U" Any
+    t =    34.89s Find the "alphabet-U" Button
+    t =    34.92s Checking existence of `"alphabet-V" Any`
+    t =    34.95s Find the "alphabet-V" Any
+    t =    34.99s Find the "alphabet-V" Button
+    t =    35.03s Checking existence of `"alphabet-W" Any`
+    t =    35.06s Find the "alphabet-W" Any
+    t =    35.10s Find the "alphabet-W" Button
+    t =    35.14s Checking existence of `"alphabet-X" Any`
+    t =    35.17s Find the "alphabet-X" Any
+    t =    35.21s Find the "alphabet-X" Button
+    t =    35.25s Checking existence of `"alphabet-Y" Any`
+    t =    35.29s Find the "alphabet-Y" Any
+    t =    35.33s Find the "alphabet-Y" Button
+    t =    35.36s Checking existence of `"alphabet-Z" Any`
+    t =    35.40s Find the "alphabet-Z" Any
+    t =    35.43s Find the "alphabet-Z" Button
+    t =    35.47s Checking existence of `"converter-0" Any`
+    t =    35.64s Checking existence of `"converter-1" Any`
+    t =    35.79s Checking existence of `"converter-2" Any`
+    t =    35.95s Checking existence of `"converter-3" Any`
+    t =    36.15s Checking existence of `"converter-4" Any`
+    t =    36.32s Checking existence of `"converter-5" Any`
+    t =    36.49s Checking existence of `"converter-6" Any`
+    t =    36.66s Checking existence of `"quiz-card" Any`
+CAPTUREFRAMES alphabet-viewport-last {"alphabet-A":{"height":150,"width":110,"x":57,"y":174},"alphabet-B":{"height":150,"width":110,"x":179,"y":174},"alphabet-C":{"height":150,"width":110,"x":301,"y":174},"alphabet-D":{"height":150,"width":110,"x":423,"y":174},"alphabet-E":{"height":150,"width":110,"x":545,"y":174},"alphabet-F":{"height":150,"width":110,"x":667,"y":174},"alphabet-G":{"height":150,"width":110,"x":57,"y":336},"alphabet-H":{"height":150,"width":110,"x":179,"y":336},"alphabet-I":{"height":150,"width":110,"x":301,"y":336},"alphabet-J":{"height":150,"width":110,"x":423,"y":336},"alphabet-K":{"height":150,"width":110,"x":545,"y":336},"alphabet-L":{"height":150,"width":110,"x":667,"y":336},"alphabet-M":{"height":150,"width":110,"x":57,"y":498},"alphabet-N":{"height":150,"width":110,"x":179,"y":498},"alphabet-O":{"height":150,"width":110,"x":301,"y":498},"alphabet-P":{"height":150,"width":110,"x":423,"y":498},"alphabet-Q":{"height":150,"width":110,"x":545,"y":498},"alphabet-R":{"height":150,"width":110,"x":667,"y":498},"alphabet-S":{"height":150,"width":110,"x":57,"y":660},"alphabet-T":{"height":150,"width":110,"x":179,"y":660},"alphabet-U":{"height":150,"width":110,"x":301,"y":660},"alphabet-V":{"height":150,"width":110,"x":423,"y":660},"alphabet-W":{"height":150,"width":110,"x":545,"y":660},"alphabet-X":{"height":150,"width":110,"x":667,"y":660},"alphabet-Y":{"height":150,"width":110,"x":301,"y":822},"alphabet-Z":{"height":150,"width":110,"x":423,"y":822}}
+    t =    37.13s Added attachment named 'alphabet-viewport-last'
+CAPTURE alphabet-viewport-last
+    t =    37.13s Open com.natophonetics.app with URL natophonetics://menu
+    t =    37.13s     Launch com.natophonetics.app
+    t =    37.52s         Setting up automation session
+    t =    37.52s         Wait for com.natophonetics.app to idle
+    t =    38.54s Wait for com.natophonetics.app to become Running Foreground
+    t =    38.54s Open com.natophonetics.app with URL natophonetics://alphabet
+    t =    38.54s     Launch com.natophonetics.app
+    t =    38.57s         Setting up automation session
+    t =    38.57s         Wait for com.natophonetics.app to idle
+    t =    39.58s Wait for com.natophonetics.app to become Running Foreground
+    t =    39.58s Setting device orientation to Landscape Left
+    t =    39.60s     Device orientation changed to Landscape Left
+    t =    40.43s     Interface orientation changed to Landscape Right
+    t =    40.46s     Wait for com.natophonetics.app to idle
+    t =    40.68s     Wait for com.apple.springboard to idle
+    t =    42.76s Find the Application 'com.natophonetics.app'
+    t =    42.88s Find the Application 'com.natophonetics.app'
+    t =    42.92s Checking existence of `"alphabet-A" Any`
+    t =    42.96s Find the "alphabet-A" Any
+FRAME alphabet-A 245.0 174.0 110.0 150.0
+    t =    44.01s Checking existence of `"alphabet-A" Any`
+    t =    44.05s Find the "alphabet-A" Any
+    t =    44.10s Find the "alphabet-A" Button
+    t =    44.12s Checking existence of `"alphabet-B" Any`
+    t =    44.15s Find the "alphabet-B" Any
+    t =    44.19s Find the "alphabet-B" Button
+    t =    44.22s Checking existence of `"alphabet-C" Any`
+    t =    44.25s Find the "alphabet-C" Any
+    t =    44.28s Find the "alphabet-C" Button
+    t =    44.31s Checking existence of `"alphabet-D" Any`
+    t =    44.34s Find the "alphabet-D" Any
+    t =    44.38s Find the "alphabet-D" Button
+    t =    44.41s Checking existence of `"alphabet-E" Any`
+    t =    44.44s Find the "alphabet-E" Any
+    t =    44.48s Find the "alphabet-E" Button
+    t =    44.51s Checking existence of `"alphabet-F" Any`
+    t =    44.54s Find the "alphabet-F" Any
+    t =    44.57s Find the "alphabet-F" Button
+    t =    44.60s Checking existence of `"alphabet-G" Any`
+    t =    44.63s Find the "alphabet-G" Any
+    t =    44.67s Find the "alphabet-G" Button
+    t =    44.70s Checking existence of `"alphabet-H" Any`
+    t =    44.74s Find the "alphabet-H" Any
+    t =    44.78s Find the "alphabet-H" Button
+    t =    44.81s Checking existence of `"alphabet-I" Any`
+    t =    44.84s Find the "alphabet-I" Any
+    t =    44.88s Find the "alphabet-I" Button
+    t =    44.93s Checking existence of `"alphabet-J" Any`
+    t =    44.96s Find the "alphabet-J" Any
+    t =    45.00s Find the "alphabet-J" Button
+    t =    45.03s Checking existence of `"alphabet-K" Any`
+    t =    45.06s Find the "alphabet-K" Any
+    t =    45.10s Find the "alphabet-K" Button
+    t =    45.14s Checking existence of `"alphabet-L" Any`
+    t =    45.18s Find the "alphabet-L" Any
+    t =    45.22s Find the "alphabet-L" Button
+    t =    45.25s Checking existence of `"alphabet-M" Any`
+    t =    45.28s Find the "alphabet-M" Any
+    t =    45.31s Find the "alphabet-M" Button
+    t =    45.34s Checking existence of `"alphabet-N" Any`
+    t =    45.38s Find the "alphabet-N" Any
+    t =    45.41s Find the "alphabet-N" Button
+    t =    45.44s Checking existence of `"alphabet-O" Any`
+    t =    45.47s Find the "alphabet-O" Any
+    t =    45.51s Find the "alphabet-O" Button
+    t =    45.54s Checking existence of `"alphabet-P" Any`
+    t =    45.58s Find the "alphabet-P" Any
+    t =    45.62s Find the "alphabet-P" Button
+    t =    45.65s Checking existence of `"alphabet-Q" Any`
+    t =    45.68s Find the "alphabet-Q" Any
+    t =    45.72s Find the "alphabet-Q" Button
+    t =    45.75s Checking existence of `"alphabet-R" Any`
+    t =    45.78s Find the "alphabet-R" Any
+    t =    45.82s Find the "alphabet-R" Button
+    t =    45.86s Checking existence of `"alphabet-S" Any`
+    t =    45.89s Find the "alphabet-S" Any
+    t =    45.95s Find the "alphabet-S" Button
+    t =    45.98s Checking existence of `"alphabet-T" Any`
+    t =    46.01s Find the "alphabet-T" Any
+    t =    46.05s Find the "alphabet-T" Button
+    t =    46.09s Checking existence of `"alphabet-U" Any`
+    t =    46.12s Find the "alphabet-U" Any
+    t =    46.16s Find the "alphabet-U" Button
+    t =    46.19s Checking existence of `"alphabet-V" Any`
+    t =    46.22s Find the "alphabet-V" Any
+    t =    46.26s Find the "alphabet-V" Button
+    t =    46.29s Checking existence of `"alphabet-W" Any`
+    t =    46.33s Find the "alphabet-W" Any
+    t =    46.36s Find the "alphabet-W" Button
+    t =    46.40s Checking existence of `"alphabet-X" Any`
+    t =    46.43s Find the "alphabet-X" Any
+    t =    46.48s Find the "alphabet-X" Button
+    t =    46.54s Checking existence of `"alphabet-Y" Any`
+    t =    46.57s Find the "alphabet-Y" Any
+    t =    46.62s Checking existence of `"alphabet-Z" Any`
+    t =    46.65s Find the "alphabet-Z" Any
+    t =    46.69s Checking existence of `"converter-0" Any`
+    t =    46.88s Checking existence of `"converter-1" Any`
+    t =    47.04s Checking existence of `"converter-2" Any`
+    t =    47.20s Checking existence of `"converter-3" Any`
+    t =    47.36s Checking existence of `"converter-4" Any`
+    t =    47.51s Checking existence of `"converter-5" Any`
+    t =    47.67s Checking existence of `"converter-6" Any`
+    t =    47.85s Checking existence of `"quiz-card" Any`
+CAPTUREFRAMES alphabet-viewport-landscape {"alphabet-A":{"height":150,"width":110,"x":245,"y":174},"alphabet-B":{"height":150,"width":110,"x":367,"y":174},"alphabet-C":{"height":150,"width":110,"x":489,"y":174},"alphabet-D":{"height":150,"width":110,"x":611,"y":174},"alphabet-E":{"height":150,"width":110,"x":733,"y":174},"alphabet-F":{"height":150,"width":110,"x":855,"y":174},"alphabet-G":{"height":150,"width":110,"x":245,"y":336},"alphabet-H":{"height":150,"width":110,"x":367,"y":336},"alphabet-I":{"height":150,"width":110,"x":489,"y":336},"alphabet-J":{"height":150,"width":110,"x":611,"y":336},"alphabet-K":{"height":150,"width":110,"x":733,"y":336},"alphabet-L":{"height":150,"width":110,"x":855,"y":336},"alphabet-M":{"height":150,"width":110,"x":245,"y":498},"alphabet-N":{"height":150,"width":110,"x":367,"y":498},"alphabet-O":{"height":150,"width":110,"x":489,"y":498},"alphabet-P":{"height":150,"width":110,"x":611,"y":498},"alphabet-Q":{"height":150,"width":110,"x":733,"y":498},"alphabet-R":{"height":150,"width":110,"x":855,"y":498},"alphabet-S":{"height":150,"width":110,"x":245,"y":660},"alphabet-T":{"height":150,"width":110,"x":367,"y":660},"alphabet-U":{"height":150,"width":110,"x":489,"y":660},"alphabet-V":{"height":150,"width":110,"x":611,"y":660},"alphabet-W":{"height":150,"width":110,"x":733,"y":660},"alphabet-X":{"height":150,"width":110,"x":855,"y":660}}
+    t =    48.31s Added attachment named 'alphabet-viewport-landscape'
+CAPTURE alphabet-viewport-landscape
+    t =    48.31s Setting device orientation to Portrait
+    t =    48.33s     Device orientation changed to Portrait
+    t =    48.91s     Interface orientation changed to Portrait
+    t =    49.13s     Wait for com.natophonetics.app to idle
+    t =    49.37s     Wait for com.apple.springboard to idle
+    t =    49.52s Open com.natophonetics.app with URL natophonetics://settings
+    t =    49.52s     Launch com.natophonetics.app
+    t =    49.55s         Setting up automation session
+    t =    49.55s         Wait for com.natophonetics.app to idle
+    t =    50.57s Wait for com.natophonetics.app to become Running Foreground
+    t =    50.57s Checking existence of `"System" Any`
+    t =    50.62s Tap "System" Any
+    t =    50.62s     Wait for com.natophonetics.app to idle
+    t =    50.63s     Find the "System" Any
+    t =    50.64s     Check for interrupting elements affecting "System" Other
+    t =    50.69s         Wait for com.apple.springboard to idle
+    t =    50.77s     Synthesize event
+    t =    51.09s     Wait for com.natophonetics.app to idle
+    t =    51.12s Tear Down
+Test Case '-[CaptureUITests.CaptureUITests testViewportTiles]' passed (51.759 seconds).
+Test Suite 'CaptureUITests' passed at 2026-11-17 13:52:02.169.
+	 Executed 1 test, with 0 failures (0 unexpected) in 51.759 (51.761) seconds
+Test Suite 'CaptureUITests.xctest' passed at 2026-11-17 13:52:02.169.
+	 Executed 1 test, with 0 failures (0 unexpected) in 51.759 (51.762) seconds
+Test Suite 'Selected tests' passed at 2026-11-17 13:52:02.170.
+	 Executed 1 test, with 0 failures (0 unexpected) in 51.759 (51.764) seconds
+2026-11-17 13:52:02.728 xcodebuild[30431:9559669] [MT] IDETestOperationsObserverDebug: 97.863 elapsed -- Testing started completed.
+2026-11-17 13:52:02.728 xcodebuild[30431:9559669] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-11-17 13:52:02.728 xcodebuild[30431:9559669] [MT] IDETestOperationsObserverDebug: 97.863 sec, +97.863 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/nato-ios-run05/FinalContrast-tablet.xcresult
+
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+
+EXIT 0

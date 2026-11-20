@@ -1,0 +1,11 @@
+Command: ['xcrun', 'xcresulttool', 'export', 'attachments', '--path', '/tmp/nato-ios-run07-capture/final-default.xcresult', '--output-path', '/tmp/nato-ios-run07-capture/final-default-export']
+Exported 5 attachments for: CaptureUITests/testDefaultNativeBaselines():
+File: B09F13FB-2E74-4138-8655-DBFD97E57910.png, suggested name: "default-quiz-feedback-dark_0_50B98BDE-2E10-4C76-8F59-0C022AAF2C5D.png"
+File: 56DE89CC-A850-45EC-BE07-4E1AD9EB214F.png, suggested name: "default-quiz-question-dark_0_D0074C2A-2E0F-4E45-8BF3-EA08BB1B8003.png"
+File: 0B602CE0-5909-48E5-8256-7866885367D2.png, suggested name: "default-converter-J-dark_0_C925AA91-E9C5-40E4-AA42-C6725972418D.png"
+File: A1C16176-1D1D-4646-9F96-23E339930521.png, suggested name: "default-alphabet-J-dark_0_AD663A75-E48D-45A9-A911-EAEA9FA20746.png"
+File: AA96438E-6683-4275-BD0A-B805DD3C9B8D.png, suggested name: "default-alphabet-first-dark_0_2714FD28-F15E-41C4-8B25-E5A9077B830A.png"
+
+Generated manifest file with attachment details: /tmp/nato-ios-run07-capture/final-default-export/manifest.json
+
+EXIT 0

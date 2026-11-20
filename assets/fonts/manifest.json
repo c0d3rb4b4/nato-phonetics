@@ -1,0 +1,61 @@
+{
+  "upstream": "https://github.com/googlefonts/nunito",
+  "revision": "8c6a9bb9732545b9ed53f29ec5e1ab0ff53c4e6f",
+  "license": "OFL-1.1",
+  "fontTools": "4.60.2",
+  "faces": [
+    {
+      "file": "NatoTile-ExtraBold.ttf",
+      "postscriptName": "NatoTile-ExtraBold",
+      "weight": 800,
+      "italic": false,
+      "sha256": "b0150a84d5e000fcd276cf13e1863ca8bbaab0ff2a0dfdcfa958a48781dd7aa6",
+      "sourceSha256": "bb55a5ca5c2042335b3991af27c4d0705d0ef41cac6164ac737fd8f2a1e85207",
+      "unitsPerEm": 1000,
+      "ascent": 1011,
+      "descent": -353,
+      "lineGap": 0,
+      "examplesAtNominalSize": {
+        "November": 78.16,
+        "Uniform": 62.048,
+        "Whiskey": 65.84,
+        "Juliett": 46.72
+      }
+    },
+    {
+      "file": "NatoTile-SemiBold.ttf",
+      "postscriptName": "NatoTile-SemiBold",
+      "weight": 600,
+      "italic": false,
+      "sha256": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f",
+      "sourceSha256": "bb55a5ca5c2042335b3991af27c4d0705d0ef41cac6164ac737fd8f2a1e85207",
+      "unitsPerEm": 1000,
+      "ascent": 1011,
+      "descent": -353,
+      "lineGap": 0,
+      "examplesAtNominalSize": {
+        "November": 75.712,
+        "Uniform": 59.248,
+        "Whiskey": 63.728,
+        "Juliett": 43.568
+      }
+    },
+    {
+      "file": "NatoTile-Italic.ttf",
+      "postscriptName": "NatoTile-Italic",
+      "weight": 400,
+      "italic": true,
+      "sha256": "50f16c8bec3ed31190d37403b6e15d200274e7a5e43f1a698a86eef7079d862b",
+      "sourceSha256": "b520cc871868b0acfca1beda875df7f4a44ebce914f8a89f83977fc9c09529c8",
+      "unitsPerEm": 1000,
+      "ascent": 1011,
+      "descent": -353,
+      "lineGap": 0,
+      "examplesAtNominalSize": {
+        "YOU-nee-form": 73.414,
+        "no-VEM-ber": 61.292,
+        "JEW-lee-ett": 59.928
+      }
+    }
+  ]
+}

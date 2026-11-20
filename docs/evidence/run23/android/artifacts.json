@@ -1,0 +1,57 @@
+{
+  "android-debug": {
+    "file": "app-debug.apk",
+    "bytes": 102169209,
+    "sha256": "77cfda13cdeabdcc2f15e6224497174c0ef799a6a796bdced0cbd4c688827476",
+    "sourceId": "38d185116eed8f773585b0d510cd386523729bdb213296c83439de88906aad6c",
+    "report": "host/android-debug/report.json",
+    "embeddedFiles": {
+      "lib/arm64-v8a/libreactnative.so": "45219e87365683805eca7c1a67e7a8528636ffed9cb20a04b1312befdca7ec72",
+      "lib/armeabi-v7a/libreactnative.so": "7b36e92acc1d565ee40a51c3aff29e66aa7cf0ae9550b72d0d0acd3ea8696c94",
+      "lib/x86/libreactnative.so": "64871500f89340c0e16dcc964d19e2bdecb0121afb706e8ae1dbfa89b084f7e5",
+      "lib/x86_64/libreactnative.so": "1c4d09576163a7f0b10f32ce1fae2e1c04701dc2e29786697465b0f2fd0c1b7a",
+      "assets/fonts/NatoTile-SemiBold.ttf": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f"
+    },
+    "zipSignatureEntries": [],
+    "abis": [
+      "arm64-v8a",
+      "armeabi-v7a",
+      "x86",
+      "x86_64"
+    ],
+    "nativeFrameworkLibraryHashesMatchRun22": {
+      "lib/arm64-v8a/libreactnative.so": true,
+      "lib/armeabi-v7a/libreactnative.so": true,
+      "lib/x86/libreactnative.so": true,
+      "lib/x86_64/libreactnative.so": true
+    }
+  },
+  "android-release": {
+    "file": "app-release.aab",
+    "bytes": 33849142,
+    "sha256": "974cefbcc5001dbd81c4b9e74e177d8b61b2b9ad97f05b8cb419c1f511550972",
+    "sourceId": "38d185116eed8f773585b0d510cd386523729bdb213296c83439de88906aad6c",
+    "report": "host/android-release/report.json",
+    "embeddedFiles": {
+      "base/assets/fonts/NatoTile-SemiBold.ttf": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f",
+      "base/assets/index.android.bundle": "5cef952342d21de060ed3036c51570e1a7ad987cec3e2f362842ca7a8f671075",
+      "base/lib/arm64-v8a/libreactnative.so": "8fd69e877877a85f768190343e587a5a0238246c2903c4063be9fc05b7c705b7",
+      "base/lib/armeabi-v7a/libreactnative.so": "acaa8623426e6c345d0ecda57fb23afe8727c1f80d0f0080b6645f7346922559",
+      "base/lib/x86/libreactnative.so": "b806e699dd41639ff62cc617980ca3c014c80fb7840cc7e0fc5b3b58259a7fae",
+      "base/lib/x86_64/libreactnative.so": "3a51379ec521d6f701bd9fb92d9af9f2b2450b496704a31b12f1caba84f4aa95"
+    },
+    "zipSignatureEntries": [],
+    "abis": [
+      "arm64-v8a",
+      "armeabi-v7a",
+      "x86",
+      "x86_64"
+    ],
+    "nativeFrameworkLibraryHashesMatchRun22": {
+      "base/lib/arm64-v8a/libreactnative.so": true,
+      "base/lib/armeabi-v7a/libreactnative.so": true,
+      "base/lib/x86/libreactnative.so": true,
+      "base/lib/x86_64/libreactnative.so": true
+    }
+  }
+}

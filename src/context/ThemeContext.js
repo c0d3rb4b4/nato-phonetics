@@ -1,51 +1,44 @@
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import { createContext, useContext, useEffect, useState } from 'react';
-import { useColorScheme } from 'react-native';
+import { createContext, useContext, useEffect, useState, useSyncExternalStore } from 'react';
+import { Appearance, Platform, useColorScheme } from 'react-native';
+import { preferenceStore } from '../lib/preferenceStore';
+import { resolveThemeMode } from '../lib/preferences';
 
-const ThemeContext = createContext();
+/** @type {import('react').Context<import('../types').ThemeContextValue | undefined>} */
+const ThemeContext = createContext(/** @type {import('../types').ThemeContextValue | undefined} */ (undefined));
 
+/** @param {{ children: import('react').ReactNode }} props */
 export function ThemeProvider({ children }) {
-  const systemColorScheme = useColorScheme();
-  const [isDarkMode, setIsDarkMode] = useState(systemColorScheme === 'dark');
-  const [isLoading, setIsLoading] = useState(true);
+  const snapshot = useSyncExternalStore(
+    preferenceStore.subscribe, preferenceStore.getSnapshot, preferenceStore.getServerSnapshot,
+  );
+  const systemScheme = useColorScheme();
+  const [clientReady, setClientReady] = useState(false);
 
   useEffect(() => {
-    loadThemePreference();
+    setClientReady(true);
+    void preferenceStore.hydrate();
   }, []);
 
-  const loadThemePreference = async () => {
-    try {
-      const saved = await AsyncStorage.getItem('darkMode');
-      if (saved !== null) {
-        setIsDarkMode(saved === 'true');
-      }
-    } catch (error) {
-      console.error('Failed to load theme preference:', error);
-    } finally {
-      setIsLoading(false);
+  useEffect(() => {
+    if (!snapshot.isLoading && Platform.OS !== 'web') {
+      // This also styles native controls. Clearing the override restores OS events.
+      Appearance.setColorScheme(snapshot.preferences.themeMode === 'system'
+        ? null : snapshot.preferences.themeMode);
     }
-  };
+  }, [snapshot.isLoading, snapshot.preferences.themeMode]);
 
-  const toggleDarkMode = async () => {
-    const newValue = !isDarkMode;
-    setIsDarkMode(newValue);
-    try {
-      await AsyncStorage.setItem('darkMode', String(newValue));
-    } catch (error) {
-      console.error('Failed to save theme preference:', error);
-    }
-  };
-
+  const isDark = resolveThemeMode(snapshot.preferences.themeMode, systemScheme) === 'dark';
+  /** @type {import('../types').Theme} */
   const theme = {
-    isDark: isDarkMode,
-    colors: isDarkMode ? {
+    isDark,
+    colors: isDark ? {
       background: '#1F2933',
       surface: '#323F4B',
       card: '#3E4C59',
       text: '#F5F7FA',
       textSecondary: '#CBD2D9',
       border: '#52606D',
-      primary: '#3B82F6',
+      primary: '#1D4ED8',
     } : {
       background: '#FFFDF7',
       surface: '#FFFFFF',
@@ -53,12 +46,23 @@ export function ThemeProvider({ children }) {
       text: '#1F2933',
       textSecondary: '#6B7280',
       border: '#E5E7EB',
-      primary: '#3B82F6',
-    }
+      primary: '#1D4ED8',
+    },
   };
 
   return (
-    <ThemeContext.Provider value={{ theme, isDarkMode, toggleDarkMode, isLoading }}>
+    <ThemeContext.Provider value={{
+      theme,
+      preferences: snapshot.preferences,
+      isLoading: snapshot.isLoading || !clientReady,
+      isSaving: snapshot.isSaving,
+      preferenceError: snapshot.error,
+      setThemeMode: themeMode => preferenceStore.update({ themeMode }),
+      setSelectedVoice: selectedVoice => preferenceStore.update({ selectedVoice }),
+      setConverterPacing: converterPacing => preferenceStore.update({ converterPacing }),
+      resetPreferences: preferenceStore.reset,
+      retryPreferences: preferenceStore.retry,
+    }}>
       {children}
     </ThemeContext.Provider>
   );
@@ -66,8 +70,6 @@ export function ThemeProvider({ children }) {
 
 export function useTheme() {
   const context = useContext(ThemeContext);
-  if (!context) {
-    throw new Error('useTheme must be used within ThemeProvider');
-  }
+  if (!context) throw new Error('useTheme must be used within ThemeProvider');
   return context;
 }

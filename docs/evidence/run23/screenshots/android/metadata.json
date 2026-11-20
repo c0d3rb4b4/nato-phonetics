@@ -1,0 +1,44 @@
+[
+  {
+    "file": "converter-typed-input.png",
+    "state": "Actual installed CLI20.2.0-built app, exact a3 b! input, default scale",
+    "theme": "light",
+    "width": 720,
+    "height": 1600,
+    "sha256": "6f5f72dc68d1b06b6c74087e451a89a3bb17b99ee11657879e02f3d79c097ad0",
+    "timestamp": "2026-11-19T10:24:14Z",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "androidVersion": "16",
+    "fontScale": "1",
+    "displaySize": "Physical size: 1080x2400\nOverride size: 720x1600",
+    "displayDensity": "Physical density: 420\nOverride density: 280"
+  },
+  {
+    "file": "alphabet-light.png",
+    "state": "Actual installed reference, pinned portrait tiles and fonts",
+    "theme": "light",
+    "width": 720,
+    "height": 1600,
+    "sha256": "780b63756c101d4905371929b704690d74970fff43b0d30ef21e37a4df30f4eb",
+    "timestamp": "2026-11-19T10:24:27Z",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "androidVersion": "16",
+    "fontScale": "1",
+    "displaySize": "Physical size: 1080x2400\nOverride size: 720x1600",
+    "displayDensity": "Physical density: 420\nOverride density: 280"
+  },
+  {
+    "file": "digits-light.png",
+    "state": "Actual installed digit reference",
+    "theme": "light",
+    "width": 720,
+    "height": 1600,
+    "sha256": "7bba8ee00552bc48edf839c44c0abf163eceffb98b77341dee0a1194b9a57cb6",
+    "timestamp": "2026-11-19T10:24:35Z",
+    "command": "adb -s emulator-5580 exec-out screencap -p",
+    "androidVersion": "16",
+    "fontScale": "1",
+    "displaySize": "Physical size: 1080x2400\nOverride size: 720x1600",
+    "displayDensity": "Physical density: 420\nOverride density: 280"
+  }
+]

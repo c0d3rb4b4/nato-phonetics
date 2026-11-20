@@ -1,0 +1,31 @@
+{
+  "browser": "159.0",
+  "caught": [
+    {
+      "name": "throw",
+      "caught": "probe throw"
+    },
+    {
+      "name": "rejected-promise",
+      "caught": "probe rejected promise"
+    },
+    {
+      "name": "settled-envelope",
+      "value": {
+        "error": "probe envelope"
+      }
+    }
+  ],
+  "errors": [
+    {
+      "message": "probe throw",
+      "stack": "Error: probe throw\n    at value< (debugger eval code line 370 > eval:8:32)\n    at LockGrantedCallback* (debugger eval code line 370 > eval:7:40)\n    at evaluate (debugger eval code:372:16)\n    at  (debugger eval code:1:44)\n    at  (debugger eval code:1:62)\n    at evaluateFunction (chrome://juggler/content/content/Runtime.js:422:57)\n    at callFunction (chrome://juggler/content/content/Runtime.js:107:41)\n    at _onMessageInternal (chrome://juggler/content/SimpleChannel.js:237:37)\n    at _onMessage (chrome://juggler/content/SimpleChannel.js:194:12)\n    at bindToActor/actor.receiveMessage (chrome://juggler/content/SimpleChannel.js:39:44)"
+    },
+    {
+      "message": "probe rejected promise",
+      "stack": "Error: probe rejected promise\n"
+    }
+  ],
+  "pageEvents": [],
+  "scope": "No app, storage mocks, dependencies or framework: actual Web Locks callback rejections and caught outer promises"
+}

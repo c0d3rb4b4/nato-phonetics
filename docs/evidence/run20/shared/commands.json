@@ -1,0 +1,529 @@
+[
+  {
+    "command": [
+      "npm",
+      "run",
+      "audit:review"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-18T16:36:36.246712+00:00",
+    "endedAt": "2026-11-18T16:36:39.029330+00:00",
+    "exitCode": 1,
+    "log": "shared/audit-review.log",
+    "toolchain": {
+      "node": "22.23.0",
+      "npm": "10.9.4"
+    }
+  },
+  {
+    "command": [
+      "npm",
+      "install",
+      "--prefix",
+      "/tmp/nato-run20-trace-js",
+      "--no-save",
+      "--package-lock=false",
+      "--no-audit",
+      "--no-fund",
+      "frida-java-bridge@7.0.11"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-18T16:36:57.059597+00:00",
+    "endedAt": "2026-11-18T16:36:58.438334+00:00",
+    "exitCode": 0,
+    "log": "shared/java-bridge-install.log",
+    "toolchain": {
+      "node": "22.23.0",
+      "npm": "10.9.4"
+    }
+  },
+  {
+    "command": [
+      "npm",
+      "install",
+      "--prefix",
+      "/tmp/nato-run20-trace-js",
+      "--no-save",
+      "--package-lock=false",
+      "--no-audit",
+      "--no-fund",
+      "frida-java-bridge@7.0.11",
+      "buffer@6.0.3"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-18T16:38:37.066653+00:00",
+    "endedAt": "2026-11-18T16:38:38.033691+00:00",
+    "exitCode": 0,
+    "log": "shared/trace-js-install.log",
+    "toolchain": {
+      "node": "22.23.0",
+      "npm": "10.9.4"
+    }
+  },
+  {
+    "command": [
+      "/tmp/nato-run20-trace/bin/python3",
+      "docs/evidence/run20/android/run-trace.py"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-18T16:39:35.956254+00:00",
+    "endedAt": "2026-11-18T16:39:57.515252+00:00",
+    "exitCode": 0,
+    "log": "android/trace.log",
+    "toolchain": {
+      "node": "22.23.0",
+      "npm": "10.9.4"
+    }
+  },
+  {
+    "command": [
+      "node",
+      "--test",
+      "tests/web-package.test.mjs"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-18T16:44:20.063480+00:00",
+    "endedAt": "2026-11-18T16:44:20.483564+00:00",
+    "exitCode": 0,
+    "log": "shared/web-package-tests.log",
+    "toolchain": {
+      "node": "22.23.0",
+      "npm": "10.9.4"
+    }
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "lint"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-18T16:44:20.524459+00:00",
+    "endedAt": "2026-11-18T16:44:22.507462+00:00",
+    "exitCode": 0,
+    "log": "shared/lint.log",
+    "toolchain": {
+      "node": "22.23.0",
+      "npm": "10.9.4"
+    }
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "export:web"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-18T16:44:42.248537+00:00",
+    "endedAt": "2026-11-18T16:44:42.730655+00:00",
+    "exitCode": 0,
+    "log": "shared/build.log",
+    "toolchain": {
+      "node": "22.23.0",
+      "npm": "10.9.4"
+    }
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "package:web",
+      "--",
+      "dist",
+      "artifacts/run20/nato-web.tar.gz"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-18T16:44:42.772115+00:00",
+    "endedAt": "2026-11-18T16:44:42.983785+00:00",
+    "exitCode": 0,
+    "log": "shared/package.log",
+    "toolchain": {
+      "node": "22.23.0",
+      "npm": "10.9.4"
+    }
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "package:web",
+      "--",
+      "dist",
+      "artifacts/run20/nato-web-final.tar.gz"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-18T16:47:52.637799+00:00",
+    "endedAt": "2026-11-18T16:47:53.097428+00:00",
+    "exitCode": 0,
+    "log": "shared/package-final.log",
+    "toolchain": {
+      "node": "22.23.0",
+      "npm": "10.9.4"
+    }
+  },
+  {
+    "command": [
+      "node",
+      "scripts/verify-web-host.cjs",
+      "artifacts/run20/nato-web-final.tar.gz",
+      "artifacts/run20/host-first"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-18T16:47:53.137576+00:00",
+    "endedAt": "2026-11-18T16:47:53.172064+00:00",
+    "exitCode": 1,
+    "log": "shared/host-first.log",
+    "toolchain": {
+      "node": "22.23.0",
+      "npm": "10.9.4"
+    }
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "typecheck"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-18T16:47:53.262077+00:00",
+    "endedAt": "2026-11-18T16:47:54.843620+00:00",
+    "exitCode": 0,
+    "log": "shared/types.log",
+    "toolchain": {
+      "node": "22.23.0",
+      "npm": "10.9.4"
+    }
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "lint"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-18T16:47:54.885682+00:00",
+    "endedAt": "2026-11-18T16:47:56.410419+00:00",
+    "exitCode": 0,
+    "log": "shared/lint-final.log",
+    "toolchain": {
+      "node": "22.23.0",
+      "npm": "10.9.4"
+    }
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "check:dependencies"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-18T16:47:56.450618+00:00",
+    "endedAt": "2026-11-18T16:47:57.096597+00:00",
+    "exitCode": 0,
+    "log": "shared/dependencies.log",
+    "toolchain": {
+      "node": "22.23.0",
+      "npm": "10.9.4"
+    }
+  },
+  {
+    "command": [
+      "node",
+      "scripts/verify-web-host.cjs",
+      "artifacts/run20/nato-web-final.tar.gz",
+      "artifacts/run20/host-second"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-18T16:48:08.842972+00:00",
+    "endedAt": "2026-11-18T16:48:21.386668+00:00",
+    "exitCode": 0,
+    "log": "shared/host-second.log",
+    "toolchain": {
+      "node": "22.23.0",
+      "npm": "10.9.4"
+    }
+  },
+  {
+    "command": [
+      "node",
+      "docs/evidence/run20/android/capture-loaded-fixture.cjs"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-18T16:48:34.291949+00:00",
+    "endedAt": "2026-11-18T16:48:35.584077+00:00",
+    "exitCode": 0,
+    "log": "android/loaded-fixture.log",
+    "toolchain": {
+      "node": "22.23.0",
+      "npm": "10.9.4"
+    }
+  },
+  {
+    "command": [
+      "node",
+      "node_modules/react-native/cli.js",
+      "start",
+      "--port",
+      "8081",
+      "--config",
+      "docs/evidence/run20/android/metro.config.cjs",
+      "--max-workers",
+      "2"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-18T16:38:16.267727+00:00",
+    "endedAt": "2026-11-18T16:49:36.767225+00:00",
+    "exitCode": -15,
+    "log": "android/metro.log",
+    "toolchain": {
+      "node": "22.23.0",
+      "npm": "10.9.4"
+    }
+  },
+  {
+    "command": [
+      "node",
+      "scripts/verify-web-host.cjs",
+      "artifacts/run20/nato-web-final.tar.gz",
+      "artifacts/run20/host-validators-original"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-18T16:49:57.978172+00:00",
+    "endedAt": "2026-11-18T16:50:11.890664+00:00",
+    "exitCode": 0,
+    "log": "shared/host-validators-original.log",
+    "toolchain": {
+      "node": "22.23.0",
+      "npm": "10.9.4"
+    }
+  },
+  {
+    "command": [
+      "node",
+      "docs/evidence/run20/android/capture-loaded-product.cjs"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-18T16:52:20.758912+00:00",
+    "endedAt": "2026-11-18T16:52:21.740361+00:00",
+    "exitCode": 0,
+    "log": "android/loaded-product.log",
+    "toolchain": {
+      "node": "22.23.0",
+      "npm": "10.9.4"
+    }
+  },
+  {
+    "command": [
+      "node",
+      "scripts/verify-web-host.cjs",
+      "artifacts/run20/nato-web-final.tar.gz",
+      "artifacts/run20/host-final"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-18T16:52:19.703699+00:00",
+    "endedAt": "2026-11-18T16:52:35.053209+00:00",
+    "exitCode": 0,
+    "log": "shared/host-final.log",
+    "toolchain": {
+      "node": "22.23.0",
+      "npm": "10.9.4"
+    }
+  },
+  {
+    "command": [
+      "python3",
+      "docs/evidence/run20/android/check-live-cold.py"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-18T16:53:33.116968+00:00",
+    "endedAt": "2026-11-18T16:53:33.255801+00:00",
+    "exitCode": 1,
+    "log": "android/live-cold-gate.log",
+    "toolchain": {
+      "node": "22.23.0",
+      "npm": "10.9.4"
+    }
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "lint"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-18T16:53:32.007118+00:00",
+    "endedAt": "2026-11-18T16:53:34.051456+00:00",
+    "exitCode": 0,
+    "log": "shared/lint-final2.log",
+    "toolchain": {
+      "node": "22.23.0",
+      "npm": "10.9.4"
+    }
+  },
+  {
+    "command": [
+      "node",
+      "--test",
+      "tests/web-package.test.mjs"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-18T16:53:34.098445+00:00",
+    "endedAt": "2026-11-18T16:53:34.348794+00:00",
+    "exitCode": 0,
+    "log": "shared/web-package-final-tests.log",
+    "toolchain": {
+      "node": "22.23.0",
+      "npm": "10.9.4"
+    }
+  },
+  {
+    "command": [
+      "node",
+      "-e",
+      "const fs=require(\"node:fs\");const y=require(\"yaml\").parse(fs.readFileSync(\".github/workflows/ci.yml\",\"utf8\"));console.log(Object.keys(y.jobs));if(!y.jobs[\"web-distribution\"])process.exit(1)"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-18T16:53:34.390331+00:00",
+    "endedAt": "2026-11-18T16:53:34.458870+00:00",
+    "exitCode": 0,
+    "log": "shared/workflow.log",
+    "toolchain": {
+      "node": "22.23.0",
+      "npm": "10.9.4"
+    }
+  },
+  {
+    "command": [
+      "node",
+      "node_modules/react-native/cli.js",
+      "start",
+      "--port",
+      "8081",
+      "--max-workers",
+      "2"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-18T16:49:36.792380+00:00",
+    "endedAt": "2026-11-18T16:56:22.464068+00:00",
+    "exitCode": -15,
+    "log": "android/metro-product.log",
+    "toolchain": {
+      "node": "22.23.0",
+      "npm": "10.9.4"
+    }
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-18T16:59:56.530021+00:00",
+    "endedAt": "2026-11-18T16:59:56.595420+00:00",
+    "exitCode": 0,
+    "log": "shared/diff-check.log",
+    "toolchain": {
+      "node": "22.23.0",
+      "npm": "10.9.4"
+    }
+  },
+  {
+    "command": [
+      "node",
+      "--test",
+      "tests/web-package.test.mjs"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-18T17:01:06.835406+00:00",
+    "endedAt": "2026-11-18T17:01:07.251850+00:00",
+    "exitCode": 0,
+    "log": "shared/web-package-reviewed-tests.log",
+    "toolchain": {
+      "node": "22.23.0",
+      "npm": "10.9.4"
+    }
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "lint"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-18T17:01:07.291192+00:00",
+    "endedAt": "2026-11-18T17:01:08.884976+00:00",
+    "exitCode": 0,
+    "log": "shared/lint-reviewed.log",
+    "toolchain": {
+      "node": "22.23.0",
+      "npm": "10.9.4"
+    }
+  },
+  {
+    "command": [
+      "node",
+      "scripts/verify-web-host.cjs",
+      "artifacts/run20/nato-web-final.tar.gz",
+      "artifacts/run20/host-reviewed"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-18T17:01:08.923489+00:00",
+    "endedAt": "2026-11-18T17:01:19.100154+00:00",
+    "exitCode": 0,
+    "log": "shared/host-reviewed.log",
+    "toolchain": {
+      "node": "22.23.0",
+      "npm": "10.9.4"
+    }
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "package:web",
+      "--",
+      "dist",
+      "artifacts/run20/nato-web-reproduced.tar.gz"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-18T17:02:13.919513+00:00",
+    "endedAt": "2026-11-18T17:02:14.366012+00:00",
+    "exitCode": 0,
+    "log": "shared/package-reproduce.log",
+    "toolchain": {
+      "node": "22.23.0",
+      "npm": "10.9.4"
+    }
+  },
+  {
+    "command": [
+      "python3",
+      "docs/evidence/run20/shared/finalize.py"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-18T17:03:43.000271+00:00",
+    "endedAt": "2026-11-18T17:03:44.498291+00:00",
+    "exitCode": 1,
+    "log": "shared/reconciliation.log",
+    "toolchain": {
+      "node": "22.23.0",
+      "npm": "10.9.4"
+    }
+  },
+  {
+    "command": [
+      "python3",
+      "docs/evidence/run20/shared/finalize.py"
+    ],
+    "cwd": "/Users/mac/dev/apps/nato-phonetics",
+    "startedAt": "2026-11-18T17:04:30.214956+00:00",
+    "endedAt": "2026-11-18T17:04:31.585978+00:00",
+    "exitCode": 0,
+    "log": "shared/reconciliation-final.log",
+    "toolchain": {
+      "node": "22.23.0",
+      "npm": "10.9.4"
+    }
+  }
+]

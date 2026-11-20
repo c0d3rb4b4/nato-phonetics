@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-18",
+  "resumeMatched": {
+    "matched": 227,
+    "total": 227,
+    "mismatches": []
+  },
+  "baselineFiles": 3363,
+  "unexpectedBaselineChanges": [],
+  "historicalEvidenceFiles": 3142,
+  "allPriorEvidencePreserved": true,
+  "protectedAppNativeFontsProviderStorageWorkerBuildAndCIInputsPreserved": true,
+  "originalReviewHistoryPreserved": true,
+  "maintainedFiles": 228,
+  "ledgerCounts": {
+    "resolved": 5,
+    "implemented-awaiting-M11": 12,
+    "in-progress": 18
+  },
+  "allM11Unperformed": true,
+  "missingLocalLinks": [],
+  "productionResourceHashesPass": true,
+  "webManifestExactlyMatchesRun16": true,
+  "webWorkerExactlyMatchesRun16": true,
+  "webBundleExactlyMatchesRun16": true,
+  "allScreenshotHashesPass": true,
+  "screenshotsInspected": 16,
+  "platformCounts": {
+    "web": 6,
+    "ios": 5,
+    "android": 5
+  },
+  "artifactHashesPass": true,
+  "installedImageSizeDirectoryAbsent": true,
+  "expectedIntentionalStop": "Android emulator exit130 after completed capture, not a build/test failure"
+}

@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-19",
+  "baseHead": "b551420f80e951a6db22cce1c79533510f1286f1",
+  "workingTree": "Run24 tooling/docs plus evidence; no commit made",
+  "web": {
+    "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+    "durableArchive": "../run20/hosting/nato-web.tar.gz",
+    "reports": "hosting/summary.json"
+  },
+  "ios": {
+    "candidate": "../run23/candidate.json",
+    "installedIdentity": "ios/installed-artifact.json",
+    "results": "ios/results.json",
+    "appRebuilt": false
+  },
+  "unchanged": [
+    "app",
+    "src",
+    "web worker",
+    "fonts",
+    "native projects",
+    "package/lockfiles",
+    "providers",
+    "permissions",
+    "storage schemas"
+  ],
+  "boundary": "Scoped local qualification; strict cleanup, save reliability, maximum Share and inherited gates remain open. No release acceptance.",
+  "maintainedSourceId": "737d38219853480cc4b995c305c410a3c3f8c23fc1b2ee6a381c5699964fa00d"
+}

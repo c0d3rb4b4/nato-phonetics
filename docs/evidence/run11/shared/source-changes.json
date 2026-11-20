@@ -1,0 +1,107 @@
+[
+  {
+    "file": ".github/workflows/ci.yml",
+    "before": "ed9cdfe68e62ed5d8e0764090d8b433f4308a2cea6af4d45aebb00fcf6e5929e",
+    "after": "7ce0107d8c5670a9cf07bbbc8050b4e341f05b25f4a53143801dfe27f2a3b4de"
+  },
+  {
+    "file": "PRIVACY.md",
+    "before": "f869e1508acf9080e912d9f793d19e3f0c3daf89641b72f9ba6406b33829cc54",
+    "after": "cbdb1c523bdcdc59d9901400e42142c7a703359b47bdf56fff79a7d72db7d622"
+  },
+  {
+    "file": "README.md",
+    "before": "58c2ff460960a9afe973608955b70ff0625ddbc106e7e5ee96d8261f20d99c73",
+    "after": "6598b3e6d9e528995bcd2fe538104a733bd8676e1e1ca2a30fb3ed08906106f2"
+  },
+  {
+    "file": "app/alphabet.js",
+    "before": "4affd013bff15cbc045fc97365bf9026ea4cd6ed17001a8b93e6f18ced8ada23",
+    "after": "07ac79c727999925c8d05677f6b7716b9b911ba0a3666da6ec2f04adaa942981"
+  },
+  {
+    "file": "app/index.js",
+    "before": "93247a00060e40c308d6bfc56f1649a3ba42cd69f9002def2dbf5769e4bd5e49",
+    "after": "9a180deb8b23ce75a402c4eeb8fc2940b76030ce5d9c89e9c08a58aed087da22"
+  },
+  {
+    "file": "app/letter-quiz.js",
+    "before": "177fcf4cfc63f923264321fbb47b342e2f5ed65be9751180b84e404edaf18e37",
+    "after": "78bd9984e95efa892dfab5b33c46e5e14ce6931c695a2e7c3e0668e0113a4d03"
+  },
+  {
+    "file": "app/privacy.js",
+    "before": "cd3f832c039f167ae0d1aa51b4ab3a1fd31b4c1138e23abda6a4022eedb4287e",
+    "after": "cd7a69ab947c3201d38fb4eac22d97c95e3b54be72e19ae9b3a5e08a9bb3b20f"
+  },
+  {
+    "file": "app/voice-select.js",
+    "before": "f4bf0f7b1466d36f73baaa77d1403792c5eed9a085fefaf38733c2beec3453f7",
+    "after": "990b977ce860b47dcaf10865b090be6660564c77925a0960202ee3333770fee5"
+  },
+  {
+    "file": "docs/AUDIO_VALIDATION.md",
+    "before": null,
+    "after": "a5061e842c9309b10b752f215891dd02a06ccfe61df94e7172842763c3cc72f3"
+  },
+  {
+    "file": "docs/NUMERIC_PRACTICE.md",
+    "before": null,
+    "after": "d67455d8ae62d7fb7aa491174b7b1645eb54f9622b46f8af284b0a63f1d5c2f7"
+  },
+  {
+    "file": "scripts/verify-app-browser.cjs",
+    "before": "862bf8678ae03a7a4c2c5626c7eb0d8b1bc7d920c8a3ef43f752276a83c61828",
+    "after": "a1393859792fd992a1eefb9f8aa48e72f95e1c13c34adae21bccf7da7ea56e23"
+  },
+  {
+    "file": "scripts/verify-numeric-browser.cjs",
+    "before": null,
+    "after": "78ecf3d7d474416370f8391bb9ebc3839674076d5b0902eff8465043d66ba3b8"
+  },
+  {
+    "file": "src/components/NatoTile.js",
+    "before": "b9bf3daa31cc82417944662112e276bc2d6979a9bf3dbe7b883533f4e807ecd6",
+    "after": "840ba4d03f9c39bc89ba0486bffde7506c045db888deec1573e963c987992e47"
+  },
+  {
+    "file": "src/components/ui.js",
+    "before": "552f052040c4281dabfa204078ca075f0f93716486e33882ef6531d9454f8142",
+    "after": "a1b7d6733cbba24bfc115ac2a9d1aff1ea76eb4465b92226e9c35de47b70c070"
+  },
+  {
+    "file": "src/lib/audioVoices.js",
+    "before": "c5a5b98ee37a07e53b0e0300d60507420708e4724be4f5de708d817bb96da053",
+    "after": "d987054f8dcd3bb8dc4aba8608a57d573295625d6ff053204bdd11ab899e74b3"
+  },
+  {
+    "file": "src/lib/practiceSets.js",
+    "before": null,
+    "after": "d5e0547775522f74eb4552c5edb68085980a9e939c3e4f4e5c86a9702d03a5dc"
+  },
+  {
+    "file": "src/lib/questions.js",
+    "before": "71462f701ec795bce7c71201fe4e0d42d13bfb45de50851290c33fba5ffb49a8",
+    "after": "78758f8e5e8686edd7e6363ad4d7117f9e35f0edc5e12cb5971aeb0f633f64f4"
+  },
+  {
+    "file": "src/lib/quizSession.js",
+    "before": "b1bd2355d16d942eba1e6d97e2d8e737e95dd346ba2681afd6ce73abc132cacc",
+    "after": "52c11ad30ae5bbde6cf4a858c0253cb4a4b682123b7b5248bece34850639fc78"
+  },
+  {
+    "file": "tests/audio.test.mjs",
+    "before": "9633c5fcaed58ffefc95eea423e1d0f1feca0d1d1de8c9f2794ea52280e8ac93",
+    "after": "07acab1fa7c70bfdce863993151dc9c2d4c8b17e62da70225cf7ad2c5c6fa046"
+  },
+  {
+    "file": "tests/numeric-practice.test.mjs",
+    "before": null,
+    "after": "33901db9e4a3d688523b8e969a72c0bcdc6ff3f30fad91bacd3e6acb6714552f"
+  },
+  {
+    "file": "tests/quiz-session.test.mjs",
+    "before": "ff44469583ce87fa6fc8fead1df27faf14c3710308adb49a8cedd1afea48821c",
+    "after": "504a19d7c20019cf369acb4196bafa5e69dbb9c4ea5a6f6648a8edd7a5c6ac8a"
+  }
+]

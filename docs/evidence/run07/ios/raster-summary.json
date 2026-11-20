@@ -1,0 +1,157 @@
+{
+  "classification": "final",
+  "scope": "Maximum all26 alphabet and7 converter symbols; default/max contexts and changed quiz question; iPad DPR2 and focused iPhone DPR3",
+  "scaleMethod": "Actual RN Dimensions.fontScale and native root style.width/110, independently observed through Hermes",
+  "baselineMethod": "Nominal whole-tile target for strict gate; separate diagnostic uses retained native event baseline plus transformed Fabric frame",
+  "passed": false,
+  "coveragePassed": true,
+  "coverageErrors": [],
+  "observations": 456,
+  "passedObservations": 453,
+  "failedObservations": 3,
+  "legacyFrameScaleFailedObservations": 3,
+  "inkSupportThreshold": "Any RGB channel differs from uniform tile background by >8",
+  "envelopePhysicalPixels": 2,
+  "maximumAbsoluteDelta": 2.042446952148339,
+  "excludedRois": 123,
+  "failures": [
+    {
+      "file": "final-debug-phone-maximum-alphabet-J-dark.png",
+      "id": "alphabet-I",
+      "symbol": "I",
+      "part": "word",
+      "text": "India",
+      "density": 3,
+      "scale": 3.571,
+      "inkPixels": {
+        "top": 1342,
+        "bottom": 1466,
+        "count": 16416
+      },
+      "expectedInk": {
+        "top": 1341.3729038466797,
+        "bottom": 1464.9580718466798
+      },
+      "deltaPixels": {
+        "top": 0.6270961533202808,
+        "bottom": 2.041928153320214
+      },
+      "legacyFrameScale": {
+        "scale": 3.56969687721946,
+        "expectedInk": {
+          "top": 1341.0293798317648,
+          "bottom": 1464.5694493585759
+        },
+        "deltaPixels": {
+          "top": 0.9706201682352003,
+          "bottom": 2.4305506414241336
+        }
+      },
+      "nativeMeasuredBaseline": {
+        "logical": 354.4717439992726,
+        "nominal": 354.471744,
+        "deltaPhysicalPixels": -2.1822756934852805e-9,
+        "expectedInk": {
+          "top": 1341.3729038444974,
+          "bottom": 1464.9580718444975
+        },
+        "deltaPixels": {
+          "top": 0.6270961555026133,
+          "bottom": 2.0419281555025464
+        }
+      }
+    },
+    {
+      "file": "final-debug-phone-maximum-focused-horizontal-alphabet-J-dark.png",
+      "id": "alphabet-J",
+      "symbol": "J",
+      "part": "word",
+      "text": "Juliett",
+      "density": 3,
+      "scale": 3.571,
+      "inkPixels": {
+        "top": 1727,
+        "bottom": 1851,
+        "count": 20107
+      },
+      "expectedInk": {
+        "top": 1726.3723850478516,
+        "bottom": 1849.9575530478517
+      },
+      "deltaPixels": {
+        "top": 0.6276149521484058,
+        "bottom": 2.042446952148339
+      },
+      "legacyFrameScale": {
+        "scale": 3.56969687721946,
+        "expectedInk": {
+          "top": 1726.0288610329367,
+          "bottom": 1849.5689305597477
+        },
+        "deltaPixels": {
+          "top": 0.9711389670633253,
+          "bottom": 2.4310694402522586
+        }
+      },
+      "nativeMeasuredBaseline": {
+        "logical": 354.4717439992726,
+        "nominal": 354.471744,
+        "deltaPhysicalPixels": -2.1822756934852805e-9,
+        "expectedInk": {
+          "top": 1726.3723850456693,
+          "bottom": 1849.9575530456693
+        },
+        "deltaPixels": {
+          "top": 0.6276149543307383,
+          "bottom": 2.0424469543306714
+        }
+      }
+    },
+    {
+      "file": "final-debug-phone-maximum-focused-alphabet-J-dark.png",
+      "id": "alphabet-J",
+      "symbol": "J",
+      "part": "word",
+      "text": "Juliett",
+      "density": 3,
+      "scale": 3.571,
+      "inkPixels": {
+        "top": 1727,
+        "bottom": 1851,
+        "count": 20107
+      },
+      "expectedInk": {
+        "top": 1726.3723850478516,
+        "bottom": 1849.9575530478517
+      },
+      "deltaPixels": {
+        "top": 0.6276149521484058,
+        "bottom": 2.042446952148339
+      },
+      "legacyFrameScale": {
+        "scale": 3.56969687721946,
+        "expectedInk": {
+          "top": 1726.0288610329367,
+          "bottom": 1849.5689305597477
+        },
+        "deltaPixels": {
+          "top": 0.9711389670633253,
+          "bottom": 2.4310694402522586
+        }
+      },
+      "nativeMeasuredBaseline": {
+        "logical": 354.4717439992726,
+        "nominal": 354.471744,
+        "deltaPhysicalPixels": -2.1822756934852805e-9,
+        "expectedInk": {
+          "top": 1726.3723850456693,
+          "bottom": 1849.9575530456693
+        },
+        "deltaPixels": {
+          "top": 0.6276149543307383,
+          "bottom": 2.0424469543306714
+        }
+      }
+    }
+  ]
+}

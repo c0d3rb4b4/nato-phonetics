@@ -1,0 +1,82 @@
+TAP version 13
+# Subtest: native completion correlates utterance IDs and removes listeners exactly once
+ok 1 - native completion correlates utterance IDs and removes listeners exactly once
+  ---
+  duration_ms: 3.390875
+  type: 'test'
+  ...
+# Subtest: native terminal event before speak promise resolves is retained
+ok 2 - native terminal event before speak promise resolves is retained
+  ---
+  duration_ms: 0.349666
+  type: 'test'
+  ...
+# Subtest: Stop during native initialization prevents late utterance and serializes provider stop
+ok 3 - Stop during native initialization prevents late utterance and serializes provider stop
+  ---
+  duration_ms: 7.751625
+  type: 'test'
+  ...
+# Subtest: first playback waits for native initialization before its stop barrier and then completes
+ok 4 - first playback waits for native initialization before its stop barrier and then completes
+  ---
+  duration_ms: 1.057875
+  type: 'test'
+  ...
+# Subtest: Android Stop errors block replacement while an idle iOS Stop remains safe
+ok 5 - Android Stop errors block replacement while an idle iOS Stop remains safe
+  ---
+  duration_ms: 0.598583
+  type: 'test'
+  ...
+# Subtest: Stop removes subscriptions; stale native events cannot finish next utterance
+ok 6 - Stop removes subscriptions; stale native events cannot finish next utterance
+  ---
+  duration_ms: 0.265167
+  type: 'test'
+  ...
+# Subtest: System Default resets chosen voice and rate maps intentionally per platform
+ok 7 - System Default resets chosen voice and rate maps intentionally per platform
+  ---
+  duration_ms: 0.343375
+  type: 'test'
+  ...
+# Subtest: installed Android provider assigns unique IDs even when identical text is replayed
+ok 8 - installed Android provider assigns unique IDs even when identical text is replayed
+  ---
+  duration_ms: 5.370417
+  type: 'test'
+  ...
+# Subtest: installed iOS provider uses scalar Boolean arguments supported by native interop
+ok 9 - installed iOS provider uses scalar Boolean arguments supported by native interop
+  ---
+  duration_ms: 3.102708
+  type: 'test'
+  ...
+# Subtest: native install patch is repeatable and rejects source/version drift before writing either platform
+ok 10 - native install patch is repeatable and rejects source/version drift before writing either platform
+  ---
+  duration_ms: 13.748708
+  type: 'test'
+  ...
+# Subtest: voice enumeration excludes uninstalled voices and preserves unknown connectivity
+ok 11 - voice enumeration excludes uninstalled voices and preserves unknown connectivity
+  ---
+  duration_ms: 1.29075
+  type: 'test'
+  ...
+# Subtest: native failure cleans listeners and a subsequent call can recover
+ok 12 - native failure cleans listeners and a subsequent call can recover
+  ---
+  duration_ms: 0.570459
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 242.30575

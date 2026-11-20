@@ -1,0 +1,63 @@
+{
+  "command": "TILE_CASE_FILTER='alphabet-desktop|alphabet-narrow-200|converter-all' TILE_BASELINE_DIR=docs/evidence/run05/screenshots/web node scripts/verify-tiles-browser.cjs dist artifacts/run05-web-visual-compare",
+  "browser": "Edg/157.0.4341.60",
+  "os": "Darwin 25.6.0 arm64",
+  "comparisons": [
+    {
+      "file": "alphabet-desktop-light-first.png",
+      "changedPixels": 0,
+      "changedFraction": 0,
+      "channelTolerance": 32,
+      "maximumChangedFraction": 0.005
+    },
+    {
+      "file": "alphabet-desktop-light-last.png",
+      "changedPixels": 0,
+      "changedFraction": 0,
+      "channelTolerance": 32,
+      "maximumChangedFraction": 0.005
+    },
+    {
+      "file": "alphabet-live-window-resize-last.png",
+      "changedPixels": 0,
+      "changedFraction": 0,
+      "channelTolerance": 32,
+      "maximumChangedFraction": 0.005
+    },
+    {
+      "file": "alphabet-narrow-200-dark-first.png",
+      "changedPixels": 0,
+      "changedFraction": 0,
+      "channelTolerance": 32,
+      "maximumChangedFraction": 0.005
+    },
+    {
+      "file": "alphabet-narrow-200-dark-last.png",
+      "changedPixels": 0,
+      "changedFraction": 0,
+      "channelTolerance": 32,
+      "maximumChangedFraction": 0.005
+    },
+    {
+      "file": "converter-all-desktop-light-first.png",
+      "changedPixels": 0,
+      "changedFraction": 0,
+      "channelTolerance": 32,
+      "maximumChangedFraction": 0.005
+    },
+    {
+      "file": "converter-all-desktop-light-last.png",
+      "changedPixels": 0,
+      "changedFraction": 0,
+      "channelTolerance": 32,
+      "maximumChangedFraction": 0.005
+    },
+    {
+      "file": "alphabet-font-load-error.png",
+      "changedPixels": 0,
+      "changedFraction": 0,
+      "channelTolerance": 32,
+      "maximumChangedFraction": 0.005
+    }
+  ]
+}

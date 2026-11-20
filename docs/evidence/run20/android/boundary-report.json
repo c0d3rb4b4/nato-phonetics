@@ -1,0 +1,222 @@
+{
+  "diagnosticOnly": true,
+  "traceErrors": [],
+  "measurementCalls": [
+    {
+      "stage": "cold1",
+      "jni": [
+        "Diagnostic normal startup \u2014 scale 1"
+      ],
+      "size": {
+        "width": 375.4285583496094,
+        "height": 19.428571701049805
+      }
+    },
+    {
+      "stage": "cold1",
+      "jni": [
+        "Tap a card to hear the word. New playback replaces current audio."
+      ],
+      "size": {
+        "width": 260,
+        "height": 40.57143020629883
+      }
+    },
+    {
+      "stage": "cold1",
+      "jni": [
+        "Tap a card to hear the word. New playback replaces current audio. Scale 1"
+      ],
+      "size": {
+        "width": 260,
+        "height": 59.42856979370117
+      }
+    },
+    {
+      "stage": "cold1",
+      "jni": [
+        "Correct! B is Bravo."
+      ],
+      "size": {
+        "width": 260,
+        "height": 24
+      }
+    },
+    {
+      "stage": "cold1",
+      "jni": [
+        "NUWJ359"
+      ],
+      "size": {
+        "width": 365.4285583496094,
+        "height": 24.571428298950195
+      }
+    },
+    {
+      "stage": "live2",
+      "jni": [
+        "Diagnostic normal startup \u2014 scale 2"
+      ],
+      "size": {
+        "width": 375.4285583496094,
+        "height": 66.28571319580078
+      }
+    },
+    {
+      "stage": "live2",
+      "jni": [
+        "Tap a card to hear the word. New playback replaces current audio. Scale 2"
+      ],
+      "size": {
+        "width": 260,
+        "height": 168
+      }
+    },
+    {
+      "stage": "live2",
+      "jni": [],
+      "size": {
+        "width": 365.4285583496094,
+        "height": 24.571428298950195
+      }
+    },
+    {
+      "stage": "return1",
+      "jni": [],
+      "size": {
+        "width": 375.4285583496094,
+        "height": 19.428571701049805
+      }
+    },
+    {
+      "stage": "return1",
+      "jni": [],
+      "size": {
+        "width": 260,
+        "height": 59.42856979370117
+      }
+    },
+    {
+      "stage": "return1",
+      "jni": [],
+      "size": {
+        "width": 365.4285583496094,
+        "height": 24.571428298950195
+      }
+    },
+    {
+      "stage": "cold2",
+      "jni": [
+        "Diagnostic normal startup \u2014 scale 2"
+      ],
+      "size": {
+        "width": 375.4285583496094,
+        "height": 66.28571319580078
+      }
+    },
+    {
+      "stage": "cold2",
+      "jni": [
+        "Tap a card to hear the word. New playback replaces current audio."
+      ],
+      "size": {
+        "width": 260,
+        "height": 135.42857360839844
+      }
+    },
+    {
+      "stage": "cold2",
+      "jni": [
+        "Tap a card to hear the word. New playback replaces current audio. Scale 2"
+      ],
+      "size": {
+        "width": 260,
+        "height": 168
+      }
+    },
+    {
+      "stage": "cold2",
+      "jni": [
+        "Correct! B is Bravo."
+      ],
+      "size": {
+        "width": 260,
+        "height": 36
+      }
+    },
+    {
+      "stage": "cold2",
+      "jni": [
+        "NUWJ359"
+      ],
+      "size": {
+        "width": 365.4285583496094,
+        "height": 40.57143020629883
+      }
+    }
+  ],
+  "eventCounts": {
+    "cold1": {
+      "java-ready": 1,
+      "hook": 2,
+      "paragraph-enter": 4,
+      "cpp-measure-enter": 5,
+      "java-layout": 8,
+      "jni-measure": 5,
+      "cpp-measure-leave": 5,
+      "paragraph-leave": 4
+    },
+    "live2": {
+      "paragraph-enter": 2,
+      "cpp-measure-enter": 3,
+      "java-layout": 4,
+      "jni-measure": 2,
+      "cpp-measure-leave": 3,
+      "paragraph-leave": 2
+    },
+    "return1": {
+      "paragraph-enter": 2,
+      "cpp-measure-enter": 3,
+      "cpp-measure-leave": 3,
+      "paragraph-leave": 2
+    },
+    "cold2": {
+      "java-ready": 1,
+      "hook": 2,
+      "paragraph-enter": 4,
+      "cpp-measure-enter": 5,
+      "java-layout": 8,
+      "jni-measure": 5,
+      "cpp-measure-leave": 5,
+      "paragraph-leave": 4
+    }
+  },
+  "liveColdComparison": [
+    {
+      "control": "stable",
+      "live2Height": 40.571441650390625,
+      "cold2Height": 135.42855834960938,
+      "passed": false
+    },
+    {
+      "control": "feedback",
+      "live2Height": 24,
+      "cold2Height": 36,
+      "passed": false
+    },
+    {
+      "control": "input",
+      "live2Height": 47.428558349609375,
+      "cold2Height": 63.4285888671875,
+      "passed": false
+    },
+    {
+      "control": "revision",
+      "live2Height": 168,
+      "cold2Height": 168,
+      "passed": true
+    }
+  ],
+  "conclusion": "Stable/feedback paragraphs are not measured on live2. Changed-text revision crosses JNI and matches cold height. The lone live2 no-JNI C++ return has the unique input width/cold1 height; this identifies an input-shaped cache return, not a fully instrumented dirty-owner cause. Mounted input/value retained; caret/composition unqualified. No product repair or native acceptance.",
+  "method": "Frida17.27.0 read-only Interceptor and original Java wrappers on unchanged APK; normal AppRegistry/Metro entry, no root replacement/flag/cache override"
+}

@@ -1,0 +1,35 @@
+{
+  "serial": "emulator-5580",
+  "identities": {
+    "com.natophonetics.app": {
+      "installed": "/data/app/~~bzwDkgCgr32CZlHc4NFeDQ==/com.natophonetics.app-M0IyGg505rRQ1FRemAFsJA==/base.apk",
+      "sha256": "5dfa45d22b562ddb03fffcbeb16b16bf0392197d69e92320437d5a1ab22ae129",
+      "expectedSha256": "5dfa45d22b562ddb03fffcbeb16b16bf0392197d69e92320437d5a1ab22ae129"
+    },
+    "com.natophonetics.fonttest": {
+      "installed": "/data/app/~~o10l4R5Qftb5seWdquu-fw==/com.natophonetics.fonttest-n4MUizQzWNGKqYVG-vCeuQ==/base.apk",
+      "sha256": "e5824240e8efd05bde0a14c95e325b5db97eeecf7da17bf5514562ed6bfaec6e",
+      "expectedSha256": "e5824240e8efd05bde0a14c95e325b5db97eeecf7da17bf5514562ed6bfaec6e"
+    }
+  },
+  "originalScale": "1.0",
+  "originalIme": "com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME",
+  "externalEvidence": true,
+  "evidenceComplete": true,
+  "command": [
+    "adb",
+    "-s",
+    "emulator-5580",
+    "shell",
+    "am",
+    "instrument",
+    "-w",
+    "-r",
+    "-e",
+    "externalEvidence",
+    "true",
+    "com.natophonetics.fonttest/com.natophonetics.fonttest.FontScaleInstrumentation"
+  ],
+  "adbExitCode": 0,
+  "passed": true
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "capture": "accessibility-max-alphabet-accessibility-first.png",
+    "symbol": "A",
+    "part": "letter",
+    "scale": 3.571,
+    "density": 3,
+    "text": "A",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 500,
+      "top": 2044,
+      "right": 774,
+      "bottom": 2323,
+      "count": 33706
+    },
+    "expectedInk": {
+      "top": 2044.1948047412109,
+      "bottom": 2323.032768741211
+    },
+    "deltaPixels": {
+      "top": -0.19480474121087354,
+      "bottom": 0.9672312587890701
+    }
+  },
+  {
+    "capture": "accessibility-max-alphabet-accessibility-scroll.png",
+    "symbol": "A",
+    "part": "word",
+    "scale": 3.571,
+    "density": 3,
+    "text": "Alfa",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 477,
+      "top": 863,
+      "right": 791,
+      "bottom": 987,
+      "count": 14365
+    },
+    "expectedInk": {
+      "top": 863.0115029261751,
+      "bottom": 986.5966709261752
+    },
+    "deltaPixels": {
+      "top": -0.01150292617512605,
+      "bottom": 1.403329073824807
+    }
+  },
+  {
+    "capture": "accessibility-max-alphabet-accessibility-scroll.png",
+    "symbol": "A",
+    "part": "guide",
+    "scale": 3.571,
+    "density": 3,
+    "text": "AL-fah",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 453,
+      "top": 1151,
+      "right": 814,
+      "bottom": 1236,
+      "count": 8367
+    },
+    "expectedInk": {
+      "top": 1151.3518979261753,
+      "bottom": 1236.3167009261751
+    },
+    "deltaPixels": {
+      "top": -0.35189792617529747,
+      "bottom": 0.6832990738248554
+    }
+  },
+  {
+    "capture": "accessibility-max-alphabet-accessibility-scroll.png",
+    "symbol": "B",
+    "part": "letter",
+    "scale": 3.571,
+    "density": 3,
+    "text": "B",
+    "inkSupportThreshold": "Any RGB channel differs from the uniform tile background by >8; includes faint antialias fringe",
+    "inkPixels": {
+      "left": 530,
+      "top": 1730,
+      "right": 753,
+      "bottom": 2002,
+      "count": 42901
+    },
+    "expectedInk": {
+      "top": 1730.3046599613315,
+      "bottom": 2002.2005999613314
+    },
+    "deltaPixels": {
+      "top": -0.3046599613314811,
+      "bottom": 0.7994000386686366
+    }
+  }
+]

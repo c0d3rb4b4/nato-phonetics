@@ -1,0 +1,18 @@
+{
+  "passed": false,
+  "checks": [
+    {
+      "stage": "editing-live2",
+      "passed": false
+    },
+    {
+      "stage": "editing-return1",
+      "passed": false
+    },
+    {
+      "stage": "editing-insert",
+      "passed": false
+    }
+  ],
+  "composition": "unrun; adb key events do not establish IME composition retention"
+}

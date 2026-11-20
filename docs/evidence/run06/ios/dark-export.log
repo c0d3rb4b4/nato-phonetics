@@ -1,0 +1,9 @@
+Command: ['xcrun', 'xcresulttool', 'export', 'attachments', '--path', '/tmp/nato-ios-run06-capture/dark.xcresult', '--output-path', '/tmp/nato-ios-run06-capture/dark-export']
+Exported 3 attachments for: CaptureUITests/testDarkContexts():
+File: 5784E114-F128-4C22-94F6-CEE8C103C9A4.png, suggested name: "quiz-default-feedback-dark_0_035F5084-20ED-47F2-BE33-E786B95F1C6A.png"
+File: F0387E5B-1FBD-4EE7-9484-E5E44AEECDCB.png, suggested name: "quiz-default-question-dark_0_A1170575-4DC0-4D5E-BFEF-C4BACB4FFC4C.png"
+File: FA050098-2C31-4398-9578-2F874383E136.png, suggested name: "converter-default-dark_0_0618E672-31C0-4C34-9BD8-7DC378956DC4.png"
+
+Generated manifest file with attachment details: /tmp/nato-ios-run06-capture/dark-export/manifest.json
+
+EXIT 0

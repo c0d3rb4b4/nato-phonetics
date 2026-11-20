@@ -1,0 +1,19 @@
+{
+  "observedBlocker": "AVD actually refuses startup at1,276,800KiB free. No arbitrary minimum. Reclaim only regenerable prior iOS build intermediates and unused Hermes source downloads from this run; preserve installed/app products/tars/XCTest evidence and native source object cache.",
+  "before": 1307369472,
+  "removed": [
+    {
+      "path": "artifacts/ios-simulator/Build/Intermediates.noindex",
+      "KiB": 717252
+    },
+    {
+      "path": "node_modules/react-native/sdks/hermes",
+      "KiB": 173700
+    },
+    {
+      "path": "node_modules/react-native/sdks/download",
+      "KiB": 15316
+    }
+  ],
+  "after": 2243334144
+}

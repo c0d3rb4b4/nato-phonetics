@@ -1,0 +1,34 @@
+{
+  "checks": [
+    {
+      "file": "artifacts/run04/android/NATOPhonetics-1.0.0-debug.apk",
+      "sha256": "06b3564a96807caec920799c7632e9f73c08f9066de637261544ca711976ff45",
+      "bytes": 102514574,
+      "matchesManifest": true
+    },
+    {
+      "file": "artifacts/NATOPhonetics-ios-simulator.zip",
+      "sha256": "fb320de578c497c2ff222552a9b1420ca79137ef4094140326606c8c05e30149",
+      "bytes": 4621248,
+      "matchesManifest": true
+    },
+    {
+      "file": "artifacts/ios-simulator/Build/Products/Release-iphonesimulator/NATOPhonetics.app/NATOPhonetics",
+      "sha256": "0f112130a992e8c32fcfc44ef34cd8e28c07f67b547004ffa39bb569ce7dab16",
+      "bytes": 9821808,
+      "matchesManifest": true
+    },
+    {
+      "file": "artifacts/ios-simulator/Build/Products/Release-iphonesimulator/NATOPhonetics.app/main.jsbundle",
+      "sha256": "291bacefd16816ce0a1f455c7799e35eb6ef1ef193750b025e953bf14c5feb8d",
+      "bytes": 1638353,
+      "matchesManifest": true
+    },
+    {
+      "file": "artifacts/run04/android/loaded-javascript/script-2.js",
+      "sha256": "a28aac70a8a8760c012e178d764fbcab4cefacded23e65d97ea79b7c093fa38c",
+      "bytes": 5137251,
+      "matchesManifest": true
+    }
+  ]
+}

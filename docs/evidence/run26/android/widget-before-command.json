@@ -1,0 +1,5 @@
+{
+  "command": "node scripts/verify-android-font-scale.cjs --samples docs/evidence/run26/android/adoption-runtime/samples.json",
+  "exitCode": 1,
+  "report": "widget-before-report.json"
+}

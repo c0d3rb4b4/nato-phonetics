@@ -1,0 +1,11 @@
+# Run 09 additions to the M11 acceptance queue
+
+All results unperformed by a human. The plan's M11 remains the sole manual queue; this file supplies steps, not an additional gate. Candidate/source and native/loaded-JavaScript identities are linked from README.md in this directory. Internal signing/distribution still awaits P10/M11.2/.7.
+
+- **M11.3:** Listen to `aj 359`, `cv34 7ap`, `a-b.c/d@e+f` and compare code words versus literal separators. Verify a single word-boundary pause for repeated spaces/tabs/newlines. Pronunciation/provider correctness is not established by browser mocks or screenshots.
+- **M11.4:** With VoiceOver/TalkBack and keyboard, enter `a3 b-!é🛰`, inspect selectable plain text, unsupported markers, accessible names, disabled states and export status announcements. Exercise keyboard-visible input, portrait cards, small screens and native large text. The known live Android size defect and the failed iOS maximum-text keyboard/touch-registry check are P05.2/P06.2 engineering; do not sign off affected native accessibility over them. Engineering reproduction/fixes stay in the plan’s residual queue, not this human checklist. Record device, runtime, setting, candidate and each actual result.
+- **M11.5:** Copy `a3 b-!` and paste into a chosen local receiving app. Expected: `Alfa Three / Bravo dash [not spoken: "!" U+0021]`. Share to a chosen destination only when the tester intends it; dismiss and retry. Check denied/unavailable browser export and manual selection. Clear during playback and edit/replay/Menu/Back; confirm input retained on Menu return, no stale audio or copied-status message. Clear leaves any earlier clipboard/shared content under its OS/app controls. Test realistic long input once P06.4 is ready.
+- **M11.6:** Review clipboard history/sync and receiving-app controls against the in-app policy. These belong to platform/provider acceptance, not an app promise of deletion or on-device-only speech.
+- **M11.7:** Review complete candidate, native distribution, final assets/support/runtime coverage and all remaining scoped phases; Run 09 is not release acceptance.
+
+Record pass/fail/blocked/not-applicable with reason, tester/date/device/runtime/provider, candidate, evidence and owning engineering task for failures. No account/credential prerequisite blocks current independent engineering.

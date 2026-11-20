@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-16",
+  "appPath": "artifacts/ios-simulator/Build/Products/Release-iphonesimulator/NATOPhonetics.app",
+  "configuration": "Release",
+  "codeSigningAllowed": false,
+  "xcode": "27.2 (27B52)",
+  "clang": "21.0.0 (clang-2100.4.1.1)",
+  "bundleIdentifier": "com.natophonetics.app",
+  "version": "1.0.0",
+  "build": "1",
+  "minimumOSVersion": "15.1",
+  "sdk": "iphonesimulator27.2",
+  "nativeExecutableSha256": "57c67d86583ec6109a9d9002d4d40c2262f236b643397d3e91accf3a3b174628",
+  "javaScriptBundleSha256": "830307e1520661c1513113d36dfbc7a56da664c25f868a5750e67854b26e698e",
+  "buildExit": 0,
+  "installExit": 0,
+  "launchExit": 0,
+  "simulator": {
+    "device": "iPhone 17 Pro",
+    "udid": "0653F7EC-9237-4AC5-A264-12969E625070",
+    "runtime": "iOS 26.2"
+  },
+  "limitations": [
+    "No store signature/distribution",
+    "No physical-device or listening acceptance",
+    "iOS 27 lifecycle remains unverified with known upstream issue58545",
+    "Android SDK license blocks Android artifact"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "recovery": [
+    {
+      "engine": "chromium",
+      "browser": "157.0.4341.60",
+      "status": "passed",
+      "scenarios": 6,
+      "captures": 10,
+      "report": "recovery/chromium/report.json"
+    },
+    {
+      "engine": "firefox",
+      "browser": "159.0",
+      "status": "passed",
+      "scenarios": 6,
+      "captures": 10,
+      "report": "recovery/firefox/report.json"
+    },
+    {
+      "engine": "webkit",
+      "browser": "27.2",
+      "status": "passed",
+      "scenarios": 6,
+      "captures": 10,
+      "report": "recovery/webkit/report.json"
+    }
+  ],
+  "host": {
+    "status": "failed",
+    "passedGroups": 2,
+    "firstSave": "recorded request/acquire/read/write/completion, total1/no outstanding lock",
+    "failure": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"web-offline-status\"]:not([aria-hidden=\"true\"] *)').filter({ hasText: 'could not finish' }) to be visible\u001b[22m\n",
+    "report": "diagnostics/host-webkit-tabs/report.json"
+  },
+  "qualifiedObserverSha256": "cc825f6affda82c53118c68fee2836185198959bd04c6c4241db7e152fffc7ba",
+  "finalObserverSha256": "cfd1667b7fb8bf184e7b6fefd1470d1b6d32c0538f8f0886559226e8c7648b6a"
+}

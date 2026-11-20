@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-18",
+  "result": "pass",
+  "baseHead": "51501310ef3f4261ac79e7d56917408c3f3745c4",
+  "maintainedIdentityInputs": 179,
+  "baselineTrackedFiles": 3075,
+  "changedInheritedFiles": [
+    ".github/workflows/ci.yml",
+    "PRIVACY.md",
+    "README.md",
+    "app/privacy.js",
+    "docs/APP_REVIEW.md",
+    "docs/DELIVERY_PLAN.md",
+    "docs/LOCAL_PROGRESS.md",
+    "docs/NATIVE_BUILDS.md",
+    "scripts/verify-progress-browser.cjs",
+    "src/lib/progress.js",
+    "tests/progress.test.mjs"
+  ],
+  "unexpectedInheritedChanges": [],
+  "priorReviewFindingsExactlyPreserved": true,
+  "priorSourceInputsMatchAtResume": 168,
+  "localLinksChecked": 596,
+  "brokenLocalLinks": [],
+  "ledgerItemCount": 35,
+  "ledgerStatusCounts": {
+    "resolved": 5,
+    "implemented-awaiting-M11": 13,
+    "in-progress": 17
+  },
+  "finalScreenshotCount": 12,
+  "inspectedCheckpointScreenshotCount": 22,
+  "imageHashesMatch": true,
+  "finalArchivedJsHashMatchesBuild": true,
+  "nativeNewCaptures": "inapplicable to web-only changes; native rendered policy/adapter preserved; historical native gates remain open",
+  "M11": "all unperformed",
+  "noReleaseApproval": true
+}

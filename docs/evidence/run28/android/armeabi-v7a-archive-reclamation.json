@@ -1,0 +1,82 @@
+{
+  "filesRemoved": [
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/armeabi-v7a/CMakeFiles/_CMakeLTOTest-C/bin/libfoo.a",
+      "bytes": 3744
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/armeabi-v7a/CMakeFiles/_CMakeLTOTest-CXX/bin/libfoo.a",
+      "bytes": 3788
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/armeabi-v7a/ReactCommon/yoga/yoga/libyogacore.a",
+      "bytes": 3935226
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/armeabi-v7a/ReactCommon/yoga/yoga/CMakeFiles/_CMakeLTOTest-C/bin/libfoo.a",
+      "bytes": 3852
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/armeabi-v7a/ReactCommon/yoga/yoga/CMakeFiles/_CMakeLTOTest-CXX/bin/libfoo.a",
+      "bytes": 3900
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/armeabi-v7a/ReactCommon/react/renderer/scheduler/libreact_renderer_scheduler.a",
+      "bytes": 55004444
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/armeabi-v7a/ReactCommon/react/renderer/leakchecker/libreact_renderer_leakchecker.a",
+      "bytes": 8216196
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/armeabi-v7a/ReactCommon/react/renderer/runtimescheduler/libreact_renderer_runtimescheduler.a",
+      "bytes": 10327154
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/armeabi-v7a/ReactCommon/react/renderer/components/safeareaview/librrc_safeareaview.a",
+      "bytes": 64636198
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/armeabi-v7a/ReactCommon/react/renderer/components/scrollview/librrc_scrollview.a",
+      "bytes": 31790734
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/armeabi-v7a/ReactCommon/react/renderer/components/switch/librrc_switch.a",
+      "bytes": 64825054
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/armeabi-v7a/ReactCommon/react/renderer/components/modal/librrc_modal.a",
+      "bytes": 61875620
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/armeabi-v7a/ReactCommon/react/renderer/animations/libreact_renderer_animations.a",
+      "bytes": 48194672
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/armeabi-v7a/build/third-party-ndk/boost/libboost.a",
+      "bytes": 5782
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/armeabi-v7a/build/third-party-ndk/fmt/libfmt.a",
+      "bytes": 1281992
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/armeabi-v7a/build/third-party-ndk/glog/libglog.a",
+      "bytes": 1673972
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/armeabi-v7a/build/third-party-ndk/double-conversion/libdouble-conversion.a",
+      "bytes": 369362
+    },
+    {
+      "path": "node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/armeabi-v7a/build/third-party-ndk/folly/libfolly_runtime.a",
+      "bytes": 9959268
+    }
+  ],
+  "fileCount": 18,
+  "bytesRemoved": 362110958,
+  "beforeAvailableBytes": 352018432,
+  "afterAvailableBytes": 714391552,
+  "reason": "Generated static-link archives, after successful ELF/package/header/harness checks; previous PCH search found zero files",
+  "productsSourceAndInheritedFilesPreserved": true
+}

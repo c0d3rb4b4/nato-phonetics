@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "mode": "ios-export",
+  "startedAt": "2026-11-19T09:49:53.759Z",
+  "status": "failed",
+  "host": {
+    "platform": "darwin",
+    "arch": "arm64",
+    "release": "25.6.0",
+    "node": "22.23.0"
+  },
+  "jobs": 1,
+  "install": false,
+  "preflightOnly": false,
+  "remoteJob": null,
+  "steps": [
+    {
+      "name": "native-build",
+      "executable": "/private/tmp/nato-phonetics-toolchain/node_modules/node/bin/node",
+      "args": [
+        "scripts/build-native.cjs",
+        "ios-export"
+      ],
+      "log": "logs/01-native-build.log",
+      "startedAt": "2026-11-19T09:49:55.987Z",
+      "endedAt": "2026-11-19T09:49:56.015Z",
+      "exitCode": 1,
+      "signal": null
+    }
+  ],
+  "artifacts": [],
+  "sourceId": "3d6342bc0c50aa437ab3347126dfe1053077ac38d2596c6828306856d7af85d3",
+  "preflight": {
+    "npm": "10.9.4",
+    "diskAvailableBytes": 6610092032,
+    "totalMemoryBytes": 8589934592,
+    "freeMemoryBytes": 186630144,
+    "cpus": 8,
+    "tools": {
+      "xcode": "Xcode 27.2\nBuild version 27B52",
+      "sdk": "27.2"
+    },
+    "capacityPolicy": "Measured inventory; no universal minimum or guarantee that a first build fits."
+  },
+  "exitCode": 1,
+  "error": "native-build failed (1); see logs/01-native-build.log",
+  "endedAt": "2026-11-19T09:49:56.015Z"
+}

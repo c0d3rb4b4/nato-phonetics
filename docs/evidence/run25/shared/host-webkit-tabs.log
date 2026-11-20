@@ -1,0 +1,231 @@
+{"level":"info","ts":1795087375.00076,"msg":"using config from file","file":"/Users/mac/dev/apps/nato-phonetics/artifacts/run25/host-webkit-tabs/runtime-cBIsNh/a/Caddyfile"}
+{"level":"info","ts":1795087375.004531,"msg":"adapted config to JSON","adapter":"caddyfile"}
+{"level":"info","ts":1795087375.006817,"logger":"http","msg":"servers shutting down with eternal grace period"}
+{"level":"info","ts":1795087375.007007,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x109ab5f3fb00"}
+{"level":"info","ts":1795087375.007329,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0x109ab5f3fb00"}
+locator.waitFor: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-testid="web-offline-status"]:not([aria-hidden="true"] *)').filter({ hasText: 'could not finish' }) to be visible[22m
+
+    at main (/Users/mac/dev/apps/nato-phonetics/scripts/verify-web-host.cjs:251:88) {
+  log: [
+    `  - waiting for locator('[data-testid="web-offline-status"]:not([aria-hidden="true"] *)').filter({ hasText: 'could not finish' }) to be visible`
+  ],
+  name: 'TimeoutError'
+}
+{
+  "engine": "webkit",
+  "runner": "1.65.1",
+  "platform": "darwin",
+  "transitionMode": "tabs",
+  "idleWithNoAppClientsMs": 1000,
+  "checks": [
+    {
+      "name": "All 13 direct routes and trailing slashes return exact route HTML with revalidation",
+      "passed": true
+    },
+    {
+      "name": "Exact resource GET/HEAD bytes, MIME/cache headers, missing assets/private metadata 404, navigation fallback and method handling",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "boundary": "Actual local Caddy; public HTTPS/certificates/host, branded Safari/iOS, legacy clients and M11 remain unrun",
+  "runnerSha256": "b21067d2716376510fb2cd18f35caa3337295b6ebf92a9de541eec985417ad5e",
+  "progressObserverSha256": "cc825f6affda82c53118c68fee2836185198959bd04c6c4241db7e152fffc7ba",
+  "browserExecutable": "/Users/mac/Library/Caches/ms-playwright/webkit-2388/pw_run.sh",
+  "browserExecutableSha256": "a85baad3d8c07173ac387a59b41500c382b21ed692afe0964d29aac247ccc63b",
+  "runtimeDirectory": "/Users/mac/dev/apps/nato-phonetics/artifacts/run25/host-webkit-tabs/runtime-cBIsNh",
+  "candidate": {
+    "artifact": "/Users/mac/dev/apps/nato-phonetics/docs/evidence/run20/hosting/nato-web.tar.gz",
+    "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+    "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+    "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+  },
+  "caddy": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+  "validation": "Valid configuration",
+  "validators": {
+    "etag": null,
+    "modified": null
+  },
+  "browser": "27.2",
+  "asyncPollingNegativeCheck": "Explicitly awaited false predicate times out, never passes",
+  "firstAnswer": {
+    "events": [
+      {
+        "sequence": 1,
+        "type": "observer-installed",
+        "ms": 60,
+        "visibility": "visible",
+        "locksAvailable": true,
+        "secureContext": true
+      },
+      {
+        "sequence": 2,
+        "type": "storage-read",
+        "ms": 121,
+        "visibility": "visible",
+        "present": false,
+        "total": 0,
+        "generation": null
+      },
+      {
+        "sequence": 3,
+        "type": "storage-read",
+        "ms": 121,
+        "visibility": "visible",
+        "present": false,
+        "total": 0,
+        "generation": null
+      },
+      {
+        "sequence": 4,
+        "type": "storage-read",
+        "ms": 302,
+        "visibility": "visible",
+        "present": false,
+        "total": 0,
+        "generation": null
+      },
+      {
+        "sequence": 5,
+        "type": "lock-request",
+        "ms": 307,
+        "visibility": "visible",
+        "operation": 5,
+        "aborted": false
+      },
+      {
+        "sequence": 6,
+        "type": "lock-acquired",
+        "ms": 374,
+        "visibility": "visible",
+        "operation": 5,
+        "mode": "exclusive"
+      },
+      {
+        "sequence": 7,
+        "type": "storage-read",
+        "ms": 374,
+        "visibility": "visible",
+        "present": false,
+        "total": 0,
+        "generation": null
+      },
+      {
+        "sequence": 8,
+        "type": "storage-write",
+        "ms": 375,
+        "visibility": "visible",
+        "present": true,
+        "version": 1,
+        "generation": null,
+        "total": 1
+      },
+      {
+        "sequence": 9,
+        "type": "lock-completed",
+        "ms": 377,
+        "visibility": "visible",
+        "operation": 5
+      },
+      {
+        "sequence": 10,
+        "type": "storage-read",
+        "ms": 401,
+        "visibility": "visible",
+        "present": true,
+        "version": 1,
+        "generation": null,
+        "total": 1
+      }
+    ],
+    "data": {
+      "present": true,
+      "version": 1,
+      "generation": null,
+      "total": 1
+    },
+    "locks": {
+      "held": [],
+      "pending": []
+    },
+    "visibility": "visible",
+    "url": "http://127.0.0.1:58734/letter-quiz",
+    "visibleText": "Letter Quiz\nWhat is the phonetic word for this symbol?\nQuestion 1 of 10 · 1 correct\nM\nMikeMIKE\nMike · Your answer\nMontana\nMorgan\nMorocco\nCorrect! M is Mike.\nNext question\nReplay answer\nEnd round and review\nPlaying 1 of 1\nStop playback",
+    "controlled": false
+  },
+  "failure": {
+    "message": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"web-offline-status\"]:not([aria-hidden=\"true\"] *)').filter({ hasText: 'could not finish' }) to be visible\u001b[22m\n",
+    "stack": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"web-offline-status\"]:not([aria-hidden=\"true\"] *)').filter({ hasText: 'could not finish' }) to be visible\u001b[22m\n\n    at main (/Users/mac/dev/apps/nato-phonetics/scripts/verify-web-host.cjs:251:88)",
+    "state": {
+      "url": "http://127.0.0.1:58734/menu",
+      "controlled": true,
+      "active": {
+        "state": "activated",
+        "scriptURL": "http://127.0.0.1:58734/service-worker.js"
+      },
+      "waiting": null,
+      "installing": null,
+      "controllerIsActive": true,
+      "servedHtmlSha256": "15571e2af2ff2ed485a1e9a55017cac4e35cc3f38b3e4de64c48bf6c3b848e4b",
+      "caches": [
+        {
+          "name": "nato-shell-v1-d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+          "indexHtmlSha256": "15571e2af2ff2ed485a1e9a55017cac4e35cc3f38b3e4de64c48bf6c3b848e4b"
+        },
+        {
+          "name": "host-check-unrelated",
+          "indexHtmlSha256": null
+        }
+      ]
+    },
+    "visibleText": "Menu\nMenu\nLearning progress\nReview saved symbol totals and clear progress.\nSettings\nChoose appearance and voice preferences.\nAudio help\nTest playback and troubleshoot sound.\nAbout\nLearn about the app and find support.\nPrivacy policy\nRead about local data and speech providers.\nBack to App\nHome\nWeb availability\nOffline copy ready. Reference, conversion, practice and saved local progress can open without a connection. Browser storage may be cleared or evicted.\nBrowser reports a connection. Speech connectivity depends on your browser and voice; an offline copy does not guarantee audio. No microphone recognition is implemented.\nCheck for web update",
+    "progress": {
+      "events": [
+        {
+          "sequence": 1,
+          "type": "observer-installed",
+          "ms": 2,
+          "visibility": "visible",
+          "locksAvailable": true,
+          "secureContext": true
+        },
+        {
+          "sequence": 2,
+          "type": "storage-read",
+          "ms": 22,
+          "visibility": "visible",
+          "present": true,
+          "version": 1,
+          "generation": null,
+          "total": 1
+        },
+        {
+          "sequence": 3,
+          "type": "storage-read",
+          "ms": 23,
+          "visibility": "visible",
+          "present": true,
+          "version": 1,
+          "generation": null,
+          "total": 1
+        }
+      ],
+      "data": {
+        "present": true,
+        "version": 1,
+        "generation": null,
+        "total": 1
+      },
+      "locks": {
+        "held": [],
+        "pending": []
+      },
+      "visibility": "visible",
+      "url": "http://127.0.0.1:58734/menu",
+      "visibleText": "Menu\nMenu\nLearning progress\nReview saved symbol totals and clear progress.\nSettings\nChoose appearance and voice preferences.\nAudio help\nTest playback and troubleshoot sound.\nAbout\nLearn about the app and find support.\nPrivacy policy\nRead about local data and speech providers.\nBack to App\nHome\nWeb availability\nOffline copy ready. Reference, conversion, practice and saved local progress can open without a connection. Browser storage may be cleared or evicted.\nBrowser reports a connection. Speech connectivity depends on your browser and voice; an offline copy does not guarantee audio. No microphone recognition is implemented.\nCheck for web update",
+      "controlled": true
+    }
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "version": "0.81.5",
+  "status": "Opt-in Android source repair candidate: clean-subtree font-environment adoption, owner and cache invalidation, and bridgeless editable-widget configuration refresh. Full strengthened runtime/state/affected acceptance pending.",
+  "files": [
+    {
+      "path": "ReactAndroid/src/main/java/com/facebook/react/runtime/ReactSurfaceImpl.kt",
+      "originalSha256": "f0708ad65967cfc56e5526a56a2e899b699e2a1e5b1806da72c9bd2bd13ed41c",
+      "patchedSha256": "18dda4930b6e59f2605b06d7b0a86e359eb2c84de4d3115059c50a18573729fe",
+      "changes": [
+        {
+          "before": "import com.facebook.react.fabric.SurfaceHandlerBinding\nimport com.facebook.react.interfaces.TaskInterface\nimport com.facebook.react.interfaces.fabric.ReactSurface\nimport com.facebook.react.internal.featureflags.ReactNativeFeatureFlags\nimport com.facebook.react.modules.i18nmanager.I18nUtil\nimport com.facebook.react.runtime.internal.bolts.Task\nimport com.facebook.react.uimanager.events.EventDispatcher\nimport java.util.concurrent.atomic.AtomicReference\n\n",
+          "after": "import com.facebook.react.fabric.SurfaceHandlerBinding\nimport com.facebook.react.interfaces.TaskInterface\nimport com.facebook.react.interfaces.fabric.ReactSurface\nimport com.facebook.react.modules.i18nmanager.I18nUtil\nimport com.facebook.react.runtime.internal.bolts.Task\nimport com.facebook.react.uimanager.DisplayMetricsHolder\nimport com.facebook.react.uimanager.events.EventDispatcher\nimport java.util.concurrent.atomic.AtomicReference\n\n"
+        },
+        {
+          "before": "        doRTLSwap(context),\n        isRTL(context),\n        displayMetrics.density,\n        getFontScale(context))\n  }\n\n  /**\n",
+          "after": "        doRTLSwap(context),\n        isRTL(context),\n        displayMetrics.density,\n        getFontScale(context),\n        DisplayMetricsHolder.getTextMeasurementGeneration())\n  }\n\n  /**\n"
+        },
+        {
+          "before": "      offsetX: Int,\n      offsetY: Int\n  ) {\n    surfaceHandler.setLayoutConstraints(\n        widthMeasureSpec,\n        heightMeasureSpec,\n",
+          "after": "      offsetX: Int,\n      offsetY: Int\n  ) {\n    // SP conversion and native invalidation must observe the same environment,\n    // including when View measurement precedes the Activity configuration callback.\n    DisplayMetricsHolder.initDisplayMetrics(context)\n    surfaceHandler.setLayoutConstraints(\n        widthMeasureSpec,\n        heightMeasureSpec,\n"
+        },
+        {
+          "before": "        doRTLSwap(context),\n        isRTL(context),\n        context.resources.displayMetrics.density,\n        getFontScale(context))\n  }\n\n  internal val eventDispatcher: EventDispatcher?\n",
+          "after": "        doRTLSwap(context),\n        isRTL(context),\n        context.resources.displayMetrics.density,\n        getFontScale(context),\n        DisplayMetricsHolder.getTextMeasurementGeneration())\n  }\n\n  internal val eventDispatcher: EventDispatcher?\n"
+        },
+        {
+          "before": "    private fun isRTL(context: Context): Boolean = I18nUtil.instance.isRTL(context)\n\n    private fun getFontScale(context: Context): Float =\n        if (ReactNativeFeatureFlags.enableFontScaleChangesUpdatingLayout())\n            context.getResources().getConfiguration().fontScale\n        else 1f\n\n    private fun doRTLSwap(context: Context): Boolean =\n        I18nUtil.instance.doLeftAndRightSwapInRTL(context)\n",
+          "after": "    private fun isRTL(context: Context): Boolean = I18nUtil.instance.isRTL(context)\n\n    private fun getFontScale(context: Context): Float =\n        context.getResources().getConfiguration().fontScale\n\n    private fun doRTLSwap(context: Context): Boolean =\n        I18nUtil.instance.doLeftAndRightSwapInRTL(context)\n"
+        }
+      ]
+    },
+    {
+      "path": "ReactCommon/react/renderer/components/view/YogaLayoutableShadowNode.h",
+      "originalSha256": "c9575424f0a81a6d69bdc81c76b4c9545bd3ca944d0f53c6876fe614180b75b2",
+      "patchedSha256": "74ff94afa4419bb920ed30d71aaa6c5c918674592f9979b6224a138580421d0a",
+      "changes": [
+        {
+          "before": "   */\n  void configureYogaTree(\n      float pointScaleFactor,\n      YGErrata defaultErrata,\n      bool swapLeftAndRight);\n\n",
+          "after": "   */\n  void configureYogaTree(\n      float pointScaleFactor,\n#ifdef ANDROID\n      float fontSizeMultiplier,\n      uint64_t fontEnvironmentGeneration,\n#endif\n      YGErrata defaultErrata,\n      bool swapLeftAndRight);\n\n"
+        },
+        {
+          "before": "   * Whether the full Yoga subtree of this Node has been configured.\n   */\n  bool yogaTreeHasBeenConfigured_{false};\n};\n\n} // namespace facebook::react\n",
+          "after": "   * Whether the full Yoga subtree of this Node has been configured.\n   */\n  bool yogaTreeHasBeenConfigured_{false};\n#ifdef ANDROID\n  float fontSizeMultiplier_{1.0f};\n  uint64_t fontEnvironmentGeneration_{};\n#endif\n};\n\n} // namespace facebook::react\n"
+        }
+      ]
+    },
+    {
+      "path": "ReactCommon/react/renderer/components/view/YogaLayoutableShadowNode.cpp",
+      "originalSha256": "1205e21ce3ebab04a95035c45bf5c0a16e739ff5f64def6701f86b02de90055e",
+      "patchedSha256": "9d5992aa3c9d626e44354ffcbfa3c367e9f360708d930e9df25d3ed494faa0d4",
+      "changes": [
+        {
+          "before": "    : LayoutableShadowNode(sourceShadowNode, fragment),\n      yogaConfig_(FabricDefaultYogaLog),\n      yogaNode_(static_cast<const YogaLayoutableShadowNode&>(sourceShadowNode)\n                    .yogaNode_) {\n// Note, cloned `yoga::Node` instance (copied using copy-constructor) inherits\n// dirty flag, measure function, and other properties being set originally in\n// the `YogaLayoutableShadowNode` constructor above.\n",
+          "after": "    : LayoutableShadowNode(sourceShadowNode, fragment),\n      yogaConfig_(FabricDefaultYogaLog),\n      yogaNode_(static_cast<const YogaLayoutableShadowNode&>(sourceShadowNode)\n                    .yogaNode_)\n#ifdef ANDROID\n      , fontSizeMultiplier_(static_cast<const YogaLayoutableShadowNode&>(sourceShadowNode)\n                                .fontSizeMultiplier_),\n      fontEnvironmentGeneration_(static_cast<const YogaLayoutableShadowNode&>(sourceShadowNode)\n                                     .fontEnvironmentGeneration_)\n#endif\n{\n// Note, cloned `yoga::Node` instance (copied using copy-constructor) inherits\n// dirty flag, measure function, and other properties being set originally in\n// the `YogaLayoutableShadowNode` constructor above.\n"
+        },
+        {
+          "before": "\nvoid YogaLayoutableShadowNode::configureYogaTree(\n    float pointScaleFactor,\n    YGErrata defaultErrata,\n    bool swapLeftAndRight) {\n  ensureUnsealed();\n\n  // Set state on our own Yoga node\n  YGErrata errata = resolveErrata(defaultErrata);\n  YGConfigSetErrata(&yogaConfig_, errata);\n",
+          "after": "\nvoid YogaLayoutableShadowNode::configureYogaTree(\n    float pointScaleFactor,\n#ifdef ANDROID\n    float fontSizeMultiplier,\n    uint64_t fontEnvironmentGeneration,\n#endif\n    YGErrata defaultErrata,\n    bool swapLeftAndRight) {\n  ensureUnsealed();\n\n#ifdef ANDROID\n  // Invalidate each owner in the changed font environment. A cloned measured\n  // leaf may already be dirty, so markDirtyAndPropagate can stop before its\n  // otherwise clean wrapper. Retain normal copy-on-write tree ownership.\n  if (fontSizeMultiplier_ != fontSizeMultiplier ||\n      fontEnvironmentGeneration_ != fontEnvironmentGeneration) {\n    yogaNode_.setDirty(true);\n  }\n  fontSizeMultiplier_ = fontSizeMultiplier;\n  fontEnvironmentGeneration_ = fontEnvironmentGeneration;\n\n#endif\n  // Set state on our own Yoga node\n  YGErrata errata = resolveErrata(defaultErrata);\n  YGConfigSetErrata(&yogaConfig_, errata);\n"
+        },
+        {
+          "before": "    auto childErrata = YGConfigGetErrata(&child.yogaConfig_);\n\n    if (child.yogaTreeHasBeenConfigured_ &&\n        childLayoutMetrics.pointScaleFactor == pointScaleFactor &&\n        childLayoutMetrics.wasLeftAndRightSwapped == swapLeftAndRight &&\n        childErrata == child.resolveErrata(errata)) {\n",
+          "after": "    auto childErrata = YGConfigGetErrata(&child.yogaConfig_);\n\n    if (child.yogaTreeHasBeenConfigured_ &&\n#ifdef ANDROID\n        child.fontSizeMultiplier_ == fontSizeMultiplier &&\n        child.fontEnvironmentGeneration_ == fontEnvironmentGeneration &&\n#endif\n        childLayoutMetrics.pointScaleFactor == pointScaleFactor &&\n        childLayoutMetrics.wasLeftAndRightSwapped == swapLeftAndRight &&\n        childErrata == child.resolveErrata(errata)) {\n"
+        },
+        {
+          "before": "    if (doesOwn(child)) {\n      auto& mutableChild = const_cast<YogaLayoutableShadowNode&>(child);\n      mutableChild.configureYogaTree(\n          pointScaleFactor, child.resolveErrata(errata), swapLeftAndRight);\n    } else {\n      cloneChildInPlace(i).configureYogaTree(\n          pointScaleFactor, errata, swapLeftAndRight);\n    }\n  }\n}\n",
+          "after": "    if (doesOwn(child)) {\n      auto& mutableChild = const_cast<YogaLayoutableShadowNode&>(child);\n      mutableChild.configureYogaTree(\n          pointScaleFactor,\n#ifdef ANDROID\n          fontSizeMultiplier,\n          fontEnvironmentGeneration,\n#endif\n          child.resolveErrata(errata), swapLeftAndRight);\n    } else {\n      cloneChildInPlace(i).configureYogaTree(\n          pointScaleFactor,\n#ifdef ANDROID\n          fontSizeMultiplier,\n          fontEnvironmentGeneration,\n#endif\n          errata, swapLeftAndRight);\n    }\n  }\n}\n"
+        },
+        {
+          "before": "    TraceSection s2(\"YogaLayoutableShadowNode::configureYogaTree\");\n    configureYogaTree(\n        layoutContext.pointScaleFactor,\n        YGErrataAll /*defaultErrata*/,\n        swapLeftAndRight);\n  }\n",
+          "after": "    TraceSection s2(\"YogaLayoutableShadowNode::configureYogaTree\");\n    configureYogaTree(\n        layoutContext.pointScaleFactor,\n#ifdef ANDROID\n        layoutContext.fontSizeMultiplier,\n        layoutContext.fontEnvironmentGeneration,\n#endif\n        YGErrataAll /*defaultErrata*/,\n        swapLeftAndRight);\n  }\n"
+        },
+        {
+          "before": "        isClean = isClean && !newYogaChildNode.isDirty() &&\n            (newYogaChildNode.style() == oldYogaChildNode.style());",
+          "after": "        isClean = isClean && !newYogaChildNode.isDirty() &&\n            (newYogaChildNode.style() == oldYogaChildNode.style());\n#ifdef ANDROID\n        // JS can supply a clean subtree measured before a native font commit.\n        // Equal styles do not make that subtree reusable in this environment.\n        isClean = isClean &&\n            yogaLayoutableChildren_.at(yogaChildIndex)->fontSizeMultiplier_ ==\n                fontSizeMultiplier_ &&\n            yogaLayoutableChildren_.at(yogaChildIndex)->fontEnvironmentGeneration_ ==\n                fontEnvironmentGeneration_;\n#endif"
+        }
+      ]
+    },
+    {
+      "path": "ReactAndroid/src/main/java/com/facebook/react/uimanager/DisplayMetricsHolder.kt",
+      "originalSha256": "1052163e8550488d37d334dc58be4769567d1a36f7624cebb77900380f54feea",
+      "patchedSha256": "c11d515259f15dd3c0fbf43654737d9b3e75feea66a2e4b7a83040868f209f15",
+      "changes": [
+        {
+          "before": "import android.app.Activity\nimport android.content.Context\nimport android.util.DisplayMetrics\nimport android.view.WindowManager\nimport androidx.core.view.ViewCompat\nimport androidx.core.view.WindowInsetsCompat\nimport com.facebook.react.bridge.WritableMap\nimport com.facebook.react.bridge.WritableNativeMap\n\n/**\n * Holds an instance of the current DisplayMetrics so we don't have to thread it through all the\n",
+          "after": "import android.app.Activity\nimport android.content.Context\nimport android.util.DisplayMetrics\nimport android.util.TypedValue\nimport android.view.WindowManager\nimport androidx.core.view.ViewCompat\nimport androidx.core.view.WindowInsetsCompat\nimport com.facebook.react.bridge.WritableMap\nimport com.facebook.react.bridge.WritableNativeMap\nimport java.util.concurrent.atomic.AtomicLong\n\n/**\n * Holds an instance of the current DisplayMetrics so we don't have to thread it through all the\n"
+        },
+        {
+          "before": "  @JvmStatic private var windowDisplayMetrics: DisplayMetrics? = null\n  @JvmStatic private var screenDisplayMetrics: DisplayMetrics? = null\n\n  /** The metrics of the window associated to the Context used to initialize ReactNative */\n  @JvmStatic\n  public fun getWindowDisplayMetrics(): DisplayMetrics {\n",
+          "after": "  @JvmStatic private var windowDisplayMetrics: DisplayMetrics? = null\n  @JvmStatic private var screenDisplayMetrics: DisplayMetrics? = null\n\n  private val textMeasurementGeneration = AtomicLong(0)\n  private var measuredSPUnit = Float.NaN\n  private var measuredDensity = Float.NaN\n  private var measuredScaledDensity = Float.NaN\n\n  @JvmStatic\n  @Synchronized\n  public fun getTextMeasurementGeneration(): Long {\n    val metrics = windowDisplayMetrics ?: return textMeasurementGeneration.get()\n    // Observe the same public SP conversion used by PixelUtil. Resources may\n    // mutate DisplayMetrics (including the nonlinear converter) in place.\n    val spUnit = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 1f, metrics)\n    if (spUnit != measuredSPUnit || metrics.density != measuredDensity ||\n        metrics.scaledDensity != measuredScaledDensity) {\n      measuredSPUnit = spUnit\n      measuredDensity = metrics.density\n      measuredScaledDensity = metrics.scaledDensity\n      textMeasurementGeneration.incrementAndGet()\n    }\n    return textMeasurementGeneration.get()\n  }\n\n  /** The metrics of the window associated to the Context used to initialize ReactNative */\n  @JvmStatic\n  public fun getWindowDisplayMetrics(): DisplayMetrics {\n"
+        },
+        {
+          "before": "  @JvmStatic\n  public fun setWindowDisplayMetrics(displayMetrics: DisplayMetrics?) {\n    windowDisplayMetrics = displayMetrics\n  }\n\n  /** Screen metrics returns the metrics of the default screen on the device. */\n",
+          "after": "  @JvmStatic\n  public fun setWindowDisplayMetrics(displayMetrics: DisplayMetrics?) {\n    windowDisplayMetrics = displayMetrics\n    measuredSPUnit = Float.NaN\n    textMeasurementGeneration.incrementAndGet()\n  }\n\n  /** Screen metrics returns the metrics of the default screen on the device. */\n"
+        },
+        {
+          "before": "  }\n\n  @JvmStatic\n  public fun initDisplayMetrics(context: Context) {\n    val displayMetrics = context.resources.displayMetrics\n    windowDisplayMetrics = displayMetrics\n",
+          "after": "  }\n\n  @JvmStatic\n  @Synchronized\n  public fun initDisplayMetrics(context: Context) {\n    val displayMetrics = context.resources.displayMetrics\n    windowDisplayMetrics = displayMetrics\n"
+        },
+        {
+          "before": "    // http://developer.android.com/reference/android/view/Display.html#getRealMetrics(android.util.DisplayMetrics)\n    @Suppress(\"DEPRECATION\") wm.defaultDisplay.getRealMetrics(screenDisplayMetrics)\n    DisplayMetricsHolder.screenDisplayMetrics = screenDisplayMetrics\n  }\n\n  @JvmStatic\n",
+          "after": "    // http://developer.android.com/reference/android/view/Display.html#getRealMetrics(android.util.DisplayMetrics)\n    @Suppress(\"DEPRECATION\") wm.defaultDisplay.getRealMetrics(screenDisplayMetrics)\n    DisplayMetricsHolder.screenDisplayMetrics = screenDisplayMetrics\n    // Publish only after installing the metrics used for SP conversion.\n    getTextMeasurementGeneration()\n  }\n\n  @JvmStatic\n"
+        }
+      ]
+    },
+    {
+      "path": "ReactCommon/react/renderer/textlayoutmanager/TextMeasureCache.h",
+      "originalSha256": "8e30071ba2ddbe361b2f48507dd1df27505ea6840e45ea6cc5e4295e6fd1bacd",
+      "patchedSha256": "549099d6f19ea58e67e636c7b257c0b960e3c0a8c4764c2afac693b8894afd69",
+      "changes": [
+        {
+          "before": "  AttributedString attributedString{};\n  ParagraphAttributes paragraphAttributes{};\n  LayoutConstraints layoutConstraints{};\n};\n\n// The Key type that is used for Line Measure Cache.\n",
+          "after": "  AttributedString attributedString{};\n  ParagraphAttributes paragraphAttributes{};\n  LayoutConstraints layoutConstraints{};\n#ifdef ANDROID\n  uint64_t fontEnvironmentGeneration{};\n#endif\n};\n\n// The Key type that is used for Line Measure Cache.\n"
+        },
+        {
+          "before": "  AttributedString attributedString{};\n  ParagraphAttributes paragraphAttributes{};\n  Size size{};\n};\n\n/**\n",
+          "after": "  AttributedString attributedString{};\n  ParagraphAttributes paragraphAttributes{};\n  Size size{};\n#ifdef ANDROID\n  uint64_t fontEnvironmentGeneration{};\n#endif\n};\n\n/**\n"
+        },
+        {
+          "before": "  return areAttributedStringsEquivalentLayoutWise(\n             lhs.attributedString, rhs.attributedString) &&\n      lhs.paragraphAttributes == rhs.paragraphAttributes &&\n      lhs.layoutConstraints == rhs.layoutConstraints;\n}\n\ninline bool operator==(\n",
+          "after": "  return areAttributedStringsEquivalentLayoutWise(\n             lhs.attributedString, rhs.attributedString) &&\n      lhs.paragraphAttributes == rhs.paragraphAttributes &&\n      lhs.layoutConstraints == rhs.layoutConstraints\n#ifdef ANDROID\n      && lhs.fontEnvironmentGeneration == rhs.fontEnvironmentGeneration\n#endif\n      ;\n}\n\ninline bool operator==(\n"
+        },
+        {
+          "before": "  return areAttributedStringsEquivalentLayoutWise(\n             lhs.attributedString, rhs.attributedString) &&\n      lhs.paragraphAttributes == rhs.paragraphAttributes &&\n      lhs.size == rhs.size;\n}\n\ninline bool operator==(\n",
+          "after": "  return areAttributedStringsEquivalentLayoutWise(\n             lhs.attributedString, rhs.attributedString) &&\n      lhs.paragraphAttributes == rhs.paragraphAttributes &&\n      lhs.size == rhs.size\n#ifdef ANDROID\n      && lhs.fontEnvironmentGeneration == rhs.fontEnvironmentGeneration\n#endif\n      ;\n}\n\ninline bool operator==(\n"
+        },
+        {
+          "before": "    return facebook::react::hash_combine(\n        attributedStringHashLayoutWise(key.attributedString),\n        key.paragraphAttributes,\n        key.layoutConstraints);\n  }\n};\n\n",
+          "after": "    return facebook::react::hash_combine(\n        attributedStringHashLayoutWise(key.attributedString),\n        key.paragraphAttributes,\n        key.layoutConstraints\n#ifdef ANDROID\n        , key.fontEnvironmentGeneration\n#endif\n        );\n  }\n};\n\n"
+        },
+        {
+          "before": "    return facebook::react::hash_combine(\n        attributedStringHashLayoutWise(key.attributedString),\n        key.paragraphAttributes,\n        key.size);\n  }\n};\n\n",
+          "after": "    return facebook::react::hash_combine(\n        attributedStringHashLayoutWise(key.attributedString),\n        key.paragraphAttributes,\n        key.size\n#ifdef ANDROID\n        , key.fontEnvironmentGeneration\n#endif\n        );\n  }\n};\n\n"
+        }
+      ]
+    },
+    {
+      "path": "ReactCommon/react/renderer/textlayoutmanager/platform/android/react/renderer/textlayoutmanager/TextLayoutManager.cpp",
+      "originalSha256": "9080fc5e7e73edd96b864f622c0b42656f4088c0a339b7575e0dcd60d6ffd5c6",
+      "patchedSha256": "7dc304e5fdaf93630b022c02e31f371bce38095295a5f1d3ff491ac747ba2939",
+      "changes": [
+        {
+          "before": "static_assert(TextLayoutManagerExtended::supportsPreparedLayout());\n\nnamespace {\n\nint countAttachments(const AttributedString& attributedString) {\n  int count = 0;\n",
+          "after": "static_assert(TextLayoutManagerExtended::supportsPreparedLayout());\n\nnamespace {\n\nuint64_t fontEnvironmentGeneration() {\n  static auto holder = jni::findClassStatic(\n      \"com/facebook/react/uimanager/DisplayMetricsHolder\");\n  static auto generation = holder->getStaticMethod<jlong()>(\n      \"getTextMeasurementGeneration\");\n  return static_cast<uint64_t>(generation(holder));\n}\n\nint countAttachments(const AttributedString& attributedString) {\n  int count = 0;\n"
+        },
+        {
+          "before": "      : textMeasureCache_.get(\n            {.attributedString = attributedString,\n             .paragraphAttributes = paragraphAttributes,\n             .layoutConstraints = layoutConstraints},\n            std::move(measureText));\n\n  measurement.size = layoutConstraints.clamp(measurement.size);\n",
+          "after": "      : textMeasureCache_.get(\n            {.attributedString = attributedString,\n             .paragraphAttributes = paragraphAttributes,\n             .layoutConstraints = layoutConstraints,\n             .fontEnvironmentGeneration = fontEnvironmentGeneration()},\n            std::move(measureText));\n\n  measurement.size = layoutConstraints.clamp(measurement.size);\n"
+        },
+        {
+          "before": "      : lineMeasureCache_.get(\n            {.attributedString = attributedString,\n             .paragraphAttributes = paragraphAttributes,\n             .size = size},\n            std::move(doMeasureLines));\n}\n\n",
+          "after": "      : lineMeasureCache_.get(\n            {.attributedString = attributedString,\n             .paragraphAttributes = paragraphAttributes,\n             .size = size,\n             .fontEnvironmentGeneration = fontEnvironmentGeneration()},\n            std::move(doMeasureLines));\n}\n\n"
+        }
+      ]
+    },
+    {
+      "path": "ReactCommon/react/renderer/core/LayoutContext.h",
+      "originalSha256": "1c90c5e1077c8b73cefabcdec96e29dc6607924d35031ec5730c80be93dc0772",
+      "patchedSha256": "27f37642e5af50be464397bbfd57b1a76a0151d3b0c2b29a860ade0e8bdd8053",
+      "changes": [
+        {
+          "before": "\n#pragma once\n\n#include <vector>\n\n#include <react/renderer/core/LayoutableShadowNode.h>\n",
+          "after": "\n#pragma once\n\n#include <cstdint>\n#include <vector>\n\n#include <react/renderer/core/LayoutableShadowNode.h>\n"
+        },
+        {
+          "before": "   * If React Native takes up entire screen, it will be {0, 0}.\n   */\n  Point viewportOffset{};\n};\n\ninline bool operator==(const LayoutContext& lhs, const LayoutContext& rhs) {\n",
+          "after": "   * If React Native takes up entire screen, it will be {0, 0}.\n   */\n  Point viewportOffset{};\n#ifdef ANDROID\n  uint64_t fontEnvironmentGeneration{};\n#endif\n};\n\ninline bool operator==(const LayoutContext& lhs, const LayoutContext& rhs) {\n"
+        },
+        {
+          "before": "             lhs.affectedNodes,\n             lhs.swapLeftAndRightInRTL,\n             lhs.fontSizeMultiplier,\n             lhs.viewportOffset) ==\n      std::tie(\n             rhs.pointScaleFactor,\n             rhs.affectedNodes,\n             rhs.swapLeftAndRightInRTL,\n             rhs.fontSizeMultiplier,\n             rhs.viewportOffset);\n}\n\ninline bool operator!=(const LayoutContext& lhs, const LayoutContext& rhs) {\n",
+          "after": "             lhs.affectedNodes,\n             lhs.swapLeftAndRightInRTL,\n             lhs.fontSizeMultiplier,\n             lhs.viewportOffset\n#ifdef ANDROID\n             , lhs.fontEnvironmentGeneration\n#endif\n             ) ==\n      std::tie(\n             rhs.pointScaleFactor,\n             rhs.affectedNodes,\n             rhs.swapLeftAndRightInRTL,\n             rhs.fontSizeMultiplier,\n             rhs.viewportOffset\n#ifdef ANDROID\n             , rhs.fontEnvironmentGeneration\n#endif\n             );\n}\n\ninline bool operator!=(const LayoutContext& lhs, const LayoutContext& rhs) {\n"
+        }
+      ]
+    },
+    {
+      "path": "ReactAndroid/src/main/java/com/facebook/react/fabric/SurfaceHandlerBinding.kt",
+      "originalSha256": "cf9eee83aec1eb79bc831bd45e09ef1a61f2d32ad0100c304223b1f23954010f",
+      "patchedSha256": "4d24cebe09ff21092923c4a50aba94e9350a095c78afd99120ee57fac6c6d61e",
+      "changes": [
+        {
+          "before": "import com.facebook.jni.HybridClassBase\nimport com.facebook.react.bridge.NativeMap\nimport com.facebook.react.fabric.mounting.LayoutMetricsConversions\n\ninternal open class SurfaceHandlerBinding(moduleName: String) : HybridClassBase() {\n\n",
+          "after": "import com.facebook.jni.HybridClassBase\nimport com.facebook.react.bridge.NativeMap\nimport com.facebook.react.fabric.mounting.LayoutMetricsConversions\nimport com.facebook.react.uimanager.DisplayMetricsHolder\n\ninternal open class SurfaceHandlerBinding(moduleName: String) : HybridClassBase() {\n\n"
+        },
+        {
+          "before": "\n  private external fun _isRunning(): Boolean\n\n  fun setLayoutConstraints(\n      widthMeasureSpec: Int,\n      heightMeasureSpec: Int,\n",
+          "after": "\n  private external fun _isRunning(): Boolean\n\n  @JvmOverloads\n  fun setLayoutConstraints(\n      widthMeasureSpec: Int,\n      heightMeasureSpec: Int,\n"
+        },
+        {
+          "before": "      doLeftAndRightSwapInRTL: Boolean,\n      isRTL: Boolean,\n      pixelDensity: Float,\n      fontScale: Float\n  ) {\n    setLayoutConstraintsNative(\n        LayoutMetricsConversions.getMinSize(widthMeasureSpec) / pixelDensity,\n",
+          "after": "      doLeftAndRightSwapInRTL: Boolean,\n      isRTL: Boolean,\n      pixelDensity: Float,\n      fontScale: Float,\n      fontEnvironmentGeneration: Long = DisplayMetricsHolder.getTextMeasurementGeneration()\n  ) {\n    setLayoutConstraintsNative(\n        LayoutMetricsConversions.getMinSize(widthMeasureSpec) / pixelDensity,\n"
+        },
+        {
+          "before": "        doLeftAndRightSwapInRTL,\n        isRTL,\n        pixelDensity,\n        fontScale)\n  }\n\n  private external fun setLayoutConstraintsNative(\n",
+          "after": "        doLeftAndRightSwapInRTL,\n        isRTL,\n        pixelDensity,\n        fontScale,\n        fontEnvironmentGeneration)\n  }\n\n  private external fun setLayoutConstraintsNative(\n"
+        },
+        {
+          "before": "      doLeftAndRightSwapInRTL: Boolean,\n      isRTL: Boolean,\n      pixelDensity: Float,\n      fontScale: Float\n  )\n\n  external fun setProps(props: NativeMap?)\n",
+          "after": "      doLeftAndRightSwapInRTL: Boolean,\n      isRTL: Boolean,\n      pixelDensity: Float,\n      fontScale: Float,\n      fontEnvironmentGeneration: Long\n  )\n\n  external fun setProps(props: NativeMap?)\n"
+        }
+      ]
+    },
+    {
+      "path": "ReactAndroid/src/main/jni/react/fabric/SurfaceHandlerBinding.h",
+      "originalSha256": "8fdb182bccd677f258055d7cf7152674c8ad79650455bf5e995f04f9d924eb02",
+      "patchedSha256": "e1e9da56b2c0d4c699a4a5cb698c165c10af65805f2acfb54fe75bafef2c2bc4",
+      "changes": [
+        {
+          "before": "      jboolean doLeftAndRightSwapInRTL,\n      jboolean isRTL,\n      jfloat pixelDensity,\n      jfloat fontScale);\n\n  void setProps(NativeMap* props);\n\n",
+          "after": "      jboolean doLeftAndRightSwapInRTL,\n      jboolean isRTL,\n      jfloat pixelDensity,\n      jfloat fontScale,\n      jlong fontEnvironmentGeneration);\n\n  void setProps(NativeMap* props);\n\n"
+        }
+      ]
+    },
+    {
+      "path": "ReactAndroid/src/main/jni/react/fabric/SurfaceHandlerBinding.cpp",
+      "originalSha256": "db69832190de427fcd6747b0e66c3c801566d92552dee549e994913bbf3f759c",
+      "patchedSha256": "b24b8bbdd9c976e00381674b700dd9fcb59757fee12931d5fefa2408bf1bd0da",
+      "changes": [
+        {
+          "before": "    jboolean doLeftAndRightSwapInRTL,\n    jboolean isRTL,\n    jfloat pixelDensity,\n    jfloat fontScale) {\n  LayoutConstraints constraints = {};\n  constraints.minimumSize = {minWidth, minHeight};\n  constraints.maximumSize = {maxWidth, maxHeight};\n",
+          "after": "    jboolean doLeftAndRightSwapInRTL,\n    jboolean isRTL,\n    jfloat pixelDensity,\n    jfloat fontScale,\n    jlong fontEnvironmentGeneration) {\n  LayoutConstraints constraints = {};\n  constraints.minimumSize = {minWidth, minHeight};\n  constraints.maximumSize = {maxWidth, maxHeight};\n"
+        },
+        {
+          "before": "  context.pointScaleFactor = pixelDensity;\n  context.viewportOffset = {offsetX, offsetY};\n  context.fontSizeMultiplier = fontScale;\n\n  surfaceHandler_.constraintLayout(constraints, context);\n}\n",
+          "after": "  context.pointScaleFactor = pixelDensity;\n  context.viewportOffset = {offsetX, offsetY};\n  context.fontSizeMultiplier = fontScale;\n  context.fontEnvironmentGeneration = static_cast<uint64_t>(fontEnvironmentGeneration);\n\n  surfaceHandler_.constraintLayout(constraints, context);\n}\n"
+        }
+      ]
+    },
+    {
+      "path": "ReactAndroid/src/main/java/com/facebook/react/views/textinput/ReactEditText.kt",
+      "originalSha256": "072fb4d4d4e9a32e3a394f3270b3ef90ebef2396f03940a7cceb2d17bf79231f",
+      "patchedSha256": "26d7df7577d9773ad25bbfb9613712b2e6f0fd6ef240ad192b3c41a40b3ff76b",
+      "changes": [
+        {
+          "before": "    if (ReactNativeNewArchitectureFeatureFlags.enableBridgelessArchitecture() &&\n        ReactNativeFeatureFlags.enableFontScaleChangesUpdatingLayout()) {\n      applyTextAttributes()\n    }",
+          "after": "    if (ReactNativeNewArchitectureFeatureFlags.enableBridgelessArchitecture()) {\n      applyTextAttributes()\n    }"
+        }
+      ]
+    }
+  ]
+}

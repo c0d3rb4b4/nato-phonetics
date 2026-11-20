@@ -1,0 +1,151 @@
+{
+  "dimensions": {
+    "fontScale": 2,
+    "height": 914.2857142857143,
+    "scale": 1.75,
+    "width": 411.42857142857144
+  },
+  "values": [
+    {
+      "frame": {
+        "height": 48.571441650390625,
+        "pageX": 56,
+        "pageY": 55.428558349609375,
+        "width": 299.4285583496094,
+        "x": 56,
+        "y": 3.4285714626312256
+      },
+      "style": {
+        "color": "#F5F7FA",
+        "flex": 1,
+        "fontSize": 18,
+        "fontWeight": "600",
+        "paddingHorizontal": 4,
+        "paddingVertical": 12,
+        "textAlign": "center"
+      },
+      "text": "Letter Quiz"
+    },
+    {
+      "frame": {
+        "height": 35.428558349609375,
+        "pageX": 16,
+        "pageY": 132,
+        "width": 379.4285583496094,
+        "x": 16,
+        "y": 24
+      },
+      "style": {
+        "color": "#F5F7FA",
+        "fontSize": 26,
+        "fontWeight": "700",
+        "marginVertical": 8
+      },
+      "text": "Letter practice"
+    },
+    {
+      "frame": {
+        "height": 48,
+        "pageX": 16,
+        "pageY": 187.42855834960938,
+        "width": 379.4285583496094,
+        "x": 16,
+        "y": 79.42857360839844
+      },
+      "style": {
+        "color": "#F5F7FA",
+        "fontSize": 16,
+        "lineHeight": 24
+      },
+      "text": "Choose a short round. Each letter appears once before the deck repeats."
+    },
+    {
+      "frame": {
+        "height": 21.71429443359375,
+        "pageX": 164,
+        "pageY": 261.1428527832031,
+        "width": 83.42857360839844,
+        "x": 148,
+        "y": 13.714285850524902
+      },
+      "style": {
+        "color": "#F5F7FA",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "5 questions"
+    },
+    {
+      "frame": {
+        "height": 21.71429443359375,
+        "pageX": 159.42857360839844,
+        "pageY": 321.1428527832031,
+        "width": 92.57142639160156,
+        "x": 143.42857360839844,
+        "y": 13.714285850524902
+      },
+      "style": {
+        "color": "#F5F7FA",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "10 questions"
+    },
+    {
+      "frame": {
+        "height": 21.714263916015625,
+        "pageX": 159.42857360839844,
+        "pageY": 380.5714111328125,
+        "width": 92.57142639160156,
+        "x": 143.42857360839844,
+        "y": 13.714285850524902
+      },
+      "style": {
+        "color": "#F5F7FA",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "26 questions"
+    },
+    {
+      "frame": {
+        "height": 21.71429443359375,
+        "pageX": 165.14285278320312,
+        "pageY": 442.2857360839844,
+        "width": 81.14286804199219,
+        "x": 149.14285278320312,
+        "y": 13.714285850524902
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "fontWeight": "600",
+        "textAlign": "center"
+      },
+      "text": "Start round"
+    },
+    {
+      "frame": {
+        "height": 96,
+        "pageX": 16,
+        "pageY": 490.28570556640625,
+        "width": 379.4285583496094,
+        "x": 16,
+        "y": 382.28570556640625
+      },
+      "style": {
+        "color": "#F5F7FA",
+        "fontSize": 16,
+        "lineHeight": 24
+      },
+      "text": "Your round and recap stay here when you open the menu and return. Starting a new round replaces the recap. Closing or reloading the app clears this practice; results are not saved."
+    }
+  ]
+}

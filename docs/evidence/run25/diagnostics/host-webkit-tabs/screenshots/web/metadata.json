@@ -1,0 +1,64 @@
+[
+  {
+    "file": "desktop-hosted-progress.png",
+    "state": "Actual pointer answer saved through the packaged host",
+    "capturedAt": "2026-11-19T11:22:57.821Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "engine": "webkit",
+    "browser": "27.2",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+    "appearance": {
+      "background": "rgb(255, 253, 247)",
+      "preference": "system",
+      "system": "light"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/docs/evidence/run20/hosting/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "docs/evidence/run20/hosting/nato-web.tar.gz",
+      "artifacts/run25/host-webkit-tabs",
+      "webkit",
+      "tabs"
+    ]
+  },
+  {
+    "file": "desktop-hosted-converter.png",
+    "state": "Exact converter on the extracted production release",
+    "capturedAt": "2026-11-19T11:22:58.003Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "engine": "webkit",
+    "browser": "27.2",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+    "appearance": {
+      "background": "rgb(255, 253, 247)",
+      "preference": "system",
+      "system": "light"
+    },
+    "candidate": {
+      "artifact": "/Users/mac/dev/apps/nato-phonetics/docs/evidence/run20/hosting/nato-web.tar.gz",
+      "archiveSha256": "fe911a9691812e3989e048429e034e1fef5f7ff1e7960d7e4a1c196d7e0e8f96",
+      "shellBuildId": "d3f42bcf4f3c32153c47729208611163b77789f8c2f11358e0b55b7fb5ace48e",
+      "contentId": "dc2dd1f28842f830c06402868cdb880505b40ba0feb4547727a5ed89ec940c9f"
+    },
+    "host": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+    "command": "node scripts/verify-web-host.cjs",
+    "arguments": [
+      "docs/evidence/run20/hosting/nato-web.tar.gz",
+      "artifacts/run25/host-webkit-tabs",
+      "webkit",
+      "tabs"
+    ]
+  }
+]

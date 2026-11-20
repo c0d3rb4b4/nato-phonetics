@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/mac/dev/apps/nato-phonetics/docs/evidence/run12/snapshot-and-index.py", line 77, in <module>
+    assert not broken,broken
+AssertionError: [{'document': 'docs/evidence/run12/README.md', 'target': 'verification.json'}]

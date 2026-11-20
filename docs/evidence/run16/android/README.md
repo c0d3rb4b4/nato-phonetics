@@ -1,0 +1,7 @@
+# Run 16 Android policy capture
+
+Android16/API36 arm64 emulator-5580, 720×1600/280dpi/default fontScale1, Light. Existing Run14 Debug APK is rehashed against the installed base APK ([identity](artifact.json)); no native app/Release rebuild or distribution claim. Actual Metro/Hermes graph is archived through Debugger.getScriptSource ([manifest](loaded-javascript.json), compressed source beside it). The native-only paragraph removes the obsolete statement that web caching is unimplemented; menu's web controls render null natively. No native caching/provider/permission/schema/framework/font/scaling change.
+
+[Driver](policy.py) uses the existing actual UIAutomator/ADB helper, waits for the full changed Offline paragraph inside the visible screen, asserts it and captures a raw `adb exec-out screencap -p`. [First check](policy.log) passes. A later final-capture attempt fails because the emulator did not start after insufficient-disk rejection ([boot](emulator-final.log), [driver](policy-final.log), [inspector](loaded-javascript-final.log)). Source/products/evidence are retained; disposable current build intermediates are removed ([recovery](../shared/storage-recovery.json)), and the recovery boot/driver/loaded-JS commands are recorded separately.
+
+[Actual final image/metadata](../screenshots/index.md). This default changed-paragraph sample does not close Android live ordinary-text P1, enlarged native qualification, iOS failures, TalkBack/provider/offline/signing/runtime or integrated P10/M11. No human result or native layout-cause inference.

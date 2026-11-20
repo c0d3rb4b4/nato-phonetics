@@ -1,0 +1,42 @@
+{
+  "clientDate": "2026-11-19",
+  "baseHead": "ac5e34e57a334150165f95a2c17ebb78c87b9f74",
+  "changedTrackedFiles": [
+    "docs/APP_REVIEW.md",
+    "docs/DELIVERY_PLAN.md",
+    "docs/NATIVE_BUILDS.md"
+  ],
+  "checks": {
+    "relativeFileLinks": 664,
+    "newTaskAnchors": "pass",
+    "newTask": "P10.8 P2/todo unchecked",
+    "all35LedgerStatuses": {
+      "resolved": 5,
+      "implemented-awaiting-M11": 12,
+      "in-progress": 18
+    },
+    "P05ThroughP10": "active",
+    "M11Results": "all todo; no human results",
+    "originalReviewSnapshot": "preserved",
+    "workflowBuildAndEclipseReferenceHashesUnchanged": {
+      ".github/workflows/native-builds.yml": true,
+      ".github/workflows/ci.yml": true,
+      "scripts/build-native.cjs": true,
+      "../eclipse-timer/.github/workflows/eas-build.yml": true,
+      "../eclipse-timer/documents/planning/self-hosted-macos-runner.md": true
+    },
+    "gitDiffCheck": {
+      "exitCode": 0,
+      "output": ""
+    }
+  },
+  "currentDocSha256": {
+    "docs/APP_REVIEW.md": "45204effcd7794de0e026f467ea003e3ed9adcb28321b12959231d6bf6a0aad9",
+    "docs/DELIVERY_PLAN.md": "5dc0450f71fd9735434ff48f2197e82b6f741cc9b4e8d35ab47e12bf9b62ab9a",
+    "docs/NATIVE_BUILDS.md": "74f2bb1e6aa15ff70020a4c7d2f27c1d7416d0c45981c98a9dfd8334ef8bd241"
+  },
+  "initialCheckFailure": "First link check exited1 because verification.json was linked before creation; report creation order corrected, all final links now pass. No application change or failed product test.",
+  "buildsTestsScreenshots": "inapplicable; documentation-only, no new runtime/capture pass",
+  "userCapacity": "reported11GiB; willing to proceed; no measured build-space guarantee",
+  "pipelineImplementation": "not started; existing authored workflows retained; actual remote qualification pending"
+}

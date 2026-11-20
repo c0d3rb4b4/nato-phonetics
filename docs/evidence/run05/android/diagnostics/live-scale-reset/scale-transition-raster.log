@@ -1,0 +1,9 @@
+AssertionError [ERR_ASSERTION]: Raster+AA envelope exceeded alphabet-transition-2-scale1.png/A/letter/bottom: 8.956000000000017
+    at /Users/mac/dev/apps/nato-phonetics/docs/evidence/run05/android/check-transition-raster.cjs:38:79 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
