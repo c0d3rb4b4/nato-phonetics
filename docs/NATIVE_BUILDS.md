@@ -52,6 +52,49 @@ The release bundle is `android/app/build/outputs/bundle/release/app-release.aab`
 
 ### P05.2 Android source candidate — Run26, acceptance still active
 
+**Run27 qualification update:** F1 original complete tile scope passes625 native
+baselines/271 ink observations. Actual source ARM64 unsigned Release APK/AAB,
+six native cases and five real-product composition checkpoints pass. Other
+ABIs/full Release affected gates and clean default integration remain active;
+ordinary builds still consume Maven and retain the historical defect.
+[Exact artifacts/evidence](evidence/run27/README.md),
+[current F2 command and checkpoint](evidence/run27/android/next-android.md).
+Do not repeat unchanged F1 or treat the opt-in build as default integration.
+
+For source Release, use the existing pinned environment/guards and replace the
+Debug task with `:app:assembleRelease :app:bundleRelease`; select the intended
+ABI explicitly. Run27 qualifies only `-PreactNativeArchitectures=arm64-v8a`.
+Originals are unsigned. The separate local development-signed test copy retains
+the exact original payload and remains non-debuggable; no private signing or
+distribution acceptance follows. [Artifact identity and signature checks](evidence/run27/android/release-artifacts.json).
+
+The standalone ARM64 C++ helper now supports `--release`:
+
+```sh
+ANDROID_HOME=... python3 scripts/build-android-font-native.py <release-prefab> <output> --release
+```
+
+This selects the actual production class layout from `react/debug/flags.h`;
+Debug is the default. A library Sealable/debug-string ABI mismatch is rejected
+before compiling, with existing source/header guards retained. The six explicit
+result predicates are identical in both variants. First Release link with old
+Debug macros failed and remains archived; correct Debug/Release compiles and
+actual Release execution pass. This is test-tool ABI matching, not a product
+assertion override. [Compile and runtime](evidence/run27/android/native-release/native-result.json).
+
+For the real product composition test on a non-debuggable Release app, install
+a separately development-signed local copy with the same certificate as the
+test APK, then append `--external-evidence` to
+`scripts/run-android-font-instrumentation.py TEST_APK EXACT_APP_APK OUTPUT SERIAL`.
+This opt-in exports report/captures to the app's external files directory rather
+than requiring `run-as`; the isolated test APK alone creates that test data.
+The runner requires all five expected checkpoints and actual PNGs plus exact
+APK identities and successful instrumentation. Preserve the unsigned originals
+and remove exported test files after collection. No product permission/storage
+or native repair source changes. [Fixture guide](../tests/fixtures/android-font-scale/README.md),
+[actual Release command](evidence/run27/android/release-composition-command.json).
+
+
 Ordinary builds still consume Maven RN0.81.5. The opt-in candidate uses the
 exact installed npm source and hash-guarded patches; it has not yet passed all
 P05.2 application acceptance. Read [current checkpoints](evidence/run26/shared/forecast.md)

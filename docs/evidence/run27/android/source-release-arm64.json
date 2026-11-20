@@ -1,0 +1,29 @@
+{
+  "command": [
+    "./gradlew",
+    ":app:assembleRelease",
+    ":app:bundleRelease",
+    "-PnatoReactNativeSource=true",
+    "-PreactNativeArchitectures=arm64-v8a",
+    "--max-workers=1",
+    "-Dorg.gradle.jvmargs=-Xmx2048m -XX:MaxMetaspaceSize=512m -XX:ActiveProcessorCount=2"
+  ],
+  "cwd": "/Users/mac/dev/apps/nato-phonetics/android",
+  "environment": {
+    "JAVA_HOME": "/tmp/nato-run22-jdk/jdk-17.0.13+11/Contents/Home",
+    "ANDROID_HOME": "/Users/mac/Library/Android/sdk",
+    "PATH": "/tmp/nato-phonetics-toolchain/node_modules/node/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Users/mac/.codex/tmp/arg0-macos/codex-arg05mnPUr:/Users/mac/.vscode/extensions/openai.chatgpt-26.1111.21308-darwin-arm64/bin/macos-aarch64"
+  },
+  "startedAt": "2026-11-19T21:18:05.409484+00:00",
+  "before": {
+    "availableBytes": 3829792768,
+    "swap": "vm.swapusage: total = 12288.00M  used = 11469.50M  free = 818.50M  (encrypted)"
+  },
+  "exitCode": 0,
+  "durationSeconds": 532.7302226659999,
+  "after": {
+    "availableBytes": 2409902080,
+    "swap": "vm.swapusage: total = 12288.00M  used = 11609.06M  free = 678.94M  (encrypted)"
+  },
+  "finishedAt": "2026-11-19T21:26:58.235394+00:00"
+}

@@ -6,7 +6,17 @@ Run19 adds [scoped browser/lifecycle qualification](evidence/run19/README.md) wi
 
 ## Identity and supported configuration
 
-**Current Run26 Android amendment:** the [opt-in source candidate](evidence/run26/README.md)
+**Current Run27 Android amendment:** [F1 complete scope and ARM64 source Release
+qualification](evidence/run27/README.md) add625 baselines/271 ink observations,
+actual unsigned APK/AAB,6 native cases/5 real-product test-IME checkpoints and25
+inspected captures. Embedded product JS matches Run23; engine matches pinned
+Maven0.81.5 Release. The local development-signed, non-debuggable test copy is
+separate from unsigned originals and distribution signing. Other source ABIs,
+full Release affected gates and ordinary clean default integration remain P1;
+[current command/checkpoint](evidence/run27/android/next-android.md). No fresh
+Run27 audit, private signing, hosting or release acceptance.
+
+**Historical Run26 Android amendment (F1/ARM64 Release superseded above):** the [opt-in source candidate](evidence/run26/README.md)
 repairs the observed live-font cases in scoped ARM64 Debug tests. Standard
 Maven builds and earlier unsigned Release artifacts retain the bug. Follow
 the pinned [source-build/ABI contract](NATIVE_BUILDS.md#p052-android-source-candidate--run26-acceptance-still-active);

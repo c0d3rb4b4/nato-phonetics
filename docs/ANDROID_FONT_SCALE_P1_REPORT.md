@@ -1,19 +1,21 @@
 # Android live font sizing: issue, repair candidates and evidence
 
-**P05.2 / P1 · Evidence through Run26 · 19 November 2026**
+**P05.2 / P1 · Evidence through Run27 · 19 November 2026**
 
-**Current conclusion:** an opt-in Android source candidate repairs the observed failures in the tested ARM64 Debug configuration. The ordinary build still uses the original Maven framework and retains the bug. P05.2 is active; this is not a completed release fix.
+**Current conclusion:** an opt-in Android source candidate repairs the observed failures in the tested ARM64 Debug and scoped ARM64 Release configurations. The ordinary build still uses the original Maven framework and retains the bug. P05.2 is active; this is not a completed release fix.
 
-This report explains the issue, shows actual screenshots, traces the repair candidates, and separates passing checks, persistent failures, test-tool failures and untested risks. It adds analysis of existing evidence; no application code, build, emulator test or acceptance result is changed by preparing it. A [PDF edition](evidence/run26/reports/android-font-scale-p1.pdf) embeds the same screenshot examples.
+This report explains the issue, shows actual screenshots, traces the repair candidates, and separates passing checks, persistent failures, test-tool failures and untested risks. It adds analysis of existing evidence; no application code, build, emulator test or acceptance result is changed by preparing it. The archived [Run26 PDF edition](evidence/run26/reports/android-font-scale-p1.pdf) embeds the original screenshot examples and retains its dated Run26 status. This Markdown report adds the later Run27 qualification; the archived PDF is unchanged.
+
+**Run27 update:** the original complete current-source F1 tile scope now passes625 native baselines/271 ink observations. Unsigned ARM64 source Release build,6 native causal cases and5 real-product composition checkpoints pass. No product/native repair source changed; test helpers now match Debug/Release ABIs and retrieve non-debuggable evidence. Other ABIs/full Release/default integration remain open. [Reports and limitations](evidence/run27/README.md), [25 actual captures](evidence/run27/screenshots/index.md).
 
 | Question | Answer |
 |---|---|
 | What breaks? | After changing Android's system font size while the app is open, some unchanged text keeps its old layout size. Enlarged glyphs clip, and editable input can keep small glyphs even after its frame grows. |
 | What is the repair? | Keep the actual font environment consistent across surface layout, Yoga subtree reuse, text measurement caches and the native editable widget. These are separate boundaries, not one cache bug. |
-| Does the final candidate pass? | Yes in the recorded ARM64 Debug scopes: native causal tests, live/cold sizing, repeated returns, editing, composition, application state, selected window checks and tile baselines. |
+| Does the final candidate pass? | Yes in recorded ARM64 Debug scopes, now including complete F1 baseline/ink checks; scoped ARM64 Release build/native/composition checks also pass. Full Release and default integration remain open. |
 | Does the default app build include it? | No. Source compilation is explicitly selected; default-build integration is unfinished. |
 | What new failure does the final repair demonstrably introduce? | No new application regression has been demonstrated in its executed acceptance scopes. This does not establish safety in untested configurations. Intermediate candidates and test/build tools did fail, as detailed below. |
-| Why is it still P1? | Existing ordinary builds remain affected, and current raster, other ABI/Release and default integration checks are unfinished. |
+| Why is it still P1? | Existing ordinary builds remain affected, and other source ABIs, full Release affected gates and default integration are unfinished. |
 
 ## 1. The issue in ordinary use
 
@@ -172,8 +174,8 @@ All original and intermediate red reports remain failed for their respective art
 
 ### Required checks that have not been run to completion
 
-- Current candidate's complete native tile **ink/raster**, context and theme coverage under the unchanged Run07 thresholds. Baseline alignment alone cannot prove complete glyph ink.
-- Other configured source ABIs, unsigned Release build/runtime, embedded JavaScript identity and ordinary default-build integration.
+- F1 original complete native tile **ink/raster** scope now passes under unchanged Run07 thresholds in Run27. Broader supported matrix and full Release affected tile qualification remain unfinished.
+- Other configured source ABIs, full Release affected runtime/raster/application gates and ordinary default-build integration. Run27 ARM64 unsigned Release build, native/composition and embedded JavaScript identity scopes pass.
 - Broader product navigation/window/runtime/support configurations, including an expanded real OS split-screen matrix.
 - A fresh iOS native build/runtime on this source state. Static non-Android token equality is the recorded qualification; it is not that native pass. Web output is byte-identical, with no new browser pass claimed here.
 - Physical/provider keyboards, TalkBack/VoiceOver, listening and integrated device/release acceptance. Human-only checks and private signing/distribution inputs remain in M11.
@@ -194,7 +196,7 @@ Existing unrelated browser, iOS and tile-polish failures retain their own task s
 | Source Hermes extraction, stale prefab headers and packaging errors | Real build/tooling failures encountered while enabling the candidate, not customer text regressions. | Matched Maven Hermes, exported-header guards, preparation before Gradle, matching ABIs and successful final package/install address the recorded path. Other builds remain unrun. |
 | More layout/cache work after a font change | Additional invalidation is intentional; its runtime cost is not quantified here. | Correctly measuring the new environment replaces stale reuse. No full performance/soak benchmark is claimed; either a slowdown or its absence would need measurement. |
 | Local framework-source maintenance | Yes, this is a new engineering burden. | Eleven guarded font files, JNI/layout ABI coordination and a source-build edit must remain reproducible and version-checked. Clean default integration is still outstanding. |
-| Source build also activates the existing Yoga precision patch | This is an additional native verification input, not a demonstrated new raster defect. | 198 current baselines pass. Full current raster checks are the next task; a missing result must not be described as a failure or a pass. |
+| Source build also activates the existing Yoga precision patch | This is an additional native verification input, not a demonstrated new raster defect. | Run27625 current baselines and271 ink observations pass the original complete F1 scope. Full support/Release/default integration remains unfinished. |
 
 The composition setup failures are retained [here](evidence/run26/android/composition-setup-failed/report.json) and [here](evidence/run26/android/composition-setup-v2-failed/report.json). Build/trace chronology and exact outcomes are retained in the [checkpoint record](evidence/run26/shared/forecast.md). The final [APK/library identity](evidence/run26/android/candidate-widget.json) ties the green application checks to the source candidate.
 
@@ -202,9 +204,9 @@ No screen remount/reset, replacement input value, accessibility scaling cap, rel
 
 ## 8. Remaining repair path and reproducibility
 
-**Next unfinished, unblocked Android task: P05.2-F1, current-candidate native tile ink/raster qualification.** Use the already built APK and current UI navigation; do not rebuild the framework or repeat falsified probes just to recover context. Keep the original Run07 part/context completeness, 1-physical-pixel baseline and 2-physical-pixel ink thresholds, including the existing background-difference threshold. If a specific glyph/edge/context fails, preserve that red report and diagnose that boundary.
+**Next unfinished, unblocked Android task: P05.2-F2 remaining source ABI qualification**, starting with armeabi-v7a, followed by x86/x86_64, full Release affected gates and ordinary default integration. F1 complete Run07 context/part scope now passes on the existing source Debug APK; reuse it unless a changed renderer/font/layout invalidates it. ARM64 source Release compilation/package, six actual native cases and five test-IME checkpoints pass, but do not substitute those for unrun Release fixture/raster/application gates.
 
-After this, qualify the remaining source ABIs/Release and integrate the repair into the normal clean-install/default-build path. Re-run affected gates on the **exact integration artifact**, rather than relabeling the current opt-in candidate. These are engineering tasks; no missing human input blocks the next one. P05.2 stays active before unrelated P2 work. [Concrete commands, inputs and checkpoint](evidence/run26/android/next-android.md).
+Re-run affected gates on the exact eventual default-integration artifact, rather than relabeling opt-in reports. These are engineering tasks with no new missing human input. P05.2 stays active before unrelated P2 work. [Concrete command, artifacts and checkpoint](evidence/run27/android/next-android.md), [human-only supplement](evidence/run27/manual-handoff.md).
 
 The reproduction/build entry points are:
 

@@ -34,6 +34,28 @@ caret and composing range across1→2→1, continued composition and commit. Bot
 IME and font settings restore on failure; no test component enters the product
 APK. API36 is the tested runtime; this does not qualify physical/provider IMEs.
 
+For a non-debuggable Release app, supply `--external-evidence` to the Python
+composition runner. It passes an opt-in instrumentation argument and collects
+the same five checkpoints/screenshots from the app's external files directory
+instead of requiring `run-as`. The separate test APK must share the installed
+app's development signature for local instrumentation; preserve/hash the
+original unsigned artifact separately. This does not provide distribution
+signing. Reports identify both APK hashes and the actual collection command.
+A missing report, checkpoint or PNG cannot count as a successful gate. The
+external `font-composition` directory contains only this test's sample text and
+captures and may be removed after collection. No production permission,
+storage path or code is added by the test export option.
+
 `--samples docs/evidence/run20/android/samples.json` exercises the historical
 red control without an emulator. Native source/build commands, ABI guards and
 the separate C++ renderer/cache executable are in [NATIVE_BUILDS.md](../../../docs/NATIVE_BUILDS.md).
+
+
+The C++ renderer/cache harness is separate: `build-android-font-native.py`
+requires the exact candidate prefab and uses Debug mode by default. Append
+`--release` for Release prefab, matching RN's production class layout and O2.
+The library's Sealable/debug-string ABI is checked before compilation; a wrong
+mode is rejected. The six explicit test predicates remain unchanged, including
+old-tree preservation, changed owner/adoption heights and cache callbacks.
+Run27 qualifies both compile modes and actual ARM64 Release execution; other
+ABIs and full Release application/default-build integration remain open.

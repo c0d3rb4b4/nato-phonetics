@@ -27,8 +27,12 @@ public final class FontScaleInstrumentation extends Instrumentation {
   private Editable editable;
   private final JSONArray stages = new JSONArray();
   private File output;
+  private boolean externalEvidence;
 
-  @Override public void onCreate(Bundle arguments) { super.onCreate(arguments); start(); }
+  @Override public void onCreate(Bundle arguments) {
+    externalEvidence = arguments != null && "true".equals(arguments.getString("externalEvidence"));
+    super.onCreate(arguments); start();
+  }
 
   private <T> T ui(Callable<T> action) throws Exception {
     Object[] result = new Object[2];
@@ -125,7 +129,9 @@ public final class FontScaleInstrumentation extends Instrumentation {
     String originalIme = "";
     JSONObject report = new JSONObject();
     try {
-      output = new File(getTargetContext().getCacheDir(), "font-composition");
+      File evidenceParent = externalEvidence ? getTargetContext().getExternalFilesDir(null) : getTargetContext().getCacheDir();
+      require(evidenceParent != null, "Evidence storage unavailable");
+      output = new File(evidenceParent, "font-composition");
       require(output.mkdirs() || output.isDirectory(), "Cannot create evidence directory");
       original = shell("settings get system font_scale");
       originalIme = shell("settings get secure default_input_method");
@@ -177,6 +183,7 @@ public final class FontScaleInstrumentation extends Instrumentation {
           shell("ime disable com.natophonetics.fonttest/.FontTestIme");
         }
         report.put("stages", stages).put("originalScale", original).put("originalIme", originalIme).put("scope", "Real product/system-managed test IME InputConnection composition; no physical/provider IME or AT claim");
+        if (output != null) report.put("outputDirectory", output.getAbsolutePath());
         if (output != null) try (FileOutputStream file = new FileOutputStream(new File(output, "report.json"))) { file.write(report.toString(2).getBytes(StandardCharsets.UTF_8)); }
       } catch (Exception error) { code = Activity.RESULT_CANCELED; result.putString("cleanupError", error.toString()); }
       result.putString("report", report.toString());
