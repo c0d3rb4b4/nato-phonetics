@@ -47,6 +47,11 @@ async function settle(page) {
   await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
 }
 
+function stopPlaybackIfActive(page) {
+  // Speech can finish and unmount Stop between two browser commands.
+  return page.evaluate(() => document.querySelector('[aria-label="Stop playback"]')?.click());
+}
+
 // Root rem enlargement changes the complete tile composition. The surrounding
 // UI still uses px styles, so those text nodes receive the same real text-only
 // enlargement explicitly. No tile node gets an independent font override.
@@ -340,8 +345,7 @@ async function main() {
         for (let i = 0; i < 4; i += 1) assert.ok((await reachable(page, byId(`quiz-choice-${i}`))).fits, `${state.name} choice ${i} reachable`);
         await page.click(byId('quiz-choice-0'));
         await page.waitForSelector(byId('quiz-answer'));
-        const stop = await page.$('[aria-label="Stop playback"]');
-        if (stop) await stop.click();
+        await stopPlaybackIfActive(page);
         await settle(page);
         const revealed = await measure(page);
         assertGeometry(revealed, state.scale || 1, entries, false, state.dpr);
@@ -396,8 +400,7 @@ async function main() {
         } finally {
           await page.mouse.up();
           await page.$eval(byId('alphabet-C'), node => node.blur());
-          const stop = await page.$('[aria-label="Stop playback"]');
-          if (stop) await stop.click();
+          await stopPlaybackIfActive(page);
         }
       }
       console.log(`PASS ${state.name}: ${tiles.length} tiles, fixed geometry/typography, custom fonts, reachable content`);

@@ -236,7 +236,7 @@ async function replaceInput(page, value) {
   let browser;
   const errors = [];
   try {
-    browser = await puppeteer.launch({ executablePath: process.env.BROWSER_EXECUTABLE, headless: true, args: ['--no-first-run', '--disable-background-networking', ...(process.env.CI ? ['--no-sandbox'] : [])] });
+    browser = await puppeteer.launch({ executablePath: process.env.BROWSER_EXECUTABLE, headless: true, args: ['--no-first-run', '--disable-background-networking'] });
     browser.on('targetcreated', async target => {
       const page = await target.page();
       if (page) {
@@ -313,6 +313,7 @@ async function replaceInput(page, value) {
     await visit(page, base, '/letter-quiz');
     await keyboardActivate(page, byTestId('quiz-start'));
     await page.waitForSelector(byTestId('quiz-choice-3'));
+    await page.waitForSelector(byTestId('quiz-card'));
     assert.equal(await page.$(byTestId('quiz-answer')), null, 'Unrevealed answer is not mounted');
     const cdp = await page.createCDPSession();
     const tree = await cdp.send('Accessibility.getFullAXTree');

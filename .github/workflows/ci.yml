@@ -63,6 +63,7 @@ jobs:
           npm install --prefix "$RUNNER_TEMP/nato-browser" --no-save --package-lock=false puppeteer@24.43.1
           echo "NODE_PATH=$RUNNER_TEMP/nato-browser/node_modules" >> "$GITHUB_ENV"
           browser_executable=$(NODE_PATH="$RUNNER_TEMP/nato-browser/node_modules" node -e "process.stdout.write(require('puppeteer').executablePath())")
+          bash .github/configure-chromium-sandbox.sh "$browser_executable"
           echo "BROWSER_EXECUTABLE=$browser_executable" >> "$GITHUB_ENV"
 
       - name: Exported browser regressions
@@ -131,6 +132,7 @@ jobs:
         if: matrix.engine == 'chromium'
         run: |
           browser_executable=$(node -e 'process.stdout.write(require("playwright").chromium.executablePath())')
+          bash .github/configure-chromium-sandbox.sh "$browser_executable"
           BROWSER_EXECUTABLE="$browser_executable" node scripts/verify-progress-lifecycle-browser.cjs dist artifacts/browser-support/chromium/lifecycle
       - name: Keep runtime report and actual screenshots
         if: always()

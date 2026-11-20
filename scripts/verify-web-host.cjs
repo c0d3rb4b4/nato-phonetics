@@ -169,18 +169,22 @@ async function main() {
     assert.equal(observation.settled.servedHtmlSha256, htmlHash);
   }
   async function closeAppWindows() {
-    (report.closeObservations ||= []).push({ mode: transitionMode, pageCount: context.pages().length,
-      beforeClose: await workerSnapshot(context.pages().at(-1)) });
+    const openPages = context.pages();
+    (report.closeObservations ||= []).push({ mode: transitionMode, pageCount: openPages.length,
+      beforeClose: await workerSnapshot(openPages.at(-1)) });
     if (transitionMode === 'process') {
       await context.close(); context = await launch();
       return context.newPage();
     }
-    for (const page of context.pages()) await page.close();
+    // Firefox and WebKit can exit when their last tab closes. A fresh
+    // about:blank tab keeps the browser alive outside the app worker's scope.
+    const nextPage = await context.newPage();
+    for (const page of openPages) await page.close();
     // Leave the browser's worker process alive with zero app clients before
     // reopening. This idle interval is scenario timing, never a passed gate;
     // reopened() still verifies actual activation/controller/cache/HTML bytes.
     await sleep(1000);
-    return context.newPage();
+    return nextPage;
   }
   context = await launch(); let page = await context.newPage();
   await assert.rejects(() => pollPage(page, async () => false, undefined, 'deliberately false async precondition', 150), /Timed out waiting for deliberately false async precondition/);

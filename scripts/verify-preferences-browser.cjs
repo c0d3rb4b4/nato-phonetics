@@ -36,7 +36,7 @@ const radio = async (page, name) => {
   const base = `http://127.0.0.1:${server.address().port}`;
   let browser;
   try {
-    browser = await puppeteer.launch({ executablePath: process.env.BROWSER_EXECUTABLE, headless: true, args: ['--no-first-run', '--disable-background-networking', ...(process.env.CI ? ['--no-sandbox'] : [])] });
+    browser = await puppeteer.launch({ executablePath: process.env.BROWSER_EXECUTABLE, headless: true, args: ['--no-first-run', '--disable-background-networking'] });
     const context = await browser.createBrowserContext();
     const page = await context.newPage();
     const errors = [];
