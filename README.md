@@ -50,7 +50,7 @@ The React Native [0.81 environment guide](https://reactnative.dev/docs/0.81/set-
 | `npm run audit:review` | Real npm audit plus dated high/critical dispositions; not a clean-audit claim |
 | `npm run build:android:debug` | Direct Gradle debug APK |
 | `npm run build:android:develop` | Standalone development APK with bundled JS, a separate app ID and the public development key |
-| `npm run build:android:release` | Direct Gradle APK and AAB. Trusted branch jobs produce unsigned outputs |
+| `npm run build:android:release` | Direct Gradle APK and AAB, signed when the approved keystore is available |
 | `npm run ios:pods` | Install native dependencies using the locked Ruby toolchain |
 | `npm run build:ios:simulator` | Direct Xcode Release simulator build, no signing |
 | `npm run build:ios:archive` / `npm run build:ios:export` | Credential-dependent distribution preparation |
