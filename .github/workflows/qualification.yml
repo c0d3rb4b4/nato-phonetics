@@ -1,0 +1,36 @@
+name: Repeat the shared build directly on one hosted machine
+on:
+  push:
+    branches: [qualification/p10-8-repeat]
+permissions:
+  contents: read
+jobs:
+  repeat:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: be1f3f657c447f14cac276bea13666cfb3731c45
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+      - run: npm install -g npm@10.9.4
+      - name: First production web archive using the CI entry point
+        run: node scripts/host-build.cjs web --install --output artifacts/first
+      - name: Repeat directly with the same source on this host
+        run: |
+          source=$(node -p 'require("./artifacts/first/report.json").sourceId')
+          node scripts/host-build.cjs web --expected-source "$source" --output artifacts/second
+          for output in first second; do
+            node scripts/verify-host-artifacts.cjs "artifacts/$output" web "$(git rev-parse HEAD)" "$GITHUB_RUN_ID" "$GITHUB_RUN_ATTEMPT"
+          done
+          cmp artifacts/first/nato-web.tar.gz artifacts/second/nato-web.tar.gz
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: direct-repeat-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            artifacts/first/
+            artifacts/second/
+          if-no-files-found: error
