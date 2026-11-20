@@ -8,9 +8,10 @@ const path = require('node:path');
 const digest = value => createHash('sha256').update(value).digest('hex');
 const readJson = file => JSON.parse(fs.readFileSync(file, 'utf8'));
 
-function verifyHostArtifacts(directory, mode, commit, runId, attempt) {
+function verifyHostArtifacts(directory, mode, commit, runId, attempt, signedRelease = false) {
   assert.match(commit, /^[a-f0-9]{40}$/, 'Expected a full git commit SHA');
   assert.equal(Boolean(runId), Boolean(attempt), 'Supply both run ID and attempt');
+  assert(!signedRelease || mode === 'android-release', 'Signed verification requires android-release');
   const report = readJson(path.join(directory, 'report.json'));
   const source = readJson(path.join(directory, 'source.json'));
   assert.equal(report.schemaVersion, 2);
@@ -36,7 +37,7 @@ function verifyHostArtifacts(directory, mode, commit, runId, attempt) {
   const outputs = {
     'android-debug': ['app-debug.apk'],
     'android-develop': ['app-develop.apk'],
-    'android-release': [report.artifacts.some(a => a.file === 'app-release.apk') && !runId
+    'android-release': [signedRelease || (report.artifacts.some(a => a.file === 'app-release.apk') && !runId)
       ? 'app-release.apk' : 'app-release-unsigned.apk', 'app-release.aab'],
     'ios-simulator': ['ios-simulator.tar.gz'],
     web: ['nato-web.tar.gz'],
@@ -64,6 +65,9 @@ function verifyHostArtifacts(directory, mode, commit, runId, attempt) {
       assert.equal(digest(fs.readFileSync(path.join(directory, 'ios-home.png'))), report.product.simulator.screenshotSha256);
     } else {
       assert.equal(report.product.mode, mode, 'Inspected Android variant');
+      if (signedRelease) {
+        assert.equal(report.product.signing, 'release-signed', 'Expected the approved Android signing identity');
+      }
       for (const { file, bytes, sha256 } of report.artifacts) {
         assert.deepEqual(report.product.files[file], { bytes, sha256 }, `Android inspector identity for ${file}`);
       }
@@ -75,9 +79,12 @@ function verifyHostArtifacts(directory, mode, commit, runId, attempt) {
 if (require.main === module) {
   try {
     const args = process.argv.slice(2);
+    const signedRelease = args.at(-1) === '--signed';
+    if (signedRelease) args.pop();
     assert([3, 5].includes(args.length),
-      'Usage: node scripts/verify-host-artifacts.cjs <directory> <mode> <expected-commit> [<run-id> <attempt>]');
-    console.log(JSON.stringify(verifyHostArtifacts(...args), null, 2));
+      'Usage: node scripts/verify-host-artifacts.cjs <directory> <mode> <expected-commit> [<run-id> <attempt>] [--signed]');
+    const [directory, mode, commit, runId, attempt] = args;
+    console.log(JSON.stringify(verifyHostArtifacts(directory, mode, commit, runId, attempt, signedRelease), null, 2));
   } catch (error) {
     console.error(error.message);
     process.exitCode = 1;

@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
 import test from 'node:test';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -54,4 +55,33 @@ test('source drift after packaging keeps diagnostics and rejects all product byt
   assert.equal(fs.existsSync(path.join(output, report.steps.at(-1).log)), true);
   assert.deepEqual(fs.readdirSync(path.join(root, 'artifacts')), ['job']);
   assert.throws(() => verifyHostArtifacts(output, 'web', report.commit));
+});
+
+test('production release verification binds the signed Android pair to its workflow attempt', t => {
+  const { output, report } = webFixture(t, false);
+  fs.unlinkSync(path.join(output, 'nato-web.tar.gz'));
+  const mode = 'android-release';
+  const files = {};
+  const artifacts = ['app-release.apk', 'app-release.aab'].map(file => {
+    const content = Buffer.from(file);
+    fs.writeFileSync(path.join(output, file), content);
+    files[file] = { bytes: content.length, sha256: createHash('sha256').update(content).digest('hex') };
+    return { file, ...files[file] };
+  });
+  const product = { mode, version: '1.0.0', signing: 'release-signed', packageId: 'com.natophonetics.app', abis: ['arm64-v8a'], files };
+  const record = {
+    ...report, mode, artifacts, product, remoteJob: { provider: 'github', runId: '42', attempt: '1' },
+    steps: [{ name: 'verify-android-product', exitCode: 0 }],
+  };
+  const writeReport = () => {
+    fs.writeFileSync(path.join(output, 'report.json'), JSON.stringify(record));
+    fs.writeFileSync(path.join(output, 'verify-android-product.json'), JSON.stringify(product));
+  };
+  writeReport();
+  assert.deepEqual(verifyHostArtifacts(output, mode, report.commit, '42', '1', true).artifacts, artifacts);
+  assert.throws(() => verifyHostArtifacts(output, mode, report.commit, '42', '2', true));
+  assert.throws(() => verifyHostArtifacts(output, mode, report.commit, '42', '1'), /Product set/);
+  product.signing = 'development-signed';
+  writeReport();
+  assert.throws(() => verifyHostArtifacts(output, mode, report.commit, '42', '1', true), /approved Android signing/);
 });

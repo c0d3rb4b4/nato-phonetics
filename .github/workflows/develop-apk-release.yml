@@ -1,0 +1,65 @@
+name: Develop APK Release
+
+on:
+  push:
+    branches: [develop]
+    paths-ignore: ['docs/**', '**/*.md', 'LICENSE']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: develop-apk-release
+  cancel-in-progress: true
+
+jobs:
+  release:
+    if: github.ref == 'refs/heads/develop'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    permissions:
+      contents: write
+    env:
+      CI: '1'
+      CMAKE_BUILD_PARALLEL_LEVEL: '3'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Install pinned build tools
+        run: |
+          npm install --global npm@10.9.4
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --install \
+            'platform-tools' 'platforms;android-36' 'build-tools;36.0.0' \
+            'ndk;27.1.12297006' 'cmake;3.22.1' 'cmake;3.30.5'
+      - name: Build and verify the standalone APK
+        run: |
+          node scripts/host-build.cjs android-develop --install --jobs 3 --output artifacts/develop
+          node scripts/verify-host-artifacts.cjs artifacts/develop android-develop "$GITHUB_SHA" "$GITHUB_RUN_ID" "$GITHUB_RUN_ATTEMPT"
+      - name: Publish the APK on GitHub Releases
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          version=$(node -p 'require("./package.json").version')
+          apk="artifacts/nato-phonetics-v$version-dev.apk"
+          cp artifacts/develop/app-develop.apk "$apk"
+          tag="dev-v$version-r$GITHUB_RUN_ID-a$GITHUB_RUN_ATTEMPT"
+          bash .github/publish-mobile-release.sh "$tag" "NATO Phonetics Dev v$version ($GITHUB_RUN_ID.$GITHUB_RUN_ATTEMPT)" "$apk"
+      - name: Retain build diagnostics on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: failed-develop-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            artifacts/develop/*.json
+            artifacts/develop/logs/
+          if-no-files-found: ignore

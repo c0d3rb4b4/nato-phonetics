@@ -1,12 +1,8 @@
 name: CI
 
 on:
-  push:
-    branches:
-      - develop
-      - main
-      - "agent/**"
   pull_request:
+    branches: [develop, main]
   workflow_dispatch:
     inputs:
       host_transition:
