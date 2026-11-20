@@ -1,69 +1,81 @@
 name: Direct host native builds
 
-# Private runner execution is limited to manually selected trusted branches.
 on:
+  push:
+    branches: [develop, main]
+    paths-ignore:
+      - 'docs/**'
+      - '*.md'
+      - 'LICENSE'
   workflow_dispatch:
     inputs:
       mode:
-        description: Unsigned build selection
+        description: Native build selection
         type: choice
         default: all
-        options: [all, android-debug, android-release, ios-simulator]
+        options: [all, android-debug, android-develop, android-release, ios-simulator]
+      private_runner:
+        description: Use the prepared self-hosted macOS ARM64 runner
+        type: boolean
+        default: false
 
 permissions:
   contents: read
 
+concurrency:
+  group: native-${{ github.event_name == 'push' && github.ref || github.run_id }}
+  cancel-in-progress: ${{ github.event_name == 'push' }}
+
 jobs:
+  select:
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop'
+    runs-on: ubuntu-24.04
+    outputs:
+      modes: ${{ steps.select.outputs.modes }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - id: select
+        env:
+          SELECTION: ${{ inputs.mode }}
+        run: |
+          modes=$(node scripts/select-native-modes.cjs "$GITHUB_EVENT_NAME" "$GITHUB_REF" "$SELECTION")
+          echo "modes=$modes" >> "$GITHUB_OUTPUT"
+
   checks:
-    # A failed audit remains a failed job; unsigned build evidence is independent.
-    runs-on: ubuntu-latest
+    # The existing CI workflow owns push checks and all web builds.
+    if: github.event_name == 'workflow_dispatch' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop')
+    runs-on: ubuntu-24.04
     env:
       CI: '1'
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
           cache: npm
       - run: npm install --global npm@10.9.4
       - name: Shared locked install and quality/security checks
-        run: node scripts/host-build.cjs checks --install --output artifacts/host-checks
-      - name: Retain every gate and failure log
+        run: node scripts/host-build.cjs checks --install --output "artifacts/checks-$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT"
+      - name: Retain gate results and failure logs
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: host-checks-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
-          path: artifacts/host-checks/
+          path: artifacts/checks-${{ github.run_id }}-${{ github.run_attempt }}/
           if-no-files-found: error
 
   native:
-    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop'
-    # No needs: checks. Audit failure must not hide selected unsigned diagnostics.
-    runs-on: [self-hosted, macOS, ARM64, nato-phonetics]
+    needs: select
     strategy:
       fail-fast: false
-      max-parallel: 1
+      max-parallel: ${{ inputs.private_runner && 1 || 4 }}
       matrix:
-        mode: ${{ fromJSON(inputs.mode == 'all' && '["android-debug","android-release","ios-simulator"]' || format('["{0}"]', inputs.mode)) }}
-    env:
-      CI: '1'
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version-file: .nvmrc
-          cache: npm
-      - uses: actions/setup-java@v4
-        with:
-          distribution: temurin
-          java-version: '17'
-      - run: npm install --global npm@10.9.4
-      - name: Shared locked dependencies, preflight and direct build
-        run: node scripts/host-build.cjs ${{ matrix.mode }} --install --jobs 1 --output artifacts/host-${{ matrix.mode }}
-      - name: Collect identified products and all failure logs
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: host-${{ matrix.mode }}-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
-          path: artifacts/host-${{ matrix.mode }}/
-          if-no-files-found: error
+        mode: ${{ fromJSON(needs.select.outputs.modes) }}
+    uses: ./.github/workflows/native-mode.yml
+    with:
+      mode: ${{ matrix.mode }}
+      private_runner: ${{ inputs.private_runner || false }}

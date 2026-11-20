@@ -79,7 +79,7 @@ export function useNavigationEvents() {
     const initialSerial = serial;
     /** @param {string | null} url @param {boolean} [initial] */
     const openLink = (url, initial = false) => {
-      if (!active || !url || !/^natophonetics:\/\//i.test(url)) return;
+      if (!active || !url || !/^natophonetics(?:-dev)?:\/\//i.test(url)) return;
       const path = resolveRoute(url);
       if (initial) { index = 0; entries.clear(); publish(path); }
       else navigate(path, false);

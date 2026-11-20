@@ -9,6 +9,7 @@ import java.security.MessageDigest
 // classifiers debug and release. Check the artifact selected for this variant.
 def hermesHashes = [
     debug:   'e7bb7fbb078b386ef69b651489b0dbfc45cfb419758efdd31a8ed2e8d1d93eb9',
+    develop: 'f8d8af2486ee26d7b8d3da92dcd96ea5df27acfcfe556866ea13c68fec1d2992',
     release: 'f8d8af2486ee26d7b8d3da92dcd96ea5df27acfcfe556866ea13c68fec1d2992'
 ]
 hermesHashes.each { variant, expectedHash ->

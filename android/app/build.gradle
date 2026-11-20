@@ -91,6 +91,7 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0.0"
+        manifestPlaceholders.natoScheme = "natophonetics"
     }
     signingConfigs {
         if (releaseSigningAvailable) {
@@ -111,6 +112,15 @@ android {
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
+        }
+        develop {
+            // Release-like runtime bundles JS and disables the Metro developer host.
+            initWith release
+            matchingFallbacks = ['release']
+            applicationIdSuffix '.dev'
+            versionNameSuffix '-dev'
+            signingConfig signingConfigs.debug
+            manifestPlaceholders.natoScheme = 'natophonetics-dev'
         }
         release {
             // Unsigned unless all four private signing values are supplied.
