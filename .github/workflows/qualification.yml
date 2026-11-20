@@ -1,4 +1,4 @@
-name: Repeat the shared build directly on one hosted machine
+name: Repeat the direct simulator build on one hosted Mac
 on:
   push:
     branches: [qualification/p10-8-repeat]
@@ -6,30 +6,36 @@ permissions:
   contents: read
 jobs:
   repeat:
-    runs-on: ubuntu-24.04
+    runs-on: macos-26
+    timeout-minutes: 120
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_26.2.app/Contents/Developer
+      CI: '1'
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: be1f3f657c447f14cac276bea13666cfb3731c45
+          ref: 5963498a42fafe82296139e7a0ac7210aa78f384
           persist-credentials: false
       - uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler: '2.4.22'
       - run: npm install -g npm@10.9.4
-      - name: First production web archive using the CI entry point
-        run: node scripts/host-build.cjs web --install --output artifacts/first
-      - name: Repeat directly with the same source on this host
+      - name: Build, extract, install and launch
+        run: node scripts/host-build.cjs ios-simulator --install --jobs 2 --output artifacts/first
+      - name: Invoke the same entry point with the exact source ID on this Mac
         run: |
           source=$(node -p 'require("./artifacts/first/report.json").sourceId')
-          node scripts/host-build.cjs web --expected-source "$source" --output artifacts/second
+          node scripts/host-build.cjs ios-simulator --expected-source "$source" --jobs 2 --output artifacts/second
           for output in first second; do
-            node scripts/verify-host-artifacts.cjs "artifacts/$output" web "$(git rev-parse HEAD)" "$GITHUB_RUN_ID" "$GITHUB_RUN_ATTEMPT"
+            node scripts/verify-host-artifacts.cjs "artifacts/$output" ios-simulator "$(git rev-parse HEAD)" "$GITHUB_RUN_ID" "$GITHUB_RUN_ATTEMPT"
           done
-          cmp artifacts/first/nato-web.tar.gz artifacts/second/nato-web.tar.gz
       - if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: direct-repeat-${{ github.run_id }}-${{ github.run_attempt }}
+          name: direct-simulator-repeat-${{ github.run_id }}-${{ github.run_attempt }}
           path: |
             artifacts/first/
             artifacts/second/
