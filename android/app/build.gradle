@@ -113,15 +113,6 @@ android {
         debug {
             signingConfig signingConfigs.debug
         }
-        develop {
-            // Release-like runtime bundles JS and disables the Metro developer host.
-            initWith release
-            matchingFallbacks = ['release']
-            applicationIdSuffix '.dev'
-            versionNameSuffix '-dev'
-            signingConfig signingConfigs.debug
-            manifestPlaceholders.natoScheme = 'natophonetics-dev'
-        }
         release {
             // Unsigned unless all four private signing values are supplied.
             // Never use the public development key for distribution.
@@ -130,6 +121,17 @@ android {
             }
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        }
+        develop {
+            // Release-like runtime bundles JS and disables the Metro developer host.
+            initWith release
+            matchingFallbacks = ['release']
+            applicationIdSuffix '.dev'
+            versionNameSuffix '-dev'
+            signingConfig signingConfigs.debug
+            manifestPlaceholders.natoScheme = 'natophonetics-dev'
+            // RN supplies this placeholder only for its built-in build types.
+            manifestPlaceholders.usesCleartextTraffic = 'false'
         }
     }
 }
