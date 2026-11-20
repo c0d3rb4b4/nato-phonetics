@@ -5,7 +5,7 @@ on:
     branches: [develop, main]
     paths-ignore:
       - 'docs/**'
-      - '*.md'
+      - '**/*.md'
       - 'LICENSE'
   workflow_dispatch:
     inputs:

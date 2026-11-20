@@ -9,12 +9,12 @@ import subprocess
 import tempfile
 from zipfile import ZipFile
 
+from android_runtime_abi import ABIS
 from android_test_tools import build_tool, executable
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DEV_CERT = 'fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c'
-MACHINES = {'armeabi-v7a': (1, 40), 'arm64-v8a': (2, 183), 'x86': (1, 3), 'x86_64': (2, 62)}
 SIGNATURE = re.compile(r'META-INF/[^/]+\.(SF|RSA|DSA|EC)', re.I)
 
 
@@ -59,8 +59,8 @@ def payload(archive, prefix, abis, bundled):
             continue
         abi, library = match.groups()
         data = archive.read(name)
-        require(abi in abis and len(data) >= 20 and data[:4] == b'\x7fELF' and data[5] == 1 and
-                (data[4], int.from_bytes(data[18:20], 'little')) == MACHINES[abi], f'Wrong ELF ABI in {name}')
+        require(abi in ABIS and abi in abis and len(data) >= 20 and data[:4] == b'\x7fELF' and data[5] == 1 and
+                (int.from_bytes(data[18:20], 'little'), data[4]) == ABIS[abi][1:], f'Wrong ELF ABI in {name}')
         libs.setdefault(abi, {})[library] = sha(data)
     require(set(libs) == set(abis), 'Configured and packaged ABI sets differ')
     for abi, names_to_hash in libs.items():

@@ -10,6 +10,8 @@ import time
 import uuid
 import xml.etree.ElementTree as ET
 
+from android_display_evidence import validate_png
+
 
 def smoke(apk, output, serial):
     package = 'com.natophonetics.app.dev'
@@ -47,13 +49,17 @@ def smoke(apk, output, serial):
                     if all(label in words for label in labels):
                         (output / (state + '.xml')).write_bytes(tree)
                         image = adb('exec-out', 'screencap', '-p', binary=True)
-                        if not image.startswith(b'\x89PNG\r\n\x1a\n'):
-                            raise ValueError('Invalid screencap')
+                        validate_png(image)
+                        report.setdefault('screenshots', {})[state] = hashlib.sha256(image).hexdigest()
                         (output / (state + '.png')).write_bytes(image)
                         return
                 except ET.ParseError:
                     pass
             time.sleep(1)
+        last_tree = adb('exec-out', 'cat', xml_path, binary=True, check=False)
+        (output / (state + '-failed.xml')).write_bytes(last_tree)
+        image = adb('exec-out', 'screencap', '-p', binary=True, check=False)
+        (output / (state + '-failed.png')).write_bytes(image)
         raise RuntimeError(f'{state} did not expose {labels}')
     xml_path = '/data/local/tmp/nato-develop-' + uuid.uuid4().hex + '.xml'
     try:
