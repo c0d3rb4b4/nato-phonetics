@@ -7,16 +7,14 @@ permissions:
 jobs:
   check:
     runs-on: macos-26
-    timeout-minutes: 30
+    timeout-minutes: 70
     env:
       CI: '1'
       DEVELOPER_DIR: /Applications/Xcode_26.2.app/Contents/Developer
-      BUNDLE_FROZEN: 'true'
-      BUNDLE_PATH: vendor/bundle
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: c35caa5d498ccd2d785018a6336bea2614737b07
+          ref: 6ed3e77c603c6bc42de758a0577c7ac9a8386ca5
           persist-credentials: false
       - uses: actions/setup-node@v4
         with:
@@ -24,15 +22,30 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           bundler: '2.4.22'
-      - name: Inspect CocoaPods changes and app settings
+      - run: npm install --global npm@10.9.4
+      - name: Build with the app target's release configuration
         run: |
-          npm install --global npm@10.9.4
-          npm ci
-          bundle install
           printf 'NATO_XCCONFIG_TEST = available\n' > ios/ReleaseSigning.local.xcconfig
-          bundle exec pod install --deployment --project-directory=ios
-          git status --short
-          git diff --binary
+          node scripts/host-build.cjs ios-simulator --install --jobs 2 --output artifacts/ios-check
+          node scripts/verify-host-artifacts.cjs artifacts/ios-check ios-simulator "$(git rev-parse HEAD)" "$GITHUB_RUN_ID" "$GITHUB_RUN_ATTEMPT"
           xcodebuild -workspace ios/NATOPhonetics.xcworkspace -scheme NATOPhonetics \
             -configuration Release -sdk iphoneos -showBuildSettings -json > "$RUNNER_TEMP/settings.json"
           node -e 'const s = require(process.argv[1]); const app = s.find(x => x.target === "NATOPhonetics").buildSettings; if (app.NATO_XCCONFIG_TEST !== "available" || !app.PODS_ROOT) throw Error("Missing app configuration");' "$RUNNER_TEMP/settings.json"
+      - name: Confirm the IPA verifier rejects a simulator bundle
+        run: |
+          mkdir -p "$RUNNER_TEMP/simulator-as-ipa/Payload" artifacts/ios-export
+          tar -xzf artifacts/ios-check/ios-simulator.tar.gz -C "$RUNNER_TEMP/simulator-as-ipa/Payload"
+          ditto -c -k "$RUNNER_TEMP/simulator-as-ipa" artifacts/ios-export/simulator.ipa
+          if bash .github/verify-release-ipa.sh; then
+            echo "A simulator binary passed the release gate"
+            exit 1
+          fi
+          test ! -e "$RUNNER_TEMP/verified.ipa"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: xcode-release-check-${{ github.run_id }}
+          path: |
+            artifacts/ios-check/*.json
+            artifacts/ios-check/logs/
+          if-no-files-found: ignore
