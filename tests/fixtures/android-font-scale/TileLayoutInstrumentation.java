@@ -27,6 +27,7 @@ public final class TileLayoutInstrumentation extends Instrumentation {
   private Activity activity;
   private File output;
   private int tag;
+  private boolean mediaOutput;
   private <T> T ui(Callable<T> action) throws Exception {
     Object[] result = new Object[2];
     runOnMainSync(() -> { try { result[0]=action.call(); } catch(Throwable e) { result[1]=e; } });
@@ -124,17 +125,24 @@ public final class TileLayoutInstrumentation extends Instrumentation {
       JSONArray rows=new JSONArray();visit(activity.getWindow().getDecorView(),rows);
       android.util.DisplayMetrics metrics=activity.getResources().getDisplayMetrics();
       return new JSONObject().put("values",rows).put("activityIdentity",System.identityHashCode(activity))
+          .put("runtimePid", android.os.Process.myPid())
           .put("dimensions",new JSONObject().put("density",metrics.density)
               .put("fontScale",activity.getResources().getConfiguration().fontScale))
           .put("baselineSource","Actual Android TextView Layout.getLineBaseline + totalPaddingTop + transformMatrixToGlobal; physical pixels")
           .put("timestampMillis",System.currentTimeMillis());
     });
   }
-  @Override public void onCreate(Bundle arguments) { super.onCreate(arguments);start(); }
+  @Override public void onCreate(Bundle arguments) {
+    super.onCreate(arguments);
+    mediaOutput = "media".equals(arguments.getString("evidenceDirectory"));
+    start();
+  }
   @Override public void onStart() {
     Bundle result=new Bundle();int code=Activity.RESULT_CANCELED;
     try {
-      output=new File(getTargetContext().getExternalFilesDir(null),"tile-observer");
+      File directory = mediaOutput ? getTargetContext().getExternalMediaDirs()[0]
+          : getTargetContext().getExternalFilesDir(null);
+      output=new File(directory,"tile-observer");
       if(!output.mkdirs()&&!output.isDirectory())throw new AssertionError("Evidence directory unavailable");
       File request=new File(output,"request.json");request.delete();
       Intent intent=new Intent(Intent.ACTION_VIEW,Uri.parse("natophonetics://settings"));
@@ -143,6 +151,7 @@ public final class TileLayoutInstrumentation extends Instrumentation {
       tag=getTargetContext().getResources().getIdentifier("react_test_id","id","com.natophonetics.app");
       if(tag==0)throw new AssertionError("Missing testID resource");
       write("ready.json",new JSONObject().put("ready",true).put("activityIdentity",System.identityHashCode(activity)));
+      boolean recordedRuntime = false;
       long deadline=System.currentTimeMillis()+30*60*1000;
       while(System.currentTimeMillis()<deadline) {
         if(!request.isFile()) {Thread.sleep(100);continue;}
@@ -150,7 +159,18 @@ public final class TileLayoutInstrumentation extends Instrumentation {
         String name=command.getString("name");
         if(!name.matches("[a-zA-Z0-9-]+"))throw new AssertionError("Invalid capture name");
         if(command.optBoolean("finish")) {code=Activity.RESULT_OK;break;}
-        JSONObject row=snapshot();write(name+".json",row);
+        JSONObject row=snapshot();
+        if (command.optBoolean("quizText")) {
+          row.put("quizText", ui(() -> QuizTextLayout.read(activity.getWindow().getDecorView())));
+        }
+        if (command.has("converterClipboard")) {
+          row.put("converterClipboard", ui(() -> ConverterClipboard.observe(activity, command.getBoolean("converterClipboard"))));
+        }
+        if (!recordedRuntime && row.getJSONArray("values").length() > 0) {
+          RuntimeLibraries.write(output, activity.getApplicationInfo());
+          recordedRuntime = true;
+        }
+        write(name+".json",row);
         write(name+"-done.json",new JSONObject().put("passed",true).put("name",name));
       }
       if(code!=Activity.RESULT_OK)throw new AssertionError("Observer timed out");

@@ -1,0 +1,48 @@
+{
+  "inputSha256": "917810609d5d844708cc18593a68da8e3af1ec3582b43127ec9f4847e92fc84d",
+  "inputScope": "Retained Run 31 single-ABI x86_64 product",
+  "cases": {
+    "single ABI app-release-unsigned.apk": {
+      "rejected": true,
+      "reason": "lib/ inventory differs from the four complete ABI sets: ['arm64-v8a/libappmodules.so', 'arm64-v8a/libc++_shared.so', 'arm64-v8a/libfbjni.so', 'arm64-v8a/libhermes.so', 'arm64-v8a/libhermestooling.so', 'arm64-v8a/libimagepipeline.so', 'arm64-v8a/libjsi.so', 'arm64-v8a/libnative-filters.so', 'arm64-v8a/libnative-imagetranscoder.so', 'arm64-v8a/libreact_codegen_safeareacontext.so', 'arm64-v8a/libreactnative.so', 'armeabi-v7a/libappmodules.so', 'armeabi-v7a/libc++_shared.so', 'armeabi-v7a/libfbjni.so', 'armeabi-v7a/libhermes.so', 'armeabi-v7a/libhermestooling.so', 'armeabi-v7a/libimagepipeline.so', 'armeabi-v7a/libjsi.so', 'armeabi-v7a/libnative-filters.so', 'armeabi-v7a/libnative-imagetranscoder.so', 'armeabi-v7a/libreact_codegen_safeareacontext.so', 'armeabi-v7a/libreactnative.so', 'x86/libappmodules.so', 'x86/libc++_shared.so', 'x86/libfbjni.so', 'x86/libhermes.so', 'x86/libhermestooling.so', 'x86/libimagepipeline.so', 'x86/libjsi.so', 'x86/libnative-filters.so', 'x86/libnative-imagetranscoder.so', 'x86/libreact_codegen_safeareacontext.so', 'x86/libreactnative.so']"
+    },
+    "single ABI app-release.aab": {
+      "rejected": true,
+      "reason": "base/lib/ inventory differs from the four complete ABI sets: ['arm64-v8a/libappmodules.so', 'arm64-v8a/libc++_shared.so', 'arm64-v8a/libfbjni.so', 'arm64-v8a/libhermes.so', 'arm64-v8a/libhermestooling.so', 'arm64-v8a/libimagepipeline.so', 'arm64-v8a/libjsi.so', 'arm64-v8a/libnative-filters.so', 'arm64-v8a/libnative-imagetranscoder.so', 'arm64-v8a/libreact_codegen_safeareacontext.so', 'arm64-v8a/libreactnative.so', 'armeabi-v7a/libappmodules.so', 'armeabi-v7a/libc++_shared.so', 'armeabi-v7a/libfbjni.so', 'armeabi-v7a/libhermes.so', 'armeabi-v7a/libhermestooling.so', 'armeabi-v7a/libimagepipeline.so', 'armeabi-v7a/libjsi.so', 'armeabi-v7a/libnative-filters.so', 'armeabi-v7a/libnative-imagetranscoder.so', 'armeabi-v7a/libreact_codegen_safeareacontext.so', 'armeabi-v7a/libreactnative.so', 'x86/libappmodules.so', 'x86/libc++_shared.so', 'x86/libfbjni.so', 'x86/libhermes.so', 'x86/libhermestooling.so', 'x86/libimagepipeline.so', 'x86/libjsi.so', 'x86/libnative-filters.so', 'x86/libnative-imagetranscoder.so', 'x86/libreact_codegen_safeareacontext.so', 'x86/libreactnative.so']"
+    },
+    "changed signed JS": {
+      "rejected": true,
+      "reason": "Engineering signature changed the original payload"
+    },
+    "single ABI AAPT and signature validation": {
+      "rejected": true,
+      "reason": "Manifest ABI inventory differs: ['x86_64']"
+    },
+    "source assets and dex": {
+      "identicalAssets": 6,
+      "embedded": {
+        "assets/fonts/NatoTile-ExtraBold.ttf": "b0150a84d5e000fcd276cf13e1863ca8bbaab0ff2a0dfdcfa958a48781dd7aa6",
+        "assets/fonts/NatoTile-Italic.ttf": "50f16c8bec3ed31190d37403b6e15d200274e7a5e43f1a698a86eef7079d862b",
+        "assets/fonts/NatoTile-SemiBold.ttf": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f",
+        "assets/index.android.bundle": "830c147f391ec64fec40ea839d1cf7c231b0a053b2cbb9ac936cdff819518328"
+      },
+      "dex": {
+        "classes.dex": "2fd523d37f04d985498e51da22ac7844f43418c640885a99473898682b8e34cb",
+        "classes2.dex": "61b6354751b69f69d0b88fe66ac63fcfbfffd35f70a73939d7c90043d8eb33cc"
+      }
+    },
+    "historical comparison": {
+      "matchesRun31PublishedSeven": [
+        "assets/index.android.bundle",
+        "lib/x86_64/libappmodules.so",
+        "lib/x86_64/libhermestooling.so",
+        "lib/x86_64/libjsi.so",
+        "lib/x86_64/libreact_codegen_safeareacontext.so",
+        "lib/x86_64/libreactnative.so",
+        "resources.arsc"
+      ],
+      "run31ComparedToItself": "Zero APK and AAB differences"
+    }
+  },
+  "passed": true
+}

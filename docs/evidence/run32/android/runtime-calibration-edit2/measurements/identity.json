@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "serial": "emulator-5584",
+  "identities": {
+    "com.natophonetics.app": {
+      "local": "C:\\dev\\apps\\nato-phonetics\\artifacts\\run31\\release-fixture-final\\font-release-fixture.apk",
+      "installed": "/data/app/~~6SlXB2F8rfpmeetrPHTJrg==/com.natophonetics.app-5rKZCghD0_0o6p0EKPru6A==/base.apk",
+      "sha256": "ac14df7d826ca2044a0f664e757f35346be7a2c63437d737906a40bc6ebf859e",
+      "expectedSha256": "ac14df7d826ca2044a0f664e757f35346be7a2c63437d737906a40bc6ebf859e",
+      "primaryCpuAbi": "x86_64"
+    },
+    "com.natophonetics.fonttest": {
+      "local": "C:\\dev\\apps\\nato-phonetics\\artifacts\\run32\\runtime-display-observer\\font-composition.apk",
+      "installed": "/data/app/~~GT61XQtjAqoSgbiAFJ0mBQ==/com.natophonetics.fonttest-qNeXsSZyu5mESe94iOFm2g==/base.apk",
+      "sha256": "40ec84630e840ebcd19322b5a0ad11e81c14b968c237c6ffcb4cd2b8e8de3cb1",
+      "expectedSha256": "40ec84630e840ebcd19322b5a0ad11e81c14b968c237c6ffcb4cd2b8e8de3cb1"
+    }
+  },
+  "runtime": "16",
+  "api": "36",
+  "originalFontScale": "1.0",
+  "originalWindowSize": "Physical size: 1080x2400\r\nOverride size: 720x1600",
+  "results": [
+    {
+      "scenario": "editing",
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5584",
+        "shell",
+        "am",
+        "instrument",
+        "--abi",
+        "x86_64",
+        "-w",
+        "-r",
+        "-e",
+        "scenario",
+        "editing",
+        "com.natophonetics.fonttest/com.natophonetics.fonttest.FontScaleFixtureInstrumentation"
+      ],
+      "exitCode": 0,
+      "evidenceComplete": true,
+      "staleCaptures": [],
+      "passed": true
+    }
+  ],
+  "scope": "Separate embedded fixture on identical Release native/Hermes payload; production entry not exercised"
+}

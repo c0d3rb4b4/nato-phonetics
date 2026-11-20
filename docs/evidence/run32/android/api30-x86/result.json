@@ -1,0 +1,9 @@
+{
+  "passed": false,
+  "serial": "emulator-5578",
+  "requestedAbi": "x86",
+  "stages": [],
+  "install": "Performing Streamed Install\r\nSuccess",
+  "installMode": "ordinary default",
+  "error": "RuntimeError(\"adb ('shell', 'pm', 'path', 'com.natophonetics.fonttest'):  \")"
+}

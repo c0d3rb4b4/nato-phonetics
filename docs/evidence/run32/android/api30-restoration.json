@@ -1,0 +1,24 @@
+{
+  "serial": "emulator-5578",
+  "initialPackages": [],
+  "removedOwnedTestPackages": [
+    "package:com.natophonetics.app",
+    "package:com.natophonetics.fonttest"
+  ],
+  "restored": {
+    "packages": [],
+    "fontScale": "null",
+    "ime": "com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME",
+    "size": "Physical size: 720x1600",
+    "density": "Physical density: 280"
+  },
+  "emulatorResponse": "OK: killing emulator, bye bye\n\nOK",
+  "emulatorStopped": true,
+  "installedSdkModified": false,
+  "adbServerStopped": false,
+  "retainedIsolatedImageAndAvd": "C:\\Users\\lalit\\AppData\\Local\\Temp\\nato-r32-api30-x86-9c7b4bet",
+  "retainedLogicalBytes": 13995844217.0,
+  "cleanup": "The guarded recursive removal command for this temporary directory was rejected by automatic tool policy before execution. The guest is stopped and its original settings and package list were restored.",
+  "rawBootLogSha256": "6cb6b9b795394c2b2327fd26977e1208ff454a8cf8d214548f7f4e748f511634",
+  "omittedBootLogTransportLines": 25
+}

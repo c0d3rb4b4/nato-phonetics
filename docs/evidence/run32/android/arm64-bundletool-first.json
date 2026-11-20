@@ -1,0 +1,6 @@
+{
+  "action": "get-device-spec with ambient java",
+  "error": "UnsupportedClassVersionError for com/android/ddmlib/Log$ILogOutput. Runtime supports class versions to 52.0, needed 55.0.",
+  "hostJava": "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path\\java.exe",
+  "correction": "C:\\Program Files\\Microsoft\\jdk-17.0.13.11-hotspot\\bin\\java.exe"
+}

@@ -3,6 +3,27 @@ import os
 from pathlib import Path
 
 
+TEST_IME = 'com.natophonetics.fonttest/.FontTestIme'
+
+
+def restore_font_scale(shell, original):
+    if original == 'null':
+        shell('settings', 'delete', 'system', 'font_scale')
+    else:
+        shell('settings', 'put', 'system', 'font_scale', original)
+
+
+def restore_ime(shell, original, test_was_enabled):
+    if test_was_enabled:
+        shell('ime', 'enable', TEST_IME)
+    if original and original != 'null':
+        shell('ime', 'set', original)
+    if not test_was_enabled:
+        shell('ime', 'disable', TEST_IME)
+    if original == 'null':
+        shell('settings', 'delete', 'secure', 'default_input_method')
+
+
 def executable(path):
     return str(path.with_name(path.name + '.exe') if os.name == 'nt' else path)
 

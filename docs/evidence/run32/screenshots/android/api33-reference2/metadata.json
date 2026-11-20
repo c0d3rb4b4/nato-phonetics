@@ -1,0 +1,72 @@
+[
+  {
+    "file": "before-1.png",
+    "state": "Exact production Release; native Layout/spans/transforms; no inspector",
+    "theme": "light",
+    "width": 720,
+    "height": 1600,
+    "sha256": "0fef26e0442337e07e744cc74eb93cc977235f6643248ccd7563723845d4fd18",
+    "timestamp": "2026-11-20T14:13:52Z",
+    "command": "adb -s emulator-5586 exec-out screencap -p",
+    "androidVersion": "13",
+    "fontScale": "1",
+    "displaySize": "Physical size: 1080x2400\r\nOverride size: 720x1600",
+    "displayDensity": "Physical density: 420\r\nOverride density: 280"
+  },
+  {
+    "file": "before-2.png",
+    "state": "Exact production Release; native Layout/spans/transforms; no inspector",
+    "theme": "light",
+    "width": 720,
+    "height": 1600,
+    "sha256": "68020bf045815e35d2b90027faa1e6681edb723a90f7abbabfee2a4881fd69cb",
+    "timestamp": "2026-11-20T14:14:00Z",
+    "command": "adb -s emulator-5586 exec-out screencap -p",
+    "androidVersion": "13",
+    "fontScale": "2.0",
+    "displaySize": "Physical size: 1080x2400\r\nOverride size: 720x1600",
+    "displayDensity": "Physical density: 420\r\nOverride density: 280"
+  },
+  {
+    "file": "split-half-2.png",
+    "state": "Exact production Release; native Layout/spans/transforms; no inspector",
+    "theme": "light",
+    "width": 720,
+    "height": 1600,
+    "sha256": "eeb0d6e9b35b85d5b2daa1d28850357a5de028a7207011ac9ad360c3a7663e77",
+    "timestamp": "2026-11-20T14:14:09Z",
+    "command": "adb -s emulator-5586 exec-out screencap -p",
+    "androidVersion": "13",
+    "fontScale": "2.0",
+    "displaySize": "Physical size: 1080x2400\r\nOverride size: 720x1600",
+    "displayDensity": "Physical density: 420\r\nOverride density: 280"
+  },
+  {
+    "file": "split-large-2.png",
+    "state": "Exact production Release; native Layout/spans/transforms; no inspector",
+    "theme": "light",
+    "width": 720,
+    "height": 1600,
+    "sha256": "aca60b86ae747b91bd5c197b6f4e215896ae3c84447615827f6ac58cbe3f1b3e",
+    "timestamp": "2026-11-20T14:14:18Z",
+    "command": "adb -s emulator-5586 exec-out screencap -p",
+    "androidVersion": "13",
+    "fontScale": "2.0",
+    "displaySize": "Physical size: 1080x2400\r\nOverride size: 720x1600",
+    "displayDensity": "Physical density: 420\r\nOverride density: 280"
+  },
+  {
+    "file": "split-diagnostic.png",
+    "state": "Screen at the failed split-screen check",
+    "theme": "light",
+    "width": 720,
+    "height": 1600,
+    "sha256": "aca60b86ae747b91bd5c197b6f4e215896ae3c84447615827f6ac58cbe3f1b3e",
+    "timestamp": "2026-11-20T14:14:20Z",
+    "command": "adb -s emulator-5586 exec-out screencap -p",
+    "androidVersion": "13",
+    "fontScale": "2.0",
+    "displaySize": "Physical size: 1080x2400\r\nOverride size: 720x1600",
+    "displayDensity": "Physical density: 420\r\nOverride density: 280"
+  }
+]

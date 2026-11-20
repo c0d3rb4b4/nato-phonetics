@@ -1,6 +1,6 @@
 # Delivery priority review — 17 November 2026
 
-**Snapshot boundary:** The original assessment below compares Runs 01–07. Runs 08–09 subsequently deliver session integration and converter normalization/export; see the current amendment at the end and the plan’s authoritative ledger before selecting work. Historical “next” recommendations below are not unfinished-work claims.
+The original assessment below compares Runs 01–07. The dated amendments preserve the sessions and converter priorities at those checkpoints. Use the current delivery queue and resolution ledger to select work. [Current queue](DELIVERY_PLAN.md#current-delivery-order-and-residual-engineering-queue) · [resolution ledger](DELIVERY_PLAN.md#complete-scope-and-resolution-ledger).
 
 ## Finding
 
@@ -65,7 +65,7 @@ This batch changes planning/documentation only. No new running-app screenshots o
 
 The [Run 08 implementation](evidence/run08/README.md) follows this assessment: session/coverage/results/Retry functionality is connected to the delivered controls/tiles, with actual web/Android/iOS evidence. P07.2 is checked, P07.4/P07 remain active for live Android enlarged-text acceptance, and F01 stays in-progress. A bounded normal-entry comparison confirms cold 2× sample readability versus live stale/clipped feedback without selecting a framework fork. The next independent product work is P06.1/.2; P05.2 stays P1 and the unchanged strict iPhone ink misses stay P3. The analysis above remains the dated planning review, not a claim that Run 08 was delivered at its earlier checkpoint. Current status is in the plan/review ledger.
 
-## Current execution amendment — after Run 09
+## Historical execution amendment — after Run 09
 
 Run 08 delivered P07.2 and integrated session/results/Retry UI; P07.4 affected accessibility remains open. Run 09 delivers P06.1 and implements Clear/Copy/Share, explicit Unicode/whitespace/punctuation policy and stale export-status guards. [Evidence](evidence/run09/README.md) records shared/browser and installed native checks/captures; M11 acceptance remains unperformed. Do not select these integrated functions for reimplementation.
 
@@ -74,3 +74,7 @@ P06.2 remains partial for live Android native sizing: cold 2× converter output/
 Next independent useful product work is **P06.3/.4**: map current speech tokens to highlighted output, expose Replay/rate/word-pause controls, then measure realistic native/web pastes and choose a justified bound/rendering strategy. Forecast native input/readability and long-list accessibility verification. Keep P05.2 as a separately bounded native measurement investigation; retain P05.8 ink-only residuals at P3 with unchanged triggers/tolerances. P08/P10 preparation remains eligible by task; P09 provider dependencies and all M11/release scope remain required.
 
 Run 09 final native checkpoint: default iOS Copy/Paste/Share succeeds; maximum-text keyboard assurance fails. A fresh geometry-aware driver produces an actual RCTSurfaceTouchHandler registry assertion/SIGABRT during synthetic drags, with in-memory state-loss risk. **P1 triage now includes a bounded ordinary-gesture reproduction of that iOS failure before another feature cycle**; ordinary/Release/physical reach is unknown. [Evidence and next discriminator](evidence/run09/ios/README.md). Successful maximum-size output/control captures remain missing. Keep this engineering failure distinct from the passing default function and from M11; no framework upgrade, assertion suppression or release exception is inferred.
+
+## Run 32 follow-through — 20 November 2026
+
+The original session, digit-practice and typed-recall Android live-text failures now pass on the ordinary four-ABI Release using the default x86_64 runtimes on Android 13 and 16. P07 is agent-done and P08.1/.2 are checked. F01/F05/F06 await M11. Android 13 also passed complete long Copy and Share/cancel, paging and Clear. P05.2 remains active for additional supported runtimes. P06 retains the original iOS gesture and maximum-size Share engineering gates, and all seven human acceptance tasks remain in M11. [Current ledger](DELIVERY_PLAN.md#complete-scope-and-resolution-ledger) · [Run 32 measurements and limits](evidence/run32/README.md).

@@ -1,0 +1,58 @@
+TAP version 13
+# Subtest: native copy/share send exact plain text and preserve cancellation and errors
+ok 1 - native copy/share send exact plain text and preserve cancellation and errors
+  ---
+  duration_ms: 57.8843
+  type: 'test'
+  ...
+# Subtest: browser exports handle unavailable, denied, cancelled and successful capabilities
+ok 2 - browser exports handle unavailable, denied, cancelled and successful capabilities
+  ---
+  duration_ms: 13.725
+  type: 'test'
+  ...
+# Subtest: conversion preserves canonical copy text and intentional speech representation
+ok 3 - conversion preserves canonical copy text and intentional speech representation
+  ---
+  duration_ms: 1.1724
+  type: 'test'
+  ...
+# Subtest: whitespace runs collapse to a single boundary without leading/trailing pauses
+ok 4 - whitespace runs collapse to a single boundary without leading/trailing pauses
+  ---
+  duration_ms: 0.7891
+  type: 'test'
+  ...
+# Subtest: useful punctuation is explicit literal speech, distinct from word boundaries
+ok 5 - useful punctuation is explicit literal speech, distinct from word boundaries
+  ---
+  duration_ms: 0.1418
+  type: 'test'
+  ...
+# Subtest: Unicode never silently expands, strips accents or vanishes from exports
+ok 6 - Unicode never silently expands, strips accents or vanishes from exports
+  ---
+  duration_ms: 0.3288
+  type: 'test'
+  ...
+# Subtest: display/export/speech agree for mixed input without mutating tokens
+ok 7 - display/export/speech agree for mixed input without mutating tokens
+  ---
+  duration_ms: 0.2573
+  type: 'test'
+  ...
+# Subtest: playback indices track displayed tokens across boundaries, Unicode omissions and repeats
+ok 8 - playback indices track displayed tokens across boundaries, Unicode omissions and repeats
+  ---
+  duration_ms: 0.1786
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 157.2179

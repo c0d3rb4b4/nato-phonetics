@@ -1,0 +1,27 @@
+{
+  "pid": 57528,
+  "command": [
+    "C:\\Users\\lalit\\AppData\\Local\\Android\\Sdk\\emulator\\emulator.exe",
+    "-avd",
+    "NatoRun32Arm",
+    "-sysdir",
+    "C:\\Users\\lalit\\AppData\\Local\\Temp\\nato-run32-arm64-preflight\\arm64-v8a",
+    "-port",
+    "5590",
+    "-accel",
+    "off",
+    "-no-window",
+    "-no-audio",
+    "-no-snapshot",
+    "-no-metrics",
+    "-no-boot-anim",
+    "-gpu",
+    "swiftshader_indirect"
+  ],
+  "exited": true,
+  "exitCode": 1,
+  "serial": "emulator-5590",
+  "host": "AMD64",
+  "avdRoot": "C:\\Users\\lalit\\AppData\\Local\\Temp\\nato-run32-arm64-preflight",
+  "imageDirectory": "C:\\Users\\lalit\\AppData\\Local\\Temp\\nato-run32-arm64-preflight\\arm64-v8a"
+}

@@ -1,0 +1,11 @@
+{
+  "result": "{\"runners\":[],\"total_count\":0}",
+  "exitCode": 0,
+  "command": "gh api repos/c0d3rb4b4/nato-phonetics/actions/runners?per_page=100 (OS/status/labels projection)",
+  "repository": "c0d3rb4b4/nato-phonetics",
+  "purpose": "Read-only P10.8 capability check after Windows rejected an ARM64 AVD",
+  "remoteWorkDispatched": false,
+  "localXcodebuildPresent": false,
+  "date": "2026-11-20",
+  "localXcrunPresent": false
+}

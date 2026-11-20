@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "candidateSha256": "ee08061b86ce98ffb108d7de7e1f94d023ed97601bffdbb85ac3b43675bd3284",
+  "groups": [
+    {
+      "name": "before-1",
+      "measuredBaselines": 21,
+      "maxDeltaPx": 0.00008593749998908606
+    },
+    {
+      "name": "before-2",
+      "measuredBaselines": 21,
+      "maxDeltaPx": 0.00017187499997817213
+    },
+    {
+      "name": "split-half-2",
+      "measuredBaselines": 21,
+      "maxDeltaPx": 0.00017187499997817213
+    },
+    {
+      "name": "split-large-2",
+      "measuredBaselines": 21,
+      "maxDeltaPx": 0.00017187499997817213
+    },
+    {
+      "name": "split-visible-tile-2",
+      "measuredBaselines": 21,
+      "maxDeltaPx": 0.0001015624999922693
+    },
+    {
+      "name": "restored-2",
+      "measuredBaselines": 21,
+      "maxDeltaPx": 0.00017187499997817213
+    },
+    {
+      "name": "returned-1",
+      "measuredBaselines": 21,
+      "maxDeltaPx": 0.00008593749998908606
+    }
+  ],
+  "measuredBaselines": 147
+}

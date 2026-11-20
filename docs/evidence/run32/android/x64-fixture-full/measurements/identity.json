@@ -1,0 +1,170 @@
+{
+  "passed": true,
+  "serial": "emulator-5584",
+  "identities": {
+    "com.natophonetics.app": {
+      "local": "C:\\dev\\apps\\nato-phonetics\\artifacts\\run32\\universal-fixture\\font-release-fixture.apk",
+      "installed": "/data/app/~~7TQiqfMg-GgutCaaFaXHiQ==/com.natophonetics.app-IBpCvPzLMDLzqh7MU5-RJg==/base.apk",
+      "sha256": "a622726f0b3d6d64dba95ebb79200f1bea7dd58a542f068e1674a906378e2153",
+      "expectedSha256": "a622726f0b3d6d64dba95ebb79200f1bea7dd58a542f068e1674a906378e2153",
+      "primaryCpuAbi": "x86_64"
+    },
+    "com.natophonetics.fonttest": {
+      "local": "C:\\dev\\apps\\nato-phonetics\\artifacts\\run32\\runtime-display-observer\\font-composition.apk",
+      "installed": "/data/app/~~L9PI7LGbRDe7JrlycEvU4A==/com.natophonetics.fonttest-8HMn4rQ48umKUQ3NJGl6mw==/base.apk",
+      "sha256": "40ec84630e840ebcd19322b5a0ad11e81c14b968c237c6ffcb4cd2b8e8de3cb1",
+      "expectedSha256": "40ec84630e840ebcd19322b5a0ad11e81c14b968c237c6ffcb4cd2b8e8de3cb1"
+    }
+  },
+  "runtime": "16",
+  "api": "36",
+  "originalFontScale": "1.0",
+  "originalWindowSize": "Physical size: 1080x2400\r\nOverride size: 720x1600",
+  "results": [
+    {
+      "scenario": "primary",
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5584",
+        "shell",
+        "am",
+        "instrument",
+        "--abi",
+        "x86_64",
+        "-w",
+        "-r",
+        "-e",
+        "scenario",
+        "primary",
+        "com.natophonetics.fonttest/com.natophonetics.fonttest.FontScaleFixtureInstrumentation"
+      ],
+      "exitCode": 0,
+      "evidenceComplete": true,
+      "staleCaptures": [],
+      "matchedDisplay": true,
+      "passed": true
+    },
+    {
+      "scenario": "cold2",
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5584",
+        "shell",
+        "am",
+        "instrument",
+        "--abi",
+        "x86_64",
+        "-w",
+        "-r",
+        "-e",
+        "scenario",
+        "cold2",
+        "com.natophonetics.fonttest/com.natophonetics.fonttest.FontScaleFixtureInstrumentation"
+      ],
+      "exitCode": 0,
+      "evidenceComplete": true,
+      "staleCaptures": [],
+      "matchedDisplay": true,
+      "passed": true
+    },
+    {
+      "scenario": "cold085",
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5584",
+        "shell",
+        "am",
+        "instrument",
+        "--abi",
+        "x86_64",
+        "-w",
+        "-r",
+        "-e",
+        "scenario",
+        "cold085",
+        "com.natophonetics.fonttest/com.natophonetics.fonttest.FontScaleFixtureInstrumentation"
+      ],
+      "exitCode": 0,
+      "evidenceComplete": true,
+      "staleCaptures": [],
+      "matchedDisplay": true,
+      "passed": true
+    },
+    {
+      "scenario": "cold13",
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5584",
+        "shell",
+        "am",
+        "instrument",
+        "--abi",
+        "x86_64",
+        "-w",
+        "-r",
+        "-e",
+        "scenario",
+        "cold13",
+        "com.natophonetics.fonttest/com.natophonetics.fonttest.FontScaleFixtureInstrumentation"
+      ],
+      "exitCode": 0,
+      "evidenceComplete": true,
+      "staleCaptures": [],
+      "matchedDisplay": true,
+      "passed": true
+    },
+    {
+      "scenario": "sweep",
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5584",
+        "shell",
+        "am",
+        "instrument",
+        "--abi",
+        "x86_64",
+        "-w",
+        "-r",
+        "-e",
+        "scenario",
+        "sweep",
+        "com.natophonetics.fonttest/com.natophonetics.fonttest.FontScaleFixtureInstrumentation"
+      ],
+      "exitCode": 0,
+      "evidenceComplete": true,
+      "staleCaptures": [],
+      "matchedDisplay": true,
+      "passed": true
+    },
+    {
+      "scenario": "editing",
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5584",
+        "shell",
+        "am",
+        "instrument",
+        "--abi",
+        "x86_64",
+        "-w",
+        "-r",
+        "-e",
+        "scenario",
+        "editing",
+        "com.natophonetics.fonttest/com.natophonetics.fonttest.FontScaleFixtureInstrumentation"
+      ],
+      "exitCode": 0,
+      "evidenceComplete": true,
+      "staleCaptures": [],
+      "matchedDisplay": true,
+      "passed": true
+    }
+  ],
+  "scope": "Separate embedded fixture on identical Release native/Hermes payload; production entry not exercised"
+}

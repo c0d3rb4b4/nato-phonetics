@@ -1,0 +1,19 @@
+{
+  "serial": "emulator-5584",
+  "deviceEpochBefore": "1795187370",
+  "passed": false,
+  "installedSplits": {
+    "base-master.apk": "/data/app/~~XJZ6xbmqLvIhEKKllrQmbQ==/com.natophonetics.app-Oha2bAtDWHg6pNp6RzZ0Fg==/base.apk",
+    "base-arm64_v8a.apk": "/data/app/~~XJZ6xbmqLvIhEKKllrQmbQ==/com.natophonetics.app-Oha2bAtDWHg6pNp6RzZ0Fg==/split_config.arm64_v8a.apk",
+    "base-en.apk": "/data/app/~~XJZ6xbmqLvIhEKKllrQmbQ==/com.natophonetics.app-Oha2bAtDWHg6pNp6RzZ0Fg==/split_config.en.apk",
+    "base-xxhdpi.apk": "/data/app/~~XJZ6xbmqLvIhEKKllrQmbQ==/com.natophonetics.app-Oha2bAtDWHg6pNp6RzZ0Fg==/split_config.xxhdpi.apk"
+  },
+  "primaryCpuAbi": "arm64-v8a",
+  "launch": "Starting: Intent { act=android.intent.action.VIEW dat=natophonetics://converter/... pkg=com.natophonetics.app }\nStatus: ok\nLaunchState: UNKNOWN (0)\nActivity: com.natophonetics.app/.MainActivity\nWaitTime: 655\nComplete",
+  "converterInputReached": false,
+  "resumedActivities": [
+    "topResumedActivity=ActivityRecord{28334535 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t6}"
+  ],
+  "processIdsAtCapture": "",
+  "screenshotSha256": "11046c375cba1274cb6f2a043ee78d8859d1176c070d2ba12d5d5e16bf7cc71c"
+}

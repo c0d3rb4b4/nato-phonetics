@@ -1,0 +1,837 @@
+{
+  "method": "Compare the names, types, flags, virtual addresses, sizes and file bytes of all ELF sections with SHF_ALLOC. SHT_NOBITS has no file bytes. This comparison does not establish runtime equivalence.",
+  "priorApkSha256": "917810609d5d844708cc18593a68da8e3af1ec3582b43127ec9f4847e92fc84d",
+  "currentApkSha256": "06f0a3992bcbbce002b5602d1045c6a5da6d6fa1b9f3b41c4665fa53ef061f48",
+  "libraries": {
+    "lib/x86_64/libappmodules.so": {
+      "differentAllocatedSections": {
+        ".note.gnu.build-id": {
+          "before": {
+            "type": "SHT_NOTE",
+            "flags": 2,
+            "address": 720,
+            "size": 36,
+            "sha256": "be38efa1aecf95811a56aa14a7fe274f8a3fb00664f6766afb6ee28da20d2e46"
+          },
+          "after": {
+            "type": "SHT_NOTE",
+            "flags": 2,
+            "address": 720,
+            "size": 36,
+            "sha256": "02ebb87397e24d63c26f0d4cc9e9fca76c591297586f937fd50816dea7c3149e"
+          }
+        }
+      },
+      "textBytesMatch": true,
+      "allocatedSections": 23
+    },
+    "lib/x86_64/libhermestooling.so": {
+      "differentAllocatedSections": {
+        ".bss": {
+          "before": {
+            "type": "SHT_NOBITS",
+            "flags": 3,
+            "address": 164768,
+            "size": 2146,
+            "sha256": null
+          },
+          "after": {
+            "type": "SHT_NOBITS",
+            "flags": 3,
+            "address": 164752,
+            "size": 2146,
+            "sha256": null
+          }
+        },
+        ".data": {
+          "before": {
+            "type": "SHT_PROGBITS",
+            "flags": 3,
+            "address": 164664,
+            "size": 32,
+            "sha256": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925"
+          },
+          "after": {
+            "type": "SHT_PROGBITS",
+            "flags": 3,
+            "address": 164648,
+            "size": 32,
+            "sha256": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925"
+          }
+        },
+        ".data.rel.ro": {
+          "before": {
+            "type": "SHT_PROGBITS",
+            "flags": 3,
+            "address": 142544,
+            "size": 4056,
+            "sha256": "dc76dc7206fac63ea2063a5ce13f97bdb59126d9832233a122ec8edebdf517c9"
+          },
+          "after": {
+            "type": "SHT_PROGBITS",
+            "flags": 3,
+            "address": 142528,
+            "size": 4056,
+            "sha256": "dc76dc7206fac63ea2063a5ce13f97bdb59126d9832233a122ec8edebdf517c9"
+          }
+        },
+        ".dynamic": {
+          "before": {
+            "type": "SHT_DYNAMIC",
+            "flags": 3,
+            "address": 146616,
+            "size": 512,
+            "sha256": "ef24de92a1628eb5b5d5a82d435e04d9daec8fd1514d94a0552bbabe32e6c8c2"
+          },
+          "after": {
+            "type": "SHT_DYNAMIC",
+            "flags": 3,
+            "address": 146600,
+            "size": 512,
+            "sha256": "04f2cd0bae92d4d1dbd71df278fb91280e649b46c5ed65cd4e09440bdafade93"
+          }
+        },
+        ".dynsym": {
+          "before": {
+            "type": "SHT_DYNSYM",
+            "flags": 2,
+            "address": 744,
+            "size": 6696,
+            "sha256": "7d1d2bbe8b21286c1f71d335cfc635d48a8864400bcf36da8ad34e50a38f855d"
+          },
+          "after": {
+            "type": "SHT_DYNSYM",
+            "flags": 2,
+            "address": 744,
+            "size": 6696,
+            "sha256": "3354b39c96c78ec1127309791460fe3ada87af79eb5cad8d97ed87091401a106"
+          }
+        },
+        ".eh_frame": {
+          "before": {
+            "type": "SHT_PROGBITS",
+            "flags": 2,
+            "address": 59136,
+            "size": 12104,
+            "sha256": "2b2d23e6a3840b7d8386d33720f3f692c949ea5d62938018d94459d3fa476550"
+          },
+          "after": {
+            "type": "SHT_PROGBITS",
+            "flags": 2,
+            "address": 59128,
+            "size": 12104,
+            "sha256": "58afff00e834dab87d716116daea83af447cffeb59159e494d20e6151cac2ebe"
+          }
+        },
+        ".eh_frame_hdr": {
+          "before": {
+            "type": "SHT_PROGBITS",
+            "flags": 2,
+            "address": 56224,
+            "size": 2908,
+            "sha256": "e6fa35d9e19e2f2c70248d515a5b9f15bc6c37ac784b268d8305c010ef134bc3"
+          },
+          "after": {
+            "type": "SHT_PROGBITS",
+            "flags": 2,
+            "address": 56216,
+            "size": 2908,
+            "sha256": "fcf72499fbba3a052d4a279b544ce3d6ef1307f79ffe0b794aa27b61fab9d061"
+          }
+        },
+        ".fini_array": {
+          "before": {
+            "type": "SHT_FINI_ARRAY",
+            "flags": 3,
+            "address": 146600,
+            "size": 16,
+            "sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+          },
+          "after": {
+            "type": "SHT_FINI_ARRAY",
+            "flags": 3,
+            "address": 146584,
+            "size": 16,
+            "sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+          }
+        },
+        ".gcc_except_table": {
+          "before": {
+            "type": "SHT_PROGBITS",
+            "flags": 2,
+            "address": 54352,
+            "size": 1872,
+            "sha256": "dfe4688434abd24d94e41136502ba4742d3dbcc130c36d6083d3fec491939d30"
+          },
+          "after": {
+            "type": "SHT_PROGBITS",
+            "flags": 2,
+            "address": 54344,
+            "size": 1872,
+            "sha256": "dfe4688434abd24d94e41136502ba4742d3dbcc130c36d6083d3fec491939d30"
+          }
+        },
+        ".got": {
+          "before": {
+            "type": "SHT_PROGBITS",
+            "flags": 3,
+            "address": 147128,
+            "size": 344,
+            "sha256": "7c7f15ed27de2f3a51d1da31356b27ea1be15370faa3caab96606e5390ebbd0e"
+          },
+          "after": {
+            "type": "SHT_PROGBITS",
+            "flags": 3,
+            "address": 147112,
+            "size": 344,
+            "sha256": "7c7f15ed27de2f3a51d1da31356b27ea1be15370faa3caab96606e5390ebbd0e"
+          }
+        },
+        ".got.plt": {
+          "before": {
+            "type": "SHT_PROGBITS",
+            "flags": 3,
+            "address": 147472,
+            "size": 808,
+            "sha256": "4ec55dbe966e65da9c1a88501b6b8c6675e96833fd45f21833a9fa5554369204"
+          },
+          "after": {
+            "type": "SHT_PROGBITS",
+            "flags": 3,
+            "address": 147456,
+            "size": 808,
+            "sha256": "3541d2ec3367c7acee9216ebdc5b3a0ac2968cda91b025de7d04e6f1c2ea1c31"
+          }
+        },
+        ".note.gnu.build-id": {
+          "before": {
+            "type": "SHT_NOTE",
+            "flags": 2,
+            "address": 720,
+            "size": 24,
+            "sha256": "7e52e5a1461405c79f5fc90e67ac876aa47e62f367c92e8e18183a70d4466e86"
+          },
+          "after": {
+            "type": "SHT_NOTE",
+            "flags": 2,
+            "address": 720,
+            "size": 24,
+            "sha256": "41b2b9690af179b5f5f89ae3fa7e5c7fe6185198c15deb9cf067ca74e33382fb"
+          }
+        },
+        ".plt": {
+          "before": {
+            "type": "SHT_PROGBITS",
+            "flags": 6,
+            "address": 124576,
+            "size": 1584,
+            "sha256": "be97f165a0a11c8de884f97355c3090f7e687542a476c8b00fbd9f00bab61cd1"
+          },
+          "after": {
+            "type": "SHT_PROGBITS",
+            "flags": 6,
+            "address": 124560,
+            "size": 1584,
+            "sha256": "be97f165a0a11c8de884f97355c3090f7e687542a476c8b00fbd9f00bab61cd1"
+          }
+        },
+        ".rela.dyn": {
+          "before": {
+            "type": "SHT_RELA",
+            "flags": 2,
+            "address": 29424,
+            "size": 12600,
+            "sha256": "cc56d4d4ea4571e99d94efc30704d5ed8bab8bacd209bf01c85063a6c48f8dc7"
+          },
+          "after": {
+            "type": "SHT_RELA",
+            "flags": 2,
+            "address": 29424,
+            "size": 12600,
+            "sha256": "95eced397dd218fed822a8244bee11d289ca251248fcb9504a2d450c0a8c852b"
+          }
+        },
+        ".rela.plt": {
+          "before": {
+            "type": "SHT_RELA",
+            "flags": 66,
+            "address": 42024,
+            "size": 2352,
+            "sha256": "4e9c0936937ae95ecfe298d43f622155c7dfbd0451b8cfa5b5a28222dd4f2412"
+          },
+          "after": {
+            "type": "SHT_RELA",
+            "flags": 66,
+            "address": 42024,
+            "size": 2352,
+            "sha256": "f911f6f9351ce1854ff21c26ed51ed680821a8b284d3ba116e4f2b9166b3fa25"
+          }
+        },
+        ".relro_padding": {
+          "before": {
+            "type": "SHT_NOBITS",
+            "flags": 3,
+            "address": 148280,
+            "size": 3272,
+            "sha256": null
+          },
+          "after": {
+            "type": "SHT_NOBITS",
+            "flags": 3,
+            "address": 148264,
+            "size": 3288,
+            "sha256": null
+          }
+        },
+        ".rodata": {
+          "before": {
+            "type": "SHT_PROGBITS",
+            "flags": 50,
+            "address": 44376,
+            "size": 9976,
+            "sha256": "d83c62c3bf038771bb9d440d3ee8d10faf974e49a1d5c0fe22b82b4aa1f8211e"
+          },
+          "after": {
+            "type": "SHT_PROGBITS",
+            "flags": 50,
+            "address": 44376,
+            "size": 9968,
+            "sha256": "f216717198534eccc70cd15362c8dfa0211cc7da12b13ff00f7e3d7a1aff4ae4"
+          }
+        },
+        ".text": {
+          "before": {
+            "type": "SHT_PROGBITS",
+            "flags": 6,
+            "address": 71248,
+            "size": 53320,
+            "sha256": "25eed1fb210f56b5d1a6dded2b84e3c569bf7a72bf1a65347526aec2d2bc936a"
+          },
+          "after": {
+            "type": "SHT_PROGBITS",
+            "flags": 6,
+            "address": 71232,
+            "size": 53320,
+            "sha256": "6d8a06e662152ccb48e745435d26636fcc3af71c9853e3662f1eb60a28d772b4"
+          }
+        },
+        "pre_merge_jni_libraries": {
+          "before": {
+            "type": "SHT_PROGBITS",
+            "flags": 2097155,
+            "address": 164696,
+            "size": 64,
+            "sha256": "f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b"
+          },
+          "after": {
+            "type": "SHT_PROGBITS",
+            "flags": 2097155,
+            "address": 164680,
+            "size": 64,
+            "sha256": "f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b"
+          }
+        }
+      },
+      "textBytesMatch": false,
+      "allocatedSections": 24
+    },
+    "lib/x86_64/libjsi.so": {
+      "differentAllocatedSections": {
+        ".dynsym": {
+          "before": {
+            "type": "SHT_DYNSYM",
+            "flags": 2,
+            "address": 744,
+            "size": 17400,
+            "sha256": "fe2a0439e810a95637ff8990f98fa51d04b4e100b322189ea6c163b1c0e42ef6"
+          },
+          "after": {
+            "type": "SHT_DYNSYM",
+            "flags": 2,
+            "address": 744,
+            "size": 17400,
+            "sha256": "86a8d7b50425a09543e844b093a5bf3581838f51b0d114b7d3fd4b9ed5a6d912"
+          }
+        },
+        ".note.gnu.build-id": {
+          "before": {
+            "type": "SHT_NOTE",
+            "flags": 2,
+            "address": 720,
+            "size": 24,
+            "sha256": "57024959b78c001bf6643aad497a2f5b10997b4b812c6b91a8788869b8c07d8a"
+          },
+          "after": {
+            "type": "SHT_NOTE",
+            "flags": 2,
+            "address": 720,
+            "size": 24,
+            "sha256": "dc6533c92a43e61d152e30a33790b8c04b10253c2da523f84e8cf1a7f27953b1"
+          }
+        },
+        ".rela.dyn": {
+          "before": {
+            "type": "SHT_RELA",
+            "flags": 2,
+            "address": 57680,
+            "size": 16128,
+            "sha256": "a93bc506faec240eaf6b71acd94b8d8e28f6ce43169e392f9189504b3e9c0caf"
+          },
+          "after": {
+            "type": "SHT_RELA",
+            "flags": 2,
+            "address": 57680,
+            "size": 16128,
+            "sha256": "8e8981eb4c6c0b447053a46e793665bf9bab1cf057dc6da59903844226c0d974"
+          }
+        },
+        ".rodata": {
+          "before": {
+            "type": "SHT_PROGBITS",
+            "flags": 50,
+            "address": 79424,
+            "size": 38256,
+            "sha256": "0dcb45877696de38032a4acb41469e7f10c5ec1a9a39b7cd5bde8c3de0ec3253"
+          },
+          "after": {
+            "type": "SHT_PROGBITS",
+            "flags": 50,
+            "address": 79424,
+            "size": 38256,
+            "sha256": "89c775bc7d068f21f5f857392a3f98341e532e121a43003c5ee621486318a053"
+          }
+        },
+        ".text": {
+          "before": {
+            "type": "SHT_PROGBITS",
+            "flags": 6,
+            "address": 156688,
+            "size": 226022,
+            "sha256": "38733fba925f7a15773adc5183eb69b07b227f069e269e457939cbd8eae7252f"
+          },
+          "after": {
+            "type": "SHT_PROGBITS",
+            "flags": 6,
+            "address": 156688,
+            "size": 226022,
+            "sha256": "17882eb252c8f0d374b004c12baaeb33d7520333d9ed52bcb27724b407719219"
+          }
+        }
+      },
+      "textBytesMatch": false,
+      "allocatedSections": 24
+    },
+    "lib/x86_64/libreact_codegen_safeareacontext.so": {
+      "differentAllocatedSections": {
+        ".dynsym": {
+          "before": {
+            "type": "SHT_DYNSYM",
+            "flags": 2,
+            "address": 760,
+            "size": 9072,
+            "sha256": "ef41f2937b870622316391f1ff06e888c02ac47d0745df228bbf02651f03a95a"
+          },
+          "after": {
+            "type": "SHT_DYNSYM",
+            "flags": 2,
+            "address": 760,
+            "size": 9072,
+            "sha256": "72b9892aceff32d09965571b4784729d0428349801da41e085715f9d005cf526"
+          }
+        },
+        ".note.gnu.build-id": {
+          "before": {
+            "type": "SHT_NOTE",
+            "flags": 2,
+            "address": 720,
+            "size": 36,
+            "sha256": "0d519445af54cd55834b7848d45aee07850e28975650929379521544d9f16a12"
+          },
+          "after": {
+            "type": "SHT_NOTE",
+            "flags": 2,
+            "address": 720,
+            "size": 36,
+            "sha256": "776c0511404f1558bbe4729140d118280679539bbccb31d0a71edca95bef8f84"
+          }
+        },
+        ".rela.dyn": {
+          "before": {
+            "type": "SHT_RELA",
+            "flags": 2,
+            "address": 45584,
+            "size": 10272,
+            "sha256": "842df5ac85fb3c869ce9d805a9dfd1b59d81cb3d6a5e157a58e3a6bffa9d73c1"
+          },
+          "after": {
+            "type": "SHT_RELA",
+            "flags": 2,
+            "address": 45584,
+            "size": 10272,
+            "sha256": "aa09f855007ba2a467e1dd9269a2623dd773c3d845e1c37f47ccf7a73bc1fef5"
+          }
+        },
+        ".rodata": {
+          "before": {
+            "type": "SHT_PROGBITS",
+            "flags": 50,
+            "address": 59344,
+            "size": 7956,
+            "sha256": "ee199134f355b8ebda6a8d34ad03cac0cf8c50f31d7175bd6c7ba2c422a62285"
+          },
+          "after": {
+            "type": "SHT_PROGBITS",
+            "flags": 50,
+            "address": 59344,
+            "size": 7956,
+            "sha256": "adbf10c64b1e8648abe2df9d56fa1b8a57e01d2c58922608ab968e218a732f6d"
+          }
+        },
+        ".text": {
+          "before": {
+            "type": "SHT_PROGBITS",
+            "flags": 6,
+            "address": 82176,
+            "size": 67778,
+            "sha256": "89da7ff92af5d9a9923c424a18135c1f4ccd224b8163499281fe4fbf7330deaa"
+          },
+          "after": {
+            "type": "SHT_PROGBITS",
+            "flags": 6,
+            "address": 82176,
+            "size": 67778,
+            "sha256": "2a4313a45f7cc9bb3a916f683867ba388a8d6f16aa1aa01071ccc056af46ed75"
+          }
+        }
+      },
+      "textBytesMatch": false,
+      "allocatedSections": 23
+    },
+    "lib/x86_64/libreactnative.so": {
+      "differentAllocatedSections": {
+        ".bss": {
+          "before": {
+            "type": "SHT_NOBITS",
+            "flags": 3,
+            "address": 6140048,
+            "size": 123504,
+            "sha256": null
+          },
+          "after": {
+            "type": "SHT_NOBITS",
+            "flags": 3,
+            "address": 6139792,
+            "size": 123504,
+            "sha256": null
+          }
+        },
+        ".data": {
+          "before": {
+            "type": "SHT_PROGBITS",
+            "flags": 3,
+            "address": 6135808,
+            "size": 4036,
+            "sha256": "fe5cd1db8c62016167c954567a24c21c7d4d3720955bdfa3937ddc370362581b"
+          },
+          "after": {
+            "type": "SHT_PROGBITS",
+            "flags": 3,
+            "address": 6135552,
+            "size": 4036,
+            "sha256": "fe5cd1db8c62016167c954567a24c21c7d4d3720955bdfa3937ddc370362581b"
+          }
+        },
+        ".data.rel.ro": {
+          "before": {
+            "type": "SHT_PROGBITS",
+            "flags": 3,
+            "address": 5973584,
+            "size": 123992,
+            "sha256": "d901dabc5dce0607e96dae33e6131dd6db4d818c9cd3c9a70c6e93450cf0cd2e"
+          },
+          "after": {
+            "type": "SHT_PROGBITS",
+            "flags": 3,
+            "address": 5973328,
+            "size": 123992,
+            "sha256": "d901dabc5dce0607e96dae33e6131dd6db4d818c9cd3c9a70c6e93450cf0cd2e"
+          }
+        },
+        ".dynamic": {
+          "before": {
+            "type": "SHT_DYNAMIC",
+            "flags": 3,
+            "address": 6097664,
+            "size": 512,
+            "sha256": "d1caf59dd70a3536798430e3eccd4ef9a2a490e774a971c3d6f25364ec46a130"
+          },
+          "after": {
+            "type": "SHT_DYNAMIC",
+            "flags": 3,
+            "address": 6097408,
+            "size": 512,
+            "sha256": "c7968507b68c9479f2ea827c791928345ebb4542dcc45e6d2faa2a4ef6869aaf"
+          }
+        },
+        ".dynsym": {
+          "before": {
+            "type": "SHT_DYNSYM",
+            "flags": 2,
+            "address": 744,
+            "size": 166248,
+            "sha256": "24627c071dd6b5878da42c3715ac2aea6e862658a857fd257fe0048542c26852"
+          },
+          "after": {
+            "type": "SHT_DYNSYM",
+            "flags": 2,
+            "address": 744,
+            "size": 166248,
+            "sha256": "e248da15bd15bf2908482002bb2a5b4266cd525a98f58a6a25e3ea739fff3258"
+          }
+        },
+        ".eh_frame": {
+          "before": {
+            "type": "SHT_PROGBITS",
+            "flags": 2,
+            "address": 1945936,
+            "size": 477324,
+            "sha256": "7e753f21410ee6d1086f95221caa257e182bf90daef604e74c22d6675d006628"
+          },
+          "after": {
+            "type": "SHT_PROGBITS",
+            "flags": 2,
+            "address": 1945680,
+            "size": 477324,
+            "sha256": "7e753f21410ee6d1086f95221caa257e182bf90daef604e74c22d6675d006628"
+          }
+        },
+        ".eh_frame_hdr": {
+          "before": {
+            "type": "SHT_PROGBITS",
+            "flags": 2,
+            "address": 1854624,
+            "size": 91308,
+            "sha256": "2d70a5fc67378f914d4518057ec912a8cb839acd8da6a691d34bb0a48c95a578"
+          },
+          "after": {
+            "type": "SHT_PROGBITS",
+            "flags": 2,
+            "address": 1854368,
+            "size": 91308,
+            "sha256": "2d70a5fc67378f914d4518057ec912a8cb839acd8da6a691d34bb0a48c95a578"
+          }
+        },
+        ".fini_array": {
+          "before": {
+            "type": "SHT_FINI_ARRAY",
+            "flags": 3,
+            "address": 6097576,
+            "size": 16,
+            "sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+          },
+          "after": {
+            "type": "SHT_FINI_ARRAY",
+            "flags": 3,
+            "address": 6097320,
+            "size": 16,
+            "sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+          }
+        },
+        ".gcc_except_table": {
+          "before": {
+            "type": "SHT_PROGBITS",
+            "flags": 2,
+            "address": 1660580,
+            "size": 194044,
+            "sha256": "cb562197efefb69d3d5200d5136099ea4921c0fa43846346e6e82f51317a4701"
+          },
+          "after": {
+            "type": "SHT_PROGBITS",
+            "flags": 2,
+            "address": 1660324,
+            "size": 194044,
+            "sha256": "cb562197efefb69d3d5200d5136099ea4921c0fa43846346e6e82f51317a4701"
+          }
+        },
+        ".got": {
+          "before": {
+            "type": "SHT_PROGBITS",
+            "flags": 3,
+            "address": 6098176,
+            "size": 10360,
+            "sha256": "e86ab8335a40615abfa79c143092a7adcd22b32237120dfae8fed0f7359db3e7"
+          },
+          "after": {
+            "type": "SHT_PROGBITS",
+            "flags": 3,
+            "address": 6097920,
+            "size": 10360,
+            "sha256": "e86ab8335a40615abfa79c143092a7adcd22b32237120dfae8fed0f7359db3e7"
+          }
+        },
+        ".got.plt": {
+          "before": {
+            "type": "SHT_PROGBITS",
+            "flags": 3,
+            "address": 6108536,
+            "size": 10880,
+            "sha256": "9264b6bbd1667c704d0454efe5b72793f6adfee9662bc26d72919cdd42b772aa"
+          },
+          "after": {
+            "type": "SHT_PROGBITS",
+            "flags": 3,
+            "address": 6108280,
+            "size": 10880,
+            "sha256": "dacb25599ddb3477e3960c90906574a1e01388f6cd20785a02719f70f8608480"
+          }
+        },
+        ".init_array": {
+          "before": {
+            "type": "SHT_INIT_ARRAY",
+            "flags": 3,
+            "address": 6097592,
+            "size": 72,
+            "sha256": "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          },
+          "after": {
+            "type": "SHT_INIT_ARRAY",
+            "flags": 3,
+            "address": 6097336,
+            "size": 72,
+            "sha256": "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          }
+        },
+        ".note.gnu.build-id": {
+          "before": {
+            "type": "SHT_NOTE",
+            "flags": 2,
+            "address": 720,
+            "size": 24,
+            "sha256": "65b95a7da32914d7bddc316b8812a056f6c9ff9f3211e0ae07a58288a046676e"
+          },
+          "after": {
+            "type": "SHT_NOTE",
+            "flags": 2,
+            "address": 720,
+            "size": 24,
+            "sha256": "306872845051e9e5ec1679400e56a9656850e1b2ffa70acfa1a09178851ed273"
+          }
+        },
+        ".plt": {
+          "before": {
+            "type": "SHT_PROGBITS",
+            "flags": 6,
+            "address": 5935472,
+            "size": 21728,
+            "sha256": "70d059db6d72aed5a695efdb91248877c99deae0bf641b6cfc30dd66b9f0dca3"
+          },
+          "after": {
+            "type": "SHT_PROGBITS",
+            "flags": 6,
+            "address": 5935216,
+            "size": 21728,
+            "sha256": "70d059db6d72aed5a695efdb91248877c99deae0bf641b6cfc30dd66b9f0dca3"
+          }
+        },
+        ".rela.dyn": {
+          "before": {
+            "type": "SHT_RELA",
+            "flags": 2,
+            "address": 950808,
+            "size": 375144,
+            "sha256": "7ee06ec8cc8f5e7d526c82164fa73b4d418fcecd7fe1b25208f201624140876a"
+          },
+          "after": {
+            "type": "SHT_RELA",
+            "flags": 2,
+            "address": 950808,
+            "size": 375144,
+            "sha256": "64de699c5dfbd7390d4c92e6cf0b29d46b2c3482725c3a898ed3776ad4cb0c95"
+          }
+        },
+        ".rela.plt": {
+          "before": {
+            "type": "SHT_RELA",
+            "flags": 66,
+            "address": 1325952,
+            "size": 32568,
+            "sha256": "e1d08c59581a6ad1ac6e260c5ff6cd3d3b2c9340b1f82b2d011ab42ab02d2c85"
+          },
+          "after": {
+            "type": "SHT_RELA",
+            "flags": 66,
+            "address": 1325952,
+            "size": 32568,
+            "sha256": "4a713c3ba192780e2cc2880662be3545cc124d06d60be264a68191af097fa842"
+          }
+        },
+        ".relro_padding": {
+          "before": {
+            "type": "SHT_NOBITS",
+            "flags": 3,
+            "address": 6119416,
+            "size": 8,
+            "sha256": null
+          },
+          "after": {
+            "type": "SHT_NOBITS",
+            "flags": 3,
+            "address": 6119160,
+            "size": 264,
+            "sha256": null
+          }
+        },
+        ".rodata": {
+          "before": {
+            "type": "SHT_PROGBITS",
+            "flags": 50,
+            "address": 1358528,
+            "size": 302052,
+            "sha256": "6ac877e342111e600e33007194cf0d683a32b9f9bc2ffd07875742dd928357f3"
+          },
+          "after": {
+            "type": "SHT_PROGBITS",
+            "flags": 50,
+            "address": 1358528,
+            "size": 301796,
+            "sha256": "1dfeed958adc817dc7457ea44ea2e82560711ee26ed0f7a1ab69a10b591c2630"
+          }
+        },
+        ".text": {
+          "before": {
+            "type": "SHT_PROGBITS",
+            "flags": 6,
+            "address": 2423264,
+            "size": 3512199,
+            "sha256": "b113f098bba3d264e64b2e1d156fa2c3220229447be5ec395d978e446fa6ac33"
+          },
+          "after": {
+            "type": "SHT_PROGBITS",
+            "flags": 6,
+            "address": 2423008,
+            "size": 3512199,
+            "sha256": "73ca2a8cf13a0e943ac2dbecda85032ab137f44177b0efd2f8b087a64e2a7930"
+          }
+        },
+        "pre_merge_jni_libraries": {
+          "before": {
+            "type": "SHT_PROGBITS",
+            "flags": 2097155,
+            "address": 6139848,
+            "size": 192,
+            "sha256": "5d89f056865052bcb89c910d2d62872e029fb273c3db03f8968a52a41593c1b5"
+          },
+          "after": {
+            "type": "SHT_PROGBITS",
+            "flags": 2097155,
+            "address": 6139592,
+            "size": 192,
+            "sha256": "5d89f056865052bcb89c910d2d62872e029fb273c3db03f8968a52a41593c1b5"
+          }
+        }
+      },
+      "textBytesMatch": false,
+      "allocatedSections": 25
+    }
+  }
+}

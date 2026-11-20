@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\dev\apps\nato-phonetics\docs\evidence\run32\android\api30-abi-smoke.py", line 140, in <module>
+    main()
+  File "C:\dev\apps\nato-phonetics\docs\evidence\run32\android\api30-abi-smoke.py", line 92, in main
+    product.wait_file('ready.json', 45)
+  File "C:\dev\apps\nato-phonetics\docs\evidence\run30\android\observe-product.py", line 22, in wait_file
+    raise AssertionError('Missing native observation: '+name)
+AssertionError: Missing native observation: ready.json

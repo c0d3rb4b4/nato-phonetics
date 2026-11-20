@@ -1,0 +1,24 @@
+{
+  "serial": "emulator-5584",
+  "librarySha256": {
+    "libappmodules.so": "729c834bfe3c0b401e4f7f365e5290473e92dc4ffb1ae0a80985c98c4000125f",
+    "libc++_shared.so": "3e852764502d06e0cf1080d532ae7c608b7649d946a3a9d7e84e3d4b7d683214",
+    "libfbjni.so": "a9e35ba55d3f956920281f519385f8a72475ee24819799cb08375fdd4cce2b22",
+    "libhermes.so": "5705c7e2cf51fcd3befa825ae2a6717524037b368cdac005a7a63c4a92ef4467",
+    "libhermestooling.so": "ecd6dc7634ba67be0db3745fb8c184dbba1d2b99376991182b1d1095af711eec",
+    "libimagepipeline.so": "1b377992e4256fa9398ec057722f84a359c7d588e570c8a41f51d930c19ece7d",
+    "libjsi.so": "8efbb61e51099ee65c430424e275eaf94a392bf8e74f579d60b58d7645758069",
+    "libnative-filters.so": "4294b57460e70a6351ce7ae2733a79c088c907dfa54673a657227ec5bb669594",
+    "libnative-imagetranscoder.so": "2aed28298a25afd52ac670cf9682398c6c7ba42a57195c01efd565e7ddfe17ca",
+    "libreact_codegen_safeareacontext.so": "aea51cb35acac184f05d26db3a0cf4e51663703540ced565f2942bb6013e73d7",
+    "libreactnative.so": "48975601a37555a6e53396fcd3a0697bfd5630223e61ffdec273afe24a82b6e2"
+  },
+  "passed": false,
+  "apkSha256": "ee08061b86ce98ffb108d7de7e1f94d023ed97601bffdbb85ac3b43675bd3284",
+  "abi": "arm64-v8a",
+  "binarySha256": "fe94d1805dac7083901a2c47b7a2d81df6171799c576976dd28fcbb26bfdfc03",
+  "exitCode": 1,
+  "stdout": "",
+  "stderr": "CANNOT LINK EXECUTABLE \"./font-environment\": library \"libreactnative.so\" not found: needed by main executable\n",
+  "removedOwnedTestDirectory": true
+}

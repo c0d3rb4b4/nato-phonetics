@@ -1,0 +1,836 @@
+{
+  "verifiedProcesses": 27,
+  "existingRejectedControls": 2,
+  "unclassifiedOrUnexpected": 0,
+  "savedPngs": 183,
+  "invalidPngs": [],
+  "observations": [
+    {
+      "observation": "android\\api30-x86-media\\mapped-libraries.json",
+      "status": "verified",
+      "sha256": "ee08061b86ce98ffb108d7de7e1f94d023ed97601bffdbb85ac3b43675bd3284",
+      "abi": "x86",
+      "pid": 7283,
+      "details": {
+        "libreactnative.so": [
+          {
+            "path": "/data/app/~~GcW4VMxYgoUug3gPm3SZtQ==/com.natophonetics.app-2x0jJtMLaA0P-qXT6UErJQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 28164096
+          }
+        ],
+        "libhermes.so": [
+          {
+            "path": "/data/app/~~GcW4VMxYgoUug3gPm3SZtQ==/com.natophonetics.app-2x0jJtMLaA0P-qXT6UErJQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 24084480
+          }
+        ],
+        "libjsi.so": [
+          {
+            "path": "/data/app/~~GcW4VMxYgoUug3gPm3SZtQ==/com.natophonetics.app-2x0jJtMLaA0P-qXT6UErJQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 26869760
+          }
+        ]
+      }
+    },
+    {
+      "observation": "android\\api33-reference3\\mapped-libraries.json",
+      "status": "verified",
+      "sha256": "ce74de3404a2a18bce416dca21d8fcd86d6fe88b69744cf90e2ac53e84e66331",
+      "abi": "x86_64",
+      "pid": 8636,
+      "details": {
+        "libreactnative.so": [
+          {
+            "path": "/data/app/~~yo5DuF9BcTHKmSrGGrQqxw==/com.natophonetics.app-WRl30VjBc02t8uTTtLe6fQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 9142272
+          }
+        ],
+        "libhermes.so": [
+          {
+            "path": "/data/app/~~yo5DuF9BcTHKmSrGGrQqxw==/com.natophonetics.app-WRl30VjBc02t8uTTtLe6fQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 5423104
+          }
+        ],
+        "libjsi.so": [
+          {
+            "path": "/data/app/~~yo5DuF9BcTHKmSrGGrQqxw==/com.natophonetics.app-WRl30VjBc02t8uTTtLe6fQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 7815168
+          }
+        ]
+      }
+    },
+    {
+      "observation": "android\\api33-universal\\mapped-libraries.json",
+      "status": "verified",
+      "sha256": "ee08061b86ce98ffb108d7de7e1f94d023ed97601bffdbb85ac3b43675bd3284",
+      "abi": "x86_64",
+      "pid": 18190,
+      "details": {
+        "libreactnative.so": [
+          {
+            "path": "/data/app/~~6gx-2m2xX4f4SdW0MRJTlA==/com.natophonetics.app-9Yglo1e55p_L-QAHy129pQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 39845888
+          }
+        ],
+        "libhermes.so": [
+          {
+            "path": "/data/app/~~6gx-2m2xX4f4SdW0MRJTlA==/com.natophonetics.app-9Yglo1e55p_L-QAHy129pQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 36126720
+          }
+        ],
+        "libjsi.so": [
+          {
+            "path": "/data/app/~~6gx-2m2xX4f4SdW0MRJTlA==/com.natophonetics.app-9Yglo1e55p_L-QAHy129pQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 38518784
+          }
+        ]
+      }
+    },
+    {
+      "observation": "android\\converter-api33-reference2\\mapped-libraries.json",
+      "status": "verified",
+      "sha256": "ce74de3404a2a18bce416dca21d8fcd86d6fe88b69744cf90e2ac53e84e66331",
+      "abi": "x86_64",
+      "pid": 15195,
+      "details": {
+        "libreactnative.so": [
+          {
+            "path": "/data/app/~~yo5DuF9BcTHKmSrGGrQqxw==/com.natophonetics.app-WRl30VjBc02t8uTTtLe6fQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 9142272
+          }
+        ],
+        "libhermes.so": [
+          {
+            "path": "/data/app/~~yo5DuF9BcTHKmSrGGrQqxw==/com.natophonetics.app-WRl30VjBc02t8uTTtLe6fQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 5423104
+          }
+        ],
+        "libjsi.so": [
+          {
+            "path": "/data/app/~~yo5DuF9BcTHKmSrGGrQqxw==/com.natophonetics.app-WRl30VjBc02t8uTTtLe6fQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 7815168
+          }
+        ]
+      }
+    },
+    {
+      "observation": "android\\converter-universal\\mapped-libraries.json",
+      "status": "verified",
+      "sha256": "ee08061b86ce98ffb108d7de7e1f94d023ed97601bffdbb85ac3b43675bd3284",
+      "abi": "x86_64",
+      "pid": 19919,
+      "details": {
+        "libreactnative.so": [
+          {
+            "path": "/data/app/~~6gx-2m2xX4f4SdW0MRJTlA==/com.natophonetics.app-9Yglo1e55p_L-QAHy129pQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 39845888
+          }
+        ],
+        "libhermes.so": [
+          {
+            "path": "/data/app/~~6gx-2m2xX4f4SdW0MRJTlA==/com.natophonetics.app-9Yglo1e55p_L-QAHy129pQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 36126720
+          }
+        ],
+        "libjsi.so": [
+          {
+            "path": "/data/app/~~6gx-2m2xX4f4SdW0MRJTlA==/com.natophonetics.app-9Yglo1e55p_L-QAHy129pQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 38518784
+          }
+        ]
+      }
+    },
+    {
+      "observation": "android\\practice-api33-reference\\mappings.json",
+      "status": "verified",
+      "sha256": "ce74de3404a2a18bce416dca21d8fcd86d6fe88b69744cf90e2ac53e84e66331",
+      "abi": "x86_64",
+      "pid": 16298,
+      "details": {
+        "libreactnative.so": [
+          {
+            "path": "/data/app/~~yo5DuF9BcTHKmSrGGrQqxw==/com.natophonetics.app-WRl30VjBc02t8uTTtLe6fQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 9142272
+          }
+        ],
+        "libhermes.so": [
+          {
+            "path": "/data/app/~~yo5DuF9BcTHKmSrGGrQqxw==/com.natophonetics.app-WRl30VjBc02t8uTTtLe6fQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 5423104
+          }
+        ],
+        "libjsi.so": [
+          {
+            "path": "/data/app/~~yo5DuF9BcTHKmSrGGrQqxw==/com.natophonetics.app-WRl30VjBc02t8uTTtLe6fQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 7815168
+          }
+        ]
+      }
+    },
+    {
+      "observation": "android\\practice-api33-universal\\mappings.json",
+      "status": "verified",
+      "sha256": "ee08061b86ce98ffb108d7de7e1f94d023ed97601bffdbb85ac3b43675bd3284",
+      "abi": "x86_64",
+      "pid": 23531,
+      "details": {
+        "libreactnative.so": [
+          {
+            "path": "/data/app/~~6gx-2m2xX4f4SdW0MRJTlA==/com.natophonetics.app-9Yglo1e55p_L-QAHy129pQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 39845888
+          }
+        ],
+        "libhermes.so": [
+          {
+            "path": "/data/app/~~6gx-2m2xX4f4SdW0MRJTlA==/com.natophonetics.app-9Yglo1e55p_L-QAHy129pQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 36126720
+          }
+        ],
+        "libjsi.so": [
+          {
+            "path": "/data/app/~~6gx-2m2xX4f4SdW0MRJTlA==/com.natophonetics.app-9Yglo1e55p_L-QAHy129pQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 38518784
+          }
+        ]
+      }
+    },
+    {
+      "observation": "android\\practice-api36-universal\\mappings.json",
+      "status": "verified",
+      "sha256": "ee08061b86ce98ffb108d7de7e1f94d023ed97601bffdbb85ac3b43675bd3284",
+      "abi": "x86_64",
+      "pid": 22858,
+      "details": {
+        "libreactnative.so": [
+          {
+            "path": "/data/app/~~RaTbzO1lGp6BcdlUgAIzrg==/com.natophonetics.app-AlvDeDweYDHe3IxYVLZjxQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 39845888
+          }
+        ],
+        "libhermes.so": [
+          {
+            "path": "/data/app/~~RaTbzO1lGp6BcdlUgAIzrg==/com.natophonetics.app-AlvDeDweYDHe3IxYVLZjxQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 36126720
+          }
+        ],
+        "libjsi.so": [
+          {
+            "path": "/data/app/~~RaTbzO1lGp6BcdlUgAIzrg==/com.natophonetics.app-AlvDeDweYDHe3IxYVLZjxQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 38518784
+          }
+        ]
+      }
+    },
+    {
+      "observation": "android\\quiz-api33-reference\\mapped-libraries.json",
+      "status": "verified",
+      "sha256": "ce74de3404a2a18bce416dca21d8fcd86d6fe88b69744cf90e2ac53e84e66331",
+      "abi": "x86_64",
+      "pid": 10390,
+      "details": {
+        "libreactnative.so": [
+          {
+            "path": "/data/app/~~yo5DuF9BcTHKmSrGGrQqxw==/com.natophonetics.app-WRl30VjBc02t8uTTtLe6fQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 9142272
+          }
+        ],
+        "libhermes.so": [
+          {
+            "path": "/data/app/~~yo5DuF9BcTHKmSrGGrQqxw==/com.natophonetics.app-WRl30VjBc02t8uTTtLe6fQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 5423104
+          }
+        ],
+        "libjsi.so": [
+          {
+            "path": "/data/app/~~yo5DuF9BcTHKmSrGGrQqxw==/com.natophonetics.app-WRl30VjBc02t8uTTtLe6fQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 7815168
+          }
+        ]
+      }
+    },
+    {
+      "observation": "android\\quiz-api33-universal\\mapped-libraries.json",
+      "status": "verified",
+      "sha256": "ee08061b86ce98ffb108d7de7e1f94d023ed97601bffdbb85ac3b43675bd3284",
+      "abi": "x86_64",
+      "pid": 21016,
+      "details": {
+        "libreactnative.so": [
+          {
+            "path": "/data/app/~~6gx-2m2xX4f4SdW0MRJTlA==/com.natophonetics.app-9Yglo1e55p_L-QAHy129pQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 39845888
+          }
+        ],
+        "libhermes.so": [
+          {
+            "path": "/data/app/~~6gx-2m2xX4f4SdW0MRJTlA==/com.natophonetics.app-9Yglo1e55p_L-QAHy129pQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 36126720
+          }
+        ],
+        "libjsi.so": [
+          {
+            "path": "/data/app/~~6gx-2m2xX4f4SdW0MRJTlA==/com.natophonetics.app-9Yglo1e55p_L-QAHy129pQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 38518784
+          }
+        ]
+      }
+    },
+    {
+      "observation": "android\\quiz-api36-universal\\mapped-libraries.json",
+      "status": "verified",
+      "sha256": "ee08061b86ce98ffb108d7de7e1f94d023ed97601bffdbb85ac3b43675bd3284",
+      "abi": "x86_64",
+      "pid": 20616,
+      "details": {
+        "libreactnative.so": [
+          {
+            "path": "/data/app/~~RaTbzO1lGp6BcdlUgAIzrg==/com.natophonetics.app-AlvDeDweYDHe3IxYVLZjxQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 39845888
+          }
+        ],
+        "libhermes.so": [
+          {
+            "path": "/data/app/~~RaTbzO1lGp6BcdlUgAIzrg==/com.natophonetics.app-AlvDeDweYDHe3IxYVLZjxQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 36126720
+          }
+        ],
+        "libjsi.so": [
+          {
+            "path": "/data/app/~~RaTbzO1lGp6BcdlUgAIzrg==/com.natophonetics.app-AlvDeDweYDHe3IxYVLZjxQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 38518784
+          }
+        ]
+      }
+    },
+    {
+      "observation": "android\\quiz-arm64\\mapped-libraries.json",
+      "status": "existing forced ARM control rejected",
+      "sha256": "ee08061b86ce98ffb108d7de7e1f94d023ed97601bffdbb85ac3b43675bd3284",
+      "abi": "arm64-v8a",
+      "pid": 9722,
+      "details": "No executable mapping and ELF header for lib/arm64-v8a/libreactnative.so at offset 8945664"
+    },
+    {
+      "observation": "android\\runtime-calibration\\mappings.json",
+      "status": "verified",
+      "sha256": "ce74de3404a2a18bce416dca21d8fcd86d6fe88b69744cf90e2ac53e84e66331",
+      "abi": "x86_64",
+      "pid": 7040,
+      "details": {
+        "libreactnative.so": [
+          {
+            "path": "/data/app/~~pH8o533-yTgM72dPprIrjQ==/com.natophonetics.app-DhDWwUl-YpFbsxla_jD6yA==/base.apk",
+            "permissions": "r-xp",
+            "offset": 9142272
+          }
+        ],
+        "libhermes.so": [
+          {
+            "path": "/data/app/~~pH8o533-yTgM72dPprIrjQ==/com.natophonetics.app-DhDWwUl-YpFbsxla_jD6yA==/base.apk",
+            "permissions": "r-xp",
+            "offset": 5423104
+          }
+        ],
+        "libjsi.so": [
+          {
+            "path": "/data/app/~~pH8o533-yTgM72dPprIrjQ==/com.natophonetics.app-DhDWwUl-YpFbsxla_jD6yA==/base.apk",
+            "permissions": "r-xp",
+            "offset": 7815168
+          }
+        ]
+      }
+    },
+    {
+      "observation": "android\\runtime-calibration-edit\\measurements\\editing-mappings.json",
+      "status": "verified",
+      "sha256": "ac14df7d826ca2044a0f664e757f35346be7a2c63437d737906a40bc6ebf859e",
+      "abi": "x86_64",
+      "pid": 7414,
+      "details": {
+        "libreactnative.so": [
+          {
+            "path": "/data/app/~~Et8ohTRd7igM50WLOoXt0w==/com.natophonetics.app-cFVNQ5XLRZSCH9DtnKHhGQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 9142272
+          }
+        ],
+        "libhermes.so": [
+          {
+            "path": "/data/app/~~Et8ohTRd7igM50WLOoXt0w==/com.natophonetics.app-cFVNQ5XLRZSCH9DtnKHhGQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 5423104
+          }
+        ],
+        "libjsi.so": [
+          {
+            "path": "/data/app/~~Et8ohTRd7igM50WLOoXt0w==/com.natophonetics.app-cFVNQ5XLRZSCH9DtnKHhGQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 7815168
+          }
+        ]
+      }
+    },
+    {
+      "observation": "android\\runtime-calibration-edit2\\measurements\\editing-mappings.json",
+      "status": "verified",
+      "sha256": "ac14df7d826ca2044a0f664e757f35346be7a2c63437d737906a40bc6ebf859e",
+      "abi": "x86_64",
+      "pid": 7861,
+      "details": {
+        "libreactnative.so": [
+          {
+            "path": "/data/app/~~6SlXB2F8rfpmeetrPHTJrg==/com.natophonetics.app-5rKZCghD0_0o6p0EKPru6A==/base.apk",
+            "permissions": "r-xp",
+            "offset": 9142272
+          }
+        ],
+        "libhermes.so": [
+          {
+            "path": "/data/app/~~6SlXB2F8rfpmeetrPHTJrg==/com.natophonetics.app-5rKZCghD0_0o6p0EKPru6A==/base.apk",
+            "permissions": "r-xp",
+            "offset": 5423104
+          }
+        ],
+        "libjsi.so": [
+          {
+            "path": "/data/app/~~6SlXB2F8rfpmeetrPHTJrg==/com.natophonetics.app-5rKZCghD0_0o6p0EKPru6A==/base.apk",
+            "permissions": "r-xp",
+            "offset": 7815168
+          }
+        ]
+      }
+    },
+    {
+      "observation": "android\\x64-fixture-full\\measurements\\cold085-mappings.json",
+      "status": "verified",
+      "sha256": "a622726f0b3d6d64dba95ebb79200f1bea7dd58a542f068e1674a906378e2153",
+      "abi": "x86_64",
+      "pid": 18886,
+      "details": {
+        "libreactnative.so": [
+          {
+            "path": "/data/app/~~7TQiqfMg-GgutCaaFaXHiQ==/com.natophonetics.app-IBpCvPzLMDLzqh7MU5-RJg==/base.apk",
+            "permissions": "r-xp",
+            "offset": 39845888
+          }
+        ],
+        "libhermes.so": [
+          {
+            "path": "/data/app/~~7TQiqfMg-GgutCaaFaXHiQ==/com.natophonetics.app-IBpCvPzLMDLzqh7MU5-RJg==/base.apk",
+            "permissions": "r-xp",
+            "offset": 36126720
+          }
+        ],
+        "libjsi.so": [
+          {
+            "path": "/data/app/~~7TQiqfMg-GgutCaaFaXHiQ==/com.natophonetics.app-IBpCvPzLMDLzqh7MU5-RJg==/base.apk",
+            "permissions": "r-xp",
+            "offset": 38518784
+          }
+        ]
+      }
+    },
+    {
+      "observation": "android\\x64-fixture-full\\measurements\\cold13-mappings.json",
+      "status": "verified",
+      "sha256": "a622726f0b3d6d64dba95ebb79200f1bea7dd58a542f068e1674a906378e2153",
+      "abi": "x86_64",
+      "pid": 18998,
+      "details": {
+        "libreactnative.so": [
+          {
+            "path": "/data/app/~~7TQiqfMg-GgutCaaFaXHiQ==/com.natophonetics.app-IBpCvPzLMDLzqh7MU5-RJg==/base.apk",
+            "permissions": "r-xp",
+            "offset": 39845888
+          }
+        ],
+        "libhermes.so": [
+          {
+            "path": "/data/app/~~7TQiqfMg-GgutCaaFaXHiQ==/com.natophonetics.app-IBpCvPzLMDLzqh7MU5-RJg==/base.apk",
+            "permissions": "r-xp",
+            "offset": 36126720
+          }
+        ],
+        "libjsi.so": [
+          {
+            "path": "/data/app/~~7TQiqfMg-GgutCaaFaXHiQ==/com.natophonetics.app-IBpCvPzLMDLzqh7MU5-RJg==/base.apk",
+            "permissions": "r-xp",
+            "offset": 38518784
+          }
+        ]
+      }
+    },
+    {
+      "observation": "android\\x64-fixture-full\\measurements\\cold2-mappings.json",
+      "status": "verified",
+      "sha256": "a622726f0b3d6d64dba95ebb79200f1bea7dd58a542f068e1674a906378e2153",
+      "abi": "x86_64",
+      "pid": 18738,
+      "details": {
+        "libreactnative.so": [
+          {
+            "path": "/data/app/~~7TQiqfMg-GgutCaaFaXHiQ==/com.natophonetics.app-IBpCvPzLMDLzqh7MU5-RJg==/base.apk",
+            "permissions": "r-xp",
+            "offset": 39845888
+          }
+        ],
+        "libhermes.so": [
+          {
+            "path": "/data/app/~~7TQiqfMg-GgutCaaFaXHiQ==/com.natophonetics.app-IBpCvPzLMDLzqh7MU5-RJg==/base.apk",
+            "permissions": "r-xp",
+            "offset": 36126720
+          }
+        ],
+        "libjsi.so": [
+          {
+            "path": "/data/app/~~7TQiqfMg-GgutCaaFaXHiQ==/com.natophonetics.app-IBpCvPzLMDLzqh7MU5-RJg==/base.apk",
+            "permissions": "r-xp",
+            "offset": 38518784
+          }
+        ]
+      }
+    },
+    {
+      "observation": "android\\x64-fixture-full\\measurements\\editing-mappings.json",
+      "status": "verified",
+      "sha256": "a622726f0b3d6d64dba95ebb79200f1bea7dd58a542f068e1674a906378e2153",
+      "abi": "x86_64",
+      "pid": 19346,
+      "details": {
+        "libreactnative.so": [
+          {
+            "path": "/data/app/~~7TQiqfMg-GgutCaaFaXHiQ==/com.natophonetics.app-IBpCvPzLMDLzqh7MU5-RJg==/base.apk",
+            "permissions": "r-xp",
+            "offset": 39845888
+          }
+        ],
+        "libhermes.so": [
+          {
+            "path": "/data/app/~~7TQiqfMg-GgutCaaFaXHiQ==/com.natophonetics.app-IBpCvPzLMDLzqh7MU5-RJg==/base.apk",
+            "permissions": "r-xp",
+            "offset": 36126720
+          }
+        ],
+        "libjsi.so": [
+          {
+            "path": "/data/app/~~7TQiqfMg-GgutCaaFaXHiQ==/com.natophonetics.app-IBpCvPzLMDLzqh7MU5-RJg==/base.apk",
+            "permissions": "r-xp",
+            "offset": 38518784
+          }
+        ]
+      }
+    },
+    {
+      "observation": "android\\x64-fixture-full\\measurements\\primary-mappings.json",
+      "status": "verified",
+      "sha256": "a622726f0b3d6d64dba95ebb79200f1bea7dd58a542f068e1674a906378e2153",
+      "abi": "x86_64",
+      "pid": 18599,
+      "details": {
+        "libreactnative.so": [
+          {
+            "path": "/data/app/~~7TQiqfMg-GgutCaaFaXHiQ==/com.natophonetics.app-IBpCvPzLMDLzqh7MU5-RJg==/base.apk",
+            "permissions": "r-xp",
+            "offset": 39845888
+          }
+        ],
+        "libhermes.so": [
+          {
+            "path": "/data/app/~~7TQiqfMg-GgutCaaFaXHiQ==/com.natophonetics.app-IBpCvPzLMDLzqh7MU5-RJg==/base.apk",
+            "permissions": "r-xp",
+            "offset": 36126720
+          }
+        ],
+        "libjsi.so": [
+          {
+            "path": "/data/app/~~7TQiqfMg-GgutCaaFaXHiQ==/com.natophonetics.app-IBpCvPzLMDLzqh7MU5-RJg==/base.apk",
+            "permissions": "r-xp",
+            "offset": 38518784
+          }
+        ]
+      }
+    },
+    {
+      "observation": "android\\x64-fixture-full\\measurements\\sweep-mappings.json",
+      "status": "verified",
+      "sha256": "a622726f0b3d6d64dba95ebb79200f1bea7dd58a542f068e1674a906378e2153",
+      "abi": "x86_64",
+      "pid": 19113,
+      "details": {
+        "libreactnative.so": [
+          {
+            "path": "/data/app/~~7TQiqfMg-GgutCaaFaXHiQ==/com.natophonetics.app-IBpCvPzLMDLzqh7MU5-RJg==/base.apk",
+            "permissions": "r-xp",
+            "offset": 39845888
+          }
+        ],
+        "libhermes.so": [
+          {
+            "path": "/data/app/~~7TQiqfMg-GgutCaaFaXHiQ==/com.natophonetics.app-IBpCvPzLMDLzqh7MU5-RJg==/base.apk",
+            "permissions": "r-xp",
+            "offset": 36126720
+          }
+        ],
+        "libjsi.so": [
+          {
+            "path": "/data/app/~~7TQiqfMg-GgutCaaFaXHiQ==/com.natophonetics.app-IBpCvPzLMDLzqh7MU5-RJg==/base.apk",
+            "permissions": "r-xp",
+            "offset": 38518784
+          }
+        ]
+      }
+    },
+    {
+      "observation": "android\\x64-fixture-narrow\\measurements\\cold2-mappings.json",
+      "status": "verified",
+      "sha256": "a622726f0b3d6d64dba95ebb79200f1bea7dd58a542f068e1674a906378e2153",
+      "abi": "x86_64",
+      "pid": 19879,
+      "details": {
+        "libreactnative.so": [
+          {
+            "path": "/data/app/~~S-quKUUfJo6twWU34Mcx5w==/com.natophonetics.app-YaZ06qxrsFJArM_kjMyHaA==/base.apk",
+            "permissions": "r-xp",
+            "offset": 39845888
+          }
+        ],
+        "libhermes.so": [
+          {
+            "path": "/data/app/~~S-quKUUfJo6twWU34Mcx5w==/com.natophonetics.app-YaZ06qxrsFJArM_kjMyHaA==/base.apk",
+            "permissions": "r-xp",
+            "offset": 36126720
+          }
+        ],
+        "libjsi.so": [
+          {
+            "path": "/data/app/~~S-quKUUfJo6twWU34Mcx5w==/com.natophonetics.app-YaZ06qxrsFJArM_kjMyHaA==/base.apk",
+            "permissions": "r-xp",
+            "offset": 38518784
+          }
+        ]
+      }
+    },
+    {
+      "observation": "android\\x64-fixture-narrow\\measurements\\primary-mappings.json",
+      "status": "verified",
+      "sha256": "a622726f0b3d6d64dba95ebb79200f1bea7dd58a542f068e1674a906378e2153",
+      "abi": "x86_64",
+      "pid": 19730,
+      "details": {
+        "libreactnative.so": [
+          {
+            "path": "/data/app/~~S-quKUUfJo6twWU34Mcx5w==/com.natophonetics.app-YaZ06qxrsFJArM_kjMyHaA==/base.apk",
+            "permissions": "r-xp",
+            "offset": 39845888
+          }
+        ],
+        "libhermes.so": [
+          {
+            "path": "/data/app/~~S-quKUUfJo6twWU34Mcx5w==/com.natophonetics.app-YaZ06qxrsFJArM_kjMyHaA==/base.apk",
+            "permissions": "r-xp",
+            "offset": 36126720
+          }
+        ],
+        "libjsi.so": [
+          {
+            "path": "/data/app/~~S-quKUUfJo6twWU34Mcx5w==/com.natophonetics.app-YaZ06qxrsFJArM_kjMyHaA==/base.apk",
+            "permissions": "r-xp",
+            "offset": 38518784
+          }
+        ]
+      }
+    },
+    {
+      "observation": "android\\x64-matrix\\tile-process-mappings.json",
+      "status": "verified",
+      "sha256": "ee08061b86ce98ffb108d7de7e1f94d023ed97601bffdbb85ac3b43675bd3284",
+      "abi": "x86_64",
+      "pid": 12242,
+      "details": {
+        "libreactnative.so": [
+          {
+            "path": "/data/app/~~4TyOK_V_fbV4U8vs7kYv1w==/com.natophonetics.app-xipAD-EOGjKwFYkAQfu8rg==/base.apk",
+            "permissions": "r-xp",
+            "offset": 39845888
+          }
+        ],
+        "libhermes.so": [
+          {
+            "path": "/data/app/~~4TyOK_V_fbV4U8vs7kYv1w==/com.natophonetics.app-xipAD-EOGjKwFYkAQfu8rg==/base.apk",
+            "permissions": "r-xp",
+            "offset": 36126720
+          }
+        ],
+        "libjsi.so": [
+          {
+            "path": "/data/app/~~4TyOK_V_fbV4U8vs7kYv1w==/com.natophonetics.app-xipAD-EOGjKwFYkAQfu8rg==/base.apk",
+            "permissions": "r-xp",
+            "offset": 38518784
+          }
+        ]
+      }
+    },
+    {
+      "observation": "android\\x64-narrow-aligned\\tile-process-mappings.json",
+      "status": "verified",
+      "sha256": "ee08061b86ce98ffb108d7de7e1f94d023ed97601bffdbb85ac3b43675bd3284",
+      "abi": "x86_64",
+      "pid": 17476,
+      "details": {
+        "libreactnative.so": [
+          {
+            "path": "/data/app/~~4TyOK_V_fbV4U8vs7kYv1w==/com.natophonetics.app-xipAD-EOGjKwFYkAQfu8rg==/base.apk",
+            "permissions": "r-xp",
+            "offset": 39845888
+          }
+        ],
+        "libhermes.so": [
+          {
+            "path": "/data/app/~~4TyOK_V_fbV4U8vs7kYv1w==/com.natophonetics.app-xipAD-EOGjKwFYkAQfu8rg==/base.apk",
+            "permissions": "r-xp",
+            "offset": 36126720
+          }
+        ],
+        "libjsi.so": [
+          {
+            "path": "/data/app/~~4TyOK_V_fbV4U8vs7kYv1w==/com.natophonetics.app-xipAD-EOGjKwFYkAQfu8rg==/base.apk",
+            "permissions": "r-xp",
+            "offset": 38518784
+          }
+        ]
+      }
+    },
+    {
+      "observation": "android\\x64-windows\\tile-process-mappings.json",
+      "status": "verified",
+      "sha256": "ee08061b86ce98ffb108d7de7e1f94d023ed97601bffdbb85ac3b43675bd3284",
+      "abi": "x86_64",
+      "pid": 14963,
+      "details": {
+        "libreactnative.so": [
+          {
+            "path": "/data/app/~~4TyOK_V_fbV4U8vs7kYv1w==/com.natophonetics.app-xipAD-EOGjKwFYkAQfu8rg==/base.apk",
+            "permissions": "r-xp",
+            "offset": 39845888
+          }
+        ],
+        "libhermes.so": [
+          {
+            "path": "/data/app/~~4TyOK_V_fbV4U8vs7kYv1w==/com.natophonetics.app-xipAD-EOGjKwFYkAQfu8rg==/base.apk",
+            "permissions": "r-xp",
+            "offset": 36126720
+          }
+        ],
+        "libjsi.so": [
+          {
+            "path": "/data/app/~~4TyOK_V_fbV4U8vs7kYv1w==/com.natophonetics.app-xipAD-EOGjKwFYkAQfu8rg==/base.apk",
+            "permissions": "r-xp",
+            "offset": 38518784
+          }
+        ]
+      }
+    },
+    {
+      "observation": "screenshots\\android\\arm64-composition-recovery\\mappings.json",
+      "status": "existing forced ARM control rejected",
+      "sha256": "ee08061b86ce98ffb108d7de7e1f94d023ed97601bffdbb85ac3b43675bd3284",
+      "abi": "arm64-v8a",
+      "pid": 9290,
+      "details": "No executable mapping and ELF header for lib/arm64-v8a/libreactnative.so at offset 8945664"
+    },
+    {
+      "observation": "screenshots\\android\\x64-composition\\mappings.json",
+      "status": "verified",
+      "sha256": "ee08061b86ce98ffb108d7de7e1f94d023ed97601bffdbb85ac3b43675bd3284",
+      "abi": "x86_64",
+      "pid": 20237,
+      "details": {
+        "libreactnative.so": [
+          {
+            "path": "/data/app/~~RaTbzO1lGp6BcdlUgAIzrg==/com.natophonetics.app-AlvDeDweYDHe3IxYVLZjxQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 39845888
+          }
+        ],
+        "libhermes.so": [
+          {
+            "path": "/data/app/~~RaTbzO1lGp6BcdlUgAIzrg==/com.natophonetics.app-AlvDeDweYDHe3IxYVLZjxQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 36126720
+          }
+        ],
+        "libjsi.so": [
+          {
+            "path": "/data/app/~~RaTbzO1lGp6BcdlUgAIzrg==/com.natophonetics.app-AlvDeDweYDHe3IxYVLZjxQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 38518784
+          }
+        ]
+      }
+    },
+    {
+      "observation": "screenshots\\android\\x64-final-composition\\mappings.json",
+      "status": "verified",
+      "sha256": "ee08061b86ce98ffb108d7de7e1f94d023ed97601bffdbb85ac3b43675bd3284",
+      "abi": "x86_64",
+      "pid": 24959,
+      "details": {
+        "libreactnative.so": [
+          {
+            "path": "/data/app/~~LysLVd0to4M7qZh99lashQ==/com.natophonetics.app-PUBnsTfH1kPe2qyjWQrywA==/base.apk",
+            "permissions": "r-xp",
+            "offset": 39845888
+          }
+        ],
+        "libhermes.so": [
+          {
+            "path": "/data/app/~~LysLVd0to4M7qZh99lashQ==/com.natophonetics.app-PUBnsTfH1kPe2qyjWQrywA==/base.apk",
+            "permissions": "r-xp",
+            "offset": 36126720
+          }
+        ],
+        "libjsi.so": [
+          {
+            "path": "/data/app/~~LysLVd0to4M7qZh99lashQ==/com.natophonetics.app-PUBnsTfH1kPe2qyjWQrywA==/base.apk",
+            "permissions": "r-xp",
+            "offset": 38518784
+          }
+        ]
+      }
+    }
+  ],
+  "scope": "Stored PNG structure, CRC and complete compressed stream. The replay does not create device hashes for older exports or change existing visual or runtime results."
+}

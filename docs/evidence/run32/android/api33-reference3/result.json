@@ -1,0 +1,117 @@
+{
+  "passed": true,
+  "observations": [
+    {
+      "mode": "fullscreen",
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "configuration": "{1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h866dp 280dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 720, 1600) mAppBounds=Rect(0, 0 - 720, 1558) mMaxBounds=Rect(0, 0 - 720, 1600) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.1 fontWeightAdjustment=0}\r",
+      "stage": "before-1",
+      "fontScale": 1,
+      "draft": "NUWJ359",
+      "activityIdentity": 27837474,
+      "runtimePid": 8636
+    },
+    {
+      "mode": "fullscreen",
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "configuration": "{2.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h866dp 280dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 720, 1600) mAppBounds=Rect(0, 0 - 720, 1558) mMaxBounds=Rect(0, 0 - 720, 1600) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.4 fontWeightAdjustment=0}\r",
+      "stage": "before-2",
+      "fontScale": 2,
+      "draft": "NUWJ359",
+      "activityIdentity": 27837474,
+      "runtimePid": 8636
+    },
+    {
+      "mode": "multi-window",
+      "bounds": [
+        0,
+        0,
+        720,
+        787
+      ],
+      "configuration": "{2.0 310mcc260mnc [en_US] ldltr sw401dp w411dp h426dp 280dpi smll port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 720, 787) mAppBounds=Rect(0, 0 - 720, 787) mMaxBounds=Rect(0, 0 - 720, 1600) mDisplayRotation=ROTATION_0 mWindowingMode=multi-window mDisplayWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.5 fontWeightAdjustment=0}\r",
+      "pairedSettings": {
+        "mode": "multi-window",
+        "bounds": [
+          0,
+          805,
+          720,
+          1600
+        ],
+        "configuration": "{2.0 310mcc260mnc [en_US] ldltr sw406dp w411dp h430dp 280dpi smll port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 805 - 720, 1600) mAppBounds=Rect(0, 805 - 720, 1558) mMaxBounds=Rect(0, 0 - 720, 1600) mDisplayRotation=ROTATION_0 mWindowingMode=multi-window mDisplayWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.6 fontWeightAdjustment=0}\r"
+      },
+      "stage": "split-half-2",
+      "fontScale": 2,
+      "draft": "NUWJ359",
+      "activityIdentity": 27837474,
+      "runtimePid": 8636
+    },
+    {
+      "mode": "multi-window",
+      "bounds": [
+        0,
+        0,
+        720,
+        1106
+      ],
+      "configuration": "{2.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h608dp 280dpi nrml port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 720, 1106) mAppBounds=Rect(0, 0 - 720, 1106) mMaxBounds=Rect(0, 0 - 720, 1600) mDisplayRotation=ROTATION_0 mWindowingMode=multi-window mDisplayWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.6 fontWeightAdjustment=0}\r",
+      "pairedSettings": {
+        "mode": "multi-window",
+        "bounds": [
+          0,
+          1124,
+          720,
+          1600
+        ],
+        "configuration": "{2.0 310mcc260mnc [en_US] ldltr sw224dp w411dp h248dp 280dpi smll land finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 1124 - 720, 1600) mAppBounds=Rect(0, 1124 - 720, 1558) mMaxBounds=Rect(0, 0 - 720, 1600) mDisplayRotation=ROTATION_0 mWindowingMode=multi-window mDisplayWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.7 fontWeightAdjustment=0}\r"
+      },
+      "stage": "split-large-2",
+      "fontScale": 2,
+      "draft": "NUWJ359",
+      "activityIdentity": 27837474,
+      "runtimePid": 8636
+    },
+    {
+      "mode": "fullscreen",
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "configuration": "{2.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h866dp 280dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 720, 1600) mAppBounds=Rect(0, 0 - 720, 1558) mMaxBounds=Rect(0, 0 - 720, 1600) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.8 fontWeightAdjustment=0}\r",
+      "stage": "restored-2",
+      "fontScale": 2,
+      "draft": "NUWJ359",
+      "activityIdentity": 27837474,
+      "runtimePid": 8636
+    },
+    {
+      "mode": "fullscreen",
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "configuration": "{1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h866dp 280dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 720, 1600) mAppBounds=Rect(0, 0 - 720, 1558) mMaxBounds=Rect(0, 0 - 720, 1600) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.11 fontWeightAdjustment=0}\r",
+      "stage": "returned-1",
+      "fontScale": 1,
+      "draft": "NUWJ359",
+      "activityIdentity": 27837474,
+      "runtimePid": 8636
+    }
+  ],
+  "selectedPackageAbi": "x86_64",
+  "keyboardVisibleAtHalf": false
+}

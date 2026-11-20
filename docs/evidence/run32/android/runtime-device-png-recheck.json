@@ -1,0 +1,196 @@
+{
+  "passed": true,
+  "count": 27,
+  "scope": "Extant same-PID reports and raw PNG exports. Full primary/cold2 exports have since been replaced by the narrow fixture scenarios.",
+  "records": [
+    {
+      "scope": "composition",
+      "file": "screenshots/android/x64-composition/composition-before.png",
+      "bytes": 127638,
+      "remoteMatches": true,
+      "sha256": "44d1671f65a4b2b4abcacfb01ee951e5672deff34e5ebf48511c65868a9f014e"
+    },
+    {
+      "scope": "composition",
+      "file": "screenshots/android/x64-composition/composition-live-2.png",
+      "bytes": 153616,
+      "remoteMatches": true,
+      "sha256": "2760501a725217cab4af56f59da48bde2ace040c775da415f586619ee4543e4b"
+    },
+    {
+      "scope": "composition",
+      "file": "screenshots/android/x64-composition/composition-live-1.png",
+      "bytes": 127638,
+      "remoteMatches": true,
+      "sha256": "44d1671f65a4b2b4abcacfb01ee951e5672deff34e5ebf48511c65868a9f014e"
+    },
+    {
+      "scope": "composition",
+      "file": "screenshots/android/x64-composition/composition-continued.png",
+      "bytes": 129128,
+      "remoteMatches": true,
+      "sha256": "3899361e5165c13826ed185b1c4825ee093cb27cc008cc38e488d0577e52b2d5"
+    },
+    {
+      "scope": "composition",
+      "file": "screenshots/android/x64-composition/composition-committed.png",
+      "bytes": 129833,
+      "remoteMatches": true,
+      "sha256": "55ff937833353a66827c7b7740185e23905f3e064ed5ac9e3ddaff0d9367889d"
+    },
+    {
+      "scope": "full/cold085",
+      "file": "android/x64-fixture-full/measurements/screenshots/cold085.png",
+      "bytes": 57000,
+      "remoteMatches": true,
+      "sha256": "c8f2297bb820de2f8b682644f4fa3ca9ec28c1be675c427f58da5ed889a36c43"
+    },
+    {
+      "scope": "full/cold13",
+      "file": "android/x64-fixture-full/measurements/screenshots/cold13.png",
+      "bytes": 86897,
+      "remoteMatches": true,
+      "sha256": "8ac9672c672753ce34f28973329968aaac6f9d0d5e9235feb5a5275116c13022"
+    },
+    {
+      "scope": "full/sweep",
+      "file": "android/x64-fixture-full/measurements/screenshots/sweep0-0.85.png",
+      "bytes": 57000,
+      "remoteMatches": true,
+      "sha256": "c8f2297bb820de2f8b682644f4fa3ca9ec28c1be675c427f58da5ed889a36c43"
+    },
+    {
+      "scope": "full/sweep",
+      "file": "android/x64-fixture-full/measurements/screenshots/sweep1-1.3.png",
+      "bytes": 86897,
+      "remoteMatches": true,
+      "sha256": "8ac9672c672753ce34f28973329968aaac6f9d0d5e9235feb5a5275116c13022"
+    },
+    {
+      "scope": "full/sweep",
+      "file": "android/x64-fixture-full/measurements/screenshots/sweep2-2.0.png",
+      "bytes": 111286,
+      "remoteMatches": true,
+      "sha256": "be464a53be2f3f403fd2a6121fe28bc9e9a2b37bc46d7fd3c67b90bb3974c70a"
+    },
+    {
+      "scope": "full/sweep",
+      "file": "android/x64-fixture-full/measurements/screenshots/sweep3-1.0.png",
+      "bytes": 59235,
+      "remoteMatches": true,
+      "sha256": "957829069c184ca086d5f1a5754211e167edd9a2066a79c0c0458559c1bc7bfe"
+    },
+    {
+      "scope": "full/sweep",
+      "file": "android/x64-fixture-full/measurements/screenshots/sweep4-0.85.png",
+      "bytes": 57000,
+      "remoteMatches": true,
+      "sha256": "c8f2297bb820de2f8b682644f4fa3ca9ec28c1be675c427f58da5ed889a36c43"
+    },
+    {
+      "scope": "full/sweep",
+      "file": "android/x64-fixture-full/measurements/screenshots/sweep5-2.0.png",
+      "bytes": 111286,
+      "remoteMatches": true,
+      "sha256": "be464a53be2f3f403fd2a6121fe28bc9e9a2b37bc46d7fd3c67b90bb3974c70a"
+    },
+    {
+      "scope": "full/sweep",
+      "file": "android/x64-fixture-full/measurements/screenshots/sweep6-1.3.png",
+      "bytes": 86897,
+      "remoteMatches": true,
+      "sha256": "8ac9672c672753ce34f28973329968aaac6f9d0d5e9235feb5a5275116c13022"
+    },
+    {
+      "scope": "full/sweep",
+      "file": "android/x64-fixture-full/measurements/screenshots/sweep7-1.0.png",
+      "bytes": 59235,
+      "remoteMatches": true,
+      "sha256": "957829069c184ca086d5f1a5754211e167edd9a2066a79c0c0458559c1bc7bfe"
+    },
+    {
+      "scope": "full/editing",
+      "file": "android/x64-fixture-full/measurements/screenshots/editing-start.png",
+      "bytes": 59235,
+      "remoteMatches": true,
+      "sha256": "957829069c184ca086d5f1a5754211e167edd9a2066a79c0c0458559c1bc7bfe"
+    },
+    {
+      "scope": "full/editing",
+      "file": "android/x64-fixture-full/measurements/screenshots/editing-before.png",
+      "bytes": 104697,
+      "remoteMatches": true,
+      "sha256": "e486ecaed94a0a1d7413b711445d68f60a46938013d3b8bdcc661df818591aa5"
+    },
+    {
+      "scope": "full/editing",
+      "file": "android/x64-fixture-full/measurements/screenshots/editing-typed-before.png",
+      "bytes": 105399,
+      "remoteMatches": true,
+      "sha256": "ec913b01be51db1c804cc3982d66d3386f8df0a8199a2529bd26432aa5e5f9da"
+    },
+    {
+      "scope": "full/editing",
+      "file": "android/x64-fixture-full/measurements/screenshots/editing-live2.png",
+      "bytes": 165118,
+      "remoteMatches": true,
+      "sha256": "731c24e44b4d8e903e22905c8144d40af39c898ec195e555e7c52bff263710ea"
+    },
+    {
+      "scope": "full/editing",
+      "file": "android/x64-fixture-full/measurements/screenshots/editing-return1.png",
+      "bytes": 105436,
+      "remoteMatches": true,
+      "sha256": "7453631bc3554b629336ba442b88dbfa5b9916fc90e9254c51928e52a2111b5a"
+    },
+    {
+      "scope": "full/editing",
+      "file": "android/x64-fixture-full/measurements/screenshots/editing-insert.png",
+      "bytes": 105798,
+      "remoteMatches": true,
+      "sha256": "6aba97839d8268f185677ed648451c5d0aed0986f011ea75c88a97de4c0b0883"
+    },
+    {
+      "scope": "narrow/primary",
+      "file": "android/x64-fixture-narrow/measurements/screenshots/cold1.png",
+      "bytes": 55211,
+      "remoteMatches": true,
+      "sha256": "adb98613387d12750905ba87c713e46b660c0a2b27de165d2ef28ded2d4750be"
+    },
+    {
+      "scope": "narrow/primary",
+      "file": "android/x64-fixture-narrow/measurements/screenshots/live2.png",
+      "bytes": 80320,
+      "remoteMatches": true,
+      "sha256": "0a7d677ea249d806fb0efa60487054a238602e0c434e6f67a4e57871a904110b"
+    },
+    {
+      "scope": "narrow/primary",
+      "file": "android/x64-fixture-narrow/measurements/screenshots/return1.png",
+      "bytes": 55211,
+      "remoteMatches": true,
+      "sha256": "adb98613387d12750905ba87c713e46b660c0a2b27de165d2ef28ded2d4750be"
+    },
+    {
+      "scope": "narrow/cold2",
+      "file": "android/x64-fixture-narrow/measurements/screenshots/cold2.png",
+      "bytes": 81735,
+      "remoteMatches": true,
+      "sha256": "bee8766945701b52b0f66bdd3c07eb140cf71d93404ca277a3942b073410ba10"
+    },
+    {
+      "scope": "narrow/cold2",
+      "file": "android/x64-fixture-narrow/measurements/screenshots/resize-narrow2.png",
+      "bytes": 80320,
+      "remoteMatches": true,
+      "sha256": "0a7d677ea249d806fb0efa60487054a238602e0c434e6f67a4e57871a904110b"
+    },
+    {
+      "scope": "narrow/cold2",
+      "file": "android/x64-fixture-narrow/measurements/screenshots/resize-restored2.png",
+      "bytes": 80320,
+      "remoteMatches": true,
+      "sha256": "0a7d677ea249d806fb0efa60487054a238602e0c434e6f67a4e57871a904110b"
+    }
+  ]
+}

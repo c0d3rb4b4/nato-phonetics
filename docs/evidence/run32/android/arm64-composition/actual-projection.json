@@ -1,0 +1,133 @@
+{
+  "requestedAndPmAbi": "arm64-v8a",
+  "observedProcess": 9290,
+  "nativeDirectory": "/data/app/~~4YFXnxUyAzrN0L06AIyVMg==/com.natophonetics.app-9oz4_uDXI5Cwu0j_ibCMZA==/lib/arm64",
+  "baseApk": "/data/app/~~4YFXnxUyAzrN0L06AIyVMg==/com.natophonetics.app-9oz4_uDXI5Cwu0j_ibCMZA==/base.apk",
+  "verifiedProductSha256": "ee08061b86ce98ffb108d7de7e1f94d023ed97601bffdbb85ac3b43675bd3284",
+  "capturedHostPageBytes": 4096,
+  "elfExecutableSegmentsByArchiveEntry": {
+    "lib/x86_64/libappmodules.so": {
+      "sha256": "668cd3866002a11353cd6035d9d45f37c3aefd6b17849aa1043276a439fce691",
+      "executableMaps": [
+        {
+          "path": "/data/app/~~4YFXnxUyAzrN0L06AIyVMg==/com.natophonetics.app-9oz4_uDXI5Cwu0j_ibCMZA==/base.apk",
+          "permissions": "r-xp",
+          "offset": 34504704
+        }
+      ]
+    },
+    "lib/x86_64/libc++_shared.so": {
+      "sha256": "0a2c7afa35b183fdd5a3cb20e2080ad54cbea06c2a4f0bc8f122cb7d1e9e0b9f",
+      "executableMaps": [
+        {
+          "path": "/data/app/~~4YFXnxUyAzrN0L06AIyVMg==/com.natophonetics.app-9oz4_uDXI5Cwu0j_ibCMZA==/base.apk",
+          "permissions": "r-xp",
+          "offset": 35307520
+        }
+      ]
+    },
+    "lib/x86_64/libfbjni.so": {
+      "sha256": "a51410366a0394e05bc04052cfb237c70dcf7d4d53a56e1d00a041436cb0b653",
+      "executableMaps": [
+        {
+          "path": "/data/app/~~4YFXnxUyAzrN0L06AIyVMg==/com.natophonetics.app-9oz4_uDXI5Cwu0j_ibCMZA==/base.apk",
+          "permissions": "r-xp",
+          "offset": 35946496
+        }
+      ]
+    },
+    "lib/x86_64/libhermes.so": {
+      "sha256": "2e9e9d813b39822f60c9343b7a6df37e85ed07da297ade1f868117be73c5bd09",
+      "executableMaps": [
+        {
+          "path": "/data/app/~~4YFXnxUyAzrN0L06AIyVMg==/com.natophonetics.app-9oz4_uDXI5Cwu0j_ibCMZA==/base.apk",
+          "permissions": "r-xp",
+          "offset": 36126720
+        }
+      ]
+    },
+    "lib/x86_64/libhermestooling.so": {
+      "sha256": "42a1ae760d86549a649a793bde48b52e5012b1776126fc2244eb380e15dcd3bb",
+      "executableMaps": [
+        {
+          "path": "/data/app/~~4YFXnxUyAzrN0L06AIyVMg==/com.natophonetics.app-9oz4_uDXI5Cwu0j_ibCMZA==/base.apk",
+          "permissions": "r-xp",
+          "offset": 38354944
+        }
+      ]
+    },
+    "lib/x86_64/libjsi.so": {
+      "sha256": "aa5d9b0ee190ebffa732d900f042c5c7ba71a706991c9dc25f62a94b2f2f010b",
+      "executableMaps": [
+        {
+          "path": "/data/app/~~4YFXnxUyAzrN0L06AIyVMg==/com.natophonetics.app-9oz4_uDXI5Cwu0j_ibCMZA==/base.apk",
+          "permissions": "r-xp",
+          "offset": 38518784
+        }
+      ]
+    },
+    "lib/x86_64/libreact_codegen_safeareacontext.so": {
+      "sha256": "7ee1ffb7f82374972b9c16deb7c3f6a2a3c99e66d56ab8981c0e9b37a122654d",
+      "executableMaps": [
+        {
+          "path": "/data/app/~~4YFXnxUyAzrN0L06AIyVMg==/com.natophonetics.app-9oz4_uDXI5Cwu0j_ibCMZA==/base.apk",
+          "permissions": "r-xp",
+          "offset": 39682048
+        }
+      ]
+    },
+    "lib/x86_64/libreactnative.so": {
+      "sha256": "7e2c0be194ef9eb872981d14e1549305d9bbf96dd69689c9e4ab819953fb31d3",
+      "executableMaps": [
+        {
+          "path": "/data/app/~~4YFXnxUyAzrN0L06AIyVMg==/com.natophonetics.app-9oz4_uDXI5Cwu0j_ibCMZA==/base.apk",
+          "permissions": "r-xp",
+          "offset": 39845888
+        }
+      ]
+    }
+  },
+  "rendererHermesJsi": {
+    "libreactnative.so": [
+      "lib/x86_64/libreactnative.so"
+    ],
+    "libhermes.so": [
+      "lib/x86_64/libhermes.so"
+    ],
+    "libjsi.so": [
+      "lib/x86_64/libjsi.so"
+    ]
+  },
+  "reportedStagesPassed": true,
+  "unchangedDeviceReport": true,
+  "captures": [
+    {
+      "file": "composition-before.png",
+      "sha256": "9899ab4a729ec9f0f49a1b4526db796b398557c7066582534302e469b7af9684",
+      "matchedFirstPartialPull": true
+    },
+    {
+      "file": "composition-live-2.png",
+      "sha256": "bf84dbd6540c2e6f780dc2da170bc01988655285c81754aab7678c8fc08ae012",
+      "matchedFirstPartialPull": true
+    },
+    {
+      "file": "composition-live-1.png",
+      "sha256": "9899ab4a729ec9f0f49a1b4526db796b398557c7066582534302e469b7af9684",
+      "matchedFirstPartialPull": true
+    },
+    {
+      "file": "composition-continued.png",
+      "sha256": "7d7c486a4ab707f7fd8d4d2fc99112c6f025ef45ce52c097f5d787d4f6edf4ba",
+      "matchedFirstPartialPull": false
+    },
+    {
+      "file": "composition-committed.png",
+      "sha256": "aeca909735c892fc11a47f8718f56c8155e72b7b7f441a76facb5e496683bc98",
+      "matchedFirstPartialPull": false
+    }
+  ],
+  "requestedArm64GatePassed": false,
+  "hostPullCompletedViaReadOnlyRetry": true,
+  "processRerun": false
+}

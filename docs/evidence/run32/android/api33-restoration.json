@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "serial": "emulator-5586",
+  "original": "api33-initial.json",
+  "verifiedBeforeShutdown": {
+    "scale": "null",
+    "size": "Physical size: 1080x2400",
+    "density": "Physical density: 420",
+    "timeout": "2147483647",
+    "ime": "com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME",
+    "packages": []
+  },
+  "removed": [
+    "package:com.natophonetics.app",
+    "package:com.natophonetics.fonttest"
+  ],
+  "emulatorStopped": true,
+  "response": "OK: killing emulator, bye bye\n\nOK",
+  "otherDevicesModified": false,
+  "cache": "Isolated API 33 SDK image and disposable AVD retained in TEMP."
+}

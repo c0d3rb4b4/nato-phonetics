@@ -1,0 +1,161 @@
+[
+  {
+    "file": "narrow-product-complete2-native-layout.json",
+    "passed": true,
+    "tiles": 7,
+    "measuredBaselines": 21,
+    "baselines": [
+      {
+        "id": "converter-0-letter",
+        "observed": 142.95401000976562,
+        "expected": 142.954,
+        "deltaPhysicalPixels": 0.000010009765617269295,
+        "passed": true
+      },
+      {
+        "id": "converter-0-word",
+        "observed": 347.42401123046875,
+        "expected": 347.424,
+        "deltaPhysicalPixels": 0.000011230468771827873,
+        "passed": true
+      },
+      {
+        "id": "converter-0-pronunciation",
+        "observed": 429.16650390625,
+        "expected": 429.1665,
+        "deltaPhysicalPixels": 0.000003906250015006663,
+        "passed": true
+      },
+      {
+        "id": "converter-1-letter",
+        "observed": 142.9539794921875,
+        "expected": 142.954,
+        "deltaPhysicalPixels": 0.000020507812507730705,
+        "passed": true
+      },
+      {
+        "id": "converter-1-word",
+        "observed": 347.4239501953125,
+        "expected": 347.424,
+        "deltaPhysicalPixels": 0.00004980468747817213,
+        "passed": true
+      },
+      {
+        "id": "converter-1-pronunciation",
+        "observed": 429.16650390625,
+        "expected": 429.1665,
+        "deltaPhysicalPixels": 0.000003906250015006663,
+        "passed": true
+      },
+      {
+        "id": "converter-2-letter",
+        "observed": 142.9539794921875,
+        "expected": 142.954,
+        "deltaPhysicalPixels": 0.000020507812507730705,
+        "passed": true
+      },
+      {
+        "id": "converter-2-word",
+        "observed": 347.4239501953125,
+        "expected": 347.424,
+        "deltaPhysicalPixels": 0.00004980468747817213,
+        "passed": true
+      },
+      {
+        "id": "converter-2-pronunciation",
+        "observed": 429.16650390625,
+        "expected": 429.1665,
+        "deltaPhysicalPixels": 0.000003906250015006663,
+        "passed": true
+      },
+      {
+        "id": "converter-3-letter",
+        "observed": 142.9539794921875,
+        "expected": 142.954,
+        "deltaPhysicalPixels": 0.000020507812507730705,
+        "passed": true
+      },
+      {
+        "id": "converter-3-word",
+        "observed": 347.424072265625,
+        "expected": 347.424,
+        "deltaPhysicalPixels": 0.00007226562502182787,
+        "passed": true
+      },
+      {
+        "id": "converter-3-pronunciation",
+        "observed": 429.16650390625,
+        "expected": 429.1665,
+        "deltaPhysicalPixels": 0.000003906250015006663,
+        "passed": true
+      },
+      {
+        "id": "converter-4-letter",
+        "observed": 142.9541015625,
+        "expected": 142.954,
+        "deltaPhysicalPixels": 0.0001015624999922693,
+        "passed": true
+      },
+      {
+        "id": "converter-4-word",
+        "observed": 347.424072265625,
+        "expected": 347.424,
+        "deltaPhysicalPixels": 0.00007226562502182787,
+        "passed": true
+      },
+      {
+        "id": "converter-4-pronunciation",
+        "observed": 429.16650390625,
+        "expected": 429.1665,
+        "deltaPhysicalPixels": 0.000003906250015006663,
+        "passed": true
+      },
+      {
+        "id": "converter-5-letter",
+        "observed": 142.9541015625,
+        "expected": 142.954,
+        "deltaPhysicalPixels": 0.0001015624999922693,
+        "passed": true
+      },
+      {
+        "id": "converter-5-word",
+        "observed": 347.424072265625,
+        "expected": 347.424,
+        "deltaPhysicalPixels": 0.00007226562502182787,
+        "passed": true
+      },
+      {
+        "id": "converter-5-pronunciation",
+        "observed": 429.16650390625,
+        "expected": 429.1665,
+        "deltaPhysicalPixels": 0.000003906250015006663,
+        "passed": true
+      },
+      {
+        "id": "converter-6-letter",
+        "observed": 142.9541015625,
+        "expected": 142.954,
+        "deltaPhysicalPixels": 0.0001015624999922693,
+        "passed": true
+      },
+      {
+        "id": "converter-6-word",
+        "observed": 347.424072265625,
+        "expected": 347.424,
+        "deltaPhysicalPixels": 0.00007226562502182787,
+        "passed": true
+      },
+      {
+        "id": "converter-6-pronunciation",
+        "observed": 429.16650390625,
+        "expected": 429.1665,
+        "deltaPhysicalPixels": 0.000003906250015006663,
+        "passed": true
+      }
+    ],
+    "maxBaselineDeltaPhysicalPixels": 0.0001015624999922693,
+    "baselineTolerancePhysicalPixels": 1,
+    "geometryTolerancePhysicalPixels": 1,
+    "source": "Actual Android TextView Layout.getLineBaseline + totalPaddingTop + transformMatrixToGlobal; physical pixels"
+  }
+]

@@ -8,11 +8,13 @@
 
 **Deliverable:** Analysis and prioritized backlog. No application fixes or dependency upgrades were made.
 
+For current implementation, acceptance and the next engineering task, see [Current delivery status](#current-delivery-status) and the [delivery queue](DELIVERY_PLAN.md#current-delivery-order-and-residual-engineering-queue).
+
 **Planning amendment — 16 November 2026, after Run 02:** R24 adds the owner's requirement to remove Expo and build Android/iOS directly, using Eclipse Timer's local/self-hosted build pattern as a reference. The earlier review and execution evidence remain historical. The updated plan also requires real web/Android/iOS screenshots after implementation and verification, linked in the final summary.
 
 **Planning amendment — 16 November 2026, after Run 03:** R25 is a **P1 priority** to restore and enforce the original portrait tile design across web, Android and iOS. P05.6–P05.8 own the shared geometry/typography specification, implementation and regression evidence. Its original before-feature sequencing is historical and superseded by the current amendment below.
 
-**Current priority amendment — 17 November 2026, after Run 07:** The [cross-run evidence review](DELIVERY_PRIORITY_REVIEW.md) finds justified foundation/design work followed by diminishing returns from the whole-P05 feature gate. The shared portrait component is delivered. Remaining iPhone ink-only fringes are **P3 parked polish**; ordinary Android unreadable/stale text remains **P1**. Proceed with **P07.2/.4 sessions/results and P06 converter completion** through delivered shared components, with affected-flow accessibility checks. This amendment supersedes earlier sequencing that required every P05 check before feature UI; failed checks, full scope and M11 acceptance remain open.
+**Historical priority amendment — 17 November 2026, after Run 07:** The [cross-run evidence review](DELIVERY_PRIORITY_REVIEW.md) finds justified foundation/design work followed by diminishing returns from the whole-P05 feature gate. The shared portrait component is delivered. Remaining iPhone ink-only fringes are **P3 parked polish**; ordinary Android unreadable/stale text remains **P1**. Proceed with **P07.2/.4 sessions/results and P06 converter completion** through delivered shared components, with affected-flow accessibility checks. This amendment supersedes earlier sequencing that required every P05 check before feature UI; failed checks, full scope and M11 acceptance remain open.
 
 ## Assessment
 
@@ -57,7 +59,7 @@ Effort is relative: **S** = localized change; **M** = multiple modules plus mean
 
 Apply priority to the **remaining subproblem**, not forever to its original R-ID. Record user consequence, reproducible scenario/settings, reach, evidence confidence, workaround, implementation/verification cost and exact blocking scope. Accessibility failures are not polish merely because larger text or a less common device/window triggers them. Conversely, a faint measured fringe with readable text and correct font/geometry need not block unrelated features. Unknown prevalence/root cause stays unknown. The [plan's triage and investigation rules](DELIVERY_PLAN.md#impact-triage-and-investigation-limits) define parking, promotion triggers and bounded investigation.
 
-| Current residual / deliverable | Priority / action |
+| Historical residual / deliverable after Run 11 | Priority / action at that checkpoint |
 |---|---|
 | Android ordinary text/feedback/action-label readability, R06/R07/P05.2 | **P1 active**; separate cold configured large text from live transitions, establish the smallest causal reproduction and preserve state. Affected native accessibility/release acceptance remains failed. |
 | Sessions/results/Retry Mistakes, F01/P07.2/.4 | **P2 functional implementation delivered**; retain affected native accessibility qualification. Run 11 extends symbol sets without closing the live Android gate. |
@@ -66,7 +68,7 @@ Apply priority to the **remaining subproblem**, not forever to its original R-ID
 | iPhone DPR 3 maximum India/Juliett ink fringes, R25/P05.8 | **P3 parked**; retain strict failed results, unchanged tolerances and re-entry triggers. Design drift/readability regressions still promote; no P06/P07 implementation gate. |
 | iOS bulk-XCTest input anomaly, P06.4/P10 | **P2 parked compatibility follow-up**; realistic key/edit/Paste tests remain required. Reproduced ordinary input loss promotes to P1. |
 
-The original register and detailed findings below preserve the reviewed snapshot. Current implementation evidence, residual priorities and scheduling come from this amendment, the Current delivery status and the plan; no original issue is silently declared fixed.
+The original register and detailed findings below preserve the reviewed snapshot. For later engineering evidence and priorities, see the [current status](#current-delivery-status) and the [delivery plan](DELIVERY_PLAN.md#current-delivery-order-and-residual-engineering-queue).
 
 ## Prioritized issue register
 
@@ -382,7 +384,7 @@ The actionable expansion of these stages is [DELIVERY_PLAN.md](DELIVERY_PLAN.md)
 | **3. Establish release confidence** | R14/R15/R19/R20/R22/R24/R25 and native/device validation | CI covers key regressions and native/web builds; internal native builds pass the manual matrix; final web/Android/iOS screenshots are linked. |
 | **4. Improve learning value** | F01–F04, then selected P3 work and R23 | Users can complete/review a session, reuse converted text and control practice pace. |
 
-The R25 shared design foundation now exists. Runs 08–10 integrate sessions/results and converter normalization/export/pacing/paged long-input rendering. Run 11 adds digit/mixed/example drills and voice browsing through those foundations; Run 12 adds listening-to-symbol and typed canonical code-word recall. Run 13 adds versioned local progress/due/focused practice and inventory/help. Prioritize bounded P05.2 native readability/affected qualification; Run 14 delivers P10.1 release assets and P09.1 recognition assessment; P10 offline/runbook, concurrent progress qualification and separately forecast P09.2–.4 remain eligible. P07.4/P06/P08.1/.2/.4 affected accessibility remains open. Keep the remaining P3 ink fringe out of their implementation dependency path. Candidate/security/offline/asset preparation can proceed by task; final support/accessibility/release evidence remains required. Dependencies should guide implementation: R09 is part of making R04 safe; R03 and R05 share the audio architecture decision; R10/R11 underpin F01; R14 should grow alongside the fixes rather than wait until all work is finished.
+The shared portrait design supports sessions/results, complete converter exports, digit practice, listening, typed recall, local progress and voice browsing. The active phase owners track remaining native readability, progress and voice/runtime qualification, recognition and release engineering. The iPhone ink fringe remains parked at P3. [Current queue](DELIVERY_PLAN.md#current-delivery-order-and-residual-engineering-queue) · [current delivery status](#current-delivery-status).
 
 ## Acceptance and regression checklist
 
@@ -408,6 +410,14 @@ These remain acceptance obligations. Execution scope is proportional to the chan
 Turn R01–R25 and selected feature items into individually owned work items, retain their reproduction/acceptance details, and update this document with resolution evidence. Re-run dependency and platform checks at implementation time: audit counts and tool compatibility are snapshots, not permanent conclusions.
 
 ## Current delivery status
+
+**20 November 2026 · Run 32.** P07 is agent-done. P08.1 and P08.2 pass their affected Android checks. P05, P06, P08, P09 and P10 remain active. The 35-item ledger now has 14 in progress, 15 implemented awaiting M11 and six resolved. F01, F05 and F06 move to implemented awaiting M11. All seven human acceptance tasks are unperformed. [Resolution ledger](DELIVERY_PLAN.md#complete-scope-and-resolution-ledger).
+
+F01/F05/F06 retain their earlier feature coverage and now qualify the original Android live-size failures on the ordinary four-ABI Release. Default x86_64 installations on Android 13 and 16 enlarged the original submitted feedback, Next and Replay. Each session ended 4/5, preserved the missed answer and finished its one-question retry at 1/1. On both Android versions the same seven numeric and four typed controls enlarged and fitted their text. The typed flow retained the digit and the draft `three`, and accepted the submitted response. Physical listening and assistive technology remain in M11. [Android 13 quiz](evidence/run32/android/quiz-api33-universal/result.json) · [Android 16 quiz](evidence/run32/android/quiz-api36-universal/result.json) · [practice evidence](NUMERIC_PRACTICE.md#live-android-digit-practice-and-typed-recall).
+
+R06/R07/R14/R20/R24/R25 gained qualified Android build, input and layout evidence. The four-ABI APK and AAB contain matching payloads, and the local signature preserved all 521 original APK entries. Android 11 ran the x86 converter. Android 13 preserved the x86_64 converter through true split-screen, divider enlargement and restoration, and preserved the complete 2,001-character draft through Share and paging. Android 16 passed the x86_64 tile, window, editing and composition measures. Visual inspection rejected an earlier stale 2× fixture frame and confirmed that all six corrected candidate editing crops match their actual cold references. PackageManager’s requested ARM ABI did not identify the live process on this host. [Build and runtime identities](evidence/run32/README.md) · [split and visible tile](evidence/run32/android/api33-universal/result.json) · [long export](CONVERTER_POLICY.md#android-13-export-qualification) · [screenshots and limits](evidence/run32/screenshots/index.md).
+
+### Historical Run 31 checkpoint
 
 **20 November 2026 · Run 31.** Ordinary Android installs now prepare the reviewed React Native source repair for live font sizing. Both Debug and Release Gradle configurations select source ReactAndroid and the pinned Maven Hermes AAR for their variant. P05.2 and P05–P10 remain active. The 35-item ledger has 17 in progress, 12 implemented awaiting M11, 6 resolved, and zero open, blocked or scope-changed. All seven M11 tasks remain unperformed. [Ledger](DELIVERY_PLAN.md#complete-scope-and-resolution-ledger) · [Run 31](evidence/run31/README.md).
 

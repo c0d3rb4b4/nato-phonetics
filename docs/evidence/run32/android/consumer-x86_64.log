@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "C:\dev\apps\nato-phonetics\docs\evidence\run32\android\qualify-native.py", line 37, in <module>
+    run.check_returncode()
+  File "C:\Users\lalit\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 457, in check_returncode
+    raise CalledProcessError(self.returncode, self.args, self.stdout,
+subprocess.CalledProcessError: Command '['C:\\Users\\lalit\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\python.exe', WindowsPath('C:/dev/apps/nato-phonetics/scripts/run-android-font-native.py'), WindowsPath('C:/dev/apps/nato-phonetics/artifacts/run32/native-x86_64/font-environment'), WindowsPath('C:/dev/apps/nato-phonetics/artifacts/run32/universal/app-release-local-test.apk'), WindowsPath('C:/dev/apps/nato-phonetics/docs/evidence/run32/android/native-x86_64'), 'emulator-5586', '--apk-abi', 'x86_64']' returned non-zero exit status 1.

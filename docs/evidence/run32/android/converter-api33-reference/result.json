@@ -1,0 +1,15 @@
+{
+  "passed": false,
+  "apkSha256": "ce74de3404a2a18bce416dca21d8fcd86d6fe88b69744cf90e2ac53e84e66331",
+  "expectedInput": {
+    "chars": 2000,
+    "bytes": 2000,
+    "sha256": "e4b601c576dfe05fad5a634b963a816ab6f78a9cd70038019c0f477378535497"
+  },
+  "expectedCopy": {
+    "chars": 10123,
+    "bytes": 10123,
+    "sha256": "3d735241164bcca88bd0b41d08b86186129ab7d9f06403e479bffd849e1f2bda"
+  },
+  "error": "AssertionError('Unreachable control: Next cards')"
+}

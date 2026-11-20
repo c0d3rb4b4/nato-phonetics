@@ -1,0 +1,32 @@
+{
+  "dateUTC": "2026-11-20T14:04:56.6418252Z",
+  "serial": "emulator-5584",
+  "image": "system-images;android-36.1;google_apis_playstore;x86_64",
+  "avd": "NatoRun32",
+  "createdEmptyAVD": true,
+  "avdRoot": "C:\\Users\\lalit\\AppData\\Local\\Temp\\nato-run32-phone",
+  "pid": 67964,
+  "beforeDevices": [
+    "List of devices attached",
+    ""
+  ],
+  "command": [
+    "C:\\Users\\lalit\\AppData\\Local\\Android\\Sdk\\emulator\\emulator.exe",
+    "-avd",
+    "NatoRun32",
+    "-port",
+    "5584",
+    "-no-window",
+    "-no-audio",
+    "-no-snapshot",
+    "-no-metrics",
+    "-no-boot-anim",
+    "-gpu",
+    "swiftshader_indirect",
+    "-camera-back",
+    "none",
+    "-camera-front",
+    "none"
+  ],
+  "physicalHostArchitecture": "AMD64"
+}

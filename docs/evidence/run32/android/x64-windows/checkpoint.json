@@ -1,0 +1,92 @@
+{
+  "scope": "windows",
+  "serial": "emulator-5584",
+  "requestedAbi": "x86_64",
+  "commands": [
+    {
+      "argv": [
+        "C:\\Program Files\\Microsoft\\jdk-17.0.13.11-hotspot\\bin\\java.exe",
+        "-Xmx1024M",
+        "-Xss1m",
+        "-jar",
+        "C:\\Users\\lalit\\AppData\\Local\\Android\\Sdk\\build-tools\\36.0.0\\lib\\apksigner.jar",
+        "verify",
+        "--print-certs",
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run32\\universal\\app-release-local-test.apk"
+      ],
+      "cwd": "C:\\dev\\apps\\nato-phonetics",
+      "log": "product-signature.log",
+      "exit": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files\\Microsoft\\jdk-17.0.13.11-hotspot\\bin\\java.exe",
+        "-Xmx1024M",
+        "-Xss1m",
+        "-jar",
+        "C:\\Users\\lalit\\AppData\\Local\\Android\\Sdk\\build-tools\\36.0.0\\lib\\apksigner.jar",
+        "verify",
+        "--print-certs",
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run32\\runtime-display-observer\\font-composition.apk"
+      ],
+      "cwd": "C:\\dev\\apps\\nato-phonetics",
+      "log": "observer-signature.log",
+      "exit": 0
+    },
+    {
+      "argv": [
+        "C:\\Users\\lalit\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "C:\\dev\\apps\\nato-phonetics\\docs\\evidence\\run31\\android\\observe-product.py",
+        "windows",
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run32\\universal\\app-release-local-test.apk",
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run32\\runtime-display-observer\\font-composition.apk",
+        "emulator-5584",
+        "C:\\dev\\apps\\nato-phonetics\\docs\\evidence\\run32\\android\\x64-windows\\measurements",
+        "C:\\dev\\apps\\nato-phonetics\\docs\\evidence\\run32\\screenshots\\android\\x64-windows"
+      ],
+      "cwd": "C:\\dev\\apps\\nato-phonetics",
+      "log": "collect.log",
+      "exit": 0
+    },
+    {
+      "argv": [
+        "node",
+        "scripts/check-android-release-tiles.cjs",
+        "C:\\dev\\apps\\nato-phonetics\\docs\\evidence\\run32\\android\\x64-windows\\measurements",
+        "--windows"
+      ],
+      "cwd": "C:\\dev\\apps\\nato-phonetics",
+      "log": "native-gate.log",
+      "exit": 0
+    }
+  ],
+  "passed": true,
+  "device": {
+    "abi": "x86_64",
+    "abis": "x86_64,arm64-v8a",
+    "bridge": "libndk_translation.so",
+    "api": "36"
+  },
+  "signers": {
+    "product": {
+      "sha256": "ee08061b86ce98ffb108d7de7e1f94d023ed97601bffdbb85ac3b43675bd3284",
+      "certificateSha256": "fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c"
+    },
+    "observer": {
+      "sha256": "40ec84630e840ebcd19322b5a0ad11e81c14b968c237c6ffcb4cd2b8e8de3cb1",
+      "certificateSha256": "fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c"
+    }
+  },
+  "installed": {
+    "path": "/data/app/~~4TyOK_V_fbV4U8vs7kYv1w==/com.natophonetics.app-xipAD-EOGjKwFYkAQfu8rg==/base.apk",
+    "sha256": "ee08061b86ce98ffb108d7de7e1f94d023ed97601bffdbb85ac3b43675bd3284",
+    "primaryCpuAbi": "x86_64"
+  },
+  "observer": {
+    "path": "/data/app/~~I4JZ4leEvcQGHuIarF4e7w==/com.natophonetics.fonttest-rf5ndb-WucD2ToAjHHqF1A==/base.apk",
+    "sha256": "40ec84630e840ebcd19322b5a0ad11e81c14b968c237c6ffcb4cd2b8e8de3cb1"
+  },
+  "nonDebuggable": true
+}

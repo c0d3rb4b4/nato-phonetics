@@ -1,0 +1,33 @@
+{
+  "observed": "2026-11-20T14:33:08.4698738+00:00",
+  "compiledOutputs": [
+    {
+      "abi": "arm64-v8a",
+      "outputLines": 426
+    },
+    {
+      "abi": "armeabi-v7a",
+      "outputLines": 426
+    }
+  ],
+  "gradleDaemon": 77604,
+  "wrapperJavaPid": 74180,
+  "daemonLog": "daemon-77604.out.log matched currentDir=C:/n32/android",
+  "scope": "Only the run-owned daemon can be stopped after completion and if still idle. Other Gradle daemons predate this build.",
+  "freeBytes": 385740677120,
+  "note": "Initial .NET reader could not open the active x86 Ninja log; compiledOutputs contains the two readable files at that checkpoint.",
+  "sharedRead": [
+    {
+      "abi": "arm64-v8a",
+      "logLines": 426
+    },
+    {
+      "abi": "armeabi-v7a",
+      "logLines": 426
+    },
+    {
+      "abi": "x86",
+      "logLines": 323
+    }
+  ]
+}

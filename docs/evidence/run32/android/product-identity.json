@@ -1,0 +1,396 @@
+{
+  "artifacts": {
+    "app-release-unsigned.apk": {
+      "sha256": "06f0a3992bcbbce002b5602d1045c6a5da6d6fa1b9f3b41c4665fa53ef061f48",
+      "bytes": 47864376,
+      "entries": 521
+    },
+    "app-release.aab": {
+      "sha256": "7ef6d2158b903ae374cf4a863538ed3d15fd9f58a346154a1af2d281d612b21d",
+      "bytes": 34045709,
+      "entries": 555
+    },
+    "app-release-local-test.apk": {
+      "sha256": "ee08061b86ce98ffb108d7de7e1f94d023ed97601bffdbb85ac3b43675bd3284",
+      "bytes": 47915535,
+      "entries": 524
+    }
+  },
+  "mavenHermesReleaseAarSha256": "f8d8af2486ee26d7b8d3da92dcd96ea5df27acfcfe556866ea13c68fec1d2992",
+  "libraries": {
+    "arm64-v8a/libappmodules.so": {
+      "sha256": "729c834bfe3c0b401e4f7f365e5290473e92dc4ffb1ae0a80985c98c4000125f",
+      "elfClass": 2,
+      "machine": 183,
+      "buildId": "4369ba8caacd33721dbc090dab4866291cfb9a85"
+    },
+    "arm64-v8a/libc++_shared.so": {
+      "sha256": "3e852764502d06e0cf1080d532ae7c608b7649d946a3a9d7e84e3d4b7d683214",
+      "elfClass": 2,
+      "machine": 183,
+      "buildId": "6783a7f3a0d9c67c55a74cadc441ed55aaa493da"
+    },
+    "arm64-v8a/libfbjni.so": {
+      "sha256": "a9e35ba55d3f956920281f519385f8a72475ee24819799cb08375fdd4cce2b22",
+      "elfClass": 2,
+      "machine": 183,
+      "buildId": "e438f6554af1d86b210a05412e96c4251e570157"
+    },
+    "arm64-v8a/libhermes.so": {
+      "sha256": "5705c7e2cf51fcd3befa825ae2a6717524037b368cdac005a7a63c4a92ef4467",
+      "elfClass": 2,
+      "machine": 183,
+      "buildId": "3742cb807f54bf165f89bd93a20345afc069184d",
+      "mavenLibrarySha256": "5705c7e2cf51fcd3befa825ae2a6717524037b368cdac005a7a63c4a92ef4467"
+    },
+    "arm64-v8a/libhermestooling.so": {
+      "sha256": "ecd6dc7634ba67be0db3745fb8c184dbba1d2b99376991182b1d1095af711eec",
+      "elfClass": 2,
+      "machine": 183,
+      "buildId": "189e339d641e5c69",
+      "prefabSha256": "d45c421ddf8020d9ebf8f2bbc809251f29ff74db48a17594458324970e3599bc",
+      "prefabBuildId": "189e339d641e5c69"
+    },
+    "arm64-v8a/libimagepipeline.so": {
+      "sha256": "1b377992e4256fa9398ec057722f84a359c7d588e570c8a41f51d930c19ece7d",
+      "elfClass": 2,
+      "machine": 183,
+      "buildId": "d0f121db897acfc4"
+    },
+    "arm64-v8a/libjsi.so": {
+      "sha256": "8efbb61e51099ee65c430424e275eaf94a392bf8e74f579d60b58d7645758069",
+      "elfClass": 2,
+      "machine": 183,
+      "buildId": "c6c42b2f4a21c409",
+      "prefabSha256": "87944d04cad75d6aea085dfadb0f7327927e88513b7dc941e1958ee338442a83",
+      "prefabBuildId": "c6c42b2f4a21c409"
+    },
+    "arm64-v8a/libnative-filters.so": {
+      "sha256": "4294b57460e70a6351ce7ae2733a79c088c907dfa54673a657227ec5bb669594",
+      "elfClass": 2,
+      "machine": 183,
+      "buildId": "04562bd3ada0842b"
+    },
+    "arm64-v8a/libnative-imagetranscoder.so": {
+      "sha256": "2aed28298a25afd52ac670cf9682398c6c7ba42a57195c01efd565e7ddfe17ca",
+      "elfClass": 2,
+      "machine": 183,
+      "buildId": "7eef0da60ca68bf3"
+    },
+    "arm64-v8a/libreact_codegen_safeareacontext.so": {
+      "sha256": "aea51cb35acac184f05d26db3a0cf4e51663703540ced565f2942bb6013e73d7",
+      "elfClass": 2,
+      "machine": 183,
+      "buildId": "e1d3975c5d06f6d06cd4f1e660c4ea58279fdf63"
+    },
+    "arm64-v8a/libreactnative.so": {
+      "sha256": "48975601a37555a6e53396fcd3a0697bfd5630223e61ffdec273afe24a82b6e2",
+      "elfClass": 2,
+      "machine": 183,
+      "buildId": "fe6b79886a80e63e",
+      "prefabSha256": "59e722826bbdf3a6e60a25db617cc0caff3a957604a6c42889f1f0c433be8174",
+      "prefabBuildId": "fe6b79886a80e63e"
+    },
+    "armeabi-v7a/libappmodules.so": {
+      "sha256": "b85f9244953f9ebe81708b91b9df71c3cc734adcf4ebb656d97d50480106674c",
+      "elfClass": 1,
+      "machine": 40,
+      "buildId": "dc67a27b586188295762d51cccc064056483575c"
+    },
+    "armeabi-v7a/libc++_shared.so": {
+      "sha256": "84e7d99b7b6df960b37c28e43808cc5c2c62d1bb9449e27683fc53309dea5b6c",
+      "elfClass": 1,
+      "machine": 40,
+      "buildId": "b173eb5eb81feab46ad25ecced0664b7da0ada0b"
+    },
+    "armeabi-v7a/libfbjni.so": {
+      "sha256": "6739b4db111283fe0a86a3a5fdd80efe5d963355dd161b95ec179f01cc9685d5",
+      "elfClass": 1,
+      "machine": 40,
+      "buildId": "bc1f23c0c45e1c7ad496193c948e61d7f39b15e9"
+    },
+    "armeabi-v7a/libhermes.so": {
+      "sha256": "a6dbdce33340f793b38205a70d0a9ceda09bdbc57ef5b60b03ffaf7190c03407",
+      "elfClass": 1,
+      "machine": 40,
+      "buildId": "2ced02b0f7756d7977501e7eb734b8307e9fd7f1",
+      "mavenLibrarySha256": "a6dbdce33340f793b38205a70d0a9ceda09bdbc57ef5b60b03ffaf7190c03407"
+    },
+    "armeabi-v7a/libhermestooling.so": {
+      "sha256": "c17144db430e8ab0718547cdbfecbcfeb344922c6742bebb955eb095d126fb3d",
+      "elfClass": 1,
+      "machine": 40,
+      "buildId": "4d3bf4c4430668e9",
+      "prefabSha256": "2beb9975d1682008bcc7d0e6237d496cf8d76e347721eb33844dae32a280be01",
+      "prefabBuildId": "4d3bf4c4430668e9"
+    },
+    "armeabi-v7a/libimagepipeline.so": {
+      "sha256": "0fb5021bcf1cbb6c10630732560bb80bad7187c8b8391e6c001b3f892fa613d5",
+      "elfClass": 1,
+      "machine": 40,
+      "buildId": "855a324a6e6bf304"
+    },
+    "armeabi-v7a/libjsi.so": {
+      "sha256": "051def4c606ee58ad104df06146edf16c9462255d06284356f3ecf2df89a20b7",
+      "elfClass": 1,
+      "machine": 40,
+      "buildId": "6b6bc26e61d98d08",
+      "prefabSha256": "ba94a3174e07c6070a7a356c6c8e78c9bb51668cc7f65522e5d7c5c1de4380c0",
+      "prefabBuildId": "6b6bc26e61d98d08"
+    },
+    "armeabi-v7a/libnative-filters.so": {
+      "sha256": "fb3d55facc8dfdc856441015c2a8d803b10b6c3cf09524c4f04562cec186a62e",
+      "elfClass": 1,
+      "machine": 40,
+      "buildId": "f06c34f93c597801"
+    },
+    "armeabi-v7a/libnative-imagetranscoder.so": {
+      "sha256": "40905f1c50315f66362a8e10e2ac19d1df62c3f1800bc2ee639047d09c9f1bd9",
+      "elfClass": 1,
+      "machine": 40,
+      "buildId": "d9942ee62d67aab0"
+    },
+    "armeabi-v7a/libreact_codegen_safeareacontext.so": {
+      "sha256": "89ad8f009b8982fbad7fd7d6fed12d291a341df9bfbebe878fb3869ebeaa0bb9",
+      "elfClass": 1,
+      "machine": 40,
+      "buildId": "5b11c119788f563c49202d11e77c5f7082a462ca"
+    },
+    "armeabi-v7a/libreactnative.so": {
+      "sha256": "6d38e09d3ef2c72ce3b7e7efae7128b8d288fee5a0f3dd6949b4c6094c45c45e",
+      "elfClass": 1,
+      "machine": 40,
+      "buildId": "724885987f9dc120",
+      "prefabSha256": "6be891a2b9442216d0e8c3f2d7f303d80a6c8b1d8f327d030328709e0358231c",
+      "prefabBuildId": "724885987f9dc120"
+    },
+    "x86/libappmodules.so": {
+      "sha256": "47e71b4ef669407d579280372b98882f4701de72ef521389812e6746c3f38e9c",
+      "elfClass": 1,
+      "machine": 3,
+      "buildId": "d32bfddd8c78f204c12787066ce0d4c6044447a3"
+    },
+    "x86/libc++_shared.so": {
+      "sha256": "3bd6a3c5d1baa1fac3bdd8452ccc403fd1b464b3f80eb9fa207df5ec2d565129",
+      "elfClass": 1,
+      "machine": 3,
+      "buildId": "7aea7e5e26c88ba854ff9e8e2a73b2ef125b18d0"
+    },
+    "x86/libfbjni.so": {
+      "sha256": "735533ea082fe331b293a947f5ac32556ea433c7db1d2fe76e4ac9a440917c65",
+      "elfClass": 1,
+      "machine": 3,
+      "buildId": "17bd6fa76abc96886eca413e322f2cc34f70ff6a"
+    },
+    "x86/libhermes.so": {
+      "sha256": "e453504708b8625dcb668c62536969b1c331dc9eb7a5e69f9628d7edeb3c25a4",
+      "elfClass": 1,
+      "machine": 3,
+      "buildId": "ac64bf2df6cf9e5e28a9eeb41100ca9f3864baac",
+      "mavenLibrarySha256": "e453504708b8625dcb668c62536969b1c331dc9eb7a5e69f9628d7edeb3c25a4"
+    },
+    "x86/libhermestooling.so": {
+      "sha256": "abec338a520b25da7d88277ade1f72faa995fdebac2bec7e2f9aa38e9c7c41d4",
+      "elfClass": 1,
+      "machine": 3,
+      "buildId": "6f8448b7dfa60f4e",
+      "prefabSha256": "04e86f47d40f9a9e66228815966916439545f78e643953792196b2c749e99c5f",
+      "prefabBuildId": "6f8448b7dfa60f4e"
+    },
+    "x86/libimagepipeline.so": {
+      "sha256": "afd22bf7e62e5d08c0ec17ff6c0a273bfc580052c89363c0cb5d72e98d3b4cf4",
+      "elfClass": 1,
+      "machine": 3,
+      "buildId": "ed3c61b231439405"
+    },
+    "x86/libjsi.so": {
+      "sha256": "7e33ca21a61f8093cdd597db0316fbcb4518ff88682b451ca9751fdf912e8fd1",
+      "elfClass": 1,
+      "machine": 3,
+      "buildId": "7f54a450e1691b2b",
+      "prefabSha256": "302e7ce4719e7ae40b64dbf1f0c15634b665413034e207f9aebf8ff98fcd9cd4",
+      "prefabBuildId": "7f54a450e1691b2b"
+    },
+    "x86/libnative-filters.so": {
+      "sha256": "6947adfed7f745e52408b11d83a3cf25072749c3336aa35c634928c6dcfa5da0",
+      "elfClass": 1,
+      "machine": 3,
+      "buildId": "3d4e1312306d026a"
+    },
+    "x86/libnative-imagetranscoder.so": {
+      "sha256": "943c8757e57f59556027d460c0e86738d5969794db905febbe4926fd1d3fa663",
+      "elfClass": 1,
+      "machine": 3,
+      "buildId": "dbbb00174831d41f"
+    },
+    "x86/libreact_codegen_safeareacontext.so": {
+      "sha256": "728afab6dbd0c61d1790274a83ae9cccf9281e24df22ab16034b600af607fa72",
+      "elfClass": 1,
+      "machine": 3,
+      "buildId": "5586e360f3de81ce494d7874ec722f325abce9b5"
+    },
+    "x86/libreactnative.so": {
+      "sha256": "0dd8514dc9191d4b8da5a7301043d24ddfe6051431292787837586f5e4ac61f0",
+      "elfClass": 1,
+      "machine": 3,
+      "buildId": "1288efddcf9e8dd0",
+      "prefabSha256": "3bb57d51e56fb7ca35d209cd1441f53447e4cd00eb51fec4bf2e5ce3449566a1",
+      "prefabBuildId": "1288efddcf9e8dd0"
+    },
+    "x86_64/libappmodules.so": {
+      "sha256": "668cd3866002a11353cd6035d9d45f37c3aefd6b17849aa1043276a439fce691",
+      "elfClass": 2,
+      "machine": 62,
+      "buildId": "7c87f1d15d577c2c48d5e85cec88314ddea57f26"
+    },
+    "x86_64/libc++_shared.so": {
+      "sha256": "0a2c7afa35b183fdd5a3cb20e2080ad54cbea06c2a4f0bc8f122cb7d1e9e0b9f",
+      "elfClass": 2,
+      "machine": 62,
+      "buildId": "734ab2eaa203afbb89147d313e46146617bd1a2c"
+    },
+    "x86_64/libfbjni.so": {
+      "sha256": "a51410366a0394e05bc04052cfb237c70dcf7d4d53a56e1d00a041436cb0b653",
+      "elfClass": 2,
+      "machine": 62,
+      "buildId": "2f4b0da170c8a1af5bf245a5dba7c30a6974f2f2"
+    },
+    "x86_64/libhermes.so": {
+      "sha256": "2e9e9d813b39822f60c9343b7a6df37e85ed07da297ade1f868117be73c5bd09",
+      "elfClass": 2,
+      "machine": 62,
+      "buildId": "be1718215827d9f1a8e4c5e326f3ffb7a473f1fd",
+      "mavenLibrarySha256": "2e9e9d813b39822f60c9343b7a6df37e85ed07da297ade1f868117be73c5bd09"
+    },
+    "x86_64/libhermestooling.so": {
+      "sha256": "42a1ae760d86549a649a793bde48b52e5012b1776126fc2244eb380e15dcd3bb",
+      "elfClass": 2,
+      "machine": 62,
+      "buildId": "a2b76102f7a27fd5",
+      "prefabSha256": "58b2b340705a42ea5416bc762c42c5cc9bdac6d78058619d87513fa0a8d0ac87",
+      "prefabBuildId": "a2b76102f7a27fd5"
+    },
+    "x86_64/libimagepipeline.so": {
+      "sha256": "2e596f4955f65abaa93c891b49eb58b5416581806a04bde0097cc369ae4dbfb3",
+      "elfClass": 2,
+      "machine": 62,
+      "buildId": "ee33ae98d4a96b96"
+    },
+    "x86_64/libjsi.so": {
+      "sha256": "aa5d9b0ee190ebffa732d900f042c5c7ba71a706991c9dc25f62a94b2f2f010b",
+      "elfClass": 2,
+      "machine": 62,
+      "buildId": "e55fcfac0f3b3261",
+      "prefabSha256": "5c5eca6c025e75abd82939eaf707e519b3caf49995bfc06e8bf1242f6f815362",
+      "prefabBuildId": "e55fcfac0f3b3261"
+    },
+    "x86_64/libnative-filters.so": {
+      "sha256": "1a5270f007dd4b2f0fc52ceac82e05143648ba9be59c2213a21cf61c84f1f5e5",
+      "elfClass": 2,
+      "machine": 62,
+      "buildId": "1d203bcbf267decb"
+    },
+    "x86_64/libnative-imagetranscoder.so": {
+      "sha256": "f6b92ad7f1c30973f40704c46987504757c3d079c7f4ace6efc8b318dd9c22f3",
+      "elfClass": 2,
+      "machine": 62,
+      "buildId": "3ad8143b11543dc0"
+    },
+    "x86_64/libreact_codegen_safeareacontext.so": {
+      "sha256": "7ee1ffb7f82374972b9c16deb7c3f6a2a3c99e66d56ab8981c0e9b37a122654d",
+      "elfClass": 2,
+      "machine": 62,
+      "buildId": "8846ce7b98cd58d94438c5689d9f92eca6a6a528"
+    },
+    "x86_64/libreactnative.so": {
+      "sha256": "7e2c0be194ef9eb872981d14e1549305d9bbf96dd69689c9e4ab819953fb31d3",
+      "elfClass": 2,
+      "machine": 62,
+      "buildId": "c41e7398046ffc59",
+      "prefabSha256": "92c4f48063061eca019a8e126a85500e4b2286882774e4450c0caa83386fc689",
+      "prefabBuildId": "c41e7398046ffc59"
+    }
+  },
+  "readOnlySourceGuard": "React Native 0.81.5: verified 13 reviewed renderer, Yoga and source-build files.",
+  "guardNode": "v24.15.0",
+  "exportedHeaders": {
+    "react/renderer/components/view/YogaLayoutableShadowNode.h": "74ff94afa4419bb920ed30d71aaa6c5c918674592f9979b6224a138580421d0a",
+    "react/renderer/textlayoutmanager/TextMeasureCache.h": "549099d6f19ea58e67e636c7b257c0b960e3c0a8c4764c2afac693b8894afd69",
+    "react/renderer/core/LayoutContext.h": "27f37642e5af50be464397bbfd57b1a76a0151d3b0c2b29a860ade0e8bdd8053",
+    "react/fabric/SurfaceHandlerBinding.h": "e1e9da56b2c0d4c699a4a5cb698c165c10af65805f2acfb54fe75bafef2c2bc4"
+  },
+  "identicalAssets": 6,
+  "embedded": {
+    "assets/fonts/NatoTile-ExtraBold.ttf": "b0150a84d5e000fcd276cf13e1863ca8bbaab0ff2a0dfdcfa958a48781dd7aa6",
+    "assets/fonts/NatoTile-Italic.ttf": "50f16c8bec3ed31190d37403b6e15d200274e7a5e43f1a698a86eef7079d862b",
+    "assets/fonts/NatoTile-SemiBold.ttf": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f",
+    "assets/index.android.bundle": "830c147f391ec64fec40ea839d1cf7c231b0a053b2cbb9ac936cdff819518328"
+  },
+  "dex": {
+    "classes.dex": "2fd523d37f04d985498e51da22ac7844f43418c640885a99473898682b8e34cb",
+    "classes2.dex": "61b6354751b69f69d0b88fe66ac63fcfbfffd35f70a73939d7c90043d8eb33cc"
+  },
+  "originalApkUnsigned": true,
+  "originalBundleUnsigned": true,
+  "engineeringSignerCertificateSha256": "fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c",
+  "identicalEngineeringPayloadEntries": 521,
+  "manifestAbis": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86",
+    "x86_64"
+  ],
+  "nonDebuggable": true,
+  "requestedRecordAudio": false,
+  "comparedEntries": {
+    "run28-armeabi-v7a": {
+      "app-release-unsigned.apk": 7,
+      "app-release.aab": 13
+    },
+    "run27-arm64-v8a": {
+      "app-release-unsigned.apk": 7,
+      "app-release.aab": 13
+    },
+    "run28-x86": {
+      "app-release-unsigned.apk": 7,
+      "app-release.aab": 13
+    },
+    "run28-x86_64": {
+      "app-release-unsigned.apk": 7,
+      "app-release.aab": 13
+    },
+    "run31-x86_64": {
+      "app-release-unsigned.apk": 5,
+      "app-release.aab": 11
+    }
+  },
+  "differentX86_64LibrariesComparedWithRun31": {
+    "lib/x86_64/libappmodules.so": {
+      "run31BuildId": "d75f99077383b65cb7e67f56ba842e86a30ca78d",
+      "currentBuildId": "7c87f1d15d577c2c48d5e85cec88314ddea57f26",
+      "differOnlyInGnuBuildIdBytes": true
+    },
+    "lib/x86_64/libhermestooling.so": {
+      "run31BuildId": "f3fecf9b0d445544",
+      "currentBuildId": "a2b76102f7a27fd5",
+      "differOnlyInGnuBuildIdBytes": false
+    },
+    "lib/x86_64/libjsi.so": {
+      "run31BuildId": "f9e1c707c8bbc4b1",
+      "currentBuildId": "e55fcfac0f3b3261",
+      "differOnlyInGnuBuildIdBytes": false
+    },
+    "lib/x86_64/libreact_codegen_safeareacontext.so": {
+      "run31BuildId": "a0d18b60d8d2ccf11f5d71e83ef84a6edb6ddbac",
+      "currentBuildId": "8846ce7b98cd58d94438c5689d9f92eca6a6a528",
+      "differOnlyInGnuBuildIdBytes": false
+    },
+    "lib/x86_64/libreactnative.so": {
+      "run31BuildId": "d622c63d5fb7bd32",
+      "currentBuildId": "c41e7398046ffc59",
+      "differOnlyInGnuBuildIdBytes": false
+    }
+  },
+  "runtime": "Separate observed runtime evidence is required.",
+  "passed": true
+}

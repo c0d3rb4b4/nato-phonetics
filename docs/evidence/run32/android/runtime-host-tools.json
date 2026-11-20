@@ -1,0 +1,21 @@
+{
+  "sourceParse": [
+    "scripts/android_runtime_abi.py",
+    "scripts/run-android-font-instrumentation.py",
+    "scripts/run-android-font-release-fixture.py",
+    "docs/evidence/run32/android/qualify-runtime.py",
+    "docs/evidence/run32/android/restore-runtime.py"
+  ],
+  "runtimeNode": "v22.23.0",
+  "decoderByCheckout": {
+    "C:\\dev\\apps\\nato-phonetics": {
+      "sharp": "0.34.5",
+      "vips": "8.17.3"
+    },
+    "C:/n32": {
+      "sharp": "0.35.5",
+      "vips": "8.18.7"
+    }
+  },
+  "selectedRasterCheckout": "C:/n32"
+}

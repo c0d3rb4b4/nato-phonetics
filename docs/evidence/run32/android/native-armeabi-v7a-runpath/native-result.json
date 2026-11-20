@@ -1,0 +1,24 @@
+{
+  "serial": "emulator-5578",
+  "librarySha256": {
+    "libappmodules.so": "b85f9244953f9ebe81708b91b9df71c3cc734adcf4ebb656d97d50480106674c",
+    "libc++_shared.so": "84e7d99b7b6df960b37c28e43808cc5c2c62d1bb9449e27683fc53309dea5b6c",
+    "libfbjni.so": "6739b4db111283fe0a86a3a5fdd80efe5d963355dd161b95ec179f01cc9685d5",
+    "libhermes.so": "a6dbdce33340f793b38205a70d0a9ceda09bdbc57ef5b60b03ffaf7190c03407",
+    "libhermestooling.so": "c17144db430e8ab0718547cdbfecbcfeb344922c6742bebb955eb095d126fb3d",
+    "libimagepipeline.so": "0fb5021bcf1cbb6c10630732560bb80bad7187c8b8391e6c001b3f892fa613d5",
+    "libjsi.so": "051def4c606ee58ad104df06146edf16c9462255d06284356f3ecf2df89a20b7",
+    "libnative-filters.so": "fb3d55facc8dfdc856441015c2a8d803b10b6c3cf09524c4f04562cec186a62e",
+    "libnative-imagetranscoder.so": "40905f1c50315f66362a8e10e2ac19d1df62c3f1800bc2ee639047d09c9f1bd9",
+    "libreact_codegen_safeareacontext.so": "89ad8f009b8982fbad7fd7d6fed12d291a341df9bfbebe878fb3869ebeaa0bb9",
+    "libreactnative.so": "6d38e09d3ef2c72ce3b7e7efae7128b8d288fee5a0f3dd6949b4c6094c45c45e"
+  },
+  "passed": true,
+  "apkSha256": "ee08061b86ce98ffb108d7de7e1f94d023ed97601bffdbb85ac3b43675bd3284",
+  "abi": "armeabi-v7a",
+  "binarySha256": "dd6b4b75db259b56af55d0999755e995ccf51570d715c949d7d83f32f222e437",
+  "exitCode": 0,
+  "stdout": "{\"abi\":true,\"layoutContextBytes\":32,\"contextFontOffset\":12,\"textFontOffset\":28,\"fragmentTextOffset\":12}\n{\"cloneAlreadyDirty\":false,\"environmentOnly\":false}\n{\"detail\":true,\"viewCloned\":true,\"leafCloned\":true,\"viewClean\":true,\"leafClean\":true,\"measurable\":true}\n{\"passed\":true,\"contextCloneDirty\":true,\"layoutIfNeeded\":true,\"coldHeight\":10,\"liveHeight\":20,\"forcedRootHeight\":20,\"coldMeasures\":1,\"liveMeasures\":2,\"oldSealedTreePreserved\":true,\"observedRootScale\":2,\"directLayoutHeight\":20}\n{\"cloneAlreadyDirty\":true,\"environmentOnly\":false}\n{\"detail\":true,\"viewCloned\":true,\"leafCloned\":true,\"viewClean\":true,\"leafClean\":true,\"measurable\":true}\n{\"passed\":true,\"contextCloneDirty\":true,\"layoutIfNeeded\":true,\"coldHeight\":10,\"liveHeight\":20,\"forcedRootHeight\":20,\"coldMeasures\":1,\"liveMeasures\":2,\"oldSealedTreePreserved\":true,\"observedRootScale\":2,\"directLayoutHeight\":20}\n{\"cloneAlreadyDirty\":false,\"environmentOnly\":true}\n{\"detail\":true,\"viewCloned\":true,\"leafCloned\":true,\"viewClean\":true,\"leafClean\":true,\"measurable\":true}\n{\"passed\":true,\"contextCloneDirty\":true,\"layoutIfNeeded\":true,\"coldHeight\":10,\"liveHeight\":20,\"forcedRootHeight\":20,\"coldMeasures\":1,\"liveMeasures\":2,\"oldSealedTreePreserved\":true,\"observedRootScale\":1,\"directLayoutHeight\":20}\n{\"cloneAlreadyDirty\":true,\"environmentOnly\":true}\n{\"detail\":true,\"viewCloned\":true,\"leafCloned\":true,\"viewClean\":true,\"leafClean\":true,\"measurable\":true}\n{\"passed\":true,\"contextCloneDirty\":true,\"layoutIfNeeded\":true,\"coldHeight\":10,\"liveHeight\":20,\"forcedRootHeight\":20,\"coldMeasures\":1,\"liveMeasures\":2,\"oldSealedTreePreserved\":true,\"observedRootScale\":1,\"directLayoutHeight\":20}\n{\"olderEnvironmentAdoptionPassed\":true,\"adoptedRootDirty\":true,\"oldHeight\":10,\"latestHeight\":20,\"adoptedHeight\":20,\"measureCalls\":3}\n{\"cacheEnvironmentPassed\":true,\"sameTextPropsConstraints\":true,\"keyEqualAfterEnvironmentChange\":false,\"measureCalls\":2,\"firstHeight\":10,\"secondHeight\":20}\n",
+  "stderr": "",
+  "removedOwnedTestDirectory": true
+}

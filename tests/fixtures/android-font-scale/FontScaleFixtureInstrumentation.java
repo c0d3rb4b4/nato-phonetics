@@ -10,6 +10,7 @@ import android.text.Editable;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.TextView;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -98,7 +99,10 @@ public final class FontScaleFixtureInstrumentation extends Instrumentation {
     }));
     samples.put(stage,row); // Preserve a failing observation before checking it.
     row.put("captureCommand", DisplayCapture.COMMAND);
-    DisplayCapture.write(this, new File(output, stage + ".png"));
+    FixtureDisplayCapture expected = ui(() -> new FixtureDisplayCapture((TextView)find("stable")));
+    JSONObject display = expected.capture(this, new File(output, stage + ".png"));
+    row.put("display", display);
+    require(display.getBoolean("matched"), "Presented paragraph did not match the mounted Android Layout at " + stage);
     JSONObject nativeRow=row.getJSONObject("native");
     require(row.getInt("mounts")==1 && nativeRow.getBoolean("sameView") && nativeRow.getBoolean("sameEditable"),"Root/input/Editable replaced: "+row);
     require(row.getString("value").equals(nativeRow.getString("value")),"JS/native value mismatch");
@@ -117,7 +121,8 @@ public final class FontScaleFixtureInstrumentation extends Instrumentation {
   }
   @Override public void onStart() {
     Bundle result = new Bundle(); JSONObject report = new JSONObject();
-    String originalScale="1", originalSize="reset"; int code=Activity.RESULT_CANCELED;
+    String originalScale="", originalSize="reset"; int code=Activity.RESULT_CANCELED;
+    boolean capturedSettings=false;
     try {
       require(scenario.matches("primary|cold2|cold085|cold13|sweep|editing"),"Unknown scenario");
       require(narrow.matches("[0-9]+x[0-9]+"),"Invalid narrow window");
@@ -127,12 +132,15 @@ public final class FontScaleFixtureInstrumentation extends Instrumentation {
       String window=shell("wm size");
       java.util.regex.Matcher match=java.util.regex.Pattern.compile("Override size: ([0-9]+x[0-9]+)").matcher(window);
       if(match.find())originalSize=match.group(1);
+      capturedSettings=true;
       float initial=scenario.equals("cold2")?2:scenario.equals("cold085")?.85f:scenario.equals("cold13")?1.3f:1;
       shell("settings put system font_scale "+initial);
       Intent intent=new Intent(); intent.setClassName("com.natophonetics.app","com.natophonetics.app.MainActivity");
       intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK); activity=startActivitySync(intent);
       tag=getTargetContext().getResources().getIdentifier("react_test_id","id","com.natophonetics.app");
       require(tag!=0,"Missing testID resource"); await(initial);
+      RuntimeLibraries.write(output, activity.getApplicationInfo());
+      report.put("runtimePid", android.os.Process.myPid());
       if(scenario.equals("primary")) {
         snapshot("cold1"); captureScale("live2",2); captureScale("return1",1);
       } else if(scenario.equals("cold2")) {
@@ -148,7 +156,10 @@ public final class FontScaleFixtureInstrumentation extends Instrumentation {
       try {report.put("passed",false).put("error",android.util.Log.getStackTraceString(error));}catch(Exception ignored) { }
     } finally {
       try {
-        shell("settings put system font_scale "+originalScale); shell("wm size "+originalSize);
+        if(capturedSettings) {
+          shell(originalScale.equals("null") ? "settings delete system font_scale" : "settings put system font_scale "+originalScale);
+          shell("wm size "+originalSize);
+        }
         report.put("samples",samples).put("scenario",scenario).put("outputDirectory",output==null?"":output.getAbsolutePath())
             .put("originalScale",originalScale).put("originalWindowOverride",originalSize)
             .put("scope","Separate Release fixture, normal AppRegistry startup, native observer; no inspector or root replacement");

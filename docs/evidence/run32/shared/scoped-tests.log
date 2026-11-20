@@ -1,0 +1,94 @@
+TAP version 13
+# Subtest: run20 real stale native measurements remain rejected
+ok 1 - run20 real stale native measurements remain rejected
+  ---
+  duration_ms: 8.1678
+  type: 'test'
+  ...
+# Subtest: run22 real stale native measurements remain rejected
+ok 2 - run22 real stale native measurements remain rejected
+  ---
+  duration_ms: 4.6336
+  type: 'test'
+  ...
+# Subtest: native acceptance rejects incomplete stages and remounts even with cold-equivalent frames
+ok 3 - native acceptance rejects incomplete stages and remounts even with cold-equivalent frames
+  ---
+  duration_ms: 0.5488
+  type: 'test'
+  ...
+# Subtest: correct outer frames cannot hide stale editable glyph sizing
+ok 4 - correct outer frames cannot hide stale editable glyph sizing
+  ---
+  duration_ms: 7.6003
+  type: 'test'
+  ...
+# Subtest: actual Release observations retain strict frame/widget, sweep, edit and resize acceptance
+ok 5 - actual Release observations retain strict frame/widget, sweep, edit and resize acceptance
+  ---
+  duration_ms: 8.1756
+  type: 'test'
+  ...
+# Subtest: Release gate rejects missing native evidence, replacement and stale glyph paint despite matching frames
+ok 6 - Release gate rejects missing native evidence, replacement and stale glyph paint despite matching frames
+  ---
+  duration_ms: 6.2862
+  type: 'test'
+  ...
+# Subtest: Release gate rejects lost caret, changed input, absent sweep and absent cold reference
+ok 7 - Release gate rejects lost caret, changed input, absent sweep and absent cold reference
+  ---
+  duration_ms: 5.958
+  type: 'test'
+  ...
+# Subtest: Android float32 scale representation passes; wrong environment or >1px frame deviation fails
+ok 8 - Android float32 scale representation passes; wrong environment or >1px frame deviation fails
+  ---
+  duration_ms: 2.5345
+  type: 'test'
+  ...
+# Subtest: actual production Release native views/spans/Layout satisfy the unchanged tile contract
+ok 9 - actual production Release native views/spans/Layout satisfy the unchanged tile contract
+  ---
+  duration_ms: 32.1149
+  type: 'test'
+  ...
+# Subtest: native gate rejects missing parts/lines, wrong font and >1px actual baseline drift
+ok 10 - native gate rejects missing parts/lines, wrong font and >1px actual baseline drift
+  ---
+  duration_ms: 16.2539
+  type: 'test'
+  ...
+# Subtest: native gate rejects exposed concealed answer and synthetic observation provenance
+ok 11 - native gate rejects exposed concealed answer and synthetic observation provenance
+  ---
+  duration_ms: 3.069
+  type: 'test'
+  ...
+# Subtest: native source preparation is repeatable and preserves unrelated bytes
+ok 12 - native source preparation is repeatable and preserves unrelated bytes
+  ---
+  duration_ms: 252.9135
+  type: 'test'
+  ...
+# Subtest: native context drift fails before any source file is patched
+ok 13 - native context drift fails before any source file is patched
+  ---
+  duration_ms: 73.0155
+  type: 'test'
+  ...
+# Subtest: a complete prefab survives preparation, while a stale packaged header requires regeneration
+ok 14 - a complete prefab survives preparation, while a stale packaged header requires regeneration
+  ---
+  duration_ms: 196.189
+  type: 'test'
+  ...
+1..14
+# tests 14
+# suites 0
+# pass 14
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 604.6056

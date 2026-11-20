@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "C:\dev\apps\nato-phonetics\docs\evidence\run32\android\arm64-targeted.py", line 125, in <module>
+    prepare() if args.scope == "prepare" else startup()
+  File "C:\dev\apps\nato-phonetics\docs\evidence\run32\android\arm64-targeted.py", line 122, in startup
+    if not result["passed"]: raise RuntimeError("The ARM64-targeted ordinary converter route did not start")
+RuntimeError: The ARM64-targeted ordinary converter route did not start

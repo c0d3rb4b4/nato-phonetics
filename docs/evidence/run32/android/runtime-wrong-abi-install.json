@@ -1,0 +1,13 @@
+{
+  "requested": "arm64-v8a",
+  "controlSha256": "ce74de3404a2a18bce416dca21d8fcd86d6fe88b69744cf90e2ac53e84e66331",
+  "exitCode": 1,
+  "output": [
+    "Performing Incremental Install",
+    "Performing Streamed Install",
+    "adb.exe: failed to install artifacts/run31/x86_64/app-release-local-test.apk: Failure [INSTALL_FAILED_NO_MATCHING_ABIS: INSTALL_FAILED_NO_MATCHING_ABIS: Failed to extract native libraries, res=-113]",
+    ""
+  ],
+  "packages": [],
+  "expectedRejection": true
+}

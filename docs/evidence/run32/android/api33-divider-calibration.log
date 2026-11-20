@@ -1,0 +1,36 @@
+args: [-p, com.google.android.deskclock, -c, android.intent.category.LAUNCHER, 1]
+ arg: "-p"
+ arg: "com.google.android.deskclock"
+ arg: "-c"
+ arg: "android.intent.category.LAUNCHER"
+ arg: "1"
+data="com.google.android.deskclock"
+data="android.intent.category.LAUNCHER"
+Starting: Intent { act=android.settings.SETTINGS }
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+Status: ok
+LaunchState: UNKNOWN (0)
+Activity: com.android.settings/.homepage.SettingsHomepageActivity
+TotalTime: 0
+WaitTime: 5
+Complete
+bash arg: -p
+  bash arg: com.google.android.deskclock
+  bash arg: -c
+  bash arg: android.intent.category.LAUNCHER
+  bash arg: 1
+Events injected: 1
+## Network stats: elapsed time=28ms (0ms mobile, 0ms wifi, 28ms not connected)
+SERVICE com.android.systemui/.SystemUIService 7dd43b5 pid=748 user=0
+  Client:
+
+    com.android.systemui.wmshell.WMShell:
+    ----------------------------------------------------------------------------
+
+    Dump took 49ms
+start mBounds=Rect(0, 0 - 720, 787) mAppBounds=Rect(0, 0 - 720, 787) mMaxBounds=Rect(0, 0 - 720, 1600) mDisplayRotation=ROTATION_0 mWindowingMode=multi-window
+('input', 'swipe', '360', '796', '360', '1180', '1300') 
+after mBounds=Rect(0, 0 - 720, 1106) mAppBounds=Rect(0, 0 - 720, 1106) mMaxBounds=Rect(0, 0 - 720, 1600) mDisplayRotation=ROTATION_0 mWindowingMode=multi-window
+('input', 'swipe', '360', '796', '360', '1280', '550') 
+after mBounds=Rect(0, 0 - 720, 1106) mAppBounds=Rect(0, 0 - 720, 1106) mMaxBounds=Rect(0, 0 - 720, 1600) mDisplayRotation=ROTATION_0 mWindowingMode=multi-window
+220.0dip

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\dev\apps\nato-phonetics\docs\evidence\run32\android\quiz-round.py", line 171, in <module>
+    main()
+  File "C:\dev\apps\nato-phonetics\docs\evidence\run32\android\quiz-round.py", line 152, in main
+    report['runtime'] = check_runtime(product.APK, app_path, app_sha, abi, args.abi, mappings, after['runtimePid'])
+  File "C:\dev\apps\nato-phonetics\scripts\android_runtime_abi.py", line 52, in check_runtime
+    raise ValueError(f"No mapped ELF header for {entry.filename} at offset {offset}")
+ValueError: No mapped ELF header for lib/arm64-v8a/libreactnative.so at offset 8945664

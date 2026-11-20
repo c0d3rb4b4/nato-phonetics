@@ -1,0 +1,34 @@
+{
+  "controls": [
+    "editing-typed-before",
+    "editing-live2"
+  ],
+  "dimensionsPx": [
+    720,
+    1600
+  ],
+  "reportedScales": [
+    1,
+    2
+  ],
+  "sha256": [
+    "be104bd8d6f626cd467bf62c57b9045ab6cb9472af4c05f220398d5c16ac6107",
+    "3f0a3f60bd48689b78cc1b9d5430e9f9a93571c0adfc853f9c110cc101e00bc5"
+  ],
+  "method": "Pixel-wise absolute difference of decoded RGB using Pillow ImageChops.difference and non-zero bounding box, left/top inclusive and right/bottom exclusive.",
+  "differenceBoundsPx": [
+    66,
+    1552,
+    85,
+    1564
+  ],
+  "differentPixels": 87,
+  "leftTopAreaCheckedPx": [
+    0,
+    0,
+    720,
+    1500
+  ],
+  "identicalAboveY1500": true,
+  "visualResult": "Both show scale 1 and the same small NUWQJ359 field. The scale-2 screenshot fails visual qualification. The native sample, other fixture measurements and keyboard coverage at a correctly displayed 2x each require their own evidence."
+}

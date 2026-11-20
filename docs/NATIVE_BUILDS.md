@@ -1,6 +1,6 @@
 # Direct native builds
 
-**Android build update, 20 November 2026.** Ordinary builds now configure ReactAndroid from the locked, repaired React Native 0.81.5 source. The locked install passed all 13 reviewed source guards. The ordinary x86_64 Release passed the original production tile, window and narrow checks on its identified emulator. [Product captures and measured limits](evidence/run31/android/product-observation.md). [Run 31 evidence](evidence/run31/README.md).
+**Android build update, 20 November 2026.** The ordinary four-ABI Release built in 43m20s on Windows. Its unsigned APK and AAB contain 11 native libraries per ABI, with matching JS and fonts. The locally signed emulator copy preserves all 521 non-signature APK entries. Debug and Release source selection were established in Run 31. Run 32 verified the Release selection and recorded each product’s full digest. [Gradle output](evidence/run32/android/four-abi-release.log) · [artifact and native identities](evidence/run32/android/product-identity.json) · [earlier classpath checks](evidence/run31/android/default-renderers.log).
 
 **Historical Run30 Android checkpoint — 20 November 2026:** original complete production Release tile contexts on unchanged APK5dfa45d2 now pass505 actual native baselines/217 ink observations, with93 scoped window and21 complete-narrow baselines, retained converter/quiz state and explicit Next.30 actual Android captures inspected.11 scoped tests/lint pass; observer/selection failures remain archived. Ordinary clean/default source integration and exact-artifact retests are next P1; broader runtime/integrated/M11 acceptance remains open. Default Maven retains the historical defect. [Evidence](evidence/run30/README.md), [screenshots](evidence/run30/screenshots/index.md), [next Android](evidence/run30/android/next-android.md).
 
@@ -40,6 +40,17 @@ Run `npm ci` with lifecycle scripts enabled. It validates all 13 reviewed React 
 Ordinary Gradle, Android Studio, npm and host builds use the same source selection. Gradle checks the reviewed bytes and existing generated prefab headers before including ReactAndroid. To check an installed tree, run `npm run prepare:android:source -- --check`. To prepare recognized upstream files or invalidate stale generated headers, run `npm run prepare:android:source`. Source drift or an unexpected React Native version requires review. For a deliberate comparison with the historical Maven text-sizing failure, invoke Gradle directly with `-PnatoReactNativeSource=false`.
 
 Run `:app:verifyDebugRenderer` and `:app:verifyReleaseRenderer` from the Gradle wrapper to check the actual component selections before compiling. The ordinary npm and host Android build commands run the corresponding task. These gates require the local ReactAndroid project and the SHA-256 of the matching external Maven Hermes 0.81.5 AAR. Both variants passed on a clean Windows checkout. [Observed selections and hashes](evidence/run31/android/default-renderers.log).
+
+To produce both Release artifacts for the configured `armeabi-v7a`, `arm64-v8a`, `x86` and `x86_64` targets, run the following from a short Windows checkout with the pinned toolchain. Leave `reactNativeArchitectures` at its checked-in value.
+
+```powershell
+npm.cmd ci
+$env:NATO_BUILD_JOBS = '1'
+Set-Location android
+.\gradlew.bat :app:verifyReleaseRenderer :app:assembleRelease :app:bundleRelease --max-workers=1
+```
+
+The APK is suitable for emulator testing after local engineering signing. The AAB is the bundle for distribution preparation. Record the per-ABI native entries, production JS and tile fonts from both artifacts. For runtime evidence, record the installed APK digest, the ABI selected by PackageManager and the ELF libraries mapped into the tested process. This distinguishes ordinary ABI selection from an explicit `adb install --abi` test under translation. [Run 32 build inputs](evidence/run32/shared/baseline.json) · [runtime identity check](../scripts/android_runtime_abi.py).
 
 First builds need the source CMake toolchain and ReactAndroid's upstream native dependencies. On Windows, use a short physical checkout path. Ninja failed creating an object subdirectory in a 61-character checkout. Its 410 inspected object paths reached 303 characters. A fresh install at a shorter physical path then built the x86_64 Release APK and AAB in 13 minutes 41 seconds. [Measured paths](evidence/run31/android/build-path-observation.json), [failed long-path build](evidence/run31/android/x86_64-release.log), [short-path retry](evidence/run31/android/x86_64-release-short.log). Serialize expensive builds with `NATO_BUILD_JOBS=1`. After building, bind the actual ReactAndroid, Maven Hermes, ABI libraries, fonts and embedded JS to the product before running application checks. [Run 31 checks and outstanding qualification](evidence/run31/README.md).
 

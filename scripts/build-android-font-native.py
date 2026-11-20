@@ -20,6 +20,8 @@ parser.add_argument('prefab',type=Path)
 parser.add_argument('output',type=Path)
 parser.add_argument('--release',action='store_true')
 parser.add_argument('--abi',choices=targets,default='arm64-v8a')
+parser.add_argument('--project-root',type=Path,default=root,
+                    help='Prepared checkout whose RN headers were used for the product')
 args=parser.parse_args()
 prefab=args.prefab.resolve()
 out=args.output.resolve();out.mkdir(parents=True,exist_ok=True)
@@ -35,7 +37,7 @@ def verify_elf(file):
 sdk=Path(os.environ['ANDROID_HOME'])
 ndk_host={'darwin':'darwin-x86_64','linux':'linux-x86_64','win32':'windows-x86_64'}[sys.platform]
 ndk=sdk/'ndk/27.1.12297006/toolchains/llvm/prebuilt'/ndk_host
-rn=root/'node_modules/react-native'
+rn=args.project_root.resolve()/'node_modules/react-native'
 if json.loads((rn/'package.json').read_text())['version']!='0.81.5':
     raise RuntimeError('Re-review native harness for new RN version')
 compiler=executable(ndk/'bin/clang++')
@@ -80,6 +82,9 @@ for suffix,exported in [('/core/LayoutContext.h','react/renderer/core/LayoutCont
         if hashlib.sha256(actual_header.read_bytes()).hexdigest()!=expected_header:
             raise RuntimeError('Exported context/surface header/library ABI mismatch: '+exported)
 command=[str(compiler),f'--target={target}',f'--sysroot={ndk}/sysroot','-std=c++20','-fexceptions','-frtti','-g1','-O0','-DANDROID','-DRN_SERIALIZABLE_STATE','-DFOLLY_NO_CONFIG=1','-DFOLLY_MOBILE=1','-DFOLLY_USE_LIBCPP=1','-DFOLLY_CFG_NO_COROUTINES=1','-DFOLLY_HAVE_CLOCK_GETTIME=1','-DFOLLY_HAVE_RECVMMSG=1','-DFOLLY_HAVE_PTHREAD=1','-DFOLLY_HAVE_XSI_STRERROR_R=1',f'-I{prefab}/modules/reactnative/include',f'-I{prefab}/modules/jsi/include',f'-I{fbjni}/include',f'-I{rn}/ReactCommon',f'-I{rn}/ReactCommon/react/renderer/graphics/platform/android',f'-I{rn}/ReactCommon/react/renderer/components/view/platform/android',str(root/'scripts/native-tests/font-environment.cpp'),str(libraries['reactnative']),str(libraries['jsi']),str(fbjni_library),'-llog','-landroid','-o',str(out/'font-environment')]
+# The Android native bridge can discard the host LD_LIBRARY_PATH when starting
+# a translated executable. Resolve the adjacent, APK-verified guest libraries.
+command.insert(1,'-Wl,-rpath,$ORIGIN/libs')
 if release:
     # Match the production class layout in react/debug/flags.h. The harness's
     # six explicit result predicates remain identical in both variants.

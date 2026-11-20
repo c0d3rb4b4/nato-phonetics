@@ -1,0 +1,91 @@
+{
+  "passed": true,
+  "serial": "emulator-5578",
+  "requestedAbi": "x86",
+  "stages": [
+    {
+      "stage": "converter-1",
+      "fontScale": 1,
+      "draft": "NUWJ359",
+      "tileWidth": 193,
+      "tileHeight": 263,
+      "word": "November",
+      "wordPaintPx": 28,
+      "activityIdentity": 99147073,
+      "runtimePid": 7283
+    },
+    {
+      "stage": "converter-2",
+      "fontScale": 2,
+      "draft": "NUWJ359",
+      "tileWidth": 385,
+      "tileHeight": 525,
+      "word": "November",
+      "wordPaintPx": 56,
+      "activityIdentity": 99147073,
+      "runtimePid": 7283
+    },
+    {
+      "stage": "converter-returned-1",
+      "fontScale": 1,
+      "draft": "NUWJ359",
+      "tileWidth": 193,
+      "tileHeight": 263,
+      "word": "November",
+      "wordPaintPx": 28,
+      "activityIdentity": 99147073,
+      "runtimePid": 7283
+    }
+  ],
+  "install": "Performing Streamed Install\r\nSuccess",
+  "installMode": "ordinary default",
+  "observerInstall": "Performing Incremental Install\r\nPerforming Streamed Install\r\nSuccess",
+  "runtime": {
+    "pid": 7283,
+    "apkSha256": "ee08061b86ce98ffb108d7de7e1f94d023ed97601bffdbb85ac3b43675bd3284",
+    "primaryCpuAbi": "x86",
+    "nativeLibraryDir": "/data/app/~~GcW4VMxYgoUug3gPm3SZtQ==/com.natophonetics.app-2x0jJtMLaA0P-qXT6UErJQ==/lib/x86",
+    "verifiedLibraries": {
+      "libreactnative.so": {
+        "entry": "lib/x86/libreactnative.so",
+        "sha256": "0dd8514dc9191d4b8da5a7301043d24ddfe6051431292787837586f5e4ac61f0",
+        "zipDataOffset": 28164096,
+        "mappings": [
+          {
+            "path": "/data/app/~~GcW4VMxYgoUug3gPm3SZtQ==/com.natophonetics.app-2x0jJtMLaA0P-qXT6UErJQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 28164096
+          }
+        ]
+      },
+      "libhermes.so": {
+        "entry": "lib/x86/libhermes.so",
+        "sha256": "e453504708b8625dcb668c62536969b1c331dc9eb7a5e69f9628d7edeb3c25a4",
+        "zipDataOffset": 24084480,
+        "mappings": [
+          {
+            "path": "/data/app/~~GcW4VMxYgoUug3gPm3SZtQ==/com.natophonetics.app-2x0jJtMLaA0P-qXT6UErJQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 24084480
+          }
+        ]
+      },
+      "libjsi.so": {
+        "entry": "lib/x86/libjsi.so",
+        "sha256": "7e33ca21a61f8093cdd597db0316fbcb4518ff88682b451ca9751fdf912e8fd1",
+        "zipDataOffset": 26869760,
+        "mappings": [
+          {
+            "path": "/data/app/~~GcW4VMxYgoUug3gPm3SZtQ==/com.natophonetics.app-2x0jJtMLaA0P-qXT6UErJQ==/base.apk",
+            "permissions": "r-xp",
+            "offset": 26869760
+          }
+        ]
+      }
+    },
+    "passed": true
+  },
+  "nativeBridge": "libndk_translation.so",
+  "bridgeMapped": true,
+  "productSha256": "ee08061b86ce98ffb108d7de7e1f94d023ed97601bffdbb85ac3b43675bd3284"
+}

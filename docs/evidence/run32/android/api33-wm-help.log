@@ -1,0 +1,42 @@
+SERVICE com.android.systemui/.SystemUIService 7dd43b5 pid=748 user=0
+  Client:
+
+    com.android.systemui.wmshell.WMShell:
+    ----------------------------------------------------------------------------
+    Window Manager Shell commands:
+      compatui
+        restartDialogEnabled [0|false|1|true]
+          Enable/Disable the restart education dialog for Size Compat Mode
+        reachabilityEducationEnabled [0|false|1|true]
+          Enable/Disable the restart education dialog for letterbox reachability
+          Disable the restart education dialog for letterbox reachability
+      protolog
+        status
+          Get current ProtoLog status.
+        start
+          Start proto logging.
+        stop
+          Stop proto logging and flush to file.
+        enable [group...]
+          Enable proto logging for given groups.
+        disable [group...]
+          Disable proto logging for given groups.
+        enable-text [group...]
+          Enable logcat logging for given groups.
+        disable-text [group...]
+          Disable logcat logging for given groups.
+        save-for-bugreport
+          Flush proto logging to file, only if it's enabled.
+      splitscreen
+        moveToSideStage <taskId> <SideStagePosition>
+          Move a task with given id in split-screen mode.
+        removeFromSideStage <taskId>
+          Remove a task with given id in split-screen mode.
+        setSideStagePosition <SideStagePosition>
+          Sets the position of the side-stage.
+      help
+          Print this help text.
+      <no arguments provided>
+        Dump all Window Manager Shell internal state
+
+    Dump took 0ms

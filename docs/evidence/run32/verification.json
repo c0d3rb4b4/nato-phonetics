@@ -1,0 +1,102 @@
+{
+  "date": "2026-11-20",
+  "initialHead": "64f14b5623d16dfabba7b6428483ab3ce8094b62",
+  "head": "64f14b5623d16dfabba7b6428483ab3ce8094b62",
+  "indexTree": "33ba5fd282fa6dec7616a4f4560e040e9d09a47f",
+  "sourceAndDocumentSha256": "native-x86_64-runpath-api33",
+  "sourceAndDocumentSetSha256": "c802fdf6a6c4cfa94163a8bda67a4e33fc6b8a7e61dab2d3c908141094f32e47",
+  "counts": {
+    "resolved": 6,
+    "implemented-awaiting-M11": 15,
+    "in-progress": 14
+  },
+  "phaseStatus": {
+    "P00": "agent-done",
+    "P01": "agent-done",
+    "P02": "agent-done",
+    "P03": "agent-done",
+    "P04": "agent-done",
+    "P05": "active",
+    "P06": "active",
+    "P07": "agent-done",
+    "P08": "active",
+    "P09": "active",
+    "P10": "active",
+    "M11": "todo"
+  },
+  "m11Unchecked": 7,
+  "distinctChangedLocalLinksChecked": 446,
+  "changedPythonParsed": [
+    "docs/evidence/run32/android/api30-abi-smoke.py",
+    "docs/evidence/run32/android/api33-split.py",
+    "docs/evidence/run32/android/arm64-targeted.py",
+    "docs/evidence/run32/android/converter-export.py",
+    "docs/evidence/run32/android/inspect-products.py",
+    "docs/evidence/run32/android/native-controls.py",
+    "docs/evidence/run32/android/practice-scale.py",
+    "docs/evidence/run32/android/qualify-native.py",
+    "docs/evidence/run32/android/qualify-runtime.py",
+    "docs/evidence/run32/android/quiz-round.py",
+    "docs/evidence/run32/android/recover-composition.py",
+    "docs/evidence/run32/android/replay-evidence-integrity.py",
+    "docs/evidence/run32/android/restore-runtime.py",
+    "docs/evidence/run32/android/sign-engineering-copy.py",
+    "docs/evidence/run32/android/verify-edit-display.py",
+    "scripts/android_display_evidence.py",
+    "scripts/android_runtime_abi.py",
+    "scripts/android_test_tools.py",
+    "scripts/build-android-font-native.py",
+    "scripts/run-android-font-instrumentation.py",
+    "scripts/run-android-font-native.py",
+    "scripts/run-android-font-release-fixture.py",
+    "tests/test_android_evidence.py"
+  ],
+  "historicalEvidenceChanges": [],
+  "trackedStagingChanges": [],
+  "actualPngFiles": 183,
+  "allCaptureDigestsMatchInventory": true,
+  "nativeConsumerGates": {
+    "x86": "native-x86",
+    "x86_64": "native-x86_64-api36",
+    "armeabi-v7a": "native-armeabi-v7a-runpath",
+    "arm64-v8a": "native-arm64-v8a-runpath"
+  },
+  "appProcesses": {
+    "api30-x86-media": {
+      "pid": 7283,
+      "abi": "x86"
+    },
+    "api33-universal": {
+      "pid": 18190,
+      "abi": "x86_64"
+    },
+    "converter-universal": {
+      "pid": 19919,
+      "abi": "x86_64"
+    },
+    "quiz-api33-universal": {
+      "pid": 21016,
+      "abi": "x86_64"
+    },
+    "practice-api33-universal": {
+      "pid": 23531,
+      "abi": "x86_64"
+    },
+    "quiz-api36-universal": {
+      "pid": 20616,
+      "abi": "x86_64"
+    },
+    "practice-api36-universal": {
+      "pid": 22858,
+      "abi": "x86_64"
+    }
+  },
+  "productSourceChanged": false,
+  "checks": {
+    "scopedAndroidTests": 14,
+    "sessionNumericRecallTests": 17,
+    "cleanConversionAndExportTests": 8,
+    "evidenceIntegrityControlTests": 8,
+    "notes": "Fresh build and native/runtime gates have separate candidate-bound reports. No fresh full shared, iOS, web, audit or M11 assertion."
+  }
+}

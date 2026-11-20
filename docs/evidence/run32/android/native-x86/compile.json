@@ -1,0 +1,55 @@
+{
+  "command": [
+    "C:\\Users\\lalit\\AppData\\Local\\Android\\Sdk\\ndk\\27.1.12297006\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe",
+    "-DNDEBUG",
+    "--target=i686-none-linux-android24",
+    "--sysroot=C:\\Users\\lalit\\AppData\\Local\\Android\\Sdk\\ndk\\27.1.12297006\\toolchains\\llvm\\prebuilt\\windows-x86_64/sysroot",
+    "-std=c++20",
+    "-fexceptions",
+    "-frtti",
+    "-g1",
+    "-O2",
+    "-DANDROID",
+    "-DRN_SERIALIZABLE_STATE",
+    "-DFOLLY_NO_CONFIG=1",
+    "-DFOLLY_MOBILE=1",
+    "-DFOLLY_USE_LIBCPP=1",
+    "-DFOLLY_CFG_NO_COROUTINES=1",
+    "-DFOLLY_HAVE_CLOCK_GETTIME=1",
+    "-DFOLLY_HAVE_RECVMMSG=1",
+    "-DFOLLY_HAVE_PTHREAD=1",
+    "-DFOLLY_HAVE_XSI_STRERROR_R=1",
+    "-IC:\\n32\\node_modules\\react-native\\ReactAndroid\\build\\intermediates\\prefab_package\\release\\prefab/modules/reactnative/include",
+    "-IC:\\n32\\node_modules\\react-native\\ReactAndroid\\build\\intermediates\\prefab_package\\release\\prefab/modules/jsi/include",
+    "-IC:\\Users\\lalit\\.gradle\\caches\\8.14.3\\transforms\\48f32c88ab848eeaa4d6425b771aa34b\\transformed\\fbjni-0.7.0\\prefab\\modules\\fbjni/include",
+    "-IC:\\n32\\node_modules\\react-native/ReactCommon",
+    "-IC:\\n32\\node_modules\\react-native/ReactCommon/react/renderer/graphics/platform/android",
+    "-IC:\\n32\\node_modules\\react-native/ReactCommon/react/renderer/components/view/platform/android",
+    "C:\\n32\\scripts\\native-tests\\font-environment.cpp",
+    "C:\\n32\\node_modules\\react-native\\ReactAndroid\\build\\intermediates\\prefab_package\\release\\prefab\\modules\\reactnative\\libs\\android.x86\\libreactnative.so",
+    "C:\\n32\\node_modules\\react-native\\ReactAndroid\\build\\intermediates\\prefab_package\\release\\prefab\\modules\\jsi\\libs\\android.x86\\libjsi.so",
+    "C:\\Users\\lalit\\.gradle\\caches\\8.14.3\\transforms\\48f32c88ab848eeaa4d6425b771aa34b\\transformed\\fbjni-0.7.0\\prefab\\modules\\fbjni\\libs\\android.x86\\libfbjni.so",
+    "-llog",
+    "-landroid",
+    "-o",
+    "C:\\dev\\apps\\nato-phonetics\\artifacts\\run32\\native-x86\\font-environment"
+  ],
+  "abi": "x86",
+  "contextGenerationAbi": true,
+  "buildVariant": "Release",
+  "libraryDebugAbi": false,
+  "exitCode": 0,
+  "libraries": {
+    "reactnative": {
+      "path": "C:\\n32\\node_modules\\react-native\\ReactAndroid\\build\\intermediates\\prefab_package\\release\\prefab\\modules\\reactnative\\libs\\android.x86\\libreactnative.so",
+      "sha256": "3bb57d51e56fb7ca35d209cd1441f53447e4cd00eb51fec4bf2e5ce3449566a1"
+    },
+    "jsi": {
+      "path": "C:\\n32\\node_modules\\react-native\\ReactAndroid\\build\\intermediates\\prefab_package\\release\\prefab\\modules\\jsi\\libs\\android.x86\\libjsi.so",
+      "sha256": "302e7ce4719e7ae40b64dbf1f0c15634b665413034e207f9aebf8ff98fcd9cd4"
+    }
+  },
+  "executableSha256": "14f8f6c9224d3f0530036068839bccc9cac2c21c9dafdc3e5b118f416683eda4",
+  "fontEnvironmentAbi": true,
+  "exportedYogaHeaderSha256": "74ff94afa4419bb920ed30d71aaa6c5c918674592f9979b6224a138580421d0a"
+}

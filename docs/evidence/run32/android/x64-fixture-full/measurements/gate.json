@@ -1,0 +1,734 @@
+{
+  "passed": true,
+  "tolerancePhysicalPixels": 1,
+  "primary": {
+    "passed": true,
+    "tolerancePhysicalPixels": 1,
+    "errors": [],
+    "comparisons": [
+      {
+        "liveStage": "live2",
+        "coldStage": "cold2",
+        "name": "stable",
+        "live": 135.4285888671875,
+        "cold": 135.4285888671875,
+        "passed": true
+      },
+      {
+        "liveStage": "live2",
+        "coldStage": "cold2",
+        "name": "feedback",
+        "live": 36,
+        "cold": 36,
+        "passed": true
+      },
+      {
+        "liveStage": "live2",
+        "coldStage": "cold2",
+        "name": "input",
+        "live": 63.4285888671875,
+        "cold": 63.4285888671875,
+        "passed": true
+      },
+      {
+        "liveStage": "live2",
+        "coldStage": "cold2",
+        "name": "revision",
+        "live": 168,
+        "cold": 168,
+        "passed": true
+      },
+      {
+        "liveStage": "live2",
+        "coldStage": "cold2",
+        "name": "nested",
+        "live": 144,
+        "cold": 144,
+        "passed": true
+      },
+      {
+        "liveStage": "return1",
+        "coldStage": "cold1",
+        "name": "stable",
+        "live": 40.571441650390625,
+        "cold": 40.571441650390625,
+        "passed": true
+      },
+      {
+        "liveStage": "return1",
+        "coldStage": "cold1",
+        "name": "feedback",
+        "live": 24,
+        "cold": 24,
+        "passed": true
+      },
+      {
+        "liveStage": "return1",
+        "coldStage": "cold1",
+        "name": "input",
+        "live": 47.42857360839844,
+        "cold": 47.42857360839844,
+        "passed": true
+      },
+      {
+        "liveStage": "return1",
+        "coldStage": "cold1",
+        "name": "revision",
+        "live": 59.428558349609375,
+        "cold": 59.428558349609375,
+        "passed": true
+      },
+      {
+        "liveStage": "return1",
+        "coldStage": "cold1",
+        "name": "nested",
+        "live": 72,
+        "cold": 72,
+        "passed": true
+      }
+    ],
+    "widgetComparisons": [
+      {
+        "liveStage": "live2",
+        "coldStage": "cold2",
+        "name": "input-widget",
+        "live": 62.28571319580078,
+        "cold": 62.28571319580078,
+        "passed": true
+      },
+      {
+        "liveStage": "return1",
+        "coldStage": "cold1",
+        "name": "input-widget",
+        "live": 46.28571319580078,
+        "cold": 46.28571319580078,
+        "passed": true
+      }
+    ]
+  },
+  "state": [
+    {
+      "stage": "cold1",
+      "passed": true
+    },
+    {
+      "stage": "live2",
+      "passed": true
+    },
+    {
+      "stage": "return1",
+      "passed": true
+    },
+    {
+      "stage": "cold2",
+      "passed": true
+    },
+    {
+      "stage": "resize-narrow2",
+      "passed": true
+    },
+    {
+      "stage": "resize-restored2",
+      "passed": true
+    },
+    {
+      "stage": "cold085",
+      "passed": true
+    },
+    {
+      "stage": "cold13",
+      "passed": true
+    },
+    {
+      "stage": "sweep0-0.85",
+      "passed": true
+    },
+    {
+      "stage": "sweep1-1.3",
+      "passed": true
+    },
+    {
+      "stage": "sweep2-2.0",
+      "passed": true
+    },
+    {
+      "stage": "sweep3-1.0",
+      "passed": true
+    },
+    {
+      "stage": "sweep4-0.85",
+      "passed": true
+    },
+    {
+      "stage": "sweep5-2.0",
+      "passed": true
+    },
+    {
+      "stage": "sweep6-1.3",
+      "passed": true
+    },
+    {
+      "stage": "sweep7-1.0",
+      "passed": true
+    },
+    {
+      "stage": "editing-start",
+      "passed": true
+    },
+    {
+      "stage": "editing-before",
+      "passed": true
+    },
+    {
+      "stage": "editing-typed-before",
+      "passed": true
+    },
+    {
+      "stage": "editing-live2",
+      "passed": true
+    },
+    {
+      "stage": "editing-return1",
+      "passed": true
+    },
+    {
+      "stage": "editing-insert",
+      "passed": true
+    },
+    {
+      "stage": "sweep0-0.85",
+      "passed": true
+    },
+    {
+      "stage": "sweep1-1.3",
+      "passed": true
+    },
+    {
+      "stage": "sweep2-2.0",
+      "passed": true
+    },
+    {
+      "stage": "sweep3-1.0",
+      "passed": true
+    },
+    {
+      "stage": "sweep4-0.85",
+      "passed": true
+    },
+    {
+      "stage": "sweep5-2.0",
+      "passed": true
+    },
+    {
+      "stage": "sweep6-1.3",
+      "passed": true
+    },
+    {
+      "stage": "sweep7-1.0",
+      "passed": true
+    },
+    {
+      "stage": "resize-widths",
+      "passed": true
+    }
+  ],
+  "identities": [
+    {
+      "stages": [
+        "cold1",
+        "live2",
+        "return1"
+      ],
+      "passed": true
+    },
+    {
+      "stages": [
+        "cold2",
+        "resize-narrow2",
+        "resize-restored2"
+      ],
+      "passed": true
+    },
+    {
+      "stages": [
+        "sweep0-0.85",
+        "sweep1-1.3",
+        "sweep2-2.0",
+        "sweep3-1.0",
+        "sweep4-0.85",
+        "sweep5-2.0",
+        "sweep6-1.3",
+        "sweep7-1.0"
+      ],
+      "passed": true
+    },
+    {
+      "stages": [
+        "editing-start",
+        "editing-before",
+        "editing-typed-before",
+        "editing-live2",
+        "editing-return1",
+        "editing-insert"
+      ],
+      "passed": true
+    }
+  ],
+  "nativeGlyphs": [
+    {
+      "liveStage": "live2",
+      "coldStage": "cold2",
+      "passed": true
+    },
+    {
+      "liveStage": "return1",
+      "coldStage": "cold1",
+      "passed": true
+    }
+  ],
+  "sweep": [
+    {
+      "stage": "sweep0-0.85",
+      "name": "stable",
+      "live": 34.85711669921875,
+      "reference": 34.85711669921875,
+      "passed": true
+    },
+    {
+      "stage": "sweep0-0.85",
+      "name": "feedback",
+      "live": 20.5714111328125,
+      "reference": 20.5714111328125,
+      "passed": true
+    },
+    {
+      "stage": "sweep0-0.85",
+      "name": "input",
+      "live": 44,
+      "reference": 44,
+      "passed": true
+    },
+    {
+      "stage": "sweep0-0.85",
+      "name": "revision",
+      "live": 50.857177734375,
+      "reference": 50.857177734375,
+      "passed": true
+    },
+    {
+      "stage": "sweep0-0.85",
+      "name": "nested",
+      "live": 41.14286804199219,
+      "reference": 41.14286804199219,
+      "passed": true
+    },
+    {
+      "stage": "sweep0-0.85",
+      "name": "input-widget",
+      "live": 42.85714340209961,
+      "reference": 42.85714340209961,
+      "passed": true
+    },
+    {
+      "stage": "sweep1-1.3",
+      "name": "stable",
+      "live": 76,
+      "reference": 76,
+      "passed": true
+    },
+    {
+      "stage": "sweep1-1.3",
+      "name": "feedback",
+      "live": 26.857147216796875,
+      "reference": 26.857147216796875,
+      "passed": true
+    },
+    {
+      "stage": "sweep1-1.3",
+      "name": "input",
+      "live": 52.571441650390625,
+      "reference": 52.571441650390625,
+      "passed": true
+    },
+    {
+      "stage": "sweep1-1.3",
+      "name": "revision",
+      "live": 100.00003051757812,
+      "reference": 100.00003051757812,
+      "passed": true
+    },
+    {
+      "stage": "sweep1-1.3",
+      "name": "nested",
+      "live": 80.5714111328125,
+      "reference": 80.5714111328125,
+      "passed": true
+    },
+    {
+      "stage": "sweep1-1.3",
+      "name": "input-widget",
+      "live": 51.42856979370117,
+      "reference": 51.42856979370117,
+      "passed": true
+    },
+    {
+      "stage": "sweep2-2.0",
+      "name": "stable",
+      "live": 135.4285888671875,
+      "reference": 135.4285888671875,
+      "passed": true
+    },
+    {
+      "stage": "sweep2-2.0",
+      "name": "feedback",
+      "live": 36,
+      "reference": 36,
+      "passed": true
+    },
+    {
+      "stage": "sweep2-2.0",
+      "name": "input",
+      "live": 63.4285888671875,
+      "reference": 63.4285888671875,
+      "passed": true
+    },
+    {
+      "stage": "sweep2-2.0",
+      "name": "revision",
+      "live": 168,
+      "reference": 168,
+      "passed": true
+    },
+    {
+      "stage": "sweep2-2.0",
+      "name": "nested",
+      "live": 144,
+      "reference": 144,
+      "passed": true
+    },
+    {
+      "stage": "sweep2-2.0",
+      "name": "input-widget",
+      "live": 62.28571319580078,
+      "reference": 62.28571319580078,
+      "passed": true
+    },
+    {
+      "stage": "sweep3-1.0",
+      "name": "stable",
+      "live": 40.571441650390625,
+      "reference": 40.571441650390625,
+      "passed": true
+    },
+    {
+      "stage": "sweep3-1.0",
+      "name": "feedback",
+      "live": 24,
+      "reference": 24,
+      "passed": true
+    },
+    {
+      "stage": "sweep3-1.0",
+      "name": "input",
+      "live": 47.42857360839844,
+      "reference": 47.42857360839844,
+      "passed": true
+    },
+    {
+      "stage": "sweep3-1.0",
+      "name": "revision",
+      "live": 59.428558349609375,
+      "reference": 59.428558349609375,
+      "passed": true
+    },
+    {
+      "stage": "sweep3-1.0",
+      "name": "nested",
+      "live": 72,
+      "reference": 72,
+      "passed": true
+    },
+    {
+      "stage": "sweep3-1.0",
+      "name": "input-widget",
+      "live": 46.28571319580078,
+      "reference": 46.28571319580078,
+      "passed": true
+    },
+    {
+      "stage": "sweep4-0.85",
+      "name": "stable",
+      "live": 34.85711669921875,
+      "reference": 34.85711669921875,
+      "passed": true
+    },
+    {
+      "stage": "sweep4-0.85",
+      "name": "feedback",
+      "live": 20.5714111328125,
+      "reference": 20.5714111328125,
+      "passed": true
+    },
+    {
+      "stage": "sweep4-0.85",
+      "name": "input",
+      "live": 44,
+      "reference": 44,
+      "passed": true
+    },
+    {
+      "stage": "sweep4-0.85",
+      "name": "revision",
+      "live": 50.857177734375,
+      "reference": 50.857177734375,
+      "passed": true
+    },
+    {
+      "stage": "sweep4-0.85",
+      "name": "nested",
+      "live": 41.14286804199219,
+      "reference": 41.14286804199219,
+      "passed": true
+    },
+    {
+      "stage": "sweep4-0.85",
+      "name": "input-widget",
+      "live": 42.85714340209961,
+      "reference": 42.85714340209961,
+      "passed": true
+    },
+    {
+      "stage": "sweep5-2.0",
+      "name": "stable",
+      "live": 135.4285888671875,
+      "reference": 135.4285888671875,
+      "passed": true
+    },
+    {
+      "stage": "sweep5-2.0",
+      "name": "feedback",
+      "live": 36,
+      "reference": 36,
+      "passed": true
+    },
+    {
+      "stage": "sweep5-2.0",
+      "name": "input",
+      "live": 63.4285888671875,
+      "reference": 63.4285888671875,
+      "passed": true
+    },
+    {
+      "stage": "sweep5-2.0",
+      "name": "revision",
+      "live": 168,
+      "reference": 168,
+      "passed": true
+    },
+    {
+      "stage": "sweep5-2.0",
+      "name": "nested",
+      "live": 144,
+      "reference": 144,
+      "passed": true
+    },
+    {
+      "stage": "sweep5-2.0",
+      "name": "input-widget",
+      "live": 62.28571319580078,
+      "reference": 62.28571319580078,
+      "passed": true
+    },
+    {
+      "stage": "sweep6-1.3",
+      "name": "stable",
+      "live": 76,
+      "reference": 76,
+      "passed": true
+    },
+    {
+      "stage": "sweep6-1.3",
+      "name": "feedback",
+      "live": 26.857147216796875,
+      "reference": 26.857147216796875,
+      "passed": true
+    },
+    {
+      "stage": "sweep6-1.3",
+      "name": "input",
+      "live": 52.571441650390625,
+      "reference": 52.571441650390625,
+      "passed": true
+    },
+    {
+      "stage": "sweep6-1.3",
+      "name": "revision",
+      "live": 100.00003051757812,
+      "reference": 100.00003051757812,
+      "passed": true
+    },
+    {
+      "stage": "sweep6-1.3",
+      "name": "nested",
+      "live": 80.5714111328125,
+      "reference": 80.5714111328125,
+      "passed": true
+    },
+    {
+      "stage": "sweep6-1.3",
+      "name": "input-widget",
+      "live": 51.42856979370117,
+      "reference": 51.42856979370117,
+      "passed": true
+    },
+    {
+      "stage": "sweep7-1.0",
+      "name": "stable",
+      "live": 40.571441650390625,
+      "reference": 40.571441650390625,
+      "passed": true
+    },
+    {
+      "stage": "sweep7-1.0",
+      "name": "feedback",
+      "live": 24,
+      "reference": 24,
+      "passed": true
+    },
+    {
+      "stage": "sweep7-1.0",
+      "name": "input",
+      "live": 47.42857360839844,
+      "reference": 47.42857360839844,
+      "passed": true
+    },
+    {
+      "stage": "sweep7-1.0",
+      "name": "revision",
+      "live": 59.428558349609375,
+      "reference": 59.428558349609375,
+      "passed": true
+    },
+    {
+      "stage": "sweep7-1.0",
+      "name": "nested",
+      "live": 72,
+      "reference": 72,
+      "passed": true
+    },
+    {
+      "stage": "sweep7-1.0",
+      "name": "input-widget",
+      "live": 46.28571319580078,
+      "reference": 46.28571319580078,
+      "passed": true
+    }
+  ],
+  "resize": [
+    {
+      "stage": "resize-narrow2",
+      "name": "stable",
+      "live": 135.4285888671875,
+      "reference": 135.4285888671875,
+      "passed": true
+    },
+    {
+      "stage": "resize-narrow2",
+      "name": "feedback",
+      "live": 36,
+      "reference": 36,
+      "passed": true
+    },
+    {
+      "stage": "resize-narrow2",
+      "name": "input",
+      "live": 63.4285888671875,
+      "reference": 63.4285888671875,
+      "passed": true
+    },
+    {
+      "stage": "resize-narrow2",
+      "name": "revision",
+      "live": 168,
+      "reference": 168,
+      "passed": true
+    },
+    {
+      "stage": "resize-narrow2",
+      "name": "nested",
+      "live": 144,
+      "reference": 144,
+      "passed": true
+    },
+    {
+      "stage": "resize-narrow2",
+      "name": "input-widget",
+      "live": 62.28571319580078,
+      "reference": 62.28571319580078,
+      "passed": true
+    },
+    {
+      "stage": "resize-restored2",
+      "name": "stable",
+      "live": 135.4285888671875,
+      "reference": 135.4285888671875,
+      "passed": true
+    },
+    {
+      "stage": "resize-restored2",
+      "name": "feedback",
+      "live": 36,
+      "reference": 36,
+      "passed": true
+    },
+    {
+      "stage": "resize-restored2",
+      "name": "input",
+      "live": 63.4285888671875,
+      "reference": 63.4285888671875,
+      "passed": true
+    },
+    {
+      "stage": "resize-restored2",
+      "name": "revision",
+      "live": 168,
+      "reference": 168,
+      "passed": true
+    },
+    {
+      "stage": "resize-restored2",
+      "name": "nested",
+      "live": 144,
+      "reference": 144,
+      "passed": true
+    },
+    {
+      "stage": "resize-restored2",
+      "name": "input-widget",
+      "live": 62.28571319580078,
+      "reference": 62.28571319580078,
+      "passed": true
+    }
+  ],
+  "editing": [
+    {
+      "stage": "editing-live2",
+      "expected": "NUWQJ359",
+      "position": 4,
+      "passed": true
+    },
+    {
+      "stage": "editing-return1",
+      "expected": "NUWQJ359",
+      "position": 4,
+      "passed": true
+    },
+    {
+      "stage": "editing-insert",
+      "expected": "NUWQZJ359",
+      "position": 5,
+      "passed": true
+    }
+  ],
+  "scope": "Actual separate Release fixture plus native view/Editable/widget observations; production flow/raster and physical/provider IME/AT acceptance separate"
+}

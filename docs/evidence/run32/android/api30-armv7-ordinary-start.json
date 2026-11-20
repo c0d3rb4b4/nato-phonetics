@@ -1,0 +1,6 @@
+{
+  "cmd": "adb -s emulator-5578 shell am start -W -a android.intent.action.VIEW -d natophonetics://converter -p com.natophonetics.app",
+  "timeoutSeconds": 55,
+  "processCrashPid": 8795,
+  "stackLog": "api30-armv7-ordinary-crash.log"
+}

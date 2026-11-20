@@ -1,0 +1,41 @@
+--------- beginning of crash
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: FATAL EXCEPTION: main
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: Process: com.natophonetics.app, PID: 8858
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: com.facebook.soloader.SoLoaderDSONotFoundError: couldn't find DSO to load: libc++_shared.so
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 	existing SO sources: 
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 		SoSource 0: ApplicationSoSource[DirectorySoSource[root = /data/app/~~j1OBYGY3U8shOTs0DrHDNw==/com.natophonetics.app-Ba9OmPHfndVg8j4lHvEXaw==/lib/arm flags = 0]]
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 		SoSource 1: DirectApkSoSource[root = [/data/app/~~j1OBYGY3U8shOTs0DrHDNw==/com.natophonetics.app-Ba9OmPHfndVg8j4lHvEXaw==/base.apk!/lib/x86]]
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 		SoSource 2: DirectorySoSource[root = /vendor/lib flags = 3]
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 		SoSource 3: DirectorySoSource[root = /system/lib flags = 3]
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 	Native lib dir: /data/app/~~j1OBYGY3U8shOTs0DrHDNw==/com.natophonetics.app-Ba9OmPHfndVg8j4lHvEXaw==/lib/arm
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 	at com.facebook.soloader.SoLoader.doLoadLibraryBySoName(SoLoader.java:1216)
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 	at com.facebook.soloader.SoLoader.loadLibraryBySoNameImpl(SoLoader.java:1078)
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 	at com.facebook.soloader.SoLoader.loadDependency(SoLoader.java:920)
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 	at com.facebook.soloader.DirectApkSoSource.loadDependencies(DirectApkSoSource.java:166)
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 	at com.facebook.soloader.DirectApkSoSource.loadLibrary(DirectApkSoSource.java:76)
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 	at com.facebook.soloader.SoLoader.loadLibraryFromSoSource(SoLoader.java:1246)
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 	at com.facebook.soloader.SoLoader.doLoadLibraryBySoName(SoLoader.java:1210)
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 	at com.facebook.soloader.SoLoader.loadLibraryBySoNameImpl(SoLoader.java:1078)
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 	at com.facebook.soloader.SoLoader.loadLibraryBySoName(SoLoader.java:943)
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 	at com.facebook.soloader.SoLoader.loadLibraryOnAndroid(SoLoader.java:859)
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 	at com.facebook.soloader.SoLoader.loadLibrary(SoLoader.java:842)
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 	at com.facebook.soloader.SoLoader.loadLibrary(SoLoader.java:812)
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 	at com.facebook.react.internal.featureflags.ReactNativeFeatureFlagsCxxInterop.<clinit>(ReactNativeFeatureFlagsCxxInterop.kt:28)
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 	at com.facebook.react.internal.featureflags.ReactNativeFeatureFlagsCxxInterop.override(Native Method)
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 	at com.facebook.react.internal.featureflags.ReactNativeFeatureFlagsCxxAccessor.override(ReactNativeFeatureFlagsCxxAccessor.kt:635)
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 	at com.facebook.react.internal.featureflags.ReactNativeFeatureFlags.override(ReactNativeFeatureFlags.kt:414)
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 	at com.facebook.react.defaults.DefaultNewArchitectureEntryPoint.load(DefaultNewArchitectureEntryPoint.kt:97)
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 	at com.facebook.react.defaults.DefaultNewArchitectureEntryPoint.load(DefaultNewArchitectureEntryPoint.kt:43)
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 	at com.facebook.react.ReactNativeApplicationEntryPoint.loadReactNative(ReactNativeApplicationEntryPoint.java:31)
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 	at com.natophonetics.app.MainApplication.onCreate(MainApplication.kt:49)
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1192)
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6712)
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 	at android.app.ActivityThread.access$1300(ActivityThread.java:237)
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1913)
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:223)
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:7656)
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+11-20 14:54:19.829  8858  8858 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)

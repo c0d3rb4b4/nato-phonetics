@@ -120,8 +120,10 @@ public final class FontScaleInstrumentation extends Instrumentation {
   @Override public void onStart() {
     int code = Activity.RESULT_CANCELED;
     Bundle result = new Bundle();
-    String original = "1";
+    String original = "";
     String originalIme = "";
+    boolean testWasEnabled = false;
+    boolean capturedSettings = false;
     JSONObject report = new JSONObject();
     try {
       File evidenceParent = externalEvidence ? getTargetContext().getExternalFilesDir(null) : getTargetContext().getCacheDir();
@@ -131,6 +133,9 @@ public final class FontScaleInstrumentation extends Instrumentation {
       original = shell("settings get system font_scale");
       originalIme = shell("settings get secure default_input_method");
       require(originalIme.matches("[A-Za-z0-9_.$/]+"), "Cannot restore original IME: " + originalIme);
+      testWasEnabled = java.util.Arrays.asList(shell("ime list -s").split("\\s+"))
+          .contains("com.natophonetics.fonttest/.FontTestIme");
+      capturedSettings = true;
       shell("ime enable com.natophonetics.fonttest/.FontTestIme");
       shell("ime set com.natophonetics.fonttest/.FontTestIme");
       shell("settings put system font_scale 1");
@@ -139,6 +144,8 @@ public final class FontScaleInstrumentation extends Instrumentation {
       intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
       activity = startActivitySync(intent);
       awaitScale(1);
+      RuntimeLibraries.write(output, activity.getApplicationInfo());
+      report.put("runtimePid", android.os.Process.myPid());
       ui(() -> {
         input = currentInput();
         input.getClass().getMethod("requestFocusFromJS").invoke(input);
@@ -172,10 +179,11 @@ public final class FontScaleInstrumentation extends Instrumentation {
       try { report.put("passed", false).put("error", android.util.Log.getStackTraceString(error)); } catch (Exception ignored) { }
     } finally {
       try {
-        shell("settings put system font_scale " + original);
-        if (!originalIme.isEmpty() && !originalIme.equals("null")) {
-          shell("ime set '" + originalIme + "'");
-          shell("ime disable com.natophonetics.fonttest/.FontTestIme");
+        if (capturedSettings) {
+          shell(original.equals("null") ? "settings delete system font_scale" : "settings put system font_scale " + original);
+          if (!originalIme.equals("null")) shell("ime set '" + originalIme + "'");
+          if (!testWasEnabled) shell("ime disable com.natophonetics.fonttest/.FontTestIme");
+          if (originalIme.equals("null")) shell("settings delete secure default_input_method");
         }
         report.put("stages", stages).put("originalScale", original).put("originalIme", originalIme).put("scope", "Real product/system-managed test IME InputConnection composition; no physical/provider IME or AT claim");
         if (output != null) report.put("outputDirectory", output.getAbsolutePath());

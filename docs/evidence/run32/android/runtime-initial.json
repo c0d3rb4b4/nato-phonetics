@@ -1,0 +1,15 @@
+{
+  "avd": "NatoRun32",
+  "serial": "emulator-5584",
+  "os": "16",
+  "api": "36",
+  "abi": "x86_64",
+  "supported": "x86_64,arm64-v8a",
+  "nativeBridge": "libndk_translation.so",
+  "fingerprint": "google/sdk_gphone64_x86_64/emu64xa:16/BE4B.251210.005/14574095:user/release-keys",
+  "packages": [],
+  "ime": "com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME",
+  "scale": "1.0",
+  "size": "Physical size: 1080x2400",
+  "density": "Physical density: 420"
+}

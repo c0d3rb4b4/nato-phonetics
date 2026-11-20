@@ -129,6 +129,53 @@ with different visible values or sizes, and across the fixture's primary
 scale changes. Inspect the resulting images as well. [Original and corrected
 captures](../../../docs/evidence/run31/screenshots/index.md).
 
+Each Release fixture screenshot now also checks the displayed static paragraph
+against the mounted Android text layout. The observer locates the final
+non-space glyph cell of each line and examines dark pixels in the actual
+system screenshot. It waits up to five seconds for the line endings to match.
+The observation and final PNG are retained on failure. This catches stale app
+content when a blinking caret or system navigation indicator changes the PNG
+digest. The individual measurements are in each sample's `display.frames`
+array. Inspect the input and keyboard separately. [Stale and corrected editing frames](../../../docs/evidence/run32/android/runtime-preflight.md).
+
+## Selecting an ABI from a universal Release APK
+
+Use the same locally test-signed product, matching fixture and SDK-only observer
+throughout a run. Explicitly select the ABI when installing the product and
+when restoring it after the fixture replaces it. For example, on a guest that
+advertises `arm64-v8a`, run the following from the repository root with the
+serial and files supplied as shell variables.
+
+```sh
+adb -s "$SERIAL" install --no-incremental -r --abi arm64-v8a "$PRODUCT_APK"
+python3 scripts/run-android-font-instrumentation.py \
+  "$TEST_APK" "$PRODUCT_APK" "$COMPOSITION_OUTPUT" "$SERIAL" --external-evidence --abi arm64-v8a
+python3 scripts/run-android-font-release-fixture.py \
+  "$TEST_APK" "$FIXTURE_APK" "$FIXTURE_OUTPUT" "$SERIAL" --abi arm64-v8a
+node scripts/check-android-font-release-fixture.cjs "$FIXTURE_OUTPUT"
+adb -s "$SERIAL" install --no-incremental -r --abi arm64-v8a "$PRODUCT_APK"
+```
+
+With `--abi`, both collectors check the installed APK's SHA-256, PackageManager's
+`primaryCpuAbi` and the renderer, Hermes and JSI libraries mapped by the
+measured process. Each fixture scenario reports its own PID, source APK and
+native library directory. For a library loaded directly from the APK, the
+host matches the mapped ELF header and an executable segment to the entry in
+that exact ZIP. For an extracted library, it also verifies the extracted
+file's SHA-256 against the package.
+Record the guest CPU ABI and native bridge alongside these results to
+distinguish translated execution from native hardware. Preserve the product
+and restore it even if a fixture gate fails. The [Run 32 driver](../../../docs/evidence/run32/android/qualify-runtime.py)
+shows the restoration and public engineering-signature checks.
+
+Each newly collected display image must match the device file's SHA-256 and pass
+PNG chunk, checksum and compressed-stream checks. The collectors restore a
+numeric font scale exactly. If the setting was originally absent they remove
+the temporary override. The composition collector restores both the selected
+keyboard and the test keyboard's previous enabled state. Run
+`python3 tests/test_android_evidence.py -v` for the host controls covering these
+cases, including segmented ELF files and interrupted transfers.
+
 ## Untouched production Release tile observer (Run30)
 
 `TileLayoutInstrumentation` is a separate test-APK entry. It starts the real
@@ -158,3 +205,9 @@ new run before reuse; never overwrite archived evidence. Collect owned exports,
 restore initial product/settings/entry without data clear and stop owned tools.
 This does not integrate the repair into ordinary default builds or perform
 broader supported-runtime, physical/AT/provider/distribution/M11 acceptance.
+
+### Quiz labels and the system clipboard
+
+The optional quiz observation records the fitted line count, ellipsis, final line end and bottom, available height, effective paint size and identity of mounted Android text views. The session driver submits a real answer before increasing the font size, then checks the same feedback and buttons, score, missed-answer recap and Retry on the installed product. [Round driver](../../../docs/evidence/run32/android/quiz-round.py).
+
+On a disposable device, the converter probe seeds the system clipboard only with the fixed 2,000-character postcode/callsign sample. Subsequent observations return lengths and SHA-256 digests of the active input and clipboard, plus the caret and native field identity. The driver uses Android's Paste key event, ordinary typing, the product Copy and Share buttons and the real system chooser. The instrumentation is built and installed as a separate test APK. [Converter driver](../../../docs/evidence/run32/android/converter-export.py).
