@@ -3,7 +3,6 @@ package com.natophonetics.fonttest;
 import android.app.Activity;
 import android.app.Instrumentation;
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.graphics.Rect;
 import android.os.Bundle;
 import android.os.ParcelFileDescriptor;
@@ -98,10 +97,8 @@ public final class FontScaleFixtureInstrumentation extends Instrumentation {
           .put("heightPx",current.getHeight()).put("bounds",bounds.toShortString());
     }));
     samples.put(stage,row); // Preserve a failing observation before checking it.
-    try (FileOutputStream file = new FileOutputStream(new File(output,stage+".png"))) {
-      Bitmap bitmap=getUiAutomation().takeScreenshot(); require(bitmap!=null,"Screenshot missing");
-      require(bitmap.compress(Bitmap.CompressFormat.PNG,100,file),"Screenshot failed"); bitmap.recycle();
-    }
+    row.put("captureCommand", DisplayCapture.COMMAND);
+    DisplayCapture.write(this, new File(output, stage + ".png"));
     JSONObject nativeRow=row.getJSONObject("native");
     require(row.getInt("mounts")==1 && nativeRow.getBoolean("sameView") && nativeRow.getBoolean("sameEditable"),"Root/input/Editable replaced: "+row);
     require(row.getString("value").equals(nativeRow.getString("value")),"JS/native value mismatch");

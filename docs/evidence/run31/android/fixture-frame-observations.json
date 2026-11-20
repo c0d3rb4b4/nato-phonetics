@@ -1,0 +1,209 @@
+{
+  "method": "Observe actual PNG rows with >95% of sampled input-width pixels dark (all RGB channels <60, x step 8). Native bounds read independently from samples.json. Diagnostic only.",
+  "scopes": {
+    "full": {
+      "cold1": {
+        "pngSha256": "4b7eff02d88692ab62b9931780369f67e82b0b2f792a108e18527cfd99f6a809",
+        "expectedNativeBounds": "[31,398][688,481]",
+        "fontSizePx": 32,
+        "imageDarkHorizontalRows": [
+          398,
+          399,
+          479,
+          480
+        ]
+      },
+      "live2": {
+        "pngSha256": "4b7eff02d88692ab62b9931780369f67e82b0b2f792a108e18527cfd99f6a809",
+        "expectedNativeBounds": "[31,857][688,968]",
+        "fontSizePx": 53,
+        "imageDarkHorizontalRows": [
+          398,
+          399,
+          479,
+          480
+        ]
+      },
+      "return1": {
+        "pngSha256": "4b7eff02d88692ab62b9931780369f67e82b0b2f792a108e18527cfd99f6a809",
+        "expectedNativeBounds": "[31,398][688,481]",
+        "fontSizePx": 32,
+        "imageDarkHorizontalRows": [
+          398,
+          399,
+          479,
+          480
+        ]
+      },
+      "cold2": {
+        "pngSha256": "52ec5342f7e1fcae86e342372106e9cb7d154a187493eb344217812aac90e131",
+        "expectedNativeBounds": "[31,857][688,968]",
+        "fontSizePx": 53,
+        "imageDarkHorizontalRows": [
+          857,
+          858,
+          966,
+          967
+        ]
+      },
+      "resize-narrow2": {
+        "pngSha256": "5e249f57a721dedd291300a535d0369d0573f3e8bbdcdc3fc3e6242c6a480d4f",
+        "expectedNativeBounds": "[31,857][528,968]",
+        "fontSizePx": 53,
+        "imageDarkHorizontalRows": [
+          857,
+          858,
+          966,
+          967
+        ]
+      },
+      "resize-restored2": {
+        "pngSha256": "52ec5342f7e1fcae86e342372106e9cb7d154a187493eb344217812aac90e131",
+        "expectedNativeBounds": "[31,857][688,968]",
+        "fontSizePx": 53,
+        "imageDarkHorizontalRows": [
+          857,
+          858,
+          966,
+          967
+        ]
+      }
+    },
+    "narrow": {
+      "cold1": {
+        "pngSha256": "c690203d4053f597100dda070cf65b5cce880fbf4a6b74d7570ec430ba51213a",
+        "expectedNativeBounds": "[31,398][528,481]",
+        "fontSizePx": 32,
+        "imageDarkHorizontalRows": [
+          398,
+          399,
+          479,
+          480
+        ]
+      },
+      "live2": {
+        "pngSha256": "5e249f57a721dedd291300a535d0369d0573f3e8bbdcdc3fc3e6242c6a480d4f",
+        "expectedNativeBounds": "[31,857][528,968]",
+        "fontSizePx": 53,
+        "imageDarkHorizontalRows": [
+          857,
+          858,
+          966,
+          967
+        ]
+      },
+      "return1": {
+        "pngSha256": "c690203d4053f597100dda070cf65b5cce880fbf4a6b74d7570ec430ba51213a",
+        "expectedNativeBounds": "[31,398][528,481]",
+        "fontSizePx": 32,
+        "imageDarkHorizontalRows": [
+          398,
+          399,
+          479,
+          480
+        ]
+      },
+      "cold2": {
+        "pngSha256": "0d05ff50d6ec5dd903c79356e395d322180237125f50a8ab89cea1f6766bea15",
+        "expectedNativeBounds": "[31,857][528,968]",
+        "fontSizePx": 53,
+        "imageDarkHorizontalRows": [
+          857,
+          858,
+          966,
+          967
+        ]
+      },
+      "resize-narrow2": {
+        "pngSha256": "5e249f57a721dedd291300a535d0369d0573f3e8bbdcdc3fc3e6242c6a480d4f",
+        "expectedNativeBounds": "[31,857][528,968]",
+        "fontSizePx": 53,
+        "imageDarkHorizontalRows": [
+          857,
+          858,
+          966,
+          967
+        ]
+      },
+      "resize-restored2": {
+        "pngSha256": "5e249f57a721dedd291300a535d0369d0573f3e8bbdcdc3fc3e6242c6a480d4f",
+        "expectedNativeBounds": "[31,857][528,968]",
+        "fontSizePx": 53,
+        "imageDarkHorizontalRows": [
+          857,
+          858,
+          966,
+          967
+        ]
+      }
+    },
+    "display-primary": {
+      "cold1": {
+        "pngSha256": "957829069c184ca086d5f1a5754211e167edd9a2066a79c0c0458559c1bc7bfe",
+        "expectedNativeBounds": "[31,398][688,481]",
+        "fontSizePx": 32,
+        "imageDarkHorizontalRows": [
+          398,
+          399,
+          479,
+          480
+        ]
+      },
+      "live2": {
+        "pngSha256": "be464a53be2f3f403fd2a6121fe28bc9e9a2b37bc46d7fd3c67b90bb3974c70a",
+        "expectedNativeBounds": "[31,857][688,968]",
+        "fontSizePx": 53,
+        "imageDarkHorizontalRows": [
+          857,
+          858,
+          966,
+          967
+        ]
+      },
+      "return1": {
+        "pngSha256": "957829069c184ca086d5f1a5754211e167edd9a2066a79c0c0458559c1bc7bfe",
+        "expectedNativeBounds": "[31,398][688,481]",
+        "fontSizePx": 32,
+        "imageDarkHorizontalRows": [
+          398,
+          399,
+          479,
+          480
+        ]
+      },
+      "cold2": {
+        "pngSha256": "be464a53be2f3f403fd2a6121fe28bc9e9a2b37bc46d7fd3c67b90bb3974c70a",
+        "expectedNativeBounds": "[31,857][688,968]",
+        "fontSizePx": 53,
+        "imageDarkHorizontalRows": [
+          857,
+          858,
+          966,
+          967
+        ]
+      },
+      "resize-narrow2": {
+        "pngSha256": "0a7d677ea249d806fb0efa60487054a238602e0c434e6f67a4e57871a904110b",
+        "expectedNativeBounds": "[31,857][528,968]",
+        "fontSizePx": 53,
+        "imageDarkHorizontalRows": [
+          857,
+          858,
+          966,
+          967
+        ]
+      },
+      "resize-restored2": {
+        "pngSha256": "be464a53be2f3f403fd2a6121fe28bc9e9a2b37bc46d7fd3c67b90bb3974c70a",
+        "expectedNativeBounds": "[31,857][688,968]",
+        "fontSizePx": 53,
+        "imageDarkHorizontalRows": [
+          857,
+          858,
+          966,
+          967
+        ]
+      }
+    }
+  }
+}

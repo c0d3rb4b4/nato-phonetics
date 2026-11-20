@@ -1,0 +1,84 @@
+{
+  "lockIntegrity": "sha512-1w+/oSjEXZjMqsIvmkCRsOc8UBYv163bTWKTI8+1mxztvQPhCRYGTvZ/PL1w16xXHneIj/SLGfxWg2GWN2uexw==",
+  "sourceHashes": {
+    "ReactAndroid/build.gradle.kts": {
+      "original": "5952837bf95b550324b2f38bde8be85478d01e19b3d5bc5d1e31468889b2ca73",
+      "installed": "5a3dec03ed103f20bc51835d8dbf8a02edc9f2c04b47903bc0d4944ecbb25402"
+    },
+    "ReactAndroid/src/main/java/com/facebook/react/runtime/ReactSurfaceImpl.kt": {
+      "original": "f0708ad65967cfc56e5526a56a2e899b699e2a1e5b1806da72c9bd2bd13ed41c",
+      "installed": "18dda4930b6e59f2605b06d7b0a86e359eb2c84de4d3115059c50a18573729fe"
+    },
+    "ReactCommon/react/renderer/components/view/YogaLayoutableShadowNode.h": {
+      "original": "c9575424f0a81a6d69bdc81c76b4c9545bd3ca944d0f53c6876fe614180b75b2",
+      "installed": "74ff94afa4419bb920ed30d71aaa6c5c918674592f9979b6224a138580421d0a"
+    },
+    "ReactCommon/react/renderer/components/view/YogaLayoutableShadowNode.cpp": {
+      "original": "1205e21ce3ebab04a95035c45bf5c0a16e739ff5f64def6701f86b02de90055e",
+      "installed": "9d5992aa3c9d626e44354ffcbfa3c367e9f360708d930e9df25d3ed494faa0d4"
+    },
+    "ReactAndroid/src/main/java/com/facebook/react/uimanager/DisplayMetricsHolder.kt": {
+      "original": "1052163e8550488d37d334dc58be4769567d1a36f7624cebb77900380f54feea",
+      "installed": "c11d515259f15dd3c0fbf43654737d9b3e75feea66a2e4b7a83040868f209f15"
+    },
+    "ReactCommon/react/renderer/textlayoutmanager/TextMeasureCache.h": {
+      "original": "8e30071ba2ddbe361b2f48507dd1df27505ea6840e45ea6cc5e4295e6fd1bacd",
+      "installed": "549099d6f19ea58e67e636c7b257c0b960e3c0a8c4764c2afac693b8894afd69"
+    },
+    "ReactCommon/react/renderer/textlayoutmanager/platform/android/react/renderer/textlayoutmanager/TextLayoutManager.cpp": {
+      "original": "9080fc5e7e73edd96b864f622c0b42656f4088c0a339b7575e0dcd60d6ffd5c6",
+      "installed": "7dc304e5fdaf93630b022c02e31f371bce38095295a5f1d3ff491ac747ba2939"
+    },
+    "ReactCommon/react/renderer/core/LayoutContext.h": {
+      "original": "1c90c5e1077c8b73cefabcdec96e29dc6607924d35031ec5730c80be93dc0772",
+      "installed": "27f37642e5af50be464397bbfd57b1a76a0151d3b0c2b29a860ade0e8bdd8053"
+    },
+    "ReactAndroid/src/main/java/com/facebook/react/fabric/SurfaceHandlerBinding.kt": {
+      "original": "cf9eee83aec1eb79bc831bd45e09ef1a61f2d32ad0100c304223b1f23954010f",
+      "installed": "4d24cebe09ff21092923c4a50aba94e9350a095c78afd99120ee57fac6c6d61e"
+    },
+    "ReactAndroid/src/main/jni/react/fabric/SurfaceHandlerBinding.h": {
+      "original": "8fdb182bccd677f258055d7cf7152674c8ad79650455bf5e995f04f9d924eb02",
+      "installed": "e1e9da56b2c0d4c699a4a5cb698c165c10af65805f2acfb54fe75bafef2c2bc4"
+    },
+    "ReactAndroid/src/main/jni/react/fabric/SurfaceHandlerBinding.cpp": {
+      "original": "db69832190de427fcd6747b0e66c3c801566d92552dee549e994913bbf3f759c",
+      "installed": "b24b8bbdd9c976e00381674b700dd9fcb59757fee12931d5fefa2408bf1bd0da"
+    },
+    "ReactAndroid/src/main/java/com/facebook/react/views/textinput/ReactEditText.kt": {
+      "original": "072fb4d4d4e9a32e3a394f3270b3ef90ebef2396f03940a7cceb2d17bf79231f",
+      "installed": "26d7df7577d9773ad25bbfb9613712b2e6f0fd6ef240ad192b3c41a40b3ff76b"
+    },
+    "ReactCommon/yoga/yoga/algorithm/PixelGrid.cpp": {
+      "original": "9c1dd2f84de070bb176f6c5eae632c5fba38efd6b3f05e596201e7a476b69cdc",
+      "installed": "503e97794fcc1ee1d06de60a2fb8554c4348e648745589b1a20af2492d44a1da"
+    }
+  },
+  "clang": "Android (12285214, based on r522817b) clang version 18.0.2 (https://android.googlesource.com/toolchain/llvm-project d8003a456d14a3deb8054cdaa529ffbf02d9b262)",
+  "target": "arm64-apple-ios15.1",
+  "sharedFiles": {
+    "YogaLayoutableShadowNode.h": {
+      "equalTokensIncludingEof": 454,
+      "additionalStandardIncludes": [],
+      "androidConditionalDiffers": true
+    },
+    "YogaLayoutableShadowNode.cpp": {
+      "equalTokensIncludingEof": 5103,
+      "additionalStandardIncludes": [],
+      "androidConditionalDiffers": true
+    },
+    "TextMeasureCache.h": {
+      "equalTokensIncludingEof": 1264,
+      "additionalStandardIncludes": [],
+      "androidConditionalDiffers": true
+    },
+    "LayoutContext.h": {
+      "equalTokensIncludingEof": 145,
+      "additionalStandardIncludes": [
+        "<cstdint>"
+      ],
+      "androidConditionalDiffers": true
+    }
+  },
+  "appleCompileOrRuntime": false
+}

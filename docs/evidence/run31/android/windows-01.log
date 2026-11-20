@@ -1,0 +1,13 @@
+{"check": "window-converter-live2", "passed": true, "timestamp": "2026-11-20T13:28:11Z", "scale": 2, "density": 1.75, "tiles": []}
+{"check": "window-converter-narrow2", "passed": true, "timestamp": "2026-11-20T13:28:42Z", "scale": 2, "density": 1.75, "tiles": []}
+{"check": "window-converter-narrow-retained", "passed": true, "timestamp": "2026-11-20T13:28:42Z", "input": "NUWJ359", "size": "560x1000"}
+{"check": "window-converter-landscape2", "passed": true, "timestamp": "2026-11-20T13:29:14Z", "scale": 2, "density": 1.75, "tiles": []}
+{"check": "window-converter-landscape-retained", "passed": true, "timestamp": "2026-11-20T13:29:14Z", "input": "NUWJ359", "size": "1600x720"}
+{"check": "window-converter-restored2", "passed": true, "timestamp": "2026-11-20T13:29:36Z", "scale": 2, "density": 1.75, "tiles": [{"testID": "converter-0", "pixels": {"x": 168, "y": 631, "width": 385, "height": 525}}]}
+{"check": "window-converter-restored-retained", "passed": true, "timestamp": "2026-11-20T13:29:36Z", "input": "NUWJ359", "size": "720x1600"}
+{"check": "window-quiz-before2", "passed": true, "timestamp": "2026-11-20T13:30:05Z", "scale": 2, "density": 1.75, "tiles": [{"testID": "quiz-card", "pixels": {"x": 168, "y": 479, "width": 385, "height": 525}}]}
+{"check": "window-quiz-narrow2", "passed": true, "timestamp": "2026-11-20T13:30:16Z", "scale": 2, "density": 1.75, "tiles": []}
+{"check": "window-quiz-narrow-retained", "passed": true, "timestamp": "2026-11-20T13:30:28Z", "state": {"progress": "Question 1 of 5 \u00b7 1 correct", "symbol": "D"}, "nextPresent": true, "size": "560x1000"}
+{"check": "window-quiz-restored2", "passed": true, "timestamp": "2026-11-20T13:30:39Z", "scale": 2, "density": 1.75, "tiles": [{"testID": "quiz-card", "pixels": {"x": 168, "y": 479, "width": 385, "height": 525}}]}
+{"check": "window-quiz-restored-retained", "passed": true, "timestamp": "2026-11-20T13:30:46Z", "state": {"progress": "Question 1 of 5 \u00b7 1 correct", "symbol": "D"}, "nextPresent": true, "size": "720x1600"}
+{"check": "window-quiz-next", "passed": true, "timestamp": "2026-11-20T13:30:58Z", "singleAdvance": true}

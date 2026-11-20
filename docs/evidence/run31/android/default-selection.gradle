@@ -1,0 +1,54 @@
+import org.gradle.api.artifacts.component.ModuleComponentIdentifier
+import org.gradle.api.artifacts.component.ModuleComponentSelector
+import org.gradle.api.artifacts.component.ProjectComponentIdentifier
+import org.gradle.api.artifacts.result.ResolvedDependencyResult
+import org.gradle.api.artifacts.type.ArtifactTypeDefinition
+import java.security.MessageDigest
+
+// Observe Gradle's selected graph without adding a dependency or substitution.
+gradle.projectsEvaluated {
+    if (gradle.rootProject.name != 'NATOPhonetics') return
+    def app = gradle.rootProject.project(':app')
+    app.tasks.register('verifyDefaultRenderer') {
+        doLast {
+            if (app.providers.gradleProperty('natoReactNativeSource').isPresent()) {
+                throw new GradleException('Remove the explicit source-mode property to verify the default.')
+            }
+            ['debugRuntimeClasspath', 'releaseRuntimeClasspath'].each { configurationName ->
+                def configuration = app.configurations.getByName(configurationName)
+                def direct = configuration.incoming.resolutionResult.root.dependencies
+                def selected = { module ->
+                    def edges = direct.findAll { it.requested instanceof ModuleComponentSelector &&
+                        it.requested.group == 'com.facebook.react' && it.requested.module == module }
+                    if (edges.size() != 1 || !(edges[0] instanceof ResolvedDependencyResult)) {
+                        throw new GradleException("Unresolved $module on $configurationName: $edges")
+                    }
+                    return edges[0].selected.id
+                }
+                def renderer = selected('react-android')
+                def hermes = selected('hermes-android')
+                if (!(renderer instanceof ProjectComponentIdentifier) ||
+                    renderer.projectPath != ':packages:react-native:ReactAndroid') {
+                    throw new GradleException("Unexpected renderer: $renderer")
+                }
+                def included = gradle.includedBuilds.find { it.name == renderer.build.name }
+                if (included?.projectDir?.canonicalFile != new File(gradle.rootProject.rootDir, '../node_modules/react-native').canonicalFile) {
+                    throw new GradleException("Unexpected ReactAndroid source root: $included")
+                }
+                if (!(hermes instanceof ModuleComponentIdentifier) ||
+                    hermes.group != 'com.facebook.react' || hermes.module != 'hermes-android' || hermes.version != '0.81.5') {
+                    throw new GradleException("Unexpected Hermes: $hermes")
+                }
+                println "$configurationName | $renderer | ${included.projectDir} | $hermes"
+                def view = configuration.incoming.artifactView {
+                    componentFilter { it == hermes }
+                    attributes { attribute(ArtifactTypeDefinition.ARTIFACT_TYPE_ATTRIBUTE, 'aar') }
+                }
+                def aar = view.files.singleFile
+                def digest = MessageDigest.getInstance('SHA-256')
+                aar.eachByte(65536) { bytes, count -> digest.update(bytes, 0, count) }
+                println "$configurationName | $aar.name | $aar.length bytes | SHA-256 ${digest.digest().encodeHex()}"
+            }
+        }
+    }
+}

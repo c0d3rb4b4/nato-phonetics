@@ -118,6 +118,17 @@ remove only the collected owned external `font-fixture-*` exports, and restore
 ordinary Metro for an initial Debug product. This tooling does not close full
 Release tile baseline/raster/application/window or default-build integration.
 
+## Capturing the displayed frame
+
+The composition and Release fixture instrumentation read the system display
+with `screencap -p` at each observed stage. The Windows x86_64 run found that
+`UiAutomation.takeScreenshot()` could return the previous frame following a
+live scale change, even as native values and layout measurements advanced.
+The collectors reject byte-identical PNGs across adjacent composition states
+with different visible values or sizes, and across the fixture's primary
+scale changes. Inspect the resulting images as well. [Original and corrected
+captures](../../../docs/evidence/run31/screenshots/index.md).
+
 ## Untouched production Release tile observer (Run30)
 
 `TileLayoutInstrumentation` is a separate test-APK entry. It starts the real

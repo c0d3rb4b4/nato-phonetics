@@ -1,4 +1,5 @@
 const { spawnSync } = require('node:child_process');
+const npm = require('./npm-invocation.cjs');
 const fs = require('node:fs');
 const path = require('node:path');
 
@@ -126,8 +127,8 @@ function reviewAudit(report, lock, inventory, today = new Date().toISOString().s
 
 function main() {
   const root = path.resolve(__dirname, '..');
-  const result = spawnSync(process.platform === 'win32' ? 'npm.cmd' : 'npm',
-    ['audit', '--json', '--audit-level=low'], { cwd: root, encoding: 'utf8', timeout: 60000, maxBuffer: 16 * 1024 * 1024 });
+  const result = spawnSync(npm.executable, [...npm.prefix, 'audit', '--json', '--audit-level=low'],
+    { cwd: root, encoding: 'utf8', timeout: 60000, maxBuffer: 16 * 1024 * 1024 });
   console.log(`Raw npm audit exit status: ${result.status ?? 'not completed'}`);
   if (result.stderr) process.stderr.write(result.stderr);
   try {

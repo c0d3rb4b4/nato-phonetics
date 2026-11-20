@@ -1,0 +1,15 @@
+{
+  "scenario": "Windows 11 x64 default source Release, scoped x86_64 build",
+  "owner": "P05.2-E",
+  "buildCommand": ":app:verifyReleaseRenderer :app:assembleRelease :app:bundleRelease -PreactNativeArchitectures=x86_64 --max-workers=1",
+  "longScratchPath": "C:\\Users\\lalit\\AppData\\Local\\Temp\\nato-r31-clean-2ccd2fe8\\app",
+  "buildSeconds": 235,
+  "nativeCommandsCompleted": 141,
+  "generatedObjectPaths": 410,
+  "maximumObjectPath": 303.0,
+  "directoriesOver247": 7,
+  "windowsLongPathsEnabled": 1,
+  "diagnostic": "Ninja mkdir failed within textlayoutmanager after CMake object path limit warnings. Investigate generated physical checkout paths first; do not change renderer or test thresholds.",
+  "nextExperiment": "Same checkout overlay in C:\\n3137e8 using only downloaded source archive cache; clean native build",
+  "impact": "Build failure affects this long-path host slice, no new application runtime observation or user data loss."
+}

@@ -1,0 +1,743 @@
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>if "Windows_NT" == "Windows_NT" setlocal
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>set DIRNAME=C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android\ 
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>if "C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android\" == "" set DIRNAME=. 
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>set APP_BASE_NAME=gradlew 
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>set APP_HOME=C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android\ 
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>for %i in ("C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android\") do set APP_HOME=%~fi 
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>set APP_HOME=C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android\ 
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m" 
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>if defined JAVA_HOME goto findJavaFromJavaHome 
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>set JAVA_HOME=C:\Program Files\Microsoft\jdk-17.0.13.11-hotspot\ 
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>set JAVA_EXE=C:\Program Files\Microsoft\jdk-17.0.13.11-hotspot\/bin/java.exe 
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>if exist "C:\Program Files\Microsoft\jdk-17.0.13.11-hotspot\/bin/java.exe" goto execute 
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>set CLASSPATH= 
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>"C:\Program Files\Microsoft\jdk-17.0.13.11-hotspot\/bin/java.exe" "-Xmx64m" "-Xms64m"   "-Dorg.gradle.appname=gradlew" -classpath "" -jar "C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android\\gradle\wrapper\gradle-wrapper.jar" :app:verifyReleaseRenderer :app:assembleRelease :app:bundleRelease -PreactNativeArchitectures=x86_64 --max-workers=1 --console=plain "-Dorg.gradle.jvmargs=-Xmx2048m -XX:MaxMetaspaceSize=512m -XX:ActiveProcessorCount=2" 
+> Task :gradle-plugin:settings-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:shared:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:shared:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:shared:compileJava NO-SOURCE
+> Task :gradle-plugin:shared:processResources NO-SOURCE
+> Task :gradle-plugin:shared:classes UP-TO-DATE
+> Task :gradle-plugin:shared:jar UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:compileJava NO-SOURCE
+> Task :gradle-plugin:settings-plugin:pluginDescriptors UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:processResources UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:classes UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:jar UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:react-native-gradle-plugin:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:compileJava NO-SOURCE
+> Task :gradle-plugin:react-native-gradle-plugin:pluginDescriptors UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:processResources UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:classes UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:jar UP-TO-DATE
+> Task :react-native:packages:react-native:ReactAndroid:buildCodegenCLI
+> Task :react-native:packages:react-native:ReactAndroid:generateCodegenSchemaFromJavaScript
+> Task :react-native:packages:react-native:ReactAndroid:generateCodegenArtifactsFromSchema
+> Task :react-native:packages:react-native:ReactAndroid:createNativeDepsDirectories UP-TO-DATE
+> Task :react-native:packages:react-native:ReactAndroid:downloadBoost
+> Task :react-native:packages:react-native:ReactAndroid:prepareBoost
+> Task :react-native:packages:react-native:ReactAndroid:downloadDoubleConversion
+> Task :react-native:packages:react-native:ReactAndroid:prepareDoubleConversion
+
+> Task :app:verifyReleaseRenderer
+releaseRuntimeClasspath | project :react-native:packages:react-native:ReactAndroid | C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\node_modules\react-native | com.facebook.react:hermes-android:0.81.5 | hermes-android-0.81.5-release.aar | SHA-256 f8d8af2486ee26d7b8d3da92dcd96ea5df27acfcfe556866ea13c68fec1d2992
+
+> Task :app:generateAutolinkingNewArchitectureFiles
+> Task :app:generateAutolinkingPackageList
+> Task :app:generateCodegenSchemaFromJavaScript SKIPPED
+> Task :app:generateCodegenArtifactsFromSchema SKIPPED
+> Task :app:generateReactNativeEntryPoint
+> Task :react-native-async-storage_async-storage:generateCodegenSchemaFromJavaScript
+> Task :react-native-async-storage_async-storage:generateCodegenArtifactsFromSchema
+> Task :react-native-async-storage_async-storage:preBuild
+> Task :react-native-safe-area-context:generateCodegenSchemaFromJavaScript
+> Task :react-native-safe-area-context:generateCodegenArtifactsFromSchema
+> Task :react-native-safe-area-context:preBuild
+> Task :react-native-tts:preBuild UP-TO-DATE
+> Task :app:preBuild
+> Task :app:preReleaseBuild
+> Task :react-native:packages:react-native:ReactAndroid:downloadFastFloat
+> Task :react-native:packages:react-native:ReactAndroid:prepareFastFloat
+> Task :react-native:packages:react-native:ReactAndroid:downloadFmt
+> Task :react-native:packages:react-native:ReactAndroid:prepareFmt
+> Task :app:mergeReleaseJniLibFolders
+> Task :react-native-async-storage_async-storage:preReleaseBuild
+> Task :react-native:packages:react-native:ReactAndroid:downloadFolly
+> Task :react-native:packages:react-native:ReactAndroid:prepareFolly
+> Task :react-native:packages:react-native:ReactAndroid:downloadGlog
+> Task :react-native:packages:react-native:ReactAndroid:prepareGlog
+> Task :react-native:packages:react-native:ReactAndroid:prepareNative3pDependencies
+> Task :react-native:packages:react-native:ReactAndroid:preparePrefab
+> Task :react-native:packages:react-native:ReactAndroid:preBuild
+> Task :react-native:packages:react-native:ReactAndroid:preReleaseBuild
+> Task :react-native-async-storage_async-storage:mergeReleaseJniLibFolders
+> Task :react-native-async-storage_async-storage:mergeReleaseNativeLibs NO-SOURCE
+
+> Task :react-native:packages:react-native:ReactAndroid:configureCMakeRelWithDebInfo[x86_64]
+C/C++: CMake Warning in C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactCommon/react/runtime/nativeviewconfig/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/runtime/nativeviewconfig/CMakeFiles/bridgelessnativeviewconfig.dir/./
+C/C++:   has 224 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     LegacyUIManagerConstantsProviderBinding.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in react/turbomodule/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/turbomodule/CMakeFiles/callinvokerholder.dir/./
+C/C++:   has 216 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     ReactCommon/NativeMethodCallInvokerHolder.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactCommon/jsinspector-modern/tracing/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/jsinspector-modern/tracing/CMakeFiles/jsinspector_tracing.dir/./
+C/C++:   has 213 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     RuntimeSamplingProfileTraceEventSerializer.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in react/mapbuffer/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/mapbuffer/CMakeFiles/mapbufferjni.dir/./
+C/C++:   has 209 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     react/common/mapbuffer/JWritableMapBuffer.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/build/generated/source/codegen/jni/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/generated/source/codegen/jni/CMakeFiles/react_codegen_rncore.dir/./
+C/C++:   has 210 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     617697a5740fc36b6bdde3256c6cf0bd/Props.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in react/devsupport/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/devsupport/CMakeFiles/react_devsupportjni.dir/./
+C/C++:   has 217 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     JCxxInspectorPackagerConnection.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in react/featureflags/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/featureflags/CMakeFiles/react_featureflagsjni.dir/./
+C/C++:   has 221 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     JReactNativeFeatureFlagsCxxInterop.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactCommon/react/nativemodule/core/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/nativemodule/core/CMakeFiles/react_nativemodule_core.dir/./
+C/C++:   has 214 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     platform/android/ReactCommon/JavaTurboModule.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactCommon/react/nativemodule/featureflags/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/nativemodule/featureflags/CMakeFiles/react_nativemodule_featureflags.dir/./
+C/C++:   has 230 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     NativeReactNativeFeatureFlags.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactCommon/react/nativemodule/idlecallbacks/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/nativemodule/idlecallbacks/CMakeFiles/react_nativemodule_idlecallbacks.dir/./
+C/C++:   has 232 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     NativeIdleCallbacks.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in react/newarchdefaults/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/newarchdefaults/CMakeFiles/react_newarchdefaults.dir/./
+C/C++:   has 224 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     DefaultComponentsRegistry.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactCommon/react/performance/timeline/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/performance/timeline/CMakeFiles/react_performance_timeline.dir/./
+C/C++:   has 220 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     PerformanceObserverRegistry.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactCommon/react/renderer/componentregistry/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/componentregistry/CMakeFiles/react_renderer_componentregistry.dir/./
+C/C++:   has 232 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     ComponentDescriptorRegistry.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactCommon/react/renderer/mounting/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/mounting/CMakeFiles/react_renderer_mounting.dir/./
+C/C++:   has 214 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     internal/sliceChildShadowNodeViewPairs.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactCommon/react/renderer/components/view/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/view/CMakeFiles/rrc_view.dir/./
+C/C++:   has 206 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     03c088162b41ff10d44d966ee4d24a8f/HostPlatformViewProps.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactCommon/runtimeexecutor/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/runtimeexecutor/CMakeFiles/runtimeexecutor.dir/./
+C/C++:   has 198 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     platform/cxx/ReactCommon/RuntimeExecutorSyncUIThreadUtils.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactCommon/react/renderer/animations/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/animations/CMakeFiles/react_renderer_animations.dir/./
+C/C++:   has 218 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     LayoutAnimationKeyFrameManager.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactCommon/react/renderer/attributedstring/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/attributedstring/CMakeFiles/react_renderer_attributedstring.dir/./
+C/C++:   has 230 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     AttributedStringBox.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactCommon/react/renderer/consistency/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/consistency/CMakeFiles/react_renderer_consistency.dir/./
+C/C++:   has 220 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     ShadowTreeRevisionConsistencyManager.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactCommon/react/renderer/imagemanager/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/imagemanager/CMakeFiles/react_renderer_imagemanager.dir/./
+C/C++:   has 222 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     c65133dada79a4102907dbd9f617d108/ImageManager.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactCommon/react/renderer/observers/events/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/observers/events/CMakeFiles/react_renderer_observers_events.dir/./
+C/C++:   has 230 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     EventPerformanceLogger.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactCommon/react/renderer/runtimescheduler/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/runtimescheduler/CMakeFiles/react_renderer_runtimescheduler.dir/./
+C/C++:   has 230 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     RuntimeScheduler.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactCommon/react/renderer/textlayoutmanager/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/textlayoutmanager/CMakeFiles/react_renderer_textlayoutmanager.dir/./
+C/C++:   has 232 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     TextMeasureCache.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactCommon/react/renderer/uimanager/consistency/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/uimanager/consistency/CMakeFiles/react_renderer_uimanager_consistency.dir/./
+C/C++:   has 240 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     LazyShadowTreeRevisionConsistencyManager.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactCommon/react/renderer/components/legacyviewmanagerinterop/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/legacyviewmanagerinterop/CMakeFiles/rrc_legacyviewmanagerinterop.dir/./
+C/C++:   has 246 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     LegacyViewManagerInteropViewProps.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactCommon/react/renderer/componentregistry/native/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/componentregistry/native/CMakeFiles/rrc_native.dir/./
+C/C++:   has 217 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     NativeComponentRegistryBinding.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactCommon/react/renderer/components/progressbar/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/progressbar/CMakeFiles/rrc_progressbar.dir/./
+C/C++:   has 220 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     9b24037a332c72f1b12e93ed6d3e7fb7/AndroidProgressBarMeasurementsManager.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactCommon/react/renderer/components/scrollview/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/scrollview/CMakeFiles/rrc_scrollview.dir/./
+C/C++:   has 218 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     f8c0b3abff0eec37e7d33f761ce12baa/HostPlatformScrollViewProps.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactCommon/react/renderer/components/switch/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/switch/CMakeFiles/rrc_switch.dir/./
+C/C++:   has 210 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     b411b697ec3d304a2e36061411fbb402/AndroidSwitchMeasurementsManager.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactCommon/react/renderer/components/text/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/text/CMakeFiles/rrc_text.dir/./
+C/C++:   has 206 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     bd4f8c7807e51d1f6e1dcdec9a5865a3/ParagraphState.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactCommon/react/renderer/components/textinput/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/textinput/CMakeFiles/rrc_textinput.dir/./
+C/C++:   has 216 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     4549506c5820043e19e3fea467983a60/AndroidTextInputShadowNode.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in react/turbomodule/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/turbomodule/CMakeFiles/turbomodulejsijni.dir/./
+C/C++:   has 216 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     ReactCommon/BindingsInstallerHolder.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactCommon/hermes/inspector-modern/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/hermes/inspector-modern/CMakeFiles/hermes_inspector_modern.dir/./
+C/C++:   has 214 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     chrome/HermesRuntimeTargetDelegate.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in react/hermes/instrumentation/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactAndroid/src/main/jni/react/hermes/instrumentation/CMakeFiles/jsijniprofiler.dir/./
+C/C++:   has 224 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     HermesSamplingProfiler.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/build/third-party-ndk/double-conversion/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/build/third-party-ndk/double-conversion/CMakeFiles/double-conversion.dir/./
+C/C++:   has 212 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     double-conversion/double-conversion.cc.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactCommon/react/renderer/components/unimplementedview/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native/ReactAndroid/.cxx/RelWithDebInfo/5b6h2842/x86_64/ReactCommon/react/renderer/components/unimplementedview/CMakeFiles/rrc_unimplementedview.dir/./
+C/C++:   has 232 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     UnimplementedViewComponentDescriptor.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+
+> Task :react-native:packages:react-native:ReactAndroid:generateJsonModelRelease
+> Task :react-native:packages:react-native:ReactAndroid:prefabReleaseConfigurePackage
+> Task :react-native-async-storage_async-storage:copyReleaseJniLibsProjectOnly
+> Task :react-native:packages:react-native:ReactAndroid:buildCMakeRelWithDebInfo[x86_64][hermestooling,jsi,etc]
+C/C++: ninja: error: mkdir(ReactCommon/react/renderer/textlayoutmanager/CMakeFiles/react_renderer_textlayoutmanager.dir/bb83bae29660f0016653d39f60ee439a): No such file or directory
+
+> Task :react-native:packages:react-native:ReactAndroid:buildCMakeRelWithDebInfo[x86_64][hermestooling,jsi,etc] FAILED
+
+> Task :app:configureCMakeRelWithDebInfo[x86_64]
+C/C++: CMake Warning in C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/@react-native-async-storage/async-storage/android/build/generated/source/codegen/jni/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/android/app/.cxx/RelWithDebInfo/3m265r3b/x86_64/rnasyncstorage_autolinked_build/CMakeFiles/react_codegen_rnasyncstorage.dir/./
+C/C++:   has 188 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     react/renderer/components/rnasyncstorage/rnasyncstorageJSI-generated.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+C/C++: CMake Warning in C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/android/app/.cxx/RelWithDebInfo/3m265r3b/x86_64/safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/./
+C/C++:   has 190 characters.  The maximum full path to an object file is 250
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     C_/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/node_modules/react-native-safe-area-context/android/build/generated/source/codegen/jni/react/renderer/components/safeareacontext/safeareacontextJSI-generated.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+
+> Task :react-native-safe-area-context:preReleaseBuild
+> Task :react-native-safe-area-context:mergeReleaseJniLibFolders
+> Task :react-native-safe-area-context:mergeReleaseNativeLibs NO-SOURCE
+> Task :react-native-safe-area-context:copyReleaseJniLibsProjectOnly
+> Task :react-native-tts:preReleaseBuild UP-TO-DATE
+> Task :react-native-tts:mergeReleaseJniLibFolders
+> Task :react-native-tts:mergeReleaseNativeLibs NO-SOURCE
+> Task :react-native-tts:copyReleaseJniLibsProjectOnly
+> Task :react-native-safe-area-context:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :react-native-safe-area-context:generateReleaseBuildConfig
+> Task :react-native-safe-area-context:generateReleaseResValues
+> Task :react-native-safe-area-context:generateReleaseResources
+> Task :react-native-safe-area-context:packageReleaseResources
+> Task :react-native-safe-area-context:parseReleaseLocalResources
+> Task :react-native-safe-area-context:generateReleaseRFile
+> Task :react-native-safe-area-context:javaPreCompileRelease
+> Task :react-native-async-storage_async-storage:generateReleaseBuildConfig
+> Task :react-native-async-storage_async-storage:generateReleaseResValues
+> Task :react-native-async-storage_async-storage:generateReleaseResources
+> Task :react-native-async-storage_async-storage:packageReleaseResources
+> Task :react-native-async-storage_async-storage:parseReleaseLocalResources
+> Task :react-native-async-storage_async-storage:generateReleaseRFile
+> Task :react-native-async-storage_async-storage:javaPreCompileRelease
+> Task :react-native-tts:generateReleaseBuildConfig
+> Task :react-native-tts:generateReleaseResValues
+> Task :react-native-tts:generateReleaseResources
+> Task :react-native-tts:packageReleaseResources
+> Task :react-native-tts:parseReleaseLocalResources
+> Task :react-native-tts:generateReleaseRFile
+> Task :react-native-tts:javaPreCompileRelease
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:buildKotlinToolingMetadata
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:generateReleaseBuildConfig
+> Task :react-native-async-storage_async-storage:writeReleaseAarMetadata
+> Task :react-native-safe-area-context:writeReleaseAarMetadata
+> Task :react-native-tts:writeReleaseAarMetadata
+
+> Task :app:createBundleReleaseJsAndAssets
+
+                        ▒▒▓▓▓▓▒▒
+                     ▒▓▓▓▒▒░░▒▒▓▓▓▒
+                  ▒▓▓▓▓░░░▒▒▒▒░░░▓▓▓▓▒
+                 ▓▓▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▓▓
+                 ▓▓░░░░░▒▓▓▓▓▓▓▒░░░░░▓▓
+                 ▓▓░░▓▓▒░░░▒▒░░░▒▓▒░░▓▓
+                 ▓▓░░▓▓▓▓▓▒▒▒▒▓▓▓▓▒░░▓▓
+                 ▓▓░░▓▓▓▓▓▓▓▓▓▓▓▓▓▒░░▓▓
+                 ▓▓▒░░▒▒▓▓▓▓▓▓▓▓▒░░░▒▓▓
+                  ▒▓▓▓▒░░░▒▓▓▒░░░▒▓▓▓▒
+                     ▒▓▓▓▒░░░░▒▓▓▓▒
+                        ▒▒▓▓▓▓▒▒
+
+
+ WARN  the transform cache was reset.
+                Welcome to Metro v0.83.8
+              Fast - Scalable - Integrated
+
+
+LOG:Writing bundle output to: android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle
+LOG:Writing sourcemap output to: android\app\build\intermediates\sourcemaps\react\release\index.android.bundle.packager.map
+LOG:Done writing bundle output
+LOG:Done writing sourcemap output
+
+> Task :app:generateReleaseResValues
+> Task :app:generateReleaseResources
+> Task :app:packageReleaseResources
+> Task :app:parseReleaseLocalResources
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+> Task :react-native-async-storage_async-storage:extractDeepLinksRelease
+
+> Task :react-native-async-storage_async-storage:processReleaseManifest
+package="com.reactnativecommunity.asyncstorage" found in source AndroidManifest.xml: C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\node_modules\@react-native-async-storage\async-storage\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="com.reactnativecommunity.asyncstorage" from the source AndroidManifest.xml: C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\node_modules\@react-native-async-storage\async-storage\android\src\main\AndroidManifest.xml.
+
+> Task :react-native-safe-area-context:extractDeepLinksRelease
+
+> Task :react-native-safe-area-context:processReleaseManifest
+package="com.th3rdwave.safeareacontext" found in source AndroidManifest.xml: C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\node_modules\react-native-safe-area-context\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="com.th3rdwave.safeareacontext" from the source AndroidManifest.xml: C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\node_modules\react-native-safe-area-context\android\src\main\AndroidManifest.xml.
+
+> Task :react-native-tts:extractDeepLinksRelease
+
+> Task :react-native-tts:processReleaseManifest
+package="net.no_mad.tts" found in source AndroidManifest.xml: C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\node_modules\react-native-tts\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="net.no_mad.tts" from the source AndroidManifest.xml: C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\node_modules\react-native-tts\android\src\main\AndroidManifest.xml.
+
+> Task :react-native-async-storage_async-storage:compileReleaseLibraryResources
+> Task :react-native-safe-area-context:compileReleaseLibraryResources
+> Task :react-native-tts:compileReleaseLibraryResources
+> Task :app:javaPreCompileRelease
+> Task :app:desugarReleaseFileDependencies
+> Task :app:mergeReleaseStartupProfile
+> Task :app:mergeExtDexRelease
+> Task :react-native-async-storage_async-storage:prepareReleaseArtProfile
+> Task :react-native-safe-area-context:prepareReleaseArtProfile
+> Task :react-native-tts:prepareReleaseArtProfile
+> Task :app:mergeReleaseShaders
+> Task :app:compileReleaseShaders NO-SOURCE
+> Task :app:generateReleaseAssets UP-TO-DATE
+> Task :react-native-async-storage_async-storage:mergeReleaseShaders
+> Task :react-native-async-storage_async-storage:compileReleaseShaders NO-SOURCE
+> Task :react-native-async-storage_async-storage:generateReleaseAssets UP-TO-DATE
+> Task :react-native-async-storage_async-storage:mergeReleaseAssets
+> Task :react-native-safe-area-context:mergeReleaseShaders
+> Task :react-native-safe-area-context:compileReleaseShaders NO-SOURCE
+> Task :react-native-safe-area-context:generateReleaseAssets UP-TO-DATE
+> Task :react-native-safe-area-context:mergeReleaseAssets
+> Task :react-native-tts:mergeReleaseShaders
+> Task :react-native-tts:compileReleaseShaders NO-SOURCE
+> Task :react-native-tts:generateReleaseAssets UP-TO-DATE
+> Task :react-native-tts:mergeReleaseAssets
+> Task :app:extractReleaseVersionControlInfo
+> Task :app:extractProguardFiles
+> Task :react-native-async-storage_async-storage:processReleaseJavaRes NO-SOURCE
+> Task :react-native-async-storage_async-storage:extractProguardFiles
+> Task :react-native-async-storage_async-storage:prepareLintJarForPublish
+> Task :react-native-safe-area-context:extractProguardFiles
+> Task :react-native-safe-area-context:prepareLintJarForPublish
+> Task :react-native-tts:processReleaseJavaRes NO-SOURCE
+> Task :react-native-tts:extractProguardFiles
+> Task :react-native-tts:prepareLintJarForPublish
+> Task :react-native-safe-area-context:stripReleaseDebugSymbols NO-SOURCE
+> Task :react-native-safe-area-context:copyReleaseJniLibsProjectAndLocalJars
+> Task :react-native-safe-area-context:extractDeepLinksForAarRelease
+> Task :react-native-async-storage_async-storage:stripReleaseDebugSymbols NO-SOURCE
+> Task :react-native-async-storage_async-storage:copyReleaseJniLibsProjectAndLocalJars
+> Task :react-native-async-storage_async-storage:extractDeepLinksForAarRelease
+> Task :react-native-async-storage_async-storage:mergeReleaseJavaResource
+> Task :react-native-tts:stripReleaseDebugSymbols NO-SOURCE
+> Task :react-native-tts:copyReleaseJniLibsProjectAndLocalJars
+> Task :react-native-tts:extractDeepLinksForAarRelease
+> Task :react-native-tts:mergeReleaseJavaResource
+> Task :react-native-async-storage_async-storage:writeReleaseLintModelMetadata
+> Task :react-native-safe-area-context:writeReleaseLintModelMetadata
+> Task :react-native-tts:writeReleaseLintModelMetadata
+> Task :app:collectReleaseDependencies
+> Task :app:sdkReleaseDependencyData
+> Task :app:writeReleaseAppMetadata
+> Task :app:writeReleaseSigningConfigVersions
+> Task :app:configureReleaseDependencies
+> Task :app:parseReleaseIntegrityConfig
+
+[Incubating] Problems report is available at: file:///C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/android/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':react-native:packages:react-native:ReactAndroid:buildCMakeRelWithDebInfo[x86_64][hermestooling,jsi,etc]'.
+> com.android.ide.common.process.ProcessException: ninja: Entering directory `C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\node_modules\react-native\ReactAndroid\.cxx\RelWithDebInfo\5b6h2842\x86_64'
+  [0/2] Re-checking globbed directories...
+  [1/424] Building CXX object ReactCommon/react/runtime/hermes/CMakeFiles/bridgelesshermes.dir/HermesInstance.cpp.o
+  [2/424] Building CXX object build/third-party-ndk/glog/CMakeFiles/glog.dir/glog-0.3.5/src/demangle.cc.o
+  [3/424] Building CXX object build/third-party-ndk/glog/CMakeFiles/glog.dir/glog-0.3.5/src/symbolize.cc.o
+  [4/424] Building CXX object build/third-party-ndk/glog/CMakeFiles/glog.dir/glog-0.3.5/src/signalhandler.cc.o
+  [5/424] Building CXX object build/third-party-ndk/glog/CMakeFiles/glog.dir/glog-0.3.5/src/logging.cc.o
+  [6/424] Building CXX object build/third-party-ndk/glog/CMakeFiles/glog.dir/glog-0.3.5/src/raw_logging.cc.o
+  [7/424] Building CXX object build/third-party-ndk/glog/CMakeFiles/glog.dir/glog-0.3.5/src/utilities.cc.o
+  [8/424] Building CXX object build/third-party-ndk/glog/CMakeFiles/glog.dir/glog-0.3.5/src/vlog_is_on.cc.o
+  [9/424] Linking CXX static library build\third-party-ndk\glog\libglog.a
+  [10/424] Building CXX object build/third-party-ndk/double-conversion/CMakeFiles/double-conversion.dir/double-conversion/double-conversion.cc.o
+  [11/424] Building CXX object build/third-party-ndk/double-conversion/CMakeFiles/double-conversion.dir/double-conversion/diy-fp.cc.o
+  [12/424] Building CXX object build/third-party-ndk/double-conversion/CMakeFiles/double-conversion.dir/double-conversion/fixed-dtoa.cc.o
+  [13/424] Building CXX object build/third-party-ndk/double-conversion/CMakeFiles/double-conversion.dir/double-conversion/fast-dtoa.cc.o
+  [14/424] Building CXX object build/third-party-ndk/double-conversion/CMakeFiles/double-conversion.dir/double-conversion/bignum.cc.o
+  [15/424] Building CXX object build/third-party-ndk/double-conversion/CMakeFiles/double-conversion.dir/double-conversion/bignum-dtoa.cc.o
+  [16/424] Building ASM object build/third-party-ndk/boost/CMakeFiles/boost.dir/asm/x86_64/ontop_x86_64_sysv_elf_gas.S.o
+  [17/424] Building CXX object build/third-party-ndk/double-conversion/CMakeFiles/double-conversion.dir/double-conversion/cached-powers.cc.o
+  [18/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/Conv.cpp.o
+  [19/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/Demangle.cpp.o
+  [20/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/FileUtil.cpp.o
+  [21/424] Building CXX object ReactCommon/cxxreact/CMakeFiles/react_cxxreact.dir/NativeToJsBridge.cpp.o
+  [22/424] Building CXX object build/third-party-ndk/double-conversion/CMakeFiles/double-conversion.dir/double-conversion/strtod.cc.o
+  [23/424] Linking CXX static library build\third-party-ndk\double-conversion\libdouble-conversion.a
+  [24/424] Building CXX object build/third-party-ndk/fmt/CMakeFiles/fmt.dir/src/format.cc.o
+  [25/424] Linking CXX static library build\third-party-ndk\fmt\libfmt.a
+  [26/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/Unicode.cpp.o
+  [27/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/ScopeGuard.cpp.o
+  [28/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/SharedMutex.cpp.o
+  [29/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/Format.cpp.o
+  [30/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/String.cpp.o
+  [31/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/concurrency/CacheLocality.cpp.o
+  [32/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/detail/Futex.cpp.o
+  [33/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/container/detail/F14Table.cpp.o
+  [34/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/detail/FileUtilDetail.cpp.o
+  [35/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/detail/UniqueInstance.cpp.o
+  [36/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/detail/SplitStringSimd.cpp.o
+  [37/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/json/json_pointer.cpp.o
+  [38/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/json/json.cpp.o
+  [39/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/hash/SpookyHashV2.cpp.o
+  [40/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/json/dynamic.cpp.o
+  [41/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/memory/detail/MallocImpl.cpp.o
+  [42/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/lang/SafeAssert.cpp.o
+  [43/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/lang/CString.cpp.o
+  [44/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/lang/ToAscii.cpp.o
+  [45/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/portability/SysUio.cpp.o
+  [46/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/synchronization/ParkingLot.cpp.o
+  [47/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/net/NetOps.cpp.o
+  [48/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/synchronization/SanitizeThread.cpp.o
+  [49/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/system/AtFork.cpp.o
+  [50/424] Building CXX object build/third-party-ndk/folly/CMakeFiles/folly_runtime.dir/folly/system/ThreadId.cpp.o
+  [51/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/YGConfig.cpp.o
+  [52/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/YGEnums.cpp.o
+  [53/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/YGNode.cpp.o
+  [54/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/node/LayoutResults.cpp.o
+  [55/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/node/Node.cpp.o
+  [56/424] Building CXX object ReactCommon/reactperflogger/CMakeFiles/reactperflogger.dir/reactperflogger/FuseboxPerfettoDataSource.cpp.o
+  [57/424] Building CXX object ReactCommon/runtimeexecutor/CMakeFiles/runtimeexecutor.dir/platform/cxx/ReactCommon/RuntimeExecutorSyncUIThreadUtils.cpp.o
+  [58/424] Building CXX object ReactCommon/reactperflogger/CMakeFiles/reactperflogger.dir/fusebox/FuseboxTracer.cpp.o
+  [59/424] Building CXX object ReactCommon/reactperflogger/CMakeFiles/reactperflogger.dir/reactperflogger/BridgeNativeModulePerfLogger.cpp.o
+  [60/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/algorithm/AbsoluteLayout.cpp.o
+  [61/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/YGNodeLayout.cpp.o
+  [62/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/YGPixelGrid.cpp.o
+  [63/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/YGNodeStyle.cpp.o
+  [64/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/YGValue.cpp.o
+  [65/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/algorithm/Baseline.cpp.o
+  [66/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/algorithm/PixelGrid.cpp.o
+  [67/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/config/Config.cpp.o
+  [68/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/algorithm/CalculateLayout.cpp.o
+  [69/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/algorithm/Cache.cpp.o
+  [70/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/algorithm/FlexLine.cpp.o
+  [71/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/debug/AssertFatal.cpp.o
+  [72/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/event/event.cpp.o
+  [73/424] Building CXX object ReactCommon/yoga/yoga/CMakeFiles/yogacore.dir/debug/Log.cpp.o
+  [74/424] Linking CXX static library ReactCommon\yoga\yoga\libyogacore.a
+  [75/424] Building CXX object ReactCommon/reactperflogger/CMakeFiles/reactperflogger.dir/reactperflogger/ReactPerfettoLogger.cpp.o
+  [76/424] Building CXX object ReactCommon/reactperflogger/CMakeFiles/reactperflogger.dir/reactperflogger/HermesPerfettoDataSource.cpp.o
+  [77/424] Building CXX object ReactCommon/reactperflogger/CMakeFiles/reactperflogger.dir/reactperflogger/ReactPerfetto.cpp.o
+  [78/424] Building CXX object ReactCommon/reactperflogger/CMakeFiles/reactperflogger.dir/reactperflogger/ReactPerfettoCategories.cpp.o
+  [79/424] Building CXX object ReactCommon/jsiexecutor/CMakeFiles/jsireact.dir/jsireact/JSIExecutor.cpp.o
+  [80/424] Building CXX object ReactCommon/jsiexecutor/CMakeFiles/jsireact.dir/jsireact/JSINativeModules.cpp.o
+  [81/424] Building CXX object ReactCommon/logger/CMakeFiles/logger.dir/react_native_log.cpp.o
+  [82/424] Building CXX object ReactCommon/jsitooling/CMakeFiles/jsitooling.dir/react/runtime/JSRuntimeFactoryCAPI.cpp.o
+  [83/424] Building CXX object ReactCommon/jsitooling/CMakeFiles/jsitooling.dir/react/runtime/JSRuntimeFactory.cpp.o
+  [84/424] Building CXX object ReactCommon/cxxreact/CMakeFiles/react_cxxreact.dir/JSExecutor.cpp.o
+  [85/424] Building CXX object ReactCommon/cxxreact/CMakeFiles/react_cxxreact.dir/CxxNativeModule.cpp.o
+  [86/424] Building CXX object ReactCommon/cxxreact/CMakeFiles/react_cxxreact.dir/JSIndexedRAMBundle.cpp.o
+  [87/424] Building CXX object ReactCommon/cxxreact/CMakeFiles/react_cxxreact.dir/JSBundleType.cpp.o
+  [88/424] Building CXX object ReactCommon/cxxreact/CMakeFiles/react_cxxreact.dir/Instance.cpp.o
+  [89/424] Building CXX object ReactCommon/cxxreact/CMakeFiles/react_cxxreact.dir/JSBigString.cpp.o
+  [90/424] Building CXX object ReactCommon/cxxreact/CMakeFiles/react_cxxreact.dir/MethodCall.cpp.o
+  [91/424] Building CXX object ReactCommon/cxxreact/CMakeFiles/react_cxxreact.dir/ModuleRegistry.cpp.o
+  [92/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/ConsoleMessage.cpp.o
+  [93/424] Building CXX object ReactCommon/oscompat/CMakeFiles/oscompat.dir/OSCompatWindows.cpp.o
+  [94/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/ExecutionContext.cpp.o
+  [95/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/ExecutionContextManager.cpp.o
+  [96/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/HostTarget.cpp.o
+  [97/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/FallbackRuntimeAgentDelegate.cpp.o
+  [98/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/InspectorFlags.cpp.o
+  [99/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/HostAgent.cpp.o
+  [100/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/FallbackRuntimeTargetDelegate.cpp.o
+  [101/424] Building CXX object ReactCommon/jsi/CMakeFiles/jsi.dir/jsi/JSIDynamic.cpp.o
+  [102/424] Building CXX object ReactCommon/cxxreact/CMakeFiles/react_cxxreact.dir/ReactMarker.cpp.o
+  [103/424] Building CXX object ReactCommon/cxxreact/CMakeFiles/react_cxxreact.dir/RAMBundleRegistry.cpp.o
+  [104/424] Building CXX object ReactCommon/jsi/CMakeFiles/jsi.dir/jsi/jsilib-posix.cpp.o
+  [105/424] Building CXX object ReactCommon/jsi/CMakeFiles/jsi.dir/jsi/jsilib-windows.cpp.o
+  [106/424] Building CXX object ReactCommon/jsi/CMakeFiles/jsi.dir/jsi/jsi.cpp.o
+  [107/424] Building CXX object ReactCommon/oscompat/CMakeFiles/oscompat.dir/OSCompatPosix.cpp.o
+  [108/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/InspectorInterfaces.cpp.o
+  [109/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/InspectorUtilities.cpp.o
+  [110/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/InstanceAgent.cpp.o
+  [111/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/InstanceTarget.cpp.o
+  [112/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/InspectorPackagerConnection.cpp.o
+  [113/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/RuntimeTarget.cpp.o
+  [114/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/RuntimeTargetConsole.cpp.o
+  [115/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/RuntimeTargetDebuggerSessionObserver.cpp.o
+  [116/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/RuntimeAgent.cpp.o
+  [117/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/NetworkIOAgent.cpp.o
+  [118/424] Building CXX object ReactCommon/jsinspector-modern/CMakeFiles/jsinspector.dir/TracingAgent.cpp.o
+  [119/424] Building CXX object ReactCommon/jsinspector-modern/cdp/CMakeFiles/jsinspector_cdp.dir/CdpJson.cpp.o
+  [120/424] Building CXX object ReactCommon/jsinspector-modern/network/CMakeFiles/jsinspector_network.dir/NetworkReporter.cpp.o
+  [121/424] Building CXX object ReactCommon/jsinspector-modern/network/CMakeFiles/jsinspector_network.dir/HttpUtils.cpp.o
+  [122/424] Building CXX object ReactCommon/jsinspector-modern/network/CMakeFiles/jsinspector_network.dir/BoundedRequestBuffer.cpp.o
+  [123/424] Building CXX object ReactCommon/jsinspector-modern/network/CMakeFiles/jsinspector_network.dir/CdpNetwork.cpp.o
+  [124/424] Building CXX object ReactCommon/jsinspector-modern/tracing/CMakeFiles/jsinspector_tracing.dir/EventLoopReporter.cpp.o
+  [125/424] Building CXX object ReactCommon/jsinspector-modern/tracing/CMakeFiles/jsinspector_tracing.dir/RuntimeSamplingProfileTraceEventSerializer.cpp.o
+  [126/424] Building CXX object ReactCommon/jsinspector-modern/tracing/CMakeFiles/jsinspector_tracing.dir/PerformanceTracer.cpp.o
+  [127/424] Building CXX object ReactCommon/hermes/inspector-modern/CMakeFiles/hermes_inspector_modern.dir/chrome/HermesRuntimeAgentDelegate.cpp.o
+  [128/424] Building CXX object ReactCommon/hermes/executor/CMakeFiles/hermes_executor_common.dir/HermesExecutorFactory.cpp.o
+  [129/424] Building CXX object ReactCommon/hermes/inspector-modern/CMakeFiles/hermes_inspector_modern.dir/chrome/ConnectionDemux.cpp.o
+  [130/424] Building CXX object ReactCommon/hermes/inspector-modern/CMakeFiles/hermes_inspector_modern.dir/chrome/Registration.cpp.o
+  [131/424] Building CXX object ReactCommon/hermes/inspector-modern/CMakeFiles/hermes_inspector_modern.dir/chrome/HermesRuntimeSamplingProfileSerializer.cpp.o
+  [132/424] Building CXX object ReactCommon/hermes/inspector-modern/CMakeFiles/hermes_inspector_modern.dir/chrome/HermesRuntimeTargetDelegate.cpp.o
+  [133/424] Building CXX object ReactCommon/react/renderer/runtimescheduler/CMakeFiles/react_renderer_runtimescheduler.dir/RuntimeScheduler.cpp.o
+  [134/424] Building CXX object ReactCommon/react/renderer/runtimescheduler/CMakeFiles/react_renderer_runtimescheduler.dir/RuntimeSchedulerCallInvoker.cpp.o
+  [135/424] Building CXX object ReactCommon/react/renderer/runtimescheduler/CMakeFiles/react_renderer_runtimescheduler.dir/RuntimeSchedulerBinding.cpp.o
+  [136/424] Building CXX object ReactCommon/react/renderer/runtimescheduler/CMakeFiles/react_renderer_runtimescheduler.dir/RuntimeScheduler_Legacy.cpp.o
+  [137/424] Building CXX object ReactCommon/react/renderer/runtimescheduler/CMakeFiles/react_renderer_runtimescheduler.dir/RuntimeScheduler_Modern.cpp.o
+  [138/424] Building CXX object ReactCommon/react/renderer/runtimescheduler/CMakeFiles/react_renderer_runtimescheduler.dir/Task.cpp.o
+  [139/424] Building CXX object ReactCommon/react/debug/CMakeFiles/react_debug.dir/react_native_assert.cpp.o
+  [140/424] Building CXX object ReactCommon/react/utils/CMakeFiles/react_utils.dir/RunLoopObserver.cpp.o
+  ninja: build stopped: .
+  
+  C++ build system [build] failed while executing:
+      @echo off
+      "C:\\Users\\lalit\\AppData\\Local\\Temp\\nato-run31-android-tools\\cmake-3.30.5\\bin\\ninja.exe" ^
+        -C ^
+        "C:\\Users\\lalit\\AppData\\Local\\Temp\\nato-r31-clean-2ccd2fe8\\app\\node_modules\\react-native\\ReactAndroid\\.cxx\\RelWithDebInfo\\5b6h2842\\x86_64" ^
+        hermestooling ^
+        jsi ^
+        reactnative
+    from C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\node_modules\react-native\ReactAndroid
+  ninja: error: mkdir(ReactCommon/react/renderer/textlayoutmanager/CMakeFiles/react_renderer_textlayoutmanager.dir/bb83bae29660f0016653d39f60ee439a): No such file or directory
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 3m 55s
+127 actionable tasks: 117 executed, 10 up-to-date
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>if 1 EQU 0 goto mainEnd 
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>rem Set variable GRADLE_EXIT_CONSOLE if you need the _script_ return code instead of 
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>rem the _cmd.exe /c_ return code! 
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>set EXIT_CODE=1 
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>if 1 EQU 0 set EXIT_CODE=1 
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>if not "" == "" exit 1 
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>exit /b 1 

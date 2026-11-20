@@ -1,6 +1,7 @@
 """Collect actual Release fixture observations; missing evidence always fails."""
 from pathlib import Path
 import hashlib, json, re, subprocess, sys
+from android_display_evidence import repeated_display_transitions
 
 test_apk, fixture_apk, out = map(lambda p:Path(p).resolve(),sys.argv[1:4])
 serial=sys.argv[4]
@@ -50,10 +51,15 @@ try:
             (out/'screenshots').mkdir(exist_ok=True)
             (out/'screenshots'/(stage+'.png')).write_bytes(data)
             captures.append({'stage':stage,'file':'screenshots/'+stage+'.png','sha256':sha(data),
-                             'command':'Instrumentation UiAutomation.takeScreenshot; adb exec-out cat '+directory+'/'+stage+'.png'})
+                             'command':row.get('captureCommand', 'Instrumentation UiAutomation.takeScreenshot')+'; adb exec-out cat '+directory+'/'+stage+'.png'})
         complete=set(report.get('samples',{}))==set(expected[scenario])
-        ok=result.returncode==0 and b'INSTRUMENTATION_CODE: -1' in result.stdout and report.get('passed') is True and complete
-        results.append({'scenario':scenario,'command':command,'exitCode':result.returncode,'evidenceComplete':complete,'passed':ok})
+        stale = []
+        if complete and scenario == 'primary':
+            stale = repeated_display_transitions(out / 'screenshots', (
+                (stage, samples[stage]['dimensions']['fontScale']) for stage in expected[scenario]))
+        ok=result.returncode==0 and b'INSTRUMENTATION_CODE: -1' in result.stdout and report.get('passed') is True and complete and not stale
+        results.append({'scenario':scenario,'command':command,'exitCode':result.returncode,'evidenceComplete':complete,'staleCaptures':stale,'passed':ok})
+        if stale: raise RuntimeError('Identical display during a visible scale transition: '+str(stale))
         if not ok:raise RuntimeError('Failed fixture scenario: '+scenario+' '+str(report.get('error','')))
     passed=True
 finally:

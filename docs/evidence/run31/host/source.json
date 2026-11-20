@@ -1,0 +1,46 @@
+[
+  {
+    "file": "scripts/build-native.cjs",
+    "sha256": "b3daad2f5a7806aacdc39aa699e7a7d2249ab2aaef2e2a8e4514df90a12a3b6f"
+  },
+  {
+    "file": "scripts/host-build.cjs",
+    "sha256": "8d46f131cc440cea8331f71bc97c64b27fd5cd93ce8bf4a358657530a963aacb"
+  },
+  {
+    "file": "scripts/npm-invocation.cjs",
+    "sha256": "6c29a3fcc27c1f786e6abaf105960edfa6d8b19b01e1fc42a8bb12d7816f6078"
+  },
+  {
+    "file": "tests/host-build.test.mjs",
+    "sha256": "0bf0212155978a3abb0414c2bb9f2ec88b9853bbb7fcfcd20297d820fc0eb6b2"
+  },
+  {
+    "file": "android/app/build.gradle",
+    "sha256": "e617ee7c8f426c2ff00ccb1e8befeeded09bc2d0654ed2b0f03c5324ded66634"
+  },
+  {
+    "file": "android/app/verify-renderer.gradle",
+    "sha256": "86050958378103e8dcd850efb8a5ac13aaf2dfde8f158d7b4dd40aae1cb0127d"
+  },
+  {
+    "file": ".github/workflows/native-builds.yml",
+    "sha256": "dc4c13b40a3fdb139dd54952972826367ca7d49b5fd4719d0d11aff09a655b7f"
+  },
+  {
+    "file": "scripts/android_test_tools.py",
+    "sha256": "b9c5d5c1f4e12996585771ba0c179d0ff5ebee8672633a2ed5f535e4a2e4e4be"
+  },
+  {
+    "file": "scripts/build-android-font-instrumentation.py",
+    "sha256": "32d2f3f118a54a7c3b43189e8d15e9f983a4c2ab5efbe71cb92c426ca5c39f74"
+  },
+  {
+    "file": "scripts/build-android-font-native.py",
+    "sha256": "9955db40616ae79cc4ec9a1b04c55ac7f8199c117b40925ac0ff0c66bde4c80c"
+  },
+  {
+    "file": "scripts/build-android-font-release-fixture.py",
+    "sha256": "bb2dceceb098eb1edc97f8598ebfc169e377512907791b193ccaa7afa39d8fbf"
+  }
+]

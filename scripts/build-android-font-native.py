@@ -6,6 +6,7 @@ Run the resulting executable with that candidate's libs on the test emulator.
 """
 import argparse,hashlib,json,os,struct,subprocess,sys
 from pathlib import Path
+from android_test_tools import executable
 
 root=Path(__file__).resolve().parents[1]
 targets={
@@ -32,12 +33,16 @@ def verify_elf(file):
     if len(data)!=20 or data[:4]!=b'\x7fELF' or data[5]!=1 or data[4]!=elf_class or struct.unpack_from('<H',data,18)[0]!=machine:
         raise RuntimeError(f'Native library/executable does not match requested ABI {abi}: {file}')
 sdk=Path(os.environ['ANDROID_HOME'])
-ndk=sdk/'ndk/27.1.12297006/toolchains/llvm/prebuilt/darwin-x86_64'
+ndk_host={'darwin':'darwin-x86_64','linux':'linux-x86_64','win32':'windows-x86_64'}[sys.platform]
+ndk=sdk/'ndk/27.1.12297006/toolchains/llvm/prebuilt'/ndk_host
 rn=root/'node_modules/react-native'
 if json.loads((rn/'package.json').read_text())['version']!='0.81.5':
     raise RuntimeError('Re-review native harness for new RN version')
-compiler=ndk/'bin/clang++'
-fbjni=next((Path.home()/'.gradle/caches/8.14.3/transforms').glob('*/transformed/fbjni-0.7.0/prefab/modules/fbjni'))
+compiler=executable(ndk/'bin/clang++')
+gradle_home=Path(os.environ.get('GRADLE_USER_HOME', Path.home()/'.gradle'))
+fbjni=next((gradle_home/'caches/8.14.3/transforms').glob('*/transformed/fbjni-0.7.0/prefab/modules/fbjni'), None)
+if fbjni is None:
+    raise RuntimeError(f'fbjni-0.7.0 prefab missing from {gradle_home}; build the candidate before compiling the consumer')
 libraries={}
 for name in ['reactnative','jsi']:
     libraries[name]=prefab/f'modules/{name}/libs/android.{abi}/lib{name}.so'
@@ -45,7 +50,7 @@ for name in ['reactnative','jsi']:
     verify_elf(libraries[name])
 fbjni_library=fbjni/f'libs/android.{abi}/libfbjni.so'
 verify_elf(fbjni_library)
-symbols=subprocess.check_output([str(ndk/'bin/llvm-nm'),'-D','--defined-only',str(libraries['reactnative'])],text=True)
+symbols=subprocess.check_output([executable(ndk/'bin/llvm-nm'),'-D','--defined-only',str(libraries['reactnative'])],text=True)
 debug_abi='_ZN8facebook5react8SealableC' in symbols
 if release == debug_abi:
     raise RuntimeError('Native harness mode must match the library Sealable/debug-string ABI; use --release for Release prefab')
@@ -65,7 +70,7 @@ if cache_guard:
         raise RuntimeError('Exported text-cache header/library ABI mismatch; regenerate source prefab headers')
 # uint64_t mangles as unsigned long on LP64 and unsigned long long on ILP32.
 # Inspect the demangled parameter rather than assuming the ARM64 typedef.
-demangled=subprocess.check_output([str(ndk/'bin/llvm-nm'),'-D','--defined-only','--demangle',str(libraries['reactnative'])],text=True)
+demangled=subprocess.check_output([executable(ndk/'bin/llvm-nm'),'-D','--defined-only','--demangle',str(libraries['reactnative'])],text=True)
 context_generation_abi='YogaLayoutableShadowNode::configureYogaTree(float, float, unsigned long' in demangled
 for suffix,exported in [('/core/LayoutContext.h','react/renderer/core/LayoutContext.h'),('/fabric/SurfaceHandlerBinding.h','react/fabric/SurfaceHandlerBinding.h')]:
     guard=next((file for file in patch['files'] if file['path'].endswith(suffix)),None)

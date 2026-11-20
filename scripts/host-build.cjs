@@ -5,6 +5,7 @@ const path = require('node:path');
 const os = require('node:os');
 const { createHash } = require('node:crypto');
 const { spawnSync } = require('node:child_process');
+const npmInvocation = require('./npm-invocation.cjs');
 
 const MODES = ['checks', 'web', 'android-debug', 'android-release', 'ios-simulator', 'ios-archive', 'ios-export'];
 const hash = value => createHash('sha256').update(value).digest('hex');
@@ -121,8 +122,8 @@ function runHost(options) {
     const pkg = JSON.parse(fs.readFileSync(path.join(root, 'package.json'), 'utf8'));
     const expectedNode = fs.readFileSync(path.join(root, '.nvmrc'), 'utf8').trim();
     if (process.versions.node !== expectedNode) throw new Error(`Use pinned Node ${expectedNode}; found ${process.versions.node}`);
-    const npm = process.platform === 'win32' ? 'npm.cmd' : 'npm';
-    const npmVersion = command(npm, ['--version'], root);
+    const { executable: npm, prefix } = npmInvocation;
+    const npmVersion = command(npm, [...prefix, '--version'], root);
     if (pkg.packageManager !== `npm@${npmVersion}`) throw new Error(`Use ${pkg.packageManager}; found npm@${npmVersion}`);
     const disk = fs.statfsSync(output);
     report.preflight = { npm: npmVersion, diskAvailableBytes: disk.bavail * disk.bsize,
@@ -159,7 +160,7 @@ function runHost(options) {
     json(path.join(output, 'preflight.json'), report.preflight); save();
     if (!options.preflightOnly) {
       if (options.install) {
-        step('locked-install', npm, ['ci']);
+        step('locked-install', npm, [...prefix, 'ci']);
         if (options.mode.startsWith('ios-')) {
           const env = { BUNDLE_FROZEN: 'true', BUNDLE_PATH: 'vendor/bundle' };
           step('locked-ruby', 'bundle', ['install'], { env });
@@ -167,11 +168,11 @@ function runHost(options) {
         }
       }
       if (options.mode === 'checks') {
-        for (const task of ['check:dependencies', 'typecheck', 'lint', 'test', 'audit:review']) step(task.replace(':', '-'), npm, ['run', task], { required: false });
+        for (const task of ['check:dependencies', 'typecheck', 'lint', 'test', 'audit:review']) step(task.replace(':', '-'), npm, [...prefix, 'run', task], { required: false });
         if (report.steps.some(record => record.exitCode !== 0)) throw new Error('One or more quality/security checks failed; all results retained');
       } else if (options.mode === 'web') {
         step('package-regressions', process.execPath, ['--test', 'tests/web-package.test.mjs']);
-        step('web-build', npm, ['run', 'export:web']);
+        step('web-build', npm, [...prefix, 'run', 'export:web']);
         step('web-package', process.execPath, ['scripts/package-web.cjs', 'dist', path.join(output, 'nato-web.tar.gz')]);
         artifact(path.join(output, 'nato-web.tar.gz'));
       } else {
@@ -205,4 +206,4 @@ if (require.main === module) {
   try { process.exitCode = runHost(parseArgs(process.argv.slice(2))).exitCode; }
   catch (error) { console.error(error.message); process.exitCode = 1; }
 }
-module.exports = { parseArgs, runHost, sourceSnapshot };
+module.exports = { npmInvocation, parseArgs, runHost, sourceSnapshot };

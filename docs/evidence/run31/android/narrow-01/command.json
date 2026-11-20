@@ -1,0 +1,21 @@
+{
+  "arguments": [
+    "narrow",
+    "artifacts/run31/x86_64/app-release-local-test.apk",
+    "artifacts/run31/instrumentation/font-composition.apk",
+    "emulator-5582",
+    "docs/evidence/run31/android/narrow-01",
+    "docs/evidence/run31/screenshots/android/narrow-01"
+  ],
+  "serial": "emulator-5582",
+  "installedApks": {
+    "com.natophonetics.app": "ce74de3404a2a18bce416dca21d8fcd86d6fe88b69744cf90e2ac53e84e66331",
+    "com.natophonetics.fonttest": "c7ae1041adf4a3695c9945099491d58c9661d846c0f726ec7d2a4003bd1f37a9"
+  },
+  "python": "3.10.18 (main, Jun  4 2025, 10:56:21) [MSC v.1944 64 bit (AMD64)]",
+  "run30ObserverSha256": "825bf3e2411d8360851b9eb53961d75b4215bb98e122fc74a2bbe344093d1d8b",
+  "api": "36",
+  "abi": "x86_64",
+  "viewport": "Physical size: 1080x2400\r\nOverride size: 720x1600",
+  "density": "Physical density: 420\r\nOverride density: 280"
+}

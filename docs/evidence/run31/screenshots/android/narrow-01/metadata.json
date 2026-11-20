@@ -1,0 +1,16 @@
+[
+  {
+    "file": "narrow-product-input2.png",
+    "state": "Actual populated converter at narrow2x; input retained",
+    "theme": "dark",
+    "width": 560,
+    "height": 1000,
+    "sha256": "123978d09e58359b65f4ed9497a84770d3d6cd8ea1ee8edd18309890b146999a",
+    "timestamp": "2026-11-20T13:31:45Z",
+    "command": "adb -s emulator-5582 exec-out screencap -p",
+    "androidVersion": "16",
+    "fontScale": "2.0",
+    "displaySize": "Physical size: 1080x2400\r\nOverride size: 560x1000",
+    "displayDensity": "Physical density: 420\r\nOverride density: 280"
+  }
+]

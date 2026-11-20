@@ -1,0 +1,1673 @@
+
+> nato-phonetics@1.0.0 test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: run20 real stale native measurements remain rejected
+ok 1 - run20 real stale native measurements remain rejected
+  ---
+  duration_ms: 2.249161
+  type: 'test'
+  ...
+# Subtest: run22 real stale native measurements remain rejected
+ok 2 - run22 real stale native measurements remain rejected
+  ---
+  duration_ms: 0.309708
+  type: 'test'
+  ...
+# Subtest: native acceptance rejects incomplete stages and remounts even with cold-equivalent frames
+ok 3 - native acceptance rejects incomplete stages and remounts even with cold-equivalent frames
+  ---
+  duration_ms: 0.329628
+  type: 'test'
+  ...
+# Subtest: correct outer frames cannot hide stale editable glyph sizing
+ok 4 - correct outer frames cannot hide stale editable glyph sizing
+  ---
+  duration_ms: 1.947897
+  type: 'test'
+  ...
+# Subtest: actual Release observations retain strict frame/widget, sweep, edit and resize acceptance
+ok 5 - actual Release observations retain strict frame/widget, sweep, edit and resize acceptance
+  ---
+  duration_ms: 3.200465
+  type: 'test'
+  ...
+# Subtest: Release gate rejects missing native evidence, replacement and stale glyph paint despite matching frames
+ok 6 - Release gate rejects missing native evidence, replacement and stale glyph paint despite matching frames
+  ---
+  duration_ms: 7.114057
+  type: 'test'
+  ...
+# Subtest: Release gate rejects lost caret, changed input, absent sweep and absent cold reference
+ok 7 - Release gate rejects lost caret, changed input, absent sweep and absent cold reference
+  ---
+  duration_ms: 7.509876
+  type: 'test'
+  ...
+# Subtest: Android float32 scale representation passes; wrong environment or >1px frame deviation fails
+ok 8 - Android float32 scale representation passes; wrong environment or >1px frame deviation fails
+  ---
+  duration_ms: 2.568468
+  type: 'test'
+  ...
+# Subtest: actual production Release native views/spans/Layout satisfy the unchanged tile contract
+ok 9 - actual production Release native views/spans/Layout satisfy the unchanged tile contract
+  ---
+  duration_ms: 8.156727
+  type: 'test'
+  ...
+# Subtest: native gate rejects missing parts/lines, wrong font and >1px actual baseline drift
+ok 10 - native gate rejects missing parts/lines, wrong font and >1px actual baseline drift
+  ---
+  duration_ms: 19.2902
+  type: 'test'
+  ...
+# Subtest: native gate rejects exposed concealed answer and synthetic observation provenance
+ok 11 - native gate rejects exposed concealed answer and synthetic observation provenance
+  ---
+  duration_ms: 2.895799
+  type: 'test'
+  ...
+# Subtest: native source preparation is repeatable and preserves unrelated bytes
+ok 12 - native source preparation is repeatable and preserves unrelated bytes
+  ---
+  duration_ms: 17.634212
+  type: 'test'
+  ...
+# Subtest: native context drift fails before any source file is patched
+ok 13 - native context drift fails before any source file is patched
+  ---
+  duration_ms: 8.963093
+  type: 'test'
+  ...
+# Subtest: read-only guard rejects a stale exported header and preparation invalidates its generated copy
+ok 14 - read-only guard rejects a stale exported header and preparation invalidates its generated copy
+  ---
+  duration_ms: 15.696849
+  type: 'test'
+  ...
+# Subtest: all 36 canonical entries have intentional provider text; special digits never send ordinary words
+ok 15 - all 36 canonical entries have intentional provider text; special digits never send ordinary words
+  ---
+  duration_ms: 1.628541
+  type: 'test'
+  ...
+# Subtest: a rapid AB replacement cancels old remaining words and ignores late duplicate callbacks
+ok 16 - a rapid AB replacement cancels old remaining words and ignores late duplicate callbacks
+  ---
+  duration_ms: 3.875903
+  type: 'test'
+  ...
+# Subtest: latest request wins even when stop and preparation are still pending
+ok 17 - latest request wins even when stop and preparation are still pending
+  ---
+  duration_ms: 0.829403
+  type: 'test'
+  ...
+# Subtest: Stop during preparation prevents any later speech and resolves before preparation
+ok 18 - Stop during preparation prevents any later speech and resolves before preparation
+  ---
+  duration_ms: 0.604393
+  type: 'test'
+  ...
+# Subtest: Stop cancels a pending inter-word pause and an unrelated owner cannot stop current playback
+ok 19 - Stop cancels a pending inter-word pause and an unrelated owner cannot stop current playback
+  ---
+  duration_ms: 1.937055
+  type: 'test'
+  ...
+# Subtest: provider stopped, error and synchronous throw produce distinct terminal results
+ok 20 - provider stopped, error and synchronous throw produce distinct terminal results
+  ---
+  duration_ms: 1.121979
+  type: 'test'
+  ...
+# Subtest: missing completion times out, settles once and clears provider queue
+ok 21 - missing completion times out, settles once and clears provider queue
+  ---
+  duration_ms: 1.81524
+  type: 'test'
+  ...
+# Subtest: asynchronous stop is awaited before speech starts
+ok 22 - asynchronous stop is awaited before speech starts
+  ---
+  duration_ms: 0.544049
+  type: 'test'
+  ...
+# Subtest: timed-out raw stop remains a barrier; retry cannot start before its late settlement
+ok 23 - timed-out raw stop remains a barrier; retry cannot start before its late settlement
+  ---
+  duration_ms: 0.897054
+  type: 'test'
+  ...
+# Subtest: rejected stop fails safely; later successful stop permits recovery
+ok 24 - rejected stop fails safely; later successful stop permits recovery
+  ---
+  duration_ms: 1.370326
+  type: 'test'
+  ...
+# Subtest: preparation failure/timeout permit default speech with visible warning and rate/progress
+ok 25 - preparation failure/timeout permit default speech with visible warning and rate/progress
+  ---
+  duration_ms: 1.400619
+  type: 'test'
+  ...
+# Subtest: English normalization retains mixed quality, canonicalizes locales, groups and deduplicates
+ok 26 - English normalization retains mixed quality, canonicalizes locales, groups and deduplicates
+  ---
+  duration_ms: 4.726872
+  type: 'test'
+  ...
+# Subtest: voice preparation covers saved, removed, failing storage/listing, explicit default and selected preview
+ok 27 - voice preparation covers saved, removed, failing storage/listing, explicit default and selected preview
+  ---
+  duration_ms: 0.775154
+  type: 'test'
+  ...
+# Subtest: browser voice enumeration supports delayed, empty, rejected and overlapping loads with listener cleanup
+ok 28 - browser voice enumeration supports delayed, empty, rejected and overlapping loads with listener cleanup
+  ---
+  duration_ms: 0.533999
+  type: 'test'
+  ...
+# Subtest: browser selected voice speech starts synchronously; Stop detaches old callbacks and prevents enumeration resurrection
+ok 29 - browser selected voice speech starts synchronously; Stop detaches old callbacks and prevents enumeration resurrection
+  ---
+  duration_ms: 1.045688
+  type: 'test'
+  ...
+# Subtest: browser error and interruption map to failed/cancelled without continuing the sequence
+ok 30 - browser error and interruption map to failed/cancelled without continuing the sequence
+  ---
+  duration_ms: 0.823492
+  type: 'test'
+  ...
+# Subtest: browser default speech works without enumerated voices, including a failing voice-list API
+ok 31 - browser default speech works without enumerated voices, including a failing voice-list API
+  ---
+  duration_ms: 0.740746
+  type: 'test'
+  ...
+# Subtest: a failed explicit Stop reports provider uncertainty without starting further words
+ok 32 - a failed explicit Stop reports provider uncertainty without starting further words
+  ---
+  duration_ms: 0.509308
+  type: 'test'
+  ...
+# Subtest: voice browsing intersects search/locale, preserves provider order and leaves saved selection independent
+ok 33 - voice browsing intersects search/locale, preserves provider order and leaves saved selection independent
+  ---
+  duration_ms: 0.7521
+  type: 'test'
+  ...
+# (node:485) ExperimentalWarning: The MockTimers API is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: a matching review passes while the raw audit remains a failure with unresolved vulnerabilities
+ok 34 - a matching review passes while the raw audit remains a failure with unresolved vulnerabilities
+  ---
+  duration_ms: 3.687413
+  type: 'test'
+  ...
+# Subtest: new findings, changed advisories, ranges, severity and locked versions require re-review
+ok 35 - new findings, changed advisories, ranges, severity and locked versions require re-review
+  ---
+  duration_ms: 1.254332
+  type: 'test'
+  ...
+# Subtest: review deadlines, future review dates and malformed dispositions cannot authorize findings
+ok 36 - review deadlines, future review dates and malformed dispositions cannot authorize findings
+  ---
+  duration_ms: 0.526951
+  type: 'test'
+  ...
+# Subtest: disappearing findings and missing lock entries require investigation
+ok 37 - disappearing findings and missing lock entries require investigation
+  ---
+  duration_ms: 0.314907
+  type: 'test'
+  ...
+# Subtest: network failures, unexpected exits, truncated JSON and inconsistent reports fail closed
+ok 38 - network failures, unexpected exits, truncated JSON and inconsistent reports fail closed
+  ---
+  duration_ms: 0.335319
+  type: 'test'
+  ...
+# Subtest: malformed advisory chains and incomplete reports cannot bypass review
+ok 39 - malformed advisory chains and incomplete reports cannot bypass review
+  ---
+  duration_ms: 0.272024
+  type: 'test'
+  ...
+# Subtest: a high advisory cannot hide behind a lower package severity and matching lower counts
+ok 40 - a high advisory cannot hide behind a lower package severity and matching lower counts
+  ---
+  duration_ms: 0.199044
+  type: 'test'
+  ...
+# Subtest: conversion boundary shares canonical entries and exposes punctuation/Unicode policy
+ok 41 - conversion boundary shares canonical entries and exposes punctuation/Unicode policy
+  ---
+  duration_ms: 2.132165
+  type: 'test'
+  ...
+# Subtest: question boundary makes every canonical letter reachable with injected randomness
+ok 42 - question boundary makes every canonical letter reachable with injected randomness
+  ---
+  duration_ms: 2.154335
+  type: 'test'
+  ...
+# Subtest: CLI discovers the real Android launcher with its separate deep-link intent
+ok 43 - CLI discovers the real Android launcher with its separate deep-link intent
+  ---
+  duration_ms: 9.453989
+  type: 'test'
+  ...
+# Subtest: CLI manifest parsing preserves single/multiple activities, intent arrays and escaped names
+ok 44 - CLI manifest parsing preserves single/multiple activities, intent arrays and escaped names
+  ---
+  duration_ms: 4.496359
+  type: 'test'
+  ...
+# Subtest: Apple CLI-resolved parser preserves workspace attributes and single/multiple project references
+ok 45 - Apple CLI-resolved parser preserves workspace attributes and single/multiple project references
+  ---
+  duration_ms: 1.878879
+  type: 'test'
+  ...
+# Subtest: both CLI-resolved parsers bound unterminated stop nodes and retain valid literal bodies
+ok 46 - both CLI-resolved parsers bound unterminated stop nodes and retain valid literal bodies
+  ---
+  duration_ms: 79.128609
+  type: 'test'
+  ...
+# Subtest: all 26 letters have a unique, canonical mapping and matching lookup
+ok 47 - all 26 letters have a unique, canonical mapping and matching lookup
+  ---
+  duration_ms: 1.032025
+  type: 'test'
+  ...
+# Subtest: all ten digits have a unique canonical mapping and radio pronunciation guides
+ok 48 - all ten digits have a unique canonical mapping and radio pronunciation guides
+  ---
+  duration_ms: 0.244379
+  type: 'test'
+  ...
+# Subtest: native copy/share send exact plain text and preserve cancellation and errors
+ok 49 - native copy/share send exact plain text and preserve cancellation and errors
+  ---
+  duration_ms: 64.665743
+  type: 'test'
+  ...
+# Subtest: browser exports handle unavailable, denied, cancelled and successful capabilities
+ok 50 - browser exports handle unavailable, denied, cancelled and successful capabilities
+  ---
+  duration_ms: 9.373157
+  type: 'test'
+  ...
+# Subtest: conversion preserves canonical copy text and intentional speech representation
+ok 51 - conversion preserves canonical copy text and intentional speech representation
+  ---
+  duration_ms: 1.433255
+  type: 'test'
+  ...
+# Subtest: whitespace runs collapse to a single boundary without leading/trailing pauses
+ok 52 - whitespace runs collapse to a single boundary without leading/trailing pauses
+  ---
+  duration_ms: 0.926227
+  type: 'test'
+  ...
+# Subtest: useful punctuation is explicit literal speech, distinct from word boundaries
+ok 53 - useful punctuation is explicit literal speech, distinct from word boundaries
+  ---
+  duration_ms: 0.135249
+  type: 'test'
+  ...
+# Subtest: Unicode never silently expands, strips accents or vanishes from exports
+ok 54 - Unicode never silently expands, strips accents or vanishes from exports
+  ---
+  duration_ms: 0.326372
+  type: 'test'
+  ...
+# Subtest: display/export/speech agree for mixed input without mutating tokens
+ok 55 - display/export/speech agree for mixed input without mutating tokens
+  ---
+  duration_ms: 0.225239
+  type: 'test'
+  ...
+# Subtest: playback indices track displayed tokens across boundaries, Unicode omissions and repeats
+ok 56 - playback indices track displayed tokens across boundaries, Unicode omissions and repeats
+  ---
+  duration_ms: 0.203998
+  type: 'test'
+  ...
+# check-dependencies: logs/01-check-dependencies.log
+# typecheck: logs/02-typecheck.log
+# lint: logs/03-lint.log
+# test: logs/04-test.log
+# audit-review: logs/05-audit-review.log
+# One or more quality/security checks failed; all results retained
+# Candidate source ID does not match --expected-source
+# Another host build holds artifacts/.host-build.lock; inspect its owner before retrying
+# Use pinned Node 0.0.0; found 22.23.0
+# check-dependencies: logs/01-check-dependencies.log
+# typecheck: logs/02-typecheck.log
+# lint: logs/03-lint.log
+# test: logs/04-test.log
+# audit-review: logs/05-audit-review.log
+# Candidate source changed during execution; artifact qualification rejected
+# locked-install: logs/01-locked-install.log
+# check-dependencies: logs/02-check-dependencies.log
+# typecheck: logs/03-typecheck.log
+# lint: logs/04-lint.log
+# test: logs/05-test.log
+# audit-review: logs/06-audit-review.log
+# locked-install: logs/01-locked-install.log
+# locked-install failed (1); see logs/01-locked-install.log
+# Subtest: host CLI rejects unsupported framework mode, missing arguments and invalid concurrency
+ok 57 - host CLI rejects unsupported framework mode, missing arguments and invalid concurrency
+  ---
+  duration_ms: 0.963276
+  type: 'test'
+  ...
+# Subtest: ordinary Android entry points pass their default tasks, worker limit and actual wrapper exit
+ok 58 - ordinary Android entry points pass their default tasks, worker limit and actual wrapper exit
+  ---
+  duration_ms: 88.44893
+  type: 'test'
+  ...
+# Subtest: failed child checks retain exact exits and logs, run remaining gates and release the build lock
+ok 59 - failed child checks retain exact exits and logs, run remaining gates and release the build lock
+  ---
+  duration_ms: 586.830847
+  type: 'test'
+  ...
+# Subtest: source identity includes dirty tracked and untracked bytes, preserves their transfer inputs and rejects mismatches
+ok 60 - source identity includes dirty tracked and untracked bytes, preserves their transfer inputs and rejects mismatches
+  ---
+  duration_ms: 135.046076
+  type: 'test'
+  ...
+# Subtest: a pre-existing lock and evidence directory are preserved; a new run gets an explicit failure report
+ok 61 - a pre-existing lock and evidence directory are preserved; a new run gets an explicit failure report
+  ---
+  duration_ms: 62.40823
+  type: 'test'
+  ...
+# Subtest: wrong Node pin fails preflight without running checks
+ok 62 - wrong Node pin fails preflight without running checks
+  ---
+  duration_ms: 64.644518
+  type: 'test'
+  ...
+# Subtest: source mutation during otherwise successful checks rejects qualification
+ok 63 - source mutation during otherwise successful checks rejects qualification
+  ---
+  duration_ms: 516.039682
+  type: 'test'
+  ...
+# Subtest: a selected locked install really runs npm ci before the gates and preserves its source lock
+ok 64 - a selected locked install really runs npm ci before the gates and preserves its source lock
+  ---
+  duration_ms: 795.099122
+  type: 'test'
+  ...
+# Subtest: a missing lock prevents install and later gates, with a retained npm error
+ok 65 - a missing lock prevents install and later gates, with a retained npm error
+  ---
+  duration_ms: 245.307194
+  type: 'test'
+  ...
+# Subtest: regeneration verifies all shipped resources, native copies and deterministic output
+not ok 66 - regeneration verifies all shipped resources, native copies and deterministic output
+  ---
+  duration_ms: 171.543709
+  type: 'test'
+  location: '/var/tmp/nato-run31-2ccd2fe8/app/tests/icons.test.mjs:19:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    ... Skipped lines
+    
+      {
+        adaptive: {
+          background: '#FFFDF7',
+          canvasDp: 108,
+          maximumPaintedRadiusDp: 33,
+    ...
+        sources: {
+    +     'assets/images/icon-foreground.svg': '15a10f7c807f9c3db594e1fbe678bbb97ca894eb952467ae8adefe32f715b514',
+    +     'assets/images/icon-monochrome.svg': '371f484d0f0336132ad53101a0f4ed2df43406bb0b35c5c1d405dbc2bf986ce0',
+    +     'assets/images/icon.svg': '179f4b6985112039af87094a7d0210e135bd25ee3fa99be1649362666a9e3f1d'
+    -     'assets/images/icon-foreground.svg': 'aa6547ff1e2dc302b15882d003b4d591f30ba3df7340d7fd7535f7a5d62fc120',
+    -     'assets/images/icon-monochrome.svg': '925ce4561405450e94f06567d16d50436b152607297de42120bbef85913084eb',
+    -     'assets/images/icon.svg': '66fc628760f933c696d3244841b86c53629a6a5423259703b1770e6e5ce83ff7'
+        }
+      }
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    schemaVersion: 1
+    sources:
+      assets/images/icon.svg: '66fc628760f933c696d3244841b86c53629a6a5423259703b1770e6e5ce83ff7'
+      assets/images/icon-foreground.svg: 'aa6547ff1e2dc302b15882d003b4d591f30ba3df7340d7fd7535f7a5d62fc120'
+      assets/images/icon-monochrome.svg: '925ce4561405450e94f06567d16d50436b152607297de42120bbef85913084eb'
+    adaptive:
+      canvasDp: 108
+      safeZoneDp: 66
+      maximumPaintedRadiusDp: 33
+      background: '#FFFDF7'
+    files:
+      assets/images/icon.png:
+        kind: 'opaque'
+        width: 1024
+        height: 1024
+        transparent: 0
+        opaque: 1048576
+        painted: 1048576
+        bounds:
+          left: 0
+          top: 0
+          right: 1023
+          bottom: 1023
+        sha256: 'fb215e5d60ec76f7813f76390dac326fef53e516ebe66dc1966bb6fc6fdf1eec'
+      assets/images/favicon.png:
+        kind: 'opaque'
+        width: 48
+        height: 48
+        transparent: 0
+        opaque: 2304
+        painted: 2304
+        bounds:
+          left: 0
+          top: 0
+          right: 47
+          bottom: 47
+        sha256: 'df8f62668e8fe86ec2495876136d75bf358df780d67fad67e97b2712bfa38a2f'
+      assets/images/splash-icon.png:
+        kind: 'opaque'
+        width: 200
+        height: 200
+        transparent: 0
+        opaque: 40000
+        painted: 40000
+        bounds:
+          left: 0
+          top: 0
+          right: 199
+          bottom: 199
+        sha256: 'dcddd2700c29c7f978834a66baff39dad8d5f339b1ce69d3082f1a3dfa6d7e86'
+      assets/images/android-icon-foreground.png:
+        kind: 'foreground'
+        width: 432
+        height: 432
+        transparent: 151514
+        opaque: 34311
+        painted: 35110
+        bounds:
+          left: 109
+          top: 118
+          right: 322
+          bottom: 313
+        sha256: '5b5caf8d28e8dcf8ad10c04cc497088f7eee74d365c86dbe4db627d5713e1c52'
+      android/app/src/main/res/drawable-nodpi/ic_launcher_foreground.png:
+        kind: 'foreground'
+        width: 432
+        height: 432
+        transparent: 151514
+        opaque: 34311
+        painted: 35110
+        bounds:
+          left: 109
+          top: 118
+          right: 322
+          bottom: 313
+        sha256: '5b5caf8d28e8dcf8ad10c04cc497088f7eee74d365c86dbe4db627d5713e1c52'
+      assets/images/android-icon-background.png:
+        kind: 'background'
+        width: 432
+        height: 432
+        transparent: 0
+        opaque: 186624
+        painted: 186624
+        bounds:
+          left: 0
+          top: 0
+          right: 431
+          bottom: 431
+        sha256: '39f86452ca13f9d5fc1232b0f7721ca40e2a568ab3dd4c9486a5f462d8a09e18'
+      android/app/src/main/res/drawable-nodpi/ic_launcher_background.png:
+        kind: 'background'
+        width: 432
+        height: 432
+        transparent: 0
+        opaque: 186624
+        painted: 186624
+        bounds:
+          left: 0
+          top: 0
+          right: 431
+          bottom: 431
+        sha256: '39f86452ca13f9d5fc1232b0f7721ca40e2a568ab3dd4c9486a5f462d8a09e18'
+      assets/images/android-icon-monochrome.png:
+        kind: 'monochrome'
+        width: 432
+        height: 432
+        transparent: 173341
+        opaque: 11040
+        painted: 13283
+        bounds:
+          left: 109
+          top: 118
+          right: 322
+          bottom: 313
+        sha256: '3ded4f31ae53e55e5788c125fb54836650ef75ac14f740c3e21feaea342a9f7e'
+      android/app/src/main/res/drawable-nodpi/ic_launcher_monochrome.png:
+        kind: 'monochrome'
+        width: 432
+        height: 432
+        transparent: 173341
+        opaque: 11040
+        painted: 13283
+        bounds:
+          left: 109
+          top: 118
+          right: 322
+          bottom: 313
+        sha256: '3ded4f31ae53e55e5788c125fb54836650ef75ac14f740c3e21feaea342a9f7e'
+      android/app/src/main/res/mipmap-mdpi/ic_launcher.png:
+        kind: 'opaque'
+        width: 48
+        height: 48
+        transparent: 0
+        opaque: 2304
+        painted: 2304
+        bounds:
+          left: 0
+          top: 0
+          right: 47
+          bottom: 47
+        sha256: 'df8f62668e8fe86ec2495876136d75bf358df780d67fad67e97b2712bfa38a2f'
+      android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png:
+        kind: 'opaque'
+        width: 48
+        height: 48
+        transparent: 0
+        opaque: 2304
+        painted: 2304
+        bounds:
+          left: 0
+          top: 0
+          right: 47
+          bottom: 47
+        sha256: 'df8f62668e8fe86ec2495876136d75bf358df780d67fad67e97b2712bfa38a2f'
+      android/app/src/main/res/mipmap-hdpi/ic_launcher.png:
+        kind: 'opaque'
+        width: 72
+        height: 72
+        transparent: 0
+        opaque: 5184
+        painted: 5184
+        bounds:
+          left: 0
+          top: 0
+          right: 71
+          bottom: 71
+        sha256: '1e38d1381e5f726b2d0feaf12056b4e8b4e1215a688de27c4951e1c132fd907b'
+      android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png:
+        kind: 'opaque'
+        width: 72
+        height: 72
+        transparent: 0
+        opaque: 5184
+        painted: 5184
+        bounds:
+          left: 0
+          top: 0
+          right: 71
+          bottom: 71
+        sha256: '1e38d1381e5f726b2d0feaf12056b4e8b4e1215a688de27c4951e1c132fd907b'
+      android/app/src/main/res/mipmap-xhdpi/ic_launcher.png:
+        kind: 'opaque'
+        width: 96
+        height: 96
+        transparent: 0
+        opaque: 9216
+        painted: 9216
+        bounds:
+          left: 0
+          top: 0
+          right: 95
+          bottom: 95
+        sha256: '198b5d5a118d3bff2a6cf62789bff01abbe09b49a03673c6011932c6b4d17c2e'
+      android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png:
+        kind: 'opaque'
+        width: 96
+        height: 96
+        transparent: 0
+        opaque: 9216
+        painted: 9216
+        bounds:
+          left: 0
+          top: 0
+          right: 95
+          bottom: 95
+        sha256: '198b5d5a118d3bff2a6cf62789bff01abbe09b49a03673c6011932c6b4d17c2e'
+      android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png:
+        kind: 'opaque'
+        width: 144
+        height: 144
+        transparent: 0
+        opaque: 20736
+        painted: 20736
+        bounds:
+          left: 0
+          top: 0
+          right: 143
+          bottom: 143
+        sha256: '9b468727edce820f4e8b0943a67df812f4def4606d6c921631256596b5871351'
+      android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png:
+        kind: 'opaque'
+        width: 144
+        height: 144
+        transparent: 0
+        opaque: 20736
+        painted: 20736
+        bounds:
+          left: 0
+          top: 0
+          right: 143
+          bottom: 143
+        sha256: '9b468727edce820f4e8b0943a67df812f4def4606d6c921631256596b5871351'
+      android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png:
+        kind: 'opaque'
+        width: 192
+        height: 192
+        transparent: 0
+        opaque: 36864
+        painted: 36864
+        bounds:
+          left: 0
+          top: 0
+          right: 191
+          bottom: 191
+        sha256: '5a7b729a16fbf0546d8577e801a4da0b8b4f1c4e6bd44df1e61253d7445b0dbc'
+      android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png:
+        kind: 'opaque'
+        width: 192
+        height: 192
+        transparent: 0
+        opaque: 36864
+        painted: 36864
+        bounds:
+          left: 0
+          top: 0
+          right: 191
+          bottom: 191
+        sha256: '5a7b729a16fbf0546d8577e801a4da0b8b4f1c4e6bd44df1e61253d7445b0dbc'
+      android/app/src/main/res/drawable-nodpi/splash_icon.png:
+        kind: 'opaque'
+        width: 200
+        height: 200
+        transparent: 0
+        opaque: 40000
+        painted: 40000
+        bounds:
+          left: 0
+          top: 0
+          right: 199
+          bottom: 199
+        sha256: 'dcddd2700c29c7f978834a66baff39dad8d5f339b1ce69d3082f1a3dfa6d7e86'
+      ios/NATOPhonetics/Images.xcassets/AppIcon.appiconset/AppIcon.png:
+        kind: 'opaque'
+        width: 1024
+        height: 1024
+        transparent: 0
+        opaque: 1048576
+        painted: 1048576
+        bounds:
+          left: 0
+          top: 0
+          right: 1023
+          bottom: 1023
+        sha256: 'fb215e5d60ec76f7813f76390dac326fef53e516ebe66dc1966bb6fc6fdf1eec'
+      ios/NATOPhonetics/Images.xcassets/Splash.imageset/splash-icon.png:
+        kind: 'opaque'
+        width: 200
+        height: 200
+        transparent: 0
+        opaque: 40000
+        painted: 40000
+        bounds:
+          left: 0
+          top: 0
+          right: 199
+          bottom: 199
+        sha256: 'dcddd2700c29c7f978834a66baff39dad8d5f339b1ce69d3082f1a3dfa6d7e86'
+  actual:
+    schemaVersion: 1
+    sources:
+      assets/images/icon.svg: '179f4b6985112039af87094a7d0210e135bd25ee3fa99be1649362666a9e3f1d'
+      assets/images/icon-foreground.svg: '15a10f7c807f9c3db594e1fbe678bbb97ca894eb952467ae8adefe32f715b514'
+      assets/images/icon-monochrome.svg: '371f484d0f0336132ad53101a0f4ed2df43406bb0b35c5c1d405dbc2bf986ce0'
+    adaptive:
+      canvasDp: 108
+      safeZoneDp: 66
+      maximumPaintedRadiusDp: 33
+      background: '#FFFDF7'
+    files:
+      assets/images/icon.png:
+        kind: 'opaque'
+        width: 1024
+        height: 1024
+        transparent: 0
+        opaque: 1048576
+        painted: 1048576
+        bounds:
+          left: 0
+          top: 0
+          right: 1023
+          bottom: 1023
+        sha256: 'fb215e5d60ec76f7813f76390dac326fef53e516ebe66dc1966bb6fc6fdf1eec'
+      assets/images/favicon.png:
+        kind: 'opaque'
+        width: 48
+        height: 48
+        transparent: 0
+        opaque: 2304
+        painted: 2304
+        bounds:
+          left: 0
+          top: 0
+          right: 47
+          bottom: 47
+        sha256: 'df8f62668e8fe86ec2495876136d75bf358df780d67fad67e97b2712bfa38a2f'
+      assets/images/splash-icon.png:
+        kind: 'opaque'
+        width: 200
+        height: 200
+        transparent: 0
+        opaque: 40000
+        painted: 40000
+        bounds:
+          left: 0
+          top: 0
+          right: 199
+          bottom: 199
+        sha256: 'dcddd2700c29c7f978834a66baff39dad8d5f339b1ce69d3082f1a3dfa6d7e86'
+      assets/images/android-icon-foreground.png:
+        kind: 'foreground'
+        width: 432
+        height: 432
+        transparent: 151514
+        opaque: 34311
+        painted: 35110
+        bounds:
+          left: 109
+          top: 118
+          right: 322
+          bottom: 313
+        sha256: '5b5caf8d28e8dcf8ad10c04cc497088f7eee74d365c86dbe4db627d5713e1c52'
+      android/app/src/main/res/drawable-nodpi/ic_launcher_foreground.png:
+        kind: 'foreground'
+        width: 432
+        height: 432
+        transparent: 151514
+        opaque: 34311
+        painted: 35110
+        bounds:
+          left: 109
+          top: 118
+          right: 322
+          bottom: 313
+        sha256: '5b5caf8d28e8dcf8ad10c04cc497088f7eee74d365c86dbe4db627d5713e1c52'
+      assets/images/android-icon-background.png:
+        kind: 'background'
+        width: 432
+        height: 432
+        transparent: 0
+        opaque: 186624
+        painted: 186624
+        bounds:
+          left: 0
+          top: 0
+          right: 431
+          bottom: 431
+        sha256: '39f86452ca13f9d5fc1232b0f7721ca40e2a568ab3dd4c9486a5f462d8a09e18'
+      android/app/src/main/res/drawable-nodpi/ic_launcher_background.png:
+        kind: 'background'
+        width: 432
+        height: 432
+        transparent: 0
+        opaque: 186624
+        painted: 186624
+        bounds:
+          left: 0
+          top: 0
+          right: 431
+          bottom: 431
+        sha256: '39f86452ca13f9d5fc1232b0f7721ca40e2a568ab3dd4c9486a5f462d8a09e18'
+      assets/images/android-icon-monochrome.png:
+        kind: 'monochrome'
+        width: 432
+        height: 432
+        transparent: 173341
+        opaque: 11040
+        painted: 13283
+        bounds:
+          left: 109
+          top: 118
+          right: 322
+          bottom: 313
+        sha256: '3ded4f31ae53e55e5788c125fb54836650ef75ac14f740c3e21feaea342a9f7e'
+      android/app/src/main/res/drawable-nodpi/ic_launcher_monochrome.png:
+        kind: 'monochrome'
+        width: 432
+        height: 432
+        transparent: 173341
+        opaque: 11040
+        painted: 13283
+        bounds:
+          left: 109
+          top: 118
+          right: 322
+          bottom: 313
+        sha256: '3ded4f31ae53e55e5788c125fb54836650ef75ac14f740c3e21feaea342a9f7e'
+      android/app/src/main/res/mipmap-mdpi/ic_launcher.png:
+        kind: 'opaque'
+        width: 48
+        height: 48
+        transparent: 0
+        opaque: 2304
+        painted: 2304
+        bounds:
+          left: 0
+          top: 0
+          right: 47
+          bottom: 47
+        sha256: 'df8f62668e8fe86ec2495876136d75bf358df780d67fad67e97b2712bfa38a2f'
+      android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png:
+        kind: 'opaque'
+        width: 48
+        height: 48
+        transparent: 0
+        opaque: 2304
+        painted: 2304
+        bounds:
+          left: 0
+          top: 0
+          right: 47
+          bottom: 47
+        sha256: 'df8f62668e8fe86ec2495876136d75bf358df780d67fad67e97b2712bfa38a2f'
+      android/app/src/main/res/mipmap-hdpi/ic_launcher.png:
+        kind: 'opaque'
+        width: 72
+        height: 72
+        transparent: 0
+        opaque: 5184
+        painted: 5184
+        bounds:
+          left: 0
+          top: 0
+          right: 71
+          bottom: 71
+        sha256: '1e38d1381e5f726b2d0feaf12056b4e8b4e1215a688de27c4951e1c132fd907b'
+      android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png:
+        kind: 'opaque'
+        width: 72
+        height: 72
+        transparent: 0
+        opaque: 5184
+        painted: 5184
+        bounds:
+          left: 0
+          top: 0
+          right: 71
+          bottom: 71
+        sha256: '1e38d1381e5f726b2d0feaf12056b4e8b4e1215a688de27c4951e1c132fd907b'
+      android/app/src/main/res/mipmap-xhdpi/ic_launcher.png:
+        kind: 'opaque'
+        width: 96
+        height: 96
+        transparent: 0
+        opaque: 9216
+        painted: 9216
+        bounds:
+          left: 0
+          top: 0
+          right: 95
+          bottom: 95
+        sha256: '198b5d5a118d3bff2a6cf62789bff01abbe09b49a03673c6011932c6b4d17c2e'
+      android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png:
+        kind: 'opaque'
+        width: 96
+        height: 96
+        transparent: 0
+        opaque: 9216
+        painted: 9216
+        bounds:
+          left: 0
+          top: 0
+          right: 95
+          bottom: 95
+        sha256: '198b5d5a118d3bff2a6cf62789bff01abbe09b49a03673c6011932c6b4d17c2e'
+      android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png:
+        kind: 'opaque'
+        width: 144
+        height: 144
+        transparent: 0
+        opaque: 20736
+        painted: 20736
+        bounds:
+          left: 0
+          top: 0
+          right: 143
+          bottom: 143
+        sha256: '9b468727edce820f4e8b0943a67df812f4def4606d6c921631256596b5871351'
+      android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png:
+        kind: 'opaque'
+        width: 144
+        height: 144
+        transparent: 0
+        opaque: 20736
+        painted: 20736
+        bounds:
+          left: 0
+          top: 0
+          right: 143
+          bottom: 143
+        sha256: '9b468727edce820f4e8b0943a67df812f4def4606d6c921631256596b5871351'
+      android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png:
+        kind: 'opaque'
+        width: 192
+        height: 192
+        transparent: 0
+        opaque: 36864
+        painted: 36864
+        bounds:
+          left: 0
+          top: 0
+          right: 191
+          bottom: 191
+        sha256: '5a7b729a16fbf0546d8577e801a4da0b8b4f1c4e6bd44df1e61253d7445b0dbc'
+      android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png:
+        kind: 'opaque'
+        width: 192
+        height: 192
+        transparent: 0
+        opaque: 36864
+        painted: 36864
+        bounds:
+          left: 0
+          top: 0
+          right: 191
+          bottom: 191
+        sha256: '5a7b729a16fbf0546d8577e801a4da0b8b4f1c4e6bd44df1e61253d7445b0dbc'
+      android/app/src/main/res/drawable-nodpi/splash_icon.png:
+        kind: 'opaque'
+        width: 200
+        height: 200
+        transparent: 0
+        opaque: 40000
+        painted: 40000
+        bounds:
+          left: 0
+          top: 0
+          right: 199
+          bottom: 199
+        sha256: 'dcddd2700c29c7f978834a66baff39dad8d5f339b1ce69d3082f1a3dfa6d7e86'
+      ios/NATOPhonetics/Images.xcassets/AppIcon.appiconset/AppIcon.png:
+        kind: 'opaque'
+        width: 1024
+        height: 1024
+        transparent: 0
+        opaque: 1048576
+        painted: 1048576
+        bounds:
+          left: 0
+          top: 0
+          right: 1023
+          bottom: 1023
+        sha256: 'fb215e5d60ec76f7813f76390dac326fef53e516ebe66dc1966bb6fc6fdf1eec'
+      ios/NATOPhonetics/Images.xcassets/Splash.imageset/splash-icon.png:
+        kind: 'opaque'
+        width: 200
+        height: 200
+        transparent: 0
+        opaque: 40000
+        painted: 40000
+        bounds:
+          left: 0
+          top: 0
+          right: 199
+          bottom: 199
+        sha256: 'dcddd2700c29c7f978834a66baff39dad8d5f339b1ce69d3082f1a3dfa6d7e86'
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///var/tmp/nato-run31-2ccd2fe8/app/tests/icons.test.mjs:26:12)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: mask guard rejects opaque, blank, incorrectly sized, colored and out-of-safe-zone layers
+ok 67 - mask guard rejects opaque, blank, incorrectly sized, colored and out-of-safe-zone layers
+  ---
+  duration_ms: 14.424945
+  type: 'test'
+  ...
+# Subtest: invalid and unwritable outputs fail nonzero without claiming generated resources
+ok 68 - invalid and unwritable outputs fail nonzero without claiming generated resources
+  ---
+  duration_ms: 276.314303
+  type: 'test'
+  ...
+# Subtest: native bundler reads the real release image dimensions and leaves fonts opaque
+ok 69 - native bundler reads the real release image dimensions and leaves fonts opaque
+  ---
+  duration_ms: 4.245404
+  type: 'test'
+  ...
+# Subtest: malformed asset bytes fail within a bounded subprocess instead of hanging bundling
+ok 70 - malformed asset bytes fail within a bounded subprocess instead of hanging bundling
+  ---
+  duration_ms: 76.588067
+  type: 'test'
+  ...
+# Subtest: Metro honors explicit shared build limits and preserves its unspecified default
+ok 71 - Metro honors explicit shared build limits and preserves its unspecified default
+  ---
+  duration_ms: 219.791783
+  type: 'test'
+  ...
+# Subtest: Metro rejects invalid worker limits before starting transform processes
+ok 72 - Metro rejects invalid worker limits before starting transform processes
+  ---
+  duration_ms: 262.054657
+  type: 'test'
+  ...
+# Subtest: native completion correlates utterance IDs and removes listeners exactly once
+ok 73 - native completion correlates utterance IDs and removes listeners exactly once
+  ---
+  duration_ms: 1.193038
+  type: 'test'
+  ...
+# Subtest: native terminal event before speak promise resolves is retained
+ok 74 - native terminal event before speak promise resolves is retained
+  ---
+  duration_ms: 0.171346
+  type: 'test'
+  ...
+# Subtest: Stop during native initialization prevents late utterance and serializes provider stop
+ok 75 - Stop during native initialization prevents late utterance and serializes provider stop
+  ---
+  duration_ms: 10.473304
+  type: 'test'
+  ...
+# Subtest: first playback waits for native initialization before its stop barrier and then completes
+ok 76 - first playback waits for native initialization before its stop barrier and then completes
+  ---
+  duration_ms: 0.919486
+  type: 'test'
+  ...
+# Subtest: Android Stop failure rejects while an idle iOS Stop remains safe
+ok 77 - Android Stop failure rejects while an idle iOS Stop remains safe
+  ---
+  duration_ms: 0.351301
+  type: 'test'
+  ...
+# Subtest: Stop removes subscriptions; stale native events cannot finish next utterance
+ok 78 - Stop removes subscriptions; stale native events cannot finish next utterance
+  ---
+  duration_ms: 0.176579
+  type: 'test'
+  ...
+# Subtest: System Default resets chosen voice and rate maps intentionally per platform
+ok 79 - System Default resets chosen voice and rate maps intentionally per platform
+  ---
+  duration_ms: 0.251508
+  type: 'test'
+  ...
+# Subtest: installed Android provider assigns unique IDs even when identical text is replayed
+ok 80 - installed Android provider assigns unique IDs even when identical text is replayed
+  ---
+  duration_ms: 0.524206
+  type: 'test'
+  ...
+# Subtest: installed iOS provider uses scalar Boolean arguments supported by native interop
+ok 81 - installed iOS provider uses scalar Boolean arguments supported by native interop
+  ---
+  duration_ms: 0.828838
+  type: 'test'
+  ...
+# Subtest: native install patch is repeatable and rejects source/version drift before writing either platform
+ok 82 - native install patch is repeatable and rejects source/version drift before writing either platform
+  ---
+  duration_ms: 5.300694
+  type: 'test'
+  ...
+# Subtest: voice enumeration excludes uninstalled voices and preserves unknown connectivity
+ok 83 - voice enumeration excludes uninstalled voices and preserves unknown connectivity
+  ---
+  duration_ms: 5.59523
+  type: 'test'
+  ...
+# Subtest: native failure cleans listeners and a subsequent call can recover
+ok 84 - native failure cleans listeners and a subsequent call can recover
+  ---
+  duration_ms: 1.557297
+  type: 'test'
+  ...
+# Subtest: Yoga patch exactly reproduces reviewed backport and repeated install leaves bytes intact
+ok 85 - Yoga patch exactly reproduces reviewed backport and repeated install leaves bytes intact
+  ---
+  duration_ms: 4.938373
+  type: 'test'
+  ...
+# Subtest: Yoga patch rejects version drift without writing source
+ok 86 - Yoga patch rejects version drift without writing source
+  ---
+  duration_ms: 2.205624
+  type: 'test'
+  ...
+# Subtest: Yoga patch rejects drift anywhere in original or already-patched source
+ok 87 - Yoga patch rejects drift anywhere in original or already-patched source
+  ---
+  duration_ms: 4.390312
+  type: 'test'
+  ...
+# Subtest: installed source-built Yoga includes the reviewed precision correction
+ok 88 - installed source-built Yoga includes the reviewed precision correction
+  ---
+  duration_ms: 0.181912
+  type: 'test'
+  ...
+# Subtest: all maintained URLs and static HTML aliases resolve to the same screen
+ok 89 - all maintained URLs and static HTML aliases resolve to the same screen
+  ---
+  duration_ms: 0.716667
+  type: 'test'
+  ...
+# Subtest: native custom scheme supports host and path forms without accepting external schemes
+ok 90 - native custom scheme supports host and path forms without accepting external schemes
+  ---
+  duration_ms: 0.095388
+  type: 'test'
+  ...
+# Subtest: unknown, malformed and encoded paths remain explicit not-found routes
+ok 91 - unknown, malformed and encoded paths remain explicit not-found routes
+  ---
+  duration_ms: 0.096614
+  type: 'test'
+  ...
+# Subtest: numeric and mixed coverage preserves every canonical symbol and unique answer over varied seeds
+ok 92 - numeric and mixed coverage preserves every canonical symbol and unique answer over varied seeds
+  ---
+  duration_ms: 50.317505
+  type: 'test'
+  ...
+# Subtest: all ten digits score correctly and mistakes retry only missed symbols including special pronunciations
+ok 93 - all ten digits score correctly and mistakes retry only missed symbols including special pronunciations
+  ---
+  duration_ms: 0.515501
+  type: 'test'
+  ...
+# Subtest: mixed full round scores all 36 and switching sets rejects outstanding letter and digit actions
+ok 94 - mixed full round scores all 36 and switching sets rejects outstanding letter and digit actions
+  ---
+  duration_ms: 0.507118
+  type: 'test'
+  ...
+# Subtest: postcode and callsign audio retain complete source order and canonical speech rather than shuffled practice order
+ok 95 - postcode and callsign audio retain complete source order and canonical speech rather than shuffled practice order
+  ---
+  duration_ms: 0.38188
+  type: 'test'
+  ...
+# Subtest: round choices offer a full coverage cycle without duplicates for every practice set
+ok 96 - round choices offer a full coverage cycle without duplicates for every practice set
+  ---
+  duration_ms: 0.321657
+  type: 'test'
+  ...
+# Subtest: offline installation caches only a complete integrity-checked shell
+ok 97 - offline installation caches only a complete integrity-checked shell
+  ---
+  duration_ms: 41.981232
+  type: 'test'
+  ...
+# Subtest: offline fetch boundary preserves routes without caching user/provider traffic
+ok 98 - offline fetch boundary preserves routes without caching user/provider traffic
+  ---
+  duration_ms: 7.208251
+  type: 'test'
+  ...
+# Subtest: evicted pinned resource fails honestly instead of mixing server builds
+ok 99 - evicted pinned resource fails honestly instead of mixing server builds
+  ---
+  duration_ms: 5.026466
+  type: 'test'
+  ...
+# Subtest: normal activation removes only prior app-shell caches and never claims clients
+ok 100 - normal activation removes only prior app-shell caches and never claims clients
+  ---
+  duration_ms: 1.683905
+  type: 'test'
+  ...
+# Subtest: readiness detects eviction and explicit repair preserves a remaining offline copy on failure
+ok 101 - readiness detects eviction and explicit repair preserves a remaining offline copy on failure
+  ---
+  duration_ms: 3.450745
+  type: 'test'
+  ...
+# Subtest: first launch uses typed defaults without writing or clearing any data
+ok 102 - first launch uses typed defaults without writing or clearing any data
+  ---
+  duration_ms: 8.100934
+  type: 'test'
+  ...
+# Subtest: legacy light/dark and voice migrate before their keys are removed
+ok 103 - legacy light/dark and voice migrate before their keys are removed
+  ---
+  duration_ms: 0.993565
+  type: 'test'
+  ...
+# Subtest: the versioned record wins over stale legacy values on restart
+ok 104 - the versioned record wins over stale legacy values on restart
+  ---
+  duration_ms: 0.321408
+  type: 'test'
+  ...
+# Subtest: malformed or unsupported saved records surface an error without overwriting storage
+ok 105 - malformed or unsupported saved records surface an error without overwriting storage
+  ---
+  duration_ms: 0.562674
+  type: 'test'
+  ...
+# Subtest: early updates wait for delayed hydration and override restored same-field values
+ok 106 - early updates wait for delayed hydration and override restored same-field values
+  ---
+  duration_ms: 0.416439
+  type: 'test'
+  ...
+# Subtest: failed reads leave usable defaults and can recover with Retry
+ok 107 - failed reads leave usable defaults and can recover with Retry
+  ---
+  duration_ms: 0.23554
+  type: 'test'
+  ...
+# Subtest: a pending write does not display an unsaved selected value
+ok 108 - a pending write does not display an unsaved selected value
+  ---
+  duration_ms: 0.27929
+  type: 'test'
+  ...
+# Subtest: rapid mixed changes run serially and survive a new store instance
+ok 109 - rapid mixed changes run serially and survive a new store instance
+  ---
+  duration_ms: 1.704983
+  type: 'test'
+  ...
+# Subtest: failed writes preserve selected values and do not resurface in later unrelated writes
+ok 110 - failed writes preserve selected values and do not resurface in later unrelated writes
+  ---
+  duration_ms: 0.48709
+  type: 'test'
+  ...
+# Subtest: migration write failure retains legacy preferences and retries without data loss
+ok 111 - migration write failure retains legacy preferences and retries without data loss
+  ---
+  duration_ms: 0.431212
+  type: 'test'
+  ...
+# Subtest: cleanup failure is a visible warning after a successful save, and reset retries cleanup
+ok 112 - cleanup failure is a visible warning after a successful save, and reset retries cleanup
+  ---
+  duration_ms: 0.288477
+  type: 'test'
+  ...
+# Subtest: reset is ordered with changes and removes only legacy settings while persisting defaults
+ok 113 - reset is ordered with changes and removes only legacy settings while persisting defaults
+  ---
+  duration_ms: 0.314672
+  type: 'test'
+  ...
+# Subtest: failed reset preserves the saved settings and unrelated data
+ok 114 - failed reset preserves the saved settings and unrelated data
+  ---
+  duration_ms: 0.176024
+  type: 'test'
+  ...
+# Subtest: server snapshot stays deterministic after client preferences have loaded
+ok 115 - server snapshot stays deterministic after client preferences have loaded
+  ---
+  duration_ms: 0.085928
+  type: 'test'
+  ...
+# Subtest: System mode follows live schemes, overrides remain stable, and reset restores System
+ok 116 - System mode follows live schemes, overrides remain stable, and reset restores System
+  ---
+  duration_ms: 0.147613
+  type: 'test'
+  ...
+# Subtest: older v1 records retain defaults without rewriting; deliberate converter pace survives unrelated changes and reset
+ok 117 - older v1 records retain defaults without rewriting; deliberate converter pace survives unrelated changes and reset
+  ---
+  duration_ms: 0.274171
+  type: 'test'
+  ...
+# Subtest: invalid converter pace cannot be loaded or persisted
+ok 118 - invalid converter pace cannot be loaded or persisted
+  ---
+  duration_ms: 0.388976
+  type: 'test'
+  ...
+# Subtest: elapsed review intervals survive midnight, DST, leap-day and timezone boundaries
+ok 119 - elapsed review intervals survive midnight, DST, leap-day and timezone boundaries
+  ---
+  duration_ms: 2.780361
+  type: 'test'
+  ...
+# Subtest: due and focused reviews are scoped; unpractised and recovered symbols stay out
+ok 120 - due and focused reviews are scoped; unpractised and recovered symbols stay out
+  ---
+  duration_ms: 0.710481
+  type: 'test'
+  ...
+# Subtest: first use is read-only; versioned aggregates survive a new store without response text
+ok 121 - first use is read-only; versioned aggregates survive a new store without response text
+  ---
+  duration_ms: 1.697449
+  type: 'test'
+  ...
+# Subtest: delayed hydration and rapid answers merge with saved totals in order
+ok 122 - delayed hydration and rapid answers merge with saved totals in order
+  ---
+  duration_ms: 0.447621
+  type: 'test'
+  ...
+# Subtest: failed writes show saved totals only; Retry saves pending answers exactly once
+ok 123 - failed writes show saved totals only; Retry saves pending answers exactly once
+  ---
+  duration_ms: 1.352367
+  type: 'test'
+  ...
+# Subtest: corrupt/future/extra-field/invalid schema data is preserved until explicit deletion
+ok 124 - corrupt/future/extra-field/invalid schema data is preserved until explicit deletion
+  ---
+  duration_ms: 1.38286
+  type: 'test'
+  ...
+# Subtest: transient read failure recovers saved data plus pending answers without overwriting it
+ok 125 - transient read failure recovers saved data plus pending answers without overwriting it
+  ---
+  duration_ms: 0.387762
+  type: 'test'
+  ...
+# Subtest: Clear orders after an in-flight write and before later answers; old retries cannot resurrect it
+ok 126 - Clear orders after an in-flight write and before later answers; old retries cannot resurrect it
+  ---
+  duration_ms: 0.306994
+  type: 'test'
+  ...
+# Subtest: failed Clear retains saved and pending data and can be retried separately
+ok 127 - failed Clear retains saved and pending data and can be retried separately
+  ---
+  duration_ms: 0.574268
+  type: 'test'
+  ...
+# Subtest: Reset Preferences and Clear Progress have separate storage scopes including legacy keys
+ok 128 - Reset Preferences and Clear Progress have separate storage scopes including legacy keys
+  ---
+  duration_ms: 1.055626
+  type: 'test'
+  ...
+# Subtest: coordinated stores merge interleaved and simultaneous submissions from fresh persisted totals
+ok 129 - coordinated stores merge interleaved and simultaneous submissions from fresh persisted totals
+  ---
+  duration_ms: 0.541916
+  type: 'test'
+  ...
+# Subtest: cross-window deletion invalidates a suspended failed Retry; new answers count without an event
+ok 130 - cross-window deletion invalidates a suspended failed Retry; new answers count without an event
+  ---
+  duration_ms: 2.178163
+  type: 'test'
+  ...
+# Subtest: failed atomic deletion preserves saved and pending answers, generation and preferences
+ok 131 - failed atomic deletion preserves saved and pending answers, generation and preferences
+  ---
+  duration_ms: 5.621517
+  type: 'test'
+  ...
+# Subtest: coordination rejection keeps pending answers and supports Retry without a duplicate
+ok 132 - coordination rejection keeps pending answers and supports Retry without a duplicate
+  ---
+  duration_ms: 0.629879
+  type: 'test'
+  ...
+# Subtest: generation extension reads older records without rewriting and rejects malformed tombstones
+ok 133 - generation extension reads older records without rewriting and rejects malformed tombstones
+  ---
+  duration_ms: 0.525016
+  type: 'test'
+  ...
+# Subtest: unreadable generation never silently discards or restores an uncertain pending answer
+ok 134 - unreadable generation never silently discards or restores an uncertain pending answer
+  ---
+  duration_ms: 0.768163
+  type: 'test'
+  ...
+# Subtest: answer keys recognize explicit alternate spellings, accents, case and separators
+ok 135 - answer keys recognize explicit alternate spellings, accents, case and separators
+  ---
+  duration_ms: 3.803
+  type: 'test'
+  ...
+# Subtest: all canonical letters produce four distinct choices with one correct answer over varied draws
+ok 136 - all canonical letters produce four distinct choices with one correct answer over varied draws
+  ---
+  duration_ms: 37.69344
+  type: 'test'
+  ...
+# Subtest: real duplicate/ambiguous pools cannot repeat a choice or include a correct-answer alias
+ok 137 - real duplicate/ambiguous pools cannot repeat a choice or include a correct-answer alias
+  ---
+  duration_ms: 4.635784
+  type: 'test'
+  ...
+# Subtest: deficient pools recover with deterministic canonical choices without retaining blanks or duplicates
+ok 138 - deficient pools recover with deterministic canonical choices without retaining blanks or duplicates
+  ---
+  duration_ms: 0.765432
+  type: 'test'
+  ...
+# Subtest: Fisher–Yates uses each shrinking range once and preserves the input
+ok 139 - Fisher–Yates uses each shrinking range once and preserves the input
+  ---
+  duration_ms: 0.230136
+  type: 'test'
+  ...
+# Subtest: seeded generation is reproducible, reaches every letter, and leaves content untouched
+ok 140 - seeded generation is reproducible, reaches every letter, and leaves content untouched
+  ---
+  duration_ms: 98.581767
+  type: 'test'
+  ...
+# Subtest: coverage decks visit each symbol once per cycle and avoid boundary repeats over varied seeds
+ok 141 - coverage decks visit each symbol once per cycle and avoid boundary repeats over varied seeds
+  ---
+  duration_ms: 22.846786
+  type: 'test'
+  ...
+# Subtest: short, two-symbol and single-mistake decks have explicit coverage and repeat behavior
+ok 142 - short, two-symbol and single-mistake decks have explicit coverage and repeat behavior
+  ---
+  duration_ms: 0.199075
+  type: 'test'
+  ...
+# Subtest: invalid lengths, unknown or duplicate symbols and invalid randomness fail explicitly
+ok 143 - invalid lengths, unknown or duplicate symbols and invalid randomness fail explicitly
+  ---
+  duration_ms: 0.3628
+  type: 'test'
+  ...
+# Subtest: default and supported short rounds precompute valid canonical immutable questions
+ok 144 - default and supported short rounds precompute valid canonical immutable questions
+  ---
+  duration_ms: 2.802748
+  type: 'test'
+  ...
+# Subtest: only a current offered choice can submit; duplicate and stale actions preserve the same state
+ok 145 - only a current offered choice can submit; duplicate and stale actions preserve the same state
+  ---
+  duration_ms: 0.604588
+  type: 'test'
+  ...
+# Subtest: final feedback waits for explicit Next, then results retain score, accuracy and missed answers
+ok 146 - final feedback waits for explicit Next, then results retain score, accuracy and missed answers
+  ---
+  duration_ms: 0.446681
+  type: 'test'
+  ...
+# Subtest: cancel invalidates pending callbacks while preserving partial score and restart creates a new generation
+ok 147 - cancel invalidates pending callbacks while preserving partial score and restart creates a new generation
+  ---
+  duration_ms: 0.603681
+  type: 'test'
+  ...
+# Subtest: Retry Mistakes covers unique missed symbols once, with reset scoring and independent identities
+ok 148 - Retry Mistakes covers unique missed symbols once, with reset scoring and independent identities
+  ---
+  duration_ms: 0.784204
+  type: 'test'
+  ...
+# Subtest: multi-symbol mistake retry and explicit restart lengths are deterministic and do not lose prior results
+ok 149 - multi-symbol mistake retry and explicit restart lengths are deterministic and do not lose prior results
+  ---
+  duration_ms: 1.496759
+  type: 'test'
+  ...
+# Subtest: listening covers every letter/digit with four distinct same-category symbols and correct scoring
+ok 150 - listening covers every letter/digit with four distinct same-category symbols and correct scoring
+  ---
+  duration_ms: 3.54139
+  type: 'test'
+  ...
+# Subtest: typed recall accepts documented equivalences and rejects phonetic guides, blanks and overlong input
+ok 151 - typed recall accepts documented equivalences and rejects phonetic guides, blanks and overlong input
+  ---
+  duration_ms: 2.734618
+  type: 'test'
+  ...
+# Subtest: recall feedback, retry and restart retain mode and reject duplicate/stale/cancelled submissions
+ok 152 - recall feedback, retry and restart retain mode and reject duplicate/stale/cancelled submissions
+  ---
+  duration_ms: 2.307328
+  type: 'test'
+  ...
+# Subtest: native baseline includes the observed outer-box rounding from the iOS J regression
+ok 153 - native baseline includes the observed outer-box rounding from the iOS J regression
+  ---
+  duration_ms: 41.324475
+  type: 'test'
+  ...
+# Subtest: native baseline compensates the measured Android TREE box without altering its font
+ok 154 - native baseline compensates the measured Android TREE box without altering its font
+  ---
+  duration_ms: 4.572832
+  type: 'test'
+  ...
+# Subtest: new quiz text retains independent geometry and target changes reuse the native line
+ok 155 - new quiz text retains independent geometry and target changes reuse the native line
+  ---
+  duration_ms: 4.903856
+  type: 'test'
+  ...
+# Subtest: late events cannot revive a prior size generation after 1→2→1 or unmount
+ok 156 - late events cannot revive a prior size generation after 1→2→1 or unmount
+  ---
+  duration_ms: 4.851011
+  type: 'test'
+  ...
+# Subtest: small word and italic guide text reach 4.5:1 on every letter and digit palette color
+ok 157 - small word and italic guide text reach 4.5:1 on every letter and digit palette color
+  ---
+  duration_ms: 3.696673
+  type: 'test'
+  ...
+# Subtest: shipped tile faces have pinned outlines, real weights and a real italic face on Android and iOS
+ok 158 - shipped tile faces have pinned outlines, real weights and a real italic face on Android and iOS
+  ---
+  duration_ms: 3.454289
+  type: 'test'
+  ...
+# Subtest: every canonical symbol, word and guide fits the shared tile at its specified font size
+ok 159 - every canonical symbol, word and guide fits the shared tile at its specified font size
+  ---
+  duration_ms: 2.702609
+  type: 'test'
+  ...
+# Subtest: Android inverse follows current renderer metrics when reported fontScale returns to an old value
+ok 160 - Android inverse follows current renderer metrics when reported fontScale returns to an old value
+  ---
+  duration_ms: 36.669131
+  type: 'test'
+  ...
+# Subtest: Android adapter applies context and accessibility scale to the target once
+ok 161 - Android adapter applies context and accessibility scale to the target once
+  ---
+  duration_ms: 2.860434
+  type: 'test'
+  ...
+# Subtest: Android adapter fails explicitly for missing or invalid native conversion
+ok 162 - Android adapter fails explicitly for missing or invalid native conversion
+  ---
+  duration_ms: 9.446925
+  type: 'test'
+  ...
+# Subtest: static release is deterministic, extractable and inventories exact bytes
+ok 163 - static release is deterministic, extractable and inventories exact bytes
+  ---
+  duration_ms: 55.813207
+  type: 'test'
+  ...
+# Subtest: release retains immutable URLs transitively for forward and rollback switches
+ok 164 - release retains immutable URLs transitively for forward and rollback switches
+  ---
+  duration_ms: 79.619177
+  type: 'test'
+  ...
+# Subtest: immutable same-URL content collision rejects the release before writing
+ok 165 - immutable same-URL content collision rejects the release before writing
+  ---
+  duration_ms: 23.056149
+  type: 'test'
+  ...
+# Subtest: mixed or partial build, worker drift and missing routes fail closed
+ok 166 - mixed or partial build, worker drift and missing routes fail closed
+  ---
+  duration_ms: 42.102657
+  type: 'test'
+  ...
+# Subtest: unsafe resource paths and symlink files/parents are rejected
+ok 167 - unsafe resource paths and symlink files/parents are rejected
+  ---
+  duration_ms: 29.082863
+  type: 'test'
+  ...
+# Subtest: packaging preserves existing output and CLI failure never claims success
+ok 168 - packaging preserves existing output and CLI failure never claims success
+  ---
+  duration_ms: 46.190555
+  type: 'test'
+  ...
+1..168
+# tests 168
+# suites 0
+# pass 167
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2558.49072

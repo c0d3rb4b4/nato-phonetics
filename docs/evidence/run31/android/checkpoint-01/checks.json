@@ -1,0 +1,92 @@
+[
+  {
+    "check": "checkpoint-alphabet-light",
+    "passed": true,
+    "timestamp": "2026-11-20T13:20:39Z",
+    "scale": 1,
+    "density": 1.75,
+    "tiles": [
+      {
+        "testID": "alphabet-A",
+        "pixels": {
+          "x": 50,
+          "y": 673,
+          "width": 193,
+          "height": 262
+        }
+      },
+      {
+        "testID": "alphabet-B",
+        "pixels": {
+          "x": 264,
+          "y": 673,
+          "width": 192,
+          "height": 262
+        }
+      },
+      {
+        "testID": "alphabet-C",
+        "pixels": {
+          "x": 477,
+          "y": 673,
+          "width": 193,
+          "height": 262
+        }
+      },
+      {
+        "testID": "alphabet-D",
+        "pixels": {
+          "x": 50,
+          "y": 957,
+          "width": 193,
+          "height": 263
+        }
+      },
+      {
+        "testID": "alphabet-E",
+        "pixels": {
+          "x": 264,
+          "y": 957,
+          "width": 192,
+          "height": 263
+        }
+      },
+      {
+        "testID": "alphabet-F",
+        "pixels": {
+          "x": 477,
+          "y": 957,
+          "width": 193,
+          "height": 263
+        }
+      },
+      {
+        "testID": "alphabet-G",
+        "pixels": {
+          "x": 50,
+          "y": 1240,
+          "width": 193,
+          "height": 262
+        }
+      },
+      {
+        "testID": "alphabet-H",
+        "pixels": {
+          "x": 264,
+          "y": 1240,
+          "width": 192,
+          "height": 262
+        }
+      },
+      {
+        "testID": "alphabet-I",
+        "pixels": {
+          "x": 477,
+          "y": 1240,
+          "width": 193,
+          "height": 262
+        }
+      }
+    ]
+  }
+]

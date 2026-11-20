@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\dev\apps\nato-phonetics\docs\evidence\run31\android\qualify-fixture.py", line 67, in <module>
+    run('editing-gate', ['node', Path(__file__).with_name('check-edit-display.cjs'), target])
+  File "C:\dev\apps\nato-phonetics\docs\evidence\run31\android\qualify-fixture.py", line 43, in run
+    result.check_returncode()
+  File "C:\Users\lalit\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 457, in check_returncode
+    raise CalledProcessError(self.returncode, self.args, self.stdout,
+subprocess.CalledProcessError: Command '['node', 'C:\\dev\\apps\\nato-phonetics\\docs\\evidence\\run31\\android\\check-edit-display.cjs', 'C:\\dev\\apps\\nato-phonetics\\docs\\evidence\\run31\\android\\fixture-edit-display\\editing']' returned non-zero exit status 1.

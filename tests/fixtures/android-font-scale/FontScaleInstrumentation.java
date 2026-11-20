@@ -3,7 +3,6 @@ package com.natophonetics.fonttest;
 import android.app.Activity;
 import android.app.Instrumentation;
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.ParcelFileDescriptor;
@@ -110,12 +109,8 @@ public final class FontScaleInstrumentation extends Instrumentation {
       return data;
     });
     stages.put(row); // Preserve the actual failing sample before assertions.
-    try (FileOutputStream file = new FileOutputStream(new File(output, stage + ".png"))) {
-      Bitmap bitmap = getUiAutomation().takeScreenshot();
-      require(bitmap != null, "Screenshot unavailable");
-      require(bitmap.compress(Bitmap.CompressFormat.PNG, 100, file), "Screenshot compression failed");
-      bitmap.recycle();
-    }
+    row.put("captureCommand", DisplayCapture.COMMAND);
+    DisplayCapture.write(this, new File(output, stage + ".png"));
     require(row.getBoolean("sameView") && row.getBoolean("sameEditable"), "Input or editable replaced: " + row);
     require(row.getBoolean("focused") && row.getString("value").equals(value), "Focus/value changed: " + row);
     require(row.getInt("selectionStart") == caret && row.getInt("selectionEnd") == caret, "Caret changed: " + row);

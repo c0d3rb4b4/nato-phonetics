@@ -40,7 +40,11 @@ test('static release is deterministic, extractable and inventories exact bytes',
     assert.equal(hash(bytes), record.sha256); assert.equal(bytes.length, record.bytes);
   }
   assert.equal(release.contentId, hash(JSON.stringify(release.files)));
-  assert.equal((await fs.stat(path.join(unpacked, 'public/index.html'))).mode & 0o777, 0o644);
+  const listing = execFileSync('tar', ['-tvzf', output, 'public/index.html'], { encoding: 'utf8' });
+  assert.match(listing, /^-rw-r--r--\s/);
+  if (process.platform !== 'win32') {
+    assert.equal((await fs.stat(path.join(unpacked, 'public/index.html'))).mode & 0o777, 0o644);
+  }
 });
 
 test('release retains immutable URLs transitively for forward and rollback switches', async t => {
@@ -79,26 +83,40 @@ test('mixed or partial build, worker drift and missing routes fail closed', asyn
   }
 });
 
-test('unsafe resource paths and symlink files/parents are rejected', async t => {
+test('unsafe resource paths and linked directories are rejected', async t => {
   const { base, build } = await fixture(t);
-  for (const variant of ['path', 'file', 'parent', 'root']) {
+  const linkType = process.platform === 'win32' ? 'junction' : 'dir';
+  for (const variant of ['path', 'parent', 'root']) {
     let directory = await build(variant), output = path.join(base, variant + '.tar.gz');
     if (variant === 'path') {
       const manifest = JSON.parse(await fs.readFile(path.join(directory, 'offline-manifest.json')));
       manifest.resources[0].url = '/../outside';
       await fs.writeFile(path.join(directory, 'offline-manifest.json'), JSON.stringify(manifest));
-    } else if (variant === 'file') {
-      await fs.rename(path.join(directory, 'index.html'), path.join(base, 'outside'));
-      await fs.symlink(path.join(base, 'outside'), path.join(directory, 'index.html'));
     } else if (variant === 'parent') {
       await fs.rename(path.join(directory, 'assets'), path.join(base, 'outside-assets'));
-      await fs.symlink(path.join(base, 'outside-assets'), path.join(directory, 'assets'));
+      await fs.symlink(path.join(base, 'outside-assets'), path.join(directory, 'assets'), linkType);
     } else {
-      await fs.symlink(directory, path.join(base, 'linked')); directory = path.join(base, 'linked');
+      await fs.symlink(directory, path.join(base, 'linked'), linkType); directory = path.join(base, 'linked');
     }
     await assert.rejects(packageWeb({ directory, output }));
     await assert.rejects(fs.stat(output), { code: 'ENOENT' });
   }
+});
+
+test('a symlink in place of a regular release file is rejected', async t => {
+  const { base, build, output } = await fixture(t);
+  const directory = await build('file');
+  const entry = path.join(directory, 'index.html');
+  const outside = path.join(base, 'outside');
+  await fs.rename(entry, outside);
+  try {
+    await fs.symlink(outside, entry, 'file');
+  } catch (error) {
+    if (process.platform !== 'win32' || error.code !== 'EPERM') throw error;
+    return t.skip('Windows denied creation of the file-symlink fixture');
+  }
+  await assert.rejects(packageWeb({ directory, output }), /Symlink in build/);
+  await assert.rejects(fs.stat(output), { code: 'ENOENT' });
 });
 
 test('packaging preserves existing output and CLI failure never claims success', async t => {

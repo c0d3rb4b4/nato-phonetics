@@ -3,15 +3,16 @@ import test from 'node:test';
 import fs from 'node:fs';
 import path from 'node:path';
 import os from 'node:os';
-import { execFileSync } from 'node:child_process';
-import { parseArgs, runHost, sourceSnapshot } from '../scripts/host-build.cjs';
+import { execFileSync, spawnSync } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
+import { npmInvocation, parseArgs, runHost, sourceSnapshot } from '../scripts/host-build.cjs';
 
 function fixture(t, scripts = {}) {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), 'nato-host-build-'));
   t.after(() => fs.rmSync(root, { recursive: true, force: true }));
   fs.writeFileSync(path.join(root, '.gitignore'), 'artifacts/\n');
   fs.writeFileSync(path.join(root, '.nvmrc'), process.versions.node + '\n');
-  const npmVersion = execFileSync('npm', ['--version'], { encoding: 'utf8' }).trim();
+  const npmVersion = execFileSync(npmInvocation.executable, [...npmInvocation.prefix, '--version'], { encoding: 'utf8' }).trim();
   fs.writeFileSync(path.join(root, 'package.json'), JSON.stringify({ packageManager: `npm@${npmVersion}`, scripts: Object.fromEntries(
     ['check:dependencies', 'typecheck', 'lint', 'test', 'audit:review'].map(name => [name, scripts[name] || 'node -e "console.log(\'gate completed\')"'])
   ) }));
@@ -24,6 +25,31 @@ test('host CLI rejects unsupported framework mode, missing arguments and invalid
   assert.throws(() => parseArgs(['android-framework', '--output', 'x']));
   assert.throws(() => parseArgs(['web', '--output']));
   assert.throws(() => parseArgs(['web', '--output', 'x', '--jobs', '0']));
+});
+
+test('ordinary Android entry points pass their default tasks, worker limit and actual wrapper exit', t => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'nato native wrapper '));
+  t.after(() => fs.rmSync(root, { recursive: true, force: true }));
+  const android = path.join(root, 'android');
+  const scripts = path.join(root, 'scripts');
+  fs.mkdirSync(android);
+  fs.mkdirSync(scripts);
+  const launcher = path.join(scripts, 'build-native.cjs');
+  fs.copyFileSync(fileURLToPath(new URL('../scripts/build-native.cjs', import.meta.url)), launcher);
+  const windows = process.platform === 'win32';
+  fs.writeFileSync(path.join(android, windows ? 'gradlew.bat' : 'gradlew'), windows
+    ? '@echo off\r\necho %*\r\nexit /b 17\r\n'
+    : '#!/bin/sh\nprintf "%s\\n" "$*"\nexit 17\n', { mode: 0o755 });
+  for (const [mode, verify, task] of [
+    ['android-debug', 'verifyDebugRenderer', 'assembleDebug'],
+    ['android-release', 'verifyReleaseRenderer', 'bundleRelease'],
+  ]) {
+    const result = spawnSync(process.execPath, [launcher, mode], {
+      encoding: 'utf8', env: { ...process.env, NATO_BUILD_JOBS: '2' },
+    });
+    assert.equal(result.status, 17, result.stderr);
+    assert.equal(result.stdout.trim(), `:app:${verify} :app:${task} --no-daemon --max-workers=2`);
+  }
 });
 
 test('failed child checks retain exact exits and logs, run remaining gates and release the build lock', t => {
@@ -77,7 +103,7 @@ test('source mutation during otherwise successful checks rejects qualification',
 
 test('a selected locked install really runs npm ci before the gates and preserves its source lock', t => {
   const root = fixture(t);
-  execFileSync('npm', ['install', '--package-lock-only', '--ignore-scripts', '--no-audit', '--no-fund'], { cwd: root });
+  execFileSync(npmInvocation.executable, [...npmInvocation.prefix, 'install', '--package-lock-only', '--ignore-scripts', '--no-audit', '--no-fund'], { cwd: root });
   const before = sourceSnapshot(root).sourceId;
   const report = runHost({ ...options(root), install: true });
   assert.equal(report.status, 'passed');

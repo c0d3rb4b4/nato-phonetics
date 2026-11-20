@@ -1,0 +1,33 @@
+{
+  "python": "3.10.18 (main, Jun  4 2025, 10:56:21) [MSC v.1944 64 bit (AMD64)]",
+  "source": {
+    "docs/evidence/run30/android/observe-product.py": {
+      "workingSha256": "825bf3e2411d8360851b9eb53961d75b4215bb98e122fc74a2bbe344093d1d8b",
+      "gitSha256": "766e4d875dc5831717388e8d7cef5d7147afa9c65b86de4599b5274dc6b0b3b2",
+      "equalAfterLineEndingNormalization": true
+    },
+    "docs/evidence/run08/android/verify_native.py": {
+      "workingSha256": "ea2e457fc0523733bff251564fbf6f7f1f64bc08d06b24ac23c37fb46e3c15e5",
+      "gitSha256": "3464ba5a3ceda5d522d54119ea0494db1a74ae1608bdb69369de9b9226e23f19",
+      "equalAfterLineEndingNormalization": true
+    },
+    "scripts/check-android-release-tiles.cjs": {
+      "workingSha256": "5b11af7467a4750c3ce5bc80cf6715e47305867c81992315d6c5028f66e4a6d3",
+      "gitSha256": "657e09668c1dce3178d6ae4206bd4d6ac2e02229bee8930b6a4b97ff20fa1cc6",
+      "equalAfterLineEndingNormalization": true
+    },
+    "docs/evidence/run30/native-glyph-metrics.json": {
+      "workingSha256": "1f75785f7dfa8185959c7bebeb260263872073c3275bd73fdae7c305d5f06762",
+      "gitSha256": "aa740c8b6e0b252d13e40b8c30b2dc52c47d986df2c8ed40f953ce59d3187f13",
+      "equalAfterLineEndingNormalization": true
+    },
+    "docs/evidence/run30/android/check-extended-raster.cjs": {
+      "workingSha256": "4bec5be8467931e6702a26e1abf1dd37904c74ae9cd544418422012029abddc1",
+      "gitSha256": "bd322d2e095178a19cf3654ccaa2a7e5917b34dcefe4b415496f495f04297b0d",
+      "equalAfterLineEndingNormalization": true
+    }
+  },
+  "importedActualRun30Methods": true,
+  "driverFileHashCheckPass": true,
+  "deviceExecuted": false
+}

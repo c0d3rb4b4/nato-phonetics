@@ -1,6 +1,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { spawnSync } = require('node:child_process');
+const npm = require('./npm-invocation.cjs');
 const lock = require('../package-lock.json');
 const errors = [];
 const forbiddenPackage = name => /^(?:expo(?:-|$)|@expo\/|eas-cli$)/.test(name);
@@ -8,8 +9,8 @@ for (const [location, pkg] of Object.entries(lock.packages)) {
   const name = pkg.name || location.split('node_modules/').at(-1);
   if (forbiddenPackage(name)) errors.push(`Lockfile: ${location}`);
 }
-const graph = spawnSync('npm', ['ls', '--all', '--json'], { encoding: 'utf8', maxBuffer: 20 * 1024 * 1024 });
-if (graph.status !== 0) errors.push(`Installed graph invalid: ${graph.stderr.trim()}`);
+const graph = spawnSync(npm.executable, [...npm.prefix, 'ls', '--all', '--json'], { encoding: 'utf8', maxBuffer: 20 * 1024 * 1024 });
+if (graph.status !== 0) errors.push(`Installed graph invalid: ${graph.error?.message || graph.stderr?.trim() || graph.signal || graph.status}`);
 const visitGraph = node => {
   for (const [name, dependency] of Object.entries(node.dependencies || {})) {
     if (forbiddenPackage(name)) errors.push(`Installed dependency: ${name}`);

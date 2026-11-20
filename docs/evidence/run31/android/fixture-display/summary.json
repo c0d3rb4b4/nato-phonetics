@@ -1,0 +1,39 @@
+{
+  "serial": "emulator-5582",
+  "productSha256": "ce74de3404a2a18bce416dca21d8fcd86d6fe88b69744cf90e2ac53e84e66331",
+  "windowBefore": "Physical size: 1080x2400\nOverride size: 720x1600",
+  "fontScaleBefore": "1.0",
+  "imeBefore": "com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME",
+  "commands": [
+    {
+      "argv": [
+        "C:\\Users\\lalit\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\python.exe",
+        "scripts/run-android-font-release-fixture.py",
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run31\\display-observer\\font-composition.apk",
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run31\\release-fixture-final\\font-release-fixture.apk",
+        "C:\\dev\\apps\\nato-phonetics\\docs\\evidence\\run31\\android\\fixture-display\\primary",
+        "emulator-5582",
+        "primary",
+        "cold2"
+      ],
+      "exit": 0,
+      "log": "primary-collect.log"
+    },
+    {
+      "argv": [
+        "node",
+        "scripts/check-android-font-release-fixture.cjs",
+        "C:\\dev\\apps\\nato-phonetics\\docs\\evidence\\run31\\android\\fixture-display\\primary",
+        "--primary-only"
+      ],
+      "exit": 0,
+      "log": "primary-gate.log"
+    }
+  ],
+  "passed": true,
+  "restoredProductSha256": "ce74de3404a2a18bce416dca21d8fcd86d6fe88b69744cf90e2ac53e84e66331",
+  "windowAfter": "Physical size: 1080x2400\nOverride size: 720x1600",
+  "fontScaleAfter": "1.0",
+  "imeAfter": "com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME",
+  "restored": true
+}

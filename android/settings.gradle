@@ -5,13 +5,26 @@ rootProject.name = 'NATOPhonetics'
 include ':app'
 includeBuild('../node_modules/@react-native/gradle-plugin')
 
-// Opt-in P05.2 native regression build; ordinary builds retain Maven artifacts.
-// Hermes stays pinned to the same 0.81.5 Maven artifact in both candidates.
-if (providers.gradleProperty('natoReactNativeSource').orNull == 'true') {
+// The repaired renderer is required by ordinary builds, including Android Studio.
+// Verify the installed sources before Gradle can configure or reuse the composite.
+def sourceMode = providers.gradleProperty('natoReactNativeSource').getOrElse('true')
+if (sourceMode == 'true') {
+    def verification = providers.exec {
+        workingDir settingsDir.parentFile
+        commandLine 'node', 'scripts/prepare-android-source.cjs', '--check'
+        ignoreExitValue = true
+    }
+    if (verification.result.get().exitValue != 0) {
+        throw new GradleException(verification.standardError.asText.get().trim())
+    }
     includeBuild('../node_modules/react-native') {
         dependencySubstitution {
             substitute(module('com.facebook.react:react-android')).using(project(':packages:react-native:ReactAndroid'))
             substitute(module('com.facebook.react:react-native')).using(project(':packages:react-native:ReactAndroid'))
         }
     }
+} else if (sourceMode == 'false') {
+    logger.warn('Historical Maven ReactAndroid control selected. This renderer has the known live text-sizing defect.')
+} else {
+    throw new GradleException('natoReactNativeSource must be true (default) or false (historical Maven control).')
 }

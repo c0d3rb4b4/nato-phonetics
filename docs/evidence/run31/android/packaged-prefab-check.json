@@ -1,0 +1,26 @@
+{
+  "dateUTC": "2026-11-20T13:16:24.9562959Z",
+  "checkout": "C:\\n3137e8",
+  "command": "node scripts/prepare-android-source.cjs --check",
+  "exit": 0,
+  "variant": "release",
+  "packaged": [
+    {
+      "path": "react/renderer/components/view/YogaLayoutableShadowNode.h",
+      "sha256": "74ff94afa4419bb920ed30d71aaa6c5c918674592f9979b6224a138580421d0a"
+    },
+    {
+      "path": "react/renderer/textlayoutmanager/TextMeasureCache.h",
+      "sha256": "549099d6f19ea58e67e636c7b257c0b960e3c0a8c4764c2afac693b8894afd69"
+    },
+    {
+      "path": "react/renderer/core/LayoutContext.h",
+      "sha256": "27f37642e5af50be464397bbfd57b1a76a0151d3b0c2b29a860ade0e8bdd8053"
+    },
+    {
+      "path": "react/fabric/SurfaceHandlerBinding.h",
+      "sha256": "e1e9da56b2c0d4c699a4a5cb698c165c10af65805f2acfb54fe75bafef2c2bc4"
+    }
+  ],
+  "sharedLibrary": 101399304
+}

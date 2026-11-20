@@ -1,0 +1,57 @@
+import org.gradle.api.artifacts.component.ModuleComponentIdentifier
+import org.gradle.api.artifacts.component.ModuleComponentSelector
+import org.gradle.api.artifacts.component.ProjectComponentIdentifier
+import org.gradle.api.artifacts.result.ResolvedDependencyResult
+import org.gradle.api.artifacts.type.ArtifactTypeDefinition
+import java.security.MessageDigest
+
+// Maven Central's SHA-256 for com.facebook.react:hermes-android:0.81.5,
+// classifiers debug and release. Check the artifact selected for this variant.
+def hermesHashes = [
+    debug:   'e7bb7fbb078b386ef69b651489b0dbfc45cfb419758efdd31a8ed2e8d1d93eb9',
+    release: 'f8d8af2486ee26d7b8d3da92dcd96ea5df27acfcfe556866ea13c68fec1d2992'
+]
+hermesHashes.each { variant, expectedHash ->
+    tasks.register("verify${variant.capitalize()}Renderer") {
+        group = 'verification'
+        description = "Verify the default source renderer and pinned Maven Hermes on ${variant}RuntimeClasspath"
+        doLast {
+            if (providers.gradleProperty('natoReactNativeSource').isPresent()) {
+                throw new GradleException('Remove the natoReactNativeSource override to qualify the ordinary build.')
+            }
+            def configuration = configurations.getByName("${variant}RuntimeClasspath")
+            def direct = configuration.incoming.resolutionResult.root.dependencies
+            def selected = { module ->
+                def matches = direct.findAll { it.requested instanceof ModuleComponentSelector &&
+                    it.requested.group == 'com.facebook.react' && it.requested.module == module }
+                if (matches.size() != 1 || !(matches.first() instanceof ResolvedDependencyResult)) {
+                    throw new GradleException("Unresolved ${module} on ${configuration.name}: ${matches}")
+                }
+                matches.first().selected.id
+            }
+            def renderer = selected('react-android')
+            def sourceDir = new File(rootDir, '../node_modules/react-native').canonicalFile
+            if (!(renderer instanceof ProjectComponentIdentifier) ||
+                renderer.projectPath != ':packages:react-native:ReactAndroid' ||
+                !gradle.includedBuilds.any { ":${it.name}" == renderer.build.buildPath && it.projectDir.canonicalFile == sourceDir }) {
+                throw new GradleException("Expected ReactAndroid from ${sourceDir} on ${configuration.name}, selected ${renderer}")
+            }
+            def hermes = selected('hermes-android')
+            if (!(hermes instanceof ModuleComponentIdentifier) || hermes.group != 'com.facebook.react' ||
+                hermes.module != 'hermes-android' || hermes.version != '0.81.5') {
+                throw new GradleException("Unexpected Hermes on ${configuration.name}: ${hermes}")
+            }
+            def aar = configuration.incoming.artifactView {
+                componentFilter { it == hermes }
+                attributes { attribute(ArtifactTypeDefinition.ARTIFACT_TYPE_ATTRIBUTE, 'aar') }
+            }.files.singleFile
+            def digest = MessageDigest.getInstance('SHA-256')
+            aar.eachByte(65536) { bytes, count -> digest.update(bytes, 0, count) }
+            def sha = digest.digest().encodeHex().toString()
+            if (sha != expectedHash) {
+                throw new GradleException("Unexpected ${aar.name} on ${configuration.name}: SHA-256 ${sha}")
+            }
+            logger.lifecycle("${configuration.name} | ${renderer} | ${sourceDir} | ${hermes} | ${aar.name} | SHA-256 ${sha}")
+        }
+    }
+}

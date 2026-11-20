@@ -20,11 +20,17 @@ function run(command, args, cwd = root) {
 mkdirSync(artifacts, { recursive: true });
 switch (mode) {
   case 'android-debug':
-    run(process.platform === 'win32' ? 'gradlew.bat' : './gradlew', [':app:assembleDebug', '--no-daemon', `--max-workers=${jobs}`], path.join(root, 'android'));
+  case 'android-release': {
+    const task = mode === 'android-debug' ? ':app:assembleDebug' : ':app:bundleRelease';
+    const verify = mode === 'android-debug' ? ':app:verifyDebugRenderer' : ':app:verifyReleaseRenderer';
+    const args = [verify, task, '--no-daemon', `--max-workers=${jobs}`];
+    const android = path.join(root, 'android');
+    // Windows runs the tracked batch wrapper through cmd. Only the two fixed
+    // task pairs and the validated worker count are passed to the shell.
+    if (process.platform === 'win32') run('cmd.exe', ['/d', '/c', '.\\gradlew.bat', ...args], android);
+    else run('./gradlew', args, android);
     break;
-  case 'android-release':
-    run(process.platform === 'win32' ? 'gradlew.bat' : './gradlew', [':app:bundleRelease', '--no-daemon', `--max-workers=${jobs}`], path.join(root, 'android'));
-    break;
+  }
   case 'ios-simulator':
     run('xcodebuild', ['-workspace', 'ios/NATOPhonetics.xcworkspace', '-scheme', 'NATOPhonetics',
       '-configuration', 'Release', '-sdk', 'iphonesimulator', '-destination', 'generic/platform=iOS Simulator',

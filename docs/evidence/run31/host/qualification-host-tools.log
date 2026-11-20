@@ -1,0 +1,22 @@
+Python 3.10.18
+Android (12285214, based on r522817b) clang version 18.0.2 (https://android.googlesource.com/toolchain/llvm-project d8003a456d14a3deb8054cdaa529ffbf02d9b262)
+Target: x86_64-w64-windows-gnu
+Thread model: posix
+InstalledDir: C:/Users/lalit/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/bin
+llvm-nm, compatible with GNU nm
+LLVM (http://llvm.org/):
+  LLVM version 18.0.2
+  Optimized build.
+LLVM (http://llvm.org/):
+  LLVH version 8.0.0svn
+  DEBUG build
+
+Hermes JavaScript compiler.
+  Hermes release version: 0.12.0
+  HBC bytecode version: 96
+
+  Features:
+    Debugger
+    Contiguous Heap
+    Unicode RegExp Property Escapes
+    Zip file input

@@ -1,0 +1,19 @@
+{
+  "command": "npm ci --no-audit --no-fund",
+  "node": "v22.23.0",
+  "npm": "10.9.4",
+  "worktree": "separate checkout, no existing node_modules",
+  "head": "9e4d09c26e2b931e6a7d57074a86bf4093e5170a",
+  "exit": 0,
+  "elapsedSeconds": 17,
+  "lockSha256": "fae053eedf503f7ed5e54d2189bb598c37607ea6847bc997d75a4a6a289d3160",
+  "overlaidPaths": [
+    "android/settings.gradle",
+    "package.json",
+    "scripts/build-native.cjs",
+    "scripts/host-build.cjs",
+    "scripts/prepare-android-source.cjs",
+    "tests/android-source-guard.test.mjs",
+    "tests/host-build.test.mjs"
+  ]
+}

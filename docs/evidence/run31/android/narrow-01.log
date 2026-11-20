@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\dev\apps\nato-phonetics\docs\evidence\run31\android\observe-product.py", line 123, in <module>
+    original.main()
+  File "C:\dev\apps\nato-phonetics\docs\evidence\run30\android\observe-product.py", line 194, in main
+    elif '--narrow-capture' in sys.argv:narrow_capture()
+  File "C:\dev\apps\nato-phonetics\docs\evidence\run30\android\observe-product.py", line 180, in narrow_capture
+    else:raise AssertionError('No complete reachable narrow product tile')
+AssertionError: No complete reachable narrow product tile

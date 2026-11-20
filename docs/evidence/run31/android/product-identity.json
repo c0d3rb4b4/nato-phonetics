@@ -1,0 +1,88 @@
+{
+  "sourceMode": "ordinary Gradle composite default; x86_64 scope selected for this emulator",
+  "artifacts": {
+    "app-release-unsigned.apk": {
+      "sha256": "917810609d5d844708cc18593a68da8e3af1ec3582b43127ec9f4847e92fc84d",
+      "bytes": 17158474
+    },
+    "app-release.aab": {
+      "sha256": "ace49ab58a9e16b04251bb3e7fe34be84adcbc4d79b70fd82c5de1afc1fde4e7",
+      "bytes": 12398700
+    },
+    "app-release-local-test.apk": {
+      "sha256": "ce74de3404a2a18bce416dca21d8fcd86d6fe88b69744cf90e2ac53e84e66331",
+      "bytes": 17205281
+    }
+  },
+  "identicalEngineeringCopyPayloadEntries": 488,
+  "differentFromRun28OptIn": [
+    "assets/index.android.bundle",
+    "lib/x86_64/libappmodules.so",
+    "lib/x86_64/libhermestooling.so",
+    "lib/x86_64/libjsi.so",
+    "lib/x86_64/libreact_codegen_safeareacontext.so",
+    "lib/x86_64/libreactnative.so",
+    "resources.arsc"
+  ],
+  "embeddedAssets": {
+    "assets/index.android.bundle": "830c147f391ec64fec40ea839d1cf7c231b0a053b2cbb9ac936cdff819518328",
+    "assets/fonts/NatoTile-ExtraBold.ttf": "b0150a84d5e000fcd276cf13e1863ca8bbaab0ff2a0dfdcfa958a48781dd7aa6",
+    "assets/fonts/NatoTile-Italic.ttf": "50f16c8bec3ed31190d37403b6e15d200274e7a5e43f1a698a86eef7079d862b",
+    "assets/fonts/NatoTile-SemiBold.ttf": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f"
+  },
+  "nativeLibraries": {
+    "lib/x86_64/libappmodules.so": {
+      "sha256": "19ddab1ea37a0318e5861f41b4cc95d515ea40d18b9439abc9cbcd68a2b34bbe",
+      "buildId": "d75f99077383b65cb7e67f56ba842e86a30ca78d"
+    },
+    "lib/x86_64/libc++_shared.so": {
+      "sha256": "0a2c7afa35b183fdd5a3cb20e2080ad54cbea06c2a4f0bc8f122cb7d1e9e0b9f",
+      "buildId": "734ab2eaa203afbb89147d313e46146617bd1a2c"
+    },
+    "lib/x86_64/libfbjni.so": {
+      "sha256": "a51410366a0394e05bc04052cfb237c70dcf7d4d53a56e1d00a041436cb0b653",
+      "buildId": "2f4b0da170c8a1af5bf245a5dba7c30a6974f2f2"
+    },
+    "lib/x86_64/libhermes.so": {
+      "sha256": "2e9e9d813b39822f60c9343b7a6df37e85ed07da297ade1f868117be73c5bd09",
+      "buildId": "be1718215827d9f1a8e4c5e326f3ffb7a473f1fd"
+    },
+    "lib/x86_64/libhermestooling.so": {
+      "sha256": "2465e31af7599905267524745500f5f1f36f531326b37c70764030df5e938eb6",
+      "buildId": "f3fecf9b0d445544"
+    },
+    "lib/x86_64/libimagepipeline.so": {
+      "sha256": "2e596f4955f65abaa93c891b49eb58b5416581806a04bde0097cc369ae4dbfb3",
+      "buildId": "ee33ae98d4a96b96"
+    },
+    "lib/x86_64/libjsi.so": {
+      "sha256": "d4f9e81dd6122ca9dace2a816929f1650359cee6b1f4332d406a07062fd9737b",
+      "buildId": "f9e1c707c8bbc4b1",
+      "sourcePrefabSha256": "3c027a51b0aafe1b7261c95060c4bea07e4bf396fa8077024de5b0bc410a95b5"
+    },
+    "lib/x86_64/libnative-filters.so": {
+      "sha256": "1a5270f007dd4b2f0fc52ceac82e05143648ba9be59c2213a21cf61c84f1f5e5",
+      "buildId": "1d203bcbf267decb"
+    },
+    "lib/x86_64/libnative-imagetranscoder.so": {
+      "sha256": "f6b92ad7f1c30973f40704c46987504757c3d079c7f4ace6efc8b318dd9c22f3",
+      "buildId": "3ad8143b11543dc0"
+    },
+    "lib/x86_64/libreact_codegen_safeareacontext.so": {
+      "sha256": "e9561e6f0357a88298c1f3bb5999326ba471f8bb2353c3a249cb1d4aa3e65d14",
+      "buildId": "a0d18b60d8d2ccf11f5d71e83ef84a6edb6ddbac"
+    },
+    "lib/x86_64/libreactnative.so": {
+      "sha256": "d02dfc84566e869a2ef165a7279646fbf99c6752244832a4c1c8da701dba1bfe",
+      "buildId": "d622c63d5fb7bd32",
+      "sourcePrefabSha256": "5ace3063265130c1362e9fa2168bc76a0cebd7dcb9a94fb36eccca9b30c8ad0f"
+    }
+  },
+  "hermesAarSha256": "f8d8af2486ee26d7b8d3da92dcd96ea5df27acfcfe556866ea13c68fec1d2992",
+  "candidate": {
+    "nonDebuggable": true,
+    "requestedRecordAudio": false,
+    "abi": "x86_64"
+  },
+  "passed": true
+}

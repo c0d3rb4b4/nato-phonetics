@@ -1,0 +1,83 @@
+{
+  "dateUTC": "2026-11-20T13:03:32.6137677Z",
+  "shortPath": "C:\\n3137e8",
+  "previousPath": "C:\\Users\\lalit\\AppData\\Local\\Temp\\nato-r31-clean-2ccd2fe8\\app",
+  "head": "9e4d09c26e2b931e6a7d57074a86bf4093e5170a",
+  "reason": "Long scratch Ninja failed at mkdir of ReactCommon/react/renderer/textlayoutmanager object subdirectory after 141 completed commands",
+  "overlay": [
+    {
+      "file": ".gitattributes",
+      "sha256": "e234189efcd7a1643ea8ebe775b610aa732f2064530cb737ab75ddeddeac4bbe"
+    },
+    {
+      "file": "android/app/verify-renderer.gradle",
+      "sha256": "86050958378103e8dcd850efb8a5ac13aaf2dfde8f158d7b4dd40aae1cb0127d"
+    },
+    {
+      "file": "scripts/npm-invocation.cjs",
+      "sha256": "6c29a3fcc27c1f786e6abaf105960edfa6d8b19b01e1fc42a8bb12d7816f6078"
+    },
+    {
+      "file": "android/app/build.gradle",
+      "sha256": "e617ee7c8f426c2ff00ccb1e8befeeded09bc2d0654ed2b0f03c5324ded66634"
+    },
+    {
+      "file": "android/settings.gradle",
+      "sha256": "c343c81ada16aa1f10db05ca7f4d577edbcb8ed0dd2904af16a3084e1e656e52"
+    },
+    {
+      "file": "assets/images/icon-foreground.svg",
+      "sha256": "aa6547ff1e2dc302b15882d003b4d591f30ba3df7340d7fd7535f7a5d62fc120"
+    },
+    {
+      "file": "assets/images/icon-monochrome.svg",
+      "sha256": "925ce4561405450e94f06567d16d50436b152607297de42120bbef85913084eb"
+    },
+    {
+      "file": "assets/images/icon.svg",
+      "sha256": "66fc628760f933c696d3244841b86c53629a6a5423259703b1770e6e5ce83ff7"
+    },
+    {
+      "file": "package.json",
+      "sha256": "2cae52f0ee856d5a0c70541908133916fe6990797e84180136e59ca1535265f6"
+    },
+    {
+      "file": "scripts/build-native.cjs",
+      "sha256": "b2bd6aa56f75f050b9aaee31dee12542026d43006bac6a13ce5ecf033c1318be"
+    },
+    {
+      "file": "scripts/check-audit.cjs",
+      "sha256": "97ce18e3522587d6b413714367ca0e8f175ffe0d90ec19e124d3f2de38dc5ba7"
+    },
+    {
+      "file": "scripts/check-no-expo.cjs",
+      "sha256": "2df2b859a1e3deafab78237301618d90998006dcc351d7b5931e14a1ab4d754a"
+    },
+    {
+      "file": "scripts/host-build.cjs",
+      "sha256": "8d46f131cc440cea8331f71bc97c64b27fd5cd93ce8bf4a358657530a963aacb"
+    },
+    {
+      "file": "scripts/prepare-android-source.cjs",
+      "sha256": "cc4abec8ddded72854ec536920c9c5903c6feb5a0cfe07a09465762e213f322b"
+    },
+    {
+      "file": "tests/android-source-guard.test.mjs",
+      "sha256": "19614e059d4ca5d3e11af204219568d4c24f77a2b45a6106bcfe95a955dc58ba"
+    },
+    {
+      "file": "tests/host-build.test.mjs",
+      "sha256": "0bf0212155978a3abb0414c2bb9f2ec88b9853bbb7fcfcd20297d820fc0eb6b2"
+    },
+    {
+      "file": "tests/icons.test.mjs",
+      "sha256": "90cc8d295f9aac32363fad0d615e2f5fbd55bddb1bc4052812ce31b1880eafc2"
+    },
+    {
+      "file": "tests/web-package.test.mjs",
+      "sha256": "9d044a2954c0448fb49651d55e151a8553250da60a7a54639ffbc69a898b2ea8"
+    }
+  ],
+  "lockedInstall": "npm ci --no-audit --no-fund",
+  "nativeArchiveReuse": "REACT_NATIVE_DOWNLOADS_DIR points only to downloaded upstream archive folder from initial failed build. No compiled objects or generated source copied."
+}

@@ -1,0 +1,37 @@
+{
+  "screens": {
+    "cold1": {
+      "width": 720,
+      "height": 1600,
+      "sha256": "957829069c184ca086d5f1a5754211e167edd9a2066a79c0c0458559c1bc7bfe"
+    },
+    "live2": {
+      "width": 720,
+      "height": 1600,
+      "sha256": "be464a53be2f3f403fd2a6121fe28bc9e9a2b37bc46d7fd3c67b90bb3974c70a"
+    },
+    "return1": {
+      "width": 720,
+      "height": 1600,
+      "sha256": "957829069c184ca086d5f1a5754211e167edd9a2066a79c0c0458559c1bc7bfe"
+    },
+    "cold2": {
+      "width": 720,
+      "height": 1600,
+      "sha256": "be464a53be2f3f403fd2a6121fe28bc9e9a2b37bc46d7fd3c67b90bb3974c70a"
+    },
+    "resize-narrow2": {
+      "width": 560,
+      "height": 1000,
+      "sha256": "0a7d677ea249d806fb0efa60487054a238602e0c434e6f67a4e57871a904110b"
+    },
+    "resize-restored2": {
+      "width": 720,
+      "height": 1600,
+      "sha256": "be464a53be2f3f403fd2a6121fe28bc9e9a2b37bc46d7fd3c67b90bb3974c70a"
+    }
+  },
+  "live2MatchesCold2": true,
+  "return1MatchesCold1": true,
+  "scaleChangeVisible": true
+}

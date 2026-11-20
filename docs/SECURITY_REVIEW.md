@@ -1,6 +1,8 @@
 # Dependency security review
 
-**Current:** Run22 (19 November2026) reconciles the unchanged dependency/lock graph with a fresh registry report: **0 high/critical /7 low**, raw audit exit1 and review gate exit0. The same matcher advisory withdrawal is now reflected in npm; no matcher code fix is claimed. One low XML-parser leaf propagates to7 package entries; source applicability and an unverified CLI20.2.0 candidate are recorded below. R08 remains in-progress; no owner risk acceptance.
+**Current, 20 November 2026.** Run 31 checked the unchanged Run 23 lockfile on pinned Node 22.23.0 / npm 10.9.4. The raw audit and reviewed-inventory gate both exited zero with zero findings. R08 retains its resolved dependency scope. The guarded native source and Windows command launcher changes add no packages. [Raw status and review](evidence/run31/shared/audit.log) · [locked installation](evidence/run31/shared/clean-install.json).
+
+**Historical:** Run22 (19 November2026) reconciles the unchanged dependency/lock graph with a fresh registry report: **0 high/critical /7 low**, raw audit exit1 and review gate exit0. The same matcher advisory withdrawal is now reflected in npm; no matcher code fix is claimed. One low XML-parser leaf propagates to7 package entries; source applicability and an unverified CLI20.2.0 candidate are recorded below. R08 remains in-progress; no owner risk acceptance.
 
 Reviewed **17 November 2026**, Run 05, against the unchanged package lockfile after adding bundled tile fonts. Next review **16 December 2026**, or earlier after relevant dependency/build changes. This is an engineering disposition, not owner release-risk acceptance; M11.7 remains unperformed.
 

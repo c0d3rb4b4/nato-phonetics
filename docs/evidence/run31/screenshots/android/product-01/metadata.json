@@ -1,0 +1,44 @@
+[
+  {
+    "file": "product-converter-default.png",
+    "state": "Populated converter at system font scale 1",
+    "theme": "light",
+    "width": 720,
+    "height": 1600,
+    "sha256": "b51fa1e7205b56435f1ab2ae1455b721fcefdcde8f900b950cbdb81a6d9b3919",
+    "timestamp": "2026-11-20T13:19:33Z",
+    "command": "adb -s emulator-5582 exec-out screencap -p",
+    "androidVersion": "16",
+    "fontScale": "1",
+    "displaySize": "Physical size: 1080x2400\r\nOverride size: 720x1600",
+    "displayDensity": "Physical density: 420\r\nOverride density: 280"
+  },
+  {
+    "file": "product-converter-enlarged.png",
+    "state": "Populated converter at system font scale 2",
+    "theme": "light",
+    "width": 720,
+    "height": 1600,
+    "sha256": "a0d9f897379f4dac71fadda37e327a7e3a2d943e335aadfeb001505c2f7447e0",
+    "timestamp": "2026-11-20T13:19:40Z",
+    "command": "adb -s emulator-5582 exec-out screencap -p",
+    "androidVersion": "16",
+    "fontScale": "2.0",
+    "displaySize": "Physical size: 1080x2400\r\nOverride size: 720x1600",
+    "displayDensity": "Physical density: 420\r\nOverride density: 280"
+  },
+  {
+    "file": "product-converter-restored.png",
+    "state": "Populated converter at system font scale 1",
+    "theme": "light",
+    "width": 720,
+    "height": 1600,
+    "sha256": "b51fa1e7205b56435f1ab2ae1455b721fcefdcde8f900b950cbdb81a6d9b3919",
+    "timestamp": "2026-11-20T13:19:47Z",
+    "command": "adb -s emulator-5582 exec-out screencap -p",
+    "androidVersion": "16",
+    "fontScale": "1.0",
+    "displaySize": "Physical size: 1080x2400\r\nOverride size: 720x1600",
+    "displayDensity": "Physical density: 420\r\nOverride density: 280"
+  }
+]

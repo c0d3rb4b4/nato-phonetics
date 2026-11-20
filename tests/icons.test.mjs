@@ -5,6 +5,7 @@ import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { createRequire } from 'node:module';
+import { fileURLToPath } from 'node:url';
 import test from 'node:test';
 
 const require = createRequire(import.meta.url);
@@ -13,7 +14,7 @@ const { inspect } = require('../scripts/generate-icons.js');
 const root = new URL('../', import.meta.url);
 const script = new URL('../scripts/generate-icons.js', import.meta.url);
 const digest = bytes => createHash('sha256').update(bytes).digest('hex');
-const cli = output => spawnSync(process.execPath, [script.pathname, '--output-dir', output], { encoding: 'utf8' });
+const cli = output => spawnSync(process.execPath, [fileURLToPath(script), '--output-dir', output], { encoding: 'utf8' });
 
 test('regeneration verifies all shipped resources, native copies and deterministic output', async () => {
   const temporary = await mkdtemp(path.join(tmpdir(), 'nato-icons-'));

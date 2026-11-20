@@ -2,6 +2,11 @@
 
 The speech-bubble, A and waves retain the original artwork in [test.svg](../assets/images/test.svg), which stays as historical source evidence. Production sources are [icon.svg](../assets/images/icon.svg), [icon-foreground.svg](../assets/images/icon-foreground.svg) and the dedicated transparent [icon-monochrome.svg](../assets/images/icon-monochrome.svg). Lettering is outlined from the repository's OFL Nunito faces (fontTools 4.60.2); rendering no longer depends on a machine's system font. Tile font files/specification are unchanged. The full icon retains the NATO PHONETICS labels; adaptive layers use the central mark for readability at launcher sizes.
 
+The manifest hashes the production SVG files byte for byte. Git checks out
+these three files with LF endings on Windows and Unix. With the Windows
+URL/path correction in the generator test, regeneration reproduced the
+shipped source and PNG hashes on both Windows and Linux. [Windows checks](evidence/run31/shared/windows-gate.log) · [Linux checks](evidence/run31/shared/linux-gate.log).
+
 Run with the pinned Node/npm toolchain:
 
 ```sh

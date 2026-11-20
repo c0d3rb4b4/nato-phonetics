@@ -1,0 +1,69 @@
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>if "Windows_NT" == "Windows_NT" setlocal
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>set DIRNAME=C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android\ 
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>if "C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android\" == "" set DIRNAME=. 
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>set APP_BASE_NAME=gradlew 
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>set APP_HOME=C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android\ 
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>for %i in ("C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android\") do set APP_HOME=%~fi 
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>set APP_HOME=C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android\ 
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m" 
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>if defined JAVA_HOME goto findJavaFromJavaHome 
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>set JAVA_HOME=C:\Program Files\Microsoft\jdk-17.0.13.11-hotspot\ 
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>set JAVA_EXE=C:\Program Files\Microsoft\jdk-17.0.13.11-hotspot\/bin/java.exe 
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>if exist "C:\Program Files\Microsoft\jdk-17.0.13.11-hotspot\/bin/java.exe" goto execute 
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>set CLASSPATH= 
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>"C:\Program Files\Microsoft\jdk-17.0.13.11-hotspot\/bin/java.exe" "-Xmx64m" "-Xms64m"   "-Dorg.gradle.appname=gradlew" -classpath "" -jar "C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android\\gradle\wrapper\gradle-wrapper.jar" :app:verifyDebugRenderer :app:verifyReleaseRenderer --max-workers=1 --console=plain "-Dorg.gradle.jvmargs=-Xmx2048m -XX:MaxMetaspaceSize=512m -XX:ActiveProcessorCount=2" 
+> Task :gradle-plugin:settings-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:shared:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:shared:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:shared:compileJava NO-SOURCE
+> Task :gradle-plugin:shared:processResources NO-SOURCE
+> Task :gradle-plugin:shared:classes UP-TO-DATE
+> Task :gradle-plugin:shared:jar UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:compileJava NO-SOURCE
+> Task :gradle-plugin:settings-plugin:pluginDescriptors UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:processResources UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:classes UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:jar UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:react-native-gradle-plugin:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:compileJava NO-SOURCE
+> Task :gradle-plugin:react-native-gradle-plugin:pluginDescriptors UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:processResources UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:classes UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:jar UP-TO-DATE
+
+> Task :app:verifyDebugRenderer
+debugRuntimeClasspath | project :react-native:packages:react-native:ReactAndroid | C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\node_modules\react-native | com.facebook.react:hermes-android:0.81.5 | hermes-android-0.81.5-debug.aar | SHA-256 e7bb7fbb078b386ef69b651489b0dbfc45cfb419758efdd31a8ed2e8d1d93eb9
+
+> Task :app:verifyReleaseRenderer
+releaseRuntimeClasspath | project :react-native:packages:react-native:ReactAndroid | C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\node_modules\react-native | com.facebook.react:hermes-android:0.81.5 | hermes-android-0.81.5-release.aar | SHA-256 f8d8af2486ee26d7b8d3da92dcd96ea5df27acfcfe556866ea13c68fec1d2992
+
+[Incubating] Problems report is available at: file:///C:/Users/lalit/AppData/Local/Temp/nato-r31-clean-2ccd2fe8/app/android/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 3s
+12 actionable tasks: 2 executed, 10 up-to-date
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>if 0 EQU 0 goto mainEnd 
+
+C:\Users\lalit\AppData\Local\Temp\nato-r31-clean-2ccd2fe8\app\android>if "Windows_NT" == "Windows_NT" endlocal

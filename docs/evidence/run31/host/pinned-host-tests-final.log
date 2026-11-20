@@ -1,0 +1,101 @@
+TAP version 13
+# warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+# warning: in the working copy of '.nvmrc', LF will be replaced by CRLF the next time Git touches it
+# check-dependencies: logs/01-check-dependencies.log
+# typecheck: logs/02-typecheck.log
+# lint: logs/03-lint.log
+# test: logs/04-test.log
+# audit-review: logs/05-audit-review.log
+# One or more quality/security checks failed; all results retained
+# warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+# warning: in the working copy of '.nvmrc', LF will be replaced by CRLF the next time Git touches it
+# Candidate source ID does not match --expected-source
+# warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+# warning: in the working copy of '.nvmrc', LF will be replaced by CRLF the next time Git touches it
+# Another host build holds artifacts/.host-build.lock; inspect its owner before retrying
+# warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+# warning: in the working copy of '.nvmrc', LF will be replaced by CRLF the next time Git touches it
+# Use pinned Node 0.0.0; found 22.23.0
+# warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+# warning: in the working copy of '.nvmrc', LF will be replaced by CRLF the next time Git touches it
+# check-dependencies: logs/01-check-dependencies.log
+# typecheck: logs/02-typecheck.log
+# lint: logs/03-lint.log
+# test: logs/04-test.log
+# audit-review: logs/05-audit-review.log
+# Candidate source changed during execution; artifact qualification rejected
+# warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+# warning: in the working copy of '.nvmrc', LF will be replaced by CRLF the next time Git touches it
+# locked-install: logs/01-locked-install.log
+# check-dependencies: logs/02-check-dependencies.log
+# typecheck: logs/03-typecheck.log
+# lint: logs/04-lint.log
+# test: logs/05-test.log
+# audit-review: logs/06-audit-review.log
+# warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+# warning: in the working copy of '.nvmrc', LF will be replaced by CRLF the next time Git touches it
+# locked-install: logs/01-locked-install.log
+# locked-install failed (1); see logs/01-locked-install.log
+# Subtest: host CLI rejects unsupported framework mode, missing arguments and invalid concurrency
+ok 1 - host CLI rejects unsupported framework mode, missing arguments and invalid concurrency
+  ---
+  duration_ms: 0.6885
+  type: 'test'
+  ...
+# Subtest: ordinary Android entry points pass their default tasks, worker limit and actual wrapper exit
+ok 2 - ordinary Android entry points pass their default tasks, worker limit and actual wrapper exit
+  ---
+  duration_ms: 124.5602
+  type: 'test'
+  ...
+# Subtest: failed child checks retain exact exits and logs, run remaining gates and release the build lock
+ok 3 - failed child checks retain exact exits and logs, run remaining gates and release the build lock
+  ---
+  duration_ms: 1530.1319
+  type: 'test'
+  ...
+# Subtest: source identity includes dirty tracked and untracked bytes, preserves their transfer inputs and rejects mismatches
+ok 4 - source identity includes dirty tracked and untracked bytes, preserves their transfer inputs and rejects mismatches
+  ---
+  duration_ms: 854.3724
+  type: 'test'
+  ...
+# Subtest: a pre-existing lock and evidence directory are preserved; a new run gets an explicit failure report
+ok 5 - a pre-existing lock and evidence directory are preserved; a new run gets an explicit failure report
+  ---
+  duration_ms: 244.3531
+  type: 'test'
+  ...
+# Subtest: wrong Node pin fails preflight without running checks
+ok 6 - wrong Node pin fails preflight without running checks
+  ---
+  duration_ms: 347.5004
+  type: 'test'
+  ...
+# Subtest: source mutation during otherwise successful checks rejects qualification
+ok 7 - source mutation during otherwise successful checks rejects qualification
+  ---
+  duration_ms: 1689.3223
+  type: 'test'
+  ...
+# Subtest: a selected locked install really runs npm ci before the gates and preserves its source lock
+ok 8 - a selected locked install really runs npm ci before the gates and preserves its source lock
+  ---
+  duration_ms: 2836.8359
+  type: 'test'
+  ...
+# Subtest: a missing lock prevents install and later gates, with a retained npm error
+ok 9 - a missing lock prevents install and later gates, with a retained npm error
+  ---
+  duration_ms: 918.8626
+  type: 'test'
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 8610.0523
