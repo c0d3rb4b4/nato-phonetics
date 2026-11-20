@@ -1,0 +1,141 @@
+{
+  "source": "Original raw PNG/native/UIAutomator capture; no modified images or relaxed predicates",
+  "excluded": [
+    {
+      "capture": "final-alphabet-light-2",
+      "tile": "alphabet-J",
+      "native": {
+        "x": 50,
+        "y": 71,
+        "width": 193,
+        "height": 263
+      },
+      "actualVisible": [
+        50,
+        189,
+        243,
+        334
+      ],
+      "reason": "Viewport/header clipping; not a full raster observation"
+    },
+    {
+      "capture": "final-alphabet-light-2",
+      "tile": "alphabet-K",
+      "native": {
+        "x": 264,
+        "y": 71,
+        "width": 192,
+        "height": 263
+      },
+      "actualVisible": [
+        264,
+        189,
+        456,
+        334
+      ],
+      "reason": "Viewport/header clipping; not a full raster observation"
+    },
+    {
+      "capture": "final-alphabet-light-2",
+      "tile": "alphabet-L",
+      "native": {
+        "x": 477,
+        "y": 71,
+        "width": 193,
+        "height": 263
+      },
+      "actualVisible": [
+        477,
+        189,
+        670,
+        334
+      ],
+      "reason": "Viewport/header clipping; not a full raster observation"
+    },
+    {
+      "capture": "final-alphabet-light-3",
+      "tile": "alphabet-M",
+      "native": {
+        "x": 50,
+        "y": 99,
+        "width": 193,
+        "height": 262
+      },
+      "actualVisible": [
+        50,
+        189,
+        243,
+        361
+      ],
+      "reason": "Viewport/header clipping; not a full raster observation"
+    },
+    {
+      "capture": "final-alphabet-light-3",
+      "tile": "alphabet-N",
+      "native": {
+        "x": 264,
+        "y": 99,
+        "width": 192,
+        "height": 262
+      },
+      "actualVisible": [
+        264,
+        189,
+        456,
+        361
+      ],
+      "reason": "Viewport/header clipping; not a full raster observation"
+    },
+    {
+      "capture": "final-alphabet-light-3",
+      "tile": "alphabet-O",
+      "native": {
+        "x": 477,
+        "y": 99,
+        "width": 193,
+        "height": 262
+      },
+      "actualVisible": [
+        477,
+        189,
+        670,
+        361
+      ],
+      "reason": "Viewport/header clipping; not a full raster observation"
+    },
+    {
+      "capture": "final-converter-dark-scale2-4",
+      "tile": "converter-2",
+      "native": {
+        "x": 168,
+        "y": 1069,
+        "width": 385,
+        "height": 525
+      },
+      "actualVisible": [
+        168,
+        1069,
+        553,
+        1558
+      ],
+      "reason": "Viewport/header clipping; not a full raster observation"
+    },
+    {
+      "capture": "final-converter-dark-scale2-6",
+      "tile": "converter-3",
+      "native": {
+        "x": 168,
+        "y": 121,
+        "width": 385,
+        "height": 525
+      },
+      "actualVisible": [
+        168,
+        204,
+        553,
+        646
+      ],
+      "reason": "Viewport/header clipping; not a full raster observation"
+    }
+  ]
+}

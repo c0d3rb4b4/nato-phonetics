@@ -1,0 +1,1788 @@
+{
+  "values": [
+    {
+      "id": "quiz-prompt",
+      "class": "com.facebook.react.views.text.ReactTextView",
+      "identity": 52074635,
+      "frame": {
+        "x": 28,
+        "y": 212,
+        "width": 504,
+        "height": 239,
+        "translationY": 0,
+        "shown": true,
+        "visible": [
+          28,
+          212,
+          532,
+          451
+        ]
+      },
+      "ancestors": [
+        {
+          "width": 560,
+          "height": 2268,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 788,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 830,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        }
+      ],
+      "text": "What is the phonetic word for this symbol?",
+      "includeFontPadding": true,
+      "paddingLeft": 0,
+      "paddingTop": 0,
+      "totalPaddingTop": 0,
+      "textSizePx": 46,
+      "lines": [
+        {
+          "baseline": 69,
+          "top": 0,
+          "bottom": 85,
+          "left": 0,
+          "right": 325,
+          "start": 0,
+          "end": 12
+        },
+        {
+          "baseline": 145,
+          "top": 85,
+          "bottom": 161,
+          "left": 0,
+          "right": 415.3984375,
+          "start": 12,
+          "end": 26
+        },
+        {
+          "baseline": 221,
+          "top": 161,
+          "bottom": 239,
+          "left": 0,
+          "right": 469,
+          "start": 26,
+          "end": 42
+        }
+      ],
+      "layoutClass": "android.text.StaticLayout",
+      "layoutHeight": 239,
+      "spans": [
+        {
+          "class": "com.facebook.react.views.text.internal.span.ReactTagSpan",
+          "start": 0,
+          "end": 42
+        },
+        {
+          "class": "com.facebook.react.views.text.internal.span.CustomStyleSpan",
+          "start": 0,
+          "end": 42,
+          "getStyle": 0,
+          "getWeight": 700
+        },
+        {
+          "class": "com.facebook.react.views.text.internal.span.ReactAbsoluteSizeSpan",
+          "start": 0,
+          "end": 42
+        },
+        {
+          "class": "com.facebook.react.views.text.internal.span.ReactForegroundColorSpan",
+          "start": 0,
+          "end": 42
+        }
+      ],
+      "resolvedTextSizePx": 65,
+      "resolvedTypefaceStyle": 1,
+      "resolvedTypefaceWeight": 700,
+      "resolvedLetterSpacing": 0
+    },
+    {
+      "id": "quiz-progress",
+      "class": "com.facebook.react.views.text.ReactTextView",
+      "identity": 10922261,
+      "frame": {
+        "x": 28,
+        "y": 486,
+        "width": 504,
+        "height": 126,
+        "translationY": 0,
+        "shown": true,
+        "visible": [
+          28,
+          486,
+          532,
+          612
+        ]
+      },
+      "ancestors": [
+        {
+          "width": 560,
+          "height": 2268,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 788,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 830,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        }
+      ],
+      "text": "Question 1 of 5 \u00b7 0 correct",
+      "includeFontPadding": true,
+      "paddingLeft": 0,
+      "paddingTop": 0,
+      "totalPaddingTop": 0,
+      "textSizePx": 28,
+      "lines": [
+        {
+          "baseline": 48,
+          "top": 0,
+          "bottom": 63,
+          "left": 0,
+          "right": 397,
+          "start": 0,
+          "end": 20
+        },
+        {
+          "baseline": 111,
+          "top": 63,
+          "bottom": 126,
+          "left": 0,
+          "right": 155.546875,
+          "start": 20,
+          "end": 27
+        }
+      ],
+      "layoutClass": "android.text.StaticLayout",
+      "layoutHeight": 126,
+      "spans": [
+        {
+          "class": "com.facebook.react.views.text.internal.span.ReactTagSpan",
+          "start": 0,
+          "end": 27
+        },
+        {
+          "class": "com.facebook.react.views.text.internal.span.CustomLineHeightSpan",
+          "start": 0,
+          "end": 27
+        },
+        {
+          "class": "com.facebook.react.views.text.internal.span.ReactAbsoluteSizeSpan",
+          "start": 0,
+          "end": 27
+        },
+        {
+          "class": "com.facebook.react.views.text.internal.span.ReactForegroundColorSpan",
+          "start": 0,
+          "end": 27
+        }
+      ],
+      "resolvedTextSizePx": 49,
+      "resolvedTypefaceStyle": 0,
+      "resolvedTypefaceWeight": 400,
+      "resolvedLetterSpacing": 0
+    },
+    {
+      "id": "quiz-card",
+      "class": "com.facebook.react.views.view.ReactViewGroup",
+      "identity": 87785090,
+      "frame": {
+        "x": 88,
+        "y": 633,
+        "width": 385,
+        "height": 525,
+        "translationY": 0,
+        "shown": true,
+        "visible": [
+          88,
+          633,
+          473,
+          1000
+        ]
+      },
+      "ancestors": [
+        {
+          "width": 504,
+          "height": 532,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 504,
+          "height": 532,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 2268,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 788,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 830,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        }
+      ],
+      "backgroundClass": "com.facebook.react.uimanager.drawable.CompositeBackgroundDrawable",
+      "radius": {
+        "value": 24,
+        "unit": "POINT"
+      }
+    },
+    {
+      "id": "quiz-card-header",
+      "class": "com.facebook.react.views.view.ReactViewGroup",
+      "identity": 91007379,
+      "frame": {
+        "x": 88,
+        "y": 633,
+        "width": 385,
+        "height": 210,
+        "translationY": 0,
+        "shown": true,
+        "visible": [
+          88,
+          633,
+          473,
+          843
+        ]
+      },
+      "ancestors": [
+        {
+          "width": 385,
+          "height": 525,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 504,
+          "height": 532,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 504,
+          "height": 532,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 2268,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 788,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 830,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        }
+      ],
+      "backgroundClass": "com.facebook.react.uimanager.drawable.CompositeBackgroundDrawable"
+    },
+    {
+      "id": "quiz-card-letter",
+      "class": "com.facebook.react.views.view.ReactViewGroup",
+      "identity": 94449104,
+      "frame": {
+        "x": 88,
+        "y": 647,
+        "width": 385,
+        "height": 175,
+        "translationY": 0,
+        "shown": true,
+        "visible": [
+          88,
+          647,
+          473,
+          822
+        ]
+      },
+      "ancestors": [
+        {
+          "width": 385,
+          "height": 525,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 504,
+          "height": 532,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 504,
+          "height": 532,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 2268,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 788,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 830,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        }
+      ]
+    },
+    {
+      "id": "quiz-letter",
+      "class": "com.facebook.react.views.text.ReactTextView",
+      "identity": 7737801,
+      "frame": {
+        "x": 88,
+        "y": 646.9539794921875,
+        "width": 385,
+        "height": 175,
+        "translationY": -0.04600190743803978,
+        "shown": true,
+        "visible": [
+          88,
+          646,
+          473,
+          822
+        ]
+      },
+      "ancestors": [
+        {
+          "width": 385,
+          "height": 525,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 504,
+          "height": 532,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 504,
+          "height": 532,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 2268,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 788,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 830,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        }
+      ],
+      "text": "X",
+      "includeFontPadding": false,
+      "paddingLeft": 0,
+      "paddingTop": 0,
+      "totalPaddingTop": 0,
+      "textSizePx": 120,
+      "lines": [
+        {
+          "baseline": 129,
+          "top": 0,
+          "bottom": 175,
+          "left": 149,
+          "right": 236,
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "layoutClass": "android.text.StaticLayout",
+      "layoutHeight": 175,
+      "spans": [
+        {
+          "class": "com.facebook.react.views.text.internal.span.ReactTagSpan",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "class": "com.facebook.react.views.text.internal.span.CustomLineHeightSpan",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "class": "com.facebook.react.views.text.internal.span.CustomStyleSpan",
+          "start": 0,
+          "end": 1,
+          "getFontFamily": "NatoTile-ExtraBold",
+          "getStyle": 0,
+          "getWeight": 800
+        },
+        {
+          "class": "com.facebook.react.views.text.internal.span.ReactAbsoluteSizeSpan",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "class": "com.facebook.react.views.text.internal.span.CustomLetterSpacingSpan",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "class": "com.facebook.react.views.text.internal.span.ReactForegroundColorSpan",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "resolvedTextSizePx": 126,
+      "resolvedTypefaceStyle": 1,
+      "resolvedTypefaceWeight": 800,
+      "resolvedLetterSpacing": 0
+    },
+    {
+      "id": "quiz-answer",
+      "class": "com.facebook.react.views.view.ReactViewGroup",
+      "identity": 103219406,
+      "frame": {
+        "x": 88,
+        "y": 843,
+        "width": 385,
+        "height": 315,
+        "translationY": 0,
+        "shown": true,
+        "visible": [
+          88,
+          843,
+          473,
+          1000
+        ]
+      },
+      "ancestors": [
+        {
+          "width": 385,
+          "height": 525,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 504,
+          "height": 532,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 504,
+          "height": 532,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 2268,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 788,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 830,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        }
+      ]
+    },
+    {
+      "id": "quiz-card-word",
+      "class": "com.facebook.react.views.view.ReactViewGroup",
+      "identity": 180622926,
+      "frame": {
+        "x": 116,
+        "y": 924,
+        "width": 329,
+        "height": 77,
+        "translationY": 0,
+        "shown": true,
+        "visible": [
+          116,
+          924,
+          445,
+          1000
+        ]
+      },
+      "ancestors": [
+        {
+          "width": 385,
+          "height": 525,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 504,
+          "height": 532,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 504,
+          "height": 532,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 2268,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 788,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 830,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        }
+      ]
+    },
+    {
+      "id": "quiz-card-word-run",
+      "class": "com.facebook.react.views.text.ReactTextView",
+      "identity": 43873135,
+      "frame": {
+        "x": 116,
+        "y": 923.4240112304688,
+        "width": 329,
+        "height": 77,
+        "translationY": -0.5760009288787842,
+        "shown": true,
+        "visible": [
+          116,
+          923,
+          445,
+          1000
+        ]
+      },
+      "ancestors": [
+        {
+          "width": 385,
+          "height": 525,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 504,
+          "height": 532,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 504,
+          "height": 532,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 2268,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 788,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 830,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        }
+      ],
+      "text": "X-ray",
+      "includeFontPadding": false,
+      "paddingLeft": 0,
+      "paddingTop": 0,
+      "totalPaddingTop": 0,
+      "textSizePx": 34,
+      "lines": [
+        {
+          "baseline": 57,
+          "top": 0,
+          "bottom": 77,
+          "left": 95,
+          "right": 234,
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "layoutClass": "android.text.StaticLayout",
+      "layoutHeight": 77,
+      "spans": [
+        {
+          "class": "com.facebook.react.views.text.internal.span.ReactTagSpan",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "class": "com.facebook.react.views.text.internal.span.CustomLineHeightSpan",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "class": "com.facebook.react.views.text.internal.span.CustomStyleSpan",
+          "start": 0,
+          "end": 5,
+          "getFontFamily": "NatoTile-SemiBold",
+          "getStyle": 0,
+          "getWeight": 600
+        },
+        {
+          "class": "com.facebook.react.views.text.internal.span.ReactAbsoluteSizeSpan",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "class": "com.facebook.react.views.text.internal.span.CustomLetterSpacingSpan",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "class": "com.facebook.react.views.text.internal.span.ReactForegroundColorSpan",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "resolvedTextSizePx": 56,
+      "resolvedTypefaceStyle": 1,
+      "resolvedTypefaceWeight": 600,
+      "resolvedLetterSpacing": 0
+    },
+    {
+      "id": "quiz-card-pronunciation",
+      "class": "com.facebook.react.views.view.ReactViewGroup",
+      "identity": 219162748,
+      "frame": {
+        "x": 116,
+        "y": 1022,
+        "width": 329,
+        "height": 56,
+        "translationY": 0,
+        "shown": false,
+        "visible": [
+          116,
+          1022,
+          445,
+          1078
+        ]
+      },
+      "ancestors": [
+        {
+          "width": 385,
+          "height": 525,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 504,
+          "height": 532,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 504,
+          "height": 532,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 2268,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 788,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 830,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        }
+      ]
+    },
+    {
+      "id": "quiz-card-pronunciation-run",
+      "class": "com.facebook.react.views.text.ReactTextView",
+      "identity": 136262917,
+      "frame": {
+        "x": 116,
+        "y": 1021.16650390625,
+        "width": 329,
+        "height": 56,
+        "translationY": -0.8334985375404358,
+        "shown": false,
+        "visible": [
+          116,
+          1021,
+          445,
+          1078
+        ]
+      },
+      "ancestors": [
+        {
+          "width": 385,
+          "height": 525,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 504,
+          "height": 532,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 504,
+          "height": 532,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 2268,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 788,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 830,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        }
+      ],
+      "text": "ECKS-ray",
+      "includeFontPadding": false,
+      "paddingLeft": 0,
+      "paddingTop": 0,
+      "totalPaddingTop": 0,
+      "textSizePx": 20,
+      "lines": [
+        {
+          "baseline": 41,
+          "top": 0,
+          "bottom": 56,
+          "left": 80,
+          "right": 249,
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "layoutClass": "android.text.StaticLayout",
+      "layoutHeight": 56,
+      "spans": [
+        {
+          "class": "com.facebook.react.views.text.internal.span.ReactTagSpan",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "class": "com.facebook.react.views.text.internal.span.CustomLineHeightSpan",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "class": "com.facebook.react.views.text.internal.span.CustomStyleSpan",
+          "start": 0,
+          "end": 8,
+          "getFontFamily": "NatoTile-Italic",
+          "getStyle": 2,
+          "getWeight": 400
+        },
+        {
+          "class": "com.facebook.react.views.text.internal.span.ReactAbsoluteSizeSpan",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "class": "com.facebook.react.views.text.internal.span.CustomLetterSpacingSpan",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "class": "com.facebook.react.views.text.internal.span.ReactForegroundColorSpan",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "resolvedTextSizePx": 39,
+      "resolvedTypefaceStyle": 2,
+      "resolvedTypefaceWeight": 400,
+      "resolvedLetterSpacing": 0
+    },
+    {
+      "id": "quiz-choice-0",
+      "class": "com.facebook.react.views.view.ReactViewGroup",
+      "identity": 4595640,
+      "frame": {
+        "x": 28,
+        "y": 1186,
+        "width": 504,
+        "height": 172,
+        "translationY": 0,
+        "shown": false,
+        "visible": [
+          28,
+          1186,
+          532,
+          1358
+        ]
+      },
+      "ancestors": [
+        {
+          "width": 560,
+          "height": 2268,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 788,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 830,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        }
+      ],
+      "backgroundClass": "com.facebook.react.uimanager.drawable.CompositeBackgroundDrawable",
+      "radius": {
+        "value": 12,
+        "unit": "POINT"
+      }
+    },
+    {
+      "id": "quiz-choice-1",
+      "class": "com.facebook.react.views.view.ReactViewGroup",
+      "identity": 198558097,
+      "frame": {
+        "x": 28,
+        "y": 1376,
+        "width": 504,
+        "height": 115,
+        "translationY": 0,
+        "shown": false,
+        "visible": [
+          28,
+          1376,
+          532,
+          1491
+        ]
+      },
+      "ancestors": [
+        {
+          "width": 560,
+          "height": 2268,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 788,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 830,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        }
+      ],
+      "backgroundClass": "com.facebook.react.uimanager.drawable.CompositeBackgroundDrawable",
+      "radius": {
+        "value": 12,
+        "unit": "POINT"
+      }
+    },
+    {
+      "id": "quiz-choice-2",
+      "class": "com.facebook.react.views.view.ReactViewGroup",
+      "identity": 35899638,
+      "frame": {
+        "x": 28,
+        "y": 1508,
+        "width": 504,
+        "height": 115,
+        "translationY": 0,
+        "shown": false,
+        "visible": [
+          28,
+          1508,
+          532,
+          1623
+        ]
+      },
+      "ancestors": [
+        {
+          "width": 560,
+          "height": 2268,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 788,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 830,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        }
+      ],
+      "backgroundClass": "com.facebook.react.uimanager.drawable.CompositeBackgroundDrawable",
+      "radius": {
+        "value": 12,
+        "unit": "POINT"
+      }
+    },
+    {
+      "id": "quiz-choice-3",
+      "class": "com.facebook.react.views.view.ReactViewGroup",
+      "identity": 79410423,
+      "frame": {
+        "x": 28,
+        "y": 1641,
+        "width": 504,
+        "height": 115,
+        "translationY": 0,
+        "shown": false,
+        "visible": [
+          28,
+          1641,
+          532,
+          1756
+        ]
+      },
+      "ancestors": [
+        {
+          "width": 560,
+          "height": 2268,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 788,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 830,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        }
+      ],
+      "backgroundClass": "com.facebook.react.uimanager.drawable.CompositeBackgroundDrawable",
+      "radius": {
+        "value": 12,
+        "unit": "POINT"
+      }
+    },
+    {
+      "id": "quiz-next",
+      "class": "com.facebook.react.views.view.ReactViewGroup",
+      "identity": 239855440,
+      "frame": {
+        "x": 28,
+        "y": 1889,
+        "width": 504,
+        "height": 115,
+        "translationY": 0,
+        "shown": false,
+        "visible": [
+          28,
+          1889,
+          532,
+          2004
+        ]
+      },
+      "ancestors": [
+        {
+          "width": 560,
+          "height": 2268,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 788,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 830,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        },
+        {
+          "width": 560,
+          "height": 1000,
+          "visibility": 0,
+          "alpha": 1
+        }
+      ],
+      "backgroundClass": "com.facebook.react.uimanager.drawable.CompositeBackgroundDrawable",
+      "radius": {
+        "value": 12,
+        "unit": "POINT"
+      }
+    }
+  ],
+  "activityIdentity": 234133299,
+  "dimensions": {
+    "density": 1.75,
+    "fontScale": 2
+  },
+  "baselineSource": "Actual Android TextView Layout.getLineBaseline + totalPaddingTop + transformMatrixToGlobal; physical pixels",
+  "timestampMillis": 1795177478506,
+  "candidateSha256": "5dfa45d22b562ddb03fffcbeb16b16bf0392197d69e92320437d5a1ab22ae129"
+}

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "docs/evidence/run30/android/observe-product.py",
+    "--windows"
+  ],
+  "cwd": "/Users/mac/dev/apps/nato-phonetics",
+  "startedAt": "2026-11-20T12:21:46.986843+00:00",
+  "availableBytesBefore": 333578240,
+  "exitCode": 0,
+  "durationSeconds": 223.04472983300002,
+  "availableBytesAfter": 322809856,
+  "finishedAt": "2026-11-20T12:25:30.033036+00:00"
+}

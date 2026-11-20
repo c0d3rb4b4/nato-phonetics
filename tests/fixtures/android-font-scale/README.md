@@ -117,3 +117,33 @@ After collecting evidence, restore the intended product APK without data clear,
 remove only the collected owned external `font-fixture-*` exports, and restore
 ordinary Metro for an initial Debug product. This tooling does not close full
 Release tile baseline/raster/application/window or default-build integration.
+
+## Untouched production Release tile observer (Run30)
+
+`TileLayoutInstrumentation` is a separate test-APK entry. It starts the real
+product, then responds to owned external `tile-observer/request.json` commands
+with actual native view frames/transforms, Android Layout line baselines,
+font spans/resolved paint sizes, corner radii and native identities. It skips
+non-visible/zero-sized retained screen ancestors. No inspector, synthetic JS
+measurement, app root replacement or product source change is used. The
+external command name must be a simple filename; timeout/failure is explicit.
+Host `adb exec-out screencap -p` supplies actual screenshots without competing
+UIAutomation sessions.
+
+The maintained `scripts/check-android-release-tiles.cjs` requires complete
+parts/content, actual typography, strict1physical-pixel outer geometry and
+transformed baseline measurements. `--windows` additionally requires all7
+window stages and the same Activity/native tiles. `--narrow` checks the complete
+narrow sample. Full acceptance also needs the unchanged Run07/27 ink checker,
+glyph metrics and original context/part coverage. Native getGlobalVisibleRect
+alone can include tiles behind the fixed header: qualify raster rectangles
+with actual captured UIAutomator clipping, as the original collector does.
+
+Build the test APK with `scripts/build-android-font-instrumentation.py` using
+the pinned environment. [Run30 candidate-specific driver/evidence](../../../docs/evidence/run30/README.md)
+records505context/93window/21narrow baselines and217ink observations,30actual
+inspected captures and retained failed attempts. Adapt its paths/output into a
+new run before reuse; never overwrite archived evidence. Collect owned exports,
+restore initial product/settings/entry without data clear and stop owned tools.
+This does not integrate the repair into ordinary default builds or perform
+broader supported-runtime, physical/AT/provider/distribution/M11 acceptance.

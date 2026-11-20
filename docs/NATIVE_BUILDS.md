@@ -1,6 +1,8 @@
 # Direct native builds
 
-**Run29 current Android checkpoint — 20 November 2026:** an inspector-free, test-only Release fixture/native observer now passes60 strict frame/widget comparisons,12resize/12narrow and3edit checks on the exact preserved Release native/Hermes payload.487 other non-signature APK entries, including dependency metadata, match the original. Scoped unchanged production Release converter/submitted quiz/Next samples,12tests/lint and40inspected actual captures pass. Full production Release baseline/ink/context/window acceptance, ordinary clean/default integration and other ABI runtime remain open P1. Initial tool/packaging failures are retained and corrected final qualification is separate. [Evidence](evidence/run29/README.md), [captures](evidence/run29/screenshots/index.md), [next P1](evidence/run29/android/next-android.md).
+**Run30 current Android checkpoint — 20 November 2026:** original complete production Release tile contexts on unchanged APK5dfa45d2 now pass505 actual native baselines/217 ink observations, with93 scoped window and21 complete-narrow baselines, retained converter/quiz state and explicit Next.30 actual Android captures inspected.11 scoped tests/lint pass; observer/selection failures remain archived. Ordinary clean/default source integration and exact-artifact retests are next P1; broader runtime/integrated/M11 acceptance remains open. Default Maven retains the historical defect. [Evidence](evidence/run30/README.md), [screenshots](evidence/run30/screenshots/index.md), [next Android](evidence/run30/android/next-android.md).
+
+**Historical Run29 Android checkpoint — 20 November 2026:** an inspector-free, test-only Release fixture/native observer now passes60 strict frame/widget comparisons,12resize/12narrow and3edit checks on the exact preserved Release native/Hermes payload.487 other non-signature APK entries, including dependency metadata, match the original. Scoped unchanged production Release converter/submitted quiz/Next samples,12tests/lint and40inspected actual captures pass. Full production Release baseline/ink/context/window acceptance, ordinary clean/default integration and other ABI runtime remain open P1. Initial tool/packaging failures are retained and corrected final qualification is separate. [Evidence](evidence/run29/README.md), [captures](evidence/run29/screenshots/index.md), [next P1](evidence/run29/android/next-android.md).
 
 
 The repository owns `android/` and `ios/`. They originate from the official [`@react-native-community/template@0.81.5`](https://www.npmjs.com/package/@react-native-community/template/v/0.81.5), adapted directly without prebuild. Gradle, CocoaPods and Xcode call React Native's own CLI/scripts. Eclipse Timer's local artifact pattern informed this setup; its hosted-build integrations were not copied.
@@ -385,3 +387,34 @@ All three direct CLI packages are pinned to20.2.0; the CLI family uses patched f
 Fresh locked npm and Pods installation, 151 tests/types/lint/Expo-free graph, real workspace discovery and local Android Debug/four-ABI unsigned Release/unsigned iOS simulator builds pass. Retrieved/installed default-scale converter/Menu/reference scopes and actual captures are [identified](evidence/run23/candidate.json). Raw audit/review now pass0 with zero findings. The first Pods command failed because vendor/bundle is absent on this host; select the existing Ruby 3.3 gem environment rather than setting BUNDLE_PATH to a nonexistent directory. The successful locked retry changes no Pod lock or native project. Clean installation refreshes native-source timestamps and can require a longer recompilation than a cached build.
 
 All eight Android framework-library hashes match Run22; no Android live-sizing fix is implied. Existing guarded speech/Yoga patches still apply after npm ci. Final native/physical/runtime/provider/signing/remote/integrated gates remain unfinished. Standard build entry points and publication boundaries are unchanged; no Expo/EAS path is introduced.
+
+## Inspector-free production Release tile observation — Run30
+
+The separate `TileLayoutInstrumentation` test-APK entry observes actual native
+Layout baselines, transforms, typography/spans/resolved paint and corner radius
+on the unchanged non-debuggable product. It prunes inactive/zero-sized native
+ancestors; host adb supplies real screenshots. Use actual UIAutomator clipping
+to select complete raster tiles, since native getGlobalVisibleRect can include
+content covered by a fixed header. No inspector/product JS/root change is used.
+
+```sh
+python3 scripts/build-android-font-instrumentation.py NEW_TEST_OUTPUT
+node scripts/check-android-release-tiles.cjs NEW_EVIDENCE
+node scripts/check-android-release-tiles.cjs NEW_EVIDENCE --windows
+node scripts/check-android-release-tiles.cjs NEW_EVIDENCE --narrow
+```
+
+Use pinned JDK17/SDK36/Node22 and the same local development signature as the
+engineering product copy. The [Run30 driver](evidence/run30/android/observe-product.py)
+is deliberately candidate/path-specific; adapt artifacts/output to a new run
+before reuse and never overwrite archived captures/reports. Both strict native
+and unchanged original ink/context-completeness gates are required.
+
+Run30 passes505context/93window/21narrow native baselines and217ink observations,
+with30inspected actual images. Original observer/API/reflection/selection
+failures remain archived; initial product/numeric settings/Gboard restored,
+owned exports collected/removed and tools stopped. Exact pre-run theme was not
+independently recorded. [Scope/evidence](evidence/run30/README.md). This qualifies
+the recorded opt-in Release scopes; ordinary clean/default integration and
+exact-artifact retests, broader runtime and integrated/M11 acceptance remain
+open. [Next concrete engineering](evidence/run30/android/next-android.md).

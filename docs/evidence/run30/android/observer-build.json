@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "scripts/build-android-font-instrumentation.py",
+    "artifacts/run30/instrumentation"
+  ],
+  "cwd": "/Users/mac/dev/apps/nato-phonetics",
+  "startedAt": "2026-11-20T12:10:28.785993+00:00",
+  "availableBytesBefore": 3800829952,
+  "exitCode": 0,
+  "durationSeconds": 4.200248042,
+  "availableBytesAfter": 3800530944,
+  "finishedAt": "2026-11-20T12:10:32.986317+00:00"
+}
