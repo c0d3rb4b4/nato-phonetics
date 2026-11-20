@@ -314,7 +314,7 @@ Initial forecast: A S–M, B M–L with high first-build uncertainty, C/D/E L/hi
 
 #### Branch-triggered app builds
 
-**Release layout update, 20 November 2026.** The owner chose the Eclipse Timer download layout for P10.8. Develop publishes one verified standalone APK as a GitHub prerelease. The approved workflow on `main` publishes the signed Android APK, AAB and iOS IPA together. The earlier matrix below records the Run 33 qualification path. Production signing and acceptance remain M11.7. [Current runbook](RELEASE_RUNBOOK.md#branch-builds-and-downloads).
+**Release layout update, 20 November 2026.** The owner chose the Eclipse Timer download layout for P10.8. Develop publishes one verified standalone APK as a GitHub prerelease. The approved workflow on `main` publishes the signed Android APK, AAB and iOS IPA together. The earlier matrix below records the Run 33 qualification path. Production signing and acceptance remain M11.7. [Current runbook](RELEASE_RUNBOOK.md#branch-builds-and-downloads) and [first published APK and verification](evidence/2026-11-20-release-layout.md).
 
 **20 November 2026 · Selected for the next pipeline batch.** Use Eclipse Timer's automatic `develop` APK and `main` mobile build as the workflow model. Extend NATO's existing native workflow and shared entry points. Carry over branch triggers, manual reruns, concurrency, toolchain setup and traceable artifact uploads. Keep the current Gradle, Xcode and web commands. [Eclipse Timer dev APK](../../eclipse-timer/.github/workflows/develop-apk-release.yml), [main mobile build](../../eclipse-timer/.github/workflows/eas-build.yml), [runner guide](../../eclipse-timer/documents/planning/self-hosted-macos-runner.md).
 

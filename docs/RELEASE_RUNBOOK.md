@@ -97,7 +97,7 @@ After the workflow reaches the default branch, use `gh workflow run develop-apk-
 
 ### Configure approved production signing
 
-Restrict the GitHub `production-release` environment to `main`, add the M11.7 approver as a required reviewer, and set its `MOBILE_RELEASE_ENABLED` variable to `true` once the signing inputs are in place. Supply these fields in the environment.
+The GitHub `production-release` environment is restricted to `main` and requires repository owner approval for M11.7. Supply the signing inputs in that environment.
 
 | Input | Value |
 |---|---|

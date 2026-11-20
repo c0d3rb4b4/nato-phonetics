@@ -421,7 +421,7 @@ R06/R07/R14/R20/R24/R25 gained qualified Android build, input and layout evidenc
 
 ### App build pipeline follow-up
 
-**Release layout update, 20 November 2026.** R14/R20/R24 now use GitHub Releases for app downloads. The develop workflow publishes only the standalone APK. An approved production run publishes the signed APK, AAB and IPA. PR and manual CI retain the browser checks. [Release runbook](RELEASE_RUNBOOK.md#branch-builds-and-downloads).
+**Release layout update, 20 November 2026.** R14/R20/R24 now use GitHub Releases for app downloads. The develop workflow publishes only the standalone APK. An approved production run publishes the signed APK, AAB and IPA. PR and manual CI retain the browser checks. The first public APK was retrieved and verified. [Release evidence](evidence/2026-11-20-release-layout.md) and [runbook](RELEASE_RUNBOOK.md#branch-builds-and-downloads).
 
 **20 November 2026 · R14/R20/R24 · P2, active/partial.** The CI run in `logs_121193232675` covered quality, browser support and web distribution. Native builds live in a separate manual workflow. Eclipse Timer automatically produces a development APK on `develop` and runs its mobile build on `main`. NATO's gap is the branch-triggered build and artifact workflow. The shared build commands and manual native jobs already exist. [CI](../.github/workflows/ci.yml), [manual native builds](../.github/workflows/native-builds.yml), [Eclipse Timer dev APK](../../eclipse-timer/.github/workflows/develop-apk-release.yml), [Eclipse Timer main build](../../eclipse-timer/.github/workflows/eas-build.yml).
 

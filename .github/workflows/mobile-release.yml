@@ -37,7 +37,6 @@ jobs:
       - name: Check the requested version and signing inputs
         env:
           RELEASE_VERSION: ${{ inputs.version }}
-          APPROVED: ${{ vars.MOBILE_RELEASE_ENABLED }}
           ANDROID_KEYSTORE: ${{ secrets.ANDROID_KEYSTORE }}
           NATO_UPLOAD_STORE_PASSWORD: ${{ secrets.NATO_UPLOAD_STORE_PASSWORD }}
           NATO_UPLOAD_KEY_ALIAS: ${{ secrets.NATO_UPLOAD_KEY_ALIAS }}
@@ -49,7 +48,6 @@ jobs:
           IOS_EXPORT_OPTIONS: ${{ secrets.IOS_EXPORT_OPTIONS }}
         run: |
           node -e 'const v = require("./package.json").version; if (!/^\d+\.\d+\.\d+$/.test(v) || process.env.RELEASE_VERSION !== v) throw Error("Select the package version on main.")'
-          [[ "$APPROVED" == true ]] || { echo "Release approval environment is unconfigured."; exit 1; }
           : "${ANDROID_KEYSTORE:?}" "${NATO_UPLOAD_STORE_PASSWORD:?}" "${NATO_UPLOAD_KEY_ALIAS:?}" "${NATO_UPLOAD_KEY_PASSWORD:?}"
           : "${IOS_CERTIFICATE:?}" "${IOS_CERTIFICATE_PASSWORD:?}" "${IOS_PROFILE:?}" "${IOS_SIGNING_CONFIG:?}" "${IOS_EXPORT_OPTIONS:?}"
       - uses: ruby/setup-ruby@v1
