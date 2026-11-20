@@ -1,0 +1,51 @@
+name: P10.8 hosted toolchain qualification
+on:
+  push:
+    branches: [qualification/p10-8-hosts]
+permissions:
+  contents: read
+jobs:
+  preflight:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { runner: ubuntu-24.04, mode: android-debug }
+          - { runner: macos-26, mode: ios-simulator }
+    runs-on: ${{ matrix.runner }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+      - run: npm install --global npm@10.9.4
+      - if: runner.os == 'Linux'
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - if: runner.os == 'Linux'
+        run: |
+          df -h .
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'platforms;android-36' 'build-tools;36.0.0' 'ndk;27.1.12297006' 'cmake;3.22.1'
+          ls -l /dev/kvm
+      - if: runner.os == 'macOS'
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: .ruby-version
+          bundler: 2.4.22
+      - if: runner.os == 'macOS'
+        run: |
+          ls -d /Applications/Xcode*.app
+          echo 'DEVELOPER_DIR=/Applications/Xcode_26.2.app/Contents/Developer' >> "$GITHUB_ENV"
+      - if: runner.os == 'macOS'
+        run: xcrun simctl list runtimes
+      - run: node scripts/host-build.cjs ${{ matrix.mode }} --install --preflight-only --output artifacts/preflight
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: preflight-${{ matrix.mode }}
+          path: artifacts/preflight/
+          if-no-files-found: warn
