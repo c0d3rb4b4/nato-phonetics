@@ -44,11 +44,14 @@ function prepareAndroidSource(packageFile = require.resolve('react-native/packag
     const bytes = fs.readFileSync(target);
     const digest = sha(bytes);
     if (digest === file.patchedSha256) continue;
-    if (digest !== file.originalSha256) throw new Error(`Source build context drift: ${file.path}`);
+    const upgrade = digest === file.previousPatchedSha256;
+    if (!upgrade && digest !== file.originalSha256) throw new Error(`Source build context drift: ${file.path}`);
     let source = bytes.toString('utf8');
     for (const change of file.changes) {
-      if (source.split(change.before).length !== 2) throw new Error(`Ambiguous source build patch: ${file.path}`);
-      source = source.replace(change.before, () => change.after);
+      const context = upgrade ? change.previous ?? change.after : change.before;
+      if (context === change.after) continue;
+      if (source.split(context).length !== 2) throw new Error(`Ambiguous source build patch: ${file.path}`);
+      source = source.replace(context, () => change.after);
     }
     if (sha(source) !== file.patchedSha256) throw new Error(`Source build output drift: ${file.path}`);
     writes.push({target, source});

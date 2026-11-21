@@ -1,19 +1,26 @@
 {
   "version": "0.81.5",
-  "purpose": "Source diagnostic ReactAndroid build uses the same pinned Maven Hermes prefab as the application; does not rebuild or substitute Hermes. Avoids upstream archive extraction assuming facebook-hermes after repository transfer to meta-hermes.",
+  "purpose": "Source diagnostic ReactAndroid build uses the same pinned Maven Hermes prefab as the application; does not rebuild or substitute Hermes. Avoids upstream archive extraction assuming facebook-hermes after repository transfer to meta-hermes. Bounds the ReactAndroid CMake compile pool independently of Gradle, with one compiler by default.",
   "files": [
     {
       "path": "ReactAndroid/build.gradle.kts",
       "originalSha256": "5952837bf95b550324b2f38bde8be85478d01e19b3d5bc5d1e31468889b2ca73",
-      "patchedSha256": "5a3dec03ed103f20bc51835d8dbf8a02edc9f2c04b47903bc0d4944ecbb25402",
+      "previousPatchedSha256": "5a3dec03ed103f20bc51835d8dbf8a02edc9f2c04b47903bc0d4944ecbb25402",
+      "patchedSha256": "5211e88cd50a08ba1ba059ceb5f7c90a057c006f2193cbb21a516ed28c99e871",
       "changes": [
         {
           "before": "compileOnly(project(\":packages:react-native:ReactAndroid:hermes-engine\"))",
           "after": "compileOnly(\"com.facebook.react:hermes-android:0.81.5\")"
         },
         {
+          "before": "        arguments(\n            \"-DREACT_COMMON_DIR=",
+          "previous": "        arguments(\n            \"-DREACT_COMMON_DIR=",
+          "after": "        val compileJobs = System.getenv(\"NATO_ANDROID_COMPILE_JOBS\") ?: \"1\"\n        require(compileJobs in listOf(\"1\", \"2\", \"3\", \"4\")) {\n          \"NATO_ANDROID_COMPILE_JOBS must be an integer from 1 to 4\"\n        }\n        arguments(\n            \"-DREACT_COMMON_DIR="
+        },
+        {
           "before": "            \"-DCMAKE_POLICY_DEFAULT_CMP0069=NEW\")",
-          "after": "            \"-DCMAKE_JOB_POOLS=nato_compile=1;nato_link=1\",\n            \"-DCMAKE_JOB_POOL_COMPILE=nato_compile\",\n            \"-DCMAKE_JOB_POOL_LINK=nato_link\",\n            \"-DCMAKE_POLICY_DEFAULT_CMP0069=NEW\")"
+          "previous": "            \"-DCMAKE_JOB_POOLS=nato_compile=1;nato_link=1\",\n            \"-DCMAKE_JOB_POOL_COMPILE=nato_compile\",\n            \"-DCMAKE_JOB_POOL_LINK=nato_link\",\n            \"-DCMAKE_POLICY_DEFAULT_CMP0069=NEW\")",
+          "after": "            \"-DCMAKE_JOB_POOLS=nato_compile=$compileJobs;nato_link=1\",\n            \"-DCMAKE_JOB_POOL_COMPILE=nato_compile\",\n            \"-DCMAKE_JOB_POOL_LINK=nato_link\",\n            \"-DCMAKE_POLICY_DEFAULT_CMP0069=NEW\")"
         }
       ]
     }

@@ -28,9 +28,10 @@ switch (mode) {
       'android-release': [':app:verifyReleaseRenderer', ':app:assembleRelease', ':app:bundleRelease'],
     };
     const args = [...tasks[mode], '--no-daemon', `--max-workers=${jobs}`];
+    if (process.env.NATO_GRADLE_PROFILE === '1') args.push('--profile');
     const android = path.join(root, 'android');
     // Windows runs the tracked batch wrapper through cmd. Only the fixed
-    // tasks and the validated worker count are passed to the shell.
+    // tasks, validated worker count and fixed flags are passed to the shell.
     if (process.platform === 'win32') run('cmd.exe', ['/d', '/c', '.\\gradlew.bat', ...args], android);
     else run('./gradlew', args, android);
     break;

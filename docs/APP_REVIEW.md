@@ -164,9 +164,9 @@ The quiz uses a non-scrollable root `View`, a 240-pixel card, a 40-pixel gap and
 
 The reference also fixes cards at 110×150 with hidden overflow ([app/alphabet.js](../app/alphabet.js), lines 63–72); converter cards have fixed dimensions. These create further large-text risks. Android edge-to-edge is enabled, but active screens do not explicitly handle bottom insets; verify native system-bar overlap rather than assuming it occurs.
 
-**Action:** Add safe-area-aware scrolling, flexible card heights and responsive spacing; constrain wide desktop/tablet content for readability. **Acceptance:** Every answer and feedback state remains reachable at 320×568, at 200% text scaling and with supported native accessibility text sizes; test keyboard-visible converter, Android gesture navigation, iPhone insets and supported tablets.
+**Action:** Use safe-area-aware scrolling, wrapping controls and a readable content width. Reflow the grid or scale the complete NATO tile proportionally under R25. Keep the bottom tabs and task controls reachable. **Acceptance:** Every answer and feedback state remains reachable at 320×568, at 200% text scaling and with supported native accessibility text sizes; test keyboard-visible converter, Android gesture navigation, iPhone insets and supported tablets.
 
-**Current plan amendment:** R25 supersedes flexible heights for NATO tiles: scale the complete portrait tile proportionally, reflow the grid and allow scrolling. Preserve this finding's reachability and large-text requirements without stretching tiles or moving their internal content independently.
+**Design reference.** The [tile specification](TILE_DESIGN.md) governs geometry and type. The [uniform UI design language](UI_DESIGN_LANGUAGE.md#shared-patterns) governs surrounding controls, layout and focus.
 
 ### R08 — Triage and update vulnerable locked dependencies
 
@@ -195,7 +195,7 @@ Installed-source inspection places React Native DevTools behind `__DEV__`. For U
 
 [src/lib/speech.js](../src/lib/speech.js), lines 5–25, resolves both success and error. If reading the stored voice fails, execution never reaches `Speech.speak`; the helper logs text and resolves. An isolated test confirmed zero speech calls for this failure. Only `onDone` and `onError` settle the promise; a stopped event leaves it pending.
 
-**Action:** Fall back to the default voice when preference reads fail, return explicit completed/failed/cancelled outcomes, settle `onStopped`, and provide a bounded recovery path for missing callbacks. Surface useful retry/troubleshooting feedback, including device-specific audio restrictions, without logging entered content unnecessarily. **Acceptance:** Storage errors do not silence otherwise available speech; engine errors are visible; cancellation settles once and never resumes the old phrase.
+**Action:** Fall back to the default voice when preference reads fail, return explicit completed/failed/cancelled outcomes, settle `onStopped`, and provide a bounded recovery path for missing callbacks. Surface audio failures in a dismissible notice with a reachable recovery action. Keep the playback control and surrounding layout stable. Preserve troubleshooting guidance for device-specific audio restrictions and avoid logging entered content. **Acceptance:** Storage errors do not silence otherwise available speech; engine errors are visible; cancellation settles once and never resumes the old phrase.
 
 ### R10 — Let learners control quiz progression and clean up callbacks
 
@@ -203,7 +203,7 @@ Installed-source inspection places React Native DevTools behind `__DEV__`. For U
 
 [app/letter-quiz.js](../app/letter-quiz.js), lines 84–100, starts a 700 ms animation, then speech, plus a separate 2,000/2,500 ms transition timer. Feedback gets only approximately 1.3/1.8 seconds after the animation, independent of speech completion. No timeout/animation cleanup or focus handling exists. Answering and immediately opening Menu can allow speech and advancement on the covered screen.
 
-**Action:** Prefer explicit Next and Replay actions; make auto-advance optional. Cancel animation/timer/speech ownership on blur or unmount, and ignore cancelled animation callbacks. **Acceptance:** Feedback stays until acknowledged in manual mode; slow speech does not overlap the next question; leaving during the flip cannot trigger stale audio or advance an inactive session.
+**Action.** Keep answer feedback visible until the learner chooses Next or opens results. Use the shared Play/Stop control for replay. Release owned audio and callbacks when leaving the quiz. **Acceptance.** Playback leaves the feedback and Next control in place. Leaving or stopping never advances an inactive question or resumes stale audio.
 
 ### R11 — Generate unique, unambiguous and fairly shuffled options
 
@@ -221,7 +221,7 @@ Both option and distractor shuffles use `sort(() => Math.random() - 0.5)` at lin
 
 [app/voice-select.js](../app/voice-select.js), lines 20–30, hides all standard English voices if any enhanced English voice exists. There is no System Default option or recovery from a removed saved voice. The initial empty array displays “No English voices” during loading (lines 83–88). Selection updates before storage succeeds (lines 56–67), so a failure can leave a checkmark on an unsaved choice. A delayed initial preference read can overwrite newer UI state. Settings does not reset its label when a saved identifier is missing ([app/settings.js](../app/settings.js), lines 22–29).
 
-**Action:** Show all eligible voices, group by locale/quality, offer System Default, validate saved identifiers, and distinguish loading/empty/error states with Retry. Serialize or guard preference updates; rollback or explain failed saves. Align the chosen voice's locale with playback options. **Acceptance:** Test mixed-quality voices, no voices, delayed enumeration, removed voices, storage failures and rapid selections; displayed and persisted selections always agree.
+**Action:** Show eligible voices with compact locale headings and wrapping filters. Keep System Default visible. Give each voice a clearly selected row and a separate Play/Stop preview. Validate saved identifiers and distinguish loading, empty and error states with a nearby Retry action. Serialize or guard preference updates; rollback or explain failed saves. Align the chosen voice's locale with playback options. **Acceptance:** Test mixed-quality voices, no voices, delayed enumeration, removed voices, storage failures and rapid selections; displayed and persisted selections always agree.
 
 ### R13 — Support live system theming and safe preference hydration
 
@@ -303,13 +303,13 @@ About has no working link to the full privacy policy or support destination; its
 
 **Action:** Correct feature claims immediately; remove the unfinished public route or turn it into intentional product content pending a roadmap decision. Add accessible policy/support links and readable offline policy content where appropriate. Centralize displayed version information and provide meaningful web page titles. **Acceptance:** Advertised features are reachable and complete; no internal implementation notes appear in product screens; policy/support destinations work and tab titles identify the page.
 
-### R22 — Provide Home navigation for direct entry
+### R22 — Keep direct entries navigable
 
 **P2 · Source-supported risk; full deep-link testing pending · S**
 
 [app/menu.js](../app/menu.js), line 63, implements “Back to App” solely with `router.back()`. The app config declares a URL scheme and static web routes, but the layout provides no explicit fallback for a cold-start Menu entry. With no in-app history, back may do nothing or leave the app's browser history.
 
-**Action:** Use the appropriate navigation-stack check and fall back to Home; decide how secondary deep-linked screens expose Home. **Acceptance:** Opening `/menu` directly in a fresh browser context or via the native scheme gives a reliable route to Home, while normal in-app back behavior remains correct.
+**Current action.** Keep the bottom tabs available on direct entries, with Menu selected on its detail screens. Reference serves as the launch destination and is available from any route. **Acceptance.** Cold Menu and detail links and Page Not Found can reach Reference through the bottom bar. Browser history and Android Back work after in-app navigation.
 
 ### R23 — Remove unused scaffolding and make asset generation fail honestly
 
@@ -352,15 +352,15 @@ These are proposed product choices, not claims that every small learning app nee
 | ID | Priority | Feature | Benefit and minimum useful scope | Effort / dependency |
 |---|---|---|---|---|
 | F01 | P2 | Bounded practice sessions and results | Offer a configurable short round, question count, score/accuracy, missed-answer recap and Retry Mistakes. Current state tracks only the current question/result. A shuffled deck can ensure coverage without immediate repeats. | M; R10/R11 |
-| F02 | P2 | Copy/share conversion and Clear | Provide a plain-text phonetic representation, Copy, native Share where supported, and Clear input. Preserve meaningful word boundaries and disclose omitted characters. | S–M; R17 |
-| F03 | P2 | Playback progress and pacing | Highlight the current token and offer replay, adjustable rate and inter-word pause. Stop is already a correctness requirement in R04, not an optional enhancement. | M; R03/R04/R09 |
-| F04 | P2 | Audio help and preference reset | Explain no-voice/silent-output recovery, provide a sound test and reset voice/theme preferences without clearing the entire app. | S–M; R12/R13 |
+| F02 | P2 | Copy/share conversion and Clear | Keep selectable plain text, Copy and Share in the existing Copy or share disclosure. Verify that clearing through the input resets the output and cancels speech. Preserve word boundaries and omission markers. | S–M; R17 |
+| F03 | P2 | Stable playback and pacing | Highlight the active bubble or card in place and use the fixed Play/Stop control beside the input. Use the same control to replay the phrase. Keep rate and inter-word pause in Word Converter settings. | M; R03/R04/R09 |
+| F04 | P2 | Audio help and preference reset | Use the shared Play/Stop control for the sound test and keep troubleshooting in short sections. Keep Reset Preferences in its own Settings group with its scope stated. | S–M; R12/R13 |
 | F05 | P3 | Number reference and numeric/mixed drills | Surface the existing digit data in the reference and offer number/postcode/callsign practice once pronunciation is verified. | S–M; R03 |
 | F06 | P3 | Listening quiz and reverse recall | Play a code word and ask for its letter, or ask users to type a code word. This adds recall/listening practice without requiring a microphone. | M; audio reliability |
-| F07 | P3 | Local progress and spaced practice | Save per-letter attempts/errors and offer focused review. Add clear/reset controls and update the privacy inventory for new local data. | M–L; F01 |
-| F08 | P3 | Spoken-answer quiz | Replace the placeholder only after deciding speech-recognition support, accuracy, permissions and offline/privacy behavior across platforms. Keep optional; failure must not block basic learning. | L; explicit product decision |
-| F09 | P3 | Reference/voice browsing polish | Add voice search/locale filters and quick reference navigation if the installed list or user testing justifies it. A 26-item alphabet does not need elaborate search infrastructure. | S–M |
-| F10 | P3 | Deliberate web product support | If web is a release target, add responsive desktop layouts, deployment/deep-link documentation, metadata and an explicit offline strategy. Static HTML alone does not establish offline web support. | M–L; R16/R21/R22 |
+| F07 | P3 | Local progress and spaced practice | Show saved counts and review states in compact symbol rows and keep Open practice easy to reach. Confirm Clear Progress explicitly and keep Reset Preferences separate. Update the privacy inventory for new local data. | M–L; F01 |
+| F08 | P3 | Spoken-answer quiz | Offer an optional mode in Letter Quiz after confirming provider, permission and privacy behavior. Keep recording controls in place and distinct from playback. Show a clear recording state and keep listening and typed practice reachable after failure. | L; explicit product decision |
+| F09 | P3 | Reference/voice browsing polish | Keep Letters/Digits and Play/Stop together in Reference. Use the shared input and compact selected options for voice search and locale filters, with an independent Play/Stop preview per voice. | S–M |
+| F10 | P3 | Deliberate web product support | Keep the bottom navigation and shared controls at desktop widths. Preserve direct links, meaningful titles, browser history and an explicit offline strategy. Show ready, update and retry states in Menu’s web availability section. | M–L; R16/R21/R22 |
 
 ## Architecture recommendations
 
@@ -373,6 +373,8 @@ The original recommendation to retain Expo Router is superseded by the owner's R
 - Keep progress local if added. Make any future network service an explicit product/privacy decision.
 
 ## Suggested delivery order
+
+Start the next implementation workload with [P05.9 Uniform UI design language](DELIVERY_PLAN.md#p059-uniform-ui-design-language), beginning with Menu and Settings. [Current action points](#next-workload-uniform-ui-design-language)
 
 The actionable expansion of these stages is [DELIVERY_PLAN.md](DELIVERY_PLAN.md), covering all R01–R25 and F01–F10. It groups all human-only work into the single M11 phase and provides a resumable execution contract, including screenshots during final summary preparation. Use [EXECUTION_PROMPT.md](EXECUTION_PROMPT.md) to run a dynamically sized implementation batch.
 
@@ -394,13 +396,14 @@ These remain acceptance obligations. Execution scope is proportional to the chan
 |---|---|
 | Content | All 26 canonical spellings, ten digits and pronunciation guides reviewed; J correct throughout; reviewed audio agrees with text. |
 | Converter | Empty/lowercase/alphanumeric input, repeated spaces, tabs/newlines, punctuation, accents, emoji, long paste, individual playback, rapid Play, Stop, input edit during playback, navigation mid-phrase. |
-| Quiz | Exactly four unique choices, one correct option, all letters reachable, correct/incorrect feedback, explicit next/replay, rapid taps, leave during flip/timer, no stale audio, screen-reader answer concealment. |
+| Quiz | Exactly four unique choices, one correct option, all letters reachable, correct/incorrect feedback, explicit Next or Results, fixed Play/Stop, rapid taps, cancellation on navigation, stable feedback during speech and screen-reader answer concealment. |
 | Speech | Default/selected/removed voice, mixed voice qualities, storage failure, no engine/voices, slow initialization, speech error/stop callback, silent-mode troubleshooting, interruption and background/foreground. |
 | Preferences | First launch, delayed loading, failed writes, rapid changes, restart persistence, system theme changes and explicit System reset. |
 | Accessibility/layout | Keyboard-only web; VoiceOver and TalkBack; 320×568 and supported native small screens; enlarged text; reduced motion; contrast; insets; tablet; keyboard-visible converter. |
 | Tile design fidelity | R25: exact 11:15 portrait geometry, rounded corners, header/divider and main-letter/word/pronunciation placement; pinned font files/weights/sizes/line heights; all 26 letters and all tile contexts; no final-row stretching; web/Android/iOS geometry assertions and actual screenshots across sizes/orientations/themes/text scales. |
+| UI consistency | P05.9 covers shared control states, compact navigation and settings rows, task-first layout and stable playback across Android, iOS and web. Compare the affected screens with the Reference and Word Converter baselines. [Checks](UI_DESIGN_LANGUAGE.md#acceptance-checks) |
 | Privacy/offline | Airplane-mode cold launch and every audio flow; provider/network behavior checked against claims; policy/support available; new stored data inventoried. |
-| Web | All direct routes and hard refreshes; no hydration errors; meaningful document titles; browser back/Home fallback; supported speech behavior; actual deployment URL routing. |
+| Web | All direct routes and hard refreshes, meaningful document titles, bottom tabs on direct and unknown routes, browser Back and Forward, supported speech behavior and actual deployment URL routing. Check for hydration errors. |
 | Native/build independence | Tracked Android/iOS projects; direct Gradle/Xcode debug/simulator and release workflows; independent web build; no Expo runtime/tooling, EAS services or Expo credentials required. Preserve identifiers, versioning, deep links, assets, permissions and existing data. |
 | Screenshots | Actual final web (desktop/mobile widths), Android and iOS application captures; key screens/states/themes; candidate/platform/viewport metadata; durable evidence index and summary links. Missing captures retain an explicit blocker and open task. |
 | Release | Clean locked install, lint, active-code type checking, meaningful tests, independent web build, reviewed dependency audit, regenerated icon validation and signed internal iOS/Android smoke tests from direct native builds. |
@@ -410,6 +413,15 @@ These remain acceptance obligations. Execution scope is proportional to the chan
 Turn R01–R25 and selected feature items into individually owned work items, retain their reproduction/acceptance details, and update this document with resolution evidence. Re-run dependency and platform checks at implementation time: audit counts and tool compatibility are snapshots, not permanent conclusions.
 
 ## Current delivery status
+
+### Next workload Uniform UI design language
+
+**21 November 2026 · P05.9 · P2.** Reference and Word Converter establish the compact control layout, clear selection and stable audio behavior for the app. The current Quiz and Appearance choice groups use a different visual treatment. Menu destinations, voice filters and progress summaries also need a more compact, task-first hierarchy. [Full screen audit](UI_DESIGN_LANGUAGE.md#screen-analysis)
+
+1. Define shared spacing, heading levels, visibly selected choices, destination rows and input and feedback styles from the two baseline screens.
+2. Pilot the patterns in Menu and Settings, including the web availability states and the current and saved preference values.
+3. Apply the patterns to Voice Select, Audio Help, Quiz, Learning Progress, About, Privacy Policy, Site Map and Page Not Found. Keep the shared playback controls and preserve tile, navigation, quiz and storage behavior.
+4. Compare the affected screens on Android, iOS and web. Verify light and dark appearance, large text, focus, keyboard reachability, stable playback geometry and the core flows touched by the changes. [Delivery task](DELIVERY_PLAN.md#p059-uniform-ui-design-language) · [Acceptance checks](UI_DESIGN_LANGUAGE.md#acceptance-checks)
 
 **Run 33 · 20 November 2026.** The standalone develop APK passed a real push, hosted Android 13 cold launch and an Android 16 cross-host upgrade with separate saved preferences. Trusted dispatch at `5963498` produced the unsigned four-ABI Android APK/AAB and launched the matching iOS simulator app. The independent hosted checks passed 174 tests and reported zero dependency advisories. Four existing web CI jobs remain red. The first actual main push is pending promotion. R14 and R20 remain in progress. R24 remains implemented awaiting M11. The ledger retains 14 in progress, 15 implemented awaiting M11 and six resolved. All seven M11 checks are pending. [Hosted results and downloadable products](evidence/run33/README.md) · [Screenshot index](evidence/run33/screenshots/index.md) · [Runbook](RELEASE_RUNBOOK.md#branch-builds-and-downloads).
 

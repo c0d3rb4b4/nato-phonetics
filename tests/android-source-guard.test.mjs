@@ -20,11 +20,14 @@ function fixture(t) {
   const packageFile = path.join(root, 'package.json');
   fs.writeFileSync(packageFile, JSON.stringify({version: '0.81.5'}));
   for (const file of patches) {
-    // Start from actual reviewed package bytes, reversing only this candidate's
-    // exact edits. This exercises guards against the actual native source.
+    // Reverse only exact edits from the reviewed installed package bytes.
     let source = fs.readFileSync(path.join('node_modules/react-native', file.path), 'utf8');
-    if (digest(source) === file.patchedSha256) {
-      for (const change of [...file.changes].reverse()) source = source.replace(change.after, change.before);
+    const installed = digest(source);
+    if (installed === file.patchedSha256 || installed === file.previousPatchedSha256) {
+      for (const change of [...file.changes].reverse()) {
+        const context = installed === file.patchedSha256 ? change.after : change.previous ?? change.after;
+        source = source.replace(context, () => change.before);
+      }
     }
     assert.equal(digest(source), file.originalSha256, file.path);
     const target = path.join(root, file.path);
@@ -44,6 +47,20 @@ test('native source preparation is repeatable and preserves unrelated bytes', t 
   prepareAndroidSource(packageFile);
   assert.deepEqual(fileDigests(root), expected);
   assert.equal(fs.readFileSync(unrelated, 'utf8'), 'retained');
+});
+test('preparation upgrades the previously reviewed single-compiler patch in place', t => {
+  const {root, packageFile} = fixture(t);
+  const file = patches.find(entry => entry.previousPatchedSha256);
+  const target = path.join(root, file.path);
+  let source = fs.readFileSync(target, 'utf8');
+  for (const change of file.changes) source = source.replace(change.before, () => change.previous ?? change.after);
+  assert.equal(digest(source), file.previousPatchedSha256);
+  fs.writeFileSync(target, source);
+  assert.throws(() => prepareAndroidSource(packageFile, {checkOnly: true}), /unprepared/);
+  assert.equal(digest(fs.readFileSync(target)), file.previousPatchedSha256);
+  prepareAndroidSource(packageFile);
+  assert.deepEqual(fileDigests(root), patches.map(entry => entry.patchedSha256));
+  prepareAndroidSource(packageFile, {checkOnly: true});
 });
 test('native context drift fails before any source file is patched', t => {
   const {root, packageFile} = fixture(t);

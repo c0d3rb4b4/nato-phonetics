@@ -46,11 +46,16 @@ test('ordinary Android entry points pass their default tasks, worker limit and a
     ['android-release', 'verifyReleaseRenderer', 'assembleRelease :app:bundleRelease'],
   ]) {
     const result = spawnSync(process.execPath, [launcher, mode], {
-      encoding: 'utf8', env: { ...process.env, NATO_BUILD_JOBS: '2' },
+      encoding: 'utf8', env: { ...process.env, NATO_BUILD_JOBS: '2', NATO_GRADLE_PROFILE: '0' },
     });
     assert.equal(result.status, 17, result.stderr);
     assert.equal(result.stdout.trim(), `:app:${verify} :app:${task} --no-daemon --max-workers=2`);
   }
+  const profiled = spawnSync(process.execPath, [launcher, 'android-develop'], {
+    encoding: 'utf8', env: { ...process.env, NATO_BUILD_JOBS: '2', NATO_GRADLE_PROFILE: '1' },
+  });
+  assert.equal(profiled.status, 17, profiled.stderr);
+  assert.equal(profiled.stdout.trim(), ':app:verifyDevelopRenderer :app:assembleDevelop --no-daemon --max-workers=2 --profile');
 });
 
 test('failed child checks retain exact exits and logs, run remaining gates and release the build lock', t => {
