@@ -130,9 +130,9 @@ async function assertTextContained(page, selector) {
         if (i === 0) {
           await click(button('Replay answer'));
           await page.waitForFunction(n => window.__quizSpeech.calls.length === n, {}, before + 2);
-          await click(button('Open menu'));
+          await click(button('Menu'));
           await stopped();
-          await click(button('Back to App'));
+          await click(button('Letter Quiz'));
           assert.ok(await page.$(id('quiz-answer')), 'Feedback survives Menu/Back');
           await capture('feedback');
         }

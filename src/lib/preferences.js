@@ -1,6 +1,7 @@
 export const PREFERENCES_KEY = 'nato.preferences.v1';
 const LEGACY_KEYS = ['darkMode', 'selectedVoice'];
 export const DEFAULT_CONVERTER_PACING = Object.freeze({ rate: 1, wordPauseMs: 300 });
+export const DEFAULT_CONVERTER_DISPLAY = 'bubbles';
 export const CONVERTER_RATES = Object.freeze([0.75, 1, 1.25]);
 export const CONVERTER_WORD_PAUSES = Object.freeze([0, 300, 700]);
 
@@ -35,7 +36,8 @@ function isPreferences(value) {
     ['system', 'light', 'dark'].includes(/** @type {string} */ (record.themeMode)) &&
     (record.selectedVoice === null ||
       (typeof record.selectedVoice === 'string' && record.selectedVoice.trim().length > 0)) &&
-    (record.converterPacing === undefined || isConverterPacing(record.converterPacing));
+    (record.converterPacing === undefined || isConverterPacing(record.converterPacing)) &&
+    (record.converterDisplay === undefined || record.converterDisplay === 'bubbles' || record.converterDisplay === 'cards');
 }
 
 /**
@@ -90,6 +92,7 @@ export function createPreferenceStore(storage) {
           themeMode: parsed.themeMode,
           selectedVoice: parsed.selectedVoice,
           ...(parsed.converterPacing ? { converterPacing: Object.freeze({ ...parsed.converterPacing }) } : {}),
+          ...(parsed.converterDisplay ? { converterDisplay: parsed.converterDisplay } : {}),
         }) });
       } else {
         const [darkMode, selectedVoice] = await Promise.all(
@@ -167,7 +170,7 @@ export function createPreferenceStore(storage) {
     },
     hydrate,
     retry: () => { hydrate(); return enqueue(load); },
-    /** @param {Partial<Pick<import('../types').Preferences, 'themeMode' | 'selectedVoice' | 'converterPacing'>>} patch */
+    /** @param {Partial<Omit<import('../types').Preferences, 'version'>>} patch */
     update: (patch) => write(current => ({ ...current, ...patch })),
     reset: () => write(() => ({ ...DEFAULT_PREFERENCES })),
   };

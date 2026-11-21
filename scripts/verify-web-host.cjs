@@ -200,6 +200,7 @@ async function main() {
   await page.goto(origin + '/progress'); await page.locator(id('progress-summary')).waitFor();
   await capture(page, 'desktop-hosted-progress.png', 'Actual pointer answer saved through the packaged host');
   await page.goto(origin + '/converter'); await page.locator(id('converter-input')).fill('a3 b-');
+  await page.locator(named('Copy or share')).click();
   await page.locator(id('converter-plain-text')).filter({ hasText: 'Alfa Three / Bravo dash' }).waitFor();
   await capture(page, 'desktop-hosted-converter.png', 'Exact converter on the extracted production release');
   await page.evaluate(() => navigator.serviceWorker.ready); await page.reload(); await ready(page, release.shellBuildId);

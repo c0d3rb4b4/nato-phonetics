@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useSyncExternalStore } from 'react';
 import { BackHandler, Linking, Platform } from 'react-native';
-import { resolveRoute } from './routes';
+import { primaryRoute, resolveRoute } from './routes';
 
 const web = Platform.OS === 'web';
 const historyKey = 'natoNavigationIndex';
@@ -11,7 +11,11 @@ let serial = 0;
 const entries = new Map();
 const initialPath = web ? resolveRoute(window.location.pathname) : '/';
 entries.set(index, { path: initialPath, key: serial, index });
-let snapshot = { path: initialPath, key: serial, entries: [...entries.values()] };
+/** @type {Set<NonNullable<ReturnType<typeof primaryRoute>>>} */
+const visitedTabs = new Set();
+const initialTab = primaryRoute(initialPath);
+if (initialTab) visitedTabs.add(initialTab);
+let snapshot = { path: initialPath, key: serial, entries: [...entries.values()], tabs: [...visitedTabs] };
 /** @type {Set<() => void>} */
 const listeners = new Set();
 /** @param {() => void} listener */
@@ -25,7 +29,9 @@ function publish(path, reuse = false) {
     entry = { path, key: ++serial, index };
     entries.set(index, entry);
   }
-  snapshot = { path, key: entry.key, entries: [...entries.values()] };
+  const tab = primaryRoute(path);
+  if (tab) visitedTabs.add(tab);
+  snapshot = { path, key: entry.key, entries: [...entries.values()], tabs: [...visitedTabs] };
   listeners.forEach(listener => listener());
 }
 

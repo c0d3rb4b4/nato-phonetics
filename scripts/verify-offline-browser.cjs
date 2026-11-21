@@ -85,6 +85,7 @@ const id = value => `[data-testid="${value}"]`;
   await visit(page, '/converter'); const input = 'a3 b!';
   await page.type('textarea', input);
   assert.equal(await page.$eval('textarea', e => e.value), input);
+  await click(page, '[role="button"][aria-label="Copy or share"]');
   assert.match(await page.$eval(id('converter-plain-text'), e => e.textContent), /Alfa/);
   await capture(page, 'offline-converter', 'textarea');
   await visit(page, '/progress'); assert.equal(await page.evaluate(() => localStorage.getItem('nato.progress.v1')), progress);

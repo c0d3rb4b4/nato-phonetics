@@ -84,7 +84,7 @@ def smoke(apk, output, serial):
             raise ValueError('Installed APK differs from inspected artifact')
         shell('am', 'force-stop', package)
         report['launch'] = shell('am', 'start', '-W', '-n', activity)
-        visible('home', ['NATO Alphabet', 'Word Converter'])
+        visible('reference', ['Letters A–Z', 'Digits 0–9', 'Word Converter'])
         report['pid'] = shell('pidof', package)
         if not report['pid'].isdigit():
             raise ValueError('Missing running application PID')

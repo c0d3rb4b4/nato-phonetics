@@ -128,7 +128,7 @@ async function assertTextContained(page, selector) {
         await page.waitForFunction(count=>window.__numericSpeech.calls.length===count,{},before+1);
         assert.equal(await page.evaluate(()=>window.__numericSpeech.calls.at(-1)),entry.speechText);
         if(i===0){
-          await click(named('Replay answer'));await click(named('Open menu'));await click(named('Back to App'));
+          await click(named('Replay answer'));await click(named('Menu'));await click(named('Letter Quiz'));
           assert.ok(await page.$(id('quiz-answer')));await assertTextContained(page,'[role="button"], [role="radio"]');
           await page.$eval(id('quiz-next'),e=>e.scrollIntoView({block:'center'}));await capture('numeric-feedback');
         }

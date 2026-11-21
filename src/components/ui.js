@@ -1,19 +1,13 @@
 import { Icon } from './Icon';
 import { useRouter } from '../navigation';
 import { useEffect, useRef, useState } from 'react';
-import { AccessibilityInfo, findNodeHandle, KeyboardAvoidingView, Linking, Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { AccessibilityInfo, findNodeHandle, Linking, Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useTheme } from '../context/ThemeContext';
 
 /** @param {import('react-native').ScrollViewProps} props */
 export function Screen({ children, contentContainerStyle, ...props }) {
-  const { theme } = useTheme();
-  return <SafeAreaView edges={['left', 'right', 'bottom']} style={[styles.screen, { backgroundColor: theme.colors.background }]}>
-    <KeyboardAvoidingView style={styles.screen} behavior={Platform.OS === 'ios' ? 'padding' : undefined} keyboardVerticalOffset={96}>
-      <ScrollView testID="screen-scroll" keyboardShouldPersistTaps="handled" {...props}
-        contentContainerStyle={[styles.content, contentContainerStyle]}>{children}</ScrollView>
-    </KeyboardAvoidingView>
-  </SafeAreaView>;
+  return <ScrollView testID="screen-scroll" keyboardShouldPersistTaps="handled" style={styles.screen} {...props}
+    contentContainerStyle={[styles.content, contentContainerStyle]}>{children}</ScrollView>;
 }
 
 /**
@@ -111,7 +105,7 @@ const styles = StyleSheet.create({
   content: { flexGrow: 1, width: '100%', maxWidth: 840, alignSelf: 'center', padding: 16, paddingBottom: 32, gap: 12 },
   heading: { fontSize: 26, fontWeight: '700', marginVertical: 8 },
   button: { minHeight: 48, borderRadius: 12, paddingVertical: 13, paddingHorizontal: 16, justifyContent: 'center', alignItems: 'center' },
-  buttonLabel: { fontSize: 16, fontWeight: '600', textAlign: 'center', flexShrink: 1 },
+  buttonLabel: { fontSize: 16, fontWeight: '600', textAlign: 'center', flexShrink: 1, maxWidth: '100%' },
   feedback: { fontSize: 16, lineHeight: 24, marginVertical: 8 },
   navigationCard: { flexDirection: 'row', alignItems: 'center', gap: 12, borderRadius: 12, padding: 16, minHeight: 72 },
   navigationText: { flex: 1 },

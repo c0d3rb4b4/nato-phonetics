@@ -37,7 +37,7 @@ async function summary(page, n) {
 }
 async function click(page, selector) { await page.locator(selector).click(); }
 async function progress(page) {
-  await click(page, named('Open menu')); await click(page, named('Learning progress')); await summary(page, total(await read(page)));
+  await click(page, named('Menu')); await click(page, named('Learning progress')); await summary(page, total(await read(page)));
 }
 async function clear(page) {
   await click(page, id('progress-clear')); await click(page, id('progress-delete')); await summary(page, 0);
@@ -142,9 +142,7 @@ async function launch() {
   report.freeze = 'Dedicated Puppeteer lifecycle suite owns Chromium page freeze. No Firefox/WebKit or OS process suspension pass.';
   const expected = await read(a);
   await b.close();
-  // Progress has a Home header rather than a Menu button. Use the supported
-  // direct route for offline setup without inventing a missing control.
-  await a.goto(base + '/menu');
+  await click(a, named('Menu'));
   await a.waitForFunction(() => document.querySelector('[data-testid="web-offline-status"]')?.textContent.startsWith('Offline copy ready'));
   await a.reload();
   await a.waitForFunction(() => !!navigator.serviceWorker.controller);
@@ -155,6 +153,7 @@ async function launch() {
   await capture(a, 'desktop-offline-progress.png', 'Direct offline progress route retains saved aggregates', id('progress-summary'));
   await a.goto(base + '/converter');
   await a.locator(id('converter-input')).fill('a3 b!');
+  await click(a, named('Copy or share'));
   await a.waitForFunction(() => document.querySelector('[data-testid="converter-plain-text"]')?.textContent.includes('Alfa Three'));
   await capture(a, 'desktop-offline-converter.png', 'Production converter works from cached shell offline', id('converter-plain-text'));
   await a.goto(base + '/alphabet'); await a.locator('[data-nato-tile]').first().waitFor();

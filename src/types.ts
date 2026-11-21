@@ -1,5 +1,5 @@
 export type RoutePath = keyof typeof import('./navigation/routes').ROUTE_TITLES;
-export type IconName = 'menu' | 'menu-outline' | 'home-outline' | 'book-outline' | 'text-outline'
+export type IconName = 'menu' | 'menu-outline' | 'play' | 'stop' | 'book-outline' | 'text-outline'
   | 'chevron-forward' | 'mic-outline' | 'volume-high-outline' | 'shield-checkmark-outline'
   | 'settings-outline' | 'help-circle-outline' | 'information-circle-outline';
 
@@ -36,6 +36,7 @@ export type Preferences = {
   selectedVoice: string | null;
   /** Absent in older v1 records; defaults apply until explicitly changed. */
   converterPacing?: { rate: number; wordPauseMs: number };
+  converterDisplay?: 'bubbles' | 'cards';
 };
 export type PreferenceError = {
   operation: 'load' | 'save' | 'migration' | 'cleanup';
@@ -75,6 +76,7 @@ export type ThemeContextValue = {
   setThemeMode: (mode: ThemeMode) => Promise<boolean>;
   setSelectedVoice: (identifier: string | null) => Promise<boolean>;
   setConverterPacing: (value: NonNullable<Preferences['converterPacing']>) => Promise<boolean>;
+  setConverterDisplay: (value: NonNullable<Preferences['converterDisplay']>) => Promise<boolean>;
   resetPreferences: () => Promise<boolean>;
   retryPreferences: () => Promise<void>;
 };

@@ -1,7 +1,7 @@
 /** The route table is shared by native linking, browser navigation and builds. */
 export const ROUTE_TITLES = {
-  '/': 'Home',
-  '/alphabet': 'NATO Alphabet',
+  '/': 'Reference',
+  '/alphabet': 'Reference',
   '/converter': 'Word Converter',
   '/letter-quiz': 'Letter Quiz',
   '/progress': 'Learning Progress',
@@ -14,6 +14,14 @@ export const ROUTE_TITLES = {
   '/_sitemap': 'Site Map',
   '/+not-found': 'Page Not Found',
 };
+
+export const PRIMARY_ROUTES = /** @type {const} */ (['/alphabet', '/converter', '/letter-quiz', '/menu']);
+
+/** @param {import('../types').RoutePath} path */
+export function primaryRoute(path) {
+  const candidate = path === '/' ? '/alphabet' : path;
+  return PRIMARY_ROUTES.find(route => route === candidate);
+}
 
 /** @param {string} value
  * @returns {import('../types').RoutePath} */

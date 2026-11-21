@@ -301,7 +301,9 @@ async function main() {
       page.on('pageerror', error => errors.push({ case: state.name, error: error.message }));
       await page.setViewport({ width: state.width, height: state.height, deviceScaleFactor: state.dpr });
       await page.emulateMediaFeatures([{ name: 'prefers-color-scheme', value: state.theme }, { name: 'prefers-reduced-motion', value: 'reduce' }]);
-      await page.evaluateOnNewDocument(theme => localStorage.setItem('nato.preferences.v1', JSON.stringify({ version: 1, themeMode: theme, selectedVoice: null })), state.theme);
+      await page.evaluateOnNewDocument(theme => localStorage.setItem('nato.preferences.v1', JSON.stringify({
+        version: 1, themeMode: theme, selectedVoice: null, converterDisplay: 'cards',
+      })), state.theme);
       if (state.route === '/letter-quiz' && quizSeed !== null) await page.evaluateOnNewDocument(seed => {
         // Test-driver determinism only: the production app, DOM and provider are
         // unchanged. This permits actual quiz screenshots to be compared later.
@@ -324,8 +326,8 @@ async function main() {
         assertGeometry(tiles, state.scale || 1, entries, false, state.dpr);
         checks.push({ ...state, state: 'page-1', tiles, fonts: await actualFonts(page) });
         await capture(page, state, 'page-1');
-        await reachable(page, '[aria-label="Next cards"]');
-        await page.click('[aria-label="Next cards"]');
+        await reachable(page, '[aria-label="Next page"]');
+        await page.click('[aria-label="Next page"]');
         await settle(page);
         const secondPage = await measure(page);
         assert.equal(secondPage.length, 12, `${state.name} second card page`);

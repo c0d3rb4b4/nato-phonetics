@@ -21,11 +21,12 @@ async function click(page, selector) {
 }
 const read = page => page.evaluate(() => JSON.parse(localStorage.getItem('nato.progress.v1')));
 const total = data => Object.values(data?.symbols || {}).reduce((sum, row) => sum + row.attempts, 0);
-const waitTotal = (page, n) => page.waitForFunction(n => Object.values(JSON.parse(localStorage.getItem('nato.progress.v1'))?.symbols || {}).reduce((sum, row) => sum + row.attempts, 0) === n, {}, n);
+// Storage and summary updates can be observed while the other page has focus.
+const waitTotal = (page, n) => page.waitForFunction(n => Object.values(JSON.parse(localStorage.getItem('nato.progress.v1'))?.symbols || {}).reduce((sum, row) => sum + row.attempts, 0) === n, { polling: 100 }, n);
 async function summary(page, n) {
-  await page.waitForFunction(n => document.querySelector('[data-testid="progress-summary"]:not([aria-hidden="true"] *)')?.textContent.startsWith(`${n} answers saved`), {}, n);
+  await page.waitForFunction(n => document.querySelector('[data-testid="progress-summary"]:not([aria-hidden="true"] *)')?.textContent.startsWith(`${n} answers saved`), { polling: 100 }, n);
 }
-async function progress(page) { await click(page, named('Open menu')); await click(page, named('Learning progress')); await page.waitForSelector(id('progress-summary')); }
+async function progress(page) { await click(page, named('Menu')); await click(page, named('Learning progress')); await page.waitForSelector(id('progress-summary')); }
 async function quizBack(page) { await page.goBack(); await page.goBack(); await page.waitForSelector(id('quiz-next')); }
 async function next(page) { await click(page, id('quiz-next')); await page.waitForSelector(id('quiz-answer'), { hidden: true }); }
 async function clear(page) { await click(page, id('progress-clear')); await click(page, id('progress-delete')); await summary(page, 0); }
@@ -108,7 +109,7 @@ async function clear(page) { await click(page, id('progress-clear')); await clic
     await click(b, named('Retry progress storage'));
     await b.waitForFunction(() => !document.body.innerText.includes('unsaved answer'));
     assert.deepEqual(await read(a), deleted);
-    await click(b, named('Open menu')); await click(b, named('Learning progress')); await summary(b, 0);
+    await click(b, named('Menu')); await click(b, named('Learning progress')); await summary(b, 0);
     await capture(a, 'desktop-cleared-summary.png', 'Zero saved aggregates after cross-window deletion', id('progress-summary'));
     await capture(b, 'narrow-stale-retry-cleared.png', 'Retry cannot resurrect an answer with delayed storage events', id('progress-summary'));
     checks.push('persisted generation rejects old Retry without a storage event; deletion leaves no aggregates');

@@ -97,7 +97,7 @@ const radio = async (page, name) => {
       await themeColor(page, dark);
     }
     assert.deepEqual(errors, [], 'No page/hydration errors on tested preference flows');
-    console.log(`PASS direct Home/Settings/Voice routes; no hydration errors. Browser: ${await browser.version()}`);
+    console.log(`PASS direct Reference/Settings/Voice routes; no hydration errors. Browser: ${await browser.version()}`);
   } finally {
     if (browser) await browser.close();
     server.close();

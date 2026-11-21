@@ -60,6 +60,7 @@ export function ThemeProvider({ children }) {
       setThemeMode: themeMode => preferenceStore.update({ themeMode }),
       setSelectedVoice: selectedVoice => preferenceStore.update({ selectedVoice }),
       setConverterPacing: converterPacing => preferenceStore.update({ converterPacing }),
+      setConverterDisplay: converterDisplay => preferenceStore.update({ converterDisplay }),
       resetPreferences: preferenceStore.reset,
       retryPreferences: preferenceStore.retry,
     }}>

@@ -90,7 +90,7 @@ async function assertTextContained(page, selector) {
       if(i===0){
         await capture('listening-question',id('quiz-listen'));await click(named('Stop playback'));
         const before=await calls();await click(id('quiz-listen'));assert.equal(await calls(),before+1);
-        await click(named('Open menu'));await click(named('Back to App'));assert.equal(await page.evaluate(()=>window.__recall.pending.length),0);
+        await click(named('Menu'));await click(named('Letter Quiz'));assert.equal(await page.evaluate(()=>window.__recall.pending.length),0);
         await page.evaluate(()=>{window.__recall.fail=true;});await click(id('quiz-listen'));await page.waitForSelector('[role="alert"]');
         await capture('listening-error',named('Audio Help'));await page.evaluate(()=>{window.__recall.fail=false;});
         await click(named('Show code word as text'));assert.equal(await text(id('quiz-code-word')),entry.word);
@@ -114,7 +114,7 @@ async function assertTextContained(page, selector) {
       if(i===0){
         await click(id('quiz-check'));assert.ok((await page.$eval('[role="alert"]',e=>e.textContent)).includes('Enter a code word'));
         await click(id('quiz-typed-answer'));await page.type(id('quiz-typed-answer'),'draft');
-        await click(named('Open menu'));await click(named('Back to App'));assert.equal(await page.$eval(id('quiz-typed-answer'),e=>e.value),'draft');
+        await click(named('Menu'));await click(named('Letter Quiz'));assert.equal(await page.$eval(id('quiz-typed-answer'),e=>e.value),'draft');
         await capture('typed-keyboard',id('quiz-typed-answer'));await page.$eval(id('quiz-typed-answer'),e=>e.select());await page.keyboard.press('Backspace');
       }
       const response=i===0?'wrong':symbol==='A'?' ÁL-PHA! ':symbol==='J'?'ju liet':symbol==='X'?'x ray':entry.word.toUpperCase();

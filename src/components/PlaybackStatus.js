@@ -2,11 +2,12 @@ import { router } from '../navigation';
 import { View } from 'react-native';
 import { Button, Feedback } from './ui';
 
-/** @param {{audio: ReturnType<typeof import('../hooks/usePlayback').usePlayback>}} props */
-export function PlaybackStatus({ audio }) {
+/** @param {{audio: ReturnType<typeof import('../hooks/usePlayback').usePlayback>, showControls?: boolean}} props */
+export function PlaybackStatus({ audio, showControls = true }) {
   const { active, snapshot, result, warning } = audio;
+  if (!(active && showControls) && !warning && result?.status !== 'failed') return null;
   return <View style={{ gap: 8, marginVertical: 8 }}>
-    {active && <>
+    {active && showControls && <>
       <Feedback message={snapshot.status === 'preparing' ? 'Preparing audio…' : `Playing ${snapshot.tokenIndex + 1} of ${snapshot.tokenCount}`} />
       <Button label="Stop playback" variant="secondary" onPress={audio.stop} />
     </>}

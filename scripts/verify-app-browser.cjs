@@ -271,7 +271,10 @@ async function replaceInput(page, value) {
         console.log(`PASS direct + reload ${routes.length} routes, stored ${mode}, OS ${os}`);
       }
     }
-    assert.equal(new Set([...titles.values()]).size, routes.length, 'Every exported route has a distinct meaningful title');
+    if (routes.length) {
+      assert.equal(titles.get('/'), titles.get('/alphabet'), 'The launch route and Reference alias have the same title');
+      assert.equal(new Set(titles.values()).size, routes.length - 1, 'Each distinct screen has a meaningful title');
+    }
     assert.deepEqual(errors, [], 'No page/hydration errors in all-route theme matrix');
     if (flowsOnly) console.log(`DIAGNOSTIC ${audioOnly ? '--audio-only: layout/keyboard and' : '--flows-only:'} all-route theme/title/reload matrix skipped`);
 
@@ -281,34 +284,48 @@ async function replaceInput(page, value) {
     page.setDefaultTimeout(10000);
     await page.setViewport({ width: 320, height: 568 });
     await page.emulateMediaFeatures([{ name: 'prefers-reduced-motion', value: 'reduce' }]);
-    await visit(page, base, '/menu');
-    await keyboardActivate(page, button('Back to App'));
-    await page.waitForFunction(() => location.pathname === '/');
-    await keyboardActivate(page, button('Open menu'), 'Space');
+    await visit(page, base, '/');
+    await page.waitForSelector(byTestId('alphabet-A'));
+    const nav = byTestId('bottom-navigation');
+    assert.deepEqual(await page.$$eval(`${nav} [role="button"]`, nodes => nodes.map(node => node.getAttribute('aria-label'))),
+      ['Reference', 'Word Converter', 'Letter Quiz', 'Menu']);
+    assert.equal(await page.$eval(`${nav} [aria-current="page"]`, node => node.getAttribute('aria-label')), 'Reference');
+    const [letters, digits] = await page.$$eval('[role="radio"]', nodes => nodes.map(node => ({
+      top: node.getBoundingClientRect().top, checked: node.getAttribute('aria-checked'), color: getComputedStyle(node).backgroundColor,
+    })));
+    assert.equal(letters.top, digits.top);
+    assert.equal(letters.checked, 'true');
+    assert.equal(digits.checked, 'false');
+    assert.notEqual(letters.color, digits.color);
+    await page.click(radio('Digits 0–9'));
+    await page.waitForSelector(byTestId('digit-0'), { visible: true });
+    assert.equal(await page.$eval(radio('Digits 0–9'), node => node.getAttribute('aria-checked')), 'true');
+    await keyboardActivate(page, button('Menu'), 'Space');
     await page.waitForFunction(() => location.pathname === '/menu');
-    await keyboardActivate(page, button('Back to App'));
-    await page.waitForFunction(() => location.pathname === '/');
-    console.log('PASS direct Menu Home fallback and in-app keyboard Enter/Space navigation');
+    await keyboardActivate(page, button('Reference'));
+    await page.waitForFunction(() => location.pathname === '/alphabet');
+    await page.waitForSelector(byTestId('digit-0'), { visible: true });
+    console.log('PASS launch Reference, side-by-side selectors, active tab and bottom navigation via Enter/Space');
 
     await visit(page, base, '/converter');
     await page.type('[aria-label="Text to convert"]', 'AB 359');
-    await page.click(button('Open menu'));
+    await page.click(button('Menu'));
     await page.waitForFunction(() => location.pathname === '/menu');
-    await page.click(button('Back to App'));
+    await page.click(button('Word Converter'));
     await page.waitForFunction(() => location.pathname === '/converter');
-    assert.equal(await page.$eval('[aria-label="Text to convert"]', node => node.value), 'AB 359', 'Back to App preserves converter input');
-    await page.goForward();
-    await page.waitForFunction(() => location.pathname === '/menu');
+    assert.equal(await page.$eval('[aria-label="Text to convert"]', node => node.value), 'AB 359', 'Tab switches preserve converter input');
     await page.goBack();
+    await page.waitForFunction(() => location.pathname === '/menu');
+    await page.goForward();
     await page.waitForFunction(() => location.pathname === '/converter');
     assert.equal(await page.$eval('[aria-label="Text to convert"]', node => node.value), 'AB 359', 'Browser Back/Forward preserves converter input');
     await visit(page, base, '/converter.html');
     assert.equal(await page.title(), 'Word Converter · NATO Phonetics');
     await visit(page, base, '/missing-route');
     assert.equal(await page.title(), 'Page Not Found · NATO Phonetics');
-    await page.click(button('Go Home'));
-    await page.waitForFunction(() => location.pathname === '/');
-    console.log('PASS retained converter state, browser Back/Forward, static HTML alias and unknown-route Home recovery');
+    await page.click(button('Reference'));
+    await page.waitForFunction(() => location.pathname === '/alphabet');
+    console.log('PASS retained converter state, browser Back/Forward, static HTML alias and unknown-route recovery');
 
     await visit(page, base, '/letter-quiz');
     await keyboardActivate(page, byTestId('quiz-start'));
@@ -343,11 +360,11 @@ async function replaceInput(page, value) {
     assert.equal(await page.$eval(byTestId('quiz-choice-3'), node => node.getAttribute('aria-pressed')), 'true', 'Selected answer exposes pressed state');
     assert.equal(await page.$eval(byTestId('quiz-choice-3'), node => node.getAttribute('aria-disabled')), 'true', 'Submitted choices expose disabled state');
     const retainedFeedback = await page.$eval(byTestId('quiz-answer'), node => node.textContent);
-    await page.click(button('Open menu'));
+    await page.click(button('Menu'));
     await page.waitForFunction(() => location.pathname === '/menu');
-    await page.click(button('Back to App'));
+    await page.click(button('Letter Quiz'));
     await page.waitForFunction(() => location.pathname === '/letter-quiz');
-    assert.equal(await page.$eval(byTestId('quiz-answer'), node => node.textContent), retainedFeedback, 'Menu/Back preserves current quiz answer and feedback');
+    assert.equal(await page.$eval(byTestId('quiz-answer'), node => node.textContent), retainedFeedback, 'Tab switches preserve quiz answer and feedback');
     await page.$eval(byTestId('quiz-card'), node => node.scrollIntoView({ block: 'start' }));
     await screenshot(page, 'quiz-320-200-percent');
     await keyboardActivate(page, button('Next question'));
@@ -379,16 +396,17 @@ async function replaceInput(page, value) {
     console.log('PASS 200% text remains within converter/alphabet cards and Settings controls at 320px');
     for (const mode of ['light', 'dark']) {
       await page.evaluate((key, themeMode) => localStorage.setItem(key, JSON.stringify({ version: 1, themeMode, selectedVoice: null })), preferenceKey, mode);
-      await visit(page, base, '/menu', mode);
-      await assertReachable(page, button('Back to App'));
-      const normal = await contrast(page, button('Back to App'));
+      await visit(page, base, '/alphabet', mode);
+      const selected = radio('Letters A–Z');
+      await assertReachable(page, selected);
+      const normal = await contrast(page, selected);
       assert.ok(normal.ratio >= 4.5, `${mode} primary contrast ${JSON.stringify(normal)}`);
-      const control = await page.$(button('Back to App'));
+      const control = await page.$(selected);
       const box = await control.boundingBox();
       await page.mouse.move(box.x + box.width / 2, box.y + box.height / 2);
       await page.mouse.down();
-      await page.waitForFunction(selector => getComputedStyle(document.querySelector(selector)).backgroundColor === 'rgb(30, 64, 175)', {}, button('Back to App'));
-      const pressed = await contrast(page, button('Back to App'));
+      await page.waitForFunction(selector => getComputedStyle(document.querySelector(selector)).backgroundColor === 'rgb(30, 64, 175)', {}, selected);
+      const pressed = await contrast(page, selected);
       assert.ok(pressed.ratio >= 4.5, `${mode} pressed primary contrast ${JSON.stringify(pressed)}`);
       await page.mouse.up();
       console.log(`PASS ${mode} primary normal ${normal.ratio.toFixed(2)}:1 / pressed ${pressed.ratio.toFixed(2)}:1 computed contrast`);
@@ -401,11 +419,12 @@ async function replaceInput(page, value) {
     await audio.page.type('[aria-label="Text to convert"]', 'AB');
     await audio.page.click(button('Play Full Phrase'));
     await waitForCalls(audio.page, 1);
-    await audio.page.click(button('Play Full Phrase'));
+    await audio.page.click(button('Play Bravo'));
     await waitForCalls(audio.page, 2);
     await audio.page.evaluate(() => { window.__speechTest.finishStale(); window.__speechTest.finish(); });
+    assert.deepEqual(await audio.page.evaluate(() => window.__speechTest.calls.map(call => call.text)), ['Alfa', 'Bravo'], 'A bubble tap replaces the phrase queue');
+    await audio.page.click(button('Play Full Phrase'));
     await waitForCalls(audio.page, 3);
-    assert.deepEqual(await audio.page.evaluate(() => window.__speechTest.calls.map(call => call.text)), ['Alfa', 'Alfa', 'Bravo'], 'Replacement invalidates the old AB queue');
     await audio.page.click(button('Stop playback'));
     await audio.page.evaluate(() => window.__speechTest.finishStale());
     await audio.page.click(button('Play Full Phrase'));
@@ -416,7 +435,7 @@ async function replaceInput(page, value) {
     assert.equal(await audio.page.evaluate(() => window.__speechTest.pending.length), 0, 'Editing cancels active speech');
     await audio.page.click(button('Play Full Phrase'));
     await waitForCalls(audio.page, 5);
-    await audio.page.click(button('Open menu'));
+    await audio.page.click(button('Menu'));
     await audio.page.waitForFunction(() => location.pathname === '/menu');
     await audio.page.evaluate(() => window.__speechTest.finishStale());
     assert.equal(await audio.page.evaluate(() => window.__speechTest.pending.length), 0, 'Navigation cancels active speech');

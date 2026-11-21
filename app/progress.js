@@ -35,7 +35,7 @@ export default function ProgressScreen() {
       </View>;
     })}
     <Heading>Clear Progress</Heading>
-    <Text style={textStyle}>Delete all saved symbol totals and review times, including unsaved answers waiting for Retry. Appearance, voice and converter pace are kept. Your current round stays in memory; only answers submitted after deletion build new progress. This cannot be undone.</Text>
+    <Text style={textStyle}>Delete all saved symbol totals and review times, including unsaved answers waiting for Retry. Appearance, voice and converter settings are kept. Your current round stays in memory; only answers submitted after deletion build new progress. This cannot be undone.</Text>
     {confirming ? <>
       <Feedback message="Delete all learning progress on this device?" />
       <Button label="Delete saved progress" testID="progress-delete" disabled={progress.isLoading || progress.isSaving} onPress={() => {

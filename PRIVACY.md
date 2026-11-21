@@ -10,7 +10,7 @@ The app uses AsyncStorage (browser storage on web) for these local records:
 
 | Key | Value | Purpose |
 |---|---|---|
-| `nato.preferences.v1` | Version 1 record: `themeMode` (`system`, `light`, `dark`) nullable `selectedVoice` identifier and optional `converterPacing` (`rate`, `wordPauseMs`) | Restore appearance, voice and deliberately selected converter pace |
+| `nato.preferences.v1` | Version 1 record with `themeMode`, nullable `selectedVoice`, optional `converterPacing` (`rate`, `wordPauseMs`) and optional `converterDisplay` (`bubbles`, `cards`) | Restore appearance, voice, converter pace and display |
 | `nato.progress.v1` | Version 1 record: canonical symbol → `attempts`, `errors`, `streak` (0–5 consecutive-correct scheduling step), `lastReviewedAt` and `dueAt` (epoch milliseconds); optional browser deletion `generation` marker | Saved per-symbol totals and focused/due practice across modes |
 
 On first use after updating, the app reads the old `darkMode` and `selectedVoice` keys. It removes only those legacy keys after the versioned preference record is saved successfully. A failed migration retains the old data and displays a recovery message.
@@ -27,7 +27,7 @@ Reference category, voice search/locale filters, selected practice set/mode/revi
 
 Only when you tap **Copy conversion** does the app write the plain text conversion, including not-spoken markers, to your system clipboard. **Share conversion** passes that same text to the operating system or browser share sheet, where you choose a destination. Unsupported sharing offers Copy or manual selection; denied or cancelled sharing does not silently write to the clipboard. Clipboard history, synced clipboards and receiving applications have their own storage and deletion controls.
 
-**Clear input** removes the converter text/output and stops its playback. It does not erase an earlier clipboard copy or content already shared with another app. The app does not read your clipboard during normal conversion or copying.
+Editing the converter text stops playback. Manage earlier copies or shares through your clipboard or the receiving app. The app does not read your clipboard during normal conversion or copying.
 
 ## Speech and connectivity
 
@@ -45,7 +45,7 @@ Clear Progress and Reset Preferences keep the public shell cache. Clearing this 
 
 Converter pace is saved only after an explicit selection: rate 0.75×/1×/1.25× and word pause 0/300/700 ms. Older version 1 records keep their appearance/voice and use 1×/300 ms without a rewrite. Text, playback position and card page are not stored.
 
-Use **Settings → Reset Preferences** to save System appearance, System Default voice and default converter pace (1×/300 ms). Reset changes only the versioned preference record and removes its two old migration keys; it does not clear unrelated local storage or learning progress. A failed write leaves the prior selection in use and displays an error. You can also clear this site's browser storage, clear Android app storage, or delete the iOS app and its data; these broader OS/browser actions remove other installation data too. Device backups and third-party speech providers have their own controls.
+Use **Settings → Reset Preferences** to restore System appearance, System Default voice, phonetic bubbles and the default playback pace (1× speed, 300 ms between words). Reset changes the versioned preference record and removes its two old migration keys. It preserves unrelated local storage and learning progress. A failed write leaves the prior selection in use and displays an error. You can also clear this site's browser storage, clear Android app storage, or delete the iOS app and its data. Those actions remove other installation data too. Device backups and third-party speech providers have their own controls.
 
 Use **Menu → Learning progress → Clear Progress → Delete saved progress** to delete saved symbol totals/review times and pending unsaved answer events. Native removes `nato.progress.v1`. Web atomically replaces its contents with an empty symbol map and a fresh random `generation` marker, preventing an older pending answer in another updated window from restoring deleted totals on Retry. The marker contains no answers or identity information, changes at every deletion and remains in this key with later progress until site storage is cleared. Confirmation is required; Cancel/Keep progress changes nothing. Preferences and unrelated keys are kept. Deletion is serialized with answer writes: the current round/recap remains in memory, earlier answers are never re-imported, and answers submitted after deletion start new progress. Failed deletion keeps data and shows an error. App deletion cannot erase OS/browser backups or copies outside this installation.
 

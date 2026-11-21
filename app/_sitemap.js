@@ -2,8 +2,7 @@ import { Heading, NavigationCard, Screen } from '../src/components/ui';
 
 /** @type {import('../src/types').NavigationItem[]} */
 const ROUTES = [
-  { title: 'Home', route: '/', icon: 'home-outline', description: 'Choose a learning activity.' },
-  { title: 'NATO Alphabet', route: '/alphabet', icon: 'book-outline', description: 'Browse letters and pronunciation guides.' },
+  { title: 'Reference', route: '/alphabet', icon: 'book-outline', description: 'Browse letters, digits and pronunciation guides.' },
   { title: 'Word Converter', route: '/converter', icon: 'text-outline', description: 'Convert and play a word or phrase.' },
   { title: 'Letter Quiz', route: '/letter-quiz', icon: 'help-circle-outline', description: 'Practice with multiple-choice questions.' },
   { title: 'Menu', route: '/menu', icon: 'menu-outline', description: 'Find settings, help and app information.' },

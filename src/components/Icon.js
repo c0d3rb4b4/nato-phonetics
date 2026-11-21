@@ -13,7 +13,9 @@ export function Icon({ name, size = 24, color }) {
   let marks;
   switch (name) {
     case 'menu': case 'menu-outline': marks = [line(3, 5, 18), line(3, 11, 18), line(3, 17, 18)]; break;
-    case 'home-outline': marks = [line(2, 7, 13, 2, -42), line(10, 7, 13, 2, 42), box(5, 9, 14, 12), box(10, 15, 4, 6)]; break;
+    case 'play': marks = <View style={{ position: 'absolute', left: 7, top: 4, width: 0, height: 0,
+      borderTopWidth: 8, borderBottomWidth: 8, borderLeftWidth: 12, borderColor: 'transparent', borderLeftColor: color }} />; break;
+    case 'stop': marks = <View style={{ position: 'absolute', left: 5, top: 5, width: 14, height: 14, borderRadius: 2, backgroundColor: color }} />; break;
     case 'book-outline': marks = [box(2, 3, 10, 18), box(12, 3, 10, 18), line(5, 7, 4), line(15, 7, 4)]; break;
     case 'text-outline': marks = [line(3, 3, 18), line(11, 3, 2, 18), line(7, 19, 10)]; break;
     case 'chevron-forward': marks = [line(8, 7, 9, 2, 45), line(8, 13, 9, 2, -45)]; break;

@@ -58,7 +58,7 @@ async function capture(page, file, state) {
     const symbol = await page.$eval(id('quiz-letter'), element => element.textContent.trim());
     await click(page, named('Choose ' + words.get(symbol))); await page.waitForSelector(id('quiz-answer'));
   }
-  async function progress(page) { await click(page, named('Open menu')); await click(page, named('Learning progress')); }
+  async function progress(page) { await click(page, named('Menu')); await click(page, named('Learning progress')); }
   async function clear() { await click(a, id('progress-clear')); await click(a, id('progress-delete')); await summary(a, 0); }
   const session = await b.createCDPSession();
   async function frozenClear() {

@@ -117,7 +117,7 @@ async function main() {
     assert.equal(data.symbols[symbol].errors, 0); assert.equal(data.generation, undefined);
     assert.equal(active.snapshots.saved.events.filter(event => event.type === 'storage-write').length, 1);
     assert.equal(active.snapshots.saved.locks.held.length, 0); assert.equal(active.snapshots.saved.locks.pending.length, 0);
-    await page.locator(named('Open menu')).click(); await page.locator(named('Learning progress')).click();
+    await page.locator(named('Menu')).click(); await page.locator(named('Learning progress')).click();
     await page.locator(id('progress-summary')).filter({ hasText: '1 answers saved' }).waitFor();
     await page.locator(id('progress-summary')).scrollIntoViewIfNeeded();
     await capture(`${scenario}-${width}-saved.png`, 'Exactly one saved answer after real pointer input/Retry');
