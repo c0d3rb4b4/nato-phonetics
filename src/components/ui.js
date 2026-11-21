@@ -4,10 +4,16 @@ import { useEffect, useRef, useState } from 'react';
 import { AccessibilityInfo, findNodeHandle, Linking, Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useTheme } from '../context/ThemeContext';
 
-/** @param {import('react-native').ScrollViewProps} props */
-export function Screen({ children, contentContainerStyle, ...props }) {
-  return <ScrollView testID="screen-scroll" keyboardShouldPersistTaps="handled" style={styles.screen} {...props}
+/** @param {import('react-native').ScrollViewProps & {overlay?: import('react').ReactNode}} props */
+export function Screen({ children, contentContainerStyle, overlay, ...props }) {
+  const content = <ScrollView testID="screen-scroll" keyboardShouldPersistTaps="handled" style={styles.screen} {...props}
     contentContainerStyle={[styles.content, contentContainerStyle]}>{children}</ScrollView>;
+  return overlay ? <View style={styles.screen}>{content}{overlay}</View> : content;
+}
+
+/** @param {unknown} target */
+export function showsFocusRing(target) {
+  return Platform.OS !== 'web' || (target instanceof HTMLElement && target.matches(':focus-visible'));
 }
 
 /**

@@ -128,6 +128,7 @@ async function assertTextContained(page, selector) {
         assert.equal(await calls(), before + 1, 'Rapid submission scores/speaks once');
         assert.ok((await text(id('quiz-progress'))).includes(`${Math.ceil(i / 2)} correct`));
         if (i === 0) {
+          await click(button('Stop playback'));
           await click(button('Replay answer'));
           await page.waitForFunction(n => window.__quizSpeech.calls.length === n, {}, before + 2);
           await click(button('Menu'));

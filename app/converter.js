@@ -1,9 +1,8 @@
 import { useCallback, useMemo, useRef, useState } from 'react';
 import { Platform, Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
-import { Icon } from '../src/components/Icon';
-import { PlaybackStatus } from '../src/components/PlaybackStatus';
+import { PlaybackButton, PlaybackNotice } from '../src/components/PlaybackControls';
 import { NatoTile, TileGrid } from '../src/components/NatoTile';
-import { Button, Feedback, Screen } from '../src/components/ui';
+import { Button, Feedback, Screen, showsFocusRing } from '../src/components/ui';
 import { useTheme } from '../src/context/ThemeContext';
 import { usePlayback } from '../src/hooks/usePlayback';
 import { useTileEnvironment } from '../src/hooks/useTileEnvironment';
@@ -27,13 +26,10 @@ export default function ConverterScreen() {
   const [playIndices, setPlayIndices] = useState(/** @type {number[]} */ ([]));
   const [page, setPage] = useState(0);
   const [showExport, setShowExport] = useState(false);
-  const [playFocused, setPlayFocused] = useState(false);
   const [focusedBubble, setFocusedBubble] = useState(/** @type {number | null} */ (null));
   const pageCount = Math.max(1, Math.ceil(parts.length / CONVERSION_PAGE_SIZE));
   const currentIndex = audio.active && audio.snapshot.tokenIndex >= 0 ? playIndices[audio.snapshot.tokenIndex] : undefined;
-  const currentPart = currentIndex === undefined ? undefined : parts[currentIndex];
-  const currentWord = currentPart?.type === 'punctuation' ? currentPart.word
-    : currentPart?.type === 'letter' || currentPart?.type === 'number' ? currentPart.entry.word : '';
+  const playingPage = currentIndex === undefined ? page : Math.floor(currentIndex / CONVERSION_PAGE_SIZE);
   const [exportStatus, setExportStatus] = useState('');
   const [exporting, setExporting] = useState(false);
   const revision = useRef(0);
@@ -66,7 +62,6 @@ export default function ConverterScreen() {
     }
   };
   const playPhrase = () => {
-    if (audio.active) { audio.stop(); return; }
     setPlayIndices(speechIndices);
     void audio.play(output.speech, { rate: pacing.rate });
   };
@@ -100,7 +95,8 @@ export default function ConverterScreen() {
     const color = entry ? TILE_DESIGN.colors.text : theme.colors.text;
     return <Pressable key={index} testID={testID} accessibilityRole="button" accessibilityLabel={`Play ${word}`}
       accessibilityState={{ selected: current }} aria-pressed={current}
-      onFocus={() => setFocusedBubble(index)} onBlur={() => setFocusedBubble(null)}
+      onFocus={event => setFocusedBubble(showsFocusRing(event.currentTarget) ? index : null)}
+      onBlur={() => setFocusedBubble(null)}
       onPress={() => playPart(index, part.type === 'punctuation' ? part.word : part.entry.speechText)}
       style={[styles.bubble, { backgroundColor: entry?.color ?? theme.colors.surface },
         parts[index - 1]?.type === 'space' && offset > 0 && styles.wordBoundary]}>
@@ -113,23 +109,17 @@ export default function ConverterScreen() {
     </Pressable>;
   });
 
-  return <Screen>
-    <View style={styles.inputRow}>
-      <TextInput accessibilityLabel="Text to convert" testID="converter-input"
-        style={[styles.input, { backgroundColor: theme.colors.surface, borderColor: theme.colors.border, color: theme.colors.text }]}
-        value={input} onChangeText={edit} multiline numberOfLines={Platform.OS === 'web' ? 1 : undefined}
-        placeholder="Type a word or phrase" placeholderTextColor={theme.colors.textSecondary}
-        autoCapitalize="characters" autoCorrect={false} spellCheck={false} />
-      <Pressable accessibilityRole="button" accessibilityLabel={audio.active ? 'Stop playback' : 'Play Full Phrase'}
-        accessibilityState={{ disabled: !output.speech.length }} disabled={!output.speech.length}
-        onPress={playPhrase} onFocus={() => setPlayFocused(true)} onBlur={() => setPlayFocused(false)}
-        style={({ pressed }) => [styles.play, {
-          backgroundColor: !output.speech.length ? theme.colors.surface : pressed ? '#1E40AF' : theme.colors.primary,
-          borderColor: playFocused ? theme.colors.text : theme.colors.border,
-          borderWidth: playFocused ? 3 : !output.speech.length ? 1 : 0,
-        }]}>
-        <Icon name={audio.active ? 'stop' : 'play'} size={20} color={output.speech.length ? '#FFFFFF' : theme.colors.textSecondary} />
-      </Pressable>
+  return <Screen stickyHeaderIndices={[0]} overlay={<PlaybackNotice audio={audio} />}>
+    <View style={{ backgroundColor: theme.colors.background }}>
+      <View style={styles.inputRow}>
+        <TextInput accessibilityLabel="Text to convert" testID="converter-input"
+          style={[styles.input, { backgroundColor: theme.colors.surface, borderColor: theme.colors.border, color: theme.colors.text }]}
+          value={input} onChangeText={edit} multiline numberOfLines={Platform.OS === 'web' ? 1 : undefined}
+          placeholder="Type a word or phrase" placeholderTextColor={theme.colors.textSecondary}
+          autoCapitalize="characters" autoCorrect={false} spellCheck={false} />
+        <PlaybackButton audio={audio} label="Play Full Phrase" onPlay={playPhrase}
+          disabled={!output.speech.length} testID="converter-playback" />
+      </View>
     </View>
     {!!output.text && (showCards ? <TileGrid testID="converter-output">{tokens}</TileGrid>
       : <View testID="converter-output" style={styles.bubbles}>{tokens}</View>)}
@@ -139,14 +129,8 @@ export default function ConverterScreen() {
         <Button label="Previous page" variant="secondary" style={styles.action} disabled={page === 0} onPress={() => setPage(page - 1)} />
         <Button label="Next page" variant="secondary" style={styles.action} disabled={page === pageCount - 1} onPress={() => setPage(page + 1)} />
       </View>
+      <Button label="Show playing word" variant="secondary" disabled={playingPage === page} onPress={() => setPage(playingPage)} />
     </>}
-    {audio.active && <Text testID="converter-current-token" accessibilityLiveRegion="polite" aria-live="polite"
-      style={{ color: theme.colors.textSecondary }}>
-      {currentWord ? `Current token: ${currentWord} (${audio.snapshot.tokenIndex + 1} of ${audio.snapshot.tokenCount})` : 'Preparing audio…'}
-    </Text>}
-    {currentIndex !== undefined && Math.floor(currentIndex / CONVERSION_PAGE_SIZE) !== page &&
-      <Button label="Show playing word" variant="secondary" onPress={() => setPage(Math.floor(currentIndex / CONVERSION_PAGE_SIZE))} />}
-    <PlaybackStatus audio={audio} showControls={false} />
     {!!output.text && <>
       <Button label="Copy or share" variant="secondary" style={styles.exportToggle}
         accessibilityState={{ expanded: showExport }} onPress={() => setShowExport(!showExport)} />
@@ -166,7 +150,6 @@ export default function ConverterScreen() {
 const styles = StyleSheet.create({
   inputRow: { flexDirection: 'row', alignItems: 'flex-start', gap: 8 },
   input: { flex: 1, borderRadius: 12, borderWidth: 1, paddingHorizontal: 12, paddingVertical: 10, fontSize: 18, minHeight: 48, maxHeight: 160, textAlignVertical: 'top' },
-  play: { width: 48, height: 48, borderRadius: 12, alignItems: 'center', justifyContent: 'center' },
   bubbles: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', gap: 8 },
   bubble: { borderRadius: TILE_DESIGN.radius, paddingHorizontal: 10, paddingVertical: 8, minHeight: 44, justifyContent: 'center', maxWidth: '100%' },
   bubbleRing: { borderRadius: TILE_DESIGN.radius, borderWidth: 2 },

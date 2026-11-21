@@ -5,6 +5,7 @@ import { useTileEnvironment } from '../hooks/useTileEnvironment';
 import { useTileBaseline, useTileOrigin } from '../hooks/useTileBaseline';
 import { tileTextUnits } from '../lib/tileTextUnits';
 import { TILE_DESIGN as D, tileScale } from '../lib/tileDesign';
+import { showsFocusRing } from './ui';
 
 const TileEnvironment = createContext({ fontScale: 1, textScale: 1, ready: false, error: '', contextScale: 1 });
 
@@ -69,7 +70,7 @@ export function NatoTile({ entry, concealed = false, current = false, testID,
     accessibilityState={{ selected: current }}
     accessibilityLabel={accessibilityLabel || `Play ${entry.word}`}
     accessibilityHint={accessibilityHint || `${entry.pronunciation}. Replaces current audio.`}
-    onPress={onPress} onFocus={() => setFocused(true)} onBlur={() => setFocused(false)}
+    onPress={onPress} onFocus={event => setFocused(showsFocusRing(event.currentTarget))} onBlur={() => setFocused(false)}
     style={geometry}>{({ pressed }) => <>{contents}{(focused || pressed || current) &&
       <View testID={`${id}-interaction-ring`} pointerEvents="none" style={[StyleSheet.absoluteFill,
         { borderWidth: focused || current ? 3 : 2, borderColor: D.colors.text, borderRadius: D.radius * scale }]} />}</>}</Pressable>

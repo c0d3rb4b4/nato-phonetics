@@ -1,7 +1,7 @@
 import { useCallback, useRef, useState } from 'react';
 import { Keyboard, StyleSheet, Text, TextInput, View } from 'react-native';
 import { entrySymbol, PRACTICE_SETS, practiceExampleOutput, practiceLengths } from '../src/lib/practiceSets';
-import { PlaybackStatus } from '../src/components/PlaybackStatus';
+import { PlaybackButton, PlaybackNotice } from '../src/components/PlaybackControls';
 import { NatoTile, TileGrid } from '../src/components/NatoTile';
 import { Button, Feedback, Heading, Screen } from '../src/components/ui';
 import { useTheme } from '../src/context/ThemeContext';
@@ -89,8 +89,13 @@ export default function LetterQuizScreen() {
     commit(next);
     clearResponse();
   };
+  const playQuestion = () => {
+    if (question && focused.current && current.current === session) {
+      void audio.play([{ text: question.correct.speechText }]);
+    }
+  };
 
-  return <Screen>
+  return <Screen overlay={<PlaybackNotice audio={audio} />}>
     {finished && results && <View testID="quiz-results" style={styles.section}>
       <Heading focusKey={`${session.generation}-${session.phase}`}>{session.phase === 'complete' ? 'Round complete' : 'Round ended early'}</Heading>
       <Text style={textStyle}>{roundPractice.label}{roundPractice.example ? ` · ${roundPractice.example}` : ''}</Text>
@@ -127,8 +132,11 @@ export default function LetterQuizScreen() {
       </View>
       {practice.example && <>
         <Text style={textStyle}>Example: {practice.example}. Questions practise its {practice.symbols.length} distinct symbols in shuffled order. Hear the complete example in its original order.</Text>
-        <Button label="Hear example" variant="secondary" onPress={() => { void audio.play(practiceExampleOutput(practice).speech); }} />
-        <Text style={textStyle} testID="practice-example-text">{practiceExampleOutput(practice).text}</Text>
+        <View style={styles.audioRow}>
+          <PlaybackButton audio={audio} label="Hear example"
+            onPlay={() => { void audio.play(practiceExampleOutput(practice).speech); }} />
+          <Text style={[textStyle, styles.fill]} testID="practice-example-text">{practiceExampleOutput(practice).text}</Text>
+        </View>
       </>}
       <Text style={textStyle}>Choose full practice or use saved progress for this symbol set. Due review includes previously practised symbols whose review time has arrived. Focus includes symbols whose last saved answer was incorrect.</Text>
       <View style={styles.section}>
@@ -156,10 +164,11 @@ export default function LetterQuizScreen() {
           symbolTestID="quiz-letter" bodyTestID={feedback ? 'quiz-answer' : undefined} />
       </TileGrid>}
       {session.mode === 'listening' && !feedback && <>
-        <Button label="Play code word" testID="quiz-listen" onPress={() => {
-          if (focused.current && current.current === session) void audio.play([{ text: question.correct.speechText }]);
-        }} />
-        <Button label="Show code word as text" variant="secondary" accessibilityState={{ expanded: showCodeWord }} onPress={() => setShowCodeWord(true)} />
+        <View style={styles.audioRow}>
+          <PlaybackButton audio={audio} label="Play code word" testID="quiz-listen" onPlay={playQuestion} />
+          <Button style={styles.fill} label="Show code word as text" variant="secondary"
+            accessibilityState={{ expanded: showCodeWord }} onPress={() => setShowCodeWord(true)} />
+        </View>
         {showCodeWord && <Text testID="quiz-code-word" style={textStyle} accessibilityLiveRegion="polite" aria-live="polite">{question.correct.word}</Text>}
         <Text style={textStyle}>Replay with Play code word. If audio is unavailable, use the text alternative; it counts toward the same practice score.</Text>
       </>}
@@ -185,17 +194,17 @@ export default function LetterQuizScreen() {
       </View>}
       {feedback && <>
         <Feedback message={`${attempt?.correct ? 'Correct!' : 'Not quite.'} ${entrySymbol(question.correct)} is ${question.correct.word}.`} />
-        <Button label={session.index + 1 === session.length ? 'View results' : 'Next question'} testID="quiz-next" onPress={advance} />
-        <Button label="Replay answer" variant="secondary" onPress={() => {
-          if (focused.current && current.current === session) void audio.play([{ text: question.correct.speechText }]);
-        }} />
+        <View style={styles.audioRow}>
+          <Button style={styles.fill} label={session.index + 1 === session.length ? 'View results' : 'Next question'}
+            testID="quiz-next" onPress={advance} />
+          <PlaybackButton audio={audio} label="Replay answer" onPlay={playQuestion} />
+        </View>
       </>}
       <Button label="End round and review" variant="secondary" onPress={() => {
         if (!focused.current || current.current !== session) return;
         audio.stop(); commit(cancelQuizSession(session));
       }} />
     </>}
-    <PlaybackStatus audio={audio} />
     <ProgressStatus progress={progress} />
   </Screen>;
 }
@@ -204,4 +213,6 @@ const styles = StyleSheet.create({
   body: { fontSize: 16, lineHeight: 24 },
   input: { borderWidth: 1, borderRadius: 8, padding: 12, fontSize: 18, minHeight: 52 },
   section: { gap: 10 },
+  audioRow: { flexDirection: 'row', gap: 8, alignItems: 'center' },
+  fill: { flex: 1 },
 });

@@ -223,6 +223,13 @@ async function waitForCalls(page, number) {
   await page.waitForFunction(count => window.__speechTest.calls.length === count, {}, number);
 }
 
+async function geometry(page, selectors) {
+  return page.evaluate(selectors => selectors.map(selector => {
+    const { x, y, width, height } = document.querySelector(selector).getBoundingClientRect();
+    return [x, y, width, height];
+  }), selectors);
+}
+
 async function replaceInput(page, value) {
   await page.focus('[aria-label="Text to convert"]');
   await page.$eval('[aria-label="Text to convert"]', node => node.select());
@@ -414,11 +421,58 @@ async function replaceInput(page, value) {
     await context.close();
     }
 
+    const reference = await audioPage(browser, base);
+    await visit(reference.page, base, '/');
+    const referenceButton = byTestId('reference-playback');
+    const firstLetter = byTestId('alphabet-A');
+    const secondLetter = byTestId('alphabet-B');
+    await reference.page.waitForSelector(firstLetter);
+    const referenceLayout = await geometry(reference.page, [referenceButton, firstLetter, secondLetter]);
+    await reference.page.click(firstLetter);
+    await waitForCalls(reference.page, 1);
+    assert.equal(await reference.page.$eval(firstLetter, el => el.getAttribute('aria-pressed')), 'true');
+    assert.equal(await reference.page.$eval(referenceButton, el => el.getAttribute('aria-label')), 'Stop playback');
+    assert.deepEqual(await geometry(reference.page, [referenceButton, firstLetter, secondLetter]), referenceLayout);
+    await reference.page.evaluate(() => window.__speechTest.finish());
+    await reference.page.waitForSelector(button('Play all letters'));
+    assert.equal(await reference.page.$eval(firstLetter, el => el.getAttribute('aria-pressed')), 'false');
+    assert.equal(await reference.page.$(byTestId('alphabet-A-interaction-ring')), null, 'Pointer focus does not leave a playback border');
+    await reference.page.click(referenceButton);
+    await waitForCalls(reference.page, 2);
+    await reference.page.evaluate(() => window.__speechTest.finish());
+    await waitForCalls(reference.page, 3);
+    assert.equal(await reference.page.$eval(secondLetter, el => el.getAttribute('aria-pressed')), 'true');
+    await reference.page.click(referenceButton);
+    await reference.page.waitForSelector(button('Play all letters'));
+    assert.equal(await reference.page.$eval(secondLetter, el => el.getAttribute('aria-pressed')), 'false');
+    await reference.page.click(referenceButton);
+    await waitForCalls(reference.page, 4);
+    assert.deepEqual(await reference.page.evaluate(() => window.__speechTest.calls.map(call => call.text)), ['Alfa', 'Alfa', 'Bravo', 'Bravo']);
+    await reference.page.click(radio('Digits 0–9'));
+    await reference.page.waitForSelector(button('Play all digits'));
+    await reference.page.waitForSelector(byTestId('digit-0'));
+    await reference.page.click(referenceButton);
+    const { NATO_NUMBERS } = await import(pathToFileURL(path.resolve(__dirname, '../src/data/natoData.js')));
+    for (const [index, entry] of NATO_NUMBERS.entries()) {
+      await waitForCalls(reference.page, index + 5);
+      assert.equal(await reference.page.$eval(byTestId(`digit-${entry.digit}`), el => el.getAttribute('aria-pressed')), 'true');
+      await reference.page.evaluate(() => window.__speechTest.finish());
+    }
+    await reference.page.waitForSelector(button('Play all digits'));
+    assert.deepEqual(await reference.page.evaluate(() => window.__speechTest.calls.slice(4).map(call => call.text)), NATO_NUMBERS.map(entry => entry.speechText));
+    await reference.page.$eval(byTestId('digit-9'), el => el.scrollIntoView({ block: 'end' }));
+    const [[, top]] = await geometry(reference.page, [referenceButton]);
+    assert.ok(top >= 0 && top < 50, 'Reference playback control stays at the top during scrolling');
+    await reference.context.close();
+    console.log('PASS Reference card bounds, single-card and ordered sequence highlights, Stop, resume and category change');
+
     const audio = await audioPage(browser, base);
     await visit(audio.page, base, '/converter');
     await audio.page.type('[aria-label="Text to convert"]', 'AB');
+    const converterLayout = await geometry(audio.page, [byTestId('converter-output'), button('Copy or share')]);
     await audio.page.click(button('Play Full Phrase'));
     await waitForCalls(audio.page, 1);
+    assert.deepEqual(await geometry(audio.page, [byTestId('converter-output'), button('Copy or share')]), converterLayout);
     await audio.page.click(button('Play Bravo'));
     await waitForCalls(audio.page, 2);
     await audio.page.evaluate(() => { window.__speechTest.finishStale(); window.__speechTest.finish(); });
@@ -426,6 +480,7 @@ async function replaceInput(page, value) {
     await audio.page.click(button('Play Full Phrase'));
     await waitForCalls(audio.page, 3);
     await audio.page.click(button('Stop playback'));
+    assert.deepEqual(await geometry(audio.page, [byTestId('converter-output'), button('Copy or share')]), converterLayout);
     await audio.page.evaluate(() => window.__speechTest.finishStale());
     await audio.page.click(button('Play Full Phrase'));
     await waitForCalls(audio.page, 4);
@@ -471,6 +526,16 @@ async function replaceInput(page, value) {
     await audio.page.click(button('Play Full Phrase'));
     await waitForCalls(audio.page, 4);
     await audio.page.click(button('Stop playback'));
+    await visit(audio.page, base, '/audio-help');
+    const audioTest = byTestId('audio-test-playback');
+    const helpControl = button('Choose a voice');
+    const helpLayout = await geometry(audio.page, [audioTest, helpControl]);
+    await audio.page.click(audioTest);
+    await waitForCalls(audio.page, 1);
+    assert.equal(await audio.page.$eval(audioTest, el => el.getAttribute('aria-label')), 'Stop playback');
+    assert.deepEqual(await geometry(audio.page, [audioTest, helpControl]), helpLayout);
+    await audio.page.click(audioTest);
+    await audio.page.waitForSelector(button('Play audio test'));
     await audio.context.close();
     console.log('PASS mocked speech replacement, Stop (including word pause), edit, navigation and background ownership; stale callbacks cannot resume queues');
 
@@ -479,6 +544,12 @@ async function replaceInput(page, value) {
     for (const name of ['British Default, en-GB', 'American Network, en-US', 'Australian Local, en-AU']) await voices.page.waitForSelector(radio(name));
     assert.equal(await voices.page.$(radio('French Local, fr-FR')), null, 'Non-English voice excluded');
     await voices.page.waitForFunction(() => /no longer available|unavailable|removed/i.test(document.body.innerText));
+    const voiceLayout = await geometry(voices.page, [radio('System Default'), radio('British Default, en-GB')]);
+    await voices.page.click(button('Preview System Default'));
+    await waitForCalls(voices.page, 1);
+    assert.deepEqual(await geometry(voices.page, [radio('System Default'), radio('British Default, en-GB')]), voiceLayout);
+    await voices.page.click(button('Stop playback'));
+    await voices.page.waitForSelector(button('Preview System Default'));
     await visit(voices.page, base, '/converter');
     await voices.page.type('[aria-label="Text to convert"]', 'A');
     await voices.page.click(button('Play Full Phrase'));

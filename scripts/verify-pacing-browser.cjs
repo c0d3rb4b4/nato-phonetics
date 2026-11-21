@@ -30,8 +30,7 @@ for(const state of [{width:1280,height:900,theme:'light'},{width:320,height:568,
  const expected=['Alfa','Alfa','dash','tree'],indices=[0,3,4,6];
  for(let i=0;i<4;i++){
   await page.waitForFunction(n=>window.__pacing.calls.length===n,{},i+1);
-  await page.waitForFunction(word=>document.querySelector('[data-testid="converter-current-token"]').textContent.includes(word),{},i===3?'Three':expected[i]);
-  if(i!==2)assert.equal(await page.$eval(id(`converter-${indices[i]}`),el=>el.getAttribute('aria-pressed')), 'true');
+  await page.waitForFunction(index=>document.querySelector(`[data-testid="converter-${index}"]`)?.getAttribute('aria-pressed')==='true',{},indices[i]);
   if(i===0){await page.$eval(id('converter-0'),e=>e.scrollIntoView({block:'center'}));await capture('highlight');}
   const ended=await page.evaluate(()=>{window.__pacing.pending.shift().onend?.({});return performance.now();});
   if(i<3){await page.waitForFunction(n=>window.__pacing.calls.length===n,{},i+2);const started=await page.evaluate(i=>window.__pacing.calls[i+1].time,i);assert.ok(started-ended>=(i===1?100:650),'Configured boundary pause versus ordinary token gap');}
@@ -39,7 +38,7 @@ for(const state of [{width:1280,height:900,theme:'light'},{width:320,height:568,
  assert.deepEqual(await page.evaluate(()=>window.__pacing.calls.map(x=>[x.text,x.rate])),expected.map(x=>[x,0.75]));
  await click(button('Play Full Phrase'));await page.waitForFunction(()=>window.__pacing.calls.length===5);await input('j');
  await page.waitForFunction(()=>window.__pacing.pending.length===0);await page.evaluate(()=>window.__pacing.stale.splice(0).forEach(end=>end?.({})));assert.equal(await page.evaluate(()=>window.__pacing.calls.length),5);
- await click(button('Play Full Phrase'));await page.waitForFunction(()=>window.__pacing.calls.length===6);await click(button('Stop playback'));await page.waitForSelector(id('converter-current-token'),{hidden:true});
+ await click(button('Play Full Phrase'));await page.waitForFunction(()=>window.__pacing.calls.length===6);await click(button('Stop playback'));await page.waitForSelector(button('Play Full Phrase'));
  await openSettings();await click(radio('Rate 1.25×'));await page.waitForFunction(()=>JSON.parse(localStorage.getItem('nato.preferences.v1')).converterPacing.rate===1.25);
  await page.reload({waitUntil:'networkidle0'});await page.waitForSelector(radio('Rate 1.25×'));
  for(const value of ['Rate 1.25×','Word pause 700 ms','Full cards']) assert.equal(await page.$eval(radio(value),e=>e.getAttribute('aria-checked')),'true');
@@ -53,7 +52,7 @@ for(const state of [{width:1280,height:900,theme:'light'},{width:320,height:568,
  await click(button('Next page'));assert.ok(await page.$eval(id('converter-card-page'),e=>e.textContent.includes('Page 2')));await page.$eval(id('converter-output'),e=>e.scrollIntoView({block:'start'}));await capture('paged-long-input');
  await input('ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789');assert.ok(await page.$eval(id('converter-card-page'),e=>e.textContent.includes('Page 1 of 2')));await click(button('Next page'));assert.equal(await page.$eval(button('Next page'),e=>e.getAttribute('aria-disabled')),'true');assert.equal(await page.$$eval('[data-nato-tile]',nodes=>nodes.length),12);
  await click(id('converter-35'));await page.waitForFunction(()=>window.__pacing.pending.length===1);
- assert.equal(await page.$eval(id('converter-current-token'),e=>e.textContent.trim()),'Current token: Nine (1 of 1)');assert.equal(await page.$eval(id('converter-35'),e=>e.getAttribute('aria-pressed')),'true');
+ assert.equal(await page.$eval(id('converter-35'),e=>e.getAttribute('aria-pressed')),'true');
  assert.deepEqual(await page.evaluate(()=>window.__pacing.calls.map(x=>[x.text,x.rate])),[['niner',1.25]]);
  await click(button('Previous page'));await click(button('Show playing word'));assert.ok(await page.$eval(id('converter-card-page'),e=>e.textContent.includes('Page 2 of 2')));await page.$eval(id('converter-35'),e=>e.scrollIntoView({block:'center'}));await capture('individual-page-2-highlight');await click(button('Stop playback'));
  await click(button('Previous page'));assert.equal(await page.$$eval('[data-nato-tile]',nodes=>nodes.length),24);

@@ -93,6 +93,7 @@ async function assertTextContained(page, selector) {
         await click(named('Menu'));await click(named('Letter Quiz'));assert.equal(await page.evaluate(()=>window.__recall.pending.length),0);
         await page.evaluate(()=>{window.__recall.fail=true;});await click(id('quiz-listen'));await page.waitForSelector('[role="alert"]');
         await capture('listening-error',named('Audio Help'));await page.evaluate(()=>{window.__recall.fail=false;});
+        await click(named('Dismiss'));
         await click(named('Show code word as text'));assert.equal(await text(id('quiz-code-word')),entry.word);
         assert.equal(await page.$(id('quiz-card')),null);await capture('listening-text-alternative',id('quiz-code-word'));
         await click(id('quiz-listen'));assert.equal(await page.evaluate(()=>window.__recall.calls.at(-1)),entry.speechText);

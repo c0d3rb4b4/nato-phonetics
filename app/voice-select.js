@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
-import { PlaybackStatus } from '../src/components/PlaybackStatus';
+import { PlaybackButton, PlaybackNotice } from '../src/components/PlaybackControls';
 import { Button, Feedback, Heading, Screen } from '../src/components/ui';
 import { useTheme } from '../src/context/ThemeContext';
 import { usePlayback } from '../src/hooks/usePlayback';
@@ -15,6 +15,7 @@ export default function VoiceSelectScreen() {
   const [state, setState] = useState('loading');
   const [query, setQuery] = useState('');
   const [locale, setLocale] = useState('');
+  const [previewVoice, setPreviewVoice] = useState(/** @type {string | null} */ (null));
   const generation = useRef(0);
   const loadVoices = async () => {
     const request = ++generation.current;
@@ -41,27 +42,32 @@ export default function VoiceSelectScreen() {
   /** @param {string | null} id */
   const select = (id) => { audio.stop(); void setSelectedVoice(id); };
   /** @param {string | null} id */
-  const preview = (id) => { void audio.play(NATO_ALPHABET.slice(0, 3).map(entry => ({ text: entry.speechText })), { voice: id }); };
-  return <Screen>
+  const preview = id => {
+    setPreviewVoice(id);
+    void audio.play(NATO_ALPHABET.slice(0, 3).map(entry => ({ text: entry.speechText })), { voice: id });
+  };
+  return <Screen overlay={<PlaybackNotice audio={audio} />}>
     <Heading>Select Voice</Heading>
     <Text style={[styles.info, { color: theme.colors.textSecondary }]}>Choose a voice to save it. Preview plays a sample without changing your saved choice. All available English voices are listed by locale and quality.</Text>
     {isSaving && <Feedback message="Saving settings…" />}
-    <PlaybackStatus audio={audio} />
     <View testID="voice-list">
-      <Pressable accessibilityRole="radio" accessibilityLabel="System Default"
-        accessibilityState={{ checked: selected === null }} aria-checked={selected === null}
-        onPress={() => select(null)} style={[styles.voice, { backgroundColor: theme.colors.surface, borderColor: selected === null ? theme.colors.primary : theme.colors.border }]}>
-        <Text style={[styles.name, textColor]}>System Default {selected === null ? '✓' : ''}</Text>
-        <Text style={{ color: theme.colors.textSecondary }}>Let the speech provider choose a voice</Text>
-      </Pressable>
-      <Button label="Preview System Default" variant="secondary" onPress={() => preview(null)} />
+      <View style={styles.voiceRow}>
+        <Pressable accessibilityRole="radio" accessibilityLabel="System Default"
+          accessibilityState={{ checked: selected === null }} aria-checked={selected === null}
+          onPress={() => select(null)} style={[styles.voice, { backgroundColor: theme.colors.surface, borderColor: selected === null ? theme.colors.primary : theme.colors.border }]}>
+          <Text style={[styles.name, textColor]}>System Default {selected === null ? '✓' : ''}</Text>
+          <Text style={{ color: theme.colors.textSecondary }}>Let the speech provider choose a voice</Text>
+        </Pressable>
+        <PlaybackButton audio={audio} active={audio.active && previewVoice === null}
+          label="Preview System Default" onPlay={() => preview(null)} />
+      </View>
       <View testID="voice-status">
         {state === 'loading' && <Feedback message="Loading English voices…" />}
         {state === 'error' && <Feedback error message="Could not load voices. Try again or use System Default." />}
         {state === 'empty' && <Feedback message="No English voices found. Install an English voice in your device settings, then retry. System Default may still work." />}
         {removed && <Feedback message="Your saved voice is no longer available. Playback will use System Default; choose an available voice or save System Default below." />}
       </View>
-      <Button label="Retry voice list" variant="secondary" onPress={() => { void loadVoices(); }} />
+      <Button label="Retry voice list" variant="secondary" onPress={() => { audio.stop(); void loadVoices(); }} />
       {state === 'ready' && <View style={styles.filters}>
         <Heading>Find a voice</Heading>
         <Text style={textColor}>Search by name, locale code or quality. Filters do not change your saved voice.</Text>
@@ -80,14 +86,17 @@ export default function VoiceSelectScreen() {
       </View>}
       {state === 'ready' && filtered.map((voice, index) => <View key={voice.identifier}>
         {(index === 0 || filtered[index - 1].language !== voice.language) && <Heading>{voice.language}</Heading>}
-        <Pressable accessibilityRole="radio" accessibilityLabel={`${voice.name}, ${voice.language}`}
-          accessibilityState={{ checked: selected === voice.identifier }} aria-checked={selected === voice.identifier}
-          onPress={() => select(voice.identifier)}
-          style={[styles.voice, { backgroundColor: theme.colors.surface, borderColor: selected === voice.identifier ? theme.colors.primary : theme.colors.border }]}>
-          <Text style={[styles.name, textColor]}>{voice.name} {selected === voice.identifier ? '✓' : ''}</Text>
-          <Text style={{ color: theme.colors.textSecondary }}>{voice.language} · {voice.quality || 'Default'}</Text>
-        </Pressable>
-        <Button label={`Preview ${voice.name}`} variant="secondary" onPress={() => preview(voice.identifier)} />
+        <View style={styles.voiceRow}>
+          <Pressable accessibilityRole="radio" accessibilityLabel={`${voice.name}, ${voice.language}`}
+            accessibilityState={{ checked: selected === voice.identifier }} aria-checked={selected === voice.identifier}
+            onPress={() => select(voice.identifier)}
+            style={[styles.voice, { backgroundColor: theme.colors.surface, borderColor: selected === voice.identifier ? theme.colors.primary : theme.colors.border }]}>
+            <Text style={[styles.name, textColor]}>{voice.name} {selected === voice.identifier ? '✓' : ''}</Text>
+            <Text style={{ color: theme.colors.textSecondary }}>{voice.language} · {voice.quality || 'Default'}</Text>
+          </Pressable>
+          <PlaybackButton audio={audio} active={audio.active && previewVoice === voice.identifier}
+            label={`Preview ${voice.name}`} onPlay={() => preview(voice.identifier)} />
+        </View>
       </View>)}
     </View>
   </Screen>;
@@ -96,6 +105,7 @@ const styles = StyleSheet.create({
   filters: { gap: 10, marginTop: 12 },
   search: { borderWidth: 1, borderRadius: 12, padding: 12, fontSize: 16, minHeight: 48 },
   info: { fontSize: 15, lineHeight: 23, marginBottom: 12 },
-  voice: { padding: 16, borderRadius: 12, borderWidth: 2, marginVertical: 8, minHeight: 52 },
+  voiceRow: { flexDirection: 'row', gap: 8, alignItems: 'center', marginVertical: 8 },
+  voice: { flex: 1, padding: 16, borderRadius: 12, borderWidth: 2, minHeight: 52 },
   name: { fontSize: 17, fontWeight: '600', marginBottom: 4 },
 });
