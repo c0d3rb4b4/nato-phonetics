@@ -1,0 +1,82 @@
+[
+  {
+    "file": "desktop-offline-ready.png",
+    "capturedAt": "2026-11-22T00:02:48.660Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "browser": "Edg/157.0.4341.60",
+    "buildId": "b9276dd127a690ace2c43549bed8d98ffe844615982ad86483fbada03a70ffdd",
+    "serverShellId": "b9276dd127a690ace2c43549bed8d98ffe844615982ad86483fbada03a70ffdd",
+    "renderedFixture": "production A",
+    "background": "rgb(31, 41, 51)",
+    "rootFontSize": "16px",
+    "online": true,
+    "command": "node scripts/verify-offline-browser.cjs artifacts/run34/web-final artifacts/run34/offline-record"
+  },
+  {
+    "file": "update-download-failed.png",
+    "capturedAt": "2026-11-22T00:03:12.155Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "browser": "Edg/157.0.4341.60",
+    "buildId": "b9276dd127a690ace2c43549bed8d98ffe844615982ad86483fbada03a70ffdd",
+    "serverShellId": "5b90ba2ede1fd5a0831369cb4cc2a7849daee801852649d4f258059397bdd6b2",
+    "renderedFixture": "production A",
+    "background": "rgb(31, 41, 51)",
+    "rootFontSize": "16px",
+    "online": true,
+    "command": "node scripts/verify-offline-browser.cjs artifacts/run34/web-final artifacts/run34/offline-record"
+  },
+  {
+    "file": "desktop-update-waiting.png",
+    "capturedAt": "2026-11-22T00:03:12.311Z",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "browser": "Edg/157.0.4341.60",
+    "buildId": "b9276dd127a690ace2c43549bed8d98ffe844615982ad86483fbada03a70ffdd",
+    "serverShellId": "5b90ba2ede1fd5a0831369cb4cc2a7849daee801852649d4f258059397bdd6b2",
+    "renderedFixture": "production A",
+    "background": "rgb(31, 41, 51)",
+    "rootFontSize": "16px",
+    "online": true,
+    "command": "node scripts/verify-offline-browser.cjs artifacts/run34/web-final artifacts/run34/offline-record"
+  },
+  {
+    "file": "narrow-dark-200-offline-status.png",
+    "capturedAt": "2026-11-22T00:03:25.347Z",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "browser": "Edg/157.0.4341.60",
+    "buildId": "b9276dd127a690ace2c43549bed8d98ffe844615982ad86483fbada03a70ffdd",
+    "serverShellId": "b9276dd127a690ace2c43549bed8d98ffe844615982ad86483fbada03a70ffdd",
+    "renderedFixture": "production A",
+    "background": "rgb(31, 41, 51)",
+    "rootFontSize": "32px",
+    "online": false,
+    "command": "node scripts/verify-offline-browser.cjs artifacts/run34/web-final artifacts/run34/offline-record"
+  },
+  {
+    "file": "narrow-unavailable.png",
+    "capturedAt": "2026-11-22T00:03:28.136Z",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "browser": "Edg/157.0.4341.60",
+    "buildId": "b9276dd127a690ace2c43549bed8d98ffe844615982ad86483fbada03a70ffdd",
+    "serverShellId": "b9276dd127a690ace2c43549bed8d98ffe844615982ad86483fbada03a70ffdd",
+    "renderedFixture": "production A",
+    "background": "rgb(31, 41, 51)",
+    "rootFontSize": "16px",
+    "online": true,
+    "command": "node scripts/verify-offline-browser.cjs artifacts/run34/web-final artifacts/run34/offline-record"
+  }
+]

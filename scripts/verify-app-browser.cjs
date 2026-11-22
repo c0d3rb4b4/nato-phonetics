@@ -61,7 +61,7 @@ async function seed(page, values) {
   }, preferenceKey, values);
 }
 
-async function keyboardActivate(page, selector, key = 'Enter') {
+async function keyboardFocus(page, selector) {
   // Reach the control by Tab, so an element that is merely programmatically
   // focusable does not accidentally pass the keyboard acceptance check.
   await page.evaluate(() => { if (document.activeElement instanceof HTMLElement) document.activeElement.blur(); });
@@ -71,7 +71,25 @@ async function keyboardActivate(page, selector, key = 'Enter') {
     if (await page.evaluate(target => document.activeElement?.matches(target), selector)) { found = true; break; }
   }
   assert.equal(found, true, `Tab reaches ${selector}`);
+}
+
+async function keyboardActivate(page, selector, key = 'Enter') {
+  await keyboardFocus(page, selector);
   await page.keyboard.press(key);
+}
+
+async function assertInsetFocus(page, selector) {
+  const size = () => page.$eval(selector, element => {
+    const { width, height } = element.getBoundingClientRect();
+    return { width, height };
+  });
+  const before = await size();
+  await keyboardFocus(page, selector);
+  assert.deepEqual(await size(), before, `${selector} keeps its bounds on keyboard focus`);
+  assert.equal(await page.$eval(selector, element => [...element.children].some(child => {
+    const style = getComputedStyle(child);
+    return style.position === 'absolute' && style.borderTopWidth === '2px' && style.pointerEvents === 'none';
+  })), true, `${selector} draws a non-interactive inset focus ring`);
 }
 
 async function assertReachable(page, selector) {
@@ -334,6 +352,41 @@ async function replaceInput(page, value) {
     await page.waitForFunction(() => location.pathname === '/alphabet');
     console.log('PASS retained converter state, browser Back/Forward, static HTML alias and unknown-route recovery');
 
+    await page.setViewport({ width: 1280, height: 900 });
+    await visit(page, base, '/menu');
+    await page.waitForFunction(() => document.querySelector('[data-testid="web-offline-status"]')?.textContent.includes('Offline copy ready'));
+    await assertInsetFocus(page, button('Settings'));
+    await screenshot(page, 'menu-desktop-keyboard-focus');
+    await page.keyboard.press('Enter');
+    await page.waitForFunction(() => location.pathname === '/settings');
+    await assertInsetFocus(page, radio('System'));
+    await screenshot(page, 'settings-desktop-keyboard-focus');
+    assert.equal(await page.$eval(`${nav} [aria-current="page"]`, node => node.getAttribute('aria-label')), 'Menu');
+    await page.setViewport({ width: 320, height: 568 });
+    await visit(page, base, '/menu');
+    await enlargeText(page);
+    for (const destination of ['Learning progress', 'Settings', 'Audio help', 'About', 'Privacy policy']) {
+      await assertReachable(page, button(destination));
+    }
+    await assertTextContained(page, '[role="button"]');
+    await assertReachable(page, button('Learning progress'));
+    await screenshot(page, 'menu-320-200-percent');
+    await visit(page, base, '/settings');
+    await enlargeText(page);
+    for (const control of [radio('Full cards'), radio('Rate 1×'), radio('Word pause 300 ms'), radio('Dark'), button('Change Voice'), button('Reset Preferences')]) {
+      await assertReachable(page, control);
+    }
+    await screenshot(page, 'settings-320-200-percent-reset');
+    await assertReachable(page, radio('Full cards'));
+    await screenshot(page, 'settings-320-200-percent-converter');
+    await visit(page, base, '/missing-route');
+    await keyboardActivate(page, button('Open site map'));
+    await page.waitForFunction(() => location.pathname === '/_sitemap');
+    await screenshot(page, 'sitemap-mobile');
+    await keyboardActivate(page, button('Learning progress'));
+    await page.waitForFunction(() => location.pathname === '/progress');
+    console.log('PASS Menu and Settings compact row and radio focus without resizing, narrow 200% control reachability, detail selection and Site Map recovery');
+
     await visit(page, base, '/letter-quiz');
     await keyboardActivate(page, byTestId('quiz-start'));
     await page.waitForSelector(byTestId('quiz-choice-3'));
@@ -427,6 +480,7 @@ async function replaceInput(page, value) {
     const firstLetter = byTestId('alphabet-A');
     const secondLetter = byTestId('alphabet-B');
     await reference.page.waitForSelector(firstLetter);
+    await screenshot(reference.page, 'reference-mobile-letters');
     const referenceLayout = await geometry(reference.page, [referenceButton, firstLetter, secondLetter]);
     await reference.page.click(firstLetter);
     await waitForCalls(reference.page, 1);
@@ -527,15 +581,23 @@ async function replaceInput(page, value) {
     await waitForCalls(audio.page, 4);
     await audio.page.click(button('Stop playback'));
     await visit(audio.page, base, '/audio-help');
+    await audio.page.setViewport({ width: 320, height: 568 });
+    await enlargeText(audio.page);
     const audioTest = byTestId('audio-test-playback');
     const helpControl = button('Choose a voice');
+    await assertReachable(audio.page, audioTest);
     const helpLayout = await geometry(audio.page, [audioTest, helpControl]);
+    await screenshot(audio.page, 'audio-help-320-200-percent-idle');
     await audio.page.click(audioTest);
     await waitForCalls(audio.page, 1);
     assert.equal(await audio.page.$eval(audioTest, el => el.getAttribute('aria-label')), 'Stop playback');
     assert.deepEqual(await geometry(audio.page, [audioTest, helpControl]), helpLayout);
+    await screenshot(audio.page, 'audio-help-320-200-percent-playing');
     await audio.page.click(audioTest);
     await audio.page.waitForSelector(button('Play audio test'));
+    await assertReachable(audio.page, helpControl);
+    await keyboardActivate(audio.page, helpControl);
+    await audio.page.waitForFunction(() => location.pathname === '/voice-select');
     await audio.context.close();
     console.log('PASS mocked speech replacement, Stop (including word pause), edit, navigation and background ownership; stale callbacks cannot resume queues');
 
@@ -561,6 +623,10 @@ async function replaceInput(page, value) {
     assert.equal(await voices.page.evaluate(() => window.__speechTest.calls[0].voice), 'british-default');
     await voices.page.click(radio('American Network, en-US'));
     await voices.page.waitForFunction(() => JSON.parse(localStorage.getItem('nato.preferences.v1')).selectedVoice === 'american-network');
+    await visit(voices.page, base, '/settings');
+    await voices.page.waitForFunction(() => document.querySelector('[aria-label="Change Voice"]')?.innerText.includes('American Network'));
+    await keyboardActivate(voices.page, button('Change Voice'));
+    await voices.page.waitForFunction(() => document.querySelector('[aria-label="American Network, en-US"]')?.getAttribute('aria-checked') === 'true');
     await voices.page.click(radio('Locale en-GB'));
     assert.equal(await voices.page.$(radio('American Network, en-US')), null);
     assert.equal(await voices.page.evaluate(() => JSON.parse(localStorage.getItem('nato.preferences.v1')).selectedVoice), 'american-network', 'Filtering preserves saved voice');

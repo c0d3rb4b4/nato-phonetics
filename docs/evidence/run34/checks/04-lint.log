@@ -1,0 +1,4 @@
+{"executable":"cmd.exe","args":["/d","/c","npm.cmd","run","lint"],"cwd":"C:\\dev\\apps\\nato-phonetics\\artifacts\\run34\\clean-app","startedAt":"2026-11-22T00:05:41.432Z"}
+
+> nato-phonetics@1.0.0 lint
+> eslint . --max-warnings 0

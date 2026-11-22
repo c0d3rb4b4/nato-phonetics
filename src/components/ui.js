@@ -1,7 +1,7 @@
 import { Icon } from './Icon';
 import { useRouter } from '../navigation';
 import { useEffect, useRef, useState } from 'react';
-import { AccessibilityInfo, findNodeHandle, Linking, Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { AccessibilityInfo, findNodeHandle, Linking, Platform, Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import { useTheme } from '../context/ThemeContext';
 
 /** @param {import('react-native').ScrollViewProps & {overlay?: import('react').ReactNode}} props */
@@ -18,11 +18,11 @@ export function showsFocusRing(target) {
 
 /**
  * @param {Omit<import('react-native').PressableProps, 'style'> & {
- * label: string, variant?: 'primary' | 'secondary', selected?: boolean,
+ * label: string, variant?: 'primary' | 'secondary', selected?: boolean, compact?: boolean,
  * style?: import('react-native').StyleProp<import('react-native').ViewStyle>
  * }} props
  */
-export function Button({ label, variant = 'primary', selected, disabled, style, accessibilityLabel, accessibilityState, ...props }) {
+export function Button({ label, variant = 'primary', selected, disabled, compact, style, accessibilityLabel, accessibilityState, ...props }) {
   const { theme } = useTheme();
   const [focused, setFocused] = useState(false);
   const primary = variant === 'primary';
@@ -33,15 +33,56 @@ export function Button({ label, variant = 'primary', selected, disabled, style, 
     aria-disabled={!!disabled}
     aria-expanded={accessibilityState?.expanded}
     accessibilityState={{ ...accessibilityState, disabled: !!disabled, ...(selected === undefined ? {} : { selected }) }}
-    onFocus={event => { setFocused(true); props.onFocus?.(event); }}
+    onFocus={event => { setFocused(compact ? showsFocusRing(event.currentTarget) : true); props.onFocus?.(event); }}
     onBlur={event => { setFocused(false); props.onBlur?.(event); }}
-    style={({ pressed }) => [styles.button, {
-      backgroundColor: primary ? (pressed ? '#1E40AF' : theme.colors.primary) : theme.colors.surface,
-      borderColor: focused ? theme.colors.text : (primary ? theme.colors.primary : theme.colors.border),
-      borderWidth: focused ? 3 : 1,
-    }, disabled && { backgroundColor: theme.colors.card, borderColor: theme.colors.border }, style]}>
-    <Text style={[styles.buttonLabel, { color: primary && !disabled ? '#FFFFFF' : theme.colors.text }]}>{label}</Text>
+    style={({ pressed }) => [styles.button, compact && styles.compactButton, {
+      backgroundColor: primary ? (pressed ? '#1E40AF' : theme.colors.primary) : pressed && compact ? theme.colors.card : theme.colors.surface,
+      borderColor: focused && !compact ? theme.colors.text : (primary ? theme.colors.primary : theme.colors.border),
+      borderWidth: focused && !compact ? 3 : 1,
+    }, disabled && !(compact && primary) && { backgroundColor: theme.colors.card, borderColor: theme.colors.border }, style]}>
+    <Text style={[styles.buttonLabel, { color: primary && (!disabled || compact) ? '#FFFFFF' : theme.colors.text }]}>{label}</Text>
+    {compact && focused && <FocusRing color={theme.colors.text} />}
   </Pressable>;
+}
+
+/** @param {{label: string, children: import('react').ReactNode, style?: import('react-native').StyleProp<import('react-native').ViewStyle>}} props */
+export function ChoiceGroup({ label, children, style }) {
+  return <View accessibilityRole="radiogroup" accessibilityLabel={label} style={[styles.choices, style]}>{children}</View>;
+}
+
+/** @param {Omit<Parameters<typeof Button>[0], 'accessibilityRole' | 'accessibilityState' | 'compact' | 'variant'> & {selected: boolean}} props */
+export function ChoiceButton({ selected, ...props }) {
+  return <Button {...props} compact variant={selected ? 'primary' : 'secondary'}
+    accessibilityRole="radio" accessibilityState={{ checked: selected }} />;
+}
+
+/** @param {{children: import('react').ReactNode}} props */
+export function SectionHeading({ children }) {
+  const { theme } = useTheme();
+  return <Text accessibilityRole="header" aria-level={2} style={[styles.sectionHeading, { color: theme.colors.text }]}>{children}</Text>;
+}
+
+/** @param {import('react-native').TextProps & {muted?: boolean}} props */
+export function SupportingText({ muted = true, style, ...props }) {
+  const { theme } = useTheme();
+  return <Text {...props} style={[styles.supportingText, { color: muted ? theme.colors.textSecondary : theme.colors.text }, style]} />;
+}
+
+/** @param {import('react-native').TextInputProps} props */
+export function TextField({ style, onFocus, onBlur, ...props }) {
+  const { theme } = useTheme();
+  const [focused, setFocused] = useState(false);
+  return <TextInput placeholderTextColor={theme.colors.textSecondary} {...props}
+    onFocus={event => { setFocused(true); onFocus?.(event); }}
+    onBlur={event => { setFocused(false); onBlur?.(event); }}
+    style={[styles.field, style, {
+      backgroundColor: theme.colors.surface, borderColor: focused ? theme.colors.text : theme.colors.border, color: theme.colors.text,
+    }]} />;
+}
+
+/** @param {{color: string}} props */
+function FocusRing({ color }) {
+  return <View pointerEvents="none" style={[styles.focusRing, { borderColor: color }]} />;
 }
 
 /** @param {{ children: import('react').ReactNode, focusKey?: string | number, testID?: string }} props */
@@ -79,20 +120,21 @@ export function Feedback({ message, error = false }) {
 }
 
 /** @param {import('../types').NavigationItem} props */
-export function NavigationCard({ title, description, icon, route }) {
+export function NavigationRow({ title, description, icon, route }) {
   const { theme } = useTheme();
   const router = useRouter();
   const [focused, setFocused] = useState(false);
   return <Pressable accessibilityRole="button" accessibilityLabel={title} accessibilityHint={description}
-    onPress={() => router.push(route)} onFocus={() => setFocused(true)} onBlur={() => setFocused(false)}
-    style={({ pressed }) => [styles.navigationCard, { backgroundColor: pressed ? theme.colors.card : theme.colors.surface,
-      borderColor: focused ? theme.colors.text : theme.colors.border, borderWidth: focused ? 3 : 1 }]}>
-    <Icon name={icon} size={26} color={theme.colors.text} />
+    onPress={() => router.push(route)} onFocus={event => setFocused(showsFocusRing(event.currentTarget))} onBlur={() => setFocused(false)}
+    style={({ pressed }) => [styles.navigationRow, { backgroundColor: pressed ? theme.colors.card : theme.colors.surface,
+      borderColor: theme.colors.border }]}>
+    <Icon name={icon} size={22} color={theme.colors.text} />
     <View style={styles.navigationText}>
       <Text style={[styles.navigationTitle, { color: theme.colors.text }]}>{title}</Text>
-      <Text style={[styles.description, { color: theme.colors.textSecondary }]}>{description}</Text>
+      {description && <SupportingText>{description}</SupportingText>}
     </View>
-    <Icon name="chevron-forward" size={20} color={theme.colors.text} />
+    <Icon name="chevron-forward" size={18} color={theme.colors.text} />
+    {focused && <FocusRing color={theme.colors.text} />}
   </Pressable>;
 }
 
@@ -110,11 +152,16 @@ const styles = StyleSheet.create({
   screen: { flex: 1 },
   content: { flexGrow: 1, width: '100%', maxWidth: 840, alignSelf: 'center', padding: 16, paddingBottom: 32, gap: 12 },
   heading: { fontSize: 26, fontWeight: '700', marginVertical: 8 },
+  sectionHeading: { fontSize: 18, fontWeight: '700' },
+  supportingText: { fontSize: 15, lineHeight: 22 },
+  field: { borderRadius: 12, borderWidth: 1, paddingHorizontal: 12, paddingVertical: 10, fontSize: 16, minHeight: 48 },
   button: { minHeight: 48, borderRadius: 12, paddingVertical: 13, paddingHorizontal: 16, justifyContent: 'center', alignItems: 'center' },
+  compactButton: { minWidth: 48, maxWidth: '100%', paddingHorizontal: 12, paddingVertical: 8 },
   buttonLabel: { fontSize: 16, fontWeight: '600', textAlign: 'center', flexShrink: 1, maxWidth: '100%' },
+  choices: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
+  focusRing: { position: 'absolute', top: 0, bottom: 0, left: 0, right: 0, borderRadius: 11, borderWidth: 2 },
   feedback: { fontSize: 16, lineHeight: 24, marginVertical: 8 },
-  navigationCard: { flexDirection: 'row', alignItems: 'center', gap: 12, borderRadius: 12, padding: 16, minHeight: 72 },
-  navigationText: { flex: 1 },
-  navigationTitle: { fontSize: 18, fontWeight: '600', marginBottom: 4 },
-  description: { fontSize: 15, lineHeight: 22 },
+  navigationRow: { flexDirection: 'row', alignItems: 'center', gap: 10, borderRadius: 12, borderWidth: 1, paddingVertical: 8, paddingHorizontal: 12, minHeight: 48 },
+  navigationText: { flex: 1, minWidth: 0, gap: 2 },
+  navigationTitle: { fontSize: 16, fontWeight: '600' },
 });

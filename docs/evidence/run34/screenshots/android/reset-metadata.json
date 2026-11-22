@@ -1,0 +1,23 @@
+{
+  "serial": "emulator-5572",
+  "apkSha256": "c361ff2262761af3639d15dc151c0dcba7c16c74f92eaa27cb3e586a478490b0",
+  "returns": [],
+  "status": "passed",
+  "frames": [
+    {
+      "file": "settings-reset-controls.png",
+      "fontScale": 1,
+      "sha256": "7836da7464e559dd159eaac7208efceae68698bf6c163c4b38ae02c50e0c0b93",
+      "theme": "dark",
+      "state": "reachable reset control"
+    },
+    {
+      "file": "settings-reset-restored.png",
+      "fontScale": 1,
+      "sha256": "f46254b280dd61e5e115725128515cbef8e777a0131901fde47614cbe268847d",
+      "theme": "System light",
+      "state": "default preferences after reset and relaunch"
+    }
+  ],
+  "command": "python docs/evidence/run34/check-android-reset.py --serial emulator-5572 --reset-only android/app/build/outputs/apk/develop/app-develop.apk artifacts/run34/android-reset-retry"
+}

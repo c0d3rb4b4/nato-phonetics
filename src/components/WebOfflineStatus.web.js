@@ -1,8 +1,7 @@
 import { useSyncExternalStore } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { useTheme } from '../context/ThemeContext';
+import { StyleSheet, View } from 'react-native';
 import { checkOffline, getOfflineState, subscribeOffline } from '../lib/webOffline';
-import { Button, Heading } from './ui';
+import { Button, SectionHeading, SupportingText } from './ui';
 
 const messages = {
   preparing: 'Preparing the offline copy. Keep this window open and connected until it is ready.',
@@ -13,13 +12,15 @@ const messages = {
 };
 
 export default function WebOfflineStatus() {
-  const { theme } = useTheme();
   const { status, online } = useSyncExternalStore(subscribeOffline, getOfflineState);
   return <View testID="web-offline" style={styles.section}>
-    <Heading>Web availability</Heading>
-    <Text testID="web-offline-status" accessibilityLiveRegion="polite" style={[styles.text, { color: theme.colors.text }]}>{messages[/** @type {keyof typeof messages} */ (status)]}</Text>
-    <Text style={[styles.text, { color: theme.colors.textSecondary }]}>{online ? 'Browser reports a connection.' : 'Browser reports offline.'} Speech connectivity depends on your browser and voice; an offline copy does not guarantee audio. No microphone recognition is implemented.</Text>
-    <Button label={status === 'error' ? 'Retry offline setup' : 'Check for web update'} variant="secondary" onPress={() => { void checkOffline(); }} />
+    <SectionHeading>Web availability</SectionHeading>
+    <SupportingText testID="web-offline-status" muted={false} accessibilityLiveRegion="polite" aria-live="polite">
+      {messages[/** @type {keyof typeof messages} */ (status)]}
+    </SupportingText>
+    <SupportingText>{online ? 'Browser reports a connection.' : 'Browser reports offline.'} Speech connectivity depends on your browser and voice; an offline copy does not guarantee audio. No microphone recognition is implemented.</SupportingText>
+    <Button label={status === 'error' ? 'Retry offline setup' : 'Check for web update'} variant="secondary" compact
+      style={styles.action} onPress={() => { void checkOffline(); }} />
   </View>;
 }
-const styles = StyleSheet.create({ section: { gap: 12, marginTop: 16 }, text: { fontSize: 16, lineHeight: 25 } });
+const styles = StyleSheet.create({ section: { gap: 8, marginTop: 8 }, action: { alignSelf: 'flex-start' } });

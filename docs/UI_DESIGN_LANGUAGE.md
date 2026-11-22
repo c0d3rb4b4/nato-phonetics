@@ -4,6 +4,8 @@ Reference and Word Converter set the direction for the whole app. Both put the c
 
 The audit covers all 13 routes and 12 distinct screens. The root route opens the same Reference screen as `/alphabet`. The current-state findings reflect the shared source and the exported app in light and dark phone layouts, including an entered conversion and all three quiz modes. The proposed design and its verification are tracked under [P05.9 in the delivery plan](DELIVERY_PLAN.md#p059-uniform-ui-design-language).
 
+**22 November 2026.** The Menu/Settings pilot and the Voice Select, Audio Help and Site Map rollout are implemented. Reference uses the shared choice controls and Converter shares its field with Voice Select. The before-and-after captures show the same Reference and populated Converter under matching settings. Letter Quiz setup, Learning Progress, About, Privacy Policy and Page Not Found still use the previous layout. [Run 34 scope and verification](evidence/run34/README.md) · [Before and after](evidence/run34/screenshots/index.md).
+
 ## Shared patterns
 
 | Pattern | Design to carry across the app |
@@ -36,10 +38,9 @@ The shared shell, controls and playback components already provide a starting po
 
 ## Next workload action points
 
-1. **Establish the shared patterns.** Capture the current Reference and Converter layouts as implementation comparisons. Reuse their control sizes, spacing, theme roles and stable playback behavior in common choice, navigation, input, heading and feedback patterns.
-2. **Pilot Menu and Settings first.** Apply compact destination rows and consistent Appearance and Converter choices. Check direct entry, navigation, keyboard focus, larger text, settings save and reset, and the web availability states before rolling the patterns out further.
-3. **Apply the patterns to the remaining screens.** Carry them through Voice Select and Audio Help, Quiz and Learning Progress, then About, Privacy Policy, Site Map and Page Not Found. Recheck both reference screens wherever shared code changes.
-4. **Verify the affected routes and states.** Compare before and after layouts on Android, iOS and web. Record which builds, devices, browsers and states were run and carry open platform checks into the handoff. [Delivery plan](DELIVERY_PLAN.md#p059-uniform-ui-design-language) · [Application review](APP_REVIEW.md#next-workload-uniform-ui-design-language)
+1. Apply the shared choices to Letter Quiz setup and put Learning Progress totals, review states and the practice action first. Keep concealment, drafts, pending-save recovery and explicit deletion.
+2. Apply compact rows and heading styles to About, Privacy Policy and Page Not Found. Recheck the known iOS Speech-policy paragraph and both baseline screens after relevant shared changes.
+3. Qualify the installed iOS Menu/Settings pilot and the Voice Select, Audio Help and Site Map changes. Continue affected-flow checks on Android, iOS and web. [Delivery plan](DELIVERY_PLAN.md#p059-uniform-ui-design-language) · [Application review](APP_REVIEW.md#run-34-uniform-ui-rollout)
 
 ## Acceptance checks
 

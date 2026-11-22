@@ -1,15 +1,31 @@
 import { useEffect, useRef, useState } from 'react';
-import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { PlaybackButton, PlaybackNotice } from '../src/components/PlaybackControls';
-import { Button, Feedback, Heading, Screen } from '../src/components/ui';
+import { Button, ChoiceButton, ChoiceGroup, Feedback, Screen, SectionHeading, showsFocusRing, SupportingText, TextField } from '../src/components/ui';
 import { useTheme } from '../src/context/ThemeContext';
 import { usePlayback } from '../src/hooks/usePlayback';
 import { NATO_ALPHABET } from '../src/data/natoData';
 import { loadEnglishVoices } from '../src/lib/speech';
 import { filterEnglishVoices } from '../src/lib/audioVoices';
 
+/** @param {{label: string, name: string, description: string, selected: boolean, onPress: () => void}} props */
+function VoiceChoice({ label, name, description, selected, onPress }) {
+  const { theme } = useTheme();
+  const [focused, setFocused] = useState(false);
+  return <Pressable accessibilityRole="radio" accessibilityLabel={label} accessibilityHint={description}
+    accessibilityState={{ checked: selected }} aria-checked={selected} onPress={onPress}
+    onFocus={event => setFocused(showsFocusRing(event.currentTarget))} onBlur={() => setFocused(false)}
+    style={({ pressed }) => [styles.voice, {
+      backgroundColor: pressed || selected ? theme.colors.card : theme.colors.surface,
+      borderColor: focused ? theme.colors.text : selected ? theme.colors.primary : theme.colors.border,
+    }]}>
+    <Text style={[styles.name, { color: theme.colors.text }]}>{name}{selected ? ' ✓' : ''}</Text>
+    <SupportingText>{description}</SupportingText>
+  </Pressable>;
+}
+
 export default function VoiceSelectScreen() {
-  const { theme, preferences, setSelectedVoice, isSaving } = useTheme();
+  const { preferences, setSelectedVoice, isSaving } = useTheme();
   const audio = usePlayback('voice-select');
   const [voices, setVoices] = useState(/** @type {Awaited<ReturnType<typeof loadEnglishVoices>>} */ ([]));
   const [state, setState] = useState('loading');
@@ -38,7 +54,6 @@ export default function VoiceSelectScreen() {
   const locales = [...new Set(voices.map(voice => voice.language))];
   const filtered = filterEnglishVoices(voices, query, locale);
   const removed = selected && state === 'ready' && !voices.some(voice => voice.identifier === selected);
-  const textColor = { color: theme.colors.text };
   /** @param {string | null} id */
   const select = (id) => { audio.stop(); void setSelectedVoice(id); };
   /** @param {string | null} id */
@@ -47,17 +62,13 @@ export default function VoiceSelectScreen() {
     void audio.play(NATO_ALPHABET.slice(0, 3).map(entry => ({ text: entry.speechText })), { voice: id });
   };
   return <Screen overlay={<PlaybackNotice audio={audio} />}>
-    <Heading>Select Voice</Heading>
-    <Text style={[styles.info, { color: theme.colors.textSecondary }]}>Choose a voice to save it. Preview plays a sample without changing your saved choice. All available English voices are listed by locale and quality.</Text>
+    <SectionHeading>Select Voice</SectionHeading>
+    <SupportingText>Choose a voice to save it. Preview plays a sample without saving.</SupportingText>
     {isSaving && <Feedback message="Saving settings…" />}
-    <View testID="voice-list">
+    <View testID="voice-list" style={styles.list}>
       <View style={styles.voiceRow}>
-        <Pressable accessibilityRole="radio" accessibilityLabel="System Default"
-          accessibilityState={{ checked: selected === null }} aria-checked={selected === null}
-          onPress={() => select(null)} style={[styles.voice, { backgroundColor: theme.colors.surface, borderColor: selected === null ? theme.colors.primary : theme.colors.border }]}>
-          <Text style={[styles.name, textColor]}>System Default {selected === null ? '✓' : ''}</Text>
-          <Text style={{ color: theme.colors.textSecondary }}>Let the speech provider choose a voice</Text>
-        </Pressable>
+        <VoiceChoice label="System Default" name="System Default" description="Let the speech provider choose a voice"
+          selected={selected === null} onPress={() => select(null)} />
         <PlaybackButton audio={audio} active={audio.active && previewVoice === null}
           label="Preview System Default" onPlay={() => preview(null)} />
       </View>
@@ -65,35 +76,33 @@ export default function VoiceSelectScreen() {
         {state === 'loading' && <Feedback message="Loading English voices…" />}
         {state === 'error' && <Feedback error message="Could not load voices. Try again or use System Default." />}
         {state === 'empty' && <Feedback message="No English voices found. Install an English voice in your device settings, then retry. System Default may still work." />}
-        {removed && <Feedback message="Your saved voice is no longer available. Playback will use System Default; choose an available voice or save System Default below." />}
+        {removed && <Feedback message="Your saved voice is no longer available. Playback will use System Default. Choose an available voice or save System Default." />}
       </View>
-      <Button label="Retry voice list" variant="secondary" onPress={() => { audio.stop(); void loadVoices(); }} />
       {state === 'ready' && <View style={styles.filters}>
-        <Heading>Find a voice</Heading>
-        <Text style={textColor}>Search by name, locale code or quality. Filters do not change your saved voice.</Text>
-        <TextInput testID="voice-search" accessibilityLabel="Search English voices" value={query}
-          placeholder="Name, locale or quality" placeholderTextColor={theme.colors.textSecondary}
+        <SectionHeading>Find an English voice</SectionHeading>
+        <SupportingText>Search by name, locale or quality.</SupportingText>
+        <TextField testID="voice-search" accessibilityLabel="Search English voices" value={query}
+          placeholder="Search voices"
           autoCapitalize="none" autoCorrect={false} spellCheck={false}
-          onChangeText={value => { audio.stop(); setQuery(value); }}
-          style={[styles.search, { color: theme.colors.text, borderColor: theme.colors.border, backgroundColor: theme.colors.surface }]} />
-        {['', ...locales].map(value => <Button key={value} label={value ? `Locale ${value}` : 'All English locales'}
-          variant="secondary" accessibilityRole="radio" accessibilityState={{ checked: locale === value }} selected={locale === value}
-          onPress={() => { audio.stop(); setLocale(value); }} />)}
-        <Button label="Reset voice filters" variant="secondary" disabled={!query && !locale}
+          onChangeText={value => { audio.stop(); setQuery(value); }} />
+        <ChoiceGroup label="English voice locale">
+          {['', ...locales].map(value => <ChoiceButton key={value} label={value || 'All English locales'}
+            accessibilityLabel={value ? `Locale ${value}` : 'All English locales'} selected={locale === value}
+            onPress={() => { audio.stop(); setLocale(value); }} />)}
+        </ChoiceGroup>
+        <SupportingText testID="voice-filter-count" accessibilityLiveRegion="polite" aria-live="polite">Showing {filtered.length} of {voices.length} English voices.</SupportingText>
+        {!filtered.length && <Feedback message="No voices match these filters." />}
+        <Button label="Reset voice filters" variant="secondary" compact style={styles.action} disabled={!query && !locale}
           onPress={() => { audio.stop(); setQuery(''); setLocale(''); }} />
-        <Text testID="voice-filter-count" accessibilityLiveRegion="polite" style={textColor}>Showing {filtered.length} of {voices.length} English voices.</Text>
-        {!filtered.length && <Feedback message="No voices match these filters. Reset voice filters to see all available English voices." />}
       </View>}
-      {state === 'ready' && filtered.map((voice, index) => <View key={voice.identifier}>
-        {(index === 0 || filtered[index - 1].language !== voice.language) && <Heading>{voice.language}</Heading>}
+      {state !== 'loading' && <Button label={state === 'ready' ? 'Refresh voice list' : 'Retry voice list'} variant="secondary" compact style={styles.action}
+        onPress={() => { audio.stop(); void loadVoices(); }} />}
+      {state === 'ready' && filtered.map((voice, index) => <View key={voice.identifier} style={styles.list}>
+        {(index === 0 || filtered[index - 1].language !== voice.language) && <SectionHeading>{voice.language}</SectionHeading>}
         <View style={styles.voiceRow}>
-          <Pressable accessibilityRole="radio" accessibilityLabel={`${voice.name}, ${voice.language}`}
-            accessibilityState={{ checked: selected === voice.identifier }} aria-checked={selected === voice.identifier}
-            onPress={() => select(voice.identifier)}
-            style={[styles.voice, { backgroundColor: theme.colors.surface, borderColor: selected === voice.identifier ? theme.colors.primary : theme.colors.border }]}>
-            <Text style={[styles.name, textColor]}>{voice.name} {selected === voice.identifier ? '✓' : ''}</Text>
-            <Text style={{ color: theme.colors.textSecondary }}>{voice.language} · {voice.quality || 'Default'}</Text>
-          </Pressable>
+          <VoiceChoice label={`${voice.name}, ${voice.language}`} name={voice.name}
+            description={`${voice.language} · ${voice.quality || 'Default'}`} selected={selected === voice.identifier}
+            onPress={() => select(voice.identifier)} />
           <PlaybackButton audio={audio} active={audio.active && previewVoice === voice.identifier}
             label={`Preview ${voice.name}`} onPlay={() => preview(voice.identifier)} />
         </View>
@@ -102,10 +111,10 @@ export default function VoiceSelectScreen() {
   </Screen>;
 }
 const styles = StyleSheet.create({
-  filters: { gap: 10, marginTop: 12 },
-  search: { borderWidth: 1, borderRadius: 12, padding: 12, fontSize: 16, minHeight: 48 },
-  info: { fontSize: 15, lineHeight: 23, marginBottom: 12 },
-  voiceRow: { flexDirection: 'row', gap: 8, alignItems: 'center', marginVertical: 8 },
-  voice: { flex: 1, padding: 16, borderRadius: 12, borderWidth: 2, minHeight: 52 },
-  name: { fontSize: 17, fontWeight: '600', marginBottom: 4 },
+  list: { gap: 8 },
+  filters: { gap: 8, marginBottom: 4 },
+  action: { alignSelf: 'flex-start' },
+  voiceRow: { flexDirection: 'row', gap: 8, alignItems: 'center' },
+  voice: { flex: 1, minWidth: 0, paddingVertical: 8, paddingHorizontal: 12, borderRadius: 12, borderWidth: 2, minHeight: 48, gap: 2 },
+  name: { fontSize: 16, fontWeight: '600' },
 });

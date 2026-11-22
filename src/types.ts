@@ -108,5 +108,5 @@ export type NavigationItem = {
   title: string;
   icon: IconName;
   route: RoutePath;
-  description: string;
+  description?: string;
 };

@@ -414,6 +414,12 @@ Turn R01–R25 and selected feature items into individually owned work items, re
 
 ## Current delivery status
 
+### Run 34 uniform UI rollout
+
+**22 November 2026 · P05.9 active.** Menu and Settings share compact, wrapping choices and navigation rows. Voice Select uses the Converter field, compact locale choices and separate Preview controls. Audio Help uses the shared headings and navigation rows. Site Map includes Learning Progress and updated practice and settings descriptions. R06/R07, R12/R13, R18, R21/R22 and F04/F09/F10 gained scoped evidence. R14 gained a separate local browser lifecycle check. The ledger stays at 14 in progress, 15 implemented awaiting M11 and six resolved. P05, P06 and P08–P10 remain active. [Verification](evidence/run34/README.md) · [Screenshots](evidence/run34/screenshots/index.md).
+
+The Android 16 x86_64 development build passed scoped navigation, saved-choice restart, keyboard-visible conversion, enlarged layout and a dedicated reset retest. The voice list showed the retry state on this emulator. The next UI work is Letter Quiz setup and Learning Progress, followed by About, Privacy Policy and Page Not Found. Installed iOS pilot qualification is pending. The ARM app live-size and iOS maximum-text long-drag/Share engineering gates remain P1. All seven M11 checks are pending. [UI rollout](UI_DESIGN_LANGUAGE.md#next-workload-action-points) · [Acceptance queue](DELIVERY_PLAN.md#current-delivery-order-and-residual-engineering-queue).
+
 ### Next workload Uniform UI design language
 
 **21 November 2026 · P05.9 · P2.** Reference and Word Converter establish the compact control layout, clear selection and stable audio behavior for the app. The current Quiz and Appearance choice groups use a different visual treatment. Menu destinations, voice filters and progress summaries also need a more compact, task-first hierarchy. [Full screen audit](UI_DESIGN_LANGUAGE.md#screen-analysis)

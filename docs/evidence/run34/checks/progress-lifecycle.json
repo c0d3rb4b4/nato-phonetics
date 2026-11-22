@@ -1,0 +1,9 @@
+{
+  "checks": [],
+  "errors": [],
+  "scope": "Actual hidden Chromium page freeze/resume; no OS process, Firefox/WebKit or legacy-client upgrade qualification",
+  "browser": "Edg/157.0.4341.60",
+  "status": "failed",
+  "failure": "Error: Error: failed to find element matching selector \"[data-testid=\"quiz-letter\"]:not([aria-hidden=\"true\"] *)\"\n    at CdpElementHandle.$eval (C:\\Users\\lalit\\AppData\\Local\\npm-cache\\_npx\\ff64eaa2932d6fe3\\node_modules\\puppeteer-core\\lib\\cjs\\puppeteer\\api\\ElementHandle.js:496:27)\n    at async CdpFrame.$eval (C:\\Users\\lalit\\AppData\\Local\\npm-cache\\_npx\\ff64eaa2932d6fe3\\node_modules\\puppeteer-core\\lib\\cjs\\puppeteer\\api\\Frame.js:453:20)\n    at async CdpPage.$eval (C:\\Users\\lalit\\AppData\\Local\\npm-cache\\_npx\\ff64eaa2932d6fe3\\node_modules\\puppeteer-core\\lib\\cjs\\puppeteer\\api\\Page.js:454:20)\n    at async answer (C:\\dev\\apps\\nato-phonetics\\scripts\\verify-progress-lifecycle-browser.cjs:58:20)\n    at async C:\\dev\\apps\\nato-phonetics\\scripts\\verify-progress-lifecycle-browser.cjs:75:3",
+  "at": "2026-11-22T00:05:43.739Z"
+}

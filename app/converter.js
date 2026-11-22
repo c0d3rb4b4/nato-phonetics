@@ -1,8 +1,8 @@
 import { useCallback, useMemo, useRef, useState } from 'react';
-import { Platform, Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
+import { Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { PlaybackButton, PlaybackNotice } from '../src/components/PlaybackControls';
 import { NatoTile, TileGrid } from '../src/components/NatoTile';
-import { Button, Feedback, Screen, showsFocusRing } from '../src/components/ui';
+import { Button, Feedback, Screen, showsFocusRing, TextField } from '../src/components/ui';
 import { useTheme } from '../src/context/ThemeContext';
 import { usePlayback } from '../src/hooks/usePlayback';
 import { useTileEnvironment } from '../src/hooks/useTileEnvironment';
@@ -112,10 +112,9 @@ export default function ConverterScreen() {
   return <Screen stickyHeaderIndices={[0]} overlay={<PlaybackNotice audio={audio} />}>
     <View style={{ backgroundColor: theme.colors.background }}>
       <View style={styles.inputRow}>
-        <TextInput accessibilityLabel="Text to convert" testID="converter-input"
-          style={[styles.input, { backgroundColor: theme.colors.surface, borderColor: theme.colors.border, color: theme.colors.text }]}
+        <TextField accessibilityLabel="Text to convert" testID="converter-input" style={styles.input}
           value={input} onChangeText={edit} multiline numberOfLines={Platform.OS === 'web' ? 1 : undefined}
-          placeholder="Type a word or phrase" placeholderTextColor={theme.colors.textSecondary}
+          placeholder="Type a word or phrase"
           autoCapitalize="characters" autoCorrect={false} spellCheck={false} />
         <PlaybackButton audio={audio} label="Play Full Phrase" onPlay={playPhrase}
           disabled={!output.speech.length} testID="converter-playback" />
@@ -149,7 +148,7 @@ export default function ConverterScreen() {
 }
 const styles = StyleSheet.create({
   inputRow: { flexDirection: 'row', alignItems: 'flex-start', gap: 8 },
-  input: { flex: 1, borderRadius: 12, borderWidth: 1, paddingHorizontal: 12, paddingVertical: 10, fontSize: 18, minHeight: 48, maxHeight: 160, textAlignVertical: 'top' },
+  input: { flex: 1, fontSize: 18, maxHeight: 160, textAlignVertical: 'top' },
   bubbles: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', gap: 8 },
   bubble: { borderRadius: TILE_DESIGN.radius, paddingHorizontal: 10, paddingVertical: 8, minHeight: 44, justifyContent: 'center', maxWidth: '100%' },
   bubbleRing: { borderRadius: TILE_DESIGN.radius, borderWidth: 2 },

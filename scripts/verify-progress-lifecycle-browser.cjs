@@ -55,8 +55,13 @@ async function capture(page, file, state) {
     await page.goto(base + '/letter-quiz'); await click(page, named('26 questions')); await click(page, id('quiz-start'));
   }
   async function answer(page) {
-    const symbol = await page.$eval(id('quiz-letter'), element => element.textContent.trim());
-    await click(page, named('Choose ' + words.get(symbol))); await page.waitForSelector(id('quiz-answer'));
+    // A click can return before React commits Start or Next to a hidden tab.
+    await page.waitForSelector(id('quiz-answer'), { hidden: true });
+    const displayed = await page.waitForSelector(id('quiz-letter'), { visible: true });
+    const symbol = await displayed.evaluate(element => element.textContent.trim());
+    const word = words.get(symbol);
+    assert.ok(word, `Expected a canonical quiz symbol, got ${symbol}`);
+    await click(page, named('Choose ' + word)); await page.waitForSelector(id('quiz-answer'));
   }
   async function progress(page) { await click(page, named('Menu')); await click(page, named('Learning progress')); }
   async function clear() { await click(a, id('progress-clear')); await click(a, id('progress-delete')); await summary(a, 0); }

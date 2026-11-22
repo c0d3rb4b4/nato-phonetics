@@ -1,0 +1,10 @@
+
+> nato-phonetics@1.0.0 check:dependencies
+> node scripts/check-no-expo.cjs
+
+Installed graph invalid: npm error code ELSPROBLEMS
+npm error extraneous: @emnapi/runtime@1.11.3 C:\dev\apps\nato-phonetics\node_modules\@emnapi\runtime
+npm error extraneous: @img/sharp-wasm32@0.35.5 C:\dev\apps\nato-phonetics\node_modules\@img\sharp-wasm32
+npm error extraneous: tslib@2.9.1 C:\dev\apps\nato-phonetics\node_modules\tslib
+npm error invalid: @react-native/codegen@ C:\dev\apps\nato-phonetics\node_modules\react-native\node_modules\@react-native\codegen
+npm error A complete log of this run can be found in: C:\Users\lalit\AppData\Local\npm-cache\_logs\2026-11-22T00_02_50_756Z-debug-0.log

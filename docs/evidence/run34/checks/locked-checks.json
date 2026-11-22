@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 2,
+  "mode": "checks",
+  "startedAt": "2026-11-22T00:05:18.096Z",
+  "status": "passed",
+  "host": {
+    "platform": "win32",
+    "arch": "x64",
+    "release": "10.0.26200",
+    "node": "22.23.0"
+  },
+  "jobs": 1,
+  "install": true,
+  "preflightOnly": false,
+  "remoteJob": null,
+  "steps": [
+    {
+      "name": "locked-install",
+      "executable": "cmd.exe",
+      "args": [
+        "/d",
+        "/c",
+        "npm.cmd",
+        "ci"
+      ],
+      "log": "logs/01-locked-install.log",
+      "startedAt": "2026-11-22T00:05:18.489Z",
+      "endedAt": "2026-11-22T00:05:38.838Z",
+      "exitCode": 0,
+      "signal": null
+    },
+    {
+      "name": "check-dependencies",
+      "executable": "cmd.exe",
+      "args": [
+        "/d",
+        "/c",
+        "npm.cmd",
+        "run",
+        "check:dependencies"
+      ],
+      "log": "logs/02-check-dependencies.log",
+      "startedAt": "2026-11-22T00:05:38.839Z",
+      "endedAt": "2026-11-22T00:05:39.823Z",
+      "exitCode": 0,
+      "signal": null
+    },
+    {
+      "name": "typecheck",
+      "executable": "cmd.exe",
+      "args": [
+        "/d",
+        "/c",
+        "npm.cmd",
+        "run",
+        "typecheck"
+      ],
+      "log": "logs/03-typecheck.log",
+      "startedAt": "2026-11-22T00:05:39.825Z",
+      "endedAt": "2026-11-22T00:05:41.430Z",
+      "exitCode": 0,
+      "signal": null
+    },
+    {
+      "name": "lint",
+      "executable": "cmd.exe",
+      "args": [
+        "/d",
+        "/c",
+        "npm.cmd",
+        "run",
+        "lint"
+      ],
+      "log": "logs/04-lint.log",
+      "startedAt": "2026-11-22T00:05:41.432Z",
+      "endedAt": "2026-11-22T00:05:44.622Z",
+      "exitCode": 0,
+      "signal": null
+    },
+    {
+      "name": "test",
+      "executable": "cmd.exe",
+      "args": [
+        "/d",
+        "/c",
+        "npm.cmd",
+        "run",
+        "test"
+      ],
+      "log": "logs/05-test.log",
+      "startedAt": "2026-11-22T00:05:44.623Z",
+      "endedAt": "2026-11-22T00:05:54.709Z",
+      "exitCode": 0,
+      "signal": null
+    },
+    {
+      "name": "audit-review",
+      "executable": "cmd.exe",
+      "args": [
+        "/d",
+        "/c",
+        "npm.cmd",
+        "run",
+        "audit:review"
+      ],
+      "log": "logs/06-audit-review.log",
+      "startedAt": "2026-11-22T00:05:54.710Z",
+      "endedAt": "2026-11-22T00:05:55.706Z",
+      "exitCode": 0,
+      "signal": null
+    }
+  ],
+  "artifacts": [],
+  "sourceId": "2310cfceca2ab17b832f0417eff6711017ab3d1b30069d1765c1b003ef6dc9d9",
+  "commit": "d313296195095a8b1a5bd98f977d8233e01c193b",
+  "preflight": {
+    "npm": "10.9.4",
+    "diskAvailableBytes": 326566100992,
+    "totalMemoryBytes": 137131008000,
+    "freeMemoryBytes": 86952808448,
+    "cpus": 24,
+    "tools": {},
+    "capacityPolicy": "Measured inventory; no universal minimum or guarantee that a first build fits."
+  },
+  "exitCode": 0,
+  "endedAt": "2026-11-22T00:05:55.995Z"
+}

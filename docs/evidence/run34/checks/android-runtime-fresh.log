@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\dev\apps\nato-phonetics\docs\evidence\run34\check-android.py", line 171, in <module>
+    check(args.apk, args.output, args.serial)
+  File "C:\dev\apps\nato-phonetics\docs\evidence\run34\check-android.py", line 147, in check
+    checked('System')
+  File "C:\dev\apps\nato-phonetics\docs\evidence\run34\check-android.py", line 71, in checked
+    _, node = find(label)
+  File "C:\dev\apps\nato-phonetics\docs\evidence\run34\check-android.py", line 42, in find
+    raise AssertionError('Not visible: ' + ', '.join(labels))
+AssertionError: Not visible: System
