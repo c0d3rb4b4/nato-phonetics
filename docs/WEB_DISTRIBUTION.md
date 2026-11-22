@@ -96,3 +96,7 @@ Original Run24 spontaneous-save/exact Retry and stale-cache cleanup remain open.
 ## Hosted loopback qualification — Run 36
 
 The production build at `7350d269` passed all six Caddy checks in each hosted tab-close job. Hosted process restart passed all six checks in Chromium. Firefox reached the forward HTML and the expected sole app cache with its saved answer visible. The opened page lacked a controller, so the offline restart gate remains open. WebKit reported the current offline copy ready while the deliberately truncated update was expected to show a failure. Its process run stopped before restart. Trace the first Firefox navigation and controller timeline, and the WebKit corrupted response, install lifecycle and visible status, before changing worker logic. [Run 36 reports and captures](evidence/run36/README.md).
+
+## Run 38 hosted tab-close candidate
+
+At 159fb3a all three tab-close distribution jobs passed. The Linux Chromium support job passed its original pointer and offline checks, then failed in a separate recovery suite when the audio notice intercepted desktop Retry. The shared Dismiss interaction, real Retry double-click and independent freeze checks passed locally on the same hosted production shell. Repeat the recovery and independent freeze steps on the next revision with the Run 38 changes. The earlier Firefox and WebKit process failures retain their own trace checkpoints. [Run 38 browser evidence](evidence/run38/README.md#hosted-browser-checkpoint).

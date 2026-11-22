@@ -10,6 +10,8 @@ const { pathToFileURL } = require('node:url');
 const { chromium, firefox, webkit } = require('playwright');
 const { staticHandler } = require('./serve-web.cjs');
 
+const { withQuizNoticeRecovery } = require('./quiz-notice-recovery.cjs');
+
 const engine = process.argv[4] || 'chromium';
 const browserType = { chromium, firefox, webkit }[engine];
 assert(browserType, 'Engine must be chromium, firefox or webkit');
@@ -43,28 +45,8 @@ async function progress(page) {
 async function clear(page) {
   await click(page, id('progress-clear')); await click(page, id('progress-delete')); await summary(page, 0);
 }
-async function clickQuizAction(page, selector) {
-  const action = page.locator(selector);
-  const answer = page.locator(id('quiz-answer'));
-  const dismiss = page.locator(named('Dismiss'));
-  async function dismissNotice() {
-    const feedback = await answer.textContent();
-    await dismiss.click();
-    await dismiss.waitFor({ state: 'hidden' });
-    assert.equal(await answer.textContent(), feedback, 'Dismissing a speech notice preserves the submitted answer');
-    audioRecovery.push({ viewport: page.viewportSize(), feedback });
-  }
-
-  // A real speech error may cover Next or Retry. Use the visible Dismiss action,
-  // including when the notice arrives during the attempted click.
-  if (await dismiss.isVisible()) await dismissNotice();
-  try {
-    await action.click();
-  } catch (error) {
-    if (error.name !== 'TimeoutError' || !await dismiss.isVisible()) throw error;
-    await dismissNotice();
-    await action.click();
-  }
+function clickQuizAction(page, selector) {
+  return withQuizNoticeRecovery(page, audioRecovery, () => page.locator(selector).click());
 }
 async function next(page) {
   await clickQuizAction(page, id('quiz-next'));

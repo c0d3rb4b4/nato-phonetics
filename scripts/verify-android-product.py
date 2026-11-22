@@ -5,6 +5,7 @@ import json
 import os
 from pathlib import Path
 import re
+import struct
 import subprocess
 import tempfile
 from zipfile import ZipFile
@@ -16,6 +17,7 @@ from android_test_tools import build_tool, executable
 ROOT = Path(__file__).resolve().parents[1]
 DEV_CERT = 'fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c'
 SIGNATURE = re.compile(r'META-INF/[^/]+\.(SF|RSA|DSA|EC)', re.I)
+SPEECH_CLASSES = {b'Lnet/no_mad/tts/TextToSpeechModule;', b'Lnet/no_mad/tts/TextToSpeechPackage;'}
 
 
 def require(condition, message):
@@ -46,6 +48,26 @@ def manifest(apk):
     require(match, 'Missing Android package or version')
     return dict(packageId=match[1], versionCode=int(match[2]), version=match[3],
                 debuggable='application-debuggable' in output.splitlines())
+
+
+def speech_classes(data):
+    """Resolve class_defs through type_ids and string_ids. References alone do not qualify."""
+    require(data.startswith(b'dex\n'), 'Invalid DEX header')
+    _, strings, _, types = struct.unpack_from('<4I', data, 56)
+    count, definitions = struct.unpack_from('<2I', data, 96)
+    found = set()
+    for index in range(count):
+        class_id, = struct.unpack_from('<I', data, definitions + index * 32)
+        descriptor_id, = struct.unpack_from('<I', data, types + class_id * 4)
+        offset, = struct.unpack_from('<I', data, strings + descriptor_id * 4)
+        # string_data_item starts with a ULEB128 length before its terminated descriptor.
+        while data[offset] & 0x80:
+            offset += 1
+        start = offset + 1
+        descriptor = data[start:data.index(0, start)]
+        if descriptor in SPEECH_CLASSES:
+            found.add(descriptor)
+    return found
 
 
 def payload(archive, prefix, abis, bundled):
@@ -80,8 +102,18 @@ def payload(archive, prefix, abis, bundled):
     dex_prefix = prefix + 'dex/' if prefix else ''
     dex_names = [n for n in names if re.fullmatch(re.escape(dex_prefix) + r'classes\d*\.dex', n)]
     require(dex_prefix + 'classes.dex' in dex_names, 'Missing packaged DEX')
-    dex = {n[len(dex_prefix):]: sha(archive.read(n)) for n in dex_names}
-    return dict(nativeLibraries=libs, fonts=fonts, bundleSha256=bundle, dex=dex)
+    dex = {}
+    bridge = {}
+    for name in dex_names:
+        data = archive.read(name)
+        relative = name[len(dex_prefix):]
+        dex[relative] = sha(data)
+        for descriptor in speech_classes(data):
+            bridge[descriptor] = relative
+    missing = sorted(descriptor.decode('ascii') for descriptor in SPEECH_CLASSES - bridge.keys())
+    require(not missing, 'Missing packaged speech classes: ' + ', '.join(missing))
+    locations = {descriptor.decode('ascii'): bridge[descriptor] for descriptor in sorted(bridge)}
+    return dict(nativeLibraries=libs, fonts=fonts, bundleSha256=bundle, dex=dex, speechClasses=locations)
 
 
 def apk_signing(apk):

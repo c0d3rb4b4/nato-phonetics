@@ -1,0 +1,24 @@
+{
+  "testCopySha256": "10e5d09b8df818c839d76eaeba23f637918ae7aa9bfc997f3918fa8eebfc243b",
+  "unchangedEntriesAfterSigning": 521,
+  "comparedWithScopedRelease": [
+    "classes.dex",
+    "classes2.dex",
+    "lib/x86_64/libappmodules.so",
+    "lib/x86_64/libc++_shared.so",
+    "lib/x86_64/libfbjni.so",
+    "lib/x86_64/libhermes.so",
+    "lib/x86_64/libhermestooling.so",
+    "lib/x86_64/libimagepipeline.so",
+    "lib/x86_64/libjsi.so",
+    "lib/x86_64/libnative-filters.so",
+    "lib/x86_64/libnative-imagetranscoder.so",
+    "lib/x86_64/libreact_codegen_safeareacontext.so",
+    "lib/x86_64/libreactnative.so",
+    "assets/fonts/NatoTile-ExtraBold.ttf",
+    "assets/fonts/NatoTile-Italic.ttf",
+    "assets/fonts/NatoTile-SemiBold.ttf",
+    "assets/index.android.bundle"
+  ],
+  "differingProjectionEntries": []
+}

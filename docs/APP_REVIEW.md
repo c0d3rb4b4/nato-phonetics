@@ -414,6 +414,14 @@ Turn R01–R25 and selected feature items into individually owned work items, re
 
 ## Current delivery status
 
+### Run 38 Android Release and spoken-practice qualification
+
+**22 November 2026.** R12/R14/R24/F09 gained Android artifact or installed Release evidence. The inspector rejects the preserved missing-bridge APK. The scoped x86_64 Release lists 17 voices, previews one without selecting it and preserves an explicit choice after restart. F08 gained a real on-device Android en-US recognition result from synthetic input with no default network. Product capture and all seven M11 tasks remain pending. The ledger retains 14 in progress, 15 implemented awaiting M11 and six resolved. [Run 38 evidence](evidence/run38/README.md) · [screenshots](evidence/run38/screenshots/index.md).
+
+F07/F10 and P10.5 gained hosted evidence at 159fb3a. Six of seven jobs passed. Chromium passed the seven pointer/offline cases, then failed at desktop Retry and skipped freeze. On the exact hosted shell, both local recovery replays passed all six cases and CDP passed three freeze scenarios. Hosted requalification awaits the new driver and workflow conditions. [Run 38 browser evidence](evidence/run38/README.md#hosted-browser-checkpoint).
+
+R03/F03 and P06.3 gained a universal Release playback check. The unsigned APK and AAB match on all four ABIs and include both speech bridge classes. The installed engineering copy dispatched three requests for 359, retained the input and restored the Play bounds. R08’s hosted quality gate passed 173 tests with zero advisories. ARM app mappings, iOS drag/Share/disclosure and physical listening remain open. [Release identity](evidence/run38/universal-release.json) · [Installed converter](evidence/run38/universal-runtime.json).
+
 ### Run 37 Android speech bridge
 
 **22 November 2026 · P05.9/P08.4 active.** The Run 35 development APK lacked the TTS bridge. A comparison APK on the same Android 16 guest exposed 17 English voices. The rebuilt x86_64 APK restores enumeration, local voice preview, filters and saved selection across restart. At 2× text the preview switched to Stop in place. R12 and F09 gain scoped evidence. The ledger remains 14 in progress, 15 implemented awaiting M11 and six resolved. All seven M11 tasks remain pending. Exact ARM, installed iOS and hosted Chromium follow-up stay open. [Run 37 evidence](evidence/run37/README.md) · [screenshots](evidence/run37/screenshots/index.md).

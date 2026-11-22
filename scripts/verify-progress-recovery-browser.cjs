@@ -9,6 +9,7 @@ const { pathToFileURL } = require('node:url');
 const { chromium, firefox, webkit } = require('playwright');
 const { staticHandler } = require('./serve-web.cjs');
 const { observeProgress, progressSnapshot } = require('./progress-observation.cjs');
+const { withQuizNoticeRecovery } = require('./quiz-notice-recovery.cjs');
 const root = path.resolve(process.argv[2] || 'dist');
 const out = path.resolve(process.argv[3] || 'artifacts/progress-recovery');
 const engine = process.argv[4] || 'webkit';
@@ -46,7 +47,7 @@ async function main() {
   await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
   const origin = `http://127.0.0.1:${server.address().port}`;
   for (const scenario of ['ordinary', 'quota', 'lock']) for (const width of [1280, 320]) {
-    active = { scenario, width, theme: width === 320 ? 'dark' : 'light', errors: [], automationErrors: [], snapshots: {} };
+    active = { scenario, width, theme: width === 320 ? 'dark' : 'light', errors: [], automationErrors: [], audioRecovery: [], snapshots: {} };
     report.checks.push(active);
     context = await browser.newContext({ viewport: { width, height: width === 320 ? 568 : 900 }, colorScheme: active.theme });
     // One init script fixes installation order: faults sit beneath observations.
@@ -104,9 +105,9 @@ async function main() {
         await holder.evaluate(async () => { window.__release(); await window.__holding; });
       }
       await page.locator(named('Retry progress storage')).scrollIntoViewIfNeeded();
-      await capture(`${scenario}-${width}-pending.png`, 'First answer visibly pending with Retry; no saved record');
+      await capture(`${scenario}-${width}-pending.png`, 'First answer pending before pointer Retry; no saved record');
       await page.evaluate(() => window.__progressObservation.mark('before-pointer-retry'));
-      await page.locator(named('Retry progress storage')).dblclick();
+      await withQuizNoticeRecovery(page, active.audioRecovery, () => page.locator(named('Retry progress storage')).dblclick());
     }
     await saved(1);
     await page.waitForFunction(() => !document.body.innerText.includes('unsaved answer') && !document.querySelector('[aria-label="Retry progress storage"]'));

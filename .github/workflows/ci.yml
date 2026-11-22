@@ -116,6 +116,7 @@ jobs:
       - name: Build independent production web
         run: npm run export:web
       - name: Install isolated pinned runtime runner
+        id: runtime
         run: |
           npm install --prefix "$RUNNER_TEMP/nato-playwright" --no-save --package-lock=false playwright@1.65.1 puppeteer-core@24.43.1
           node "$RUNNER_TEMP/nato-playwright/node_modules/playwright/cli.js" install --with-deps ${{ matrix.engine }}
@@ -123,9 +124,10 @@ jobs:
       - name: Check real cross-window progress and cold offline relaunch
         run: node scripts/verify-browser-support.cjs dist artifacts/browser-support/${{ matrix.engine }} ${{ matrix.engine }}
       - name: Check first-answer storage failure and exactly-once Retry
+        if: ${{ !cancelled() && steps.runtime.outcome == 'success' }}
         run: node scripts/verify-progress-recovery-browser.cjs dist artifacts/browser-support/${{ matrix.engine }}/recovery ${{ matrix.engine }}
       - name: Check actual Chromium page freeze and deletion recovery
-        if: matrix.engine == 'chromium'
+        if: ${{ !cancelled() && steps.runtime.outcome == 'success' && matrix.engine == 'chromium' }}
         run: |
           browser_executable=$(node -e 'process.stdout.write(require("playwright").chromium.executablePath())')
           bash .github/configure-chromium-sandbox.sh "$browser_executable"

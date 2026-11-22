@@ -1,0 +1,39 @@
+{
+  "checks": [
+    {
+      "scope": "saved summary refreshes deletion after actual page freeze; task queue is measured stopped",
+      "events": [
+        {
+          "event": "freeze",
+          "beats": 9
+        },
+        {
+          "event": "resume",
+          "beats": 9
+        }
+      ]
+    },
+    {
+      "scope": "actual freeze with one failed pending answer; deletion during freeze discards that old answer after resume",
+      "events": [
+        {
+          "event": "freeze",
+          "beats": 16
+        },
+        {
+          "event": "resume",
+          "beats": 16
+        }
+      ],
+      "generation": "c302bd0c-23a3-4e4f-ac1b-d0c179ee934a"
+    },
+    {
+      "scope": "new submission after frozen-page deletion saves exactly once and both summaries agree"
+    }
+  ],
+  "errors": [],
+  "scope": "Actual hidden Chromium page freeze/resume; no OS process, Firefox/WebKit or legacy-client upgrade qualification",
+  "browser": "Chrome/159.0.8154.6",
+  "status": "passed",
+  "at": "2026-11-22T11:02:05.269Z"
+}

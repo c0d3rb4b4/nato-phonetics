@@ -1,0 +1,13 @@
+{
+  "installedSha256": "10e5d09b8df818c839d76eaeba23f637918ae7aa9bfc997f3918fa8eebfc243b",
+  "package": "com.natophonetics.app",
+  "device": "google/sdk_gphone64_x86_64/emu64xa:16/BE4B.251210.005/14574095:user/release-keys",
+  "primaryCpuAbi": "x86_64",
+  "inputAfter": "359",
+  "playBoundsBeforeAndAfter": "[912,105][1038,231]",
+  "requests": [
+    "I/GoogleTTSServiceImpl( 4014): Synthesis request for locale eng-GBR and name en-GB-language",
+    "I/GoogleTTSServiceImpl( 4014): Synthesis request for locale eng-GBR and name en-GB-language",
+    "I/GoogleTTSServiceImpl( 4014): Synthesis request for locale eng-GBR and name en-GB-language"
+  ]
+}
