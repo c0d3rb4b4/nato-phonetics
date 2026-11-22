@@ -2,6 +2,8 @@
 
 The reference uses the existing canonical 26 letters and ten digits, the shared portrait tile and the owned audio controller. Letters A–Z / Digits 0–9 switches the list and stops current playback. Cards show canonical words and the existing pronunciation guide; speech uses each entry's separate `speechText`. No pronunciation table or font/design metric was changed.
 
+Letter Quiz groups setup into Answer mode, Symbols, Review and Round length. Selected options use blue, and on web you can use Tab to reach them and Space to select them. Start round follows the choices. View learning progress opens saved totals and due review details. [Run 35 setup and recall checks](evidence/run35/README.md).
+
 Letter Quiz offers these symbol sets:
 
 | Set | Coverage cycle | Example playback |

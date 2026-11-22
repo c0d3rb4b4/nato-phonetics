@@ -1,9 +1,9 @@
 import { useCallback, useRef, useState } from 'react';
-import { Keyboard, StyleSheet, Text, TextInput, View } from 'react-native';
+import { Keyboard, StyleSheet, Text, View } from 'react-native';
 import { entrySymbol, PRACTICE_SETS, practiceExampleOutput, practiceLengths } from '../src/lib/practiceSets';
 import { PlaybackButton, PlaybackNotice } from '../src/components/PlaybackControls';
 import { NatoTile, TileGrid } from '../src/components/NatoTile';
-import { Button, Feedback, Heading, Screen } from '../src/components/ui';
+import { Button, ChoiceButton, ChoiceGroup, Feedback, Heading, NavigationRow, Screen, SectionHeading, SupportingText, TextField } from '../src/components/ui';
 import { useTheme } from '../src/context/ThemeContext';
 import { usePlayback } from '../src/hooks/usePlayback';
 import { useFocusEffect } from '../src/navigation';
@@ -17,7 +17,6 @@ import { useProgress } from '../src/hooks/useProgress';
 import { progressStore } from '../src/lib/progressStore';
 import { selectProgressSymbols } from '../src/lib/progress';
 import { ProgressStatus } from '../src/components/ProgressStatus';
-import { router } from '../src/navigation';
 
 const REVIEW_SCOPES = /** @type {const} */ ([
   { id: 'all', label: 'Full symbol set' }, { id: 'due', label: 'Due review' }, { id: 'mistakes', label: 'Focus on mistakes' },
@@ -101,8 +100,8 @@ export default function LetterQuizScreen() {
       <Text style={textStyle}>{roundPractice.label}{roundPractice.example ? ` · ${roundPractice.example}` : ''}</Text>
       <Text style={textStyle}>{QUIZ_MODES.find(item => item.id === session.mode)?.label}</Text>
       <Text style={textStyle} testID="quiz-score">{results.correct} correct of {results.answered} answered · {Math.round(results.accuracyPercent)}% accuracy</Text>
-      <Text style={textStyle}>{results.answered} of {results.total} questions answered.</Text>
-      <Heading>Missed answers</Heading>
+      <Text style={textStyle}>{results.answered} of {results.total} {results.total === 1 ? 'question' : 'questions'} answered.</Text>
+      <SectionHeading>Missed answers</SectionHeading>
       {results.missed.length ? results.missed.map((miss, index) => <Text key={`${miss.symbol}-${index}`} style={textStyle}>
         {session.mode === 'listening' ? `Expected symbol: ${miss.expected}` : `${miss.symbol} is ${miss.expected}`}. Your answer: {miss.answer}.
       </Text>) : <Text style={textStyle}>{results.answered ? 'No missed answers.' : 'No answers submitted.'}</Text>}
@@ -115,46 +114,51 @@ export default function LetterQuizScreen() {
     </View>}
     {choosing ? <>
       <Heading focusKey={finished ? undefined : 'setup'}>Letter and digit practice</Heading>
-      <Button label="View learning progress" variant="secondary" onPress={() => router.push('/progress')} />
-      <Text style={textStyle}>Choose how to answer.</Text>
-      <View style={styles.section}>
-        {QUIZ_MODES.map(item => <Button key={item.id} label={item.label} testID={`mode-${item.id}`} variant="secondary"
-          accessibilityRole="radio" accessibilityState={{ checked: mode === item.id }} selected={mode === item.id}
-          onPress={() => { audio.stop(); setMode(/** @type {import('../src/lib/quizSession').QuizMode} */ (item.id)); }} />)}
+      <View style={styles.setupSection}>
+        <SectionHeading>Answer mode</SectionHeading>
+        <ChoiceGroup label="Answer mode">
+          {QUIZ_MODES.map(item => <ChoiceButton key={item.id} label={item.label} testID={`mode-${item.id}`} selected={mode === item.id}
+            onPress={() => { audio.stop(); setMode(/** @type {import('../src/lib/quizSession').QuizMode} */ (item.id)); }} />)}
+        </ChoiceGroup>
+        {mode === 'listening' && <SupportingText>Play a code word, then choose its letter or digit. Replay or show the code word as text whenever you need it. No microphone is used.</SupportingText>}
+        {mode === 'typed' && <SupportingText>Type the canonical code word for the symbol. Case, accents, spaces and punctuation are ignored. Alpha and Juliet are accepted. Pronunciation guides are not alternative answers.</SupportingText>}
       </View>
-      {mode === 'listening' && <Text style={textStyle}>Play a code word, then choose its letter or digit. Replay or show the code word as text whenever you need it. No microphone is used.</Text>}
-      {mode === 'typed' && <Text style={textStyle}>Type the canonical code word for the symbol. Case, accents, spaces and punctuation are ignored; Alpha and Juliet are accepted. Pronunciation guides are not alternative answers.</Text>}
-      <Text style={textStyle}>Choose the symbols to practise.</Text>
-      <View style={styles.section}>
-        {PRACTICE_SETS.map(set => <Button key={set.id} label={set.label} testID={`practice-${set.id}`} variant="secondary"
-          accessibilityRole="radio" accessibilityState={{ checked: practice === set }} selected={practice === set}
-          onPress={() => { audio.stop(); setPractice(set); setLength(Math.min(DEFAULT_QUIZ_SESSION_LENGTH, set.symbols.length)); }} />)}
+      <View style={styles.setupSection}>
+        <SectionHeading>Symbols</SectionHeading>
+        <ChoiceGroup label="Symbols">
+          {PRACTICE_SETS.map(set => <ChoiceButton key={set.id} label={set.label} testID={`practice-${set.id}`} selected={practice === set}
+            onPress={() => { audio.stop(); setPractice(set); setLength(Math.min(DEFAULT_QUIZ_SESSION_LENGTH, set.symbols.length)); }} />)}
+        </ChoiceGroup>
+        {practice.example && <>
+          <SupportingText>Example: {practice.example}. The round shuffles its {practice.symbols.length} distinct symbols. Play the complete example in its original order.</SupportingText>
+          <View style={styles.audioRow}>
+            <PlaybackButton audio={audio} label="Hear example"
+              onPlay={() => { void audio.play(practiceExampleOutput(practice).speech); }} />
+            <SupportingText muted={false} style={styles.fill} testID="practice-example-text">{practiceExampleOutput(practice).text}</SupportingText>
+          </View>
+        </>}
       </View>
-      {practice.example && <>
-        <Text style={textStyle}>Example: {practice.example}. Questions practise its {practice.symbols.length} distinct symbols in shuffled order. Hear the complete example in its original order.</Text>
-        <View style={styles.audioRow}>
-          <PlaybackButton audio={audio} label="Hear example"
-            onPlay={() => { void audio.play(practiceExampleOutput(practice).speech); }} />
-          <Text style={[textStyle, styles.fill]} testID="practice-example-text">{practiceExampleOutput(practice).text}</Text>
-        </View>
-      </>}
-      <Text style={textStyle}>Choose full practice or use saved progress for this symbol set. Due review includes previously practised symbols whose review time has arrived. Focus includes symbols whose last saved answer was incorrect.</Text>
-      <View style={styles.section}>
-        {REVIEW_SCOPES.map(item => <Button key={item.id} label={item.label} testID={`review-${item.id}`} variant="secondary"
-          accessibilityRole="radio" accessibilityState={{ checked: scope === item.id }} selected={scope === item.id}
-          onPress={() => { audio.stop(); setScope(item.id); }} />)}
+      <View style={styles.setupSection}>
+        <SectionHeading>Review</SectionHeading>
+        <ChoiceGroup label="Review">
+          {REVIEW_SCOPES.map(item => <ChoiceButton key={item.id} label={item.label} testID={`review-${item.id}`} selected={scope === item.id}
+            onPress={() => { audio.stop(); setScope(item.id); }} />)}
+        </ChoiceGroup>
+        {scope === 'due' && <SupportingText>Review previously practised symbols whose review time has arrived.</SupportingText>}
+        {scope === 'mistakes' && <SupportingText>Review symbols whose last saved answer was incorrect.</SupportingText>}
+        <SupportingText muted={false} testID="review-availability">{scope === 'all' ? `${practice.symbols.length} symbols in full practice.`
+          : progress.isLoading ? 'Loading review symbols…' : progress.error?.operation === 'load' ? 'Saved progress is unavailable. Retry progress storage or choose Full symbol set.'
+            : `${reviewSymbols.length} saved symbols available. ${!reviewSymbols.length ? 'Choose Full symbol set to practise now.' : 'This round uses each selected symbol at most once.'}`}</SupportingText>
       </View>
-      <Text testID="review-availability" style={textStyle}>{scope === 'all' ? `${practice.symbols.length} symbols in full practice.`
-        : progress.isLoading ? 'Loading review symbols…' : progress.error?.operation === 'load' ? 'Saved progress is unavailable. Retry progress storage or choose Full symbol set.'
-          : `${reviewSymbols.length} saved symbols available. ${!reviewSymbols.length ? 'Choose Full symbol set to practise now.' : 'This round uses each selected symbol at most once.'}`}</Text>
-      <Text style={textStyle}>Choose a short round. {scope === 'all' ? `Each of the ${practice.symbols.length} symbols appears once before the deck repeats.` : `Up to ${length} questions; ${effectiveLength} in this review.`}</Text>
-      <View style={styles.section}>
-        {practiceLengths(practice).map(count => <Button key={count} label={`${count} questions`} variant="secondary"
-          accessibilityRole="radio" accessibilityState={{ checked: length === count }} selected={length === count}
-          onPress={() => setLength(count)} />)}
+      <View style={styles.setupSection}>
+        <SectionHeading>Round length</SectionHeading>
+        <ChoiceGroup label="Round length">
+          {practiceLengths(practice).map(count => <ChoiceButton key={count} label={`${count} questions`}
+            selected={length === count} onPress={() => setLength(count)} />)}
+        </ChoiceGroup>
+        <SupportingText>{scope === 'all' ? `Each of the ${practice.symbols.length} symbols appears once before the deck repeats.` : `Up to ${length} questions, ${effectiveLength} in this review.`}</SupportingText>
       </View>
       <Button label={session ? 'Start new round' : 'Start round'} testID="quiz-start" disabled={!reviewSymbols.length || (scope !== 'all' && progress.isLoading)} onPress={start} />
-      <Text style={textStyle}>Each submitted answer saves symbol totals and a review time on this device. Round details, typed drafts and recaps stay in memory; starting a new round replaces the recap and closing or reloading clears it. Review selections are fixed when a round starts.</Text>
     </> : question && session && <>
       <Heading focusKey={`${session.generation}-${session.index}`} testID="quiz-prompt">{session.mode === 'listening'
         ? 'Which symbol matches this code word?' : session.mode === 'typed' ? 'Type the code word for this symbol.' : 'What is the phonetic word for this symbol?'}</Heading>
@@ -175,11 +179,10 @@ export default function LetterQuizScreen() {
       {!feedback && session.mode !== 'typed' && <Text style={textStyle}>Choose an answer below.</Text>}
       {session.mode === 'typed' ? <>
         {!feedback && <>
-          <TextInput testID="quiz-typed-answer" accessibilityLabel="Your code word" value={typedAnswer}
+          <TextField testID="quiz-typed-answer" accessibilityLabel="Your code word" value={typedAnswer}
             onChangeText={value => { setTypedAnswer(value); setAnswerError(''); }} maxLength={MAX_RECALL_ANSWER_LENGTH}
             autoCorrect={false} spellCheck={false} autoCapitalize="none" autoComplete="off" returnKeyType="done"
-            placeholder="Type a code word" placeholderTextColor={theme.colors.textSecondary}
-            style={[styles.input, { color: theme.colors.text, borderColor: theme.colors.border, backgroundColor: theme.colors.surface }]}
+            placeholder="Code word"
             onSubmitEditing={() => { if (normalizeAnswerKey(typedAnswer)) select(typedAnswer); else setAnswerError('Enter a code word before checking.'); }} />
           <Button label="Check answer" testID="quiz-check" onPress={() => {
             if (normalizeAnswerKey(typedAnswer)) select(typedAnswer); else setAnswerError('Enter a code word before checking.');
@@ -206,12 +209,16 @@ export default function LetterQuizScreen() {
       }} />
     </>}
     <ProgressStatus progress={progress} />
+    {choosing && <>
+      <NavigationRow title="View learning progress" icon="book-outline" route="/progress" />
+      <SupportingText>Each submitted answer saves symbol totals and a review time on this device. Round details, typed drafts and recaps stay in memory. Starting a new round replaces the recap, and closing or reloading clears it. Review selections are fixed when a round starts.</SupportingText>
+    </>}
   </Screen>;
 }
 
 const styles = StyleSheet.create({
   body: { fontSize: 16, lineHeight: 24 },
-  input: { borderWidth: 1, borderRadius: 8, padding: 12, fontSize: 18, minHeight: 52 },
+  setupSection: { gap: 8 },
   section: { gap: 10 },
   audioRow: { flexDirection: 'row', gap: 8, alignItems: 'center' },
   fill: { flex: 1 },

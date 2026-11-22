@@ -1,0 +1,59 @@
+{
+  "serial": "emulator-5574",
+  "apkSha256": "c30ca0d912e1bd56bd895f5f5d6790525036a419a09f3f419d9b57429a1e4ecb",
+  "frames": [
+    {
+      "name": "quiz-setup-light",
+      "visibleLabel": "Answer mode",
+      "bounds": "[42,271][1038,336]",
+      "fontScale": "1.0",
+      "appearance": "Night mode: no",
+      "sha256": "a650089dfce6ecc1382361760b6774bf2fa195fb0df16fc4623cdad39c6eeba9"
+    },
+    {
+      "name": "listening-concealed-light",
+      "visibleLabel": "Play code word",
+      "bounds": "[42,448][168,574]",
+      "fontScale": "1.0",
+      "appearance": "Night mode: no",
+      "sha256": "b257f4997b9a03f60d37894c21a77964d095e79294ae0d5eeebab4cc55c3c681"
+    },
+    {
+      "name": "listening-text-light",
+      "visibleLabel": "quiz-code-word",
+      "bounds": "[42,608][1038,671]",
+      "fontScale": "1.0",
+      "appearance": "Night mode: no",
+      "sha256": "4eae743a5b10a27dae763be798614794957f1655f8bb2e33538212b005b9ba9b"
+    },
+    {
+      "name": "typed-keyboard-dark-2x",
+      "visibleLabel": "quiz-typed-answer",
+      "bounds": "[42,1160][1038,1317]",
+      "fontScale": "2.0",
+      "appearance": "Night mode: yes",
+      "sha256": "611b5c1bd51aefc42ba6e19c4c146782cfabc61591eff9d50a30c980548bbfb9"
+    },
+    {
+      "name": "typed-feedback-dark-2x",
+      "visibleLabel": "quiz-next",
+      "bounds": "[42,1674][891,1847]",
+      "fontScale": "2.0",
+      "appearance": "Night mode: yes",
+      "sha256": "d18f665c03d8cc409643da1b19532e29dc75b0142c496cf84eeeab3c8b80a715"
+    }
+  ],
+  "checks": [
+    "exact development APK cold-launches Reference without Metro",
+    "quiz setup checked state and explicit listening text alternative"
+  ],
+  "api": "36",
+  "image": "google/sdk_gphone64_x86_64/emu64xa:16/BE4B.251210.005/14574095:user/release-keys",
+  "abi": "x86_64",
+  "viewport": "Physical size: 1080x2400",
+  "density": "Physical density: 420",
+  "install": "Performing Streamed Install\r\nSuccess",
+  "installedPath": "/data/app/~~n9Mwouyov_GiM6Ss_YWaQQ==/com.natophonetics.app.dev-bwDkAXratQNBYAZpz70DGQ==/base.apk",
+  "status": "failed",
+  "error": "'quiz-score' is not reachable after 9 scrolls"
+}

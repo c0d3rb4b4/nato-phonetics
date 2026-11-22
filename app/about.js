@@ -1,28 +1,28 @@
-import { useRouter } from '../src/navigation';
-import { StyleSheet, Text, View } from 'react-native';
-import { Button, ExternalLink, Heading, Screen } from '../src/components/ui';
-import { useTheme } from '../src/context/ThemeContext';
+import { StyleSheet, View } from 'react-native';
+import { ExternalLink, Heading, NavigationRow, Screen, SectionHeading, SupportingText } from '../src/components/ui';
 import { APP_NAME, APP_VERSION, SUPPORT_URL } from '../src/lib/appMetadata';
 
 export default function AboutScreen() {
-  const { theme } = useTheme();
-  const router = useRouter();
   return <Screen>
-    <Heading>{APP_NAME}</Heading>
-    <Text style={[styles.paragraph, { color: theme.colors.textSecondary }]}>Version {APP_VERSION}</Text>
-    <Heading>Learn and practice</Heading>
-    <Text style={[styles.paragraph, { color: theme.colors.text }]}>The International Radiotelephony Spelling Alphabet uses distinct code words to make letters easier to understand over radio and telephone.</Text>
-    <View style={styles.features}>
-      {['Alphabet reference with pronunciation guides and audio', 'Word-to-phonetic conversion', 'Letter/digit choice, listening and typed recall', 'Local progress with due and focused review', 'Device voice and appearance preferences'].map(feature =>
-        <Text key={feature} style={[styles.paragraph, { color: theme.colors.text }]}>• {feature}</Text>)}
+    <View>
+      <Heading>{APP_NAME}</Heading>
+      <SupportingText>Version {APP_VERSION}</SupportingText>
     </View>
-    <Heading>Privacy and support</Heading>
-    <Text style={[styles.paragraph, { color: theme.colors.text }]}>Your preferences and symbol progress are saved on this device, without an account or app cloud sync. Audio uses your device or browser’s speech provider; processing and internet requirements depend on the selected voice and provider.</Text>
-    <Button label="Read privacy policy" variant="secondary" onPress={() => router.push('/privacy')} />
-    <Button label="Audio help and sound test" variant="secondary" onPress={() => router.push('/audio-help')} />
-    <ExternalLink label="Support and issue tracker" url={SUPPORT_URL} />
-    <Text style={[styles.paragraph, { color: theme.colors.textSecondary }]}>Support opens GitHub in your browser. Avoid posting sensitive text or personal information.</Text>
+    <View style={styles.section}>
+      <SectionHeading>Learn and practice</SectionHeading>
+      <SupportingText muted={false}>The International Radiotelephony Spelling Alphabet uses distinct code words to make letters easier to understand over radio and telephone.</SupportingText>
+      {['Alphabet reference with pronunciation guides and audio', 'Word-to-phonetic conversion', 'Letter/digit choice, listening and typed recall', 'Local progress with due and focused review', 'Device voice and appearance preferences'].map(feature =>
+        <SupportingText key={feature} muted={false}>• {feature}</SupportingText>)}
+    </View>
+    <View style={styles.section}>
+      <SectionHeading>Privacy and support</SectionHeading>
+      <SupportingText muted={false}>Your preferences and symbol progress are saved on this device, without an account or app cloud sync. Audio uses your device or browser’s speech provider. Processing and internet requirements depend on the selected voice and provider.</SupportingText>
+      <NavigationRow title="Read privacy policy" route="/privacy" icon="shield-checkmark-outline" />
+      <NavigationRow title="Audio help and sound test" route="/audio-help" icon="volume-high-outline" />
+      <ExternalLink title="Support and issue tracker" description="Opens GitHub in your browser" icon="help-circle-outline" url={SUPPORT_URL} />
+      <SupportingText>Avoid posting sensitive text or personal information.</SupportingText>
+    </View>
   </Screen>;
 }
 
-const styles = StyleSheet.create({ paragraph: { fontSize: 16, lineHeight: 24 }, features: { gap: 8 } });
+const styles = StyleSheet.create({ section: { gap: 8 } });

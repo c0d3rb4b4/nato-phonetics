@@ -88,11 +88,15 @@ async function assertTextContained(page, selector) {
   }
   assert.match(await text(id('quiz-score')),/4 correct of 5 answered/);
   await visit('/progress');assert.match(await text(id('progress-summary')),/5 answers saved · 4 correct · 1 errors/);assert.match(await text(id('progress-due')),/5 of 36 symbols practised · 1 due now · 1 need another try/);
-  const original=await saved();assert.equal(Object.keys(JSON.parse(original).symbols).length,5);assert.equal(original.includes('answer'),false);await capture('saved-summary',id('progress-summary'));await capture('saved-symbols',id(`progress-symbol-${missed}`));
+  const original=await saved();assert.equal(Object.keys(JSON.parse(original).symbols).length,5);assert.equal(original.includes('answer'),false);
+  assert.match(await text(id(`progress-symbol-${missed}`)),/1 attempt · 1 error · Last answer incorrect.*Due now/);
+  assert.equal(await page.$$eval('[data-testid^="progress-symbol-"]', rows=>rows.filter(row=>row.textContent.includes('Next review')).length),4);
+  await capture('saved-summary',id('progress-summary'));await capture('saved-symbols',id(`progress-symbol-${missed}`));
   await page.reload({waitUntil:'networkidle0'});await page.waitForSelector(id('progress-summary'));if(state.width===320)await enlargeText(page);assert.equal(await saved(),original);assert.match(await text(id('progress-summary')),/5 answers saved/);
   await click(named('Preferences'));await click(named('Reset Preferences'));await page.waitForFunction(()=>JSON.parse(localStorage.getItem('nato.preferences.v1')).themeMode==='system');assert.equal(await saved(),original);
   await visit('/letter-quiz');await click(id('practice-digits'));await click(id('review-mistakes'));assert.match(await text(id('review-availability')),/^1 saved symbols available/);await click(id('review-due'));await capture('due-review-setup',id('review-availability'));await click(id('quiz-start'));
   await page.waitForSelector(id('quiz-letter'));assert.equal(await text(id('quiz-letter')),missed);assert.match(await text(id('quiz-progress')),/Question 1 of 1/);await capture('due-review-question',id('quiz-progress'));await click(named('Choose '+words.get(missed)));await waitAnswers(6);await click(id('quiz-next'));await page.waitForSelector(id('quiz-score'));assert.match(await text(id('quiz-score')),/1 correct of 1 answered/);
+  assert.match(await text(id('quiz-results')),/1 of 1 question answered\./);await capture('single-question-result',id('quiz-score'));
   await visit('/letter-quiz');await click(id('practice-digits'));await click(id('review-mistakes'));assert.match(await text(id('review-availability')),/^0 saved symbols available/);assert.equal(await page.$eval(id('quiz-start'),e=>e.getAttribute('aria-disabled')),'true');
   await visit('/progress');await capture('recovered-summary',id('progress-summary'));const preferences=await page.evaluate(()=>localStorage.getItem('nato.preferences.v1')),before=await saved();
   await click(id('progress-clear'));await capture('clear-confirmation',id('progress-delete'));await click(named('Keep progress'));assert.equal(await saved(),before);

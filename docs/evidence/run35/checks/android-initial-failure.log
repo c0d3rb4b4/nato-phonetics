@@ -1,0 +1,11 @@
+PASS exact development APK cold-launches Reference without Metro
+Traceback (most recent call last):
+  File "C:\dev\apps\nato-phonetics\docs\evidence\run35\check-android.py", line 203, in <module>
+    check(sys.argv[1], Path(sys.argv[2]), Path(sys.argv[3]))
+  File "C:\dev\apps\nato-phonetics\docs\evidence\run35\check-android.py", line 121, in check
+    tap('Start round', scroll=True)
+  File "C:\dev\apps\nato-phonetics\docs\evidence\run35\check-android.py", line 67, in tap
+    tap_node((seek if scroll else find)(label)[1])
+  File "C:\dev\apps\nato-phonetics\docs\evidence\run35\check-android.py", line 49, in tap_node
+    assert right > left and bottom > top, node.attrib
+AssertionError: {'index': '21', 'text': '', 'resource-id': 'quiz-start', 'class': 'android.widget.Button', 'package': 'com.natophonetics.app.dev', 'content-desc': 'Start round', 'checkable': 'false', 'checked': 'false', 'clickable': 'true', 'enabled': 'true', 'focusable': 'true', 'focused': 'false', 'scrollable': 'false', 'long-clickable': 'false', 'password': 'false', 'selected': 'false', 'bounds': '[42,2243][1038,2200]', 'drawing-order': '22', 'hint': ''}

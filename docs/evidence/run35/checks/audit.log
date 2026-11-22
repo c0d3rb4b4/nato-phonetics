@@ -1,0 +1,9 @@
+{"executable":"cmd.exe","args":["/d","/c","npm.cmd","run","audit:review"],"cwd":"C:\\dev\\apps\\nato-phonetics\\artifacts\\run35\\locked-source","startedAt":"2026-11-22T05:14:01.451Z"}
+
+> nato-phonetics@1.0.0 audit:review
+> node scripts/check-audit.cjs
+
+Raw npm audit exit status: 0
+npm audit findings (still unresolved): {"info":0,"low":0,"moderate":0,"high":0,"critical":0,"total":0}
+Security review gate passed: 0 high/critical entries match current, unexpired dispositions.
+This gate does not mean npm audit passed or that release risk was accepted. See docs/SECURITY_REVIEW.md.

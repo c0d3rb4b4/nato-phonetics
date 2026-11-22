@@ -380,12 +380,88 @@ async function replaceInput(page, value) {
     await assertReachable(page, radio('Full cards'));
     await screenshot(page, 'settings-320-200-percent-converter');
     await visit(page, base, '/missing-route');
+    await enlargeText(page);
+    await assertInsetFocus(page, button('Open site map'));
+    await assertReachable(page, button('Open site map'));
+    await screenshot(page, 'not-found-320-200-percent');
     await keyboardActivate(page, button('Open site map'));
     await page.waitForFunction(() => location.pathname === '/_sitemap');
     await screenshot(page, 'sitemap-mobile');
     await keyboardActivate(page, button('Learning progress'));
     await page.waitForFunction(() => location.pathname === '/progress');
     console.log('PASS Menu and Settings compact row and radio focus without resizing, narrow 200% control reachability, detail selection and Site Map recovery');
+
+    await visit(page, base, '/letter-quiz');
+    await enlargeText(page);
+    const mode = byTestId('mode-typed');
+    await assertInsetFocus(page, mode);
+    await page.keyboard.press('Space');
+    await page.waitForSelector(`${mode}[aria-checked="true"]`);
+    const setupGroups = await page.$$eval('[role="radiogroup"]', groups => groups.map(group => {
+      const choices = [...group.querySelectorAll('[role="radio"]')];
+      return { name: group.getAttribute('aria-label'), checked: choices.filter(choice => choice.getAttribute('aria-checked') === 'true')
+        .map(choice => ({ name: choice.getAttribute('aria-label'), fill: getComputedStyle(choice).backgroundColor })),
+      unchecked: choices.filter(choice => choice.getAttribute('aria-checked') === 'false').map(choice => getComputedStyle(choice).backgroundColor) };
+    }));
+    assert.deepEqual(setupGroups.map(group => group.name), ['Answer mode', 'Symbols', 'Review', 'Round length']);
+    for (const { checked, unchecked } of setupGroups) {
+      assert.equal(checked.length, 1);
+      assert.ok(unchecked.every(fill => fill !== checked[0].fill), 'Each group distinguishes the selected choice visually');
+    }
+    assert.equal(setupGroups[0].checked[0].name, 'Type a code word');
+    await assertTextContained(page, '[role="radio"]');
+    await assertReachable(page, mode);
+    await screenshot(page, 'quiz-setup-320-200-percent');
+    await assertReachable(page, button('View learning progress'));
+    await keyboardActivate(page, button('View learning progress'));
+    await page.waitForFunction(() => location.pathname === '/progress');
+    await page.goBack();
+    await page.waitForFunction(() => location.pathname === '/letter-quiz');
+    assert.equal(await page.$eval(mode, node => node.getAttribute('aria-checked')), 'true', 'Back retains the selected quiz mode');
+    console.log('PASS quiz setup keyboard focus, checked fills, contained labels at 200% and retained mode after progress navigation');
+
+    await page.setViewport({ width: 1280, height: 900 });
+    await visit(page, base, '/about');
+    assert.match(await page.$eval('body', node => node.innerText), /Version \d+\.\d+\.\d+/);
+    const support = '[role="link"][aria-label="Support and issue tracker"]';
+    await assertInsetFocus(page, support);
+    await screenshot(page, 'about-desktop-support');
+    assert.deepEqual(await page.$eval(support, element => [element.tagName, element.href, element.target, element.rel]),
+      ['A', 'https://github.com/c0d3rb4b4/nato-phonetics/issues', '_blank', 'noopener noreferrer']);
+    await page.$eval(support, element => {
+      element.addEventListener('click', event => {
+        event.preventDefault();
+        element.dataset.testActivated = String(event.detail === 0);
+      }, { once: true });
+    });
+    await page.keyboard.press('Enter');
+    await page.waitForSelector(`${support}[data-test-activated="true"]`);
+    await keyboardActivate(page, button('Read privacy policy'));
+    await page.waitForFunction(() => location.pathname === '/privacy');
+    await page.waitForFunction(() => [...document.querySelectorAll('[role="heading"][aria-level="2"]')]
+      .some(node => node.textContent === 'Speech and connectivity'));
+    await page.setViewport({ width: 320, height: 568 });
+    await enlargeText(page);
+    const speechEnding = 'Speech output does not request microphone access.';
+    const ending = await page.evaluate(sentence => {
+      const heading = [...document.querySelectorAll('[role="heading"][aria-level="2"]')]
+        .find(node => node.textContent === 'Speech and connectivity');
+      const paragraph = heading?.nextElementSibling;
+      if (!paragraph?.textContent.endsWith(sentence)) return [];
+      paragraph.scrollIntoView({ block: 'end' });
+      const range = document.createRange();
+      range.setStart(paragraph.lastChild, paragraph.textContent.length - sentence.length);
+      range.setEndAfter(paragraph.lastChild);
+      const clip = paragraph.closest('[data-testid="screen-scroll"]').getBoundingClientRect();
+      return [...range.getClientRects()].map(rect => rect.width > 0 && rect.left >= clip.left && rect.right <= clip.right
+        && rect.top >= clip.top && rect.bottom <= clip.bottom);
+    }, speechEnding);
+    assert.ok(ending.length && ending.every(Boolean), 'The whole Speech policy ending is visible after scrolling at 200%');
+    await screenshot(page, 'privacy-320-200-percent-speech-ending');
+    await assertReachable(page, '[role="link"][aria-label="Privacy questions and support"]');
+    await page.goBack();
+    await page.waitForFunction(() => location.pathname === '/about');
+    console.log('PASS About version and inset link focus, semantic Privacy headings, complete enlarged Speech ending and browser Back');
 
     await visit(page, base, '/letter-quiz');
     await keyboardActivate(page, byTestId('quiz-start'));

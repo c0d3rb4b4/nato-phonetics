@@ -1,6 +1,5 @@
-import { Platform, StyleSheet, Text } from 'react-native';
-import { ExternalLink, Heading, Screen } from '../src/components/ui';
-import { useTheme } from '../src/context/ThemeContext';
+import { Platform, StyleSheet, View } from 'react-native';
+import { ExternalLink, Heading, Screen, SectionHeading, SupportingText } from '../src/components/ui';
 import { PRIVACY_UPDATED, SUPPORT_URL } from '../src/lib/appMetadata';
 
 const SECTIONS = [
@@ -21,15 +20,17 @@ const SECTIONS = [
 ];
 
 export default function PrivacyScreen() {
-  const { theme } = useTheme();
   return <Screen>
-    <Heading>Privacy policy</Heading>
-    <Text style={[styles.paragraph, { color: theme.colors.textSecondary }]}>Updated {PRIVACY_UPDATED}</Text>
-    {SECTIONS.map(([title, body]) => <Text key={title} testID={title === 'Copy and Share' ? 'privacy-copy-share' : undefined} style={[styles.paragraph, { color: theme.colors.text }]}>
-      <Text style={styles.sectionTitle}>{title}{'\n'}</Text>{body}
-    </Text>)}
-    <ExternalLink label="Privacy questions and support" url={SUPPORT_URL} />
+    <View>
+      <Heading>Privacy policy</Heading>
+      <SupportingText>Updated {PRIVACY_UPDATED}</SupportingText>
+    </View>
+    {SECTIONS.map(([title, body]) => <View key={title} testID={title === 'Copy and Share' ? 'privacy-copy-share' : undefined} style={styles.section}>
+      <SectionHeading>{title}</SectionHeading>
+      <SupportingText muted={false} style={styles.paragraph}>{body}</SupportingText>
+    </View>)}
+    <ExternalLink title="Privacy questions and support" description="Opens GitHub in your browser" icon="help-circle-outline" url={SUPPORT_URL} />
   </Screen>;
 }
 
-const styles = StyleSheet.create({ paragraph: { fontSize: 16, lineHeight: 25, marginBottom: 12 }, sectionTitle: { fontWeight: '700', fontSize: 20 } });
+const styles = StyleSheet.create({ section: { gap: 4 }, paragraph: { fontSize: 16, lineHeight: 25 } });

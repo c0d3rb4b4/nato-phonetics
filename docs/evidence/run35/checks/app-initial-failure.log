@@ -1,0 +1,16 @@
+PASS direct + reload 13 routes, stored system, OS light
+PASS direct + reload 13 routes, stored system, OS dark
+PASS direct + reload 13 routes, stored light, OS light
+PASS direct + reload 13 routes, stored light, OS dark
+PASS direct + reload 13 routes, stored dark, OS light
+PASS direct + reload 13 routes, stored dark, OS dark
+PASS launch Reference, side-by-side selectors, active tab and bottom navigation via Enter/Space
+PASS retained converter state, browser Back/Forward, static HTML alias and unknown-route recovery
+PASS Menu and Settings compact row and radio focus without resizing, narrow 200% control reachability, detail selection and Site Map recovery
+TimeoutError: Waiting for selector `[data-testid="mode-typed"][aria-checked="true"]` failed: Waiting failed: 10000ms exceeded
+    at new WaitTask (C:\Users\lalit\AppData\Local\npm-cache\_npx\23232c69e5d221f3\node_modules\puppeteer-core\lib\cjs\puppeteer\common\WaitTask.js:48:34)
+    at IsolatedWorld.waitForFunction (C:\Users\lalit\AppData\Local\npm-cache\_npx\23232c69e5d221f3\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Realm.js:25:26)
+    at CSSQueryHandler.waitFor (C:\Users\lalit\AppData\Local\npm-cache\_npx\23232c69e5d221f3\node_modules\puppeteer-core\lib\cjs\puppeteer\common\QueryHandler.js:178:95)
+    at async CdpFrame.waitForSelector (C:\Users\lalit\AppData\Local\npm-cache\_npx\23232c69e5d221f3\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Frame.js:532:21)
+    at async CdpPage.waitForSelector (C:\Users\lalit\AppData\Local\npm-cache\_npx\23232c69e5d221f3\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:1373:20)
+    at async C:\dev\apps\nato-phonetics\scripts\verify-app-browser.cjs:399:5

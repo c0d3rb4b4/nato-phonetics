@@ -4,7 +4,7 @@ Reference and Word Converter set the direction for the whole app. Both put the c
 
 The audit covers all 13 routes and 12 distinct screens. The root route opens the same Reference screen as `/alphabet`. The current-state findings reflect the shared source and the exported app in light and dark phone layouts, including an entered conversion and all three quiz modes. The proposed design and its verification are tracked under [P05.9 in the delivery plan](DELIVERY_PLAN.md#p059-uniform-ui-design-language).
 
-**22 November 2026.** The Menu/Settings pilot and the Voice Select, Audio Help and Site Map rollout are implemented. Reference uses the shared choice controls and Converter shares its field with Voice Select. The before-and-after captures show the same Reference and populated Converter under matching settings. Letter Quiz setup, Learning Progress, About, Privacy Policy and Page Not Found still use the previous layout. [Run 34 scope and verification](evidence/run34/README.md) · [Before and after](evidence/run34/screenshots/index.md).
+**22 November 2026.** Runs 34–35 implemented the shared design across the pilot, learning and support routes. Reference and quiz share the compact choices. Converter, Voice Select and typed recall share the field. Learning Progress puts saved totals before the practice action and saved-symbol rows. About and Privacy share destination rows, and Page Not Found provides a primary Site Map action. Installed iOS and the populated Android voice-list check remain open. [Pilot and baseline comparisons](evidence/run34/screenshots/index.md) · [Learning and support captures](evidence/run35/screenshots/index.md).
 
 ## Shared patterns
 
@@ -21,6 +21,8 @@ The shared shell, controls and playback components already provide a starting po
 
 ## Screen analysis
 
+This table records the observations and proposed changes from the baseline audit.
+
 | Screen | Current design | Change to make |
 | --- | --- | --- |
 | Reference | Compact sticky Letters/Digits and Play/Stop row above the phonetic cards. Checked and playing states are visible. | Keep this as the control-row and card-grid reference. Extract reusable styles and preserve the selected set, play-all order, resume behavior and inset playback border. [Source](../app/alphabet.js) |
@@ -36,11 +38,11 @@ The shared shell, controls and playback components already provide a starting po
 | Site Map | The map uses the Menu row pattern at its taller size. Learning Progress is missing, and some descriptions predate listening and typed practice or the Converter settings. | Reuse compact destination rows, add Learning Progress, and update stale descriptions. Keep one entry for Reference and preserve the existing direct URLs. [Source](../app/_sitemap.js) |
 | Page Not Found | A heading, one explanation and a Site Map action provide recovery. The bottom bar is already available. | Use the same neutral recovery typography and action styling as other empty or error states. Keep Open site map obvious and leave Reference and Menu reachable through the bottom bar. [Source](../app/+not-found.js) |
 
-## Next workload action points
+## Remaining qualification
 
-1. Apply the shared choices to Letter Quiz setup and put Learning Progress totals, review states and the practice action first. Keep concealment, drafts, pending-save recovery and explicit deletion.
-2. Apply compact rows and heading styles to About, Privacy Policy and Page Not Found. Recheck the known iOS Speech-policy paragraph and both baseline screens after relevant shared changes.
-3. Qualify the installed iOS Menu/Settings pilot and the Voice Select, Audio Help and Site Map changes. Continue affected-flow checks on Android, iOS and web. [Delivery plan](DELIVERY_PLAN.md#p059-uniform-ui-design-language) · [Application review](APP_REVIEW.md#run-34-uniform-ui-rollout)
+1. Qualify the installed iOS pilot and the learning and support screens. Check maximum text, a keyboard-visible typed draft, return navigation and the full Speech-policy ending. Exercise Learning Progress through cancellation and confirmed deletion.
+2. Check Android Voice Select with a working provider, including a populated list, filtering, selection and independent preview. Retain the emulator retry evidence.
+3. Recheck the Reference and Converter guardrails after relevant shared changes. Include the changed routes in the final candidate comparison. [Delivery plan](DELIVERY_PLAN.md#p059-uniform-ui-design-language) · [Application review](APP_REVIEW.md#run-35-learning-and-support-rollout)
 
 ## Acceptance checks
 

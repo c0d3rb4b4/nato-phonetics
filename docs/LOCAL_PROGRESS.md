@@ -1,5 +1,7 @@
 # Local progress and review
 
+Learning Progress opens with saved totals, practice coverage and due counts. Use Open practice to return to Letter Quiz. Each saved symbol shows attempts, errors, the last outcome and either Due now or the next review time. How review works explains the schedule. To remove progress, choose Clear Progress and then Delete saved progress. Keep progress cancels. [Run 35 layout and storage checks](evidence/run35/README.md).
+
 ## Run25 — first-save boundary and recovery qualification
 
 [Run25](evidence/run25/README.md) adds test-only storage/lock observations and a maintained first-answer recovery runner/three-engine CI gate.18 actual production scenarios pass at1280×900/light and320×568/dark across Edge157, Firefox159 and PlaywrightWebKit27.2: ordinary first save, deliberate QuotaExceededError after acquisition, and actual exclusive-lock TimeoutError before acquisition after5seconds. One pending answer remains visible with no persisted record; actual double-pointer Retry saves exactly one write/one correct symbol aggregate. Exact serialized record/unrelated fixture survives reload without a write. Persisted generation is absent in these fresh-origin cases; observations capture actual reads/counts, not private pending queue fields.

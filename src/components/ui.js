@@ -52,7 +52,16 @@ export function ChoiceGroup({ label, children, style }) {
 
 /** @param {Omit<Parameters<typeof Button>[0], 'accessibilityRole' | 'accessibilityState' | 'compact' | 'variant'> & {selected: boolean}} props */
 export function ChoiceButton({ selected, ...props }) {
-  return <Button {...props} compact variant={selected ? 'primary' : 'secondary'}
+  const keyboard = Platform.OS === 'web' && !props.disabled ? {
+    /** @param {import('react').KeyboardEvent<HTMLElement>} event */
+    onKeyDown(event) {
+      // React Native Web handles Enter for radios but limits Space to buttons.
+      if (event.key !== ' ') return;
+      event.preventDefault();
+      if (!event.repeat) event.currentTarget.click();
+    },
+  } : {};
+  return <Button {...props} {...keyboard} compact variant={selected ? 'primary' : 'secondary'}
     accessibilityRole="radio" accessibilityState={{ checked: selected }} />;
 }
 
@@ -121,11 +130,17 @@ export function Feedback({ message, error = false }) {
 
 /** @param {import('../types').NavigationItem} props */
 export function NavigationRow({ title, description, icon, route }) {
-  const { theme } = useTheme();
   const router = useRouter();
+  return <DestinationRow title={title} description={description} icon={icon} onPress={() => router.push(route)} />;
+}
+
+/** @param {Omit<import('../types').NavigationItem, 'route'> & {onPress: () => void, url?: string}} props */
+function DestinationRow({ title, description, icon, onPress, url }) {
+  const { theme } = useTheme();
   const [focused, setFocused] = useState(false);
-  return <Pressable accessibilityRole="button" accessibilityLabel={title} accessibilityHint={description}
-    onPress={() => router.push(route)} onFocus={event => setFocused(showsFocusRing(event.currentTarget))} onBlur={() => setFocused(false)}
+  const webLink = Platform.OS === 'web' && url ? { href: url, hrefAttrs: { target: '_blank', rel: 'noopener noreferrer' } } : null;
+  return <Pressable {...webLink} accessibilityRole={url ? 'link' : 'button'} accessibilityLabel={title} accessibilityHint={description}
+    onPress={webLink ? undefined : onPress} onFocus={event => setFocused(showsFocusRing(event.currentTarget))} onBlur={() => setFocused(false)}
     style={({ pressed }) => [styles.navigationRow, { backgroundColor: pressed ? theme.colors.card : theme.colors.surface,
       borderColor: theme.colors.border }]}>
     <Icon name={icon} size={22} color={theme.colors.text} />
@@ -138,11 +153,11 @@ export function NavigationRow({ title, description, icon, route }) {
   </Pressable>;
 }
 
-/** @param {{label: string, url: string}} props */
-export function ExternalLink({ label, url }) {
+/** @param {Omit<import('../types').NavigationItem, 'route'> & {url: string}} props */
+export function ExternalLink({ title, description, icon, url }) {
   const [error, setError] = useState('');
   return <View>
-    <Button label={label} variant="secondary" accessibilityRole="link" accessibilityHint="Opens in your browser"
+    <DestinationRow title={title} description={description} icon={icon} url={url}
       onPress={() => { setError(''); void Linking.openURL(url).catch(() => setError(`Unable to open this link. Visit ${url}`)); }} />
     <Feedback message={error} error />
   </View>;
