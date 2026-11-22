@@ -24,7 +24,8 @@ const server = http.createServer((req, res) => {
   handler(req, res);
 });
 const checks = [], captures = [], errors = [], automationErrors = [];
-const report = { engine, runner: require('playwright/package.json').version, checks, errors, automationErrors };
+const audioRecovery = [];
+const report = { engine, runner: require('playwright/package.json').version, checks, errors, automationErrors, audioRecovery };
 const id = value => `[data-testid="${value}"]:not([aria-hidden="true"] *)`;
 const named = value => `[aria-label="${value}"]:not([aria-hidden="true"] *)`;
 const read = page => page.evaluate(() => JSON.parse(localStorage.getItem('nato.progress.v1')));
@@ -42,8 +43,32 @@ async function progress(page) {
 async function clear(page) {
   await click(page, id('progress-clear')); await click(page, id('progress-delete')); await summary(page, 0);
 }
+async function clickQuizAction(page, selector) {
+  const action = page.locator(selector);
+  const answer = page.locator(id('quiz-answer'));
+  const dismiss = page.locator(named('Dismiss'));
+  async function dismissNotice() {
+    const feedback = await answer.textContent();
+    await dismiss.click();
+    await dismiss.waitFor({ state: 'hidden' });
+    assert.equal(await answer.textContent(), feedback, 'Dismissing a speech notice preserves the submitted answer');
+    audioRecovery.push({ viewport: page.viewportSize(), feedback });
+  }
+
+  // A real speech error may cover Next or Retry. Use the visible Dismiss action,
+  // including when the notice arrives during the attempted click.
+  if (await dismiss.isVisible()) await dismissNotice();
+  try {
+    await action.click();
+  } catch (error) {
+    if (error.name !== 'TimeoutError' || !await dismiss.isVisible()) throw error;
+    await dismissNotice();
+    await action.click();
+  }
+}
 async function next(page) {
-  await click(page, id('quiz-next')); await page.locator(id('quiz-answer')).waitFor({ state: 'hidden' });
+  await clickQuizAction(page, id('quiz-next'));
+  await page.locator(id('quiz-answer')).waitFor({ state: 'hidden' });
 }
 async function capture(page, file, state, selector) {
   if (selector) await page.locator(selector).scrollIntoViewIfNeeded();
@@ -117,7 +142,7 @@ async function launch() {
   assert.equal(total(await read(a)), 2);
   await clear(a); const deleted = await read(a);
   await b.evaluate(() => { window.__failProgressWrite = false; });
-  await click(b, named('Retry progress storage'));
+  await clickQuizAction(b, named('Retry progress storage'));
   await b.waitForFunction(() => !document.body.innerText.includes('unsaved answer'));
   assert.deepEqual(await read(a), deleted);
   checks.push({ scope: 'failed-write Retry with withheld storage events cannot resurrect deleted answers', generation: deleted.generation });
@@ -135,7 +160,7 @@ async function launch() {
   assert.equal(total(await read(a)), 1);
   await capture(b, 'narrow-lock-timeout.png', 'Real five-second lock timeout retains one unsaved answer', named('Retry progress storage'));
   await a.evaluate(async () => { window.__releaseLock(); await window.__heldLock; });
-  await click(b, named('Retry progress storage')); await waitTotal(a, 2); await summary(a, 2);
+  await clickQuizAction(b, named('Retry progress storage')); await waitTotal(a, 2); await summary(a, 2);
   await progress(b); await summary(b, 2);
   checks.push({ scope: 'real exclusive-lock timeout followed by awaited release/actual pointer Retry saves once' });
 

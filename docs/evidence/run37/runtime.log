@@ -1,0 +1,6 @@
+PASS cold app shows 17 English voices, System Default selected
+PASS locale and text filters expose the single local iog voice
+PASS preview leaves System Default selected
+PASS selection changed to the local voice
+PASS saved voice survives process restart, text and locale filters reset
+PASS reset, restore System Default and refresh

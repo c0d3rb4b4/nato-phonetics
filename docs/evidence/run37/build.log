@@ -1,0 +1,13 @@
+FAILURE: Build failed with an exception.
+> [CXX1300] CMake '3.30.5' was not found in SDK, PATH, or by cmake.dir property.
+BUILD FAILED in 2m 41s
+developRuntimeClasspath | project :react-native:packages:react-native:ReactAndroid | C:\dev\apps\nato-phonetics\node_modules\react-native | com.facebook.react:hermes-android:0.81.5 | hermes-android-0.81.5-release.aar | SHA-256 f8d8af2486ee26d7b8d3da92dcd96ea5df27acfcfe556866ea13c68fec1d2992
+C:\dev\apps\nato-phonetics\node_modules\react-native-tts\android\src\main\java\net\no_mad\tts\TextToSpeechModule.java:441: warning: [removal] onCatalystInstanceDestroy() in NativeModule has been deprecated and marked for removal
+C:\dev\apps\nato-phonetics\node_modules\react-native-tts\android\src\main\java\net\no_mad\tts\TextToSpeechModule.java:442: warning: [removal] onCatalystInstanceDestroy() in NativeModule has been deprecated and marked for removal
+BUILD SUCCESSFUL in 9m 28s
+204 actionable tasks: 53 executed, 151 up-to-date
+releaseRuntimeClasspath | project :react-native:packages:react-native:ReactAndroid | C:\dev\apps\nato-phonetics\node_modules\react-native | com.facebook.react:hermes-android:0.81.5 | hermes-android-0.81.5-release.aar | SHA-256 f8d8af2486ee26d7b8d3da92dcd96ea5df27acfcfe556866ea13c68fec1d2992
+C:\dev\apps\nato-phonetics\node_modules\react-native-tts\android\src\main\java\net\no_mad\tts\TextToSpeechModule.java:441: warning: [removal] onCatalystInstanceDestroy() in NativeModule has been deprecated and marked for removal
+C:\dev\apps\nato-phonetics\node_modules\react-native-tts\android\src\main\java\net\no_mad\tts\TextToSpeechModule.java:442: warning: [removal] onCatalystInstanceDestroy() in NativeModule has been deprecated and marked for removal
+BUILD SUCCESSFUL in 31s
+212 actionable tasks: 64 executed, 148 up-to-date

@@ -41,8 +41,10 @@ This table records the observations and proposed changes from the baseline audit
 ## Remaining qualification
 
 1. Qualify the installed iOS pilot and the learning and support screens. Check maximum text, a keyboard-visible typed draft, return navigation and the full Speech-policy ending. Exercise Learning Progress through cancellation and confirmed deletion.
-2. Check Android Voice Select with a working provider, including a populated list, filtering, selection and independent preview. Retain the emulator retry evidence.
+2. Run 37 qualified Android Voice Select with 17 English voices, search and locale filters, independent preview and retained selection on the rebuilt API 36 x86_64 APK. The 2× dark-mode check reached the matching row and Stop control. Recheck on the integrated candidate. [Results and captures](evidence/run37/README.md).
 3. Recheck the Reference and Converter guardrails after relevant shared changes. Include the changed routes in the final candidate comparison. [Delivery plan](DELIVERY_PLAN.md#p059-uniform-ui-design-language) · [Application review](APP_REVIEW.md#run-35-learning-and-support-rollout)
+
+Run 36 reproduced an audio notice covering Next on a 320×568 quiz. A controlled replay also reproduced covered Retry. The verified Dismiss path preserves the submitted answer. Keep the notice layout follow-up in P05.9 and include large-text dismissal and focus in M11.4/.5. On the Android guest, Voice Select continued to show Retry after explicit selection of the Google engine. Android Settings reached its embedded synthesis path. The populated list, filtering and preview remain open. [Run 36 evidence](evidence/run36/README.md).
 
 ## Acceptance checks
 

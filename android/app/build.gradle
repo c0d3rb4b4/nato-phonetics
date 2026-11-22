@@ -85,6 +85,7 @@ android {
     compileSdk rootProject.ext.compileSdkVersion
 
     namespace "com.natophonetics.app"
+    sourceSets.main.java.srcDir("../../node_modules/react-native-tts/android/src/main/java")
     defaultConfig {
         applicationId "com.natophonetics.app"
         minSdkVersion rootProject.ext.minSdkVersion

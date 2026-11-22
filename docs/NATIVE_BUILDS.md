@@ -427,3 +427,9 @@ failures remain archived; initial product/numeric settings/Gboard restored,
 owned exports collected/removed and tools stopped. Exact pre-run theme was not
 independently recorded. [Scope/evidence](evidence/run30/README.md). This qualifies
 the opt-in Release scopes on that artifact. For default builds and exact-artifact qualification, follow [Run 31](evidence/run31/README.md).
+
+## Android speech bridge
+
+All Android variants compile the pinned `react-native-tts` Java sources in the app source set. `MainApplication` registers `TextToSpeechPackage`, and the Android CLI configuration disables autolinking for that package to avoid a second registration. Keep the existing postinstall patch enabled. The iOS target continues to use the TextToSpeech pod.
+
+For an installed APK, cold-open Voice Select with a known installed English provider and exercise filtering, preview and saved selection through restart. A working system Settings sample alone cannot verify the app bridge. [Android qualification](evidence/run37/README.md).

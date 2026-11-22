@@ -1,0 +1,35 @@
+{
+  "baseRevision": "7350d269cdaf721841af8772520c1cd26154e7cc",
+  "testPatchCommand": "git diff --binary HEAD -- scripts/verify-browser-support.cjs scripts/verify-progress-concurrency-browser.cjs",
+  "testPatchSha256": "9e29c769b3057cf42518ccc3f0390b016fc13ab2ccbb3b08d2b750383529da96",
+  "controlledSpeechProbeSha256": "fce134b864de37a5acb93cfab40017a57bb0c59cdcef79a32904499122a3cdc3",
+  "web": {
+    "buildId": "1fe756c769262c15922755dd588c3cac4bfea97bd2951cccf9b200a6aacb0107",
+    "fileCount": 22,
+    "allFilesMatchRun35": true,
+    "files": {
+      "+not-found.html": "69d063662679003ee754aa11abbd8da9a11b374026cff292bba2d08eccd7bd81",
+      ".nato-web-output": "92053bb30b93c52ea3ae37bfa617d60e4327f1a2cffd2744ec2763759f278201",
+      "_headers": "38c258c28becfede0555d4ce8db073b573ecbb1a040495ecbf299b055e48b90c",
+      "_sitemap.html": "bcae8feb4f3823b33a4e335bae3735ebb45d5a66b6bffe1b268b0a12fd5fe7cd",
+      "about.html": "8b24e3778a83d4ac640e5b5a238a3a8d09e8196e0fb49d8716c9559ce7ea176a",
+      "alphabet.html": "e8770f5a75c3380c84c0c9c75f8c9e46121eedd69da8a8fd050a08b21e26548b",
+      "assets/app-JDIYGJHA.js": "fd0a58768ff716941aa8f1abc49d8741b5f23319bcfad1e38c1116f72ccd79f3",
+      "audio-help.html": "67793eb2616f40e72454c27f4ab7b0473e73a69f37dce4213592619e41bcf8a1",
+      "converter.html": "9764089ee50fd5ec93bedb7ebad8c7333d2a42d92b04cb877dd0bc898630638d",
+      "favicon.png": "df8f62668e8fe86ec2495876136d75bf358df780d67fad67e97b2712bfa38a2f",
+      "index.html": "e8770f5a75c3380c84c0c9c75f8c9e46121eedd69da8a8fd050a08b21e26548b",
+      "letter-quiz.html": "4b417c969f36b1de6808b0d410e50a6b400675995ff2783ecdee907169482fcd",
+      "menu.html": "43c2cd28b76d6bbcb303ffd5ddefbc2b5139d56b4ef2e15b32769e0a779a0d4c",
+      "NatoTile-ExtraBold-P5QNDEHJ.ttf": "b0150a84d5e000fcd276cf13e1863ca8bbaab0ff2a0dfdcfa958a48781dd7aa6",
+      "NatoTile-Italic-AWOPV6AY.ttf": "50f16c8bec3ed31190d37403b6e15d200274e7a5e43f1a698a86eef7079d862b",
+      "NatoTile-SemiBold-REJGIRDE.ttf": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f",
+      "offline-manifest.json": "862277ac824b32eb04fdb92868a9606e841891084529f1e40e2891b20cd10100",
+      "privacy.html": "9d49148a78786b00c81d78ac1b882516c875def5aa5f4e23915bf5247ccb9811",
+      "progress.html": "7fd6ab3f0cdadf029a80be5f59fde9ea0a160c624d98251d78e4131059f08067",
+      "service-worker.js": "5a5c8f758d2801403596aacba9f09e2ead9e57ad3e4a6516918e0aa75db678a6",
+      "settings.html": "404808abcc4e95f964b2149a10a9a7b350ae7adc2e72cea276d3e588db059da0",
+      "voice-select.html": "139c90357d4029342ac7eccdb912e8e939225da719ee0a63b009a5901f0a7784"
+    }
+  }
+}

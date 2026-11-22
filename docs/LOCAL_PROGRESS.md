@@ -56,3 +56,7 @@ Branded Safari/iOS, other OS/runtime versions, OS suspension, legacy hosted upgr
 ## Packaged host qualification — Run20
 
 One actual pointer answer is saved through the extracted Caddy2.11.9 production candidate; it remains1 saved/1 correct through a real atomic host switch, normal waiting/close-all activation, rollback and offline direct progress reopening. The host runner uses an isolated profile and a separately labelled changed-JS update fixture, without modifying the product store/schema. [Report](evidence/run20/hosting/report.json), [actual captures](evidence/run20/screenshots/index.md). This is scoped local-host continuity, not full concurrent/deletion/legacy/native/physical assurance. Existing failure/acceptance boundaries remain. [Deployment/asset retention rules](WEB_DISTRIBUTION.md).
+
+## Browser retry verification — Run 36
+
+The concurrency runner now observes exact stored totals and visible summaries from Node while a tab remains in the background. It waits for the actual Web Lock release before Retry. The archived hosted failure showed two saved answers in both tabs after its observation timed out. The local pointer runner verifies that the answer survives dismissing a speech notice before Next or Retry. Two concurrency reruns, the regular and controlled Chromium pointer runs, and three page-freeze checks passed. Hosted Chromium verification of the local harness changes remains open. [Run 36 results](evidence/run36/README.md).

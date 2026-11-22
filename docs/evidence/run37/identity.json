@@ -1,0 +1,48 @@
+{
+  "base": "7350d269cdaf721841af8772520c1cd26154e7cc",
+  "productPatchSha256": "ac827de568af69202faefb3d16362c9fa4d9cadd94cbf7c5f8bb6d6c8a44bf6f",
+  "before": {
+    "sha256": "c30ca0d912e1bd56bd895f5f5d6790525036a419a09f3f419d9b57429a1e4ecb",
+    "ttsDescriptor": {
+      "classes.dex": false,
+      "classes2.dex": false
+    },
+    "bundleSha256": "59f334cb4022af0709810e48c4e656c2dcdbe7799dc8b87b5778dc5c56ba32e3"
+  },
+  "archivedControl": {
+    "sha256": "12e6030c653ef2e131a4f18ace8255ec81e0ef0332452d87d6b297661247cd8d",
+    "ttsDescriptor": {
+      "classes.dex": true,
+      "classes2.dex": false
+    },
+    "bundleSha256": "9d8b2b656a9fb2c426114f06750bcfe1e13fda68523ee5198ad1f01e7ccac7d6"
+  },
+  "installedCandidate": {
+    "sha256": "1baeecbafd695447a3067d5b310d5465e9039a4d787b7e1e4930583b4f49b7a7",
+    "ttsDescriptor": {
+      "classes.dex": true,
+      "classes2.dex": false
+    },
+    "bundleSha256": "59f334cb4022af0709810e48c4e656c2dcdbe7799dc8b87b5778dc5c56ba32e3"
+  },
+  "device": {
+    "fingerprint": "google/sdk_gphone64_x86_64/emu64xa:16/BE4B.251210.005/14574095:user/release-keys",
+    "dimensions": "Physical size: 1080x2400",
+    "density": "Physical density: 420",
+    "fontScale": "1.0",
+    "night": "Night mode: no",
+    "provider": "1 services found:\r\n  Service #0:\r\n    priority=100 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=true\r\n    com.google.android.tts/com.google.android.apps.speech.tts.googletts.service.GoogleTtsService"
+  },
+  "cliAndroid": null,
+  "cliIOSPod": "TextToSpeech.podspec",
+  "screenshots": {
+    "before-retry.png": "58df0fb6d4e95e9111a34174efc3a5a26dcc99eedd07b54f6a49c55b560ed441",
+    "filtered.png": "e64db0788f45f6b7486e6514d56cb8bb4569b6dea1a3d50830c4c3c1168b0225",
+    "large-filtered.png": "a28a3a414fa5b7ed0a9e3147b8210ceece835c7df594fcd3487d5f0919eea34f",
+    "large-list.png": "c45f9dfb527d240581dada3a8e6add3e280bc0562c05163f4a307805d3a494f6",
+    "large-preview.png": "4c36210571b2a9c011d4219d9d8c7522d5ffb45e86f12d9d833b0e98d6a41ca6",
+    "preview.png": "38e6bd43742ed636f7da9caa35330371f7fa33345ebaa77d3e3bbdfac363d225",
+    "selected.png": "86d040cdc7e6ac850d29e21ad13a613a1b3a9c59111eee39cbb010d497f5e441",
+    "voice-list.png": "751d95d41bcacbf799ff6e19452a0f3f218596bd19b776dc4ea741084acee932"
+  }
+}

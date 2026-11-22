@@ -113,3 +113,5 @@ All human results remain unrun. [Exact new scenarios](evidence/run12/manual-hand
 ## Run 13 progress supplement
 
 All human results remain unperformed. [Run 13 M11 supplement](evidence/run13/manual-handoff.md) adds physical AT/status/Retry, partial-round restart, separate reset/deletion and simple review usability scenarios. All existing listening checks still apply: progress combines modes and counts listening text alternatives; saved aggregate counters are not evidence of audible correctness, comprehension or provider locality. No new speech provider, microphone permission or recognition is introduced.
+
+**Run 37 Android provider check.** Voice Select on the API 36 x86_64 development APK listed 17 English voices. Previewing a local voice dispatched three embedded synthesis requests while preserving System Default. Explicitly choosing that voice survived restart. Use the sequence in M11 for listening and provider acceptance. [Installed checks](evidence/run37/README.md) · [Screenshots](evidence/run37/screenshots/index.md).

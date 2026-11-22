@@ -4,6 +4,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const http = require('node:http');
+const { setTimeout: delay } = require('node:timers/promises');
 const { pathToFileURL } = require('node:url');
 const { staticHandler } = require('./serve-web.cjs');
 const puppeteer = require('puppeteer-core');
@@ -21,11 +22,22 @@ async function click(page, selector) {
 }
 const read = page => page.evaluate(() => JSON.parse(localStorage.getItem('nato.progress.v1')));
 const total = data => Object.values(data?.symbols || {}).reduce((sum, row) => sum + row.attempts, 0);
-// Storage and summary updates can be observed while the other page has focus.
-const waitTotal = (page, n) => page.waitForFunction(n => Object.values(JSON.parse(localStorage.getItem('nato.progress.v1'))?.symbols || {}).reduce((sum, row) => sum + row.attempts, 0) === n, { polling: 100 }, n);
-async function summary(page, n) {
-  await page.waitForFunction(n => document.querySelector('[data-testid="progress-summary"]:not([aria-hidden="true"] *)')?.textContent.startsWith(`${n} answers saved`), { polling: 100 }, n);
+// Poll from the test process so hidden renderer timers cannot conceal a storage
+// write or a live summary update. Keep the observed page in the background.
+async function waitForValue(readValue, matches, description) {
+  const deadline = performance.now() + 30_000;
+  let observed;
+  do {
+    observed = await readValue();
+    if (matches(observed)) return;
+    await delay(100);
+  } while (performance.now() < deadline);
+  assert.fail(`Timed out waiting for ${description}; last observed ${JSON.stringify(observed)}`);
 }
+const waitTotal = (page, n) => waitForValue(async () => total(await read(page)), value => value === n, `exactly ${n} stored answers`);
+const summary = (page, n) => waitForValue(
+  () => page.evaluate(selector => document.querySelector(selector)?.textContent ?? null, id('progress-summary')),
+  value => value?.startsWith(`${n} answers saved`), `a visible summary with ${n} saved answers`);
 async function progress(page) { await click(page, named('Menu')); await click(page, named('Learning progress')); await page.waitForSelector(id('progress-summary')); }
 async function quizBack(page) { await page.goBack(); await page.goBack(); await page.waitForSelector(id('quiz-next')); }
 async function next(page) { await click(page, id('quiz-next')); await page.waitForSelector(id('quiz-answer'), { hidden: true }); }
@@ -123,7 +135,7 @@ async function clear(page) { await click(page, id('progress-clear')); await clic
     await next(b); await answer(b); await b.waitForSelector(named('Retry progress storage'));
     assert.equal(total(await read(a)), 1);
     await capture(b, 'narrow-lock-timeout.png', 'Bounded lock wait retains one unsaved answer and exposes Retry', named('Retry progress storage'));
-    await a.evaluate(() => { window.__releaseProgressLock(); });
+    await a.evaluate(async () => { window.__releaseProgressLock(); await window.__holding; });
     await click(b, named('Retry progress storage'));
     try { await waitTotal(a, 2); }
     catch (error) {

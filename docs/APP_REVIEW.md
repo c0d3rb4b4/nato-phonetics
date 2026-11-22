@@ -414,6 +414,16 @@ Turn R01–R25 and selected feature items into individually owned work items, re
 
 ## Current delivery status
 
+### Run 37 Android speech bridge
+
+**22 November 2026 · P05.9/P08.4 active.** The Run 35 development APK lacked the TTS bridge. A comparison APK on the same Android 16 guest exposed 17 English voices. The rebuilt x86_64 APK restores enumeration, local voice preview, filters and saved selection across restart. At 2× text the preview switched to Stop in place. R12 and F09 gain scoped evidence. The ledger remains 14 in progress, 15 implemented awaiting M11 and six resolved. All seven M11 tasks remain pending. Exact ARM, installed iOS and hosted Chromium follow-up stay open. [Run 37 evidence](evidence/run37/README.md) · [screenshots](evidence/run37/screenshots/index.md).
+
+### Run 36 hosted browser follow-up
+
+**22 November 2026 · P10.5 active.** Both hosted quality jobs and all three tab-close distribution jobs passed at `7350d269`. Firefox and WebKit browser-support passed. Chromium browser-support stopped after a speech notice covered Next, with both answers already saved. The local runner passed regular and controlled recovery at the same production build. The exact-count Retry check now observes hidden tabs from the test process. R06/R07, R14 and F07 gain scoped evidence. [Results](evidence/run36/README.md) · [Captures](evidence/run36/screenshots/index.md).
+
+Chromium passed hosted process distribution. Firefox showed the saved answer but lacked a controller, and WebKit missed failed-update feedback before restart. F10 remains in progress. The Android guest still showed Retry in Voice Select after system Settings reached an embedded synthesis request, so F09 and P05.9 remain open. Exact ARM app checks, installed iOS and hosted Chromium verification of the local changes remain pending. The ledger remains at 14 in progress, 15 implemented awaiting M11 and six resolved. All seven M11 tasks are pending. [Delivery queue](DELIVERY_PLAN.md#current-delivery-order-and-residual-engineering-queue).
+
 ### Run 35 learning and support rollout
 
 **22 November 2026 · P05.9 active.** Letter Quiz has grouped, visibly selected choices and uses the shared typed field. Learning Progress shows saved counts and due states first, followed by practice, symbol details and confirmed deletion. About, Privacy Policy and Page Not Found use the shared support patterns. Web choices respond to Space and keyboard users can activate the support link. The full Speech-policy ending is visible in narrow Edge at 200% text. R06/R07, R14, R18, R21/R22 and F01/F05/F06/F07 gained scoped evidence. The ledger remains at 14 in progress, 15 implemented awaiting M11 and six resolved. [Run 35 checks](evidence/run35/README.md) · [Screenshots](evidence/run35/screenshots/index.md).
