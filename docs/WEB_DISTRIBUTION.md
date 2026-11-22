@@ -100,3 +100,7 @@ The production build at `7350d269` passed all six Caddy checks in each hosted ta
 ## Run 38 hosted tab-close candidate
 
 At 159fb3a all three tab-close distribution jobs passed. The Linux Chromium support job passed its original pointer and offline checks, then failed in a separate recovery suite when the audio notice intercepted desktop Retry. The shared Dismiss interaction, real Retry double-click and independent freeze checks passed locally on the same hosted production shell. Repeat the recovery and independent freeze steps on the next revision with the Run 38 changes. The earlier Firefox and WebKit process failures retain their own trace checkpoints. [Run 38 browser evidence](evidence/run38/README.md#hosted-browser-checkpoint).
+
+## Process restart and immediate Retry · Run 39
+
+At 8530c821 the hosted process suite passed in Chromium and WebKit. Firefox returned the forward HTML online with one saved answer and no controlling worker. The runner now records the first document and subsequent navigation independently. The final local archive reproduced the red gate. A later offline launch from a copy of that profile served the expected forward shell after Caddy stopped. Keep the online gate open and re-enter on a browser startup trace or actual offline failure. Menu’s separate failed-update repair passes local Chromium and WebKit checks. [Run 39 evidence](evidence/run39/README.md).

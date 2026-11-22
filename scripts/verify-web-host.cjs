@@ -150,21 +150,47 @@ async function main() {
       keys.length === 1 && keys[0] === 'nato-shell-v1-' + expected;
   }, build, 'active controller and sole expected shell cache');
   async function reopened(target, route, build, htmlHash) {
+    // Capture the new document before the app registers its worker. A later
+    // active registration alone cannot show whether it controlled navigation.
+    await target.addInitScript(() => {
+      const service = navigator.serviceWorker;
+      const events = window.__natoReopenEvents = [];
+      const record = (event, registration) => events.push({
+        event, ms: performance.now(), controlled: !!service.controller,
+        ...(registration ? { active: registration.active?.state, waiting: registration.waiting?.state,
+          installing: registration.installing?.state } : {}),
+      });
+      record('document-start');
+      service.addEventListener('controllerchange', () => record('controllerchange'));
+      void service.getRegistration().then(registration => {
+        record(registration ? 'initial-registration' : 'initial-registration-absent', registration);
+        registration?.addEventListener('updatefound', () => record('updatefound', registration));
+      });
+      window.addEventListener('pageshow', () => record('pageshow'));
+    });
+    const navigation = () => target.evaluate(() => ({
+      timeOrigin: performance.timeOrigin, events: window.__natoReopenEvents,
+      workerStart: performance.getEntriesByType('navigation')[0]?.workerStart,
+    }));
+    const observation = { route, build, expectedHtmlSha256: htmlHash };
+    (report.reopenObservations ||= []).push(observation);
     await target.goto(origin + route);
     // A process can close during normal activation. The first new navigation
     // may still get the prior controller. Once activation settles, an explicit
     // fresh navigation selects the active worker; production never forces it.
-    await pollPage(target, async () => {
-      const registration = await navigator.serviceWorker.getRegistration();
-      return registration?.active?.state === 'activated' && !registration.waiting && !registration.installing;
-    }, undefined, 'normal worker activation after closing all windows');
-    const observation = { route, build, expectedHtmlSha256: htmlHash, beforeFreshNavigation: await workerSnapshot(target) };
-    (report.reopenObservations ||= []).push(observation);
+    try {
+      await pollPage(target, async () => {
+        const registration = await navigator.serviceWorker.getRegistration();
+        return registration?.active?.state === 'activated' && !registration.waiting && !registration.installing;
+      }, undefined, 'normal worker activation after closing all windows');
+    } finally { observation.firstDocument = await navigation().catch(() => null); }
+    observation.beforeFreshNavigation = await workerSnapshot(target);
     await target.goto(origin + route);
     observation.afterFreshNavigation = await workerSnapshot(target);
     observation.servedExpectedHtmlBeforeCleanup = observation.afterFreshNavigation.servedHtmlSha256 === htmlHash;
     observation.activeControllerBeforeCleanup = observation.afterFreshNavigation.controllerIsActive;
-    await ready(target, build);
+    try { await ready(target, build); }
+    finally { observation.freshDocument = await navigation().catch(() => null); }
     observation.settled = await workerSnapshot(target);
     assert.equal(observation.settled.servedHtmlSha256, htmlHash);
   }

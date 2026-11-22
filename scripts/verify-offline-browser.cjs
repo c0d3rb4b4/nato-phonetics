@@ -50,7 +50,7 @@ const id = value => `[data-testid="${value}"]`;
     await p.screenshot({ path: path.join(shots, name + '.png') });
     const renderedFixture = await p.$eval('#root', e => e.dataset.updateProbe || 'production A');
     const appearance = await p.evaluate(() => ({ background: getComputedStyle(document.querySelector('[data-testid="app-theme"]')).backgroundColor, rootFontSize: getComputedStyle(document.documentElement).fontSize }));
-    report.captures.push({ file: name + '.png', capturedAt: new Date().toISOString(), viewport: p.viewport(), browser: report.browser, buildId: renderedFixture === 'b' ? next.buildId : manifest.buildId, serverShellId: root === b ? next.buildId : manifest.buildId, renderedFixture, ...appearance, online: connected, command: 'node scripts/verify-offline-browser.cjs dist ' + process.argv[3] });
+    report.captures.push({ file: name + '.png', capturedAt: new Date().toISOString(), viewport: p.viewport(), browser: report.browser, buildId: renderedFixture === 'b' ? next.buildId : manifest.buildId, serverShellId: root === b ? next.buildId : manifest.buildId, renderedFixture, ...appearance, online: connected, command: 'node scripts/verify-offline-browser.cjs', arguments: [source, out] });
   };
   await visit(page, '/menu'); await ready(page);
   await page.waitForFunction(() => document.querySelector('[data-testid="web-offline-status"]')?.textContent.includes('Offline copy ready'));
@@ -98,12 +98,47 @@ const id = value => `[data-testid="${value}"]`;
   report.scenarios.push('PASS all 13 direct routes + query/.html/unknown fallback offline; cached fonts; actual offline quiz answer commits aggregate two; converter exact typed input/export; submitted progress retained');
   connected = true; await page.setOfflineMode(false);
   const second = await context.newPage(); await visit(second, '/converter'); await second.type('textarea', input);
-  // Failed update must retain A, remove partial B and keep the draft/data.
-  root = b; broken = '/favicon.png'; await click(page, '[aria-label="Check for web update"]');
+  // Delay the delivery of A's real readiness reply. Another open window can
+  // discover B while this check is still in flight.
+  await page.evaluate(() => {
+    const descriptor = Object.getOwnPropertyDescriptor(MessagePort.prototype, 'onmessage');
+    const replies = [];
+    let holding = true;
+    window.offlineCheckReplies = replies;
+    Object.defineProperty(MessagePort.prototype, 'onmessage', { ...descriptor, set(listener) {
+      descriptor.set.call(this, function(event) {
+        if (holding && event.data?.ready === true) replies.push(() => listener.call(this, event));
+        else listener.call(this, event);
+      });
+    } });
+    window.releaseOfflineCheck = () => {
+      holding = false;
+      Object.defineProperty(MessagePort.prototype, 'onmessage', descriptor);
+      for (const deliver of replies.splice(0)) deliver();
+    };
+  });
+  await click(page, '[aria-label="Check for web update"]');
+  await page.waitForFunction(() => window.offlineCheckReplies.length > 0);
+  const checker = await context.newPage(); await visit(checker, '/menu');
+  await checker.waitForFunction(() => document.querySelector('[data-testid="web-offline-status"]')?.textContent.includes('Offline copy ready'));
+  root = b; broken = '/favicon.png'; await click(checker, '[aria-label="Check for web update"]');
+  await checker.waitForFunction(() => document.querySelector('[data-testid="web-offline-status"]')?.textContent.includes('could not finish'));
+  await checker.close();
+  await page.bringToFront();
   await page.waitForFunction(() => document.querySelector('[data-testid="web-offline-status"]')?.textContent.includes('could not finish'));
+  await page.evaluate(async () => {
+    window.releaseOfflineCheck();
+    await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+  });
+  assert.match(await page.$eval(id('web-offline-status'), e => e.textContent), /could not finish/,
+    'A late ready reply from the working shell must preserve the failed update and Retry');
+  report.scenarios.push('PASS delayed active-shell reply preserves the failed update and Retry');
   assert.deepEqual(await page.evaluate(() => caches.keys()), names);
   assert.equal(await second.$eval('textarea', e => e.value), input);
   await capture(page, 'update-download-failed');
+  await page.setViewport({ width: 320, height: 568 });
+  await capture(page, 'narrow-update-download-failed', '[aria-label="Retry offline setup"]');
+  await page.setViewport({ width: 1280, height: 900 });
   broken = ''; await click(page, '[aria-label="Retry offline setup"]');
   await page.waitForFunction(() => document.querySelector('[data-testid="web-offline-status"]')?.textContent.includes('Update ready'));
   assert.equal(await second.$eval('textarea', e => e.value), input);

@@ -1,0 +1,520 @@
+{
+  "scenarios": [
+    "PASS evicted resource repaired by explicit Check without replacing app data",
+    "PASS all 13 direct routes + query/.html/unknown fallback offline; cached fonts; actual offline quiz answer commits aggregate two; converter exact typed input/export; submitted progress retained",
+    "PASS delayed active-shell reply preserves the failed update and Retry",
+    "PASS failed update keeps complete A; retry installs B; two windows/draft retained; reload keeps A while another open; normal close-all activation B; old shell cleanup; saved progress/preferences/unrelated retained",
+    "PASS rollback to complete A through default waiting lifecycle preserves data",
+    "PASS real process restart offline with saved progress; narrow dark 320px readiness and 200% text/control reachability",
+    "PASS first-ever offline visit fails honestly, no cached availability claimed",
+    "PASS blocked setup guidance without partial cache or app failure",
+    "PASS unavailable setup guidance without partial cache or app failure",
+    "PASS corrupt setup guidance without partial cache or app failure",
+    "PASS first-install integrity failure recovers through Retry without reload"
+  ],
+  "captures": [
+    {
+      "file": "desktop-offline-ready.png",
+      "capturedAt": "2026-11-22T19:06:19.578Z",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "browser": "Chrome/159.0.8154.6",
+      "buildId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+      "serverShellId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+      "renderedFixture": "production A",
+      "background": "rgb(31, 41, 51)",
+      "rootFontSize": "16px",
+      "online": true,
+      "command": "node scripts/verify-offline-browser.cjs",
+      "arguments": [
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\final-web",
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\captures"
+      ]
+    },
+    {
+      "file": "offline-alphabet-fonts.png",
+      "capturedAt": "2026-11-22T19:06:35.814Z",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "browser": "Chrome/159.0.8154.6",
+      "buildId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+      "serverShellId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+      "renderedFixture": "production A",
+      "background": "rgb(31, 41, 51)",
+      "rootFontSize": "16px",
+      "online": false,
+      "command": "node scripts/verify-offline-browser.cjs",
+      "arguments": [
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\final-web",
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\captures"
+      ]
+    },
+    {
+      "file": "offline-converter.png",
+      "capturedAt": "2026-11-22T19:06:37.776Z",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "browser": "Chrome/159.0.8154.6",
+      "buildId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+      "serverShellId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+      "renderedFixture": "production A",
+      "background": "rgb(31, 41, 51)",
+      "rootFontSize": "16px",
+      "online": false,
+      "command": "node scripts/verify-offline-browser.cjs",
+      "arguments": [
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\final-web",
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\captures"
+      ]
+    },
+    {
+      "file": "offline-saved-progress.png",
+      "capturedAt": "2026-11-22T19:06:38.663Z",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "browser": "Chrome/159.0.8154.6",
+      "buildId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+      "serverShellId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+      "renderedFixture": "production A",
+      "background": "rgb(31, 41, 51)",
+      "rootFontSize": "16px",
+      "online": false,
+      "command": "node scripts/verify-offline-browser.cjs",
+      "arguments": [
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\final-web",
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\captures"
+      ]
+    },
+    {
+      "file": "desktop-offline-policy.png",
+      "capturedAt": "2026-11-22T19:06:40.763Z",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "browser": "Chrome/159.0.8154.6",
+      "buildId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+      "serverShellId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+      "renderedFixture": "production A",
+      "background": "rgb(31, 41, 51)",
+      "rootFontSize": "16px",
+      "online": false,
+      "command": "node scripts/verify-offline-browser.cjs",
+      "arguments": [
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\final-web",
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\captures"
+      ]
+    },
+    {
+      "file": "desktop-offline-menu.png",
+      "capturedAt": "2026-11-22T19:06:41.860Z",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "browser": "Chrome/159.0.8154.6",
+      "buildId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+      "serverShellId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+      "renderedFixture": "production A",
+      "background": "rgb(31, 41, 51)",
+      "rootFontSize": "16px",
+      "online": false,
+      "command": "node scripts/verify-offline-browser.cjs",
+      "arguments": [
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\final-web",
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\captures"
+      ]
+    },
+    {
+      "file": "update-download-failed.png",
+      "capturedAt": "2026-11-22T19:06:48.128Z",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "browser": "Chrome/159.0.8154.6",
+      "buildId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+      "serverShellId": "46480508507488f9175c6401680aeaa0088ffb1f113dc842ed650f75da277310",
+      "renderedFixture": "production A",
+      "background": "rgb(31, 41, 51)",
+      "rootFontSize": "16px",
+      "online": true,
+      "command": "node scripts/verify-offline-browser.cjs",
+      "arguments": [
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\final-web",
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\captures"
+      ]
+    },
+    {
+      "file": "narrow-update-download-failed.png",
+      "capturedAt": "2026-11-22T19:06:48.201Z",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "browser": "Chrome/159.0.8154.6",
+      "buildId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+      "serverShellId": "46480508507488f9175c6401680aeaa0088ffb1f113dc842ed650f75da277310",
+      "renderedFixture": "production A",
+      "background": "rgb(31, 41, 51)",
+      "rootFontSize": "16px",
+      "online": true,
+      "command": "node scripts/verify-offline-browser.cjs",
+      "arguments": [
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\final-web",
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\captures"
+      ]
+    },
+    {
+      "file": "desktop-update-waiting.png",
+      "capturedAt": "2026-11-22T19:06:48.328Z",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "browser": "Chrome/159.0.8154.6",
+      "buildId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+      "serverShellId": "46480508507488f9175c6401680aeaa0088ffb1f113dc842ed650f75da277310",
+      "renderedFixture": "production A",
+      "background": "rgb(31, 41, 51)",
+      "rootFontSize": "16px",
+      "online": true,
+      "command": "node scripts/verify-offline-browser.cjs",
+      "arguments": [
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\final-web",
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\captures"
+      ]
+    },
+    {
+      "file": "update-activated.png",
+      "capturedAt": "2026-11-22T19:06:52.122Z",
+      "viewport": {
+        "width": 800,
+        "height": 600
+      },
+      "browser": "Chrome/159.0.8154.6",
+      "buildId": "46480508507488f9175c6401680aeaa0088ffb1f113dc842ed650f75da277310",
+      "serverShellId": "46480508507488f9175c6401680aeaa0088ffb1f113dc842ed650f75da277310",
+      "renderedFixture": "b",
+      "background": "rgb(31, 41, 51)",
+      "rootFontSize": "16px",
+      "online": true,
+      "command": "node scripts/verify-offline-browser.cjs",
+      "arguments": [
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\final-web",
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\captures"
+      ]
+    },
+    {
+      "file": "rollback-ready.png",
+      "capturedAt": "2026-11-22T19:06:56.240Z",
+      "viewport": {
+        "width": 800,
+        "height": 600
+      },
+      "browser": "Chrome/159.0.8154.6",
+      "buildId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+      "serverShellId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+      "renderedFixture": "production A",
+      "background": "rgb(31, 41, 51)",
+      "rootFontSize": "16px",
+      "online": true,
+      "command": "node scripts/verify-offline-browser.cjs",
+      "arguments": [
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\final-web",
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\captures"
+      ]
+    },
+    {
+      "file": "narrow-dark-cold-progress.png",
+      "capturedAt": "2026-11-22T19:06:59.017Z",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "browser": "Chrome/159.0.8154.6",
+      "buildId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+      "serverShellId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+      "renderedFixture": "production A",
+      "background": "rgb(31, 41, 51)",
+      "rootFontSize": "16px",
+      "online": false,
+      "command": "node scripts/verify-offline-browser.cjs",
+      "arguments": [
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\final-web",
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\captures"
+      ]
+    },
+    {
+      "file": "narrow-dark-cold-offline.png",
+      "capturedAt": "2026-11-22T19:07:00.126Z",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "browser": "Chrome/159.0.8154.6",
+      "buildId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+      "serverShellId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+      "renderedFixture": "production A",
+      "background": "rgb(31, 41, 51)",
+      "rootFontSize": "16px",
+      "online": false,
+      "command": "node scripts/verify-offline-browser.cjs",
+      "arguments": [
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\final-web",
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\captures"
+      ]
+    },
+    {
+      "file": "narrow-dark-offline-policy-top.png",
+      "capturedAt": "2026-11-22T19:07:01.135Z",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "browser": "Chrome/159.0.8154.6",
+      "buildId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+      "serverShellId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+      "renderedFixture": "production A",
+      "background": "rgb(31, 41, 51)",
+      "rootFontSize": "16px",
+      "online": false,
+      "command": "node scripts/verify-offline-browser.cjs",
+      "arguments": [
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\final-web",
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\captures"
+      ]
+    },
+    {
+      "file": "narrow-dark-offline-policy-bottom.png",
+      "capturedAt": "2026-11-22T19:07:01.211Z",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "browser": "Chrome/159.0.8154.6",
+      "buildId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+      "serverShellId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+      "renderedFixture": "production A",
+      "background": "rgb(31, 41, 51)",
+      "rootFontSize": "16px",
+      "online": false,
+      "command": "node scripts/verify-offline-browser.cjs",
+      "arguments": [
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\final-web",
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\captures"
+      ]
+    },
+    {
+      "file": "narrow-dark-200-offline-status.png",
+      "capturedAt": "2026-11-22T19:07:03.175Z",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "browser": "Chrome/159.0.8154.6",
+      "buildId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+      "serverShellId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+      "renderedFixture": "production A",
+      "background": "rgb(31, 41, 51)",
+      "rootFontSize": "32px",
+      "online": false,
+      "command": "node scripts/verify-offline-browser.cjs",
+      "arguments": [
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\final-web",
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\captures"
+      ]
+    },
+    {
+      "file": "narrow-dark-200-offline-retry.png",
+      "capturedAt": "2026-11-22T19:07:03.241Z",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "browser": "Chrome/159.0.8154.6",
+      "buildId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+      "serverShellId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+      "renderedFixture": "production A",
+      "background": "rgb(31, 41, 51)",
+      "rootFontSize": "32px",
+      "online": false,
+      "command": "node scripts/verify-offline-browser.cjs",
+      "arguments": [
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\final-web",
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\captures"
+      ]
+    },
+    {
+      "file": "narrow-blocked.png",
+      "capturedAt": "2026-11-22T19:07:04.616Z",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "browser": "Chrome/159.0.8154.6",
+      "buildId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+      "serverShellId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+      "renderedFixture": "production A",
+      "background": "rgb(31, 41, 51)",
+      "rootFontSize": "16px",
+      "online": true,
+      "command": "node scripts/verify-offline-browser.cjs",
+      "arguments": [
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\final-web",
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\captures"
+      ]
+    },
+    {
+      "file": "narrow-unavailable.png",
+      "capturedAt": "2026-11-22T19:07:05.786Z",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "browser": "Chrome/159.0.8154.6",
+      "buildId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+      "serverShellId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+      "renderedFixture": "production A",
+      "background": "rgb(31, 41, 51)",
+      "rootFontSize": "16px",
+      "online": true,
+      "command": "node scripts/verify-offline-browser.cjs",
+      "arguments": [
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\final-web",
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\captures"
+      ]
+    },
+    {
+      "file": "narrow-corrupt.png",
+      "capturedAt": "2026-11-22T19:07:06.955Z",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "browser": "Chrome/159.0.8154.6",
+      "buildId": "46480508507488f9175c6401680aeaa0088ffb1f113dc842ed650f75da277310",
+      "serverShellId": "46480508507488f9175c6401680aeaa0088ffb1f113dc842ed650f75da277310",
+      "renderedFixture": "b",
+      "background": "rgb(31, 41, 51)",
+      "rootFontSize": "16px",
+      "online": true,
+      "command": "node scripts/verify-offline-browser.cjs",
+      "arguments": [
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\final-web",
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\captures"
+      ]
+    },
+    {
+      "file": "narrow-first-install-recovered.png",
+      "capturedAt": "2026-11-22T19:07:07.079Z",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "browser": "Chrome/159.0.8154.6",
+      "buildId": "46480508507488f9175c6401680aeaa0088ffb1f113dc842ed650f75da277310",
+      "serverShellId": "46480508507488f9175c6401680aeaa0088ffb1f113dc842ed650f75da277310",
+      "renderedFixture": "b",
+      "background": "rgb(31, 41, 51)",
+      "rootFontSize": "16px",
+      "online": true,
+      "command": "node scripts/verify-offline-browser.cjs",
+      "arguments": [
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\final-web",
+        "C:\\dev\\apps\\nato-phonetics\\artifacts\\run39\\captures"
+      ]
+    }
+  ],
+  "candidate": {
+    "buildId": "dbf727de2cd51f06a903d7a33de271cafe14e1fdf3128c56e9f7f349311a5137",
+    "fixtureB": "46480508507488f9175c6401680aeaa0088ffb1f113dc842ed650f75da277310",
+    "fixtureDescription": "same production JS; HTML root gains data-update-probe=b; manifest hashes regenerated",
+    "resources": [
+      {
+        "url": "/+not-found.html",
+        "sha256": "5da7ca1728c73cba83707e0b276b8587306b68508994920c0f48f0e35744919b"
+      },
+      {
+        "url": "/NatoTile-ExtraBold-P5QNDEHJ.ttf",
+        "sha256": "b0150a84d5e000fcd276cf13e1863ca8bbaab0ff2a0dfdcfa958a48781dd7aa6"
+      },
+      {
+        "url": "/NatoTile-Italic-AWOPV6AY.ttf",
+        "sha256": "50f16c8bec3ed31190d37403b6e15d200274e7a5e43f1a698a86eef7079d862b"
+      },
+      {
+        "url": "/NatoTile-SemiBold-REJGIRDE.ttf",
+        "sha256": "2d523d4db59330cd9355818d53b9ea01b09f868e26b72dbe76b33a4e7543177f"
+      },
+      {
+        "url": "/_sitemap.html",
+        "sha256": "9880a9b94d275a679235be1b50b4d2f87dceafd2b04465ba85e5aa4a014a8f64"
+      },
+      {
+        "url": "/about.html",
+        "sha256": "aad5d2a34ffc76fbfc7ab7386162a10fb9b9f227728fe84f732c6479c49d7744"
+      },
+      {
+        "url": "/alphabet.html",
+        "sha256": "ff9379d67f9113a674cf7303918aff0d0e10496486a69082744abfabea0a381f"
+      },
+      {
+        "url": "/assets/app-6WI4T77F.js",
+        "sha256": "a7882f70f7612b10b92ea4d8c152ca342fad00b293dcfea6a1b664cc1d088063"
+      },
+      {
+        "url": "/audio-help.html",
+        "sha256": "9ea13e1abf21de4500ab3b717da7f4719b4872ba73b3f4c2d8a8858c6e234763"
+      },
+      {
+        "url": "/converter.html",
+        "sha256": "58e8181ef6866527f0a59f7a76d373899f7c2d438625638ed6ecbc675681a6cc"
+      },
+      {
+        "url": "/favicon.png",
+        "sha256": "df8f62668e8fe86ec2495876136d75bf358df780d67fad67e97b2712bfa38a2f"
+      },
+      {
+        "url": "/index.html",
+        "sha256": "ff9379d67f9113a674cf7303918aff0d0e10496486a69082744abfabea0a381f"
+      },
+      {
+        "url": "/letter-quiz.html",
+        "sha256": "0da5d4cc1161e548deaa01863ad781a41338ae4e889b1019d850ad2d292cb570"
+      },
+      {
+        "url": "/menu.html",
+        "sha256": "f7bf7f81cdd1c766fb7cfb4a89cd2660c2a11ec65603e13403be7e00ab5b1c6d"
+      },
+      {
+        "url": "/privacy.html",
+        "sha256": "f02e2059b07e02388d5543432b9be5aecdf82d26ba4a7f73f12204ed8427110f"
+      },
+      {
+        "url": "/progress.html",
+        "sha256": "292ee47e9795c95b8c14fccd4fb6cbf3d9a4d366032323d6c2c4612ede324e6c"
+      },
+      {
+        "url": "/settings.html",
+        "sha256": "2606bb7509db51ec5625e875f0d21ba50c33a6850af0610ee4cb836ee1d6c77d"
+      },
+      {
+        "url": "/voice-select.html",
+        "sha256": "7e01fc25361785c65a0fc0b1fbcfbb095afc61f10cd4f20ff9885a8a4f9e6dbe"
+      }
+    ]
+  },
+  "origin": "http://127.0.0.1:53802",
+  "browser": "Chrome/159.0.8154.6",
+  "appErrors": [],
+  "workerSha256": "9c285845545a268bf07ef71921d1bee264c3ec68af3f66ee822a52b42712bde1"
+}

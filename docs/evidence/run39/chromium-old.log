@@ -1,0 +1,9 @@
+AssertionError [ERR_ASSERTION]: A late ready reply from the working shell must preserve the failed update and Retry
+    at C:\dev\apps\nato-phonetics\scripts\verify-offline-browser.cjs:133:10 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 'Offline copy ready. Reference, conversion, practice and saved local progress can open without a connection. Browser storage may be cleared or evicted.',
+  expected: /could not finish/,
+  operator: 'match',
+  diff: 'simple'
+}

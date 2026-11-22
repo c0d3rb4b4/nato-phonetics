@@ -1,5 +1,7 @@
 # Release preparation and web hosting
 
+**Web update qualification, 22 November 2026.** Keep the hosted process-transition results and local failed-update checks attached to their respective builds. Review the first and fresh document traces when Firefox lacks an online controller. A subsequent controlled offline launch has a separate result. Run the local repair on its next CI-eligible revision. [Run 39 evidence](evidence/run39/README.md).
+
 **Candidate preparation, 20 November 2026.** A clean locked install prepares the repaired Android renderer. For an Android candidate, run the ordinary npm or host build and retain its variant renderer-verification log. Hash the resulting product and its native/JS/font payload, then run the native and installed-app checks on that artifact. The first Run 31 clean-checkout selection gate passed for both Debug and Release. [Run 31 evidence](evidence/run31/README.md).
 
 The shared Android artifact inspector requires definitions of the speech package and module in the APK and in the Release AAB base. The report records the defining DEX for each class. Use an installed provider check to verify actual registration, enumeration and preview. [Inspector and negative control](evidence/run38/README.md#product-inspector-and-release-runtime).

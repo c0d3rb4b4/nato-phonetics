@@ -1,5 +1,7 @@
 # NATO Phonetics
 
+**Web offline updates, 22 November 2026.** If an update fails while another window is checking the current offline copy, Menu keeps the error visible. Use Retry offline setup to try the update again. [Checks and screenshots](docs/evidence/run39/README.md).
+
 **UI update, 22 November 2026.** Menu uses compact destination rows. Settings groups Converter controls, Appearance, and the current voice. Reset Preferences shows which choices it restores and keeps Learning Progress. In Voice Select, filter by name, locale or quality and use the separate Play control to preview a voice. Use Refresh voice list after installing voices, or Retry voice list after a loading failure. [Rollout status](docs/UI_DESIGN_LANGUAGE.md) · [Screenshots](docs/evidence/run34/screenshots/index.md).
 
 **Android build and quiz update, 20 November 2026.** The ordinary Release APK and AAB contain all four configured Android ABIs. The locked install prepares the React Native 0.81.5 live text-sizing repair, and Gradle selects the source renderer with the pinned Release Hermes engine. On Android 13 and 16, changing font size during a submitted letter question preserved the answer, enlarged feedback and controls, and allowed the learner to finish the round and retry the missed letter. Both default x86_64 installations were verified in the running process. [Run 32 evidence](docs/evidence/run32/README.md) · [actual quiz and converter screenshots](docs/evidence/run32/screenshots/index.md).

@@ -1,0 +1,210 @@
+{
+  "engine": "firefox",
+  "runner": "1.65.1",
+  "platform": "linux",
+  "transitionMode": "process",
+  "idleWithNoAppClientsMs": 0,
+  "checks": [
+    {
+      "name": "All 13 direct routes and trailing slashes return exact route HTML with revalidation",
+      "passed": true
+    },
+    {
+      "name": "Exact resource GET/HEAD bytes, MIME/cache headers, missing assets/private metadata 404, navigation fallback and method handling",
+      "passed": true
+    },
+    {
+      "name": "Real digest-rejected update leaves only complete original cache; explicit Retry installs verified update; two-window close/reload keeps original shell and exact progress/preferences/unrelated data",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "boundary": "Actual local Caddy; public HTTPS/certificates/host, branded Safari/iOS, legacy clients and M11 remain unrun",
+  "runnerSha256": "193f8cb3aa49e8b630ecabd3a5c3bfdb322587729f5274de60f9702601d69c5b",
+  "progressObserverSha256": "ad2ea97f9a8a9f221bd53fa2ac2d07ff8fa9239da2e70e145217966bb6856a08",
+  "browserExecutable": "/home/lalit/.cache/nato-run39.ZtgeGo/browsers/firefox-1572/firefox/firefox",
+  "browserExecutableSha256": "e6310be5c0676269cd7361da247d52687fd2ea5c0edd739d201525350e7859f1",
+  "runtimeDirectory": "/home/lalit/.cache/nato-run39.ZtgeGo/offline-forward/runtime-zqOyXn",
+  "candidate": {
+    "artifact": "/home/lalit/.cache/nato-run39.ZtgeGo/candidate.tar.gz",
+    "archiveSha256": "c70ce67617e51d9d130bf89f9b4ff2a9d3fb57aac0a4158f362abd86081f76d0",
+    "shellBuildId": "af6b951339690f34f252a3d8073d4813f64f94917f2a2ac0983a82287c115df5",
+    "contentId": "6961c9b1dea9a0250e3ad9f3aeb28532367775f3fe34dbf5f34b3254cab674e7"
+  },
+  "caddy": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+  "validation": "Valid configuration",
+  "validators": {
+    "etag": null,
+    "modified": null
+  },
+  "browser": "159.0",
+  "asyncPollingNegativeCheck": "Explicitly awaited false predicate times out, never passes",
+  "firstAnswer": {
+    "events": [
+      {
+        "sequence": 1,
+        "type": "observer-installed",
+        "ms": 11,
+        "visibility": "visible",
+        "locksAvailable": true,
+        "secureContext": true
+      },
+      {
+        "sequence": 2,
+        "type": "storage-read",
+        "ms": 68,
+        "visibility": "visible",
+        "present": false,
+        "total": 0,
+        "generation": null
+      },
+      {
+        "sequence": 3,
+        "type": "storage-read",
+        "ms": 68,
+        "visibility": "visible",
+        "present": false,
+        "total": 0,
+        "generation": null
+      },
+      {
+        "sequence": 4,
+        "type": "storage-read",
+        "ms": 273,
+        "visibility": "visible",
+        "present": false,
+        "total": 0,
+        "generation": null
+      },
+      {
+        "sequence": 5,
+        "type": "lock-request",
+        "ms": 277,
+        "visibility": "visible",
+        "operation": 5,
+        "aborted": false
+      },
+      {
+        "sequence": 6,
+        "type": "lock-acquired",
+        "ms": 282,
+        "visibility": "visible",
+        "operation": 5,
+        "mode": "exclusive"
+      },
+      {
+        "sequence": 7,
+        "type": "storage-read",
+        "ms": 282,
+        "visibility": "visible",
+        "present": false,
+        "total": 0,
+        "generation": null
+      },
+      {
+        "sequence": 8,
+        "type": "storage-write",
+        "ms": 282,
+        "visibility": "visible",
+        "present": true,
+        "version": 1,
+        "generation": null,
+        "total": 1
+      },
+      {
+        "sequence": 9,
+        "type": "lock-completed",
+        "ms": 283,
+        "visibility": "visible",
+        "operation": 5
+      },
+      {
+        "sequence": 10,
+        "type": "storage-read",
+        "ms": 312,
+        "visibility": "visible",
+        "present": true,
+        "version": 1,
+        "generation": null,
+        "total": 1
+      }
+    ],
+    "data": {
+      "present": true,
+      "version": 1,
+      "generation": null,
+      "total": 1
+    },
+    "locks": {
+      "held": [],
+      "pending": []
+    },
+    "visibility": "visible",
+    "url": "http://127.0.0.1:35733/letter-quiz",
+    "visibleText": "What is the phonetic word for this symbol?\nQuestion 1 of 10 · 1 correct\nP\nPapa\npah-PAH\nPanama\nPanther\nPoland\nPapa · Your answer\nCorrect! P is Papa.\nNext question\nEnd round and review\nSpeech could not be played. Try System Default or another voice in Settings.\nAudio Help\nDismiss",
+    "controlled": false
+  },
+  "closeObservations": [
+    {
+      "mode": "process",
+      "pageCount": 2,
+      "beforeClose": {
+        "url": "http://127.0.0.1:35733/converter",
+        "controlled": true,
+        "active": {
+          "state": "activated",
+          "scriptURL": "http://127.0.0.1:35733/service-worker.js"
+        },
+        "waiting": {
+          "state": "installed",
+          "scriptURL": "http://127.0.0.1:35733/service-worker.js"
+        },
+        "installing": null,
+        "controllerIsActive": true,
+        "servedHtmlSha256": "e8941aaf24723fc054f3219d79ae6182912e4408b1192ef4980f3e5690ade9dc",
+        "caches": [
+          {
+            "name": "nato-shell-v1-af6b951339690f34f252a3d8073d4813f64f94917f2a2ac0983a82287c115df5",
+            "indexHtmlSha256": "e8941aaf24723fc054f3219d79ae6182912e4408b1192ef4980f3e5690ade9dc"
+          },
+          {
+            "name": "host-check-unrelated",
+            "indexHtmlSha256": null
+          },
+          {
+            "name": "nato-shell-v1-cc267e57834b84e18b1cefa5454cc372d57dc00375b023c2a32594f276f0a8e7",
+            "indexHtmlSha256": "6b4478d97ca5a3fb01c56ffb0ca3868d2f6b54dbec3ebf29b1a51491bf3e212e"
+          }
+        ]
+      }
+    }
+  ],
+  "originStoppedBeforeForwardReopen": true,
+  "firstOfflineForward": {
+    "httpStatus": 200,
+    "total": 1,
+    "worker": {
+      "url": "http://127.0.0.1:35733/progress",
+      "controlled": true,
+      "active": {
+        "state": "activated",
+        "scriptURL": "http://127.0.0.1:35733/service-worker.js"
+      },
+      "waiting": null,
+      "installing": null,
+      "controllerIsActive": true,
+      "servedHtmlSha256": "6b4478d97ca5a3fb01c56ffb0ca3868d2f6b54dbec3ebf29b1a51491bf3e212e",
+      "caches": [
+        {
+          "name": "host-check-unrelated",
+          "indexHtmlSha256": null
+        },
+        {
+          "name": "nato-shell-v1-cc267e57834b84e18b1cefa5454cc372d57dc00375b023c2a32594f276f0a8e7",
+          "indexHtmlSha256": "6b4478d97ca5a3fb01c56ffb0ca3868d2f6b54dbec3ebf29b1a51491bf3e212e"
+        }
+      ]
+    },
+    "forwardHtml": true
+  }
+}

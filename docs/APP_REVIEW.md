@@ -414,6 +414,10 @@ Turn R01–R25 and selected feature items into individually owned work items, re
 
 ## Current delivery status
 
+### Run 39 web update recovery
+
+**22 November 2026.** R14, F07 and F10 gained scoped evidence. Hosted Chromium passed the pointer, first-answer recovery and freeze checks on 8530c821. Six of seven CI jobs passed, including quality with 173 tests and zero advisories. Local Menu now preserves failed-update feedback and accepts Retry while an earlier readiness check is pending. Chromium passed all 11 offline groups. WebKit confirmed that Retry reached the registration exactly once. Firefox still failed online controller acquisition under the process-restart scenario. A subsequent offline launch in the copied profile showed one saved answer under the expected forward shell. P05, P06 and P08–P10 remain active. The ledger retains 14 in progress, 15 implemented awaiting M11 and six resolved. All seven M11 tasks remain pending. [Run 39 evidence](evidence/run39/README.md) · [screenshots](evidence/run39/screenshots/index.md).
+
 ### Run 38 Android Release and spoken-practice qualification
 
 **22 November 2026.** R12/R14/R24/F09 gained Android artifact or installed Release evidence. The inspector rejects the preserved missing-bridge APK. The scoped x86_64 Release lists 17 voices, previews one without selecting it and preserves an explicit choice after restart. F08 gained a real on-device Android en-US recognition result from synthetic input with no default network. Product capture and all seven M11 tasks remain pending. The ledger retains 14 in progress, 15 implemented awaiting M11 and six resolved. [Run 38 evidence](evidence/run38/README.md) · [screenshots](evidence/run38/screenshots/index.md).

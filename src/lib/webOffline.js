@@ -5,7 +5,9 @@ const listeners = new Set();
 /** @type {ServiceWorkerRegistration | undefined} */
 let registration;
 let started = false;
-let busy = false;
+let statusRevision = 0;
+/** @type {symbol | undefined} */
+let currentCheck;
 /** @param {string} status */
 function publish(status) {
   state = { status, online: navigator.onLine };
@@ -16,6 +18,7 @@ export const getOfflineState = () => state;
 export function subscribeOffline(listener) { listeners.add(listener); return () => { listeners.delete(listener); }; }
 /** @param {boolean} repair */
 async function refresh(repair = false) {
+  const revision = ++statusRevision;
   if (registration?.waiting) { publish('waiting'); return; }
   const active = registration?.active;
   if (active?.state !== 'activated') { publish('preparing'); return; }
@@ -26,24 +29,28 @@ async function refresh(repair = false) {
     try { active.postMessage({ type: 'SHELL_STATUS', repair }, [channel.port2]); }
     catch { clearTimeout(timeout); channel.port1.close(); resolve(false); }
   });
-  publish(registration?.waiting ? 'waiting' : ready ? 'ready' : 'error');
+  if (revision === statusRevision) publish(registration?.waiting ? 'waiting' : ready ? 'ready' : 'error');
 }
 /** @param {ServiceWorker} worker */
 function observe(worker) {
-  worker.addEventListener('statechange', () => {
+  const changed = () => {
+    if (worker.state === 'activated' || worker.state === 'redundant') worker.removeEventListener('statechange', changed);
     if (worker.state === 'redundant') {
+      ++statusRevision;
       if (!registration?.active) registration = undefined;
       publish('error');
     }
     else void refresh();
-  });
+  };
+  worker.addEventListener('statechange', changed);
 }
 export async function checkOffline() {
-  if (busy) return;
+  if (currentCheck && state.status !== 'error') return;
   if (!window.isSecureContext || typeof navigator.serviceWorker?.register !== 'function' || process.env.NODE_ENV !== 'production') {
     publish('unavailable'); return;
   }
-  busy = true;
+  const check = currentCheck = Symbol();
+  const revision = ++statusRevision;
   publish('preparing');
   try {
     if (!registration) {
@@ -51,9 +58,11 @@ export async function checkOffline() {
       registration.addEventListener('updatefound', () => { if (registration?.installing) observe(registration.installing); });
       if (registration.installing) observe(registration.installing);
     } else await registration.update();
-    await refresh(true);
-  } catch { publish('error'); }
-  finally { busy = false; }
+    // A newer lifecycle event owns the outcome, even if the old active shell
+    // subsequently reports a complete cache or its update() call settles late.
+    if (revision === statusRevision) await refresh(true);
+  } catch { if (revision === statusRevision) publish('error'); }
+  finally { if (currentCheck === check) currentCheck = undefined; }
 }
 export function startOffline() {
   if (started) return;
