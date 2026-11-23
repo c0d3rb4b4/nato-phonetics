@@ -1,0 +1,30 @@
+{
+  "fixture": "Run 38 synthetic en-US word",
+  "pcmSha256": "136e25b596709a052df742e2bc938b4470475cf8ca491ae48ccb349100cb47cc",
+  "transcriptGate": "Returned text in the editable quiz field must match the known word before submission",
+  "attempts": [
+    {
+      "serial": "emulator-5574",
+      "candidate": "Earlier incremental Develop build, before the synthesis interlock refinement",
+      "transport": "Authenticated emulator gRPC injectAudio, 16 kHz mono paced real-time packets",
+      "observed": "Grant succeeded. No editable result appeared. The installed quiz displayed its no-code-word recovery state. AppOps reported a completed RECORD_AUDIO operation of 11.044 s.",
+      "passed": false
+    },
+    {
+      "serial": "emulator-5578",
+      "candidate": "Incremental Develop build before the cold inventory timeout adjustment",
+      "transport": "WAV backend configured with padded synthetic input and audio rewind",
+      "observed": "Cold offline inventory timed out. A later explicit Start reached permission. Grant passed. The capture entered the recording state but no editable result appeared within the check.",
+      "passed": false
+    },
+    {
+      "serial": "emulator-5582",
+      "candidate": "Final x86_64 Develop APK",
+      "transport": "Start a backpressured authenticated synthetic-input stream before capture and wait for app readiness before sending the word",
+      "observed": "Final setup, denial and grant passed. After stream registration the emulator connection closed during the tap and the emulator process exited. Capture and the editable-result assertion did not execute.",
+      "passed": false
+    }
+  ],
+  "nextDiscriminatingCheck": "Demonstrate non-silent known input at the guest capture boundary, or use a qualified virtual microphone/runner, before replaying the same installed APK.",
+  "physicalReview": "M11.6"
+}

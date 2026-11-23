@@ -18,7 +18,7 @@ export default function WebOfflineStatus() {
     <SupportingText testID="web-offline-status" muted={false} accessibilityLiveRegion="polite" aria-live="polite">
       {messages[/** @type {keyof typeof messages} */ (status)]}
     </SupportingText>
-    <SupportingText>{online ? 'Browser reports a connection.' : 'Browser reports offline.'} Speech connectivity depends on your browser and voice; an offline copy does not guarantee audio. No microphone recognition is implemented.</SupportingText>
+    <SupportingText>{online ? 'Browser reports a connection.' : 'Browser reports offline.'} Speech connectivity depends on your browser and voice; an offline copy does not guarantee audio. This website does not use the microphone.</SupportingText>
     <Button label={status === 'error' ? 'Retry offline setup' : 'Check for web update'} variant="secondary" compact
       style={styles.action} onPress={() => { void checkOffline(); }} />
   </View>;

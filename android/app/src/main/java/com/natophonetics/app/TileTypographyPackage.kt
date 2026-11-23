@@ -7,6 +7,6 @@ import com.facebook.react.uimanager.ViewManager
 
 class TileTypographyPackage : ReactPackage {
   override fun createNativeModules(context: ReactApplicationContext): List<NativeModule> =
-    listOf(TileTypographyModule(context))
+    listOf(TileTypographyModule(context), SpokenAnswerModule(context))
   override fun createViewManagers(context: ReactApplicationContext): List<ViewManager<*, *>> = emptyList()
 }

@@ -1,6 +1,6 @@
 # Privacy Policy
 
-Last updated: 18 November 2026
+Last updated: 22 November 2026
 
 NATO Phonetics provides letter/digit reference, text conversion and letter/digit practice without an account. The authored app has no analytics, advertising or application backend. This describes the current implementation, not a legal compliance certification.
 
@@ -21,7 +21,7 @@ Progress starts at version 1 with no earlier progress schema to migrate. Browsin
 
 Updated same-origin browser windows coordinate progress mutations and refresh saved summaries. Saving/clearing requires HTTPS (or secure localhost) and browser Web Locks support; when unavailable, practice remains usable and unsaved answers stay in memory with recovery guidance. The app adds no server sync. Refresh all legacy app windows after an update; already loaded older code does not cooperate in the new lock. [Update and rollback instructions](docs/RELEASE_RUNBOOK.md#updates-local-data-and-rollback).
 
-Reference category, voice search/locale filters, selected practice set/mode/review scope, typed drafts, revealed listening text alternatives, converter text, active quiz rounds, submitted response strings and result/missed-answer recaps are held in memory; the app does not intentionally persist them. Starting a new round replaces the previous recap; closing the app process or reloading the page clears rounds/results. No microphone recording or speech recognition is currently implemented.
+Reference category, voice search/locale filters, selected practice set/mode/review scope, typed drafts, revealed listening text alternatives, converter text, active quiz rounds, submitted response strings and result/missed-answer recaps are held in memory; the app does not intentionally persist them. Starting a new round replaces the previous recap; closing the app process or reloading the page clears rounds/results. On Android, optional spoken practice requests microphone permission when you tap Start recording and uses Android’s on-device US English recognizer. You can stop recording, edit the returned text, or type instead. Leaving the question or backgrounding ends capture. The app does not store raw recordings, log transcripts or send microphone audio to a server. Only explicit answer submission updates local symbol totals. iOS and web currently offer listening and typed recall.
 
 ## Copy and Share
 

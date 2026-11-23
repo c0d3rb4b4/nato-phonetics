@@ -1,4 +1,4 @@
-import { StyleSheet, View } from 'react-native';
+import { Platform, StyleSheet, View } from 'react-native';
 import { PlaybackButton, PlaybackNotice } from '../src/components/PlaybackControls';
 import { NavigationRow, Screen, SectionHeading, SupportingText } from '../src/components/ui';
 import { NATO_ALPHABET, NATO_NUMBERS } from '../src/data/natoData';
@@ -25,6 +25,7 @@ export default function AudioHelpScreen() {
     <View style={styles.section}>
       <SectionHeading>Playback and privacy</SectionHeading>
       <SupportingText muted={false}>Letter Quiz includes listening practice with Play code word, Stop and a text alternative when you cannot use audio. Typed recall uses the canonical code word without a microphone. Listening text alternatives count toward the same practice score; pronunciation guides are not alternative typed answers.</SupportingText>
+      {Platform.OS === 'android' && <SupportingText muted={false}>In Letter Quiz, choose Speak a code word. Start recording uses the device’s US English model. Stop recording ends the input. Review or edit the word before checking. If the model or microphone is unavailable, type in the same field.</SupportingText>}
       <SupportingText muted={false}>Every submitted answer adds to local symbol progress, including listening text alternatives. Menu → Learning progress explains review times and offers Clear Progress. Reset Preferences keeps progress. Typed answers and recaps are not saved.</SupportingText>
       <SupportingText muted={false}>Starting another card, phrase, quiz answer or preview replaces the current audio. Stop, leaving the screen, editing converter text or backgrounding the app cancels the remaining words and pauses. If a provider does not finish, playback times out with a retry message.</SupportingText>
       <SupportingText muted={false}>Audio uses your device or browser speech provider. Some voices need a network connection. The app does not verify where a provider processes text, guarantee offline speech, or request microphone access for playback. Pronunciation varies by voice. The written guide remains available.</SupportingText>

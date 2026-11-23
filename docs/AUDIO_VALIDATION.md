@@ -117,3 +117,11 @@ All human results remain unperformed. [Run 13 M11 supplement](evidence/run13/man
 **Run 37 Android provider check.** Voice Select on the API 36 x86_64 development APK listed 17 English voices. Previewing a local voice dispatched three embedded synthesis requests while preserving System Default. Explicitly choosing that voice survived restart. Use the sequence in M11 for listening and provider acceptance. [Installed checks](evidence/run37/README.md) · [Screenshots](evidence/run37/screenshots/index.md).
 
 Run 38 qualified installed Release voice selection and the universal Release converter on the API 36 guest. For M11.3, listen to each digit in 359 and the complete phrase on the physical device, recording the chosen voice and provider. Three automated synthesis requests and a first-token highlight were observed. Audible pronunciation remains unperformed. [Release checks and screenshots](evidence/run38/README.md#ordinary-release-and-installed-converter).
+
+## M11 spoken practice on a physical Android device
+
+Pending owner/device checks for the [Run 40 candidate](evidence/run40/README.md). Record the device, Android version, local recognition provider/model, locale, network setting and outcome. Use ordinary example code words and retain only observations.
+
+- M11.3/.6. With an installed US English model, try a letter and a digit in airplane mode. Confirm that the word appears for editing and checking. Record accuracy and whether the provider works offline on this device.
+- M11.4/.6. With TalkBack and large text, locate Start recording, hear the recording indicator and activate Stop. Deny access, type an answer, then grant access on a later explicit request. Switch tabs or background during capture and confirm the microphone indicator clears. Correct one returned word and check it once.
+- M11.6. Check Android’s microphone privacy dashboard and the selected provider’s settings. Record whether the observed permission and retention behavior agrees with the candidate disclosure.

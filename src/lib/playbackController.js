@@ -23,6 +23,7 @@ export function createPlaybackController(adapter, prepare = async () => ({}), co
   /** @type {Set<() => void>} */
   const listeners = new Set();
   let providerStops = Promise.resolve();
+  let speechMayBePlaying = false;
 
   /** @param {Partial<import('../types').PlaybackSnapshot>} patch */
   function publish(patch) {
@@ -44,7 +45,10 @@ export function createPlaybackController(adapter, prepare = async () => ({}), co
     // Serialize native async stop calls: a late stop must not cancel a new word.
     // A timeout does not release this queue: a later native completion could
     // otherwise stop new audio. Retries remain bounded until it actually settles.
-    providerStops = providerStops.catch(() => {}).then(() => adapter.stop());
+    providerStops = providerStops.catch(() => {}).then(async () => {
+      await adapter.stop();
+      speechMayBePlaying = false;
+    });
     const stopBarrier = withTimeout(
       providerStops, config.stopTimeoutMs ?? 2500,
       'Audio could not be stopped. Try again or restart the app.',
@@ -90,9 +94,13 @@ export function createPlaybackController(adapter, prepare = async () => ({}), co
       }), config.utteranceTimeoutMs ?? Math.min(60000, Math.max(15000, text.length * 250 / rate)));
       run.cancelWait.add(cancel);
       try {
+        speechMayBePlaying = true;
         const pending = adapter.speak(text, {
           voice: prepared.voice, language: prepared.language ?? 'en-GB', rate,
-          onDone: () => finish({ status: 'completed' }),
+          onDone: () => {
+            if (!finished) speechMayBePlaying = false;
+            finish({ status: 'completed' });
+          },
           onStopped: cancel,
           onError: () => finish({ status: 'failed', error: new Error('Speech could not be played. Try System Default or another voice in Settings.') }),
         });
@@ -158,6 +166,10 @@ export function createPlaybackController(adapter, prepare = async () => ({}), co
         void execute(run, sequence, { ...options }, stopped);
       });
       return result;
+    },
+    async stopForRecording() {
+      if (active) settle(active, { status: 'cancelled' });
+      if (speechMayBePlaying) await stopProvider();
     },
     /** @param {string} [owner] */
     stop(owner) {

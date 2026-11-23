@@ -6,11 +6,12 @@ import { NatoTile, TileGrid } from '../src/components/NatoTile';
 import { Button, ChoiceButton, ChoiceGroup, Feedback, Heading, NavigationRow, Screen, SectionHeading, SupportingText, TextField } from '../src/components/ui';
 import { useTheme } from '../src/context/ThemeContext';
 import { usePlayback } from '../src/hooks/usePlayback';
+import { useSpokenAnswer } from '../src/hooks/useSpokenAnswer';
 import { useFocusEffect } from '../src/navigation';
 import {
   cancelQuizSession, createQuizSession, currentQuizQuestion, DEFAULT_QUIZ_SESSION_LENGTH,
   nextQuizQuestion, quizActionGuard, quizSessionResults,
-  restartQuizSession, retryQuizMistakes, submitQuizAnswer, QUIZ_MODES, MAX_RECALL_ANSWER_LENGTH,
+  restartQuizSession, retryQuizMistakes, submitQuizAnswer, isRecallMode, QUIZ_MODES, MAX_RECALL_ANSWER_LENGTH,
 } from '../src/lib/quizSession';
 import { normalizeAnswerKey } from '../src/lib/questions';
 import { useProgress } from '../src/hooks/useProgress';
@@ -26,6 +27,7 @@ export default function LetterQuizScreen() {
   const { theme } = useTheme();
   const audio = usePlayback('letter-quiz');
   const progress = useProgress();
+  const { control: capture, status: mic } = useSpokenAnswer();
   const [scope, setScope] = useState(/** @type {'all'|'due'|'mistakes'} */ ('all'));
   const [practice, setPractice] = useState(PRACTICE_SETS[0]);
   const [roundPractice, setRoundPractice] = useState(PRACTICE_SETS[0]);
@@ -47,7 +49,7 @@ export default function LetterQuizScreen() {
   /** Commit synchronously so rapid taps cannot submit or advance twice.
    * Every rendered handler carries the engine's opaque question/revision guard.
    * @param {import('../src/lib/quizSession').QuizSession} next */
-  const commit = next => { current.current = next; setSession(next); };
+  const commit = next => { capture?.cancel(); current.current = next; setSession(next); };
   const question = session && currentQuizQuestion(session);
   const guard = session && quizActionGuard(session);
   const results = session && quizSessionResults(session);
@@ -117,10 +119,11 @@ export default function LetterQuizScreen() {
       <View style={styles.setupSection}>
         <SectionHeading>Answer mode</SectionHeading>
         <ChoiceGroup label="Answer mode">
-          {QUIZ_MODES.map(item => <ChoiceButton key={item.id} label={item.label} testID={`mode-${item.id}`} selected={mode === item.id}
+          {QUIZ_MODES.filter(item => item.id !== 'spoken' || capture).map(item => <ChoiceButton key={item.id} label={item.label} testID={`mode-${item.id}`} selected={mode === item.id}
             onPress={() => { audio.stop(); setMode(/** @type {import('../src/lib/quizSession').QuizMode} */ (item.id)); }} />)}
         </ChoiceGroup>
         {mode === 'listening' && <SupportingText>Play a code word, then choose its letter or digit. Replay or show the code word as text whenever you need it. No microphone is used.</SupportingText>}
+        {mode === 'spoken' && <SupportingText>Record one US English code word with on-device recognition. Review or edit it before checking. You can also type any answer.</SupportingText>}
         {mode === 'typed' && <SupportingText>Type the canonical code word for the symbol. Case, accents, spaces and punctuation are ignored. Alpha and Juliet are accepted. Pronunciation guides are not alternative answers.</SupportingText>}
       </View>
       <View style={styles.setupSection}>
@@ -161,7 +164,7 @@ export default function LetterQuizScreen() {
       <Button label={session ? 'Start new round' : 'Start round'} testID="quiz-start" disabled={!reviewSymbols.length || (scope !== 'all' && progress.isLoading)} onPress={start} />
     </> : question && session && <>
       <Heading focusKey={`${session.generation}-${session.index}`} testID="quiz-prompt">{session.mode === 'listening'
-        ? 'Which symbol matches this code word?' : session.mode === 'typed' ? 'Type the code word for this symbol.' : 'What is the phonetic word for this symbol?'}</Heading>
+        ? 'Which symbol matches this code word?' : session.mode === 'spoken' ? 'Speak the code word for this symbol.' : session.mode === 'typed' ? 'Type the code word for this symbol.' : 'What is the phonetic word for this symbol?'}</Heading>
       <Text style={textStyle} testID="quiz-progress">Question {session.index + 1} of {session.length} · {results?.correct} correct</Text>
       {(session.mode !== 'listening' || feedback) && <TileGrid>
         <NatoTile entry={question.correct} concealed={!feedback} testID="quiz-card"
@@ -176,11 +179,22 @@ export default function LetterQuizScreen() {
         {showCodeWord && <Text testID="quiz-code-word" style={textStyle} accessibilityLiveRegion="polite" aria-live="polite">{question.correct.word}</Text>}
         <Text style={textStyle}>Replay with Play code word. If audio is unavailable, use the text alternative; it counts toward the same practice score.</Text>
       </>}
-      {!feedback && session.mode !== 'typed' && <Text style={textStyle}>Choose an answer below.</Text>}
-      {session.mode === 'typed' ? <>
+      {!feedback && !isRecallMode(session.mode) && <Text style={textStyle}>Choose an answer below.</Text>}
+      {isRecallMode(session.mode) ? <>
         {!feedback && <>
+          {session.mode === 'spoken' && <>
+            <Button compact variant="secondary" testID="quiz-record" disabled={mic.state === 'processing'}
+              label={mic.state === 'idle' ? 'Start recording' : mic.state === 'processing' ? 'Finishing recording' : 'Stop recording'}
+              onPress={() => {
+                if (!focused.current || current.current !== session) return;
+                if (mic.state !== 'idle') { capture?.stop(); return; }
+                Keyboard.dismiss();
+                void capture?.start(value => { setTypedAnswer(value); setAnswerError(''); });
+              }} />
+            <Feedback message={mic.message || 'Speak one code word or type it below.'} />
+          </>}
           <TextField testID="quiz-typed-answer" accessibilityLabel="Your code word" value={typedAnswer}
-            onChangeText={value => { setTypedAnswer(value); setAnswerError(''); }} maxLength={MAX_RECALL_ANSWER_LENGTH}
+            onChangeText={value => { if (session.mode === 'spoken') capture?.cancel(); setTypedAnswer(value); setAnswerError(''); }} maxLength={MAX_RECALL_ANSWER_LENGTH}
             autoCorrect={false} spellCheck={false} autoCapitalize="none" autoComplete="off" returnKeyType="done"
             placeholder="Code word"
             onSubmitEditing={() => { if (normalizeAnswerKey(typedAnswer)) select(typedAnswer); else setAnswerError('Enter a code word before checking.'); }} />

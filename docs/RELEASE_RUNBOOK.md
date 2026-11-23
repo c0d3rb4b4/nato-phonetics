@@ -62,7 +62,7 @@ Run26 audit or release acceptance.
 | Web base | Origin root, with HTTPS outside secure loopback | A subdirectory deployment is not configured or qualified |
 | Policy/support | In-app Privacy and About; [repository policy](../PRIVACY.md); [issue tracker](https://github.com/c0d3rb4b4/nato-phonetics/issues) | Owner checks destination, public policy wording and release metadata in M11.7 |
 
-Android minimum API 24 / compile-target 36 and iOS minimum 15.1 are **configured minimums**, not tested coverage. Actual native evidence uses the emulators/simulators identified in each run. iOS 26.2 has scoped runtime evidence; iOS 27 and older header fallback still need P10 qualification. No macOS/Windows/watch target is configured. Edge 157 has actual production browser evidence; other browser/engine/version qualification remains open. Provider speech and future recognition support are separate from rendering and saved progress.
+Android minimum API 24 / compile-target 36 and iOS minimum 15.1 are **configured minimums**, not tested coverage. Actual native evidence uses the emulators/simulators identified in each run. iOS 26.2 has scoped runtime evidence; iOS 27 and older header fallback still need P10 qualification. No macOS/Windows/watch target is configured. Edge 157 has actual production browser evidence; other browser/engine/version qualification remains open. Android spoken practice uses the on-device US English recognizer on eligible Android 12+ devices. Test the runtime microphone prompt, denial, Stop, interruption and editable response on each release candidate. Web and iOS keep their listening and typed paths. [Spoken practice qualification](SPOKEN_PRACTICE.md).
 
 ## Prepare a reviewable candidate
 

@@ -414,6 +414,12 @@ Turn R01–R25 and selected feature items into individually owned work items, re
 
 ## Current delivery status
 
+### Run 40 Android spoken practice and hosted web replay
+
+**22 November 2026.** F08 now has Android on-device microphone capture in Letter Quiz, explicit permission and an editable response using the existing score and progress rules. R05/R06/R20/R21 gain privacy, accessible-control, runbook and discovery coverage. Android 16 verified grant, denial, revocation, silence, Stop, navigation, a scored typed correction and dark 2× recording controls. The installed returned-word gate remains open after synthetic emulator inputs missed the result. Web and iOS recognition remain open. The ledger retains 14 in progress, 15 implemented awaiting M11 and six resolved. All seven M11 tasks remain pending. [Android results and limitations](evidence/run40/README.md) · [Screenshots](evidence/run40/screenshots/index.md).
+
+R14/F10 gain hosted qualification of the Run 39 repair. At `b825a5d` Chromium and WebKit passed process distribution, and all three browser-support jobs passed. Firefox served the expected forward shell and preserved one saved answer, but its restart gate still failed on document control. Native ARM and installed iOS P1 checks remain open on suitable hosts. [CI reports](evidence/run40/README.md#hosted-p1045-checkpoint) · [Delivery queue](DELIVERY_PLAN.md#current-delivery-order-and-residual-engineering-queue).
+
 ### Run 39 web update recovery
 
 **22 November 2026.** R14, F07 and F10 gained scoped evidence. Hosted Chromium passed the pointer, first-answer recovery and freeze checks on 8530c821. Six of seven CI jobs passed, including quality with 173 tests and zero advisories. Local Menu now preserves failed-update feedback and accepts Retry while an earlier readiness check is pending. Chromium passed all 11 offline groups. WebKit confirmed that Retry reached the registration exactly once. Firefox still failed online controller acquisition under the process-restart scenario. A subsequent offline launch in the copied profile showed one saved answer under the expected forward shell. P05, P06 and P08–P10 remain active. The ledger retains 14 in progress, 15 implemented awaiting M11 and six resolved. All seven M11 tasks remain pending. [Run 39 evidence](evidence/run39/README.md) · [screenshots](evidence/run39/screenshots/index.md).

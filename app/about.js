@@ -1,4 +1,4 @@
-import { StyleSheet, View } from 'react-native';
+import { Platform, StyleSheet, View } from 'react-native';
 import { ExternalLink, Heading, NavigationRow, Screen, SectionHeading, SupportingText } from '../src/components/ui';
 import { APP_NAME, APP_VERSION, SUPPORT_URL } from '../src/lib/appMetadata';
 
@@ -11,7 +11,7 @@ export default function AboutScreen() {
     <View style={styles.section}>
       <SectionHeading>Learn and practice</SectionHeading>
       <SupportingText muted={false}>The International Radiotelephony Spelling Alphabet uses distinct code words to make letters easier to understand over radio and telephone.</SupportingText>
-      {['Alphabet reference with pronunciation guides and audio', 'Word-to-phonetic conversion', 'Letter/digit choice, listening and typed recall', 'Local progress with due and focused review', 'Device voice and appearance preferences'].map(feature =>
+      {['Alphabet reference with pronunciation guides and audio', 'Word-to-phonetic conversion', 'Letter/digit choice, listening and typed recall', ...(Platform.OS === 'android' ? ['Spoken answers with on-device US English recognition'] : []), 'Local progress with due and focused review', 'Device voice and appearance preferences'].map(feature =>
         <SupportingText key={feature} muted={false}>• {feature}</SupportingText>)}
     </View>
     <View style={styles.section}>

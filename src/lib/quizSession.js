@@ -10,6 +10,7 @@ export const QUIZ_MODES = Object.freeze([
   { id: 'choice', label: 'Choose a code word' },
   { id: 'listening', label: 'Listen and choose a symbol' },
   { id: 'typed', label: 'Type a code word' },
+  { id: 'spoken', label: 'Speak a code word' },
 ]);
 
 /** @type {Map<string, import('../types').LetterEntry | import('../types').DigitEntry>} */
@@ -23,7 +24,7 @@ const allSymbols = Object.freeze(NATO_ALPHABET.map(entry => entry.letter));
  * @typedef {Readonly<{id: QuestionIdentity, correct: Readonly<import('../types').LetterEntry | import('../types').DigitEntry>, options: readonly string[]}>} SessionQuestion
  * @typedef {Readonly<{questionId: QuestionIdentity, symbol: string, expected: string, answer: string, correct: boolean}>} SessionAttempt
  * @typedef {Readonly<{revision: number, questionId: QuestionIdentity}>} ActionGuard
- * @typedef {'choice' | 'listening' | 'typed'} QuizMode
+ * @typedef {'choice' | 'listening' | 'typed' | 'spoken'} QuizMode
  * @typedef {Readonly<{
  *   phase: 'question' | 'feedback' | 'complete' | 'cancelled',
  *   generation: number, revision: number, length: number, index: number, mode: QuizMode,
@@ -31,6 +32,9 @@ const allSymbols = Object.freeze(NATO_ALPHABET.map(entry => entry.letter));
  * }>} QuizSession
  * @typedef {{length?: number, symbols?: readonly string[], mode?: QuizMode, random?: () => number}} SessionOptions
  */
+
+/** @param {QuizMode} mode */
+export const isRecallMode = mode => mode === 'typed' || mode === 'spoken';
 
 /** @param {number} length */
 function validateLength(length) {
@@ -105,7 +109,7 @@ function buildSession(options, generation, revision, previousSymbol) {
     return Object.freeze({
       id: Object.freeze({ generation, index, symbol }),
       correct,
-      options: Object.freeze(mode === 'typed' ? [] : mode === 'listening'
+      options: Object.freeze(isRecallMode(mode) ? [] : mode === 'listening'
         ? shuffle([symbol, ...shuffle(PRACTICE_ENTRIES.filter(candidate =>
           ('letter' in candidate) === ('letter' in correct) && entrySymbol(candidate) !== symbol).map(entrySymbol), draw).slice(0, 3)], draw)
         : shuffle([correct.word, ...generateDistractors(correct, draw)], draw)),
@@ -150,12 +154,12 @@ function isCurrent(session, guard) {
 export function submitQuizAnswer(session, guard, answer) {
   if (session.phase !== 'question' || !isCurrent(session, guard)) return session;
   const question = session.questions[session.index];
-  if (session.mode === 'typed'
+  if (isRecallMode(session.mode)
     ? answer.length > MAX_RECALL_ANSWER_LENGTH || !normalizeAnswerKey(answer)
     : !question.options.includes(answer)) return session;
   const expected = session.mode === 'listening' ? entrySymbol(question.correct) : question.correct.word;
   const attempt = Object.freeze({ questionId: question.id, symbol: entrySymbol(question.correct),
-    expected, answer: answer.trim(), correct: session.mode === 'typed'
+    expected, answer: answer.trim(), correct: isRecallMode(session.mode)
       ? normalizeAnswerKey(answer) === normalizeAnswerKey(expected) : answer === expected });
   return Object.freeze({ ...session, phase: 'feedback', revision: session.revision + 1,
     attempts: Object.freeze([...session.attempts, attempt]) });
