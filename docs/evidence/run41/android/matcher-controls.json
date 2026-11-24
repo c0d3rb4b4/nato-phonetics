@@ -1,0 +1,23 @@
+{
+  "offsetAndAttenuatedWord": {
+    "bestCorrelation": 1.0,
+    "wordOffsetSeconds": 1.4486,
+    "dominantHz": 0.12,
+    "peak": 12966,
+    "nonzeroSamples": 12366
+  },
+  "seed41Noise": {
+    "bestCorrelation": 0.039784,
+    "wordOffsetSeconds": 1.5905,
+    "dominantHz": 3301.62,
+    "peak": 1000,
+    "nonzeroSamples": 127941
+  },
+  "zero": {
+    "bestCorrelation": 0.0,
+    "wordOffsetSeconds": 0.0,
+    "dominantHz": 0.12,
+    "peak": 0,
+    "nonzeroSamples": 0
+  }
+}

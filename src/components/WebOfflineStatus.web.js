@@ -6,7 +6,7 @@ import { Button, SectionHeading, SupportingText } from './ui';
 const messages = {
   preparing: 'Preparing the offline copy. Keep this window open and connected until it is ready.',
   ready: 'Offline copy ready. Reference, conversion, practice and saved local progress can open without a connection. Browser storage may be cleared or evicted.',
-  waiting: 'Update ready. Finish your round, save pending progress and copy any draft you want to keep. Close every app window, then reopen to use the update. Reloading one window while others stay open keeps the current version.',
+  waiting: 'Update ready. Finish your round, save pending progress and copy any draft you want to keep. Leave another browser tab open, close every NATO Phonetics tab or window, then reopen Menu while connected. Wait until Menu confirms the offline copy is ready before disconnecting.',
   error: 'Offline setup or update could not finish. Reconnect and retry. An existing offline copy is kept; first-time offline use needs a successful setup.',
   unavailable: 'Offline setup is unavailable here. Use a supported browser over HTTPS. Private browsing or storage restrictions may prevent setup. The connected app still works.',
 };

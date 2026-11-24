@@ -2,9 +2,24 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import { createPlaybackController } from '../src/lib/playbackController.js';
 import { createRecognitionController } from '../src/lib/recognitionController.js';
+import { getSpokenPracticeSupport } from '../src/lib/spokenPracticeSupport.js';
 import { createQuizSession, quizActionGuard, submitQuizAnswer } from '../src/lib/quizSession.js';
 
 const tick = () => new Promise(resolve => setImmediate(resolve));
+
+test('spoken practice distinguishes the Android 12 factory from older Android and other platforms', () => {
+  for (const Version of [24, 30]) {
+    const support = getSpokenPracticeSupport({ OS: 'android', Version });
+    assert.equal(support.eligible, false);
+    assert.match(support.versionNotice, /Android 12 or later/);
+  }
+  for (const Version of [31, 36]) {
+    assert.deepEqual(getSpokenPracticeSupport({ OS: 'android', Version }), { eligible: true, versionNotice: '' });
+  }
+  for (const OS of ['ios', 'web']) {
+    assert.deepEqual(getSpokenPracticeSupport({ OS, Version: '36' }), { eligible: false, versionNotice: '' });
+  }
+});
 
 function fixture(overrides = {}, timeout) {
   const final = Promise.withResolvers();

@@ -414,6 +414,12 @@ Turn R01–R25 and selected feature items into individually owned work items, re
 
 ## Current delivery status
 
+### Run 41 Android compatibility and Firefox offline updates
+
+**24 November 2026.** F08/R05/R21 gained an Android version check across the quiz and support screens. The published Develop APK offered a spoken round on Android 11 even though the OS has no local factory. On the updated Release, the learner sees the version requirement alongside choice, listening and typed recall. A typed answer scored and saved once with microphone permission ungranted. R14/R20 gained checks for the recognition module, recording permission and optional microphone in Android artifacts. The Android returned-word gate and web/iOS recognition remain open. [Android and browser verification](evidence/run41/README.md) · [Screenshots](evidence/run41/screenshots/index.md).
+
+F10 remains in progress. In Firefox 159 a pending update followed by quitting the browser made the app inaccessible on the first offline visit. After following Menu’s connected update instructions, the first cold offline visit served the expected page and preserved the saved answer. The strict process gate remains failed. The ledger retains 14 in progress, 15 implemented awaiting M11 and six resolved. P05, P06 and P08–P10 stay active. All seven M11 tasks are pending. [Firefox evidence](evidence/run41/firefox/README.md) · [Current priorities](DELIVERY_PLAN.md#current-delivery-order-and-residual-engineering-queue).
+
 ### Run 40 Android spoken practice and hosted web replay
 
 **22 November 2026.** F08 now has Android on-device microphone capture in Letter Quiz, explicit permission and an editable response using the existing score and progress rules. R05/R06/R20/R21 gain privacy, accessible-control, runbook and discovery coverage. Android 16 verified grant, denial, revocation, silence, Stop, navigation, a scored typed correction and dark 2× recording controls. The installed returned-word gate remains open after synthetic emulator inputs missed the result. Web and iOS recognition remain open. The ledger retains 14 in progress, 15 implemented awaiting M11 and six resolved. All seven M11 tasks remain pending. [Android results and limitations](evidence/run40/README.md) · [Screenshots](evidence/run40/screenshots/index.md).

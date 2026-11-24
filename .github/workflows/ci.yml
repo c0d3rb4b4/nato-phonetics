@@ -163,6 +163,7 @@ jobs:
         run: |
           node scripts/host-build.cjs web --install --output artifacts/web-distribution/build
       - name: Install checksum-pinned Caddy and isolated browser
+        id: host_tools
         run: |
           mkdir -p "$RUNNER_TEMP/nato-caddy"
           curl --fail --location --output "$RUNNER_TEMP/nato-caddy/caddy.tar.gz" https://github.com/caddyserver/caddy/releases/download/v2.11.9/caddy_2.11.9_linux_amd64.tar.gz
@@ -174,6 +175,9 @@ jobs:
           echo "NODE_PATH=$RUNNER_TEMP/nato-host-browser/node_modules" >> "$GITHUB_ENV"
       - name: Qualify packaged host, forward update and rollback
         run: node scripts/verify-web-host.cjs artifacts/web-distribution/build/nato-web.tar.gz artifacts/web-distribution/host ${{ matrix.engine }} "$HOST_TRANSITION"
+      - name: Check Firefox connected update handoff and first offline launch
+        if: ${{ !cancelled() && matrix.engine == 'firefox' && steps.host_tools.outcome == 'success' }}
+        run: node scripts/verify-web-host.cjs artifacts/web-distribution/build/nato-web.tar.gz artifacts/web-distribution/handoff firefox handoff
       - name: Keep candidate, report and screenshots
         if: always()
         uses: actions/upload-artifact@v4
@@ -185,4 +189,8 @@ jobs:
             artifacts/web-distribution/host/caddy.log
             artifacts/web-distribution/host/screenshots/
             artifacts/web-distribution/host/diagnostics/
+            artifacts/web-distribution/handoff/report.json
+            artifacts/web-distribution/handoff/caddy.log
+            artifacts/web-distribution/handoff/screenshots/
+            artifacts/web-distribution/handoff/diagnostics/
           if-no-files-found: ignore

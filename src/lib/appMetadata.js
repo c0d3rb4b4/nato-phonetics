@@ -5,4 +5,4 @@ import config from '../../app.json';
 export const APP_NAME = config.displayName;
 export const APP_VERSION = config.version;
 export const SUPPORT_URL = 'https://github.com/c0d3rb4b4/nato-phonetics/issues';
-export const PRIVACY_UPDATED = '22 November 2026';
+export const PRIVACY_UPDATED = '24 November 2026';

@@ -17,7 +17,10 @@ from android_test_tools import build_tool, executable
 ROOT = Path(__file__).resolve().parents[1]
 DEV_CERT = 'fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c'
 SIGNATURE = re.compile(r'META-INF/[^/]+\.(SF|RSA|DSA|EC)', re.I)
-SPEECH_CLASSES = {b'Lnet/no_mad/tts/TextToSpeechModule;', b'Lnet/no_mad/tts/TextToSpeechPackage;'}
+SPEECH_CLASSES = {
+    b'Lnet/no_mad/tts/TextToSpeechModule;', b'Lnet/no_mad/tts/TextToSpeechPackage;',
+    b'Lcom/natophonetics/app/SpokenAnswerModule;',
+}
 
 
 def require(condition, message):
@@ -46,8 +49,15 @@ def manifest(apk):
     output = command([*build_tool('aapt2'), 'dump', 'badging', apk]).stdout
     match = re.search(r"^package: name='([^']+)' versionCode='(\d+)' versionName='([^']+)'", output, re.M)
     require(match, 'Missing Android package or version')
+    declarations = {line.strip() for line in output.splitlines()}
+    require("uses-permission: name='android.permission.RECORD_AUDIO'" in declarations,
+            'Missing recording permission for spoken practice')
+    require("uses-feature-not-required: name='android.hardware.microphone'" in declarations and
+            "uses-feature: name='android.hardware.microphone'" not in declarations,
+            'The microphone must be optional for devices using other practice modes')
     return dict(packageId=match[1], versionCode=int(match[2]), version=match[3],
-                debuggable='application-debuggable' in output.splitlines())
+                debuggable='application-debuggable' in declarations,
+                recordingPermission='android.permission.RECORD_AUDIO', microphoneRequired=False)
 
 
 def speech_classes(data):

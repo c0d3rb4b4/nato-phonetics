@@ -1,0 +1,35 @@
+
+> nato-phonetics@1.0.0 typecheck
+> tsc --noEmit
+
+
+> nato-phonetics@1.0.0 lint
+> eslint . --max-warnings 0
+
+ok 182 - a symlink in place of a regular release file is rejected # SKIP Windows denied creation of the file-symlink fixture
+1..183
+# tests 183
+# suites 0
+# pass 182
+# fail 0
+# cancelled 0
+# skipped 1
+# todo 0
+# duration_ms 27530.8479
+WSL2 targeted replay
+TAP version 13
+# Subtest: a symlink in place of a regular release file is rejected
+ok 1 - a symlink in place of a regular release file is rejected
+  ---
+  duration_ms: 19.999434
+  type: 'test'
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 1
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 95.63675

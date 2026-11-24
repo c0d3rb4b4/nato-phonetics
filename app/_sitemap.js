@@ -1,11 +1,14 @@
 import { Platform, StyleSheet, View } from 'react-native';
 import { Heading, NavigationRow, Screen } from '../src/components/ui';
+import { getSpokenPracticeSupport } from '../src/lib/spokenPracticeSupport';
+
+const { eligible } = getSpokenPracticeSupport(Platform);
 
 /** @type {import('../src/types').NavigationItem[]} */
 const ROUTES = [
   { title: 'Reference', route: '/alphabet', icon: 'book-outline', description: 'Browse letters, digits and pronunciation guides.' },
   { title: 'Word Converter', route: '/converter', icon: 'text-outline', description: 'Convert and play a word or phrase.' },
-  { title: 'Letter Quiz', route: '/letter-quiz', icon: 'help-circle-outline', description: Platform.OS === 'android' ? 'Choose, listen, type or record a code word.' : 'Practice with choices, listening or typed answers.' },
+  { title: 'Letter Quiz', route: '/letter-quiz', icon: 'help-circle-outline', description: eligible ? 'Choose, listen, type or record a code word.' : 'Practice with choices, listening or typed answers.' },
   { title: 'Learning progress', route: '/progress', icon: 'book-outline', description: 'Review saved results and due symbols.' },
   { title: 'Menu', route: '/menu', icon: 'menu-outline', description: 'Find settings, help and app information.' },
   { title: 'Settings', route: '/settings', icon: 'settings-outline', description: 'Converter, appearance and voice.' },

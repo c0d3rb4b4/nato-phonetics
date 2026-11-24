@@ -1,0 +1,27 @@
+{
+  "registrationSha256": "4d143cd18790c611857834e18dd12dc87152d5ae8ae51e8fb60ff125c41096bb",
+  "scriptURL": "http://127.0.0.1:43627/service-worker.js",
+  "registeredScriptCache": "{9114ecda-6458-40bd-8325-977bc06cf379}",
+  "caches": [
+    {
+      "namespace": 0,
+      "key": "host-check-unrelated",
+      "id": 3,
+      "workerScriptEntries": 0
+    },
+    {
+      "namespace": 0,
+      "key": "nato-shell-v1-b17f4f90d7cadb0d89e1bc065e206cdbb08946e1b1b3783c4c5c899e5bcd167f",
+      "id": 7,
+      "workerScriptEntries": 0
+    },
+    {
+      "namespace": 1,
+      "key": "{4c5dbdec-59d8-48e9-a679-2edf63ee7753}",
+      "id": 6,
+      "workerScriptEntries": 1
+    }
+  ],
+  "registeredScriptInNamedCache": false,
+  "walBytesAtRead": 0
+}

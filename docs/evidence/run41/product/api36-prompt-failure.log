@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "C:\dev\apps\nato-phonetics\docs\evidence\run41\product\practice.py", line 94, in <module>
+    find('While using the app')
+  File "C:\dev\apps\nato-phonetics\docs\evidence\run41\product\practice.py", line 44, in find
+    raise ValueError('Visible control missing: ' + label)
+ValueError: Visible control missing: While using the app

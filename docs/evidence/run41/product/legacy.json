@@ -1,0 +1,27 @@
+{
+  "package": "com.natophonetics.app",
+  "installedSha256": "9d0a2b6fd693e484c0a4116b44d801bfdbe05652103f09284ceafd4d59c59fac",
+  "api": 30,
+  "android": "11",
+  "size": "Physical size: 720x1600",
+  "density": "Physical density: 280",
+  "fontScale": "null",
+  "appPrimaryAbi": "x86",
+  "recordingPermissionGranted": false,
+  "checks": [
+    "Android version guidance on quiz setup",
+    "1 answers saved \u00b7 1 correct \u00b7 0 errors",
+    "audio-help matched",
+    "privacy matched",
+    "about matched",
+    "_sitemap matched"
+  ],
+  "screenshotsSha256": {
+    "api30-legacy-setup": "8a0c5d9d439c4c2b9b6d66d82a79de4dcf8fc5c47e34b8565dcd6bf5ff96b5f8",
+    "api30-typed-checked": "f1e976913ceb8e178a6e75a132b6c0e00c7e9099ce04723d62fe86245c581ae8",
+    "api30-audio-help": "f8002eb404c79297b986431ae9fb5882e70dc7a5bd733d828b8c97344f3c549f",
+    "api30-privacy": "9bfcf82c4c362055118fa17c4e214c304f3e1855fc5ff944a40a863199f1d6f5",
+    "api30-about": "9da1d867f2c21a436f35f7b6ca83d918a1e98d186c3dc57e1202e0e2e0231884",
+    "api30-sitemap": "fb48d74ac9c5dbefd12d6216c72fa0b48db940c35366fe0f9d89fb94568ad1d2"
+  }
+}

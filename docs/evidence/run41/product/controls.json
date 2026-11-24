@@ -1,0 +1,63 @@
+{
+  "aapt2": "Android Asset Packaging Tool (aapt) 2.20-13193326",
+  "compileSdk": 36,
+  "historicalDex": {
+    "source": "artifacts/run38/scoped-unsigned.apk",
+    "sha256": "2b031e36d7cea8dddfbd4deaaf0bdc8d6e1d6f983b7e0cc6076d5dcd38d2ef00",
+    "historicalDefinitions": {
+      "Lnet/no_mad/tts/TextToSpeechModule;": "classes.dex",
+      "Lnet/no_mad/tts/TextToSpeechPackage;": "classes.dex"
+    },
+    "rejectedByPayload": "Missing packaged speech classes: Lcom/natophonetics/app/SpokenAnswerModule;"
+  },
+  "binaryApk": [
+    {
+      "case": "optional-with-permission",
+      "accepted": {
+        "packageId": "com.natophonetics.fixture",
+        "versionCode": 1,
+        "version": "1.0",
+        "debuggable": false,
+        "recordingPermission": "android.permission.RECORD_AUDIO",
+        "microphoneRequired": false
+      }
+    },
+    {
+      "case": "missing-permission",
+      "rejected": "Missing recording permission for spoken practice"
+    },
+    {
+      "case": "required-microphone",
+      "rejected": "The microphone must be optional for devices using other practice modes"
+    },
+    {
+      "case": "implied-microphone",
+      "rejected": "The microphone must be optional for devices using other practice modes"
+    }
+  ],
+  "protoBase": [
+    {
+      "case": "optional-with-permission",
+      "accepted": {
+        "packageId": "com.natophonetics.fixture",
+        "versionCode": 1,
+        "version": "1.0",
+        "debuggable": false,
+        "recordingPermission": "android.permission.RECORD_AUDIO",
+        "microphoneRequired": false
+      }
+    },
+    {
+      "case": "missing-permission",
+      "rejected": "Missing recording permission for spoken practice"
+    },
+    {
+      "case": "required-microphone",
+      "rejected": "The microphone must be optional for devices using other practice modes"
+    },
+    {
+      "case": "implied-microphone",
+      "rejected": "The microphone must be optional for devices using other practice modes"
+    }
+  ]
+}

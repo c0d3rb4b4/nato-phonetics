@@ -1,5 +1,5 @@
 import { useCallback, useRef, useState } from 'react';
-import { Keyboard, StyleSheet, Text, View } from 'react-native';
+import { Keyboard, Platform, StyleSheet, Text, View } from 'react-native';
 import { entrySymbol, PRACTICE_SETS, practiceExampleOutput, practiceLengths } from '../src/lib/practiceSets';
 import { PlaybackButton, PlaybackNotice } from '../src/components/PlaybackControls';
 import { NatoTile, TileGrid } from '../src/components/NatoTile';
@@ -7,6 +7,7 @@ import { Button, ChoiceButton, ChoiceGroup, Feedback, Heading, NavigationRow, Sc
 import { useTheme } from '../src/context/ThemeContext';
 import { usePlayback } from '../src/hooks/usePlayback';
 import { useSpokenAnswer } from '../src/hooks/useSpokenAnswer';
+import { getSpokenPracticeSupport } from '../src/lib/spokenPracticeSupport';
 import { useFocusEffect } from '../src/navigation';
 import {
   cancelQuizSession, createQuizSession, currentQuizQuestion, DEFAULT_QUIZ_SESSION_LENGTH,
@@ -22,6 +23,7 @@ import { ProgressStatus } from '../src/components/ProgressStatus';
 const REVIEW_SCOPES = /** @type {const} */ ([
   { id: 'all', label: 'Full symbol set' }, { id: 'due', label: 'Due review' }, { id: 'mistakes', label: 'Focus on mistakes' },
 ]);
+const { versionNotice } = getSpokenPracticeSupport(Platform);
 
 export default function LetterQuizScreen() {
   const { theme } = useTheme();
@@ -122,6 +124,7 @@ export default function LetterQuizScreen() {
           {QUIZ_MODES.filter(item => item.id !== 'spoken' || capture).map(item => <ChoiceButton key={item.id} label={item.label} testID={`mode-${item.id}`} selected={mode === item.id}
             onPress={() => { audio.stop(); setMode(/** @type {import('../src/lib/quizSession').QuizMode} */ (item.id)); }} />)}
         </ChoiceGroup>
+        {!!versionNotice && <SupportingText>{versionNotice}</SupportingText>}
         {mode === 'listening' && <SupportingText>Play a code word, then choose its letter or digit. Replay or show the code word as text whenever you need it. No microphone is used.</SupportingText>}
         {mode === 'spoken' && <SupportingText>Record one US English code word with on-device recognition. Review or edit it before checking. You can also type any answer.</SupportingText>}
         {mode === 'typed' && <SupportingText>Type the canonical code word for the symbol. Case, accents, spaces and punctuation are ignored. Alpha and Juliet are accepted. Pronunciation guides are not alternative answers.</SupportingText>}

@@ -1,0 +1,399 @@
+{
+  "engine": "firefox",
+  "runner": "1.65.1",
+  "platform": "linux",
+  "transitionMode": "process",
+  "idleWithNoAppClientsMs": 0,
+  "checks": [
+    {
+      "name": "All 13 direct routes and trailing slashes return exact route HTML with revalidation",
+      "passed": true
+    },
+    {
+      "name": "Exact resource GET/HEAD bytes, MIME/cache headers, missing assets/private metadata 404, navigation fallback and method handling",
+      "passed": true
+    },
+    {
+      "name": "Real digest-rejected update leaves only complete original cache; explicit Retry installs verified update; two-window close/reload keeps original shell and exact progress/preferences/unrelated data",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "boundary": "Actual local Caddy; public HTTPS/certificates/host, branded Safari/iOS, legacy clients and M11 remain unrun",
+  "runnerSha256": "4f069204bb8d0d873cd7fa4f994128dca218a89aacb501a49045452f6e1766ed",
+  "progressObserverSha256": "cfd1667b7fb8bf184e7b6fefd1470d1b6d32c0538f8f0886559226e8c7648b6a",
+  "browserExecutable": "/home/lalit/.cache/nato-run39.ZtgeGo/browsers/firefox-1572/firefox/firefox",
+  "browserExecutableSha256": "e6310be5c0676269cd7361da247d52687fd2ea5c0edd739d201525350e7859f1",
+  "runtimeDirectory": "/home/lalit/.cache/nato-run41-firefox.2XasQI/process-final/runtime-mI4RR3",
+  "candidate": {
+    "artifact": "/mnt/c/dev/apps/nato-phonetics/artifacts/run41/firefox/integrated.tar.gz",
+    "archiveSha256": "6c5d51477fea7416a264d598692491ef8a822b997d3917280f7912ddb2354adc",
+    "shellBuildId": "c0b0a66e1242fe87bb420f00801a603a9469034673b6bb4bb78cb208437db097",
+    "contentId": "fd2396bd132721b876f1bd9e05137537af23ba7ed44e4989857f77403f079182"
+  },
+  "caddy": "v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=",
+  "validation": "Valid configuration",
+  "validators": {
+    "etag": null,
+    "modified": null
+  },
+  "browser": "159.0",
+  "asyncPollingNegativeCheck": "Explicitly awaited false predicate times out, never passes",
+  "firstAnswer": {
+    "events": [
+      {
+        "sequence": 1,
+        "type": "observer-installed",
+        "ms": 13,
+        "visibility": "visible",
+        "locksAvailable": true,
+        "secureContext": true
+      },
+      {
+        "sequence": 2,
+        "type": "storage-read",
+        "ms": 78,
+        "visibility": "visible",
+        "present": false,
+        "total": 0,
+        "generation": null
+      },
+      {
+        "sequence": 3,
+        "type": "storage-read",
+        "ms": 78,
+        "visibility": "visible",
+        "present": false,
+        "total": 0,
+        "generation": null
+      },
+      {
+        "sequence": 4,
+        "type": "storage-read",
+        "ms": 295,
+        "visibility": "visible",
+        "present": false,
+        "total": 0,
+        "generation": null
+      },
+      {
+        "sequence": 5,
+        "type": "lock-request",
+        "ms": 300,
+        "visibility": "visible",
+        "operation": 5,
+        "aborted": false
+      },
+      {
+        "sequence": 6,
+        "type": "lock-acquired",
+        "ms": 304,
+        "visibility": "visible",
+        "operation": 5,
+        "mode": "exclusive"
+      },
+      {
+        "sequence": 7,
+        "type": "storage-read",
+        "ms": 304,
+        "visibility": "visible",
+        "present": false,
+        "total": 0,
+        "generation": null
+      },
+      {
+        "sequence": 8,
+        "type": "storage-write",
+        "ms": 304,
+        "visibility": "visible",
+        "present": true,
+        "version": 1,
+        "generation": null,
+        "total": 1
+      },
+      {
+        "sequence": 9,
+        "type": "lock-completed",
+        "ms": 306,
+        "visibility": "visible",
+        "operation": 5
+      },
+      {
+        "sequence": 10,
+        "type": "storage-read",
+        "ms": 345,
+        "visibility": "visible",
+        "present": true,
+        "version": 1,
+        "generation": null,
+        "total": 1
+      }
+    ],
+    "data": {
+      "present": true,
+      "version": 1,
+      "generation": null,
+      "total": 1
+    },
+    "locks": {
+      "held": [],
+      "pending": []
+    },
+    "visibility": "visible",
+    "url": "http://127.0.0.1:43627/letter-quiz",
+    "visibleText": "What is the phonetic word for this symbol?\nQuestion 1 of 10 · 1 correct\nT\nTango\nTANG-go\nTripoli\nTimber\nTango · Your answer\nThunder\nCorrect! T is Tango.\nNext question\nEnd round and review\nSpeech could not be played. Try System Default or another voice in Settings.\nAudio Help\nDismiss",
+    "controlled": false
+  },
+  "closeObservations": [
+    {
+      "mode": "process",
+      "pageCount": 2,
+      "beforeClose": {
+        "url": "http://127.0.0.1:43627/converter",
+        "controlled": true,
+        "active": {
+          "state": "activated",
+          "scriptURL": "http://127.0.0.1:43627/service-worker.js"
+        },
+        "waiting": {
+          "state": "installed",
+          "scriptURL": "http://127.0.0.1:43627/service-worker.js"
+        },
+        "installing": null,
+        "controllerIsActive": true,
+        "servedHtmlSha256": "7818976bf2e0a20cf1d5495d523fd0428ac1efb4354b17827a9d735230ce7815",
+        "caches": [
+          {
+            "name": "nato-shell-v1-c0b0a66e1242fe87bb420f00801a603a9469034673b6bb4bb78cb208437db097",
+            "indexHtmlSha256": "7818976bf2e0a20cf1d5495d523fd0428ac1efb4354b17827a9d735230ce7815"
+          },
+          {
+            "name": "host-check-unrelated",
+            "indexHtmlSha256": null
+          },
+          {
+            "name": "nato-shell-v1-b17f4f90d7cadb0d89e1bc065e206cdbb08946e1b1b3783c4c5c899e5bcd167f",
+            "indexHtmlSha256": "a1bd47fac76c7faf3e5001c928d676e9ffd95954df4ab92bda2719b4f2b55768"
+          }
+        ]
+      }
+    }
+  ],
+  "profileBeforeClose": {
+    "registrationSha256": "4d143cd18790c611857834e18dd12dc87152d5ae8ae51e8fb60ff125c41096bb",
+    "scriptURL": "http://127.0.0.1:43627/service-worker.js",
+    "registeredScriptCache": "{9114ecda-6458-40bd-8325-977bc06cf379}",
+    "caches": [
+      {
+        "namespace": 0,
+        "key": "nato-shell-v1-c0b0a66e1242fe87bb420f00801a603a9469034673b6bb4bb78cb208437db097",
+        "id": 2,
+        "workerScriptEntries": 0
+      },
+      {
+        "namespace": 0,
+        "key": "host-check-unrelated",
+        "id": 3,
+        "workerScriptEntries": 0
+      },
+      {
+        "namespace": 0,
+        "key": "nato-shell-v1-b17f4f90d7cadb0d89e1bc065e206cdbb08946e1b1b3783c4c5c899e5bcd167f",
+        "id": 7,
+        "workerScriptEntries": 0
+      },
+      {
+        "namespace": 1,
+        "key": "{9114ecda-6458-40bd-8325-977bc06cf379}",
+        "id": 1,
+        "workerScriptEntries": 1
+      },
+      {
+        "namespace": 1,
+        "key": "{4c5dbdec-59d8-48e9-a679-2edf63ee7753}",
+        "id": 6,
+        "workerScriptEntries": 1
+      }
+    ],
+    "registeredScriptInNamedCache": true,
+    "walBytesAtRead": 564472
+  },
+  "persistedBeforeReopen": "12\n\nhttp://127.0.0.1:43627/\nhttp://127.0.0.1:43627/service-worker.js\ntrue\n{9114ecda-6458-40bd-8325-977bc06cf379}\n2\n1795515675370394\n1795515675370958\n1795515675257895\n0\ntrue\n0\n1\n0\n-1\n0\n#\n",
+  "reopenObservations": [
+    {
+      "route": "/progress",
+      "build": "b17f4f90d7cadb0d89e1bc065e206cdbb08946e1b1b3783c4c5c899e5bcd167f",
+      "expectedHtmlSha256": "a1bd47fac76c7faf3e5001c928d676e9ffd95954df4ab92bda2719b4f2b55768",
+      "firstDocument": {
+        "timeOrigin": 1795515680556,
+        "events": [
+          {
+            "event": "document-start",
+            "ms": 44,
+            "controlled": false
+          },
+          {
+            "event": "initial-registration",
+            "ms": 58,
+            "controlled": false,
+            "active": "activated"
+          },
+          {
+            "event": "pageshow",
+            "ms": 96,
+            "controlled": false
+          }
+        ],
+        "workerStart": 0
+      },
+      "beforeFreshNavigation": {
+        "url": "http://127.0.0.1:43627/progress",
+        "controlled": false,
+        "active": {
+          "state": "activated",
+          "scriptURL": "http://127.0.0.1:43627/service-worker.js"
+        },
+        "waiting": null,
+        "installing": null,
+        "controllerIsActive": false,
+        "servedHtmlSha256": "a1bd47fac76c7faf3e5001c928d676e9ffd95954df4ab92bda2719b4f2b55768",
+        "caches": [
+          {
+            "name": "host-check-unrelated",
+            "indexHtmlSha256": null
+          },
+          {
+            "name": "nato-shell-v1-b17f4f90d7cadb0d89e1bc065e206cdbb08946e1b1b3783c4c5c899e5bcd167f",
+            "indexHtmlSha256": "a1bd47fac76c7faf3e5001c928d676e9ffd95954df4ab92bda2719b4f2b55768"
+          }
+        ]
+      },
+      "afterFreshNavigation": {
+        "url": "http://127.0.0.1:43627/progress",
+        "controlled": false,
+        "active": {
+          "state": "activated",
+          "scriptURL": "http://127.0.0.1:43627/service-worker.js"
+        },
+        "waiting": null,
+        "installing": null,
+        "controllerIsActive": false,
+        "servedHtmlSha256": "a1bd47fac76c7faf3e5001c928d676e9ffd95954df4ab92bda2719b4f2b55768",
+        "caches": [
+          {
+            "name": "host-check-unrelated",
+            "indexHtmlSha256": null
+          },
+          {
+            "name": "nato-shell-v1-b17f4f90d7cadb0d89e1bc065e206cdbb08946e1b1b3783c4c5c899e5bcd167f",
+            "indexHtmlSha256": "a1bd47fac76c7faf3e5001c928d676e9ffd95954df4ab92bda2719b4f2b55768"
+          }
+        ]
+      },
+      "servedExpectedHtmlBeforeCleanup": true,
+      "activeControllerBeforeCleanup": false,
+      "freshDocument": {
+        "timeOrigin": 1795515680686,
+        "events": [
+          {
+            "event": "document-start",
+            "ms": 13,
+            "controlled": false
+          },
+          {
+            "event": "initial-registration",
+            "ms": 17,
+            "controlled": false,
+            "active": "activated"
+          },
+          {
+            "event": "pageshow",
+            "ms": 52,
+            "controlled": false
+          },
+          {
+            "event": "updatefound",
+            "ms": 924,
+            "controlled": false,
+            "active": "activated",
+            "installing": "installing"
+          }
+        ],
+        "workerStart": 0
+      }
+    }
+  ],
+  "failure": {
+    "message": "Timed out waiting for active controller and sole expected shell cache",
+    "stack": "Error: Timed out waiting for active controller and sole expected shell cache\n    at pollPage (/home/lalit/.cache/nato-run41-firefox.2XasQI/scripts/traced-final.cjs:37:9)\n    at async reopened (/home/lalit/.cache/nato-run41-firefox.2XasQI/scripts/traced-final.cjs:195:11)\n    at async main (/home/lalit/.cache/nato-run41-firefox.2XasQI/scripts/traced-final.cjs:365:3)",
+    "state": {
+      "url": "http://127.0.0.1:43627/progress",
+      "controlled": false,
+      "active": {
+        "state": "activated",
+        "scriptURL": "http://127.0.0.1:43627/service-worker.js"
+      },
+      "waiting": null,
+      "installing": null,
+      "controllerIsActive": false,
+      "servedHtmlSha256": "a1bd47fac76c7faf3e5001c928d676e9ffd95954df4ab92bda2719b4f2b55768",
+      "caches": [
+        {
+          "name": "host-check-unrelated",
+          "indexHtmlSha256": null
+        },
+        {
+          "name": "nato-shell-v1-b17f4f90d7cadb0d89e1bc065e206cdbb08946e1b1b3783c4c5c899e5bcd167f",
+          "indexHtmlSha256": "a1bd47fac76c7faf3e5001c928d676e9ffd95954df4ab92bda2719b4f2b55768"
+        }
+      ]
+    },
+    "visibleText": "Learning progress\n1 answers saved · 1 correct · 0 errors\n1 of 36 symbols practised · 0 due now · 0 need another try\nOpen practice\nSaved symbols\nT · Tango\n1 attempt · 0 errors · Last answer correct\nNext review: 11/25/2026, 10:21:15 AM\nHow review works\nIn practice, choose a symbol set and Due review or Focus on mistakes. Unpractised symbols remain in Full symbol set. A wrong answer is due immediately. Consecutive correct answers schedule review after 1, 3, 7, 14, then 30 elapsed days. Another correct answer keeps the 30-day interval. A miss resets it.\nDue counts refresh on return and each minute. Device clock changes affect due times.\nEvery submitted answer counts, including listening text alternatives and Retry Mistakes. Totals combine practice modes and are saved on this device or browser without an account or app cloud sync. Use them as a practice aid.\nClear Progress\nDelete all saved symbol totals and review times, including unsaved answers waiting for Retry. Your preferences and current round are kept. Only answers submitted after deletion build new progress. This cannot be undone.\nClear Progress\nPreferences",
+    "progress": {
+      "events": [
+        {
+          "sequence": 1,
+          "type": "observer-installed",
+          "ms": 13,
+          "visibility": "visible",
+          "locksAvailable": true,
+          "secureContext": true
+        },
+        {
+          "sequence": 2,
+          "type": "storage-read",
+          "ms": 52,
+          "visibility": "visible",
+          "present": true,
+          "version": 1,
+          "generation": null,
+          "total": 1
+        },
+        {
+          "sequence": 3,
+          "type": "storage-read",
+          "ms": 52,
+          "visibility": "visible",
+          "present": true,
+          "version": 1,
+          "generation": null,
+          "total": 1
+        }
+      ],
+      "data": {
+        "present": true,
+        "version": 1,
+        "generation": null,
+        "total": 1
+      },
+      "locks": {
+        "held": [],
+        "pending": []
+      },
+      "visibility": "visible",
+      "url": "http://127.0.0.1:43627/progress",
+      "visibleText": "Learning progress\n1 answers saved · 1 correct · 0 errors\n1 of 36 symbols practised · 0 due now · 0 need another try\nOpen practice\nSaved symbols\nT · Tango\n1 attempt · 0 errors · Last answer correct\nNext review: 11/25/2026, 10:21:15 AM\nHow review works\nIn practice, choose a symbol set and Due review or Focus on mistakes. Unpractised symbols remain in Full symbol set. A wrong answer is due immediately. Consecutive correct answers schedule review after 1, 3, 7, 14, then 30 elapsed days. Another correct answer keeps the 30-day interval. A miss resets it.\nDue counts refresh on return and each minute. Device clock changes affect due times.\nEvery submitted answer counts, including listening text alternatives and Retry Mistakes. Totals combine practice modes and are saved on this device or browser without an account or app cloud sync. Use them as a practice aid.\nClear Progress\nDelete all saved symbol totals and review times, including unsaved answers waiting for Retry. Your preferences and current round are kept. Only answers submitted after deletion build new progress. This cannot be undone.\nClear Progress\nPreferences",
+      "controlled": false
+    }
+  }
+}

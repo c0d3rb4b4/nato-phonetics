@@ -20,7 +20,7 @@ const engine = process.argv[4] || 'chromium';
 const transitionMode = process.argv[5] || 'tabs';
 const browserType = { chromium, firefox, webkit }[engine];
 assert(browserType, 'Engine must be chromium, firefox or webkit');
-assert(['tabs', 'process'].includes(transitionMode), 'Transition mode must be tabs or process');
+assert(['tabs', 'process', 'handoff'].includes(transitionMode), 'Transition mode must be tabs, process or handoff');
 const report = { engine, runner: require('playwright/package.json').version, platform: process.platform,
   transitionMode, idleWithNoAppClientsMs: transitionMode === 'tabs' ? 1000 : 0,
   checks: [], errors: [], boundary: 'Actual local Caddy; public HTTPS/certificates/host, branded Safari/iOS, legacy clients and M11 remain unrun' };
@@ -240,6 +240,10 @@ async function main() {
   const settings = await context.newPage(); await settings.goto(origin + '/settings');
   await settings.locator(named('Dark')).click();
   await settings.waitForFunction(() => JSON.parse(localStorage.getItem('nato.preferences.v1'))?.themeMode === 'dark');
+  if (transitionMode === 'handoff') {
+    await settings.locator(named('System')).click();
+    await settings.waitForFunction(() => JSON.parse(localStorage.getItem('nato.preferences.v1'))?.themeMode === 'system');
+  }
   const preferences = await settings.evaluate(() => localStorage.getItem('nato.preferences.v1'));
   await settings.close();
   const assertRecords = async target => {
@@ -292,6 +296,50 @@ async function main() {
   assert.equal(await draft.locator(id('converter-input')).inputValue(), 'a3 b-', 'Retry and waiting update preserve the other window draft');
   await page.locator(id('web-offline-status')).filter({ hasText: 'Update ready.' }).waitFor();
   await capture(page, 'desktop-host-update-waiting.png', 'Atomic root switch preserves the active shell and waits for every window to close');
+  if (transitionMode === 'handoff') {
+    const notice = page.locator(id('web-offline-status'));
+    assert.match(await notice.innerText(), /reopen Menu while connected/);
+    await notice.scrollIntoViewIfNeeded();
+    await capture(page, 'desktop-update-handoff.png', 'Menu instructions before closing app tabs for the update');
+    await page.setViewportSize({ width: 320, height: 568 });
+    await page.emulateMedia({ colorScheme: 'dark' });
+    await notice.scrollIntoViewIfNeeded();
+    await capture(page, 'narrow-update-handoff.png', 'Narrow Menu instructions before closing app tabs for the update');
+
+    const appPages = context.pages();
+    const next = await context.newPage(); // The other browser tab stays open outside the app scope.
+    for (const appPage of appPages) await appPage.close();
+    await next.goto(origin + '/menu');
+    const restored = next.locator(id('web-offline-status')).filter({ hasText: /^Offline copy ready\./ });
+    await restored.waitFor();
+    await assertRecords(next);
+    report.handoffOnline = await workerSnapshot(next);
+    await restored.scrollIntoViewIfNeeded();
+    await capture(next, 'desktop-handoff-ready.png', 'Reopened Menu confirms the offline copy is ready while connected');
+
+    await context.close();
+    const stopped = new Promise(resolve => server.once('exit', resolve));
+    server.kill('SIGTERM');
+    await stopped;
+    await assert.rejects(fetch(origin), /fetch failed/);
+    report.originStoppedForOffline = true;
+    context = await launch();
+    await context.setOffline(true);
+    const cold = await context.newPage();
+    await cold.setViewportSize({ width: 320, height: 568 });
+    await cold.emulateMedia({ colorScheme: 'dark' });
+    const response = await cold.goto(origin + '/progress');
+    assert.equal(response.status(), 200);
+    assert.equal(hash(await response.body()), hash(await fs.readFile(path.join(b, 'public/progress.html'))));
+    await cold.locator(id('progress-summary')).waitFor();
+    await ready(cold, update.buildId);
+    assert.equal(await savedTotal(cold), 1);
+    await assertRecords(cold);
+    await capture(cold, 'narrow-handoff-offline.png', 'First offline launch of the updated progress route after the connected Menu handoff');
+    report.checks.push({ name: 'Waiting update, all app tabs closed with browser running, Menu ready online, first process launch offline serves forward progress HTML with active controller and exact records', passed: true, fixtureBuildId: update.buildId });
+    assert.deepEqual(report.errors, []);
+    return;
+  }
   await page.close();
   assert.equal(await draft.locator(id('converter-input')).inputValue(), 'a3 b-', 'Closing one window preserves the remaining draft');
   await draft.reload();

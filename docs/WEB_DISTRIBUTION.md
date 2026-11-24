@@ -50,7 +50,7 @@ Extract the complete archive into a new, versioned directory and verify its hash
 
 For rollback, create a **new** rollback archive from the previous release's `public/` tree, retaining the current release's `public/` tree as another argument. This keeps newer hashed assets available to pages that remain open during rollback. Merely restoring the old directory can strand newer pages. Do not mutate a previously identified archive or erase local browser data to make rollback succeed.
 
-Workers follow the existing [waiting/update contract](WEB_OFFLINE.md). Finish/save rounds and copy drafts, close every app window, then reopen; there is no forced reload/activation. Refresh all legacy clients before claiming coordination. The scoped host gate proves one actual saved answer survives forward and rollback worker activation and offline direct progress; it does not replace the full legacy/update/deletion/browser/OS/provider/physical acceptance matrix.
+Workers follow the existing [waiting/update contract](WEB_OFFLINE.md). Finish/save rounds and copy drafts. Leave another browser tab open, close every app tab or window, then reopen Menu while connected and wait for offline readiness. Refresh all legacy clients before claiming coordination. The scoped host gate proves one actual saved answer survives forward and rollback worker activation and offline direct progress; it does not replace the full legacy/update/deletion/browser/OS/provider/physical acceptance matrix.
 
 ## Repeat local qualification
 
@@ -100,6 +100,12 @@ The production build at `7350d269` passed all six Caddy checks in each hosted ta
 ## Run 38 hosted tab-close candidate
 
 At 159fb3a all three tab-close distribution jobs passed. The Linux Chromium support job passed its original pointer and offline checks, then failed in a separate recovery suite when the audio notice intercepted desktop Retry. The shared Dismiss interaction, real Retry double-click and independent freeze checks passed locally on the same hosted production shell. Repeat the recovery and independent freeze steps on the next revision with the Run 38 changes. The earlier Firefox and WebKit process failures retain their own trace checkpoints. [Run 38 browser evidence](evidence/run38/README.md#hosted-browser-checkpoint).
+
+## Connected update before offline use · Run 41
+
+The Firefox distribution job runs the connected handoff independently of its chosen tabs/process transition. Its artifact contains separate `host/` and `handoff/` results. The workflow passed actionlint locally and awaits hosted execution on a revision containing this change.
+
+Run `node scripts/verify-web-host.cjs <archive> <output> firefox handoff` with the same Caddy and Playwright setup as the process check. This scenario follows Menu’s update instructions and compares the first cold offline response with the expected forward progress page and saved records. The independent `firefox process` check still fails after the browser quits while the update waits. Keep each result with its artifact identity. [Run 41 evidence](evidence/run41/firefox/README.md).
 
 ## Process restart and immediate Retry · Run 39
 

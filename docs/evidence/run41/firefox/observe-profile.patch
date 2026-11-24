@@ -1,0 +1,31 @@
+--- a/scripts/verify-web-host.cjs
++++ b/scripts/verify-web-host.cjs
+@@ -125,8 +125,11 @@
+ 
+   const shots = path.join(output, 'screenshots/web'); await fs.mkdir(shots, { recursive: true });
+   const profile = path.join(work, 'browser-profile');
++  let launches = 0;
+   async function launch() {
+-    const ctx = await browserType.launchPersistentContext(profile, { headless: true, viewport: { width: 1280, height: 900 }, colorScheme: 'light',
++    launches++;
++    const logging = launches === 2 ? { env: { ...process.env, MOZ_LOG: 'timestamp,nsHttp:5,WorkerTelemetry:5', MOZ_LOG_FILE: path.join(output, 'gecko.log') } } : {};
++    const ctx = await browserType.launchPersistentContext(profile, { headless: true, viewport: { width: 1280, height: 900 }, colorScheme: 'light', ...logging,
+       ...(engine === 'chromium' && process.env.BROWSER_EXECUTABLE ? { executablePath: process.env.BROWSER_EXECUTABLE } : {}) });
+     ctx.setDefaultTimeout(15000); ctx.on('page', page => page.on('pageerror', error => report.errors.push(error.message)));
+     await ctx.addInitScript(observeProgress);
+@@ -199,7 +202,14 @@
+     (report.closeObservations ||= []).push({ mode: transitionMode, pageCount: openPages.length,
+       beforeClose: await workerSnapshot(openPages.at(-1)) });
+     if (transitionMode === 'process') {
+-      await context.close(); context = await launch();
++      if (launches === 1) report.profileBeforeClose = JSON.parse(execFileSync('python3', [process.env.FIREFOX_PROFILE_PROBE, profile], { encoding: 'utf8' }));
++      await context.close();
++      if (launches === 1) {
++        await fs.cp(profile, path.join(output, 'pre-reopen-profile'), { recursive: true, errorOnExist: true, force: false,
++          filter: file => !['lock', '.parentlock'].includes(path.basename(file)) });
++        report.persistedBeforeReopen = await fs.readFile(path.join(profile, 'serviceworker.txt'), 'utf8').catch(e => e.code);
++      }
++      context = await launch();
+       return context.newPage();
+     }
+     // Firefox and WebKit can exit when their last tab closes. A fresh

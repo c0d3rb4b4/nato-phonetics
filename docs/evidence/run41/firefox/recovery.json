@@ -1,0 +1,39 @@
+{
+  "artifact": "/home/lalit/.cache/nato-run41-firefox.2XasQI/candidate.tar.gz",
+  "archiveSha256": "dfdd98819db29bb496485a878525024fcdb0003957963ed7bebd70e0163bca21",
+  "shellBuildId": "006c1601ae30c2d41bb9dfc3eb2b03db8fae3226c97c25c8c406ca96ee72f0be",
+  "contentId": "2d06fe8829e2afa741a6aa00bff3ede9ed007109be73a9d0041feb9383b56b04",
+  "origin": "http://127.0.0.1:40313",
+  "browser": "159.0",
+  "expectedShell": "095051b0ac9abf3f6361cbb0e8087ff84ca01d19958afe2cae195da3bad2ff20",
+  "steps": [
+    {
+      "event": "reconnect to Menu and wait for ready",
+      "controlled": false,
+      "active": "activated",
+      "shellCaches": [
+        "nato-shell-v1-095051b0ac9abf3f6361cbb0e8087ff84ca01d19958afe2cae195da3bad2ff20"
+      ],
+      "total": 1
+    },
+    {
+      "event": "reopen saved progress online",
+      "controlled": true,
+      "active": "activated",
+      "shellCaches": [
+        "nato-shell-v1-095051b0ac9abf3f6361cbb0e8087ff84ca01d19958afe2cae195da3bad2ff20"
+      ],
+      "total": 1
+    },
+    {
+      "event": "first launch after verified online recovery with origin stopped",
+      "controlled": true,
+      "active": "activated",
+      "shellCaches": [
+        "nato-shell-v1-095051b0ac9abf3f6361cbb0e8087ff84ca01d19958afe2cae195da3bad2ff20"
+      ],
+      "total": 1,
+      "status": 200
+    }
+  ]
+}
