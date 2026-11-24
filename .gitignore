@@ -1,5 +1,3 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
 # Dependencies
 node_modules/
 .bundle/
@@ -13,6 +11,7 @@ coverage/
 playwright-report/
 test-results/
 logs/
+/docs/evidence/
 
 # Native build caches and products (keep the Android/iOS source projects)
 .gradle/
@@ -74,8 +73,3 @@ Desktop.ini
 *.tsbuildinfo
 __pycache__/
 *.py[cod]
-
-app-example
-
-# Keep docs/, including the full evidence history and screenshots, for handoff.
-# Keep lockfiles, the Gradle wrapper, shared Xcode projects/schemes, and ios/.xcode.env.

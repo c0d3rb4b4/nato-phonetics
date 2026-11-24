@@ -1,7 +1,0 @@
-PASS: repeat patch preserves actual installed patched header byte-for-byte.
-PASS: altered source rejected.
-PASS: dependency version drift rejected.
-Actual Apple clang preprocessor exit 0
-#define FMT_USE_CONSTEVAL 0
-#define __apple_build_version__ 21000401
-Final Podfile checksum matches Podfile.lock: d5d02835fccf252b60f91d71963469724cf05253

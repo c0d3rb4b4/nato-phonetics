@@ -1,7 +1,0 @@
-{"check": "voice-list-retry-renders-enumerated-voice", "passed": true, "timestamp": "2026-11-16T18:23:32Z", "count": 30, "visible": ["en-GB-language, en-GB", "en-gb-x-gba-local, en-GB", "en-gb-x-gba-network, en-GB"]}
-{"check": "native-start-finish-id-pairs-match", "passed": true, "timestamp": "2026-11-16T18:23:32Z"}
-{"check": "repeated-identical-words-complete", "passed": true, "timestamp": "2026-11-16T18:23:49Z", "snapshot": {"owner": "converter:\u00abr1\u00bb", "result": {"status": "completed"}, "status": "idle", "tokenCount": 4, "tokenIndex": 3, "warning": null}}
-{"check": "four-identical-words-have-distinct-native-ids", "passed": true, "timestamp": "2026-11-16T18:23:49Z"}
-{"check": "menu-navigation-cancels-supplement", "passed": true, "timestamp": "2026-11-16T18:24:08Z", "snapshot": {"owner": "converter:\u00abr1\u00bb", "result": {"status": "cancelled"}, "status": "idle", "tokenCount": 26, "tokenIndex": 2, "warning": null}}
-{"check": "menu-back-does-not-resume", "passed": true, "timestamp": "2026-11-16T18:24:10Z", "snapshot": {"owner": "converter:\u00abr1\u00bb", "result": {"status": "cancelled"}, "status": "idle", "tokenCount": 26, "tokenIndex": 2, "warning": null}}
-{"check": "supplement-complete", "passed": true, "timestamp": "2026-11-16T18:24:14Z", "checks": 32, "captures": 12}
