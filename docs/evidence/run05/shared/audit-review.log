@@ -1,9 +1,0 @@
-
-> nato-phonetics@1.0.0 audit:review
-> node scripts/check-audit.cjs
-
-Raw npm audit exit status: 1
-npm audit findings (still unresolved): {"info":0,"low":0,"moderate":7,"high":1,"critical":0,"total":8}
-  high: image-size
-Security review gate passed: 1 high/critical entries match current, unexpired dispositions.
-This gate does not mean npm audit passed or that release risk was accepted. See docs/SECURITY_REVIEW.md.

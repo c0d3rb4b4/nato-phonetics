@@ -1,6 +1,0 @@
-{"check": "alphabet-font-scale2", "passed": true, "timestamp": "2026-11-17T14:32:09Z", "density": 1.75, "scale": 2, "tiles": [{"testID": "alphabet-A", "pixels": {"x": 168, "y": 377, "width": 385, "height": 525}, "logical": {"x": 96.0, "y": 215.42857142857142, "width": 220.0, "height": 300.0}}, {"testID": "alphabet-B", "pixels": {"x": 168, "y": 923, "width": 385, "height": 525}, "logical": {"x": 96.0, "y": 527.4285714285714, "width": 220.0, "height": 300.0}}]}
-{"check": "alphabet-font-scale2-N", "passed": true, "timestamp": "2026-11-17T14:32:37Z", "density": 1.75, "scale": 2, "tiles": [{"testID": "alphabet-N", "pixels": {"x": 168, "y": 721, "width": 385, "height": 525}, "logical": {"x": 96.0, "y": 412.0, "width": 220.0, "height": 300.0}}]}
-Traceback (most recent call last):
-  File "/Users/mac/dev/apps/nato-phonetics/docs/evidence/run05/android/scale-probe.py", line 15, in <module>
-    else:raise AssertionError('Full enlarged tile unreachable: '+symbol)
-AssertionError: Full enlarged tile unreachable: U
