@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
-import { Keyboard, KeyboardAvoidingView, Platform, Pressable, StatusBar, StyleSheet, Text, View } from 'react-native';
+import { Keyboard, Platform, Pressable, StatusBar, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { Icon } from '../src/components/Icon';
+import { KeyboardViewport } from '../src/components/KeyboardViewport';
 import { ThemeProvider, useTheme } from '../src/context/ThemeContext';
 import { APP_NAME } from '../src/lib/appMetadata';
 import { router, ScreenFocusContext, useNavigationEvents, useNavigationState } from '../src/navigation';
@@ -85,10 +86,21 @@ function LayoutContent() {
     </View>;
   }
 
+  const tabs = <SafeAreaView edges={['bottom']} style={[styles.tabBar, { backgroundColor: theme.colors.surface, borderColor: theme.colors.border }]}>
+    <View testID="bottom-navigation" style={styles.tabRow}>
+      {PRIMARY_ROUTES.map(route => <TabButton key={route} route={route} active={route === (currentTab ?? '/menu')}
+        onPress={() => {
+          if (route === currentTab) return;
+          Keyboard.dismiss();
+          router.push(route);
+        }} />)}
+    </View>
+  </SafeAreaView>;
+
   return <SafeAreaView testID="app-theme" edges={['top', 'left', 'right']}
     style={{ flex: 1, backgroundColor: theme.colors.background }}>
     <StatusBar barStyle={theme.isDark ? 'light-content' : 'dark-content'} backgroundColor={theme.colors.background} />
-    <KeyboardAvoidingView style={{ flex: 1 }} behavior={Platform.OS === 'web' ? undefined : 'padding'}>
+    <KeyboardViewport tabs={tabs}>
       {preferenceError && <View style={{ padding: 12, backgroundColor: theme.colors.surface }}>
         <Text accessibilityRole="alert" style={{ color: theme.colors.text }}>{preferenceError.message}</Text>
         {(preferenceError.operation === 'load' || preferenceError.operation === 'migration') &&
@@ -100,17 +112,7 @@ function LayoutContent() {
       {navigation.tabs.map(route => <RoutedScreen key={route} path={route} focused={route === currentTab} />)}
       {navigation.entries.filter(entry => !primaryRoute(entry.path)).map(entry =>
         <RoutedScreen key={entry.key} path={entry.path} focused={entry.key === navigation.key} />)}
-      <SafeAreaView edges={['bottom']} style={[styles.tabBar, { backgroundColor: theme.colors.surface, borderColor: theme.colors.border }]}>
-        <View testID="bottom-navigation" style={styles.tabRow}>
-          {PRIMARY_ROUTES.map(route => <TabButton key={route} route={route} active={route === (currentTab ?? '/menu')}
-            onPress={() => {
-              if (route === currentTab) return;
-              Keyboard.dismiss();
-              router.push(route);
-            }} />)}
-        </View>
-      </SafeAreaView>
-    </KeyboardAvoidingView>
+    </KeyboardViewport>
   </SafeAreaView>;
 }
 

@@ -3,6 +3,7 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
+import re
 import socket
 import subprocess
 import sys
@@ -11,6 +12,76 @@ import uuid
 import xml.etree.ElementTree as ET
 
 from android_display_evidence import validate_png
+
+
+def verify_converter_keyboard(visible, shell):
+    tabs = ('Reference', 'Word Converter', 'Letter Quiz', 'Menu')
+    field_label = 'Text to convert'
+
+    def bounds(node):
+        coordinates = re.fullmatch(r'\[(-?\d+),(-?\d+)\]\[(-?\d+),(-?\d+)\]', node.get('bounds', ''))
+        if coordinates:
+            left, top, right, bottom = map(int, coordinates.groups())
+            if left < right and top < bottom:
+                return left, top, right, bottom
+
+    def tab_bounds(nodes):
+        return {n.get('content-desc'): bounds(n) for n in nodes if n.get('content-desc') in tabs}
+
+    def tap(box):
+        left, top, right, bottom = box
+        shell('input', 'tap', str((left + right) // 2), str((top + bottom) // 2))
+
+    def by_id(nodes, name):
+        return next((n for n in nodes if n.get('resource-id', '').split('/')[-1] == name), None)
+
+    def ime_shown():
+        # A focused field also occurs with a hardware keyboard and proves nothing about the IME.
+        shown = re.search(r'\bmInputShown=(true|false)\b', shell('dumpsys', 'input_method'))
+        return shown.group(1) == 'true' if shown else None
+
+    def typing(nodes):
+        field = by_id(nodes, 'converter-input')
+        return field is not None and field.get('focused') == 'true' and not tab_bounds(nodes) and ime_shown() is True
+
+    def draft_equals(nodes, draft):
+        field = by_id(nodes, 'converter-input')
+        return field is not None and field.get('text') == draft
+
+    def converted(nodes, draft):
+        if not (draft_equals(nodes, draft) and typing(nodes)):
+            return False
+        controls = [by_id(nodes, name) for name in ('converter-input', 'converter-0', 'screen-scroll')]
+        if any(n is None or not bounds(n) for n in controls):
+            return False
+        # Recent Android versions expose the IME frame in physical screen coordinates.
+        display = shell('dumpsys', 'window', 'displays')
+        if 'type=ime frame=' in display:
+            ime = re.search(r'\btype=ime frame=\[-?\d+,(-?\d+)\][^\n]*?\bvisible=true\b', display)
+            return ime is not None and all(bounds(n)[3] <= int(ime[1]) for n in controls)
+        return True
+
+    nodes = visible('converter', [field_label, 'converter-input', *tabs])
+    baseline = tab_bounds(nodes)
+    if len(baseline) != len(tabs) or not all(baseline.values()):
+        raise RuntimeError('Missing baseline navigation bounds on the Converter')
+
+    for cycle, draft in enumerate(('NATO', 'NATO2'), start=1):
+        tap(bounds(by_id(nodes, 'converter-input')))
+        visible(f'keyboard-{cycle}-opened', ['converter-input'], typing)
+        shell('input', 'keyevent', 'KEYCODE_MOVE_END')
+        shell('input', 'text', 'NATO' if cycle == 1 else '2')
+        visible(f'keyboard-{cycle}-typed', ['converter-input', 'converter-0'], lambda ns: converted(ns, draft))
+        shell('input', 'keyevent', 'KEYCODE_BACK')
+        nodes = visible(f'keyboard-{cycle}-closed', ['converter-input', *tabs],
+                        lambda ns: tab_bounds(ns) == baseline and draft_equals(ns, draft)
+                        and ime_shown() is False)
+
+    tap(baseline['Reference'])
+    visible('keyboard-reference', ['Letters A–Z', *tabs], lambda ns: tab_bounds(ns) == baseline)
+    tap(baseline['Word Converter'])
+    visible('keyboard-converter-return', ['converter-input', *tabs],
+            lambda ns: tab_bounds(ns) == baseline and draft_equals(ns, draft))
 
 
 def smoke(apk, output, serial):
@@ -35,7 +106,7 @@ def smoke(apk, output, serial):
         if not paths:
             raise ValueError('Package manager did not return an installed APK path for ' + name)
         return {p: shell('sha256sum', p.removeprefix('package:')).split()[0] for p in paths}
-    def visible(state, labels):
+    def visible(state, labels, ready=None):
         # Read only our package's accessibility nodes; launcher text cannot satisfy the gate.
         deadline = time.monotonic() + 55
         while time.monotonic() < deadline:
@@ -43,16 +114,16 @@ def smoke(apk, output, serial):
             if 'dumped to' in dump:
                 tree = adb('exec-out', 'cat', xml_path, binary=True)
                 try:
-                    nodes = ET.fromstring(tree).iter('node')
-                    words = ' '.join(n.get(k, '') for n in nodes if n.get('package') == package
+                    nodes = [n for n in ET.fromstring(tree).iter('node') if n.get('package') == package]
+                    words = ' '.join(n.get(k, '') for n in nodes
                                      for k in ['text', 'content-desc', 'resource-id'])
-                    if all(label in words for label in labels):
+                    if all(label in words for label in labels) and (ready is None or ready(nodes)):
                         (output / (state + '.xml')).write_bytes(tree)
                         image = adb('exec-out', 'screencap', '-p', binary=True)
                         validate_png(image)
                         report.setdefault('screenshots', {})[state] = hashlib.sha256(image).hexdigest()
                         (output / (state + '.png')).write_bytes(image)
-                        return
+                        return nodes
                 except ET.ParseError:
                     pass
             time.sleep(1)
@@ -60,7 +131,7 @@ def smoke(apk, output, serial):
         (output / (state + '-failed.xml')).write_bytes(last_tree)
         image = adb('exec-out', 'screencap', '-p', binary=True, check=False)
         (output / (state + '-failed.png')).write_bytes(image)
-        raise RuntimeError(f'{state} did not expose {labels}')
+        raise RuntimeError(f'{state} did not reach the expected UI state with {labels}')
     xml_path = '/data/local/tmp/nato-develop-' + uuid.uuid4().hex + '.xml'
     try:
         if '1' not in [shell('getprop', prop) for prop in ('ro.kernel.qemu', 'ro.boot.qemu')]:
@@ -90,7 +161,17 @@ def smoke(apk, output, serial):
             raise ValueError('Missing running application PID')
         report['deepLink'] = shell('am', 'start', '-W', '-a', 'android.intent.action.VIEW',
                                    '-d', 'natophonetics-dev://converter')
-        visible('converter', ['Text to convert'])
+        ime_setting = 'show_ime_with_hard_keyboard'
+        original_ime_setting = shell('settings', 'get', 'secure', ime_setting)
+        try:
+            if original_ime_setting != '1':
+                shell('settings', 'put', 'secure', ime_setting, '1')
+            verify_converter_keyboard(visible, shell)
+        finally:
+            if original_ime_setting == 'null':
+                shell('settings', 'delete', 'secure', ime_setting)
+            elif original_ime_setting != '1':
+                shell('settings', 'put', 'secure', ime_setting, original_ime_setting)
         report['reinstall'] = adb('install', '-r', str(apk))
         after_install = [r.strip() for r in shell('dumpsys', 'package', package).splitlines() if 'firstInstallTime=' in r]
         if after_install != first_install or set(installed_sha(package).values()) != {report['apkSha256']}:

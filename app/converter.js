@@ -104,7 +104,8 @@ export default function ConverterScreen() {
         <Text style={{ color, fontSize: tileTextUnits(TILE_DESIGN.word.size, 1, fonts.fontScale),
           fontFamily: fonts.ready ? TILE_DESIGN.word.family : undefined, fontWeight: '600' }}>{word}</Text>
         {(pressed || current || focusedBubble === index) &&
-          <View pointerEvents="none" style={[StyleSheet.absoluteFill, styles.bubbleRing, { borderColor: color }]} />}
+          <View testID={`${testID}-interaction-ring`} pointerEvents="none" style={[StyleSheet.absoluteFill,
+            styles.bubbleRing, current && styles.playingRing, { borderColor: color }]} />}
       </>}
     </Pressable>;
   });
@@ -152,6 +153,7 @@ const styles = StyleSheet.create({
   bubbles: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', gap: 8 },
   bubble: { borderRadius: TILE_DESIGN.radius, paddingHorizontal: 10, paddingVertical: 8, minHeight: 44, justifyContent: 'center', maxWidth: '100%' },
   bubbleRing: { borderRadius: TILE_DESIGN.radius, borderWidth: 2 },
+  playingRing: { margin: 3, borderRadius: TILE_DESIGN.radius - 3, borderWidth: 3 },
   wordBoundary: { marginStart: 6 },
   actions: { flexDirection: 'row', gap: 8 },
   action: { flex: 1, paddingHorizontal: 8 },

@@ -94,9 +94,21 @@ const captures = [];
       await page.evaluate(() => window.__finishCopy());
       assert.equal(await page.evaluate(() => document.body.textContent.includes('Copied conversion.')), false, 'Blur invalidates pending export status');
       await input('a3 b-');
+      const bubbleLayout = () => page.$$eval(`${id('converter-output')} [role="button"]`,
+        nodes => nodes.map(node => [node.offsetLeft, node.offsetTop, node.offsetWidth, node.offsetHeight]));
+      const idleLayout = await bubbleLayout();
       await click(button('Play Full Phrase'));
-      for (let i = 0; i < 4; i++) {
+      for (const [i, token] of [0, 1, 3, 4].entries()) {
         await page.waitForFunction(count => window.__converterSpeech.calls.length === count, {}, i + 1);
+        const playing = `${id(`converter-${token}`)}[aria-pressed="true"]`;
+        const ring = await page.waitForSelector(`${playing} ${id(`converter-${token}-interaction-ring`)}`);
+        assert.ok(await ring.evaluate(el => {
+          const outer = el.parentElement.getBoundingClientRect();
+          const inner = el.getBoundingClientRect();
+          return Math.min(inner.left - outer.left, inner.top - outer.top, outer.right - inner.right, outer.bottom - inner.bottom) >= 2
+            && parseFloat(getComputedStyle(el).borderTopWidth) >= 2;
+        }), 'Bubble fill must surround the playback outline on every side');
+        assert.deepEqual(await bubbleLayout(), idleLayout, 'Highlighting a word keeps every bubble in place');
         await page.evaluate(() => window.__converterSpeech.pending.shift().onend?.({}));
       }
       assert.deepEqual(await page.evaluate(() => window.__converterSpeech.calls), ['Alfa', 'tree', 'Bravo', 'dash']);
