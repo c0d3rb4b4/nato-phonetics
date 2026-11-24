@@ -1,6 +1,0 @@
-{
-  "result": "failed",
-  "reason": "Finalizer checked links to its own not-yet-written verification.json before emitting that report.",
-  "observedMissingLinks": ["docs/DELIVERY_PLAN.md -> evidence/run19/verification.json", "docs/APP_REVIEW.md -> evidence/run19/verification.json", "docs/evidence/run19/README.md -> verification.json"],
-  "followup": "Emit report and verify its existence after generation; every other link must exist before generation. No product/status claim affected."
-}

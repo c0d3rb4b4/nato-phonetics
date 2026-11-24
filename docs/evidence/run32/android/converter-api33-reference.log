@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "C:\dev\apps\nato-phonetics\docs\evidence\run32\android\converter-export.py", line 126, in <module>
-    ui.adb('shell', 'settings', 'delete', 'system', 'font_scale')
-  File "C:\dev\apps\nato-phonetics\docs\evidence\run32\android\converter-export.py", line 93, in main
-    ui.expect(desc='Text to convert')
-  File "C:\dev\apps\nato-phonetics\docs\evidence\run30\android\observe-product.py", line 100, in seek
-    raise AssertionError('Unreachable control: '+str(name or desc))
-AssertionError: Unreachable control: Next cards

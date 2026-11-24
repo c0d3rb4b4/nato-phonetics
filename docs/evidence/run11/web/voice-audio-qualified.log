@@ -1,6 +1,0 @@
-DIAGNOSTIC --audio-only: layout/keyboard and all-route theme/title/reload matrix skipped
-PASS mocked speech replacement, Stop (including word pause), edit, navigation and background ownership; stale callbacks cannot resume queues
-PASS voice search/locale intersection, filter reset, saved-choice independence, Default/no-match, preview cancellation and 200% controls
-PASS mocked English voice enumeration, empty/loading/retry, removed voice fallback, Default selection, lookup/storage failures and playback error feedback
-PASS mocked missing provider callback settles to visible failure within production timeout
-PASS diagnostic audio only (layout and route matrix UNRUN). Browser: Edg/157.0.4341.60. Speech pronunciation, native accessibility and real provider/offline behavior remain M11.

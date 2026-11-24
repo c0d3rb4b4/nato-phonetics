@@ -1,9 +1,0 @@
-AssertionError [ERR_ASSERTION]: Raster+AA envelope exceeded final-alphabet-light-2.png/J/letter/top: -19.495000000000005
-    at /Users/mac/dev/apps/nato-phonetics/docs/evidence/run30/android/check-extended-raster.cjs:45:79 {
-  generatedMessage: false,
-  code: 'ERR_ASSERTION',
-  actual: false,
-  expected: true,
-  operator: '==',
-  diff: 'simple'
-}

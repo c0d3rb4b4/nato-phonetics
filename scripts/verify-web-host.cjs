@@ -23,7 +23,7 @@ assert(browserType, 'Engine must be chromium, firefox or webkit');
 assert(['tabs', 'process', 'handoff'].includes(transitionMode), 'Transition mode must be tabs, process or handoff');
 const report = { engine, runner: require('playwright/package.json').version, platform: process.platform,
   transitionMode, idleWithNoAppClientsMs: transitionMode === 'tabs' ? 1000 : 0,
-  checks: [], errors: [], boundary: 'Actual local Caddy; public HTTPS/certificates/host, branded Safari/iOS, legacy clients and M11 remain unrun' };
+  checks: [], errors: [], boundary: 'Local Caddy distribution check using a disposable browser profile on loopback.' };
 const captures = [];
 let server, context, log;
 // Playwright's waitForFunction treats an async predicate's Promise as truthy

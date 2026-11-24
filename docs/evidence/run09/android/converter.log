@@ -1,9 +1,0 @@
-{"check": "converter-native", "passed": true, "timestamp": "2026-11-17T18:31:18Z", "copyExact": true, "shareSheet": true, "clearStopsAudio": true, "menuRetainsInput": true}
-Traceback (most recent call last):
-  File "/Users/mac/dev/apps/nato-phonetics/docs/evidence/run09/android/converter.py", line 51, in <module>
-    if __name__=='__main__':main()
-  File "/Users/mac/dev/apps/nato-phonetics/docs/evidence/run09/android/converter.py", line 40, in main
-    scroll_to(rid='converter-plain-text');screenshot('plain-cold-scale2','Cold 2x plain text and omission disclosure','dark')
-  File "/Users/mac/dev/apps/nato-phonetics/docs/evidence/run09/android/converter.py", line 10, in scroll_to
-    raise AssertionError('Unreachable '+str((desc,rid,text)))
-AssertionError: Unreachable (None, 'converter-plain-text', None)

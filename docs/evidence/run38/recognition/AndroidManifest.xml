@@ -1,8 +1,0 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.natophonetics.localprobe">
-  <uses-sdk android:minSdkVersion="33" android:targetSdkVersion="36"/>
-  <queries><intent><action android:name="android.speech.RecognitionService"/></intent></queries>
-  <application android:label="Local recognition probe"/>
-  <instrumentation android:name=".Probe" android:targetPackage="com.natophonetics.localprobe"/>
-  <instrumentation android:name=".AudioProbe" android:targetPackage="com.natophonetics.localprobe"/>
-</manifest>
-

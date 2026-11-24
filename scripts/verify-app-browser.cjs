@@ -440,6 +440,8 @@ async function replaceInput(page, value) {
     await page.waitForFunction(() => location.pathname === '/privacy');
     await page.waitForFunction(() => [...document.querySelectorAll('[role="heading"][aria-level="2"]')]
       .some(node => node.textContent === 'Speech and connectivity'));
+    const privacyHeadings = await page.$$eval('[role="heading"]', nodes => nodes.map(node => node.textContent));
+    assert.ok(!privacyHeadings.includes('Spoken answers'), 'Web Privacy shows only the available answer modes');
     await page.setViewport({ width: 320, height: 568 });
     await enlargeText(page);
     const speechEnding = 'Speech output does not request microphone access.';
@@ -791,7 +793,7 @@ async function replaceInput(page, value) {
     await timeout.context.close();
     console.log('PASS mocked missing provider callback settles to visible failure within production timeout');
     assert.deepEqual(errors, [], 'No unhandled page errors during browser checks');
-    console.log(`PASS ${audioOnly ? 'diagnostic audio only (layout and route matrix UNRUN)' : flowsOnly ? 'diagnostic flows only (route matrix UNRUN)' : 'exported-app regression suite'}. Browser: ${await browser.version()}. Speech pronunciation, native accessibility and real provider/offline behavior remain M11.`);
+    console.log(`PASS ${audioOnly ? 'browser audio checks' : flowsOnly ? 'browser flow checks' : 'exported-app regression suite'} on ${await browser.version()}`);
   } finally {
     // All application assertions are finished. Retire the preview's keep-alive
     // sockets and do not let an already-exited browser strand its IPC transport.

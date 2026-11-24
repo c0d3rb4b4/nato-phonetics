@@ -1,7 +1,0 @@
-Command line invocation:
-    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild test -project /private/tmp/nato-ios-run13-capture/Capture.xcodeproj -scheme Capture -configuration Debug -destination "platform=iOS Simulator,id=0653F7EC-9237-4AC5-A264-12969E625070" -derivedDataPath /private/tmp/nato-ios-run13-capture/DerivedData -resultBundlePath /private/tmp/nato-ios-run13-capture/default.xcresult -jobs 2 CODE_SIGNING_ALLOWED=NO -parallel-testing-enabled NO "-only-testing:CaptureUITests/PracticeUITests/testProgress"
-
-Build settings from command line:
-    CODE_SIGNING_ALLOWED = NO
-
-xcodebuild: error: The project named "Capture" does not contain a scheme named "Capture". The "-list" option can be used to find the names of the schemes in the project.

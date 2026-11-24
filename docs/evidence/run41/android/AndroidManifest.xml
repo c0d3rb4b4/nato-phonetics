@@ -1,7 +1,0 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.natophonetics.micfixture">
-  <uses-sdk android:minSdkVersion="33" android:targetSdkVersion="36" />
-  <uses-permission android:name="android.permission.RECORD_AUDIO" />
-  <application android:debuggable="true" android:label="Synthetic microphone qualification">
-    <activity android:name=".Capture" android:exported="true" />
-  </application>
-</manifest>

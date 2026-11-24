@@ -1,5 +1,0 @@
-// Contact sheets are inspection aids; original application PNG bytes are unchanged.
-const fs=require('node:fs'),path=require('node:path'),sharp=require('sharp');
-(async()=>{const platform=process.argv[2],folder=path.join(__dirname,'screenshots',platform),files=fs.readdirSync(folder).filter(f=>f.endsWith('.png'));const sheets=[];
-for(let start=0;start<files.length;start+=4){const group=files.slice(start,start+4),parts=[];for(let i=0;i<group.length;i++){const label=Buffer.from(`<svg width="640" height="32"><rect width="640" height="32" fill="white"/><text x="8" y="22" font-size="16">${group[i]}</text></svg>`);parts.push({input:label,left:(i%2)*640,top:Math.floor(i/2)*672});parts.push({input:await sharp(path.join(folder,group[i])).resize({width:640,height:640,fit:'contain',background:'#ccc'}).png().toBuffer(),left:(i%2)*640,top:Math.floor(i/2)*672+32});}const file=path.join(__dirname,platform,`inspection-${start}.png`);await sharp({create:{width:1280,height:Math.ceil(group.length/2)*672,channels:3,background:'#ccc'}}).composite(parts).png().toFile(file);sheets.push(file);}
-console.log(JSON.stringify(sheets));})().catch(e=>{console.error(e);process.exitCode=1;});

@@ -6,7 +6,7 @@ const http = require('node:http');
 const { pathToFileURL } = require('node:url');
 const { staticHandler } = require('./serve-web.cjs');
 const puppeteer = require('puppeteer-core');
-const out = path.resolve(process.argv[3] || 'docs/evidence/run12');
+const out = path.resolve(process.argv[3] || 'artifacts/recall-browser');
 const shots = path.join(out, 'screenshots/web');
 fs.mkdirSync(shots, { recursive: true });
 const server = http.createServer(staticHandler(path.resolve(process.argv[2] || 'dist')));
@@ -76,6 +76,8 @@ async function assertTextContained(page, selector) {
     const capture=async(name,selector)=>{if(selector)await page.$eval(selector,e=>e.scrollIntoView({block:'center'}));const file=`${state.theme}-${state.width}-${name}.png`;await page.screenshot({path:path.join(shots,file)});captures.push({file,...state,state:name,textScale:state.width===320?2:1,browser:await browser.version(),capturedAt:new Date().toISOString(),command:`node scripts/verify-recall-browser.cjs ${process.argv.slice(2).join(' ')}`});};
     const calls=()=>page.evaluate(()=>window.__recall.calls.length);
     await page.goto(`http://127.0.0.1:${server.address().port}/letter-quiz`,{waitUntil:'networkidle0'});await page.waitForSelector(id('quiz-start'));
+    assert.equal(await page.$(id('mode-spoken')), null);
+    assert.doesNotMatch(await page.$eval('body', element => element.innerText), /Spoken answers require Android/);
     if(state.width===320)await enlargeText(page);
     await click(id('mode-listening'));await click(id('practice-digits'));await click(named('5 questions'));
     await capture('listening-setup',id('mode-listening'));await click(id('quiz-start'));

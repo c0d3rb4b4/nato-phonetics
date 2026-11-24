@@ -1,5 +1,0 @@
-{
-  "candidateNativeResult": "Unqualified: harness compiled with stale exported Yoga header lacking fontSizeMultiplier_ while source library has two-float configureYogaTree ABI; cannot infer patch failure. Retain actual red result and correct header generation.",
-  "candidateInstall": "Failed device still booting; driver started old installed APK, stopped and excluded from acceptance. No uninstall or data clearing.",
-  "next": "Regenerate source prefab headers, rebuild dependent app code with matching candidate ABI; require sys.boot_completed1, install success and APK hash before runtime gate."
-}

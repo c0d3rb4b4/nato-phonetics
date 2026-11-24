@@ -1,6 +1,0 @@
-Error: Error: failed to find element matching selector "[data-testid="quiz-letter"]:not([aria-hidden="true"] *)"
-    at CdpElementHandle.$eval (C:\Users\lalit\AppData\Local\npm-cache\_npx\ff64eaa2932d6fe3\node_modules\puppeteer-core\lib\cjs\puppeteer\api\ElementHandle.js:496:27)
-    at async CdpFrame.$eval (C:\Users\lalit\AppData\Local\npm-cache\_npx\ff64eaa2932d6fe3\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Frame.js:453:20)
-    at async CdpPage.$eval (C:\Users\lalit\AppData\Local\npm-cache\_npx\ff64eaa2932d6fe3\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:454:20)
-    at async answer (C:\dev\apps\nato-phonetics\scripts\verify-progress-lifecycle-browser.cjs:58:20)
-    at async C:\dev\apps\nato-phonetics\scripts\verify-progress-lifecycle-browser.cjs:75:3

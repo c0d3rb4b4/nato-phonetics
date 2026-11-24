@@ -1,7 +1,0 @@
-/Users/mac/dev/apps/nato-phonetics/scripts/native-tests/font-environment.cpp:153:46: warning: 'ListOfShared' is deprecated: Use std::vector<std::shared_ptr<const ShadowNode>> instead [-Wdeprecated-declarations]
-  153 |     .children = std::make_shared<ShadowNode::ListOfShared>(oldRoot->getChildren())});
-      |                                              ^
-/Users/mac/dev/apps/nato-phonetics/node_modules/react-native/ReactAndroid/build/intermediates/prefab_package/debug/prefab/modules/reactnative/include/react/renderer/core/ShadowNode.h:45:24: note: 'ListOfShared' has been explicitly marked deprecated here
-   45 |   using ListOfShared [[deprecated(
-      |                        ^
-1 warning generated.

@@ -1,9 +1,0 @@
-{
-  "fontScale": "1.0",
-  "wmSize": "Physical size: 1080x2400\nOverride size: 720x1600",
-  "density": "Physical density: 420\nOverride density: 280",
-  "theme": "System",
-  "method": "actual settings UI System tap; adb settings font_scale1",
-  "emulatorShutdown": "adb emu kill returnedOK",
-  "ownedMetroShutdown": "SIGTERM to verified own Metro PID47881"
-}

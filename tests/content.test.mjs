@@ -3,7 +3,7 @@ import test from 'node:test';
 import { NATO_ALPHABET, NATO_NUMBERS, LETTER_TO_ENTRY, DIGIT_TO_ENTRY } from '../src/data/natoData.js';
 
 // Independent reference fixture: NATO's alphabet and ICAO Annex 10 explanation.
-// Source links and pronunciation-review limits are documented in README.md.
+// Source links and pronunciation checks are in docs/AUDIO_VALIDATION.md.
 const words = 'Alfa Bravo Charlie Delta Echo Foxtrot Golf Hotel India Juliett Kilo Lima Mike November Oscar Papa Quebec Romeo Sierra Tango Uniform Victor Whiskey X-ray Yankee Zulu'.split(' ');
 const numbers = 'Zero One Two Three Four Five Six Seven Eight Nine'.split(' ');
 

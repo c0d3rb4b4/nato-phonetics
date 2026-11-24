@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/Users/mac/dev/apps/nato-phonetics/docs/evidence/run11/android/voice-checked.py", line 10, in <module>
-    click('Reset voice filters');top();field=scroll_to(desc='Search English voices');assert field.get('text')=='',field.attrib
-AssertionError: {'index': '9', 'text': 'Name, locale or quality', 'resource-id': 'voice-search', 'class': 'android.widget.EditText', 'package': 'com.natophonetics.app', 'content-desc': 'Search English voices', 'checkable': 'false', 'checked': 'false', 'clickable': 'true', 'enabled': 'true', 'focusable': 'true', 'focused': 'true', 'scrollable': 'false', 'long-clickable': 'true', 'password': 'false', 'selected': 'false', 'bounds': '[28,1099][692,1183]', 'drawing-order': '10', 'hint': 'Name, locale or quality'}

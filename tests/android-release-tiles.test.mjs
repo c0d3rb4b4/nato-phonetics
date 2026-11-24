@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
 const { checkCapture } = require('../scripts/check-android-release-tiles.cjs');
-const captured = () => JSON.parse(fs.readFileSync(new URL('../docs/evidence/run30/android/final-alphabet-light-0-native-layout.json', import.meta.url)));
+const captured = () => JSON.parse(fs.readFileSync(new URL('./fixtures/android-observations/release-alphabet-layout.json', import.meta.url)));
 
 test('actual production Release native views/spans/Layout satisfy the unchanged tile contract', async () => {
   const result = await checkCapture(captured(), { scale: 1 });

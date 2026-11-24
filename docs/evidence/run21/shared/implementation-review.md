@@ -1,9 +1,0 @@
-# Final implementation review
-
-Selected delta is one maintained runner, independent CI engine matrix and operating/evidence docs. No app/native/source/font/provider/permission/schema/dependency change. No source upgrade, cloud dependency, framework workaround, target exception or raw-evidence reformatting. Shared/native tests are reused only at qualified original scopes.
-
-Review caught a missing explicit exact-draft assertion after Retry and after closing the other window. Both are added; reloading deliberately discards the in-memory draft and is labelled separately. Error screenshot now scrolls to the actual Retry action. Reviewed actual six-group runs pass all3 engines; negative async polling, controller equality, exact original/forward HTML digests, saved bytes, font503/digest repair and host-stopped offline checks are retained. Earlier passing reports/captures and matching source are preserved under diagnostics/pre-review; earlier failures remain separate.
-
-No every-engine process-shutdown claim: WebKit process-close-during-waiting stays failed/P2; tabs/1s live-browser idle is explicit in report/metadata/docs and only that mode is default CI scope. Hosted Linux/actual HTTPS/browser/OS/physical/legacy/provider/integrated checks are unrun. Polling must return strict true after awaiting browser evaluation; a deliberate false case proves no false success. No product-worker repair is inferred.
-
-Current unstaged diff whitespace passes. Staged diff whitespace exits2 on inherited Run20 raw log whitespace/EOFs; preserve verbatim and record as evidence-only/P3. No user source/evidence change is discarded, no manual result or security gate is called passed. Remaining native/source/provider/security cycles need separate substantial verification; the local batch is complete at its actual scope.

@@ -1,7 +1,0 @@
-PASS all 13 direct routes + query/.html/unknown fallback offline; cached fonts; converter exact typed input/export; actual submitted progress retained
-PASS failed update keeps complete A; retry installs B; two windows/draft retained; reload keeps A while another open; normal close-all activation B; old shell cleanup; saved progress/preferences/unrelated retained
-PASS rollback to complete A through default waiting lifecycle preserves data
-PASS first-ever offline visit fails honestly, no cached availability claimed
-PASS blocked setup guidance without partial cache or app failure
-PASS unavailable setup guidance without partial cache or app failure
-PASS corrupt setup guidance without partial cache or app failure

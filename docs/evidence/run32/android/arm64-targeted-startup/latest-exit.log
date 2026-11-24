@@ -1,8 +1,0 @@
-ACTIVITY MANAGER PROCESS EXIT INFO (dumpsys activity exit-info)
-Last Timestamp of Persistence Into Persistent Storage: 2026-11-20 14:40:42.798
-  package: com.natophonetics.app
-    Historical Process Exit for uid=10229
-        ApplicationExitInfo #0:
-          timestamp=2026-11-20 15:09:32.309 pid=24559 realUid=10229 packageUid=10229 definingUid=10229 user=0
-          process=com.natophonetics.app reason=4 (APP CRASH(EXCEPTION)) subreason=0 (UNKNOWN) status=0
-          importance=100 pss=0.00 rss=0.00 description=crash state=empty trace=null

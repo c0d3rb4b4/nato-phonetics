@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "/Users/mac/dev/apps/nato-phonetics/docs/evidence/run09/android/enlarged.py", line 4, in <module>
-    scroll_to(rid='converter-plain-text');screenshot('plain-cold-scale2','Cold 2x plain text and omission disclosure','dark')
-  File "/Users/mac/dev/apps/nato-phonetics/docs/evidence/run09/android/converter.py", line 10, in scroll_to
-    raise AssertionError('Unreachable '+str((desc,rid,text)))
-AssertionError: Unreachable (None, 'converter-plain-text', None)

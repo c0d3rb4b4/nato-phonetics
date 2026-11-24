@@ -1,3 +1,0 @@
-# First preservation verifier result
-
-The first invocation reached its local-link assertion and exited1. It incorrectly treated workspace-relative links inside EXECUTION_PROMPT.md's fenced copy/paste prompt as document-relative links, and failed to recognize its pending verification.json output through the plan's relative path. No source/product preservation assertion failed. Correct verifier to exclude fenced code and compare the resolved pending output path, then rerun; no document targets, product gates or runtime assertions are weakened. Original observed targets: docs/EXECUTION_PROMPT.md nato-phonetics/, nato-phonetics/docs/DELIVERY_PLAN.md, nato-phonetics/docs/APP_REVIEW.md; docs/DELIVERY_PLAN.md evidence/run29/verification.json.

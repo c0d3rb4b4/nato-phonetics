@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "/Users/mac/dev/apps/nato-phonetics/docs/evidence/run09/android/converter.py", line 44, in <module>
-    if __name__=='__main__':main()
-  File "/Users/mac/dev/apps/nato-phonetics/docs/evidence/run09/android/converter.py", line 19, in main
-    set_text('a3 b-!');top();screenshot('input-dark','Ordinary keyboard input and normalization','dark')
-  File "/Users/mac/dev/apps/nato-phonetics/docs/evidence/run09/android/verify_native.py", line 127, in set_text
-    assert node.get('text') == value, (node.get('text'), value)
-AssertionError: ('a3 B-!', 'a3 b-!')

@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "C:\dev\apps\nato-phonetics\docs\evidence\run34\check-android-reset.py", line 92, in <module>
-    check(args.serial, args.apk, args.output)
-  File "C:\dev\apps\nato-phonetics\docs\evidence\run34\check-android-reset.py", line 64, in check
-    raise AssertionError('Expected the saved Dark and Full cards selections')
-AssertionError: Expected the saved Dark and Full cards selections

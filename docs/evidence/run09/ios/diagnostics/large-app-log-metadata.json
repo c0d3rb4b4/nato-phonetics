@@ -1,9 +1,0 @@
-{
-  "command": "DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer xcrun simctl spawn 0653F7EC-9237-4AC5-A264-12969E625070 log show --style compact --last 6m --predicate process == \"NATOPhonetics\"",
-  "rawArtifact": "artifacts/run09/ios/diagnostics/large-app-full.log",
-  "rawSha256": "d9342cbf710dfed66960ca524aa343910da9a37f3de6a709ab188d1e3d33d1ce",
-  "rawBytes": 101052870,
-  "originalLineStart": 711662,
-  "originalLineEnd": 711701,
-  "extraction": "Original contiguous lines, no content editing; full verbose runtime log retained under ignored artifacts"
-}

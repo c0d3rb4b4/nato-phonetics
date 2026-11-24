@@ -6,7 +6,7 @@ const http = require('node:http');
 const { pathToFileURL } = require('node:url');
 const puppeteer = require('puppeteer-core');
 const { staticHandler } = require('./serve-web.cjs');
-const out = path.resolve(process.argv[3] || 'docs/evidence/run08');
+const out = path.resolve(process.argv[3] || 'artifacts/session-browser');
 const shots = path.join(out, 'screenshots/web');
 fs.mkdirSync(shots, { recursive: true });
 const server = http.createServer(staticHandler(path.resolve(process.argv[2] || 'dist')));
@@ -82,7 +82,9 @@ async function assertTextContained(page, selector) {
       const capture = async name => {
         const file = `${state.theme}-${state.width}-${name}.png`;
         await page.screenshot({ path: path.join(shots, file) });
-        captures.push({ file, ...state, state: name, textScale: state.width === 320 && name !== 'setup' ? 2 : 1, browser: await browser.version(), capturedAt: new Date().toISOString(), command: 'node scripts/verify-sessions-browser.cjs dist docs/evidence/run08' });
+        captures.push({ file, ...state, state: name, textScale: state.width === 320 && name !== 'setup' ? 2 : 1,
+          browser: await browser.version(), capturedAt: new Date().toISOString(),
+          command: 'node scripts/verify-sessions-browser.cjs', arguments: process.argv.slice(2) });
       };
       const click = async selector => {
         await page.waitForSelector(selector);

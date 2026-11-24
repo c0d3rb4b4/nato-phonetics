@@ -1,9 +1,0 @@
-{
-  "cause": "Android final capture emulator boot rejected for insufficient disk at 1.2GiB; failed commands retained",
-  "action": "Remove disposable native build intermediates and module cache from this run; retain all products, source and durable evidence",
-  "removed": [
-    "artifacts/ios-simulator/Build/Intermediates.noindex",
-    "artifacts/ios-simulator/ModuleCache.noindex"
-  ],
-  "dfAfter": "Filesystem      Size    Used   Avail Capacity iused ifree %iused  Mounted on\n/dev/disk3s5   228Gi   190Gi   2.5Gi    99%    2.1M   26M    7%   /System/Volumes/Data\n"
-}

@@ -24,7 +24,7 @@ export function shuffle(values, random = Math.random) {
   return result;
 }
 
-/** The first draw selects the letter; P07.2 will add a coverage deck.
+/** Draw a single letter question independently of a practice round.
  * @param {() => number} [random] @returns {import('../types').QuizQuestion}
  */
 export function createQuestion(random = Math.random) {

@@ -18,7 +18,7 @@ assert(browserType, 'Engine must be chromium, firefox or webkit');
 const id = value => `[data-testid="${value}"]:not([aria-hidden="true"] *)`;
 const named = value => `[aria-label="${value}"]:not([aria-hidden="true"] *)`;
 const report = { engine, runner: require('playwright/package.json').version, checks: [], captures: [],
-  boundary: 'Local production build; injected quota and actual held lock are recovery qualification, not the cause of the Run24 spontaneous failure. No native, branded Safari, OS suspension, hosted CI or M11 pass.' };
+  boundary: 'Production web export with an injected quota error and a second page holding the storage lock.' };
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const server = http.createServer(staticHandler(root));
 let browser, context, page, active;
@@ -55,7 +55,7 @@ async function main() {
       window.__failProgressWrite = failWrite;
       const set = Storage.prototype.setItem;
       Storage.prototype.setItem = function (key, value) {
-        if (key === 'nato.progress.v1' && window.__failProgressWrite) throw new DOMException('Run25 deliberate first-write quota failure', 'QuotaExceededError');
+        if (key === 'nato.progress.v1' && window.__failProgressWrite) throw new DOMException('Simulated first-write quota failure', 'QuotaExceededError');
         return set.call(this, key, value);
       };
       (0, eval)(`(${observe})()`);
@@ -129,7 +129,7 @@ async function main() {
     assert.equal(active.snapshots.reloaded.events.filter(e => e.type === 'storage-write').length, 0);
     assert.deepEqual(active.errors, []);
     // Preserve Firefox's exact automation-only caught callback diagnostic.
-    assert.deepEqual(active.automationErrors.map(e => e.message), engine === 'firefox' && scenario === 'quota' ? ['Run25 deliberate first-write quota failure'] : []);
+    assert.deepEqual(active.automationErrors.map(e => e.message), engine === 'firefox' && scenario === 'quota' ? ['Simulated first-write quota failure'] : []);
     active.status = 'passed'; await context.close(); context = null;
   }
   report.status = 'passed';

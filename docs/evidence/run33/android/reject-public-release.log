@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "C:\dev\apps\nato-phonetics\scripts\verify-android-product.py", line 164, in <module>
-    print(json.dumps(inspect(args.mode, args.apk, args.aab), indent=2))
-  File "C:\dev\apps\nato-phonetics\scripts\verify-android-product.py", line 144, in inspect
-    require(aab_signing(aab, archive) == cert, 'APK/AAB signing identities differ')
-  File "C:\dev\apps\nato-phonetics\scripts\verify-android-product.py", line 23, in require
-    raise ValueError(message)
-ValueError: APK/AAB signing identities differ

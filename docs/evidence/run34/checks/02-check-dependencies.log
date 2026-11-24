@@ -1,6 +1,0 @@
-{"executable":"cmd.exe","args":["/d","/c","npm.cmd","run","check:dependencies"],"cwd":"C:\\dev\\apps\\nato-phonetics\\artifacts\\run34\\clean-app","startedAt":"2026-11-22T00:05:38.839Z"}
-
-> nato-phonetics@1.0.0 check:dependencies
-> node scripts/check-no-expo.cjs
-
-Expo-free manifest, 791 locked packages, installed graph and maintained native/web consumers verified.

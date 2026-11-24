@@ -6,7 +6,7 @@ const http = require('node:http');
 const { pathToFileURL } = require('node:url');
 const { staticHandler } = require('./serve-web.cjs');
 const puppeteer = require('puppeteer-core');
-const out = path.resolve(process.argv[3] || 'docs/evidence/run11');
+const out = path.resolve(process.argv[3] || 'artifacts/numeric-browser');
 const shots = path.join(out, 'screenshots/web');
 fs.mkdirSync(shots, { recursive: true });
 const server = http.createServer(staticHandler(path.resolve(process.argv[2] || 'dist')));

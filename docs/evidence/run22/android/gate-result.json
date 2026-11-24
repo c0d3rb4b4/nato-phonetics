@@ -1,8 +1,0 @@
-{
-  "command": [
-    "python3",
-    "docs/evidence/run22/android/check-live-cold.py"
-  ],
-  "exitCode": 1,
-  "expected": "P05.2 still failed3/4; not repaired"
-}

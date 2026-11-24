@@ -1,5 +1,0 @@
-Error: Error: failed to find element matching selector "[data-testid="quiz-letter"]"
-    at CdpElementHandle.$eval (/Users/mac/.npm/_npx/e5f4bcd55d2c7c9f/node_modules/puppeteer-core/lib/cjs/puppeteer/api/ElementHandle.js:499:27)
-    at async CdpFrame.$eval (/Users/mac/.npm/_npx/e5f4bcd55d2c7c9f/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Frame.js:467:20)
-    at async CdpPage.$eval (/Users/mac/.npm/_npx/e5f4bcd55d2c7c9f/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Page.js:460:20)
-    at async /Users/mac/dev/apps/nato-phonetics/scripts/verify-progress-browser.cjs:76:17

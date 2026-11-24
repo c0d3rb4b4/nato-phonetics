@@ -1,8 +1,0 @@
-{
-  "command": "ANDROID_SERIAL=emulator-5580 npm run check:android:font-scale -- docs/evidence/run26/android/window-runtime --resize 560x1000",
-  "exitCode": 0,
-  "comparisons": {
-    "short": 12,
-    "liveResize": 12
-  }
-}

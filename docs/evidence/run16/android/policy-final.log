@@ -1,7 +1,0 @@
-Traceback (most recent call last):
-  File "/Users/mac/dev/apps/nato-phonetics/docs/evidence/run16/android/policy.py", line 8, in <module>
-    if d.adb('shell','getprop','sys.boot_completed').strip()=='1':break
-  File "/Users/mac/dev/apps/nato-phonetics/docs/evidence/run13/android/verify_native.py", line 30, in adb
-    raise RuntimeError(f'adb {args}: {result.stderr.decode()} {result.stdout.decode(errors="replace")}')
-RuntimeError: adb ('shell', 'getprop', 'sys.boot_completed'): adb: device 'emulator-5580' not found
- 

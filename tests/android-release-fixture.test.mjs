@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import {createRequire} from 'node:module';
 const require=createRequire(import.meta.url);
 const {checkReleaseSamples}=require('../scripts/check-android-font-release-fixture.cjs');
-const captured=()=>JSON.parse(fs.readFileSync(new URL('../docs/evidence/run29/android/final/samples.json',import.meta.url)));
+const captured=()=>JSON.parse(fs.readFileSync(new URL('./fixtures/android-observations/release-font-scale.json',import.meta.url)));
 
 test('actual Release observations retain strict frame/widget, sweep, edit and resize acceptance',()=>{
   const report=checkReleaseSamples(captured());

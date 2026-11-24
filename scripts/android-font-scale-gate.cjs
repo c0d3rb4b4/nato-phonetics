@@ -1,4 +1,4 @@
-// One physical pixel, matching the original Run20 acceptance. No missing data
+// One physical pixel of tolerance for native measurements. No missing data
 // or retained-state failure may turn into a successful comparison.
 const names = ['stable', 'feedback', 'input', 'revision'];
 function inputContentHeight(sample) {

@@ -1,8 +1,0 @@
-TimeoutError: Waiting failed: 30000ms exceeded
-    at new WaitTask (/Users/mac/.npm/_npx/e5f4bcd55d2c7c9f/node_modules/puppeteer-core/lib/cjs/puppeteer/common/WaitTask.js:49:34)
-    at IsolatedWorld.waitForFunction (/Users/mac/.npm/_npx/e5f4bcd55d2c7c9f/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Realm.js:52:26)
-    at CdpFrame.waitForFunction (/Users/mac/.npm/_npx/e5f4bcd55d2c7c9f/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Frame.js:583:43)
-    at CdpFrame.<anonymous> (/Users/mac/.npm/_npx/e5f4bcd55d2c7c9f/node_modules/puppeteer-core/lib/cjs/puppeteer/util/decorators.js:109:27)
-    at CdpPage.waitForFunction (/Users/mac/.npm/_npx/e5f4bcd55d2c7c9f/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Page.js:1451:37)
-    at expectMessage (/Users/mac/dev/apps/nato-phonetics/scripts/verify-converter-browser.cjs:44:45)
-    at /Users/mac/dev/apps/nato-phonetics/scripts/verify-converter-browser.cjs:63:13
