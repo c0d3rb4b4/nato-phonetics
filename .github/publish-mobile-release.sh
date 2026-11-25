@@ -28,4 +28,7 @@ if target=$(gh api "repos/$GITHUB_REPOSITORY/git/ref/tags/$tag" --jq '.object.sh
 else
   gh api "repos/$GITHUB_REPOSITORY/git/refs" -f "ref=refs/tags/$tag" -f "sha=$GITHUB_SHA" >/dev/null
 fi
-gh release create "$tag" "$@" --verify-tag --title "$title" --notes-file "$notes" "${flags[@]}"
+# A fresh ref can take time to appear in the CLI's separate tag lookup.
+# The ref above is pinned to the build commit. Use that same target for publication.
+gh release create "$tag" "$@" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" \
+  --title "$title" --notes-file "$notes" "${flags[@]}"
