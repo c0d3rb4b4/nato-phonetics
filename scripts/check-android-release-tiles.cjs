@@ -4,14 +4,14 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 async function checkCapture(capture, { scale, concealed = false }) {
-  const { TILE_DESIGN: D } = await import('../src/lib/tileDesign.js');
+  const { TILE_DESIGN: D, tileWidthForGrid } = await import('../src/lib/tileDesign.js');
   const { NATO_ALPHABET, NATO_NUMBERS } = await import('../src/data/natoData.js');
   assert.equal(capture.baselineSource, 'Actual Android TextView Layout.getLineBaseline + totalPaddingTop + transformMatrixToGlobal; physical pixels');
   const density = capture.dimensions.density;
   assert(density > 0 && Number.isFinite(density));
   assert(Math.abs(capture.dimensions.fontScale - scale) < 1e-6, 'Wrong observed environment');
   const rows = capture.values;
-  const roots = rows.filter(r => /^(alphabet-[A-Z]|converter-\d+|quiz-card)$/.test(r.id));
+  const roots = rows.filter(r => /^(alphabet-[A-Z]|digit-\d|converter-\d+|quiz-card)$/.test(r.id));
   assert(roots.length, 'Missing actual tile roots');
   const baselines = [];
   const near = (actual, expected, label) => {
@@ -28,7 +28,11 @@ async function checkCapture(capture, { scale, concealed = false }) {
     for (const ancestor of root.ancestors ?? []) {
       assert(ancestor.width > 0 && ancestor.height > 0 && ancestor.visibility === 0 && ancestor.alpha > 0, 'Hidden native subtree: ' + root.id);
     }
-    near(root.frame.width, D.width * ratio, root.id + ' width');
+    // onLayout reports a float in logical units, even at fractional density.
+    // The historical alphabet capture contains only cards and fits its viewport.
+    const gridWidth = Math.fround((root.gridViewportWidth ?? root.ancestors[0].width) / density);
+    const tileWidthPx = tileWidthForGrid(gridWidth, scale, root.siblingCount ?? roots.length) * density;
+    near(root.frame.width, tileWidthPx, root.id + ' width');
     near(root.frame.height, D.height * ratio, root.id + ' height');
     assert.equal(root.radius?.unit, 'POINT', 'Missing actual native corner radius');
     near(root.radius.value * density, D.radius * ratio, root.id + ' radius');
@@ -38,6 +42,7 @@ async function checkCapture(capture, { scale, concealed = false }) {
     const entry = [...NATO_ALPHABET, ...NATO_NUMBERS].find(e => (e.letter ?? e.digit) === symbolRow.text);
     assert(entry, 'Unknown actual symbol');
     if (root.id.startsWith('alphabet-')) assert.equal(root.id, 'alphabet-' + symbolRow.text);
+    if (root.id.startsWith('digit-')) assert.equal(root.id, 'digit-' + symbolRow.text);
     for (const [suffix, metric, content] of [
       ['letter', D.letter, symbolRow.text], ['word', D.word, entry.word], ['pronunciation', D.pronunciation, entry.pronunciation],
     ]) {
@@ -48,7 +53,8 @@ async function checkCapture(capture, { scale, concealed = false }) {
       const box = required(root.id + '-' + suffix);
       for (const key of ['x', 'y', 'width', 'height']) {
         const observed = box.frame[key] - (key === 'x' || key === 'y' ? root.frame[key] : 0);
-        near(observed, metric[key] * ratio, box.id + ' ' + key);
+        const expected = key === 'width' ? tileWidthPx - 2 * metric.x * ratio : metric[key] * ratio;
+        near(observed, expected, box.id + ' ' + key);
       }
       const run = suffix === 'letter' ? symbolRow : required(box.id + '-run');
       assert.equal(run.text, content, box.id + ' content');

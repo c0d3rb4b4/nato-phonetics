@@ -96,8 +96,12 @@ async function assertTextContained(page, selector) {
         await page.waitForFunction(expected=>window.__numericSpeech.calls.at(-1)===expected,{},entryFor(symbol).speechText);
       }
       await page.$eval(id('digit-0'),e=>e.scrollIntoView({block:'start'}));await capture('digit-reference');
-      const geometry=await page.$$eval('[data-testid^="digit-"][data-nato-tile]',els=>els.map(e=>{const r=e.getBoundingClientRect();return {id:e.dataset.testid,w:r.width,h:r.height};}));
-      for(const tile of geometry)assert.ok(Math.abs(tile.w/tile.h-11/15)<.001);
+      const geometry = await page.$$eval('[data-testid^="digit-"][data-nato-tile]', tiles => tiles.map(tile => {
+        const { width, height } = tile.getBoundingClientRect();
+        return { id: tile.dataset.testid, width, height };
+      }));
+      const expectedSize = state.width === 320 ? [220, 300] : [108, 150];
+      for (const tile of geometry) assert.deepEqual([tile.width, tile.height], expectedSize, tile.id);
       await click(named('Letters A–Z'));assert.equal(await page.$(id('digits-grid')),null);
       assert.equal(await page.evaluate(()=>window.__numericSpeech.pending.length),0,'Switching reference stops audio');
       await visit('letter-quiz');await page.waitForSelector(id('quiz-start'));if(state.width===320)await enlargeText(page);
@@ -162,7 +166,7 @@ async function assertTextContained(page, selector) {
       await page.evaluate(()=>window.__numericSpeech.stale.splice(0).forEach(end=>end?.({})));
       assert.equal(await page.evaluate(()=>window.__numericSpeech.calls.length),calls,'No stale example/answer audio after completion');
       assert.deepEqual(errors,[]);
-      console.log(`PASS ${state.theme} ${state.width}: ten digits/raster ratio/special speech, 10/36 coverage, score/retry/concealment/Menu, example sets/audio cancellation, controls contained`);
+      console.log(`PASS ${state.theme} ${state.width}: ten digits/responsive sizing/special speech, 10/36 coverage, score/retry/concealment/Menu, example sets/audio cancellation, controls contained`);
       await context.close();
     }
     fs.writeFileSync(path.join(shots,'metadata.json'),JSON.stringify(captures,null,2)+'\n');

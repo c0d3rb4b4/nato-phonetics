@@ -57,12 +57,16 @@ public final class TileLayoutInstrumentation extends Instrumentation {
     // children's old frames; never treat those as the active native subtree.
     if(view.getVisibility()!=View.VISIBLE || view.getWidth()==0 || view.getHeight()==0)return;
     Object testID=view.getTag(tag);
-    if(testID instanceof String && ((String)testID).matches("(alphabet-.*|converter-[0-9]+.*|quiz-.*)")) {
+    if(testID instanceof String && ((String)testID).matches("(alphabet-.*|digit-[0-9].*|converter-[0-9]+.*|quiz-.*)")) {
       JSONObject row=new JSONObject().put("id",testID).put("class",view.getClass().getName())
           .put("identity",System.identityHashCode(view)).put("frame",frame(view));
+      if(view.getParent() instanceof ViewGroup) {
+        row.put("siblingCount",((ViewGroup)view.getParent()).getChildCount());
+      }
       JSONArray ancestors=new JSONArray();android.view.ViewParent ancestor=view.getParent();
       while(ancestor instanceof View) {
         View parent=(View)ancestor;
+        if(parent instanceof android.widget.HorizontalScrollView)row.put("gridViewportWidth",parent.getWidth());
         ancestors.put(new JSONObject().put("width",parent.getWidth()).put("height",parent.getHeight())
             .put("visibility",parent.getVisibility()).put("alpha",parent.getAlpha()));
         ancestor=parent.getParent();

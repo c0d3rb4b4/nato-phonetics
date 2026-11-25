@@ -6,10 +6,18 @@ const require = createRequire(import.meta.url);
 const { checkCapture } = require('../scripts/check-android-release-tiles.cjs');
 const captured = () => JSON.parse(fs.readFileSync(new URL('./fixtures/android-observations/release-alphabet-layout.json', import.meta.url)));
 
-test('actual production Release native views/spans/Layout satisfy the unchanged tile contract', async () => {
+test('actual production Release native views/spans/Layout satisfy the full-width tile contract', async () => {
   const result = await checkCapture(captured(), { scale: 1 });
   assert.equal(result.measuredBaselines, 78);
   assert.equal(result.tiles, 26);
+});
+
+test('native gate rejects a preferred-width tile when three compact tiles fit', async () => {
+  const capture = captured();
+  const tile = capture.values.find(row => row.id === 'alphabet-A');
+  tile.gridViewportWidth = 328 * capture.dimensions.density;
+  tile.siblingCount = 26;
+  await assert.rejects(checkCapture(capture, { scale: 1 }), /alphabet-A width/);
 });
 
 test('native gate rejects missing parts/lines, wrong font and >1px actual baseline drift', async () => {

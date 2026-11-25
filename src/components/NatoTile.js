@@ -1,26 +1,27 @@
-import { createContext, useContext, useState } from 'react';
+import { Children, createContext, useContext, useState } from 'react';
 import { Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useTheme } from '../context/ThemeContext';
 import { useTileEnvironment } from '../hooks/useTileEnvironment';
 import { useTileBaseline, useTileOrigin } from '../hooks/useTileBaseline';
 import { tileTextUnits } from '../lib/tileTextUnits';
-import { TILE_DESIGN as D, tileScale } from '../lib/tileDesign';
+import { TILE_DESIGN as D, tileScale, tileWidthForGrid } from '../lib/tileDesign';
 import { showsFocusRing } from './ui';
 
-const TileEnvironment = createContext({ fontScale: 1, textScale: 1, ready: false, error: '', contextScale: 1 });
+const TileEnvironment = createContext({ fontScale: 1, contextScale: 1, tileWidth: /** @type {number} */ (D.width) });
 
 /** @param {{children: import('react').ReactNode, testID?: string, contextScale?: number}} props */
 export function TileGrid({ children, testID, contextScale = 1 }) {
   const environment = useTileEnvironment();
   const { theme } = useTheme();
   const [width, setWidth] = useState(0);
+  const tileWidth = tileWidthForGrid(width, tileScale(contextScale, environment.fontScale), Children.count(children));
   return <View testID={testID} onLayout={event => setWidth(event.nativeEvent.layout.width)} style={styles.gridContainer}>
     {environment.error ? <Text accessibilityRole="alert" style={{ color: theme.colors.text }}>{environment.error}</Text>
       : !environment.ready ? <Text style={{ color: theme.colors.text }}>Loading tile fonts…</Text>
         : <ScrollView horizontal showsHorizontalScrollIndicator
           contentContainerStyle={{ minWidth: width }} style={styles.horizontal}>
-          <TileEnvironment.Provider value={{ ...environment, contextScale }}>
-            <View style={[styles.grid, { width: Math.max(width, D.width * tileScale(contextScale, environment.fontScale)) }]}>{children}</View>
+          <TileEnvironment.Provider value={{ fontScale: environment.fontScale, contextScale, tileWidth }}>
+            <View style={[styles.grid, { width: Math.max(width, tileWidth) }]}>{children}</View>
           </TileEnvironment.Provider>
         </ScrollView>}
   </View>;
@@ -60,7 +61,7 @@ export function NatoTile({ entry, concealed = false, current = false, testID,
       </>}
     </View>
   </>;
-  const geometry = { width: D.width * scale, height: D.height * scale, borderRadius: D.radius * scale,
+  const geometry = { width: environment.tileWidth, height: D.height * scale, borderRadius: D.radius * scale,
     backgroundColor: entry.color, flexGrow: 0, flexShrink: 0, overflow: /** @type {'hidden'} */ ('hidden') };
   // An internal border conveys focus/press without changing palette contrast
   // or geometry. Opacity dimming would fail small-guide contrast on pale tiles.
@@ -91,11 +92,10 @@ function TileText({ metric, scale, contextScale, fontScale, testID, parentY, run
   const { offset, onTextLayout, textRef } = useTileBaseline(key,
     metric.baseline * scale - parentY - boxOrigin.origin);
   return <View testID={testID} onLayout={boxOrigin.onLayout} style={{ position: 'absolute', left: metric.x * scale,
-    top: boxY,
-    width: metric.width * scale, height: metric.height * scale }}>
+    right: metric.x * scale, top: boxY, height: metric.height * scale }}>
     <Text testID={runTestID || `${testID}-run`} ref={textRef} onTextLayout={onTextLayout}
       accessibilityLabel={accessibilityLabel} allowFontScaling
-      style={{ position: 'absolute', left: 0, top: 0, width: metric.width * scale, height: metric.height * scale,
+      style={{ position: 'absolute', left: 0, top: 0, width: '100%', height: metric.height * scale,
         fontFamily: metric.family, fontSize, lineHeight,
         fontWeight: /** @type {'800' | '600' | '400'} */ (metric.weight),
         fontStyle: metric === D.pronunciation ? 'italic' : 'normal', letterSpacing: 0,
@@ -109,5 +109,6 @@ function TileText({ metric, scale, contextScale, fontScale, testID, parentY, run
 const styles = StyleSheet.create({
   gridContainer: { width: '100%', flexShrink: 0 },
   horizontal: { flexGrow: 0, flexShrink: 0 },
-  grid: { flexDirection: 'row', flexWrap: 'wrap', alignContent: 'flex-start', justifyContent: 'center', gap: 12, paddingBottom: 4 },
+  grid: { flexDirection: 'row', flexWrap: 'wrap', alignContent: 'flex-start', justifyContent: 'center',
+    columnGap: D.columnGap, rowGap: 12, paddingBottom: 4 },
 });

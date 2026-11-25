@@ -73,12 +73,12 @@ test('shipped tile faces have pinned outlines, real weights and a real italic fa
   }
 });
 
-test('every canonical symbol, word and guide fits the shared tile at its specified font size', () => {
+test('every symbol, word and guide fits the narrowest tile at its specified font size', () => {
   const faces = Object.fromEntries(manifest.faces.map(face => [face.weight, fontMetrics(read(`assets/fonts/${face.file}`))]));
   for (const entry of [...NATO_ALPHABET, ...NATO_NUMBERS]) {
     const symbol = 'letter' in entry ? entry.letter : entry.digit;
-    assert.ok(faces[800].width(symbol, 36) <= 110, `${symbol}: header width`);
-    assert.ok(faces[600].width(entry.word, 16) <= 94, `${entry.word}: 8-unit side padding retained`);
-    assert.ok(faces[400].width(entry.pronunciation, 11) <= 94, `${entry.pronunciation}: no wrapping or shrink required`);
+    assert.ok(faces[800].width(symbol, 36) <= 100, `${symbol}: header width`);
+    assert.ok(faces[600].width(entry.word, 16) <= 84, `${entry.word}: 8-unit side padding retained`);
+    assert.ok(faces[400].width(entry.pronunciation, 11) <= 84, `${entry.pronunciation}: no wrapping or shrink required`);
   }
 });

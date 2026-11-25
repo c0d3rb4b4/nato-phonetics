@@ -36,10 +36,10 @@ function contrastRatio(foreground, background) {
 // This is an independent numeric copy of the versioned design contract. A
 // component edit cannot silently update the expected measurements with itself.
 const contract = {
-  width: 110, height: 150, radius: 12, headerHeight: 60, divider: 2,
-  letter: { x: 0, y: 4, width: 110, height: 50, fontSize: 36, lineHeight: 50, weight: '800', style: 'normal', baseline: 40.844 },
-  word: { x: 8, y: 83, width: 94, height: 22, fontSize: 16, lineHeight: 22, weight: '600', style: 'normal', baseline: 99.264 },
-  pronunciation: { x: 8, y: 111, width: 94, height: 16, fontSize: 11, lineHeight: 16, weight: '400', style: 'italic', baseline: 122.619 },
+  columnGap: 8, rowGap: 12, height: 150, radius: 12, headerHeight: 60, divider: 2,
+  letter: { x: 0, y: 4, height: 50, fontSize: 36, lineHeight: 50, weight: '800', style: 'normal', baseline: 40.844 },
+  word: { x: 8, y: 83, height: 22, fontSize: 16, lineHeight: 22, weight: '600', style: 'normal', baseline: 99.264 },
+  pronunciation: { x: 8, y: 111, height: 16, fontSize: 11, lineHeight: 16, weight: '400', style: 'italic', baseline: 122.619 },
 };
 
 async function settle(page) {
@@ -77,7 +77,7 @@ async function enlargeText(page, multiplier = 2) {
     new MutationObserver(apply).observe(document.body, { childList: true, subtree: true });
     return { before };
   }, multiplier);
-  await page.waitForFunction(scale => Math.abs(document.querySelector('[data-nato-tile]').getBoundingClientRect().width - 110 * scale) < 0.1, {}, multiplier);
+  await page.waitForFunction(scale => Math.abs(document.querySelector('[data-nato-tile]').getBoundingClientRect().height - 150 * scale) < 0.1, {}, multiplier);
   return { ...result, after: await page.$$eval('[data-nato-tile] [data-testid$="-word-run"]', nodes => nodes.map(node => parseFloat(getComputedStyle(node).fontSize))) };
 }
 
@@ -126,15 +126,21 @@ async function measure(page) {
   }));
 }
 
-function assertGeometry(tiles, scale, entries, concealed = false, dpr = 1) {
+function assertGeometry(tiles, { columns, tileWidth, scale = 1, dpr }, entries, concealed = false) {
   assert.ok(tiles.length > 0, 'Tiles rendered');
-  for (const tile of tiles) {
+  for (const [index, tile] of tiles.entries()) {
     const label = `${tile.id} @${scale}`;
-    near(tile.width, contract.width * scale, `${label} width`);
+    const column = index % columns;
+    const row = Math.floor(index / columns);
+    const rowLength = Math.min(columns, tiles.length - row * columns);
+    const columnStride = tileWidth + contract.columnGap;
+    const rowStart = tiles[0].x + (columns - rowLength) * columnStride / 2;
+    near(tile.x, rowStart + column * columnStride, `${label} column position`);
+    near(tile.y, tiles[0].y + row * (contract.height * scale + contract.rowGap), `${label} row position`);
+    near(tile.width, tileWidth, `${label} width`);
     near(tile.height, contract.height * scale, `${label} height`);
-    near(tile.width / tile.height, 11 / 15, `${label} ratio`, 0.0005);
     near(tile.radius, contract.radius * scale, `${label} radius`);
-    near(tile.header.width, contract.width * scale, `${label} header width`);
+    near(tile.header.width, tileWidth, `${label} header width`);
     near(tile.header.height, contract.headerHeight * scale, `${label} header height`);
     near(tile.header.divider, contract.divider * scale, `${label} divider`);
     assert.equal(tile.flexGrow, '0', `${label} never stretches last row`);
@@ -153,7 +159,9 @@ function assertGeometry(tiles, scale, entries, concealed = false, dpr = 1) {
     }
     for (const [name, actual] of Object.entries(tile.fields)) {
       const expected = contract[name];
-      for (const metric of ['x', 'y', 'width', 'height', 'fontSize', 'lineHeight']) near(actual[metric], expected[metric] * scale, `${label} ${name}.${metric}`);
+      const fieldWidth = tileWidth - 2 * expected.x * scale;
+      near(actual.width, fieldWidth, `${label} ${name}.width`);
+      for (const metric of ['x', 'y', 'height', 'fontSize', 'lineHeight']) near(actual[metric], expected[metric] * scale, `${label} ${name}.${metric}`);
       // Native and browser line rasterizers round ascent/descent separately;
       // only the baseline permits one physical pixel of rounding. The
       // containing boxes and declared font metrics retain the 0.075px gate.
@@ -168,7 +176,7 @@ function assertGeometry(tiles, scale, entries, concealed = false, dpr = 1) {
       assert.ok(contrast >= 4.5, `${label} ${name} contrast ${contrast.toFixed(3)}:1 must meet4.5:1`);
       assert.equal(actual.textAlign, 'center', `${label} ${name} centered`);
       assert.ok(actual.letterSpacing === 'normal' || parseFloat(actual.letterSpacing) === 0, `${label} ${name} no tracking override`);
-      assert.ok(actual.glyphs.width <= expected.width * scale + 0.1, `${label} ${name} glyph width fits without wrap/autoshrink`);
+      assert.ok(actual.glyphs.width <= fieldWidth + 0.1, `${label} ${name} glyph width fits without wrap/autoshrink`);
       for (const ink of actual.ink) {
         assert.ok(ink.x >= -0.5 && ink.x + ink.width <= tile.width + 0.5, `${label} ${name} horizontal text containment`);
         assert.ok(ink.y >= -0.5 && ink.y + ink.height <= tile.height + 0.5, `${label} ${name} vertical text containment`);
@@ -242,19 +250,22 @@ async function main() {
   await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
   const base = `http://127.0.0.1:${server.address().port}`;
   const cases = [
-    { name: 'alphabet-desktop-light', route: '/alphabet', width: 1280, height: 1100, theme: 'light', dpr: 1 },
-    { name: 'alphabet-tablet-dark', route: '/alphabet', width: 768, height: 1024, theme: 'dark', dpr: 2 },
-    { name: 'alphabet-narrow-light', route: '/alphabet', width: 320, height: 568, theme: 'light', dpr: 2 },
-    { name: 'alphabet-phone-dark', route: '/alphabet', width: 430, height: 932, theme: 'dark', dpr: 3 },
-    { name: 'alphabet-landscape-light', route: '/alphabet', width: 932, height: 430, theme: 'light', dpr: 3 },
-    { name: 'alphabet-narrow-200-dark', route: '/alphabet', width: 320, height: 568, theme: 'dark', dpr: 2, scale: 2 },
-    { name: 'alphabet-narrow-300-overflow-light', route: '/alphabet', width: 320, height: 568, theme: 'light', dpr: 2, scale: 3 },
-    { name: 'alphabet-tablet-200-light', route: '/alphabet', width: 1024, height: 768, theme: 'light', dpr: 2, scale: 2 },
-    { name: 'converter-all-desktop-light', route: '/converter', width: 1280, height: 1200, theme: 'light', dpr: 1 },
-    { name: 'converter-narrow-dark', route: '/converter', width: 320, height: 568, theme: 'dark', dpr: 2 },
-    { name: 'converter-narrow-200-light', route: '/converter', width: 320, height: 568, theme: 'light', dpr: 2, scale: 2 },
-    { name: 'quiz-narrow-light', route: '/letter-quiz', width: 320, height: 568, theme: 'light', dpr: 2 },
-    { name: 'quiz-narrow-200-dark', route: '/letter-quiz', width: 320, height: 568, theme: 'dark', dpr: 2, scale: 2 },
+    { name: 'alphabet-desktop-light', route: '/alphabet', width: 1280, height: 1100, theme: 'light', dpr: 1, columns: 7, tileWidth: 108 },
+    { name: 'alphabet-tablet-dark', route: '/alphabet', width: 768, height: 1024, theme: 'dark', dpr: 2, columns: 6, tileWidth: 110 },
+    { name: 'alphabet-narrow-light', route: '/alphabet', width: 320, height: 568, theme: 'light', dpr: 2, columns: 2, tileWidth: 110 },
+    { name: 'alphabet-portrait-360-light', route: '/alphabet', width: 360, height: 800, theme: 'light', dpr: 2, columns: 3, tileWidth: 104 },
+    { name: 'digits-portrait-384-dark', route: '/alphabet', digits: true, width: 384, height: 832, theme: 'dark', dpr: 3, columns: 3, tileWidth: 110 },
+    { name: 'alphabet-phone-dark', route: '/alphabet', width: 430, height: 932, theme: 'dark', dpr: 3, columns: 3, tileWidth: 110 },
+    { name: 'alphabet-landscape-light', route: '/alphabet', width: 932, height: 430, theme: 'light', dpr: 3, columns: 7, tileWidth: 108 },
+    { name: 'digits-portrait-150-light', route: '/alphabet', digits: true, width: 360, height: 800, theme: 'light', dpr: 2, scale: 1.5, columns: 2, tileWidth: 160 },
+    { name: 'alphabet-narrow-200-dark', route: '/alphabet', width: 320, height: 568, theme: 'dark', dpr: 2, scale: 2, columns: 1, tileWidth: 220 },
+    { name: 'alphabet-narrow-300-overflow-light', route: '/alphabet', width: 320, height: 568, theme: 'light', dpr: 2, scale: 3, columns: 1, tileWidth: 330 },
+    { name: 'alphabet-tablet-200-light', route: '/alphabet', width: 1024, height: 768, theme: 'light', dpr: 2, scale: 2, columns: 3, tileWidth: 220 },
+    { name: 'converter-all-desktop-light', route: '/converter', width: 1280, height: 1200, theme: 'light', dpr: 1, columns: 7, tileWidth: 108 },
+    { name: 'converter-narrow-dark', route: '/converter', width: 320, height: 568, theme: 'dark', dpr: 2, columns: 2, tileWidth: 110 },
+    { name: 'converter-narrow-200-light', route: '/converter', width: 320, height: 568, theme: 'light', dpr: 2, scale: 2, columns: 1, tileWidth: 220 },
+    { name: 'quiz-narrow-light', route: '/letter-quiz', width: 320, height: 568, theme: 'light', dpr: 2, columns: 1, tileWidth: 110 },
+    { name: 'quiz-narrow-200-dark', route: '/letter-quiz', width: 320, height: 568, theme: 'dark', dpr: 2, scale: 2, columns: 1, tileWidth: 220 },
   ].filter(state => !process.env.TILE_CASE_FILTER || new RegExp(process.env.TILE_CASE_FILTER).test(state.name));
   assert.ok(cases.length, 'At least one selected browser case');
   const checks = [], captures = [], errors = [], comparisons = [];
@@ -311,6 +322,7 @@ async function main() {
         Math.random = () => { current = (1664525 * current + 1013904223) >>> 0; return current / 2 ** 32; };
       }, quizSeed);
       await page.goto(base + state.route, { waitUntil: 'networkidle0' });
+      if (state.digits) await page.click('[role="radio"][aria-label="Digits 0–9"]');
       if (state.route === '/letter-quiz') { await page.waitForSelector(byId('quiz-start')); await page.click(byId('quiz-start')); }
       if (state.route === '/converter') await page.type(byId('converter-input'), state.name.includes('all') ? 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789' : 'NWUJ359');
       await page.waitForSelector(tileSelector);
@@ -320,10 +332,10 @@ async function main() {
       }
       await settle(page);
       let tiles = await measure(page);
-      if (state.route === '/alphabet') assert.equal(tiles.length, 26, `${state.name} all 26 letters`);
+      if (state.route === '/alphabet') assert.equal(tiles.length, state.digits ? 10 : 26, `${state.name} complete reference set`);
       if (state.name.includes('converter-all')) {
         assert.equal(tiles.length, 24, `${state.name} first card page`);
-        assertGeometry(tiles, state.scale || 1, entries, false, state.dpr);
+        assertGeometry(tiles, state, entries);
         checks.push({ ...state, state: 'page-1', tiles, fonts: await actualFonts(page) });
         await capture(page, state, 'page-1');
         await reachable(page, '[aria-label="Next page"]');
@@ -334,7 +346,7 @@ async function main() {
         assert.equal(new Set([...tiles, ...secondPage].map(tile => tile.fields.letter.text)).size, 36, 'All symbols covered across pages');
         tiles = secondPage;
       }
-      assertGeometry(tiles, state.scale || 1, entries, state.route === '/letter-quiz', state.dpr);
+      assertGeometry(tiles, state, entries, state.route === '/letter-quiz');
       const fonts = await actualFonts(page);
       checks.push({ ...state, tiles, fonts });
       await capture(page, state, 'first');
@@ -350,7 +362,7 @@ async function main() {
         await stopPlaybackIfActive(page);
         await settle(page);
         const revealed = await measure(page);
-        assertGeometry(revealed, state.scale || 1, entries, false, state.dpr);
+        assertGeometry(revealed, state, entries);
         checks.push({ ...state, state: 'revealed', tiles: revealed, fonts: await actualFonts(page) });
         assert.ok((await reachable(page, byId('quiz-card'))).fits, `${state.name} revealed tile reachable`);
         await capture(page, state, 'revealed');
@@ -371,13 +383,14 @@ async function main() {
         }
       }
       if (state.name === 'alphabet-desktop-light') {
-        await page.setViewport({ width: 568, height: 320, deviceScaleFactor: 1 });
+        const resizeState = { ...state, name: 'alphabet-live-window-resize', width: 568, height: 320, columns: 5, tileWidth: 100 };
+        await page.setViewport({ width: resizeState.width, height: resizeState.height, deviceScaleFactor: resizeState.dpr });
         await settle(page);
         const resized = await measure(page);
-        assertGeometry(resized, 1, entries);
+        assertGeometry(resized, resizeState, entries);
         assert.ok((await reachable(page, byId('alphabet-Z'))).fits, 'Live window resize preserves reachable last tile');
-        checks.push({ ...state, name: 'alphabet-live-window-resize', width: 568, height: 320, tiles: resized });
-        await capture(page, { ...state, name: 'alphabet-live-window-resize', width: 568, height: 320 }, 'last');
+        checks.push({ ...resizeState, tiles: resized });
+        await capture(page, resizeState, 'last');
         await page.setViewport({ width: state.width, height: state.height, deviceScaleFactor: state.dpr });
         await page.$eval(byId('alphabet-C'), node => node.scrollIntoView({ block: 'center' }));
         const tile = await page.$(byId('alphabet-C'));
@@ -396,7 +409,7 @@ async function main() {
           const ringWidth = await page.$eval(byId('alphabet-C-interaction-ring'), node => parseFloat(getComputedStyle(node).borderTopWidth));
           assert.ok(ringWidth === 2 || ringWidth === 3, 'Pointer-held feedback ring is visible inside fixed geometry');
           const pressed = await measure(page);
-          assertGeometry(pressed, 1, entries, false, state.dpr);
+          assertGeometry(pressed, state, entries);
           checks.push({ ...state, state: 'pointer-held', opacity, ringWidth, tiles: pressed });
           await capture(page, state, 'pressed', { interaction: 'Actual mouse down held on Charlie; no opacity fade' });
         } finally {
@@ -405,7 +418,7 @@ async function main() {
           await stopPlaybackIfActive(page);
         }
       }
-      console.log(`PASS ${state.name}: ${tiles.length} tiles, fixed geometry/typography, custom fonts, reachable content`);
+      console.log(`PASS ${state.name}: ${state.columns} across, ${state.tileWidth}px tiles, typography, custom fonts, reachable content`);
       await context.close();
     }
     const failureContext = await browser.createBrowserContext();
